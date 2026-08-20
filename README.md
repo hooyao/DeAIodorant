@@ -81,6 +81,10 @@ batch prefill work without loading multiple model copies. The classification
 response is capped at 160 tokens in the pilot and should be reduced further
 after prompt validation.
 
+See [docs/translation-benchmark.md](docs/translation-benchmark.md) for the
+frozen translation-gate protocol and commands for running the 9B comparison on
+an RTX 4080 or DGX Spark.
+
 InfoQ exposes a page-view count in its server-rendered state. The pilot gathers
 twice the requested number of eligible candidates and retains those with the
 highest observed views. View counts are current snapshots, so they are useful
