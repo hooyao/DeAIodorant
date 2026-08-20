@@ -1,0 +1,102 @@
+当地时间 11 月 4 日，Angular 团队宣布 Angular 13 发布。此版本核心更新包括不再支持旧编译和渲染引擎 View Engine，全面支持新编译和渲染引擎 lvy，以及不再支持 IE11，除此之外还有包括对 APF 以及 Angular CLI 等方面的更新和修改。
+Angular 13 新特性
+弃用 View Engine
+Angular 13 宣布不再支持 View Engine，同时全面启用 Ivy，Ivy 是 Angular 下一代编译和渲染引擎，Angular 在最近的版本中一直支持它。对于
+决定弃用 View Engine 的原因，Angular 团队此前曾表示大多数 Angular 开发人员已转而使用 Ivy。
+同时根据谷歌开发者 Thompson 的说法，此更新意味着“团队可以期待更快的编译，因为不再包含元数据和摘要文件。”
+Angular Package Format (APF) 的更改
+删除了旧的输出格式，包括来自 APF 的 View Engine 特定元数据；
+使用最新版本的 APF 构建的库将不再需要使用 ngcc；
+更新 APF 以支持
+Node Package Exports。
+Component API 的更新
+在 Angular v13 更改之前，动态创建组件需要大量样板代码。 新的 API 消除了将
+ComponentFactoryResolver
+注入构造函数的需要。 Ivy 创造了使用
+ViewContainerRef.createComponent
+实例化组件的机会，而无需创建关联的工厂。
+结束对 IE11 的支持
+结束 IE11 的支持
+后：
+Angular 可以通过原生的 Web API 使用更现代浏览器功能；
+可以删除 IE 特定的 polyfills 和代码路径使得应用程序更小，加载速度更快；
+移除
+差异加载
+的需要；
+运行 ng update 将自动删除这些特定于 IE 的 polyfills 并在项目迁移期间减少包大小。
+需要注意的是，现有项目仍需支持 IE11 用户的开发者可继续使用 Angular 12，Angular 12
+版本将一直维护到
+2022 年 11 月
+。
+Angular CLI 的改进
+Angular 13 项目中默认使用持久构建缓存，要启用此功能，可以在 angular.json 中添加如下配置：
+{
+"
+$schema
+"
+:
+"..."
+,
+"cli"
+: {
+"cache"
+: {
+"enabled"
+:
+true
+,
+"path"
+:
+".cache"
+,
+"environment"
+:
+"all"
+}
+}
+...
+}
+复制代码
+框架的更改和依赖项更新
+使用 ng new 创建的应用程序默认使用 RxJS 7.4 版本 ；
+使用 RxJS v6.x 的现有应用程序必须使用该 npm install rxjs@7.4 命令手动更新，可以在
+此处
+阅读迁移说明；
+支持 TypeScript 4.4；
+Angular 测试的改进
+TestBed 现在在每次测试后能更好地
+销毁
+测试模块和环境；
+DOM 在每次测试后都会被清除。
+Angular 组件更新
+所有基于 MDC 的组件都经过评估，在对​​比度、触摸目标、ARIA 等方面满足更高的 a11y 标准。
+可在
+此处
+阅读有关可访问性 (a11y) 标准的拉取请求
+社区贡献
+动态启用/禁用验证器
+取消导航后恢复 history
+其他更新
+本次版本更新还包括
+扩展对
+Adobe Fonts
+的支持等，有关更详细的概述可以查看完整更新公告：
+更新公告：
+https://blog.angular.io/angular-v13-is-now-available-cce66f7bc296
+更新指南：
+https://update.angular.io/
+关于 Angular
+AngularJS 诞生于 2009 年，由 Misko Hevery 等人创建，是一款构建用户界面的前端框架，后为 Google 所收购。AngularJS 是一个应用设计框架与开发平台，使得开发现代的单页面应用程序（SPAs：Single Page Applications）变得更加容易：
+AngularJS 把应用程序数据绑定到 HTML 元素；
+AngularJS 可以克隆和重复 HTML 元素；
+AngularJS 可以隐藏和显示 HTML 元素；
+AngularJS 可以在 HTML 元素”背后”添加代码；
+AngularJS 支持输入验证。
+AngularJS 有诸多特性：
+MVC；
+模块化与依赖注入；
+双向数据绑定；
+指令与 UI 控件。
+Angular 是 AngularJS 的重写，Angular2 以后官方命名为 Angular，2.0 以前版本称为 AngualrJS。AngularJS 是用 JavaScript 编写，而 Angular 采用 TypeScript 语言编写，是 ECMAScript 6 的超集。
+因不能简单迁移，因此 AngularJS 和 Angular 成为两个独立的框架。
+目前，Angular 在前端框架中占据重要地位，经过严格测试已由 Google 和 Microsoft 等公司投入生产使用，相关线上资源也十分丰富。但是从学习角度说，Angular 的学习曲线最为陡峭，开发者需熟悉 TypeScript 才能开展工作，对于新手而言并不是最佳选择，更适合在团队中发挥作用。

@@ -1,0 +1,85 @@
+论文地址：https://www.aaai.org/AAAI22Papers/AAAI-7931.LiC.pdf
+作者单位：中国科学院计算技术研究所、上海交通大学、之江实验室
+研究背景及研究任务
+生成对抗
+网络（GAN）已经在生成高分辨率图像方面取得了巨大成功，而关于其可解释性的研究也在近年来引起了广泛关注。
+在这一领域，如何令 GAN 学习出一个解耦的表征仍是一项重大挑战。所谓 GAN 的解耦表征，即该表征每个部分只影响生成图像的特定方面。此前关于 GAN 解耦表征的研究关注于不同的角度。
+例如，在下图 1 中，方法 1 解耦了图像的结构和风格。方法 2 学习了图像中局部对象的特征。方法 3 学习了图像中属性的解耦特征，例如人脸图像的年龄属性和性别属性。然而，这些研究未能在 GAN 中为不同的视觉概念（例如人脸的眼睛、鼻子和嘴巴等部分）提供一个清晰且符号化的表征。
+图 1：与其他 GAN 解耦表征方法的视觉对比
+为此，研究者提出了一种
+将传统 GAN 修改为可解释 GAN 的通用方法
+，该方法确保生成器中间层中的卷积核可以学习到解耦的局部视觉概念。具体地，如下图 2 所示，与传统 GAN 相比，可解释 GAN 中间层中的每个卷积核在生成不同图像时始终代表一个特定的视觉概念，不同的卷积核则代表不同的视觉概念。
+图 2：可解释 GAN 与传统 GAN 编码表征的视觉对比
+建模方法
+可解释 GAN 的学习应满足以下两个目标：
+卷积核的可解释性
+和
+生成图像的真实性
+。
+卷积核的可解释性：研究者希望中间层的卷积核能够自动学习有意义的视觉概念，而无需对任何视觉概念进行人工标注。具体来说，每个卷积核在生成不同图像时都应该稳定地生成对应于相同视觉概念的图像区域。不同的卷积核则应该生成对应于不同视觉概念的图像区域；
+生成图像的真实性：可解释 GAN 的生成器仍然能够生成逼真的图像。
+为了确保目标层中卷积核的可解释性，研究者注意到当多个卷积核生成与某个视觉概念对应的相似区域时，它们通常联合代表了这一视觉概念。
+因此，他们使用一组卷积核来共同表示一个特定的视觉概念，并使用不同组的卷积核来分别表示不同的视觉概念。
+为了同时确保生成图像的真实性，研究者设计下述
+损失函数
+来将传统的 GAN 修改为可解释的 GAN。
+传统 GAN 的对抗损失
+：该损失用于确保生成图像的真实性；
+卷积核划分损失
+：给定生成器，该损失用于找到卷积核的划分方式，使得同一组中的卷积核生成相似的图像区域。具体地，他们使用高斯混合模型 (GMM) 来学习卷积核的划分方式，以确保每组中卷积核的特征图具有相似的神经激活；
+能量模型真实性损失
+：给定目标层卷积核的划分方式，强制同一组中的每个卷积核生成相同的视觉概念可能会降低生成图像的质量。为了进一步确保生成图像的真实性，他们使用能量模型来输出目标层中特征图的真实性概率，并采用极大似然估计来学习能量模型的
+参数
+；
+卷积核可解释性损失
+：给定目标层的卷积核划分方式，该损失用于进一步提升卷积核的可解释性。具体地，该损失会使得同一组中的每个卷积核唯一地生成相同的图像区域，而不同组的卷积核则分别负责生成不同的图像区域。
+实验结果
+在实验中，研究者分别定性和定量地评估了他们的可解释 GAN。
+对于
+定性分析
+，他们将每个卷积核的特征图可视化，以评估卷积核在不同图像上所表示的视觉概念的一致性。
+如下图 3 所示，在可解释 GAN 中，每个卷积核在生成不同图像时始终生成对应于相同视觉概念的图像区域，而不同的卷积核生成对应于不同视觉概念的图像区域。
+图 3：可解释 GAN 中特征图的可视化
+实验中还比较了每组卷积核的组别中心和卷积核之间的
+感受野
+的区别，如下图 4（a）所示。图 4（b）给出了可解释 GAN 中不同视觉概念对应卷积核的数目比例。图 4（c）则表明，当选择划分的卷积核组数不同时，组数越多的可解释 GAN 学习到的视觉概念越详尽。
+图 4：可解释 GAN 的定性评估
+可解释 GAN 还
+支持修改生成图像上特定的视觉概念
+。例如，可以通过交换可解释层中相应的特征图，来实现图像之间特定视觉概念的交互，即完成局部 / 全局换脸。
+下图 5 给出了
+在成对图像之间交换嘴、头发和鼻子的结果
+。最后一列给出了修改后的图像和原始图像之间的差异。该结果表明，研究者的方法只修改了局部的视觉概念，而没有改变其他不相关的区域。
+图 5：交换生成图片的特定视觉概念
+此外，下图 6 还给出了他们的
+方法在交换整张人脸时的效果
+。
+图 6：交换生成图片的整张人脸
+对于
+定量分析
+，研究者采用
+人脸验证
+实验来评估人脸交换结果的准确性。具体而言，给定一对人脸图像，将原始图像的人脸替换为源图像的人脸以生成修改后的图像。然后，测试修改后图像的人脸和源图像的人脸是否具有相同的身份。
+下表 1 给出了
+不同方法
+人脸验证
+结果的准确性
+，他们的方法在身份保持方面优于其他的面部交换方法。
+表 1：换脸身份的准确性评估
+此外，实验中还评估了方法在修改特定视觉概念时的局部性。具体来说，研究者计算了 RGB 空间中原始图像和修改后图像之间的均方误差 (MSE)，并以特定视觉概念的区域外 MSE 和区域内 MSE 的比值，作为局部性评估的实验指标。
+结果如下表 2 所示，
+研究者的修改方法具有更好的局部性
+，即所修改视觉概念之外的图片区域变化较少。
+表 2：修改视觉概念的局部性评估
+更多的实验结果参见论文。
+总结
+本工作提出了一种通用方法，可以在无需任何视觉概念的人工标注下，将传统的 GAN 修改为可解释的 GAN。在可解释的 GAN 中，生成器中间层中的每个卷积核在生成不同图像时可以稳定地生成相同的视觉概念。
+实验表明，可解释 GAN 还使得人们能够在生成的图像上修改特定的视觉概念，为 GAN 生成图像的可控编辑方法提供了一个新的角度。
+[1] Zhu, Jun-Yan, et al. "Unpaired image-to-image translation using cycle-consistent adversarial networks." Proceedings of the IEEE international conference on computer vision. 2017.
+[2] Plumerault, Antoine, Hervé Le Borgne, and Céline Hudelot. "Controlling generative models with continuous factors of variations." International Conference on Learning Representations. 2019.
+[3] Shen, Yujun, et al. "Interpreting the latent space of gans for semantic face editing." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
+[4] Chen, Renwang, et al. "Simswap: An efficient framework for high fidelity face swapping." Proceedings of the 28th ACM International Conference on Multimedia. 2020.
+[5] Li, Lingzhi, et al. "Advancing high fidelity identity swapping for forgery detection." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
+[6] Nirkin, Yuval, Yosi Keller, and Tal Hassner. "Fsgan: Subject agnostic face swapping and reenactment." Proceedings of the IEEE/CVF international conference on computer vision. 2019.
+[7] Collins, Edo, et al. "Editing in style: Uncovering the local semantics of gans." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2020.
+[8] Suzuki, Ryohei, et al. "Spatially controllable image synthesis with internal representation collaging." arXiv preprint arXiv:1811.10153 (2018).

@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-08-20T07:47:53.340298+00:00",
+  "windows": {
+    "pre": [
+      "2021-07-01",
+      "2022-06-30"
+    ],
+    "post": [
+      "2025-07-01",
+      "2026-06-30"
+    ]
+  },
+  "target_per_cell": 2,
+  "cells": {
+    "infoq_pre": {
+      "documents": 2,
+      "median_cjk_chars": 3884.0,
+      "min_cjk_chars": 3587,
+      "max_cjk_chars": 4181,
+      "median_views": 9411.5,
+      "visibility_verified_documents": 2
+    },
+    "infoq_post": {
+      "documents": 2,
+      "median_cjk_chars": 5169.5,
+      "min_cjk_chars": 4723,
+      "max_cjk_chars": 5616,
+      "median_views": 13901.5,
+      "visibility_verified_documents": 2
+    },
+    "jiqizhixin_pre": {
+      "documents": 2,
+      "median_cjk_chars": 1901.5,
+      "min_cjk_chars": 1820,
+      "max_cjk_chars": 1983,
+      "median_views": null,
+      "visibility_verified_documents": 0
+    },
+    "jiqizhixin_post": {
+      "documents": 0,
+      "median_cjk_chars": null,
+      "min_cjk_chars": null,
+      "max_cjk_chars": null,
+      "median_views": null,
+      "visibility_verified_documents": 0
+    }
+  },
+  "fetch_stats": {
+    "infoq_pre": {
+      "attempted": 11,
+      "fetched": 11,
+      "eligible": 4,
+      "wrong_period": 7,
+      "low_quality": 0,
+      "failed": 0
+    },
+    "infoq_post": {
+      "attempted": 15,
+      "fetched": 15,
+      "eligible": 4,
+      "wrong_period": 10,
+      "low_quality": 0,
+      "failed": 1
+    },
+    "jiqizhixin_pre": {
+      "attempted": 2,
+      "fetched": 2,
+      "eligible": 2,
+      "wrong_period": 0,
+      "low_quality": 0,
+      "failed": 0
+    },
+    "jiqizhixin_post": {
+      "probe": {
+        "accessible": false,
+        "url": "https://www.jiqizhixin.com/articles/2025-01-28-3",
+        "http_status": 200,
+        "page_title": "机器之心·数据服务",
+        "visible_text_chars": 130,
+        "reason": "data_service_notice"
+      },
+      "documents": 0
+    }
+  },
+  "limitations": [
+    "InfoQ visibility values are current page-view snapshots, not fixed-age historical counts.",
+    "Machine Heart PRE documents lack article-level visibility evidence and are auxiliary only.",
+    "Machine Heart POST article pages currently return a data-service notice; no bypass was attempted.",
+    "The automated quality gate validates extraction and obvious repetition only; human review is still required."
+  ]
+}

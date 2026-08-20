@@ -1,0 +1,16 @@
+{
+  "protocol": "translation-gate-1.0-frozen",
+  "model": "qwen3.5:4b",
+  "documents": 100,
+  "original_total": 50,
+  "original_admitted": 28,
+  "original_retention_rate": 0.56,
+  "translation_total": 50,
+  "translation_admitted": 1,
+  "translation_leak_rate": 0.02,
+  "strict_calls": 100,
+  "verifier_calls": 11,
+  "total_seconds": 384.589,
+  "target_passed": false,
+  "results": "data\\translation_test\\final_results.jsonl"
+}

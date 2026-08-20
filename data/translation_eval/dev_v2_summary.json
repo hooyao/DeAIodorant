@@ -1,0 +1,22 @@
+{
+  "model": "qwen3.5:4b",
+  "documents": 40,
+  "exact_label_accuracy": 0.8,
+  "confusion": {
+    "translation": {
+      "translation": 12,
+      "original": 8,
+      "uncertain": 0
+    },
+    "original": {
+      "translation": 0,
+      "original": 20,
+      "uncertain": 0
+    }
+  },
+  "translation_recall": 0.6,
+  "safe_original_retention_rate": 1.0,
+  "translation_leak_rate_under_fail_closed_policy": 0.4,
+  "total_seconds": 149.44,
+  "results": "data\\translation_eval\\dev_v2_results.jsonl"
+}

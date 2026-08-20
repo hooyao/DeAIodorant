@@ -1,0 +1,45 @@
+{
+  "protocol_version": "translation-gate-1.0-frozen",
+  "frozen_at": "2026-08-20T18:00:00+08:00",
+  "model": {
+    "ollama_tag": "qwen3.5:4b",
+    "ollama_model_id": "2a654d98e6fb",
+    "parameters": "4.7B",
+    "quantization": "Q4_K_M",
+    "thinking": false,
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 4096,
+    "num_predict": 160
+  },
+  "frozen_artifacts": {
+    "strict_prompt_sha256": "9010ee6f110ed0164a1cd5383d65aa68cb8e52882ab17065e3d994fd1dff6bee",
+    "verifier_prompt_sha256": "d7e093fa080d0e156ac57098463eedb3e6a3a6dc92623264be8c41cd225f6410",
+    "pipeline_source_sha256": "ff96bca3518046c4ffb61665e447946095d011ea32337661fac9a80767fd9e83",
+    "development_set_sha256": "d0a197c9a467f745f1324687d2eb1319e5fc0aa92776995ce497ca7fb3e41621",
+    "validation_set_sha256": "2460b87486517eca1d15896be9f3d33f681226c02e86d6bc31fece4fb5f8b9cc"
+  },
+  "decision_policy": [
+    "Reject deterministic translation evidence.",
+    "Accept strict profile only when label=original and confidence=high.",
+    "Otherwise invoke verifier only when deterministic strong-original evidence exists.",
+    "Accept override only when verifier label=original and confidence=high.",
+    "Reject every other outcome, including uncertain, medium, low, malformed, or failed inference."
+  ],
+  "validation_result": {
+    "translation_total": 20,
+    "translation_admitted": 0,
+    "original_total": 20,
+    "original_admitted": 18,
+    "original_retention_rate": 0.9
+  },
+  "final_test_design": {
+    "translation_documents": 50,
+    "original_documents": 50,
+    "disjoint_from_development_validation_and_calibration": true,
+    "minimum_original_retention_rate": 0.8,
+    "maximum_translation_admissions": 0,
+    "no_prompt_rule_or_threshold_changes_after_predictions": true
+  },
+  "final_test_set_sha256": "05bc02f40d48a9bad89cf35e1f34404ae8f839167656b18e644103d64edff0bd"
+}

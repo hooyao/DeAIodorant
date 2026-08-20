@@ -1,0 +1,18 @@
+{
+  "original_pass": 12,
+  "original_total": 20,
+  "translation_pass": 0,
+  "translation_total": 20,
+  "strict_only_original_pass": 12,
+  "strict_only_translation_pass": 0,
+  "combined_rejected_originals": [
+    "中国专家主导的ISO隐私计算国际标准立项，蚂蚁集团专家担任主编",
+    "腾讯操作系统的创新之路",
+    "闲鱼正在悄悄放弃Flutter吗？",
+    "SaaS 创业者的世界里没有风口，只有客户需求",
+    "独家对话前华为天才少年李元庆：首款规模化具身智能产品中国造！多机异构是未来方向",
+    "云原生容器的未来将何去何从？",
+    "TiKV + SPDK，探索存储的性能极限",
+    "Apache Flink的下一步：不止于流处理"
+  ]
+}

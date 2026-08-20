@@ -34,11 +34,12 @@ The current script evaluates sequentially for reproducibility. Throughput
 benchmarking and concurrent production inference should be done separately so
 they cannot alter accuracy measurements.
 
-## Private data
+## Benchmark data
 
-`data/` is intentionally excluded from the public repository because it
-contains third-party article bodies and local model caches. Copy the following
-directories privately to the evaluation machine:
+The `init` branch tracks the current `data/` directory for transfer to another
+evaluation machine. It contains third-party article bodies and local model
+caches, so users remain responsible for source rights and terms. The relevant
+directories are:
 
 ```text
 data/translation_eval/
@@ -48,4 +49,3 @@ data/translation_benchmark/
 ```
 
 Do not tune prompts or thresholds after inspecting final-test predictions.
-

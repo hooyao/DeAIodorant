@@ -31,8 +31,10 @@ python pilot_collect.py --target-per-cell 2 --output-dir data/smoke
 ```
 
 Generated files include one JSONL file per source/period, a merged corpus,
-`manual_review_queue.csv`, and `report.json`. Full article text is retained locally for research validation;
-redistribution should be reviewed against source rights and terms.
+`manual_review_queue.csv`, and `report.json`. The `init` branch currently also
+tracks the generated `data/` directory for project transfer and reproducibility.
+It includes third-party article bodies; users remain responsible for source
+rights and terms.
 
 The primary corpus layout is monthly:
 

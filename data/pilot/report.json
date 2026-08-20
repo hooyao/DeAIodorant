@@ -1,0 +1,94 @@
+{
+  "generated_at": "2026-08-20T09:18:49.928948+00:00",
+  "windows": {
+    "pre": [
+      "2021-07-01",
+      "2022-06-30"
+    ],
+    "post": [
+      "2025-07-01",
+      "2026-06-30"
+    ]
+  },
+  "target_per_cell": 10,
+  "cells": {
+    "infoq_pre": {
+      "documents": 10,
+      "median_cjk_chars": 2511.0,
+      "min_cjk_chars": 738,
+      "max_cjk_chars": 3572,
+      "median_views": 8138.5,
+      "visibility_verified_documents": 10
+    },
+    "infoq_post": {
+      "documents": 10,
+      "median_cjk_chars": 3324.5,
+      "min_cjk_chars": 746,
+      "max_cjk_chars": 13714,
+      "median_views": 11335.0,
+      "visibility_verified_documents": 10
+    },
+    "jiqizhixin_pre": {
+      "documents": 10,
+      "median_cjk_chars": 2029.5,
+      "min_cjk_chars": 991,
+      "max_cjk_chars": 3529,
+      "median_views": null,
+      "visibility_verified_documents": 0
+    },
+    "jiqizhixin_post": {
+      "documents": 0,
+      "median_cjk_chars": null,
+      "min_cjk_chars": null,
+      "max_cjk_chars": null,
+      "median_views": null,
+      "visibility_verified_documents": 0
+    }
+  },
+  "fetch_stats": {
+    "infoq_pre": {
+      "attempted": 115,
+      "fetched": 115,
+      "eligible": 20,
+      "wrong_period": 79,
+      "translated_filtered": 14,
+      "low_quality": 2,
+      "failed": 0
+    },
+    "infoq_post": {
+      "attempted": 69,
+      "fetched": 69,
+      "eligible": 20,
+      "wrong_period": 36,
+      "translated_filtered": 6,
+      "low_quality": 5,
+      "failed": 2
+    },
+    "jiqizhixin_pre": {
+      "attempted": 12,
+      "fetched": 12,
+      "eligible": 10,
+      "wrong_period": 0,
+      "translated_filtered": 1,
+      "low_quality": 1,
+      "failed": 0
+    },
+    "jiqizhixin_post": {
+      "probe": {
+        "accessible": false,
+        "url": "https://www.jiqizhixin.com/articles/2025-07-01",
+        "http_status": 200,
+        "page_title": "机器之心·数据服务",
+        "visible_text_chars": 130,
+        "reason": "data_service_notice"
+      },
+      "documents": 0
+    }
+  },
+  "limitations": [
+    "InfoQ visibility values are current page-view snapshots, not fixed-age historical counts.",
+    "Machine Heart PRE documents lack article-level visibility evidence and are auxiliary only.",
+    "Machine Heart POST article pages currently return a data-service notice; no bypass was attempted.",
+    "The automated quality gate validates extraction and obvious repetition only; human review is still required."
+  ]
+}

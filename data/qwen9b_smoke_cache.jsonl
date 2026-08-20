@@ -1,0 +1,1 @@
+{"cache_key": "a8215e4dacaee7b4c93cfdfbfcc0841d184b82b3df56a7b41977588df5577504", "prompt_version": "translation-strict-v3", "model": "qwen3.5:9b", "content_hash": "68f8dd9be7764daf3a8c7a5ede8b57e9cde52f4c5e8c2ec5a40b789b574d83a0", "result": {"label": "uncertain", "confidence": "low", "evidence": ["正文内容与提供的原文链接（TypeScript 发布）主题完全不符，无法验证原文来源"]}}
