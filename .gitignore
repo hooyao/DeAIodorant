@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+# Locally acquired article bodies, benchmark corpora, and model caches are not
+# redistributed through the public repository.
+data/
