@@ -181,6 +181,8 @@ clearly separated from the default offline suite.
 - Update `README.md` when user-facing scope or setup changes.
 - Update `docs/architecture.md` when component boundaries or data flow change.
 - Update `docs/roadmap.md` when a phase begins or meets its exit criteria.
+- Update `docs/smell-catalog.md` when a smell hypothesis, metric, evidence
+  status, counterexample, or intervention result changes.
 - Add an explicit protocol version for benchmark policy changes.
 - Document generated artifacts with the command and configuration that created
   them.
@@ -196,6 +198,8 @@ Flag changes that:
 - optimize the product around AI-detector scores;
 - optimize the product around human-versus-AI classification accuracy;
 - treat a pre/post feature difference as a validated reader-disliked pattern;
+- promote a smell status without recording reproduction identity, confounders,
+  counterexamples, and intervention evidence;
 - drop meaning-preservation checks from a refinement path;
 - add scraping behavior that bypasses source restrictions;
 - commit secrets, personal data, model weights, or unexplained large artifacts;

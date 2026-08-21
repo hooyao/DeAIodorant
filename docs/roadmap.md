@@ -75,6 +75,9 @@ Each hypothesis records:
 - reader-intervention result;
 - preservation risks.
 
+The canonical records and their evidence status are maintained in
+[Chinese Writing Smell Catalog](smell-catalog.md).
+
 Exit criterion:
 
 At least three smell categories have evidence that a bounded edit improves

@@ -63,6 +63,10 @@ See [the project roadmap](docs/roadmap.md) for phase boundaries and acceptance
 criteria and [the refinement roadmap](docs/refinement-roadmap.md) for the
 alternative methods that lead from corpus research to the product.
 
+Validated and candidate reader-disliked patterns, including exact
+quantification and reproduction procedures, are maintained in the
+[Chinese Writing Smell Catalog](docs/smell-catalog.md).
+
 ## What exists today
 
 The current collector validates source accessibility, publication dates, body
