@@ -293,6 +293,7 @@ if the effect disappears after removing formatting and translated content.
 - Initial intervention directionally positive: two revised wins, one tie
 - Second intervention directionally positive: six revised wins, four ties,
   zero original wins
+- Broad typed relation-support score rejected
 - Not intervention validated
 
 ### Candidate reader experience
@@ -377,6 +378,18 @@ In the later reader calibration, complete contrast-frame rate had a post-only
 Spearman correlation of 0.78 with reading friction. The exact permutation p was
 0.036, but the result did not survive correction across the expanded feature
 set and uses only eight post-period passages.
+
+A later typed relation-support probe must not replace this specific result with
+a broad connective claim. After sentence-count normalization, broad contrast
+density had a robust time effect of 0.06 and post-only reader rho 0.51. Emphasis
+density had a robust time effect of 1.34 but reader rho 0.17. Neither survived
+multiple-testing correction.
+
+The proposed high-confidence problem metric also failed. Problem decisions per
+100 sentences had a time effect of 0.04 and reader rho 0.06; the corresponding
+ratio had a time effect of -0.03 and reader rho 0.00. It decreased in only two
+of the 10 second-round revisions. The v0.1 aggregate is rejected as a smell
+score.
 
 ### Reproduction
 
@@ -745,12 +758,21 @@ must not be promoted.
 Implementation and results are recorded in
 [Deterministic Discourse Graph Probe](../experiments/discourse-graph-probe.md).
 
+The follow-up typed relation-support probe correctly localized one
+reader-reported misuse of `相反`, but it also mislabeled a real temporal contrast
+and a real monitoring alternative. Lexical overlap and dependency roles cannot
+establish contradiction, alternative choice, causality, or rhetorical
+necessity. Its aggregate problem score is rejected; only the inspectable
+instances and reason codes remain useful for audit. See
+[Deterministic Discourse-Relation Support Probe](../experiments/relation-support-probe.md).
+
 | Candidate | Pilot observation | Current decision |
 |---|---|---|
 | Lower adjacent-sentence content overlap | Hedges' g approximately -0.98, BH q approximately 0.52 | Investigate local cohesion after topic and length control |
 | Shorter paragraphs and fewer clause relations | Effects approximately -0.8, BH q approximately 0.52 | Treat as possible formatting effect |
 | Generic repetition | No feature with absolute g at least 0.8 | Deprioritize current metrics; semantic restatement needs a new definition |
 | Broad discourse-marker categories | No reliable dense separation | Replace broad categories with specific constructions |
+| Typed discourse-relation support | Problem-density time effect 0.04 and reader rho 0.06; clear false positives | Reject v0.1 score; retain instance audit only |
 | Pure syntax classification | Unstable and below chance after punctuation removal | Deprioritize as a standalone direction |
 
 Watchlist entries require stronger evidence or better measurement before they

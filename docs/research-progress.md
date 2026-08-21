@@ -1,6 +1,6 @@
 # Research Progress
 
-## Checkpoint: 2026-08-21
+## Checkpoint: 2026-08-22
 
 This checkpoint includes the first deterministic discourse-graph probe and two
 completed rounds of blinded refinement comparisons. It is an exploratory
@@ -26,6 +26,8 @@ research checkpoint, not a product milestone.
 - Froze a conservative second-round edit operator and completed 10 new blinded
   comparisons across seven post-period documents without overlapping any of
   the 10 reader-friction development ranges.
+- Implemented and ran a deterministic typed discourse-relation support probe
+  on the existing time, reader-friction, and refinement material.
 
 ## Current evidence
 
@@ -128,6 +130,43 @@ passages were deliberately selected, all sources are InfoQ, and four
 second-round passages come from one document. This is stronger directional
 evidence, not generalization or intervention validation.
 
+## Relation-support probe result
+
+The first attempt to model “whether a claimed discourse relation has actual
+support” extracts contrast, cause, inference, clarification, and emphasis
+instances. It compares their left and right propositions using dependency
+roles, entities, predicates, negation, frozen antonyms, comparative terms,
+concrete payload, and abstract-shell payload. It explicitly retains an
+`indeterminate` decision.
+
+The probe emitted 476 instances across all analysis scopes: 241 indeterminate,
+147 supported, and 88 type mismatches. It produced no high-confidence
+unsupported or redundant decisions.
+
+The proposed problem score failed:
+
+- problem decisions per 100 sentences had a robust time effect of 0.04 and a
+  post-only reader Spearman rho of 0.06;
+- problem-decision ratio had a robust time effect of -0.03 and reader rho 0.00;
+- the ratio decreased in only two of the 10 second-round revisions and was
+  unchanged in seven;
+- no relation-support feature survived multiple-testing correction.
+
+The rule correctly identified the reader-reported `相反` in the multi-tool
+passage as elaboration mislabeled as contrast. It also falsely marked a real
+7:00-versus-7:31 temporal contrast and the human-versus-LLM monitoring
+alternative as mismatches. Several disliked `真正` frames were labeled
+supported merely because a concrete clause followed them.
+
+Normalized broad contrast density had reader rho 0.51 but essentially no time
+effect (0.06), while emphasis density had a stable time effect of 1.34 but weak
+reader rho 0.17. This reinforces the need to keep the specific complete
+negative contrast construction separate from broad connectives.
+
+Reject the v0.1 problem score. Keep its extracted instances and reason codes as
+audit material only. The failure is semantic and structural, not a threshold
+problem to tune against the same small ratings.
+
 ## Outlier policy and current limitation
 
 Documents are not hard-deleted because one reader dislikes them. Robust weights
@@ -154,6 +193,12 @@ weights are used in the current time comparison.
 - `experiments/prepare_refinement_pairs_v2.py`: frozen 10-pair conservative
   intervention with structured operation and preservation logs.
 - `experiments/refinement-pairs-v2.md`: second-round protocol and passage set.
+- `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
+  instances, evidence vectors, abstentions, and reason codes.
+- `experiments/relation_support_probe.py`: existing-corpus time, reader, and
+  intervention comparison.
+- `experiments/relation-support-probe.md`: complete method, results,
+  counterexamples, and rejection decision.
 - `experiments/discourse-graph-probe.md`: method and detailed evidence.
 - `docs/smell-catalog.md`: evidence-status integration.
 
@@ -173,6 +218,11 @@ is a held-out replication, not another revision of these 10 pairs:
 4. record meaning-preservation concerns separately from reading preference;
 5. treat residual abstract engineering claims as a new hypothesis, not a
    post-hoc extension of the completed operator.
+
+Do not tune the rejected relation-support score against the same 10 ratings.
+Further work on actual relation support requires either a narrower formally
+testable motif or independent expert span annotations. The reader should not be
+asked to supply those linguistic labels.
 
 In parallel, run the same graph features on the larger matched corpus when it
 arrives. Match source, topic, format, length, and visibility before interpreting
