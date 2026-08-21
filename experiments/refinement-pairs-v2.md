@@ -3,9 +3,10 @@
 ## Status
 
 Protocol version `conservative-contrast-reduction-2.0` was frozen on
-2026-08-21 before any second-round preference outcome was available. This is a
-small exploratory intervention, not a validated product rule or a
-preregistration for confirmatory inference.
+2026-08-21 before any second-round preference outcome was available. All 10
+ratings were completed later that day. This is a small exploratory
+intervention, not a validated product rule or a preregistration for
+confirmatory inference.
 
 ## Question
 
@@ -109,6 +110,44 @@ emphasis markers in the originals to zero counted instances in the revisions.
 These counts verify that the intended manipulation occurred; they are not a
 quality score.
 
+## Outcome
+
+All 10 tasks received one blinded response:
+
+| Outcome | Count |
+|---|---:|
+| Revised version preferred | 6 |
+| Original version preferred | 0 |
+| Tie or neither preferred | 4 |
+
+All six decisive choices favored the revision. Two comments attached to ties
+described the revision as slightly better, but the required choice remains a
+tie and is counted as such. No comment reported missing facts, changed logic,
+or damaged attribution.
+
+The comments also narrow the interpretation:
+
+- one tied pair was described as having little initial smell, so a small edit
+  produced no meaningful difference;
+- the one-sentence emphasis removal was judged to make no difference;
+- a retained sentence about cloud changes requiring engineering support was
+  still described as an AI-smelling abstraction;
+- the revised multi-tool passage was preferred, while the reader specifically
+  rejected `相反`, `这样一来`, and `它真正解决的` as empty or misleading
+  relation framing;
+- splitting the VBench result from the capability claim improved preference,
+  but the reader still identified the original combined sentence as difficult.
+
+Across the first and second intervention rounds, the descriptive total is
+eight revised wins, zero original wins, and five ties. Both rounds used the
+same reader, and the passages were deliberately selected rather than sampled
+for population inference. Four second-round passages also come from one
+document. The result therefore strengthens the intervention direction but does
+not establish generalization or justify an “intervention validated” status.
+
+The complete versioned outcome is stored in
+`data/annotations/refinement-pairwise-v2.json`.
+
 ## Blinding and reproduction
 
 The fixed seed balances the original side exactly: five originals appear as A
@@ -123,7 +162,7 @@ python experiments/prepare_refinement_pairs_v2.py `
   --seed 20260821
 ~~~
 
-Import `tasks.json` with `label_config.xml` into Label Studio. After all 10
-responses are complete, store a new versioned annotation artifact rather than
-modifying the first-round result. Report all outcomes, including ties, original
-wins, preservation concerns, and unchanged or rejected variants.
+Import `tasks.json` with `label_config.xml` into Label Studio. Store any future
+replication as a new versioned annotation artifact rather than modifying this
+completed result. Report all outcomes, including ties, original wins,
+preservation concerns, and unchanged or rejected variants.

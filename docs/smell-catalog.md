@@ -291,7 +291,8 @@ if the effect disappears after removing formatting and translated content.
 - Pilot quantified
 - Post-only reader association observed in eight passages
 - Initial intervention directionally positive: two revised wins, one tie
-- Second-round 10-pair protocol frozen; reader outcomes pending
+- Second intervention directionally positive: six revised wins, four ties,
+  zero original wins
 - Not intervention validated
 
 ### Candidate reader experience
@@ -412,7 +413,7 @@ The failed revision omitted too many explicit grammatical arguments. This is
 directional evidence only. The next version must preserve subject-predicate-
 object completeness and voice while reducing ornamental framing.
 
-The second-round implementation freezes that revised operator before outcomes.
+The second-round implementation froze that revised operator before outcomes.
 It contains 10 new post-period passages from seven documents and is disjoint
 from all 10 reader-friction development ranges. The operator retains necessary
 contrasts, explicit arguments, propositions, entities, numbers, negation,
@@ -423,8 +424,24 @@ balances the original side five-to-five.
 
 The intervention reduces the frozen surface diagnostics from nine complete
 contrast frames and 16 emphasis markers in the originals to zero counted
-instances in the revisions. This verifies manipulation fidelity only. No
-second-round reader outcome exists, so the evidence status is not promoted.
+instances in the revisions. This verifies manipulation fidelity only.
+
+Six revised passages were clearly preferred, no original was clearly
+preferred, and four comparisons were ties or neither-preferred. Two tied
+comments described the revision as slightly better, but they remain ties in
+the primary outcome. No comment reported missing facts or changed logic.
+
+The comments also identify boundaries. Minimal edits to low-smell passages can
+be imperceptible. Removing formulaic contrast does not remove every abstract or
+generic claim around it. In one preferred revision, the reader specifically
+described `相反`, `这样一来`, and `它真正解决的` as empty or misleading
+relation framing. In one tie, a retained statement about cloud changes
+“naturally” requiring engineering support was still disliked.
+
+The two intervention rounds total eight revised wins, zero original wins, and
+five ties. They use one reader, selected InfoQ passages, and repeated passages
+from one document. The evidence status is therefore not promoted to
+“intervention validated.”
 
 Reproduce the frozen batch with:
 

@@ -2,10 +2,9 @@
 
 ## Checkpoint: 2026-08-21
 
-This checkpoint includes the first deterministic discourse-graph probe, the
-first three blinded refinement comparisons, and a frozen second-round
-intervention batch awaiting reader outcomes. It is an exploratory research
-checkpoint, not a product milestone.
+This checkpoint includes the first deterministic discourse-graph probe and two
+completed rounds of blinded refinement comparisons. It is an exploratory
+research checkpoint, not a product milestone.
 
 ## Completed work
 
@@ -24,7 +23,7 @@ checkpoint, not a product milestone.
   leave-one-document-out stability.
 - Prepared and completed three blinded minimal-edit comparisons targeting
   formulaic contrastive and emphatic reframing.
-- Froze a conservative second-round edit operator and prepared 10 new blinded
+- Froze a conservative second-round edit operator and completed 10 new blinded
   comparisons across seven post-period documents without overlapping any of
   the 10 reader-friction development ranges.
 
@@ -79,7 +78,7 @@ The next edit operator therefore needs two additional constraints:
 
 This pilot does not yet validate formulaic contrast as a product rule.
 
-## Second intervention preparation
+## Second intervention result
 
 Protocol `conservative-contrast-reduction-2.0` was frozen before any
 second-round outcome was available. The operator removes ornamental contrast
@@ -103,8 +102,31 @@ with an operator code, reason, and linked claim IDs. The generated audit has:
 All generation gates pass. The frozen surface diagnostics decrease from nine
 complete contrast frames and 16 emphasis markers to zero counted instances in
 the revised passages. This confirms that the manipulation occurred; it is not
-evidence that the revisions are better. No second-round reader result exists
-at this checkpoint.
+itself evidence that the revisions are better.
+
+The blinded outcome is:
+
+| Outcome | Count |
+|---|---:|
+| Revised version clearly preferred | 6 |
+| Original version clearly preferred | 0 |
+| Tie or neither preferred | 4 |
+
+All six decisive choices favored the revision. Two tied comments described the
+revision as slightly better, but they remain ties in the primary count. No
+comment identified missing facts or changed logic.
+
+The comments show two important limits. A low-smell passage and a one-sentence
+emphasis removal produced no meaningful difference. Another revision retained
+the sentence `因为云上变更天然需要工程化承接`, which the reader still described
+as AI-smelling abstraction. The current operator can reduce staged relation
+framing without making every surrounding sentence readable.
+
+Across both intervention rounds, the descriptive total is eight revised wins,
+zero original wins, and five ties. The same reader completed both rounds, the
+passages were deliberately selected, all sources are InfoQ, and four
+second-round passages come from one document. This is stronger directional
+evidence, not generalization or intervention validation.
 
 ## Outlier policy and current limitation
 
@@ -123,6 +145,8 @@ weights are used in the current time comparison.
 
 - `data/annotations/reader-friction-v1.json`: 10 quick ratings.
 - `data/annotations/refinement-pairwise-v1.json`: three blinded A/B outcomes.
+- `data/annotations/refinement-pairwise-v2.json`: 10 conservative second-round
+  outcomes with frozen artifact fingerprints and operation identities.
 - `src/deaiodorant/analysis/discourse_graph.py`: graph schema and metrics.
 - `experiments/analyze_reader_friction.py`: post-only ordinal association.
 - `experiments/robust_typicality_probe.py`: cohort-wise Huber analysis.
@@ -138,17 +162,17 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 
 ## Next research step
 
-Do not build a product interface or train a general classifier. Run the frozen
-second intervention batch without changing its operator or passages:
+Do not build a product interface or train a general classifier. The next step
+is a held-out replication, not another revision of these 10 pairs:
 
-1. collect one low-burden blinded continue-reading preference per pair;
-2. keep optional comments optional and do not ask the reader to classify
-   features;
-3. store all 10 outcomes in a new versioned annotation artifact;
-4. report original wins, revised wins, ties, preservation concerns, and
-   rejected variants without retuning this batch;
-5. use the complete batch to decide whether a broader held-out replication is
-   justified.
+1. freeze a small multi-reader protocol using new passages across at least
+   three genres;
+2. retain the same required continue-reading choice and optional comment;
+3. keep the current operator unchanged so the replication tests rather than
+   retunes it;
+4. record meaning-preservation concerns separately from reading preference;
+5. treat residual abstract engineering claims as a new hypothesis, not a
+   post-hoc extension of the completed operator.
 
 In parallel, run the same graph features on the larger matched corpus when it
 arrives. Match source, topic, format, length, and visibility before interpreting

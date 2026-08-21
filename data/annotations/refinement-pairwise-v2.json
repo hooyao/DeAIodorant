@@ -1,0 +1,219 @@
+{
+  "schema_version": "deaiodorant-refinement-pairwise-2.0",
+  "protocol_version": "conservative-contrast-reduction-2.0",
+  "project": "DeAIodorant Refinement Pairwise v2",
+  "completed_at": "2026-08-21",
+  "seed": 20260821,
+  "source": {
+    "application": "Label Studio 1.23.0",
+    "project_id": 1,
+    "tasks_sha256": "48cdeaf93014ecb4080f722ae841f8d21685f55b1cc392e5d1e47c1c7b55e3b8",
+    "answer_key_sha256": "90e95288e5558f642cdec97b501932cac99653507b9c436f65d99eb238ce1408",
+    "protocol_sha256": "1a26b29ccf8a6057628ec5df985f0911e73a53242cef522c26747bdb1e5491dc",
+    "label_config_sha256": "9f3a55c8e2e6191ff43c0d27558ffb77ea1fa15a98bbf0c5ac7e173083283a27"
+  },
+  "rating_question": "哪个版本让你更愿意继续读？",
+  "rating_scale": [
+    "A，更愿意继续读",
+    "B，更愿意继续读",
+    "差不多或都不想继续读"
+  ],
+  "summary": {
+    "pair_count": 10,
+    "revised_preferred": 6,
+    "original_preferred": 0,
+    "tie_or_neither": 4,
+    "decisive_pair_count": 6,
+    "revised_share_among_decisive": 1.0,
+    "comment_count": 8,
+    "cancelled_count": 0
+  },
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "contrast-v2-10",
+      "doc_id": "b186cdd4f9004e0413395bf3",
+      "month": "2026-05",
+      "target_lines": [169, 174],
+      "original_side": "B",
+      "preference": "A，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": "B很绕口",
+      "lead_time_seconds": 125.209,
+      "submitted_at_utc": "2026-08-21T15:09:41.184400Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-10-op-01", "operator": "direct_contrast"},
+        {"id": "contrast-v2-10-op-02", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v2-10-op-03", "operator": "merge_repeated_reframing"},
+        {"id": "contrast-v2-10-op-04", "operator": "remove_ornamental_emphasis"}
+      ]
+    },
+    {
+      "task_number": 2,
+      "pair_id": "contrast-v2-01",
+      "doc_id": "b77b09a419c1631227112f0c",
+      "month": "2026-03",
+      "target_lines": [7, 10],
+      "original_side": "B",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": "这两个几乎没有差别，而且AI臭味也不严重",
+      "lead_time_seconds": 128.255,
+      "submitted_at_utc": "2026-08-21T15:11:57.214227Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-01-op-01", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v2-01-op-02", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v2-01-op-03", "operator": "clarify_argument_structure"}
+      ]
+    },
+    {
+      "task_number": 3,
+      "pair_id": "contrast-v2-07",
+      "doc_id": "44aa81958a6c585ee8c06847",
+      "month": "2026-01",
+      "target_lines": [1, 6],
+      "original_side": "B",
+      "preference": "A，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": "A比B好的不多，只是稍微干净一点",
+      "lead_time_seconds": 94.293,
+      "submitted_at_utc": "2026-08-21T15:13:31.675065Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-07-op-01", "operator": "merge_repeated_reframing"},
+        {"id": "contrast-v2-07-op-02", "operator": "clarify_argument_structure"},
+        {"id": "contrast-v2-07-op-03", "operator": "clarify_argument_structure"},
+        {"id": "contrast-v2-07-op-04", "operator": "clarify_argument_structure"}
+      ]
+    },
+    {
+      "task_number": 4,
+      "pair_id": "contrast-v2-06",
+      "doc_id": "3c60dc0a981b686870095450",
+      "month": "2026-06",
+      "target_lines": [82, 90],
+      "original_side": "A",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": "几乎没有区别，B略微好一点点",
+      "lead_time_seconds": 89.842,
+      "submitted_at_utc": "2026-08-21T15:15:01.684374Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-06-op-01", "operator": "direct_contrast"},
+        {"id": "contrast-v2-06-op-02", "operator": "merge_repeated_reframing"}
+      ]
+    },
+    {
+      "task_number": 5,
+      "pair_id": "contrast-v2-03",
+      "doc_id": "3c60dc0a981b686870095450",
+      "month": "2026-06",
+      "target_lines": [3, 7],
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 69.456,
+      "submitted_at_utc": "2026-08-21T15:16:11.303846Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-03-op-01", "operator": "direct_contrast"},
+        {"id": "contrast-v2-03-op-02", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v2-03-op-03", "operator": "direct_contrast"}
+      ]
+    },
+    {
+      "task_number": 6,
+      "pair_id": "contrast-v2-09",
+      "doc_id": "0431c592d5de8246cebcb8e2",
+      "month": "2025-10",
+      "target_lines": [21, 23],
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 57.856,
+      "submitted_at_utc": "2026-08-21T15:17:09.313770Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-09-op-01", "operator": "direct_contrast"},
+        {"id": "contrast-v2-09-op-02", "operator": "remove_ornamental_emphasis"}
+      ]
+    },
+    {
+      "task_number": 7,
+      "pair_id": "contrast-v2-04",
+      "doc_id": "3c60dc0a981b686870095450",
+      "month": "2026-06",
+      "target_lines": [51, 58],
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": "A 相反,这样一来,它真正解决的 都是AI恶臭，干扰阅读，没有实际意义，人类也不会这么用，比如“它让 Agent 沿着成熟工具链进入云：CLI 负责命令执行，SDK 负责程序化接入，Terraform 承接 IaC 编排和状态管理，MCP Server 则把云能力以标准方式暴露给 Agent。” 这更本就不是反面",
+      "lead_time_seconds": 113.919,
+      "submitted_at_utc": "2026-08-21T15:19:03.385880Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-04-op-01", "operator": "merge_repeated_reframing"},
+        {"id": "contrast-v2-04-op-02", "operator": "direct_contrast"}
+      ]
+    },
+    {
+      "task_number": 8,
+      "pair_id": "contrast-v2-05",
+      "doc_id": "3c60dc0a981b686870095450",
+      "month": "2026-06",
+      "target_lines": [59, 68],
+      "original_side": "B",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": "A略好，但是像这种话“因为云上变更天然需要工程化承接” 也是AI恶臭",
+      "lead_time_seconds": 92.091,
+      "submitted_at_utc": "2026-08-21T15:20:35.651499Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-05-op-01", "operator": "clarify_argument_structure"},
+        {"id": "contrast-v2-05-op-02", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v2-05-op-03", "operator": "direct_contrast"},
+        {"id": "contrast-v2-05-op-04", "operator": "remove_ornamental_emphasis"}
+      ]
+    },
+    {
+      "task_number": 9,
+      "pair_id": "contrast-v2-08",
+      "doc_id": "48bda219eb0776f623161899",
+      "month": "2026-01",
+      "target_lines": [17, 21],
+      "original_side": "B",
+      "preference": "A，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": "B的这段“在 VBench 测试中，LingBot-World 全面领先于 Yume-1.5 和 HY World-1.5 等先进开源模型，证明了自己不仅是一个视频生成器，更是一个强大的交互式模拟器。通过接收用户输入的动作指令，它能够生成高度动态且物理一致的视觉反馈，保持在高动态度下的整体一致性，使视频内容在长时间段内始终与最初的提示保持一致。” 非常难读",
+      "lead_time_seconds": 73.574,
+      "submitted_at_utc": "2026-08-21T15:21:49.398400Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-08-op-01", "operator": "direct_contrast"}
+      ]
+    },
+    {
+      "task_number": 10,
+      "pair_id": "contrast-v2-02",
+      "doc_id": "a127f5baf364930a89fb4005",
+      "month": "2025-10",
+      "target_lines": [8, 15],
+      "original_side": "A",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": "没有任何区别",
+      "lead_time_seconds": 47.062,
+      "submitted_at_utc": "2026-08-21T15:22:36.628597Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "contrast-v2-02-op-01", "operator": "remove_ornamental_emphasis"}
+      ]
+    }
+  ]
+}
