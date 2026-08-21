@@ -291,6 +291,7 @@ if the effect disappears after removing formatting and translated content.
 - Pilot quantified
 - Post-only reader association observed in eight passages
 - Initial intervention directionally positive: two revised wins, one tie
+- Second-round 10-pair protocol frozen; reader outcomes pending
 - Not intervention validated
 
 ### Candidate reader experience
@@ -410,6 +411,32 @@ judgment. Both successful revisions were described as clearer but too cold.
 The failed revision omitted too many explicit grammatical arguments. This is
 directional evidence only. The next version must preserve subject-predicate-
 object completeness and voice while reducing ornamental framing.
+
+The second-round implementation freezes that revised operator before outcomes.
+It contains 10 new post-period passages from seven documents and is disjoint
+from all 10 reader-friction development ranges. The operator retains necessary
+contrasts, explicit arguments, propositions, entities, numbers, negation,
+qualifications, uncertainty, attribution, and selected voice cues. Its
+structured audit contains 26 exact before/after operations and 62 proposition-
+support checks. All deterministic generation gates pass, and the fixed seed
+balances the original side five-to-five.
+
+The intervention reduces the frozen surface diagnostics from nine complete
+contrast frames and 16 emphasis markers in the originals to zero counted
+instances in the revisions. This verifies manipulation fidelity only. No
+second-round reader outcome exists, so the evidence status is not promoted.
+
+Reproduce the frozen batch with:
+
+~~~powershell
+python experiments/prepare_refinement_pairs_v2.py `
+  --corpus-root data/pilot/monthly `
+  --output-dir feature_runs/refinement-pairs-v2 `
+  --seed 20260821
+~~~
+
+The protocol, exclusions, and limitations are documented in
+[Second-Round Conservative Contrast Intervention](../experiments/refinement-pairs-v2.md).
 
 ### Promotion condition
 
