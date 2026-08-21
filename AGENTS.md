@@ -11,6 +11,10 @@ Optimize for reader experience, not AI-detector evasion. This project does not
 classify individual documents as human- or AI-authored and must not claim that
 its pre/post cohorts prove authorship for any individual document.
 
+Corpus differences and machine-learning separability are hypothesis generators,
+not the product objective. A writing pattern becomes a refinement target only
+when a bounded edit improves blinded reader preference without meaning loss.
+
 ## Constitution
 
 The following rules are non-negotiable and take precedence over local style
@@ -92,6 +96,9 @@ compatibility or documenting a deliberate breaking change.
    rate limits, or explicit data-service restrictions.
 9. Preserve `main` at its initialization commit. Commit current work only to
    `init` unless the maintainer explicitly authorizes a branch-policy change.
+10. Do not train a human-versus-AI classifier as a proxy for refinement quality.
+    Evaluate edits against unchanged text using reader preference and
+    preservation gates.
 
 ## Corpus invariants
 
@@ -144,6 +151,10 @@ Refinement features must:
 - avoid fabricating anecdotes, sources, personal experience, or authority;
 - evaluate Chinese fluency and discourse structure directly;
 - keep source text and generated variants out of logs by default.
+- treat willingness to continue reading as the primary product outcome;
+- keep feature distance and perceived authorship as diagnostics only;
+- validate candidate smell patterns through editing interventions before
+  turning them into product rules.
 
 ## Development commands
 
@@ -183,6 +194,8 @@ Flag changes that:
 - admit ambiguous translations despite the fail-closed policy;
 - compare cohorts without accounting for source or visibility imbalance;
 - optimize the product around AI-detector scores;
+- optimize the product around human-versus-AI classification accuracy;
+- treat a pre/post feature difference as a validated reader-disliked pattern;
 - drop meaning-preservation checks from a refinement path;
 - add scraping behavior that bypasses source restrictions;
 - commit secrets, personal data, model weights, or unexplained large artifacts;

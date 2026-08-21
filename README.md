@@ -60,7 +60,8 @@ source acquisition
 ```
 
 See [the project roadmap](docs/roadmap.md) for phase boundaries and acceptance
-criteria.
+criteria and [the refinement roadmap](docs/refinement-roadmap.md) for the
+alternative methods that lead from corpus research to the product.
 
 ## What exists today
 

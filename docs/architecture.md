@@ -17,8 +17,10 @@ Acquisition adapters
     -> normalized document store
     -> quality / visibility / translation gates
     -> matched corpus builder
-    -> linguistic analysis and pattern catalog
-    -> evaluation datasets and metrics
+    -> linguistic analysis and smell hypotheses
+    -> minimal editing interventions
+    -> blinded reader preference
+    -> validated edit-operation catalog
     -> refinement planner
     -> constrained Chinese rewriter
     -> semantic and factual verification
@@ -48,7 +50,15 @@ classifier training set for labeling arbitrary documents as human or AI.
 
 Stores measurable Chinese writing phenomena with examples, extraction logic,
 confounders, and observed effect sizes. A pattern becomes a product rule only
-after it survives held-out validation and reader evaluation.
+after a bounded editing intervention improves blinded reader preference without
+meaning loss. Corpus separation alone is insufficient.
+
+### Reader evaluation
+
+Uses the same source passage across unchanged, rule-edited, model-edited, and
+human-edited variants. The primary outcome is willingness to continue reading,
+not perceived authorship. Preservation failures are recorded separately from
+style preference.
 
 ### Deterministic feature package
 
