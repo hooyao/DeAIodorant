@@ -50,6 +50,15 @@ Stores measurable Chinese writing phenomena with examples, extraction logic,
 confounders, and observed effect sizes. A pattern becomes a product rule only
 after it survives held-out validation and reader evaluation.
 
+### Deterministic feature package
+
+`deaiodorant.analysis` is a read-only consumer of prepared corpora. It validates
+cohort dates and content hashes and converts direct text measurements plus fixed
+CoNLL-U annotations into a self-describing document-feature matrix. Statistical
+comparison is deliberately outside the current component boundary. The feature
+path contains no LLM calls. Syntax-model provenance, input fingerprints,
+configuration, seeds, and output hashes are recorded in immutable manifests.
+
 ### Refinement engine
 
 Separates diagnosis, edit planning, rewriting, and verification. The engine

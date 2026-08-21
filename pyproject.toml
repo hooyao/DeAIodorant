@@ -17,6 +17,12 @@ dependencies = [
 dev = [
   "pytest>=8.0",
 ]
+syntax = [
+  "stanza==1.14.0",
+]
+
+[project.scripts]
+deaiodorant-analysis = "deaiodorant.analysis.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

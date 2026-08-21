@@ -36,6 +36,10 @@ Exit criteria:
 
 ## Phase 2: Chinese writing-pattern analysis
 
+Current status: deterministic document-feature extraction and a versioned v1
+feature catalog exist. Statistical comparison and formal corpus-dependent
+results remain pending.
+
 Deliverables:
 
 - preregistered feature families covering vocabulary, syntax, discourse,

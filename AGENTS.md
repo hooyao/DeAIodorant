@@ -36,9 +36,9 @@ preferences:
 
 ## Current state
 
-The repository currently contains the research and corpus-acquisition
-foundation. The refinement engine, evaluation package, CLI, and API are planned
-but not implemented.
+The repository currently contains the corpus-acquisition foundation and a
+deterministic non-LLM corpus-analysis CLI. The refinement engine, product
+evaluation package, and product API are planned but not implemented.
 
 Important facts that must remain visible in related work:
 
@@ -57,6 +57,10 @@ Important facts that must remain visible in related work:
 ## Repository map
 
 - `src/deaiodorant/`: product package namespace; new reusable code belongs here.
+- `src/deaiodorant/analysis/`: read-only deterministic feature extraction,
+  Universal Dependencies processing, and feature metadata.
+- `configs/`: versioned analysis configurations; treat a configuration as
+  immutable after its feature matrix has been used for analysis.
 - `pilot_collect.py`: current monolithic acquisition pilot.
 - `translation_*.py`: translation benchmark construction and evaluation.
 - `tests/`: automated tests.

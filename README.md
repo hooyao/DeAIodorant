@@ -12,8 +12,9 @@ productivity benefits of generative AI without sacrificing reader attention,
 voice, or clarity.
 
 > **Project status:** research foundation. The repository currently implements
-> a corpus-acquisition pilot and a translation-content gate. It does not yet
-> contain the text-refinement engine.
+> a corpus-acquisition pilot, a translation-content gate, and a deterministic
+> non-LLM feature-extraction framework. It does not yet contain the text-refinement
+> engine.
 
 ## Product principles
 
@@ -79,10 +80,17 @@ The tracked `data/pilot/` directory is pilot material, not a clean research
 corpus. It includes known problematic examples retained for evaluation and
 reproducibility.
 
+The analysis package is intentionally separate from collection. It consumes a
+future prepared monthly corpus, validates frozen metadata and content hashes,
+extracts model-free surface features and fixed Universal Dependencies syntax
+features, and writes a self-describing numeric matrix. It never calls an LLM or
+makes a statistical claim.
+
 ## Repository layout
 
 ```text
 src/deaiodorant/            Python package namespace for the future product
+src/deaiodorant/analysis/   Reproducible document-feature extraction
 pilot_collect.py            Corpus acquisition and extraction pilot
 translation_eval.py         Translation-gate development-set tooling
 translation_holdout.py      Validation and holdout construction
@@ -92,6 +100,34 @@ data/                       Pilot corpora and benchmark artifacts
 benchmark_results/          Published benchmark summaries
 docs/                       Research protocol, architecture, and roadmap
 ```
+
+## Reproducible non-LLM feature extraction
+
+Install the optional fixed syntax parser:
+
+~~~powershell
+python -m pip install -e ".[dev,syntax]"
+deaiodorant-analysis download-syntax-model --model-dir models/stanza
+~~~
+
+Once the formal corpus is available, freeze Universal Dependencies annotations
+and extract the feature matrix:
+
+~~~powershell
+deaiodorant-analysis annotate --corpus data/final/monthly --config configs/features.v1.json --model-dir models/stanza --output feature_runs/annotations-v1 --device cpu
+
+deaiodorant-analysis extract --corpus data/final/monthly --config configs/features.v1.json --annotations feature_runs/annotations-v1 --output feature_runs/matrix-v1
+~~~
+
+The matrix contains character, structural, punctuation, discourse, title,
+lexical, POS, and dependency-tree features. See
+[the feature catalog](docs/feature-catalog.md) for formulas, units, and known
+sensitivities. Additional traditional NLP feature spaces are tracked in
+[feature exploration directions](docs/feature-directions.md).
+
+The same extraction run also emits a cohort-blind sparse stylometry vocabulary
+covering character/POS n-grams, function words, sentence openings, punctuation
+runs, and dependency treelets.
 
 ## Setup
 
