@@ -409,6 +409,267 @@ Promote only if:
 
 ---
 
+## SMELL-003: Low-information expansion and broken proposition chain
+
+### Status
+
+- Reader reported
+- Hypothesis
+- Partially supported by pilot examples
+- Not systematically quantified
+- Not intervention validated
+
+### Reader experience
+
+The passage appears long and structured, but the reader receives little new
+information. Several sentences rename, reframe, announce, or metaphorically
+repeat the same idea. Abstract placeholders delay the concrete payload, and
+logical connectives imply a relationship that the surrounding propositions do
+not make explicit.
+
+The result is not simple word repetition. It is a poor information-to-reading-
+effort ratio and a proposition chain that repeatedly loses or postpones its
+mainline.
+
+### Source example
+
+Document:
+
+~~~text
+data/pilot/monthly/2026-06/3c60dc0a981b686870095450.txt
+~~~
+
+Relevant lines: 36–42.
+
+Observed subtypes:
+
+1. **Restatement without payload**
+   - “阿里云这次要做的，正是围绕 Agent 重新整理云开放平台的底层链路。”
+   - “更准确地说，它是在给 Agent 操作云资源加上一套工程化的‘安全带’。”
+   - The second sentence announces greater precision but replaces an abstract
+     claim with a metaphor rather than adding a concrete mechanism.
+2. **Parallel restatement**
+   - “Agent 可以自动化，但不能无边界地自动化；Agent 可以自主执行，但必须被……约束住。”
+   - Two balanced clauses carry substantially overlapping propositions.
+3. **Abstract payload delay**
+   - “这套体系可以拆成三层。每一层，处理的都是一种不确定性。”
+   - The prose announces structure and an abstract category before delivering
+     the first concrete layer.
+4. **Weak discourse bridge**
+   - The behavior comparison is followed by “因此，Gateway 不能只被看作普通的流量入口。”
+   - The connective announces a conclusion, but the concrete mechanism and
+     responsibilities arrive only afterward.
+5. **Subject-predicate interruption**
+   - “每一层，处理的都是一种不确定性。”
+   - The comma separates a short subject from its predicate without a clear
+     information-structural need.
+
+These are reader observations to be encoded and tested, not final grammatical
+or semantic judgments.
+
+### Human proposition annotation protocol v1
+
+An atomic proposition is the smallest clause-level unit that can be evaluated
+as true or false while retaining its necessary arguments and modality.
+
+For each proposition, record one label:
+
+| Label | Definition |
+|---|---|
+| NEW | Adds a concrete actor, action, mechanism, constraint, relation, quantity, or consequence |
+| RESTATEMENT | Rephrases a proposition already present in the preceding context |
+| META | Announces structure, importance, precision, or interpretation without adding the announced payload |
+| PLACEHOLDER | Uses an abstract reference whose concrete content is delivered later or remains unclear |
+| UNSUPPORTED_LINK | Uses a causal, contrastive, or clarifying relation without an explicit local bridge |
+
+Annotators also mark the character span supporting each label. A proposition
+may have NEW content plus a separate META span, but it cannot be both NEW and
+RESTATEMENT as a whole.
+
+Use two independent annotators for calibration. Resolve disagreements only
+after calculating raw agreement and Cohen's kappa.
+
+### Core metrics
+
+#### New proposition density v1
+
+~~~text
+new_proposition_density =
+    NEW propositions / non-whitespace Chinese characters * 100
+~~~
+
+Low values indicate that reading length grows faster than concrete
+propositional content.
+
+#### Restatement proposition ratio v1
+
+~~~text
+restatement_proposition_ratio =
+    RESTATEMENT propositions / all propositions
+~~~
+
+#### Framing overhead v1
+
+~~~text
+framing_overhead =
+    characters inside META or PLACEHOLDER spans
+    / non-whitespace Chinese characters
+~~~
+
+#### Unsupported discourse-link rate v1
+
+~~~text
+unsupported_discourse_link_rate =
+    UNSUPPORTED_LINK instances
+    / explicit causal, contrastive, and clarification connectives
+~~~
+
+#### Payload delay v1
+
+For announcements such as “three layers,” “the following aspects,” or “one
+kind of uncertainty”:
+
+~~~text
+payload_delay =
+    syntactic tokens from the abstract announcement
+    to the first concrete named item or mechanism
+~~~
+
+Report the mean, 90th percentile, and maximum per document.
+
+#### Abstract shell density v1
+
+Maintain a versioned shell-noun lexicon including context-dependent uses of:
+
+~~~text
+问题, 体系, 链路, 逻辑, 判断, 层面, 维度, 能力, 方式, 模式,
+价值, 意义, 不确定性, 底层, 框架
+~~~
+
+~~~text
+abstract_shell_density =
+    shell-noun mentions / content-word tokens * 100
+~~~
+
+The lexicon count is a weak signal. A shell noun is not a smell when its
+concrete content is immediately supplied.
+
+#### Sentence information novelty v1
+
+Use a traditional, reproducible approximation:
+
+1. extract content lemmas and dependency subject-predicate-object tuples;
+2. calculate corpus-frozen IDF weights;
+3. compare the current sentence with the preceding three sentences;
+4. count content units not already present or matched through a frozen synonym
+   lexicon.
+
+~~~text
+sentence_information_novelty =
+    IDF weight of new content units
+    / IDF weight of all current-sentence content units
+~~~
+
+Static TF-IDF and dependency tuples will miss metaphorical restatement, such as
+“reorganize the chain” versus “add a safety belt.” Human annotation remains the
+gold standard for calibration.
+
+#### Subject-predicate comma rate v1
+
+Using the fixed dependency parse:
+
+~~~text
+subject_predicate_comma_rate =
+    clauses with punctuation between a short nominal subject
+    and its governing predicate
+    / finite clauses
+~~~
+
+Report short-subject thresholds separately. Do not treat topic-comment
+constructions or long subjects as automatic errors.
+
+### Automated candidate ranking
+
+Do not decide this smell with one regular expression. Rank paragraphs using a
+small transparent model whose inputs are:
+
+- proposition novelty approximation;
+- adjacent-sentence TF-IDF similarity;
+- repeated dependency tuples;
+- framing-marker and abstract-shell density;
+- payload delay;
+- explicit-connective bridge overlap;
+- subject-predicate comma events;
+- entity and noun-chain continuity;
+- paragraph length and sentence count as controls.
+
+Train Logistic Regression or a shallow tree model only after human labels
+exist. The target is paragraph-level smell localization, not human-versus-AI
+classification.
+
+### Reproduction and calibration set
+
+Initial calibration:
+
+- source: the current 20 InfoQ documents;
+- sample 50 paragraphs across both periods without displaying cohort;
+- include the 20 highest automatic candidates and 30 random paragraphs;
+- annotate proposition labels and an overall “low information / broken chain”
+  judgment;
+- report precision on ranked candidates and agreement between annotators.
+
+Freeze:
+
+- sentence splitter;
+- Stanza model fingerprint;
+- shell-noun and connective lexicons;
+- synonym resource;
+- TF-IDF vocabulary and IDF values;
+- context window;
+- all thresholds.
+
+### Known confounders
+
+- introductions and summaries legitimately contain restatement;
+- tutorials may announce structure before delivering it;
+- technical definitions require abstract shell nouns;
+- rhetorical parallelism can be intentional and effective;
+- topic shifts can lower lexical overlap while adding real information;
+- metaphors defeat lexical similarity metrics;
+- parser errors affect proposition tuples and subject-predicate detection;
+- excerpts can appear contextless when surrounding sections are omitted.
+
+### Minimum intervention experiment
+
+Select 20 paragraphs with high human-confirmed framing overhead.
+
+Produce a conservative version that:
+
+- removes META and RESTATEMENT spans;
+- replaces PLACEHOLDER spans with their concrete payload when already present;
+- moves delayed mechanisms next to their claim;
+- removes unsupported connectives rather than inventing a missing premise;
+- preserves all NEW propositions, entities, numbers, negation, and modality.
+
+Compare unchanged and compressed versions blindly. Ask:
+
+1. Which is easier to follow?
+2. Which delivers more useful information for the reading effort?
+3. Did the edit remove any necessary reasoning or context?
+
+### Promotion condition
+
+Promote to “intervention validated” only if:
+
+- two annotators can apply the proposition labels with acceptable agreement;
+- ranked paragraphs have substantially higher smell prevalence than random
+  paragraphs;
+- conservative removal improves blinded reader preference;
+- factual and logical content is preserved;
+- the result replicates across more than one genre.
+
+---
+
 ## Watchlist: not yet cataloged as smells
 
 | Candidate | Pilot observation | Current decision |
