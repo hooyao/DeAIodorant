@@ -1,0 +1,62 @@
+{
+  "schema_version": "deaiodorant-refinement-pairwise-1.0",
+  "project": "Chinese Refinement Pairwise v1",
+  "completed_at": "2026-08-21",
+  "seed": 20260821,
+  "summary": {
+    "pair_count": 3,
+    "revised_preferred": 2,
+    "original_preferred": 0,
+    "tie_or_both_bad": 1
+  },
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "contrast-03",
+      "doc_id": "3c60dc0a981b686870095450",
+      "target_lines": [79, 81],
+      "original_side": "B",
+      "preference": "差不多或都不好",
+      "outcome": "tie_or_both_bad",
+      "comment": "A主谓宾省略了很多，读了吃力，B有很多AI的特征，指向...事， 喜欢用冒号，喜欢不是而是，喜欢破折号，不过通顺性上比A好些",
+      "lead_time_seconds": 571.456,
+      "operations": [
+        "Remove depth-announcement and direction-announcement metadiscourse.",
+        "Replace two paired contrast frames and the shackle metaphor with direct process claims.",
+        "Preserve every named tool, control dimension, automation boundary, and production-validation qualification."
+      ]
+    },
+    {
+      "task_number": 2,
+      "pair_id": "contrast-02",
+      "doc_id": "0431c592d5de8246cebcb8e2",
+      "target_lines": [7, 10],
+      "original_side": "A",
+      "preference": "B 明显更好",
+      "outcome": "revised_preferred",
+      "comment": "A通篇废话，B把问题讲清楚了，但是文风太冷淡",
+      "lead_time_seconds": 76.864,
+      "operations": [
+        "Replace emphatic discovery framing with a direct causal transition.",
+        "Convert the ornamental contrast frame into two explicit claims while preserving the negation.",
+        "Remove unattributed quotation styling and repeated product-positioning phrases without changing the reported figures or product purpose."
+      ]
+    },
+    {
+      "task_number": 3,
+      "pair_id": "contrast-01",
+      "doc_id": "44aa81958a6c585ee8c06847",
+      "target_lines": [15, 22],
+      "original_side": "B",
+      "preference": "A 明显更好",
+      "outcome": "revised_preferred",
+      "comment": "解释全新的概念，B通篇废话，A至少把问题解释清楚了，虽然文风冷淡",
+      "lead_time_seconds": 93.09,
+      "operations": [
+        "Collapse repeated decision-maker and project-manager reframing into the stated routing mechanism.",
+        "Replace repeated not-X-but-Y frames with direct declarative claims.",
+        "Preserve the reasoning-chain, multi-agent selection, explainability, uncertainty, conflict-resolution, and instruction-understanding propositions."
+      ]
+    }
+  ]
+}

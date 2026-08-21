@@ -1,0 +1,102 @@
+{
+  "schema_version": "deaiodorant-reader-friction-ratings-1.0",
+  "project": "Chinese Smell Quick Rating v1",
+  "completed_at": "2026-08-21",
+  "rating_scale": {
+    "顺畅，愿意继续读": 0,
+    "有点卡，但还能读": 1,
+    "很难读，不想继续": 2
+  },
+  "ratings": [
+    {
+      "task_number": 1,
+      "doc_id": "9e271d7b118c949e83c9ff8d",
+      "month": "2022-06",
+      "target_lines": [10, 12],
+      "rating": "很难读，不想继续",
+      "comment": "信息很少，而且信息重要程度很低，但是句式繁杂，上下文乱切，逻辑跳跃",
+      "lead_time_seconds": 115.891
+    },
+    {
+      "task_number": 2,
+      "doc_id": "3c60dc0a981b686870095450",
+      "month": "2026-06",
+      "target_lines": [36, 42],
+      "rating": "有点卡，但还能读",
+      "comment": "这个主要是典型的ai排比句式，还是ai扩句，用各种无效比喻，还有语法混乱，没有主谓宾",
+      "lead_time_seconds": 62.042
+    },
+    {
+      "task_number": 3,
+      "doc_id": "48a7a6192771112323fd6820",
+      "month": "2026-02",
+      "target_lines": [119, 125],
+      "rating": "有点卡，但还能读",
+      "comment": "句法指代混乱，上下文跳跃混乱",
+      "lead_time_seconds": 50.284
+    },
+    {
+      "task_number": 4,
+      "doc_id": "b77b09a419c1631227112f0c",
+      "month": "2026-03",
+      "target_lines": [19, 22],
+      "rating": "有点卡，但还能读",
+      "comment": "这个其实大部分还行，“大模型+小模型”协同，最大化释放有限算力价值 这个比较ai味，这种架构设计可以让企业的有限算力得到分层利用：小模型支持专项场景任务的高效完成 这个冒号有点臭味",
+      "lead_time_seconds": 105.54
+    },
+    {
+      "task_number": 5,
+      "doc_id": "44aa81958a6c585ee8c06847",
+      "month": "2026-01",
+      "target_lines": [15, 22],
+      "rating": "很难读，不想继续",
+      "comment": "这个真是一坨垃圾了，各种莫名其妙的比喻，语法狗屁不通，上下文混乱，反正我完全看不懂",
+      "lead_time_seconds": 115.287
+    },
+    {
+      "task_number": 6,
+      "doc_id": "bf1abf6ca461ec0bbac14bd7",
+      "month": "2022-01",
+      "target_lines": [28, 32],
+      "rating": "顺畅，愿意继续读",
+      "comment": "这段我看不大出是ai写的，没什么臭味",
+      "lead_time_seconds": 93.614
+    },
+    {
+      "task_number": 7,
+      "doc_id": "0431c592d5de8246cebcb8e2",
+      "month": "2025-10",
+      "target_lines": [7, 10],
+      "rating": "很难读，不想继续",
+      "comment": "典型的ai扩句，把信息内容很低的文本通过添加标点，无出处的引用 ““大多数关系不会突然破裂，而是在日复一日的相处中，因缺乏持续的情感联结慢慢褪色。” 莫名奇妙的双引号 ““每日简单且有意义互动””， 还有逻辑碎片化",
+      "lead_time_seconds": 141.25
+    },
+    {
+      "task_number": 8,
+      "doc_id": "213dcab213f816c7c548fc09",
+      "month": "2026-04",
+      "target_lines": [270, 275],
+      "rating": "有点卡，但还能读",
+      "comment": "这像是早期AI的文本，臭味不强，可以读一读",
+      "lead_time_seconds": 79.849
+    },
+    {
+      "task_number": 9,
+      "doc_id": "48bda219eb0776f623161899",
+      "month": "2026-01",
+      "target_lines": [67, 71],
+      "rating": "有点卡，但还能读",
+      "comment": "每一句话的逻辑都明显断开。语法也生硬。",
+      "lead_time_seconds": 89.355
+    },
+    {
+      "task_number": 10,
+      "doc_id": "3c60dc0a981b686870095450",
+      "month": "2026-06",
+      "target_lines": [79, 81],
+      "rating": "很难读，不想继续",
+      "comment": "妥妥的ai生成的无任何可读性的垃圾，我看到“指向一件比“接口好不好用”更深的事” 的时候就会把这个文章关了，后边的文字果然验证了我的预测。这个文章没有一点逻辑上的通顺也语言上的可读性",
+      "lead_time_seconds": 101.502
+    }
+  ]
+}

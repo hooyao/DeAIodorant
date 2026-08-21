@@ -289,7 +289,8 @@ if the effect disappears after removing formatting and translated content.
 
 - Hypothesis
 - Pilot quantified
-- Not reader reported as an independent category
+- Post-only reader association observed in eight passages
+- Initial intervention directionally positive: two revised wins, one tie
 - Not intervention validated
 
 ### Candidate reader experience
@@ -370,6 +371,11 @@ The sparse search tested 6,597 patterns, and none survived global
 Benjamini-Hochberg correction. These consolidated constructions are exploratory
 and were selected after inspection.
 
+In the later reader calibration, complete contrast-frame rate had a post-only
+Spearman correlation of 0.78 with reading friction. The exact permutation p was
+0.036, but the result did not survive correction across the expanded feature
+set and uses only eight post-period passages.
+
 ### Reproduction
 
 Use the same corpus, annotation, configuration, and commands as SMELL-001.
@@ -397,6 +403,13 @@ the actual distinction without staging it as a revelation. Compare:
 
 The primary question is whether readers prefer fewer ornamental reversals, not
 whether the construction can identify a cohort.
+
+The first three-pair implementation produced two clear preferences for the
+revised version, no preference for the original, and one tie or both-bad
+judgment. Both successful revisions were described as clearer but too cold.
+The failed revision omitted too many explicit grammatical arguments. This is
+directional evidence only. The next version must preserve subject-predicate-
+object completeness and voice while reducing ornamental framing.
 
 ### Promotion condition
 
@@ -671,6 +684,22 @@ Promote to “intervention validated” only if:
 ---
 
 ## Watchlist: not yet cataloged as smells
+
+### Deterministic discourse-graph probe
+
+The first graph representation treats sentences, dependency-derived
+propositions, entities, and abstract shell concepts as nodes. It links them
+through argument roles, entity carryover, and adjacent discourse bridges.
+
+The pilot supports weak but directionally consistent signals for lower
+adjacent-bridge strength and more mainline detours in post-period and disliked
+passages. Formulaic contrast frames remain the strongest interpretable feature
+that aligns the time comparison with post-period reader friction. Exact
+predicate-signature repetition failed as a semantic-restatement measure and
+must not be promoted.
+
+Implementation and results are recorded in
+[Deterministic Discourse Graph Probe](../experiments/discourse-graph-probe.md).
 
 | Candidate | Pilot observation | Current decision |
 |---|---|---|

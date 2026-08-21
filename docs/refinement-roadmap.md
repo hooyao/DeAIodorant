@@ -586,6 +586,14 @@ Produce:
 Exit condition: raters can distinguish meaningful quality improvements and the
 rating questions are understandable.
 
+Current exploratory checkpoint: 10 low-burden passage ratings and three
+blinded pairwise interventions have been completed. Two contrast-reduction
+variants were preferred, while one aggressive compression failed. The reader
+question is usable, but the sample is too small and the revisions exposed a
+new preservation requirement: retain explicit grammatical arguments and avoid
+flattening the text into a cold, uniformly compressed voice. See
+[Research Progress](research-progress.md).
+
 ### Experiment 1: High-precision rules
 
 Test five operations:
