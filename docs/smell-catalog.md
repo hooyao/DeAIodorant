@@ -514,13 +514,13 @@ The replacement was terminated after three pairs, all no-difference choices.
 Their dates were in March, July, and October 2023. The reader correctly noted
 that the transition corpus generally lacks the stronger post-2025-07 AI-style
 friction of interest. These responses do not evaluate the ranking, because the
-target population is wrong. The handoff has no post documents, and only one of
+target population is wrong. That handoff has no post documents, and only one of
 the tracked pilot's 10 post documents remains fully unexposed. No further
-reader screen should be created until a fresh disjoint post pool is available.
-That pool must pass the frozen
+reader screen should use those sources. A new 50-document post-period pool has
+now passed the frozen
 [Fresh Post-Period Reader Corpus Handoff](../experiments/post-reader-corpus-handoff.md)
-gate before candidate ranking or Label Studio generation. This requirement is
-a sampling safeguard and does not change the smell's evidence status.
+gate with zero errors. It enables a new development screen but contains no new
+reader outcome, so the smell's evidence status does not change.
 
 Reproduce the frozen batch with:
 

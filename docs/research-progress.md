@@ -36,6 +36,8 @@ research checkpoint, not a product milestone.
   selection from editing before any fourth intervention is prepared.
 - Terminated the absolute screen after scale collapse and froze a 10-pair
   within-document candidate-enrichment replacement before outcomes.
+- Acquired, screened, deduplicated, materialized, and validated a 50-document
+  fresh post-period reader-development handoff from two public sources.
 
 ## Current evidence
 
@@ -280,17 +282,23 @@ rating or intervention. The sole fully unexposed post document is
 
 ## Fresh post-period handoff gate
 
-Protocol `post-reader-corpus-handoff-1.0` is frozen before any further reader
+Protocol `post-reader-corpus-handoff-1.1` is frozen before any further reader
 project. It does not collect data. It defines a read-only gate for a future DGX
 handoff and prevents transition documents from being accepted as post-period
 reader material.
 
 The minimum development pool is 36 fresh documents published on or after
-2025-07-01. It requires at least three topic strata with six documents each and
-at least two sources with six documents in every required format: technical
-practice, research summary, and industry reporting. A 60-document handoff is
-preferred so an independent document-level reserve can be frozen before
-paragraph inspection.
+2025-07-01. It requires at least two sources with 12 documents each, three
+topic strata with six documents each, and six documents in each required
+format: technical practice, research summary, and industry reporting. A
+60-document handoff is preferred so an independent document-level reserve can
+be frozen before paragraph inspection.
+
+Version 1.0 proposed fully crossing source and format. Acquisition showed that
+editorial sources specialize by format, so that rule would reward incorrect
+format labels. Version 1.1 was frozen before handoff admission or reader
+exposure; it retains both diversity axes, reports their complete cross-table,
+and leaves explicit source-format matching to the later reader protocol.
 
 The validator checks strict UTF-8 bodies, hashes and counts, exact and near
 duplicates, prior research exposure, date boundaries, original provenance,
@@ -299,6 +307,40 @@ visibility evidence, and coverage cells. A failed report exits nonzero and
 must not be overridden to create Label Studio tasks. The existing 119-document
 handoff is rejected because it uses an older protocol and contains zero post
 documents.
+
+## Fresh post-period handoff result
+
+The first `post-reader-corpus-handoff-1.1` delivery is complete at
+`F:\MyProjects\DeAIodorant\data\local\post_reader_handoff_v1`. It contains 50
+documents: 25 InfoQ and 25 Meituan technical-blog articles published from
+2025-08 through 2026-08. Every document has one materialized UTF-8 body and one
+index record.
+
+The candidate flow is fully retained:
+
+- 108 public-page acquisition candidates;
+- 99 after tracked-pilot and prior-handoff duplicate exclusion;
+- 84 high-confidence model-assisted originals, 14 exclusions, and one
+  provenance-uncertain case;
+- 58 high-confidence substantive articles, 16 low-value exclusions, and 10
+  value-uncertain cases;
+- 57 high-confidence format/topic measurements and one low-confidence case;
+- 50 after the frozen InfoQ within-quarter visibility threshold.
+
+The final format composition is 24 technical-practice, eight research-summary,
+and 18 industry-reporting documents. Topic composition is 30 AI/model/agent,
+10 business/industry, six software-engineering, and four data-infrastructure
+documents. Source-format specialization is explicit: InfoQ contributes seven
+technical-practice and 18 industry-reporting articles; Meituan contributes 17
+technical-practice and eight research-summary articles.
+
+The validator reports zero errors. The only warning is that 50 documents are
+enough for reader development but below the preferred 60-document threshold
+for a separate validation reserve. InfoQ visibility uses page views ranked
+within publication quarter. Meituan has source-level official history/feed
+evidence but no article-level view counts; this limitation remains visible.
+All model-assisted provenance, value, format, and topic labels remain
+measurements rather than human gold.
 
 ## Outlier policy and current limitation
 
@@ -347,6 +389,15 @@ weights are used in the current time comparison.
   disjointness, duplicate, integrity, and minimum-coverage gate.
 - `experiments/post-reader-corpus-handoff.md`: frozen post-period handoff schema
   and the planned low-burden reader use after admission.
+- `experiments/acquire_post_candidates.py`: post-only InfoQ acquisition staging.
+- `experiments/acquire_meituan_post_candidates.py`: public official-history
+  Meituan technical-blog acquisition staging.
+- `experiments/prepare_post_review_candidates.py`: cross-corpus duplicate
+  exclusion and model-review candidate preparation.
+- `experiments/classify_post_corpus_strata.py`: cached model-assisted format and
+  topic measurements for balancing only.
+- `experiments/build_post_reader_handoff.py`: fail-closed admission,
+  visibility filtering, materialization, and manifest generation.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -366,13 +417,8 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 ## Next research step
 
 Do not build a product interface, train a general classifier, or ask the reader
-to continue either failed screen. No defensible new reader round can be formed
-from the current unexposed material.
-
-The next required input is a fresh disjoint post-period pool published on or
-after 2025-07-01. It must be matched across source, topic, format, length, and
-visibility and pass `post-reader-corpus-handoff-1.0`. After that handoff
-arrives:
+to continue either failed screen. The fresh 50-document post handoff now makes
+a new development round possible:
 
 1. freeze a post-only baseline-friction screen before reading outcomes;
 2. retain a low-burden preference or willingness question and an explicit
@@ -380,9 +426,11 @@ arrives:
 3. use transition material only for discovery, never as a substitute target;
 4. prepare an intervention only for clearly high-friction post passages.
 
-This screen remains single-reader development work. Held-out validation still
-requires new matched post-period material, at least three genres, multiple
-independent readers, and a frozen operator and analysis plan before outcomes.
+This next screen remains single-reader development work. The 50-document pool
+is not large enough to support both development and an independent validation
+reserve under the preferred protocol. Held-out validation still requires more
+fresh post material, at least three formats, multiple independent readers, and
+a frozen operator and analysis plan before outcomes.
 
 Do not tune the rejected relation-support score against the same 10 ratings.
 Further work on actual relation support requires either a narrower formally

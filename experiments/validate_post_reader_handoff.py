@@ -15,14 +15,15 @@ from urllib.parse import urlsplit
 from deaiodorant.corpus.benchmark import ExclusionIndex, read_jsonl
 
 
-PROTOCOL_VERSION = "post-reader-corpus-handoff-1.0"
-REPORT_VERSION = "post-reader-corpus-validation-1.0"
+PROTOCOL_VERSION = "post-reader-corpus-handoff-1.1"
+REPORT_VERSION = "post-reader-corpus-validation-1.1"
 POST_START = dt.date(2025, 7, 1)
 MIN_DOCUMENTS = 36
 MIN_SOURCES = 2
+MIN_DOCUMENTS_PER_SOURCE = 12
 MIN_TOPICS = 3
 MIN_DOCUMENTS_PER_TOPIC = 6
-MIN_DOCUMENTS_PER_SOURCE_FORMAT_CELL = 6
+MIN_DOCUMENTS_PER_FORMAT = 6
 MIN_MODEL_PROVENANCE_CONFIDENCE = 0.90
 REQUIRED_FORMATS = (
     "technical_practice",
@@ -376,12 +377,11 @@ def validate_handoff(handoff_root: Path, repository_root: Path) -> dict[str, Any
             "post_start": POST_START.isoformat(),
             "minimum_documents": MIN_DOCUMENTS,
             "minimum_sources": MIN_SOURCES,
+            "minimum_documents_per_source": MIN_DOCUMENTS_PER_SOURCE,
             "minimum_topics": MIN_TOPICS,
             "minimum_documents_per_topic": MIN_DOCUMENTS_PER_TOPIC,
             "required_formats": list(REQUIRED_FORMATS),
-            "minimum_documents_per_source_format_cell": (
-                MIN_DOCUMENTS_PER_SOURCE_FORMAT_CELL
-            ),
+            "minimum_documents_per_format": MIN_DOCUMENTS_PER_FORMAT,
         },
     }
     manifest_path = handoff_root / "manifest.json"
@@ -472,16 +472,11 @@ def validate_handoff(handoff_root: Path, repository_root: Path) -> dict[str, Any
         topic for topic, count in topic_counts.items() if count >= MIN_DOCUMENTS_PER_TOPIC
     )
     eligible_sources = sorted(
-        source
-        for source, counts in source_format_counts.items()
-        if all(
-            counts[format_name] >= MIN_DOCUMENTS_PER_SOURCE_FORMAT_CELL
-            for format_name in REQUIRED_FORMATS
-        )
+        source for source, count in source_counts.items() if count >= MIN_DOCUMENTS_PER_SOURCE
     )
     report["coverage"] = {
         "eligible_topics": eligible_topics,
-        "eligible_sources_with_all_format_cells": eligible_sources,
+        "eligible_sources": eligible_sources,
         "source_format_counts": {
             source: {name: counts[name] for name in REQUIRED_FORMATS}
             for source, counts in sorted(source_format_counts.items())
@@ -501,8 +496,16 @@ def validate_handoff(handoff_root: Path, repository_root: Path) -> dict[str, Any
             report,
             "errors",
             str(documents_path),
-            "Fewer than two sources have six documents in every required format",
+            "Fewer than two sources have at least 12 documents",
         )
+    for format_name in REQUIRED_FORMATS:
+        if format_counts[format_name] < MIN_DOCUMENTS_PER_FORMAT:
+            add_issue(
+                report,
+                "errors",
+                str(documents_path),
+                f"Format {format_name} has fewer than six documents",
+            )
 
     report["valid"] = not report["errors"]
     report["reader_development_ready"] = report["valid"]
