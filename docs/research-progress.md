@@ -278,6 +278,28 @@ contains 10 post documents, but nine are already exposed through a reader
 rating or intervention. The sole fully unexposed post document is
 `084c17f921cc74b858d04cdb`, which cannot support another screen by itself.
 
+## Fresh post-period handoff gate
+
+Protocol `post-reader-corpus-handoff-1.0` is frozen before any further reader
+project. It does not collect data. It defines a read-only gate for a future DGX
+handoff and prevents transition documents from being accepted as post-period
+reader material.
+
+The minimum development pool is 36 fresh documents published on or after
+2025-07-01. It requires at least three topic strata with six documents each and
+at least two sources with six documents in every required format: technical
+practice, research summary, and industry reporting. A 60-document handoff is
+preferred so an independent document-level reserve can be frozen before
+paragraph inspection.
+
+The validator checks strict UTF-8 bodies, hashes and counts, exact and near
+duplicates, prior research exposure, date boundaries, original provenance,
+model and prompt identities, substantive value status, source-relative high-
+visibility evidence, and coverage cells. A failed report exits nonzero and
+must not be overridden to create Label Studio tasks. The existing 119-document
+handoff is rejected because it uses an older protocol and contains zero post
+documents.
+
 ## Outlier policy and current limitation
 
 Documents are not hard-deleted because one reader dislikes them. Robust weights
@@ -321,6 +343,10 @@ weights are used in the current time comparison.
   matching, blinding, and Label Studio task generation.
 - `experiments/reader-friction-screen-v2.md`: frozen replacement protocol,
   pair identities, decision threshold, limitations, and artifact hashes.
+- `experiments/validate_post_reader_handoff.py`: read-only admission,
+  disjointness, duplicate, integrity, and minimum-coverage gate.
+- `experiments/post-reader-corpus-handoff.md`: frozen post-period handoff schema
+  and the planned low-burden reader use after admission.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -345,7 +371,8 @@ from the current unexposed material.
 
 The next required input is a fresh disjoint post-period pool published on or
 after 2025-07-01. It must be matched across source, topic, format, length, and
-visibility. After that handoff arrives:
+visibility and pass `post-reader-corpus-handoff-1.0`. After that handoff
+arrives:
 
 1. freeze a post-only baseline-friction screen before reading outcomes;
 2. retain a low-burden preference or willingness question and an explicit

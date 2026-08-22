@@ -517,6 +517,10 @@ friction of interest. These responses do not evaluate the ranking, because the
 target population is wrong. The handoff has no post documents, and only one of
 the tracked pilot's 10 post documents remains fully unexposed. No further
 reader screen should be created until a fresh disjoint post pool is available.
+That pool must pass the frozen
+[Fresh Post-Period Reader Corpus Handoff](../experiments/post-reader-corpus-handoff.md)
+gate before candidate ranking or Label Studio generation. This requirement is
+a sampling safeguard and does not change the smell's evidence status.
 
 Reproduce the frozen batch with:
 
