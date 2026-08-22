@@ -1,0 +1,155 @@
+{
+  "schema_version": "deaiodorant-reader-friction-screen-outcome-1.0",
+  "protocol_version": "raw-passage-friction-screen-development-1.0",
+  "project": "DeAIodorant Raw Passage Friction Screen v1",
+  "status": "terminated_early_instrument_failure",
+  "stopped_at": "2026-08-22",
+  "role": "development_screen_not_validation",
+  "source": {
+    "application": "Label Studio 1.23.0",
+    "project_id": 3,
+    "tasks_sha256": "251f2034216e9063b55d4912162eb19fb5c214267fa6941e617aac97a9cafd42",
+    "protocol_sha256": "0d448d12925aa9b808b4c0d8272b3703e15ac6ce686595bec86de1f8cb7bdbd4",
+    "label_config_sha256": "0f79332c65416c61c02c984533c7e61d2afd68b6d7eafb900ca03e4a9ba3e698"
+  },
+  "rating_question": "读完这段原文后，你有多愿意继续往下读？",
+  "round_comment": "每个感觉都是一样的，这批毫无区分度",
+  "completion_discrepancy": {
+    "reader_reported_completed_count": 12,
+    "persisted_completion_count": 11,
+    "interpretation": "Only persisted completions are analyzed; no missing response is imputed."
+  },
+  "summary": {
+    "planned_task_count": 24,
+    "persisted_completion_count": 11,
+    "uncompleted_or_unpersisted_count": 13,
+    "very_willing": 0,
+    "fairly_willing": 10,
+    "not_very_willing": 1,
+    "not_at_all_willing": 0,
+    "dominant_category_share": 0.9090909090909091,
+    "observed_category_count": 2,
+    "frozen_gate_eligible_count": 1,
+    "frozen_gate_minimum": 4,
+    "optional_comment_count": 0,
+    "cancelled_count": 0
+  },
+  "decision": {
+    "continue_remaining_tasks": false,
+    "prepare_intervention_from_this_batch": false,
+    "reason": "The absolute scale collapsed and the randomly sampled editorial passages had no useful perceived separation.",
+    "replacement_direction": "Test deterministic candidate enrichment through within-document relative comparisons with an explicit no-meaningful-difference option."
+  },
+  "responses": [
+    {
+      "task_number": 1,
+      "doc_id": "cf88120b3afa80da3fc4c302",
+      "source": "infoq",
+      "length_band": "short",
+      "rating": "不太愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 31.389,
+      "submitted_at_utc": "2026-08-22T08:19:37.583094Z"
+    },
+    {
+      "task_number": 2,
+      "doc_id": "3d2cea36287cf278258bee81",
+      "source": "infoq",
+      "length_band": "long",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 22.702,
+      "submitted_at_utc": "2026-08-22T08:20:00.475472Z"
+    },
+    {
+      "task_number": 3,
+      "doc_id": "9f1d90b6ac15dd29465af213",
+      "source": "jiqizhixin",
+      "length_band": "long",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 17.821,
+      "submitted_at_utc": "2026-08-22T08:20:18.485251Z"
+    },
+    {
+      "task_number": 4,
+      "doc_id": "ca20838db88af51d53f9d94f",
+      "source": "infoq",
+      "length_band": "medium",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 23.632,
+      "submitted_at_utc": "2026-08-22T08:20:42.300938Z"
+    },
+    {
+      "task_number": 5,
+      "doc_id": "e9d24bfa7ebff01c6a08c4fb",
+      "source": "jiqizhixin",
+      "length_band": "medium",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 16.963,
+      "submitted_at_utc": "2026-08-22T08:20:59.446589Z"
+    },
+    {
+      "task_number": 6,
+      "doc_id": "32820b09ec8dd3edac07c47f",
+      "source": "infoq",
+      "length_band": "long",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 24.919,
+      "submitted_at_utc": "2026-08-22T08:21:24.550526Z"
+    },
+    {
+      "task_number": 7,
+      "doc_id": "8edbbf17c05ba07ef9db5e86",
+      "source": "infoq",
+      "length_band": "long",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 19.642,
+      "submitted_at_utc": "2026-08-22T08:21:44.384889Z"
+    },
+    {
+      "task_number": 8,
+      "doc_id": "3729e9b9209e427e19e16173",
+      "source": "infoq",
+      "length_band": "short",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 560.817,
+      "submitted_at_utc": "2026-08-22T08:31:05.374116Z"
+    },
+    {
+      "task_number": 9,
+      "doc_id": "78c8f407c8d04f43bd8907f5",
+      "source": "infoq",
+      "length_band": "medium",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 14.322,
+      "submitted_at_utc": "2026-08-22T08:31:19.883493Z"
+    },
+    {
+      "task_number": 10,
+      "doc_id": "fad56cf7dd43cacc459a9b91",
+      "source": "jiqizhixin",
+      "length_band": "short",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 1148.315,
+      "submitted_at_utc": "2026-08-22T08:50:28.633160Z"
+    },
+    {
+      "task_number": 11,
+      "doc_id": "44f7193de55b94460aa94c83",
+      "source": "jiqizhixin",
+      "length_band": "short",
+      "rating": "还算愿意继续读",
+      "comment": null,
+      "lead_time_seconds": 12.423,
+      "submitted_at_utc": "2026-08-22T08:50:41.245368Z"
+    }
+  ]
+}

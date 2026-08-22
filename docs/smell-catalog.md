@@ -302,7 +302,7 @@ if the effect disappears after removing formatting and translated content.
   zero original wins
 - Third development intervention mixed: four revised wins, one original win,
   seven ties; baseline smell was generally weak
-- Raw-passage candidate screen frozen; outcomes pending
+- Raw-passage candidate screen failed: 10 of 11 persisted ratings in one band
 - Broad typed relation-support score rejected
 - Not intervention validated
 
@@ -483,14 +483,21 @@ The third round does not contradict the earlier high-friction wins. It shows
 that marker presence alone has poor precision for selecting intervention
 targets. Do not respond by maximizing compression or editing intensity.
 
-A separate low-burden baseline-friction screen is now frozen before outcomes.
-It contains 24 unchanged passages from 24 previously unexposed transition
+A separate low-burden baseline-friction screen was frozen before outcomes. It
+contains 24 unchanged passages from 24 previously unexposed transition
 documents, balanced by source and passage length. Selection uses no smell
 feature or marker count. Only the two unwilling-to-continue ratings qualify a
 passage for a later intervention, and optional comments cannot influence
 selection. All screened passages remain outside held-out validation. This
-protocol change does not promote the smell evidence status; it improves the
-development sampling boundary.
+screen does not promote the smell evidence status.
+
+The screen was terminated after 11 persisted responses because 10 occupied the
+same `fairly willing to continue` category and only one reached the frozen
+eligibility gate. The reader described the batch as having no discrimination.
+Do not interpret the one eligible passage as a selected intervention target or
+complete the remaining tasks. A within-document candidate-versus-control
+comparison is needed to test enrichment without relying on a collapsed
+absolute scale. An explicit no-meaningful-difference choice remains mandatory.
 
 Reproduce the frozen batch with:
 

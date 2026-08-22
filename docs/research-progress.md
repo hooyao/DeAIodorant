@@ -230,6 +230,20 @@ ties resolved by a frozen priority rather than by comments. These 24 documents
 become development-exposed as soon as the screen is shown and cannot be used as
 held-out validation material.
 
+The screen was stopped early for lack of discrimination. Of 11 responses
+persisted by Label Studio, 10 were `fairly willing to continue` and one was
+`not very willing to continue`; the other two categories were unused. The
+reader reported completing 12, but the unpersisted response is not imputed.
+The dominant category share is 90.9%, and only one passage reaches the frozen
+gate, below its minimum of four.
+
+Do not complete the remaining tasks or prepare an intervention from this
+batch. The failure combines an absolute-scale collapse with a uniformly
+acceptable random editorial sample. A replacement development screen should
+use within-document relative comparisons between a deterministically ranked
+candidate and a length-matched control, retain an explicit no-difference
+choice, and test enrichment rather than force an ordinal distinction.
+
 ## Outlier policy and current limitation
 
 Documents are not hard-deleted because one reader dislikes them. Robust weights
@@ -251,6 +265,8 @@ weights are used in the current time comparison.
   outcomes with frozen artifact fingerprints and operation identities.
 - `data/annotations/refinement-pairwise-v3.json`: 12 cross-genre development
   outcomes and the reader's round-level baseline-friction observation.
+- `data/annotations/reader-friction-screen-v1.json`: 11 persisted absolute
+  ratings, the early-stop discrepancy, and the instrument-failure decision.
 - `src/deaiodorant/analysis/discourse_graph.py`: graph schema and metrics.
 - `experiments/analyze_reader_friction.py`: post-only ordinal association.
 - `experiments/robust_typicality_probe.py`: cohort-wise Huber analysis.
@@ -331,5 +347,8 @@ keeping screened material out of held-out validation. See
 `experiments/refinement-pairs-v3.md` and
 `data/annotations/refinement-pairwise-v3.json`.
 
-That screen is now frozen as
-`experiments/reader-friction-screen-v1.md`. Its outcomes are not yet available.
+That screen was frozen as `experiments/reader-friction-screen-v1.md` and then
+terminated early. Ten of 11 persisted responses occupied one category, so the
+remaining tasks are not needed. The replacement should compare ranked and
+matched-control passages within the same document rather than repeat the same
+absolute-rating design.

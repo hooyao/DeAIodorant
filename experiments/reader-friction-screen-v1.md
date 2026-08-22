@@ -121,3 +121,32 @@ python experiments/prepare_reader_friction_screen_v1.py `
 Generated tasks remain under ignored `feature_runs/`. No handoff file is
 modified. This transition-only screen cannot estimate the primary pre/post
 effect or substitute for a matched post-period corpus.
+
+## Outcome
+
+The reader stopped the screen early because the passages felt the same and the
+batch had no useful discrimination. Label Studio persisted 11 completions even
+though the reader reported completing 12; the unpersisted response is not
+imputed.
+
+| Rating | Persisted count |
+|---|---:|
+| Very willing to continue | 0 |
+| Fairly willing to continue | 10 |
+| Not very willing to continue | 1 |
+| Not at all willing to continue | 0 |
+
+The dominant category contains 90.9% of persisted responses. Only one passage
+reaches the frozen follow-up gate, below the required minimum of four. The
+remaining tasks are terminated rather than completed for protocol appearance.
+No intervention will be prepared from this batch.
+
+This is both an instrument and sampling failure. Absolute four-level ratings
+provided almost no separation, while uniformly sampled editorial passages were
+mostly acceptable. The replacement development design should test whether a
+frozen deterministic ranking enriches for friction by comparing two passages
+from the same document and allowing an explicit no-meaningful-difference
+response. It must not treat a forced relative choice as evidence of a smell.
+
+The complete persisted outcome and early-stop decision are stored in
+`data/annotations/reader-friction-screen-v1.json`.
