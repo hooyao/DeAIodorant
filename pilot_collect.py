@@ -33,7 +33,8 @@ USER_AGENT = (
 CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff]")
 DATE_RE = re.compile(r"(20\d{2})[-/.年](\d{1,2})[-/.月](\d{1,2})")
 DIRECT_TRANSLATION_RE = re.compile(
-    r"(?:译自|编译自|翻译自|原文作者)|(?:^|\n)\s*(?:翻译|编译)\s*[/：:]",
+    r"(?:译自|编译自|翻译自|原文作者|原作者)|"
+    r"(?:^|\n)\s*(?:翻译|编译|译者)\s*[/|｜：:]",
     re.MULTILINE,
 )
 ORIGINAL_LINK_RE = re.compile(r"(?:原文链接|原文地址|原文出处)")
@@ -913,6 +914,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--target-per-cell", type=int, default=10)
     parser.add_argument("--output-dir", type=Path, default=Path("data/pilot"))
     parser.add_argument("--delay", type=float, default=0.35)
+    parser.add_argument("--http-timeout", type=float, default=45.0)
     parser.add_argument("--max-attempts", type=int, default=80)
     parser.add_argument(
         "--translation-model",
@@ -922,6 +924,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--ollama-endpoint", default="http://127.0.0.1:11434"
     )
+    parser.add_argument("--translation-timeout", type=float, default=600.0)
     parser.add_argument(
         "--translation-cache", type=Path, default=Path("data/translation_model_cache.jsonl")
     )
@@ -936,12 +939,13 @@ def main() -> int:
     args = parse_args()
     if args.target_per_cell < 1:
         raise SystemExit("--target-per-cell must be positive")
-    client = HttpClient(delay=args.delay)
+    client = HttpClient(delay=args.delay, timeout=args.http_timeout)
     translation_classifier = (
         LocalTranslationClassifier(
             args.translation_model,
             args.translation_cache,
             endpoint=args.ollama_endpoint,
+            timeout=args.translation_timeout,
         )
         if args.translation_model
         else None
@@ -955,6 +959,7 @@ def main() -> int:
             args.translation_model,
             verifier_cache,
             endpoint=args.ollama_endpoint,
+            timeout=args.translation_timeout,
             profile="verifier",
         )
     cells: dict[str, list[dict[str, Any]]] = {}
@@ -1010,12 +1015,32 @@ def main() -> int:
     write_monthly_corpus(args.output_dir / "monthly", merged)
 
     report = {
+        "schema_version": "corpus-pilot-report-1",
+        "corpus_stage": "diagnostic_pilot",
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "windows": {
             "pre": [PRE_START.isoformat(), PRE_END.isoformat()],
             "post": [POST_START.isoformat(), POST_END.isoformat()],
         },
         "target_per_cell": args.target_per_cell,
+        "configuration": {
+            "delay_seconds": args.delay,
+            "http_timeout_seconds": args.http_timeout,
+            "max_attempts": args.max_attempts,
+            "translation_model": args.translation_model,
+            "ollama_endpoint": args.ollama_endpoint if args.translation_model else None,
+            "translation_timeout_seconds": (
+                args.translation_timeout if args.translation_model else None
+            ),
+            "translation_prompt_versions": (
+                TRANSLATION_PROMPT_VERSIONS if args.translation_model else None
+            ),
+            "selection_seeds": [
+                "infoq-pre",
+                "infoq-post",
+                "jiqizhixin-url-sha256",
+            ],
+        },
         "cells": {name: summarize(records) for name, records in cells.items()},
         "fetch_stats": stats,
         "limitations": [

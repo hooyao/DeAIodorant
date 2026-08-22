@@ -1,0 +1,18 @@
+{
+  "protocol_version": "translation-gate-2.0-development",
+  "status": "development_only_silver_labels",
+  "generated_at": "2026-08-20T16:31:30.453871+00:00",
+  "path": "data\\translation_v2\\development_silver.jsonl",
+  "sha256": "cb4a7be490de0c4ef0ee3415ede9267e1ad9a7c6142373d4ff32e36f0ccb3ffc",
+  "documents": 160,
+  "labels": {
+    "original": 80,
+    "translation": 80
+  },
+  "sources": {
+    "jiqizhixin": 107,
+    "lctt": 26,
+    "infoq": 27
+  },
+  "restriction": "This artifact may be used for prompt development only. It must not be reported as human gold, validation, or final-test evidence."
+}

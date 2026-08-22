@@ -1,0 +1,43 @@
+{
+  "protocol_version": "translation-gate-2.0-development",
+  "generated_at": "2026-08-20T16:04:07.154259+00:00",
+  "transition_period": [
+    "2023-01-01",
+    "2025-06-30"
+  ],
+  "exclusion_datasets": [
+    "data\\translation_eval\\gold.jsonl",
+    "data\\translation_holdout\\gold.jsonl",
+    "data\\translation_test\\gold.jsonl",
+    "data\\pilot\\pilot_corpus.jsonl",
+    "data\\smoke\\pilot_corpus.jsonl"
+  ],
+  "candidates": {
+    "documents": 440,
+    "candidate_labels": {
+      "original_pending_review": 220,
+      "translation": 220
+    },
+    "sources": {
+      "infoq": 180,
+      "jiqizhixin": 160,
+      "lctt": 100
+    }
+  },
+  "lctt_commit": "4948360714403ebcefc3abff80dcc69ad706bf5d",
+  "exclusions": {
+    "infoq": {
+      "shape_or_quality": 827,
+      "outside_transition_period": 675,
+      "insufficient_label_evidence": 149,
+      "doc_id": 1
+    },
+    "jiqizhixin": {
+      "shape_or_quality": 88,
+      "insufficient_label_evidence": 1245
+    },
+    "lctt": {
+      "low_quality": 76
+    }
+  }
+}

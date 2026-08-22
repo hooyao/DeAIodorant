@@ -41,6 +41,23 @@ Status: immediate next work.
 
 This workstream does not wait for the large corpus.
 
+Status: in progress. The local acquisition pipeline is reproducible and
+structurally validated, but its output remains diagnostic pilot material and
+does not yet satisfy the exit criteria below.
+
+The translation-gate v2 candidate pool now has multiple sources and global
+leakage checks. Original candidates still require review before development,
+validation, and a sealed final test can be finalized. A local, reproducible
+Label Studio workspace now exposes all pending originals for structured human
+review and exports fail-closed decisions in the benchmark schema. Versioned
+Qwen3.8-27B BF16 provenance and research-value triage on the DGX Spark may
+reduce the active human queue, but their outputs remain model-assisted
+measurements rather than benchmark gold.
+Initial human reading also found heterogeneous machine-like style signals in
+the 2023-01-01 through 2025-06-30 transition period, supporting its continued
+exclusion from the primary pre/post contrast rather than any document-level
+authorship interpretation.
+
 Deliverables:
 
 - 20 passages across at least three genres;

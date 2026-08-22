@@ -11,3 +11,4 @@ dist/
 .codex-log/
 models/
 feature_runs/
+data/local/

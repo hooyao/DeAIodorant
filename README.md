@@ -145,6 +145,29 @@ python -m pip install -e ".[dev]"
 python -m pytest
 ```
 
+On Windows, the reproducible local pipeline entry point creates and uses
+`.venv`, installs the project, runs the offline checks, provisions the optional
+local translation gate, collects a new diagnostic run, and validates the
+monthly corpus layout:
+
+```powershell
+.\scripts\run-corpus-pipeline.ps1 -TargetPerCell 2
+```
+
+Each run is written to a new ignored directory under `data/local/`. It includes
+the normalized monthly corpus, review queue, collector report, integrity
+report, dependency snapshot, collection log, and a run manifest containing the
+Git revision, Python executable, GPU details, collection windows, model digest,
+prompt versions, timeouts, and deterministic selection seeds. The script calls
+`.venv\Scripts\python.exe` explicitly, so shell activation is not required.
+The run fails if a required source/time cell misses its target, a model-gated
+document lacks a passing decision from the configured model, or monthly corpus
+integrity checks fail.
+
+Use `-TargetPerCell 10` for the current full pilot size. Use
+`-WithoutTranslationModel` only for a low-cost diagnostic run; it does not
+provide the model-backed fail-closed admission gate.
+
 Run a small collection pilot:
 
 ```powershell
@@ -184,13 +207,61 @@ cases, the optional local classifier is fail-closed: only a high-confidence
 not AI authorship.
 
 ```powershell
-python pilot_collect.py --translation-model qwen3.5:4b
+.\.venv\Scripts\python.exe pilot_collect.py --translation-model qwen3.5:9b
 ```
 
 The Qwen3.5-4B frozen final test did not meet the target: it retained 56% of
 originals and admitted 2% of translations. Do not tune against that exposed
 test. See [the translation benchmark protocol](docs/translation-benchmark.md)
 for the current 9B validation procedure.
+
+Translation-gate v2 candidate acquisition is available through
+`translation_benchmark_v2.py`. It builds a globally deduplicated, multi-source
+review pool from InfoQ China, Machine Heart archives, and the Apache-2.0 LCTT
+translation project. Prompt changes are restricted to reviewed development
+data; validation only selects a frozen candidate, and the new sealed test may
+not be run or used for tuning. See
+[the v2 protocol](docs/translation-benchmark-v2.md).
+
+The pending-original pool can be reviewed in a local Label Studio interface.
+The launcher materializes every pending body as a separate UTF-8 file, creates
+the review project, imports the tasks, and opens the browser:
+
+```powershell
+.\scripts\run-translation-review.ps1 -Reviewer <stable-reviewer-id>
+```
+
+Label Studio Community Edition 1.23.0 is an optional Apache-2.0 dependency. It
+is installed into an ignored, isolated environment under `data/local/` and
+uses approximately 700 MiB in the current Windows environment. The service
+binds only to `127.0.0.1`; its credentials, database, generated task file, raw
+text copies, dependency snapshot, and logs remain in the ignored review
+workspace. If installation or the local service fails, no document receives a
+decision and the candidate data remains unchanged. Analytics, Sentry, version
+checks, and online feature flags are disabled so article text remains local.
+
+After preserving submitted human annotations, the remaining pool can be routed
+through conservative local model-assisted triage:
+
+```powershell
+.\scripts\run-dgx-qwen38-review-triage.ps1
+```
+
+Human decisions take precedence. Remaining records are operationally routed
+only when the foreign-source safeguard returns a high-confidence source-language
+judgment. Research value is evaluated separately by two agreeing profiles;
+weaker results are published to a separate Label Studio project. The current
+review-triage runtime is Qwen3.8-27B BF16 on the DGX Spark. Model-assisted
+results are diagnostic measurements and are never exported as human gold.
+
+The default Windows pipeline uses the Ollama `qwen3.5:9b` quantized package.
+Its current download is approximately 6.6 GB and it fits fully on a 16 GB RTX
+4080-class GPU. Qwen3.5 is distributed under the Apache 2.0 license; verify the
+model card and Ollama package metadata before redistribution. The model is an
+optional local operational dependency, not a Python package dependency. Model
+responses are cached inside the run directory. If Ollama, the requested model,
+or an inference call is unavailable, the model-backed run stops instead of
+admitting uncertain documents.
 
 ## Data and rights
 

@@ -33,12 +33,43 @@ Retrieve only publicly or lawfully accessible documents at conservative rates.
 Each adapter emits a shared metadata schema and preserves source provenance.
 Adapters do not make claims about AI authorship.
 
+The Windows local entry point is `scripts/run-corpus-pipeline.ps1`. It
+bootstraps `.venv` and delegates orchestration to
+`deaiodorant.corpus.pipeline`, which records the environment and configuration,
+runs the existing root collector without migrating it, and invokes the corpus
+integrity validator. Generated `data/local/` runs remain diagnostic pilot
+material until manual review, matching, rights review, and all Phase 1 gates
+are complete.
+
 ### Corpus gates
 
 Quality, visibility, provenance, deduplication, language, and translation gates
 construct comparable pre-2023 and post-2025-06 cohorts. Gates must expose both
 their decision and supporting evidence. Admission policy is deterministic where
 possible and fail-closed where uncertainty would contaminate the comparison.
+
+Translation-benchmark candidates requiring human judgment are materialized in
+an ignored local Label Studio workspace. The review service reads derived task
+JSON and stores annotations in its local database; an explicit converter emits
+the benchmark review CSV. It never rewrites candidate JSONL or deterministic
+translation labels. Service failure leaves rows unreviewed rather than making
+an admission decision.
+
+An optional local triage stage runs only after existing human annotations are
+exported. Human decisions take precedence. A versioned foreign-source safeguard
+routes only high-confidence source-language judgments. Optional primary and
+verifier profiles may be retained as supporting measurements but are not run by
+the current routing-only protocol. The safeguard verifies that
+an exclusion is specifically supported by non-Chinese source material,
+preventing the Chinese marker `整理` (edited/compiled) on domestic speeches or
+interviews from being treated as foreign compilation. Model-assisted originals
+and exclusions remain separate diagnostic artifacts; only uncertain records
+are copied to a second human-review project.
+
+Research value is measured in a separate stage so promotion and information
+thinness are not mislabeled as translation evidence. Two independent value
+profiles must agree at high confidence; disagreements are copied to a dedicated
+quality-review project.
 
 ### Matched corpus builder
 

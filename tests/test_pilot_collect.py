@@ -138,6 +138,12 @@ def test_compiler_byline_is_direct_translation_evidence():
     assert is_translation_from_evidence(evidence) is True
 
 
+def test_vertical_bar_translator_byline_is_direct_translation_evidence():
+    evidence = translation_evidence("编译 | 绿萝\n正文……")
+    assert "direct_translation_phrase" in evidence
+    assert is_translation_from_evidence(evidence) is True
+
+
 def test_foreign_podcast_transcript_is_translation():
     text = """下文基于播客视频整理，经 InfoQ 编辑。
 Ashlee：
