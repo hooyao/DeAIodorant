@@ -32,6 +32,8 @@ research checkpoint, not a product milestone.
   transition discovery probe plus a 23-document pre-period distribution audit.
 - Froze and completed a 12-pair third development intervention across technical
   practice, research summary, and industry reporting passages.
+- Froze a 24-passage raw-text reader-friction screen to separate candidate
+  selection from editing before any fourth intervention is prepared.
 
 ## Current evidence
 
@@ -207,6 +209,27 @@ feature outlier: its largest same-source robust z is 1.84, for a digit in the
 title. The observation remains development calibration only and does not
 become an authorship or validation label.
 
+## Raw-passage reader-friction screen
+
+The third intervention round showed that exact marker presence and genre
+balance do not reliably select passages with meaningful baseline friction. A
+fourth edit round would therefore confound candidate quality with edit quality.
+
+Protocol `raw-passage-friction-screen-development-1.0` was frozen before
+outcomes. It contains 24 unchanged transition passages from 24 previously
+unexposed documents: 12 InfoQ and 12 Machine Heart passages, with four short,
+four medium, and four long passages per source. Deterministic completeness
+gates leave 463 eligible passages from 55 documents. No smell feature, marker
+count, model score, reader outcome, or provenance label enters selection.
+
+The reader supplies only a four-level willingness-to-continue judgment and an
+optional comment. Only the two unwilling ratings qualify a passage for a later
+development intervention. At least four passages must qualify; otherwise a
+fresh raw-text screen is required. At most eight may be edited, with excess
+ties resolved by a frozen priority rather than by comments. These 24 documents
+become development-exposed as soon as the screen is shown and cannot be used as
+held-out validation material.
+
 ## Outlier policy and current limitation
 
 Documents are not hard-deleted because one reader dislikes them. Robust weights
@@ -238,6 +261,10 @@ weights are used in the current time comparison.
 - `experiments/prepare_refinement_pairs_v3.py`: frozen 12-pair cross-genre
   development generator.
 - `experiments/refinement-pairs-v3.md`: third-round protocol, audit, and result.
+- `experiments/prepare_reader_friction_screen_v1.py`: deterministic balanced
+  selection and Label Studio task generation for unchanged passages.
+- `experiments/reader-friction-screen-v1.md`: frozen screen, follow-up gate,
+  passage identities, artifact hashes, and reproduction command.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -256,17 +283,21 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 
 ## Next research step
 
-Do not build a product interface or train a general classifier. The next step
-is a held-out replication, not another revision of these 10 pairs:
+Do not build a product interface or train a general classifier. The immediate
+next step is to complete the frozen raw-passage screen, not to make the fourth
+round more aggressive:
 
-1. freeze a small multi-reader protocol using new passages across at least
-   three genres;
-2. retain the same required continue-reading choice and optional comment;
-3. keep the current operator unchanged so the replication tests rather than
-   retunes it;
-4. record meaning-preservation concerns separately from reading preference;
-5. treat residual abstract engineering claims as a new hypothesis, not a
-   post-hoc extension of the completed operator.
+1. collect the 24 required willingness-to-continue judgments;
+2. apply the frozen eligibility and priority gate without using comments to
+   select cases;
+3. if fewer than four qualify, screen another fresh set rather than editing
+   acceptable prose;
+4. if four to eight qualify, prepare a conservative development intervention
+   while retaining the existing preservation requirements.
+
+This screen remains single-reader development work. Held-out validation still
+requires new matched post-period material, at least three genres, multiple
+independent readers, and a frozen operator and analysis plan before outcomes.
 
 Do not tune the rejected relation-support score against the same 10 ratings.
 Further work on actual relation support requires either a narrower formally
@@ -299,3 +330,6 @@ sampling should use a separate low-burden baseline-friction screen, while
 keeping screened material out of held-out validation. See
 `experiments/refinement-pairs-v3.md` and
 `data/annotations/refinement-pairwise-v3.json`.
+
+That screen is now frozen as
+`experiments/reader-friction-screen-v1.md`. Its outcomes are not yet available.

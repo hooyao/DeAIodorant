@@ -302,6 +302,7 @@ if the effect disappears after removing formatting and translated content.
   zero original wins
 - Third development intervention mixed: four revised wins, one original win,
   seven ties; baseline smell was generally weak
+- Raw-passage candidate screen frozen; outcomes pending
 - Broad typed relation-support score rejected
 - Not intervention validated
 
@@ -480,9 +481,16 @@ comment specifically identified `换句话说`; removing it was preferred.
 
 The third round does not contradict the earlier high-friction wins. It shows
 that marker presence alone has poor precision for selecting intervention
-targets. Do not respond by maximizing compression or editing intensity. Add a
-separate low-burden baseline-friction screen for development candidates, and
-keep those screened passages outside held-out validation.
+targets. Do not respond by maximizing compression or editing intensity.
+
+A separate low-burden baseline-friction screen is now frozen before outcomes.
+It contains 24 unchanged passages from 24 previously unexposed transition
+documents, balanced by source and passage length. Selection uses no smell
+feature or marker count. Only the two unwilling-to-continue ratings qualify a
+passage for a later intervention, and optional comments cannot influence
+selection. All screened passages remain outside held-out validation. This
+protocol change does not promote the smell evidence status; it improves the
+development sampling boundary.
 
 Reproduce the frozen batch with:
 
@@ -495,6 +503,8 @@ python experiments/prepare_refinement_pairs_v2.py `
 
 The protocol, exclusions, and limitations are documented in
 [Second-Round Conservative Contrast Intervention](../experiments/refinement-pairs-v2.md).
+The candidate-selection boundary is documented in
+[Raw-Passage Reader-Friction Development Screen](../experiments/reader-friction-screen-v1.md).
 
 ### Promotion condition
 
