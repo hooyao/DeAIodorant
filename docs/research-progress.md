@@ -30,6 +30,8 @@ research checkpoint, not a product milestone.
   on the existing time, reader-friction, and refinement material.
 - Audited a read-only 119-document corpus handoff and ran a source-stratified
   transition discovery probe plus a 23-document pre-period distribution audit.
+- Froze and prepared a 12-pair third development intervention across technical
+  practice, research summary, and industry reporting passages.
 
 ## Current evidence
 
@@ -272,3 +274,9 @@ the time effect.
 
 The current 119-document handoff is not that matched corpus: it has no post
 documents and unverified Machine Heart visibility. It expands discovery only.
+
+The third intervention round uses 12 transition passages from this discovery-
+exposed handoff. It broadens genre coverage but is development evidence, not
+held-out validation. Its operator, passages, edits, preservation checks, task
+order, and A/B balance were frozen before outcomes. See
+`experiments/refinement-pairs-v3.md`.
