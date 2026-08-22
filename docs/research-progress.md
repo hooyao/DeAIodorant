@@ -28,6 +28,8 @@ research checkpoint, not a product milestone.
   the 10 reader-friction development ranges.
 - Implemented and ran a deterministic typed discourse-relation support probe
   on the existing time, reader-friction, and refinement material.
+- Audited a read-only 119-document corpus handoff and ran a source-stratified
+  transition discovery probe plus a 23-document pre-period distribution audit.
 
 ## Current evidence
 
@@ -167,6 +169,42 @@ Reject the v0.1 problem score. Keep its extracted instances and reason codes as
 audit material only. The failure is semantic and structural, not a threshold
 problem to tune against the same small ratings.
 
+## Read-only corpus handoff result
+
+The local handoff contains 119 documents with no overlap with the tracked
+pilot: 23 pre-period Machine Heart candidates, 53 transition Machine Heart
+documents, and 43 transition InfoQ documents. All body files pass strict UTF-8,
+SHA-256, CJK-count, and line-count checks.
+
+The handoff contains no post-period document. Transition documents remain
+discovery material, and Machine Heart visibility is unverified. Model-assisted
+provenance and value labels remain measurements rather than human gold.
+
+A source-stratified transition analysis tested 53 normalized deterministic
+features, controlled log document length, permuted dates within source 5,000
+times, and applied multiple-testing correction. No feature has BH q below 0.10.
+The strongest source-consistent discovery directions are:
+
+- quote-mark density: combined partial rho 0.286, p 0.0054, q 0.286;
+- dash density: rho 0.250, p 0.0138, q 0.336;
+- emphatic-frame density: rho 0.221, p 0.0320, q 0.388.
+
+Complete negative contrast frames do not replicate as a common transition
+trend. Their combined rho is 0.050, with a positive InfoQ direction and a flat
+to negative Machine Heart direction. This is direct evidence against
+generalizing the earlier post-period InfoQ result across sources.
+
+The 23 pre-period candidates retain full unweighted distributions and
+feature-wise Huber weights. The lowest descriptive document weights are driven
+mainly by code, lists, punctuation, title questions, and other format features.
+No document is deleted. These candidates still require matched post-period
+source, topic, format, length, and visibility evidence.
+
+The single reader-observed transition article is not a strong deterministic
+feature outlier: its largest same-source robust z is 1.84, for a digit in the
+title. The observation remains development calibration only and does not
+become an authorship or validation label.
+
 ## Outlier policy and current limitation
 
 Documents are not hard-deleted because one reader dislikes them. Robust weights
@@ -199,6 +237,10 @@ weights are used in the current time comparison.
   intervention comparison.
 - `experiments/relation-support-probe.md`: complete method, results,
   counterexamples, and rejection decision.
+- `experiments/handoff_transition_probe.py`: read-only handoff audit,
+  source-stratified transition trends, and pre-period Huber weights.
+- `experiments/handoff-transition-probe.md`: handoff method, complete results,
+  limitations, and reproduction identity.
 - `experiments/discourse-graph-probe.md`: method and detailed evidence.
 - `docs/smell-catalog.md`: evidence-status integration.
 
@@ -227,3 +269,6 @@ asked to supply those linguistic labels.
 In parallel, run the same graph features on the larger matched corpus when it
 arrives. Match source, topic, format, length, and visibility before interpreting
 the time effect.
+
+The current 119-document handoff is not that matched corpus: it has no post
+documents and unverified Machine Heart visibility. It expands discovery only.

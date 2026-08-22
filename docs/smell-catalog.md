@@ -214,6 +214,13 @@ This evidence establishes a pilot punctuation difference and one direct reader
 complaint. It does not establish that punctuation caused the complaint or that
 the effect generalizes.
 
+A later 96-document transition discovery pool adds source-stratified but
+non-confirmatory directions. Quote-mark density rises with transition date in
+both InfoQ and Machine Heart (combined partial rho 0.286, p 0.0054, BH q
+0.286). Dash density also rises in both sources (rho 0.250, p 0.0138, q 0.336).
+Total punctuation density is source-inconsistent. These results do not use a
+post-period cohort and do not change the evidence status.
+
 ### Reproduction identity
 
 | Artifact | Fingerprint |
@@ -384,6 +391,13 @@ a broad connective claim. After sentence-count normalization, broad contrast
 density had a robust time effect of 0.06 and post-only reader rho 0.51. Emphasis
 density had a robust time effect of 1.34 but reader rho 0.17. Neither survived
 multiple-testing correction.
+
+The 96-document transition discovery pool also does not generalize the complete
+frame result. Complete negative contrast frames have combined partial rho 0.050
+with opposite-to-flat source directions (InfoQ 0.131, Machine Heart -0.016; BH
+q 0.834). Emphatic-frame density is source-consistent at rho 0.221, but its BH
+q is 0.388 and it remains a discovery hypothesis rather than intervention
+evidence.
 
 The proposed high-confidence problem metric also failed. Problem decisions per
 100 sentences had a time effect of 0.04 and reader rho 0.06; the corresponding
@@ -773,6 +787,7 @@ instances and reason codes remain useful for audit. See
 | Generic repetition | No feature with absolute g at least 0.8 | Deprioritize current metrics; semantic restatement needs a new definition |
 | Broad discourse-marker categories | No reliable dense separation | Replace broad categories with specific constructions |
 | Typed discourse-relation support | Problem-density time effect 0.04 and reader rho 0.06; clear false positives | Reject v0.1 score; retain instance audit only |
+| Transition quote and dash growth | Source-consistent rhos 0.286 and 0.250, but BH q values 0.286 and 0.336 | Retain for discovery; require post matching and interventions |
 | Pure syntax classification | Unstable and below chance after punctuation removal | Deprioritize as a standalone direction |
 
 Watchlist entries require stronger evidence or better measurement before they
