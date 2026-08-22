@@ -303,8 +303,8 @@ if the effect disappears after removing formatting and translated content.
 - Third development intervention mixed: four revised wins, one original win,
   seven ties; baseline smell was generally weak
 - Raw-passage candidate screen failed: 10 of 11 persisted ratings in one band
-- Within-document marker-plus-structure enrichment screen frozen; outcomes
-  pending
+- Within-document enrichment screen terminated after three transition-period
+  no-difference responses; ranking not evaluated
 - Broad typed relation-support score rejected
 - Not intervention validated
 
@@ -509,6 +509,14 @@ tests whether the transparent ranking enriches for friction; it does not assume
 the candidate is worse. At least eight decisive pairs and a 75% candidate share
 among decisive choices are required. No-difference responses are retained and
 do not count as candidate wins.
+
+The replacement was terminated after three pairs, all no-difference choices.
+Their dates were in March, July, and October 2023. The reader correctly noted
+that the transition corpus generally lacks the stronger post-2025-07 AI-style
+friction of interest. These responses do not evaluate the ranking, because the
+target population is wrong. The handoff has no post documents, and only one of
+the tracked pilot's 10 post documents remains fully unexposed. No further
+reader screen should be created until a fresh disjoint post pool is available.
 
 Reproduce the frozen batch with:
 

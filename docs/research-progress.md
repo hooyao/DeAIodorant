@@ -261,12 +261,22 @@ density, mean sentence length, and referential-opening ratio. A candidate must
 contain a target marker and receive at least one auxiliary top-quartile vote.
 No previous reader outcome defines the features, thresholds, or weights.
 
-Strict matching leaves 10 pairable transition documents: eight InfoQ and two
-Machine Heart. This imbalance is retained as a limitation. Candidate placement
-is balanced five-to-five. The reader chooses which passage is more discouraging
-or reports no meaningful difference. The ranking proceeds only if at least
-eight pairs are decisive and candidates win at least 75% of decisive pairs;
-no-difference responses are not wins. Outcomes are not yet available.
+Strict matching left 10 pairable transition documents: eight InfoQ and two
+Machine Heart. Candidate placement was balanced five-to-five. The screen was
+terminated after three pairs, all judged to have no meaningful difference.
+Their dates were 2023-07-18, 2023-10-09, and 2023-03-27.
+
+The reader correctly identified the fundamental mismatch: these transition
+passages generally lack the stronger post-2025-07 AI-style friction that the
+product needs to refine. The three responses are retained, but the enrichment
+threshold is not evaluated and no intervention may use this batch. The
+mistake was prioritizing unexposed availability over alignment with the fixed
+time axis.
+
+The handoff has zero post documents and ends on 2025-06-11. The tracked pilot
+contains 10 post documents, but nine are already exposed through a reader
+rating or intervention. The sole fully unexposed post document is
+`084c17f921cc74b858d04cdb`, which cannot support another screen by itself.
 
 ## Outlier policy and current limitation
 
@@ -291,6 +301,8 @@ weights are used in the current time comparison.
   outcomes and the reader's round-level baseline-friction observation.
 - `data/annotations/reader-friction-screen-v1.json`: 11 persisted absolute
   ratings, the early-stop discrepancy, and the instrument-failure decision.
+- `data/annotations/reader-friction-screen-v2.json`: three no-difference
+  responses and the transition-corpus mismatch termination decision.
 - `src/deaiodorant/analysis/discourse_graph.py`: graph schema and metrics.
 - `experiments/analyze_reader_friction.py`: post-only ordinal association.
 - `experiments/robust_typicality_probe.py`: cohort-wise Huber analysis.
@@ -327,14 +339,19 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 
 ## Next research step
 
-Do not build a product interface or train a general classifier. The immediate
-next step is to complete the frozen within-document enrichment comparison:
+Do not build a product interface, train a general classifier, or ask the reader
+to continue either failed screen. No defensible new reader round can be formed
+from the current unexposed material.
 
-1. collect the 10 required relative judgments with a no-difference option;
-2. decode candidate placement only after every response is complete;
-3. apply the frozen decisive-pair and 75% enrichment thresholds;
-4. prepare no intervention unless both the enrichment threshold and the
-   minimum of four candidate wins are satisfied.
+The next required input is a fresh disjoint post-period pool published on or
+after 2025-07-01. It must be matched across source, topic, format, length, and
+visibility. After that handoff arrives:
+
+1. freeze a post-only baseline-friction screen before reading outcomes;
+2. retain a low-burden preference or willingness question and an explicit
+   no-difference option;
+3. use transition material only for discovery, never as a substitute target;
+4. prepare an intervention only for clearly high-friction post passages.
 
 This screen remains single-reader development work. Held-out validation still
 requires new matched post-period material, at least three genres, multiple
@@ -380,5 +397,6 @@ absolute-rating design.
 
 That replacement is now frozen as
 `experiments/reader-friction-screen-v2.md`. It contains 10 blinded pairs and
-retains an explicit no-meaningful-difference choice. Its outcomes are not yet
-available.
+retains an explicit no-meaningful-difference choice. It was terminated after
+three no-difference responses because every completed pair came from the
+transition period. The ranking is not evaluated from this mismatched batch.

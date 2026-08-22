@@ -122,3 +122,30 @@ python experiments/prepare_reader_friction_screen_v2.py `
 Generated tasks and the blinded answer key remain under ignored
 `feature_runs/`. No handoff file is modified. All passages are transition-only
 development material and cannot estimate the primary pre/post effect.
+
+## Outcome and termination
+
+The screen was terminated after the first three pairs. Their publication dates
+were 2023-07-18, 2023-10-09, and 2023-03-27, and all three received the
+no-meaningful-difference response. The reader correctly identified that the
+batch came from before 2025-07 and generally lacked the stronger AI-style
+friction of interest.
+
+This is a corpus-period mismatch, not evidence against the frozen ranking. The
+three responses are retained but the enrichment threshold is not evaluated.
+The remaining seven pairs should not be completed, and no passage from this
+batch may enter an intervention.
+
+The read-only handoff contains 23 pre, 96 transition, and zero post documents;
+its latest publication date is 2025-06-11. The tracked pilot has 10 post
+documents, but nine have already appeared in reader ratings or interventions.
+Only `084c17f921cc74b858d04cdb` is fully unexposed, which is insufficient for a
+new screen and comes from the same small diagnostic InfoQ pilot.
+
+The next reader round requires a fresh disjoint pool published on or after
+2025-07-01. It must be matched across source, topic, format, length, and
+visibility. Transition material may continue to support feature discovery but
+must not substitute for this target corpus.
+
+The complete early-stop outcome is stored in
+`data/annotations/reader-friction-screen-v2.json`.

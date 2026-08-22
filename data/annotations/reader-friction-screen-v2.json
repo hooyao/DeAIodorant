@@ -1,0 +1,91 @@
+{
+  "schema_version": "deaiodorant-reader-friction-screen-outcome-2.0",
+  "protocol_version": "within-document-friction-enrichment-development-2.0",
+  "project": "DeAIodorant Within-Document Friction Screen v2",
+  "status": "terminated_early_corpus_period_mismatch",
+  "stopped_at": "2026-08-22",
+  "role": "development_enrichment_test_not_validation",
+  "source": {
+    "application": "Label Studio 1.23.0",
+    "project_id": 4,
+    "tasks_sha256": "d6fd858c55968da3461604050a15b211c045a2df92313d476f76ef46ea9839c7",
+    "answer_key_sha256": "31ceac5b56360bf668dce7f1de08d9c432254be3feefd399af5236ac43705375",
+    "protocol_sha256": "a717c41dc7932bacf684c2ef2e8353533c551ba1c88c7782d9ad020d4b43254c",
+    "label_config_sha256": "8ab3fbf59f6c85803789125596fd18561fa4347d63675e00956ca3ede9307179"
+  },
+  "rating_question": "下面两段来自同一篇文章。哪一段让你更不愿意继续读？",
+  "round_comment": "我看了3个感觉还是不对，你用的是什么时候的语料？我感觉明显是2025年7月前的，ai臭味不多的语料。",
+  "summary": {
+    "planned_pair_count": 10,
+    "persisted_completion_count": 3,
+    "uncompleted_count": 7,
+    "candidate_more_discouraging": 0,
+    "control_more_discouraging": 0,
+    "no_meaningful_difference": 3,
+    "optional_comment_count": 0,
+    "cancelled_count": 0
+  },
+  "corpus_audit": {
+    "completed_dates": [
+      "2023-07-18",
+      "2023-10-09",
+      "2023-03-27"
+    ],
+    "completed_period": "transition",
+    "handoff_period_counts": {
+      "pre": 23,
+      "transition": 96,
+      "post": 0
+    },
+    "handoff_latest_published_at": "2025-06-11",
+    "tracked_pilot_post_document_count": 10,
+    "tracked_pilot_fully_unexposed_post_document_count": 1,
+    "fully_unexposed_post_doc_id": "084c17f921cc74b858d04cdb"
+  },
+  "decision": {
+    "continue_remaining_pairs": false,
+    "evaluate_enrichment_threshold": false,
+    "prepare_intervention_from_this_batch": false,
+    "reason": "The transition-only source pool does not represent the post-2025-07 target prose whose stronger AI-style friction motivates the product.",
+    "interpretation": "The three no-difference responses are retained as reader observations but are not used to evaluate the ranking features.",
+    "next_requirement": "Acquire a fresh, disjoint post-2025-07 pool matched across source, topic, format, length, and visibility before another reader screen."
+  },
+  "responses": [
+    {
+      "task_number": 1,
+      "pair_id": "friction-v2-b0f066a3",
+      "doc_id": "b0f066a3a5abd771dc88d05d",
+      "source": "infoq",
+      "published_at": "2023-07-18",
+      "choice": "没有明显差别（都还行或都不好）",
+      "outcome": "no_meaningful_difference",
+      "comment": null,
+      "lead_time_seconds": 23.078,
+      "submitted_at_utc": "2026-08-22T09:21:11.093586Z"
+    },
+    {
+      "task_number": 2,
+      "pair_id": "friction-v2-09c15d72",
+      "doc_id": "09c15d722428969f39d55a35",
+      "source": "infoq",
+      "published_at": "2023-10-09",
+      "choice": "没有明显差别（都还行或都不好）",
+      "outcome": "no_meaningful_difference",
+      "comment": null,
+      "lead_time_seconds": 6170.248,
+      "submitted_at_utc": "2026-08-22T11:04:01.526914Z"
+    },
+    {
+      "task_number": 3,
+      "pair_id": "friction-v2-9f1d90b6",
+      "doc_id": "9f1d90b6ac15dd29465af213",
+      "source": "jiqizhixin",
+      "published_at": "2023-03-27",
+      "choice": "没有明显差别（都还行或都不好）",
+      "outcome": "no_meaningful_difference",
+      "comment": null,
+      "lead_time_seconds": 13.539,
+      "submitted_at_utc": "2026-08-22T11:04:15.263489Z"
+    }
+  ]
+}
