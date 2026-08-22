@@ -522,6 +522,13 @@ now passed the frozen
 gate with zero errors. It enables a new development screen but contains no new
 reader outcome, so the smell's evidence status does not change.
 
+A 12-pair post-only screen is now frozen before outcomes. It balances InfoQ and
+Meituan six-to-six, uses only documents published on or after 2025-07-01, and
+compares a marker-plus-structure candidate with a locally matched zero-marker
+control from the same document. See
+[Fresh Post-Only Reader-Friction Discrimination Screen](../experiments/reader-friction-screen-v3.md).
+This protocol does not change the evidence status until reader outcomes exist.
+
 Reproduce the frozen batch with:
 
 ~~~powershell

@@ -38,6 +38,8 @@ research checkpoint, not a product milestone.
   within-document candidate-enrichment replacement before outcomes.
 - Acquired, screened, deduplicated, materialized, and validated a 50-document
   fresh post-period reader-development handoff from two public sources.
+- Froze a 12-pair post-only reader-friction discrimination screen with balanced
+  source and candidate placement before outcomes.
 
 ## Current evidence
 
@@ -342,6 +344,28 @@ evidence but no article-level view counts; this limitation remains visible.
 All model-assisted provenance, value, format, and topic labels remain
 measurements rather than human gold.
 
+## Fresh post-only reader screen
+
+Protocol `post-only-friction-discrimination-development-3.0` is frozen before
+outcomes. It uses 12 documents from the new handoff, with six InfoQ and six
+Meituan pairs. Format composition is six technical-practice, two research-
+summary, and four industry-reporting pairs. Only two research-summary documents
+produced both a complete candidate and a complete control after strict prose
+formatting gates; PDF labels, author profiles, and list fragments remain
+excluded rather than being used to fill a quota.
+
+Short DOM-split source lines are rejoined deterministically into non-
+overlapping complete passages. Candidate ranking remains within-document and
+requires a target marker plus an auxiliary top-quartile structural signal. The
+zero-marker control is matched by length, sentence count, source location, and
+CJK-bigram overlap. Candidate placement is balanced six-to-six.
+
+The reader chooses which passage makes them less willing to continue or reports
+no meaningful difference. At least four decisive pairs are required to show
+that the batch discriminates at all. Feature enrichment additionally requires
+at least eight decisive pairs and a 75% candidate share. Outcomes are not yet
+available, and this remains development rather than validation.
+
 ## Outlier policy and current limitation
 
 Documents are not hard-deleted because one reader dislikes them. Robust weights
@@ -398,6 +422,10 @@ weights are used in the current time comparison.
   topic measurements for balancing only.
 - `experiments/build_post_reader_handoff.py`: fail-closed admission,
   visibility filtering, materialization, and manifest generation.
+- `experiments/prepare_reader_friction_screen_v3.py`: post-only passage
+  reconstruction, candidate/control matching, blinding, and task generation.
+- `experiments/reader-friction-screen-v3.md`: frozen post-only reader protocol,
+  pair identities, thresholds, limitations, and artifact hashes.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -417,14 +445,13 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 ## Next research step
 
 Do not build a product interface, train a general classifier, or ask the reader
-to continue either failed screen. The fresh 50-document post handoff now makes
-a new development round possible:
+to continue either failed transition screen. The immediate step is to complete
+the frozen 12-pair post-only discrimination screen:
 
-1. freeze a post-only baseline-friction screen before reading outcomes;
-2. retain a low-burden preference or willingness question and an explicit
-   no-difference option;
-3. use transition material only for discovery, never as a substitute target;
-4. prepare an intervention only for clearly high-friction post passages.
+1. retain every no-difference response rather than forcing a choice;
+2. decode candidate placement only after all responses are complete;
+3. apply the frozen discrimination and enrichment thresholds;
+4. prepare an intervention only for candidate-winning high-friction passages.
 
 This next screen remains single-reader development work. The 50-document pool
 is not large enough to support both development and an independent validation
