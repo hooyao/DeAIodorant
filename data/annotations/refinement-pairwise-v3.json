@@ -1,0 +1,206 @@
+{
+  "schema_version": "deaiodorant-refinement-pairwise-3.0",
+  "protocol_version": "conservative-reframing-development-3.0",
+  "project": "DeAIodorant Refinement Pairwise v3",
+  "completed_at": "2026-08-22",
+  "seed": 20260822,
+  "role": "development_intervention_not_validation",
+  "source": {
+    "application": "Label Studio 1.23.0",
+    "project_id": 2,
+    "tasks_sha256": "f0ee5c5cce52f793d84be891c8e38e307b05c533c655889c3b31c37155a8df04",
+    "answer_key_sha256": "83ec5ac78c7a862d6d1750e1282b2bb7e748c84378dfa449373948ffe4abbe86",
+    "protocol_sha256": "fb91136846ded20bb3d5cb41614f82762bb3d7f42d160bf90d840ee2747db4f0",
+    "label_config_sha256": "9f3a55c8e2e6191ff43c0d27558ffb77ea1fa15a98bbf0c5ac7e173083283a27"
+  },
+  "rating_question": "哪个版本让你更愿意继续读？",
+  "round_comment": "这一轮几乎都没有区别，全是AI臭味都不明显",
+  "summary": {
+    "pair_count": 12,
+    "revised_preferred": 4,
+    "original_preferred": 1,
+    "tie_or_neither": 7,
+    "decisive_pair_count": 5,
+    "revised_share_among_decisive": 0.8,
+    "optional_comment_count": 1,
+    "cancelled_count": 0,
+    "genre_outcomes": {
+      "technical_practice": {"revised_preferred": 1, "original_preferred": 1, "tie_or_neither": 2},
+      "research_summary": {"revised_preferred": 2, "original_preferred": 0, "tie_or_neither": 2},
+      "industry_reporting": {"revised_preferred": 1, "original_preferred": 0, "tie_or_neither": 3}
+    }
+  },
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "contrast-v3-05",
+      "genre": "research_summary",
+      "doc_id": "10b4ff947e750938d62a417a",
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 32.575,
+      "submitted_at_utc": "2026-08-22T05:40:35.868471Z",
+      "operations": [{"id": "contrast-v3-05-op-01", "operator": "remove_ornamental_emphasis"}]
+    },
+    {
+      "task_number": 2,
+      "pair_id": "contrast-v3-04",
+      "genre": "technical_practice",
+      "doc_id": "2e209708bce31c124797ce6c",
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 35.856,
+      "submitted_at_utc": "2026-08-22T05:41:11.931290Z",
+      "operations": [{"id": "contrast-v3-04-op-01", "operator": "clarify_argument_structure"}]
+    },
+    {
+      "task_number": 3,
+      "pair_id": "contrast-v3-07",
+      "genre": "research_summary",
+      "doc_id": "646b73aae2b0dc8f311a9f0c",
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 58.115,
+      "submitted_at_utc": "2026-08-22T05:42:10.253839Z",
+      "operations": [{"id": "contrast-v3-07-op-01", "operator": "clarify_argument_structure"}]
+    },
+    {
+      "task_number": 4,
+      "pair_id": "contrast-v3-11",
+      "genre": "industry_reporting",
+      "doc_id": "9f693cf901d640ffb7312bd9",
+      "original_side": "A",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 52.82,
+      "submitted_at_utc": "2026-08-22T05:43:03.282393Z",
+      "operations": [
+        {"id": "contrast-v3-11-op-01", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v3-11-op-02", "operator": "clarify_argument_structure"},
+        {"id": "contrast-v3-11-op-03", "operator": "remove_ornamental_emphasis"}
+      ]
+    },
+    {
+      "task_number": 5,
+      "pair_id": "contrast-v3-06",
+      "genre": "research_summary",
+      "doc_id": "7103a1b4c0cb80218a653a03",
+      "original_side": "B",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 73.209,
+      "submitted_at_utc": "2026-08-22T05:44:16.714013Z",
+      "operations": [
+        {"id": "contrast-v3-06-op-01", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v3-06-op-02", "operator": "remove_ornamental_emphasis"}
+      ]
+    },
+    {
+      "task_number": 6,
+      "pair_id": "contrast-v3-08",
+      "genre": "research_summary",
+      "doc_id": "a76e84a2a44062b098288efc",
+      "original_side": "A",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 51.514,
+      "submitted_at_utc": "2026-08-22T05:45:08.435064Z",
+      "operations": [{"id": "contrast-v3-08-op-01", "operator": "direct_contrast"}]
+    },
+    {
+      "task_number": 7,
+      "pair_id": "contrast-v3-01",
+      "genre": "technical_practice",
+      "doc_id": "44ff5a1d8bda9c7b50f6290f",
+      "original_side": "B",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 33.568,
+      "submitted_at_utc": "2026-08-22T05:45:42.209745Z",
+      "operations": [{"id": "contrast-v3-01-op-01", "operator": "direct_contrast"}]
+    },
+    {
+      "task_number": 8,
+      "pair_id": "contrast-v3-12",
+      "genre": "industry_reporting",
+      "doc_id": "51ad0427b938c45e289e9d1a",
+      "original_side": "A",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 15.054,
+      "submitted_at_utc": "2026-08-22T05:45:57.459587Z",
+      "operations": [
+        {"id": "contrast-v3-12-op-01", "operator": "direct_contrast"},
+        {"id": "contrast-v3-12-op-02", "operator": "direct_contrast"},
+        {"id": "contrast-v3-12-op-03", "operator": "direct_contrast"}
+      ]
+    },
+    {
+      "task_number": 9,
+      "pair_id": "contrast-v3-10",
+      "genre": "industry_reporting",
+      "doc_id": "3c33241e2bb2fd68fb3c6147",
+      "original_side": "A",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 67.398,
+      "submitted_at_utc": "2026-08-22T05:47:05.071854Z",
+      "operations": [
+        {"id": "contrast-v3-10-op-01", "operator": "remove_ornamental_emphasis"},
+        {"id": "contrast-v3-10-op-02", "operator": "direct_contrast"},
+        {"id": "contrast-v3-10-op-03", "operator": "direct_contrast"}
+      ]
+    },
+    {
+      "task_number": 10,
+      "pair_id": "contrast-v3-03",
+      "genre": "technical_practice",
+      "doc_id": "ed4b0601b5481ee4065a337a",
+      "original_side": "B",
+      "preference": "A，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 35.165,
+      "submitted_at_utc": "2026-08-22T05:47:40.437579Z",
+      "operations": [{"id": "contrast-v3-03-op-01", "operator": "clarify_argument_structure"}]
+    },
+    {
+      "task_number": 11,
+      "pair_id": "contrast-v3-02",
+      "genre": "technical_practice",
+      "doc_id": "c4f3d04d7db01e65460fb2dd",
+      "original_side": "B",
+      "preference": "差不多或都不想继续读",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 45.252,
+      "submitted_at_utc": "2026-08-22T05:48:25.906949Z",
+      "operations": [{"id": "contrast-v3-02-op-01", "operator": "merge_repeated_reframing"}]
+    },
+    {
+      "task_number": 12,
+      "pair_id": "contrast-v3-09",
+      "genre": "industry_reporting",
+      "doc_id": "d4407ed937d0f78f325c3fbd",
+      "original_side": "B",
+      "preference": "A，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": "换句话说<-- 臭味",
+      "lead_time_seconds": 39.442,
+      "submitted_at_utc": "2026-08-22T05:49:05.545109Z",
+      "operations": [{"id": "contrast-v3-09-op-01", "operator": "remove_ornamental_emphasis"}]
+    }
+  ]
+}

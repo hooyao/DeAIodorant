@@ -3,9 +3,10 @@
 ## Status
 
 Protocol `conservative-reframing-development-3.0` was frozen on 2026-08-22
-before reader outcomes. This is a development intervention, not held-out
-validation: all source documents belong to the transition handoff that has
-already been used for feature discovery.
+before reader outcomes. All 12 responses were completed later that day. This
+is a development intervention, not held-out validation: all source documents
+belong to the transition handoff that has already been used for feature
+discovery.
 
 ## Design
 
@@ -82,3 +83,37 @@ python experiments/prepare_refinement_pairs_v3.py `
 
 Generated tasks and the answer key remain under ignored `feature_runs/`. The
 answer key must not be shown before all responses in this round are complete.
+
+## Outcome
+
+| Outcome | Count |
+|---|---:|
+| Revised version preferred | 4 |
+| Original version preferred | 1 |
+| Tie or neither preferred | 7 |
+
+Genre breakdown:
+
+| Genre | Revised | Original | Tie/neither |
+|---|---:|---:|---:|
+| Technical practice | 1 | 1 | 2 |
+| Research summary | 2 | 0 | 2 |
+| Industry reporting | 1 | 0 | 3 |
+
+The reader's round-level comment was:
+
+> “这一轮几乎都没有区别，全是AI臭味都不明显”
+
+Only one optional pair comment was entered, identifying `换句话说` as a smell;
+that pair favored the revision. The single original win occurred in a
+technical-practice passage whose edit mainly repaired argument structure.
+
+This result is primarily a candidate-selection failure. Exact marker presence
+and cross-genre balance did not enrich for passages with enough baseline
+friction to make conservative editing useful. Increasing edit intensity would
+not answer that problem and risks damaging acceptable prose. Future
+development sampling needs a separate low-burden baseline-friction screen; the
+screened passages cannot then be reused as held-out validation.
+
+The complete versioned outcome is stored in
+`data/annotations/refinement-pairwise-v3.json`.

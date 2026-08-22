@@ -300,6 +300,8 @@ if the effect disappears after removing formatting and translated content.
 - Initial intervention directionally positive: two revised wins, one tie
 - Second intervention directionally positive: six revised wins, four ties,
   zero original wins
+- Third development intervention mixed: four revised wins, one original win,
+  seven ties; baseline smell was generally weak
 - Broad typed relation-support score rejected
 - Not intervention validated
 
@@ -469,6 +471,18 @@ The two intervention rounds total eight revised wins, zero original wins, and
 five ties. They use one reader, selected InfoQ passages, and repeated passages
 from one document. The evidence status is therefore not promoted to
 “intervention validated.”
+
+A third cross-genre development round used 12 transition passages from 12 new
+documents. It produced four revised wins, one original win, and seven ties or
+neither-preferred judgments. The reader reported that the passages generally
+had little obvious smell, so most edits made little difference. One optional
+comment specifically identified `换句话说`; removing it was preferred.
+
+The third round does not contradict the earlier high-friction wins. It shows
+that marker presence alone has poor precision for selecting intervention
+targets. Do not respond by maximizing compression or editing intensity. Add a
+separate low-burden baseline-friction screen for development candidates, and
+keep those screened passages outside held-out validation.
 
 Reproduce the frozen batch with:
 

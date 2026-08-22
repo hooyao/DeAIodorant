@@ -30,7 +30,7 @@ research checkpoint, not a product milestone.
   on the existing time, reader-friction, and refinement material.
 - Audited a read-only 119-document corpus handoff and ran a source-stratified
   transition discovery probe plus a 23-document pre-period distribution audit.
-- Froze and prepared a 12-pair third development intervention across technical
+- Froze and completed a 12-pair third development intervention across technical
   practice, research summary, and industry reporting passages.
 
 ## Current evidence
@@ -226,6 +226,8 @@ weights are used in the current time comparison.
 - `data/annotations/refinement-pairwise-v1.json`: three blinded A/B outcomes.
 - `data/annotations/refinement-pairwise-v2.json`: 10 conservative second-round
   outcomes with frozen artifact fingerprints and operation identities.
+- `data/annotations/refinement-pairwise-v3.json`: 12 cross-genre development
+  outcomes and the reader's round-level baseline-friction observation.
 - `src/deaiodorant/analysis/discourse_graph.py`: graph schema and metrics.
 - `experiments/analyze_reader_friction.py`: post-only ordinal association.
 - `experiments/robust_typicality_probe.py`: cohort-wise Huber analysis.
@@ -233,6 +235,9 @@ weights are used in the current time comparison.
 - `experiments/prepare_refinement_pairs_v2.py`: frozen 10-pair conservative
   intervention with structured operation and preservation logs.
 - `experiments/refinement-pairs-v2.md`: second-round protocol and passage set.
+- `experiments/prepare_refinement_pairs_v3.py`: frozen 12-pair cross-genre
+  development generator.
+- `experiments/refinement-pairs-v3.md`: third-round protocol, audit, and result.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -278,5 +283,19 @@ documents and unverified Machine Heart visibility. It expands discovery only.
 The third intervention round uses 12 transition passages from this discovery-
 exposed handoff. It broadens genre coverage but is development evidence, not
 held-out validation. Its operator, passages, edits, preservation checks, task
-order, and A/B balance were frozen before outcomes. See
-`experiments/refinement-pairs-v3.md`.
+order, and A/B balance were frozen before outcomes.
+
+The outcome is four revised wins, one original win, and seven ties or neither-
+preferred judgments. Research summaries produced two wins and two ties;
+technical practice produced one win, one original win, and two ties; industry
+reporting produced one win and three ties. The reader reported that almost all
+pairs had little difference because the original passages had little obvious
+smell. Only one optional comment identified a specific marker: `换句话说`.
+
+The third round therefore diagnoses a selection problem, not a reason to
+rewrite more aggressively. Marker presence and genre balance alone do not
+identify passages with enough baseline friction to benefit. Future development
+sampling should use a separate low-burden baseline-friction screen, while
+keeping screened material out of held-out validation. See
+`experiments/refinement-pairs-v3.md` and
+`data/annotations/refinement-pairwise-v3.json`.
