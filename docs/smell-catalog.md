@@ -303,6 +303,8 @@ if the effect disappears after removing formatting and translated content.
 - Third development intervention mixed: four revised wins, one original win,
   seven ties; baseline smell was generally weak
 - Raw-passage candidate screen failed: 10 of 11 persisted ratings in one band
+- Within-document marker-plus-structure enrichment screen frozen; outcomes
+  pending
 - Broad typed relation-support score rejected
 - Not intervention validated
 
@@ -499,6 +501,15 @@ complete the remaining tasks. A within-document candidate-versus-control
 comparison is needed to test enrichment without relying on a collapsed
 absolute scale. An explicit no-meaningful-difference choice remains mandatory.
 
+That replacement is now frozen before outcomes. It contains 10 same-document
+pairs: a marker-bearing candidate that also has at least one auxiliary
+top-quartile structural vote, and a length-, sentence-, and topic-matched
+zero-marker control. Candidate placement is balanced and hidden. The design
+tests whether the transparent ranking enriches for friction; it does not assume
+the candidate is worse. At least eight decisive pairs and a 75% candidate share
+among decisive choices are required. No-difference responses are retained and
+do not count as candidate wins.
+
 Reproduce the frozen batch with:
 
 ~~~powershell
@@ -512,6 +523,8 @@ The protocol, exclusions, and limitations are documented in
 [Second-Round Conservative Contrast Intervention](../experiments/refinement-pairs-v2.md).
 The candidate-selection boundary is documented in
 [Raw-Passage Reader-Friction Development Screen](../experiments/reader-friction-screen-v1.md).
+The replacement enrichment test is documented in
+[Within-Document Friction Enrichment Development Screen](../experiments/reader-friction-screen-v2.md).
 
 ### Promotion condition
 

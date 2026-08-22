@@ -34,6 +34,8 @@ research checkpoint, not a product milestone.
   practice, research summary, and industry reporting passages.
 - Froze a 24-passage raw-text reader-friction screen to separate candidate
   selection from editing before any fourth intervention is prepared.
+- Terminated the absolute screen after scale collapse and froze a 10-pair
+  within-document candidate-enrichment replacement before outcomes.
 
 ## Current evidence
 
@@ -244,6 +246,28 @@ use within-document relative comparisons between a deterministically ranked
 candidate and a length-matched control, retain an explicit no-difference
 choice, and test enrichment rather than force an ordinal distinction.
 
+## Within-document enrichment screen
+
+Protocol `within-document-friction-enrichment-development-2.0` is frozen before
+outcomes. It compares one ranked candidate with one zero-marker control from
+the same document. The matching gates preserve passage-length band, restrict
+the CJK-length ratio to 0.8-1.25, allow at most one sentence of difference,
+require a rank-sum gap of at least 1.0, and require at least 0.02 CJK-bigram
+Jaccard similarity.
+
+The candidate ranking uses within-document percentile midranks for five
+deterministic features: target-marker count, abstract-shell density, separator
+density, mean sentence length, and referential-opening ratio. A candidate must
+contain a target marker and receive at least one auxiliary top-quartile vote.
+No previous reader outcome defines the features, thresholds, or weights.
+
+Strict matching leaves 10 pairable transition documents: eight InfoQ and two
+Machine Heart. This imbalance is retained as a limitation. Candidate placement
+is balanced five-to-five. The reader chooses which passage is more discouraging
+or reports no meaningful difference. The ranking proceeds only if at least
+eight pairs are decisive and candidates win at least 75% of decisive pairs;
+no-difference responses are not wins. Outcomes are not yet available.
+
 ## Outlier policy and current limitation
 
 Documents are not hard-deleted because one reader dislikes them. Robust weights
@@ -281,6 +305,10 @@ weights are used in the current time comparison.
   selection and Label Studio task generation for unchanged passages.
 - `experiments/reader-friction-screen-v1.md`: frozen screen, follow-up gate,
   passage identities, artifact hashes, and reproduction command.
+- `experiments/prepare_reader_friction_screen_v2.py`: within-document ranking,
+  matching, blinding, and Label Studio task generation.
+- `experiments/reader-friction-screen-v2.md`: frozen replacement protocol,
+  pair identities, decision threshold, limitations, and artifact hashes.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -300,16 +328,13 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 ## Next research step
 
 Do not build a product interface or train a general classifier. The immediate
-next step is to complete the frozen raw-passage screen, not to make the fourth
-round more aggressive:
+next step is to complete the frozen within-document enrichment comparison:
 
-1. collect the 24 required willingness-to-continue judgments;
-2. apply the frozen eligibility and priority gate without using comments to
-   select cases;
-3. if fewer than four qualify, screen another fresh set rather than editing
-   acceptable prose;
-4. if four to eight qualify, prepare a conservative development intervention
-   while retaining the existing preservation requirements.
+1. collect the 10 required relative judgments with a no-difference option;
+2. decode candidate placement only after every response is complete;
+3. apply the frozen decisive-pair and 75% enrichment thresholds;
+4. prepare no intervention unless both the enrichment threshold and the
+   minimum of four candidate wins are satisfied.
 
 This screen remains single-reader development work. Held-out validation still
 requires new matched post-period material, at least three genres, multiple
@@ -352,3 +377,8 @@ terminated early. Ten of 11 persisted responses occupied one category, so the
 remaining tasks are not needed. The replacement should compare ranked and
 matched-control passages within the same document rather than repeat the same
 absolute-rating design.
+
+That replacement is now frozen as
+`experiments/reader-friction-screen-v2.md`. It contains 10 blinded pairs and
+retains an explicit no-meaningful-difference choice. Its outcomes are not yet
+available.
