@@ -425,6 +425,9 @@ weights are used in the current time comparison.
   outcomes with frozen artifact fingerprints and operation identities.
 - `data/annotations/refinement-pairwise-v3.json`: 12 cross-genre development
   outcomes and the reader's round-level baseline-friction observation.
+- `data/annotations/refinement-pairwise-v4.json`: 10 fresh-post intervention
+  outcomes, the complete side-B selection diagnostic, and the reader's
+  compositional-difficulty observation.
 - `data/annotations/reader-friction-screen-v1.json`: 11 persisted absolute
   ratings, the early-stop discrepancy, and the instrument-failure decision.
 - `data/annotations/reader-friction-screen-v2.json`: three no-difference
@@ -469,7 +472,17 @@ weights are used in the current time comparison.
 - `experiments/prepare_refinement_pairs_v4.py`: fresh post-only conservative
   intervention, structured operation logs, and preservation gates.
 - `experiments/refinement-pairs-v4.md`: frozen fourth-intervention protocol,
-  passage identities, audit, limitations, and artifact hashes.
+  passage identities, audit, compromised outcome, and artifact hashes.
+- `experiments/compositional_burden_probe.py`: deterministic integration-load
+  vector for controlled variants without a composite score.
+- `experiments/scan_post_compositional_burden.py`: source-format-stratified
+  discovery scan over previously unselected post passages.
+- `experiments/compositional-burden-probe.md`: measurement definitions,
+  fourth-round diagnostics, scan results, and limitations.
+- `experiments/prepare_integration_pairs_v1.py`: bounded proposition-
+  decompression intervention with preservation and position controls.
+- `experiments/integration-pairs-v1.md`: frozen fifth-development protocol,
+  passage identities, position gate, and reproduction identity.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -483,22 +496,38 @@ weights are used in the current time comparison.
 - `experiments/discourse-graph-probe.md`: method and detailed evidence.
 - `docs/smell-catalog.md`: evidence-status integration.
 
-Generated `feature_runs/` artifacts and local Stanza weights are intentionally
+Generated `feature_runs/` artifacts and Stanza weights are intentionally
 ignored. They can be reproduced from the tracked pilot corpus and scripts.
+Future model inference, including bulk parser inference, runs on `gx10`; the
+local workstation is limited to deterministic artifact preparation and checks.
 
 ## Next research step
 
 Do not build a product interface, train a general classifier, or ask the reader
-to continue any stopped screen. The immediate step is the frozen fourth
-intervention:
+to continue any stopped screen. The fourth intervention is complete: five
+revised preferences, four original preferences, and one no-difference answer.
+All nine decisive answers selected side B despite balanced original placement,
+so the treatment totals are position-confounded and do not validate the
+operator.
 
-1. collect the 10 original-versus-revision preferences;
-2. retain every no-difference response rather than forcing a choice;
-3. decode original placement only after all responses are complete;
-4. keep meaning-preservation concerns separate from preference;
-5. do not change the frozen operator from these outcomes.
+The reader reported a separate form of difficulty in which familiar individual
+words become difficult to integrate as a whole. A deterministic post-outcome
+probe found mixed evidence: revisions reduced function-to-content ratio in all
+10 pairs and increased content per clause head in six, but usually reduced
+sentence length, tree depth, and long dependencies. No composite burden score
+is defined or validated.
 
-This next screen remains single-reader development work. The 50-document pool
+The immediate step is the frozen proposition-decompression intervention:
+
+1. collect eight low-burden choices: six interventions, one identical-text
+   control, and one nonadjacent mirrored pair;
+2. require a no-difference answer on the identical control;
+3. require mirrored choices to follow content rather than display side;
+4. interpret treatment preference only if both position diagnostics pass;
+5. retain every no-difference response and keep optional comments outside
+   candidate selection.
+
+This remains single-reader development work. The 50-document pool
 is not large enough to support both development and an independent validation
 reserve under the preferred protocol. Held-out validation still requires more
 fresh post material, at least three formats, multiple independent readers, and

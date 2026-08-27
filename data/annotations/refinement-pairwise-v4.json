@@ -1,0 +1,196 @@
+{
+  "schema_version": "deaiodorant-refinement-pairwise-4.0",
+  "protocol_version": "post-only-conservative-reframing-development-4.0",
+  "project": "DeAIodorant Fresh Post Refinement v4",
+  "completed_at": "2026-08-27",
+  "seed": 2026082702,
+  "role": "development_intervention_not_validation",
+  "source": {
+    "application": "Label Studio 1.23.0",
+    "project_id": 6,
+    "tasks_sha256": "881952f731233037a90eb4b6e31e05b4bfa4a43a353a67dc098a289091ae752a",
+    "answer_key_sha256": "8152816cd789175f759588a95145dfdae78fcdafeaaa3da96eeb84a91b0bafab",
+    "protocol_sha256": "34cf0672fd3a1f8a7e778ef46e2dce833c7dea1a41efc90acbceb75712b619c7",
+    "label_config_sha256": "168369c7bd2af58b6d3570f50885d4d337008b3f9f071930e935352c63951e03"
+  },
+  "rating_question": "哪个版本让你更愿意继续读？",
+  "round_observation": "大部分A都很难读，但不是明显的AI臭味，就是难度，我以前都没有注意过，确实现在AI生成的技术文章，每个词我都能看懂，但是放在一起变得非常难读，就像一团词拧在一起，不是正常的书写方式",
+  "summary": {
+    "pair_count": 10,
+    "revised_preferred": 5,
+    "original_preferred": 4,
+    "tie_or_neither": 1,
+    "decisive_pair_count": 9,
+    "revised_share_among_decisive": 0.5555555555555556,
+    "a_preferred": 0,
+    "b_preferred": 9,
+    "b_share_among_decisive": 1.0,
+    "original_on_a": 5,
+    "original_on_b": 5,
+    "optional_comment_count": 0,
+    "cancelled_count": 0,
+    "interpretation": "Treatment preference is not interpretable because every decisive response selected side B despite balanced original placement. A position, order, or display effect is confounded with pair-specific readability."
+  },
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "refinement-v4-10",
+      "doc_id": "4c4d1156bf248a78ba057cb3",
+      "target_line": 1,
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 34.984,
+      "submitted_at_utc": "2026-08-27T15:25:09.890456Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-10-op-01", "operator": "clarify_argument_structure"}
+      ]
+    },
+    {
+      "task_number": 2,
+      "pair_id": "refinement-v4-05",
+      "doc_id": "7c1423cab64a9a1b24d75243",
+      "target_line": 41,
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 21.351,
+      "submitted_at_utc": "2026-08-27T15:25:31.426826Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-05-op-01", "operator": "merge_repeated_reframing"}
+      ]
+    },
+    {
+      "task_number": 3,
+      "pair_id": "refinement-v4-03",
+      "doc_id": "da81d4c0f5b616b43f9e1472",
+      "target_line": 93,
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 29.998,
+      "submitted_at_utc": "2026-08-27T15:26:01.614577Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-03-op-01", "operator": "remove_ornamental_emphasis"}
+      ]
+    },
+    {
+      "task_number": 4,
+      "pair_id": "refinement-v4-02",
+      "doc_id": "e6b904412ae6774c9ee56964",
+      "target_line": 16,
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 55.515,
+      "submitted_at_utc": "2026-08-27T15:26:57.310940Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-02-op-01", "operator": "clarify_argument_structure"}
+      ]
+    },
+    {
+      "task_number": 5,
+      "pair_id": "refinement-v4-07",
+      "doc_id": "fdbd90f96ec1d4752373dcf1",
+      "target_line": 1,
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 34.061,
+      "submitted_at_utc": "2026-08-27T15:27:31.685310Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-07-op-01", "operator": "remove_ornamental_emphasis"}
+      ]
+    },
+    {
+      "task_number": 6,
+      "pair_id": "refinement-v4-04",
+      "doc_id": "21129f35e0f1ae2b265bb287",
+      "target_line": 27,
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 33.795,
+      "submitted_at_utc": "2026-08-27T15:28:05.662232Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-04-op-01", "operator": "clarify_argument_structure"}
+      ]
+    },
+    {
+      "task_number": 7,
+      "pair_id": "refinement-v4-09",
+      "doc_id": "a174fe26e705b96c18acb00e",
+      "target_line": 105,
+      "original_side": "B",
+      "preference": "没有明显差别（都还行或都不好）",
+      "outcome": "tie_or_neither",
+      "comment": null,
+      "lead_time_seconds": 38.642,
+      "submitted_at_utc": "2026-08-27T15:28:44.487837Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-09-op-01", "operator": "direct_contrast"}
+      ]
+    },
+    {
+      "task_number": 8,
+      "pair_id": "refinement-v4-06",
+      "doc_id": "398d56824414e91464ffc3d8",
+      "target_line": 78,
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 11.824,
+      "submitted_at_utc": "2026-08-27T15:28:56.492373Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-06-op-01", "operator": "direct_contrast"}
+      ]
+    },
+    {
+      "task_number": 9,
+      "pair_id": "refinement-v4-08",
+      "doc_id": "ee642b95d3e1e32aea9e8ccf",
+      "target_line": 1,
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 42.82,
+      "submitted_at_utc": "2026-08-27T15:29:39.498126Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-08-op-01", "operator": "clarify_argument_structure"}
+      ]
+    },
+    {
+      "task_number": 10,
+      "pair_id": "refinement-v4-01",
+      "doc_id": "ddb4214a54ff80efa0f5b210",
+      "target_line": 19,
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 40.983,
+      "submitted_at_utc": "2026-08-27T15:30:20.672411Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "refinement-v4-01-op-01", "operator": "merge_repeated_reframing"}
+      ]
+    }
+  ]
+}

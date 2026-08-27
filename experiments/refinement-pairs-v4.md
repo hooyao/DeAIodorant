@@ -64,6 +64,30 @@ originals to three in the revisions. Remaining markers express necessary
 contrast or causality. Marker reduction confirms manipulation only; it is not
 evidence of reader benefit.
 
+## Reader outcome
+
+All 10 tasks were completed. The decoded treatment totals are five revised
+preferences, four original preferences, and one no-difference answer. These
+totals are not interpretable as an operator effect: all nine decisive answers
+selected display side B, while original placement was balanced five-to-five.
+There were zero A selections.
+
+This complete side pattern confounds pair-specific readability with position,
+order, or display effects. The apparent 55.6% revised share among decisive
+answers must not be reported as evidence of benefit. No operator-specific
+conclusion is drawn.
+
+The reader reported that most A versions were difficult, but not mainly because
+of an obvious AI-style marker. Individual words were understandable while the
+combined technical prose felt unusually difficult to assemble. This is retained
+as a new development observation, not a linguistic gold label or authorship
+judgment.
+
+The result motivates a separate compositional-integration hypothesis and the
+position diagnostics in the next experiment. See
+[Compositional Integration Burden Probe](compositional-burden-probe.md) and
+[Proposition-Decompression Development Intervention](integration-pairs-v1.md).
+
 ## Frozen passage set
 
 | Task | Source | Format | Date | Document | Line | Operator | Original markers | Revised markers |

@@ -543,7 +543,13 @@ conservative revision of the same content. It uses 10 new documents, balances
 InfoQ and Meituan five-to-five, retains 30 proposition-support checks and exact
 numeric preservation, and reduces frozen target markers from 16 to three. See
 [Fresh Post-Only Conservative Reframing Intervention](../experiments/refinement-pairs-v4.md).
-This setup does not change the evidence status until reader outcomes exist.
+
+The fourth intervention produced five revised preferences, four original
+preferences, and one no-difference answer. All nine decisive responses selected
+display side B even though original placement was balanced five-to-five. The
+result is position-confounded, does not validate the operator, and does not
+change this smell's evidence status. The reader's round-level observation
+instead motivates the compositional-integration watchlist entry below.
 
 Reproduce the frozen batch with:
 
@@ -868,6 +874,50 @@ instances and reason codes remain useful for audit. See
 | Typed discourse-relation support | Problem-density time effect 0.04 and reader rho 0.06; clear false positives | Reject v0.1 score; retain instance audit only |
 | Transition quote and dash growth | Source-consistent rhos 0.286 and 0.250, but BH q values 0.286 and 0.336 | Retain for discovery; require post matching and interventions |
 | Pure syntax classification | Unstable and below chance after punctuation removal | Deprioritize as a standalone direction |
+| Compositional integration burden | Reader reports familiar words becoming difficult to assemble; paired syntax vector is mixed and project 6 is position-confounded | Retain an interpretable vector; test bounded proposition decompression with position controls |
 
 Watchlist entries require stronger evidence or better measurement before they
 receive a smell ID.
+
+### Compositional integration burden
+
+#### Status
+
+- Reader reported
+- Hypothesis
+- Deterministically measured on one post-outcome development batch
+- No unconfounded reader association
+- Not intervention validated
+
+#### Reader experience
+
+Each word or technical term is understandable in isolation, but too many
+relations, modifiers, entities, and propositions appear to be packed into one
+integration unit. The reader can decode the vocabulary yet struggles to build
+a stable statement from it. This was experienced as difficulty rather than as
+an obvious formulaic AI-style marker.
+
+This candidate differs from low-information expansion: it may contain ample
+real information. The suspected problem is how that information is packaged,
+not simply how little payload the passage contains.
+
+#### Current measurement
+
+The exploratory vector includes content tokens and distinct content lemmas per
+sentence, content tokens per clause head, function-to-content ratio, overt-
+argument coverage, dependency distances, nominal-modifier spans, tree depth,
+and subordinate or coordinate relations. No single score is defined.
+
+On the fourth intervention's revisions, function-to-content ratio fell in all
+10 pairs and content tokens per clause head rose in six. However, mean tree
+depth fell in eight and long-dependency ratio fell in nine. The vector is mixed
+and does not explain the universal side-B answers. Feature-preference tuning on
+these outcomes is prohibited.
+
+The next development intervention splits dense proposition chains while
+preserving content and bounding length. It contains an identical-text control
+and a mirrored pair; treatment outcomes are interpreted only if both position
+diagnostics pass. See
+[Compositional Integration Burden Probe](../experiments/compositional-burden-probe.md)
+and
+[Proposition-Decompression Development Intervention](../experiments/integration-pairs-v1.md).
