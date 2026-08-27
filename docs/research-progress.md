@@ -363,8 +363,19 @@ CJK-bigram overlap. Candidate placement is balanced six-to-six.
 The reader chooses which passage makes them less willing to continue or reports
 no meaningful difference. At least four decisive pairs are required to show
 that the batch discriminates at all. Feature enrichment additionally requires
-at least eight decisive pairs and a 75% candidate share. Outcomes are not yet
-available, and this remains development rather than validation.
+at least eight decisive pairs and a 75% candidate share.
+
+The reader terminated the batch after six pairs because same-document passages
+were stylistically similar and lacked useful comparison contrast. Four choices
+were no meaningful difference, two selected the control as more discouraging,
+and none selected the ranked candidate. One optional comment said both passages
+had obvious AI-style smell.
+
+Do not evaluate the frozen thresholds or interpret this as ranking evidence.
+The design controlled source, topic, author, and format, but also controlled
+away much of the stylistic variation of interest. A replacement must use
+different documents while matching source, topic, format, length, and
+visibility. No intervention may use this batch.
 
 ## Outlier policy and current limitation
 
@@ -391,6 +402,8 @@ weights are used in the current time comparison.
   ratings, the early-stop discrepancy, and the instrument-failure decision.
 - `data/annotations/reader-friction-screen-v2.json`: three no-difference
   responses and the transition-corpus mismatch termination decision.
+- `data/annotations/reader-friction-screen-v3.json`: six post-only responses
+  and the within-document over-control termination decision.
 - `src/deaiodorant/analysis/discourse_graph.py`: graph schema and metrics.
 - `experiments/analyze_reader_friction.py`: post-only ordinal association.
 - `experiments/robust_typicality_probe.py`: cohort-wise Huber analysis.
@@ -445,13 +458,15 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 ## Next research step
 
 Do not build a product interface, train a general classifier, or ask the reader
-to continue either failed transition screen. The immediate step is to complete
-the frozen 12-pair post-only discrimination screen:
+to continue any stopped screen. The immediate design correction is a
+cross-document post-only comparison:
 
-1. retain every no-difference response rather than forcing a choice;
-2. decode candidate placement only after all responses are complete;
-3. apply the frozen discrimination and enrichment thresholds;
-4. prepare an intervention only for candidate-winning high-friction passages.
+1. pair passages from different documents;
+2. match source, topic, format, length, and visibility without matching author;
+3. retain every no-difference response rather than forcing a choice;
+4. freeze candidate placement and decision thresholds before reader exposure;
+5. prepare an intervention only after the replacement demonstrates useful
+   discrimination and directional enrichment.
 
 This next screen remains single-reader development work. The 50-document pool
 is not large enough to support both development and an independent validation

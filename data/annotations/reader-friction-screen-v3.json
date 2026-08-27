@@ -1,0 +1,117 @@
+{
+  "schema_version": "deaiodorant-reader-friction-screen-outcome-3.0",
+  "protocol_version": "post-only-friction-discrimination-development-3.0",
+  "project": "DeAIodorant Fresh Post Friction Screen v3",
+  "status": "terminated_early_within_document_overcontrol",
+  "stopped_at": "2026-08-27",
+  "role": "post_only_development_discrimination_not_validation",
+  "source": {
+    "application": "Label Studio 1.23.0",
+    "project_id": 5,
+    "tasks_sha256": "bbb4c030f25eea43854377b1bfd291d57f8bd20ba41cc69ca3ba8d1e00250122",
+    "answer_key_sha256": "a7ee8b9f4fd83003731f44ca48329b71bff76c07f22f0403ddff59b76144d4f8",
+    "protocol_sha256": "752397500afef679c87121534fc32bc2f30e7e7921c809e8ce059eaf6913eb90",
+    "label_config_sha256": "5c0181d7973346b536d3d8c550a57d33a8fa8b4653ac9872a6deb323b15755da"
+  },
+  "rating_question": "下面两段来自同一篇文章。哪一段让你更不愿意继续读？",
+  "round_comment": "采样有明显问题：两段大都从同一篇文章中抽取，风格本身相近，缺少比较意义。",
+  "summary": {
+    "planned_pair_count": 12,
+    "persisted_completion_count": 6,
+    "uncompleted_count": 6,
+    "candidate_more_discouraging": 0,
+    "control_more_discouraging": 2,
+    "no_meaningful_difference": 4,
+    "optional_comment_count": 1,
+    "cancelled_count": 0
+  },
+  "decision": {
+    "continue_remaining_pairs": false,
+    "evaluate_discrimination_threshold": false,
+    "evaluate_enrichment_threshold": false,
+    "prepare_intervention_from_this_batch": false,
+    "reason": "Within-document matching controlled topic and author but also removed much of the stylistic contrast needed for a discrimination screen.",
+    "interpretation": "The six responses diagnose an over-controlled comparison design and are not used to accept or reject the deterministic ranking.",
+    "replacement_requirement": "Compare passages from different documents while matching source, topic, format, length, and visibility; keep an explicit no-difference response."
+  },
+  "responses": [
+    {
+      "task_number": 1,
+      "pair_id": "friction-v3-4121a1ef",
+      "published_at": "2025-09-24",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "candidate_side": "A",
+      "choice": "B，让我更不愿意继续读",
+      "outcome": "control_more_discouraging",
+      "comment": null,
+      "lead_time_seconds": 631.649,
+      "submitted_at_utc": "2026-08-27T14:47:41.128826Z"
+    },
+    {
+      "task_number": 2,
+      "pair_id": "friction-v3-fbed7012",
+      "published_at": "2026-03-13",
+      "source": "meituan_tech",
+      "format_stratum": "technical_practice",
+      "candidate_side": "A",
+      "choice": "B，让我更不愿意继续读",
+      "outcome": "control_more_discouraging",
+      "comment": null,
+      "lead_time_seconds": 38.63,
+      "submitted_at_utc": "2026-08-27T14:48:19.949105Z"
+    },
+    {
+      "task_number": 3,
+      "pair_id": "friction-v3-7f94b33a",
+      "published_at": "2026-06-02",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "candidate_side": "A",
+      "choice": "没有明显差别（都还行或都不好）",
+      "outcome": "no_meaningful_difference",
+      "comment": "这两个都是有明显的ai臭味",
+      "lead_time_seconds": 42.433,
+      "submitted_at_utc": "2026-08-27T14:49:02.570263Z"
+    },
+    {
+      "task_number": 4,
+      "pair_id": "friction-v3-b67f13df",
+      "published_at": "2026-02-26",
+      "source": "infoq",
+      "format_stratum": "technical_practice",
+      "candidate_side": "B",
+      "choice": "没有明显差别（都还行或都不好）",
+      "outcome": "no_meaningful_difference",
+      "comment": null,
+      "lead_time_seconds": 41.05,
+      "submitted_at_utc": "2026-08-27T14:49:43.818410Z"
+    },
+    {
+      "task_number": 5,
+      "pair_id": "friction-v3-886c72b9",
+      "published_at": "2025-12-10",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "candidate_side": "B",
+      "choice": "没有明显差别（都还行或都不好）",
+      "outcome": "no_meaningful_difference",
+      "comment": null,
+      "lead_time_seconds": 39.264,
+      "submitted_at_utc": "2026-08-27T14:50:23.281283Z"
+    },
+    {
+      "task_number": 6,
+      "pair_id": "friction-v3-1b105962",
+      "published_at": "2026-04-27",
+      "source": "meituan_tech",
+      "format_stratum": "research_summary",
+      "candidate_side": "A",
+      "choice": "没有明显差别（都还行或都不好）",
+      "outcome": "no_meaningful_difference",
+      "comment": null,
+      "lead_time_seconds": 18.539,
+      "submitted_at_utc": "2026-08-27T14:50:42.011981Z"
+    }
+  ]
+}

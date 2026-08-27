@@ -122,3 +122,25 @@ python experiments/prepare_reader_friction_screen_v3.py `
 
 Generated tasks and the blinded answer key remain under ignored
 `feature_runs/`.
+
+## Outcome and termination
+
+The reader stopped after six pairs because same-document sampling made most
+passages stylistically similar and therefore provided little useful contrast.
+Four responses were no meaningful difference, two selected the control as more
+discouraging, and none selected the ranked candidate. One optional comment
+stated that both passages had obvious AI-style smell.
+
+The original rationale was to control source, topic, author, and format. In
+practice it also controlled away much of the stylistic variation required by a
+discrimination screen. This is an over-controlled comparison design. The six
+responses are retained as design diagnostics, but neither the discrimination
+nor enrichment threshold is evaluated, and no intervention may use this
+batch.
+
+A replacement must compare passages from different documents while matching
+source, topic, format, length, and visibility. It must retain the explicit
+no-difference response and cannot use the optional comments for selection.
+
+The complete early-stop outcome is stored in
+`data/annotations/reader-friction-screen-v3.json`.

@@ -527,7 +527,12 @@ Meituan six-to-six, uses only documents published on or after 2025-07-01, and
 compares a marker-plus-structure candidate with a locally matched zero-marker
 control from the same document. See
 [Fresh Post-Only Reader-Friction Discrimination Screen](../experiments/reader-friction-screen-v3.md).
-This protocol does not change the evidence status until reader outcomes exist.
+The reader stopped after six pairs: four no-difference choices, two control-
+more-discouraging choices, and zero candidate-more-discouraging choices. One
+comment said both passages had obvious AI-style smell. Same-document matching
+over-controlled stylistic variation, so the ranking is not evaluated and the
+evidence status does not change. The next comparison must use different
+documents matched on source, topic, format, length, and visibility.
 
 Reproduce the frozen batch with:
 
