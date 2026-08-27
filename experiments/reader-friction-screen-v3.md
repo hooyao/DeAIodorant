@@ -138,9 +138,12 @@ responses are retained as design diagnostics, but neither the discrimination
 nor enrichment threshold is evaluated, and no intervention may use this
 batch.
 
-A replacement must compare passages from different documents while matching
-source, topic, format, length, and visibility. It must retain the explicit
-no-difference response and cannot use the optional comments for selection.
+Any future raw-passage replacement must compare different documents while
+matching source, topic, format, length, and visibility. It must retain the
+explicit no-difference response and cannot use optional comments for
+selection. Because raw cross-document comparison still confounds content
+interest with style, the immediate follow-up should instead compare each source
+passage with a conservative same-content revision.
 
 The complete early-stop outcome is stored in
 `data/annotations/reader-friction-screen-v3.json`.

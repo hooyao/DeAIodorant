@@ -40,6 +40,8 @@ research checkpoint, not a product milestone.
   fresh post-period reader-development handoff from two public sources.
 - Froze a 12-pair post-only reader-friction discrimination screen with balanced
   source and candidate placement before outcomes.
+- Terminated the over-controlled raw comparison and froze a 10-pair post-only
+  original-versus-conservative-revision intervention before outcomes.
 
 ## Current evidence
 
@@ -373,9 +375,34 @@ had obvious AI-style smell.
 
 Do not evaluate the frozen thresholds or interpret this as ranking evidence.
 The design controlled source, topic, author, and format, but also controlled
-away much of the stylistic variation of interest. A replacement must use
-different documents while matching source, topic, format, length, and
-visibility. No intervention may use this batch.
+away much of the stylistic variation of interest. Any future raw-passage
+comparison must use different documents while matching source, topic, format,
+length, and visibility. Because that still introduces content-interest
+confounding, the immediate replacement is a same-content edit intervention.
+No intervention may use project 5 passages.
+
+## Fourth intervention setup
+
+Protocol `post-only-conservative-reframing-development-4.0` is frozen before
+outcomes. Instead of comparing unrelated raw passages, it compares the same
+content before and after a bounded conservative edit. The 10 passages come from
+10 new post-period documents not selected for project 5: five InfoQ and five
+Meituan, with four industry-reporting, three research-summary, and three
+technical-practice passages.
+
+The operator reduces ornamental contrast, clarification, and emphasis framing
+while retaining necessary logic, explicit grammatical arguments, propositions,
+entities, numbers, negation, uncertainty, rhythm, and authorial voice. It does
+not maximize compression. The audit records 10 structured operations, 30
+proposition-support checks, locked literals, voice anchors, exact numeric
+sequences, source hashes, and unified diffs. All gates pass, and original
+placement is balanced five-to-five.
+
+Two draft revisions were rejected because they weakened assertion strength;
+another newly introduced causal marker was removed before freezing. The final
+surface manipulation decreases frozen target markers from 16 to three. This is
+manipulation fidelity, not evidence of reader benefit. Outcomes are not yet
+available.
 
 ## Outlier policy and current limitation
 
@@ -439,6 +466,10 @@ weights are used in the current time comparison.
   reconstruction, candidate/control matching, blinding, and task generation.
 - `experiments/reader-friction-screen-v3.md`: frozen post-only reader protocol,
   pair identities, thresholds, limitations, and artifact hashes.
+- `experiments/prepare_refinement_pairs_v4.py`: fresh post-only conservative
+  intervention, structured operation logs, and preservation gates.
+- `experiments/refinement-pairs-v4.md`: frozen fourth-intervention protocol,
+  passage identities, audit, limitations, and artifact hashes.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -458,15 +489,14 @@ ignored. They can be reproduced from the tracked pilot corpus and scripts.
 ## Next research step
 
 Do not build a product interface, train a general classifier, or ask the reader
-to continue any stopped screen. The immediate design correction is a
-cross-document post-only comparison:
+to continue any stopped screen. The immediate step is the frozen fourth
+intervention:
 
-1. pair passages from different documents;
-2. match source, topic, format, length, and visibility without matching author;
-3. retain every no-difference response rather than forcing a choice;
-4. freeze candidate placement and decision thresholds before reader exposure;
-5. prepare an intervention only after the replacement demonstrates useful
-   discrimination and directional enrichment.
+1. collect the 10 original-versus-revision preferences;
+2. retain every no-difference response rather than forcing a choice;
+3. decode original placement only after all responses are complete;
+4. keep meaning-preservation concerns separate from preference;
+5. do not change the frozen operator from these outcomes.
 
 This next screen remains single-reader development work. The 50-document pool
 is not large enough to support both development and an independent validation

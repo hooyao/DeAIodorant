@@ -305,6 +305,8 @@ if the effect disappears after removing formatting and translated content.
 - Raw-passage candidate screen failed: 10 of 11 persisted ratings in one band
 - Within-document enrichment screen terminated after three transition-period
   no-difference responses; ranking not evaluated
+- Fresh post-only raw screen terminated after within-document over-control;
+  fourth original-versus-revision intervention frozen, outcomes pending
 - Broad typed relation-support score rejected
 - Not intervention validated
 
@@ -531,8 +533,17 @@ The reader stopped after six pairs: four no-difference choices, two control-
 more-discouraging choices, and zero candidate-more-discouraging choices. One
 comment said both passages had obvious AI-style smell. Same-document matching
 over-controlled stylistic variation, so the ranking is not evaluated and the
-evidence status does not change. The next comparison must use different
-documents matched on source, topic, format, length, and visibility.
+evidence status does not change. A future raw comparison would need different
+documents matched on source, topic, format, length, and visibility, but would
+still confound content interest with style.
+
+Rather than replacing that design with unrelated raw passages, the fourth
+development intervention now compares each selected post-period passage with a
+conservative revision of the same content. It uses 10 new documents, balances
+InfoQ and Meituan five-to-five, retains 30 proposition-support checks and exact
+numeric preservation, and reduces frozen target markers from 16 to three. See
+[Fresh Post-Only Conservative Reframing Intervention](../experiments/refinement-pairs-v4.md).
+This setup does not change the evidence status until reader outcomes exist.
 
 Reproduce the frozen batch with:
 
