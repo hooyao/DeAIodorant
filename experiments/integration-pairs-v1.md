@@ -95,6 +95,26 @@ python experiments/prepare_integration_pairs_v1.py `
 Generated tasks, diffs, full operation logs, source text, and the blinded answer
 key remain under ignored `feature_runs/`.
 
+## Reader outcome
+
+All eight tasks were completed. Both position diagnostics passed:
+
+- the byte-identical A/B control received a no-difference answer;
+- pair 01 was preferred in its original form both before and after A/B sides
+  were reversed.
+
+The six unique interventions therefore enter development interpretation. Three
+revisions were preferred and three originals were preferred, with no ties. The
+generic proposition-decompression operator has no aggregate advantage and must
+not be promoted.
+
+The reader localized a narrower residual problem in pair 03. Its revision was
+preferred, but the phrase `AI 原生时代全新的算力服务需求` remained difficult:
+the head noun arrived after a long modifier stack, and the stack itself did not
+state what was substantively new. This yields a more specific head-delay and
+low-anchor abstract-stacking hypothesis. See
+[Head-Final Modifier Delay Probe](head-final-modifier-probe.md).
+
 ## Interpretation boundary
 
 This round can only establish whether proposition decompression deserves

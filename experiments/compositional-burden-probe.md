@@ -110,6 +110,13 @@ contains one identical-text control and one nonadjacent mirrored pair. Treatment
 preference is interpreted only if the identical pair receives a no-difference
 answer and the mirrored answers follow content rather than display side.
 
+Both controls later passed. The six proposition-decompression interventions
+split three revised preferences to three original preferences. Broad
+decompression is therefore not promoted. A reader-localized residual instead
+supports narrowing the investigation to delayed nominal heads and low-anchor
+abstract modifier stacks; see
+[Head-Final Modifier Delay Probe](head-final-modifier-probe.md).
+
 ## Reproduction
 
 ~~~powershell

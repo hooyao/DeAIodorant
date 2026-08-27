@@ -428,6 +428,9 @@ weights are used in the current time comparison.
 - `data/annotations/refinement-pairwise-v4.json`: 10 fresh-post intervention
   outcomes, the complete side-B selection diagnostic, and the reader's
   compositional-difficulty observation.
+- `data/annotations/integration-pairwise-v1.json`: six proposition-
+  decompression outcomes, two passed position controls, and localized reader
+  observations about delayed heads and abstract modifier stacks.
 - `data/annotations/reader-friction-screen-v1.json`: 11 persisted absolute
   ratings, the early-stop discrepancy, and the instrument-failure decision.
 - `data/annotations/reader-friction-screen-v2.json`: three no-difference
@@ -482,7 +485,12 @@ weights are used in the current time comparison.
 - `experiments/prepare_integration_pairs_v1.py`: bounded proposition-
   decompression intervention with preservation and position controls.
 - `experiments/integration-pairs-v1.md`: frozen fifth-development protocol,
-  passage identities, position gate, and reproduction identity.
+  passage identities, passed position gate, split outcome, and reproduction
+  identity.
+- `experiments/head_final_modifier_probe.py`: model-free cue-to-head span and
+  low-anchor abstract-modifier candidate extraction.
+- `experiments/head-final-modifier-probe.md`: localized construction,
+  deterministic rule, corpus audit, false positives, and admission boundary.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -517,15 +525,34 @@ probe found mixed evidence: revisions reduced function-to-content ratio in all
 sentence length, tree depth, and long dependencies. No composite burden score
 is defined or validated.
 
-The immediate step is the frozen proposition-decompression intervention:
+The proposition-decompression intervention is complete. Its identical-text and
+mirrored controls both passed, so the six treatment outcomes are interpretable
+as development evidence. Three revisions and three originals were preferred,
+with no ties. Generic sentence splitting or proposition decompression is not
+promoted.
 
-1. collect eight low-burden choices: six interventions, one identical-text
-   control, and one nonadjacent mirrored pair;
-2. require a no-difference answer on the identical control;
-3. require mirrored choices to follow content rather than display side;
-4. interpret treatment preference only if both position diagnostics pass;
-5. retain every no-difference response and keep optional comments outside
-   candidate selection.
+One preferred revision retained a reader-localized problem: `AI 原生时代全新的
+算力服务需求`. The head noun `需求` arrives after a long modifier string, and
+the generic era and novelty modifiers do not specify what makes the requirement
+new. A model-free lexical probe localizes both the original and revised forms.
+
+The strict low-anchor rule occurs only once in the current 50-document post
+handoff. After excluding all documents selected for projects 5 through 7, five
+documents retain only broad delayed-head candidates; all are from Meituan and
+most are technical or section-heading fragments. Do not construct another
+reader batch from this remainder.
+
+Applying the same frozen rule to the separate 119-document handoff produced 38
+broad delayed-head candidates but zero strict low-anchor abstract stacks. The
+strict motif did not replicate. The handoff contains only pre and transition
+documents and is not matched to the post pool, so this zero cannot estimate a
+time effect.
+
+The immediate step is to wait for independent, complete, multi-source examples
+that meet the frozen cue-to-head and low-anchor conditions. Once available,
+freeze an `unpack_delayed_head` operator that turns the modifier into an
+explicit proposition without deleting its era, novelty, or attribution claims.
+Keep reader input to blinded continued-reading preference.
 
 This remains single-reader development work. The 50-document pool
 is not large enough to support both development and an independent validation

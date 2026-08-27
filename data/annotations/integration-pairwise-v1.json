@@ -1,0 +1,179 @@
+{
+  "schema_version": "deaiodorant-integration-pairwise-1.0",
+  "protocol_version": "proposition-decompression-development-1.0",
+  "project": "DeAIodorant Proposition Decompression v1",
+  "completed_at": "2026-08-28",
+  "seed": 2026082705,
+  "role": "post_only_development_intervention_not_validation",
+  "source": {
+    "application": "Label Studio 1.23.0",
+    "project_id": 7,
+    "tasks_sha256": "cf84bbfa9a2add22bb86adcd6ad9f4841f85cbe943e8ed93bcdbe09d9be74389",
+    "answer_key_sha256": "73edf62b5b5be63f2e3efa67bf974e62a6c80f02293b5bfa6a83439c7975eba8",
+    "protocol_sha256": "57c57847d275daa0b708ee463ff2ffd14feeafd57b5d0a2e3e4a67e205823779",
+    "label_config_sha256": "0ff910c04d65c908b917d4c962ae185d6bab829e66df3cb2826d98c60b92116a"
+  },
+  "rating_question": "哪个版本让你更愿意继续读？",
+  "round_observations": [
+    "我还是大部分都是选b，比如“这个 AI 算力池面向 AI 原生时代全新算力服务需求”，这就是一堆词对齐，不是人类能读的中文，面向 （AI 原生时代全新算力服务）需求，括号里需要人类分词，但是中文极少会把面向xxx的需求中间放那么多字，第一眼丧失了分词的能力",
+    "AI 原生时代全新算力服务 这个又是什么东西，没什么意义又特别长"
+  ],
+  "summary": {
+    "task_count": 8,
+    "unique_intervention_pair_count": 6,
+    "revised_preferred": 3,
+    "original_preferred": 3,
+    "tie_or_neither": 0,
+    "intervention_a_preferred": 2,
+    "intervention_b_preferred": 4,
+    "identical_control_passed": true,
+    "mirrored_control_passed": true,
+    "position_gate_passed": true,
+    "mirrored_pair_content_preferred": "original",
+    "optional_comment_count": 0,
+    "cancelled_count": 0,
+    "interpretation": "The position diagnostics passed, so the six intervention outcomes are interpretable as development evidence. Generic proposition decompression split evenly and is not supported as a blanket operator. One revised win directly motivates a narrower head-delay and abstract-modifier-stack hypothesis."
+  },
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "integration-v1-04",
+      "base_pair_id": "integration-v1-04",
+      "doc_id": "610ba7a9b468d78a3d59def1",
+      "target_line": 18,
+      "control_role": "intervention",
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 58.787,
+      "submitted_at_utc": "2026-08-27T15:58:45.431481Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "integration-v1-04-op-01", "operator": "decompress_proposition_chain"}
+      ]
+    },
+    {
+      "task_number": 2,
+      "pair_id": "integration-v1-01",
+      "base_pair_id": "integration-v1-01",
+      "doc_id": "4e2108f7b04c3847a564bfd4",
+      "target_line": 1,
+      "control_role": "intervention",
+      "original_side": "A",
+      "preference": "A，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 23.093,
+      "submitted_at_utc": "2026-08-27T15:59:08.719870Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "integration-v1-01-op-01", "operator": "decompress_proposition_chain"}
+      ]
+    },
+    {
+      "task_number": 3,
+      "pair_id": "integration-v1-06",
+      "base_pair_id": "integration-v1-06",
+      "doc_id": "69566776f457ecf4c98ecbe0",
+      "target_line": 34,
+      "control_role": "intervention",
+      "original_side": "B",
+      "preference": "A，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 30.719,
+      "submitted_at_utc": "2026-08-27T15:59:39.618927Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "integration-v1-06-op-01", "operator": "decompress_proposition_chain"}
+      ]
+    },
+    {
+      "task_number": 4,
+      "pair_id": "integration-v1-identical-control",
+      "doc_id": "66ba5cd023c8f199f1601f59",
+      "target_line": 9,
+      "control_role": "identical",
+      "preference": "没有明显差别（都还行或都不好）",
+      "outcome": "identical_control_passed",
+      "comment": null,
+      "lead_time_seconds": 11.996,
+      "submitted_at_utc": "2026-08-27T15:59:51.811440Z",
+      "was_cancelled": false,
+      "operations": []
+    },
+    {
+      "task_number": 5,
+      "pair_id": "integration-v1-02",
+      "base_pair_id": "integration-v1-02",
+      "doc_id": "8873215c1410ad3babd84bbb",
+      "target_line": 1,
+      "control_role": "intervention",
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "original_preferred",
+      "comment": null,
+      "lead_time_seconds": 29.18,
+      "submitted_at_utc": "2026-08-27T16:00:21.183601Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "integration-v1-02-op-01", "operator": "decompress_proposition_chain"}
+      ]
+    },
+    {
+      "task_number": 6,
+      "pair_id": "integration-v1-05",
+      "base_pair_id": "integration-v1-05",
+      "doc_id": "75583336dc40b896d68598d0",
+      "target_line": 11,
+      "control_role": "intervention",
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 47.745,
+      "submitted_at_utc": "2026-08-27T16:01:09.113892Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "integration-v1-05-op-01", "operator": "decompress_proposition_chain"}
+      ]
+    },
+    {
+      "task_number": 7,
+      "pair_id": "integration-v1-03",
+      "base_pair_id": "integration-v1-03",
+      "doc_id": "24fb6134577093ddcff37689",
+      "target_line": 8,
+      "control_role": "intervention",
+      "original_side": "A",
+      "preference": "B，更愿意继续读",
+      "outcome": "revised_preferred",
+      "comment": null,
+      "lead_time_seconds": 25.128,
+      "submitted_at_utc": "2026-08-27T16:01:34.431708Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "integration-v1-03-op-01", "operator": "decompress_proposition_chain"}
+      ]
+    },
+    {
+      "task_number": 8,
+      "pair_id": "integration-v1-01-mirror",
+      "base_pair_id": "integration-v1-01",
+      "doc_id": "4e2108f7b04c3847a564bfd4",
+      "target_line": 1,
+      "control_role": "mirrored",
+      "original_side": "B",
+      "preference": "B，更愿意继续读",
+      "outcome": "mirrored_original_preferred",
+      "comment": null,
+      "lead_time_seconds": 60.268,
+      "submitted_at_utc": "2026-08-27T16:02:34.887775Z",
+      "was_cancelled": false,
+      "operations": [
+        {"id": "integration-v1-01-op-01", "operator": "decompress_proposition_chain"}
+      ]
+    }
+  ]
+}

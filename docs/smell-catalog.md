@@ -874,7 +874,7 @@ instances and reason codes remain useful for audit. See
 | Typed discourse-relation support | Problem-density time effect 0.04 and reader rho 0.06; clear false positives | Reject v0.1 score; retain instance audit only |
 | Transition quote and dash growth | Source-consistent rhos 0.286 and 0.250, but BH q values 0.286 and 0.336 | Retain for discovery; require post matching and interventions |
 | Pure syntax classification | Unstable and below chance after punctuation removal | Deprioritize as a standalone direction |
-| Compositional integration burden | Reader reports familiar words becoming difficult to assemble; paired syntax vector is mixed and project 6 is position-confounded | Retain an interpretable vector; test bounded proposition decompression with position controls |
+| Compositional integration burden | Position controls pass, but generic decompression splits 3 revised to 3 original preferences | Reject broad operator; investigate delayed heads and low-anchor modifier stacks |
 
 Watchlist entries require stronger evidence or better measurement before they
 receive a smell ID.
@@ -914,10 +914,27 @@ depth fell in eight and long-dependency ratio fell in nine. The vector is mixed
 and does not explain the universal side-B answers. Feature-preference tuning on
 these outcomes is prohibited.
 
-The next development intervention splits dense proposition chains while
-preserving content and bounding length. It contains an identical-text control
-and a mirrored pair; treatment outcomes are interpreted only if both position
-diagnostics pass. See
+The proposition-decompression intervention preserved content and bounded
+length. Its identical-text and mirrored controls both passed, but the six
+interventions split three revised preferences to three original preferences.
+Generic decompression is therefore not promoted.
+
+One preferred revision still contained `AI 原生时代全新的算力服务需求`.
+The reader identified two separable problems: the head noun `需求` arrives only
+after a long modifier string, and generic era or novelty modifiers do not state
+what makes the requirement new. A deterministic lexical probe finds 21 broad
+delayed-head instances in 10 of the 50 post documents, but manual audit exposes
+phrase-boundary false positives. Only the exact reader-localized passage meets
+the stricter low-anchor abstract-stack rule. This localizes a hypothesis but
+does not replicate it. The same frozen rule found zero strict instances in the
+separate 119-document pre/transition discovery handoff. That zero is retained
+but cannot estimate a time effect because the rule was defined after the post
+example and the corpora are not matched.
+
+No further reader batch should be assembled from the five remaining broad
+candidates: they are all from Meituan and mostly technical or section-heading
+fragments. Independent multi-source examples are required before freezing a
+narrow `unpack_delayed_head` intervention. See
 [Compositional Integration Burden Probe](../experiments/compositional-burden-probe.md)
 and
-[Proposition-Decompression Development Intervention](../experiments/integration-pairs-v1.md).
+[Head-Final Modifier Delay Probe](../experiments/head-final-modifier-probe.md).
