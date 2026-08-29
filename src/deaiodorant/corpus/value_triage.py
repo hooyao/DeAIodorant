@@ -14,7 +14,10 @@ from typing import Any, Iterable
 import requests
 
 from deaiodorant.corpus.benchmark import file_sha256, write_jsonl
-from deaiodorant.corpus.review_triage import ollama_model_digest
+from deaiodorant.corpus.review_triage import (
+    ollama_model_digest,
+    openai_compatible_headers,
+)
 
 
 VALUE_PROMPT_VERSIONS = {
@@ -189,7 +192,13 @@ class ResearchValueClassifier:
                     },
                 },
             }
-        response = requests.post(url, json=payload, timeout=self.timeout)
+        headers = openai_compatible_headers() if self.backend == "openai" else None
+        response = requests.post(
+            url,
+            json=payload,
+            headers=headers,
+            timeout=self.timeout,
+        )
         response.raise_for_status()
         response_payload = response.json()
         content = (
@@ -199,7 +208,7 @@ class ResearchValueClassifier:
         )
         try:
             result = json.loads(content)
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, TypeError):
             if self.backend != "openai":
                 raise
             retry_payload = {
@@ -218,22 +227,47 @@ class ResearchValueClassifier:
                     },
                 },
             }
-            retry = requests.post(url, json=retry_payload, timeout=self.timeout)
+            retry = requests.post(
+                url,
+                json=retry_payload,
+                headers=headers,
+                timeout=self.timeout,
+            )
             retry.raise_for_status()
             try:
                 result = json.loads(
                     retry.json()["choices"][0]["message"]["content"]
                 )
-            except json.JSONDecodeError:
+            except (json.JSONDecodeError, TypeError):
                 result = {
                     "label": "uncertain",
                     "confidence": "low",
                     "evidence": ["Structured output remained invalid after retry."],
                 }
-        if result.get("label") not in {"substantive", "low_value", "uncertain"}:
-            raise ValueError("Local research-value model returned an invalid label")
-        if result.get("confidence") not in {"high", "medium", "low"}:
-            raise ValueError("Local research-value model returned invalid confidence")
+        if not isinstance(result, dict):
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output was not a JSON object."],
+            }
+        elif result.get("label") not in {"substantive", "low_value", "uncertain"}:
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output contained an invalid label."],
+            }
+        elif result.get("confidence") not in {"high", "medium", "low"}:
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output contained invalid confidence."],
+            }
+        elif not isinstance(result.get("evidence"), list):
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output contained invalid evidence."],
+            }
         item = {
             "cache_key": cache_key,
             "prompt_version": self.prompt_version,

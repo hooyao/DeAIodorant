@@ -156,12 +156,27 @@ class StratumClassifier:
         response.raise_for_status()
         try:
             result = json.loads(response.json()["choices"][0]["message"]["content"])
-        except (KeyError, IndexError, json.JSONDecodeError):
+        except (KeyError, IndexError, json.JSONDecodeError, TypeError):
             result = {
                 "format_stratum": "other",
                 "topic_stratum": "other",
                 "confidence": "low",
                 "evidence": ["Structured output was invalid."],
+            }
+        if (
+            not isinstance(result, dict)
+            or result.get("format_stratum")
+            not in OUTPUT_SCHEMA["properties"]["format_stratum"]["enum"]
+            or result.get("topic_stratum")
+            not in OUTPUT_SCHEMA["properties"]["topic_stratum"]["enum"]
+            or result.get("confidence") not in {"high", "medium", "low"}
+            or not isinstance(result.get("evidence"), list)
+        ):
+            result = {
+                "format_stratum": "other",
+                "topic_stratum": "other",
+                "confidence": "low",
+                "evidence": ["Structured output violated the frozen schema."],
             }
         item = {
             "cache_key": cache_key,

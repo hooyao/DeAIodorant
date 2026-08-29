@@ -187,6 +187,7 @@ def find_instances(text: str) -> list[dict[str, Any]]:
 
 def _read_handoff(
     handoff_root: Path,
+    recommended_role: str | None = None,
 ) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     records = [
         json.loads(line)
@@ -197,6 +198,11 @@ def _read_handoff(
     ]
     instances: list[dict[str, Any]] = []
     for record in records:
+        if (
+            recommended_role is not None
+            and record.get("recommended_role") != recommended_role
+        ):
+            continue
         body_path = handoff_root / str(record["body_path"])
         body = body_path.read_text(encoding="utf-8").rstrip("\n")
         if hashlib.sha256(body.encode("utf-8")).hexdigest() != record["content_hash"]:
@@ -216,7 +222,13 @@ def _read_handoff(
                         **instance,
                     }
                 )
-    return records, instances
+    selected_records = [
+        record
+        for record in records
+        if recommended_role is None
+        or record.get("recommended_role") == recommended_role
+    ]
+    return selected_records, instances
 
 
 def _variant_instances(answer_key_path: Path) -> list[dict[str, Any]]:
@@ -290,6 +302,7 @@ def _write_jsonl(path: Path, rows: list[dict[str, Any]]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--handoff-root", type=Path, required=True)
+    parser.add_argument("--recommended-role")
     parser.add_argument("--discovery-pool", type=Path)
     parser.add_argument("--integration-answer-key", type=Path, required=True)
     parser.add_argument("--integration-results", type=Path, required=True)
@@ -297,7 +310,10 @@ def main() -> int:
     args = parser.parse_args()
 
     handoff_root = args.handoff_root.resolve()
-    records, instances = _read_handoff(handoff_root)
+    records, instances = _read_handoff(
+        handoff_root,
+        recommended_role=args.recommended_role,
+    )
     discovery_records: list[dict[str, Any]] = []
     discovery_instances: list[dict[str, Any]] = []
     if args.discovery_pool is not None:
@@ -359,6 +375,7 @@ def main() -> int:
         },
         "corpus": {
             "document_count": len(records),
+            "recommended_role_filter": args.recommended_role,
             "instance_count": len(instances),
             "long_head_delay_count": len(long_instances),
             "long_head_delay_document_count": len(

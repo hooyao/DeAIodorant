@@ -491,6 +491,20 @@ weights are used in the current time comparison.
   low-anchor abstract-modifier candidate extraction.
 - `experiments/head-final-modifier-probe.md`: localized construction,
   deterministic rule, corpus audit, false positives, and admission boundary.
+- `experiments/acquire_editorial_post_candidates.py`: public QbitAI and
+  Leiphone post-period acquisition staging.
+- `experiments/acquire_huawei_post_candidates.py`: topic-focused public Huawei
+  recommendation and article-view acquisition staging.
+- `experiments/snapshot_openrouter_rankings.py`: live public weekly-usage
+  ranking snapshot used for current-model selection.
+- `experiments/compare_provenance_models.py`: fail-closed two-model provenance
+  intersection and disagreement report.
+- `experiments/compare_value_models.py`: fail-closed two-model research-value
+  intersection and disagreement report.
+- `experiments/build_expanded_post_reader_handoff.py`: five-source handoff
+  materialization and frozen development/reserve assignment.
+- `experiments/post-reader-corpus-expansion-v2.md`: acquisition flow, live model
+  selection, model effects, final composition, partition, and identity.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -536,11 +550,24 @@ One preferred revision retained a reader-localized problem: `AI 原生时代全�
 the generic era and novelty modifiers do not specify what makes the requirement
 new. A model-free lexical probe localizes both the original and revised forms.
 
-The strict low-anchor rule occurs only once in the current 50-document post
-handoff. After excluding all documents selected for projects 5 through 7, five
-documents retain only broad delayed-head candidates; all are from Meituan and
-most are technical or section-heading fragments. Do not construct another
-reader batch from this remainder.
+The first 50-document handoff left only 21 development-eligible documents after
+projects 5 through 7. Public QbitAI, Leiphone, and Huawei acquisition added 319
+raw records. Deterministic translation and duplicate exclusion, current-model
+source agreement, two-prompt value screening, cross-model value agreement,
+strata confidence, and visibility filtering produced a new 97-document,
+five-source handoff. It passes the frozen validator with zero errors and zero
+warnings.
+
+Model choice used a captured live OpenRouter weekly-usage ranking rather than
+remembered popularity. Opaque Ox Alpha was excluded. DeepSeek V4 Flash 0731,
+the number-two model, passed the task-specific structured-output smoke test;
+MiMo-V2.5 and Hy3 returned empty answer content and were not batch-run. The
+existing Qwen3.8-27B baseline ran only on `gx10`. The ignored API key was never
+persisted or copied to the host.
+
+The role split is frozen before new paragraph analysis: 67 development
+documents and 30 validation-reserve documents. The reserve has not been read
+for feature discovery and cannot support validation without multiple readers.
 
 Applying the same frozen rule to the separate 119-document handoff produced 38
 broad delayed-head candidates but zero strict low-anchor abstract stacks. The
@@ -548,17 +575,21 @@ strict motif did not replicate. The handoff contains only pre and transition
 documents and is not matched to the post pool, so this zero cannot estimate a
 time effect.
 
+Applying it only to the expanded handoff's development partition produced 23
+broad candidates across 14 documents and again zero strict instances. The
+validation reserve was not read. Do not relax the definition against these
+results or create project 8 from broad false-positive candidates.
+
 The immediate step is to wait for independent, complete, multi-source examples
 that meet the frozen cue-to-head and low-anchor conditions. Once available,
 freeze an `unpack_delayed_head` operator that turns the modifier into an
 explicit proposition without deleting its era, novelty, or attribution claims.
 Keep reader input to blinded continued-reading preference.
 
-This remains single-reader development work. The 50-document pool
-is not large enough to support both development and an independent validation
-reserve under the preferred protocol. Held-out validation still requires more
-fresh post material, at least three formats, multiple independent readers, and
-a frozen operator and analysis plan before outcomes.
+This remains single-reader development work. The expanded corpus now preserves
+an independent document reserve with three sources, three formats, and three
+topic strata. Held-out validation still requires multiple independent readers
+and a frozen operator and analysis plan before outcomes.
 
 Do not tune the rejected relation-support score against the same 10 ratings.
 Further work on actual relation support requires either a narrower formally

@@ -931,6 +931,13 @@ separate 119-document pre/transition discovery handoff. That zero is retained
 but cannot estimate a time effect because the rule was defined after the post
 example and the corpora are not matched.
 
+The corpus was subsequently expanded to 97 unexposed post documents from five
+sources and partitioned before new paragraph analysis. Scanning only the 67
+development documents found 23 broad delayed-head candidates across 14
+documents and again found zero strict low-anchor abstract stacks. The
+30-document validation reserve was not read. The strict motif therefore has two
+independent non-replications and remains a single-case observation.
+
 No further reader batch should be assembled from the five remaining broad
 candidates: they are all from Meituan and mostly technical or section-heading
 fragments. Independent multi-source examples are required before freezing a

@@ -251,3 +251,27 @@ therefore returned a nonzero completeness status after writing its staging
 artifacts. The combined two-source staging pool nevertheless contained 108
 documents, above the frozen minimum of 60 raw candidates; no failed record was
 silently admitted.
+
+## Expanded second handoff
+
+A second handoff was generated after reader projects 5 through 7 exposed most
+of the useful first-pool documents:
+
+~~~text
+F:\MyProjects\DeAIodorant\data\local\post_reader_handoff_v2
+~~~
+
+It contains 97 unexposed post-period documents across five sources and passes
+this validator with zero errors and zero warnings. The role partition was frozen
+before new paragraph analysis: 67 development documents and a 30-document
+validation reserve. The reserve contains three sources, three formats, and
+three topic strata, but still requires multiple independent readers before any
+validation claim.
+
+QbitAI, Leiphone, and Huawei Cloud Community were added through public editorial
+or recommendation surfaces. Admission required agreement between the local
+Qwen3.8-27B baseline and OpenRouter's live weekly-usage number-two identified
+model, DeepSeek V4 Flash 0731. Model choice, interface smoke tests, disagreement
+rates, value screening, visibility policy, partitioning, and complete artifact
+identity are recorded in
+[Multi-Source Post Corpus Expansion v2](post-reader-corpus-expansion-v2.md).

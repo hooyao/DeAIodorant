@@ -84,6 +84,15 @@ new reader round from that remainder would repeat the source-homogeneity and
 passage-quality problems already diagnosed in earlier screens, so no additional
 Label Studio project is prepared from it.
 
+A later corpus expansion produced a 97-document, five-source handoff with a
+frozen role split. The same rule was applied only to its 67-document development
+partition. It produced 45 cue-to-head instances and 23 broad delayed-head
+candidates across 14 documents, but again produced zero strict low-anchor
+abstract-stack candidates. The 30-document validation reserve was not read.
+This additional non-replication preserves the single case as a useful reader
+observation but does not justify relaxing the rule or creating another reader
+batch.
+
 ## Intervention implication
 
 The next bounded operator should unpack rather than merely move the phrase. For

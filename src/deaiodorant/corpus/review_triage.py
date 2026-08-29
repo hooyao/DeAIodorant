@@ -5,6 +5,7 @@ from __future__ import annotations
 import datetime as dt
 import hashlib
 import json
+import os
 import re
 import threading
 from collections import Counter
@@ -38,6 +39,20 @@ TRIAGE_OUTPUT_SCHEMA = {
     },
     "required": ["label", "confidence", "evidence"],
 }
+
+
+def openai_compatible_headers() -> dict[str, str]:
+    """Build optional authentication headers without persisting secret values."""
+
+    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
+    referer = os.environ.get("OPENAI_HTTP_REFERER", "").strip()
+    title = os.environ.get("OPENAI_APP_TITLE", "").strip()
+    if referer:
+        headers["HTTP-Referer"] = referer
+    if title:
+        headers["X-Title"] = title
+    return headers
 
 
 class ReviewTriageClassifier:
@@ -220,7 +235,13 @@ class ReviewTriageClassifier:
                     },
                 },
             }
-        response = requests.post(url, json=payload, timeout=self.timeout)
+        headers = openai_compatible_headers() if self.backend == "openai" else None
+        response = requests.post(
+            url,
+            json=payload,
+            headers=headers,
+            timeout=self.timeout,
+        )
         response.raise_for_status()
         payload = response.json()
         content = (
@@ -230,7 +251,7 @@ class ReviewTriageClassifier:
         )
         try:
             result = json.loads(content)
-        except json.JSONDecodeError:
+        except (json.JSONDecodeError, TypeError):
             if self.backend != "openai":
                 raise
             retry_payload = {
@@ -249,26 +270,51 @@ class ReviewTriageClassifier:
                     },
                 },
             }
-            retry = requests.post(url, json=retry_payload, timeout=self.timeout)
+            retry = requests.post(
+                url,
+                json=retry_payload,
+                headers=headers,
+                timeout=self.timeout,
+            )
             retry.raise_for_status()
             try:
                 result = json.loads(
                     retry.json()["choices"][0]["message"]["content"]
                 )
-            except json.JSONDecodeError:
+            except (json.JSONDecodeError, TypeError):
                 result = {
                     "label": "uncertain",
                     "confidence": "low",
                     "evidence": ["Structured output remained invalid after retry."],
                 }
-        if result.get("label") not in {
+        if not isinstance(result, dict):
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output was not a JSON object."],
+            }
+        elif result.get("label") not in {
             "translated_or_compiled",
             "original",
             "uncertain",
         }:
-            raise ValueError("Local review triage model returned an invalid label")
-        if result.get("confidence") not in {"high", "medium", "low"}:
-            raise ValueError("Local review triage model returned invalid confidence")
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output contained an invalid label."],
+            }
+        elif result.get("confidence") not in {"high", "medium", "low"}:
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output contained invalid confidence."],
+            }
+        elif not isinstance(result.get("evidence"), list):
+            result = {
+                "label": "uncertain",
+                "confidence": "low",
+                "evidence": ["Structured output contained invalid evidence."],
+            }
         item = {
             "cache_key": cache_key,
             "prompt_version": self.prompt_version,
