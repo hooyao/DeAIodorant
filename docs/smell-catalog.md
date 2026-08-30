@@ -888,6 +888,7 @@ receive a smell ID.
 - Deterministically measured on one post-outcome development batch
 - Pre-outcome boundary-competition experiment protocol frozen
 - Character-to-word boundary selector rejected at Stage 0
+- Word-level bracketing selector rejected at Stage 0
 - No unconfounded reader association
 - Not intervention validated
 
@@ -1004,6 +1005,28 @@ with a phrase-specific dictionary entry. Reject `boundary_competition_v1` and
 move the hypothesis from character-to-word segmentation toward word-level
 modifier attachment or phrase bracketing. That replacement is not yet a smell
 metric and requires a separately frozen protocol.
+
+The separately frozen word-level probe then enumerated right-headed binary
+trees and used leave-one-document-out ordered-pair probabilities to score
+attachments. It processed 1,393 passages and 5,670 sentences without opening
+the validation reserve. The reader example passed its case-level gate, with
+normalized tree entropy 0.822, zero best-second margin, 0.857 familiar-token
+fraction, and four weak attachments.
+
+The result did not generalize within the development pool. Only 34 of 87
+candidates contained the prespecified content POS throughout. Seven passed the
+entropy gate, 26 passed the margin gate, 17 passed familiarity, and five passed
+entropy plus margin; none passed entropy, margin, and familiarity together.
+The joint entropy-margin cases were names or sparse technical strings. Reject
+the tree-entropy vector as a selector and retain H-BRACKET only as a localized
+candidate explanation.
+
+Hidden semantic-relation underdetermination is now the stronger rival: familiar
+words may be individually recognizable while their relation remains unstated.
+This is not yet a metric or established smell. The exposed 87 candidates must
+not be re-filtered to construct it; a frozen weak-relation rule needs a new
+independent corpus. See
+[Word-Level Modifier-Bracketing Probe](../experiments/modifier-bracketing-probe.md).
 
 No further reader batch should be assembled from the five remaining broad
 candidates: they are all from Meituan and mostly technical or section-heading

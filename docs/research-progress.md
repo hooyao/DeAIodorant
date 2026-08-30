@@ -59,6 +59,9 @@ milestone.
 - Ran its externally calibrated character-to-word boundary gate and rejected
   the selector before editing because no structural candidate entered the
   frozen high-competition stratum.
+- Completed a bounded modifier-bracketing literature review and a separately
+  frozen word-level dependency-association probe on `gx10`; it localized the
+  reader example but failed to produce an independent high-confidence set.
 
 ## Current evidence
 
@@ -601,6 +604,45 @@ is recorded rather than corrected after the result. Reject
 hypothesis as word-level modifier-attachment or phrase-bracketing competition
 rather than character-to-word segmentation.
 
+## Word-level modifier-bracketing probe
+
+A bounded OpenAlex, Crossref, and Semantic Scholar search identified English
+noun-compound methods based on dependency probabilities, word association,
+term evidence, and hidden-relation paraphrases, plus contextual Mandarin work
+on word frequency, semantic transparency, and word structure. Search queries,
+partial-result limits, OpenAlex budget exhaustion, Semantic Scholar 429 errors,
+and six exact-DOI abstract checks are recorded. The transfer from English noun
+compounds to Chinese technical modifier stacks remains an unvalidated analogy.
+
+Protocol `modifier-bracketing-probe-0.2` enumerates every right-headed binary
+tree over Stanza content tokens. It scores attachments with ordered token-pair
+probabilities from 1,393 complete passages while excluding the candidate's
+entire document. Proper names, numbers, ASCII terms, quoted titles, token
+familiarity, exact-sequence termhood, and cross-source support remain separate
+rival variables.
+
+Version 0.1 was operationally invalid because percentile midranks made a tied
+minimum-margin gate impossible. Version 0.2 froze a `1e-12` numerical-zero
+tolerance and nearest-rank value cutoffs before rerunning; no substantive
+threshold or input changed. Two independent `gx10` runs then produced
+byte-identical artifacts.
+
+The reader example passes the case-level gate: normalized tree entropy 0.822,
+zero best-second margin, 0.857 familiar-token fraction, and four weak
+attachments. The multi-source gate fails. Of 34 scorable candidates, seven
+pass the entropy gate, 26 the margin gate, 17 the familiarity gate, and 27 the
+weak-attachment gate. Five pass entropy and margin together, but none also pass
+familiarity. Those five are names or sparse technical strings rather than an
+independent set of familiar-word modifier stacks.
+
+Reject the current word-level tree-entropy vector as an intervention selector.
+Retain attachment competition only as a localized explanation for the one
+reader example. The stronger next candidate is hidden semantic-relation
+underdetermination, but this result does not prove it. Any new familiar-word
+weak-relation measurement must be frozen and tested on an independent corpus;
+the 87 exposed candidates cannot be re-filtered after this result. No Project 8
+is prepared.
+
 ## Reproducible artifacts
 
 - `data/annotations/reader-friction-v1.json`: 10 quick ratings.
@@ -714,6 +756,18 @@ rather than character-to-word segmentation.
 - `experiments/boundary_competition_probe.py`: Beijing Sentence Corpus
   calibration, frozen candidate classification, corpus-separation audit, and
   high/low matching gate.
+- `experiments/modifier-bracketing-search-boundary.json`: bounded literature
+  queries, result-depth limits, API failures, and coverage statement.
+- `experiments/modifier-bracketing-evidence-ledger.csv`: seven auditable
+  source-to-claim records, including the challenging local Stage 0 result.
+- `experiments/modifier-bracketing-prediction-matrix.csv`: prespecified
+  discriminating predictions for attachment, semantic, term, and global-load
+  candidates.
+- `experiments/modifier_bracketing_probe.py`: cross-fitted word association,
+  exhaustive right-headed tree enumeration, anchor diagnostics, and frozen
+  computational gates.
+- `experiments/modifier-bracketing-probe.md`: literature boundary, rivals,
+  protocol deviation, complete result, and reproduction identity.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -804,12 +858,15 @@ complete frozen-rule scan again found zero strict delayed-head instances and no
 new coherent operator. All 93 documents are now feature-discovery exposed, not
 reader-validation material.
 
-The immediate step is no longer to prepare a boundary-unpacking reader batch.
-`boundary_competition_v1` failed Stage 0 with zero high-stratum candidates and
-no matching edges. Keep the frozen result and investigate a distinct word-level
-modifier-attachment or phrase-bracketing measurement before proposing another
-intervention. Any new measurement needs a new pre-outcome protocol and cannot
-inherit the rejected character-gap thresholds.
+The immediate step is no longer to prepare a boundary- or bracketing-based
+reader batch. Both selectors failed their frozen corpus gates. The one reader
+example is compatible with word-level attachment competition, but the same
+tree-entropy pattern does not appear among familiar-word candidates across the
+development corpus. The next candidate is hidden semantic-relation
+underdetermination: familiar words are juxtaposed without saying how their
+claims relate. A deterministic familiar-word weak-relation rule must be frozen
+before collecting and opening a new independent post-period discovery corpus.
+Do not re-filter the exposed 87 candidates or open the validation reserve.
 
 The broader Stanza nominal-chain probe does not remove this requirement. Its
 frequency gate passed but its candidates were not one construction. The new

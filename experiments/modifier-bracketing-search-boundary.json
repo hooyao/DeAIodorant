@@ -1,0 +1,41 @@
+{
+  "schema_version": "2.0",
+  "search_boundary_id": "SEARCH-DEAIODORANT-BRACKETING-001",
+  "searched_on": "2026-08-31",
+  "searched_by": "DeAIodorant research agent under maintainer direction",
+  "purpose": "Locate deterministic methods and relevant Mandarin evidence for distinguishing word-level modifier-attachment or phrase-bracketing competition from character-to-word segmentation ambiguity.",
+  "databases_or_indexes": [
+    "OpenAlex",
+    "Crossref",
+    "Semantic Scholar"
+  ],
+  "queries": [
+    "OpenAlex and Crossref: Chinese nominal compound bracketing ambiguity",
+    "OpenAlex and Crossref: Chinese noun phrase modifier attachment ambiguity",
+    "OpenAlex and Crossref: Chinese compound internal structure prediction PMI",
+    "OpenAlex and Crossref: Chinese compound bracketing",
+    "OpenAlex and Crossref: Chinese nominal compound",
+    "OpenAlex and Crossref: Mandarin compound processing",
+    "OpenAlex and Crossref: Chinese compound parsing",
+    "OpenAlex and Crossref: noun compound bracketing corpus statistics",
+    "OpenAlex and Crossref: unsupervised noun compound bracketing association",
+    "OpenAlex and Crossref: compound noun bracketing dependency probabilities",
+    "Crossref: Chinese noun compound interpretation; Chinese nominal compound interpretation; Chinese noun-noun compound structure; Mandarin nominal compound ambiguity",
+    "Semantic Scholar: the first three broad queries above",
+    "OpenAlex exact DOI lookups for the six sources retained in the evidence ledger"
+  ],
+  "date_limits": "No publication-date restriction.",
+  "language_limits": "English metadata and abstracts; Chinese-language papers may be under-retrieved.",
+  "inclusion_scope": "Primary or review sources describing noun-compound bracketing, dependency or association-based structural disambiguation, hidden relation paraphrasing, Mandarin compound representation, or processing effects of word frequency, semantic transparency, and word structure.",
+  "exclusion_scope": "Biomedical and materials-science uses of compound or attachment, unrelated bracket alignment, and sources without an operational implication for the present deterministic measurement problem.",
+  "known_limitations": [
+    "This was a bounded methods search, not a systematic review or novelty search.",
+    "Crossref relevance was poor for several broad queries because the terms compound and attachment are highly polysemous.",
+    "Semantic Scholar returned HTTP 429 for all three queries from its anonymous shared pool.",
+    "OpenAlex returned bounded partial pages and then exhausted the daily anonymous search budget; the later two method queries returned HTTP 429.",
+    "Only metadata and indexed abstracts were screened; full-text method verification remains the accountable human reviewer's responsibility.",
+    "Most located bracketing methods were developed for English noun compounds; transfer to Chinese technical prose is an unvalidated analogy."
+  ],
+  "last_result_screened_or_stop_rule": "Screen the first 25 OpenAlex and Crossref results for each broad query, the first 50 Crossref results for four Chinese-specific follow-ups, record API failures, and verify indexed abstracts for six retained seed sources by exact DOI.",
+  "novelty_status": "not_assessed"
+}

@@ -686,8 +686,13 @@ the failure under the frozen
 [Boundary-Competition Development Experiment](../experiments/boundary-competition-development.md)
 and do not relax its thresholds or add phrase-specific dictionary entries.
 
-The next eligible direction is a separately frozen word-level modifier-
-attachment or phrase-bracketing measurement. It must distinguish established
-names and technical compounds from loosely attached modifier sequences before
-another reader intervention is proposed. The validation reserve remains
-unopened.
+The separately frozen word-level modifier-bracketing probe localized the reader
+example but also failed its corpus gate: no candidate jointly passed entropy,
+margin, and familiar-word coverage. High-entropy cases were names or sparse
+technical strings, so no reader intervention was prepared.
+
+The next eligible direction is hidden semantic-relation underdetermination:
+familiar words may be juxtaposed without an explicit recoverable relation. A
+deterministic familiar-word weak-relation rule must be frozen before acquiring
+and opening a new independent post-period discovery corpus. Do not re-filter
+the exposed candidate set or open the validation reserve.
