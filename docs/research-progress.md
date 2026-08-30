@@ -1,10 +1,11 @@
 # Research Progress
 
-## Checkpoint: 2026-08-22
+## Checkpoint: 2026-08-31
 
-This checkpoint includes the first deterministic discourse-graph probe and two
-completed rounds of blinded refinement comparisons. It is an exploratory
-research checkpoint, not a product milestone.
+This checkpoint includes deterministic discourse and compositional probes,
+expanded post-period discovery corpora, and five completed blinded development
+interventions. It is an exploratory research checkpoint, not a product
+milestone.
 
 ## Completed work
 
@@ -52,6 +53,9 @@ research checkpoint, not a product milestone.
   changing its lexicons or thresholds.
 - Froze and ran a Stanza dependency probe for boundary-free pre-head nominal
   chains on `gx10`, including a documented pre-parse operational revision.
+- Froze a staged boundary-competition development design before implementing
+  the new lexical signal, selecting passages, editing text, or observing a new
+  reader outcome.
 
 ## Current evidence
 
@@ -535,6 +539,48 @@ does not support one edit operator across six independent documents. Reject it
 as an intervention selector, retain the reader example as a single case, and do
 not prepare Project 8.
 
+## Boundary-competition experiment design
+
+Protocol `boundary-competition-development-1.0` converts the reader-localized
+segmentation observation into a staged, falsifiable experiment without
+promoting the rejected UD candidate rule. Stage 0 must implement an explicit
+lexical vector using segmentation-path entropy, best-versus-second path margin,
+gap-level boundary posteriors, ambiguous-gap count, and unresolved distance to
+the head. Branching entropy, accessor variety, tokenizer disagreement, and
+proper-name or technical anchors remain diagnostics in version 1.0 rather than
+admission rules.
+
+External percentile cutoffs must be calibrated and hashed before the
+post-period pool is ranked. The working reader example must be localized without
+a phrase-specific exception. The reader stage additionally requires eight high-
+competition and eight matched low-competition passages from 16 distinct,
+previously unexposed post-period documents, at least three sources, and at
+least two formats per stratum. The 30-document validation reserve remains
+unopened. Failure to assemble all eight matched blocks stops the experiment;
+thresholds may not be relaxed to force a batch.
+
+Every selected passage receives the same boundary-only structural-unpacking
+operator. The editor is blind to high/low stratum and display side. The 16
+interventions are balanced within stratum and session, with one identical-text
+diagnostic and one later mirrored repeat, for 18 tasks under seed `2026083101`.
+The reader still answers only which version makes them more willing to
+continue, with an explicit no-difference choice.
+
+The development decision requires passed instrument, preservation, and
+manipulation gates; at least six decisive high-stratum answers; at least 75%
+revised preference among those answers; high-stratum net preference of at least
+0.50; and a high-minus-low selector contrast of at least 0.50. Low-stratum
+benefit without contrast rejects the selector even if the operator remains
+interesting. Optional comments cannot affect any gate.
+
+Exact-binomial sensitivity shows why this 16-passage experiment cannot be
+called validation. With no ties, a true revised preference probability of 0.70
+requires 49 decisive comparisons for 80% power at two-sided alpha 0.05; 0.75
+requires 30, and 0.80 requires 20. Repeated outcomes from the same reader do not
+provide independent reader replication at any of those counts. A later
+confirmatory design must use multiple readers, held-out passages, and
+simulation under a crossed reader-item model.
+
 ## Reproducible artifacts
 
 - `data/annotations/reader-friction-v1.json`: 10 quick ratings.
@@ -637,6 +683,10 @@ not prepare Project 8.
   and dependency-based boundary-free nominal-chain extraction.
 - `experiments/nominal-chain-integration-probe.md`: protocol revisions,
   aggregate result, coherence failure, and rejection decision.
+- `experiments/design_boundary_competition_experiment.py`: frozen balanced
+  placeholder allocation and exact-binomial sensitivity calculation.
+- `experiments/boundary-competition-development.md`: pre-outcome staged
+  measurement, intervention, randomization, analysis, and decision protocol.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -727,17 +777,19 @@ complete frozen-rule scan again found zero strict delayed-head instances and no
 new coherent operator. All 93 documents are now feature-discovery exposed, not
 reader-validation material.
 
-The immediate step is to wait for independent, complete, multi-source examples
-that meet the frozen cue-to-head and low-anchor conditions. Once available,
-freeze an `unpack_delayed_head` operator that turns the modifier into an
-explicit proposition without deleting its era, novelty, or attribution claims.
-Keep reader input to blinded continued-reading preference.
+The immediate step is to implement and externally calibrate
+`boundary_competition_v1` under
+`experiments/boundary-competition-development.md`. It must localize the working
+example without a phrase-specific exception and produce eight high/low matched
+blocks from 16 distinct, previously unexposed post-period documents before an
+`unpack_boundary_competition` reader project can be prepared. Keep reader input
+to blinded continued-reading preference.
 
 The broader Stanza nominal-chain probe does not remove this requirement. Its
-frequency gate passed but its candidates were not one construction. A future
-attempt needs an independently frozen lexical-familiarity or segmentation-
-boundary signal, or additional reader-localized examples; post-hoc lexical
-blacklists against the 87 candidates are prohibited.
+frequency gate passed but its candidates were not one construction. The new
+protocol uses an independently frozen lexical-familiarity and segmentation-
+boundary vector; post-hoc lexical blacklists against the 87 candidates remain
+prohibited. No Project 8 exists unless Stage 0 passes.
 
 This remains single-reader development work. The expanded corpus now preserves
 an independent document reserve with three sources, three formats, and three

@@ -886,6 +886,7 @@ receive a smell ID.
 - Reader reported
 - Hypothesis
 - Deterministically measured on one post-outcome development batch
+- Pre-outcome boundary-competition experiment protocol frozen
 - No unconfounded reader association
 - Not intervention validated
 
@@ -973,6 +974,19 @@ document and no single edit operation covering the remainder. Reject the v0.2
 UD rule as an intervention selector; do not convert frequency passage into a
 smell promotion.
 
+Protocol `boundary-competition-development-1.0` now freezes the next attempt
+before a new lexical measurement or reader outcome exists. It separates
+segmentation-path entropy, best-versus-second path margin, gap-level boundary
+posteriors, and unresolved distance to the head from diagnostic branching
+entropy, accessor variety, tokenizer disagreement, and anchor variables. It
+requires eight high-competition and eight matched low-competition passages
+from distinct post-period documents before any reader project can be created.
+Every passage receives the same boundary-only unpacking operator, so the
+high-minus-low preference contrast tests whether the measurement selects
+responsive cases rather than whether rewriting in general helps. The 30-
+document validation reserve remains unopened. This protocol is a planned test,
+not new evidence and not a smell promotion.
+
 No further reader batch should be assembled from the five remaining broad
 candidates: they are all from Meituan and mostly technical or section-heading
 fragments. Independent multi-source examples are required before freezing a
@@ -980,3 +994,5 @@ narrow `unpack_delayed_head` intervention. See
 [Compositional Integration Burden Probe](../experiments/compositional-burden-probe.md)
 and
 [Head-Final Modifier Delay Probe](../experiments/head-final-modifier-probe.md).
+The staged design is documented in
+[Boundary-Competition Development Experiment](../experiments/boundary-competition-development.md).

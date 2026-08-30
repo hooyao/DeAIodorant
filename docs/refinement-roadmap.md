@@ -677,9 +677,13 @@ data exists.
 
 ## Immediate next action
 
-Run Experiment 0, not another corpus or classifier experiment.
+The initial reader benchmark and five development interventions are complete.
+Do not open another broad marker-based reader batch.
 
-Prepare 20 short passages and a minimal blinded rating sheet. For five passages,
-create careful human edits that preserve all facts. This establishes the input
-set, upper bound, and preservation checklist needed to compare every route
-above one by one.
+Implement and externally calibrate `boundary_competition_v1` under the frozen
+[Boundary-Competition Development Experiment](../experiments/boundary-competition-development.md).
+Prepare the next blinded reader project only if the deterministic Stage 0 gate
+produces eight high/low matched blocks from 16 distinct post-period documents
+without opening the validation reserve. Otherwise retain the single reader-
+localized example and reject the selector rather than relaxing it against
+development outcomes.
