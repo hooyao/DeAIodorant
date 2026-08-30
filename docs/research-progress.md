@@ -50,6 +50,8 @@ research checkpoint, not a product milestone.
   three-source discovery handoff through a current three-model intersection.
 - Applied the frozen motif inventory to the new discovery handoff without
   changing its lexicons or thresholds.
+- Froze and ran a Stanza dependency probe for boundary-free pre-head nominal
+  chains on `gx10`, including a documented pre-parse operational revision.
 
 ## Current evidence
 
@@ -509,6 +511,30 @@ payload candidates. Complete contrast and the already rejected shell-cluster
 proxy remained frequent but semantically heterogeneous. No Project 8 is
 prepared.
 
+## Boundary-free nominal-chain probe
+
+Protocol `nominal-chain-integration-probe-0.2` replaces an aborted full-body
+operational attempt. Version 0.1 wrote no candidate result: a 1,501-line tutorial
+kept Stanza occupied because code and DOM fragments were filtered only after
+parsing. Version 0.2 freezes the existing content-agnostic complete-passage gate
+before parsing and leaves all nominal-chain thresholds unchanged.
+
+The final `gx10` run parsed 1,393 complete passages from 133 of the 160 requested
+documents. It accurately localized the reader example and found 87 candidates
+in 41 documents across five sources, passing the preregistered frequency gate.
+It failed the coherence gate. Forty-seven instances contain proper-name or
+numeric anchors, 67 have dependency-chain depth one, and the set mixes formal
+names, specifications, technical compounds, dense modifiers, and parser part-
+of-speech errors.
+
+The narrower audit-only subgroup with no recorded anchor and depth at least two
+contains 13 instances in seven documents and four sources. Six come from one
+QbitAI document; the rest still mix titles, official program names, ordinary
+terms, parsed contrast, and possible integration problems. The probe therefore
+does not support one edit operator across six independent documents. Reject it
+as an intervention selector, retain the reader example as a single case, and do
+not prepare Project 8.
+
 ## Reproducible artifacts
 
 - `data/annotations/reader-friction-v1.json`: 10 quick ratings.
@@ -607,6 +633,10 @@ prepared.
   selection, model effects, final composition, partition, and identity.
 - `experiments/post-reader-corpus-expansion-v3.md`: current-model admission,
   run anomaly, final discovery composition, limitations, and identity.
+- `experiments/nominal_chain_integration_probe.py`: frozen pre-parse prose gate
+  and dependency-based boundary-free nominal-chain extraction.
+- `experiments/nominal-chain-integration-probe.md`: protocol revisions,
+  aggregate result, coherence failure, and rejection decision.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -702,6 +732,12 @@ that meet the frozen cue-to-head and low-anchor conditions. Once available,
 freeze an `unpack_delayed_head` operator that turns the modifier into an
 explicit proposition without deleting its era, novelty, or attribution claims.
 Keep reader input to blinded continued-reading preference.
+
+The broader Stanza nominal-chain probe does not remove this requirement. Its
+frequency gate passed but its candidates were not one construction. A future
+attempt needs an independently frozen lexical-familiarity or segmentation-
+boundary signal, or additional reader-localized examples; post-hoc lexical
+blacklists against the 87 candidates are prohibited.
 
 This remains single-reader development work. The expanded corpus now preserves
 an independent document reserve with three sources, three formats, and three

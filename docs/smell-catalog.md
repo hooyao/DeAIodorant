@@ -961,6 +961,18 @@ labels, literal technical senses, coordinate lists, and polysemous terms. This
 independent discovery result strengthens rejection of the shell-cluster proxy
 and leaves the reader-localized delayed-head construction unreplicated.
 
+A follow-up Stanza probe removed the lexical cue and head lists and instead
+required a long pre-head nominal span with at least three nominal-modifier
+relations and no overt boundary, punctuation, or pre-head verb. It localized
+the reader example and found 87 instances in 41 documents across five sources.
+Frequency therefore passed, but candidate coherence failed. The instances mix
+formal names, quantified specifications, lexicalized technical compounds,
+ordinary modifiers, and parser category errors. An unanchored, depth-at-least-
+two diagnostic retained 13 instances in seven documents, with six from one
+document and no single edit operation covering the remainder. Reject the v0.2
+UD rule as an intervention selector; do not convert frequency passage into a
+smell promotion.
+
 No further reader batch should be assembled from the five remaining broad
 candidates: they are all from Meituan and mostly technical or section-heading
 fragments. Independent multi-source examples are required before freezing a
