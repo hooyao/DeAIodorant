@@ -938,6 +938,29 @@ documents and again found zero strict low-anchor abstract stacks. The
 30-document validation reserve was not read. The strict motif therefore has two
 independent non-replications and remains a single-case observation.
 
+A separately frozen five-motif inventory reached the same boundary. It found
+zero strict delayed-head cases. Four dense-clause surface candidates in four
+documents and four emphatic abstract-payload candidates in three documents did
+not reach the minimum six-document gate. A three-shell lexical cluster did pass
+the frequency gate, with 14 instances in 12 documents across four sources, but
+inspection of every instance showed literal technical senses, repeated terms,
+and list fragments rather than one coherent integration problem. The lexical
+cluster is rejected as an intervention selector in version 0.1.
+
+Complete negative contrast frames were common in the same inventory, but their
+source-stratified audit mixed necessary alternatives and mechanism distinctions
+with possible rhetorical framing. This confirms that marker frequency cannot
+stand in for a compositional-burden or ornamental-use judgment.
+
+The frozen inventory was then replicated without threshold changes on a new
+93-document, three-source post discovery handoff. It again found zero strict
+delayed-head cases. Dense-clause and emphatic abstract-payload rules found only
+two documents each. The shell cluster again passed frequency, with 20 instances
+in 13 documents across three sources, but again consisted of repeated category
+labels, literal technical senses, coordinate lists, and polysemous terms. This
+independent discovery result strengthens rejection of the shell-cluster proxy
+and leaves the reader-localized delayed-head construction unreplicated.
+
 No further reader batch should be assembled from the five remaining broad
 candidates: they are all from Meituan and mostly technical or section-heading
 fragments. Independent multi-source examples are required before freezing a

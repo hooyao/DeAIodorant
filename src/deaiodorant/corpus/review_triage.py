@@ -16,6 +16,12 @@ from typing import Any, Iterable
 import requests
 
 from deaiodorant.corpus.benchmark import file_sha256, write_jsonl
+from deaiodorant.corpus.openai_compat import (
+    REASONING_MODES,
+    extract_answer_text,
+    format_response_failure,
+    reasoning_parameters,
+)
 
 
 TRIAGE_PROMPT_VERSIONS = {
@@ -67,6 +73,8 @@ class ReviewTriageClassifier:
         timeout: float = 600.0,
         profile: str = "primary",
         backend: str = "ollama",
+        reasoning_mode: str = "legacy",
+        max_tokens: int = 320,
     ) -> None:
         if profile not in TRIAGE_PROMPT_VERSIONS:
             raise ValueError(f"Unknown review triage profile: {profile}")
@@ -78,6 +86,14 @@ class ReviewTriageClassifier:
         if backend not in {"ollama", "openai"}:
             raise ValueError(f"Unknown review triage backend: {backend}")
         self.backend = backend
+        if reasoning_mode not in REASONING_MODES:
+            raise ValueError(
+                f"Unknown OpenAI-compatible reasoning mode: {reasoning_mode}"
+            )
+        if max_tokens < 1:
+            raise ValueError("OpenAI-compatible max_tokens must be positive")
+        self.reasoning_mode = reasoning_mode
+        self.max_tokens = max_tokens
         self.prompt_version = TRIAGE_PROMPT_VERSIONS[profile]
         self._cache_lock = threading.Lock()
         self.cache: dict[str, dict[str, Any]] = {}
@@ -191,8 +207,12 @@ class ReviewTriageClassifier:
 
     def classify(self, record: dict[str, Any]) -> dict[str, Any]:
         content_hash = hashlib.sha256(record["text"].encode("utf-8")).hexdigest()
+        inference_identity = (
+            f"{self.backend}\0{self.reasoning_mode}\0{self.max_tokens}"
+        )
         cache_key = hashlib.sha256(
-            f"{self.prompt_version}\0{self.model}\0{content_hash}".encode("utf-8")
+            f"{self.prompt_version}\0{self.model}\0{inference_identity}\0"
+            f"{content_hash}".encode("utf-8")
         ).hexdigest()
         cached = self.cache.get(cache_key)
         if cached is not None:
@@ -224,8 +244,7 @@ class ReviewTriageClassifier:
                 "messages": [{"role": "user", "content": self.prompt(record)}],
                 "temperature": 0,
                 "seed": 42,
-                "max_tokens": 320,
-                "chat_template_kwargs": {"enable_thinking": False},
+                "max_tokens": self.max_tokens,
                 "response_format": {
                     "type": "json_schema",
                     "json_schema": {
@@ -235,6 +254,7 @@ class ReviewTriageClassifier:
                     },
                 },
             }
+            payload.update(reasoning_parameters(self.reasoning_mode))
         headers = openai_compatible_headers() if self.backend == "openai" else None
         response = requests.post(
             url,
@@ -244,11 +264,11 @@ class ReviewTriageClassifier:
         )
         response.raise_for_status()
         payload = response.json()
-        content = (
-            payload["message"]["content"]
-            if self.backend == "ollama"
-            else payload["choices"][0]["message"]["content"]
-        )
+        if self.backend == "ollama":
+            content = payload["message"]["content"]
+            response_diagnostics: dict[str, Any] = {}
+        else:
+            content, response_diagnostics = extract_answer_text(payload)
         try:
             result = json.loads(content)
         except (json.JSONDecodeError, TypeError):
@@ -259,8 +279,7 @@ class ReviewTriageClassifier:
                 "messages": [{"role": "user", "content": self.prompt(record)}],
                 "temperature": 0,
                 "seed": 42,
-                "max_tokens": 512,
-                "chat_template_kwargs": {"enable_thinking": False},
+                "max_tokens": max(512, self.max_tokens * 2),
                 "response_format": {
                     "type": "json_schema",
                     "json_schema": {
@@ -270,6 +289,7 @@ class ReviewTriageClassifier:
                     },
                 },
             }
+            retry_payload.update(reasoning_parameters(self.reasoning_mode))
             retry = requests.post(
                 url,
                 json=retry_payload,
@@ -278,14 +298,13 @@ class ReviewTriageClassifier:
             )
             retry.raise_for_status()
             try:
-                result = json.loads(
-                    retry.json()["choices"][0]["message"]["content"]
-                )
+                retry_content, response_diagnostics = extract_answer_text(retry.json())
+                result = json.loads(retry_content)
             except (json.JSONDecodeError, TypeError):
                 result = {
                     "label": "uncertain",
                     "confidence": "low",
-                    "evidence": ["Structured output remained invalid after retry."],
+                    "evidence": [format_response_failure(response_diagnostics)],
                 }
         if not isinstance(result, dict):
             result = {
@@ -320,6 +339,12 @@ class ReviewTriageClassifier:
             "prompt_version": self.prompt_version,
             "model": self.model,
             "content_hash": content_hash,
+            "inference_config": {
+                "backend": self.backend,
+                "reasoning_mode": self.reasoning_mode,
+                "max_tokens": self.max_tokens,
+            },
+            "response_diagnostics": response_diagnostics,
             "result": result,
         }
         with self._cache_lock:
@@ -539,6 +564,8 @@ def run_review_triage(
         "backend": primary.backend,
         "endpoint": endpoint,
         "concurrency": concurrency,
+        "reasoning_mode": primary.reasoning_mode,
+        "max_tokens": primary.max_tokens,
         "prompt_versions": TRIAGE_PROMPT_VERSIONS,
         "executed_profiles": executed_profiles,
         "temperature": 0,

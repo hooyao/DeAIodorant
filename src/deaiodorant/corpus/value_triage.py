@@ -18,6 +18,12 @@ from deaiodorant.corpus.review_triage import (
     ollama_model_digest,
     openai_compatible_headers,
 )
+from deaiodorant.corpus.openai_compat import (
+    REASONING_MODES,
+    extract_answer_text,
+    format_response_failure,
+    reasoning_parameters,
+)
 
 
 VALUE_PROMPT_VERSIONS = {
@@ -54,6 +60,8 @@ class ResearchValueClassifier:
         timeout: float = 600.0,
         profile: str = "primary",
         backend: str = "ollama",
+        reasoning_mode: str = "legacy",
+        max_tokens: int = 220,
     ) -> None:
         if profile not in VALUE_PROMPT_VERSIONS:
             raise ValueError(f"Unknown research-value profile: {profile}")
@@ -65,6 +73,14 @@ class ResearchValueClassifier:
         if backend not in {"ollama", "openai"}:
             raise ValueError(f"Unknown research-value backend: {backend}")
         self.backend = backend
+        if reasoning_mode not in REASONING_MODES:
+            raise ValueError(
+                f"Unknown OpenAI-compatible reasoning mode: {reasoning_mode}"
+            )
+        if max_tokens < 1:
+            raise ValueError("OpenAI-compatible max_tokens must be positive")
+        self.reasoning_mode = reasoning_mode
+        self.max_tokens = max_tokens
         self.prompt_version = VALUE_PROMPT_VERSIONS[profile]
         self._cache_lock = threading.Lock()
         self.cache: dict[str, dict[str, Any]] = {}
@@ -148,8 +164,12 @@ class ResearchValueClassifier:
 
     def classify(self, record: dict[str, Any]) -> dict[str, Any]:
         content_hash = hashlib.sha256(record["text"].encode("utf-8")).hexdigest()
+        inference_identity = (
+            f"{self.backend}\0{self.reasoning_mode}\0{self.max_tokens}"
+        )
         cache_key = hashlib.sha256(
-            f"{self.prompt_version}\0{self.model}\0{content_hash}".encode("utf-8")
+            f"{self.prompt_version}\0{self.model}\0{inference_identity}\0"
+            f"{content_hash}".encode("utf-8")
         ).hexdigest()
         cached = self.cache.get(cache_key)
         if cached is not None:
@@ -181,8 +201,7 @@ class ResearchValueClassifier:
                 "messages": [{"role": "user", "content": self.prompt(record)}],
                 "temperature": 0,
                 "seed": 42,
-                "max_tokens": 220,
-                "chat_template_kwargs": {"enable_thinking": False},
+                "max_tokens": self.max_tokens,
                 "response_format": {
                     "type": "json_schema",
                     "json_schema": {
@@ -192,6 +211,7 @@ class ResearchValueClassifier:
                     },
                 },
             }
+            payload.update(reasoning_parameters(self.reasoning_mode))
         headers = openai_compatible_headers() if self.backend == "openai" else None
         response = requests.post(
             url,
@@ -201,11 +221,11 @@ class ResearchValueClassifier:
         )
         response.raise_for_status()
         response_payload = response.json()
-        content = (
-            response_payload["message"]["content"]
-            if self.backend == "ollama"
-            else response_payload["choices"][0]["message"]["content"]
-        )
+        if self.backend == "ollama":
+            content = response_payload["message"]["content"]
+            response_diagnostics: dict[str, Any] = {}
+        else:
+            content, response_diagnostics = extract_answer_text(response_payload)
         try:
             result = json.loads(content)
         except (json.JSONDecodeError, TypeError):
@@ -216,8 +236,7 @@ class ResearchValueClassifier:
                 "messages": [{"role": "user", "content": self.prompt(record)}],
                 "temperature": 0,
                 "seed": 42,
-                "max_tokens": 400,
-                "chat_template_kwargs": {"enable_thinking": False},
+                "max_tokens": max(400, self.max_tokens * 2),
                 "response_format": {
                     "type": "json_schema",
                     "json_schema": {
@@ -227,6 +246,7 @@ class ResearchValueClassifier:
                     },
                 },
             }
+            retry_payload.update(reasoning_parameters(self.reasoning_mode))
             retry = requests.post(
                 url,
                 json=retry_payload,
@@ -235,14 +255,13 @@ class ResearchValueClassifier:
             )
             retry.raise_for_status()
             try:
-                result = json.loads(
-                    retry.json()["choices"][0]["message"]["content"]
-                )
+                retry_content, response_diagnostics = extract_answer_text(retry.json())
+                result = json.loads(retry_content)
             except (json.JSONDecodeError, TypeError):
                 result = {
                     "label": "uncertain",
                     "confidence": "low",
-                    "evidence": ["Structured output remained invalid after retry."],
+                    "evidence": [format_response_failure(response_diagnostics)],
                 }
         if not isinstance(result, dict):
             result = {
@@ -273,6 +292,12 @@ class ResearchValueClassifier:
             "prompt_version": self.prompt_version,
             "model": self.model,
             "content_hash": content_hash,
+            "inference_config": {
+                "backend": self.backend,
+                "reasoning_mode": self.reasoning_mode,
+                "max_tokens": self.max_tokens,
+            },
+            "response_diagnostics": response_diagnostics,
             "result": result,
         }
         with self._cache_lock:
@@ -385,6 +410,8 @@ def run_value_triage(
         "backend": primary.backend,
         "endpoint": primary.endpoint,
         "concurrency": concurrency,
+        "reasoning_mode": primary.reasoning_mode,
+        "max_tokens": primary.max_tokens,
         "prompt_versions": VALUE_PROMPT_VERSIONS,
         "temperature": 0,
         "seed": 42,

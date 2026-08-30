@@ -15,6 +15,13 @@ from typing import Any
 import requests
 
 from deaiodorant.corpus.benchmark import file_sha256, read_jsonl, write_jsonl
+from deaiodorant.corpus.openai_compat import (
+    REASONING_MODES,
+    extract_answer_text,
+    format_response_failure,
+    reasoning_parameters,
+)
+from deaiodorant.corpus.review_triage import openai_compatible_headers
 
 
 PROTOCOL_VERSION = "post-corpus-strata-1.0"
@@ -63,12 +70,20 @@ class StratumClassifier:
         endpoint: str,
         cache_path: Path,
         timeout: float,
+        reasoning_mode: str = "legacy",
+        max_tokens: int = 300,
     ) -> None:
         self.model = model
         self.model_digest = model_digest
         self.endpoint = endpoint.rstrip("/")
         self.cache_path = cache_path
         self.timeout = timeout
+        if reasoning_mode not in REASONING_MODES:
+            raise ValueError(f"Unknown reasoning mode: {reasoning_mode}")
+        if max_tokens < 1:
+            raise ValueError("max_tokens must be positive")
+        self.reasoning_mode = reasoning_mode
+        self.max_tokens = max_tokens
         self.lock = threading.Lock()
         self.cache: dict[str, dict[str, Any]] = {}
         if cache_path.is_file():
@@ -129,7 +144,8 @@ class StratumClassifier:
     def classify(self, record: dict[str, Any]) -> dict[str, Any]:
         content_hash = hashlib.sha256(record["text"].encode("utf-8")).hexdigest()
         cache_key = hashlib.sha256(
-            f"{PROMPT_VERSION}\0{self.model}\0{content_hash}".encode("utf-8")
+            f"{PROMPT_VERSION}\0{self.model}\0{self.reasoning_mode}\0"
+            f"{self.max_tokens}\0{content_hash}".encode("utf-8")
         ).hexdigest()
         cached = self.cache.get(cache_key)
         if cached is not None:
@@ -139,8 +155,7 @@ class StratumClassifier:
             "messages": [{"role": "user", "content": self.prompt(record)}],
             "temperature": 0,
             "seed": 42,
-            "max_tokens": 300,
-            "chat_template_kwargs": {"enable_thinking": False},
+            "max_tokens": self.max_tokens,
             "response_format": {
                 "type": "json_schema",
                 "json_schema": {
@@ -150,18 +165,23 @@ class StratumClassifier:
                 },
             },
         }
+        payload.update(reasoning_parameters(self.reasoning_mode))
         response = requests.post(
-            f"{self.endpoint}/chat/completions", json=payload, timeout=self.timeout
+            f"{self.endpoint}/chat/completions",
+            json=payload,
+            headers=openai_compatible_headers(),
+            timeout=self.timeout,
         )
         response.raise_for_status()
+        content, response_diagnostics = extract_answer_text(response.json())
         try:
-            result = json.loads(response.json()["choices"][0]["message"]["content"])
-        except (KeyError, IndexError, json.JSONDecodeError, TypeError):
+            result = json.loads(content)
+        except (json.JSONDecodeError, TypeError):
             result = {
                 "format_stratum": "other",
                 "topic_stratum": "other",
                 "confidence": "low",
-                "evidence": ["Structured output was invalid."],
+                "evidence": [format_response_failure(response_diagnostics)],
             }
         if (
             not isinstance(result, dict)
@@ -184,6 +204,11 @@ class StratumClassifier:
             "model": self.model,
             "model_digest": self.model_digest,
             "content_hash": content_hash,
+            "inference_config": {
+                "reasoning_mode": self.reasoning_mode,
+                "max_tokens": self.max_tokens,
+            },
+            "response_diagnostics": response_diagnostics,
             "result": result,
         }
         with self.lock:
@@ -207,6 +232,10 @@ def main() -> int:
     parser.add_argument("--endpoint", default="http://192.168.1.200:8000/v1")
     parser.add_argument("--concurrency", type=int, default=16)
     parser.add_argument("--timeout", type=float, default=600.0)
+    parser.add_argument(
+        "--reasoning-mode", choices=REASONING_MODES, default="legacy"
+    )
+    parser.add_argument("--max-tokens", type=int, default=300)
     args = parser.parse_args()
 
     candidate_paths = sorted(args.candidate_dir.glob("*_candidates.jsonl"))
@@ -234,6 +263,8 @@ def main() -> int:
         endpoint=args.endpoint,
         cache_path=output_dir / "cache.jsonl",
         timeout=args.timeout,
+        reasoning_mode=args.reasoning_mode,
+        max_tokens=args.max_tokens,
     )
     if args.concurrency <= 1:
         measurements = [classifier.classify(record) for record in eligible]
@@ -268,6 +299,8 @@ def main() -> int:
         "model_digest": args.model_digest,
         "endpoint": args.endpoint,
         "concurrency": args.concurrency,
+        "reasoning_mode": args.reasoning_mode,
+        "max_tokens": args.max_tokens,
         "temperature": 0,
         "seed": 42,
         "prompt_version": PROMPT_VERSION,

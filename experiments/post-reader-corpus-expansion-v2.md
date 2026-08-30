@@ -67,6 +67,22 @@ The two batch measurements were therefore:
 The OpenRouter key was read from an ignored `.env` file into process memory. It
 was not copied to `gx10`, written to an artifact, printed, or committed.
 
+### Later interface correction
+
+A 2026-08-30 audit reproduced the MiMo-V2.5 and Hy3 empty answers and found that
+they were client-side false negatives. The request used the local-server field
+`chat_template_kwargs.enable_thinking=false`, which did not disable OpenRouter
+reasoning, and limited completion to 320 tokens. MiMo used 319 reasoning tokens
+and Hy3 used all 320; both stopped for length before emitting answer content.
+Both models return valid structured answers with explicit OpenRouter reasoning
+controls and a sufficient budget.
+
+The v2 handoff is not rewritten or relabeled. Its original Qwen3.8-27B plus
+DeepSeek measurement identity remains fixed. The correction changes the
+interpretation of the excluded smoke models and the client used for future
+batches, not the stored v2 admission decisions. See
+[Current OpenRouter Corpus-Model Interface Audit](openrouter-corpus-model-interface-audit.md).
+
 ## Fail-closed two-model review
 
 Each model applied the same frozen foreign-source safeguard. A document could

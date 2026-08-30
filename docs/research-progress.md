@@ -42,6 +42,14 @@ research checkpoint, not a product milestone.
   source and candidate placement before outcomes.
 - Terminated the over-controlled raw comparison and froze a 10-pair post-only
   original-versus-conservative-revision intervention before outcomes.
+- Froze and ran a five-motif deterministic inventory on all 67 development
+  documents while leaving the 30-document validation reserve unopened.
+- Reproduced the earlier OpenRouter empty-answer failure and added explicit,
+  auditable reasoning controls and response diagnostics to corpus triage.
+- Acquired 720 new post-period records and produced a validated 93-document,
+  three-source discovery handoff through a current three-model intersection.
+- Applied the frozen motif inventory to the new discovery handoff without
+  changing its lexicons or thresholds.
 
 ## Current evidence
 
@@ -417,6 +425,90 @@ failure to improve with larger matched data, not a reason to insert a manual
 weight. Overall document typicality remains descriptive; only feature-wise
 weights are used in the current time comparison.
 
+## Post development motif inventory
+
+Protocol `post-development-motif-inventory-0.1` was frozen before it was run on
+the 67-document development partition. The scan uses only fixed lexical and
+punctuation rules and does not open any of the 30 validation-reserve bodies.
+
+Two motifs pass the necessary frequency gate of six independent documents and
+three sources. Complete contrast frames occur 124 times in 37 documents across
+all five sources. Abstract-shell clusters occur 14 times in 12 documents across
+four sources. Neither supplies a coherent intervention target. A frozen
+source-stratified contrast sample contains real alternatives, mechanism
+distinctions, quoted definitions, benchmark criteria, and source fragments.
+All 14 shell clusters mix normal technical uses, repeated literal senses, and
+list fragments rather than one editable construction.
+
+The other rules fail the frequency gate: four dense-clause surface candidates
+in four documents, four emphatic abstract-payload candidates in three
+documents, and zero strict delayed-head low-anchor stacks. No Project 8 is
+prepared. The result strengthens the selection-precision limit: frequent
+markers or abstract nouns are not sufficient intervention selectors.
+
+## OpenRouter structured-output correction
+
+The earlier MiMo-V2.5 and Hy3 smoke failures were interface false negatives.
+The old request sent the local-server-specific
+`chat_template_kwargs.enable_thinking=false` field and allowed only 320 output
+tokens. A direct reproduction showed both models spending essentially the
+entire allowance on reasoning, returning `finish_reason=length`, and emitting
+no answer content.
+
+Using OpenRouter's explicit reasoning control and a sufficient budget produced
+valid schema-conforming answers from MiMo-V2.5, MiMo-V2.5-Pro, Hy3, Hy4 Preview,
+GLM 5.3 Flash, DeepSeek V4 Flash 0731, Qwen3.8 Flash, Qwen3.8 Max, and Qwen3.8
+2.4T-A95B. Hy4 initially returned a documented upstream shared-pool 429 and
+succeeded on a later retry. This establishes interface compatibility, not
+task accuracy.
+
+The triage clients now include reasoning mode and token budget in the cache
+identity and manifests, extract both string and content-part answers, and retain
+non-sensitive finish, content, reasoning, and token diagnostics.
+
+A fixed 12-document, five-source panel then ran the same provenance and value
+prompts across seven current models. DeepSeek, MiMo, Hy3, GLM 5.3 Flash,
+Qwen3.8 Max, and Qwen3.8 2.4T-A95B completed all 24 calls. Hy4 completed only
+one because the shared upstream pool rate-limited the other 23. The panel has
+no human gold and cannot rank accuracy.
+
+The next acquisition batch therefore freezes a three-model fail-closed policy:
+DeepSeek and GLM screen every deterministic candidate, while Qwen3.8 Max reviews
+only their provisional high-confidence agreements. Final admission requires
+high-confidence agreement from all three. This uses larger current models
+without spending the most expensive endpoint on candidates already excluded by
+the first two measurements.
+
+## Current-model post corpus expansion v3
+
+The completed local handoff contains 93 post-period documents from Huawei,
+Leiphone, and QbitAI. Its validator reports zero errors and zero warnings. The
+flow is 720 raw acquisitions, 561 after deterministic translation and duplicate
+exclusion, 372 after DeepSeek-plus-GLM provenance agreement, 130 after their
+two-prompt value agreement, 103 after Qwen3.8 Max value review, and 93 after the
+frozen Huawei visibility threshold.
+
+The final composition is 39 Leiphone, 32 Huawei, and 22 QbitAI documents; 40
+industry reports, 34 technical-practice articles, and 19 research summaries.
+All model labels remain measurements. Fifty-three of 93 documents are from
+2026-08, source and format remain strongly confounded, and editorial
+distribution is not article-level readership for Leiphone or QbitAI. The pool
+cannot support a matched pre/post estimate.
+
+The DeepSeek provenance run had one documented process-restart anomaly. An
+orphan and its retry briefly wrote the same cache, creating 95 duplicate cache
+keys. The raw cache is retained, the stale processes were stopped, and the
+final result was regenerated to exactly 561 unique document IDs. No value cache
+contains a duplicate key.
+
+The handoff initially assigned all 93 documents to a discovery reserve. The
+frozen motif scan subsequently opened every body, making the full handoff
+feature-discovery exposed. The scan found zero strict delayed-head low-anchor
+instances, two dense-clause surface candidates, and two emphatic abstract-
+payload candidates. Complete contrast and the already rejected shell-cluster
+proxy remained frequent but semantically heterogeneous. No Project 8 is
+prepared.
+
 ## Reproducible artifacts
 
 - `data/annotations/reader-friction-v1.json`: 10 quick ratings.
@@ -491,6 +583,14 @@ weights are used in the current time comparison.
   low-anchor abstract-modifier candidate extraction.
 - `experiments/head-final-modifier-probe.md`: localized construction,
   deterministic rule, corpus audit, false positives, and admission boundary.
+- `experiments/inventory_post_development_motifs.py`: frozen five-motif scan of
+  the development partition only.
+- `experiments/post-development-motif-inventory.md`: rules, frequency gate,
+  result, coherence audit, and no-intervention decision.
+- `experiments/compare_openrouter_corpus_models.py`: fixed-panel current-model
+  interface and cross-model measurement comparison without human gold.
+- `experiments/openrouter-corpus-model-interface-audit.md`: live model evidence,
+  empty-answer diagnosis, fixed-panel results, and frozen batch policy.
 - `experiments/acquire_editorial_post_candidates.py`: public QbitAI and
   Leiphone post-period acquisition staging.
 - `experiments/acquire_huawei_post_candidates.py`: topic-focused public Huawei
@@ -505,6 +605,8 @@ weights are used in the current time comparison.
   materialization and frozen development/reserve assignment.
 - `experiments/post-reader-corpus-expansion-v2.md`: acquisition flow, live model
   selection, model effects, final composition, partition, and identity.
+- `experiments/post-reader-corpus-expansion-v3.md`: current-model admission,
+  run anomaly, final discovery composition, limitations, and identity.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -520,8 +622,11 @@ weights are used in the current time comparison.
 
 Generated `feature_runs/` artifacts and Stanza weights are intentionally
 ignored. They can be reproduced from the tracked pilot corpus and scripts.
-Future model inference, including bulk parser inference, runs on `gx10`; the
+Local model inference, including bulk parser inference, runs on `gx10`; the
 local workstation is limited to deterministic artifact preparation and checks.
+Remote API inference may use OpenRouter with the ignored key held only in
+process memory and with model, reasoning mode, token budget, and prompt version
+recorded.
 
 ## Next research step
 
@@ -560,10 +665,15 @@ warnings.
 
 Model choice used a captured live OpenRouter weekly-usage ranking rather than
 remembered popularity. Opaque Ox Alpha was excluded. DeepSeek V4 Flash 0731,
-the number-two model, passed the task-specific structured-output smoke test;
-MiMo-V2.5 and Hy3 returned empty answer content and were not batch-run. The
-existing Qwen3.8-27B baseline ran only on `gx10`. The ignored API key was never
-persisted or copied to the host.
+the number-two model, passed the task-specific structured-output smoke test.
+MiMo-V2.5 and Hy3 appeared to return empty answer content and were not batch-
+run. A later audit reproduced those empty answers as token-budget exhaustion:
+the unsupported disable-thinking field left reasoning enabled, and reasoning
+consumed all 320 completion tokens. Both models return valid structured answers
+under corrected OpenRouter parameters. The v2 handoff retains its original
+Qwen3.8-27B plus DeepSeek measurement identity; the interface correction does
+not retroactively change it. The ignored API key was never persisted or copied
+to `gx10`.
 
 The role split is frozen before new paragraph analysis: 67 development
 documents and 30 validation-reserve documents. The reserve has not been read
@@ -579,6 +689,13 @@ Applying it only to the expanded handoff's development partition produced 23
 broad candidates across 14 documents and again zero strict instances. The
 validation reserve was not read. Do not relax the definition against these
 results or create project 8 from broad false-positive candidates.
+
+The wider frozen motif inventory also failed to produce a coherent selector.
+The new 93-document handoff passed the fixed current-model and integrity gates
+and was disjoint from both v2 partitions and every prior reader artifact. Its
+complete frozen-rule scan again found zero strict delayed-head instances and no
+new coherent operator. All 93 documents are now feature-discovery exposed, not
+reader-validation material.
 
 The immediate step is to wait for independent, complete, multi-source examples
 that meet the frozen cue-to-head and low-anchor conditions. Once available,

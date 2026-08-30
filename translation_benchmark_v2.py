@@ -728,6 +728,8 @@ def triage_review(args: argparse.Namespace) -> None:
         timeout=args.timeout,
         profile="primary",
         backend=args.backend,
+        reasoning_mode=args.reasoning_mode,
+        max_tokens=args.max_tokens,
     )
     verifier = ReviewTriageClassifier(
         args.model,
@@ -736,6 +738,8 @@ def triage_review(args: argparse.Namespace) -> None:
         timeout=args.timeout,
         profile="verifier",
         backend=args.backend,
+        reasoning_mode=args.reasoning_mode,
+        max_tokens=args.max_tokens,
     )
     safeguard = ReviewTriageClassifier(
         args.model,
@@ -744,6 +748,8 @@ def triage_review(args: argparse.Namespace) -> None:
         timeout=args.timeout,
         profile="safeguard",
         backend=args.backend,
+        reasoning_mode=args.reasoning_mode,
+        max_tokens=args.max_tokens,
     )
     _, manifest = run_review_triage(
         pending,
@@ -850,6 +856,8 @@ def triage_value(args: argparse.Namespace) -> None:
         timeout=args.timeout,
         profile="primary",
         backend=args.backend,
+        reasoning_mode=args.reasoning_mode,
+        max_tokens=args.max_tokens,
     )
     verifier = ResearchValueClassifier(
         args.model,
@@ -858,6 +866,8 @@ def triage_value(args: argparse.Namespace) -> None:
         timeout=args.timeout,
         profile="verifier",
         backend=args.backend,
+        reasoning_mode=args.reasoning_mode,
+        max_tokens=args.max_tokens,
     )
     _, manifest = run_value_triage(
         pending,
@@ -1007,6 +1017,12 @@ def parse_args() -> argparse.Namespace:
     )
     triage_review_parser.add_argument("--concurrency", type=int, default=1)
     triage_review_parser.add_argument("--model-digest")
+    triage_review_parser.add_argument(
+        "--reasoning-mode",
+        choices=["legacy", "disabled", "low", "medium", "high"],
+        default="legacy",
+    )
+    triage_review_parser.add_argument("--max-tokens", type=int, default=320)
     triage_review_parser.add_argument("--routing-only", action="store_true")
     triage_review_parser.add_argument("--timeout", type=float, default=600.0)
 
@@ -1064,6 +1080,12 @@ def parse_args() -> argparse.Namespace:
     )
     value_triage_parser.add_argument("--concurrency", type=int, default=1)
     value_triage_parser.add_argument("--model-digest")
+    value_triage_parser.add_argument(
+        "--reasoning-mode",
+        choices=["legacy", "disabled", "low", "medium", "high"],
+        default="legacy",
+    )
+    value_triage_parser.add_argument("--max-tokens", type=int, default=220)
     value_triage_parser.add_argument("--timeout", type=float, default=600.0)
 
     publish_value_parser = subparsers.add_parser("publish-value-review")
