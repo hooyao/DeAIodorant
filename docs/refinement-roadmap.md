@@ -680,10 +680,14 @@ data exists.
 The initial reader benchmark and five development interventions are complete.
 Do not open another broad marker-based reader batch.
 
-Implement and externally calibrate `boundary_competition_v1` under the frozen
-[Boundary-Competition Development Experiment](../experiments/boundary-competition-development.md).
-Prepare the next blinded reader project only if the deterministic Stage 0 gate
-produces eight high/low matched blocks from 16 distinct post-period documents
-without opening the validation reserve. Otherwise retain the single reader-
-localized example and reject the selector rather than relaxing it against
-development outcomes.
+The externally calibrated `boundary_competition_v1` Stage 0 gate failed with
+zero high-stratum candidates, so no blinded reader project was prepared. Retain
+the failure under the frozen
+[Boundary-Competition Development Experiment](../experiments/boundary-competition-development.md)
+and do not relax its thresholds or add phrase-specific dictionary entries.
+
+The next eligible direction is a separately frozen word-level modifier-
+attachment or phrase-bracketing measurement. It must distinguish established
+names and technical compounds from loosely attached modifier sequences before
+another reader intervention is proposed. The validation reserve remains
+unopened.

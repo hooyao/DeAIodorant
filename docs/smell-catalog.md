@@ -887,6 +887,7 @@ receive a smell ID.
 - Hypothesis
 - Deterministically measured on one post-outcome development batch
 - Pre-outcome boundary-competition experiment protocol frozen
+- Character-to-word boundary selector rejected at Stage 0
 - No unconfounded reader association
 - Not intervention validated
 
@@ -986,6 +987,23 @@ high-minus-low preference contrast tests whether the measurement selects
 responsive cases rather than whether rewriting in general helps. The 30-
 document validation reserve remains unopened. This protocol is a planned test,
 not new evidence and not a smell promotion.
+
+The frozen Stage 0 run then rejected the selector before any edit was prepared.
+Across all 87 structural candidates, zero met the high-competition gate, 36
+instances in 23 documents met the low gate, and 51 were middle or unscored.
+Seven candidates jointly met the high-entropy and low-margin thresholds, but
+only one had two ambiguous character gaps and none sustained a low-confidence
+boundary for the required six characters before the head. The observed maximum
+was four.
+
+The reader example was not a lexical boundary case under this measurement: it
+had no ambiguous gap and an unresolved distance of two. SUBTLEX produced the
+best path `原生 / 时代 / 全新 / 算 / 力 / 服务`, revealing that its subtitle-era
+lexicon also lacks the modern technical unit `算力`. Do not repair that result
+with a phrase-specific dictionary entry. Reject `boundary_competition_v1` and
+move the hypothesis from character-to-word segmentation toward word-level
+modifier attachment or phrase bracketing. That replacement is not yet a smell
+metric and requires a separately frozen protocol.
 
 No further reader batch should be assembled from the five remaining broad
 candidates: they are all from Meituan and mostly technical or section-heading

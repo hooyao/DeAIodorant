@@ -104,6 +104,16 @@ competition. Proper names, numbers, and technical terms are recorded as
 anchors and are not deleted by rule. Stanza-versus-dictionary segmentation
 disagreement is retained only as a diagnostic.
 
+The version 1.0 lattice uses CJK-only substrings of at most eight characters.
+A known edge receives unigram weight
+`(SUBTLEX WCount + 0.1) / (retained WCount total + 0.1 * vocabulary size)`.
+When no known one-character edge exists, the fallback weight is its SUBTLEX
+character probability multiplied by `0.01`. Exact forward-backward summation
+produces path entropy and gap posteriors; a two-best dynamic program produces
+the path margin. Entropy and margin are divided by scored CJK length. ASCII
+runs are counted as anchors and omitted from the CJK lattice. Known-character
+coverage below 0.80 causes abstention rather than a high-competition result.
+
 The working example must be localized and scored without a phrase-specific
 lexicon entry or blacklist. Failure to localize it stops the experiment.
 
@@ -151,10 +161,20 @@ The reader experiment requires:
 
 Each high item is matched to one low item by source, editorial format, target
 span length, passage length, anchor profile, and publication month where
-available. Matching uses a fixed nearest-neighbor distance and seeded tie
-breaking. The exact distance formula and maximum tolerances must be frozen in
-the measurement implementation before the candidate corpus is scanned. If
-eight valid cross-document matched blocks are unavailable, the experiment
+available. Source, format, and the three binary proper-name, numeric, and ASCII
+anchor indicators must match exactly. Target-span CJK length may differ by at
+most two characters; passage and target-sentence CJK-length ratios must both be
+within `[0.80, 1.25]`.
+
+The fixed distance is `0.35 * span difference / 2 + 0.35 * normalized absolute
+passage log-ratio + 0.20 * normalized absolute sentence log-ratio + 0.10 *
+publication-month distance / 24`, with the last term capped at one and log
+ratios normalized by `log(1.25)`. The matcher considers the most extreme
+eligible candidate per document, sorts all valid edges by distance, breaks
+exact ties by `SHA-256(seed | high candidate | low candidate)`, and greedily
+accepts cross-document edges without replacement. No source may supply more
+than three pairs. The final eight pairs must cover at least three sources and
+two formats. If eight valid matched blocks are unavailable, the experiment
 stops without relaxing thresholds or creating a reader project.
 
 ## Stage 1: boundary-only intervention
@@ -325,3 +345,71 @@ The next action is to implement and externally calibrate
 `boundary_competition_v1`. Do not inspect the 30-document validation reserve,
 write passage-specific lexical exceptions, prepare revisions, or open Project 8
 until Stage 0 produces eight valid high/low matched blocks under this protocol.
+
+## Stage 0 result
+
+Stage 0 was run on 2026-08-31 without changing the frozen thresholds. The
+external calibration used 150 sentences from the public Beijing Sentence
+Corpus OSF workbook and the public SUBTLEX-CH word and character tables. The
+Beijing workbook has SHA-256
+`5c96e829a3de8203739893eef6b54e6ebddf055976919d9b29b2797053d81876`.
+Its OSF and DataCite metadata do not specify a license, so the file remains an
+untracked local research input and is not redistributed. The SUBTLEX word and
+character table hashes are
+`086536450b1f77d0c7ff3ac0fc8375897162ace807d3167bec48b4c493434077`
+and
+`03ffacc65c4d14530338c1bffb72b2e98d06ee23bed14546dc8001ab4bcbb415`;
+their Figshare record specifies CC BY 4.0.
+
+All 87 previously frozen structural candidates were scored. None came from a
+previous reader document, and the 30-document validation reserve was absent
+from the candidate input and remained unopened. The result was:
+
+| Boundary stratum | Instances | Documents |
+|---|---:|---:|
+| High competition | 0 | 0 |
+| Low competition | 36 | 23 |
+| Middle or unscored | 51 | 28 |
+
+Seven candidates in seven documents independently passed both the high-entropy
+and low-margin percentile gates. Only one candidate had at least two ambiguous
+gaps, no candidate had unresolved distance of at least six characters, and the
+maximum observed unresolved distance was four. The high candidates therefore
+number zero, no high/low matching edge exists, and Stage 0 fails before editing.
+
+The reader-localized example was fully scorable but did not resemble lexical
+segmentation competition. Its entropy percentile was 0.669, margin percentile
+was 0.346, ambiguous-gap count was zero, and unresolved distance was two. The
+best SUBTLEX path was `原生 / 时代 / 全新 / 算 / 力 / 服务`. This also exposes a
+domain-age limitation: the subtitle lexicon does not treat the modern technical
+term `算力` as one word. Adding it after seeing the result would be prohibited
+phrase-specific tuning and would not address the larger result.
+
+Reject `boundary_competition_v1` as an intervention selector. The reader's
+description is better interpreted as competition among word-level modifier
+attachments or phrase bracketings than as uncertainty about character-to-word
+segmentation. Do not prepare revisions, assign the frozen allocation, or create
+Project 8 from this run. A word-level bracketing hypothesis requires its own
+pre-outcome literature review, measurement protocol, and independent gate.
+
+Two independent runs produced byte-identical artifacts:
+
+| Artifact | SHA-256 |
+|---|---|
+| Summary | `0d8babb378cce2789ebf2a47717b6242549ef34de86a68f6fe4241e6497dfc9b` |
+| Candidate measurements | `77926cc1f71a60c7959c488b98863af43b0b7bcdfd42d47e7aa95fc2982cabe5` |
+| Candidate table | `60a42c4ca6541ba2f0f1cd4cad8d9556b94dd89501904aacbc2b9566c885c5f5` |
+| Empty matched-pair file | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+
+~~~powershell
+python experiments/boundary_competition_probe.py `
+  --candidates feature_runs/nominal-chain-integration-v1/candidates.jsonl `
+  --nominal-summary feature_runs/nominal-chain-integration-v1/summary.json `
+  --subtlex-word-file feature_runs/boundary-competition-resources-v1/subtlex_ch/SUBTLEX-CH-WF `
+  --subtlex-character-file feature_runs/boundary-competition-resources-v1/subtlex_ch/SUBTLEX-CH-CHR `
+  --bsc-workbook feature_runs/boundary-competition-resources-v1/BSC.Word.Info.v2.xlsx `
+  --handoff-root F:\MyProjects\DeAIodorant\data\local\post_reader_handoff_v2 `
+  --handoff-root F:\MyProjects\DeAIodorant\data\local\post_reader_handoff_v3 `
+  --annotation-dir data/annotations `
+  --output-dir feature_runs/boundary-competition-probe-v1
+~~~

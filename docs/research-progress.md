@@ -56,6 +56,9 @@ milestone.
 - Froze a staged boundary-competition development design before implementing
   the new lexical signal, selecting passages, editing text, or observing a new
   reader outcome.
+- Ran its externally calibrated character-to-word boundary gate and rejected
+  the selector before editing because no structural candidate entered the
+  frozen high-competition stratum.
 
 ## Current evidence
 
@@ -581,6 +584,23 @@ provide independent reader replication at any of those counts. A later
 confirmatory design must use multiple readers, held-out passages, and
 simulation under a crossed reader-item model.
 
+Stage 0 subsequently used SUBTLEX-CH and 150 public Beijing Sentence Corpus
+sentences to calibrate the frozen lattice. All 87 prior structural candidates
+were scored without opening the validation reserve. Zero candidates entered
+the high-competition stratum; 36 instances in 23 documents entered the low
+stratum, and 51 instances were middle or unscored. Seven candidates passed the
+entropy and path-margin gates, but only one had two ambiguous character gaps
+and none reached the required unresolved distance of six characters. The
+maximum was four, so no high/low matching edge existed.
+
+The reader example itself had zero ambiguous gaps, unresolved distance two,
+entropy percentile 0.669, and margin percentile 0.346. Its best SUBTLEX path
+was `原生 / 时代 / 全新 / 算 / 力 / 服务`; the outdated-domain split of `算力`
+is recorded rather than corrected after the result. Reject
+`boundary_competition_v1`, do not create Project 8, and reinterpret the current
+hypothesis as word-level modifier-attachment or phrase-bracketing competition
+rather than character-to-word segmentation.
+
 ## Reproducible artifacts
 
 - `data/annotations/reader-friction-v1.json`: 10 quick ratings.
@@ -686,7 +706,14 @@ simulation under a crossed reader-item model.
 - `experiments/design_boundary_competition_experiment.py`: frozen balanced
   placeholder allocation and exact-binomial sensitivity calculation.
 - `experiments/boundary-competition-development.md`: pre-outcome staged
-  measurement, intervention, randomization, analysis, and decision protocol.
+  measurement, intervention, randomization, analysis, decision protocol, and
+  failed Stage 0 result.
+- `src/deaiodorant/analysis/boundary_competition.py`: deterministic SUBTLEX
+  segmentation lattice, gap posteriors, path entropy, path margin, and
+  branching diagnostics.
+- `experiments/boundary_competition_probe.py`: Beijing Sentence Corpus
+  calibration, frozen candidate classification, corpus-separation audit, and
+  high/low matching gate.
 - `src/deaiodorant/analysis/discourse_relations.py`: deterministic relation
   instances, evidence vectors, abstentions, and reason codes.
 - `experiments/relation_support_probe.py`: existing-corpus time, reader, and
@@ -777,19 +804,18 @@ complete frozen-rule scan again found zero strict delayed-head instances and no
 new coherent operator. All 93 documents are now feature-discovery exposed, not
 reader-validation material.
 
-The immediate step is to implement and externally calibrate
-`boundary_competition_v1` under
-`experiments/boundary-competition-development.md`. It must localize the working
-example without a phrase-specific exception and produce eight high/low matched
-blocks from 16 distinct, previously unexposed post-period documents before an
-`unpack_boundary_competition` reader project can be prepared. Keep reader input
-to blinded continued-reading preference.
+The immediate step is no longer to prepare a boundary-unpacking reader batch.
+`boundary_competition_v1` failed Stage 0 with zero high-stratum candidates and
+no matching edges. Keep the frozen result and investigate a distinct word-level
+modifier-attachment or phrase-bracketing measurement before proposing another
+intervention. Any new measurement needs a new pre-outcome protocol and cannot
+inherit the rejected character-gap thresholds.
 
 The broader Stanza nominal-chain probe does not remove this requirement. Its
 frequency gate passed but its candidates were not one construction. The new
-protocol uses an independently frozen lexical-familiarity and segmentation-
-boundary vector; post-hoc lexical blacklists against the 87 candidates remain
-prohibited. No Project 8 exists unless Stage 0 passes.
+protocol used an independently frozen lexical-familiarity and segmentation-
+boundary vector; Stage 0 failed. Post-hoc lexical blacklists against the 87
+candidates remain prohibited, and no Project 8 was created.
 
 This remains single-reader development work. The expanded corpus now preserves
 an independent document reserve with three sources, three formats, and three
