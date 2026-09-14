@@ -1,0 +1,804 @@
+{
+  "cases": [
+    {
+      "alias": "doc-03",
+      "case_id": "doc-03-awkward",
+      "confidence": "high",
+      "discrimination_limit": "The nested structure can navigate the repeated predicates but does not say whether they express an intended proposition, an accidental repetition, or an editorial/capture problem. Its grammatical-looking tree does not establish fluent wording.",
+      "evidence": {
+        "end_char": 757,
+        "evidence_quote": "无法确定不确定",
+        "start_char": 750
+      },
+      "human_gold": false,
+      "parser_observation": "Router is nsubj of 无法; the first 确定 is its xcomp, and the second 确定 is another xcomp under the first, with 不 as advmod. The parser supplies a complete dependency analysis for the awkward sequence.",
+      "parser_sentence_source": {
+        "end_char": 775,
+        "source_text": "例如用户提到“网站访问延时”，传统 Router 就无法确定不确定是 CDN、COS 还是网络的问题。",
+        "start_char": 724
+      },
+      "reading_observation": "The captured sentence stacks inability to determine and uncertainty with a repeated predicate; the relation between the two is difficult to interpret locally. This is a concrete wording concern, not a consequence of the article's technical topic or connector count.",
+      "role": "awkward_construction",
+      "selected_word_records": [
+        {
+          "deprel": "nsubj",
+          "end_char": 748,
+          "head": 13,
+          "id": 11,
+          "lemma": "Router",
+          "source_text": "Router",
+          "start_char": 742,
+          "text": "Router",
+          "upos": "X",
+          "xpos": "FW"
+        },
+        {
+          "deprel": "parataxis",
+          "end_char": 752,
+          "head": 1,
+          "id": 13,
+          "lemma": "无法",
+          "source_text": "无法",
+          "start_char": 750,
+          "text": "无法",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "xcomp",
+          "end_char": 754,
+          "head": 13,
+          "id": 14,
+          "lemma": "确定",
+          "source_text": "确定",
+          "start_char": 752,
+          "text": "确定",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "advmod",
+          "end_char": 755,
+          "feats": "Polarity=Neg",
+          "head": 16,
+          "id": 15,
+          "lemma": "不",
+          "source_text": "不",
+          "start_char": 754,
+          "text": "不",
+          "upos": "ADV",
+          "xpos": "RB"
+        },
+        {
+          "deprel": "xcomp",
+          "end_char": 757,
+          "head": 14,
+          "id": 16,
+          "lemma": "确定",
+          "source_text": "确定",
+          "start_char": 755,
+          "text": "确定",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "obj",
+          "end_char": 774,
+          "head": 14,
+          "id": 24,
+          "lemma": "问题",
+          "source_text": "问题",
+          "start_char": 772,
+          "text": "问题",
+          "upos": "NOUN",
+          "xpos": "NN"
+        }
+      ],
+      "sentence_id": "doc-03-s012",
+      "support_evidence": []
+    },
+    {
+      "alias": "doc-03",
+      "case_id": "doc-03-control",
+      "confidence": "high",
+      "discrimination_limit": "A coherent list contains a clear technical-token segmentation problem in the parser. Dependency anomalies or missing subjects on its action predicates cannot be equated with a source-language defect.",
+      "evidence": {
+        "end_char": 1784,
+        "evidence_quote": "把路由当成一个集合预测问题",
+        "start_char": 1771
+      },
+      "human_gold": false,
+      "parser_observation": "The parser treats the list ordinal 二 as nsubj of 是, tags 设计 as NOUN, and splits the technical word 路由 into 路 (NOUN, obl:patient) and 由 (VERB, advcl), with 当成 as xcomp of 由.",
+      "parser_sentence_source": {
+        "end_char": 1804,
+        "source_text": "二是专门针对多 Agent 设计奖励函数，把路由当成一个集合预测问题，在模型覆盖率和精确度之间形成稳定平衡。",
+        "start_char": 1750
+      },
+      "reading_observation": "This is the second item in an explicitly announced two-part explanation. The team performing the actions is recoverable from the preceding first-person introduction; repeating that actor in every action would not be obligatory.",
+      "role": "ordinary_list_and_shared_actor",
+      "selected_word_records": [
+        {
+          "deprel": "nsubj",
+          "end_char": 1751,
+          "feats": "NumType=Card",
+          "head": 2,
+          "id": 1,
+          "lemma": "二",
+          "source_text": "二",
+          "start_char": 1750,
+          "text": "二",
+          "upos": "NUM",
+          "xpos": "LS"
+        },
+        {
+          "deprel": "root",
+          "end_char": 1752,
+          "head": 0,
+          "id": 2,
+          "lemma": "是",
+          "source_text": "是",
+          "start_char": 1751,
+          "text": "是",
+          "upos": "VERB",
+          "xpos": "VC"
+        },
+        {
+          "deprel": "nmod",
+          "end_char": 1766,
+          "head": 9,
+          "id": 7,
+          "lemma": "设计",
+          "source_text": "设计",
+          "start_char": 1764,
+          "text": "设计",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "obl:patient",
+          "end_char": 1773,
+          "head": 13,
+          "id": 12,
+          "lemma": "路",
+          "source_text": "路",
+          "start_char": 1772,
+          "text": "路",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "advcl",
+          "end_char": 1774,
+          "head": 29,
+          "id": 13,
+          "lemma": "由",
+          "source_text": "由",
+          "start_char": 1773,
+          "text": "由",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "xcomp",
+          "end_char": 1776,
+          "head": 13,
+          "id": 14,
+          "lemma": "当成",
+          "source_text": "当成",
+          "start_char": 1774,
+          "text": "当成",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "xcomp",
+          "end_char": 1799,
+          "head": 2,
+          "id": 29,
+          "lemma": "形成",
+          "source_text": "形成",
+          "start_char": 1797,
+          "text": "形成",
+          "upos": "VERB",
+          "xpos": "VV"
+        }
+      ],
+      "sentence_id": "doc-03-s026",
+      "support_evidence": [
+        {
+          "end_char": 1635,
+          "evidence_quote": "我们做了两件比较特别的事情：",
+          "start_char": 1621
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "case_id": "doc-05-awkward",
+      "confidence": "high",
+      "discrimination_limit": "These attachments accommodate the awkward sequence without diagnosing the shifting referent or supplying the intended discourse link. The parser cannot establish what additional premise, if any, the author intended. No absent information is invented.",
+      "evidence": {
+        "end_char": 3683,
+        "evidence_quote": "有一些用户还是对\nAnthropic 近期产品策略与沟通的不满",
+        "start_char": 3652
+      },
+      "human_gold": false,
+      "parser_observation": "The parser labels 有些 as VERB, attaches 评论 as nsubj of 有, turns 用户 into nmod of 不满, and places 不满 as obj of 有. It independently attaches 具有 as ccomp of the sentence-level 是 and 语境 as its obj.",
+      "parser_sentence_source": {
+        "end_char": 3713,
+        "source_text": "此外，值得注意的是，有些评论虽然不是专门针对 Cowork，但有一些用户还是对\nAnthropic 近期产品策略与沟通的不满\n，对 Cowork 的发布背景和用户关系具有间接关联语境。",
+        "start_char": 3621
+      },
+      "reading_observation": "The concessive construction shifts between comments, users, and a nominal expression of dissatisfaction. The final assertion of an indirectly related context does not clearly resolve which preceding material bears that relation. Extractor line breaks remain visible, but the concern also concerns predication and reference across the words themselves.",
+      "role": "awkward_reference_and_predication",
+      "selected_word_records": [
+        {
+          "deprel": "root",
+          "end_char": 3630,
+          "head": 0,
+          "id": 6,
+          "lemma": "是",
+          "source_text": "是",
+          "start_char": 3629,
+          "text": "是",
+          "upos": "VERB",
+          "xpos": "VC"
+        },
+        {
+          "deprel": "xcomp",
+          "end_char": 3633,
+          "head": 6,
+          "id": 8,
+          "lemma": "有些",
+          "source_text": "有些",
+          "start_char": 3631,
+          "text": "有些",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "nsubj",
+          "end_char": 3635,
+          "head": 17,
+          "id": 9,
+          "lemma": "评论",
+          "source_text": "评论",
+          "start_char": 3633,
+          "text": "评论",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "ccomp",
+          "end_char": 3653,
+          "head": 8,
+          "id": 17,
+          "lemma": "有",
+          "source_text": "有",
+          "start_char": 3652,
+          "text": "有",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "nmod",
+          "end_char": 3657,
+          "head": 29,
+          "id": 19,
+          "lemma": "用户",
+          "source_text": "用户",
+          "start_char": 3655,
+          "text": "用户",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "case",
+          "end_char": 3660,
+          "head": 29,
+          "id": 21,
+          "lemma": "对",
+          "source_text": "对",
+          "start_char": 3659,
+          "text": "对",
+          "upos": "ADP",
+          "xpos": "IN"
+        },
+        {
+          "deprel": "obj",
+          "end_char": 3683,
+          "head": 17,
+          "id": 29,
+          "lemma": "不满",
+          "source_text": "不满",
+          "start_char": 3681,
+          "text": "不满",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "ccomp",
+          "end_char": 3706,
+          "head": 6,
+          "id": 39,
+          "lemma": "具有",
+          "source_text": "具有",
+          "start_char": 3704,
+          "text": "具有",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "obj",
+          "end_char": 3712,
+          "head": 39,
+          "id": 42,
+          "lemma": "语境",
+          "source_text": "语境",
+          "start_char": 3710,
+          "text": "语境",
+          "upos": "NOUN",
+          "xpos": "NN"
+        }
+      ],
+      "sentence_id": "doc-05-s074",
+      "support_evidence": []
+    },
+    {
+      "alias": "doc-05",
+      "case_id": "doc-05-control",
+      "confidence": "high",
+      "discrimination_limit": "A nominal root or an unconventional analysis of a discourse ordinal does not establish missing syntax. This control also shows that not every extractor line break creates a parser boundary failure.",
+      "evidence": {
+        "end_char": 2956,
+        "evidence_quote": "其次是新增的一系列技能\n。",
+        "start_char": 2943
+      },
+      "human_gold": false,
+      "parser_observation": "技能 is the root, 是 is cop, and 其次 is represented as NOUN/nsubj. The newline before the punctuation is retained in the source slice and does not split this parser sentence.",
+      "parser_sentence_source": {
+        "end_char": 2956,
+        "source_text": "其次是新增的一系列技能\n。",
+        "start_char": 2943
+      },
+      "reading_observation": "This is a coherent second item in the explanation of ways to extend the product's capabilities. A nominal list item does not need an independently restated actor or a verb-object sequence.",
+      "role": "ordinary_nominal_list_item",
+      "selected_word_records": [
+        {
+          "deprel": "nsubj",
+          "end_char": 2945,
+          "head": 7,
+          "id": 1,
+          "lemma": "其次",
+          "source_text": "其次",
+          "start_char": 2943,
+          "text": "其次",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "cop",
+          "end_char": 2946,
+          "head": 7,
+          "id": 2,
+          "lemma": "是",
+          "source_text": "是",
+          "start_char": 2945,
+          "text": "是",
+          "upos": "AUX",
+          "xpos": "VC"
+        },
+        {
+          "deprel": "acl:relcl",
+          "end_char": 2948,
+          "head": 7,
+          "id": 3,
+          "lemma": "新增",
+          "source_text": "新增",
+          "start_char": 2946,
+          "text": "新增",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "root",
+          "end_char": 2954,
+          "head": 0,
+          "id": 7,
+          "lemma": "技能",
+          "source_text": "技能",
+          "start_char": 2952,
+          "text": "技能",
+          "upos": "NOUN",
+          "xpos": "NN"
+        }
+      ],
+      "sentence_id": "doc-05-s060",
+      "support_evidence": [
+        {
+          "end_char": 2856,
+          "evidence_quote": "首先是连接器。",
+          "start_char": 2849
+        }
+      ]
+    },
+    {
+      "alias": "doc-11",
+      "case_id": "doc-11-awkward",
+      "confidence": "high",
+      "discrimination_limit": "The parser offers one attachment without deciding whether a clause boundary is missing. Heading fusion changes the root and subject analysis before any prose-quality interpretation is attempted.",
+      "evidence": {
+        "end_char": 2207,
+        "evidence_quote": "其主要依赖计算组进行资源隔离通过将计算层与存储层解耦",
+        "start_char": 2181
+      },
+      "human_gold": false,
+      "parser_observation": "Stanza merges the preceding heading with the prose. Heading word 优势 becomes nsubj of root 模式. 进行 is parataxis under 模式, and 解耦 is ccomp of 进行 with 通过 as case. The rest of the passage receives ordinary dependency edges as well.",
+      "parser_sentence_source": {
+        "end_char": 2262,
+        "source_text": "01 Doris 3.0 核心优势\n首先是 3.0 存算分离的部署模式，其主要依赖计算组进行资源隔离通过将计算层与存储层解耦，BE 节点实现无状态化，依托底层 Kubernetes 支持，可以实现快速弹性伸缩以满足不同体量用户的需求。",
+        "start_char": 2145
+      },
+      "reading_observation": "The captured text runs the resource-isolation operation directly into a following means clause, leaving the boundary and attachment of 通过 unclear on first reading. This observation does not establish whether the source author or capture process caused the missing separation.",
+      "role": "awkward_clause_boundary_in_captured_text",
+      "selected_word_records": [
+        {
+          "deprel": "nsubj",
+          "end_char": 2162,
+          "head": 13,
+          "id": 5,
+          "lemma": "优势",
+          "source_text": "优势",
+          "start_char": 2160,
+          "text": "优势",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "root",
+          "end_char": 2180,
+          "head": 0,
+          "id": 13,
+          "lemma": "模式",
+          "source_text": "模式",
+          "start_char": 2178,
+          "text": "模式",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "nsubj",
+          "end_char": 2182,
+          "feats": "Person=3",
+          "head": 17,
+          "id": 15,
+          "lemma": "其",
+          "source_text": "其",
+          "start_char": 2181,
+          "text": "其",
+          "upos": "PRON",
+          "xpos": "PRP"
+        },
+        {
+          "deprel": "advcl",
+          "end_char": 2186,
+          "head": 20,
+          "id": 17,
+          "lemma": "依赖",
+          "source_text": "依赖",
+          "start_char": 2184,
+          "text": "依赖",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "parataxis",
+          "end_char": 2191,
+          "head": 13,
+          "id": 20,
+          "lemma": "进行",
+          "source_text": "进行",
+          "start_char": 2189,
+          "text": "进行",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "obj",
+          "end_char": 2195,
+          "head": 20,
+          "id": 22,
+          "lemma": "隔离",
+          "source_text": "隔离",
+          "start_char": 2193,
+          "text": "隔离",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "case",
+          "end_char": 2197,
+          "head": 30,
+          "id": 23,
+          "lemma": "通过",
+          "source_text": "通过",
+          "start_char": 2195,
+          "text": "通过",
+          "upos": "ADP",
+          "xpos": "IN"
+        },
+        {
+          "deprel": "ccomp",
+          "end_char": 2207,
+          "head": 20,
+          "id": 30,
+          "lemma": "解耦",
+          "source_text": "解耦",
+          "start_char": 2205,
+          "text": "解耦",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "advcl",
+          "end_char": 2215,
+          "head": 50,
+          "id": 34,
+          "lemma": "实现",
+          "source_text": "实现",
+          "start_char": 2213,
+          "text": "实现",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "parataxis",
+          "end_char": 2243,
+          "head": 13,
+          "id": 45,
+          "lemma": "实现",
+          "source_text": "实现",
+          "start_char": 2241,
+          "text": "实现",
+          "upos": "VERB",
+          "xpos": "VV"
+        }
+      ],
+      "sentence_id": "doc-11-s029",
+      "support_evidence": []
+    },
+    {
+      "alias": "doc-11",
+      "case_id": "doc-11-control",
+      "confidence": "high",
+      "discrimination_limit": "Absence of nsubj on the main action is compatible with coherent Chinese discourse ellipsis. Stanza supplies no discourse-resolution evidence that would distinguish this control from an actually unresolved reference.",
+      "evidence": {
+        "end_char": 1713,
+        "evidence_quote": "最终采用后者作为临时方案，但仍未根本解决成本与可用性之间的矛盾。",
+        "start_char": 1681
+      },
+      "human_gold": false,
+      "parser_observation": "解决 is root and 采用 is its advcl; neither has an overt nsubj dependent. 后者 is instead attached as nsubj to 作 inside the analysis of 作为.",
+      "parser_sentence_source": {
+        "end_char": 1713,
+        "source_text": "最终采用后者作为临时方案，但仍未根本解决成本与可用性之间的矛盾。",
+        "start_char": 1681
+      },
+      "reading_observation": "The preceding paragraph names the team and evaluates two alternatives. The adopted latter alternative and the team's omitted actor are recoverable in context, so an overt subject is not obligatory here.",
+      "role": "ordinary_discourse_ellipsis",
+      "selected_word_records": [
+        {
+          "deprel": "advcl",
+          "end_char": 1685,
+          "head": 13,
+          "id": 2,
+          "lemma": "采用",
+          "source_text": "采用",
+          "start_char": 1683,
+          "text": "采用",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "nsubj",
+          "end_char": 1687,
+          "head": 4,
+          "id": 3,
+          "lemma": "后者",
+          "source_text": "后者",
+          "start_char": 1685,
+          "text": "后者",
+          "upos": "NOUN",
+          "xpos": "NN"
+        },
+        {
+          "deprel": "ccomp",
+          "end_char": 1688,
+          "head": 2,
+          "id": 4,
+          "lemma": "作",
+          "source_text": "作",
+          "start_char": 1687,
+          "text": "作",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "root",
+          "end_char": 1701,
+          "head": 0,
+          "id": 13,
+          "lemma": "解决",
+          "source_text": "解决",
+          "start_char": 1699,
+          "text": "解决",
+          "upos": "VERB",
+          "xpos": "VV"
+        },
+        {
+          "deprel": "obj",
+          "end_char": 1712,
+          "head": 13,
+          "id": 20,
+          "lemma": "矛盾",
+          "source_text": "矛盾",
+          "start_char": 1710,
+          "text": "矛盾",
+          "upos": "NOUN",
+          "xpos": "NN"
+        }
+      ],
+      "sentence_id": "doc-11-s022",
+      "support_evidence": [
+        {
+          "end_char": 1572,
+          "evidence_quote": "团队曾评估两种路径：",
+          "start_char": 1562
+        },
+        {
+          "end_char": 1629,
+          "evidence_quote": "跨可用区副本分布：",
+          "start_char": 1620
+        }
+      ]
+    }
+  ],
+  "conclusion": "Useful for source-anchored navigation and inspection of proposed attachments; these six purposive cases do not establish reliable automatic distinction between reading defects and ordinary Chinese constructions.",
+  "human_gold": false,
+  "model_identity": null,
+  "parse_run": "reproduction-02",
+  "protocol": "contrast-syntax-feasibility-1.0",
+  "reviewer": "context_metrics_check",
+  "reviewer_kind": "assistant_case_inspection",
+  "segmentation_case": {
+    "alias": "doc-11",
+    "evidence": {
+      "end_char": 3754,
+      "evidence_quote": ";\n复制代码\n04 自助化、精细化的资源管理\n为了优化资源管理与运维流程",
+      "start_char": 3718
+    },
+    "observation": "One parser sentence spans the SQL introduction, the full code block, the copy-code label, the next heading, and the next prose sentence. Foreign-word tokens join source lines and the graph attaches the following prose to the code-introduction root. This is a capture/segmentation confound, not evidence that the prose has missing syntax.",
+    "sentence_id": "doc-11-s045",
+    "source_end_char": 3861,
+    "source_start_char": 3425
+  },
+  "selection": "Purposive full-document selection fixed before this parser run; cases selected after reading these bodies and annotations.",
+  "semantic_reviews_read": false,
+  "token_surface_cases": [
+    {
+      "alias": "doc-03",
+      "interpretation": "Parser surface transformation retained alongside the exact source slice; not a source-language error label.",
+      "sentence_id": "doc-03-s032",
+      "token": {
+        "end_char": 2350,
+        "fields": [
+          {
+            "deprel": "flat:foreign",
+            "end_char": 2350,
+            "head": 4,
+            "id": 6,
+            "lemma": "：https://huggingface.co/tencent/TCAndon-RouterGitHub：https://github.com/Tencent/TCAndon-RouterPaper：https://arxiv.org/pdf/2601.04544​",
+            "misc": "SpaceAfter=No",
+            "start_char": 2214,
+            "text": "：https://huggingface.co/tencent/TCAndon-RouterGitHub：https://github.com/Tencent/TCAndon-RouterPaper：https://arxiv.org/pdf/2601.04544​",
+            "upos": "X",
+            "xpos": "FW"
+          }
+        ],
+        "ids": [
+          6
+        ],
+        "source_text": "：https://huggingface.co/tencent/TCAndon-Router\nGitHub：https://github.com/Tencent/TCAndon-Router\nPaper：https://arxiv.org/pdf/2601.04544\n​",
+        "start_char": 2214,
+        "text": "：https://huggingface.co/tencent/TCAndon-RouterGitHub：https://github.com/Tencent/TCAndon-RouterPaper：https://arxiv.org/pdf/2601.04544​"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "interpretation": "Parser surface transformation retained alongside the exact source slice; not a source-language error label.",
+      "sentence_id": "doc-05-s077",
+      "token": {
+        "end_char": 4048,
+        "fields": [
+          {
+            "deprel": "obj",
+            "end_char": 4048,
+            "head": 3,
+            "id": 5,
+            "lemma": "<UNK>",
+            "misc": "SpaceAfter=No",
+            "start_char": 3841,
+            "text": "<UNK>",
+            "upos": "X",
+            "xpos": "FW"
+          }
+        ],
+        "ids": [
+          5
+        ],
+        "source_text": "https://claude.com/blog/cowork-research-preview\nhttps://x.com/bcherny/status/2010809450844831752\nhttps://www.reddit.com/r/singularity/comments/1qb6qv1/introducing_cowork_claude_claude/?utm_source=chatgpt.com",
+        "start_char": 3841,
+        "text": "<UNK>"
+      }
+    },
+    {
+      "alias": "doc-11",
+      "interpretation": "Parser surface transformation retained alongside the exact source slice; not a source-language error label.",
+      "sentence_id": "doc-11-s036",
+      "token": {
+        "end_char": 2818,
+        "fields": [
+          {
+            "deprel": "obj",
+            "end_char": 2818,
+            "head": 13,
+            "id": 15,
+            "lemma": "倍02",
+            "start_char": 2814,
+            "text": "倍02",
+            "upos": "X",
+            "xpos": "FW"
+          }
+        ],
+        "ids": [
+          15
+        ],
+        "source_text": "倍\n02",
+        "start_char": 2814,
+        "text": "倍02"
+      }
+    },
+    {
+      "alias": "doc-11",
+      "interpretation": "Parser surface transformation retained alongside the exact source slice; not a source-language error label.",
+      "sentence_id": "doc-11-s045",
+      "token": {
+        "end_char": 3494,
+        "fields": [
+          {
+            "deprel": "obj",
+            "end_char": 3494,
+            "head": 10,
+            "id": 12,
+            "lemma": "CREATEMATERIALIZEDVIEWmvBUILD DEFERREDREFRESH",
+            "start_char": 3444,
+            "text": "CREATEMATERIALIZEDVIEWmvBUILD DEFERREDREFRESH",
+            "upos": "X",
+            "xpos": "FW"
+          }
+        ],
+        "ids": [
+          12
+        ],
+        "source_text": "CREATE\nMATERIALIZED\nVIEW\nmv\nBUILD DEFERRED\nREFRESH",
+        "start_char": 3444,
+        "text": "CREATEMATERIALIZEDVIEWmvBUILD DEFERREDREFRESH"
+      }
+    }
+  ],
+  "whole_bodies_read": [
+    "doc-03",
+    "doc-05",
+    "doc-11"
+  ]
+}

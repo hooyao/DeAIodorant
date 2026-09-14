@@ -1,0 +1,102 @@
+{
+  "frame_index": 8024,
+  "url": "https://www.infoq.cn/article/FNXSpjM1H0tscilBv1xC",
+  "doc_id": "8af23a00cfebd06e42eb6b51",
+  "intended_cohort": "pre",
+  "sitemap_lastmod": null,
+  "publication_date": "unknown_until_article_capture",
+  "exclusion_reasons": [],
+  "selected": true,
+  "selection_rank": 8,
+  "capture": {
+    "url": "https://www.infoq.cn/article/FNXSpjM1H0tscilBv1xC",
+    "requested_at": "2026-09-14T08:39:08.812921+00:00",
+    "capture_file": "raw/8af23a00cfebd06e42eb6b51.html",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/FNXSpjM1H0tscilBv1xC",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 08:39:10 GMT"
+    },
+    "completed_at": "2026-09-14T08:39:09.867505+00:00",
+    "complete_response": true,
+    "bytes": 315776,
+    "sha256": "93d1be17342331410c504997a3dafb95a1b3cc52cb563ca2ad26c54d8a51bb23"
+  },
+  "admission_status": "unreviewed_staging_not_admitted",
+  "smell_label": null,
+  "authorship_label": null,
+  "training_rights": "unverified",
+  "quality_status": "unreviewed_no_quality_admission",
+  "visibility_status": "unreviewed_snapshot_only",
+  "exposure_status": "identity_checked_near_duplicate_and_missing_historical_handoffs_pending",
+  "status": "empty_extraction",
+  "metadata": {
+    "doc_id": "8af23a00cfebd06e42eb6b51",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/FNXSpjM1H0tscilBv1xC",
+    "title": "字节跳动跑步入局教育，能大力出奇迹吗？",
+    "authors": [
+      "刘燕"
+    ],
+    "translators": [],
+    "translation_evidence": [],
+    "published_at": "2020-10-30",
+    "modified_at": null,
+    "collected_at": "2026-09-14T08:39:08.812921+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 3618,
+    "comments": 0,
+    "likes": 2,
+    "collects": 2,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 0,
+    "text_chars": 0
+  },
+  "body_path": "documents/8af23a00cfebd06e42eb6b51/body.txt",
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_file_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "embedded_publication_milliseconds": 1604038987370,
+  "published_timestamp_utc": "2020-10-30T06:23:07.370000+00:00",
+  "published_date_asia_shanghai": "2020-10-30",
+  "actual_cohort": "pre",
+  "boundary_timezone_ambiguity": false,
+  "intended_period_match": true,
+  "sitemap_lastmod_is_publication_date": false,
+  "embedded_scalar_time_fields": {
+    "publish_time": 1604038987370,
+    "ctime": 1604038989674,
+    "utime": 1604042509649
+  },
+  "declared_canonical_urls": [
+    "https://www.infoq.cn/article/FNXSpjM1H0tscilBv1xC"
+  ],
+  "canonical_url_mismatch": false,
+  "known_exact_content_overlap": true,
+  "translation_status": "unresolved",
+  "block_count": 0,
+  "media_reference_count": 0,
+  "link_count": 0,
+  "multimedia_status": "full_captured_text_only_media_references_uninspected",
+  "utf8_decode_replacement_count": 0,
+  "legacy_extractor_exclusions": [
+    "known_exact_content_overlap"
+  ],
+  "exclusions_found": [
+    "known_exact_content_overlap"
+  ],
+  "provenance": {
+    "stratum": "unresolved",
+    "method": "fixed_existing_deterministic_evidence_rules",
+    "evidence": [],
+    "direct_expression_matches": [],
+    "original_chinese_certified": false,
+    "production_history_verified": false,
+    "translation_is_research_exclusion": false
+  },
+  "research_retained": true,
+  "intended_period_mismatch_is_reassigned_by_actual_date": true
+}

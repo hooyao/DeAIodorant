@@ -1,0 +1,71 @@
+{
+  "alias": "doc-03",
+  "content_hash": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 45,
+        "start_char": 43,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 69,
+        "start_char": 0,
+        "text": "企业级多智能体（Multi-Agent）系统最大的瓶颈，往往不是 Agent 不够强，而是负责分发任务的 Router（路由器）太“傻”。"
+      },
+      "occurrence_id": "doc-03-e01"
+    },
+    {
+      "connector": {
+        "end_char": 1025,
+        "start_char": 1023,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1043,
+        "start_char": 997,
+        "text": "这时候，Router 不再是一个收发任务的转接系统，而是变成了一个具备推理能力的“决策者”。"
+      },
+      "occurrence_id": "doc-03-e02"
+    },
+    {
+      "connector": {
+        "end_char": 1290,
+        "start_char": 1288,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1317,
+        "start_char": 1157,
+        "text": "\n能力一：Reason-then-Select（拒绝黑盒，把思考过程写出来）\nTCAR 在输出 Agent 之前，会先生成一段自然语言推理链，明确说明问题可能涉及哪些技术栈，不同 Agent 的职责边界，为什么多个 Agent 执行是合理的，这让路由不再是黑盒，而是可解释、可 Debug、可持续优化 Agent 描述。"
+      },
+      "occurrence_id": "doc-03-e03"
+    },
+    {
+      "connector": {
+        "end_char": 1355,
+        "start_char": 1353,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1422,
+        "start_char": 1317,
+        "text": "\n能力二：从单挑到团战\n在 TCAR 中路由结果不再是 one-hot，而是一个 Agent 子集，这一步直接解决了企业系统中最棘手的 Agent 冲突问题：不强行压缩决策，而是保留不确定性，交给后续协作解决。"
+      },
+      "occurrence_id": "doc-03-e04"
+    },
+    {
+      "connector": {
+        "end_char": 1406,
+        "start_char": 1404,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1422,
+        "start_char": 1317,
+        "text": "\n能力二：从单挑到团战\n在 TCAR 中路由结果不再是 one-hot，而是一个 Agent 子集，这一步直接解决了企业系统中最棘手的 Agent 冲突问题：不强行压缩决策，而是保留不确定性，交给后续协作解决。"
+      },
+      "occurrence_id": "doc-03-e05"
+    }
+  ]
+}

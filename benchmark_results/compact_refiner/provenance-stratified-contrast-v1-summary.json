@@ -1,0 +1,614 @@
+{
+  "certified_original_documents": 0,
+  "groups": [
+    {
+      "cjk_chars": 51902,
+      "cohort": "pre",
+      "count_histogram": {
+        "0": 14,
+        "1": 3,
+        "2": 1
+      },
+      "counts_by_family": {
+        "no_longer_is": 1,
+        "not_is": 1,
+        "unpaired": 3
+      },
+      "counts_by_left_prefix": {
+        "__unpaired__": 3,
+        "不再是": 1,
+        "不是": 1
+      },
+      "document_coverage": 0.2222222222222222,
+      "documents": 18,
+      "documents_with_ershi": 4,
+      "ershi_occurrences": 5,
+      "known_translation_documents": 1,
+      "mean_document_rate_per_10000_cjk": 0.8803647004777428,
+      "mean_per_document": 0.2777777777777778,
+      "median_document_rate_per_10000_cjk": 0.0,
+      "median_per_document": 0.0,
+      "median_per_positive_document": 1.0,
+      "pooled_per_10000_cjk": 0.9633540133328196,
+      "publication_year_counts": {
+        "2020": 1,
+        "2021": 8,
+        "2022": 9
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 2,
+          "dataset": "staging",
+          "doc_id": "550a11e0e8987efc94c654b7",
+          "per_10000_cjk": 9.233610341643583,
+          "published_at": "2022-10-28"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "738c96bc2777301fdaf9f078",
+          "per_10000_cjk": 1.4316392269148175,
+          "published_at": "2021-12-03"
+        },
+        {
+          "count": 1,
+          "dataset": "pilot",
+          "doc_id": "73e9f6e61e27e1e32264551f",
+          "per_10000_cjk": 2.9351335485764602,
+          "published_at": "2021-07-02"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "8bdf575aae4fe9a3b509a492",
+          "per_10000_cjk": 2.2461814914645104,
+          "published_at": "2022-10-02"
+        },
+        {
+          "count": 0,
+          "dataset": "staging",
+          "doc_id": "0c1bc051de0fc98fbcd0524d",
+          "per_10000_cjk": 0.0,
+          "published_at": "2022-02-10"
+        }
+      ],
+      "view": "all_available_media"
+    },
+    {
+      "cjk_chars": 77525,
+      "cohort": "post",
+      "count_histogram": {
+        "0": 10,
+        "1": 4,
+        "2": 1,
+        "3": 1,
+        "5": 2,
+        "8": 2,
+        "11": 1,
+        "19": 1
+      },
+      "counts_by_family": {
+        "no_longer_is": 4,
+        "no_longer_only_is": 2,
+        "not_be": 7,
+        "not_believe": 1,
+        "not_is": 26,
+        "not_only_is": 8,
+        "unpaired": 17
+      },
+      "counts_by_left_prefix": {
+        "__unpaired__": 17,
+        "不仅是": 4,
+        "不再只是": 2,
+        "不再是": 4,
+        "不只是": 3,
+        "不是": 21,
+        "并不只是": 1,
+        "并不是": 5,
+        "并不认为": 1,
+        "并非": 7
+      },
+      "document_coverage": 0.5454545454545454,
+      "documents": 22,
+      "documents_with_ershi": 12,
+      "ershi_occurrences": 65,
+      "known_translation_documents": 5,
+      "mean_document_rate_per_10000_cjk": 7.907673541466862,
+      "mean_per_document": 2.9545454545454546,
+      "median_document_rate_per_10000_cjk": 3.88591155813772,
+      "median_per_document": 1.0,
+      "median_per_positive_document": 4.0,
+      "pooled_per_10000_cjk": 8.384392131570461,
+      "publication_year_counts": {
+        "2025": 7,
+        "2026": 15
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 19,
+          "dataset": "staging",
+          "doc_id": "0be079018045fbf1f2d47d7f",
+          "per_10000_cjk": 10.832383124287343,
+          "published_at": "2025-12-16"
+        },
+        {
+          "count": 11,
+          "dataset": "pilot",
+          "doc_id": "b186cdd4f9004e0413395bf3",
+          "per_10000_cjk": 8.021000437509114,
+          "published_at": "2026-05-06"
+        },
+        {
+          "count": 8,
+          "dataset": "pilot",
+          "doc_id": "3c60dc0a981b686870095450",
+          "per_10000_cjk": 20.634511220015476,
+          "published_at": "2026-06-26"
+        },
+        {
+          "count": 8,
+          "dataset": "staging",
+          "doc_id": "c526ed941b8de39a5388df3d",
+          "per_10000_cjk": 29.973772948669914,
+          "published_at": "2026-01-13"
+        },
+        {
+          "count": 5,
+          "dataset": "pilot",
+          "doc_id": "0431c592d5de8246cebcb8e2",
+          "per_10000_cjk": 18.037518037518037,
+          "published_at": "2025-10-05"
+        }
+      ],
+      "view": "all_available_media"
+    },
+    {
+      "cjk_chars": 3612,
+      "cohort": "pre",
+      "count_histogram": {
+        "0": 1
+      },
+      "counts_by_family": {},
+      "counts_by_left_prefix": {},
+      "document_coverage": 0.0,
+      "documents": 1,
+      "documents_with_ershi": 0,
+      "ershi_occurrences": 0,
+      "known_translation_documents": 1,
+      "mean_document_rate_per_10000_cjk": 0.0,
+      "mean_per_document": 0.0,
+      "median_document_rate_per_10000_cjk": 0.0,
+      "median_per_document": 0,
+      "median_per_positive_document": null,
+      "pooled_per_10000_cjk": 0.0,
+      "publication_year_counts": {
+        "2022": 1
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 0,
+          "dataset": "staging",
+          "doc_id": "0c1bc051de0fc98fbcd0524d",
+          "per_10000_cjk": 0.0,
+          "published_at": "2022-02-10"
+        }
+      ],
+      "view": "documented_translation_or_adaptation"
+    },
+    {
+      "cjk_chars": 34659,
+      "cohort": "post",
+      "count_histogram": {
+        "0": 1,
+        "1": 2,
+        "11": 1,
+        "19": 1
+      },
+      "counts_by_family": {
+        "not_is": 17,
+        "not_only_is": 7,
+        "unpaired": 8
+      },
+      "counts_by_left_prefix": {
+        "__unpaired__": 8,
+        "不仅是": 4,
+        "不只是": 2,
+        "不是": 13,
+        "并不只是": 1,
+        "并不是": 4
+      },
+      "document_coverage": 0.8,
+      "documents": 5,
+      "documents_with_ershi": 4,
+      "ershi_occurrences": 32,
+      "known_translation_documents": 5,
+      "mean_document_rate_per_10000_cjk": 7.618944488878091,
+      "mean_per_document": 6.4,
+      "median_document_rate_per_10000_cjk": 8.56898029134533,
+      "median_per_document": 1,
+      "median_per_positive_document": 6.0,
+      "pooled_per_10000_cjk": 9.23281110245535,
+      "publication_year_counts": {
+        "2025": 2,
+        "2026": 3
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 19,
+          "dataset": "staging",
+          "doc_id": "0be079018045fbf1f2d47d7f",
+          "per_10000_cjk": 10.832383124287343,
+          "published_at": "2025-12-16"
+        },
+        {
+          "count": 11,
+          "dataset": "pilot",
+          "doc_id": "b186cdd4f9004e0413395bf3",
+          "per_10000_cjk": 8.021000437509114,
+          "published_at": "2026-05-06"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "83e3fb47524511fba7945931",
+          "per_10000_cjk": 8.56898029134533,
+          "published_at": "2026-04-13"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "9656e09a0c8ef6938c517cef",
+          "per_10000_cjk": 10.672358591248665,
+          "published_at": "2026-04-08"
+        },
+        {
+          "count": 0,
+          "dataset": "staging",
+          "doc_id": "9d2686869fb90420de5a6d40",
+          "per_10000_cjk": 0.0,
+          "published_at": "2025-12-22"
+        }
+      ],
+      "view": "documented_translation_or_adaptation"
+    },
+    {
+      "cjk_chars": 48290,
+      "cohort": "pre",
+      "count_histogram": {
+        "0": 13,
+        "1": 3,
+        "2": 1
+      },
+      "counts_by_family": {
+        "no_longer_is": 1,
+        "not_is": 1,
+        "unpaired": 3
+      },
+      "counts_by_left_prefix": {
+        "__unpaired__": 3,
+        "不再是": 1,
+        "不是": 1
+      },
+      "document_coverage": 0.23529411764705882,
+      "documents": 17,
+      "documents_with_ershi": 4,
+      "ershi_occurrences": 5,
+      "known_translation_documents": 0,
+      "mean_document_rate_per_10000_cjk": 0.9321508593293748,
+      "mean_per_document": 0.29411764705882354,
+      "median_document_rate_per_10000_cjk": 0.0,
+      "median_per_document": 0,
+      "median_per_positive_document": 1.0,
+      "pooled_per_10000_cjk": 1.0354110581901015,
+      "publication_year_counts": {
+        "2020": 1,
+        "2021": 8,
+        "2022": 8
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 2,
+          "dataset": "staging",
+          "doc_id": "550a11e0e8987efc94c654b7",
+          "per_10000_cjk": 9.233610341643583,
+          "published_at": "2022-10-28"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "738c96bc2777301fdaf9f078",
+          "per_10000_cjk": 1.4316392269148175,
+          "published_at": "2021-12-03"
+        },
+        {
+          "count": 1,
+          "dataset": "pilot",
+          "doc_id": "73e9f6e61e27e1e32264551f",
+          "per_10000_cjk": 2.9351335485764602,
+          "published_at": "2021-07-02"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "8bdf575aae4fe9a3b509a492",
+          "per_10000_cjk": 2.2461814914645104,
+          "published_at": "2022-10-02"
+        },
+        {
+          "count": 0,
+          "dataset": "pilot",
+          "doc_id": "0dfc33ff7071975b48e12981",
+          "per_10000_cjk": 0.0,
+          "published_at": "2021-10-14"
+        }
+      ],
+      "view": "unresolved"
+    },
+    {
+      "cjk_chars": 42866,
+      "cohort": "post",
+      "count_histogram": {
+        "0": 9,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "5": 2,
+        "8": 2
+      },
+      "counts_by_family": {
+        "no_longer_is": 4,
+        "no_longer_only_is": 2,
+        "not_be": 7,
+        "not_believe": 1,
+        "not_is": 9,
+        "not_only_is": 1,
+        "unpaired": 9
+      },
+      "counts_by_left_prefix": {
+        "__unpaired__": 9,
+        "不再只是": 2,
+        "不再是": 4,
+        "不只是": 1,
+        "不是": 8,
+        "并不是": 1,
+        "并不认为": 1,
+        "并非": 7
+      },
+      "document_coverage": 0.47058823529411764,
+      "documents": 17,
+      "documents_with_ershi": 8,
+      "ershi_occurrences": 33,
+      "known_translation_documents": 0,
+      "mean_document_rate_per_10000_cjk": 7.9925938510517955,
+      "mean_per_document": 1.9411764705882353,
+      "median_document_rate_per_10000_cjk": 0.0,
+      "median_per_document": 0,
+      "median_per_positive_document": 4.0,
+      "pooled_per_10000_cjk": 7.698408995474269,
+      "publication_year_counts": {
+        "2025": 5,
+        "2026": 12
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 8,
+          "dataset": "pilot",
+          "doc_id": "3c60dc0a981b686870095450",
+          "per_10000_cjk": 20.634511220015476,
+          "published_at": "2026-06-26"
+        },
+        {
+          "count": 8,
+          "dataset": "staging",
+          "doc_id": "c526ed941b8de39a5388df3d",
+          "per_10000_cjk": 29.973772948669914,
+          "published_at": "2026-01-13"
+        },
+        {
+          "count": 5,
+          "dataset": "pilot",
+          "doc_id": "0431c592d5de8246cebcb8e2",
+          "per_10000_cjk": 18.037518037518037,
+          "published_at": "2025-10-05"
+        },
+        {
+          "count": 5,
+          "dataset": "pilot",
+          "doc_id": "44aa81958a6c585ee8c06847",
+          "per_10000_cjk": 38.58024691358025,
+          "published_at": "2026-01-16"
+        },
+        {
+          "count": 3,
+          "dataset": "pilot",
+          "doc_id": "213dcab213f816c7c548fc09",
+          "per_10000_cjk": 6.351894982002964,
+          "published_at": "2026-04-24"
+        }
+      ],
+      "view": "unresolved"
+    },
+    {
+      "cjk_chars": 48290,
+      "cohort": "pre",
+      "count_histogram": {
+        "0": 13,
+        "1": 3,
+        "2": 1
+      },
+      "counts_by_family": {
+        "no_longer_is": 1,
+        "not_is": 1,
+        "unpaired": 3
+      },
+      "counts_by_left_prefix": {
+        "__unpaired__": 3,
+        "不再是": 1,
+        "不是": 1
+      },
+      "document_coverage": 0.23529411764705882,
+      "documents": 17,
+      "documents_with_ershi": 4,
+      "ershi_occurrences": 5,
+      "known_translation_documents": 0,
+      "mean_document_rate_per_10000_cjk": 0.9321508593293748,
+      "mean_per_document": 0.29411764705882354,
+      "median_document_rate_per_10000_cjk": 0.0,
+      "median_per_document": 0,
+      "median_per_positive_document": 1.0,
+      "pooled_per_10000_cjk": 1.0354110581901015,
+      "publication_year_counts": {
+        "2020": 1,
+        "2021": 8,
+        "2022": 8
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 2,
+          "dataset": "staging",
+          "doc_id": "550a11e0e8987efc94c654b7",
+          "per_10000_cjk": 9.233610341643583,
+          "published_at": "2022-10-28"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "738c96bc2777301fdaf9f078",
+          "per_10000_cjk": 1.4316392269148175,
+          "published_at": "2021-12-03"
+        },
+        {
+          "count": 1,
+          "dataset": "pilot",
+          "doc_id": "73e9f6e61e27e1e32264551f",
+          "per_10000_cjk": 2.9351335485764602,
+          "published_at": "2021-07-02"
+        },
+        {
+          "count": 1,
+          "dataset": "staging",
+          "doc_id": "8bdf575aae4fe9a3b509a492",
+          "per_10000_cjk": 2.2461814914645104,
+          "published_at": "2022-10-02"
+        },
+        {
+          "count": 0,
+          "dataset": "pilot",
+          "doc_id": "0dfc33ff7071975b48e12981",
+          "per_10000_cjk": 0.0,
+          "published_at": "2021-10-14"
+        }
+      ],
+      "view": "legacy_known_translation_filtered_before_addendum"
+    },
+    {
+      "cjk_chars": 60406,
+      "cohort": "post",
+      "count_histogram": {
+        "0": 9,
+        "1": 2,
+        "2": 1,
+        "3": 1,
+        "5": 2,
+        "8": 2,
+        "19": 1
+      },
+      "counts_by_family": {
+        "no_longer_is": 4,
+        "no_longer_only_is": 2,
+        "not_be": 7,
+        "not_believe": 1,
+        "not_is": 18,
+        "not_only_is": 7,
+        "unpaired": 13
+      },
+      "counts_by_left_prefix": {
+        "__unpaired__": 13,
+        "不仅是": 3,
+        "不再只是": 2,
+        "不再是": 4,
+        "不只是": 3,
+        "不是": 14,
+        "并不只是": 1,
+        "并不是": 4,
+        "并不认为": 1,
+        "并非": 7
+      },
+      "document_coverage": 0.5,
+      "documents": 18,
+      "documents_with_ershi": 9,
+      "ershi_occurrences": 52,
+      "known_translation_documents": 1,
+      "mean_document_rate_per_10000_cjk": 8.150359921787103,
+      "mean_per_document": 2.888888888888889,
+      "median_document_rate_per_10000_cjk": 1.5743073047858942,
+      "median_per_document": 0.5,
+      "median_per_positive_document": 5,
+      "pooled_per_10000_cjk": 8.608416382478561,
+      "publication_year_counts": {
+        "2025": 6,
+        "2026": 12
+      },
+      "title_ershi_occurrences": 0,
+      "top_contributors": [
+        {
+          "count": 19,
+          "dataset": "staging",
+          "doc_id": "0be079018045fbf1f2d47d7f",
+          "per_10000_cjk": 10.832383124287343,
+          "published_at": "2025-12-16"
+        },
+        {
+          "count": 8,
+          "dataset": "pilot",
+          "doc_id": "3c60dc0a981b686870095450",
+          "per_10000_cjk": 20.634511220015476,
+          "published_at": "2026-06-26"
+        },
+        {
+          "count": 8,
+          "dataset": "staging",
+          "doc_id": "c526ed941b8de39a5388df3d",
+          "per_10000_cjk": 29.973772948669914,
+          "published_at": "2026-01-13"
+        },
+        {
+          "count": 5,
+          "dataset": "pilot",
+          "doc_id": "0431c592d5de8246cebcb8e2",
+          "per_10000_cjk": 18.037518037518037,
+          "published_at": "2025-10-05"
+        },
+        {
+          "count": 5,
+          "dataset": "pilot",
+          "doc_id": "44aa81958a6c585ee8c06847",
+          "per_10000_cjk": 38.58024691358025,
+          "published_at": "2026-01-16"
+        }
+      ],
+      "view": "legacy_known_translation_filtered_before_addendum"
+    }
+  ],
+  "interpretation": [
+    "Translation is a provenance stratum, not a global research rejection.",
+    "The unresolved stratum is not certified direct-Chinese writing.",
+    "Original-only intent remains a control, and the old 8.3 ratio is preserved with its earlier incomplete evidence.",
+    "Counts do not identify inherited versus translation-added defects or authorship.",
+    "Source/topic/format/visibility matching is incomplete; rates are not causal or population estimates."
+  ],
+  "new_translation_ids": [
+    "0be079018045fbf1f2d47d7f"
+  ],
+  "protocol": "provenance-stratified-contrast-1.0",
+  "research_documents_retained": 40,
+  "status": "descriptive_unmatched_available_media",
+  "validated_provenance_quotes": 34
+}

@@ -1,0 +1,62 @@
+{
+  "annotation_files": {
+    "0431c592d5de8246cebcb8e2.conllu": "2dffc5772ac4c760b4de0eaa89be6115cadf3160df9517bd9405115e9b8bc1ee",
+    "084c17f921cc74b858d04cdb.conllu": "089005d0ec96724675984fcad409a8fb4c2a6408be8714ac3b5bd1c69b2d2f63",
+    "0dfc33ff7071975b48e12981.conllu": "cf5846d5b173257dba194ed871dff12af4730b8ca7a516de986e820d466bbcd2",
+    "1a5bf7a3c811a61f24384560.conllu": "867d4cc4796c2e7a7f8df64505b94bbda1330ee937bc174f3dfca7b775819ddf",
+    "2046a00e2b504539234c6c70.conllu": "0a3d97669e26898bcf4ac65f52b74047c63d12544e3d790d0408a649d56c55e3",
+    "213dcab213f816c7c548fc09.conllu": "80a290b893dd2129371c645d9f26324700ea80123070b5995c6237f70e9c595d",
+    "2176304c3523784c901e14e0.conllu": "3ea9bcd60bc5ec9c97ce6561247f5e8af0edb1fe3e0df90073c2d8d0265999b4",
+    "2d8b8db77aefcdcbf86f23b4.conllu": "1b76f79ad449e1ae3904451419efa898b0c1fa4ada05380659dfa969a322ce58",
+    "34be1e39038614fec204e995.conllu": "d13a1cddd2a7b7cce2a3e9a08ef58fcab502c3798478b399032f4e5192271118",
+    "365b2ce9d1ca06a959567252.conllu": "8ce1c6f3d675ae511a2613e9127da626e7086c07e8d9b78e8801d110560e90c0",
+    "3c60dc0a981b686870095450.conllu": "bd2fcbbe1bc340898faf360a25d49597045efba7d21b57d22599ffbe8b158caf",
+    "44aa81958a6c585ee8c06847.conllu": "6545946df91b02a123aca673a0e45dc0a823cb4dffa75c528cc500c1a92196d8",
+    "48a7a6192771112323fd6820.conllu": "e795b1fbb65c14535c70463661b8d27fbfbc2043caae837025229ff791bd84b1",
+    "48bda219eb0776f623161899.conllu": "96043493cd8bf6571ffab080d18f9a45b6673767e9187cd3093b22d650c01df3",
+    "69abca8744c1316fa7b64945.conllu": "d568bbb9df89972d87d6178397cddd0694be1d92397877f5f62c14f7fe21f5d8",
+    "728a99c83fb531b12cc55802.conllu": "ac0c0a47db1692fac8f7c597c4bb56c7e7dc4f97136a7514a40861d372fa655d",
+    "73e9f6e61e27e1e32264551f.conllu": "277990e9613b09d246ca7be18216d7d9a38b197a81cbe7dc13a1826fa66d6d62",
+    "764d1aba4f71b3a0f5d071c2.conllu": "79fe6da46bdc293aa2f56c94b62f2a448b5c2a941dbd7940bf2c1b43619bc648",
+    "7d5e92ccde58b3b78616293c.conllu": "038f4dadccee807f0a94f03587957f85b342d1eca15980ecdb5c94e4ac51464c",
+    "81938af852e380b36bede22b.conllu": "77306dbb66912c05f4d066b87f94ee3585630d856a182138d012a021cc36c024",
+    "9b964dd771030c4c78575a88.conllu": "c91a5e159c9d013102ce5a29bf37de6eabbe0eca34c7022dad47768c37d22287",
+    "9e271d7b118c949e83c9ff8d.conllu": "cc098351698a477ef2f3213addaeaf4458b31d9f46f0663f020ece25169d0f65",
+    "a05a8bb2f7fe7bfe85ba7e46.conllu": "f76c995a8ebab831b896ebc9bb6cd1befccdefd04f41c2d83af74207e08e4857",
+    "a127f5baf364930a89fb4005.conllu": "8e6dd026c0f5ab5eb3bb8f32ae594fb7af46b5438a3b58e2b628403460373de2",
+    "aa8f2104314751c5873dbab7.conllu": "5ecaa656bfe78e409924ec06c9a43fbbfff2dd2cf6871462da16477eb92ba412",
+    "b186cdd4f9004e0413395bf3.conllu": "eb692587a4bacf32d7d633d3eb6cdad9375982367aadbba553bf70bc04ac1cad",
+    "b77b09a419c1631227112f0c.conllu": "10d7489212c618e1b425a79bc6e8e9522a0b11f8d42e01721d35a44be324ea07",
+    "be3e4a9eccc5d3a7e69212c3.conllu": "c8529453e637f0d0bcfa41fb5b850052e2c5615ae29f185b5249b35b8dcf6df3",
+    "bf1abf6ca461ec0bbac14bd7.conllu": "8765fbf2aa404d9335f0a107d8cf4f1efba92d9c81f1dc36727918142ba6ec4e",
+    "d8917e9eedea037e2ed53511.conllu": "f0205345889196862f69229c8495ca94c5f9311815931e7a43820d1243a003dc"
+  },
+  "corpus_fingerprint": "d6cfb16560de7904ab5dc34a09e35e69642e7f39cb61d517a9bd1ffbc2a43014",
+  "document_count": 30,
+  "parser": {
+    "device": "cpu",
+    "language": "zh-hans",
+    "model_file_count": 8,
+    "model_fingerprint": "5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9",
+    "name": "stanza-universal-dependencies",
+    "package": "gsdsimp",
+    "package_versions": {
+      "emoji": "2.15.0",
+      "networkx": "3.6.1",
+      "numpy": "2.4.2",
+      "protobuf": "7.35.0",
+      "stanza": "1.14.0",
+      "torch": "2.13.0"
+    },
+    "processors": [
+      "tokenize",
+      "pos",
+      "lemma",
+      "depparse"
+    ],
+    "seed": 20260821,
+    "version": "1.14.0"
+  },
+  "python_version": "3.13.5",
+  "schema_version": "deaiodorant-annotations-1.0"
+}

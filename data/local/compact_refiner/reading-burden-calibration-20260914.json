@@ -1,0 +1,36 @@
+{
+  "article_url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl",
+  "interpretation": {
+    "article_smell": "not_strong_reader_report",
+    "cohort_count_request": {
+      "post_start_inclusive": "2025-07-01",
+      "pre_end_exclusive": "2023-01-01"
+    },
+    "cue_frequency_not_equated_with_smell_intensity": true,
+    "meaning_preservation_required": true,
+    "no_automatic_svo_error_label": "Chinese permits valid ellipsis, shared subjects, intransitives, and nominal predicates.",
+    "product_targets": [
+      "aversive repetitive style cues",
+      "actual reading and discourse defects"
+    ],
+    "reading_difficulty": "high_reader_report",
+    "salient_cue": "frequent contrastive replacement construction family, not only one fixed surface string",
+    "translation_provenance": "not_determined_by_translationese_judgment",
+    "translationese": "reader_perception_present",
+    "underlying_problems": [
+      "incomplete predicate/argument expression",
+      "incomplete sentences",
+      "scattered discourse links"
+    ]
+  },
+  "reader_id": "project_maintainer",
+  "recorded_at_utc": "2026-09-14T07:34:45.862398+00:00",
+  "schema_version": "deaiodorant-reader-target-calibration-1.0",
+  "source_kind": "direct_user_messages",
+  "verbatim_messages": [
+    "这篇AI臭味不浓，不过是翻译腔，很难读，我不知道你不能从nlp的角度去分析出来。AI不适的味道主要来源于频繁的不是而是，而是，频繁缺少主谓宾，句式不完整，逻辑链scattered.&#x20;\n我reflect一下，为什么讨厌AI臭味，因为AI写的文章难读，AI臭味就是指示剂，就像肉坏了臭了，人类闻到臭味产生恶心的反应，实际上是避免去吃腐败的肉",
+    "我们这个项目要把臭味和腐败的肉同时解决",
+    "不是而是，并非而是，各种而是",
+    "不是而是，并非而是，各种而是   这个是我平时遇到的最明显的臭味，你可以统计下2023年前和2025年7月后的文章"
+  ]
+}

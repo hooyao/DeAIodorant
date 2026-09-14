@@ -1,0 +1,1158 @@
+{
+  "reviewer": "assistant-reviewer-b",
+  "model_identity": "unknown",
+  "human_gold": false,
+  "protocol_version": "contrast-context-audit-1.0",
+  "documents": [
+    {
+      "alias": "doc-01",
+      "whole_body_read": true,
+      "genre_observation": "Technical product explainer written in a collective first-person voice, with storage-format definitions and benchmark summaries.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-01-e01",
+          "relation": "correction",
+          "voice": "reporter",
+          "contrast_contribution": "Distinguishes a key stored in shared data from a dynamic-path subcolumn; the distinction explains why the old implementation must scan and filter the shared column.",
+          "packaging": "ordinary",
+          "packaging_reason": "A single contrast introduces two different storage locations and their query consequences.",
+          "preservation_risk": "Removing the rejected storage location could obscure the branch in the lookup procedure; removing the shared location would remove the explanation of the subsequent full-column read.",
+          "confidence": "high",
+          "evidence_quote": "但如果我们查询的是 key_n+1，元数据会显示该路径不在动态路径中，而是存储在共享数据中。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-01-d01",
+          "kind": "lexical_or_translationese",
+          "evidence_quote": "读取时间提升约 58 倍，内存使用下降约 3,300 倍。",
+          "explanation": "The phrase presents an increase in reading time as an improvement, leaving the direction of the time measurement ambiguous. The surrounding text clearly reports faster selective reads, but the exact time-versus-speed formulation is not supplied.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "测试结果显示，高级共享数据序列化在查询速度和内存使用方面的表现，与将所有路径作为动态子列存储的方式相当，同时具备良好的扩展性，可应对数万路径的复杂 JSON 数据。"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "如果不包含，则直接跳过该 granule；如果包含，则根据 .structure 中记录的偏移，读取 .substreams_metadata 文件中对应项，获取 key_m1 的偏移信息。",
+          "explanation": "The conditional clauses recover ClickHouse and the queried path from the immediately preceding sentence. Their omitted repeated subject and object are normal Chinese procedural ellipsis, not missing semantic arguments."
+        }
+      ],
+      "document_note": "The connector has a concrete data-layout function. Technical file lists and shared subjects are coherent; the localized benchmark wording concern does not establish a disliked style or a translation judgment."
+    },
+    {
+      "alias": "doc-02",
+      "whole_body_read": true,
+      "genre_observation": "Explanatory product and industry commentary organized around a cloud provider's agent platform and a trust-and-control thesis.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-02-e01",
+          "relation": "procedural_alternative",
+          "voice": "reporter",
+          "contrast_contribution": "Contrasts a proprietary closed protocol system with integration into an existing agent ecosystem, following the named MCP and A2A protocols.",
+          "packaging": "ordinary",
+          "packaging_reason": "The alternatives identify distinct integration choices and connect directly to named protocols.",
+          "preservation_risk": "Deleting the alternatives would lose the claim about ecosystem interoperability; neither side is merely an intensifier.",
+          "confidence": "high",
+          "evidence_quote": "阿里云没有另起一套封闭体系，而是把云能力接入更大的 Agent 生态。"
+        },
+        {
+          "occurrence_id": "doc-02-e02",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Summarizes how the listed toolchain turns a natural-language request into a verifiable and auditable engineering process.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "Immediately repeats the preceding move from bypassing the engineering system and directly invoking APIs to entering a mature toolchain. The same governed-process reframing returns in e04 and e05.",
+          "preservation_risk": "The metaphor is a recap, but the verification, audit, and rollback properties remain substantive claims that should not be silently removed.",
+          "confidence": "high",
+          "evidence_quote": "这样一来，Agent 的能力不再悬浮在自然语言上，而是落进一条可校验、可审计、可回滚的工程链路里。"
+        },
+        {
+          "occurrence_id": "doc-02-e03",
+          "relation": "scope_extension",
+          "voice": "reporter",
+          "contrast_contribution": "Extends API usability to enterprise willingness to delegate cloud operations; it does not deny that usability also improves.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "Reasserts the section's stated trust thesis after the safety-belt metaphor and the statement that autonomous execution requires identity, permission, risk, and audit boundaries. e06 repeats the trust-through-control endpoint.",
+          "preservation_risk": "The distinction between technical access and institutional willingness to delegate is the article's explicit thesis, so reduction cannot erase it or convert willingness into a proven outcome.",
+          "confidence": "high",
+          "evidence_quote": "它真正解决的，不只是让 Agent 更容易调云，而是让企业敢把一部分云操作交给 Agent。"
+        },
+        {
+          "occurrence_id": "doc-02-e04",
+          "relation": "procedural_alternative",
+          "voice": "reporter",
+          "contrast_contribution": "Specifies that a confirmed specification becomes infrastructure-as-code rather than bypassing infrastructure management.",
+          "packaging": "ordinary",
+          "packaging_reason": "Although the mature-toolchain theme appeared earlier, this occurrence localizes it to the confirmed-Spec-to-IaC step and the following scale-management example.",
+          "preservation_risk": "Removing the IaC alternative would remove an actual workflow step; removing the negative side could weaken the explicit prohibition against direct execution.",
+          "confidence": "high",
+          "evidence_quote": "这里的关键在于：Agent 不是绕开现有工程体系，而是进入 IaC 路径。"
+        },
+        {
+          "occurrence_id": "doc-02-e05",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Frames the change as planned and traceable governance instead of merely replacing a human UI operator with an agent.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The same move from superficial invocation to governed engineering has already been stated in e02 and e04 and developed through Plan, Code, Validate, and Execute. This recap is followed immediately by another evaluative opposition in e06.",
+          "preservation_risk": "The planning, verification, and traceability claims still matter; a shorter summary would need to retain the distinction from simple button automation.",
+          "confidence": "high",
+          "evidence_quote": "但方向已经清楚：Agent 调云，不是把\"人点按钮\"换成\"AI 点按钮\"，而是把云操作重新纳入一套可规划、可校验、可追溯的工程秩序之中。"
+        },
+        {
+          "occurrence_id": "doc-02-e06",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Recasts restrictions on autonomous actions as the source of trust and usable automation.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The negative metaphor adds no concrete alternative design. The trust-through-boundaries claim repeats the earlier safety-belt metaphor, e03, and the immediately preceding e05 governance summary.",
+          "preservation_risk": "The metaphor could be shortened more safely than the policy claim, but the stated control requirement and its normative status must remain distinguishable from empirical proof.",
+          "confidence": "high",
+          "evidence_quote": "这不是给智能套上枷锁，而是给智能划定一条能够被信任的边界——唯有可控，自动化才谈得上真正可用。"
+        },
+        {
+          "occurrence_id": "doc-02-e07",
+          "relation": "scope_extension",
+          "voice": "reporter",
+          "contrast_contribution": "Explains that a skill unit packages APIs together with scenario procedures, permission boundaries, and calling rules, beyond an API wrapper.",
+          "packaging": "ordinary",
+          "packaging_reason": "The sentence supplies a concrete composition of the capability unit after discussing multi-step operations. The additional constituents are informative even though the broader engineering theme recurs.",
+          "preservation_risk": "Dropping the second side would erase the composition; dropping the first side could allow an API-only interpretation. Preserve SOP and permission details.",
+          "confidence": "high",
+          "evidence_quote": "它不是简单把 API 包一层，而是把稳定的 API、场景化 SOP、权限边界和调用规则，打包成一个 Agent 能理解、能调用、能组合的能力单元。"
+        },
+        {
+          "occurrence_id": "doc-02-e08",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Assigns the portal a role as an agent-facing capability entry point, preparing the partner ecosystem and reusable internal skills discussion.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "Immediately follows e07's dismissal of a simple wrapper with another dismissal of a simple catalog. The catalog and entry-point categories are not shown to be exclusive; the substantive difference is supplied by the following co-development and reuse examples.",
+          "preservation_risk": "Preserve the agent-facing entry role and the ensuing internal/external use distinction; the negative catalog label alone does not specify a missing feature.",
+          "confidence": "medium",
+          "evidence_quote": "云 Skills 门户也不是传统产品目录，而是面向 Agent 的云能力入口。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-02-d01",
+          "kind": "relation_or_support",
+          "evidence_quote": "这意味着 Agent 不再只出现在客服、运营、研发等业务系统里，也正被嵌入云运维、架构设计与资源治理的工作流。",
+          "explanation": "The preceding adoption percentages describe overall enterprise use or plans. They do not, as presented, establish the claimed distribution or change across these particular workloads. The connective treats a separate deployment claim as entailed by the survey.",
+          "repairability": "requires_missing_information",
+          "support_quotes": [
+            "调查显示，79% 的企业在内部采用或正规划采用 AI Agent，近 74% 的企业预计两年内会用上 Agentic AI。"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "Plan，是把自然语言变成 Spec。\nCode，是把 Spec 变成 IaC。\nValidate，是在执行前校验风险与正确性。\nExecute，是在受控条件下真正落地。",
+          "explanation": "These parallel nominal definitions intentionally use short headings and recover the workflow from context. They are coherent without adding full repeated subjects."
+        },
+        {
+          "evidence_quote": "它不是简单把 API 包一层，而是把稳定的 API、场景化 SOP、权限边界和调用规则，打包成一个 Agent 能理解、能调用、能组合的能力单元。",
+          "explanation": "The additional SOP and permission constituents distinguish the proposed capability unit from a plain API wrapper. A blanket contrast deletion would remove the stated scope."
+        }
+      ],
+      "document_note": "Several later summary oppositions repeat the same control-and-trust move, while other occurrences supply protocol or workflow detail. These are separate descriptive judgments and do not certify reader aversion, product efficacy, authorship, or provenance."
+    },
+    {
+      "alias": "doc-03",
+      "whole_body_read": true,
+      "genre_observation": "Product launch explanation using traffic and expert-team metaphors, feature lists, and a brief training/evaluation summary.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-03-e01",
+          "relation": "correction",
+          "voice": "reporter",
+          "contrast_contribution": "Redirects the proposed bottleneck from downstream agent capability to routing decisions, setting up the product's purpose.",
+          "packaging": "ordinary",
+          "packaging_reason": "The opening contrast introduces the central diagnosis, which is subsequently illustrated with routing scenarios.",
+          "preservation_risk": "Both the alternative explanation and the qualified frequency claim matter; dropping the qualification or turning the diagnosis into a universal fact would strengthen the source.",
+          "confidence": "high",
+          "evidence_quote": "企业级多智能体（Multi-Agent）系统最大的瓶颈，往往不是 Agent 不够强，而是负责分发任务的 Router（路由器）太“傻”。"
+        },
+        {
+          "occurrence_id": "doc-03-e02",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Recasts the router as a reasoning decision-maker instead of a task relay, summarizing reason-before-selection behavior.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The preceding sentence already states the switch from direct label prediction to reasoning and agent-set selection. The immediately following report/team and project-manager metaphors restate the same role change again.",
+          "preservation_risk": "The role metaphor overlaps nearby descriptions, but the explicit reasoning-before-selection operation and use of an agent set must survive any future shortening.",
+          "confidence": "high",
+          "evidence_quote": "这时候，Router 不再是一个收发任务的转接系统，而是变成了一个具备推理能力的“决策者”。"
+        },
+        {
+          "occurrence_id": "doc-03-e03",
+          "relation": "temporal_change",
+          "voice": "reporter",
+          "contrast_contribution": "Claims that exposing a reasoning trace changes routing from opaque decisions to explainable and debuggable behavior; there is also evaluative reframing.",
+          "packaging": "ordinary",
+          "packaging_reason": "This occurrence attaches the claimed change to a specified output artifact and names what the trace explains, rather than merely repeating the decision-maker metaphor.",
+          "preservation_risk": "Retain the trace contents and the claimed explainability/debugging benefit; the attached description-optimization phrase needs its actor clarified separately.",
+          "confidence": "medium",
+          "evidence_quote": "能力一：Reason-then-Select（拒绝黑盒，把思考过程写出来）\nTCAR 在输出 Agent 之前，会先生成一段自然语言推理链，明确说明问题可能涉及哪些技术栈，不同 Agent 的职责边界，为什么多个 Agent 执行是合理的，这让路由不再是黑盒，而是可解释、可 Debug、可持续优化 Agent 描述。"
+        },
+        {
+          "occurrence_id": "doc-03-e04",
+          "relation": "procedural_alternative",
+          "voice": "reporter",
+          "contrast_contribution": "Distinguishes a single-label one-hot output from an agent subset, which permits multiple candidate agents.",
+          "packaging": "ordinary",
+          "packaging_reason": "The output representation is concrete and necessary to understand the subsequent refining stage.",
+          "preservation_risk": "Deleting either side would hide the relevant difference in cardinality; preserve that multiple candidates can be selected rather than asserting that every agent is selected.",
+          "confidence": "high",
+          "evidence_quote": "能力二：从单挑到团战\n在 TCAR 中路由结果不再是 one-hot，而是一个 Agent 子集，这一步直接解决了企业系统中最棘手的 Agent 冲突问题：不强行压缩决策，而是保留不确定性，交给后续协作解决。"
+        },
+        {
+          "occurrence_id": "doc-03-e05",
+          "relation": "procedural_alternative",
+          "voice": "reporter",
+          "contrast_contribution": "Explains why the subset is retained: ambiguity is deferred to downstream collaboration instead of forcing a single decision.",
+          "packaging": "ordinary",
+          "packaging_reason": "Although adjacent to e04, this contrast adds the handling of uncertainty and the downstream resolution step, which the representation distinction alone does not specify.",
+          "preservation_risk": "Removing the second side would lose when uncertainty is resolved; removing the rejected compression could weaken the stated reason to return multiple candidates.",
+          "confidence": "high",
+          "evidence_quote": "能力二：从单挑到团战\n在 TCAR 中路由结果不再是 one-hot，而是一个 Agent 子集，这一步直接解决了企业系统中最棘手的 Agent 冲突问题：不强行压缩决策，而是保留不确定性，交给后续协作解决。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-03-d01",
+          "kind": "lexical_or_translationese",
+          "evidence_quote": "传统 Router 就无法确定不确定是 CDN、COS 还是网络的问题。",
+          "explanation": "The adjacent determination and uncertainty predicates appear duplicated and make the clause momentarily self-interrupting. The listed alternatives and preceding ambiguity scenario make the intended uncertainty recoverable.",
+          "repairability": "local_reexpression",
+          "support_quotes": [
+            "3、用户描述模糊、不完整。"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-03-d02",
+          "kind": "argument_or_reference",
+          "evidence_quote": "这让路由不再是黑盒，而是可解释、可 Debug、可持续优化 Agent 描述。",
+          "explanation": "The coordinated predicates first describe routing, then switch to an action on agent descriptions without expressing its actor or enabling relation. This is an attachment/argument mismatch rather than ordinary recoverable subject ellipsis.",
+          "repairability": "local_reexpression",
+          "support_quotes": [
+            "TCAR 在输出 Agent 之前，会先生成一段自然语言推理链，明确说明问题可能涉及哪些技术栈，不同 Agent 的职责边界，为什么多个 Agent 执行是合理的"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "不强行压缩决策，而是保留不确定性，交给后续协作解决。",
+          "explanation": "The opposition conveys a deliberate decision policy and where unresolved ambiguity goes. The omitted repeated router subject is recoverable from the sentence."
+        },
+        {
+          "evidence_quote": "长度惩罚：防止模型为了求稳把所有 Agent 全选上。",
+          "explanation": "A labeled list item coherently names a reward component and its purpose without a full sentence subject."
+        }
+      ],
+      "document_note": "The article repeats role-change metaphors, but its output-set and uncertainty-handling contrasts remain substantive. The two localized wording findings do not establish readership outcomes or certify the unquantified benchmark claims."
+    },
+    {
+      "alias": "doc-04",
+      "whole_body_read": true,
+      "genre_observation": "Long interview presentation with a reporter introduction, highlighted takeaways, and named question-and-answer speakers. The body explicitly describes translation and editing; no admission decision is made here.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-04-e01",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Presents the agent as the combination of model, API, and framework rather than the model alone; the larger sentence links this to reported growth.",
+          "packaging": "ordinary",
+          "packaging_reason": "This lead introduces the system-level thesis. Its later detailed interview occurrence e05 supplies the compaction example rather than making the lead itself defective.",
+          "preservation_risk": "Preserve all three components and the attribution. Removing the negative side could obscure the explicit rejection of a model-only account.",
+          "confidence": "high",
+          "evidence_quote": "“Codex 能快速实现 20 倍的增长，不只是因为模型变强了，还因为我们理解了，真正的智能体不是一个模型，而是模型、API 和框架共同努力的结果。"
+        },
+        {
+          "occurrence_id": "doc-04-e02",
+          "relation": "correction",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Attributes a shift in the explanation of AGI limitations from model capability to human input and review capacity.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The introduction's bottleneck reframing is repeated in the takeaway e03 and returned to in the closing interview. Its categorical wording is separately in tension with the interview's qualified account.",
+          "preservation_risk": "Deleting human review would lose the intended constraint, but preserving the exclusive model-versus-human formulation without checking the quoted interview would retain a stronger claim than the interview passage supports.",
+          "confidence": "high",
+          "evidence_quote": "对于\n未来 AGI 会何时到来\n，Alexander Embiricos 也给出了一个有趣的视角，\n他认为当前真正的限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限\n，正在拖累其发展\n。"
+        },
+        {
+          "occurrence_id": "doc-04-e03",
+          "relation": "correction",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Identifies human typing as the largest productivity bottleneck; following sentences add prompting, review, and self-verification limits.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The takeaway restates e02's human-bottleneck opposition, now with productivity and typing foregrounded, before the same theme recurs in e15 and the final exchange.",
+          "preservation_risk": "Typing and review are distinct constraints, so a compressed account must not collapse all of them into typing alone or erase the claim's attributed status.",
+          "confidence": "high",
+          "evidence_quote": "人工智能生产力的最大瓶颈不是人工智能本身，而是人类的打字速度。"
+        },
+        {
+          "occurrence_id": "doc-04-e04",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Extends the proposed teammate's responsibilities from coding to ideation, planning, validation, deployment, and maintenance.",
+          "packaging": "ordinary",
+          "packaging_reason": "This is the first detailed interview definition of the teammate vision and enumerates distinct lifecycle stages.",
+          "preservation_risk": "The positive side defines the product ambition. Removing it would reduce the vision to coding; removing the negative side might conceal the extension beyond current use.",
+          "confidence": "high",
+          "evidence_quote": "当我们谈到“队友”这样的词时，我们设想的并不仅是让它编写代码，而是让它参与软件编写的整个流程，从构思、规划，到下游的验证、部署与维护。"
+        },
+        {
+          "occurrence_id": "doc-04-e05",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Expands a model-only account into model, API, and framework, within an explicitly described change in the team's thinking.",
+          "packaging": "ordinary",
+          "packaging_reason": "It repeats a lead quotation but here answers a data-versus-model question and is immediately substantiated with the role of each layer in compaction.",
+          "preservation_risk": "Preserve the three-layer structure and the historical change in viewpoint; a model-only shortening would lose the mechanism used to explain long tasks.",
+          "confidence": "high",
+          "evidence_quote": "过去，我们更多认为“只要训练最好的模型就好了”，但现在我们意识到真正的智能体并不只是一种模型，而是由三层结构组成：一个非常智能的推理模型、一套 API，以及一个能让模型发挥能力的框架。"
+        },
+        {
+          "occurrence_id": "doc-04-e06",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "The interviewer paraphrases the system-level growth explanation before asking about the future.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "This is an immediate conversational recap of e05 and its closing statement that all three layers drive acceleration. Its turn-transition function is real, but no additional mechanism is introduced.",
+          "preservation_risk": "If shortened, retain its status as the interviewer's interpretation and the transition to a new question, rather than silently assigning it to the guest.",
+          "confidence": "high",
+          "evidence_quote": "写代码是模型最好的方式与编码智能体的未来\nLenny：从你的描述来看，真正推动 Codex 的，不只是模型能力的提升，而是模型、API 和框架三者共同构成的整体系统。"
+        },
+        {
+          "occurrence_id": "doc-04-e07",
+          "relation": "evaluative_reframing",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Frames proactive participation as a change in how development is organized, beyond an efficiency gain.",
+          "packaging": "ordinary",
+          "packaging_reason": "The claim summarizes the preceding lifecycle and proactive-action discussion on a distinct organizational dimension, not just another component enumeration.",
+          "preservation_risk": "The statement is an interpretation of future workflow change, not a measured result; preserve that status and the distinction from speed alone.",
+          "confidence": "medium",
+          "evidence_quote": "这不仅是提升效率，而是改变整个开发流程的思维方式。"
+        },
+        {
+          "occurrence_id": "doc-04-e08",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "The interviewer rephrases the future agent as a team member beyond a tool.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "It echoes e04's teammate definition and the immediately preceding passive-tool-to-active-teammate answer without adding responsibilities. It also serves as an interview acknowledgement.",
+          "preservation_risk": "The question transition and speaker attribution should remain even if the repeated teammate summary is reduced.",
+          "confidence": "high",
+          "evidence_quote": "Lenny：听起来，智能体未来不只是工具，而是真正的团队成员。"
+        },
+        {
+          "occurrence_id": "doc-04-e09",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Extends coding assistance by familiar agents to broader team participation, elaborated through scheduling, meeting changes, repairs, and suggestions.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The coding-only-versus-teammate move repeats e04 and e08. The subsequent non-coding examples add concrete scope, so the repeated framing and those examples should be evaluated separately.",
+          "preservation_risk": "Do not remove the new scheduling and proactive-task responsibilities merely because the introductory team metaphor recurs.",
+          "confidence": "high",
+          "evidence_quote": "Alex：这让我想到一个重要概念：人工智能的未来不仅是拥有几个你认识的队友来帮你写代码，而是拥有一种真正意义上的团队合作精神。"
+        },
+        {
+          "occurrence_id": "doc-04-e10",
+          "relation": "evaluative_reframing",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Proposes reusable code and accumulated team capabilities as a competitive strategy beyond competing on model speed.",
+          "packaging": "ordinary",
+          "packaging_reason": "The preceding discussion of importing and sharing scripts supplies a new accumulation mechanism for the strategic comparison.",
+          "preservation_risk": "Both the strategic comparison and reuse mechanism matter; preserving only a generic better-system claim would lose what is meant by growth with team use.",
+          "confidence": "high",
+          "evidence_quote": "因此，当我们问“通往胜利的道路是什么”，答案不是模型彼此比速度，而是构建一个能够写代码、能随着团队使用而成长的智能体体系。"
+        },
+        {
+          "occurrence_id": "doc-04-e11",
+          "relation": "correction",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Rejects disappearance of engineering jobs in favor of changed job content, explicitly as the guest's opinion.",
+          "packaging": "ordinary",
+          "packaging_reason": "It directly answers the interviewer's employment question and differentiates two labor outcomes.",
+          "preservation_risk": "Retain the prediction's attribution and uncertainty; removing negation would reverse the stated view about employment.",
+          "confidence": "high",
+          "evidence_quote": "我认为人工智能并不会让工程岗位消失，而是会改变工程师的工作内容。"
+        },
+        {
+          "occurrence_id": "doc-04-e12",
+          "relation": "procedural_alternative",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Offers iterative team conversation and action as an alternative to requiring formal specifications for every task.",
+          "packaging": "ordinary",
+          "packaging_reason": "The sentence spells out a concrete interaction sequence after discussing why formal specs may not suit all teams.",
+          "preservation_risk": "Retain the limited quantifier: the speaker rejects specs for every task, not formal specs altogether. The conversational sequence is the proposed alternative.",
+          "confidence": "high",
+          "evidence_quote": "并不是每件事都需要正式规范，而是有人提一个想法，有人再补充说明，有人提出下一步行动，然后工程师直接去做。"
+        },
+        {
+          "occurrence_id": "doc-04-e13",
+          "relation": "correction",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Distinguishes the non-code information handled in browsers from the code-centered examples used earlier.",
+          "packaging": "ordinary",
+          "packaging_reason": "It motivates extending assistance to a different information environment and prepares the browsing-context example.",
+          "preservation_risk": "Preserve the restricted claim about much browser information; turning it into a universal exclusion of code in browsers would overstate it.",
+          "confidence": "high",
+          "evidence_quote": "在浏览器里，人们每天处理的大量信息并不是代码，而是各种网页内容。"
+        },
+        {
+          "occurrence_id": "doc-04-e14",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Adds proactive help based on browsing, research, and documents beyond assigned tasks.",
+          "packaging": "ordinary",
+          "packaging_reason": "Although proactive teammates recur, the concrete browsing situations explain how the principle applies outside the coding environment.",
+          "preservation_risk": "Retain the browsing-context triggers and future/ideal status; deleting either side could collapse proactive help into ordinary requested assistance.",
+          "confidence": "high",
+          "evidence_quote": "一个真正的队友不会只处理你给到的任务，而是会在你浏览网页、查资料、阅读文档的时候主动理解你在做什么，并快速提供协助。"
+        },
+        {
+          "occurrence_id": "doc-04-e15",
+          "relation": "correction",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "The interviewer relocates the practical bottleneck from code production to choosing what to build and reviewing the result.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The immediately preceding two guest paragraphs both say coding is enjoyable while review is the new bottleneck and call for more agent verification responsibility. This acknowledgement adds problem selection but repeats the review opposition.",
+          "preservation_risk": "Preserve the new problem-selection component and the speaker's anecdotal generalization; do not merge it with e03 as if typing, planning, and review were identical.",
+          "confidence": "high",
+          "evidence_quote": "许多真正处在技术前沿的团队现在遇到最大的瓶颈并不是写代码，而是弄清楚要构建什么，然后在最后阶段花大量时间审查、确认、验证。"
+        },
+        {
+          "occurrence_id": "doc-04-e16",
+          "relation": "procedural_alternative",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Advises evaluating Codex on difficult realistic tasks instead of starting with trivial ones.",
+          "packaging": "ordinary",
+          "packaging_reason": "This answers a practical onboarding question and is followed by a specific debugging example. Its earlier appearance in the takeaway is an expected summary-to-interview relationship.",
+          "preservation_risk": "The contrast is the recommendation. Removing the negative side changes the suggested evaluation strategy; preserve the distinction from claims about all users' safest first action.",
+          "confidence": "high",
+          "evidence_quote": "Alex：实际上，使用 Codex 的最佳方式不是给它简单任务，而是给它最困难、最真实的问题。"
+        },
+        {
+          "occurrence_id": "doc-04-e17",
+          "relation": "evaluative_reframing",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Prioritizes systems understanding, architectural reasoning, and teamwork over the physical act of typing programs.",
+          "packaging": "ordinary",
+          "packaging_reason": "It answers a new question about students and career skills and enumerates the capabilities the speaker considers important.",
+          "preservation_risk": "The list of retained human capabilities is substantive, and the comparison must not be simplified into advice against learning programming.",
+          "confidence": "high",
+          "evidence_quote": "另一面是，真正关键的不是“打字写程序”，而是理解软件系统结构、理解什么使系统高效、能够推理复杂架构，并具备团队沟通协作能力。"
+        },
+        {
+          "occurrence_id": "doc-04-e18",
+          "relation": "temporal_change",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Contrasts sudden elimination of all coding with a gradual rise in abstraction while retaining human design and judgment.",
+          "packaging": "ordinary",
+          "packaging_reason": "The statement adds pace and scope qualifiers to the career advice. A similar gradual-transition point appeared earlier, but these qualifiers prevent an overbroad reading here.",
+          "preservation_risk": "Preserve gradual timing, the rejection of a universal overnight change, and the continued human design role.",
+          "confidence": "high",
+          "evidence_quote": "AI 不会突然让所有人不用写代码，而是会逐步扩展抽象层，但系统设计与判断力仍然属于人类。"
+        },
+        {
+          "occurrence_id": "doc-04-e19",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Extends code understanding to monitoring and intervention in a running complex system.",
+          "packaging": "ordinary",
+          "packaging_reason": "The immediately preceding training-monitoring example gives the supervisory role specific actions; this scope is more concrete than the recurring teammate metaphor alone.",
+          "preservation_risk": "Preserve the tentative/exploratory status of the preceding monitoring account and avoid turning possible repair authority into universally granted authority.",
+          "confidence": "high",
+          "evidence_quote": "它理解代码库，却不仅仅服务于代码本身，而是可以在整个复杂系统运行过程中发挥“智能监护人”的作用。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-04-d01",
+          "kind": "relation_or_support",
+          "evidence_quote": "他认为当前真正的限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限\n，正在拖累其发展",
+          "explanation": "The introduction makes the explanation exclusive and applies it directly to AGI, whereas the closing answer calls human limits one of several underestimated factors in productivity acceleration. The scope and certainty of the attribution are stronger than the supporting interview passage.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "现在有许多限制因素，但我认为最被低估的限制因素之一其实是人类本身，比如人的打字速度、提示写作速度、人类的多任务能力。"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-04-d02",
+          "kind": "argument_or_reference",
+          "evidence_quote": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+          "explanation": "The causal construction makes the interviewer's lack of knowledge cause the team's speed. The surrounding question concerns the explanation for an observed speed, so the expressed causal subject is misplaced rather than simply omitted.",
+          "repairability": "local_reexpression",
+          "support_quotes": [
+            "像 Codex 这样能迅速推进的团队，是否有某种特别的组织架构或结构性原因？"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-04-d03",
+          "kind": "lexical_or_translationese",
+          "evidence_quote": "写代码是模型最好的方式与编码智能体的未来",
+          "explanation": "The heading leaves unspecified what coding is the model's best way of doing, then coordinates that incomplete proposition with the future of coding agents. Later text supplies computer operation as the missing semantic relation.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "事实证明，最强大、最可靠的方式，就是让模型通过编写代码来操作电脑。"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-04-d04",
+          "kind": "other",
+          "evidence_quote": "Atlas 的开发同样令人震撼。工程师们告诉我，他们几乎用 Codex 处理所有事情。当我问他们“你们怎么衡量加速”，他们说，过去需要两三周和两三名工程师的工作，现在一个人一周搞定。",
+          "explanation": "This repeats the same Atlas staffing-and-time comparison stated shortly before, without identifying a second project, measurement, or updated estimate. Re-reading the repeated figures adds length without a new comparison; the subsequent abstraction discussion is new and should be retained.",
+          "repairability": "local_reexpression",
+          "support_quotes": [
+            "他们告诉我，过去需要 2～3 名工程师花 2～3 周才能完成的功能，现在只需要一个工程师一周时间。"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "并不是每件事都需要正式规范，而是有人提一个想法，有人再补充说明，有人提出下一步行动，然后工程师直接去做。",
+          "explanation": "The contrast preserves a limited rejection of compulsory specifications and a concrete collaborative procedure. A rule that drops negative sides could erase the not-every-task qualification."
+        },
+        {
+          "evidence_quote": "如果不喜欢就左滑，如果觉得不错就右滑，也可以按住录音直接补充指令。",
+          "explanation": "The user's subject and the proposed suggestion being judged are recoverable from the imagined interface context. Repetition of those arguments is unnecessary for grammatical completeness."
+        }
+      ],
+      "document_note": "All 21,891 Unicode characters were accessed in sequential chunks. Most occurrences belong to attributed interview speech or its summaries. Conversational acknowledgement and lead/takeaway repetition must not automatically be treated as unwanted prose; localized attribution, wording, and duplicate-detail findings remain assistant observations only."
+    },
+    {
+      "alias": "doc-05",
+      "whole_body_read": true,
+      "genre_observation": "Product-news explanation combining a developer's quoted launch post, reported product capabilities and risks, and a short community-reaction section.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-05-e01",
+          "relation": "evaluative_reframing",
+          "voice": "mixed",
+          "contrast_contribution": "Frames the product's purpose as sustained task collaboration rather than conversational response, then specifies planning and execution behavior.",
+          "packaging": "ordinary",
+          "packaging_reason": "The contrast introduces the explanatory organizing distinction and supplies concrete behaviors. Attribution is mixed because the paragraph begins as a product report while the positioning language is the narrator's synthesis.",
+          "preservation_risk": "Retain the behavioral description and tentative aim; deleting the chat side could obscure the intended workflow comparison, while treating the categories as technically exclusive would overstate it.",
+          "confidence": "medium",
+          "evidence_quote": "与传统对话式 AI 不同，Cowork 的核心定位并非“聊天”，而是“协作”：它试图让 Claude 从一个被动响应指令的助手，转变为能够理解任务、制定计划、持续执行，并与用户保持协同关系的智能工作体。"
+        },
+        {
+          "occurrence_id": "doc-05-e02",
+          "relation": "correction",
+          "voice": "reporter",
+          "contrast_contribution": "Rejects whole-disk authorization in favor of user-selected access boundaries.",
+          "packaging": "ordinary",
+          "packaging_reason": "This qualifies the immediately preceding file-access capability with a concrete permission boundary.",
+          "preservation_risk": "The negation is safety-relevant source content. Removing either side could imply unrestricted access or erase who selects the allowed files.",
+          "confidence": "high",
+          "evidence_quote": "需要强调的是，这种访问并非“全盘授权”，而是由用户明确选择、逐一控制的结果。"
+        },
+        {
+          "occurrence_id": "doc-05-e03",
+          "relation": "scope_extension",
+          "voice": "reporter",
+          "contrast_contribution": "Extends operation from text-described file context to direct manipulation of authorized work materials.",
+          "packaging": "ordinary",
+          "packaging_reason": "It introduces actual file actions subsequently illustrated by organizing downloads, extracting screenshot information, and preparing a report.",
+          "preservation_risk": "Preserve the difference between descriptions and direct file actions, and retain the preceding authorization condition rather than implying arbitrary filesystem access.",
+          "confidence": "high",
+          "evidence_quote": "它不再只是基于文本上下文“想象”文件内容，而是可以直接操作真实存在的工作材料。"
+        },
+        {
+          "occurrence_id": "doc-05-e04",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Attributes the capability gain to integration with the work environment rather than a generic increase in model intelligence.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The preceding e03 and its three examples have already established direct interaction with work materials. This sentence repeats that environment-integration move using a broad smarter-versus-embedded opposition without a new mechanism.",
+          "preservation_risk": "The explanatory distinction between model capability and environment integration is still meaningful. Any reduction must retain the concrete integration facts rather than erase them with the recap.",
+          "confidence": "high",
+          "evidence_quote": "这种能力的本质，并不是简单的“更聪明”，而是 Claude 被嵌入进了用户的实际工作环境之中。"
+        },
+        {
+          "occurrence_id": "doc-05-e05",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Explains confirmation as an opportunity to reconsider and refine the task rather than a perfunctory notification.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The rejected side describes interface form while the positive side describes its intended purpose, so they can coexist. No separate feature is supplied to distinguish the allegedly merely formal popup from a confirmation that supports reflection.",
+          "preservation_risk": "The user-confirmation requirement and opportunity to correct instructions are substantive. Removing the opposition must not remove that requirement or invent additional review functionality.",
+          "confidence": "medium",
+          "evidence_quote": "这种设计并非形式上的“弹窗提示”，而是希望用户在关键节点重新审视任务目标，必要时进行纠正或细化指令。"
+        },
+        {
+          "occurrence_id": "doc-05-e06",
+          "relation": "scope_extension",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Extends the described operational and injection risks from Cowork to other action-taking AI tools.",
+          "packaging": "ordinary",
+          "packaging_reason": "The occurrence defines the scope of the risk claim and is explicitly attributed to Anthropic.",
+          "preservation_risk": "Preserve attribution and the action-capable restriction; removing the negative side could falsely suggest that the discussion identifies a Cowork-exclusive issue.",
+          "confidence": "high",
+          "evidence_quote": "Anthropic 也明确指出，这些风险并非 Cowork 独有，而是所有具备“行动能力”的 AI 工具都会面临的问题。"
+        },
+        {
+          "occurrence_id": "doc-05-e07",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Interprets the research-preview designation as an iterative feedback stage rather than a completed final product.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "A nearby preceding paragraph has already called the product an experiment rather than a fully mature offering. This repeats that provisional-product move, although the next paragraph adds actual planned capabilities.",
+          "preservation_risk": "Preserve the provisional status and distinguish the narrator's interpretation of intent from the subsequent attributed release plans.",
+          "confidence": "high",
+          "evidence_quote": "研究预览版背后的产品逻辑\nCowork 目前被定义为“研究预览版”，这一定位本身就释放了明确信号：\nAnthropic 并不认为自己已经找到了最终形态，而是希望通过真实用户的使用反馈，加速产品迭代\n。"
+        },
+        {
+          "occurrence_id": "doc-05-e08",
+          "relation": "scope_extension",
+          "voice": "reporter",
+          "contrast_contribution": "Adds cross-system information integration to local file organization through existing connectors.",
+          "packaging": "ordinary",
+          "packaging_reason": "A named integration mechanism and external data sources justify the added scope; it is not merely a new label for local file actions.",
+          "preservation_risk": "Retain the connectors and cross-system scope as well as the continued local capability; deleting the qualification could imply that local organization has ceased.",
+          "confidence": "high",
+          "evidence_quote": "这使得 Cowork 不再只是一个“本地整理工具”，而是可以承担跨系统的信息整合角色。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-05-d01",
+          "kind": "argument_or_reference",
+          "evidence_quote": "用户无需等待任务完成即可插入新的反馈或补充想法，这些指令会被自动排队、并行处理。",
+          "explanation": "The referent is feedback or supplementary instructions, but the sentence combines queuing and parallel processing without saying whether this concerns feedback on one task or separate tasks. The later claim about parallel tasks does not settle the execution semantics of these instructions.",
+          "repairability": "requires_missing_information",
+          "support_quotes": [
+            "用户不必为了等待 AI 完成某个任务而中断自己的工作节奏——任务可以被连续布置、并行执行。"
+          ],
+          "confidence": "medium"
+        },
+        {
+          "defect_id": "doc-05-d02",
+          "kind": "argument_or_reference",
+          "evidence_quote": "此外，值得注意的是，有些评论虽然不是专门针对 Cowork，但有一些用户还是对\nAnthropic 近期产品策略与沟通的不满\n，对 Cowork 的发布背景和用户关系具有间接关联语境。",
+          "explanation": "The construction shifts from users to a nominal dissatisfaction phrase, then attaches relevance-to-context to an unclear subject. The subsequent user quote supplies dissatisfaction, but this sentence does not clearly state whether the comments or the dissatisfaction provide the contextual relevance.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "“作为很早一批用户，我原本极力推荐 Claude，但最近几个月感觉 Anthropic 的产品质量沟通都变差了。”"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "需要强调的是，这种访问并非“全盘授权”，而是由用户明确选择、逐一控制的结果。",
+          "explanation": "The opposition preserves the reported permission boundary; automatic removal would risk changing a concrete capability limitation."
+        },
+        {
+          "evidence_quote": "可以从大量截图中提取关键信息，自动生成一份结构化的费用清单；也可以将零散的会议笔记、草稿和片段，整理成一份逻辑清晰的报告初稿。",
+          "explanation": "These coordinated capabilities share Claude as their subject from the preceding clause. Normal Chinese ellipsis here is coherent and should not be filled with new actors."
+        }
+      ],
+      "document_note": "Concrete permission and integration contrasts coexist with broader positioning recaps. Two localized reference problems are separable from the marker count. No smell strength, editing efficacy, originality admission, or authorship conclusion is assigned."
+    },
+    {
+      "alias": "doc-06",
+      "whole_body_read": true,
+      "genre_observation": "Technical tutorial and product walkthrough with staged user prompts, assistant responses, specification excerpts, and approval checkpoints.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-06-e01",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Emphasizes the continued maintenance and onboarding role of saved specification documents beyond the initial development session.",
+          "packaging": "ordinary",
+          "packaging_reason": "The contrast concludes specific six-month-later and new-developer examples. Its metaphor summarizes a concrete persistence role despite the exaggerated discarded-paper alternative.",
+          "preservation_risk": "Retain document persistence and the maintenance use; the metaphor does not itself establish that the documents contain rationales for every design choice.",
+          "confidence": "high",
+          "evidence_quote": "这些规范文档不是一次性的废纸，而是该项目的永久记忆。"
+        },
+        {
+          "occurrence_id": "doc-06-e02",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Frames approval requirements as quality checkpoints rather than pointless administrative burden.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The five-stage walkthrough repeatedly demonstrates the same explicit-approval requirement, already stated before the example. The conclusion restates that process while adding an evaluative objection-and-rebuttal frame.",
+          "preservation_risk": "The checkpoint requirement and order of approvals remain substantive; the redundant evaluative framing is separable from them.",
+          "confidence": "high",
+          "evidence_quote": "它并非繁文缛节，而是关键的质量检查点：智能体在每个阶段都必须获得您的明确批准方可继续推进。"
+        },
+        {
+          "occurrence_id": "doc-06-e03",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "States that the intended purpose of added process is correctness and avoided rework rather than delay.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "Follows e02's burden-versus-quality reframe and repeats the conclusion's earlier account of ambiguity causing rework. Both negative sides defend the same process against perceived overhead.",
+          "preservation_risk": "Preserve this as an intention and claimed benefit, not a guarantee of first-pass correctness; do not discard the following concrete examples with the recap.",
+          "confidence": "high",
+          "evidence_quote": "这一切的初衷并非为了放慢速度，而是为了“一次把事情做对”。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-06-d01",
+          "kind": "relation_or_support",
+          "evidence_quote": "代码先行，需求前置：\n开发人员与智能体在实施前需共享一份明确的契约。",
+          "explanation": "The label says code comes first while also saying requirements come before it; the explanation requires a contract before implementation. The parallel architecture label repeats the same conflicting precedence wording.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "实现先行，架构前置：\n分层逻辑、模块边界与 API 签名必须预先锁定，以确保跨文件的逻辑一致性；",
+            "您需要在设计开始前审阅需求，在编码实施前批准架构，并在宣告完成前依据规范进行最终验证。"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-06-d02",
+          "kind": "possible_capture_issue",
+          "evidence_quote": "Cortex Code 分析该 Bug，然后生成三部分规范文档：\n第三部分是关键所在。",
+          "explanation": "The supplied body refers to the third of three document parts without presenting those parts after the colon. A later behavior-preservation section similarly introduces a list that is absent. The exact-body reader lacks the referenced material; whether it was an omitted image or source omission is unresolved.",
+          "repairability": "requires_missing_information",
+          "support_quotes": [
+            "在进行任何代码更改之前，Cortex Code 会记录需保留的行为：\n未经您明确批准需保留的内容，智能体无法执行重构。"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-06-d03",
+          "kind": "relation_or_support",
+          "evidence_quote": "六个月后，当有人问“为什么综合信号使用 40/20/40 的权重分配？”—答案就在 REQ-026 里。",
+          "explanation": "The displayed requirement specifies those weights and a single-rating purpose, but does not explain why those particular numerical weights were chosen. The claim conflates a recorded requirement with a recorded rationale.",
+          "repairability": "requires_missing_information",
+          "support_quotes": [
+            "系统须综合动量得分（权重 40%）、波动率得分（权重 20%）及均值回归信号（权重 40%），为每只股票计算一个综合信号，并输出单一评级（看涨 / 看跌 / 中性）。",
+            "目的：为用户提供每只股票单一且具备可执行性的参考指标。"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "仅当前 30 只。使用 st.connection。仅本地。",
+          "explanation": "These short user answers map unambiguously to the immediately preceding scope, connection, and deployment questions. Their omitted subjects and predicates do not imply missing requirements."
+        },
+        {
+          "evidence_quote": "一次对话。五个阶段。一个功能完整的五页分析仪表板",
+          "explanation": "The intentionally fragmentary result summary is a coherent list of quantities and output, not a missing-SVO error."
+        }
+      ],
+      "document_note": "The full body was read in two sequential chunks. Findings distinguish missing referenced material from collector line breaks and distinguish a requirement from the rationale for its numeric choice. No origin classification or correctness certification of generated code is supplied."
+    },
+    {
+      "alias": "doc-07",
+      "whole_body_read": true,
+      "genre_observation": "Multi-item technology news digest covering robotics, chips, developer tools, corporate news, and research, with many named source attributions.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-07-e01",
+          "relation": "temporal_change",
+          "voice": "mixed",
+          "contrast_contribution": "Describes a proposed change from scripted robot replies to laughter-sensitive, more natural interaction, then claims ERICA already demonstrates it.",
+          "packaging": "ordinary",
+          "packaging_reason": "The sole connector distinguishes two interaction modes within one news item. No repeated equivalent opposition elsewhere in the digest establishes repetitive packaging.",
+          "preservation_risk": "Retain the difference between fixed responses and responses conditioned on human laughter, and the later limitation to laughter resonance; removing that limitation would broaden the reported capability to general emotional understanding.",
+          "confidence": "medium",
+          "evidence_quote": "今后的机器人不再是冰冷的按照脚本回应主人的交流和问题，而是能够查颜观笑后回应适当的更加自然的表情和交流，ERICA 目前就已经做到了这一点。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-07-d01",
+          "kind": "lexical_or_translationese",
+          "evidence_quote": "CNCF 正式宣布技术监督委员会(TOC) 已投票用过将\nIstio\n作为 CNCF 孵化项目。",
+          "explanation": "The verb sequence after voting is malformed. The headline and surrounding admission report make an approval result recoverable without inventing a new event.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "Istio 正式成为 CNCF 孵化项目"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-07-d02",
+          "kind": "argument_or_reference",
+          "evidence_quote": "而是能够查颜观笑后回应适当的更加自然的表情和交流",
+          "explanation": "The verb for responding attaches directly to expressions and communication as objects, while the intended meaning appears to be producing an appropriate response through expressions. The following laughter example provides a concrete action, making the awkward attachment identifiable beyond technical unfamiliarity.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "ERICA 就会分析各种人类笑声后，礼貌的回应正常的笑声，就如同人类好友之间正常的交流一般。"
+          ],
+          "confidence": "medium"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "当然，目前 ERICA 的研发阶段还处于笑容共鸣阶段，今后将继续发展达到更多类型的情感共鸣。",
+          "explanation": "This qualification constrains the broad future-facing robot contrast. It is substantive source content that a fluent summary must preserve."
+        },
+        {
+          "evidence_quote": "又是别人家的公司。",
+          "explanation": "The explicitly labeled reader comment is an idiomatic nominal exclamation whose referent is the preceding employee-benefits news. It does not require an added personal anecdote or full SVO form."
+        }
+      ],
+      "document_note": "This is a heterogeneous digest, so the one robot contrast cannot characterize every item. The attributed-source setting and narrator's extrapolation create mixed voice. Local wording findings do not establish whether any underlying reported event is true or whether any item was translated."
+    },
+    {
+      "alias": "doc-08",
+      "whole_body_read": true,
+      "genre_observation": "Startup profile and product-growth commentary, ending with a broader argument about small AI businesses. Includes founder quotations and unattributed survey-style claims.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-08-e01",
+          "relation": "correction",
+          "voice": "reporter",
+          "contrast_contribution": "Attributes relationship difficulties to disconnection and communication gaps rather than absence of affection.",
+          "packaging": "ordinary",
+          "packaging_reason": "The contrast introduces a causal account used to motivate a maintenance product. The causal support is a separate issue from whether this framing repeats.",
+          "preservation_risk": "Removing the rejected cause would lose the intended distinction between affection and daily contact, but neither the survey nor this causal claim should be strengthened beyond the supplied attribution.",
+          "confidence": "high",
+          "evidence_quote": "在美国，这一问题尤为凸显 ——1.4 亿对夫妻正面临 “日常联系难” 的困境，其根源并非缺乏爱意，而是情感疏离、沟通缺失与日益增长的 “不同步”。"
+        },
+        {
+          "occurrence_id": "doc-08-e02",
+          "relation": "temporal_change",
+          "voice": "uncertain",
+          "contrast_contribution": "Describes gradual erosion of relationships instead of sudden rupture, providing a temporal rationale for recurring interaction.",
+          "packaging": "ordinary",
+          "packaging_reason": "It concerns the pace of deterioration, while e01 concerns the proposed cause; the axes are distinct. The quotation has no named speaker in the supplied body.",
+          "preservation_risk": "Retain the majority qualifier and gradual mechanism, and do not assign the standalone quotation to a specific founder without evidence.",
+          "confidence": "high",
+          "evidence_quote": "“大多数关系不会突然破裂，而是在日复一日的相处中，因缺乏持续的情感联结慢慢褪色。"
+        },
+        {
+          "occurrence_id": "doc-08-e03",
+          "relation": "temporal_change",
+          "voice": "reporter",
+          "contrast_contribution": "Describes a proposed shift from occasional special moments to daily lightweight interaction.",
+          "packaging": "ordinary",
+          "packaging_reason": "The change in interaction frequency explains the product's daily prompts and games and is distinct from the causes of relationship difficulty.",
+          "preservation_risk": "Preserve the daily cadence and intended repair benefit as a claim, not proof of improved relationships; do not imply that special occasions cease to matter.",
+          "confidence": "high",
+          "evidence_quote": "在快节奏生活中，Candle 以轻量化、低负担的互动形式，让情感联结不再依赖 “特殊时刻”，而是融入每天的碎片化时间，逐步修复因沟通缺失、生活忙碌导致的情感疏离。"
+        },
+        {
+          "occurrence_id": "doc-08-e04",
+          "relation": "correction",
+          "voice": "reporter",
+          "contrast_contribution": "Distinguishes maintaining existing intimate relationships from meeting new people, specifying the application's target use.",
+          "packaging": "ordinary",
+          "packaging_reason": "The alternatives name different user goals and are followed by concrete paired activities and streak tracking.",
+          "preservation_risk": "Removing either side could misclassify the application's core use. Preserve the qualification that new introductions are not its main focus, rather than asserting they are impossible.",
+          "confidence": "high",
+          "evidence_quote": "Candle 的核心差异化优势在于：它不主打 “帮助用户结识新朋友”，而是通过每日小提示和互动游戏，助力用户维护已有的亲密关系。"
+        },
+        {
+          "occurrence_id": "doc-08-e05",
+          "relation": "evaluative_reframing",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "Extends the existing-relationships focus into Candle's stated prediction about the next generation of scalable social products.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "Repeats e04's strangers-versus-existing-intimates distinction and the article's repeated daily-connection thesis. The new element is its industry-scale prediction, not a new product behavior.",
+          "preservation_risk": "Preserve that this is Candle's forward-looking judgment, not a demonstrated market-wide transition. Do not remove the claim's attribution while shortening its repeated framing.",
+          "confidence": "high",
+          "evidence_quote": "对于 Candle 而言，其核心判断是：下一代规模化社交产品的重点，将不再是 “向陌生人传播信息”，而是 “让人们更容易每天与身边少数亲密的人保持互动”。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-08-d01",
+          "kind": "relation_or_support",
+          "evidence_quote": "尽管 “用户增长” 仍是这家初创公司的首要目标，但 “早期实现盈利” 无疑是产品契合市场需求（product-market fit）的强烈信号。",
+          "explanation": "The preceding figures and business-model description establish revenue and payment, not profit after costs. The following CEO quotation also addresses willingness to pay. The move to achieved profitability is unsupported by the supplied financial information.",
+          "repairability": "requires_missing_information",
+          "support_quotes": [
+            "目前，Candle 的月营收已突破 15 万美元，按此推算，其年化营收（Annual Run Rate）超过 100 万美元。",
+            "但当用户愿意为额外内容和功能付费时，就说明产品真正找准了市场需求"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-08-d02",
+          "kind": "relation_or_support",
+          "evidence_quote": "可见，在生成式人工智能爆火的浪潮中，机会不仅属于巨头公司，也属于个人开发者和小团队。",
+          "explanation": "The transition treats the Candle account as evidence for the ensuing AI-native business thesis, but the described current product features do not identify an AI component. The earlier AI shopping product was explicitly a prior direction, and subsequent examples cannot supply Candle's missing connection.",
+          "repairability": "requires_missing_information",
+          "support_quotes": [
+            "两人此前合作开发的对话式 AI 购物工具 Encore",
+            "用户可以在应用内快速回答问题、对比彼此的答案、分享照片，还能通过 “连续互动打卡”（streak）功能，直观看到自己与伴侣 / 朋友的互动频率。",
+            "事实证明，AI 原生应用正成为创业者财富爆发的新入口。"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "它不主打 “帮助用户结识新朋友”，而是通过每日小提示和互动游戏，助力用户维护已有的亲密关系。",
+          "explanation": "This comparison distinguishes relationship maintenance from discovery and is essential to the product description."
+        },
+        {
+          "evidence_quote": "下载量激增、用户反馈源源不断，团队顺势加大投入，推动产品迭代。",
+          "explanation": "The first two clauses have their own nominal subjects, and the last two predicates share the team subject. No extra SVO scaffolding is needed."
+        }
+      ],
+      "document_note": "The selected contrasts carry different causal, temporal, and product-scope claims; only the final one clearly repeats an earlier opposition. The two support gaps concern financial inference and the connection to the concluding AI-business thesis, not judgments about personal relationships or authorship."
+    },
+    {
+      "alias": "doc-09",
+      "whole_body_read": true,
+      "genre_observation": "Reported acquisition feature linking management changes, code review and recommender-system concerns, a super-app plan, and a biographical programming background.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-09-e01",
+          "relation": "procedural_alternative",
+          "voice": "reporter",
+          "contrast_contribution": "Distinguishes evaluating dynamic learned models in realistic conditions from inspecting conventional code alone.",
+          "packaging": "ordinary",
+          "packaging_reason": "The alternatives explain a concrete limitation relevant to the proposed code review, and the following sentence describes multiple algorithms rather than a single master algorithm.",
+          "preservation_risk": "Preserve realistic testing and changing data/user behavior. Avoid strengthening the statement into a ban on all code inspection or treating model testing as sufficient evidence of absence of bias.",
+          "confidence": "high",
+          "evidence_quote": "这些模型不能像常规代码一样被检查，而是需要在尽可能接近真实世界的环境中进行测试，而且为响应不断涌现的新数据、用户行为等，这些模型在真实系统中也会迅速变化。"
+        },
+        {
+          "occurrence_id": "doc-09-e02",
+          "relation": "evaluative_reframing",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "The named academic shifts emphasis from algorithm code to data when discussing openness and improvement of the platform.",
+          "packaging": "ordinary",
+          "packaging_reason": "This attributed priority claim is related to e01 but operates on a different axis: what should be emphasized, rather than how a learned model should be tested.",
+          "preservation_risk": "The quotation's attribution and emphasis must remain; turning it into an unattributed universal fact that algorithms do not matter would overstate the source.",
+          "confidence": "high",
+          "evidence_quote": "“在机器学习时代，重要的不是算法，而是数据，”麻省理工学院教授兼计算机科学家\nDavid Karger曾表示\n，马斯克可以通过使平台更加开放来改进 Twitter，以便其他人可以在此基础上构建新的方式。"
+        }
+      ],
+      "reading_defects": [],
+      "counterexamples": [
+        {
+          "evidence_quote": "这些模型不能像常规代码一样被检查，而是需要在尽可能接近真实世界的环境中进行测试",
+          "explanation": "The contrast gives the methodological reason that conventional source review alone does not answer the article's model-behavior concerns. Removing it would lose a central distinction."
+        },
+        {
+          "evidence_quote": "但目前，并不清楚汽车工程师审核社交媒体代码的匹配度。",
+          "explanation": "This impersonal uncertainty construction is complete in Chinese without an added person who is uncertain. It clearly introduces the ensuing comparison of the two domains."
+        }
+      ],
+      "document_note": "No localized reading defect is asserted after full-body review. The reported positions and broad biographical judgments are not independently fact-checked; unresolved factual generality is not by itself a sentence defect. The two contrasts have different functions and do not establish repetitive packaging."
+    },
+    {
+      "alias": "doc-10",
+      "whole_body_read": true,
+      "genre_observation": "Comparative technical explainer of container primitives, standards, runtimes, and management tools, with a republication credit.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-10-e01",
+          "relation": "unclear_or_malformed",
+          "voice": "reporter",
+          "contrast_contribution": "The intended relation appears to correct an apparent root directory with an account of path handling, but the connector is malformed after an affirmative appearance clause.",
+          "packaging": "ordinary",
+          "packaging_reason": "The problem is the local connection between appearance and reality, not a repeated contrastive move elsewhere in the article.",
+          "preservation_risk": "Retain the appearance-versus-mechanism distinction and the scope of the following claims about the real root. Repairing the connector alone cannot certify or correct the technical explanation.",
+          "confidence": "high",
+          "evidence_quote": "对于所有这些环境，\nchroot\n似乎是一个真正的根目录，而是实际上，它只是将路径名添加到任何以/开头的名字上。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-10-d01",
+          "kind": "lexical_or_translationese",
+          "evidence_quote": "chroot\n似乎是一个真正的根目录，而是实际上，它只是将路径名添加到任何以/开头的名字上。",
+          "explanation": "The replacement connector follows an affirmative appearance clause and is immediately followed by an actuality adverb, producing a malformed adversative transition. The intended appearance-versus-reality relation is recoverable.",
+          "repairability": "local_reexpression",
+          "support_quotes": [],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-10-d02",
+          "kind": "relation_or_support",
+          "evidence_quote": "Kubernetes 的软件堆栈几乎是相同的；Kubernetes 使用 CRI-O，而不是 Containerd",
+          "explanation": "The unqualified statement presents CRI-O as Kubernetes' required choice, whereas the preceding standards explanation explicitly allows either runtime. No particular installation is identified to justify the narrower statement.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "对于 Kubernetes 而言，这意味着它可以使用 Containerd 或 CRI-O，而用户不会注意到其中的区别。"
+          ],
+          "confidence": "high"
+        },
+        {
+          "defect_id": "doc-10-d03",
+          "kind": "argument_or_reference",
+          "evidence_quote": "runc 的替代方案包括 Kata-Runtime、GVisor 和 CRI-O。",
+          "explanation": "The list places CRI-O at the same replacement level as runc, while the article later says CRI-O uses runc as a supported runtime. The unexplained shift between a container stack and its runtime obscures which component replaces which.",
+          "repairability": "article_supported",
+          "support_quotes": [
+            "CRI-O 是一个纯粹为 Kubernetes 设计的容器堆栈，是 CRI 标准的第一个实现。",
+            "今天它支持 runc 和 Kata Containers 作为容器运行时，但也可以插入任何其他 OC 兼容的运行时（至少在理论上）。"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "containerd，最初由 Docker 编写，后来作为一个独立的项目启动; 它实现了 CRI 规范\nrunc，它实现了 OCI 规范",
+          "explanation": "The stack list intentionally uses component names as topics with brief predicates. These are coherent entries and do not need generic full-sentence scaffolding."
+        },
+        {
+          "evidence_quote": "如果您想要一个 LAMP 环境，可以安装一次它的组件，然后将它们作为预先制作的 LAMP 镜像重新使用。",
+          "explanation": "The user remains the understood subject through the installation and reuse steps; ordinary shared-subject ellipsis is not a defect."
+        }
+      ],
+      "document_note": "The malformed literal occurrence is distinct from two internal component/scope inconsistencies elsewhere. These findings use the supplied article's own definitions and do not amount to a comprehensive technical correctness audit or provenance decision."
+    },
+    {
+      "alias": "doc-11",
+      "whole_body_read": true,
+      "genre_observation": "Organization-specific engineering case study describing an analytical data platform migration, operational constraints, measured outcomes, and future work.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-11-e01",
+          "relation": "temporal_change",
+          "voice": "reporter",
+          "contrast_contribution": "Describes Doris moving from a copied-data external warehouse role to a unified query layer with direct lake queries and hotspot acceleration; the temporal change also extends scope.",
+          "packaging": "ordinary",
+          "packaging_reason": "The contrast ties the previously defined old architecture to the new deployment and supplies mechanisms rather than only an evaluative label.",
+          "preservation_risk": "Preserve both the old copied-data role and the new query/cache/materialized-view behavior. Removing the old role would weaken the explanation of which integration burdens are being addressed.",
+          "confidence": "high",
+          "evidence_quote": "基于此，数据开发平台的整体架构发生变化：Doris 不再局限于传统“外仓”的角色，而是向上演进为统一的查询引擎层，与底层 Iceberg、Paimon 等湖仓格式解耦，直接进行联邦查询，同时利用自身的数据缓存、物化视图等能力对热点数据进行加速，兼顾灵活性与高性能。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-11-d01",
+          "kind": "attachment_or_density",
+          "evidence_quote": "其主要依赖计算组进行资源隔离通过将计算层与存储层解耦，BE 节点实现无状态化",
+          "explanation": "A clause about resource isolation runs directly into a means clause about compute/storage decoupling without a boundary, making the reader attach the latter phrase to isolation before reaching the BE-node subject. A clause boundary can clarify the two stated mechanisms without adding facts.",
+          "repairability": "local_reexpression",
+          "support_quotes": [],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "最终采用后者作为临时方案，但仍未根本解决成本与可用性之间的矛盾。",
+          "explanation": "The omitted team subject and the reference to the latter option are recoverable from the immediately preceding two-option comparison. This is normal concise technical Chinese."
+        },
+        {
+          "evidence_quote": "目前该功能基于增量方式实现，主要支持仅追加场景，更新场景仍处于研发状态。",
+          "explanation": "This sentence clearly constrains a capability claim. Its shared topic and contrasting implementation statuses should survive any fluency-oriented compression."
+        }
+      ],
+      "document_note": "The single connector names a concrete architecture transition and does not itself support a repetition finding. One locally fused clause is identified; standard component terminology, requirement lists, and collector-inserted code line breaks are not treated as prose defects."
+    },
+    {
+      "alias": "doc-12",
+      "whole_body_read": true,
+      "genre_observation": "Community-program recruitment and application guidance, combining eligibility criteria, contribution examples, member commitments, benefits, and a motivational closing.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-12-e01",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Frames membership as enabling continued development rather than completing an achievement, introducing the benefits section.",
+          "packaging": "ordinary",
+          "packaging_reason": "The metaphor marks a functional transition from member obligations to future opportunities; the following list specifies what the program provides.",
+          "preservation_risk": "Retain the ongoing-participation expectation and the benefits, while avoiding treating the acceleration metaphor as a measured career outcome.",
+          "confidence": "high",
+          "evidence_quote": "披风之下的专属权益\n成为 Data Superhero 不是终点，而是旅程的加速器。"
+        },
+        {
+          "occurrence_id": "doc-12-e02",
+          "relation": "evaluative_reframing",
+          "voice": "reporter",
+          "contrast_contribution": "Presents the desired members as active contributors to the field rather than passive observers.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The immediately preceding sentence already says they act before recognition, keep exploring, turn problems into teachable experience, and advance the community. This repeats that active-contributor move without an additional commitment or criterion.",
+          "preservation_risk": "The line is motivational positioning, but the call to apply and the concrete obligations elsewhere remain substantive and should not be removed along with a repeated slogan.",
+          "confidence": "high",
+          "evidence_quote": "他们不等待 AI 数据云的未来，而是主动塑造未来。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-12-d01",
+          "kind": "possible_capture_issue",
+          "evidence_quote": "• 参与年度关键活动本项目专为渴望成长并助力他人成长的领导者设计。",
+          "explanation": "A participation bullet and a separate description of the program run together with no syntactic boundary. The two clauses are recoverable, but whether the missing delimiter was in the source or capture is unknown.",
+          "repairability": "local_reexpression",
+          "support_quotes": [],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "质量与影响力远比数量重要。",
+          "explanation": "This explicit application priority is a substantive distinction; a broad ban on evaluative comparison would damage the selection guidance."
+        },
+        {
+          "evidence_quote": "清晰的影响力：阐述您的行动、其重要性及社区获益；",
+          "explanation": "A nominal label followed by an imperative is a coherent application checklist item, not a missing-subject error."
+        }
+      ],
+      "document_note": "Motivational language fits a recruitment genre and is not evidence of reader aversion. The repeated active-contributor closing is a packaging candidate only. The single localized defect concerns a merged bullet boundary, not the use of headings or fragments."
+    },
+    {
+      "alias": "doc-13",
+      "whole_body_read": true,
+      "genre_observation": "Edited question-and-answer interview with a named cloud-platform leader, explaining a product family, deployment cases, organizational challenges, and future plans.",
+      "occurrences": [
+        {
+          "occurrence_id": "doc-13-e01",
+          "relation": "procedural_alternative",
+          "voice": "attributed_quote_or_paraphrase",
+          "contrast_contribution": "States a design preference for integrated lifecycle support instead of supplying isolated components, including observability, alerts, availability, and operational safety.",
+          "packaging": "repetition_candidate",
+          "packaging_reason": "The interview previously identifies fragmented component use as a challenge and repeatedly describes integrated development, deployment, and operations with availability and observability. This solution answer repeats the same integration move, while its question-and-answer recap function remains legitimate.",
+          "preservation_risk": "Preserve the stated design intention and the specific operational capabilities; do not convert a hope for end-to-end integration into an unconditional implementation guarantee or remove the contrast with component delivery.",
+          "confidence": "high",
+          "evidence_quote": "我们不希望 CNStack 提供的能力仍是组件化形态，而是希望能够真正围绕应用构建、运行、管理、运维整个生命周期里，能真正打通端到端的技术环节，提供可观测能力、监控告警能力，同时具备高可用和安全生产的能力，能保障整个业务的稳定性。"
+        }
+      ],
+      "reading_defects": [
+        {
+          "defect_id": "doc-13-d01",
+          "kind": "argument_or_reference",
+          "evidence_quote": "但边缘应用跟 for SaaS、for Edge，和我们常规的应用不一样",
+          "explanation": "The sentence compares edge applications against a list that includes for Edge itself. The intended comparison class is unclear; the product family elsewhere includes for Application, but substituting it would be an unverified repair.",
+          "repairability": "requires_missing_information",
+          "support_quotes": [
+            "第三个是云原生 Stack for Edge，今天边缘是一个非常快速发展的业务，而云原生 Stack for Edge 正是基于边缘场景的一个技术平台。"
+          ],
+          "confidence": "high"
+        }
+      ],
+      "counterexamples": [
+        {
+          "evidence_quote": "如果设计不清楚，就会阻碍中台的运行。",
+          "explanation": "The conditional recovers platform design from the prior sentence. An omitted repeated subject is normal and does not require adding a new premise."
+        },
+        {
+          "evidence_quote": "我们不希望 CNStack 提供的能力仍是组件化形态，而是希望能够真正围绕应用构建、运行、管理、运维整个生命周期里，能真正打通端到端的技术环节",
+          "explanation": "Even though the integration move recurs, it still names a substantive design choice. A recurrence-based rule would damage meaning if it removed the intended difference between components and lifecycle integration."
+        }
+      ],
+      "document_note": "The full 8,952-character body was read in two sequential chunks. Oral repetition and discourse particles are not independently labeled defects. The one connector repeats a substantive theme; the localized reference problem occurs elsewhere and cannot be safely repaired by guessing the intended product name."
+    }
+  ],
+  "review_scope": "Independent assistant semantic review of all 13 complete neutral exact-body packets and all 57 assigned literal connector occurrences. No identity map, cohort summaries, historical judgments, or peer reviews were inspected. Explanations are assistant observations, not human gold, admission decisions, authorship labels, or validated reader outcomes.",
+  "validation": {
+    "document_count": 13,
+    "unique_occurrence_count": 57,
+    "exhaustive_occurrence_coverage": true,
+    "all_assigned_connector_offsets_covered": true,
+    "all_13_input_hashes_match_packets": true,
+    "exact_source_quote_count": 131,
+    "reading_defect_count": 23,
+    "counterexample_count": 25,
+    "zero_defect_documents": [
+      "doc-09"
+    ],
+    "validation_errors": []
+  }
+}

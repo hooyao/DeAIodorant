@@ -1,0 +1,71 @@
+{
+  "alias": "doc-08",
+  "content_hash": "84d4d5b4db0d8d9c91232ec7ad41a6665401b9cd0637c65dad0578ddd3b28afc",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 892,
+        "start_char": 890,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 914,
+        "start_char": 841,
+        "text": "在美国，这一问题尤为凸显 ——1.4 亿对夫妻正面临 “日常联系难” 的困境，其根源并非缺乏爱意，而是情感疏离、沟通缺失与日益增长的 “不同步”。"
+      },
+      "occurrence_id": "doc-08-e01"
+    },
+    {
+      "connector": {
+        "end_char": 1019,
+        "start_char": 1017,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1044,
+        "start_char": 1003,
+        "text": "\n“大多数关系不会突然破裂，而是在日复一日的相处中，因缺乏持续的情感联结慢慢褪色。"
+      },
+      "occurrence_id": "doc-08-e02"
+    },
+    {
+      "connector": {
+        "end_char": 1395,
+        "start_char": 1393,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1428,
+        "start_char": 1347,
+        "text": "在快节奏生活中，Candle 以轻量化、低负担的互动形式，让情感联结不再依赖 “特殊时刻”，而是融入每天的碎片化时间，逐步修复因沟通缺失、生活忙碌导致的情感疏离。"
+      },
+      "occurrence_id": "doc-08-e03"
+    },
+    {
+      "connector": {
+        "end_char": 1894,
+        "start_char": 1892,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1921,
+        "start_char": 1856,
+        "text": "\nCandle 的核心差异化优势在于：它不主打 “帮助用户结识新朋友”，而是通过每日小提示和互动游戏，助力用户维护已有的亲密关系。"
+      },
+      "occurrence_id": "doc-08-e04"
+    },
+    {
+      "connector": {
+        "end_char": 2610,
+        "start_char": 2608,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 2635,
+        "start_char": 2557,
+        "text": "\n对于 Candle 而言，其核心判断是：下一代规模化社交产品的重点，将不再是 “向陌生人传播信息”，而是 “让人们更容易每天与身边少数亲密的人保持互动”。"
+      },
+      "occurrence_id": "doc-08-e05"
+    }
+  ]
+}

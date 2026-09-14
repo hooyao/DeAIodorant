@@ -1,0 +1,226 @@
+{
+  "citations": [
+    {
+      "block_id": "b002",
+      "citation_id": "b002-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"Microduck平均每4秒就售出一台\" data-quote-text=\"在8月27日开放预购后，仅6小时销售额就突破100万美元，24小时内更是超过260万美元。另一个数据上Microduck平均每4秒就售出一台。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077523901152761144\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "Microduck平均每4秒就售出一台",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "在8月27日开放预购后，仅6小时销售额就突破100万美元，24小时内更是超过260万美元。另一个数据上Microduck平均每4秒就售出一台。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077523901152761144"
+    },
+    {
+      "block_id": "b003",
+      "citation_id": "b003-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"英伟达收购消息还在发酵\" data-quote-text=\"英伟达收购消息还在发酵，一只399美元的机器鸭先卖爆了。\" data-referer-link=\"https://m.weibo.cn/status/5337740305502572\">微博</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "英伟达收购消息还在发酵",
+      "publisher_label": "微博",
+      "publisher_quote_text": "英伟达收购消息还在发酵，一只399美元的机器鸭先卖爆了。",
+      "source_url": "https://m.weibo.cn/status/5337740305502572"
+    },
+    {
+      "block_id": "b005",
+      "citation_id": "b005-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"15 个电机（分布于双腿、颈部与头部）\" data-quote-text=\"小小的机身里塞下了 15 个电机（分布于双腿、颈部与头部）、一颗广角摄像头、一颗小型激光雷达、两个惯性测量单元（IMU）、麦克风、扬声器、近场通讯（NFC）标签识别，以及 WiFi 和蓝牙。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "15 个电机（分布于双腿、颈部与头部）",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "小小的机身里塞下了 15 个电机（分布于双腿、颈部与头部）、一颗广角摄像头、一颗小型激光雷达、两个惯性测量单元（IMU）、麦克风、扬声器、近场通讯（NFC）标签识别，以及 WiFi 和蓝牙。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2076660862635471651"
+    },
+    {
+      "block_id": "b005",
+      "citation_id": "b005-c02",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"可更换NP-F550电池（续航约1小时）\" data-quote-text=\"可更换NP-F550电池（续航约1小时）高25厘米，重780克附赠游戏手柄\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077523901152761144\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "可更换NP-F550电池（续航约1小时）",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "可更换NP-F550电池（续航约1小时）高25厘米，重780克附赠游戏手柄",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077523901152761144"
+    },
+    {
+      "block_id": "b006",
+      "citation_id": "b006-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"15022 个 tick 只漏 3 个\" data-quote-text=\"实测数据非常漂亮：15022 个 tick 只漏 3 个，是非常稳的状态\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077192046805247124\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "15022 个 tick 只漏 3 个",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "实测数据非常漂亮：15022 个 tick 只漏 3 个，是非常稳的状态",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077192046805247124"
+    },
+    {
+      "block_id": "b007",
+      "citation_id": "b007-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线\" data-quote-text=\"Microduck 的软件栈以 Apache 2.0 协议完全开源，包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077008203443975906\">极客公园</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线",
+      "publisher_label": "极客公园",
+      "publisher_quote_text": "Microduck 的软件栈以 Apache 2.0 协议完全开源，包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077008203443975906"
+    },
+    {
+      "block_id": "b008",
+      "citation_id": "b008-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"硬件没开源\" data-quote-text=\"硬件没开源\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "硬件没开源",
+      "publisher_label": "哔哩哔哩",
+      "publisher_quote_text": "硬件没开源",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47"
+    },
+    {
+      "block_id": "b008",
+      "citation_id": "b008-c02",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"硬件设计和电路图不会开源\" data-quote-text=\"Pollen Robotics 明确表示，硬件设计和电路图不会开源。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077008203443975906\">极客公园</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "硬件设计和电路图不会开源",
+      "publisher_label": "极客公园",
+      "publisher_quote_text": "Pollen Robotics 明确表示，硬件设计和电路图不会开源。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077008203443975906"
+    },
+    {
+      "block_id": "b010",
+      "citation_id": "b010-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"目前新订单的预计等待时间为4-6个月\" data-quote-text=\"先下单先发货。目前新订单的预计等待时间为4-6个月。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077523901152761144\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "目前新订单的预计等待时间为4-6个月",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "先下单先发货。目前新订单的预计等待时间为4-6个月。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077523901152761144"
+    },
+    {
+      "block_id": "b010",
+      "citation_id": "b010-c02",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"中国大陆及港澳台不支持邮递\" data-quote-text=\"$399，而且中国大陆及港澳台不支持邮递\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "中国大陆及港澳台不支持邮递",
+      "publisher_label": "哔哩哔哩",
+      "publisher_quote_text": "$399，而且中国大陆及港澳台不支持邮递",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47"
+    },
+    {
+      "block_id": "b010",
+      "citation_id": "b010-c03",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"已订2台（奶白&amp;紫色）\" data-quote-text=\"已订2台（奶白&amp;紫色）\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a93585e000000002102f633\">小红书</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "已订2台（奶白&紫色）",
+      "publisher_label": "小红书",
+      "publisher_quote_text": "已订2台（奶白&紫色）",
+      "source_url": "https://www.xiaohongshu.com/explore/6a93585e000000002102f633"
+    },
+    {
+      "block_id": "b011",
+      "citation_id": "b011-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"应用商店里聚合了 200 多款社区开发的 APP\" data-quote-text=\"截至今年 5 月，Reachy Mini 累计销量约1万台。软件生态也在同步发展，应用商店里聚合了 200 多款社区开发的 APP。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "应用商店里聚合了 200 多款社区开发的 APP",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "截至今年 5 月，Reachy Mini 累计销量约1万台。软件生态也在同步发展，应用商店里聚合了 200 多款社区开发的 APP。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2076660862635471651"
+    },
+    {
+      "block_id": "b011",
+      "citation_id": "b011-c02",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"在模拟环境里训练 Microduck 倒立\" data-quote-text=\"创作者 André Baltazar 最近在模拟环境里训练 Microduck 倒立。\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a92f49f000000002303f93d\">小红书</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "在模拟环境里训练 Microduck 倒立",
+      "publisher_label": "小红书",
+      "publisher_quote_text": "创作者 André Baltazar 最近在模拟环境里训练 Microduck 倒立。",
+      "source_url": "https://www.xiaohongshu.com/explore/6a92f49f000000002303f93d"
+    },
+    {
+      "block_id": "b013",
+      "citation_id": "b013-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"安托万·皮龙（Antoine Pirrone）2024 年主导发起了 Open Duck Mini\" data-quote-text=\"为解决这一问题，波伦工程师安托万·皮龙（Antoine Pirrone）2024 年主导发起了 Open Duck Mini。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "安托万·皮龙（Antoine Pirrone）2024 年主导发起了 Open Duck Mini",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "为解决这一问题，波伦工程师安托万·皮龙（Antoine Pirrone）2024 年主导发起了 Open Duck Mini。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2076660862635471651"
+    },
+    {
+      "block_id": "b013",
+      "citation_id": "b013-c02",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"这只鸭子 42 厘米高，全部零件成本不到 400 美元\" data-quote-text=\"Open Duck Mini V2 官方放出了完整组装实录：工作人员把 3D 打印件、树莓派和舵机一步步拼成整机，通电，迈步。这只鸭子 42 厘米高，全部零件成本不到 400 美元\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a93945f000000000a00af50\">小红书</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "这只鸭子 42 厘米高，全部零件成本不到 400 美元",
+      "publisher_label": "小红书",
+      "publisher_quote_text": "Open Duck Mini V2 官方放出了完整组装实录：工作人员把 3D 打印件、树莓派和舵机一步步拼成整机，通电，迈步。这只鸭子 42 厘米高，全部零件成本不到 400 美元",
+      "source_url": "https://www.xiaohongshu.com/explore/6a93945f000000000a00af50"
+    },
+    {
+      "block_id": "b014",
+      "citation_id": "b014-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"如何解决openduckmini机器人一启动一直往前走的问题\" data-quote-text=\"如何解决openduckmini机器人一启动一直往前走的问题\" data-referer-link=\"https://www.bilibili.com/video/BV1nmRvBzEzQ\">哔哩哔哩</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "如何解决openduckmini机器人一启动一直往前走的问题",
+      "publisher_label": "哔哩哔哩",
+      "publisher_quote_text": "如何解决openduckmini机器人一启动一直往前走的问题",
+      "source_url": "https://www.bilibili.com/video/BV1nmRvBzEzQ"
+    },
+    {
+      "block_id": "b014",
+      "citation_id": "b014-c02",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"刚被 IEEE Spectrum 的 Video Friday 收录\" data-quote-text=\"目前有开发者基于它做了 EmoLo 项目——情感启发的运动控制，同一个 RL 策略，这只鸭子能走出开心、难过、兴奋、疲惫几种完全不同的步态，刚被 IEEE Spectrum 的 Video Friday 收录。\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a93945f000000000a00af50\">小红书</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "刚被 IEEE Spectrum 的 Video Friday 收录",
+      "publisher_label": "小红书",
+      "publisher_quote_text": "目前有开发者基于它做了 EmoLo 项目——情感启发的运动控制，同一个 RL 策略，这只鸭子能走出开心、难过、兴奋、疲惫几种完全不同的步态，刚被 IEEE Spectrum 的 Video Friday 收录。",
+      "source_url": "https://www.xiaohongshu.com/explore/6a93945f000000000a00af50"
+    },
+    {
+      "block_id": "b015",
+      "citation_id": "b015-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"手搓出来不会低于4000元\" data-quote-text=\"华强北自己采购一套，手搓出来不会低于4000元，比人家零售价都要贵\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "手搓出来不会低于4000元",
+      "publisher_label": "哔哩哔哩",
+      "publisher_quote_text": "华强北自己采购一套，手搓出来不会低于4000元，比人家零售价都要贵",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47"
+    },
+    {
+      "block_id": "b017",
+      "citation_id": "b017-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"坐等华强北发力\" data-quote-text=\"坐等华强北发力\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "坐等华强北发力",
+      "publisher_label": "哔哩哔哩",
+      "publisher_quote_text": "坐等华强北发力",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47"
+    },
+    {
+      "block_id": "b018",
+      "citation_id": "b018-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"后续这套方案软硬件会开源出来\" data-quote-text=\"我们采用了完全不同的硬件架构（树莓派和飞特舵机）后续这套方案软硬件会开源出来，供全球的机器人爱好者一起来折腾把玩。\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a938b55000000000400b5b1\">小红书</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "后续这套方案软硬件会开源出来",
+      "publisher_label": "小红书",
+      "publisher_quote_text": "我们采用了完全不同的硬件架构（树莓派和飞特舵机）后续这套方案软硬件会开源出来，供全球的机器人爱好者一起来折腾把玩。",
+      "source_url": "https://www.xiaohongshu.com/explore/6a938b55000000000400b5b1"
+    },
+    {
+      "block_id": "b020",
+      "citation_id": "b020-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高\" data-quote-text=\"板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高。控制线程没进入正常循环——鸭子“没站起来”。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077192046805247124\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高。控制线程没进入正常循环——鸭子“没站起来”。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077192046805247124"
+    },
+    {
+      "block_id": "b027",
+      "citation_id": "b027-c01",
+      "dom_html": "<span class=\"referer-link\" data-highlight-text=\"这只鸭子被设计成“为了动而生，随时准备摔倒”\" data-quote-text=\"克莱姆表示，这只鸭子被设计成“为了动而生，随时准备摔倒”。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span>",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified",
+      "publisher_highlight_text": "这只鸭子被设计成“为了动而生，随时准备摔倒”",
+      "publisher_label": "知乎",
+      "publisher_quote_text": "克莱姆表示，这只鸭子被设计成“为了动而生，随时准备摔倒”。",
+      "source_url": "https://zhuanlan.zhihu.com/p/2076660862635471651"
+    }
+  ],
+  "limit": "Embedded quote and highlight attributes are publisher assertions, not source-fidelity gold.",
+  "upstream_sources_fetched": false
+}

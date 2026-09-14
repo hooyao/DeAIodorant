@@ -1,0 +1,27 @@
+{
+  "acquisition_exclusions": [
+    {
+      "doc_id": "769ecc5e088514e4261ae7e0",
+      "reason": "empty_body"
+    },
+    {
+      "doc_id": "8a835ce2a2584c3c9040fcc5",
+      "reason": "empty_body"
+    },
+    {
+      "doc_id": "c979e224eb220101fb785893",
+      "reason": "empty_body"
+    },
+    {
+      "doc_id": "94484784827b950a4ea5beea",
+      "reason": "empty_body"
+    }
+  ],
+  "all_documents": 35,
+  "human_gold": false,
+  "metadata_masking": "Metadata only; article content can reveal time and genre.",
+  "occurrences": 57,
+  "protocol": "contrast-context-audit-1.0",
+  "review_documents": 13,
+  "zero_count_documents": 22
+}

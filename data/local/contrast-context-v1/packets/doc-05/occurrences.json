@@ -1,0 +1,110 @@
+{
+  "alias": "doc-05",
+  "content_hash": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 766,
+        "start_char": 764,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 833,
+        "start_char": 732,
+        "text": "与传统对话式 AI 不同，Cowork 的核心定位并非“聊天”，而是“协作”：它试图让 Claude 从一个被动响应指令的助手，转变为能够理解任务、制定计划、持续执行，并与用户保持协同关系的智能工作体。"
+      },
+      "occurrence_id": "doc-05-e01"
+    },
+    {
+      "connector": {
+        "end_char": 1069,
+        "start_char": 1067,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1085,
+        "start_char": 1047,
+        "text": "需要强调的是，这种访问并非“全盘授权”，而是由用户明确选择、逐一控制的结果。"
+      },
+      "occurrence_id": "doc-05-e02"
+    },
+    {
+      "connector": {
+        "end_char": 1180,
+        "start_char": 1178,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1196,
+        "start_char": 1157,
+        "text": "它不再只是基于文本上下文“想象”文件内容，而是可以直接操作真实存在的工作材料。"
+      },
+      "occurrence_id": "doc-05-e03"
+    },
+    {
+      "connector": {
+        "end_char": 1324,
+        "start_char": 1322,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1349,
+        "start_char": 1301,
+        "text": "\n这种能力的本质，并不是简单的“更聪明”，而是 Claude 被嵌入进了用户的实际工作环境之中。"
+      },
+      "occurrence_id": "doc-05-e04"
+    },
+    {
+      "connector": {
+        "end_char": 1811,
+        "start_char": 1809,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1842,
+        "start_char": 1792,
+        "text": "这种设计并非形式上的“弹窗提示”，而是希望用户在关键节点重新审视任务目标，必要时进行纠正或细化指令。"
+      },
+      "occurrence_id": "doc-05-e05"
+    },
+    {
+      "connector": {
+        "end_char": 2215,
+        "start_char": 2213,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 2240,
+        "start_char": 2179,
+        "text": "\nAnthropic 也明确指出，这些风险并非 Cowork 独有，而是所有具备“行动能力”的 AI 工具都会面临的问题。"
+      },
+      "occurrence_id": "doc-05-e06"
+    },
+    {
+      "connector": {
+        "end_char": 2389,
+        "start_char": 2387,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 2411,
+        "start_char": 2310,
+        "text": "\n研究预览版背后的产品逻辑\nCowork 目前被定义为“研究预览版”，这一定位本身就释放了明确信号：\nAnthropic 并不认为自己已经找到了最终形态，而是希望通过真实用户的使用反馈，加速产品迭代\n。"
+      },
+      "occurrence_id": "doc-05-e07"
+    },
+    {
+      "connector": {
+        "end_char": 2927,
+        "start_char": 2925,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 2942,
+        "start_char": 2899,
+        "text": "这使得 Cowork 不再只是一个“本地整理工具”，而是可以承担跨系统的信息整合角色。"
+      },
+      "occurrence_id": "doc-05-e08"
+    }
+  ]
+}

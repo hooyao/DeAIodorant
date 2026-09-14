@@ -1,0 +1,534 @@
+{
+  "schema_version": "media-repair-preservation-review-1.0",
+  "reviewer": "independent assistant /root/media_repair_preservation_short",
+  "model_identity": "unknown",
+  "human_gold": false,
+  "review_scope": "Full-article bidirectional preservation review of frozen doc-03 and doc-05 candidates; assistant observations only, without external source verification or reader preference inference.",
+  "independence": "Both complete originals and complete candidates were read before operation records were inspected. Only operation IDs, spans, before/after text, and frozen mechanical identities were consulted afterward. Earlier semantic/context reviews, editor reasons/preservation notes, unresolved-issue records, other preservation reviews, and model/reader judgments were not inspected.",
+  "documents": [
+    {
+      "alias": "doc-03",
+      "input_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+      "output_sha256": "50d4de3c53916ac780721b9040fc80360b057dc668565214be135e79aa676acc",
+      "operations_sha256": "3dcba6b7d0fb7934147ec9b759408a0326002b81926cdbaf85ed9ca4963b9349",
+      "input_path": "data/local/contrast-context-v1/packets/doc-03/body.txt",
+      "output_path": "data/local/media-repair-development-v1/candidates/doc-03/output.txt",
+      "full_original_read": true,
+      "full_candidate_read": true,
+      "disposition": "uncertain",
+      "operation_reviews": [
+        {
+          "operation_id": "doc-03-op-001",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 100,
+            "end_char": 118,
+            "quote": "经常“瞎指挥”，在企业运维的十字路口"
+          },
+          "output_evidence": {
+            "start_char": 100,
+            "end_char": 118,
+            "quote": "经常“瞎指挥”。在企业运维的十字路口"
+          },
+          "explanation": "The sentence boundary changes; the frequency qualifier, routing criticism, and traffic-officer metaphor remain."
+        },
+        {
+          "operation_id": "doc-03-op-002",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 200,
+            "end_char": 220,
+            "quote": "但却发现运维系统的十字路口却越来越拥堵了"
+          },
+          "output_evidence": {
+            "start_char": 200,
+            "end_char": 219,
+            "quote": "但却发现运维系统的十字路口越来越拥堵了"
+          },
+          "explanation": "Removing the second adversative adverb removes duplicated framing, while retaining the contrast and increasing congestion claim."
+        },
+        {
+          "operation_id": "doc-03-op-003",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 222,
+            "end_char": 301,
+            "quote": "和想象中的 Agent 们“游刃有余”的自动协同、分工协作不同，因为传统 Router 的上限太低、智能程度有限，很难跟上 Agent 们“匆匆忙忙”的脚步。"
+          },
+          "output_evidence": {
+            "start_char": 221,
+            "end_char": 297,
+            "quote": "与想象中 Agent 们“游刃有余”地自动协同、分工协作不同，传统 Router 的上限太低、智能程度有限，很难跟上 Agent 们“匆匆忙忙”的脚步。"
+          },
+          "explanation": "The imagined effortless cooperation, limited Router capability, and inability to keep pace all remain. The causal connection stays locally recoverable after removal of the malformed explicit connector."
+        },
+        {
+          "operation_id": "doc-03-op-004",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 371,
+            "end_char": 441,
+            "quote": "TCAR（Tencent Cloud Andon Router）——\n一个只有 4B 参数，但学会了“先想清楚，再选择”的智能路由模型\n，它"
+          },
+          "output_evidence": {
+            "start_char": 367,
+            "end_char": 435,
+            "quote": "TCAR（Tencent Cloud Andon Router）——一个只有 4B 参数，但学会了“先想清楚，再选择”的智能路由模型。它"
+          },
+          "explanation": "Line joining and a sentence split retain the name expansion, only-4B qualification, reasoning-before-selection characterization, and following purpose statement."
+        },
+        {
+          "operation_id": "doc-03-op-005",
+          "disposition": "uncertain",
+          "source_evidence": {
+            "start_char": 576,
+            "end_char": 595,
+            "quote": "不同 agent 可能能解决一样的问题"
+          },
+          "output_evidence": {
+            "start_char": 570,
+            "end_char": 592,
+            "quote": "不同 agent 可能具备解决同类问题的能力"
+          },
+          "explanation": "The source can denote different agents able to solve the same problem; the output explicitly denotes the same class of problems. These can be ordinary reexpressions in this context, but class membership alone need not imply overlap on one routing instance. The modal qualification remains, while the exact overlap relation is not securely preserved."
+        },
+        {
+          "operation_id": "doc-03-op-006",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 749,
+            "end_char": 774,
+            "quote": "就无法确定不确定是 CDN、COS 还是网络的问题"
+          },
+          "output_evidence": {
+            "start_char": 746,
+            "end_char": 768,
+            "quote": "就无法确定是 CDN、COS 还是网络的问题"
+          },
+          "explanation": "The malformed duplicated uncertainty expression is reduced to one inability-to-determine claim. CDN, COS, the network alternative, and the website-latency example remain."
+        },
+        {
+          "operation_id": "doc-03-op-007",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 967,
+            "end_char": 1000,
+            "quote": "把路由从直接预测标签，变成先推理再选择 Agent 集合\n。这时候"
+          },
+          "output_evidence": {
+            "start_char": 961,
+            "end_char": 993,
+            "quote": "把路由从直接预测标签，变成先推理再选择 Agent 集合。这时候"
+          },
+          "explanation": "Only the newline before punctuation is removed. Direct label prediction, prior reasoning, and selection of an Agent set remain."
+        },
+        {
+          "operation_id": "doc-03-op-008",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1071,
+            "end_char": 1121,
+            "quote": "它的工作职能从挑选队列最前面的 agent 完成任务，到在专家梯队中找到最合适的那个人选来完成任务。"
+          },
+          "output_evidence": {
+            "start_char": 1064,
+            "end_char": 1116,
+            "quote": "它的工作职能也从挑选队列最前面的 agent 完成任务，转向在专家梯队中找到最合适的那个人选来完成任务。"
+          },
+          "explanation": "The transition verb makes the existing change in function explicit. Queue-front selection and the single best person in the expert team both remain; the source already uses this singular metaphor alongside Agent sets."
+        },
+        {
+          "operation_id": "doc-03-op-009",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1122,
+            "end_char": 1157,
+            "quote": "它就像是一个拥有顶尖专家团队的，高度聪明且能够自我决策的“项目经理”。"
+          },
+          "output_evidence": {
+            "start_char": 1117,
+            "end_char": 1151,
+            "quote": "它就像是一个拥有顶尖专家团队、非常聪明且能够自我决策的“项目经理”。"
+          },
+          "explanation": "The attachment and degree expression are regularized without changing the expert-team, high-intelligence, autonomous-decision, or project-manager claims."
+        },
+        {
+          "operation_id": "doc-03-op-010",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1228,
+            "end_char": 1317,
+            "quote": "明确说明问题可能涉及哪些技术栈，不同 Agent 的职责边界，为什么多个 Agent 执行是合理的，这让路由不再是黑盒，而是可解释、可 Debug、可持续优化 Agent 描述。"
+          },
+          "output_evidence": {
+            "start_char": 1222,
+            "end_char": 1316,
+            "quote": "明确说明问题可能涉及哪些技术栈、不同 Agent 的职责边界，以及由多个 Agent 执行为什么合理。这样，路由不再是黑盒：决策可以解释、可以 Debug，Agent 描述也可以持续优化。"
+          },
+          "explanation": "All three contents of the explanation remain, including possible technical stacks and the rationale for multiple agents. Separating explainable/debuggable decisions from improvable Agent descriptions resolves the original mixed predicate list using referents supplied by the paragraph."
+        },
+        {
+          "operation_id": "doc-03-op-011",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1422,
+            "end_char": 1445,
+            "quote": "当然，这也要建立在对指令聪明且充分的理解力上。"
+          },
+          "output_evidence": {
+            "start_char": 1421,
+            "end_char": 1444,
+            "quote": "当然，这也要求模型足够聪明，能够充分理解指令。"
+          },
+          "explanation": "The model is the locally established bearer of instruction understanding. The sufficient-intelligence and full-understanding requirements remain; no new operational capability is asserted."
+        },
+        {
+          "operation_id": "doc-03-op-012",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1534,
+            "end_char": 1568,
+            "quote": "最终输出一个完整、无冲突的答案，这套模式在排障类问题上效果尤其明显。"
+          },
+          "output_evidence": {
+            "start_char": 1533,
+            "end_char": 1567,
+            "quote": "最终输出一个完整、无冲突的答案。这套模式在排障类问题上效果尤其明显。"
+          },
+          "explanation": "The sentence split retains the complete conflict-free answer claim and the especially-effective-in-troubleshooting qualification."
+        },
+        {
+          "operation_id": "doc-03-op-013",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 2025,
+            "end_char": 2097,
+            "quote": "在高歧义、跨域问题中更稳定，4B 参数量推理速度快成本低，更重要的是下游多 Agent + Refining Agent 的整体成功率显著提升。"
+          },
+          "output_evidence": {
+            "start_char": 2024,
+            "end_char": 2102,
+            "quote": "在高歧义、跨域问题中更稳定。模型参数量为 4B，推理速度快、成本低。更重要的是，下游多 Agent + Refining Agent 的整体成功率显著提升。"
+          },
+          "explanation": "The split preserves higher stability on ambiguous/cross-domain problems, 4B parameters, speed, cost, and significantly improved downstream overall success. It neither supplies performance figures nor changes the existing unsupported strength of the claims."
+        },
+        {
+          "operation_id": "doc-03-op-014",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 2098,
+            "end_char": 2114,
+            "quote": "腾讯云还提供了全套的完整开源范式"
+          },
+          "output_evidence": {
+            "start_char": 2103,
+            "end_char": 2117,
+            "quote": "腾讯云还提供了完整的开源范式"
+          },
+          "explanation": "The synonymous completeness wording is reduced while keeping completeness and every listed released component."
+        }
+      ],
+      "new_preservation_issues": [
+        {
+          "issue_id": "doc-03-preservation-001",
+          "operation_id": "doc-03-op-005",
+          "disposition": "uncertain",
+          "source_quote": "不同 agent 可能能解决一样的问题",
+          "output_quote": "不同 agent 可能具备解决同类问题的能力",
+          "explanation": "Two agents being capable in one problem class does not necessarily establish that both can solve the same incident. The surrounding single-label-routing argument favors an overlap reading of the source, while the source wording also permits an ordinary same-kind paraphrase. Literal inventories cannot settle this relational question.",
+          "smallest_safe_correction": "In a separately versioned revision, retain an explicit same-problem relation while removing the duplicated modal wording; preserve this frozen candidate and uncertainty record."
+        }
+      ],
+      "preexisting_content_issues": [
+        {
+          "issue_id": "doc-03-preexisting-001",
+          "source_quote": "在专家梯队中找到最合适的那个人选来完成任务",
+          "output_quote": "在专家梯队中找到最合适的那个人选来完成任务",
+          "explanation": "The article alternates between selecting an Agent set and this singular best-person metaphor. The candidate retains this source-level conceptual tension; the review does not silently harmonize the selection model."
+        },
+        {
+          "issue_id": "doc-03-preexisting-002",
+          "source_quote": "TCAR 在企业高冲突数据上全面超过当前主流大模型 Router",
+          "output_quote": "TCAR 在企业高冲突数据上全面超过当前主流大模型 Router",
+          "explanation": "This broad comparative performance assertion is present in the source without quantitative support in the supplied body. It is preserved, not externally verified, and is not a new candidate failure or a request to correct source content."
+        }
+      ],
+      "readability_observation": {
+        "status": "assistant observation; no reader outcome measured",
+        "repairs_observed": "Broken punctuation, duplicated wording, and the mixed predicate list for explanation/debugging/Agent-description optimization become easier to parse. Long result sentences are separated while retaining their details.",
+        "remaining_defects": [
+          "The opening traffic metaphor, hurried-agent imagery, project-manager metaphor, and promotional headings still create dense framing before and around the technical explanation.",
+          "The single-person selection metaphor remains difficult to reconcile with the explicit set-selection description without a content decision.",
+          "The final superiority and overall-success claims remain broad and lack magnitude or evaluation conditions in this body. Sentence splitting does not supply that missing support."
+        ],
+        "next_opportunity": "Resolve the localized same-problem wording in a new candidate, then assess whether the existing explanatory progression is readable in full context without removing distinct routing scenarios or supplying evidence the source does not contain."
+      },
+      "verification": {
+        "hashes_match_frozen_summary": true,
+        "all_operation_evidence_exactly_anchored": true,
+        "all_other_evidence_anchored_in_both_texts": true,
+        "operation_replay_exact": true,
+        "operation_count": 14,
+        "source_unicode_characters": 2350,
+        "output_unicode_characters": 2353,
+        "offset_unit": "Unicode code points; zero-based, end-exclusive",
+        "hashes_rechecked_after_report_assembly": true
+      },
+      "disposition_explanation": "Thirteen operations pass. Operation 005 remains uncertain because same-problem overlap may have been weakened to same-class capability. No definite preservation failure is asserted.",
+      "bidirectional_audit": {
+        "source_to_output": "All routing scenarios, named agents/models, technical terms, training stages, reward definitions, numerical values, dataset names, release components, links, negations, and evaluative qualifications were retained on full-article comparison. The exact overlap relation in scenario 1 remains uncertain.",
+        "output_to_source": "No new entity, example, numeric result, citation, attribution, or operational capability was found. Reference clarifications are locally supported. The only unresolved change is the problem/class relation in operation 005."
+      }
+    },
+    {
+      "alias": "doc-05",
+      "input_sha256": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+      "output_sha256": "72a76b15b41e2554f69fb2f01ba03aabaf120a5d3730a3f33b76a1ff323b30ca",
+      "operations_sha256": "d5ecea2d8e6bb429166d80249ade1f533784941a808f916bbea2542c8a22e7ab",
+      "input_path": "data/local/contrast-context-v1/packets/doc-05/body.txt",
+      "output_path": "data/local/media-repair-development-v1/candidates/doc-05/output.txt",
+      "full_original_read": true,
+      "full_candidate_read": true,
+      "disposition": "pass",
+      "operation_reviews": [
+        {
+          "operation_id": "doc-05-op-001",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 258,
+            "end_char": 301,
+            "quote": "Anthropic 工程师、\nClaude Code\n创建者 Boris Cherny"
+          },
+          "output_evidence": {
+            "start_char": 258,
+            "end_char": 300,
+            "quote": "Anthropic 工程师、Claude Code 创建者 Boris Cherny"
+          },
+          "explanation": "Joining lines retains Boris Cherny, both roles, X attribution, and the boundary introducing his following statement."
+        },
+        {
+          "operation_id": "doc-05-op-002",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 981,
+            "end_char": 1003,
+            "quote": "Cowork 试图解决的，正是这一断裂问题。"
+          },
+          "output_evidence": {
+            "start_char": 980,
+            "end_char": 1011,
+            "quote": "Cowork 试图解决的，正是对话模式与真实工作流之间的脱节。"
+          },
+          "explanation": "The previous paragraph explicitly contrasts conversation interactions with limitations in real workflows. Naming that disconnect resolves the demonstrative without adding a separate defect or a stronger claim of success; the attempt qualifier remains."
+        },
+        {
+          "operation_id": "doc-05-op-003",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1054,
+            "end_char": 1085,
+            "quote": "这种访问并非“全盘授权”，而是由用户明确选择、逐一控制的结果。"
+          },
+          "output_evidence": {
+            "start_char": 1062,
+            "end_char": 1095,
+            "quote": "这种访问并非“全盘授权”，而是由用户明确选择访问范围，并逐一控制。"
+          },
+          "explanation": "The immediately surrounding sentences identify a selected local folder and permitted files/directories. Naming the access scope makes that existing object explicit; user choice, individual control, and the denial of full-disk authorization remain."
+        },
+        {
+          "operation_id": "doc-05-op-004",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1322,
+            "end_char": 1348,
+            "quote": "而是 Claude 被嵌入进了用户的实际工作环境之中"
+          },
+          "output_evidence": {
+            "start_char": 1332,
+            "end_char": 1357,
+            "quote": "而是 Claude 被嵌入了用户的实际工作环境之中"
+          },
+          "explanation": "The redundant directional element is removed. Embedding Claude in the actual work environment and the preceding meaningful contrast remain."
+        },
+        {
+          "operation_id": "doc-05-op-005",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 1829,
+            "end_char": 1841,
+            "quote": "必要时进行纠正或细化指令"
+          },
+          "output_evidence": {
+            "start_char": 1838,
+            "end_char": 1848,
+            "quote": "必要时纠正或细化指令"
+          },
+          "explanation": "Removing the light verb retains the conditional opportunity to correct or refine instructions at critical checkpoints. The preceding instruction to reconsider task goals is unchanged."
+        },
+        {
+          "operation_id": "doc-05-op-006",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 2345,
+            "end_char": 2411,
+            "quote": "这一定位本身就释放了明确信号：\nAnthropic 并不认为自己已经找到了最终形态，而是希望通过真实用户的使用反馈，加速产品迭代\n。"
+          },
+          "output_evidence": {
+            "start_char": 2352,
+            "end_char": 2416,
+            "quote": "这一定位本身就释放了明确信号：Anthropic 并不认为自己已经找到了最终形态，而是希望通过真实用户的使用反馈，加速产品迭代。"
+          },
+          "explanation": "Line joining retains the research-preview interpretation, negation of having found the final form, and intention to accelerate iteration through actual user feedback."
+        },
+        {
+          "operation_id": "doc-05-op-007",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 2446,
+            "end_char": 2509,
+            "quote": "其中包括跨设备同步能力，使 Cowork 不再局限于单一终端；以及将其移植到 Windows 平台，从而覆盖更广泛的办公人群。"
+          },
+          "output_evidence": {
+            "start_char": 2451,
+            "end_char": 2515,
+            "quote": "这些改进包括跨设备同步，使 Cowork 不再局限于单一终端；还包括将其移植到 Windows 平台，从而覆盖更广泛的办公人群。"
+          },
+          "explanation": "The parallel list retains both planned improvements and their distinct purposes: cross-device synchronization beyond one terminal and a Windows port for a broader office audience. The enclosing official-attribution and future-plan qualifications remain."
+        },
+        {
+          "operation_id": "doc-05-op-008",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 2694,
+            "end_char": 2744,
+            "quote": "如果说 Claude Code 面向的是“愿意为效率付出学习成本”的开发者群体，\n那么 Cowork"
+          },
+          "output_evidence": {
+            "start_char": 2700,
+            "end_char": 2749,
+            "quote": "如果说 Claude Code 面向的是“愿意为效率付出学习成本”的开发者群体，那么 Cowork"
+          },
+          "explanation": "Only a newline is removed; the conditional comparison, quoted learning-cost characterization, and complete list of target audiences remain."
+        },
+        {
+          "operation_id": "doc-05-op-009",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 2943,
+            "end_char": 2960,
+            "quote": "其次是新增的一系列技能\n。这些技能"
+          },
+          "output_evidence": {
+            "start_char": 2948,
+            "end_char": 2964,
+            "quote": "其次是新增的一系列技能。这些技能"
+          },
+          "explanation": "Only the newline before punctuation is removed; the new skills and following description remain."
+        },
+        {
+          "operation_id": "doc-05-op-010",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 3329,
+            "end_char": 3377,
+            "quote": "在 Cowork 发布之后，迅速在开发者社区、AI 产品圈以及更广泛的知识工作者群体中引发讨论。"
+          },
+          "output_evidence": {
+            "start_char": 3333,
+            "end_char": 3379,
+            "quote": "Cowork 发布之后，迅速在开发者社区、AI 产品圈以及更广泛的知识工作者群体中引发讨论。"
+          },
+          "explanation": "Removing the opening preposition permits Cowork to serve as the topic of the existing discussion claim. Publication timing, rapid uptake, and all three audience groups remain."
+        },
+        {
+          "operation_id": "doc-05-op-011",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 3597,
+            "end_char": 3620,
+            "quote": "评论集中在“\n只支持 macOS\n”这一点上。"
+          },
+          "output_evidence": {
+            "start_char": 3599,
+            "end_char": 3620,
+            "quote": "评论集中在“只支持 macOS”这一点上。"
+          },
+          "explanation": "Only internal line breaks are removed. The quoted macOS-only restriction and the report of comments focusing on it remain."
+        },
+        {
+          "operation_id": "doc-05-op-012",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 3621,
+            "end_char": 3713,
+            "quote": "此外，值得注意的是，有些评论虽然不是专门针对 Cowork，但有一些用户还是对\nAnthropic 近期产品策略与沟通的不满\n，对 Cowork 的发布背景和用户关系具有间接关联语境。"
+          },
+          "output_evidence": {
+            "start_char": 3621,
+            "end_char": 3696,
+            "quote": "此外，还有一些用户表达了对 Anthropic 近期产品策略与沟通的不满。这些评论虽然并非专门针对 Cowork，但与它的发布背景和用户关系间接相关。"
+          },
+          "explanation": "The malformed source fragment already attributes dissatisfaction with Anthropic strategy and communication to some users. The output supplies an ordinary expression verb and retains that the mentioned comments are not specifically about Cowork but are indirectly related to its release background and user relations. The following user quotation supports the attribution, without proving its truth."
+        },
+        {
+          "operation_id": "doc-05-op-013",
+          "disposition": "pass",
+          "source_evidence": {
+            "start_char": 3714,
+            "end_char": 3776,
+            "quote": "在 Reddit 平台，有长期用户表示，自己已经从忠实支持者变成对 Anthropic 的\n信任下降甚至不满\n。该用户指出："
+          },
+          "output_evidence": {
+            "start_char": 3697,
+            "end_char": 3764,
+            "quote": "在 Reddit 平台，有长期用户表示，自己曾是 Anthropic 的忠实支持者，如今对它的信任却已下降，甚至感到不满。该用户指出："
+          },
+          "explanation": "The output restores a grammatical temporal comparison. The longtime user, former loyal support, reduced trust, stronger dissatisfaction, Reddit attribution, and unchanged following direct quotation all remain."
+        }
+      ],
+      "new_preservation_issues": [],
+      "preexisting_content_issues": [
+        {
+          "issue_id": "doc-05-preexisting-001",
+          "source_quote": "Claude 只能看到、读取、编辑或创建那些被允许的文件和目录，而无法触及任何未授权内容。",
+          "output_quote": "Claude 只能看到、读取、编辑或创建那些被允许的文件和目录，而无法触及任何未授权内容。",
+          "explanation": "The source states this access boundary absolutely. Its technical completeness is unverified in this review; the candidate preserves the same assertion and does not newly strengthen it."
+        },
+        {
+          "issue_id": "doc-05-preexisting-002",
+          "source_quote": "Claude 在执行任何“重要操作”之前，都会主动征求用户确认。",
+          "output_quote": "Claude 在执行任何“重要操作”之前，都会主动征求用户确认。",
+          "explanation": "The universal important-operation confirmation claim already exists in the source, alongside risk caveats. The candidate keeps it unchanged. No external fact-check or factual correction is inferred from preservation approval."
+        }
+      ],
+      "readability_observation": {
+        "status": "assistant observation; no reader outcome measured",
+        "repairs_observed": "The final community-reaction paragraphs gain complete predicates and clearer attribution. Inline names, quotations, and sentences no longer break across isolated lines. The workflow demonstrative and access-scope attachment become more explicit.",
+        "remaining_defects": [
+          "Several sections repeat the colleague-versus-chat framing and the ability to queue or run work in parallel. Distinct claims and examples coexist with that repetition, so consolidation would require careful separation.",
+          "The Linux complaint heading is more specific than the reproduced platform-restriction comments, which explicitly discuss macOS-only availability. The supplied direct quotation later concerns broader trust and communication.",
+          "The Chrome pairing sentence leaves the relationship between Cowork, Claude, and the browser product unclear from this Chinese body alone.",
+          "Broad formulations about a qualitative capability leap and an intelligent work entity remain less concrete than the file-operation examples that follow."
+        ],
+        "next_opportunity": "A later version could reduce repeated explanatory framing while preserving distinct use cases and qualifications; ambiguous product-integration details should remain unresolved unless the Chinese source supplies support."
+      },
+      "verification": {
+        "hashes_match_frozen_summary": true,
+        "all_operation_evidence_exactly_anchored": true,
+        "all_other_evidence_anchored_in_both_texts": true,
+        "operation_replay_exact": true,
+        "operation_count": 13,
+        "source_unicode_characters": 4048,
+        "output_unicode_characters": 4036,
+        "offset_unit": "Unicode code points; zero-based, end-exclusive",
+        "hashes_rechecked_after_report_assembly": true
+      },
+      "disposition_explanation": "All thirteen operations pass as local grammar, attachment, reference, or formatting repairs. No new preservation issue was found on the full-article bidirectional comparison.",
+      "bidirectional_audit": {
+        "source_to_output": "The attributed Cherny statement, every distinct noncoding example, product stage and access restrictions, task and file examples, safety conditions and caveats, roadmap plans, audience list, connectors/skills/browser discussion, community-attribution distinctions, direct user quote, and all reference URLs remain. Qualifications such as theoretical capability and research-preview status remain.",
+        "output_to_source": "The newly explicit workflow reference, access-scope object, dissatisfaction predicate, and former/current trust relation are recoverable from the source context. No new feature, guarantee, roadmap commitment, user testimony, or example was found."
+      }
+    }
+  ]
+}

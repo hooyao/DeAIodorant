@@ -1,0 +1,36 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "《极客有约》",
+      "href": "https://www.infoq.cn/video/IQdSQUTqbmgjV5cel8DC"
+    },
+    {
+      "text": "现代数据堆栈",
+      "href": "https://archsummit.infoq.cn/2022/hangzhou/presentation/4901"
+    },
+    {
+      "text": " Data Mesh、Data Fabric ",
+      "href": "https://mp.weixin.qq.com/s?__biz=MzI4MTY5NTk4Ng==&mid=2247502757&idx=3&sn=24627a171ef8402303d0b7f42050fbe9&chksm=eba7c838dcd0412e38fefb681b8ea8c4bda482d8480c893da2eb77d0af44f8acb341c21563a8&scene=27#wechat_redirect"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 98,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 3
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/efaf0b713c9d217a8355c067.html",
+  "raw_html_sha256": "f754ace5266f6bc2b6271a9c6e20ba1ad8cac92a7310ff41f6581ad670b8b61d"
+}

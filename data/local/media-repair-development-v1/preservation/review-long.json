@@ -1,0 +1,891 @@
+{
+  "schema_version": "media-repair-preservation-review-1.0",
+  "reviewer": "independent_current_assistant_full_article_preservation_reviewer_long",
+  "model_identity": "unknown",
+  "model_identity_note": "The exact serving model identifier was not exposed to this reviewer; no model family or version is inferred from available tool names.",
+  "human_gold": false,
+  "judgment_type": "model_only",
+  "protocol": "media-repair-development-1.0",
+  "review_date": "2026-09-14",
+  "independence": {
+    "earlier_semantic_or_context_reviews_read": false,
+    "editor_reasons_or_preservation_notes_read": false,
+    "editor_unresolved_issues_read": false,
+    "other_preservation_judgments_read": false,
+    "reader_expectations_read": false,
+    "external_fact_checking_performed": false,
+    "operation_metadata_access": "After the complete paired comparison, only operation IDs, before/after text, and character spans were displayed. Validation summary was used only for mechanical hashes and replay identity."
+  },
+  "documents": [
+    {
+      "alias": "doc-04",
+      "input_path": "data/local/contrast-context-v1/packets/doc-04/body.txt",
+      "output_path": "data/local/media-repair-development-v1/candidates/doc-04/output.txt",
+      "input_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+      "output_sha256": "413e094cc29c8084620f7203ee4e4b4e76a60f1e721369ff79be738d155d257f",
+      "operations_sha256": "e11c430b30104d7c4c235efd1fdbe52ae034d022f17395fcfbf85d149430548d",
+      "full_original_read": true,
+      "full_candidate_read": true,
+      "reading_method": {
+        "description": "All original and candidate characters were read in an eight-chunk paired comparison. Exact equal spans were printed once and explicitly labeled as belonging to both documents; every non-equal original and candidate span was printed separately. No unchanged context was omitted. All forty complete before/after operations were then inspected in a restricted projection.",
+        "paired_chunks_read": 8,
+        "source_unicode_characters": 21891,
+        "output_unicode_characters": 21923,
+        "tool_truncation": false
+      },
+      "disposition": "fail",
+      "disposition_explanation": "This model-only review does not certify preservation: operation 012 changes a majority/extent qualification to priority, and operations 008, 034, and 040 retain unresolved interpretive risk. The remaining 36 operations pass this contextual review. No removed distinct anecdote, altered named entity or numerical value, new citation, or changed printed speaker sequence was found. That retained inventory does not establish semantic equivalence for the disputed operations.",
+      "operation_disposition_counts": {
+        "pass": 36,
+        "fail": 1,
+        "uncertain": 3
+      },
+      "overall_evidence": [
+        {
+          "operation_id": "doc-04-op-012",
+          "source_quote": "因此，我们与 Codex 合作的大部分目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "output_quote": "因此，我们与 Codex 合作的主要目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "disposition": "fail"
+        },
+        {
+          "operation_id": "doc-04-op-008",
+          "source_quote": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+          "output_quote": "还是因为我对开源软件的运作方式不够了解，才没看出团队为什么能这样快速前进？",
+          "disposition": "uncertain"
+        },
+        {
+          "operation_id": "doc-04-op-034",
+          "source_quote": "想象我们要覆盖的所有世界范围的任务，智能体每天有可能帮助你成千上万次。",
+          "output_quote": "想象一下，我们要覆盖世界范围内的所有任务，智能体每天有可能帮助你成千上万次。",
+          "disposition": "uncertain"
+        },
+        {
+          "operation_id": "doc-04-op-040",
+          "source_quote": "如果你明年是一家创业公司，正在构建一个新应用",
+          "output_quote": "如果你明年在一家创业公司，正在构建一个新应用",
+          "disposition": "uncertain"
+        }
+      ],
+      "full_context_audit": {
+        "propositions_and_details": "The full discussion of model/API/framework integration, local and cloud workflows, proactive teammates, code review, conversational development, browser context, startup execution, community feedback, learning programming, training monitoring, and AGI timing remains present. Repeated Atlas and Sora accounts remain, including their distinct staffing, timing, and workflow details.",
+        "numerical_scope": "The 20-fold and tenfold growth descriptions, weekly token scale, 24-hour and 60-plus-hour references, 30 percent comparison, Sora 18/10/28-day milestones, two-week/four-week descriptions, Atlas staffing/week comparisons, 100/80-hour review example, D7 definition, and relative next-year forecasts retain their local context. The change to a non-digit majority qualifier is explicitly treated as a preservation failure rather than excused by unchanged number strings.",
+        "names_and_references": "Named people, organizations, products, model/version strings, languages, platforms, and the final YouTube URL remain in their source context. Existing uncertain names and technical descriptions were not fact-checked or corrected.",
+        "modality_and_negation": "The existing conditional forecasts, personal judgments, possible direct repair authority, ongoing exploration, current-versus-future distinctions, and negative/contrastive statements remain, except for the explicitly disputed scope or interpretive operations. Existing stronger editorial summaries remain source issues.",
+        "interview_attribution": {
+          "printed_speaker_sequence_preserved": true,
+          "source_printed_speaker_labels": 61,
+          "output_printed_speaker_labels": 61,
+          "alex_labels": 32,
+          "lenny_labels": 29,
+          "limitation": "Matching labels support a mechanical check only. The full text also contains an unlabeled apparent interviewer turn that remains unresolved."
+        },
+        "untouched_context": "Every unchanged span was read as part of both full documents. No new discontinuity, deleted distinct anecdote, or reassigned printed turn was found outside the listed issues."
+      },
+      "operation_reviews": [
+        {
+          "operation_id": "doc-04-op-001",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 0,
+            "end_char": 84
+          },
+          "output_span": {
+            "start_char": 0,
+            "end_char": 81
+          },
+          "source_quote": "自 8 月 GPT-5 发布以来，\nCodex\n展现出惊人的爆发力，\n用户增长 20 倍\n，每周处理数万亿 tokens，成为了 Open AI 最受欢迎的编程智能体。",
+          "output_quote": "自 8 月 GPT-5 发布以来，Codex 展现出惊人的爆发力，用户增长 20 倍，每周处理数万亿 tokens，成为了 Open AI 最受欢迎的编程智能体。",
+          "explanation": "Only broken line boundaries and spacing change. The August GPT-5 reference, 20-fold user growth, weekly trillions of tokens, and the Open AI attribution remain the same.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-002",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 565,
+            "end_char": 593
+          },
+          "output_span": {
+            "start_char": 562,
+            "end_char": 588
+          },
+          "source_quote": "早期的 Codex\n“太过未来”\n，采用远程异步交互方式",
+          "output_quote": "早期的 Codex“太过未来”，采用远程异步交互方式",
+          "explanation": "The quoted description of early Codex and its remote asynchronous interaction remain verbatim apart from line boundaries. No explanation, actor, or temporal qualifier is added.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-003",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 989,
+            "end_char": 1096
+          },
+          "output_span": {
+            "start_char": 984,
+            "end_char": 1086
+          },
+          "source_quote": "对于\n未来 AGI 会何时到来\n，Alexander Embiricos 也给出了一个有趣的视角，\n他认为当前真正的限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限\n，正在拖累其发展\n。",
+          "output_quote": "对于未来 AGI 会何时到来，Alexander Embiricos 也给出了一个有趣的视角。他认为，当前真正限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限，正在拖累其发展。",
+          "explanation": "Sentence boundaries and a malformed attachment are repaired. The existing exclusive contrast between model capability and human input/review limits, Alexander Embiricos attribution, and AGI timing subject are retained. The editorial contrast is already stronger than the later interview answer; this operation did not introduce that discrepancy.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-004",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 1097,
+            "end_char": 1140
+          },
+          "output_span": {
+            "start_char": 1087,
+            "end_char": 1128
+          },
+          "source_quote": "他做了一个预判，\n第一批生产力曲线出现陡增的用户将在明年出现，其后的变化会加速扩散\n。",
+          "output_quote": "他做了一个预判：第一批生产力曲线出现陡增的用户将在明年出现，其后的变化会加速扩散。",
+          "explanation": "The colon explicitly introduces the same forecast. Next year, the first users with sharply rising productivity, and subsequent accelerating diffusion retain their original scope; no certainty marker is strengthened.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-005",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 1669,
+            "end_char": 1692
+          },
+          "output_span": {
+            "start_char": 1657,
+            "end_char": 1687
+          },
+          "source_quote": "当它将 Codex 带回工程师们日常工作的地方",
+          "output_quote": "当 OpenAI 将 Codex 带回工程师们日常工作的地方",
+          "explanation": "The pronoun is replaced with OpenAI. The immediately preceding sentence names OpenAI and its initial Codex product, while the interview later describes the team bringing the tool to the local IDE. This identifies the already supported organizational actor without adding an external actor or event.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-006",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 2460,
+            "end_char": 2493
+          },
+          "output_span": {
+            "start_char": 2455,
+            "end_char": 2488
+          },
+          "source_quote": "OpenAI 显然是一家与你过去工作过的所有公司都截然不同的地方。",
+          "output_quote": "OpenAI 显然是一个与你过去工作过的所有公司都截然不同的地方。",
+          "explanation": "The classifier now agrees with the noun meaning place. OpenAI, the comparison with every previous employer, and the interviewer attribution remain unchanged.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-007",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 2916,
+            "end_char": 2958
+          },
+          "output_span": {
+            "start_char": 2911,
+            "end_char": 2957
+          },
+          "source_quote": "不过在 OpenAI，我深刻意识到影响力之巨大，而要把工作做好，需要投入极高的精力。",
+          "output_quote": "不过在 OpenAI，我深刻意识到这项工作的影响力之巨大，而要把它做好，需要投入极高的精力。",
+          "explanation": "The impact is explicitly attached to the work described in the same sentence, and the subsequent pronoun points back to that work. The immediately adjacent comparison concerns working at OpenAI and the effort required to do the work well; no specific type or amount of impact is supplied.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-008",
+          "disposition": "uncertain",
+          "source_span": {
+            "start_char": 3036,
+            "end_char": 3070
+          },
+          "output_span": {
+            "start_char": 3035,
+            "end_char": 3072
+          },
+          "source_quote": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+          "output_quote": "还是因为我对开源软件的运作方式不够了解，才没看出团队为什么能这样快速前进？",
+          "explanation": "The source question has an ill-formed causal link: the interviewer's incomplete understanding is grammatically connected to the team advancing quickly. The candidate instead says the interviewer has not understood why the team advances quickly. The surrounding question makes that repair plausible, but the new mental-state clause is an interpretation that the Chinese source does not uniquely establish. This is not evidence that the original literally intended the interviewer to cause the team's speed.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-009",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 3410,
+            "end_char": 3440
+          },
+          "output_span": {
+            "start_char": 3412,
+            "end_char": 3444
+          },
+          "source_quote": "这里的组织架构设计为高度自下而上运作，每个人都渴望快速推进。",
+          "output_quote": "这里的组织架构采用高度自下而上的运作方式，每个人都渴望快速推进。",
+          "explanation": "The bottom-up organization description is made grammatical. Although designed operation becomes an adopted mode of operation, the next unchanged sentences explicitly say OpenAI really operates this way. Both the degree of bottom-up operation and everyone's wish to move quickly remain.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-010",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 3670,
+            "end_char": 3692
+          },
+          "output_span": {
+            "start_char": 3674,
+            "end_char": 3694
+          },
+          "source_quote": "这个比喻有一定道理，但目标成分本身是模糊的。",
+          "output_quote": "这个比喻有一定道理，但目标本身是模糊的。",
+          "explanation": "Removing the awkward noun component leaves the same uncertainty about the aim in the ready/fire/aim analogy. The surrounding forecast and product-planning discussion supports this local reading; no concrete objective or level of certainty is introduced.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-011",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 4293,
+            "end_char": 4337
+          },
+          "output_span": {
+            "start_char": 4295,
+            "end_char": 4341
+          },
+          "source_quote": "安装后，你可以与 Codex 互动，回答与代码相关的问题，编写代码，运行测试，执行代码等",
+          "output_quote": "安装后，你可以与 Codex 互动，让它回答与代码相关的问题、编写代码、运行测试、执行代码等",
+          "explanation": "The software agent is made the explicit performer of answering code questions, writing code, running tests, and executing code. This is supported by the preceding product definition and the following account of a coding teammate. All four capabilities and the user's ability to interact remain.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-012",
+          "disposition": "fail",
+          "source_span": {
+            "start_char": 5066,
+            "end_char": 5120
+          },
+          "output_span": {
+            "start_char": 5070,
+            "end_char": 5123
+          },
+          "source_quote": "因此，我们与 Codex 合作的大部分目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "output_quote": "因此，我们与 Codex 合作的主要目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "explanation": "The source qualifies the extent of the goals: most of them concern building the default-helping teammate. The candidate substitutes priority: this is the main goal. A majority/extent claim and a priority claim are not equivalent, and the original extent qualification disappears. The nearby discussion supports the aspiration but does not establish that these two qualifications can be interchanged.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-013",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 5596,
+            "end_char": 5617
+          },
+          "output_span": {
+            "start_char": 5599,
+            "end_char": 5625
+          },
+          "source_quote": "Codex 模型目前每周服务数万亿级的代币",
+          "output_quote": "Codex 模型目前每周处理数万亿级的 tokens",
+          "explanation": "The technical unit is normalized to tokens and the verb to processing. The article's opening already describes the same Codex activity as weekly processing of trillions of tokens. The model subject, weekly interval, and magnitude remain; this does not introduce a currency or billing claim.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-014",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 7637,
+            "end_char": 7677
+          },
+          "output_span": {
+            "start_char": 7645,
+            "end_char": 7697
+          },
+          "source_quote": "这已经超过传统模型的上下文长度，因此我们必须为此设计出解决方案，也就是“压缩”。",
+          "output_quote": "这种长时间运行所需的上下文已经超过传统模型的上下文长度，因此我们必须为此设计出解决方案，也就是“压缩”。",
+          "explanation": "The demonstrative is expanded to the context required for the long-running activity. The unchanged preceding sentence reports runs of 24 hours or longer, and the following compression/API/framework explanation explicitly concerns context limits. The edit repairs a duration-to-context attachment without changing the reported duration or adding a context-window number.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-015",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 7785,
+            "end_char": 7827
+          },
+          "output_span": {
+            "start_char": 7805,
+            "end_char": 7846
+          },
+          "source_quote": "如果想训练一个模型，让它在所有框架下都表现最佳，可能并非不可能，但速度一定会被拖慢。",
+          "output_quote": "如果想训练一个模型，让它在所有框架下都表现最佳，或许可以做到，但速度一定会被拖慢。",
+          "explanation": "The double negative expressing possible feasibility becomes an explicit tentative possibility. The conditional goal of optimal performance across all frameworks and the definite speed penalty both remain. The text still does not promise that such a model can actually be trained.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-016",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 7998,
+            "end_char": 8018
+          },
+          "output_span": {
+            "start_char": 8017,
+            "end_char": 8041
+          },
+          "source_quote": "写代码是模型最好的方式与编码智能体的未来",
+          "output_quote": "写代码是模型执行任务的最佳方式与编码智能体的未来",
+          "explanation": "The incomplete heading gains its supported task domain. The full section explicitly argues that writing code is the most effective way for models to operate computers and accomplish work. The heading remains a broad claim, and no new technical capability is introduced.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-017",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 9316,
+            "end_char": 9340
+          },
+          "output_span": {
+            "start_char": 9339,
+            "end_char": 9365
+          },
+          "source_quote": "他们会安排日程、移动会议、主动修复问题、提出建议",
+          "output_quote": "他们会安排日程、调整会议安排、主动修复问题、提出建议",
+          "explanation": "Moving meetings becomes adjusting meeting arrangements in an existing calendar/workflow list. The ordinary scheduling reading is preserved, alongside scheduling, proactive repairs, and suggestions. No new distinct anecdote or specific meeting action is added.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-018",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 9712,
+            "end_char": 9742
+          },
+          "output_span": {
+            "start_char": 9737,
+            "end_char": 9768
+          },
+          "source_quote": "当你只需要表达任务时，聊天就够了。所以我们希望构建的人工智能",
+          "output_quote": "当你只需要表达任务时，聊天就够了。\n所以我们希望构建的人工智能",
+          "explanation": "Only a paragraph boundary is added after the statement that chat is sufficient for expressing a task. All wording and the surrounding Alex turn remain unchanged.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-019",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 9809,
+            "end_char": 9836
+          },
+          "output_span": {
+            "start_char": 9835,
+            "end_char": 9863
+          },
+          "source_quote": "你甚至在工作之外也会使用它。等你开始工作时，你自然会说",
+          "output_quote": "你甚至在工作之外也会使用它。\n等你开始工作时，你自然会说",
+          "explanation": "Only a paragraph boundary is added between use outside work and beginning work. The temporal contrast, assistant reference, and Alex attribution remain unchanged.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-020",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 11016,
+            "end_char": 11053
+          },
+          "output_span": {
+            "start_char": 11043,
+            "end_char": 11082
+          },
+          "source_quote": "你能从工程师如何使用你的工具里学到巨量东西，也能更清楚应该把什么融入产品。",
+          "output_quote": "你能从工程师如何使用你的工具中学到非常多的东西，也能更清楚应该把什么融入产品。",
+          "explanation": "The attachment and unnatural large-quantity wording are normalized. Learning a very large amount from engineers' tool use and using that learning to decide what belongs in the product remain the same claims.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-021",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 11663,
+            "end_char": 11673
+          },
+          "output_span": {
+            "start_char": 11692,
+            "end_char": 11700
+          },
+          "source_quote": "让用户感到拥有掌控感",
+          "output_quote": "让用户拥有掌控感",
+          "explanation": "The doubled expression of feeling is reduced to having a sense of control. The retained noun explicitly denotes a subjective sense; the candidate does not replace perceived control with a claim of objectively greater authority.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-022",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 12432,
+            "end_char": 12471
+          },
+          "output_span": {
+            "start_char": 12459,
+            "end_char": 12499
+          },
+          "source_quote": "这种方式其实比写规范更普遍，也更贴近日常行为模式。如果人工智能智能体要融入团队",
+          "output_quote": "这种方式其实比写规范更普遍，也更贴近日常行为模式。\n如果人工智能智能体要融入团队",
+          "explanation": "Only a paragraph boundary is added between the prevalence of conversational development and the agent-integration conditional. No speaker, condition, or claim is changed.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-023",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 14038,
+            "end_char": 14072
+          },
+          "output_span": {
+            "start_char": 14066,
+            "end_char": 14099
+          },
+          "source_quote": "工程师能愿意写代码，但大型团队投入最多时间的活动往往是代码审查和验证",
+          "output_quote": "工程师愿意写代码，但大型团队投入最多时间的活动往往是代码审查和验证",
+          "explanation": "A stray ability verb is removed from an ill-formed willingness expression. Earlier unchanged text says engineers enjoy writing code, and the following paragraph again calls writing enjoyable. In that full context the repair preserves willingness and the comparison with time spent reviewing; it does not remove a coherent separate ability claim.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-024",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 14697,
+            "end_char": 14730
+          },
+          "output_span": {
+            "start_char": 14724,
+            "end_char": 14755
+          },
+          "source_quote": "Alex：对我来说，我感受到的最大变化是“能力被大幅增强”的感觉。",
+          "output_quote": "Alex：对我来说，最大的变化是感到自己的“能力被大幅增强”。",
+          "explanation": "The redundant first-person framing is simplified while retaining Alex, the personal perspective, the superlative biggest change, and the fact that enhanced ability is described as a feeling. It does not turn the feeling into an externally verified measurement.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-025",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 15603,
+            "end_char": 15664
+          },
+          "output_span": {
+            "start_char": 15628,
+            "end_char": 15687
+          },
+          "source_quote": "OpenAI 的技术复杂度非常高，而过去一年我们看到全公司各类角色的使用技巧都大幅提升，而 Codex 的影响也随之增强。",
+          "output_quote": "OpenAI 的技术复杂度非常高。过去一年，我们看到全公司各类角色的使用技巧都大幅提升，Codex 的影响也随之增强。",
+          "explanation": "The chained clauses become two sentences. High technical complexity, improvements across roles over the past year, and the corresponding increase in Codex impact all remain. The original repeated connective did not specify an additional causal mechanism or exception.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-026",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 16053,
+            "end_char": 16078
+          },
+          "output_span": {
+            "start_char": 16076,
+            "end_char": 16104
+          },
+          "source_quote": "而现在的团队基本都是高级用户级别地使用 Codex",
+          "output_quote": "而现在的团队使用 Codex 基本都达到了高级用户的水平",
+          "explanation": "The team's current use is restated as generally being at an advanced-user level. The current-time reference and the qualifier generally remain; the following reported engineering-time comparison is untouched.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-027",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 16267,
+            "end_char": 16346
+          },
+          "output_span": {
+            "start_char": 16293,
+            "end_char": 16370
+          },
+          "source_quote": "整个公司因为 Codex 而加速，从研究到模型训练速度，再到设计与营销，我们经常看到产品营销人员直接在 Slack 里更新字符串或文案，这些都是变化的一部分。",
+          "output_quote": "从研究和模型训练，到设计与营销，整个公司都因为 Codex 而加速。我们经常看到产品营销人员直接在 Slack 里更新字符串或文案，这些都是变化的一部分。",
+          "explanation": "The organizational scope moves to the start of the sentence. Research, model training, design, and marketing are all retained under the explicit acceleration claim. The Slack string/copy-update example, product-marketing actor, and observation frequency also remain; dropping the repeated noun speed does not remove model-training acceleration.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-028",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 16572,
+            "end_char": 16630
+          },
+          "output_span": {
+            "start_char": 16596,
+            "end_char": 16653
+          },
+          "source_quote": "你仍然需要对自己构建的东西的本质有理解，但具体细节将越来越抽象，就像你不用懂汇编语言也能写 Swift，一样的道理。",
+          "output_quote": "你仍然需要理解自己构建的东西的本质，但具体细节将越来越抽象。就像你不用懂汇编语言也能写 Swift，道理是一样的。",
+          "explanation": "The requirement to understand what one is building, the increasing abstraction of detail, and the assembly-language/Swift analogy are retained. The split introduces no additional expertise requirement and does not remove the ability to write Swift without understanding assembly.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-029",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 16839,
+            "end_char": 16875
+          },
+          "output_span": {
+            "start_char": 16862,
+            "end_char": 16898
+          },
+          "source_quote": "未来 Codex 甚至能自动告诉你如何设置环境，甚至在代码库里自动设置。",
+          "output_quote": "未来 Codex 甚至能自动告诉你如何设置环境，还能在代码库里自动设置。",
+          "explanation": "The repeated escalation marker becomes an additive connector. Both future capabilities remain: advising how to configure an environment and configuring it automatically in the repository. The future framing is preserved, so neither capability becomes a claim about current availability.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-030",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 17124,
+            "end_char": 17140
+          },
+          "output_span": {
+            "start_char": 17147,
+            "end_char": 17161
+          },
+          "source_quote": "一切所有的前后环节都显得更关键了",
+          "output_quote": "所有的前后环节都显得更关键了",
+          "explanation": "One of two redundant universal expressions is removed. The remaining universal still applies to all preceding/following stages and retains the comparative importance claim.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-031",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 17342,
+            "end_char": 17365
+          },
+          "output_span": {
+            "start_char": 17363,
+            "end_char": 17388
+          },
+          "source_quote": "尤其是面对被现有 AI 工具严重服务不足的客户",
+          "output_quote": "尤其是面对现有 AI 工具远远无法满足其需求的客户",
+          "explanation": "Severely underserved customers are paraphrased as customers whose needs current AI tools fall far short of meeting. The affected customers, current tools, and strong degree of insufficiency remain. No particular missing feature, customer need, or guarantee of startup success is added by this operation.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-032",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 17672,
+            "end_char": 17704
+          },
+          "output_span": {
+            "start_char": 17695,
+            "end_char": 17721
+          },
+          "source_quote": "Alex：一个我不断提醒自己的事情是，像 Codex 这样的产品",
+          "output_quote": "Alex：我不断提醒自己：像 Codex 这样的产品",
+          "explanation": "The front-loaded nominal framing becomes a direct reminder. Alex's ongoing self-reminder and the following claim about actually using Codex-like tools remain. The deleted indefinite noun does not remove a distinct enumerated example.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-033",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 18475,
+            "end_char": 18497
+          },
+          "output_span": {
+            "start_char": 18492,
+            "end_char": 18512
+          },
+          "source_quote": "做过一个关于屏幕共享与结对编程方向的创业项目",
+          "output_quote": "做过一个屏幕共享与结对编程方向的创业项目",
+          "explanation": "The redundant about marker is removed. The past startup project and both of its stated areas, screen sharing and pair programming, remain unchanged.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-034",
+          "disposition": "uncertain",
+          "source_span": {
+            "start_char": 18898,
+            "end_char": 18933
+          },
+          "output_span": {
+            "start_char": 18913,
+            "end_char": 18951
+          },
+          "source_quote": "想象我们要覆盖的所有世界范围的任务，智能体每天有可能帮助你成千上万次。",
+          "output_quote": "想象一下，我们要覆盖世界范围内的所有任务，智能体每天有可能帮助你成千上万次。",
+          "explanation": "The source can mean all worldwide tasks that the team intends to cover, with the relative clause delimiting that task set. The candidate explicitly states an intention to cover all tasks worldwide. Because the source is awkward, a universal intended reading is also possible, but the candidate selects the broader reading. The later possibility of thousands of helps per day does not settle this scope question.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-035",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 18986,
+            "end_char": 19065
+          },
+          "output_span": {
+            "start_char": 19004,
+            "end_char": 19095
+          },
+          "source_quote": "真正理想的方式是，当你专注于某个工作，比如查看仪表盘时指标突然下降，智能体可以在右侧出现，为你解释原因，并告诉你可能的解决方案，而且它只在你关心的那一刻出现。",
+          "output_quote": "真正理想的方式，是让智能体在你专注于某项工作时提供帮助。比如，你查看仪表盘时，指标突然下降，智能体可以在右侧出现，为你解释原因，并告诉你可能的解决方案，而且它只在你关心的那一刻出现。",
+          "explanation": "A general ideal of assistance during focused work is separated from the dashboard example. The example already supplied that relationship, and its falling metric, right-side appearance, explanation, possible solutions, and only-at-the-relevant-moment condition all remain. No always-on intervention or confirmed solution replaces the original conditional help.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-036",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 19221,
+            "end_char": 19236
+          },
+          "output_span": {
+            "start_char": 19251,
+            "end_char": 19264
+          },
+          "source_quote": "在你最需要的恰当时刻表现出智能",
+          "output_quote": "在你最需要的时候表现出智能",
+          "explanation": "The overlapping appropriate-time wording is shortened while retaining the moment of greatest user need. The immediate contrast with notification bombardment remains. In this context no independently specified timing condition is lost.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-037",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 19363,
+            "end_char": 19381
+          },
+          "output_span": {
+            "start_char": 19391,
+            "end_char": 19410
+          },
+          "source_quote": "确实有很多意想不到的用法，但目前为止",
+          "output_quote": "确实有很多意想不到的用法，但到目前为止",
+          "explanation": "A missing temporal preposition is added. The claim remains bounded by the present and does not turn the current technical-use concentration into a permanent restriction.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-038",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 20636,
+            "end_char": 20661
+          },
+          "output_span": {
+            "start_char": 20665,
+            "end_char": 20690
+          },
+          "source_quote": "Lenny ：Codex 的自我训练到底意味着什么",
+          "output_quote": "Lenny：Codex 的自我训练到底意味着什么？",
+          "explanation": "Spacing is normalized and a question mark is added. Lenny remains the speaker and the exact self-training question remains; no answer or extra assertion is supplied.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-039",
+          "disposition": "pass",
+          "source_span": {
+            "start_char": 20737,
+            "end_char": 20762
+          },
+          "output_span": {
+            "start_char": 20766,
+            "end_char": 20794
+          },
+          "source_quote": "所以 Codex 会在循环中持续检查这些图表的表现",
+          "output_quote": "所以 Codex 会在循环中持续检查这些图表所显示的情况",
+          "explanation": "Checking the charts' performance becomes checking the situation they display. The surrounding training-monitoring explanation explicitly concerns system conditions inferred from charts. Continuous checking in a loop remains, and the following possibility of repair/restart authority and continuing exploration are untouched.",
+          "judgment_type": "model_only"
+        },
+        {
+          "operation_id": "doc-04-op-040",
+          "disposition": "uncertain",
+          "source_span": {
+            "start_char": 21453,
+            "end_char": 21475
+          },
+          "output_span": {
+            "start_char": 21485,
+            "end_char": 21507
+          },
+          "source_quote": "如果你明年是一家创业公司，正在构建一个新应用",
+          "output_quote": "如果你明年在一家创业公司，正在构建一个新应用",
+          "explanation": "The source addresses the reader hypothetically as a startup company; the candidate locates the reader in a startup company. The nearby SAP example addresses someone working at a company, which makes the repair plausible, but organizational agency and an individual's affiliation are not literally the same. The source may be ordinary company-addressed metonymy rather than a missing preposition. Both retain next year and building a new application, but source-only equivalence of the actor is not certain.",
+          "judgment_type": "model_only"
+        }
+      ],
+      "new_preservation_issues": [
+        {
+          "issue_id": "doc-04-preservation-012",
+          "operation_id": "doc-04-op-012",
+          "disposition": "fail",
+          "issue_type": "extent_replaced_by_priority",
+          "summary": "The majority/extent qualifier becomes a main-priority qualifier.",
+          "source_quote": "因此，我们与 Codex 合作的大部分目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "output_quote": "因此，我们与 Codex 合作的主要目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "explanation": "The source qualifies the extent of the goals: most of them concern building the default-helping teammate. The candidate substitutes priority: this is the main goal. A majority/extent claim and a priority claim are not equivalent, and the original extent qualification disappears. The nearby discussion supports the aspiration but does not establish that these two qualifications can be interchanged.",
+          "smallest_safe_correction": "Preserve the original extent qualifier in a separate future revision; do not overwrite the frozen candidate."
+        },
+        {
+          "issue_id": "doc-04-preservation-008",
+          "operation_id": "doc-04-op-008",
+          "disposition": "uncertain",
+          "issue_type": "unverified_interpretation_of_malformed_causal_question",
+          "summary": "The candidate supplies a specific explanation of the interviewer's ignorance that the malformed original does not uniquely establish.",
+          "source_quote": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+          "output_quote": "还是因为我对开源软件的运作方式不够了解，才没看出团队为什么能这样快速前进？",
+          "explanation": "The source question has an ill-formed causal link: the interviewer's incomplete understanding is grammatically connected to the team advancing quickly. The candidate instead says the interviewer has not understood why the team advances quickly. The surrounding question makes that repair plausible, but the new mental-state clause is an interpretation that the Chinese source does not uniquely establish. This is not evidence that the original literally intended the interviewer to cause the team's speed.",
+          "smallest_safe_correction": "Keep this repair unresolved or check it separately with an authorized source; do not treat the plausible interpretation as verified preservation."
+        },
+        {
+          "issue_id": "doc-04-preservation-034",
+          "operation_id": "doc-04-op-034",
+          "disposition": "uncertain",
+          "issue_type": "possible_broadening_of_task_domain",
+          "summary": "A potentially delimited set of intended tasks becomes an explicit all-worldwide-tasks objective.",
+          "source_quote": "想象我们要覆盖的所有世界范围的任务，智能体每天有可能帮助你成千上万次。",
+          "output_quote": "想象一下，我们要覆盖世界范围内的所有任务，智能体每天有可能帮助你成千上万次。",
+          "explanation": "The source can mean all worldwide tasks that the team intends to cover, with the relative clause delimiting that task set. The candidate explicitly states an intention to cover all tasks worldwide. Because the source is awkward, a universal intended reading is also possible, but the candidate selects the broader reading. The later possibility of thousands of helps per day does not settle this scope question.",
+          "smallest_safe_correction": "Retain a task-set formulation that does not add a universal organizational commitment, or leave the disputed source wording unresolved in a new candidate."
+        },
+        {
+          "issue_id": "doc-04-preservation-040",
+          "operation_id": "doc-04-op-040",
+          "disposition": "uncertain",
+          "issue_type": "possible_change_of_actor_perspective",
+          "summary": "A hypothetical startup as addressee becomes a person in a startup.",
+          "source_quote": "如果你明年是一家创业公司，正在构建一个新应用",
+          "output_quote": "如果你明年在一家创业公司，正在构建一个新应用",
+          "explanation": "The source addresses the reader hypothetically as a startup company; the candidate locates the reader in a startup company. The nearby SAP example addresses someone working at a company, which makes the repair plausible, but organizational agency and an individual's affiliation are not literally the same. The source may be ordinary company-addressed metonymy rather than a missing preposition. Both retain next year and building a new application, but source-only equivalence of the actor is not certain.",
+          "smallest_safe_correction": "Avoid converting the organization-addressed reading into an individual affiliation without separate support; a future revision can preserve the organizational perspective."
+        }
+      ],
+      "preexisting_content_issues": [
+        {
+          "issue_id": "doc-04-source-001",
+          "issue_type": "editorial_summary_qualification_mismatch",
+          "explanation": "The editorial framing presents humans rather than model capability as the actual AGI limitation, while the interview later calls humans one of several limitations. The candidate retains the stronger framing instead of introducing it. This is an internal attribution/qualification discrepancy, not an externally checked factual verdict.",
+          "evidence": [
+            {
+              "source_quote": "对于\n未来 AGI 会何时到来\n，Alexander Embiricos 也给出了一个有趣的视角，\n他认为当前真正的限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限\n，正在拖累其发展\n。",
+              "output_quote": "对于未来 AGI 会何时到来，Alexander Embiricos 也给出了一个有趣的视角。他认为，当前真正限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限，正在拖累其发展。"
+            },
+            {
+              "source_quote": "现在有许多限制因素，但我认为最被低估的限制因素之一其实是人类本身，比如人的打字速度、提示写作速度、人类的多任务能力。",
+              "output_quote": "现在有许多限制因素，但我认为最被低估的限制因素之一其实是人类本身，比如人的打字速度、提示写作速度、人类的多任务能力。"
+            }
+          ]
+        },
+        {
+          "issue_id": "doc-04-source-002",
+          "issue_type": "unclear_platform_store_association",
+          "explanation": "The existing Chinese article associates the Android launch with App Store ranking, while later passages use generic app-store language. The platform/store relationship is not explained within the article. The candidate retains it; this review does not externally verify or silently correct the claim.",
+          "evidence": [
+            {
+              "source_quote": "Sora 团队更是依靠 Codex，在短短 28 天时间，从 0 到 1 完成 Android 应用的上线，直接冲到 App Store 第一。",
+              "output_quote": "Sora 团队更是依靠 Codex，在短短 28 天时间，从 0 到 1 完成 Android 应用的上线，直接冲到 App Store 第一。"
+            }
+          ]
+        },
+        {
+          "issue_id": "doc-04-source-003",
+          "issue_type": "unexplained_milestone_relationship",
+          "explanation": "The article preserves 18 days to employee testing, another 10 days to public launch, a 28-day total, two weeks to launch readiness, and a four-week process. The different milestones might be compatible, but their relationship is not explained. These are pre-existing descriptions; the candidate neither removes nor reconciles them.",
+          "evidence": [
+            {
+              "source_quote": "Sora 安卓版是一个全新应用，我们从零开发，只用了 18 天就做出员工可试用版本，又过了 10 天发布给公众。换句话说，从开始到正式上线只用了 28 天。",
+              "output_quote": "Sora 安卓版是一个全新应用，我们从零开发，只用了 18 天就做出员工可试用版本，又过了 10 天发布给公众。换句话说，从开始到正式上线只用了 28 天。"
+            },
+            {
+              "source_quote": "结果就是，团队只用了两周时间就完成上线准备，而整个四周流程包括投产上线。",
+              "output_quote": "结果就是，团队只用了两周时间就完成上线准备，而整个四周流程包括投产上线。"
+            }
+          ]
+        },
+        {
+          "issue_id": "doc-04-source-004",
+          "issue_type": "unlabeled_apparent_turn_transition",
+          "explanation": "An unlabeled paragraph summarizes what the team did using second-person plural, and the next paragraph explicitly begins Alex. It may be an interviewer turn, but the printed Chinese text does not identify it. The candidate retains the ambiguity and adds no speaker label.",
+          "evidence": [
+            {
+              "source_quote": "因此，我的理解是：最初版本的 Codex 太“未来”，像一个远程云端智能体，以异步方式工作；而你们所做的，是把它重新拉回开发者熟悉的环境，让它在 IDE 本地工作，使用户更容易习惯新的开发方式。",
+              "output_quote": "因此，我的理解是：最初版本的 Codex 太“未来”，像一个远程云端智能体，以异步方式工作；而你们所做的，是把它重新拉回开发者熟悉的环境，让它在 IDE 本地工作，使用户更容易习惯新的开发方式。"
+            },
+            {
+              "source_quote": "Alex：这很有意思。在 OpenAI 内部，我们长期依赖 dogfooding（自己用自己做的产品）来推进产品的发展。",
+              "output_quote": "Alex：这很有意思。在 OpenAI 内部，我们长期依赖 dogfooding（自己用自己做的产品）来推进产品的发展。"
+            }
+          ]
+        },
+        {
+          "issue_id": "doc-04-source-005",
+          "issue_type": "growth_metric_and_baseline_ambiguity",
+          "explanation": "The opening describes user growth, whereas later passages describe usage growth. The summary also uses a past-six-month window while the interview says since August. The article does not establish identical metrics or explicitly reconcile the windows. The candidate keeps these distinctions and does not independently verify them.",
+          "evidence": [
+            {
+              "source_quote": "自 8 月 GPT-5 发布以来，\nCodex\n展现出惊人的爆发力，\n用户增长 20 倍\n，每周处理数万亿 tokens，成为了 Open AI 最受欢迎的编程智能体。",
+              "output_quote": "自 8 月 GPT-5 发布以来，Codex 展现出惊人的爆发力，用户增长 20 倍，每周处理数万亿 tokens，成为了 Open AI 最受欢迎的编程智能体。"
+            },
+            {
+              "source_quote": "过去 6 个月里，Codex 的使用量增长了 20 倍。",
+              "output_quote": "过去 6 个月里，Codex 的使用量增长了 20 倍。"
+            },
+            {
+              "source_quote": "我们上次公开的数据是，自八月以来 Codex 的使用增长超过十倍，而现在已经达到二十倍。",
+              "output_quote": "我们上次公开的数据是，自八月以来 Codex 的使用增长超过十倍，而现在已经达到二十倍。"
+            }
+          ]
+        },
+        {
+          "issue_id": "doc-04-source-006",
+          "issue_type": "source_ambiguities_under_interpretive_repairs",
+          "explanation": "The malformed causal question, ambiguous task-domain phrasing, and startup-as-addressee wording are already present in the original. Their presence is separate from the candidate's unverified choices recorded as uncertain operations 008, 034, and 040. No original intention or external fact is inferred.",
+          "evidence": [
+            {
+              "source_quote": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+              "output_quote": "还是因为我对开源软件的运作方式不够了解，才没看出团队为什么能这样快速前进？"
+            },
+            {
+              "source_quote": "想象我们要覆盖的所有世界范围的任务，智能体每天有可能帮助你成千上万次。",
+              "output_quote": "想象一下，我们要覆盖世界范围内的所有任务，智能体每天有可能帮助你成千上万次。"
+            },
+            {
+              "source_quote": "如果你明年是一家创业公司，正在构建一个新应用",
+              "output_quote": "如果你明年在一家创业公司，正在构建一个新应用"
+            }
+          ]
+        }
+      ],
+      "readability_observation": {
+        "status": "model_observation_only_no_reader_benefit_claim",
+        "observed_local_repairs": "The candidate joins fragmented opening lines, fixes several classifiers and malformed attachments, replaces a context-supported token mistranslation, removes doubled framing, and adds three paragraph boundaries while preserving the long-article format. These are visible editing changes, not measured improvements in willingness to continue reading.",
+        "remaining_problems": [
+          "The editorial summary and the interview sometimes differ in qualification or metric, including the AGI bottleneck framing and user-versus-usage growth. A fluency repair does not resolve their evidential relationship.",
+          "The unlabeled apparent interviewer paragraph remains an attribution obstacle. Correcting it would require source support, not a guessed speaker.",
+          "The model/API/framework and proactive-teammate explanations recur at length, and the Atlas/Sora acceleration accounts repeat with somewhat different details. Any structural compression would need a detail-level inventory to retain distinct anecdotes and milestones.",
+          "The source phrase about Branded Codebase and the repeated shifts among models, products, and brands remain difficult to interpret from the Chinese text alone. They should remain flagged rather than silently normalized to a guessed proper name.",
+          "Some long paragraphs and mixed-language expressions remain; the small number of paragraph splits does not establish that the whole interview is easy to follow."
+        ],
+        "possible_next_work": "A separately versioned revision could first preserve the disputed qualifier and keep the uncertain interpretations explicitly unresolved. A further structure pass could map repeated themes and distinct supporting details before changing organization. Reader benefit would require a whole-article comparison and human evidence."
+      },
+      "evidence_validation": {
+        "all_40_operation_source_quotes_match": true,
+        "all_40_operation_output_quotes_match_at_computed_spans": true,
+        "operation_replay_exact": true,
+        "quoted_shared_context_found_in_both_documents": true,
+        "source_and_output_hashes_match_validation_summary": true,
+        "operations_hash_matches_validation_summary": true,
+        "hash_stability_checked_before_write": true
+      }
+    }
+  ]
+}

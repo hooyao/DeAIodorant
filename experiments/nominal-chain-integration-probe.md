@@ -1,87 +1,53 @@
-# Frozen Nominal-Chain Integration Probe
+# 冻结的名词链整合探测
 
-## Status
+## 状态
 
-Protocol `nominal-chain-integration-probe-0.2` is frozen before any candidate
-output is produced or inspected. Version 0.1 attempted to parse complete article
-bodies. It was terminated without writing results when a 1,501-line tutorial
-spent several minutes inside Stanza because code and DOM fragments were filtered
-only after parsing. Version 0.2 freezes a pre-parse complete-prose gate derived
-from the existing reader-passage reconstruction logic. This operational change
-does not use candidate outcomes or alter the nominal-chain thresholds.
+协议 `nominal-chain-integration-probe-0.2` 在产生或查看候选输出前冻结。版本 0.1 尝试解析全文；由于代码和 DOM 片段在解析后才过滤，一篇 1,501 行教程使 Stanza 运行数分钟，最终在未写结果时终止。版本 0.2 根据已有读者段落重建逻辑冻结解析前完整正文门槛。这一操作变化未使用候选结果，也未改变名词链阈值。
 
-The probe is deterministic discovery, not a reader-quality score, authorship
-detector, or product rule.
+探测属于确定性发现，不是读者质量分数、作者身份检测器或产品规则。
 
-## Hypothesis
+## 假设
 
-A reader may recognize every local term but still fail to segment a long
-head-final nominal phrase on first pass. The narrow target is a pre-head chain
-that supplies several modifiers without an overt boundary before the head noun
-arrives. This is more specific than sentence length, abstract-word density, or
-generic proposition decompression.
+读者可能识别每个局部术语，却无法首次阅读时切分长后置中心名词短语。狭义目标是在中心名词到来之前给出多个修饰语、但没有显式边界的链条。它比句长、抽象词密度或通用命题解压缩更具体。
 
-The reader-localized phrase `AI 原生时代全新算力服务需求` motivates the
-hypothesis. It does not define a corpus label or authorize threshold tuning.
+读者定位的 `AI 原生时代全新算力服务需求` 引出假设，但不定义语料标签，也不授权调整阈值。
 
-## Frozen strict candidate
+## 冻结的严格候选
 
-For every Stanza `NOUN` or `PROPN` head, collect left-side `acl`, `amod`,
-`compound`, and `nmod` dependents and their subtrees. The contiguous span from
-the earliest modifier token through the head is a strict candidate only when:
+对每个 Stanza `NOUN` 或 `PROPN` 中心词，收集左侧 `acl`、`amod`、`compound`、`nmod` 依存项及其子树。从最早修饰 token 到中心词的连续片段，仅在以下条件全部满足时成为严格候选：
 
-1. at least five non-punctuation lexical tokens precede the head;
-2. the pre-head material contains at least 10 visible characters;
-3. at least three nominal-modifier dependency relations occur inside the span;
-4. no verb occurs before the head inside the span;
-5. no punctuation or symbol interrupts the span;
-6. none of `的`, `之`, `及`, `与`, `和`, `或`, `、`, or `以及`, and no
-   `CCONJ`, supplies an overt segmentation boundary;
-7. the complete sentence contains a verb;
-8. at least one lexical sentence token lies outside the candidate phrase;
-9. the sentence is not recognized as code or a URL-bearing command fragment.
+1. 中心词前至少五个非标点词汇 token；
+2. 中心词前材料至少 10 个可见字符；
+3. 片段内至少三个名词修饰依存关系；
+4. 片段内中心词前没有动词；
+5. 没有标点或符号打断片段；
+6. 没有 `的`、`之`、`及`、`与`、`和`、`或`、`、`、`以及` 或 `CCONJ` 提供显式分割边界；
+7. 完整句含动词；
+8. 至少一个句子词汇 token 位于候选短语之外；
+9. 句子未被识别为代码或带 URL 的命令片段。
 
-Named entities, numbers, nominal-chain depth, and CJK length are recorded as
-diagnostics but do not decide admission. No abstract-word lexicon enters the
-strict rule.
+命名实体、数字、名词链深度和 CJK 长度作为诊断记录，不决定准入。严格规则不引入抽象词表。
 
-Before Stanza, non-overlapping source lines are rejoined into complete prose
-passages. A passage must contain 120–360 CJK characters, at most 520 total
-characters, at least two Chinese sentence-end marks, at least 50% CJK among
-visible characters, and no URL, code cue, profile metadata, caption, dependent
-opening, external figure reference, or list-heavy fragmentation. These gates
-were already used for post-period reader-passage preparation; they are applied
-here before parsing to avoid changing syntax through arbitrary fixed-size
-chunks.
+Stanza 之前，将不重叠来源行重组为完整正文段落。要求 120–360 个 CJK 字符、总字符不超过 520、至少两个中文句末标记、可见字符中 CJK 至少 50%，且没有 URL、代码线索、简介元数据、图注、依赖前文的开头、外部图引用或大量列表碎片。这些门槛已经用于后时期读者段落准备；此处提前到解析前应用，以免固定长度任意分块改变句法。
 
-## Corpus and separation
+## 语料与分离
 
-The scan may open only:
+扫描仅可打开：
 
-- the 67 `development` documents in `post_reader_handoff_v2`;
-- the 93 `discovery_reserve` documents in `post_reader_handoff_v3`, which are
-  already feature-discovery exposed by the earlier frozen motif inventory.
+- `post_reader_handoff_v2` 中的 67 篇 `development` 文档；
+- `post_reader_handoff_v3` 中的 93 篇 `discovery_reserve` 文档，已被先前冻结模式清点暴露于特征发现。
 
-The 30-document v2 validation reserve remains unopened. No pre/post effect is
-estimated because the available corpora are not source-, topic-, format-,
-length-, and visibility-matched.
+v2 的 30 篇 validation reserve 保持未打开。现有语料未按来源、主题、体裁、篇幅和传播可见度匹配，因此不估计前后时间效应。
 
-## Decision gate
+## 决策门槛
 
-A construction can proceed to edit-operator design only if strict candidates
-appear in at least six independent documents across at least three sources.
-Passing frequency is not sufficient: the spans must still form one coherent
-construction, exclude headings and fragments, and support one bounded edit
-without deleting propositions, entities, quantities, negation, modality,
-attribution, or voice.
+严格候选至少出现在三个来源的六篇独立文章中，才可进入编辑算子设计。频次通过仍不充分：片段必须构成同一种一致结构，排除标题及碎片，并支持在不删除命题、实体、数量、否定、模态、归因或风格的前提下进行同一种限定编辑。
 
-The thresholds and boundary list must not be relaxed after outcomes. If the
-reader example itself is not localized, record probe failure rather than
-changing the rule.
+结果后不得放宽阈值或边界表。若无法定位读者示例本身，应记录探测失败，不改规则。
 
-## Reproduction
+## 复现
 
-Run only on `gx10`:
+仅在 `gx10` 运行：
 
 ~~~bash
 PYTHONPATH=src .venv/bin/python experiments/nominal_chain_integration_probe.py \
@@ -93,52 +59,31 @@ PYTHONPATH=src .venv/bin/python experiments/nominal_chain_integration_probe.py \
   --seed 2026083001
 ~~~
 
-Candidate text, parses, and model files remain in ignored local or remote
-storage. Only aggregate results, frozen definitions, and artifact identities
-may be committed.
+候选正文、解析和模型文件保留在被忽略的本地或远程存储。只可提交汇总结果、冻结定义及产物身份。
 
-## Result
+## 结果
 
-Version 0.2 ran on `gx10` with Stanza 1.14.0, the `gsdsimp` package, CUDA, and
-seed `2026083001`. The model fingerprint is
-`5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9`.
+版本 0.2 在 `gx10` 上运行，使用 Stanza 1.14.0、`gsdsimp` 包、CUDA 及 seed `2026083001`。模型指纹为 `5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9`。
 
-The scan opened the requested 160 discovery/development documents and no v2
-validation-reserve body. The pre-parse gate retained 1,393 non-overlapping
-passages from 133 documents. The reader example was localized exactly as one
-candidate: six pre-head lexical tokens, 12 visible characters, six nominal
-relations, no boundary, and nominal-chain depth two.
+扫描打开请求的 160 篇 discovery/development 文档，未打开 v2 validation reserve 正文。解析前门槛保留 133 篇文章中的 1,393 个不重叠段落。读者示例精确定位为一个候选：中心词前六个词汇 token、12 个可见字符、六个名词关系、无边界、名词链深度二。
 
-The corpus scan found 87 strict candidates in 41 documents across all five
-sources, so the frequency gate passed. Structural coherence did not:
+扫描在五个来源、41 篇文章中找到 87 个严格候选，频次门槛通过，结构一致性失败：
 
-- 47 instances in 30 documents contain a proper-name or numeric anchor;
-- 67 of 87 instances have nominal-chain depth one;
-- the set mixes report and program names, model and hardware specifications,
-  lexicalized technical compounds, company descriptions, and genuine dense
-  modifier strings;
-- Stanza also treats predicate-like forms such as `修复`, `追平`, `排名`, and
-  `去噪` as nominal heads in several contexts.
+- 30 篇文章中的 47 个实例含专名或数字锚点；
+- 87 个中的 67 个名词链深度为一；
+- 集合混合报告和计划名称、模型和硬件规格、词汇化技术复合词、公司描述及真正的密集修饰串；
+- 在若干上下文中，Stanza 也将 `修复`、`追平`、`排名`、`去噪` 等类似谓词的形式当成名词中心词。
 
-An audit-only diagnostic subset removed proper and numeric anchors and required
-depth at least two. It retained 13 instances in seven documents and four
-sources, but six came from one QbitAI document. The remaining cases still mix a
-paper title, an official program name, ordinary technical compounds, a parsed
-contrast, and possible integration problems. They do not support one bounded
-edit operator across six independent documents.
+仅供审查的诊断子集去掉专名和数字锚点，要求深度至少二，保留四个来源、七篇文章中的 13 个实例，但六个来自同一篇量子位文章。其余仍混合论文标题、官方计划名称、普通技术复合词、被解析出的对比及可能的整合问题，无法支持同一个限定编辑算子覆盖六篇独立文章。
 
-Reject v0.2 as an intervention selector. Do not tighten its thresholds or add a
-post-hoc head-noun blacklist against these results. No Project 8 is prepared.
-Further work would need an independently frozen lexical-familiarity or phrase-
-boundary signal, or new reader-localized examples, before another intervention
-attempt.
+否决 v0.2 作为干预筛选器。不得依据结果收紧阈值或事后添加中心名词黑名单。不准备 Project 8。再次尝试干预前，需要独立冻结的词汇熟悉度／短语边界信号，或新的读者定位示例。
 
-## Artifact identity
+## 产物身份
 
-| Artifact | SHA-256 |
+| 产物 | SHA-256 |
 |---|---|
-| Probe script used remotely | `1a5814cac645ac55e24c8b4494dd7854e42c2aa4fafbae901d235bb121b2c121` |
-| Summary | `2d48f84b5c954b6d6c909fb7fd394f868c34e47c01cc1bbb97ded3a8f0a0f0d4` |
-| Candidate instances | `abfb5a5e9181c5b0e87d5636f649766c1c82437326ac5a0740229eec89e674c2` |
-| v2 handoff manifest | `ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01` |
-| v3 handoff manifest | `5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac` |
+| 远程使用的探测脚本 | `1a5814cac645ac55e24c8b4494dd7854e42c2aa4fafbae901d235bb121b2c121` |
+| 摘要 | `2d48f84b5c954b6d6c909fb7fd394f868c34e47c01cc1bbb97ded3a8f0a0f0d4` |
+| 候选实例 | `abfb5a5e9181c5b0e87d5636f649766c1c82437326ac5a0740229eec89e674c2` |
+| v2 交接 manifest | `ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01` |
+| v3 交接 manifest | `5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac` |

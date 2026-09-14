@@ -1,0 +1,106 @@
+{
+  "frame_index": 8659,
+  "url": "https://www.infoq.cn/article/vWvl2cJwD62P6KW1qg5f",
+  "doc_id": "4f83cc9086d7fa6b52bd5b8e",
+  "intended_cohort": "post",
+  "sitemap_lastmod": null,
+  "publication_date": "unknown_until_article_capture",
+  "exclusion_reasons": [],
+  "selected": true,
+  "selection_rank": 12,
+  "capture": {
+    "url": "https://www.infoq.cn/article/vWvl2cJwD62P6KW1qg5f",
+    "requested_at": "2026-09-14T08:39:59.059258+00:00",
+    "capture_file": "raw/4f83cc9086d7fa6b52bd5b8e.html",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/vWvl2cJwD62P6KW1qg5f",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 08:40:00 GMT"
+    },
+    "completed_at": "2026-09-14T08:40:00.142996+00:00",
+    "complete_response": true,
+    "bytes": 332146,
+    "sha256": "f5b35d61b40b41fd1526b0278fddd24d001b9b2bef98e9f3f03fe751bf27cefe"
+  },
+  "admission_status": "unreviewed_staging_not_admitted",
+  "smell_label": null,
+  "authorship_label": null,
+  "training_rights": "unverified",
+  "quality_status": "unreviewed_no_quality_admission",
+  "visibility_status": "unreviewed_snapshot_only",
+  "exposure_status": "identity_checked_near_duplicate_and_missing_historical_handoffs_pending",
+  "status": "captured_unreviewed",
+  "metadata": {
+    "doc_id": "4f83cc9086d7fa6b52bd5b8e",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/vWvl2cJwD62P6KW1qg5f",
+    "title": "打破孤岛：Netflix推出Upper元模型实现内容工程一致性",
+    "authors": [],
+    "translators": [
+      "平川"
+    ],
+    "translation_evidence": [
+      "explicit_translator_field",
+      "original_link_marker"
+    ],
+    "published_at": "2025-12-18",
+    "modified_at": null,
+    "collected_at": "2026-09-14T08:39:59.059258+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 8582,
+    "comments": 0,
+    "likes": 0,
+    "collects": 1,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 953,
+    "text_chars": 1439
+  },
+  "body_path": "documents/4f83cc9086d7fa6b52bd5b8e/body.txt",
+  "content_hash": "e1635e37cf42d6d605c8592cc52c2052bfc9c909369ad108d2d1c2e22ddb8091",
+  "body_file_sha256": "e1635e37cf42d6d605c8592cc52c2052bfc9c909369ad108d2d1c2e22ddb8091",
+  "embedded_publication_milliseconds": 1766025000767,
+  "published_timestamp_utc": "2025-12-18T02:30:00.767000+00:00",
+  "published_date_asia_shanghai": "2025-12-18",
+  "actual_cohort": "post",
+  "boundary_timezone_ambiguity": false,
+  "intended_period_match": true,
+  "sitemap_lastmod_is_publication_date": false,
+  "embedded_scalar_time_fields": {
+    "publish_time": 1766025000767,
+    "ctime": 1766024990059,
+    "utime": 1766024990059
+  },
+  "declared_canonical_urls": [
+    "https://www.infoq.cn/article/vWvl2cJwD62P6KW1qg5f"
+  ],
+  "canonical_url_mismatch": false,
+  "known_exact_content_overlap": false,
+  "translation_status": "translated",
+  "block_count": 13,
+  "media_reference_count": 3,
+  "link_count": 19,
+  "multimedia_status": "full_captured_text_only_media_references_uninspected",
+  "utf8_decode_replacement_count": 0,
+  "legacy_extractor_exclusions": [
+    "deterministic_translation_evidence"
+  ],
+  "exclusions_found": [],
+  "provenance": {
+    "stratum": "translated",
+    "method": "fixed_existing_deterministic_evidence_rules",
+    "evidence": [
+      "explicit_translator_field",
+      "original_link_marker"
+    ],
+    "direct_expression_matches": [],
+    "original_chinese_certified": false,
+    "production_history_verified": false,
+    "translation_is_research_exclusion": false
+  },
+  "research_retained": true,
+  "intended_period_mismatch_is_reassigned_by_actual_date": true
+}

@@ -1,0 +1,60 @@
+{
+  "byte_identity": [
+    {
+      "path": "doc-03/body.txt",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-03/annotations.json",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-03/annotations.conllu",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-05/body.txt",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-05/annotations.json",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-05/annotations.conllu",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-11/body.txt",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-11/annotations.json",
+      "byte_identical": true
+    },
+    {
+      "path": "doc-11/annotations.conllu",
+      "byte_identical": true
+    }
+  ],
+  "integrity": {
+    "input_hashes": {
+      "count": 7,
+      "mismatches": []
+    },
+    "implementation_hashes": {
+      "count": 4,
+      "mismatches": []
+    },
+    "model_hashes": {
+      "count": 8,
+      "mismatches": []
+    },
+    "output_hashes": {
+      "count": 14,
+      "mismatches": []
+    }
+  },
+  "elapsed_seconds": 69.421,
+  "interpretation": "Same local input/model/seed produced byte-identical bodies, annotation JSON, and CoNLL-U in two runs; this is engineering reproducibility, not linguistic correctness."
+}

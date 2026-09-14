@@ -1,0 +1,39 @@
+{
+  "version": "reader-style-anchors-1.0",
+  "recorded_at_utc": "2026-09-14T09:31:40.859474+00:00",
+  "reviewer_kind": "maintainer_human",
+  "rating_method": "spontaneous_qualitative_article_level_feedback",
+  "feedback_verbatim": [
+    "我给你看一篇极其臭的AI文章 https://post.smzdm.com/p/a70dm4ll/",
+    "百度那篇一般臭，https://post.smzdm.com/p/a70dm4ll/ 这篇恶臭"
+  ],
+  "articles": [
+    {
+      "url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+      "doc_id": "92ade4253c08a43329164bf5",
+      "reader_term": "一般臭",
+      "relative_role": "lower_intensity_reference",
+      "numeric_score": null,
+      "prior_raw_target_calibration_path": "data/local/targeted-media-discovery-v1/baidu-supply/raw-target-calibration-v1.json",
+      "prior_calibration_sha256": "8ebe462a25a9efff4c2e6a77ca77d1f8308837ccd24922639a669b2525f08343"
+    },
+    {
+      "url": "https://post.smzdm.com/p/a70dm4ll/",
+      "doc_id": "e3dd9c4a95dd4e1fbdacd281",
+      "reader_term": "恶臭",
+      "earlier_reader_term": "极其臭",
+      "relative_role": "primary_strong_positive_discovery_anchor",
+      "numeric_score": null,
+      "body_capture_status": "pending"
+    }
+  ],
+  "interpretation": {
+    "ordinal_relation": "SMZDM a70dm4ll is more intensely aversive than the Baidu article for this reader.",
+    "population_claim": false,
+    "labels_are_authorship_proof": false,
+    "edit_preference_provided": false,
+    "translation_origin_inferred": false,
+    "training_eligible": false
+  },
+  "pending_baidu_question": "answered_by_general_smell_feedback; no reissue"
+}

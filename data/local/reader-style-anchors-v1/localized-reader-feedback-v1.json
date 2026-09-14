@@ -1,0 +1,33 @@
+{
+  "version": "reader-localized-style-cues-1.0",
+  "recorded_at_utc": "2026-09-14T09:48:52.190772+00:00",
+  "reviewer_kind": "maintainer_human",
+  "feedback_verbatim": [
+    "首先”而是“是一个强信号，然后“机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板  ” 这里没用而是用了“是”，但是意思没变",
+    "“先把买、搓、等三条路算明白” 这句话就是典型的臭味，我看了标题就知道是ai写的slop"
+  ],
+  "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+  "analysis_body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+  "title_sha256": "eacd71671a24b923092eb922d2e5642b75367137c4fb33fbec02a4dace3726cc",
+  "localized_evidence": [
+    {
+      "family": "negative_positive_replacement",
+      "view": "analysis_body",
+      "quote": "机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板",
+      "start_char": 687,
+      "end_char": 719,
+      "reader_observation": "The bare positive 是 expresses the same correction as an 而是 form in this example; preserve the broader strong signal."
+    },
+    {
+      "family": "reader_agenda_frame",
+      "view": "title",
+      "quote": "先把买、搓、等三条路算明白",
+      "start_char": 31,
+      "end_char": 44,
+      "reader_observation": "The title alone is a typical strongly aversive style cue for this reader."
+    }
+  ],
+  "numeric_score": null,
+  "authorship_classifier_objective": false,
+  "edit_preference": null
+}

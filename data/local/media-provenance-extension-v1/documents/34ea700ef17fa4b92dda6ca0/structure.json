@@ -1,0 +1,163 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/8e/c7/8e793241fff274f256d545c194a461c7.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 5,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/81/71/81fc25f31f8dd6bfb264fe68f8c8d771.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 7,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/1e/34/1e427b68aea1e5f3aa99d8c8f188c934.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 18,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/ab/e4/abd132f739b2f8d237838269c9b479e4.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 21,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/0c/17/0c01a5e99156683130ce8102ca6c1717.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 28,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media06",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/f9/c6/f936065d7a65f1c642fe9773e0dfdbc6.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 30,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media07",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/9f/ba/9f435d60607d7d7fbab61493c5eaf1ba.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 33,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media08",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/96/97/9603d5e88745a2b49125bc45b2e8bc97.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 38,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media09",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/b4/5e/b4e6938ca25a937daf0edd099153575e.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 79,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media10",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/fe/b3/fe2fc02dd1cf7ba0d117350273961fb3.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 96,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media11",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/8d/8c/8d6fc99f393e3b9082d92abfe0f2a58c.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 103,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media12",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/62/5a/62a03c898c85fa5179aefb13ca83b55a.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 126,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media13",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/resource/image/c1/d3/c157e127f46acf465aba5d0027b7a9d3.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 145,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "阅读书籍完整版",
+      "href": "https://item.jd.com/12998056.html"
+    },
+    {
+      "text": "请戳《华为数据之道》",
+      "href": "https://item.jd.com/12998056.html"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 265,
+    "h1": 0,
+    "h2": 6,
+    "h3": 0,
+    "ul": 13,
+    "ol": 0,
+    "li": 43,
+    "img": 13,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 2
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/34ea700ef17fa4b92dda6ca0.html",
+  "raw_html_sha256": "429c5c69808d658f8328897b369f8d7cac7927eddb2e6251b50e9d27261eb9dd"
+}

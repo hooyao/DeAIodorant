@@ -1,0 +1,15 @@
+{
+  "protocol": "media-provenance-extension-1.0",
+  "status": "additive_interpretation_correction_original_artifacts_unchanged",
+  "analysis_summary_sha256": "96fda2574dd04abadd741ae8152a640922909e450e0d85df764c6aeaa55c0564",
+  "affected_doc_ids": [
+    "95d76057b89c66797e92cfff",
+    "8af23a00cfebd06e42eb6b51",
+    "d182b68a763edecc1fdd6a89"
+  ],
+  "empty_body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "legacy_extractor_label": "known_exact_content_overlap",
+  "interpretation": "All three labels concern identical empty strings, not evidence of duplicate articles. The existing extractor compared the empty hash with prior staged empty hashes. The mechanical nonempty-body guard found no known or within-batch duplicate matches. Empty outcomes remain excluded as unavailable text.",
+  "diagnostic_counts_changed": false,
+  "source_bodies_or_frozen_artifacts_modified": false
+}

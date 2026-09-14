@@ -1,0 +1,23 @@
+{
+  "command": "python experiments/validate_media_repair_development.py --output-dir data/local/media-repair-development-v1/validation-v1",
+  "implementation_sha256": "85e99f50e9f9e6bc6e4346c5529007f6a6c1a3ea0631c4214492474fde85f8be",
+  "input_hashes": {
+    "data/local/contrast-context-v1/packets/doc-03/body.txt": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "data/local/contrast-context-v1/packets/doc-04/body.txt": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+    "data/local/contrast-context-v1/packets/doc-05/body.txt": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+    "data/local/media-repair-development-v1/candidates/doc-03/operations.json": "3dcba6b7d0fb7934147ec9b759408a0326002b81926cdbaf85ed9ca4963b9349",
+    "data/local/media-repair-development-v1/candidates/doc-03/output.txt": "50d4de3c53916ac780721b9040fc80360b057dc668565214be135e79aa676acc",
+    "data/local/media-repair-development-v1/candidates/doc-04/operations.json": "e11c430b30104d7c4c235efd1fdbe52ae034d022f17395fcfbf85d149430548d",
+    "data/local/media-repair-development-v1/candidates/doc-04/output.txt": "413e094cc29c8084620f7203ee4e4b4e76a60f1e721369ff79be738d155d257f",
+    "data/local/media-repair-development-v1/candidates/doc-05/operations.json": "d5ecea2d8e6bb429166d80249ade1f533784941a808f916bbea2542c8a22e7ab",
+    "data/local/media-repair-development-v1/candidates/doc-05/output.txt": "72a76b15b41e2554f69fb2f01ba03aabaf120a5d3730a3f33b76a1ff323b30ca",
+    "data/local/media-repair-development-v1/preparation-manifest.json": "a143465b9c380924dcccadd3dc4a29210b9c625e0574856f965db1043c338262"
+  },
+  "output_hashes": {
+    "doc-03.diff": "d7da5429a3b6e45d522942a419db75244ae9992e5281e640feea62d371619a31",
+    "doc-04.diff": "39bb9aedf6bbbc75735a98d372254330a8b3e6c7ab76803ad74afb1f64a5279a",
+    "doc-05.diff": "5cf996693e5ca925f6054d5a7971dc5ecc4491f1d5779cef8b23993d100bee9d",
+    "summary.json": "0452820542e6864451eae859ebed88da85b654d4105453ea968ee6ce25541bb3"
+  },
+  "version": "media-repair-development-validation-1.0"
+}

@@ -1,0 +1,54 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/76/76a0fa1ed09b12adcb2300388082a733.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 3,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b7/b7fb9f068667128cd6e45ca006c87ee9.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 20,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/22/22216ea18de97682d8f5137593a17a24.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 31,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [],
+  "figures": [],
+  "element_counts": {
+    "p": 72,
+    "h1": 0,
+    "h2": 4,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 3,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 0
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/dad0b3ae7ff6c3190379cc7d.html",
+  "raw_html_sha256": "099eeb53d499e8a5ecce9a222a36ea3a619c33d1c698c0dd89a25eb96c243a26"
+}

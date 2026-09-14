@@ -1,0 +1,43 @@
+{
+  "completed_documents": 3,
+  "counts": [
+    {
+      "alias": "doc-03",
+      "elapsed_seconds": 9.952,
+      "offset_issue_count": 2,
+      "sentence_count": 32,
+      "source_characters": 2350,
+      "source_linebreaks": 39,
+      "source_reconstruction_exact": true,
+      "token_count": 1125,
+      "word_count": 1125
+    },
+    {
+      "alias": "doc-05",
+      "elapsed_seconds": 14.224,
+      "offset_issue_count": 2,
+      "sentence_count": 77,
+      "source_characters": 4048,
+      "source_linebreaks": 57,
+      "source_reconstruction_exact": true,
+      "token_count": 2078,
+      "word_count": 2078
+    },
+    {
+      "alias": "doc-11",
+      "elapsed_seconds": 22.811,
+      "offset_issue_count": 24,
+      "sentence_count": 55,
+      "source_characters": 4900,
+      "source_linebreaks": 125,
+      "source_reconstruction_exact": true,
+      "token_count": 2399,
+      "word_count": 2399
+    }
+  ],
+  "current_alias": "doc-11",
+  "pid": 47880,
+  "protocol": "contrast-syntax-feasibility-1.0",
+  "status": "complete",
+  "total_documents": 3
+}

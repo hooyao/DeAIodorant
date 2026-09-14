@@ -1,0 +1,7 @@
+{
+  "started_at": "2026-09-14T08:38:44.053272+00:00",
+  "pid": 57532,
+  "article_get_limit": 24,
+  "selection_manifest_sha256": "46ebccdf0251c6b548fd1ca70093e093bf6566f55e3675d1f9717db23a0e0f3b",
+  "command": "python experiments/stage_media_provenance_extension.py fetch"
+}

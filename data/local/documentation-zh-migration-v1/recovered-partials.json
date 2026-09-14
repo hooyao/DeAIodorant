@@ -1,0 +1,36 @@
+[
+  {
+    "path": "docs/research-progress.md",
+    "translated_fragments": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "total_fragments": 7
+  },
+  {
+    "path": "docs/routes/compact-refiner/decisions.md",
+    "translated_fragments": [
+      0
+    ],
+    "total_fragments": 3
+  },
+  {
+    "path": "docs/smell-catalog.md",
+    "translated_fragments": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "total_fragments": 5
+  },
+  {
+    "path": "experiments/boundary-competition-development.md",
+    "translated_fragments": [
+      0
+    ],
+    "total_fragments": 3
+  }
+]

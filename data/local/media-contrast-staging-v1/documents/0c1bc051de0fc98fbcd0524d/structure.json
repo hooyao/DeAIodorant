@@ -1,0 +1,59 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/8c/8ce4481e7784a9865768bf8af1c25aa4.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 31,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/01/01c33c75ce502ab62091b3773cd89d05.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 33,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/58/58b54e3ff9256a143a5729362ad4886e.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 47,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "Why Change Intelligence is Necessary to Effectively Troubleshoot Modern Applications",
+      "href": "https://www.infoq.com/articles/beyond-monitoring-change-intelligence/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 68,
+    "h1": 0,
+    "h2": 4,
+    "h3": 4,
+    "ul": 1,
+    "ol": 1,
+    "li": 6,
+    "img": 3,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 1,
+    "a": 1
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/0c1bc051de0fc98fbcd0524d.html",
+  "raw_html_sha256": "f9ed08871409cbdb39ccbf732cb6e52f53fcd2e0f4f1d9960b229670f8c5a05b"
+}

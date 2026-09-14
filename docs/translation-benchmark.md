@@ -1,24 +1,19 @@
-# Translation gate benchmark
+# 翻译筛选 benchmark
 
-The translation gate uses two frozen prompt profiles with deterministic
-sampling (`temperature=0`, `seed=42`, thinking disabled):
+翻译筛选使用两个冻结的 prompt profile，采用确定性采样（`temperature=0`、`seed=42`、关闭 thinking）：
 
-1. a strict translation detector;
-2. an original-content verifier, called only when deterministic
-   strong-original evidence is present.
+1. 严格翻译检测器；
+2. 原创内容 verifier，仅在存在确定性的强原创证据时调用。
 
-The admission policy is fail-closed. A document is accepted only when the
-strict profile returns `original/high`, or when strong-original evidence exists
-and the verifier also returns `original/high`. Every uncertain, failed, or
-malformed response is rejected.
+准入策略采用 fail-closed。只有严格 profile 返回 `original/high`，或存在强原创证据且 verifier 同样返回 `original/high`，文章才可通过。所有不确定、失败或格式错误的响应均被拒绝。
 
-## Local model setup
+## 本地模型配置
 
 ```bash
 ollama pull qwen3.5:9b
 ```
 
-Run the frozen gate on a private benchmark file:
+在私有 benchmark 文件上运行冻结的筛选器：
 
 ```bash
 python translation_final_test.py \
@@ -29,17 +24,11 @@ python translation_final_test.py \
   --timeout 600
 ```
 
-For an RTX 4080 or DGX Spark, keep the model fully resident and use one process.
-The current script evaluates sequentially for reproducibility. Throughput
-benchmarking and concurrent production inference should be done separately so
-they cannot alter accuracy measurements.
+使用 RTX 4080 或 DGX Spark 时，让模型完整驻留显存／内存，并仅使用一个进程。当前脚本按顺序评估，以保证可复现性。吞吐 benchmark 与并发生产推理应单独开展，避免改变准确性测量。
 
-## Benchmark data
+## Benchmark 数据
 
-The `init` branch tracks the current `data/` directory for transfer to another
-evaluation machine. It contains third-party article bodies and local model
-caches, so users remain responsible for source rights and terms. The relevant
-directories are:
+`init` 分支跟踪当前 `data/` 目录，用于转移到其他评估机器。目录含第三方文章正文与本地模型缓存，使用者仍须负责遵守来源权利和条款。相关目录如下：
 
 ```text
 data/translation_eval/
@@ -48,4 +37,4 @@ data/translation_test/
 data/translation_benchmark/
 ```
 
-Do not tune prompts or thresholds after inspecting final-test predictions.
+查看 final-test 预测后，不得调试 prompt 或阈值。

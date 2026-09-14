@@ -1,0 +1,15 @@
+{
+  "human_labels": 0,
+  "overlap_audit_sha256": "bcd5f0ae33d9219bfcf29d99eabe5b3672fea45a2476eae3bde772f71a2def94",
+  "protocol": "media-contrast-review-1.0",
+  "seed": 2026091403,
+  "selected_source_ids": [
+    "738c96bc2777301fdaf9f078",
+    "3fdc45a2c7759e78fc9013c9",
+    "d679960cb6cb418eebb6b222",
+    "8bfb7b3e6b210126548b7f0c",
+    "550a11e0e8987efc94c654b7",
+    "c526ed941b8de39a5388df3d"
+  ],
+  "selection_rule": "Three provisional pairs chosen by metadata before reading their bodies: cloud/enterprise discussion; first-party technical practice; technology-news report. Not a random matched sample; names and language/content differences remain confounders."
+}

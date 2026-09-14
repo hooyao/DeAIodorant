@@ -1,0 +1,26 @@
+{
+  "version": "raw-target-calibration-1.1",
+  "status": "answered",
+  "doc_id": "92ade4253c08a43329164bf5",
+  "source_url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+  "source_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+  "independent_review_sha256": "33725db52dc6548122c5e1c5bb55a91fbb52f2bc47e88f62f874363c77c6f3e6",
+  "selection_bias": "keyword-enriched development discovery",
+  "assistant_nomination": "sustained_target_candidate",
+  "assistant_confidence": "moderate",
+  "purpose": "Calibrate whether the unchanged complete article exhibits the maintainer intended typical strong Chinese style problem; not readability preference or edit efficacy.",
+  "question": "这篇原文是否更接近你说的典型、浓重的 AI 臭味？",
+  "response": "百度那篇一般臭",
+  "human_label": {
+    "kind": "qualitative_article_style_intensity",
+    "term": "一般臭",
+    "relative_to_smzdm": "lower_intensity"
+  },
+  "rewrites_created": false,
+  "training_eligible": false,
+  "parent_calibration_sha256": "8ebe462a25a9efff4c2e6a77ca77d1f8308837ccd24922639a669b2525f08343",
+  "feedback_path": "data/local/reader-style-anchors-v1/reader-feedback-v1.1.json",
+  "feedback_sha256": "dcd6990b985acc7c586d0b4c7b8f2d3c091ad4ab019ecea66134e5c2ae39677d",
+  "source_role": "lower_intensity_reference",
+  "reissue_question": false
+}

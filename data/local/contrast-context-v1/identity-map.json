@@ -1,0 +1,145 @@
+[
+  {
+    "admission_status": "diagnostic_pilot_not_clean_corpus",
+    "alias": "doc-01",
+    "cohort": "post",
+    "content_hash": "f509113688836b5f21592f1a12066277fc262dddc7ad42d4a830771fcf2f2f0e",
+    "dataset": "pilot",
+    "doc_id": "a127f5baf364930a89fb4005",
+    "published_at": "2025-10-23",
+    "title": "性能飞跃！ClickHouse 处理复杂 JSON，速度提升58倍，内存减少3300倍",
+    "url": "https://www.infoq.cn/article/3EJlljs8O1UyuWfEMB1H"
+  },
+  {
+    "admission_status": "diagnostic_pilot_not_clean_corpus",
+    "alias": "doc-02",
+    "cohort": "post",
+    "content_hash": "1d86ea8e2000bc104a266155800018df52aa53a34532a5fd998ebfb5226c61af",
+    "dataset": "pilot",
+    "doc_id": "3c60dc0a981b686870095450",
+    "published_at": "2026-06-26",
+    "title": "当 Agent 成为新的核心云用户：阿里云重新定义“用云范式”",
+    "url": "https://www.infoq.cn/article/s6TAS5JMIW1miPSqIsk0"
+  },
+  {
+    "admission_status": "diagnostic_pilot_not_clean_corpus",
+    "alias": "doc-03",
+    "cohort": "post",
+    "content_hash": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "dataset": "pilot",
+    "doc_id": "44aa81958a6c585ee8c06847",
+    "published_at": "2026-01-16",
+    "title": "拒绝传统Router“瞎指挥”，多智能体如何实现智能任务分配？",
+    "url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII"
+  },
+  {
+    "admission_status": "unreviewed_staging_not_admitted",
+    "alias": "doc-04",
+    "cohort": "post",
+    "content_hash": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+    "dataset": "staging",
+    "doc_id": "0be079018045fbf1f2d47d7f",
+    "published_at": "2025-12-16",
+    "title": "Codex负责人打脸Cursor CEO“规范驱动开发论”！18天造Sora爆款，靠智能体24小时不停跑，曝OpenAI狂飙内幕",
+    "url": "https://www.infoq.cn/article/Gqltf7tslmJY8iK9GXLo"
+  },
+  {
+    "admission_status": "unreviewed_staging_not_admitted",
+    "alias": "doc-05",
+    "cohort": "post",
+    "content_hash": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+    "dataset": "staging",
+    "doc_id": "c526ed941b8de39a5388df3d",
+    "published_at": "2026-01-13",
+    "title": "Anthropic深夜放出王炸！白领饭碗要被AI砸了？网友：不支持Linux，差评",
+    "url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl"
+  },
+  {
+    "admission_status": "diagnostic_pilot_not_clean_corpus",
+    "alias": "doc-06",
+    "cohort": "post",
+    "content_hash": "b39e5f1cbf5e133318106ecbc0eafc92b3277e71c705cc65d93fd56ee3e9014e",
+    "dataset": "pilot",
+    "doc_id": "213dcab213f816c7c548fc09",
+    "published_at": "2026-04-24",
+    "title": "Snowflake Cortex Code 的规范驱动开发：将 SDLC 方法论引入 AI 辅助工作流 ｜ 技术实践",
+    "url": "https://www.infoq.cn/article/o8dh3dRH6Kk8vzrzKdJd"
+  },
+  {
+    "admission_status": "unreviewed_staging_not_admitted",
+    "alias": "doc-07",
+    "cohort": "pre",
+    "content_hash": "2397a4634ace531cb68430ac67e9351c0554c878d5b29772bef34e11a31ba7e5",
+    "dataset": "staging",
+    "doc_id": "8bdf575aae4fe9a3b509a492",
+    "published_at": "2022-10-02",
+    "title": "元宇宙相关岗位平均月薪1.85万元；台积电：砍单可以，降价免谈；特斯拉人形机器人“擎天柱”亮相 | AI一周资讯",
+    "url": "https://www.infoq.cn/article/VLIDZiKBqtCyrMm8mjc1"
+  },
+  {
+    "admission_status": "diagnostic_pilot_not_clean_corpus",
+    "alias": "doc-08",
+    "cohort": "post",
+    "content_hash": "84d4d5b4db0d8d9c91232ec7ad41a6665401b9cd0637c65dad0578ddd3b28afc",
+    "dataset": "pilot",
+    "doc_id": "0431c592d5de8246cebcb8e2",
+    "published_at": "2025-10-05",
+    "title": "5个月内失败十几次，几人团队在压力下做出爆款App！网友：AI时代懂人性比懂技术更重要",
+    "url": "https://www.infoq.cn/article/zYz0h5ygZd1M3cuWfUam"
+  },
+  {
+    "admission_status": "unreviewed_staging_not_admitted",
+    "alias": "doc-09",
+    "cohort": "pre",
+    "content_hash": "6b65668574e6036aedae3f6af6d5d0495f720c0a27e827739a855022138e6c47",
+    "dataset": "staging",
+    "doc_id": "550a11e0e8987efc94c654b7",
+    "published_at": "2022-10-28",
+    "title": "全面审查Twitter代码、当场炒掉CEO等众多高管：马斯克正式入主Twitter",
+    "url": "https://www.infoq.cn/article/1jdi4LDTycjblozS8QwV"
+  },
+  {
+    "admission_status": "diagnostic_pilot_not_clean_corpus",
+    "alias": "doc-10",
+    "cohort": "pre",
+    "content_hash": "aab37554f58fed82c166c06cd7b15d9a3e70c13640b50bf03a98d40b065729c1",
+    "dataset": "pilot",
+    "doc_id": "73e9f6e61e27e1e32264551f",
+    "published_at": "2021-07-02",
+    "title": "不止Docker：8款容器管理开源方案",
+    "url": "https://www.infoq.cn/article/YE7LJiEI4rOPGRaCJE08"
+  },
+  {
+    "admission_status": "unreviewed_staging_not_admitted",
+    "alias": "doc-11",
+    "cohort": "post",
+    "content_hash": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+    "dataset": "staging",
+    "doc_id": "8bfb7b3e6b210126548b7f0c",
+    "published_at": "2025-12-05",
+    "title": "Apache Doris 在小米统一 OLAP 和湖仓一体的实践",
+    "url": "https://www.infoq.cn/article/yGwXLYsrhMDwUqoYgMsh"
+  },
+  {
+    "admission_status": "unreviewed_staging_not_admitted",
+    "alias": "doc-12",
+    "cohort": "post",
+    "content_hash": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+    "dataset": "staging",
+    "doc_id": "a4007204435ea4d0895d0d46",
+    "published_at": "2025-12-16",
+    "title": "培养 Data Superhero 的思维模式",
+    "url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA"
+  },
+  {
+    "admission_status": "unreviewed_staging_not_admitted",
+    "alias": "doc-13",
+    "cohort": "pre",
+    "content_hash": "077d41bcb5d9a9a20f15284bcd480656eddf3f4c3a0a2f4e23733b777a79715d",
+    "dataset": "staging",
+    "doc_id": "738c96bc2777301fdaf9f078",
+    "published_at": "2021-12-03",
+    "title": "云原生时代，CNStack 如何解决企业数字化转型难题？",
+    "url": "https://www.infoq.cn/article/4CFTC0TgkMout6hFBxG2"
+  }
+]

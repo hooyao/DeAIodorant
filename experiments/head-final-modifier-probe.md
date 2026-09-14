@@ -1,117 +1,66 @@
-# Head-Final Modifier Delay Probe
+# 后置中心词修饰语延迟探测
 
-## Status
+## 状态
 
-This is a deterministic post-outcome development probe. It was defined after a
-reader localized a specific residual problem in the first proposition-
-decompression intervention. It is not validation, a semantic judge, or an
-authorship detector.
+这是确定性的结果后开发探测，在读者定位第一次命题解压缩干预中的具体残留问题后定义。它不属于验证、语义裁判或作者身份检测器。
 
-## Reader-localized construction
+## 读者定位的结构
 
-The source contained:
+原文包含：
 
 ~~~text
 AI 算力池面向 AI 原生时代全新算力服务需求
 ~~~
 
-The reader had to delay attachment until the final head noun `需求`, while
-segmenting the preceding material approximately as `AI 原生时代 / 全新 / 算力
-服务`. The reader then noted that the modifier string remained long and gave no
-concrete account of what made the requirements new.
+读者需要等到最后的中心名词 `需求` 才完成附着，同时将前文大致切为 `AI 原生时代 / 全新 / 算力
+服务`。读者进一步指出修饰串仍很长，也没有具体说明需求新在哪里。
 
-The preferred revision improved the surrounding sentence structure but retained
-the residual phrase:
+被偏好的修订改善了周边句法，但保留以下短语：
 
 ~~~text
 以满足 AI 原生时代全新的算力服务需求
 ~~~
 
-This separates two hypotheses:
+由此分开两个假设：
 
-1. **Head delay**: a cue such as `面向` or `满足` opens a constituent whose head
-   noun arrives only after a long pre-head modifier span.
-2. **Low-anchor abstract stacking**: that span contains generic era, novelty, or
-   emphasis modifiers without a number, quoted term, or non-generic technical
-   identifier that could anchor interpretation.
+1. **中心词延迟：**`面向` 或 `满足` 等线索打开一个成分，其中心名词在长串前置修饰语之后才出现。
+2. **低锚点抽象堆叠：**该片段包含泛化的时代、新颖性或强调修饰语，却没有可固定解释的数字、引号术语或非泛化技术标识。
 
-The second label is only a high-precision candidate description. It does not
-establish that a phrase is meaningless.
+第二个标签只是高精度候选描述，不能证明短语无意义。
 
-## Deterministic instance rule
+## 确定性实例规则
 
-The probe splits text at visible clause punctuation and searches a frozen cue
-lexicon including `面向`, `针对`, `围绕`, `满足`, `支撑`, `支持`, and `聚焦`.
-Within the clause it locates the last candidate head noun, such as `需求`,
-`能力`, `体系`, `架构`, `机制`, `场景`, `路径`, or `流程`.
+探测按可见分句标点切分文本，搜索冻结线索词表，包括 `面向`、`针对`、`围绕`、`满足`、`支撑`、`支持` 和 `聚焦`。在分句内定位最后一个候选中心名词，如 `需求`、`能力`、`体系`、`架构`、`机制`、`场景`、`路径` 或 `流程`。
 
-A candidate has long head delay when the intervening modifier contains at least
-eight CJK characters or 12 visible characters. It becomes a low-anchor abstract
-stack candidate when it also contains at least two frozen generic modifiers and
-no narrow concrete anchor.
+中间修饰语至少八个 CJK 字符或 12 个可见字符时，视为长中心词延迟。若还包含至少两个冻结的泛化修饰词，且没有狭义具体锚点，则成为低锚点抽象堆叠候选。
 
-The generic list includes era frames and terms such as `全新`, `新一代`,
-`核心`, `关键`, `深度`, `全面`, `系统性`, `一体化`, `智能化`, `高效`, and
-`原生`. The concrete-anchor rule recognizes numbers, quoted terms, and ASCII
-identifiers other than bare `AI` or `Agent`.
+泛化表包括时代框架以及 `全新`、`新一代`、`核心`、`关键`、`深度`、`全面`、`系统性`、`一体化`、`智能化`、`高效` 和 `原生`。具体锚点规则识别数字、引号术语，以及单独 `AI` 或 `Agent` 之外的 ASCII 标识。
 
-## Existing-corpus result
+## 既有语料结果
 
-The 50-document fresh post handoff produced 48 cue-to-head instances. Twenty-one
-met the broad delay threshold across 10 documents. Manual inspection shows that
-the broad set contains false positives because a lexical rule cannot always
-identify the true phrase boundary.
+50 篇新后时期交接产生 48 个线索到中心词实例，其中 10 篇文章中的 21 个达到宽泛延迟阈值。人工检查表明宽泛集合含假阳性，因为词汇规则不能始终确定真实短语边界。
 
-Only one instance met the stricter low-anchor abstract-stack rule: the exact
-`AI 原生时代全新算力服务需求` passage localized by the reader. Both its
-original and its preferred first revision remain strict candidates. This is
-useful localization evidence but not replication.
+只有一个实例满足更严格的低锚点抽象堆叠规则：读者定位的 `AI 原生时代全新算力服务需求` 原段落。其原版及被偏好的第一次修订都仍为严格候选。这是有用的定位证据，不是复现。
 
-The same frozen rule was then applied without modification to the existing
-119-document analysis handoff: 23 pre-period and 96 transition-period
-documents. It produced 107 cue-to-head instances and 38 broad delayed-head
-candidates across 23 documents, again with phrase-boundary false positives.
-It produced zero strict low-anchor abstract-stack candidates. The exact motif
-therefore did not replicate in this discovery corpus. This result must not be
-used to claim a post-period increase because the strict rule was defined after
-the post example and the sources, formats, topics, visibility, and periods are
-not matched.
+之后，同一冻结规则不作修改地应用于既有 119 篇分析交接：前时期 23 篇、过渡期 96 篇。得到 107 个线索到中心词实例，23 篇文章中的 38 个宽泛延迟候选，仍有短语边界假阳性；严格低锚点抽象堆叠为零。因此精确模式未在这批发现语料中复现。不得据此宣称后时期增加，因为严格规则是在后时期示例后定义，且来源、体裁、主题、传播可见度及时间均未匹配。
 
-After excluding every document already selected for projects 5, 6, and 7, only
-five documents contain broad delayed-head candidates. They all come from the
-Meituan source, mostly as technical-practice or section-heading fragments. A
-new reader round from that remainder would repeat the source-homogeneity and
-passage-quality problems already diagnosed in earlier screens, so no additional
-Label Studio project is prepared from it.
+排除项目 5、6、7 已选中的全部文档后，仅有五篇包含宽泛延迟候选，均来自美团，多为技术实践或章节标题片段。用这些剩余项开新读者轮次，会重复此前筛查已诊断的来源同质化和段落质量问题，因此不据此准备额外 Label Studio 项目。
 
-A later corpus expansion produced a 97-document, five-source handoff with a
-frozen role split. The same rule was applied only to its 67-document development
-partition. It produced 45 cue-to-head instances and 23 broad delayed-head
-candidates across 14 documents, but again produced zero strict low-anchor
-abstract-stack candidates. The 30-document validation reserve was not read.
-This additional non-replication preserves the single case as a useful reader
-observation but does not justify relaxing the rule or creating another reader
-batch.
+后续扩充得到具有冻结角色划分的 97 篇、五来源交接。同一规则只应用于 67 篇 development 分区，得到 45 个线索到中心词实例、14 篇文章中的 23 个宽泛延迟候选，严格低锚点抽象堆叠再次为零。30 篇 validation reserve 未阅读。这次额外未复现保留了单例读者观察的价值，但不能支持放宽规则或创建新读者批次。
 
-## Intervention implication
+## 干预含义
 
-The next bounded operator should unpack rather than merely move the phrase. For
-the observed source claim, a proposition-preserving form is:
+下一限定算子应拆开关系，而不只是移动短语。对已观察到的原文主张，保留命题的一种形式是：
 
 ~~~text
 AI 原生时代出现了新的算力服务需求。为满足这些需求，AI 算力池采用……
 ~~~
 
-This preserves the source's novelty and era claims while exposing their lack of
-specific payload as a separate proposition. A stronger deletion or replacement
-would change the claim and is not allowed without author approval.
+它保留原文的新颖性和时代主张，同时将缺乏具体信息的问题暴露为独立命题。更强的删除或替换会改变主张，未经作者批准不得进行。
 
-Future admission requires new, complete passages from multiple sources. Each
-candidate must contain a frozen cue-to-head delay plus a low-anchor modifier
-stack, and each edit must preserve the complete proposition set. Reader input
-remains a simple blinded preference; the reader does not label the construction.
+后续准入需要多来源的新完整段落。每个候选都必须满足冻结的线索到中心词延迟及低锚点修饰堆叠，每次编辑保留完整命题集合。读者仍只作简单盲法偏好判断，不标注该结构。
 
-## Reproduction
+## 复现
 
 ~~~powershell
 python experiments/head_final_modifier_probe.py `
@@ -122,13 +71,13 @@ python experiments/head_final_modifier_probe.py `
   --output-dir feature_runs/head-final-modifier-v1
 ~~~
 
-The probe uses no model inference. Two runs produced byte-identical outputs:
+探测不使用模型推理。两次运行输出逐字节一致：
 
-| Artifact | SHA-256 |
+| 产物 | SHA-256 |
 |---|---|
-| Corpus instances | `29d68ea788954da61c553b83ee8d8e576d1558c6676a0e87269c43a676b20852` |
-| Integration-variant instances | `1676f31f2fc4381547bea1bae23ae2692981e0e0d0b6b94d892955b7a4b6151e` |
-| Discovery instances | `5cf9768cf4efc96ed9f27c4eaf9a1bacb6d155e6ecf24eebfa05ebc297f73e96` |
-| Summary | `18cc91e02cbff409fbb19e9b0e842bd5f8039f660542ccc5fdf85410f5072f5b` |
+| 语料实例 | `29d68ea788954da61c553b83ee8d8e576d1558c6676a0e87269c43a676b20852` |
+| 整合变体实例 | `1676f31f2fc4381547bea1bae23ae2692981e0e0d0b6b94d892955b7a4b6151e` |
+| 发现实例 | `5cf9768cf4efc96ed9f27c4eaf9a1bacb6d155e6ecf24eebfa05ebc297f73e96` |
+| 摘要 | `18cc91e02cbff409fbb19e9b0e842bd5f8039f660542ccc5fdf85410f5072f5b` |
 
-Generated instances remain under ignored `feature_runs/` and are not committed.
+生成实例保留在被忽略的 `feature_runs/` 下，不提交。

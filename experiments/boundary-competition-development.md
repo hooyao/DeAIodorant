@@ -1,332 +1,253 @@
-# Boundary-Competition Development Experiment
+# 边界竞争开发实验
 
-## Status
+## 状态
 
-Protocol `boundary-competition-development-1.0` was frozen on 2026-08-31
-before implementing the new lexical measurement, selecting passages, preparing
-revisions, or collecting any new reader outcome. Any operational change must
-receive a new protocol version before outcomes are exposed.
+协议 `boundary-competition-development-1.0` 已于 2026-08-31 冻结，
+冻结发生在实现新的词汇测量、选择段落、准备修订或收集任何新的读者结果之前。
+任何操作变更都必须在结果披露前获得新的协议版本。
 
-This is a staged single-reader development experiment. It is not a validation
-study, an authorship study, or a pre/post cohort comparison. No Label Studio
-project may be created until the measurement and admission gates below pass.
+这是一项分阶段的单读者开发实验，不是验证研究、作者身份研究，也不是前后队列比较。
+在下述测量和准入门槛通过之前，不得创建任何 Label Studio 项目。
 
-## Research question
+## 研究问题
 
-The reader localized a construction in which familiar words remain difficult to
-integrate because several modifiers precede a late head noun without a reliable
-internal boundary. The working example is:
+读者定位到了一种结构：多个修饰语出现在较晚出现的中心名词之前，内部又没有可靠的边界，
+因此即使词语熟悉，仍然难以整合理解。工作示例如下：
 
 > 这个 AI 算力池面向 AI 原生时代全新算力服务需求
 
-The experiment asks two separate questions:
+本实验提出两个相互独立的问题：
 
-1. Does a frozen lexical boundary-competition measurement distinguish long
-   pre-head strings that respond to structural unpacking from superficially
-   similar strings with strong lexical boundaries?
-2. For high-competition strings, does a boundary-only unpacking edit improve
-   willingness to continue reading while preserving every source claim?
+1. 冻结后的词汇边界竞争测量，能否区分两类中心词前长字符串：
+   一类可通过结构拆解改善，另一类表面相似，但具有较强的词汇边界？
+2. 对于高竞争字符串，仅调整边界的拆解编辑能否在保留原文每一项主张的同时，
+   提高读者继续阅读的意愿？
 
-The experiment does not test whether the text was written by AI. It also does
-not test deletion or semantic replacement of expressions such as `AI 原生时代`.
-That semantic-specificity hypothesis remains orthogonal. A boundary-only edit
-may fail because the preserved expression still carries little information;
-such a result is informative rather than a reason to broaden the edit after
-outcomes are seen.
+本实验不检验文本是否由 AI 撰写，也不检验删除或语义替换 `AI 原生时代` 等表达的效果。
+语义具体性假设仍是一个独立问题。仅调整边界的编辑可能失败，因为保留下来的表达仍然信息量很低；
+这样的结果具有信息价值，而不是在看到结果后扩大编辑范围的理由。
 
-## Literature-grounded measurement boundary
+## 基于文献的测量界限
 
-The measurement follows five findings without treating any of them as direct
-evidence for the product smell:
+该测量依据以下五项研究发现，但不将其中任何一项视为该产品问题迹象的直接证据：
 
-- correct visual word boundaries can facilitate Chinese reading, while
-  misleading boundaries can interfere with it (Bai et al., 2008,
-  <https://doi.org/10.1037/0096-1523.34.5.1277>);
-- overlapping candidate words compete during Chinese word recognition (Ma et
-  al., 2014, <https://doi.org/10.1037/a0035389>);
-- readers use statistical evidence that a character is a single-character word
-  or the beginning of a multi-character word (Zang et al., 2015,
-  <https://doi.org/10.1080/17470218.2015.1061030>);
-- accessor variety and branching entropy provide deterministic boundary
-  evidence (Feng et al., 2004, <https://doi.org/10.1162/089120104773633394>;
-  Jin and Tanaka-Ishii, 2006, <https://doi.org/10.3115/1273073.1273129>);
-- segmentation standards disagree and can change downstream dependency
-  structure, so tokenizer agreement is diagnostic rather than truth
-  (RethinkCWS, <https://doi.org/10.18653/v1/2020.emnlp-main.457>).
+- 正确的视觉词边界可以促进中文阅读，而误导性的边界可能干扰阅读（Bai 等，2008，
+  <https://doi.org/10.1037/0096-1523.34.5.1277>）；
+- 在中文词语识别过程中，相互重叠的候选词会发生竞争（Ma 等，
+  2014，<https://doi.org/10.1037/a0035389>）；
+- 读者会利用统计证据，判断一个字是单字词，还是多字词的起始字（Zang 等，2015，
+  <https://doi.org/10.1080/17470218.2015.1061030>）；
+- 邻接种类数（accessor variety）和分支熵提供确定性的边界证据（Feng 等，2004，<https://doi.org/10.1162/089120104773633394>；
+  Jin 和 Tanaka-Ishii，2006，<https://doi.org/10.3115/1273073.1273129>）；
+- 分词标准存在分歧，而且可能改变下游的依存结构，因此分词器之间的一致性只能用于诊断，不能视为真值
+  （RethinkCWS，<https://doi.org/10.18653/v1/2020.emnlp-main.457>）。
 
-SUBTLEX-CH word frequency and contextual-diversity data calibrate the
-lexical lattice (<https://doi.org/10.1371/journal.pone.0010729>). Every external
-resource must be versioned and hashed. No project outcome, optional reader
-comment, or model judgment may enter measurement construction.
+SUBTLEX-CH 的词频和语境多样性数据用于校准词汇格
+（<https://doi.org/10.1371/journal.pone.0010729>）。每项外部资源都必须记录版本并计算哈希值。
+构建测量时，不得纳入任何项目结果、读者的可选评论或模型判断。
 
-The external reference distribution is the Beijing Sentence Corpus associated
-with <https://doi.org/10.3758/s13428-021-01730-2>. Only lawfully available
-sentence text and published predictability fields may be used. If the corpus or
-its applicable license cannot be obtained, Stage 0 stops and the protocol must
-be versioned before substituting another reference corpus.
+外部参考分布来自与 <https://doi.org/10.3758/s13428-021-01730-2> 关联的北京句子语料库（Beijing Sentence Corpus）。
+只能使用合法可获得的句子文本和已发表的可预测性字段。如果无法获得该语料库或其适用许可证，
+则阶段 0 停止，并且必须先更新协议版本，才能替换为其他参考语料库。
 
-## Stage 0: measurement and admission
+## 阶段 0：测量与准入
 
-### Structural localization
+### 结构定位
 
-The new measurement starts from the frozen broad structural gate in
-`nominal-chain-integration-probe-0.2`:
+新的测量以 `nominal-chain-integration-probe-0.2` 中已冻结的宽泛结构门槛为起点：
 
-- at least five pre-head lexical tokens;
-- at least 10 visible pre-head characters;
-- at least three `acl`, `amod`, `compound`, or `nmod` relations;
-- no overt internal boundary, punctuation boundary, or pre-head verb;
-- a complete prose passage containing 120-360 CJK characters and at least two
-  sentence endings.
+- 中心词前至少有五个词汇 token；
+- 中心词前至少有 10 个可见字符；
+- 至少有三个 `acl`、`amod`、`compound` 或 `nmod` 关系；
+- 没有显式内部边界、标点边界或中心词前动词；
+- 是一个完整的散文段落，包含 120-360 个 CJK 字符，且至少有两个
+  句末标记。
 
-The structural gate locates spans only. Its earlier 87 candidates were not one
-coherent construction, so passing it does not imply reader friction.
+结构门槛仅用于定位片段。此前的 87 个候选项并不属于同一种一致的结构，
+因此通过该门槛并不意味着读者会遇到阅读阻力。
 
-### Lexical boundary vector
+### 词汇边界向量
 
-`boundary_competition_v1` must expose a vector rather than an opaque score:
+`boundary_competition_v1` 必须提供一个向量，而不是不透明的分数：
 
-- normalized entropy over all lexicon-supported segmentation paths;
-- log-probability margin between the best and second-best paths;
-- posterior boundary probability at every inter-character gap;
-- number of ambiguous gaps with posterior probability in `[0.25, 0.75]`;
-- distance from the last boundary with posterior probability at least `0.80`
-  to the head noun;
-- single-character-word and multi-character-word-start probabilities;
-- left and right branching entropy;
-- left and right accessor variety;
-- lexical coverage and abstention reason;
-- proper-name, numeric, ASCII-technical-term, and quoted-name anchors as
-  separate variables.
+- 所有词典支持的分词路径上的归一化熵；
+- 最优路径与次优路径之间的对数概率差；
+- 每个字间间隙的边界后验概率；
+- 后验概率位于 `[0.25, 0.75]` 内的歧义间隙数量；
+- 最后一个后验概率至少为 `0.80` 的边界
+  到中心名词的距离；
+- 单字词概率和多字词起始概率；
+- 左分支熵和右分支熵；
+- 左邻接种类数和右邻接种类数；
+- 词汇覆盖率和弃判原因；
+- 将专名、数字、ASCII 技术术语和带引号名称的锚点
+  作为独立变量。
 
-Low lexical coverage causes abstention; it must not be converted into high
-competition. Proper names, numbers, and technical terms are recorded as
-anchors and are not deleted by rule. Stanza-versus-dictionary segmentation
-disagreement is retained only as a diagnostic.
+词汇覆盖率低会导致弃判，不得将其转化为高竞争。专名、数字和技术术语记录为锚点，
+不得按规则删除。Stanza 与词典分词之间的分歧仅保留用于诊断。
 
-The version 1.0 lattice uses CJK-only substrings of at most eight characters.
-A known edge receives unigram weight
-`(SUBTLEX WCount + 0.1) / (retained WCount total + 0.1 * vocabulary size)`.
-When no known one-character edge exists, the fallback weight is its SUBTLEX
-character probability multiplied by `0.01`. Exact forward-backward summation
-produces path entropy and gap posteriors; a two-best dynamic program produces
-the path margin. Entropy and margin are divided by scored CJK length. ASCII
-runs are counted as anchors and omitted from the CJK lattice. Known-character
-coverage below 0.80 causes abstention rather than a high-competition result.
+版本 1.0 的词汇格使用最多八个字符、仅含 CJK 字符的子串。
+已知边获得一元权重
+`(SUBTLEX WCount + 0.1) / (retained WCount total + 0.1 * vocabulary size)`。
+当不存在已知的单字边时，回退权重为该字的 SUBTLEX
+字符概率乘以 `0.01`。通过精确的前向—后向求和
+计算路径熵和间隙后验概率；通过保留最优两条路径的动态规划计算
+路径概率差。熵和概率差均除以参与评分的 CJK 长度。连续 ASCII
+字符序列计为锚点，不纳入 CJK 词汇格。已知字符覆盖率
+低于 0.80 时弃判，而不是给出高竞争结果。
 
-The working example must be localized and scored without a phrase-specific
-lexicon entry or blacklist. Failure to localize it stops the experiment.
+必须在不使用短语专属词典条目或黑名单的情况下，对工作示例进行定位和评分。
+若无法定位该示例，实验停止。
 
-### External calibration
+### 外部校准
 
-All percentile cutoffs are computed from length-matched CJK windows in the
-Beijing Sentence Corpus before the post-period candidate pool is ranked.
-Entropy is normalized per scored character, ASCII runs are treated as single
-anchors, and a candidate abstains when fewer than 100 external windows exist
-within plus or minus two scored characters of its pre-head span length. The
-calibration set, resource versions, normalization, smoothing, unknown-token
-penalty, window counts, and SHA-256 identities must be written to the run
-manifest. The high and low strata are then fixed as follows:
+所有百分位截点均在对后时期候选池排序之前，从北京句子语料库中长度匹配的 CJK 窗口计算得出。
+熵按参与评分的字符数归一化，连续 ASCII 字符序列视为单个锚点；
+若在中心词前片段长度上下两个评分字符的范围内，外部窗口少于 100 个，
+则该候选项弃判。校准集、资源版本、归一化方式、平滑方法、未知 token
+惩罚、窗口数量和 SHA-256 标识必须写入运行清单。
+随后按如下标准固定高、低竞争分层：
 
-- **high competition:** path entropy at or above the external 90th percentile,
-  best-versus-second margin at or below the external 10th percentile, at least
-  two ambiguous gaps, and unresolved distance to the head of at least six
-  characters;
-- **low competition:** path entropy at or below the external median,
-  best-versus-second margin at or above the external median, no more than one
-  ambiguous gap, and unresolved distance to the head of at most three
-  characters.
+- **高竞争：**路径熵达到或超过外部分布的第 90 百分位，
+  最优与次优路径的概率差不高于外部分布的第 10 百分位，至少
+  有两个歧义间隙，且到中心词的未消歧距离至少为六个
+  字符；
+- **低竞争：**路径熵不高于外部分布的中位数，
+  最优与次优路径的概率差达到或超过外部分布的中位数，至多
+  有一个歧义间隙，且到中心词的未消歧距离至多为三个
+  字符。
 
-Branching entropy, accessor variety, tokenizer disagreement, and anchor counts
-do not decide admission in version 1.0. They are recorded for diagnosis and a
-future independently versioned model.
+在版本 1.0 中，分支熵、邻接种类数、分词器分歧和锚点数量
+不决定准入。记录这些指标是为了诊断，以及供未来独立版本化的模型使用。
 
-### Corpus separation
+### 语料分离
 
-Candidate passages may come only from post-period documents published on or
-after 2025-07-01 that are already discovery or development exposed. The
-30-document validation reserve in `post_reader_handoff_v2` remains unopened.
-All documents in previous reader ratings, screens, or interventions are
-excluded before ranking.
+候选段落只能来自在 2025-07-01 当日或之后发表、
+且已在发现或开发阶段暴露的后时期文档。
+`post_reader_handoff_v2` 中包含 30 篇文档的验证保留集仍保持未打开状态。
+此前读者评分、筛选或干预中使用过的所有文档，都必须在排序前排除。
 
-The reader experiment requires:
+读者实验要求：
 
-- eight high-competition and eight matched low-competition passages;
-- 16 distinct documents, with one passage and one target span per document;
-- at least three sources and no more than three documents from one source in
-  either stratum;
-- at least two editorial formats in each stratum;
-- no source-body or CJK-bigram overlap with a previous reader task;
-- a complete, self-contained passage under the frozen prose gate.
+- 八个高竞争段落和八个匹配的低竞争段落；
+- 16 篇不同文档，每篇文档仅取一个段落和一个目标片段；
+- 至少三个来源，且任一分层中来自同一来源的文档不超过三篇；
+- 每个分层至少包含两种编辑形式；
+- 与之前的读者任务不存在来源正文重叠或 CJK 二元组重叠；
+- 段落完整、可独立理解，并符合已冻结的散文门槛。
 
-Each high item is matched to one low item by source, editorial format, target
-span length, passage length, anchor profile, and publication month where
-available. Source, format, and the three binary proper-name, numeric, and ASCII
-anchor indicators must match exactly. Target-span CJK length may differ by at
-most two characters; passage and target-sentence CJK-length ratios must both be
-within `[0.80, 1.25]`.
+每个高竞争项按来源、编辑形式、目标片段长度、段落长度、锚点特征，以及可获得的发表月份，
+与一个低竞争项匹配。来源、形式，以及专名、数字和 ASCII
+锚点这三个二元指标必须完全匹配。目标片段的 CJK 长度最多可相差
+两个字符；段落和目标句的 CJK 长度比都必须在
+`[0.80, 1.25]` 范围内。
 
-The fixed distance is `0.35 * span difference / 2 + 0.35 * normalized absolute
+固定距离为 `0.35 * span difference / 2 + 0.35 * normalized absolute
 passage log-ratio + 0.20 * normalized absolute sentence log-ratio + 0.10 *
-publication-month distance / 24`, with the last term capped at one and log
-ratios normalized by `log(1.25)`. The matcher considers the most extreme
-eligible candidate per document, sorts all valid edges by distance, breaks
-exact ties by `SHA-256(seed | high candidate | low candidate)`, and greedily
-accepts cross-document edges without replacement. No source may supply more
-than three pairs. The final eight pairs must cover at least three sources and
-two formats. If eight valid matched blocks are unavailable, the experiment
-stops without relaxing thresholds or creating a reader project.
+publication-month distance / 24`，其中最后一项上限为一，对数比
+按 `log(1.25)` 归一化。匹配器考虑每篇文档中最极端的
+合格候选项，按距离对所有有效边排序，距离完全相同时按 `SHA-256(seed | high candidate | low candidate)`
+打破平局，并以贪心方式接受跨文档边，不放回。任何来源均不得提供
+超过三对。最终八对必须覆盖至少三个来源和
+两种形式。如果无法获得八个有效匹配区组，实验停止，不得放宽阈值，也不得创建读者项目。
 
-## Stage 1: boundary-only intervention
+## 阶段 1：仅调整边界的干预
 
-The operator is `unpack_boundary_competition`. It may:
+操作算子为 `unpack_boundary_competition`。它可以：
 
-- move the head noun earlier;
-- turn an existing modifier-head relation into an explicit subject-predicate
-  or topic-comment relation;
-- add only grammatical function words, pronouns with explicit antecedents, or
-  punctuation needed to expose that relation;
-- split one sentence into two while retaining explicit arguments and
-  cross-sentence reference;
-- reorder existing modifier material so a lexical anchor is adjacent to its
-  head.
+- 将中心名词前移；
+- 将现有的修饰语—中心词关系转化为显式的主谓
+  或话题—述题关系；
+- 仅添加揭示该关系所必需的语法功能词、有明确先行词的代词或
+  标点；
+- 将一句拆成两句，同时保留显式论元和
+  跨句指代；
+- 重新排列现有修饰成分，使词汇锚点紧邻其
+  中心词。
 
-It must not:
+它不得：
 
-- delete, generalize, or strengthen any proposition;
-- add a premise, explanation, definition, causal claim, or concrete detail;
-- replace or silently define an abstract expression;
-- remove named entities, technical terms, quantities, negation, attribution,
-  modality, qualification, or uncertainty;
-- flatten rhythm and authorial voice into a compressed instruction-manual
-  style;
-- alter any non-target sentence except the immediately required antecedent.
+- 删除、泛化或加强任何命题；
+- 添加前提、解释、定义、因果主张或具体细节；
+- 替换抽象表达，或暗中为其补上定义；
+- 删除命名实体、技术术语、数量、否定、归因、模态、限定或不确定性；
+- 将节奏和作者风格压平成压缩的说明书体；
+- 修改非目标句，除非必须直接调整其先行词。
 
-Every revision must preserve all source content words unless an exact
-coreference substitution is logged. It must retain at least 70% character
-similarity and may increase CJK length by no more than 25%. These are safety
-bounds, not optimization targets.
+每个修订必须保留全部原文实词；精确的共指替换需记录。字符相似度至少 70%，CJK 长度增幅不超过 25%。这些是安全边界，不是优化目标。
 
-The editor receives the 16 items in a seeded order without the high/low label,
-rank, reader history, or future display side. Every edit records the exact
-before and after span, moved material, inserted function words, explicit
-relation, linked proposition IDs, locked literals, entity checks, numeric
-sequence, negation, modality, attribution, uncertainty, voice anchors, and a
-unified diff. A passage with an unresolved preservation question is rejected
-before task generation; no replacement is selected after reader outcomes.
+编辑者按带 seed 的顺序接收 16 项，不知道高低标签、排名、读者历史及将来的展示侧。每次编辑记录准确的前后 span、移动材料、插入虚词、显式关系、关联命题 ID、锁定字面值、实体检查、数字序列、否定、模态、归因、不确定性、风格锚点及 unified diff。任何原意保留问题未解决的段落都在任务生成前拒绝；看到读者结果后不得替换样本。
 
-## Experimental design
+## 实验设计
 
-The paragraph is the intervention unit and the source document is the
-replication unit. The reader sees both versions of the same paragraph, so each
-paragraph is its own block. High/low matched blocks control source, format, and
-length variation. Repeated answers from one reader do not create independent
-reader replication.
+段落是干预单位，来源文档是复现单位。读者看到同一段落的两个版本，因此每段自身构成一个区组。高低匹配区组控制来源、体裁及篇幅变化。同一读者的重复回答不会产生独立读者复现。
 
-The frozen layout contains:
+冻结布局包含：
 
-- eight high-competition intervention pairs;
-- eight low-competition intervention pairs receiving the same operator;
-- one identical-text diagnostic;
-- one mirrored repeat of a randomly selected high-competition pair;
-- two session blocks of nine tasks, with a break requested between blocks.
+- 八个高竞争干预对；
+- 八个应用同一算子的低竞争干预对；
+- 一个相同文本诊断；
+- 一个随机选出的高竞争配对的镜像重复；
+- 两个各九题的场次，场次间要求休息。
 
-Within each stratum, four originals appear on side A and four on side B. Each
-session contains four high and four low items plus one diagnostic. The mirrored
-repeat reverses its first display side and occurs at least eight tasks later.
-Task order and side placement use seed `2026083101`. Candidate identities are
-assigned to the placeholder schedule by a separately recorded seeded mapping
-only after the eligible matched set is frozen.
+每层有四个原版放 A、四个放 B。每场含四个高竞争、四个低竞争及一个诊断。镜像重复反转首次展示侧，至少间隔八题。任务顺序和侧别使用 seed `2026083101`。合格匹配集冻结之后，才按另行记录的带 seed 映射，将候选身份分配给占位日程。
 
-The reader is blind to original/revised status, competition stratum, score,
-operator, source identity, and control role. The editor must not see outcomes.
+读者不知道原版／修订状态、竞争分层、分数、算子、来源身份及对照角色。编辑者不得看到结果。
 
-## Reader instrument
+## 读者工具
 
-The only required question is:
+唯一必答题如下，保留冻结问卷原文，含义为“哪个版本让你更愿意继续阅读”：
 
 > Which version makes you more willing to continue reading?
 
-The choices are version A, version B, or no meaningful difference/both bad.
-An optional comment remains available but cannot change eligibility, decoding,
-or a decision gate. The task does not ask for linguistic classification,
-authorship judgment, or a reason for the choice.
+选项为版本 A、版本 B、无实质差异／都不好。可保留可选评论，但评论不能改变准入、解码或决策门槛。任务不询问语言学分类、作者身份或选择理由。
 
-## Outcomes and analysis
+## 结果与分析
 
-Decode each independent intervention unit as:
+每个独立干预单位解码为：
 
-- `+1`: revised version preferred;
-- `0`: no meaningful difference or both bad;
-- `-1`: original version preferred.
+- `+1`：偏好修订版；
+- `0`：无实质差异或都不好；
+- `-1`：偏好原版。
 
-Let `S_high` and `S_low` be the sums across the eight independent units in each
-stratum. The primary development quantities are:
+令 `S_high` 和 `S_low` 为每层八个独立单位的分数之和。主要开发量为：
 
-- high-stratum net preference: `S_high / 8`;
-- low-stratum net preference: `S_low / 8`;
-- selector contrast: `(S_high - S_low) / 8`;
-- revised share among decisive answers in each stratum;
-- tie rate and display-side choice distribution.
+- 高层净偏好：`S_high / 8`；
+- 低层净偏好：`S_low / 8`；
+- 筛选器对照差：`(S_high - S_low) / 8`；
+- 每层明确回答中的修订偏好比例；
+- 平局率及展示侧选择分布。
 
-No confirmatory p-value is attached to the primary development gate. Exact
-binomial intervals may be reported descriptively for decisive preferences, but
-the reader is a fixed development reader and cannot support population-level
-reader inference.
+主要开发门槛不附确认性 p-value。可以描述性报告明确偏好的 exact binomial intervals，但读者是固定的开发读者，不能支持总体读者推断。
 
-## Frozen decision gates
+## 冻结的决策门槛
 
-Interpretation proceeds in this order:
+按以下顺序解释：
 
-1. **Instrument gate:** the identical pair must receive the no-difference
-   answer; the mirrored repeat must preserve the content preference or produce
-   no difference both times; and the exact two-sided binomial test of display
-   side among decisive intervention answers must not reject a 0.5 side share at
-   `alpha=0.05`. Failure makes the intervention outcome uninterpretable.
-2. **Preservation gate:** every independent revision must retain all locked
-   propositions, entities, quantities, negation, modality, attribution,
-   uncertainty, and voice anchors. Any detected failure blocks operator
-   promotion even when preference is positive.
-3. **Manipulation gate:** every high-stratum revision must shorten unresolved
-   distance to the head and lower path entropy without lowering lexical
-   coverage. Failure rejects the implementation of the operator.
-4. **High-stratum benefit gate:** at least six high items must be decisive; the
-   revised share among them must be at least 0.75; and `S_high / 8` must be at
-   least 0.50.
-5. **Selector-specificity gate:** `(S_high - S_low) / 8` must be at least 0.50.
+1. **工具门槛：**相同文本必须选择无差异；镜像重复必须保持内容偏好，或两次均无差异；明确干预回答的展示侧 exact two-sided binomial test 在 `alpha=0.05` 下不得拒绝侧别比例为 0.5。失败会使干预结果无法解释。
+2. **原意保留门槛：**每个独立修订都必须保留全部锁定命题、实体、数量、否定、模态、归因、不确定性及风格锚点。任何失败都会阻止算子升级，即使偏好为正。
+3. **操作门槛：**每个高层修订都必须缩短到中心词的未消歧距离、降低路径熵，同时不降低词汇覆盖率。失败则否决算子实现。
+4. **高层收益门槛：**至少六个高层项目有明确偏好；其中修订比例至少 0.75，且 `S_high / 8` 至少 0.50。
+5. **筛选器特异性门槛：**`(S_high - S_low) / 8` 至少 0.50。
 
-If gates 1-5 pass, the selector and operator advance to a separately powered,
-multi-reader validation design. If the high and low strata both meet the
-benefit gate but the selector contrast fails, only the operator remains a
-candidate and `boundary_competition_v1` is rejected as a selector. If
-`S_high <= 0`, the current operator is rejected. Any other outcome is
-inconclusive; more independent examples may be acquired under the frozen
-measurement, but thresholds and edits must not be tuned against these outcomes.
+若门槛 1-5 全部通过，筛选器和算子进入单独进行 power 设计的多读者验证。若高低两层都通过收益门槛但筛选器差未通过，仅保留算子为候选，否决 `boundary_competition_v1` 筛选器。若 `S_high <= 0`，否决当前算子。其他结果均为不确定；可在冻结测量下采集更多独立示例，但不得依据这些结果调整阈值或编辑。
 
-## Sample-size boundary
+## 样本量边界
 
-Sixteen independent passages are a development screen, not a powered
-validation study. For an optimistic exact two-sided binomial test against a
-0.5 decisive preference rate at `alpha=0.05` and 80% power, the minimum
-decisive-pair counts are:
+16 个独立段落只是开发筛查，不是经过 power 设计的验证。在乐观的 exact two-sided binomial test 中，相对明确偏好率 0.5，在 `alpha=0.05`、80% power 下，最少明确配对数为：
 
-| True revised preference | Decisive pairs | Tasks with 20% ties |
+| 真实修订偏好率 | 明确配对数 | 平局率 20% 时的任务数 |
 |---:|---:|---:|
 | 0.65 | 90 | 113 |
 | 0.70 | 49 | 62 |
 | 0.75 | 30 | 38 |
 | 0.80 | 20 | 25 |
 
-The 0.70 row is the smallest practically interesting effect for a targeted
-editing rule, but 49 comparisons from one reader would still not replicate the
-reader. A later confirmatory design must cross multiple independent readers
-with held-out passages and determine reader and item counts by simulation under
-the planned mixed-effects model. The development effect estimate must be
-shrunk rather than copied directly into that power calculation.
+0.70 这一行代表目标编辑规则最小且具有实际价值的效应，但同一读者的 49 次比较仍无法复现读者。后续验证设计必须让多名独立读者交叉阅读 held-out 段落，并按计划中的 mixed-effects model 模拟确定读者数与材料数。开发效应估计应收缩，不直接复制进 power 计算。
 
-## Reproduction
+## 复现
 
-Generate the placeholder allocation and exact-binomial sensitivity table with:
+生成占位分配及 exact-binomial 敏感性表：
 
 ~~~powershell
 python experiments/design_boundary_competition_experiment.py `
@@ -334,72 +255,38 @@ python experiments/design_boundary_competition_experiment.py `
   --seed 2026083101
 ~~~
 
-The generated files contain no corpus text and remain under ignored
-`feature_runs/`. The actual task generator must validate the frozen allocation,
-corpus-separation, matching, preservation, and manipulation gates before it can
-emit Label Studio tasks.
+生成文件不含语料正文，保留在被忽略的 `feature_runs/` 下。实际任务生成器必须验证冻结分配、语料分离、匹配、原意保留及操作门槛，之后才能输出 Label Studio 任务。
 
-## Immediate stop/go decision
+## 当前停止／继续决定
 
-The next action is to implement and externally calibrate
-`boundary_competition_v1`. Do not inspect the 30-document validation reserve,
-write passage-specific lexical exceptions, prepare revisions, or open Project 8
-until Stage 0 produces eight valid high/low matched blocks under this protocol.
+下一步是实现并外部校准 `boundary_competition_v1`。阶段 0 按本协议产出八个有效高低匹配区组之前，不得查看 30 篇 validation reserve、编写段落专属词汇例外、准备修订或打开 Project 8。
 
-## Stage 0 result
+## 阶段 0 结果
 
-Stage 0 was run on 2026-08-31 without changing the frozen thresholds. The
-external calibration used 150 sentences from the public Beijing Sentence
-Corpus OSF workbook and the public SUBTLEX-CH word and character tables. The
-Beijing workbook has SHA-256
-`5c96e829a3de8203739893eef6b54e6ebddf055976919d9b29b2797053d81876`.
-Its OSF and DataCite metadata do not specify a license, so the file remains an
-untracked local research input and is not redistributed. The SUBTLEX word and
-character table hashes are
-`086536450b1f77d0c7ff3ac0fc8375897162ace807d3167bec48b4c493434077`
-and
-`03ffacc65c4d14530338c1bffb72b2e98d06ee23bed14546dc8001ab4bcbb415`;
-their Figshare record specifies CC BY 4.0.
+阶段 0 于 2026-08-31 执行，未改变冻结阈值。外部校准使用公开 Beijing Sentence Corpus OSF 工作簿中的 150 个句子，以及公开 SUBTLEX-CH 词表和字表。Beijing 工作簿 SHA-256 为 `5c96e829a3de8203739893eef6b54e6ebddf055976919d9b29b2797053d81876`。其 OSF 和 DataCite 元数据未指定许可证，因此文件仅保留为不受版本控制的本地研究输入，不再分发。SUBTLEX 词表与字表 hash 分别为 `086536450b1f77d0c7ff3ac0fc8375897162ace807d3167bec48b4c493434077` 和 `03ffacc65c4d14530338c1bffb72b2e98d06ee23bed14546dc8001ab4bcbb415`；其 Figshare 记录指定 CC BY 4.0。
 
-All 87 previously frozen structural candidates were scored. None came from a
-previous reader document, and the 30-document validation reserve was absent
-from the candidate input and remained unopened. The result was:
+全部 87 个此前冻结的结构候选均已评分。没有候选来自既有读者文档；30 篇 validation reserve 未出现在候选输入中，保持未打开。结果如下：
 
-| Boundary stratum | Instances | Documents |
+| 边界分层 | 实例数 | 文档数 |
 |---|---:|---:|
-| High competition | 0 | 0 |
-| Low competition | 36 | 23 |
-| Middle or unscored | 51 | 28 |
+| 高竞争 | 0 | 0 |
+| 低竞争 | 36 | 23 |
+| 居中或未评分 | 51 | 28 |
 
-Seven candidates in seven documents independently passed both the high-entropy
-and low-margin percentile gates. Only one candidate had at least two ambiguous
-gaps, no candidate had unresolved distance of at least six characters, and the
-maximum observed unresolved distance was four. The high candidates therefore
-number zero, no high/low matching edge exists, and Stage 0 fails before editing.
+七篇文章中的七个候选各自同时通过高熵和低路径差百分位门槛。只有一个候选至少有两个歧义间隙，没有候选的未消歧距离达到六字符，最大观察值为四。因此高竞争候选为零，不存在高低匹配边，阶段 0 在编辑前失败。
 
-The reader-localized example was fully scorable but did not resemble lexical
-segmentation competition. Its entropy percentile was 0.669, margin percentile
-was 0.346, ambiguous-gap count was zero, and unresolved distance was two. The
-best SUBTLEX path was `原生 / 时代 / 全新 / 算 / 力 / 服务`. This also exposes a
-domain-age limitation: the subtitle lexicon does not treat the modern technical
-term `算力` as one word. Adding it after seeing the result would be prohibited
-phrase-specific tuning and would not address the larger result.
+读者定位的示例可完整评分，但不像词汇分割竞争。其熵百分位为 0.669，路径差百分位为 0.346，歧义间隙为零，未消歧距离为二。最佳 SUBTLEX 路径为 `原生 / 时代 / 全新 / 算 / 力 / 服务`。这也暴露了领域时效性限制：字幕词典未将现代技术术语 `算力` 视为一个词。看到结果后再添加它属于被禁止的短语专属调参，也不能解决整体结果。
 
-Reject `boundary_competition_v1` as an intervention selector. The reader's
-description is better interpreted as competition among word-level modifier
-attachments or phrase bracketings than as uncertainty about character-to-word
-segmentation. Do not prepare revisions, assign the frozen allocation, or create
-Project 8 from this run. A word-level bracketing hypothesis requires its own
-pre-outcome literature review, measurement protocol, and independent gate.
+否决 `boundary_competition_v1` 作为干预筛选器。读者描述更适合解释为词级修饰附着或短语括分竞争，而非字到词分割不确定性。不得从本次运行准备修订、分配冻结日程或创建 Project 8。词级括分假设需要独立的结果前文献审查、测量协议和门槛。
 
-Two independent runs produced byte-identical artifacts:
+两次独立运行得到逐字节一致的产物：
 
-| Artifact | SHA-256 |
+| 产物 | SHA-256 |
 |---|---|
-| Summary | `0d8babb378cce2789ebf2a47717b6242549ef34de86a68f6fe4241e6497dfc9b` |
-| Candidate measurements | `77926cc1f71a60c7959c488b98863af43b0b7bcdfd42d47e7aa95fc2982cabe5` |
-| Candidate table | `60a42c4ca6541ba2f0f1cd4cad8d9556b94dd89501904aacbc2b9566c885c5f5` |
-| Empty matched-pair file | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
+| 摘要 | `0d8babb378cce2789ebf2a47717b6242549ef34de86a68f6fe4241e6497dfc9b` |
+| 候选测量 | `77926cc1f71a60c7959c488b98863af43b0b7bcdfd42d47e7aa95fc2982cabe5` |
+| 候选表 | `60a42c4ca6541ba2f0f1cd4cad8d9556b94dd89501904aacbc2b9566c885c5f5` |
+| 空匹配对文件 | `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
 
 ~~~powershell
 python experiments/boundary_competition_probe.py `

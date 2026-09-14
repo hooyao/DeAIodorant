@@ -1,0 +1,105 @@
+{
+  "version": "target-coverage-rescreen-1.0",
+  "selection": "All12 post-period bodies; no cue-count filter or ranking",
+  "protocol_hash": "0c0a6d7415926b096ae13c18f77bb12f0e99eb8183a48dba1c2ad761e79da930",
+  "parent_attempts_sha256": "dd94587f3ab39098f65e1971daae1ca38819079bc75c10d9602e8a469daf87f0",
+  "documents": [
+    {
+      "doc_id": "082d0c636e43906b0a2934f7",
+      "title": "理想主义者们，没能阻止AI进入伊朗“战场”",
+      "body_path": "data/local/media-provenance-extension-v1/documents/082d0c636e43906b0a2934f7/body.txt",
+      "sha256": "5f98c480f8651441f8585dee3b22ae91a6a4656ffff15a00463d8b933fa58cbb",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/082d0c636e43906b0a2934f7/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/082d0c636e43906b0a2934f7/blocks.json"
+    },
+    {
+      "doc_id": "28aba7e771aa2e1c3030cc96",
+      "title": "Bintrail：利用索引二进制日志实现 MySQL 时间旅行查询",
+      "body_path": "data/local/media-provenance-extension-v1/documents/28aba7e771aa2e1c3030cc96/body.txt",
+      "sha256": "5424df763b43bb7cc944c23505df93cdcfa933fad66cef2d0b7b09993e533e0c",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/28aba7e771aa2e1c3030cc96/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/28aba7e771aa2e1c3030cc96/blocks.json"
+    },
+    {
+      "doc_id": "436d2545973410a305a4fa93",
+      "title": "开源AI编程工具第一来啦：智谱GLM-5.2上线模力工场，还有专属折扣！",
+      "body_path": "data/local/media-provenance-extension-v1/documents/436d2545973410a305a4fa93/body.txt",
+      "sha256": "d5c9cb731a670b3a0375e16e1c80861c9b0a1122ae0e9f551053bff3ccb28d91",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/436d2545973410a305a4fa93/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/436d2545973410a305a4fa93/blocks.json"
+    },
+    {
+      "doc_id": "4f83cc9086d7fa6b52bd5b8e",
+      "title": "打破孤岛：Netflix推出Upper元模型实现内容工程一致性",
+      "body_path": "data/local/media-provenance-extension-v1/documents/4f83cc9086d7fa6b52bd5b8e/body.txt",
+      "sha256": "e1635e37cf42d6d605c8592cc52c2052bfc9c909369ad108d2d1c2e22ddb8091",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/4f83cc9086d7fa6b52bd5b8e/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/4f83cc9086d7fa6b52bd5b8e/blocks.json"
+    },
+    {
+      "doc_id": "501803a8b2116e69ec6e26cd",
+      "title": "Linus 之后的 Linux？内核社区终于写下“接班预案”",
+      "body_path": "data/local/media-provenance-extension-v1/documents/501803a8b2116e69ec6e26cd/body.txt",
+      "sha256": "a1096051c2d477ff40ca6bf90d98b5c2064af2bf2ad23f10cd0c4d4a684c9d97",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/501803a8b2116e69ec6e26cd/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/501803a8b2116e69ec6e26cd/blocks.json"
+    },
+    {
+      "doc_id": "78428b30c546b2fff9543e8b",
+      "title": "从拒绝 AI 到一切先问 Agent，DHH：这是我最爽的编程时刻之一，但程序员黄金时代到头了",
+      "body_path": "data/local/media-provenance-extension-v1/documents/78428b30c546b2fff9543e8b/body.txt",
+      "sha256": "20d69d78f2296c0d3bfeb81974c53e433fd6682214d75089307c6233cce0c69e",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/78428b30c546b2fff9543e8b/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/78428b30c546b2fff9543e8b/blocks.json"
+    },
+    {
+      "doc_id": "b145102dedeba53efa9de826",
+      "title": "Snowflake 落地中国两年：迈向智能体企业时代，关键在上下文",
+      "body_path": "data/local/media-provenance-extension-v1/documents/b145102dedeba53efa9de826/body.txt",
+      "sha256": "f3d25219c06352a666d9acb8e8bd4db1062fea872c0fb8626a912159ff725fe2",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/b145102dedeba53efa9de826/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/b145102dedeba53efa9de826/blocks.json"
+    },
+    {
+      "doc_id": "d405fbb6bb5cfd461d29cc40",
+      "title": "亚马逊云科技推出S3 Files，为S3 Bucket带来文件系统访问能力",
+      "body_path": "data/local/media-provenance-extension-v1/documents/d405fbb6bb5cfd461d29cc40/body.txt",
+      "sha256": "53b5545fb2901480dbfdbec0915ef8a9b0fc53a5ec12195e22b9568198c593d6",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/d405fbb6bb5cfd461d29cc40/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/d405fbb6bb5cfd461d29cc40/blocks.json"
+    },
+    {
+      "doc_id": "dad0b3ae7ff6c3190379cc7d",
+      "title": "西部数据 Tim Rausch：AI不是只有GPU，数据最终还要回到存储系统",
+      "body_path": "data/local/media-provenance-extension-v1/documents/dad0b3ae7ff6c3190379cc7d/body.txt",
+      "sha256": "714c6b048894a7a0b07571c8ef7d43895823410887630f5be2485d41f04ce5cb",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/dad0b3ae7ff6c3190379cc7d/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/dad0b3ae7ff6c3190379cc7d/blocks.json"
+    },
+    {
+      "doc_id": "e594db9c3260b60d8b18d62c",
+      "title": "科大讯飞面向超大规模教育场景的 Agent 系统架构演进与工程实践｜AICon上海",
+      "body_path": "data/local/media-provenance-extension-v1/documents/e594db9c3260b60d8b18d62c/body.txt",
+      "sha256": "c25276041815c3ce9e809d2a9471e045df980b3540132390606eda82e2c4afc5",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/e594db9c3260b60d8b18d62c/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/e594db9c3260b60d8b18d62c/blocks.json"
+    },
+    {
+      "doc_id": "ec1878a7f4b0847f94d21578",
+      "title": "2780 亿市场风口，MongoDB 游戏数据新基建技术揭秘！| Q推荐",
+      "body_path": "data/local/media-provenance-extension-v1/documents/ec1878a7f4b0847f94d21578/body.txt",
+      "sha256": "346dc847689f09d8fcf9e56d43257d6df355067cf3e013f318c97c93a63ad1f4",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/ec1878a7f4b0847f94d21578/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/ec1878a7f4b0847f94d21578/blocks.json"
+    },
+    {
+      "doc_id": "eeb75348b34b369f61245ecf",
+      "title": "1万亿美元天价薪酬敲定，马斯克离全球首位“万亿富豪”又近了一步",
+      "body_path": "data/local/media-provenance-extension-v1/documents/eeb75348b34b369f61245ecf/body.txt",
+      "sha256": "8a38f1c57abd28f8b82eefa83a5d51f3c633e4852a7654ad558beb32d5592471",
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/eeb75348b34b369f61245ecf/metadata.json",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/eeb75348b34b369f61245ecf/blocks.json"
+    }
+  ],
+  "human_gold": false
+}

@@ -1,0 +1,220 @@
+[
+  {
+    "candidate_id": "cr001-20-draft-assistant_edit",
+    "case_id": "review-01",
+    "control": false,
+    "draft_id": "cr001-20-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-19-draft-assistant_edit",
+    "case_id": "review-02",
+    "control": false,
+    "draft_id": "cr001-19-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-12-draft-compact_prompt",
+    "case_id": "review-03",
+    "control": false,
+    "draft_id": "cr001-12-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "case_id": "review-04",
+    "control": true,
+    "control_id": "cr001-control-04",
+    "expected_fidelity": "fail"
+  },
+  {
+    "candidate_id": "cr001-17-draft-compact_prompt",
+    "case_id": "review-05",
+    "control": false,
+    "draft_id": "cr001-17-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-01-draft-assistant_edit",
+    "case_id": "review-06",
+    "control": false,
+    "draft_id": "cr001-01-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-08-draft-compact_prompt",
+    "case_id": "review-07",
+    "control": false,
+    "draft_id": "cr001-08-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-14-draft-compact_prompt",
+    "case_id": "review-08",
+    "control": false,
+    "draft_id": "cr001-14-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-03-draft-assistant_edit",
+    "case_id": "review-09",
+    "control": false,
+    "draft_id": "cr001-03-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-07-draft-compact_prompt",
+    "case_id": "review-10",
+    "control": false,
+    "draft_id": "cr001-07-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "case_id": "review-11",
+    "control": true,
+    "control_id": "cr001-control-03",
+    "expected_fidelity": "fail"
+  },
+  {
+    "candidate_id": "cr001-03-draft-compact_prompt",
+    "case_id": "review-12",
+    "control": false,
+    "draft_id": "cr001-03-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-20-draft-compact_prompt",
+    "case_id": "review-13",
+    "control": false,
+    "draft_id": "cr001-20-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-15-draft-assistant_edit",
+    "case_id": "review-14",
+    "control": false,
+    "draft_id": "cr001-15-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-09-draft-compact_prompt",
+    "case_id": "review-15",
+    "control": false,
+    "draft_id": "cr001-09-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-02-draft-compact_prompt",
+    "case_id": "review-16",
+    "control": false,
+    "draft_id": "cr001-02-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "case_id": "review-17",
+    "control": true,
+    "control_id": "cr001-control-02",
+    "expected_fidelity": "pass"
+  },
+  {
+    "candidate_id": "cr001-08-draft-assistant_edit",
+    "case_id": "review-18",
+    "control": false,
+    "draft_id": "cr001-08-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-11-draft-compact_prompt",
+    "case_id": "review-19",
+    "control": false,
+    "draft_id": "cr001-11-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-07-draft-assistant_edit",
+    "case_id": "review-20",
+    "control": false,
+    "draft_id": "cr001-07-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-15-draft-compact_prompt",
+    "case_id": "review-21",
+    "control": false,
+    "draft_id": "cr001-15-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-12-draft-assistant_edit",
+    "case_id": "review-22",
+    "control": false,
+    "draft_id": "cr001-12-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "case_id": "review-23",
+    "control": true,
+    "control_id": "cr001-control-06",
+    "expected_fidelity": "fail"
+  },
+  {
+    "candidate_id": "cr001-01-draft-compact_prompt",
+    "case_id": "review-24",
+    "control": false,
+    "draft_id": "cr001-01-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "case_id": "review-25",
+    "control": true,
+    "control_id": "cr001-control-05",
+    "expected_fidelity": "fail"
+  },
+  {
+    "candidate_id": "cr001-09-draft-assistant_edit",
+    "case_id": "review-26",
+    "control": false,
+    "draft_id": "cr001-09-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-19-draft-compact_prompt",
+    "case_id": "review-27",
+    "control": false,
+    "draft_id": "cr001-19-draft",
+    "kind": "compact_prompt"
+  },
+  {
+    "candidate_id": "cr001-14-draft-assistant_edit",
+    "case_id": "review-28",
+    "control": false,
+    "draft_id": "cr001-14-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-02-draft-assistant_edit",
+    "case_id": "review-29",
+    "control": false,
+    "draft_id": "cr001-02-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-11-draft-assistant_edit",
+    "case_id": "review-30",
+    "control": false,
+    "draft_id": "cr001-11-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "candidate_id": "cr001-17-draft-assistant_edit",
+    "case_id": "review-31",
+    "control": false,
+    "draft_id": "cr001-17-draft",
+    "kind": "assistant_edit"
+  },
+  {
+    "case_id": "review-32",
+    "control": true,
+    "control_id": "cr001-control-01",
+    "expected_fidelity": "pass"
+  }
+]

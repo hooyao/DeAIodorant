@@ -1,0 +1,93 @@
+{
+  "frame_index": 7249,
+  "url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ",
+  "doc_id": "9656e09a0c8ef6938c517cef",
+  "sitemap_lastmod": null,
+  "intended_cohort": "post",
+  "publication_date": "unknown_until_article_capture",
+  "exclusion_reasons": [],
+  "selected": true,
+  "selection_rank": 7,
+  "capture": {
+    "url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ",
+    "requested_at": "2026-09-14T06:34:24.399431+00:00",
+    "capture_file": "raw/9656e09a0c8ef6938c517cef.html",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 06:34:26 GMT"
+    },
+    "completed_at": "2026-09-14T06:34:25.593421+00:00",
+    "complete_response": true,
+    "bytes": 335515,
+    "sha256": "331f9664328ea5188cb3018a21433ac0be61e291cb82bfd4015ceee8c15c241e"
+  },
+  "admission_status": "unreviewed_staging_not_admitted",
+  "smell_label": null,
+  "authorship_label": null,
+  "training_rights": "unverified",
+  "quality_status": "unreviewed_no_quality_admission",
+  "visibility_status": "unreviewed_snapshot_only",
+  "exposure_status": "identity_checked_near_duplicate_and_missing_historical_handoffs_pending",
+  "status": "captured_unreviewed",
+  "metadata": {
+    "doc_id": "9656e09a0c8ef6938c517cef",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ",
+    "title": "Nuxt Test Utils v4：基于Vitest v4，重构mock机制并强化环境的初始化",
+    "authors": [],
+    "translators": [
+      "张卫滨"
+    ],
+    "translation_evidence": [
+      "explicit_translator_field"
+    ],
+    "published_at": "2026-04-08",
+    "modified_at": null,
+    "collected_at": "2026-09-14T06:34:24.399431+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 18433,
+    "comments": 0,
+    "likes": 0,
+    "collects": 0,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 937,
+    "text_chars": 1957,
+    "line_count": 85,
+    "repeated_line_ratio": 0.0824
+  },
+  "body_path": "documents/9656e09a0c8ef6938c517cef/body.txt",
+  "content_hash": "f3dd1e6d13acf98ba6e9354fdd197c7016a7d1d4d958b8336729f5e4aec65a9c",
+  "body_file_sha256": "f3dd1e6d13acf98ba6e9354fdd197c7016a7d1d4d958b8336729f5e4aec65a9c",
+  "embedded_publication_milliseconds": 1775613600224,
+  "published_timestamp_utc": "2026-04-08T02:00:00.224000+00:00",
+  "published_date_asia_shanghai": "2026-04-08",
+  "actual_cohort": "post",
+  "boundary_timezone_ambiguity": false,
+  "intended_period_match": true,
+  "sitemap_lastmod_is_publication_date": false,
+  "embedded_scalar_time_fields": {
+    "publish_time": 1775613600224,
+    "ctime": 1775613596245,
+    "utime": 1775613596245
+  },
+  "declared_canonical_urls": [
+    "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ"
+  ],
+  "canonical_url_mismatch": false,
+  "known_exact_content_overlap": false,
+  "exclusions_found": [
+    "deterministic_translation_evidence"
+  ],
+  "translation_status": "excluded_deterministic_evidence",
+  "legacy_quality_pass_diagnostic_only": true,
+  "block_count": 14,
+  "media_reference_count": 0,
+  "link_count": 10,
+  "multimedia_status": "full_captured_text_only_media_references_uninspected",
+  "utf8_decode_replacement_count": 0
+}

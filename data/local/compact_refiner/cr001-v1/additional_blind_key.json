@@ -1,0 +1,116 @@
+[
+  {
+    "case_id": "additional-01",
+    "control": false,
+    "draft_id": "cr001-09-draft",
+    "proposal_case_id": "edit-06"
+  },
+  {
+    "case_id": "additional-02",
+    "control": false,
+    "draft_id": "cr001-11-draft",
+    "proposal_case_id": "edit-07"
+  },
+  {
+    "case_id": "additional-03",
+    "control": false,
+    "draft_id": "cr001-20-draft",
+    "proposal_case_id": "edit-13"
+  },
+  {
+    "case_id": "additional-04",
+    "control": false,
+    "draft_id": "cr001-07-draft",
+    "proposal_case_id": "edit-04"
+  },
+  {
+    "case_id": "additional-05",
+    "control": false,
+    "draft_id": "cr001-01-draft",
+    "proposal_case_id": "edit-01"
+  },
+  {
+    "case_id": "additional-06",
+    "control": true,
+    "control_id": "cr001-control-03",
+    "expected_fidelity": "fail"
+  },
+  {
+    "case_id": "additional-07",
+    "control": false,
+    "draft_id": "cr001-03-draft",
+    "proposal_case_id": "edit-03"
+  },
+  {
+    "case_id": "additional-08",
+    "control": false,
+    "draft_id": "cr001-19-draft",
+    "proposal_case_id": "edit-12"
+  },
+  {
+    "case_id": "additional-09",
+    "control": false,
+    "draft_id": "cr001-14-draft",
+    "proposal_case_id": "edit-09"
+  },
+  {
+    "case_id": "additional-10",
+    "control": false,
+    "draft_id": "cr001-08-draft",
+    "proposal_case_id": "edit-05"
+  },
+  {
+    "case_id": "additional-11",
+    "control": false,
+    "draft_id": "cr001-15-draft",
+    "proposal_case_id": "edit-10"
+  },
+  {
+    "case_id": "additional-12",
+    "control": true,
+    "control_id": "cr001-control-02",
+    "expected_fidelity": "pass"
+  },
+  {
+    "case_id": "additional-13",
+    "control": true,
+    "control_id": "cr001-control-05",
+    "expected_fidelity": "fail"
+  },
+  {
+    "case_id": "additional-14",
+    "control": false,
+    "draft_id": "cr001-17-draft",
+    "proposal_case_id": "edit-11"
+  },
+  {
+    "case_id": "additional-15",
+    "control": false,
+    "draft_id": "cr001-12-draft",
+    "proposal_case_id": "edit-08"
+  },
+  {
+    "case_id": "additional-16",
+    "control": true,
+    "control_id": "cr001-control-01",
+    "expected_fidelity": "pass"
+  },
+  {
+    "case_id": "additional-17",
+    "control": true,
+    "control_id": "cr001-control-04",
+    "expected_fidelity": "fail"
+  },
+  {
+    "case_id": "additional-18",
+    "control": false,
+    "draft_id": "cr001-02-draft",
+    "proposal_case_id": "edit-02"
+  },
+  {
+    "case_id": "additional-19",
+    "control": true,
+    "control_id": "cr001-control-06",
+    "expected_fidelity": "fail"
+  }
+]

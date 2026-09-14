@@ -1,0 +1,102 @@
+{
+  "frame_index": 8858,
+  "url": "https://www.infoq.cn/article/3U3XlG8kMx9mbGJytF24",
+  "doc_id": "95d76057b89c66797e92cfff",
+  "intended_cohort": "pre",
+  "sitemap_lastmod": null,
+  "publication_date": "unknown_until_article_capture",
+  "exclusion_reasons": [],
+  "selected": true,
+  "selection_rank": 5,
+  "capture": {
+    "url": "https://www.infoq.cn/article/3U3XlG8kMx9mbGJytF24",
+    "requested_at": "2026-09-14T08:38:59.152245+00:00",
+    "capture_file": "raw/95d76057b89c66797e92cfff.html",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/3U3XlG8kMx9mbGJytF24",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 08:39:01 GMT"
+    },
+    "completed_at": "2026-09-14T08:39:00.325708+00:00",
+    "complete_response": true,
+    "bytes": 314045,
+    "sha256": "8b51e2d61b531cdd3c87ec5f63df9f332a539e94e46f74c7e003fab8d27bfd10"
+  },
+  "admission_status": "unreviewed_staging_not_admitted",
+  "smell_label": null,
+  "authorship_label": null,
+  "training_rights": "unverified",
+  "quality_status": "unreviewed_no_quality_admission",
+  "visibility_status": "unreviewed_snapshot_only",
+  "exposure_status": "identity_checked_near_duplicate_and_missing_historical_handoffs_pending",
+  "status": "empty_extraction",
+  "metadata": {
+    "doc_id": "95d76057b89c66797e92cfff",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/3U3XlG8kMx9mbGJytF24",
+    "title": "上火星还不够，马斯克要用脑机接口带领全人类“进化”",
+    "authors": [
+      "陈思"
+    ],
+    "translators": [],
+    "translation_evidence": [],
+    "published_at": "2020-08-29",
+    "modified_at": null,
+    "collected_at": "2026-09-14T08:38:59.152245+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 3818,
+    "comments": 1,
+    "likes": 0,
+    "collects": 0,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 0,
+    "text_chars": 0
+  },
+  "body_path": "documents/95d76057b89c66797e92cfff/body.txt",
+  "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body_file_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "embedded_publication_milliseconds": 1598666746128,
+  "published_timestamp_utc": "2020-08-29T02:05:46.128000+00:00",
+  "published_date_asia_shanghai": "2020-08-29",
+  "actual_cohort": "pre",
+  "boundary_timezone_ambiguity": false,
+  "intended_period_match": true,
+  "sitemap_lastmod_is_publication_date": false,
+  "embedded_scalar_time_fields": {
+    "publish_time": 1598666746128,
+    "ctime": 1598666748157,
+    "utime": 1598666748157
+  },
+  "declared_canonical_urls": [
+    "https://www.infoq.cn/article/3U3XlG8kMx9mbGJytF24"
+  ],
+  "canonical_url_mismatch": false,
+  "known_exact_content_overlap": true,
+  "translation_status": "unresolved",
+  "block_count": 0,
+  "media_reference_count": 0,
+  "link_count": 0,
+  "multimedia_status": "full_captured_text_only_media_references_uninspected",
+  "utf8_decode_replacement_count": 0,
+  "legacy_extractor_exclusions": [
+    "known_exact_content_overlap"
+  ],
+  "exclusions_found": [
+    "known_exact_content_overlap"
+  ],
+  "provenance": {
+    "stratum": "unresolved",
+    "method": "fixed_existing_deterministic_evidence_rules",
+    "evidence": [],
+    "direct_expression_matches": [],
+    "original_chinese_certified": false,
+    "production_history_verified": false,
+    "translation_is_research_exclusion": false
+  },
+  "research_retained": true,
+  "intended_period_mismatch_is_reassigned_by_actual_date": true
+}

@@ -1,147 +1,110 @@
-# Architecture
+# 系统架构
 
-## System purpose
+## 系统用途
 
-DeAIodorant refines generated Chinese text before publication. It is intended to
-reduce repetitive structure, generic exposition, formulaic transitions, and
-other patterns that weaken reader engagement while preserving the document's
-meaning and useful information.
+DeAIodorant 在发布前改写生成的中文文本。在保留文档原意和有效信息的同时，减少重复结构、空泛说明、公式化过渡，以及其他削弱阅读意愿的模式。
 
-The system is organized around evidence and evaluation. Corpus acquisition is a
-supporting subsystem, not the product itself.
+系统围绕证据和评估组织。语料采集是支撑子系统，产品目标仍是文本改写。
 
-## Target component model
+## 目标组件模型
 
-```text
-Acquisition adapters
-    -> normalized document store
-    -> quality / visibility / translation gates
-    -> matched corpus builder
-    -> linguistic analysis and smell hypotheses
-    -> minimal editing interventions
-    -> blinded reader preference
-    -> validated edit-operation catalog
-    -> refinement planner
-    -> constrained Chinese rewriter
-    -> semantic and factual verification
-    -> CLI / API / publishing adapters
-```
+当前研究优先级遵循[校准后的真实媒体目标](target-feature-discovery.md)：先采集并按时间分组，建立充分的感知反差，发现可重复的特征，再验证限定范围的编辑，按需训练小模型。旧的弱样本探针不能作为已验证的目标测量重新启动。
 
-### Acquisition adapters
-
-Retrieve only publicly or lawfully accessible documents at conservative rates.
-Each adapter emits a shared metadata schema and preserves source provenance.
-Adapters do not make claims about AI authorship.
-
-The Windows local entry point is `scripts/run-corpus-pipeline.ps1`. It
-bootstraps `.venv` and delegates orchestration to
-`deaiodorant.corpus.pipeline`, which records the environment and configuration,
-runs the existing root collector without migrating it, and invokes the corpus
-integrity validator. Generated `data/local/` runs remain diagnostic pilot
-material until manual review, matching, rights review, and all Phase 1 gates
-are complete.
-
-### Corpus gates
-
-Quality, visibility, provenance, deduplication, language, and translation gates
-construct comparable pre-2023 and post-2025-06 cohorts. Gates must expose both
-their decision and supporting evidence. Admission policy is deterministic where
-possible and fail-closed where uncertainty would contaminate the comparison.
-
-Translation-benchmark candidates requiring human judgment are materialized in
-an ignored local Label Studio workspace. The review service reads derived task
-JSON and stores annotations in its local database; an explicit converter emits
-the benchmark review CSV. It never rewrites candidate JSONL or deterministic
-translation labels. Service failure leaves rows unreviewed rather than making
-an admission decision.
-
-An optional local triage stage runs only after existing human annotations are
-exported. Human decisions take precedence. A versioned foreign-source safeguard
-routes only high-confidence source-language judgments. Optional primary and
-verifier profiles may be retained as supporting measurements but are not run by
-the current routing-only protocol. The safeguard verifies that
-an exclusion is specifically supported by non-Chinese source material,
-preventing the Chinese marker `整理` (edited/compiled) on domestic speeches or
-interviews from being treated as foreign compilation. Model-assisted originals
-and exclusions remain separate diagnostic artifacts; only uncertain records
-are copied to a second human-review project.
-
-Research value is measured in a separate stage so promotion and information
-thinness are not mislabeled as translation evidence. Two independent value
-profiles must agree at high confidence; disagreements are copied to a dedicated
-quality-review project.
-
-### Matched corpus builder
-
-Balances source, topic, document format, length, publication age, and available
-attention signals. Its output supports population-level contrast; it is not a
-classifier training set for labeling arbitrary documents as human or AI.
-
-### Pattern catalog
-
-Stores measurable Chinese writing phenomena with examples, extraction logic,
-confounders, and observed effect sizes. A pattern becomes a product rule only
-after a bounded editing intervention improves blinded reader preference without
-meaning loss. Corpus separation alone is insufficient.
-
-### Reader evaluation
-
-Uses the same source passage across unchanged, rule-edited, model-edited, and
-human-edited variants. The primary outcome is willingness to continue reading,
-not perceived authorship. Preservation failures are recorded separately from
-style preference.
-
-### Deterministic feature package
-
-`deaiodorant.analysis` is a read-only consumer of prepared corpora. It validates
-cohort dates and content hashes and converts direct text measurements plus fixed
-CoNLL-U annotations into a self-describing document-feature matrix. Statistical
-comparison is deliberately outside the current component boundary. The feature
-path contains no LLM calls. Syntax-model provenance, input fingerprints,
-configuration, seeds, and output hashes are recorded in immutable manifests.
-
-### Refinement engine
-
-Separates diagnosis, edit planning, rewriting, and verification. The engine
-should support multiple backends while keeping backend-specific prompting
-outside the domain model. Every operation records its target span, intent, and
-before/after representation so changes can be inspected or reverted.
-
-### Verification
-
-Checks preservation of named entities, numbers, dates, citations, negation,
-modality, and key propositions. Fluency improvements do not override a failed
-meaning-preservation check.
-
-### Interfaces
-
-The first interface should be a deterministic CLI suitable for batch evaluation.
-An API and publishing integrations follow only after the evaluation contract is
-stable.
-
-## Package direction
-
-New reusable modules should live under `src/deaiodorant/` with these eventual
-boundaries:
+已完成的合成输入小模型改写工程试验采用独立流程：
 
 ```text
-deaiodorant.corpus       schemas, normalization, matching, and gates
-deaiodorant.analysis     feature extraction and contrast reports
-deaiodorant.refine       diagnosis, planning, rewriting, and verification
-deaiodorant.eval         automatic metrics and human-evaluation manifests
-deaiodorant.cli          local command-line interface
+构造事实简报 -> source model 生成普通草稿
+    -> 仅依据来源评估忠实度与编辑机会
+    -> 原文 / compact-prompt / assistant 编辑候选
+    -> deterministic edit replay 与字面检查
+    -> 分别记录评估者身份的独立语义评估
+    -> 后续人工复核与合格训练数据导出
 ```
 
-The current root scripts remain operational research entry points. Move logic
-out of them incrementally rather than performing a disruptive bulk rewrite.
+`deaiodorant.refine` 现已包含有界推理客户端和开发记录工具。`experiments/compact_refiner_run.py` 编排 preflight，不训练模型，也不导出 human gold。私有数据和缓存保存在新路线中被 Git 忽略的命名空间。字面一致不等于语义验收。下方从语料到产品的原有架构仍然适用，但需满足上述校准后的目标样本要求。合成试验结果不能替代媒体证据。参见[下游路线](routes/compact-refiner/README.md)。
 
-## Cross-cutting constraints
+```text
+采集适配器
+    -> 规范化文档存储
+    -> 来源完整性 / 传播可见度 / 来源分层
+    -> 匹配语料构建器
+    -> 语言分析与臭味假设
+    -> 最小编辑干预
+    -> 读者盲评偏好
+    -> 已验证编辑操作目录
+    -> 改写规划器
+    -> 受约束的中文改写器
+    -> 语义与事实核验
+    -> CLI / API / 发布适配器
+```
 
-- UTF-8 is the canonical encoding.
-- Inputs and generated variants are private by default and should not appear in
-  application logs.
-- Model calls are replaceable, versioned, cached where appropriate, and bounded
-  by explicit timeouts.
-- Offline deterministic tests remain the default suite.
-- Dataset and benchmark versions are immutable once used for a final result.
-- Third-party text retains provenance and is not presumed redistributable.
+### 采集适配器
+
+仅以保守的访问频率获取公开或合法可访问的文档。每个适配器输出统一的 metadata schema，保留来源信息，不判断作者是否为 AI。
+
+Windows 本地入口为 `scripts/run-corpus-pipeline.ps1`。它初始化 `.venv`，将编排交给 `deaiodorant.corpus.pipeline`：记录环境与配置，运行现有根目录采集器而不迁移它，并调用语料完整性验证器。生成的 `data/local/` 批次仍属于诊断性 pilot 材料，只有完成人工复核、匹配、权利审查以及全部 Phase 1 检查后，才能改变这一状态。
+
+### 语料筛选
+
+来源完整性、传播可见度、来源类型、去重和语言检查，共同支持 2023 年前与 2025 年 6 月之后两组的可比性。翻译、混合／改编、直接以中文写作和来源未明是显式分层。每次分类必须附有证据，来源未知不能认证为原创。可读性差是目标观察，本身不能成为排除文章的理由。
+
+规划中的改写流程接收完整中文文章，包括译文，不要求提供外文原文。可选的上游来源对齐记录用于诊断和原意保留复核，与默认模型输入分开。为控制泄漏，应将来源原文及其全部译文／改编放在同一组；单独报告译文输入的表现。
+
+下文仅原创视图中的翻译筛选，是为历史复现和对照分析保留的基础设施，不是通用采集过滤器。
+
+翻译 benchmark 中需要人工判断的候选，会导入被 Git 忽略的本地 Label Studio 工作区。复核服务读取派生的任务 JSON，将标注存入本地数据库，再由显式转换器输出 benchmark 复核 CSV。它不会改写候选 JSONL 或确定性的翻译标签。服务失败时，记录维持未复核状态，不作准入判断。
+
+可选的本地分流阶段仅在已有人工标注导出后运行，人工决策优先。带版本的外文来源 safeguard 只对高置信度源语言判断进行分流。可选的 primary 与 verifier profile 可以保留为辅助测量，但当前仅分流 protocol 不运行它们。safeguard 核查排除是否确实由非中文来源材料支持，避免把国内演讲或访谈上的 `整理` 标记误判为外文编译。模型辅助的原创与排除结果分别保留为诊断产物；只有不确定记录才复制到第二个人工复核项目。
+
+研究价值在单独阶段测量，避免把宣传性或信息稀薄误标为翻译证据。两个独立的价值评估 profile 必须在高置信度下达成一致；有分歧的记录复制到专门的质量复核项目。
+
+### 匹配语料构建器
+
+平衡来源、主题、文档体裁、篇幅、发布时长和可用的关注度信号。输出支持总体层面的对比，不是用于将任意文档标为人类或 AI 写作的分类训练集。
+
+### 模式目录
+
+保存可测量的中文写作现象，包括示例、提取逻辑、混杂因素和已观察到的 effect size。只有限定范围的编辑干预能在不损失原意的情况下提高盲评读者偏好，模式才可成为产品规则。仅有语料可分性还不够。
+
+### 读者评估
+
+围绕同一原文段落，比较原文、规则编辑、模型编辑和人工编辑等版本。主要结果是继续阅读的意愿，而非对作者身份的猜测。原意保留失败与风格偏好分开记录。
+
+### 确定性特征包
+
+`deaiodorant.analysis` 只读消费已准备的语料。它验证分组日期和内容 hash，将直接文本测量与固定 CoNLL-U 标注转换为自描述的文档特征矩阵。统计比较明确位于当前组件边界之外。特征流程没有 LLM 调用。句法模型来源、输入指纹、配置、seed 和输出 hash 记录在不可变 manifest 中。
+
+### 改写引擎
+
+将诊断、编辑规划、改写与验证分开。引擎应支持多个 backend，并将 backend 特有的 prompt 放在领域模型之外。每项操作记录目标 span、意图及修改前后的表示，使变化可检查、可撤回。
+
+### 验证
+
+检查命名实体、数字、日期、引用、否定、情态及关键命题的保留。流畅度改善不能覆盖原意保留检查失败。
+
+### 接口
+
+首个接口应为适合批量评估的确定性 CLI。评估契约稳定后，再增加 API 和发布集成。
+
+## 包结构方向
+
+新增可复用模块应置于 `src/deaiodorant/`，最终按以下职责划分：
+
+```text
+deaiodorant.corpus       schema、规范化、匹配与筛选
+deaiodorant.analysis     特征提取与对比报告
+deaiodorant.refine       诊断、规划、改写与验证
+deaiodorant.eval         自动指标与人工评估 manifest
+deaiodorant.cli          本地命令行接口
+```
+
+当前根目录脚本继续作为可运行的研究入口。逐步提取逻辑，避免一次性进行破坏性重写。
+
+## 跨组件约束
+
+- 统一采用 UTF-8 编码。
+- 输入和生成版本默认属于私有内容，不应出现在应用日志中。
+- 模型调用必须可替换、带版本、按需缓存，并设置明确 timeout。
+- 默认测试集保持离线、确定性运行。
+- 数据集和 benchmark 一旦用于最终结果，其版本不可改写。
+- 第三方文本保留来源信息，不能默认可再分发。

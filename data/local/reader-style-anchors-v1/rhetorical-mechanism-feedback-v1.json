@@ -1,0 +1,19 @@
+{
+  "version": "reader-rhetorical-mechanism-feedback-1.0",
+  "recorded_at_utc": "2026-09-14T09:51:14.997616+00:00",
+  "reviewer_kind": "maintainer_human",
+  "feedback_verbatim": [
+    "你一篇你可以用来作为强信号分析，而是只是我给你的另一个强信号，如果有人估计把而是替换成是，这改不了一点ai臭味，只是让你无法用而是统计出来",
+    "所以你想象不是而是的根源到底是什么",
+    "只看“而是”太肤浅了"
+  ],
+  "interpretation": {
+    "primary_anchor": "SMZDM remains the strong article-level anchor.",
+    "strong_signal": "The nominated contrast signal is broader than its literal connective.",
+    "surface_substitution": "Changing 而是 to 是 can leave the rhetorical action and perceived smell intact.",
+    "priority": "Explain the recurrent rhetorical action before choosing a measurement; do not substitute lexical coverage for the research objective.",
+    "generation_training_cause": "not_established_by_this_feedback"
+  },
+  "new_numeric_label": null,
+  "rewrite_preference": null
+}

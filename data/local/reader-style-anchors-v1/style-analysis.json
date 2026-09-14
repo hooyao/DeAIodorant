@@ -1,0 +1,1748 @@
+{
+  "schema_version": "reader-anchor-style-analysis-1.0",
+  "protocol": "reader-anchor-feature-discovery-1.0",
+  "created_at_utc": "2026-09-14T09:40:40.569529+00:00",
+  "analysis_role": "Independent bounded style analysis, with human labels visible",
+  "analyst": {
+    "agent_task": "smzdm_style_features",
+    "assistant_family": "GPT-6-based Codex",
+    "exact_model_identifier": "not exposed in this delegated turn",
+    "prompt_version": "reader-anchor-style-subtask-1.0",
+    "model_assisted": true,
+    "external_model_api_calls": 0,
+    "network_calls": 0,
+    "gpu_used": false,
+    "seed": null,
+    "seed_reason": "Interpretive analysis, not a randomized experiment."
+  },
+  "human_evidence": {
+    "reader_count": 1,
+    "smzdm_terms": [
+      "极其臭",
+      "恶臭"
+    ],
+    "baidu_terms": [
+      "一般臭"
+    ],
+    "source": "Maintainer spontaneous article-level feedback as recorded in the governing protocol and delegated task",
+    "labels_known_during_analysis": true,
+    "numeric_conversion": null,
+    "status": "Qualitative human severity observation; no new label elicited",
+    "not_established": [
+      "Individual authorship",
+      "Causal contribution of any feature",
+      "Editing benefit",
+      "Blinded reader preference",
+      "Independent feature validation"
+    ]
+  },
+  "documents": {
+    "smzdm": {
+      "doc_id": "e3dd9c4a95dd4e1fbdacd281",
+      "title": "开源不含硬件、国内不直邮：上手机器鸭 Microduck 前，先把买、搓、等三条路算明白",
+      "url": "https://post.smzdm.com/p/a70dm4ll/",
+      "published_at": "2026-08-31T03:59:12+08:00",
+      "collected_at_utc": "2026-09-14T09:32:10.352935+00:00",
+      "translation_status": "unresolved",
+      "reader_role": "Primary strong discovery anchor",
+      "publisher_generation_disclosure": "内容由AI生成",
+      "publisher_attribution_claim": "源自183位全网作者",
+      "attribution_claim_verified": false,
+      "generation_model": "unknown",
+      "generation_pipeline": "unknown",
+      "media_references": 4,
+      "media_inspected": false
+    },
+    "baidu": {
+      "doc_id": "92ade4253c08a43329164bf5",
+      "title": "百度想明白了：旧供给到达极限了",
+      "url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+      "published_at": "2026-05-15",
+      "collected_at": "2026-09-14T09:08:27.945858+00:00",
+      "translation_status": "unresolved_no_originality_pass",
+      "reader_role": "Lower-intensity reference, not a clean negative or matched control",
+      "platform": "infoq",
+      "media_references": 7,
+      "media_inspected": false
+    }
+  },
+  "extraction_policy": {
+    "offset_unit": "Unicode code points in exact UTF-8-decoded saved text",
+    "indexing": "zero-based, start inclusive, end exclusive",
+    "smzdm_quote_basis": "analysis-body.txt; publisher span.referer-link chips removed in the existing analytical view only",
+    "smzdm_source_view_read_in_full": true,
+    "publisher_citation_chips": 22,
+    "all_citation_snippets_read": true,
+    "citation_chips_are_not_prose_errors": true,
+    "embedded_quotes_status": "Publisher-provided snippets, not independently verified upstream sources",
+    "upstream_sources_fetched": false,
+    "baidu_quote_basis": "body.txt, including existing collector newlines; no silent cleanup",
+    "baidu_formatting_note": "Collector newlines inside a DOM block are retained in source offsets and are not classified as authored sentence fragments.",
+    "view_integrity": "Both SMZDM text views and Baidu source body reproduce by joining their respective blocks with one LF."
+  },
+  "reading_coverage": {
+    "smzdm": {
+      "complete_article_read": true,
+      "all_blocks_read": true,
+      "block_count": 30,
+      "body_characters": 3231,
+      "cjk_unified_ideographs_count": 2118,
+      "block_concatenation_matches_body": true,
+      "read_blocks": [
+        {
+          "block_id": "b001",
+          "start_char": 0,
+          "end_char": 12,
+          "text_utf8_sha256": "f7c1bfdab50d2f1129509cda56f5fb2f515dbe771921ccef359e398cf7c26985"
+        },
+        {
+          "block_id": "b002",
+          "start_char": 13,
+          "end_char": 295,
+          "text_utf8_sha256": "19f268baf210112cab07a9c6f64772409bd85ddfaef6911bcea9ee9e9b351a31"
+        },
+        {
+          "block_id": "b003",
+          "start_char": 296,
+          "end_char": 467,
+          "text_utf8_sha256": "724235404074959b5c14378fab1702d52f558df446484d770396872cec85369a"
+        },
+        {
+          "block_id": "b004",
+          "start_char": 468,
+          "end_char": 491,
+          "text_utf8_sha256": "f8c4496b5c031561d120a9132b2ea6924ea55b7d4e2556e610a537e57b9427b1"
+        },
+        {
+          "block_id": "b005",
+          "start_char": 492,
+          "end_char": 671,
+          "text_utf8_sha256": "a436a1dccf68ad2db98a384b4fec62e63b43d78f583c865ea07156b0ab3c123b"
+        },
+        {
+          "block_id": "b006",
+          "start_char": 672,
+          "end_char": 923,
+          "text_utf8_sha256": "da1e2588dd4a859356c797c6558f3c33eab139627744d65f6a57fbea9f736a20"
+        },
+        {
+          "block_id": "b007",
+          "start_char": 924,
+          "end_char": 1018,
+          "text_utf8_sha256": "2d6bdec2dca63aca54033cab252a39369d11f291b3fcef939a5be3f4a1c1fe10"
+        },
+        {
+          "block_id": "b008",
+          "start_char": 1019,
+          "end_char": 1122,
+          "text_utf8_sha256": "221896ab3203f0e960ed89399a56d2b260fecdef33c8bf432d1cb464b24f742f"
+        },
+        {
+          "block_id": "b009",
+          "start_char": 1123,
+          "end_char": 1142,
+          "text_utf8_sha256": "7a50e06de128f30ca2d1c3b68567afedc71ae813118ff073aad6728ea515938d"
+        },
+        {
+          "block_id": "b010",
+          "start_char": 1143,
+          "end_char": 1352,
+          "text_utf8_sha256": "415c25b7e6be681f8cdfd4d3ad9e44073f25239cb49d9f4a0dc3df74429fe090"
+        },
+        {
+          "block_id": "b011",
+          "start_char": 1353,
+          "end_char": 1558,
+          "text_utf8_sha256": "cac7f9f207cc0ed9a92f3d3b06a9ae6e156d4b4a3b1ed9fc77631d2c64eeb46a"
+        },
+        {
+          "block_id": "b012",
+          "start_char": 1559,
+          "end_char": 1577,
+          "text_utf8_sha256": "064f07c49fe19edca4bb85dd1bc8e21871d466c4af5e3224919e43c97bc7acbb"
+        },
+        {
+          "block_id": "b013",
+          "start_char": 1578,
+          "end_char": 1748,
+          "text_utf8_sha256": "dc0914b6d168d197a340a8021da438d54c530e33940ad1203d3b5276f64f55d0"
+        },
+        {
+          "block_id": "b014",
+          "start_char": 1749,
+          "end_char": 1955,
+          "text_utf8_sha256": "187fe6f347409527b65df154faf5d68034b6dfed1e546b2966efecde96d34ae6"
+        },
+        {
+          "block_id": "b015",
+          "start_char": 1956,
+          "end_char": 2169,
+          "text_utf8_sha256": "a9b6472a6f47e55265746109297f37355357e44f9b5ea397b161348280d71cc2"
+        },
+        {
+          "block_id": "b016",
+          "start_char": 2170,
+          "end_char": 2196,
+          "text_utf8_sha256": "e300b7199661a9f43f9b94ecf20209c3bf7c80a57e7ef6eae446993b4a16117e"
+        },
+        {
+          "block_id": "b017",
+          "start_char": 2197,
+          "end_char": 2268,
+          "text_utf8_sha256": "76e62c0f62115a80fb76eb4fbb2bcf7893ad6948f2d10ec63392a03220d88b0e"
+        },
+        {
+          "block_id": "b018",
+          "start_char": 2269,
+          "end_char": 2409,
+          "text_utf8_sha256": "67857a0a431a3e2235faf54e3995af8a0045a61ef0ce09626e8c1503ae586251"
+        },
+        {
+          "block_id": "b019",
+          "start_char": 2410,
+          "end_char": 2420,
+          "text_utf8_sha256": "b105984b47f32f2777f07f07341d9b6bde9e86a61a642c16f4e1584e98783123"
+        },
+        {
+          "block_id": "b020",
+          "start_char": 2421,
+          "end_char": 2545,
+          "text_utf8_sha256": "939d4d81e649010f2bb7c0abb2f42a2c5b287f5300df42de405f3e996dcfd60e"
+        },
+        {
+          "block_id": "b021",
+          "start_char": 2546,
+          "end_char": 2603,
+          "text_utf8_sha256": "f48364b4ba51541a1177afceaef534741009d77d76994954723882117691e7ea"
+        },
+        {
+          "block_id": "b022",
+          "start_char": 2604,
+          "end_char": 2655,
+          "text_utf8_sha256": "82dc20bc7e097d79f7b3daeeb0eb0f0f131349bb222f4561763c3335412da2c0"
+        },
+        {
+          "block_id": "b023",
+          "start_char": 2656,
+          "end_char": 2725,
+          "text_utf8_sha256": "53d1f61f8a7e562bd80d84926767c64ce04e11b2e225f931602a649151eb0214"
+        },
+        {
+          "block_id": "b024",
+          "start_char": 2726,
+          "end_char": 2737,
+          "text_utf8_sha256": "846e2dcdd94877220851607043f98cc8b1b619470de7f0ac748d083b0cc7e7e6"
+        },
+        {
+          "block_id": "b025",
+          "start_char": 2738,
+          "end_char": 2831,
+          "text_utf8_sha256": "4aaccf43e8c1d5375539b2ad45521cbb3911dd5933f329d86613cd1314170652"
+        },
+        {
+          "block_id": "b026",
+          "start_char": 2832,
+          "end_char": 2903,
+          "text_utf8_sha256": "3ed9594e0744528e45caeb0962241e7d21282765912a51bc01b0dd086c7ef561"
+        },
+        {
+          "block_id": "b027",
+          "start_char": 2904,
+          "end_char": 2972,
+          "text_utf8_sha256": "06775dcce392a14f72be3dfe370c3a61ccbbc24e948dc43cf6818c3e7a7e301a"
+        },
+        {
+          "block_id": "b028",
+          "start_char": 2973,
+          "end_char": 3013,
+          "text_utf8_sha256": "ac1f8251ad911582796dc3e890881028d56457aa09b66a1c78e1cd2f84a15506"
+        },
+        {
+          "block_id": "b029",
+          "start_char": 3014,
+          "end_char": 3023,
+          "text_utf8_sha256": "c74a7482da36ffa178f7a7c6be305d99454ec012857a15e336445811d92c815d"
+        },
+        {
+          "block_id": "b030",
+          "start_char": 3024,
+          "end_char": 3231,
+          "text_utf8_sha256": "5ae1d9706f7e5a9b9e65584fb6ab0667388013fadfe3af1149fc14acfbaaf96e"
+        }
+      ]
+    },
+    "baidu": {
+      "complete_article_read": true,
+      "all_blocks_read": true,
+      "block_count": 64,
+      "body_characters": 5872,
+      "cjk_unified_ideographs_count": 3898,
+      "block_concatenation_matches_body": true,
+      "read_blocks": [
+        {
+          "block_id": "b001",
+          "start_char": 0,
+          "end_char": 141,
+          "text_utf8_sha256": "c05d01472189131e9fe1a51a4346d7be557d7f025684f132210f12873f9045a7"
+        },
+        {
+          "block_id": "b002",
+          "start_char": 142,
+          "end_char": 368,
+          "text_utf8_sha256": "b3cb735681cecb2cee400306743079efece961c033ec3a94343a1d8b636cac87"
+        },
+        {
+          "block_id": "b003",
+          "start_char": 369,
+          "end_char": 400,
+          "text_utf8_sha256": "c900db38aa4e44b6d26bfd39f9586dbe2f4d520e7db130fd8d2d34af41141887"
+        },
+        {
+          "block_id": "b004",
+          "start_char": 401,
+          "end_char": 572,
+          "text_utf8_sha256": "3f82bddb28a9095a8b3c3e97cb040069fb028b9af19bb557ee5e814372a9aec4"
+        },
+        {
+          "block_id": "b005",
+          "start_char": 573,
+          "end_char": 681,
+          "text_utf8_sha256": "384ebf3b704006bf4988813755373e3208edf5551b38f2cc6725198896735355"
+        },
+        {
+          "block_id": "b006",
+          "start_char": 682,
+          "end_char": 729,
+          "text_utf8_sha256": "7c9302ac36c8f5aecafc91e119c74ec8891579ec248ac84dc13b3f317bf6367c"
+        },
+        {
+          "block_id": "b007",
+          "start_char": 730,
+          "end_char": 820,
+          "text_utf8_sha256": "c21e8ef9ad6019f52502be4359f17b7b11f162700a840ac445632c36f9fe193c"
+        },
+        {
+          "block_id": "b008",
+          "start_char": 821,
+          "end_char": 842,
+          "text_utf8_sha256": "98e8748416635f82cd03e4c9fb6a8ccf269489f4aab5fbea810caaeea68c5894"
+        },
+        {
+          "block_id": "b009",
+          "start_char": 843,
+          "end_char": 876,
+          "text_utf8_sha256": "8594ef15738dea6e59c55aa2b8e73b62800e1379963a967e9cb410d46a0bd6b4"
+        },
+        {
+          "block_id": "b010",
+          "start_char": 877,
+          "end_char": 955,
+          "text_utf8_sha256": "53e0b53f31ef1660f87c14ad7eb8efa1fcb3d80e1139d0d39e0c1e1d0a0688bd"
+        },
+        {
+          "block_id": "b011",
+          "start_char": 956,
+          "end_char": 1008,
+          "text_utf8_sha256": "a1377b05a4ae4c901eb7abad42c1f1f7866f0f24c523bfcc22ef7ed34c4bd072"
+        },
+        {
+          "block_id": "b012",
+          "start_char": 1009,
+          "end_char": 1210,
+          "text_utf8_sha256": "be0566ba81fc93fbd844ec48c829d036ebd274d744ee03c7e10713e8928ab8b6"
+        },
+        {
+          "block_id": "b013",
+          "start_char": 1211,
+          "end_char": 1459,
+          "text_utf8_sha256": "ecfb3031df3c6f90d1a5b5342cb96f92ec84ffa4a3dfc244b9c4056a7795ea6e"
+        },
+        {
+          "block_id": "b014",
+          "start_char": 1460,
+          "end_char": 1561,
+          "text_utf8_sha256": "1e3b633f10f40c88be40add7c70f71cdbf74ddcce51b641b71ecc632097c8562"
+        },
+        {
+          "block_id": "b015",
+          "start_char": 1562,
+          "end_char": 1719,
+          "text_utf8_sha256": "23ca004a85421125a492b36c1a3da9f34b58b4174ec654a5e187c8e60e9685fd"
+        },
+        {
+          "block_id": "b016",
+          "start_char": 1720,
+          "end_char": 1742,
+          "text_utf8_sha256": "1da84c8b4a63b99f6ad400deb0c42f0248305a19f108577d43402656b9412830"
+        },
+        {
+          "block_id": "b017",
+          "start_char": 1743,
+          "end_char": 1839,
+          "text_utf8_sha256": "47d530c67045d1d25026feb91776fb7e87fcb654cdce0783e6a492adc49d3f17"
+        },
+        {
+          "block_id": "b018",
+          "start_char": 1840,
+          "end_char": 1967,
+          "text_utf8_sha256": "28639482023346e83f1b12f162bd536516032d2fc5ef242984d1152f26a7ec92"
+        },
+        {
+          "block_id": "b019",
+          "start_char": 1968,
+          "end_char": 2010,
+          "text_utf8_sha256": "07f3ae9763587dff97fc37f79fb0eb50194611cb480e872dcbc060fde9fb2250"
+        },
+        {
+          "block_id": "b020",
+          "start_char": 2011,
+          "end_char": 2018,
+          "text_utf8_sha256": "e1885bdeeec178dce817c518f0103bc6dd2545376534c6fd87f60e238f834df8"
+        },
+        {
+          "block_id": "b021",
+          "start_char": 2019,
+          "end_char": 2178,
+          "text_utf8_sha256": "23d39000bc89eb6deddd68b77e2e154539cd72e5bb05fe305ae9adf1becd40bf"
+        },
+        {
+          "block_id": "b022",
+          "start_char": 2179,
+          "end_char": 2268,
+          "text_utf8_sha256": "81f7831ecf685d07bb34399d3de14c55638c6296d745505ed3956fa7489dc928"
+        },
+        {
+          "block_id": "b023",
+          "start_char": 2269,
+          "end_char": 2468,
+          "text_utf8_sha256": "020a24b4dba43d247c7e121224cc24ed388b40a62dec33c1730076461132470a"
+        },
+        {
+          "block_id": "b024",
+          "start_char": 2469,
+          "end_char": 2501,
+          "text_utf8_sha256": "9a1b61a5ef93279f80d8243c7ca06ab42366148a2b8a052641e56611954082c3"
+        },
+        {
+          "block_id": "b025",
+          "start_char": 2502,
+          "end_char": 2528,
+          "text_utf8_sha256": "2daaca59b4e6db98e8d3afd8cbb17bfb97862ff73825479d42e49aaa95c0b98f"
+        },
+        {
+          "block_id": "b026",
+          "start_char": 2529,
+          "end_char": 2691,
+          "text_utf8_sha256": "bfe444cd5cdba5d984dd3cfd564c00b9b4ec0b7d1b1965970d9c87e84fed45bd"
+        },
+        {
+          "block_id": "b027",
+          "start_char": 2692,
+          "end_char": 2776,
+          "text_utf8_sha256": "af6be95251ff839a3823b263200bbf1879d608fcb955db94c9d3e386858c30e1"
+        },
+        {
+          "block_id": "b028",
+          "start_char": 2777,
+          "end_char": 2840,
+          "text_utf8_sha256": "f00b6f466924afe8f8ee4f877cf8afbeca6f5a97622b09ced1d2f8fef39dc0e9"
+        },
+        {
+          "block_id": "b029",
+          "start_char": 2841,
+          "end_char": 2991,
+          "text_utf8_sha256": "1b4e56eb4571d1eb76779b050efed7cd9a58a775b0d785b371a9e205e0fd56d7"
+        },
+        {
+          "block_id": "b030",
+          "start_char": 2992,
+          "end_char": 3094,
+          "text_utf8_sha256": "ed5478d889436ac17d6cd264553894bbedca84512f8bb90ea0b7793f1fbeab75"
+        },
+        {
+          "block_id": "b031",
+          "start_char": 3095,
+          "end_char": 3153,
+          "text_utf8_sha256": "8d94de8f86ea2b838f3e42544fb56a3bf7a3cfc9759ed287eff6a183507124c5"
+        },
+        {
+          "block_id": "b032",
+          "start_char": 3154,
+          "end_char": 3247,
+          "text_utf8_sha256": "9fafe068683e552cf2014b81f338d075aff96952158695553cb13d779f194bca"
+        },
+        {
+          "block_id": "b033",
+          "start_char": 3248,
+          "end_char": 3362,
+          "text_utf8_sha256": "9e5b42584540eeebafc983a64822384af84a7a58a43763a17092e6f224198079"
+        },
+        {
+          "block_id": "b034",
+          "start_char": 3363,
+          "end_char": 3423,
+          "text_utf8_sha256": "c6ed0e0ea5250425038cf70ad2478ca16962de4ddfebf17c15b4bffb91826c1c"
+        },
+        {
+          "block_id": "b035",
+          "start_char": 3424,
+          "end_char": 3440,
+          "text_utf8_sha256": "037a08aae6d666bec6f53f45523dc14cfcecae72014875511f566a74527fb5fd"
+        },
+        {
+          "block_id": "b036",
+          "start_char": 3441,
+          "end_char": 3547,
+          "text_utf8_sha256": "3589b2cd5938ea50a9186f58bdc973044e1df042b1051b20ccf67e384accbe7c"
+        },
+        {
+          "block_id": "b037",
+          "start_char": 3548,
+          "end_char": 3655,
+          "text_utf8_sha256": "65aead0342791bca594e3199b56927333bd0791a86aa6b221eea8a9cb42b47f4"
+        },
+        {
+          "block_id": "b038",
+          "start_char": 3656,
+          "end_char": 3707,
+          "text_utf8_sha256": "32791f07fd0f56a998d16023f2397bd8442a3233fe61cdc9b428cc0ad6843b5d"
+        },
+        {
+          "block_id": "b039",
+          "start_char": 3708,
+          "end_char": 3758,
+          "text_utf8_sha256": "1b0f454ebe928d4b1ed0243d2ab152a7d05d465617a5898e390c5d15ffd26164"
+        },
+        {
+          "block_id": "b040",
+          "start_char": 3759,
+          "end_char": 3899,
+          "text_utf8_sha256": "4243b6fc53e939cf66c617f2e30425c3d50d95d6e4741a2cdbefc18e4cbdd642"
+        },
+        {
+          "block_id": "b041",
+          "start_char": 3900,
+          "end_char": 3998,
+          "text_utf8_sha256": "9d2008a5fc2ee1037e5a71f056566ff6de4d3603cba0adc5561af4f062f83529"
+        },
+        {
+          "block_id": "b042",
+          "start_char": 3999,
+          "end_char": 4024,
+          "text_utf8_sha256": "6a38bb38c28b54dc68288dc686cbd3254789a04b38babb37766134a844401330"
+        },
+        {
+          "block_id": "b043",
+          "start_char": 4025,
+          "end_char": 4153,
+          "text_utf8_sha256": "eee73c85c66522d832907a28a468fd205c26d340cc1ec76840f152bededf8e3a"
+        },
+        {
+          "block_id": "b044",
+          "start_char": 4154,
+          "end_char": 4210,
+          "text_utf8_sha256": "7b6ee9192ad9dd54f960edb85d2031d85b54037c754de262c7da80bc43250057"
+        },
+        {
+          "block_id": "b045",
+          "start_char": 4211,
+          "end_char": 4335,
+          "text_utf8_sha256": "31c0bb2cef2c9176628ca1fb19be74a17a41ebc74f4eebafd93e8983cc458073"
+        },
+        {
+          "block_id": "b046",
+          "start_char": 4336,
+          "end_char": 4466,
+          "text_utf8_sha256": "306629c4cfdea6bcb03ddc0c820c4002b43454a3c1412206e70c47641ffcb991"
+        },
+        {
+          "block_id": "b047",
+          "start_char": 4467,
+          "end_char": 4546,
+          "text_utf8_sha256": "c6d85c5074326d995a3f58c16413bab13d71cf1dc72040f875f6a2c3dce96028"
+        },
+        {
+          "block_id": "b048",
+          "start_char": 4547,
+          "end_char": 4636,
+          "text_utf8_sha256": "5069b1b89f18281e8c252f7c936d0e247c5f70dcb0fe60be12087c2e38724886"
+        },
+        {
+          "block_id": "b049",
+          "start_char": 4637,
+          "end_char": 4754,
+          "text_utf8_sha256": "490c0dda6339072d406d36c91b5048e0cd2e4bcad641f49d71808ea2324def0b"
+        },
+        {
+          "block_id": "b050",
+          "start_char": 4755,
+          "end_char": 4800,
+          "text_utf8_sha256": "4f12f995f710b2f7d3e38ea367d388968eb6de40d67539cd2bb5a16273d404e1"
+        },
+        {
+          "block_id": "b051",
+          "start_char": 4801,
+          "end_char": 4825,
+          "text_utf8_sha256": "5166151b10d68d5227e454ca910700127333b6428e89d14f7440d1242bece236"
+        },
+        {
+          "block_id": "b052",
+          "start_char": 4826,
+          "end_char": 4962,
+          "text_utf8_sha256": "a201cf0cf9ceeafae0b7d2aac40919831eb8ac94caa9c28b2b0cefcff39039e8"
+        },
+        {
+          "block_id": "b053",
+          "start_char": 4963,
+          "end_char": 5063,
+          "text_utf8_sha256": "b2dcfea3c3aab50c8eea076b2ed381a5df077bfa8b8504bfc5cdab0303ac0266"
+        },
+        {
+          "block_id": "b054",
+          "start_char": 5064,
+          "end_char": 5117,
+          "text_utf8_sha256": "c87ae06daa0da07222c9287a6a42364073ea92ad9b0ceb2b641c0b2cd4719dd1"
+        },
+        {
+          "block_id": "b055",
+          "start_char": 5118,
+          "end_char": 5168,
+          "text_utf8_sha256": "bd6f982ca553a5643d39e55787a86760b8f992d3614925df32c65112fab2ffce"
+        },
+        {
+          "block_id": "b056",
+          "start_char": 5169,
+          "end_char": 5178,
+          "text_utf8_sha256": "6e90928a14df9cf0dc98c1cbd473888f13ccd4f7c1e519a88c22ad05eeafc6ac"
+        },
+        {
+          "block_id": "b057",
+          "start_char": 5179,
+          "end_char": 5238,
+          "text_utf8_sha256": "a921b3b249189439de02e833eacf0cf2cb0325cccf55c7acffdd0ea6758dd7d6"
+        },
+        {
+          "block_id": "b058",
+          "start_char": 5239,
+          "end_char": 5439,
+          "text_utf8_sha256": "d945e03bc5c2ae357aaf500ce26f8abc7cd411d87c240ba9e472e2b8b5a21257"
+        },
+        {
+          "block_id": "b059",
+          "start_char": 5440,
+          "end_char": 5462,
+          "text_utf8_sha256": "b7e0b0a4cdccf8eff83c2a27c99bb5cc2124064dd9029f4ce2f00adfe34911c1"
+        },
+        {
+          "block_id": "b060",
+          "start_char": 5463,
+          "end_char": 5507,
+          "text_utf8_sha256": "0f2ff043d3b3eb95c11973e16fbb126d28666b35c83c3f13b709d2483e823049"
+        },
+        {
+          "block_id": "b061",
+          "start_char": 5508,
+          "end_char": 5635,
+          "text_utf8_sha256": "d0f1394fe7bb9bb9363adf2a515c82599252b84adea6c3f5cc2c0510cdd001f9"
+        },
+        {
+          "block_id": "b062",
+          "start_char": 5636,
+          "end_char": 5724,
+          "text_utf8_sha256": "9e3dfce95d8b672c7189d31fd92523d0cc671522e2afd163094ab9d044ad492d"
+        },
+        {
+          "block_id": "b063",
+          "start_char": 5725,
+          "end_char": 5826,
+          "text_utf8_sha256": "67e0aa43568da1381beb12b1a8f526f1ecc657e139bc972431736f3bc62378e8"
+        },
+        {
+          "block_id": "b064",
+          "start_char": 5827,
+          "end_char": 5872,
+          "text_utf8_sha256": "1e2ac7b72a09681426eac5ccac5b8fdfc9b1c282684a1ed6fb0c1cbcd2cac3ee"
+        }
+      ]
+    }
+  },
+  "minimal_descriptive_measurements": {
+    "literal_replacement_connector": {
+      "token": "而是",
+      "smzdm_analysis": 0,
+      "smzdm_source_with_chips": 0,
+      "baidu_source": 3,
+      "baidu_block_ids": [
+        "b046",
+        "b057",
+        "b058"
+      ],
+      "interpretation": "The strong anchor has zero literal occurrences: the token is not necessary for the supplied strong impression. This neither disproves old temporal-frequency results nor makes the broader family a validated target."
+    },
+    "dom_roles": {
+      "smzdm": {
+        "headings": 8,
+        "list_items": 8,
+        "all_text_blocks": 30
+      },
+      "baidu": {
+        "headings": 5,
+        "list_items": 0,
+        "all_text_blocks": 64
+      }
+    },
+    "limitations": "Counts describe these saved texts only. Headings and list formatting are genre/publisher-sensitive. No composite score, severity threshold, effect estimate, or independent family-frequency comparison is computed."
+  },
+  "families": [
+    {
+      "id": "F1",
+      "hypothesis_label": "Contrastive redefinition and correction",
+      "observable_definition": "Adjacent clauses reject or demote one classification, explanation, or value and install another. Include negative-to-positive copular pairs, reversed ordering, and restrictive parallel contrasts; do not define the family by one connector.",
+      "smzdm_recurring_examples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b003",
+          "block_tag": "p",
+          "start_char": 357,
+          "end_char": 375,
+          "block_start_char": 61,
+          "block_end_char": 79,
+          "quote": "收购是资本的事，这只鸭子才是自己的事",
+          "quote_utf8_sha256": "496dac8fa906332ef0c9c22a96b1bafe9488210cf1e9c8331b7f695cd13dadb4",
+          "text_attribution": "Article narration",
+          "interpretation": "A capital-versus-personal-interest contrast moves the reader from the acquisition topic to the product.",
+          "block_citation_ids": [
+            "b003-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b006",
+          "block_tag": "p",
+          "start_char": 687,
+          "end_char": 719,
+          "block_start_char": 15,
+          "block_end_char": 47,
+          "quote": "机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板",
+          "quote_utf8_sha256": "6ff64bbbf637f4820324c03ea4350af63909504fcea24385a7e9cbbe2c5ec3d4",
+          "text_attribution": "Article narration",
+          "interpretation": "Negative-positive correction without the literal replacement connector distinguishes two computing platforms.",
+          "block_citation_ids": [
+            "b006-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b011",
+          "block_tag": "p",
+          "start_char": 1353,
+          "end_char": 1405,
+          "block_start_char": 0,
+          "block_end_char": 52,
+          "quote": "这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。",
+          "quote_utf8_sha256": "e0974091d538d4ad7cfe9e34bd9ca661a320c505e34c11a338e7a6098289b1b6",
+          "text_attribution": "Article narration",
+          "interpretation": "The purchase is recategorized from a toy to a ready-made technical pipeline; the reader is directed to a preferred valuation.",
+          "block_citation_ids": [
+            "b011-c01",
+            "b011-c02"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b020",
+          "block_tag": "li",
+          "start_char": 2498,
+          "end_char": 2526,
+          "block_start_char": 77,
+          "block_end_char": 105,
+          "quote": "sim-to-real 的最后一公里不是玄学，是版本管理",
+          "quote_utf8_sha256": "198c33392f9f22f0e52cf43f6ccc8782bd959efd426933fe34e835740f3318bb",
+          "text_attribution": "Article narration",
+          "interpretation": "A reported version mismatch becomes a compact explanatory correction, again without the literal replacement connector.",
+          "block_citation_ids": [
+            "b020-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        }
+      ],
+      "baidu_recurring_examples": [
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b046",
+          "block_tag": "p",
+          "start_char": 4382,
+          "end_char": 4417,
+          "block_start_char": 46,
+          "block_end_char": 81,
+          "quote": "所以严格来说，这套架构的重点不是发明创造，而是进化升级，以及彼此协同。",
+          "quote_utf8_sha256": "4158083d495bc0fe5ea4813a43ce0b0945a63185fe5b52130bd6ec0e7ce39ecd",
+          "text_attribution": "Article narration",
+          "interpretation": "The article corrects novelty expectations through an explicit negative-positive replacement.",
+          "source_line_start": 64,
+          "source_line_end": 64
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b052",
+          "block_tag": "p",
+          "start_char": 4938,
+          "end_char": 4962,
+          "block_start_char": 112,
+          "block_end_char": 136,
+          "quote": "用招行内部的说法，这不是试点，是\"全行级部署\"。",
+          "quote_utf8_sha256": "cf566b7eb89b09d43bc402674ae6fd8b39c2e2376970b237199d4a7df99c62a6",
+          "text_attribution": "Article-reported wording attributed to the bank",
+          "interpretation": "A scale classification uses the same connector-free negative-positive shape. The wording is explicitly attributed inside the article.",
+          "source_line_start": 70,
+          "source_line_end": 70
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b058",
+          "block_tag": "p",
+          "start_char": 5358,
+          "end_char": 5403,
+          "block_start_char": 119,
+          "block_end_char": 164,
+          "quote": "这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系",
+          "quote_utf8_sha256": "ed175ee41e6523f19eb300cd84f0fad51be0397d5dff095d7e797b5455ca8211",
+          "text_attribution": "Article narration",
+          "interpretation": "The explanation of Apple adoption is replaced by a preferred causal account.",
+          "source_line_start": 76,
+          "source_line_end": 76
+        }
+      ],
+      "contrast_observation": "This family is clearly present in both articles. The SMZDM examples often serve immediate value judgments or advice; the Baidu examples often serve an industry argument. Presence alone has little ability to distinguish the supplied severity labels.",
+      "counterexamples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b008",
+          "block_tag": "p",
+          "start_char": 1019,
+          "end_char": 1047,
+          "block_start_char": 0,
+          "block_end_char": 28,
+          "quote": "但注意，\"全开源\"有边界：开的是软件管线，硬件图纸没开。",
+          "quote_utf8_sha256": "11e308a2257c641814d7927c66c80c7b372a1bf2bdc693442dca8d6ccd818c34",
+          "text_attribution": "Article narration",
+          "interpretation": "The contrast supplies a consequential category restriction: software availability does not imply hardware documentation availability. Removing it would lose information.",
+          "block_citation_ids": [
+            "b008-c01",
+            "b008-c02"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b015",
+          "block_tag": "p",
+          "start_char": 2109,
+          "end_char": 2119,
+          "block_start_char": 153,
+          "block_end_char": 163,
+          "quote": "这是估算不是实测定价",
+          "quote_utf8_sha256": "ae08d3f680049d281250d529ec49614acad6e07af8ed1ca0d87bbb3129478d29",
+          "text_attribution": "Article narration",
+          "interpretation": "The negative classification protects the status of the preceding estimate; it is a qualification to preserve.",
+          "block_citation_ids": [
+            "b015-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b022",
+          "block_tag": "p",
+          "start_char": 2179,
+          "end_char": 2223,
+          "block_start_char": 0,
+          "block_end_char": 44,
+          "quote": "在李彦宏看来，Token 不一定代表终局，它只代表成本并不代表收益，衡量的是投入而非产出",
+          "quote_utf8_sha256": "5fdc37d26efa3e03ad52b8a48cda6c4116599f5df2efc10898911342c8aa1ed9",
+          "text_attribution": "Article-rendered view attributed to Li Yanhong",
+          "interpretation": "The article attributes a cost-versus-value distinction. Attribution, negation, and the distinction remain meaningful even if surrounding repetition is later reviewed.",
+          "source_line_start": 28,
+          "source_line_end": 28
+        }
+      ],
+      "proposed_mechanism": "Repeated corrections may make exposition feel prearranged around successive revelations, especially when the rejected alternative was not developed. That is a proposed surface-aversion mechanism, not a demonstrated reading defect. Several instances provide genuinely useful restrictions.",
+      "plausible_nlp_measurement": "A versioned candidate extractor can locate negative copular clauses followed or preceded by affirmative copular clauses within DOM blocks, plus restrictive parallel contrasts. Keep exact spans and distinguish quoted speech, headings, and narration. Report token counts separately from manual semantic-family annotations.",
+      "semantic_review_limit": "Syntax cannot determine whether the rejected alternative was plausible, whether the contrast is necessary, or whether an explanatory replacement is warranted. Do not broaden the historical literal inventory silently or treat every negation as replacement.",
+      "confidence": {
+        "observed_recurrence": "high",
+        "descriptive_difference_between_articles": "low",
+        "explanation_of_reader_severity": "unestablished"
+      },
+      "evidence_status": "Label-conditioned model-assisted discovery; no intervention or blind validation."
+    },
+    {
+      "id": "F2",
+      "hypothesis_label": "Short parallel evaluative clauses and closing slogans",
+      "observable_definition": "Brief adjacent clauses reuse syntax or rhythm to deliver an evaluation, a memorable tradeoff, or a concluding formulation. Separate these from plain component lists and from ordinary argument sharing in Chinese.",
+      "smzdm_recurring_examples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b009",
+          "block_tag": "h3",
+          "start_char": 1123,
+          "end_char": 1142,
+          "block_start_char": 0,
+          "block_end_char": 19,
+          "quote": "账一：官方下单，买的是管线，熬的是时间",
+          "quote_utf8_sha256": "7a50e06de128f30ca2d1c3b68567afedc71ae813118ff073aad6728ea515938d",
+          "text_attribution": "Article narration",
+          "interpretation": "A section heading presents buying and waiting as a paired verdict.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b006",
+          "block_tag": "p",
+          "start_char": 906,
+          "end_char": 923,
+          "block_start_char": 234,
+          "block_end_char": 251,
+          "quote": "也就是说，训练靠算力，实机真不靠。",
+          "quote_utf8_sha256": "b8f5934bf5b7aa090f0bb41815369184f70ea33592a6075b3761c6906b871283",
+          "text_attribution": "Article narration",
+          "interpretation": "The paragraph ends with a compact mirrored statement rather than preserving the precision of the preceding deployment description.",
+          "block_citation_ids": [
+            "b006-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b015",
+          "block_tag": "p",
+          "start_char": 2144,
+          "end_char": 2169,
+          "block_start_char": 188,
+          "block_end_char": 213,
+          "quote": "DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。",
+          "quote_utf8_sha256": "1c160916118d63ed37a7181bf8c261f3164e281637293be194a81d23197c958f",
+          "text_attribution": "Article narration",
+          "interpretation": "A cost discussion closes with a categorical judgment and a quotable tradeoff.",
+          "block_citation_ids": [
+            "b015-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b024",
+          "block_tag": "h3",
+          "start_char": 2726,
+          "end_char": 2737,
+          "block_start_char": 0,
+          "block_end_char": 11,
+          "quote": "什么人该动，什么人该缓",
+          "quote_utf8_sha256": "846e2dcdd94877220851607043f98cc8b1b619470de7f0ac748d083b0cc7e7e6",
+          "text_attribution": "Article narration",
+          "interpretation": "The heading sorts audience actions through a short syntactic pair.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b030",
+          "block_tag": "p",
+          "start_char": 3160,
+          "end_char": 3205,
+          "block_start_char": 136,
+          "block_end_char": 181,
+          "quote": "原来强化学习机器人的入场券，真的可以是 399 美元、一块 RK3566、一晚上 GPU。",
+          "quote_utf8_sha256": "88166f47b424efb7df07a43766d26c0888cb0e4116a938e808240fe124f7a99e",
+          "text_attribution": "Article narration",
+          "interpretation": "The final paragraph converts the product discussion into an entry-ticket metaphor and a three-part cadence.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        }
+      ],
+      "baidu_recurring_examples": [
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b010",
+          "block_tag": "p",
+          "start_char": 917,
+          "end_char": 955,
+          "block_start_char": 40,
+          "block_end_char": 78,
+          "quote": "今天百度的升级可以总结为“新需求，新全栈，新供给”，核心主语是 Agent。",
+          "quote_utf8_sha256": "7f013269f5579866e892b913f947206f899abd8b682f6c18cfcd0d97dc952881",
+          "text_attribution": "Article narration",
+          "interpretation": "The repeated modifier and three parallel nouns provide a promotional summary cadence.",
+          "source_line_start": 12,
+          "source_line_end": 12
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b040",
+          "block_tag": "p",
+          "start_char": 3759,
+          "end_char": 3823,
+          "block_start_char": 0,
+          "block_end_char": 64,
+          "quote": "Agentic 强化学习是大模型从“会说”走向“会做”的关键路线，但传统强化学习在工程上很难规模化：训练不稳定、环境慢、采样贵。",
+          "quote_utf8_sha256": "3938d74c23b07b6a70cc2dc15ffcc8ad68593fd52c740dde438a06ca9c841283",
+          "text_attribution": "Article narration",
+          "interpretation": "A two-part capability contrast is followed by three short predicate phrases.",
+          "source_line_start": 58,
+          "source_line_end": 58
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b063",
+          "block_tag": "p",
+          "start_char": 5809,
+          "end_char": 5824,
+          "block_start_char": 84,
+          "block_end_char": 99,
+          "quote": "稳定跑起来、成本可控、性能可期",
+          "quote_utf8_sha256": "61e6dc35702f219ed05a75d66cfadd5a94fed2378cb42b1f9b1cf60f2b715bcd",
+          "text_attribution": "Article narration",
+          "interpretation": "Three parallel performance judgments end the description of the next competitive criterion.",
+          "source_line_start": 81,
+          "source_line_end": 81
+        }
+      ],
+      "contrast_observation": "The Baidu article also uses slogans and parallel summaries. SMZDM places them across short section headings, technical-paragraph endings, audience categories, and the final address, giving the complete text a more continuously brisk evaluative cadence. This is a qualitative distribution observation, not a validated density metric.",
+      "counterexamples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b021",
+          "block_tag": "li",
+          "start_char": 2546,
+          "end_char": 2603,
+          "block_start_char": 0,
+          "block_end_char": 57,
+          "quote": "1 小时续航：一块 NP-F550 的设定，认真跑实验要么多备电池要么考虑持续供电，官方配件清单里电池包是单卖的。",
+          "quote_utf8_sha256": "f48364b4ba51541a1177afceaef534741009d77d76994954723882117691e7ea",
+          "text_attribution": "Article narration",
+          "interpretation": "Compact alternatives carry useful operational advice. Their shared subject and elliptical predicates are normal Chinese, not missing-SVO errors.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b005",
+          "block_tag": "p",
+          "start_char": 531,
+          "end_char": 576,
+          "block_start_char": 39,
+          "block_end_char": 84,
+          "quote": "广角摄像头 + 8×8 ToF 激光雷达 + 双 IMU + 头部、喙部两根 NFC 天线",
+          "quote_utf8_sha256": "f07c455241ee9015e75c8946dd33f3721b96fce39d51164a03fa1290b2f593c8",
+          "text_attribution": "Article narration",
+          "interpretation": "This coordinated inventory supplies distinct hardware information; punctuation and brevity do not make it an empty slogan.",
+          "block_citation_ids": [
+            "b005-c01",
+            "b005-c02"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b036",
+          "block_tag": "p",
+          "start_char": 3487,
+          "end_char": 3525,
+          "block_start_char": 46,
+          "block_end_char": 84,
+          "quote": "HBM（显卡高速内存）→ 内存（CPU Memory）→ SSD（固态硬盘）",
+          "quote_utf8_sha256": "7ff78170036e87707790c80200fbde4d319a84c31c6f25aafa0fbc1e0178b4a2",
+          "text_attribution": "Article narration",
+          "interpretation": "The ordered technical inventory is informative and structurally appropriate.",
+          "source_line_start": 50,
+          "source_line_end": 52
+        }
+      ],
+      "proposed_mechanism": "Repeated balanced verdicts may replace the expected variety of explanatory pacing with a succession of ready-to-quote conclusions. A reader could dislike the cadence even where the Chinese is fluent. The same parallelism can aid scanning and retention.",
+      "plausible_nlp_measurement": "Retain DOM roles; measure clause lengths, repeated syntactic openings, balanced adjacent clauses, and their position in headings or paragraph endings. Keep component inventories in a separate descriptive bucket. Dependency-pattern similarity can nominate examples without penalizing Chinese ellipsis.",
+      "semantic_review_limit": "A parser cannot establish whether a short formulation is empty, overstated, memorable in a useful way, or disliked. Several families share the same spans; they must not be counted as independent effects.",
+      "confidence": {
+        "observed_recurrence": "high",
+        "descriptive_difference_between_articles": "moderate",
+        "explanation_of_reader_severity": "unestablished"
+      },
+      "evidence_status": "Label-conditioned model-assisted discovery; no intervention or blind validation."
+    },
+    {
+      "id": "F3",
+      "hypothesis_label": "Insider authority and direct reader steering",
+      "observable_definition": "The narrator repeatedly claims community familiarity, stages a shared conversation, or addresses the reader with a verdict or imperative. Distinguish narrator voice from quoted community speech and from legitimate practical instructions.",
+      "smzdm_recurring_examples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b003",
+          "block_tag": "p",
+          "start_char": 428,
+          "end_char": 467,
+          "block_start_char": 132,
+          "block_end_char": 171,
+          "quote": "圈里真正在吵的是三个问题：开源开到什么程度？国内怎么买到？值不值得自己搓一只？",
+          "quote_utf8_sha256": "0f7bf0553dd26f7c883cce1dfbd498d2e5ae038455b900b08498586cc222b658",
+          "text_attribution": "Article narration",
+          "interpretation": "The narrator presents a collective conversation as familiar knowledge and supplies its supposedly real agenda.",
+          "block_citation_ids": [
+            "b003-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b015",
+          "block_tag": "p",
+          "start_char": 1971,
+          "end_char": 1990,
+          "block_start_char": 15,
+          "block_end_char": 34,
+          "quote": "评论区懂行的说法是\"总线舵机单卖很贵\"",
+          "quote_utf8_sha256": "b395aed0dbc1912a60b326ed13260cc163168702695e27e6eccb3c5f2dbe4e82",
+          "text_attribution": "Article narration introducing a reported community quote",
+          "interpretation": "An expertise adjective endorses a community opinion before presenting it. The community quotation itself is distinct from the narrator endorsement.",
+          "block_citation_ids": [
+            "b015-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b015",
+          "block_tag": "p",
+          "start_char": 2033,
+          "end_char": 2047,
+          "block_start_char": 77,
+          "block_end_char": 91,
+          "quote": "（这笔账我们前阵子单独算过）",
+          "quote_utf8_sha256": "a6088d5edaf859323e459c06fe3ae9f4c02a910714fea431ec8b3f7493872505",
+          "text_attribution": "Article narration",
+          "interpretation": "The aside presupposes a continuing relationship with the outlet or narrator. No earlier work is verified here.",
+          "block_citation_ids": [
+            "b015-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b023",
+          "block_tag": "li",
+          "start_char": 2696,
+          "end_char": 2725,
+          "block_start_char": 40,
+          "block_end_char": 69,
+          "quote": "判断产品价值看你自己要不要跑 RL 管线，别看别人抢没抢。",
+          "quote_utf8_sha256": "079d39710b54a2c81a51499e2fd7c14eda76499dbbdcbda5465fce27264dab0d",
+          "text_attribution": "Article narration",
+          "interpretation": "A personal-use criterion is delivered as a direct instruction to the reader.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b026",
+          "block_tag": "li",
+          "start_char": 2832,
+          "end_char": 2903,
+          "block_start_char": 0,
+          "block_end_char": 71,
+          "quote": "有 3D 打印机、吃灰树莓派的老 DIY：直接上 Open Duck Mini V2，42 厘米的大身子更耐折腾，教程生态现成，别等官方鸭子。",
+          "quote_utf8_sha256": "3ed9594e0744528e45caeb0962241e7d21282765912a51bc01b0dd086c7ef561",
+          "text_attribution": "Article narration",
+          "interpretation": "A familiar hobbyist persona is assigned a brisk affirmative instruction and a prohibition.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b027",
+          "block_tag": "li",
+          "start_char": 2904,
+          "end_char": 2918,
+          "block_start_char": 0,
+          "block_end_char": 14,
+          "quote": "想要赛博桌宠的情绪玩家：缓。",
+          "quote_utf8_sha256": "071afe6b1cbcbf00a7118196a9af6f32b0cba060e145bd305d224889bec5eaea",
+          "text_attribution": "Article narration",
+          "interpretation": "The reader category receives a one-word verdict. The understood subject is legitimate ellipsis.",
+          "block_citation_ids": [
+            "b027-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b030",
+          "block_tag": "p",
+          "start_char": 3205,
+          "end_char": 3231,
+          "block_start_char": 181,
+          "block_end_char": 207,
+          "quote": "剩下的问题只有一个——你打算用这条管线，教会它什么。",
+          "quote_utf8_sha256": "8bbb6e76281eab2f24e8ca32993debc87e6286bf80a03425c15220b0b3b9363d",
+          "text_attribution": "Article narration",
+          "interpretation": "The ending narrows the agenda and asks the reader a staged final question.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        }
+      ],
+      "baidu_recurring_examples": [
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b007",
+          "block_tag": "p",
+          "start_char": 730,
+          "end_char": 783,
+          "block_start_char": 0,
+          "block_end_char": 53,
+          "quote": "我仔细听完百度创始人李彦宏、百度集团执行副总裁沈抖在 5 月 13 日上午的全部发言，最终总结出一个信号：",
+          "quote_utf8_sha256": "e50130b4cad27755b36871032a300d09768fa6587cd30b24e12d6ea2b09a7762",
+          "text_attribution": "Article narration",
+          "interpretation": "First-person reporting establishes an observational stance; the claim of listening is not independently checked.",
+          "source_line_start": 7,
+          "source_line_end": 9
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b009",
+          "block_tag": "p",
+          "start_char": 843,
+          "end_char": 876,
+          "block_start_char": 0,
+          "block_end_char": 33,
+          "quote": "仔细数数，所谓的“旧供给”，其实也只有 1-2 年的“服役历史”。",
+          "quote_utf8_sha256": "8594ef15738dea6e59c55aa2b8e73b62800e1379963a967e9cb410d46a0bd6b4",
+          "text_attribution": "Article narration",
+          "interpretation": "A conversational invitation and evaluative aside appear in the lower-intensity reference too.",
+          "source_line_start": 11,
+          "source_line_end": 11
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b016",
+          "block_tag": "p",
+          "start_char": 1720,
+          "end_char": 1742,
+          "block_start_char": 0,
+          "block_end_char": 22,
+          "quote": "这些是正确方向上的真实进展。但为什么还不够？",
+          "quote_utf8_sha256": "1da84c8b4a63b99f6ad400deb0c42f0248305a19f108577d43402656b9412830",
+          "text_attribution": "Article narration",
+          "interpretation": "The narrator guides the reader using a staged question.",
+          "source_line_start": 20,
+          "source_line_end": 20
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b064",
+          "block_tag": "p",
+          "start_char": 5827,
+          "end_char": 5872,
+          "block_start_char": 0,
+          "block_end_char": 45,
+          "quote": "这个判断是不是成立，要看接下来一两年，谁的企业客户真正用 AI 把生意做出了不一样的结果。",
+          "quote_utf8_sha256": "1e2ac7b72a09681426eac5ccac5b8fdfc9b1c282684a1ed6fb0c1cbcd2cac3ee",
+          "text_attribution": "Article narration",
+          "interpretation": "The ending directs attention to future evidence but leaves the judgment conditional.",
+          "source_line_start": 82,
+          "source_line_end": 82
+        }
+      ],
+      "contrast_observation": "Both narrators guide interpretation. SMZDM sustains hobbyist familiarity and audience-specific commands through purchase, DIY, waiting, pitfalls, user categories, and the ending. Baidu relies more on explanatory narration, reported claims, and occasional questions; it lacks the extended command list addressed to distinct buyer personas. The list-format difference is an observable publisher/genre confound, not an independent style defect.",
+      "counterexamples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b010",
+          "block_tag": "p",
+          "start_char": 1320,
+          "end_char": 1352,
+          "block_start_char": 177,
+          "block_end_char": 209,
+          "quote": "注意，电池包和轮滑包是官方付费配件，默认整机只有手柄和一块电池。",
+          "quote_utf8_sha256": "c01b54e73eee16c9208ff6a9f3994637aea800aacdb126fd84fee244bd6341fd",
+          "text_attribution": "Article narration",
+          "interpretation": "A direct attention cue introduces useful purchase-scope information.",
+          "block_citation_ids": [
+            "b010-c01",
+            "b010-c02",
+            "b010-c03"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b025",
+          "block_tag": "li",
+          "start_char": 2799,
+          "end_char": 2817,
+          "block_start_char": 61,
+          "block_end_char": 79,
+          "quote": "等不及就先在开源仓库的仿真环境里练手",
+          "quote_utf8_sha256": "ec087b5bc7be65b068a2792cffe53a2acb35aad2502debf6ce2d036d24524c8c",
+          "text_attribution": "Article narration",
+          "interpretation": "Conditional advice offers an actionable alternative during the delivery wait.",
+          "block_citation_ids": [],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b033",
+          "block_tag": "p",
+          "start_char": 3248,
+          "end_char": 3274,
+          "block_start_char": 0,
+          "block_end_char": 26,
+          "quote": "就 InfoQ 对 DuMate 的直播测试结果来看",
+          "quote_utf8_sha256": "25e1ae67e6cad7fc80ee40d02a7abc1b56ce51e02df8b2f12ae2ff5bb2a57638",
+          "text_attribution": "Article narration",
+          "interpretation": "The outlet explicitly locates the claimed observation. First-person or institutional stance is not inherently empty authority; this review does not verify the test.",
+          "source_line_start": 46,
+          "source_line_end": 46
+        }
+      ],
+      "proposed_mechanism": "The repeated performance of an informed friend who already knows the community and the reader may feel synthetic or intrusive to this reader, especially when it ends each issue with an instruction. Helpful buyer guidance uses the same devices; aversion and usefulness must be measured separately.",
+      "plausible_nlp_measurement": "Record first/second-person pronouns, community-reference nouns, imperatives and prohibitions, rhetorical questions, audience-category headings, and evaluative stance markers with speaker and DOM context. Count locations and recurrence rather than assigning a style-quality score.",
+      "semantic_review_limit": "Pronoun or imperative detection cannot distinguish earned expertise from unsupported authority, useful advice from unwanted direction, or genre expectations from an aversive cue. Implied subjects and audience fragments are not grammatical failures.",
+      "confidence": {
+        "observed_recurrence": "high",
+        "descriptive_difference_between_articles": "moderate",
+        "explanation_of_reader_severity": "unestablished"
+      },
+      "evidence_status": "Label-conditioned model-assisted discovery; no intervention or blind validation."
+    },
+    {
+      "id": "F4",
+      "hypothesis_label": "Evidence bundles followed by broad interpretive pivots",
+      "observable_definition": "A paragraph packs quantities, technical names, reported observations, or different evidence types together, then moves to a broader explanation or decision. The candidate unit is the evidence-to-conclusion relation, not raw length or terminology density.",
+      "smzdm_recurring_examples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b006",
+          "block_tag": "p",
+          "start_char": 672,
+          "end_char": 923,
+          "block_start_char": 0,
+          "block_end_char": 251,
+          "quote": "计算平台是社区聊得最多的一点：机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板（Firefly ROC-RK3566-PC，四核 A55，1GB 内存 + 32GB 存储）。有开发者写了完整的部署手记：走路、起身这些动作是在英伟达 GPU 上用 mjlab + MuJoCo Warp + PPO 训练 1~2 小时收敛，导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。也就是说，训练靠算力，实机真不靠。",
+          "quote_utf8_sha256": "da1e2588dd4a859356c797c6558f3c33eab139627744d65f6a57fbea9f736a20",
+          "text_attribution": "Article narration",
+          "interpretation": "Board specifications, training tools and duration, control frequency, and missed ticks are packed into one paragraph that ends with a broad compute contrast. Whether the ending preserves the intended scope needs semantic review.",
+          "block_citation_ids": [
+            "b006-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b011",
+          "block_tag": "p",
+          "start_char": 1353,
+          "end_char": 1558,
+          "block_start_char": 0,
+          "block_end_char": 205,
+          "quote": "这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。参照物是 HF 上一款产品 Reachy Mini：299 美元，累计卖了约 1 万台，应用商店聚了 200 多个社区 APP。Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。",
+          "quote_utf8_sha256": "cac7f9f207cc0ed9a92f3d3b06a9ae6e156d4b4a3b1ed9fc77631d2c64eeb46a",
+          "text_attribution": "Article narration",
+          "interpretation": "The product price, a different product's sales/app figures, simulation demonstrations, and a price-range comparison are compressed into one value argument. Transferability of that evidence is a semantic question.",
+          "block_citation_ids": [
+            "b011-c01",
+            "b011-c02"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b015",
+          "block_tag": "p",
+          "start_char": 1956,
+          "end_char": 2169,
+          "block_start_char": 0,
+          "block_end_char": 213,
+          "quote": "但有两笔成本要留神：一是舵机，评论区懂行的说法是\"总线舵机单卖很贵\"，凑不齐渠道价，整机成本压不下来；二是树莓派，上半年那波内存涨价把整个板卡市场抬了一截（这笔账我们前阵子单独算过），现在攒机别按去年的价格预期。有华强北背景的网友给的参照是：“自己采购一套手搓，不会低于 4000 元，比人家零售价都贵”。这是估算不是实测定价，但方向很清楚：散件零售价拼不过整机的规模化采购，DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。",
+          "quote_utf8_sha256": "a9b6472a6f47e55265746109297f37355357e44f9b5ea397b161348280d71cc2",
+          "text_attribution": "Article narration",
+          "interpretation": "Servo prices, board-market movement, a community estimate, a scale-economy explanation, and a categorical DIY-saving verdict share one paragraph. The estimate qualifier is present and must be retained.",
+          "block_citation_ids": [
+            "b015-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        }
+      ],
+      "baidu_recurring_examples": [
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b013",
+          "block_tag": "p",
+          "start_char": 1211,
+          "end_char": 1459,
+          "block_start_char": 0,
+          "block_end_char": 248,
+          "quote": "大模型的定价机制从侧面印证了 KV Cache 的真实价值：Anthropic 对命中缓存的 token 提供 90% 折扣，OpenAI 提供 50% 折扣，Google 提供 90% 折扣。平台愿意对\"已在缓存里的 token\"让出如此高的折扣，本质上是在承认：缓存命中的 token，边际算力成本接近于零。命中率越高，平台成本越低，用户越有动力把更多调用留在同一个平台——这是 KV Cache 优化背后真正的商业逻辑，也是为什么各方都把 KV Cache 命中率当作核心竞争力指标来对待。",
+          "quote_utf8_sha256": "ecfb3031df3c6f90d1a5b5342cb96f92ec84ffa4a3dfc244b9c4056a7795ea6e",
+          "text_attribution": "Article narration",
+          "interpretation": "Discount percentages become a claim about marginal compute cost and then a platform-retention explanation. This has the same evidence-to-generalization shape as the strong anchor.",
+          "source_line_start": 17,
+          "source_line_end": 17
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b052",
+          "block_tag": "p",
+          "start_char": 4826,
+          "end_char": 4962,
+          "block_start_char": 0,
+          "block_end_char": 136,
+          "quote": "招商银行已上线 800 余个 AI 应用，活跃在风控、营销、研发和日常办公等核心场景，其中超过 50% 跑在百度昆仑芯 P800 国产算力上——在合规要求最高的金融行业做到这个规模，说明系统稳定性和安全性已经经过了严格验证。用招行内部的说法，这不是试点，是\"全行级部署\"。",
+          "quote_utf8_sha256": "a201cf0cf9ceeafae0b7d2aac40919831eb8ac94caa9c28b2b0cefcff39039e8",
+          "text_attribution": "Article narration",
+          "interpretation": "Deployment counts and hardware shares lead to an assurance about stability/security validation, then a categorical scale label. The inference is nominated for review, not established as false here.",
+          "source_line_start": 70,
+          "source_line_end": 70
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b058",
+          "block_tag": "p",
+          "start_char": 5239,
+          "end_char": 5439,
+          "block_start_char": 0,
+          "block_end_char": 200,
+          "quote": "iPhone 发布后，App Store 在 2008 年 7 月上线。首周末下载 1000 万次，上线两个月内从 500 款应用增至 3000 款、累计下载突破 1 亿次。到 2023 年，苹果累计向开发者支付 超过 3200 亿美元。这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系——开发者知道在哪里发布、如何变现；用户知道在哪里找应用、支付是否安全。",
+          "quote_utf8_sha256": "d945e03bc5c2ae357aaf500ce26f8abc7cd411d87c240ba9e472e2b8b5a21257",
+          "text_attribution": "Article narration",
+          "interpretation": "App-store dates, downloads, app counts, and developer payments lead to a single causal explanation of success. The argument is information-rich while the causal transfer still needs review.",
+          "source_line_start": 76,
+          "source_line_end": 76
+        }
+      ],
+      "contrast_observation": "This family is substantial in both articles and is a weak standalone explanation of their severity difference. In SMZDM it repeatedly returns to an immediate product verdict; Baidu develops an industry-level argument across more explanatory paragraphs. Mere named-entity density, numerical detail, paragraph length, and the existence of a summary do not establish burden.",
+      "counterexamples": [
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b007",
+          "block_tag": "p",
+          "start_char": 924,
+          "end_char": 1018,
+          "block_start_char": 0,
+          "block_end_char": 94,
+          "quote": "软件端：7 种预训练行为（走路、坐立、下蹲、踢腿、抓取、轮滑、跌倒自起）、仿真环境、SDK 和训练代码在 github.com/pollen-robotics/microduck 全开源。",
+          "quote_utf8_sha256": "2d6bdec2dca63aca54033cab252a39369d11f291b3fcef939a5be3f4a1c1fe10",
+          "text_attribution": "Article narration",
+          "interpretation": "A dense list of software deliverables tells the reader what is available and does not itself demand a broader evaluation. The next block narrows the meaning of openness.",
+          "block_citation_ids": [
+            "b007-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "smzdm",
+          "text_view": "analysis_body_without_publisher_citation_chips",
+          "body_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+          "body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+          "block_id": "b002",
+          "block_tag": "p",
+          "start_char": 140,
+          "end_char": 203,
+          "block_start_char": 127,
+          "block_end_char": 190,
+          "quote": "这组数字是 HF 联创 Thomas Wolf 在 X 上公布的，国内已经有博主（\"陈大叔\"那篇追问文）公开质疑无法第三方验证",
+          "quote_utf8_sha256": "e0f327ffbe8b0e9ff4898dc0fe97550def1eb2b7247f7c195d983cc634d03595",
+          "text_attribution": "Article narration",
+          "interpretation": "The article explicitly separates an official sales claim from third-party verification status. Attribution and uncertainty must not be lost when studying the later heat-of-interest pivot.",
+          "block_citation_ids": [
+            "b002-c01"
+          ],
+          "citation_scope_note": "These IDs locate chips in the containing block; they do not certify support for this particular quoted span."
+        },
+        {
+          "document": "baidu",
+          "text_view": "saved_source_body",
+          "body_path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+          "body_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+          "block_id": "b037",
+          "block_tag": "p",
+          "start_char": 3619,
+          "end_char": 3655,
+          "block_start_char": 71,
+          "block_end_char": 107,
+          "quote": "理论上，系统可以根据访问频率动态管理数据位置，在成本和速度之间自动寻优。",
+          "quote_utf8_sha256": "a29a97a48365cbd63908924563a47a7f827d4a7ec94548550c42ac8274319abf",
+          "text_attribution": "Article narration",
+          "interpretation": "The design explanation retains an explicit theoretical qualifier rather than presenting all possible behavior as an observed result.",
+          "source_line_start": 53,
+          "source_line_end": 53
+        }
+      ],
+      "proposed_mechanism": "Rapid transitions from heterogeneous details to a confident takeaway may increase inferential work or make a conclusion feel supplied before its conditions are established. Information density can also be valuable to a knowledgeable reader. Any actual scope loss, unsupported inference, or contradiction belongs to a separate claim/relation audit.",
+      "plausible_nlp_measurement": "Within paragraph-preserving text, annotate numbers/units, named entities, attribution markers, and summary/pivot positions. Relation-aware semantic annotation must then distinguish a faithful summary from a change of scope. Structural counts can nominate review passages but cannot measure support.",
+      "semantic_review_limit": "Cheap NLP cannot infer whether a price comparison, capability claim, causal explanation, or extrapolation is justified by the preceding material. Publisher snippets are unverified evidence, and this style analysis neither checks external technical truth nor supplies missing premises.",
+      "confidence": {
+        "observed_recurrence": "high",
+        "descriptive_difference_between_articles": "low",
+        "explanation_of_reader_severity": "unestablished"
+      },
+      "evidence_status": "Label-conditioned model-assisted discovery; no intervention or blind validation."
+    }
+  ],
+  "synthesis": {
+    "best_supported_descriptive_contrast": "Repeated short parallel verdicts and sustained insider/directive address distinguish the SMZDM reading experience more clearly than the presence of correction syntax or dense explanation alone.",
+    "shared_patterns": "Both articles contain corrective reframing, slogans, conversational moves, and broad inferences from evidence bundles; the Baidu article is a lower-intensity reference, not feature-free.",
+    "candidate_interaction": "The repeated combination of evidence, compact verdict, and direct instruction is a plausible exploratory explanation of the stronger impression. This interaction was noticed after the labels were known and is not tested.",
+    "surface_vs_content": "Cadence and interpersonal stance can be aversive without being wrong. Scope or inferential defects require semantic review and may occur in either article.",
+    "feature_overlap": "Families deliberately overlap at some spans. Their examples are evidence selections, not exhaustive annotations, additive scores, or independent effects.",
+    "counterfactuals_not_tested": "No passage was rewritten, removed, or tested with the reader; improvement and meaning preservation remain unmeasured."
+  },
+  "confounders_and_limits": [
+    "One reader, two articles, known labels, post-hoc feature discovery; cannot infer a general severity scale or causal feature effects.",
+    "Different platforms, consumer buyer guidance versus enterprise industry commentary, different article lengths and formats, topics, publication dates, source visibility, and production context.",
+    "SMZDM has a publisher AI-generation disclosure and attribution-count claim; neither is the linguistic or quality target, and neither establishes a model or translation process.",
+    "Provenance remains unresolved as to translation; untranslated versus translated status is not inferred from fluency, foreign names, or publisher disclosure.",
+    "Media references were retained but not inspected. Text-only reading may miss explanatory content carried by media.",
+    "Chinese shared arguments, category fragments, nominal predicates, and ordinary ellipsis are valid; no SVO-presence rule was used.",
+    "Concrete hardware facts, quantities, version distinctions, purchase restrictions, useful alternatives, attribution, negation, and uncertainty must survive any later intervention.",
+    "No previous semantic reviews, root observations, or peer analysis were read. No historical cohort files, final tests, or reader-preference outcomes were consulted."
+  ],
+  "bounded_next_use": "Use the four interpretable hypotheses to seek independent complete-article examples and matched genre/publisher counterexamples under a later explicit protocol. Do not promote a product rule, reward, training target, or intervention efficacy claim from this anchor.",
+  "input_fingerprints": [
+    {
+      "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451"
+    },
+    {
+      "path": "data/local/reader-style-anchors-v1/smzdm/body-with-citations.txt",
+      "sha256": "e2fc58e18a30abda2cdde34ea9f86ef2469382704a40edc88104e65fcec2b1b5"
+    },
+    {
+      "path": "data/local/reader-style-anchors-v1/smzdm/blocks.json",
+      "sha256": "909bcf0db7d4a4c370e8b01128d96c3491ee424be718e0f41689eef49a9c4965"
+    },
+    {
+      "path": "data/local/reader-style-anchors-v1/smzdm/citations.json",
+      "sha256": "3b18c3dfb172767a3f55e7c5585621ae7db84f255c74c40038e609a004f048c0"
+    },
+    {
+      "path": "data/local/reader-style-anchors-v1/smzdm/metadata.json",
+      "sha256": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393"
+    },
+    {
+      "path": "data/local/reader-style-anchors-v1/smzdm/manifest.json",
+      "sha256": "75c2f118e9ecea106653597a51ff1518484cbc4599d4fc14e97a4f016974671c"
+    },
+    {
+      "path": "data/local/reader-style-anchors-v1/smzdm/literal-measurements.json",
+      "sha256": "cf2e56db508553bc2469b08986f7f77166d8afc20a047e9b3d601a78ce8d4659"
+    },
+    {
+      "path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+      "sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2"
+    },
+    {
+      "path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/blocks.json",
+      "sha256": "a777c63f84f86a8e565d1bdc89081c82199e964b705311cd23cc192474f06894"
+    },
+    {
+      "path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/metadata.json",
+      "sha256": "dac1d87294c9226baf78e0910e258c3e616fba55bd8901195a728f76ded3de1b"
+    },
+    {
+      "path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/structure.json",
+      "sha256": "c575e6a350c0dabe48e32d85e7d65f1f6486aba2f5aaf17969af1e5da47f09ef"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "8d98618fa814b348ca1716067e83d56e87bf325927e1f6381e7e3846ddf14dd7"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reader-anchor-feature-discovery.md",
+      "sha256": "7c711e3cf75b5b35fbebf7113bd0dc46cef56bd4e20cd1751d931e3da2c166ac"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "exact_quote_instances": 44,
+    "all_quote_slices_match_saved_bodies": true,
+    "all_quote_spans_inside_named_blocks": true,
+    "quote_sha256_matches": true,
+    "smzdm_manifest_outputs_verified": [
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+        "sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+        "matches_existing_manifest": true
+      },
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/article.dom.html",
+        "sha256": "a6374076405ecc0e06547c6a9a3f1cd361fc9c726c61bfe84a2b2a43d7f40914",
+        "matches_existing_manifest": true
+      },
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/blocks.json",
+        "sha256": "909bcf0db7d4a4c370e8b01128d96c3491ee424be718e0f41689eef49a9c4965",
+        "matches_existing_manifest": true
+      },
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/body-with-citations.txt",
+        "sha256": "e2fc58e18a30abda2cdde34ea9f86ef2469382704a40edc88104e65fcec2b1b5",
+        "matches_existing_manifest": true
+      },
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/citations.json",
+        "sha256": "3b18c3dfb172767a3f55e7c5585621ae7db84f255c74c40038e609a004f048c0",
+        "matches_existing_manifest": true
+      },
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/literal-measurements.json",
+        "sha256": "cf2e56db508553bc2469b08986f7f77166d8afc20a047e9b3d601a78ce8d4659",
+        "matches_existing_manifest": true
+      },
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/media.json",
+        "sha256": "64896ef4b721ae24315db25828771cc24b249b1c1a9871a29520e28b11826fbc",
+        "matches_existing_manifest": true
+      },
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/metadata.json",
+        "sha256": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393",
+        "matches_existing_manifest": true
+      }
+    ],
+    "baidu_body_hash_matches_metadata_and_block_manifest": true,
+    "block_coverage": {
+      "smzdm": 30,
+      "baidu": 64
+    },
+    "body_hashes_rechecked_before_write": true,
+    "validation_method": "Recompute SHA-256 over raw input bytes; reproduce each full text by LF-joining block text; resolve each quoted substring within its named block; assert exact body[start_char:end_char] equality and UTF-8 quote hash before serializing. Repeat the same checks after reading the written JSON.",
+    "repository_tests": "Not run: only this local research artifact is created; no executable repository behavior is changed."
+  }
+}

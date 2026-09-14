@@ -1,0 +1,24 @@
+{
+  "decision_id": "CR001-RECOVERY-01",
+  "initial_run_manifest_unchanged": true,
+  "last_failure_at_utc": "2026-09-14T03:56:34.812801+00:00",
+  "limitation": "The initial client did not preserve Retry-After headers; improve the client under a later code version, not by silently changing this frozen run.",
+  "minimum_cooldown_seconds": 120,
+  "reason": "Source23 exhausted the initial three attempts with HTTP429; all22 completed sources retained.",
+  "recorded_at_utc": "2026-09-14T03:59:03.143196+00:00",
+  "recovery_max_retries": 0,
+  "remaining_source_ids": [
+    "cr001-23",
+    "cr001-24"
+  ],
+  "scope": "One additional identical request for source23 after cooldown, then the previously unattempted source24. Stop on any failure.",
+  "unchanged": [
+    "models",
+    "prompts",
+    "temperature",
+    "seed",
+    "max_output_tokens",
+    "provider_price_cap",
+    "total_budget"
+  ]
+}

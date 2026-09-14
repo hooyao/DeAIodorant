@@ -1,0 +1,984 @@
+# 中文写作异味目录
+
+## 强烈的人类判断锚点与词汇反例：2026-09-14
+
+维护者对 SMZDM Microduck 文章的评价为 `恶臭`，对百度文章的评价为
+`一般臭`。[附来源链接的分析](routes/compact-refiner/reports/reader-anchor-feature-discovery-v1.md)
+将这一人类观察与网站的 AI 披露分开记录。
+SMZDM 文章中没有字面形式的 `而是`；三组隐含的否定—肯定系词配对、
+并列评断，以及持续面向读者的立场，说明了为什么不能用单个
+词元来定义这一现象。现有的时间维度计数在其描述范围内仍然有效，
+不会被悄然重新定义。
+
+保留四类由模型辅助识别的模式：对比式重定义、简短的
+并列评断、内部人士式／指令式立场，以及从证据转向评断。
+在这对文章中，中间两类呈现出最清晰的定性差异；体裁
+和发布方的差异仍是混杂因素。成本适用范围的外推和
+未定义的版本三元组，被分别定位为阅读／支撑方面的局部问题。
+有用的限定和普通省略仍保留为反例。人类报告的
+严重程度针对整篇文章；这些新类别均未经过干预验证。
+
+## 上下文审计与范围修正：2026-09-14
+
+[新的完整上下文报告](routes/compact-refiner/reports/contrast-context-audit-v1.md)
+增加了确定性的 500/1000-CJK 集中度测量，以及两份独立的
+助手解读，覆盖全部 57 处选定实例。相比对冗余表达的判断，
+语义关系的判断更一致：双方共同提名的重复实例为 8，
+任一评审者提名的实例为 21。不提升任何证据状态。
+
+可供后续基于来源开展研究的候选机制包括：重复的评价性
+命题、并列谓语中的语义角色转换，以及强于
+所引支撑材料的结论。这些是标注假设，不是 NLP
+评分。必要的权限／存储对比、普通省略，以及有用的
+访谈回顾均保留为反例。CPU 句法分析可以为生硬句子生成完整
+句法树，也可能对连贯的对照句给出误导性分析。
+
+翻译现已成为核心改进目标，也是来源分层的一个维度。下文旧的
+筛选后统计仍作为历史记录保留：它遗漏了一篇含 19 处实例的文章中
+明确的翻译披露。新的全媒体视图保留了 40 篇 InfoQ 文章，
+前／后期频率为每 10,000 个 CJK 字符 0.96/8.38 次。来源未明确视图中的频率为
+1.04/7.70，但这并不证明文章是原创。任何计数都不意味着对读者造成了伤害。
+
+## 新的描述性线索证据：2026-09-14
+
+读者明确指出，多种否定前缀形式中反复出现
+`而是` 结构。[同来源样本组计数](routes/compact-refiner/reports/ershi-cohort-statistics-v1.md)
+发现，在当前排除已知译文的 InfoQ 前／后期样本中，每 10,000 个 CJK 字符
+分别出现 1.04 次和 8.61 次。这补充了先前的
+对比框架假设，但不改变已冻结的配置。它不会
+将某种异味提升为已通过干预验证，也不能作为删除所有对比的依据。
+读者认为异味较轻但阅读困难的 Cowork 示例出现了八次，
+说明频率与感知强度是不同的测量维度。
+
+维护者的[当前校准说明](target-feature-discovery.md)指出，
+早期标注样本没有表现出足够强的目标特征。
+下列条目保留历史上的局部观察与假设；
+不得将它们视为已确认的强阳性样本集。合成编辑试验或近期的来源完整性审计
+均不提升任何证据状态。
+
+## 目的
+
+本目录记录读者不喜欢、且可能通过编辑改善的中文写作
+模式。它连接语料观察与文本改进研究。
+
+语料差异并不自动构成异味。只有当某种模式的状态和证据
+足以支持相应主张时，才提升其认定级别。
+
+## 紧凑型改写器预览观察：2026-09-14
+
+在[三对样本的人类预览](routes/compact-refiner/reports/cr001-reader-preview-v1.md)中，
+读者总体上更偏好修订版，但报告称所有展示的配对中都没有明显
+异味。其中一项偏好存在内容差异方面的疑虑，
+另一项则被明确描述为轻微偏好。这些是一般性的编辑观察，而不是
+目标异味已被去除的证据。不提升目录中的任何状态，
+也不得将展示的示例重新标记为异味阳性案例。
+
+## 证据状态
+
+| 状态 | 含义 |
+|---|---|
+| 假设 | 基于阅读、理论或稀疏的语料证据提出 |
+| 试验量化 | 已在当前小规模语料中测量，并说明局限 |
+| 读者报告 | 有读者明确描述该模式会干扰阅读 |
+| 干预验证 | 有限范围内的编辑在不损失意义的情况下，提高了盲评读者的偏好 |
+| 产品验证 | 编辑效果可推广至留出体裁和真实使用场景 |
+
+多个状态可以同时适用。“读者报告”目前指直接的
+定性证据，而非群体层面的验证。
+
+## 必需的记录结构
+
+每条异味记录必须包含：
+
+- 稳定的 ID 和名称；
+- 当前证据状态；
+- 读者体验；
+- 语言表现形式；
+- 反例与排除项；
+- 直接指标与代理指标；
+- 精确公式与分母；
+- 当前量化证据；
+- 语料、模型和配置指纹；
+- 复现命令；
+- 已知混杂因素；
+- 最小干预实验；
+- 提升级别或否定的条件。
+
+不要悄然改变既有指标。应创建新的指标版本。
+
+---
+
+## SMELL-001：主线中断与插入负荷
+
+### 状态
+
+- 读者报告
+- 已通过标点代理指标进行试验量化
+- 未经干预验证
+
+### 读者体验
+
+读者正在跟随一个尚未完成的主句时，破折号、括号、
+引文、冒号引出的解释或插入分句引入了
+另一个信息单元。读者必须在工作记忆中保留被暂时搁置的主线，
+处理插入内容，然后恢复原有的
+依存关系。
+
+读者的直接描述：
+
+> “就像在吃东西的时候硬生生把你打断，再喂给你别的东西吃。”
+
+读者厌恶的不是标点本身，而是在信息序列尚未完成时
+被迫切换上下文。
+
+### 典型语言表现形式
+
+- 主要命题尚未完成时，插入一段较长的破折号内容；
+- 用成对破折号或括号包裹可独立移出的解释；
+- 给普通词语加引号，造成不必要的强调；
+- 在已经复杂的句子中，用冒号再引入一个解释性
+  单元；
+- 在一句话中安排多次简短的修辞性打断；
+- 插入一个本可独立成句、放在后面的分句。
+
+合成示例：
+
+> 系统需要重新设计——尤其是在多个智能体并行调用、失败重试和权限动态变化的情况下——才能稳定运行。
+
+可能更流畅的替代方式包括：将限定条件移到主要
+主张之前，放到完整句子之后，或将信息拆成两
+句。
+
+### 反例与排除项
+
+不要将所有标点都视为有害：
+
+- 范围符号、减号和词内连字符；
+- 代码、命令行参数、URL 和标识符；
+- 表格和枚举式规格说明；
+- 转录文本中的发言人标签；
+- 需要明确归属的引文；
+- 用于定义缩写的简短括号内容；
+- 在完整句子之后，单次使用破折号以实现有意的修辞转折；
+- 为避免歧义所必需的标点。
+
+当标点与完整的语义边界对齐时，同样的标点
+也可以发挥有益作用。
+
+### 当前代理指标
+
+#### 标点密度 v1
+
+~~~text
+punctuation_density =
+    Unicode punctuation code points / non-whitespace code points
+~~~
+
+#### 标点熵 v1
+
+~~~text
+punctuation_entropy =
+    -sum(punctuation_type_probability * log2(punctuation_type_probability))
+~~~
+
+#### 破折号密度 v1
+
+~~~text
+dash_density =
+    occurrences of —, –, or - / non-whitespace code points
+~~~
+
+破折号密度 v1 有意沿用现有实现。它混合统计
+em dash、en dash 和连字符，因此在进行因果解释之前，必须
+用针对具体上下文的破折号指标替代。
+
+### 拟议的直接指标
+
+#### 插入事件率 v2
+
+~~~text
+insertion_event_rate =
+    mid-sentence detachable insertion events / parsed sentences * 100
+~~~
+
+候选插入事件包括成对破折号、成对括号，以及
+较大分句内部被标记为插入语、同位语、并列关系或
+话语成分的依存子树。
+
+#### 插入跨度长度 v2
+
+~~~text
+insertion_span_length =
+    syntactic tokens between insertion boundaries
+~~~
+
+逐篇文档报告均值、中位数、第 90 百分位数和最大值。
+
+#### 主线悬置距离 v2
+
+~~~text
+mainline_suspension_distance =
+    continuation token index - interruption start token index
+~~~
+
+续接点是插入内容之后，第一个重新连接到
+插入前中心词或补全其未解决依存关系的词元。
+
+#### 高中断句比例 v2
+
+~~~text
+high_interruption_sentence_ratio =
+    sentences with at least two insertion events
+    or at least one insertion spanning 12 tokens
+    / parsed sentences
+~~~
+
+12 个词元的阈值是暂定的，必须在重复验证前冻结。
+
+#### 可分离率 v2
+
+移除每个候选插入内容，并使用同一个固定的句法分析器重新分析。
+
+~~~text
+detachability_rate =
+    candidate insertions whose removal preserves one root,
+    all original non-insertion entities and numbers,
+    and a connected dependency tree
+    / candidate insertion events
+~~~
+
+#### 上下文偏离分数 v2
+
+使用 TF-IDF，不使用嵌入或 LLM。
+
+~~~text
+context_deviation =
+    1 - cosine(
+        TF-IDF(insertion),
+        TF-IDF(left context + right context)
+    )
+~~~
+
+在读者数据足以支持综合指标及其权重之前，
+应将这一部分与句法悬置分开保留。
+
+### 当前试验证据
+
+主要比较：10 篇前期 InfoQ 文档与 10 篇后期 InfoQ 文档。
+
+| 代理指标 | 前期均值 | 后期均值 | Hedges' g | 移除译文后的 g | 置换检验 p 值 | BH q 值 |
+|---|---:|---:|---:|---:|---:|---:|
+| 总标点密度 | 0.08 | 0.10 | 2.08 | 2.00 | 0.0002 | 0.030 |
+| 标点熵，比特 | 2.40 | 3.22 | 1.70 | 1.81 | 0.0018 | 0.090 |
+| 破折号密度 | 约 0.00 | 约 0.01 | 1.58 | 1.79 | 0.0006 | 0.045 |
+
+在逐篇留一剔除检验中，所有差异方向均保持不变。移除已知
+为译文的后期文档后，这些方向也没有逆转。
+
+这些证据表明，先导研究中存在标点使用差异，并有一条读者的直接抱怨。但它们不能证明标点导致了该抱怨，也不能证明这一效应具有普遍性。
+
+后续包含 96 篇文档的过渡期探索样本池提供了按来源分层的变化方向，但不构成验证性证据。在 InfoQ 和机器之心中，引号密度均随过渡期日期推移而上升（合并偏相关 rho 为 0.286，p 为 0.0054，BH q 为
+0.286）。两个来源的破折号密度也均上升（rho 为 0.250，p 为 0.0138，q 为 0.336）。
+总标点密度在不同来源间的方向不一致。这些结果未使用后期队列，也不改变证据状态。
+
+### 复现标识
+
+| 产物 | 指纹 |
+|---|---|
+| 语料库 | d6cfb16560de7904ab5dc34a09e35e69642e7f39cb61d517a9bd1ffbc2a43014 |
+| 标注清单 | 6b774f981c8f173209735b2b39ca909fc38877480c2483e18949eb3f34e4eaac |
+| 特征配置 | a40847a003f5df7068967470501cea7ec3cacc974c5ca2a4b9630278c54a3c0e |
+| Stanza 模型文件 | 5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9 |
+| 实验提交 | 2bc3692 |
+
+### 复现命令
+
+~~~powershell
+deaiodorant-analysis annotate --corpus data/pilot/monthly --config configs/features.v1.json --model-dir models/stanza --output feature_runs/pilot-annotations-v1 --device cpu
+
+deaiodorant-analysis extract --corpus data/pilot/monthly --config configs/features.v1.json --annotations feature_runs/pilot-annotations-v1 --output feature_runs/pilot-matrix-v1
+~~~
+
+在 CUDA 主机上：
+
+~~~bash
+python experiments/pilot_direction_probe.py \
+  --matrix-dir feature_runs/pilot-matrix-v1 \
+  --output-dir feature_runs/pilot-probe-v1 \
+  --dense-permutations 20000 \
+  --sparse-permutations 5000
+~~~
+
+详细结果记录在
+[先导方向探查](../experiments/pilot-direction-probe.md)中。
+
+### 已知混杂因素
+
+- 当前 InfoQ 的编辑与排版变化；
+- 代码、列表、标题、引文和转录文本；
+- 翻译或编译内容；
+- 后期文档较长；
+- 主题与文章形式未匹配；
+- 破折号 v1 将词内连字符与长破折号混在一起；
+- 每个同来源队列仅有 10 篇文档。
+
+### 最小干预实验
+
+1. 在不显示所属队列的情况下，选择 20 个高打断程度句子和 20 个匹配的低打断程度句子。
+2. 为每个高打断程度句子创建以下版本：
+   - 未改动的原文；
+   - 将插入成分移至完整主句之后；
+   - 将插入成分拆成独立句子。
+3. 保留所有实体、数字、主张、否定和情态。
+4. 询问哪个版本更容易继续读下去。
+5. 记录偏好是由节奏、清晰度、简洁度还是含义变化引起的。
+
+### 状态升级条件
+
+只有满足以下条件，才能升级为“已通过干预验证”：
+
+- 降低插入成分负荷能改善盲评阅读偏好；
+- 结果出现在不止一种文体中；
+- 通过含义保留检查；
+- 有用的引文、定义和有意安排的修辞转折未被系统性删除。
+
+如果读者只不喜欢某一种标点子类型，或去除排版因素和翻译内容后效应消失，则否定这一异味，或缩小其适用范围。
+
+---
+
+## SMELL-002：程式化的对比与强调式重述
+
+### 状态
+
+- 假设
+- 已在先导研究中量化
+- 在八个段落中观察到仅限后期样本的读者关联
+- 首次干预方向上呈积极结果：修订版胜出两次，平局一次
+- 第二次干预方向上呈积极结果：修订版胜出六次，平局四次，原版胜出零次
+- 第三次开发阶段干预结果混合：修订版胜出四次，原版胜出一次，平局七次；基线异味总体较弱
+- 原始段落候选筛查失败：11 个已保存评分中有 10 个处于同一档位
+- 文档内富集筛查在收到三次过渡期“无差异”反馈后终止；未评估排序
+- 新一轮仅限后期样本的原始段落筛查因文档内过度控制而终止；第四次原版与修订版对比干预已冻结，结果待定
+- 已否定宽泛的分类型关系支持评分
+- 尚未通过干预验证
+
+### 候选读者体验
+
+行文反复把直接陈述包装成刻意铺陈的对比或带有强调意味的揭示。逻辑内容可能很简单，但句子却将其呈现为纠正、逆转或发现。
+
+### 典型语言形式
+
+- “不是 X，而是 Y”
+- “并非 X，而是 Y”
+- “不再是 X，而是 Y”
+- “不仅是 X，而是 Y”
+- “正是...”
+- “关键在于...”
+- “问题不在于 X，而在于 Y”
+
+有些用法表达了必要的逻辑区别。候选异味指的是使用频率、集中程度和装饰性用法，而不是句式本身。
+
+### 量化 v1
+
+#### 对比框架频率
+
+~~~text
+contrast_frame_rate =
+    matched complete contrast frames / parsed sentences * 1000
+~~~
+
+初始正则表达式：
+
+~~~text
+(?:不是|并非|不只是|不仅是|不再是).{0,80}?而是
+~~~
+
+在句子边界内运行。不得让表达式跨越段落或句子边界。
+
+#### 强调框架频率
+
+按每 1,000 个句子统计各句式的出现次数：
+
+- 正是
+- 关键在于
+- 问题在于
+- 这意味着
+- 值得注意的是
+
+#### 文档覆盖率
+
+~~~text
+document_coverage =
+    documents containing at least one frame / documents
+~~~
+
+#### 框架突发集中度
+
+~~~text
+frame_burstiness =
+    maximum frames in one paragraph / total document frames
+~~~
+
+未出现任何框架时报告为零。
+
+### 当前先导证据
+
+| 模式 | 前期 InfoQ 文档 | 后期 InfoQ 文档 | 前期次数 | 后期次数 |
+|---|---:|---:|---:|---:|
+| 完整否定对比框架 | 10 篇中有 0 篇 | 10 篇中有 5 篇 | 0 | 24 |
+| 去除已知翻译内容后的同一模式 | 10 篇中有 0 篇 | 9 篇中有 4 篇 | 0 | 15 |
+| 正是 | 10 篇中有 1 篇 | 10 篇中有 8 篇 | 1 | 14 |
+| 关键 | 10 篇中有 2 篇 | 10 篇中有 10 篇 | 5 | 35 |
+| 系统性 | 10 篇中有 0 篇 | 10 篇中有 5 篇 | 0 | 6 |
+| 缺乏 | 10 篇中有 0 篇 | 10 篇中有 5 篇 | 0 | 7 |
+
+稀疏搜索检验了 6,597 种模式，没有一种通过全局 Benjamini-Hochberg 校正。这些合并后的句式是在查看结果后选出的，属于探索性结果。
+
+在后续读者校准中，完整对比框架频率与阅读阻力在仅限后期样本中的 Spearman 相关系数为 0.78。精确置换检验的 p 值为
+0.036，但该结果未通过扩展特征集上的校正，且仅使用了八个后期段落。
+
+不得用后续分类型关系支持探查中关于连接表达的宽泛结论替代这一具体结果。按句子数归一化后，宽泛对比密度的稳健时间效应为 0.06，仅限后期样本的读者相关 rho 为 0.51。强调密度的稳健时间效应为 1.34，但读者相关 rho 为 0.17。两者均未通过多重检验校正。
+
+包含 96 篇文档的过渡期探索样本池同样不能将完整框架的结果推广。完整否定对比框架的合并偏相关 rho 为 0.050，各来源的方向相反或接近无变化（InfoQ 为 0.131，机器之心为 -0.016；BH
+q 为 0.834）。强调框架密度在各来源中的方向一致，rho 为 0.221，但其 BH
+q 为 0.388，因此仍是探索性假设，而非干预证据。
+
+提出的高置信度问题指标也未奏效。每
+100 个句子中被判定为问题的次数，其时间效应为 0.04，读者相关 rho 为 0.06；相应比例的时间效应为 -0.03，读者相关 rho 为 0.00。在 10 个第二轮修订中，该指标仅在两个修订中下降。v0.1 综合指标被否定，不再作为异味评分。
+
+### 复现
+
+使用与 SMELL-001 相同的语料库、标注、配置和命令。
+一次性的合并与敏感性分析实现在
+**experiments/pilot_direction_probe.py** 中，并记录于
+[先导方向探查](../experiments/pilot-direction-probe.md)。
+
+### 已知混杂因素
+
+- 技术论证文体；
+- 作者与编辑的偏好；
+- 从英语翻译而来的对比结构；
+- 后期涉及产品定位的主题；
+- 多重检验与事后句式选择；
+- 后期文档较长。
+
+### 最小干预实验
+
+选择 20 个对比框架。创建直接陈述版本，保留实际区别，但不将其包装为一种揭示。比较：
+
+1. 原始对比框架；
+2. 直接陈述；
+3. 仅在对比双方各自提供独立信息时保留对比框架。
+
+主要问题是读者是否更喜欢减少装饰性逆转，而不是该句式能否识别队列。
+
+首次实施包含三组配对，结果为两组明确偏好修订版，没有偏好原版的情况，还有一组被判为平局或两版都差。两个成功的修订版均被评价为更清晰但过于冷淡。
+失败的修订版省略了过多显式语法论元。这仅是方向性证据。下一版本必须在减少装饰性框架的同时，保留主谓宾的完整性和语气风格。
+
+第二轮实施在获得结果之前冻结了上述修订操作规则。
+它包含来自七篇文档的 10 个新后期段落，与全部 10 个阅读阻力开发文本范围均不重叠。该操作规则保留必要的对比、显式论元、命题、实体、数字、否定、限定条件、不确定性、归属信息，以及选定的语气风格线索。其结构化审计包含 26 项精确的修改前后操作记录和 62 项命题支持检查。所有确定性生成门禁均通过，固定随机种子使原版所在侧以五比五均衡分配。
+
+干预将原文中的冻结表层诊断计数从九个完整的对比框架和 16 个强调标记降至修订版中的零例。这仅验证了干预执行的忠实度。
+
+六段修订版获得明确偏好，没有原文获得明确偏好，四组比较为平局或两者均不偏好。两条平局评论认为修订版略好，但在主要结果中仍计为平局。没有评论报告事实缺失或逻辑改变。
+
+评论也指出了边界。对低异味段落进行最小幅度的修改，可能难以察觉。删除程式化对比，并不能消除其周围所有抽象或泛泛的论断。在一段获得偏好的修订版中，读者明确将 `相反`、`这样一来` 和 `它真正解决的` 描述为空洞或具有误导性的关系框架。在一组平局中，保留下来的关于云端变化“自然”需要工程支持的表述仍不受喜欢。
+
+两轮干预合计为修订版胜出八次、原文胜出零次、平局五次。它们仅使用一位读者、选定的 InfoQ 段落，以及同一文档中重复使用的段落。因此，证据状态不提升为“已通过干预验证”。
+
+第三轮跨体裁开发阶段试验使用了来自 12 篇新文档的 12 个过渡期段落。结果为修订版胜出四次、原文胜出一次，以及七次平局或两者均不偏好的判断。读者报告称，这些段落总体上没有多少明显异味，因此大多数修改影响不大。一条可选评论明确指出了 `换句话说`；删除它的版本获得了偏好。
+
+第三轮结果并不与此前高阅读阻力段落中修订版的胜出相矛盾。它表明，仅凭标记是否存在来选择干预目标，精确率较低。不要因此一味追求最大程度的压缩或修改强度。
+
+另一项低负担的基线阅读阻力筛查在结果产生前已冻结。它包含来自 24 篇此前未向读者展示的过渡期文档的 24 个未修改段落，并按来源和段落长度进行平衡。筛选不使用任何异味特征或标记计数。只有表示不愿继续阅读的两个评分档位，才能使段落获得后续干预资格，可选评论不得影响筛选。所有接受筛查的段落仍不纳入留出验证。此筛查不会提升该异味的证据状态。
+
+在持久化保存了 11 条回答后，筛查被终止，因为 10 均落入同一个 `fairly willing to continue` 类别，且只有一段达到了冻结的资格门槛。读者认为这批材料没有区分度。不要将唯一符合资格的段落解读为已选定的干预目标，也不要完成剩余任务。需要进行文档内候选段落与对照段落的比较，以检验富集效果，而不依赖已失去区分度的绝对量表。仍必须提供明确的“无实质差异”选项。
+
+这一替代方案现已在结果产生前冻结。它包含 10 组同文档配对：一段带有标记、且同时至少获得一项辅助结构指标最高四分位投票的候选段落，以及一段在长度、句数和主题上匹配的零标记对照段落。候选段落的位置经过平衡且对读者隐藏。该设计检验透明排序是否能富集高阅读阻力段落，而不假定候选段落更差。要求至少有八组给出明确取舍的配对，且在明确取舍中选择候选段落的比例达到 75%。无差异回答予以保留，不计为候选段落胜出。
+
+这一替代方案在完成三组配对后终止，三组均选择无差异。它们的日期分别在 2023 年三月、七月和十月。读者正确指出，过渡期语料总体上缺少所关注的、2025-07 之后较强的 AI 风格阅读阻力。由于目标总体不对，这些回答不能用于评价排序。该交接材料中没有后期文档，而已跟踪试点的 10 篇后期文档中，仅有一篇仍完全未向读者展示。后续读者筛查不应再使用这些来源。一个包含 50 篇文档的新后期材料池现已以零错误通过冻结的
+[新后期读者语料交接](../experiments/post-reader-corpus-handoff.md)
+门槛。它支持开展新的开发阶段筛查，但不包含任何新的读者结果，因此该异味的证据状态不变。
+
+一项包含 12 组配对、仅使用后期文档的筛查现已在结果产生前冻结。它将 InfoQ 和美团按六比六平衡，仅使用在 2025-07-01 当日或之后发表的文档，并将一段兼有标记和结构特征的候选段落，与同文档中局部匹配的零标记对照段落进行比较。参见
+[全新后期文档读者阅读阻力区分筛查](../experiments/reader-friction-screen-v3.md)。
+读者在完成六组配对后停止：四次选择无差异，两次选择对照段落更令人不愿继续阅读，零次选择候选段落更令人不愿继续阅读。一条评论称，两段都有明显的 AI 风格异味。同文档匹配过度控制了风格差异，因此无法评价排序，证据状态不变。未来若比较未经修改的段落，需要使用不同文档，并在来源、主题、格式、长度和可见性上进行匹配，但仍会混淆内容兴趣与风格的影响。
+
+第四轮开发阶段干预没有用互不相关的原始段落替换这一设计，而是将每个选定的后期段落与相同内容的保守修订版进行比较。它使用 10 篇新文档，将 InfoQ 和美团按五比五平衡，保留 30 项命题支持检查和数值精确保留要求，并将冻结目标标记的数量从 16 个降至三个。参见
+[全新后期文档保守重构干预](../experiments/refinement-pairs-v4.md)。
+
+第四轮干预产生了五次偏好修订版、四次偏好原文，以及一次无差异回答。尽管原文的位置按五比五平衡，全部九次明确取舍都选择了展示侧 B。结果受到位置混杂影响，不能验证该操作，也不会改变这一异味的证据状态。读者对整轮试验的观察则促成了下方的组合整合观察清单条目。
+
+使用以下内容复现冻结批次：
+
+~~~powershell
+python experiments/prepare_refinement_pairs_v2.py `
+  --corpus-root data/pilot/monthly `
+  --output-dir feature_runs/refinement-pairs-v2 `
+  --seed 20260821
+~~~
+
+方案、排除项和局限记录于
+[第二轮保守对比干预](../experiments/refinement-pairs-v2.md)。
+候选筛选边界记录于
+[原始段落读者阅读阻力开发阶段筛查](../experiments/reader-friction-screen-v1.md)。
+替代富集检验记录于
+[文档内阅读阻力富集开发阶段筛查](../experiments/reader-friction-screen-v2.md)。
+
+### 提升条件
+
+仅在满足以下条件时提升：
+
+- 预注册检测器在更大的匹配语料库中复现结果；
+- 人工审查能可靠地区分必要对比和装饰性对比；
+- 减少装饰性框架能提高盲评读者的偏好；
+- 干预不会抹去真实的逻辑区别或作者的表达风格。
+
+---
+
+## SMELL-003：低信息量扩写与命题链断裂
+
+### 状态
+
+- 读者已报告
+- 假设
+- 得到部分试点示例支持
+- 尚未系统量化
+- 尚未通过干预验证
+
+### 读者体验
+
+段落看起来很长且结构分明，但读者获得的新信息很少。若干句子只是为同一个想法换个名称、换个框架、作出宣告，或用比喻重复它。抽象占位表达延迟了具体内容的出现，而逻辑连接词暗示的关系，并未由周围的命题明确呈现。
+
+结果并非简单的词语重复，而是信息量与阅读投入的比例偏低，命题链也反复偏离主线，或迟迟不进入主线。
+
+### 来源示例
+
+文档：
+
+~~~text
+data/pilot/monthly/2026-06/3c60dc0a981b686870095450.txt
+~~~
+
+相关行：36–42。
+
+观察到的子类型：
+
+1. **没有实质内容的重述**
+   - “阿里云这次要做的，正是围绕 Agent 重新整理云开放平台的底层链路。”
+   - “更准确地说，它是在给 Agent 操作云资源加上一套工程化的‘安全带’。”
+   - 第二句宣称表述更精确，却用比喻替代抽象论断，而没有补充具体机制。
+2. **并列重述**
+   - “Agent 可以自动化，但不能无边界地自动化；Agent 可以自主执行，但必须被……约束住。”
+   - 两个对称分句承载的命题实质上高度重叠。
+3. **抽象表达延迟实质内容**
+   - “这套体系可以拆成三层。每一层，处理的都是一种不确定性。”
+   - 文字先宣告结构和抽象类别，然后才给出第一层具体内容。
+4. **薄弱的篇章衔接**
+   - 行为比较之后接着写道：“因此，Gateway 不能只被看作普通的流量入口。”
+   - 连接词宣告了结论，但具体机制和职责直到后面才出现。
+5. **主谓中断**
+   - “每一层，处理的都是一种不确定性。”
+   - 逗号将简短的主语与谓语分开，却没有明确的信息结构需要。
+
+这些是有待编码和检验的读者观察，并非最终的语法或语义判断。
+
+### 人工命题标注方案 v1
+
+原子命题是保留必要论元和情态后，能够判断真假的最小分句级单位。
+
+为每个命题记录一个标签：
+
+| 标签 | 定义 |
+|---|---|
+| NEW | 增加具体的行动主体、动作、机制、约束、关系、数量或后果 |
+| RESTATEMENT | 换一种说法表述前文中已出现的命题 |
+| META | 宣告结构、重要性、精确性或解释，却未补充所宣告的实质内容 |
+| PLACEHOLDER | 使用抽象指代，其具体内容在后文才给出，或始终不清楚 |
+| UNSUPPORTED_LINK | 使用因果、对比或澄清关系，但局部上下文中缺乏明确衔接 |
+
+标注员还需标出支持每个标签的字符跨度。一个命题
+可以包含 NEW 内容以及单独的 META 片段，但作为整体不能同时标为 NEW 和
+RESTATEMENT。
+
+使用两名独立标注员进行校准。只有在计算原始一致率和 Cohen's kappa 后，
+才能解决分歧。
+
+### 核心指标
+
+#### 新命题密度 v1
+
+~~~text
+new_proposition_density =
+    NEW propositions / non-whitespace Chinese characters * 100
+~~~
+
+数值较低表示阅读长度的增长快于具体
+命题内容的增长。
+
+#### 重述命题比例 v1
+
+~~~text
+restatement_proposition_ratio =
+    RESTATEMENT propositions / all propositions
+~~~
+
+#### 框架性表述开销 v1
+
+~~~text
+framing_overhead =
+    characters inside META or PLACEHOLDER spans
+    / non-whitespace Chinese characters
+~~~
+
+#### 无支撑话语连接率 v1
+
+~~~text
+unsupported_discourse_link_rate =
+    UNSUPPORTED_LINK instances
+    / explicit causal, contrastive, and clarification connectives
+~~~
+
+#### 实质内容延迟 v1
+
+针对“三个层次”“以下几个方面”或“一种
+不确定性”等预告性表述：
+
+~~~text
+payload_delay =
+    syntactic tokens from the abstract announcement
+    to the first concrete named item or mechanism
+~~~
+
+按文档报告均值、第 90 百分位数和最大值。
+
+#### 抽象壳名词密度 v1
+
+维护带版本的壳名词词表，涵盖以下词语依赖语境的用法：
+
+~~~text
+问题, 体系, 链路, 逻辑, 判断, 层面, 维度, 能力, 方式, 模式,
+价值, 意义, 不确定性, 底层, 框架
+~~~
+
+~~~text
+abstract_shell_density =
+    shell-noun mentions / content-word tokens * 100
+~~~
+
+词表计数只是一个弱信号。如果紧接着就提供了
+具体内容，壳名词就不构成异味。
+
+#### 句子信息新颖度 v1
+
+使用传统、可复现的近似方法：
+
+1. 提取实词词元和依存主谓宾元组；
+2. 计算基于固定语料库的 IDF 权重；
+3. 将当前句与前面三句进行比较；
+4. 统计尚未出现、也未通过固定同义词表匹配到的
+   内容单元。
+
+~~~text
+sentence_information_novelty =
+    IDF weight of new content units
+    / IDF weight of all current-sentence content units
+~~~
+
+静态 TF-IDF 和依存元组会漏掉隐喻性重述，例如
+“重组链条”与“加一条安全带”。人工标注仍是
+校准的金标准。
+
+#### 主谓间逗号率 v1
+
+使用固定的依存分析结果：
+
+~~~text
+subject_predicate_comma_rate =
+    clauses with punctuation between a short nominal subject
+    and its governing predicate
+    / finite clauses
+~~~
+
+分别报告不同短主语阈值下的结果。不要将话题—述题
+结构或长主语自动判定为错误。
+
+### 自动候选排序
+
+不要用一个正则表达式判定这种异味。使用一个
+小型、透明的模型对段落排序，其输入包括：
+
+- 命题新颖度近似值；
+- 相邻句子的 TF-IDF 相似度；
+- 重复的依存元组；
+- 框架标记和抽象壳名词密度；
+- 实质内容延迟；
+- 显式连接词的桥接重合度；
+- 主谓间逗号事件；
+- 实体和名词链的连续性；
+- 作为控制变量的段落长度和句子数。
+
+只有获得人工标签后，才能训练逻辑回归或浅层树模型。
+目标是定位段落级异味，而不是区分人类与 AI
+文本。
+
+### 复现与校准集
+
+初始校准：
+
+- 来源：当前的 20 篇 InfoQ 文档；
+- 从两个时期抽取 50 个段落，不显示所属组别；
+- 纳入自动排序最高的 20 个候选段落和 30 个随机段落；
+- 标注命题标签，并给出整体“信息量低／链条断裂”
+  判断；
+- 报告排序候选的精确率和标注员之间的一致性。
+
+固定以下内容：
+
+- 分句器；
+- Stanza 模型指纹；
+- 壳名词和连接词词表；
+- 同义词资源；
+- TF-IDF 词表和 IDF 值；
+- 上下文窗口；
+- 所有阈值。
+
+### 已知混杂因素
+
+- 引言和总结合理地包含重述；
+- 教程可能先预告结构，再展开内容；
+- 技术定义需要抽象壳名词；
+- 修辞性排比可能是有意且有效的；
+- 话题转换可能降低词汇重合度，同时增加真实信息；
+- 隐喻会使词汇相似度指标失效；
+- 解析器错误会影响命题元组和主谓检测；
+- 省略周边章节时，摘录可能显得缺乏上下文。
+
+### 最小干预实验
+
+选择 20 个经人工确认框架性表述开销较高的段落。
+
+生成一个保守修改版本，要求：
+
+- 删除 META 和 RESTATEMENT 片段；
+- 如果具体内容已在文中出现，用它替换 PLACEHOLDER 片段；
+- 将延迟出现的机制说明移到其主张旁边；
+- 删除无支撑的连接词，而不是编造缺失的前提；
+- 保留所有 NEW 命题、实体、数字、否定和情态。
+
+对原文和压缩版本进行盲评比较。询问：
+
+1. 哪个版本更容易理解？
+2. 相对于阅读投入，哪个版本提供了更多有用信息？
+3. 编辑是否删除了任何必要的推理或上下文？
+
+### 状态升级条件
+
+只有满足以下条件，才能升级为“干预已验证”：
+
+- 两名标注员能够以可接受的一致性使用命题标签；
+- 排序段落中的异味出现率明显高于随机
+  段落；
+- 保守删除提高了盲评读者的偏好；
+- 事实和逻辑内容得到保留；
+- 结果在不止一种文体中得到复现。
+
+---
+
+## 观察列表：尚未收录为异味
+
+### 确定性话语图探针
+
+第一个图表示将句子、从依存关系中提取的
+命题、实体和抽象壳概念作为节点，通过
+论元角色、实体延续和相邻话语桥接将它们连接起来。
+
+试验支持一些较弱但方向一致的信号：后期文本和读者不喜欢的
+段落中，相邻桥接强度较低，偏离主线的绕行较多。
+程式化对比框架仍是最强的可解释特征，
+能够将时间比较结果与后期读者阅读阻力联系起来。精确
+谓词签名重复未能有效衡量语义重述，不得升级采用。
+
+实现和结果记录在
+[确定性话语图探针](../experiments/discourse-graph-probe.md)中。
+
+后续的类型化关系支撑探针正确定位了一处
+读者报告的 `相反` 误用，但也将一处真实的时间对比
+和一处真实的监控备选方案误标为问题。词汇重合和依存角色无法
+确立矛盾、备选关系、因果关系或修辞
+必要性。其综合问题分数已被否决；只有可检查的
+实例和原因代码仍可用于审计。参见
+[确定性话语关系支撑探针](../experiments/relation-support-probe.md)。
+
+| 候选项 | 试验观察 | 当前决定 |
+|---|---|---|
+| 相邻句子内容重合度较低 | Hedges' g 约为 -0.98，BH q 约为 0.52 | 控制话题和长度后研究局部衔接 |
+| 段落更短、分句关系更少 | 效应约为 -0.8，BH q 约为 0.52 | 视为可能的格式效应 |
+| 一般性重复 | 没有特征的 g 绝对值达到 0.8 | 降低当前指标的优先级；语义重述需要新定义 |
+| 宽泛的话语标记类别 | 未出现可靠的密集分离 | 用具体构式替代宽泛类别 |
+| 类型化话语关系支撑 | 问题密度的时间效应为 0.04，读者 rho 为 0.06；存在明确的误报 | 否决 v0.1 分数；仅保留实例审计 |
+| 过渡性引语和破折号增加 | 与来源一致的 rho 为 0.286 和 0.250，但 BH q 值为 0.286 和 0.336 | 保留用于探索；需要文章匹配和干预 |
+| 纯句法分类 | 不稳定，去除标点后低于随机水平 | 降低其作为独立方向的优先级 |
+| 组合整合负担 | 位置控制通过，但通用解压缩的偏好分布为 3 票偏好修订版、3 票偏好原版 | 否决宽泛的操作；研究延迟出现的中心词和锚定不足的修饰语堆叠 |
+
+观察列表中的条目需要更强的证据或更好的测量方法，
+才能获得异味 ID。
+
+### 组合整合负担
+
+#### 状态
+
+- 读者已报告
+- 假设
+- 已在一个结果揭晓后的开发批次上进行确定性测量
+- 结果揭晓前的边界竞争实验方案已固定
+- 字符到词边界选择器在阶段 0 被否决
+- 词级括分选择器在阶段 0 被否决
+- 尚无不受混杂因素影响的读者关联
+- 干预尚未验证
+
+#### 读者体验
+
+每个词或技术术语单独看都能理解，但过多的
+关系、修饰语、实体和命题似乎被塞进同一个
+整合单元。读者能够解读词汇，却难以从中构建
+稳定的陈述。读者感受到的是理解困难，而不是
+明显的程式化 AI 风格标记。
+
+这一候选项不同于低信息量扩写：它可能包含充足的
+真实信息。疑似问题在于信息的组织方式，
+而不只是段落中的实质内容太少。
+
+#### 当前测量
+
+探索性向量包括每句的实词 token 数和不同实词词元数、
+每个分句中心词对应的实词 token 数、虚实词比、
+显式论元覆盖率、依存距离、名词性修饰语跨度、树深度，
+以及从属或并列关系。未定义单一分数。
+
+在第四次干预的修订文本中，全部
+10 对文本的虚实词比都下降，六对文本中每个分句中心词对应的实词 token 数上升。然而，八对文本的平均树
+深度下降，九对文本的长距离依存比例下降。该向量的变化方向并不一致，
+无法解释全部选择 B 侧的回答。禁止根据这些结果
+调节特征以匹配偏好。
+
+命题解压缩干预保留了内容，并限制了
+长度。其相同文本控制和镜像控制均通过，但六次
+干预的偏好结果是三次偏好修订版、三次偏好原版。
+因此，不升级采用通用解压缩。
+
+One preferred revision still contained `AI 原生时代全新的算力服务需求`.
+The reader identified two separable problems: the head noun `需求` arrives only
+after a long modifier string, and generic era or novelty modifiers do not state
+what makes the requirement new. A deterministic lexical probe finds 21 broad
+delayed-head instances in 10 of the 50 post documents, but manual audit exposes
+phrase-boundary false positives. Only the exact reader-localized passage meets
+the stricter low-anchor abstract-stack rule. This localizes a hypothesis but
+does not replicate it. The same frozen rule found zero strict instances in the
+separate 119-document pre/transition discovery handoff. That zero is retained
+but cannot estimate a time effect because the rule was defined after the post
+example and the corpora are not matched.
+
+The corpus was subsequently expanded to 97 unexposed post documents from five
+sources and partitioned before new paragraph analysis. Scanning only the 67
+development documents found 23 broad delayed-head candidates across 14
+documents and again found zero strict low-anchor abstract stacks. The
+30-document validation reserve was not read. The strict motif therefore has two
+independent non-replications and remains a single-case observation.
+
+A separately frozen five-motif inventory reached the same boundary. It found
+zero strict delayed-head cases. Four dense-clause surface candidates in four
+documents and four emphatic abstract-payload candidates in three documents did
+not reach the minimum six-document gate. A three-shell lexical cluster did pass
+the frequency gate, with 14 instances in 12 documents across four sources, but
+inspection of every instance showed literal technical senses, repeated terms,
+and list fragments rather than one coherent integration problem. The lexical
+cluster is rejected as an intervention selector in version 0.1.
+
+Complete negative contrast frames were common in the same inventory, but their
+source-stratified audit mixed necessary alternatives and mechanism distinctions
+with possible rhetorical framing. This confirms that marker frequency cannot
+stand in for a compositional-burden or ornamental-use judgment.
+
+The frozen inventory was then replicated without threshold changes on a new
+93-document, three-source post discovery handoff. It again found zero strict
+delayed-head cases. Dense-clause and emphatic abstract-payload rules found only
+two documents each. The shell cluster again passed frequency, with 20 instances
+in 13 documents across three sources, but again consisted of repeated category
+labels, literal technical senses, coordinate lists, and polysemous terms. This
+independent discovery result strengthens rejection of the shell-cluster proxy
+and leaves the reader-localized delayed-head construction unreplicated.
+
+A follow-up Stanza probe removed the lexical cue and head lists and instead
+required a long pre-head nominal span with at least three nominal-modifier
+relations and no overt boundary, punctuation, or pre-head verb. It localized
+the reader example and found 87 instances in 41 documents across five sources.
+Frequency therefore passed, but candidate coherence failed. The instances mix
+formal names, quantified specifications, lexicalized technical compounds,
+ordinary modifiers, and parser category errors. An unanchored, depth-at-least-
+two diagnostic retained 13 instances in seven documents, with six from one
+document and no single edit operation covering the remainder. Reject the v0.2
+UD rule as an intervention selector; do not convert frequency passage into a
+smell promotion.
+
+Protocol `boundary-competition-development-1.0` now freezes the next attempt
+before a new lexical measurement or reader outcome exists. It separates
+segmentation-path entropy, best-versus-second path margin, gap-level boundary
+posteriors, and unresolved distance to the head from diagnostic branching
+entropy, accessor variety, tokenizer disagreement, and anchor variables. It
+requires eight high-competition and eight matched low-competition passages
+from distinct post-period documents before any reader project can be created.
+Every passage receives the same boundary-only unpacking operator, so the
+high-minus-low preference contrast tests whether the measurement selects
+responsive cases rather than whether rewriting in general helps. The 30-
+document validation reserve remains unopened. This protocol is a planned test,
+not new evidence and not a smell promotion.
+
+The frozen Stage 0 run then rejected the selector before any edit was prepared.
+Across all 87 structural candidates, zero met the high-competition gate, 36
+instances in 23 documents met the low gate, and 51 were middle or unscored.
+Seven candidates jointly met the high-entropy and low-margin thresholds, but
+only one had two ambiguous character gaps and none sustained a low-confidence
+boundary for the required six characters before the head. The observed maximum
+was four.
+
+The reader example was not a lexical boundary case under this measurement: it
+had no ambiguous gap and an unresolved distance of two. SUBTLEX produced the
+best path `原生 / 时代 / 全新 / 算 / 力 / 服务`, revealing that its subtitle-era
+lexicon also lacks the modern technical unit `算力`. Do not repair that result
+with a phrase-specific dictionary entry. Reject `boundary_competition_v1` and
+move the hypothesis from character-to-word segmentation toward word-level
+modifier attachment or phrase bracketing. That replacement is not yet a smell
+metric and requires a separately frozen protocol.
+
+The separately frozen word-level probe then enumerated right-headed binary
+trees and used leave-one-document-out ordered-pair probabilities to score
+attachments. It processed 1,393 passages and 5,670 sentences without opening
+the validation reserve. The reader example passed its case-level gate, with
+normalized tree entropy 0.822, zero best-second margin, 0.857 familiar-token
+fraction, and four weak attachments.
+
+The result did not generalize within the development pool. Only 34 of 87
+candidates contained the prespecified content POS throughout. Seven passed the
+entropy gate, 26 passed the margin gate, 17 passed familiarity, and five passed
+entropy plus margin; none passed entropy, margin, and familiarity together.
+The joint entropy-margin cases were names or sparse technical strings. Reject
+the tree-entropy vector as a selector and retain H-BRACKET only as a localized
+candidate explanation.
+
+Hidden semantic-relation underdetermination is now the stronger rival: familiar
+words may be individually recognizable while their relation remains unstated.
+This is not yet a metric or established smell. The exposed 87 candidates must
+not be re-filtered to construct it; a frozen weak-relation rule needs a new
+independent corpus. See
+[Word-Level Modifier-Bracketing Probe](../experiments/modifier-bracketing-probe.md).
+
+No further reader batch should be assembled from the five remaining broad
+candidates: they are all from Meituan and mostly technical or section-heading
+fragments. Independent multi-source examples are required before freezing a
+narrow `unpack_delayed_head` intervention. See
+[Compositional Integration Burden Probe](../experiments/compositional-burden-probe.md)
+and
+[Head-Final Modifier Delay Probe](../experiments/head-final-modifier-probe.md).
+The staged design is documented in
+[Boundary-Competition Development Experiment](../experiments/boundary-competition-development.md).

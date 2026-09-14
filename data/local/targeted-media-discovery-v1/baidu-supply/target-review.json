@@ -1,0 +1,1361 @@
+{
+  "schema_version": "targeted-full-article-target-review-1.0",
+  "reviewed_at_utc": "2026-09-14T09:14:16.487179+00:00",
+  "doc_id": "92ade4253c08a43329164bf5",
+  "reviewer": {
+    "role": "Independent assistant target-coverage screening",
+    "identity": "Codex agent /root/targeted_candidate_check",
+    "exact_model_identifier": null,
+    "identity_limit": "An exact runtime model identifier was not exposed to this reviewer.",
+    "independence": "The reviewer read the assigned source, acquisition records, acquisition implementation excerpts, and target criteria. Root notes, prior semantic or edit reviews, and the previous rescreen review were not read.",
+    "human_label": null,
+    "authorship_label": null
+  },
+  "protocol": {
+    "criteria_reference": "docs/routes/compact-refiner/target-coverage-rescreen.md",
+    "criteria_version": "target-coverage-rescreen-1.0",
+    "application": "A separate exploratory review of one newly acquired development article; this is not a rerun or extension of the frozen twelve-document rescreen.",
+    "prompt_version": "targeted-full-article-target-review-1.0",
+    "complete_read_attestation": {
+      "normalized_body_read_in_full": true,
+      "dom_paragraph_text_read_in_full": true,
+      "unicode_characters": 5872,
+      "dom_text_block_count": 64,
+      "collector_line_count": 82,
+      "referenced_media_inspected": false
+    },
+    "external_api_calls": 0,
+    "network_calls": 0,
+    "training_or_gpu_use": false,
+    "edits_generated": false,
+    "reader_task_generated": false,
+    "limits": "Assistant nomination only. No reader preference, preservation efficacy, validated smell rule, training label, or individual authorship inference is produced."
+  },
+  "selection": {
+    "source_url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+    "source_title": "百度想明白了：旧供给到达极限了",
+    "published_at": "2026-05-15",
+    "publication_date_evidence": "Captured embedded article publish_time; the Google query year is not a publication date.",
+    "temporal_cohort": "post_2025_07_01",
+    "acquisition_context": "One keyword-enriched Google UI query and one selected public article, followed by one article capture; not a random or matched sample.",
+    "query": "site:infoq.cn/article \"不是\" \"而是\" \"2025\" \"本质\"",
+    "inference_limit": "Selection is enriched for the nominated surface patterns and cannot estimate prevalence, time effects, or separation from ordinary media style.",
+    "metadata_discrepancy": "Nested acquisition_method says published_sitemap_and_live_public_page, but selection.json and the acquisition script establish Google UI discovery. The original acquisition metadata is retained unchanged.",
+    "exposure_status": "Newly inspected development document, not untouched validation or final-test material."
+  },
+  "integrity": {
+    "file_sha256": {
+      "source.html": "4c1c19a5af60215b2b454d569423d661e7c36ec8b42550cb69debe639d968ec3",
+      "documents/92ade4253c08a43329164bf5/article.dom.html": "b4d9f45ff40fc0556fe256ac48deb1d4b78cdf8c0ce66135598607afd421f85d",
+      "documents/92ade4253c08a43329164bf5/body.txt": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+      "documents/92ade4253c08a43329164bf5/blocks.json": "a777c63f84f86a8e565d1bdc89081c82199e964b705311cd23cc192474f06894",
+      "documents/92ade4253c08a43329164bf5/metadata.json": "dac1d87294c9226baf78e0910e258c3e616fba55bd8901195a728f76ded3de1b",
+      "documents/92ade4253c08a43329164bf5/structure.json": "c575e6a350c0dabe48e32d85e7d65f1f6486aba2f5aaf17969af1e5da47f09ef",
+      "selection.json": "ee96c127425b096c98f615db592933e2fce12939ad80a5b96448c184ddb2cbe7",
+      "result.json": "e2c5e56c2a0a0f337caed4481f4cd15abbd7552f1482de556b6a37b51a364099"
+    },
+    "capture_script_path": "data/local/targeted-media-discovery-v1/capture_candidate.py",
+    "capture_script_sha256": "697d453a3879e13776edb23a151eaac859f04caa273e1380a7a2ba8d4c81146c",
+    "capture_script_matches_selection_hash": true,
+    "body_matches_recorded_hashes": true,
+    "source_and_evidence_files_match_acquisition_output_hashes": true,
+    "all_64_collector_blocks_reconstruct_body_exactly": true,
+    "evidence_bundle_sha256": "87c5f0337f5d7f4ee54caedc97163d20743fc4a89277f6a0e743efc2720130dd",
+    "evidence_hash_encoding": "UTF-8 JSON of evidence array; ensure_ascii=False, sort_keys=True, separators=(comma, colon).",
+    "quote_offset_convention": "Zero-based Unicode code-point offsets into body.txt decoded as UTF-8, with exclusive body_end; not UTF-8 byte offsets or UTF-16 offsets.",
+    "all_quote_offsets_and_hashes_validated": true,
+    "overlap": {
+      "recorded_known_overlap": null,
+      "recorded_inspection_allowed": true,
+      "methodological_evidence": "The acquisition script creates ExclusionIndex(near_duplicate_threshold=0.9), indexes available protected corpus text and both staging frames, calls index.match on this body, and writes known_overlap and inspection_allowed. The inspected script hash matches selection.json.",
+      "metadata_discrepancy": "metadata.json retains an inherited exposure_status saying near-duplicate checks are pending. The later result.json and matching capture implementation show that the available-index check completed with no match. The original records were not rewritten.",
+      "reviewer_did_not_read_protected_bodies_or_labels": true,
+      "check_not_rerun_by_reviewer": true,
+      "limit": "No match against the available recorded indexes does not establish semantic independence or coverage of missing historical handoffs."
+    }
+  },
+  "format_and_provenance": {
+    "format": "Complete Chinese technology-media company-event analysis, with an opening thesis, five section headings, technical explanation, deployment examples, and a closing industry judgment.",
+    "format_fit": "complete_informative_media_article",
+    "completeness_limit": "All captured article text and DOM paragraph text were read. Seven referenced images were not inspected; they may contain context or support for some technical claims.",
+    "source_attribution": "The captured page names an author, and the body attributes statements to conference speakers and company announcements and invokes InfoQ tests. These are publication and attribution signals, not production-process evidence.",
+    "provenance_stratum": "unresolved_no_originality_pass",
+    "translation_evidence": "No explicit translator or translation evidence appears in the inspected metadata. This does not establish original Chinese composition.",
+    "production_origin": "Unknown. Chinese names, a domestic-company subject, first-person reporting, and fluent or awkward Chinese do not establish whether the text was composed, adapted, translated, or model-assisted.",
+    "genre_confound": "Company-launch commentary and promotional reporting naturally repeat a corporate thesis, contrast old and new products, and end with an industry analogy. Sponsorship or editorial independence was not verified.",
+    "quotation_confound": "The cost-versus-output contrast in b004 and b022 is attributed to Li Yanhong. The trial-versus-bankwide-deployment contrast in b052 is attributed to the bank. They must not be counted as independent narrator-level unnecessary oppositions."
+  },
+  "disposition": "sustained_target_candidate",
+  "confidence": "moderate",
+  "disposition_reason": "The complete text contains recurrent narrator-level abstract escalation and restatement at separated rhetorical boundaries, alongside several explicit transitions whose claimed logical continuity is not supplied by the adjacent paragraphs. The closing Apple price-versus-ecosystem replacement and the earlier platform two-choice/third-way construction add target-relevant contrastive framing. This combination persists beyond isolated typos or one attributed quote. Substantial coherent technical exposition and the company-event genre prevent treating the whole article, every contrast, or every summary as defective; this is an exploratory candidate, not a confirmed strong human example.",
+  "target_findings": [
+    {
+      "finding_id": "F1",
+      "family": "Repeated abstract conclusions and thesis escalation",
+      "evidence_ids": [
+        "E006",
+        "E007",
+        "E010",
+        "E013",
+        "E019",
+        "E024",
+        "E046",
+        "E057",
+        "E063"
+      ],
+      "whole_article_pattern": "The opening turns test differences into a structural crisis and an old-supply/new-species signal; the first section repeatedly renames the thesis as new demand, a new paradigm, and a real problem; later summaries describe a critical point, a new departure, generational architectural advantage, and a model-to-architecture era transition.",
+      "target_relevance": "Separated paragraphs repeatedly elevate local announcements into broad historical or essential conclusions without defining the threshold, scope, or comparison behind those elevated descriptions. The recurrence is in the narrator as well as the corporate quotations and is not confined to a short slogan.",
+      "counterevidence": "b013 also gives an intelligible cache-cost explanation, b024 is a short summary of the two layers just introduced, and b063 recalls the article-wide thesis. A summary is not defective merely because it uses abstract nouns. The target hypothesis concerns the accumulated escalation and repeated re-announcement, especially b007, b019, b046, and b057.",
+      "uncertainty": "Promotional event-analysis conventions plausibly explain much of this rhetoric. Reader aversion and edit benefit remain unmeasured."
+    },
+    {
+      "finding_id": "F2",
+      "family": "Contrastive replacement and problem-solution framing with underspecified alternatives",
+      "evidence_ids": [
+        "E029",
+        "E030",
+        "E057",
+        "E058"
+      ],
+      "whole_article_pattern": "The platform passage compresses the choice into underengineered token-billed open systems versus complete but costly credit-billed closed products, then presents the vendor as a third path. The closing section moves from market share to generational architecture and explains Apple ecosystem growth by rejecting cheap phones in favor of an early predictable supply system.",
+      "target_relevance": "The open/closed pairing is not established as an exhaustive market choice, and a billing unit does not itself establish comparative cost. In b058 the rejected cheap-phone explanation has not been advanced, and a binary cause substitutes for a developed explanation of the cited long-run growth. These are concrete rhetorical counterparts rather than a nomination based on marker count.",
+      "counterevidence": "Comparing engineering capabilities, billing costs, and ecosystem predictability is relevant to the article. b057 can be ordinary emphatic addition rather than mutually exclusive replacement. The stronger concern is b029-b030 and b058, not the mere presence of a contrastive construction.",
+      "uncertainty": "There is no attempt here to prove the empirical claims false or to infer production origin. The criticism is limited to the alternatives and causal support supplied in the inspected text."
+    },
+    {
+      "finding_id": "F3",
+      "family": "Reference and argument discontinuity across asserted progression",
+      "evidence_ids": [
+        "E043",
+        "E044",
+        "E045",
+        "E048",
+        "E049",
+        "E050",
+        "E051",
+        "E052",
+        "E053",
+        "E057",
+        "E058",
+        "E059",
+        "E060",
+        "E061",
+        "E062"
+      ],
+      "instances": [
+        {
+          "evidence_ids": [
+            "E043",
+            "E044",
+            "E045"
+          ],
+          "assessment": "The problem begins as bursty training utilization and idle capacity, shifts through a demonstrative reference to delivery volatility and fixed cooling choices, and is answered by wind/liquid cooling compatibility. Cooling flexibility can address procurement flexibility, but the text does not explain how it answers the initial between-job utilization problem. This is a connected topic with an incomplete causal bridge, not random subject switching."
+        },
+        {
+          "evidence_ids": [
+            "E048",
+            "E049",
+            "E050",
+            "E051",
+            "E052",
+            "E053"
+          ],
+          "assessment": "The Yiwu discussion specifies front-store/back-factory information coordination and named tools, then announces that the same logic has worked in distant sectors. Bank adoption counts and automotive training capacity do not themselves demonstrate the same coordination mechanism or its successful outcome. Bank deployment scale is further made to imply strict stability/security validation; training support is joined to regulatory approval by a causal connector without supplying the intervening basis."
+        },
+        {
+          "evidence_ids": [
+            "E057",
+            "E058",
+            "E059",
+            "E060",
+            "E061",
+            "E062"
+          ],
+          "assessment": "The asserted industry law is illustrated by App Store growth, then transferred to Agent infrastructure, technical deployment risk, public Mooncake evidence, and vendor trust. A predictable application marketplace is a plausible analogy, but the relevant correspondence to infrastructure architecture and the first-mover claim is not established. The shifts are held together by broad same-logic and significance assertions."
+        }
+      ],
+      "target_relevance": "The same maneuver recurs in separate portions of the article: a transition announces a resolved problem, shared mechanism, or general implication before the prose has supplied the link. Its conjunction with F1 and F2 supports nomination beyond generic unsupportedness.",
+      "counterevidence": "The overall organization from demand to software/hardware layers to customer examples is intelligible. b048-b049 gives a concrete mechanism, and the ending b064 explicitly makes the industry judgment conditional. Not every transition is disconnected.",
+      "uncertainty": "Uninspected images or external sources may supply empirical support. This review does not fact-check those sources, and factual unsupportedness alone would not establish the target."
+    }
+  ],
+  "necessary_distinctions_and_counterexamples": [
+    {
+      "evidence_ids": [
+        "E004",
+        "E022"
+      ],
+      "assessment": "Costs/input versus benefits/output is an economically meaningful distinction attributed to the same speaker. Its repetition may reinforce the corporate message, but it is not two independent unnecessary opposition findings."
+    },
+    {
+      "evidence_ids": [
+        "E012",
+        "E015",
+        "E018",
+        "E021",
+        "E027"
+      ],
+      "assessment": "Cache reuse, request-spanning Agent needs, stateless API limitations, and cross-layer coordination form a substantive explanatory progression. Single-request versus multi-call workloads and integrated versus isolated optimization are meaningful technical contrasts; their universal phrasing may need evidence, but their contrast itself is justified."
+    },
+    {
+      "evidence_ids": [
+        "E036",
+        "E037",
+        "E038"
+      ],
+      "assessment": "The HBM/memory/SSD hierarchy supplies a specific mechanism for the cost-speed tradeoff. The theoretical qualification and explicit company attribution help preserve uncertainty and source status."
+    },
+    {
+      "evidence_ids": [
+        "E032",
+        "E033"
+      ],
+      "assessment": "The text distinguishes an officially reported average speed advantage from a particular InfoQ workload observation. The latter is bounded by a named output and approximate workload; it is informative evidence even though comparability and causation were not verified here."
+    },
+    {
+      "evidence_ids": [
+        "E046"
+      ],
+      "assessment": "The sentence distinguishing invention from evolution explicitly notes that most capabilities already existed. This is a useful qualification of the announcement. The subsequent critical-point/new-departure escalation is the target-relevant part, not the corrective contrast itself."
+    },
+    {
+      "evidence_ids": [
+        "E052",
+        "E064"
+      ],
+      "assessment": "The bank trial-versus-bankwide contrast distinguishes scale and is attributed. The last paragraph makes the industry prediction contingent on future business outcomes, which is counterevidence to a reading of uninterrupted certainty."
+    }
+  ],
+  "other_defects_not_used_as_primary_nomination": [
+    {
+      "evidence_ids": [
+        "E011",
+        "E023",
+        "E030",
+        "E062"
+      ],
+      "assessment": "Local repeated wording, word order, a likely homophone typo, and an apparent missing lexical verb are present. These were not used to upgrade the target disposition. Ordinary Chinese ellipsis is not treated as a missing-SVO error."
+    },
+    {
+      "evidence_ids": [
+        "E021"
+      ],
+      "assessment": "DAA is invoked without expansion or an explicit local explanation of how it follows from the technical layers. This is a local reference issue, not an independent basis for nomination."
+    },
+    {
+      "evidence_ids": [
+        "E040",
+        "E052",
+        "E053",
+        "E057",
+        "E061"
+      ],
+      "assessment": "Several broad technical, causal, historical, or exclusivity claims lack enough support in the captured prose for independent verification. Unsupported claims, jargon, and promotional tone alone would not qualify the article."
+    }
+  ],
+  "extraction_assessment": {
+    "assessment": "Collector line breaks sometimes split one DOM paragraph around inline emphasis. The complete DOM paragraphs were used for reading; those line breaks are not discourse breaks or source sentence defects.",
+    "examples_of_single_dom_paragraphs_split_in_collector": [
+      "b007",
+      "b011",
+      "b018",
+      "b023",
+      "b026",
+      "b028",
+      "b031",
+      "b034",
+      "b036",
+      "b038"
+    ],
+    "no_source_text_rewritten": true,
+    "dom_quote_policy": "Evidence retains both the exact normalized-body span and the exact DOM text without added separators, including any original nonbreaking spaces. The two representations are not silently conflated."
+  },
+  "limits_and_next_use": [
+    "One keyword-enriched article supplies a candidate manifestation, not a temporal result, prevalence estimate, representative strong-positive corpus, or validation outcome.",
+    "No maintainer felt-severity judgment or human preference label has been obtained for this article.",
+    "Company-event genre, quotation reuse, source composition, topic, publication period, and visibility need appropriate contrasting samples before generalization.",
+    "Provenance remains unresolved; neither admission nor exclusion is based on assumed translation or assumed original-Chinese composition.",
+    "This artifact authorizes no rewrite, reader task, training, or product rule. The candidate remains a source-context review result with both supporting and contrary evidence."
+  ],
+  "evidence": [
+    {
+      "evidence_id": "E001",
+      "block_id": "b001",
+      "body_start": 0,
+      "body_end": 141,
+      "tag": "p",
+      "source_line_start": 1,
+      "source_line_end": 1,
+      "quote": "今天大部分企业看待 Token 经济的心情十分复杂——一方面，Token 的价格已经打到了地板；另一方面，Agent 燃烧积分 /Token ，生产账单的速度仍然很快。尤其是当这些企业把 AI 从\"偶尔试用\"转向\"业务系统集成\"时，ROI 完全无法取得平衡，有的只是足够茂盛的焦虑。",
+      "quote_sha256": "c05d01472189131e9fe1a51a4346d7be557d7f025684f132210f12873f9045a7",
+      "dom_quote": "今天大部分企业看待 Token 经济的心情十分复杂——一方面，Token 的价格已经打到了地板；另一方面，Agent 燃烧积分 /Token ，生产账单的速度仍然很快。尤其是当这些企业把 AI 从\"偶尔试用\"转向\"业务系统集成\"时，ROI 完全无法取得平衡，有的只是足够茂盛的焦虑。",
+      "dom_quote_sha256": "c05d01472189131e9fe1a51a4346d7be557d7f025684f132210f12873f9045a7"
+    },
+    {
+      "evidence_id": "E004",
+      "block_id": "b004",
+      "body_start": 401,
+      "body_end": 572,
+      "tag": "p",
+      "source_line_start": 4,
+      "source_line_end": 4,
+      "quote": "层层叠加，导致 Token 单价虽然降了 99%，但消耗量涨了 30 到 100 倍。诚如李彦宏在 2026 年 5 月 13 日举办的百度 Create 大会上所说：Token 只是代表成本，并不代表收益；它衡量的是投入，而不是产出。关注有多少 Agent 在给人类干活，并交付结果。这比无谓的 Token 消耗，更接近价值，也更接近本质。",
+      "quote_sha256": "3f82bddb28a9095a8b3c3e97cb040069fb028b9af19bb557ee5e814372a9aec4",
+      "dom_quote": "层层叠加，导致 Token 单价虽然降了 99%，但消耗量涨了 30 到 100 倍。诚如李彦宏在 2026 年 5 月 13 日举办的百度 Create 大会上所说：Token 只是代表成本，并不代表收益；它衡量的是投入，而不是产出。关注有多少 Agent 在给人类干活，并交付结果。这比无谓的 Token 消耗，更接近价值，也更接近本质。",
+      "dom_quote_sha256": "3f82bddb28a9095a8b3c3e97cb040069fb028b9af19bb557ee5e814372a9aec4"
+    },
+    {
+      "evidence_id": "E006",
+      "block_id": "b006",
+      "body_start": 682,
+      "body_end": 729,
+      "tag": "p",
+      "source_line_start": 6,
+      "source_line_end": 6,
+      "quote": "不得不怀疑，在 Agent 全面进入生产环境前，Agent Infra 已经迎来了结构性问题。",
+      "quote_sha256": "7c9302ac36c8f5aecafc91e119c74ec8891579ec248ac84dc13b3f317bf6367c",
+      "dom_quote": "不得不怀疑，在 Agent 全面进入生产环境前，Agent Infra 已经迎来了结构性问题。",
+      "dom_quote_sha256": "7c9302ac36c8f5aecafc91e119c74ec8891579ec248ac84dc13b3f317bf6367c"
+    },
+    {
+      "evidence_id": "E007",
+      "block_id": "b007",
+      "body_start": 730,
+      "body_end": 820,
+      "tag": "p",
+      "source_line_start": 7,
+      "source_line_end": 9,
+      "quote": "我仔细听完百度创始人李彦宏、百度集团执行副总裁沈抖在 5 月 13 日上午的全部发言，最终总结出一个信号：\n旧供给快要到达极限了，已经成为新物种的 AI 全栈云们，正在继续求变\n。",
+      "quote_sha256": "c21e8ef9ad6019f52502be4359f17b7b11f162700a840ac445632c36f9fe193c",
+      "dom_quote": "我仔细听完百度创始人李彦宏、百度集团执行副总裁沈抖在 5 月 13 日上午的全部发言，最终总结出一个信号：旧供给快要到达极限了，已经成为新物种的 AI 全栈云们，正在继续求变。",
+      "dom_quote_sha256": "040d80f8e79e35aeb7fb353e0f314d0873af77104a6a2f682766b15258fa891c"
+    },
+    {
+      "evidence_id": "E010",
+      "block_id": "b010",
+      "body_start": 877,
+      "body_end": 955,
+      "tag": "p",
+      "source_line_start": 12,
+      "source_line_end": 12,
+      "quote": "沙利文在 2025 年曾发布中国全栈 AI 云服务市场报告，但核心主语是 AI。今天百度的升级可以总结为“新需求，新全栈，新供给”，核心主语是 Agent。",
+      "quote_sha256": "53e0b53f31ef1660f87c14ad7eb8efa1fcb3d80e1139d0d39e0c1e1d0a0688bd",
+      "dom_quote": "沙利文在 2025 年曾发布中国全栈 AI 云服务市场报告，但核心主语是 AI。今天百度的升级可以总结为“新需求，新全栈，新供给”，核心主语是 Agent。",
+      "dom_quote_sha256": "53e0b53f31ef1660f87c14ad7eb8efa1fcb3d80e1139d0d39e0c1e1d0a0688bd"
+    },
+    {
+      "evidence_id": "E011",
+      "block_id": "b011",
+      "body_start": 956,
+      "body_end": 1008,
+      "tag": "p",
+      "source_line_start": 13,
+      "source_line_end": 15,
+      "quote": "主语的变化，背后意味着背后的技术工作，最具代表性的领域即是\nKV Cache（键值缓存）的命中率提升\n。",
+      "quote_sha256": "a1377b05a4ae4c901eb7abad42c1f1f7866f0f24c523bfcc22ef7ed34c4bd072",
+      "dom_quote": "主语的变化，背后意味着背后的技术工作，最具代表性的领域即是 KV Cache（键值缓存）的命中率提升。",
+      "dom_quote_sha256": "09f2780987a70ea4fa57d60f885485948cbd32a00f42730b676886c6171ef16f"
+    },
+    {
+      "evidence_id": "E012",
+      "block_id": "b012",
+      "body_start": 1009,
+      "body_end": 1210,
+      "tag": "p",
+      "source_line_start": 16,
+      "source_line_end": 16,
+      "quote": "大模型推理过程中，每处理一个 token，都需要对整个上下文历史进行大量矩阵运算。KV Cache 把这些中间运算结果保存下来，避免每次都重新计算。在 Agent 时代，这个机制变成了系统性能的命脉——Agent 的多轮调用之间上下文高度重叠，如果 KV Cache 命中，就不需要重新推理整个上下文，速度和成本都会大幅改善。反之，对于一个调用 30-60 次的 Agent 任务，就是巨大的算力浪费。",
+      "quote_sha256": "be0566ba81fc93fbd844ec48c829d036ebd274d744ee03c7e10713e8928ab8b6",
+      "dom_quote": "大模型推理过程中，每处理一个 token，都需要对整个上下文历史进行大量矩阵运算。KV Cache 把这些中间运算结果保存下来，避免每次都重新计算。在 Agent 时代，这个机制变成了系统性能的命脉——Agent 的多轮调用之间上下文高度重叠，如果 KV Cache 命中，就不需要重新推理整个上下文，速度和成本都会大幅改善。反之，对于一个调用 30-60 次的 Agent 任务，就是巨大的算力浪费。",
+      "dom_quote_sha256": "be0566ba81fc93fbd844ec48c829d036ebd274d744ee03c7e10713e8928ab8b6"
+    },
+    {
+      "evidence_id": "E013",
+      "block_id": "b013",
+      "body_start": 1211,
+      "body_end": 1459,
+      "tag": "p",
+      "source_line_start": 17,
+      "source_line_end": 17,
+      "quote": "大模型的定价机制从侧面印证了 KV Cache 的真实价值：Anthropic 对命中缓存的 token 提供 90% 折扣，OpenAI 提供 50% 折扣，Google 提供 90% 折扣。平台愿意对\"已在缓存里的 token\"让出如此高的折扣，本质上是在承认：缓存命中的 token，边际算力成本接近于零。命中率越高，平台成本越低，用户越有动力把更多调用留在同一个平台——这是 KV Cache 优化背后真正的商业逻辑，也是为什么各方都把 KV Cache 命中率当作核心竞争力指标来对待。",
+      "quote_sha256": "ecfb3031df3c6f90d1a5b5342cb96f92ec84ffa4a3dfc244b9c4056a7795ea6e",
+      "dom_quote": "大模型的定价机制从侧面印证了 KV Cache 的真实价值：Anthropic 对命中缓存的 token 提供 90% 折扣，OpenAI 提供 50% 折扣，Google 提供 90% 折扣。平台愿意对\"已在缓存里的 token\"让出如此高的折扣，本质上是在承认：缓存命中的 token，边际算力成本接近于零。命中率越高，平台成本越低，用户越有动力把更多调用留在同一个平台——这是 KV Cache 优化背后真正的商业逻辑，也是为什么各方都把 KV Cache 命中率当作核心竞争力指标来对待。",
+      "dom_quote_sha256": "ecfb3031df3c6f90d1a5b5342cb96f92ec84ffa4a3dfc244b9c4056a7795ea6e"
+    },
+    {
+      "evidence_id": "E015",
+      "block_id": "b015",
+      "body_start": 1562,
+      "body_end": 1719,
+      "tag": "p",
+      "source_line_start": 19,
+      "source_line_end": 19,
+      "quote": "2024 年 7 月，月之暗面（Kimi）在 arXiv 发表论文，系统描述了其以 KV Cache 为核心的生产架构。这是当时中国公开可查的、具代表性的系统性 KV Cache 生产架构技术论文之一。Mooncake 的核心数据显示，在相同硬件条件下，KV Cache 中心化架构实现了 525% 的吞吐量提升。",
+      "quote_sha256": "23ca004a85421125a492b36c1a3da9f34b58b4174ec654a5e187c8e60e9685fd",
+      "dom_quote": "2024 年 7 月，月之暗面（Kimi）在 arXiv 发表论文，系统描述了其以 KV Cache 为核心的生产架构。这是当时中国公开可查的、具代表性的系统性 KV Cache 生产架构技术论文之一。Mooncake 的核心数据显示，在相同硬件条件下，KV Cache 中心化架构实现了 525% 的吞吐量提升。",
+      "dom_quote_sha256": "23ca004a85421125a492b36c1a3da9f34b58b4174ec654a5e187c8e60e9685fd"
+    },
+    {
+      "evidence_id": "E017",
+      "block_id": "b017",
+      "body_start": 1743,
+      "body_end": 1839,
+      "tag": "p",
+      "source_line_start": 21,
+      "source_line_end": 21,
+      "quote": "一个可能的原因是，现有的 AI 供给体系——从推理引擎、调度框架到 GPU 集群的组织方式——都是按照\"单次请求 - 单次响应\"设计的。这套设计从根本上就没有为 Agent 的运行方式准备过。",
+      "quote_sha256": "47d530c67045d1d25026feb91776fb7e87fcb654cdce0783e6a492adc49d3f17",
+      "dom_quote": "一个可能的原因是，现有的 AI 供给体系——从推理引擎、调度框架到 GPU 集群的组织方式——都是按照\"单次请求 - 单次响应\"设计的。这套设计从根本上就没有为 Agent 的运行方式准备过。",
+      "dom_quote_sha256": "47d530c67045d1d25026feb91776fb7e87fcb654cdce0783e6a492adc49d3f17"
+    },
+    {
+      "evidence_id": "E018",
+      "block_id": "b018",
+      "body_start": 1840,
+      "body_end": 1967,
+      "tag": "p",
+      "source_line_start": 22,
+      "source_line_end": 24,
+      "quote": "KV Cache 命中率提升了，推理效率改善了。但 Agent 的运行不只是推理的问题，它还涉及：\n长上下文的跨请求持久化、子 Agent 的调度与协同、记忆系统的索引与管理、多模型协作的任务分发\n——现有的 AI 供给体系里，没有一套统一的架构来处理。",
+      "quote_sha256": "28639482023346e83f1b12f162bd536516032d2fc5ef242984d1152f26a7ec92",
+      "dom_quote": "KV Cache 命中率提升了，推理效率改善了。但 Agent 的运行不只是推理的问题，它还涉及：长上下文的跨请求持久化、子 Agent 的调度与协同、记忆系统的索引与管理、多模型协作的任务分发——现有的 AI 供给体系里，没有一套统一的架构来处理。",
+      "dom_quote_sha256": "52501f265d1f080b11ccc249eb2ff1620478d625165b62c413b5d2fd07d4d46a"
+    },
+    {
+      "evidence_id": "E019",
+      "block_id": "b019",
+      "body_start": 1968,
+      "body_end": 2010,
+      "tag": "p",
+      "source_line_start": 25,
+      "source_line_end": 25,
+      "quote": "新的 AI 使用范式，新的全栈供给体系，是百度智能云在这次大会上真正要回应的真问题。",
+      "quote_sha256": "07f3ae9763587dff97fc37f79fb0eb50194611cb480e872dcbc060fde9fb2250",
+      "dom_quote": "新的 AI 使用范式，新的全栈供给体系，是百度智能云在这次大会上真正要回应的真问题。",
+      "dom_quote_sha256": "07f3ae9763587dff97fc37f79fb0eb50194611cb480e872dcbc060fde9fb2250"
+    },
+    {
+      "evidence_id": "E021",
+      "block_id": "b021",
+      "body_start": 2019,
+      "body_end": 2178,
+      "tag": "p",
+      "source_line_start": 27,
+      "source_line_end": 27,
+      "quote": "\"全栈\"，很容易被当成营销语言，但在此处，它有具体的技术含义：在 Agent 时代，推理效率、调度框架、内存管理、硬件配置这几个层面是相互耦合的——单独优化任何一层，都无法释放其他层的潜力——要作为一个整体来设计和优化，而不是各自独立打补丁，它们的目标是为了服务大规模智能体应用。这正好对应李彦宏提到的 DAA 概念。",
+      "quote_sha256": "23d39000bc89eb6deddd68b77e2e154539cd72e5bb05fe305ae9adf1becd40bf",
+      "dom_quote": "\"全栈\"，很容易被当成营销语言，但在此处，它有具体的技术含义：在 Agent 时代，推理效率、调度框架、内存管理、硬件配置这几个层面是相互耦合的——单独优化任何一层，都无法释放其他层的潜力——要作为一个整体来设计和优化，而不是各自独立打补丁，它们的目标是为了服务大规模智能体应用。这正好对应李彦宏提到的 DAA 概念。",
+      "dom_quote_sha256": "23d39000bc89eb6deddd68b77e2e154539cd72e5bb05fe305ae9adf1becd40bf"
+    },
+    {
+      "evidence_id": "E022",
+      "block_id": "b022",
+      "body_start": 2179,
+      "body_end": 2268,
+      "tag": "p",
+      "source_line_start": 28,
+      "source_line_end": 28,
+      "quote": "在李彦宏看来，Token 不一定代表终局，它只代表成本并不代表收益，衡量的是投入而非产出，但未来衡量一个平台和生态的繁荣，更应该看的有多少 Agent 在为人类干活，并交付结果。",
+      "quote_sha256": "81f7831ecf685d07bb34399d3de14c55638c6296d745505ed3956fa7489dc928",
+      "dom_quote": "在李彦宏看来，Token 不一定代表终局，它只代表成本并不代表收益，衡量的是投入而非产出，但未来衡量一个平台和生态的繁荣，更应该看的有多少 Agent 在为人类干活，并交付结果。",
+      "dom_quote_sha256": "81f7831ecf685d07bb34399d3de14c55638c6296d745505ed3956fa7489dc928"
+    },
+    {
+      "evidence_id": "E023",
+      "block_id": "b023",
+      "body_start": 2269,
+      "body_end": 2468,
+      "tag": "p",
+      "source_line_start": 29,
+      "source_line_end": 31,
+      "quote": "百度智能云的发布新全栈 AI 云，正由此而生。它的架构更新包含两个主要层次：\nAgent Infra（Agent 基础设施层）和 AI Infra（AI 算力基础设施层）\n。在 Agent Infra 上，追求把单位 Token 的智能水平做到最好，并在真实业务中稳定运行、持续进化、可管可控。在 AI Infra 上，追求提供每瓦性能更强、性价比更高的 AI 算力，把 Token 效能做到极致。",
+      "quote_sha256": "020a24b4dba43d247c7e121224cc24ed388b40a62dec33c1730076461132470a",
+      "dom_quote": "百度智能云的发布新全栈 AI 云，正由此而生。它的架构更新包含两个主要层次：Agent Infra（Agent 基础设施层）和 AI Infra（AI 算力基础设施层）。在 Agent Infra 上，追求把单位 Token 的智能水平做到最好，并在真实业务中稳定运行、持续进化、可管可控。在 AI Infra 上，追求提供每瓦性能更强、性价比更高的 AI 算力，把 Token 效能做到极致。",
+      "dom_quote_sha256": "8e73d69a7442c1a4e357dbf30619df0eb719e70c4e2467acf50cd67529d868e1"
+    },
+    {
+      "evidence_id": "E024",
+      "block_id": "b024",
+      "body_start": 2469,
+      "body_end": 2501,
+      "tag": "p",
+      "source_line_start": 32,
+      "source_line_end": 32,
+      "quote": "二者互为支撑，是百度智能云围绕新需求，给出新供给的核心解决思路。",
+      "quote_sha256": "9a1b61a5ef93279f80d8243c7ca06ab42366148a2b8a052641e56611954082c3",
+      "dom_quote": "二者互为支撑，是百度智能云围绕新需求，给出新供给的核心解决思路。",
+      "dom_quote_sha256": "9a1b61a5ef93279f80d8243c7ca06ab42366148a2b8a052641e56611954082c3"
+    },
+    {
+      "evidence_id": "E027",
+      "block_id": "b027",
+      "body_start": 2692,
+      "body_end": 2776,
+      "tag": "p",
+      "source_line_start": 37,
+      "source_line_end": 37,
+      "quote": "传统大模型 API 是无状态的：每次调用都是独立的，不持有任何状态。对单次问答，这已足够；但对一个需要运行数十次调用的 Agent 任务，无状态 API 是系统性瓶颈。",
+      "quote_sha256": "af6be95251ff839a3823b263200bbf1879d608fcb955db94c9d3e386858c30e1",
+      "dom_quote": "传统大模型 API 是无状态的：每次调用都是独立的，不持有任何状态。对单次问答，这已足够；但对一个需要运行数十次调用的 Agent 任务，无状态 API 是系统性瓶颈。",
+      "dom_quote_sha256": "af6be95251ff839a3823b263200bbf1879d608fcb955db94c9d3e386858c30e1"
+    },
+    {
+      "evidence_id": "E029",
+      "block_id": "b029",
+      "body_start": 2841,
+      "body_end": 2991,
+      "tag": "p",
+      "source_line_start": 41,
+      "source_line_end": 41,
+      "quote": "现阶段用户对 Agent 平台的选用几乎处于两难局面：架构精简的开源平台，工程方面的工作不够，需要等待社区更新。但是此类平台消耗的是 Token，相对性价比更高；架构完善的闭源商业产品，工程能力强大，但消耗的通常是积分，调用最优模型，复杂任务的成本可能高达 10 美元以上（按积分折算），性价比不够。",
+      "quote_sha256": "1b4e56eb4571d1eb76779b050efed7cd9a58a775b0d785b371a9e205e0fd56d7",
+      "dom_quote": "现阶段用户对 Agent 平台的选用几乎处于两难局面：架构精简的开源平台，工程方面的工作不够，需要等待社区更新。但是此类平台消耗的是 Token，相对性价比更高；架构完善的闭源商业产品，工程能力强大，但消耗的通常是积分，调用最优模型，复杂任务的成本可能高达 10 美元以上（按积分折算），性价比不够。",
+      "dom_quote_sha256": "1b4e56eb4571d1eb76779b050efed7cd9a58a775b0d785b371a9e205e0fd56d7"
+    },
+    {
+      "evidence_id": "E030",
+      "block_id": "b030",
+      "body_start": 2992,
+      "body_end": 3094,
+      "tag": "p",
+      "source_line_start": 42,
+      "source_line_end": 42,
+      "quote": "百度的 Agent Infra 提供长上下文管理、记忆、Sub-agent 调度和评估能力，内置足够丰富的 skills。相当于再以上两个选择中提出第三条路：享受完善的产品能力，成本按 Token 计算。",
+      "quote_sha256": "ed5478d889436ac17d6cd264553894bbedca84512f8bb90ea0b7793f1fbeab75",
+      "dom_quote": "百度的 Agent Infra 提供长上下文管理、记忆、Sub-agent 调度和评估能力，内置足够丰富的 skills。相当于再以上两个选择中提出第三条路：享受完善的产品能力，成本按 Token 计算。",
+      "dom_quote_sha256": "ed5478d889436ac17d6cd264553894bbedca84512f8bb90ea0b7793f1fbeab75"
+    },
+    {
+      "evidence_id": "E032",
+      "block_id": "b032",
+      "body_start": 3154,
+      "body_end": 3247,
+      "tag": "p",
+      "source_line_start": 45,
+      "source_line_end": 45,
+      "quote": "长链推理可能会消耗百万级的 token，但真正新增计算的 token 占比不多，因此需要更高的缓存命中率。官方数据显示，在百度智能云上调用 SOTA 模型，速度比行业平均水平快 25%。",
+      "quote_sha256": "9fafe068683e552cf2014b81f338d075aff96952158695553cb13d779f194bca",
+      "dom_quote": "长链推理可能会消耗百万级的 token，但真正新增计算的 token 占比不多，因此需要更高的缓存命中率。官方数据显示，在百度智能云上调用 SOTA 模型，速度比行业平均水平快 25%。",
+      "dom_quote_sha256": "9fafe068683e552cf2014b81f338d075aff96952158695553cb13d779f194bca"
+    },
+    {
+      "evidence_id": "E033",
+      "block_id": "b033",
+      "body_start": 3248,
+      "body_end": 3362,
+      "tag": "p",
+      "source_line_start": 46,
+      "source_line_end": 46,
+      "quote": "就 InfoQ 对 DuMate 的直播测试结果来看，DuMate 处理 8 份左右非结构化脏数据，并输出“投资人一页纸”汇报材料的时间是 1min 左右，同类产品使用能力接近的模型，耗时在 10min 以上，差距确实非常明显。",
+      "quote_sha256": "9e5b42584540eeebafc983a64822384af84a7a58a43763a17092e6f224198079",
+      "dom_quote": "就 InfoQ 对 DuMate 的直播测试结果来看，DuMate 处理 8 份左右非结构化脏数据，并输出“投资人一页纸”汇报材料的时间是 1min 左右，同类产品使用能力接近的模型，耗时在 10min 以上，差距确实非常明显。",
+      "dom_quote_sha256": "9e5b42584540eeebafc983a64822384af84a7a58a43763a17092e6f224198079"
+    },
+    {
+      "evidence_id": "E036",
+      "block_id": "b036",
+      "body_start": 3441,
+      "body_end": 3547,
+      "tag": "p",
+      "source_line_start": 50,
+      "source_line_end": 52,
+      "quote": "AI Infra 层的核心是 KV Cache 的系统性处理。百度采用了三级存储池化设计：\nHBM（显卡高速内存）→ 内存（CPU Memory）→ SSD（固态硬盘）\n。这三级介质速度依次递减，成本也依次递减。",
+      "quote_sha256": "3589b2cd5938ea50a9186f58bdc973044e1df042b1051b20ccf67e384accbe7c",
+      "dom_quote": "AI Infra 层的核心是 KV Cache 的系统性处理。百度采用了三级存储池化设计：HBM（显卡高速内存）→ 内存（CPU Memory）→ SSD（固态硬盘）。这三级介质速度依次递减，成本也依次递减。",
+      "dom_quote_sha256": "42a44ced97d3c4d4878f39e05638e1f40e207d0f0e13cf204309e7c94a422140"
+    },
+    {
+      "evidence_id": "E037",
+      "block_id": "b037",
+      "body_start": 3548,
+      "body_end": 3655,
+      "tag": "p",
+      "source_line_start": 53,
+      "source_line_end": 53,
+      "quote": "这意味着，热 KV Cache 可以考虑存在 HBM，温 KV Cache 则能下沉到内存，冷 KV Cache 可以进一步落盘到 SSD——理论上，系统可以根据访问频率动态管理数据位置，在成本和速度之间自动寻优。",
+      "quote_sha256": "65aead0342791bca594e3199b56927333bd0791a86aa6b221eea8a9cb42b47f4",
+      "dom_quote": "这意味着，热 KV Cache 可以考虑存在 HBM，温 KV Cache 则能下沉到内存，冷 KV Cache 可以进一步落盘到 SSD——理论上，系统可以根据访问频率动态管理数据位置，在成本和速度之间自动寻优。",
+      "dom_quote_sha256": "65aead0342791bca594e3199b56927333bd0791a86aa6b221eea8a9cb42b47f4"
+    },
+    {
+      "evidence_id": "E038",
+      "block_id": "b038",
+      "body_start": 3656,
+      "body_end": 3707,
+      "tag": "p",
+      "source_line_start": 54,
+      "source_line_end": 56,
+      "quote": "百度公开称，这套方案在生产环境中实现了\n超过 90% 的 KV Cache 命中率\n，是业界最高水平。",
+      "quote_sha256": "32791f07fd0f56a998d16023f2397bd8442a3233fe61cdc9b428cc0ad6843b5d",
+      "dom_quote": "百度公开称，这套方案在生产环境中实现了超过 90% 的 KV Cache 命中率，是业界最高水平。",
+      "dom_quote_sha256": "d7d3c4a751cd3be9759c6091a022cd7fdce63469f3c5ad299aadf9b8bed17da0"
+    },
+    {
+      "evidence_id": "E040",
+      "block_id": "b040",
+      "body_start": 3759,
+      "body_end": 3899,
+      "tag": "p",
+      "source_line_start": 58,
+      "source_line_end": 58,
+      "quote": "Agentic 强化学习是大模型从“会说”走向“会做”的关键路线，但传统强化学习在工程上很难规模化：训练不稳定、环境慢、采样贵。百度将其变成了一个工程能力，无论是搜索问答 Agent、自动编辑 Agent、视频理解 Agent，还是编程 Agent，都可以在这一套底座上持续优化。",
+      "quote_sha256": "4243b6fc53e939cf66c617f2e30425c3d50d95d6e4741a2cdbefc18e4cbdd642",
+      "dom_quote": "Agentic 强化学习是大模型从“会说”走向“会做”的关键路线，但传统强化学习在工程上很难规模化：训练不稳定、环境慢、采样贵。百度将其变成了一个工程能力，无论是搜索问答 Agent、自动编辑 Agent、视频理解 Agent，还是编程 Agent，都可以在这一套底座上持续优化。",
+      "dom_quote_sha256": "4243b6fc53e939cf66c617f2e30425c3d50d95d6e4741a2cdbefc18e4cbdd642"
+    },
+    {
+      "evidence_id": "E043",
+      "block_id": "b043",
+      "body_start": 4025,
+      "body_end": 4153,
+      "tag": "p",
+      "source_line_start": 61,
+      "source_line_end": 61,
+      "quote": "一个典型的大模型训练任务是这样运作的：启动时，数千张 GPU 同时拉满，几天到几个月高强度运行；训练结束，这批算力从最高负荷骤降为接近空置，等待下一个训练任务被调度进来。这种\"全有或全无\"的需求节奏，和传统数据中心\"平稳负载、充分利用\"的设计假设完全相悖。",
+      "quote_sha256": "eee73c85c66522d832907a28a468fd205c26d340cc1ec76840f152bededf8e3a",
+      "dom_quote": "一个典型的大模型训练任务是这样运作的：启动时，数千张 GPU 同时拉满，几天到几个月高强度运行；训练结束，这批算力从最高负荷骤降为接近空置，等待下一个训练任务被调度进来。这种\"全有或全无\"的需求节奏，和传统数据中心\"平稳负载、充分利用\"的设计假设完全相悖。",
+      "dom_quote_sha256": "eee73c85c66522d832907a28a468fd205c26d340cc1ec76840f152bededf8e3a"
+    },
+    {
+      "evidence_id": "E044",
+      "block_id": "b044",
+      "body_start": 4154,
+      "body_end": 4210,
+      "tag": "p",
+      "source_line_start": 62,
+      "source_line_end": 62,
+      "quote": "过去几年服务器交货周期波动剧烈，放大了这个问题。机房规划时就必须把服务器型号和冷却系统绑死，灵活调整几乎不可能。",
+      "quote_sha256": "7b6ee9192ad9dd54f960edb85d2031d85b54037c754de262c7da80bc43250057",
+      "dom_quote": "过去几年服务器交货周期波动剧烈，放大了这个问题。机房规划时就必须把服务器型号和冷却系统绑死，灵活调整几乎不可能。",
+      "dom_quote_sha256": "7b6ee9192ad9dd54f960edb85d2031d85b54037c754de262c7da80bc43250057"
+    },
+    {
+      "evidence_id": "E045",
+      "block_id": "b045",
+      "body_start": 4211,
+      "body_end": 4335,
+      "tag": "p",
+      "source_line_start": 63,
+      "source_line_end": 63,
+      "quote": "百度一定程度上解决了供应链弹性的问题，通过已规模落地的\"风液兼容架构\"，实现前端同源、末端按需微调——同一套数据中心既能适配风冷服务器，也能适配液冷服务器。这意味着机房不必因为冷却系统而被锁死在特定硬件上，当某类服务器受供应链影响时，可以灵活替换。",
+      "quote_sha256": "31c0bb2cef2c9176628ca1fb19be74a17a41ebc74f4eebafd93e8983cc458073",
+      "dom_quote": "百度一定程度上解决了供应链弹性的问题，通过已规模落地的\"风液兼容架构\"，实现前端同源、末端按需微调——同一套数据中心既能适配风冷服务器，也能适配液冷服务器。这意味着机房不必因为冷却系统而被锁死在特定硬件上，当某类服务器受供应链影响时，可以灵活替换。",
+      "dom_quote_sha256": "31c0bb2cef2c9176628ca1fb19be74a17a41ebc74f4eebafd93e8983cc458073"
+    },
+    {
+      "evidence_id": "E046",
+      "block_id": "b046",
+      "body_start": 4336,
+      "body_end": 4466,
+      "tag": "p",
+      "source_line_start": 64,
+      "source_line_end": 64,
+      "quote": "需要注意的是，百度这次提出的全栈架构，并非全新亮相——多数能力已经在生产环境中跑了相当时间。所以严格来说，这套架构的重点不是发明创造，而是进化升级，以及彼此协同。从 2025 到 2026，对于 AI 新供给体系的梳理，已经越过临界点，变成了某种再出发的信号。",
+      "quote_sha256": "306629c4cfdea6bcb03ddc0c820c4002b43454a3c1412206e70c47641ffcb991",
+      "dom_quote": "需要注意的是，百度这次提出的全栈架构，并非全新亮相——多数能力已经在生产环境中跑了相当时间。所以严格来说，这套架构的重点不是发明创造，而是进化升级，以及彼此协同。从 2025 到 2026，对于 AI 新供给体系的梳理，已经越过临界点，变成了某种再出发的信号。",
+      "dom_quote_sha256": "306629c4cfdea6bcb03ddc0c820c4002b43454a3c1412206e70c47641ffcb991"
+    },
+    {
+      "evidence_id": "E048",
+      "block_id": "b048",
+      "body_start": 4547,
+      "body_end": 4636,
+      "tag": "p",
+      "source_line_start": 66,
+      "source_line_end": 66,
+      "quote": "义乌的模式是“前店后厂”的模式——前端对接全球买家，后端组织供应链生产。这个模式的效率，长期被信息不对称所制约：哪个款在卖、库存够不够、促销时机对不对，仓库和门店之间永远在对账。",
+      "quote_sha256": "5069b1b89f18281e8c252f7c936d0e247c5f70dcb0fe60be12087c2e38724886",
+      "dom_quote": "义乌的模式是“前店后厂”的模式——前端对接全球买家，后端组织供应链生产。这个模式的效率，长期被信息不对称所制约：哪个款在卖、库存够不够、促销时机对不对，仓库和门店之间永远在对账。",
+      "dom_quote_sha256": "5069b1b89f18281e8c252f7c936d0e247c5f70dcb0fe60be12087c2e38724886"
+    },
+    {
+      "evidence_id": "E049",
+      "block_id": "b049",
+      "body_start": 4637,
+      "body_end": 4754,
+      "tag": "p",
+      "source_line_start": 67,
+      "source_line_end": 67,
+      "quote": "通过\"一见 Claw\"视觉智能体，可以将海量规则自动配置到每个摄像头上，通过自然语言，一句话识别规则、完成流程处置；而 Hogee 则通过内置的营销 Skill，帮助商家完成从销售导购、销售数据，到库存调货、促销建议等营销全链路工作。",
+      "quote_sha256": "490c0dda6339072d406d36c91b5048e0cd2e4bcad641f49d71808ea2324def0b",
+      "dom_quote": "通过\"一见 Claw\"视觉智能体，可以将海量规则自动配置到每个摄像头上，通过自然语言，一句话识别规则、完成流程处置；而 Hogee 则通过内置的营销 Skill，帮助商家完成从销售导购、销售数据，到库存调货、促销建议等营销全链路工作。",
+      "dom_quote_sha256": "490c0dda6339072d406d36c91b5048e0cd2e4bcad641f49d71808ea2324def0b"
+    },
+    {
+      "evidence_id": "E050",
+      "block_id": "b050",
+      "body_start": 4755,
+      "body_end": 4800,
+      "tag": "p",
+      "source_line_start": 68,
+      "source_line_end": 68,
+      "quote": "这套组合，本质上是把原来依赖人工经验和线下对接的\"前后端协同\"，交给了 Agent 来跑。",
+      "quote_sha256": "4f12f995f710b2f7d3e38ea367d388968eb6de40d67539cd2bb5a16273d404e1",
+      "dom_quote": "这套组合，本质上是把原来依赖人工经验和线下对接的\"前后端协同\"，交给了 Agent 来跑。",
+      "dom_quote_sha256": "4f12f995f710b2f7d3e38ea367d388968eb6de40d67539cd2bb5a16273d404e1"
+    },
+    {
+      "evidence_id": "E051",
+      "block_id": "b051",
+      "body_start": 4801,
+      "body_end": 4825,
+      "tag": "p",
+      "source_line_start": 69,
+      "source_line_end": 69,
+      "quote": "类似的逻辑，在离义乌很远的几个场景里同样跑通了。",
+      "quote_sha256": "5166151b10d68d5227e454ca910700127333b6428e89d14f7440d1242bece236",
+      "dom_quote": "类似的逻辑，在离义乌很远的几个场景里同样跑通了。",
+      "dom_quote_sha256": "5166151b10d68d5227e454ca910700127333b6428e89d14f7440d1242bece236"
+    },
+    {
+      "evidence_id": "E052",
+      "block_id": "b052",
+      "body_start": 4826,
+      "body_end": 4962,
+      "tag": "p",
+      "source_line_start": 70,
+      "source_line_end": 70,
+      "quote": "招商银行已上线 800 余个 AI 应用，活跃在风控、营销、研发和日常办公等核心场景，其中超过 50% 跑在百度昆仑芯 P800 国产算力上——在合规要求最高的金融行业做到这个规模，说明系统稳定性和安全性已经经过了严格验证。用招行内部的说法，这不是试点，是\"全行级部署\"。",
+      "quote_sha256": "a201cf0cf9ceeafae0b7d2aac40919831eb8ac94caa9c28b2b0cefcff39039e8",
+      "dom_quote": "招商银行已上线 800 余个 AI 应用，活跃在风控、营销、研发和日常办公等核心场景，其中超过 50% 跑在百度昆仑芯 P800 国产算力上——在合规要求最高的金融行业做到这个规模，说明系统稳定性和安全性已经经过了严格验证。用招行内部的说法，这不是试点，是\"全行级部署\"。",
+      "dom_quote_sha256": "a201cf0cf9ceeafae0b7d2aac40919831eb8ac94caa9c28b2b0cefcff39039e8"
+    },
+    {
+      "evidence_id": "E053",
+      "block_id": "b053",
+      "body_start": 4963,
+      "body_end": 5063,
+      "tag": "p",
+      "source_line_start": 71,
+      "source_line_end": 71,
+      "quote": "汽车行业里，百度与长安共建的智算中心算力规模达到每秒 142 亿亿次（2023 年竣工时为行业纪录），持续支撑自动驾驶模型的训练和迭代，长安也因此成为工信部批准 L3 自动驾驶量产产品的两家车企之一。",
+      "quote_sha256": "b2dcfea3c3aab50c8eea076b2ed381a5df077bfa8b8504bfc5cdab0303ac0266",
+      "dom_quote": "汽车行业里，百度与长安共建的智算中心算力规模达到每秒 142 亿亿次（2023 年竣工时为行业纪录），持续支撑自动驾驶模型的训练和迭代，长安也因此成为工信部批准 L3 自动驾驶量产产品的两家车企之一。",
+      "dom_quote_sha256": "b2dcfea3c3aab50c8eea076b2ed381a5df077bfa8b8504bfc5cdab0303ac0266"
+    },
+    {
+      "evidence_id": "E057",
+      "block_id": "b057",
+      "body_start": 5179,
+      "body_end": 5238,
+      "tag": "p",
+      "source_line_start": 75,
+      "source_line_end": 75,
+      "quote": "有一个在产业史上反复出现的规律是：在范式转型期，第一个建好新供给体系的，获得的往往不只是市场份额，而是代际的架构优势。",
+      "quote_sha256": "a921b3b249189439de02e833eacf0cf2cb0325cccf55c7acffdd0ea6758dd7d6",
+      "dom_quote": "有一个在产业史上反复出现的规律是：在范式转型期，第一个建好新供给体系的，获得的往往不只是市场份额，而是代际的架构优势。",
+      "dom_quote_sha256": "a921b3b249189439de02e833eacf0cf2cb0325cccf55c7acffdd0ea6758dd7d6"
+    },
+    {
+      "evidence_id": "E058",
+      "block_id": "b058",
+      "body_start": 5239,
+      "body_end": 5439,
+      "tag": "p",
+      "source_line_start": 76,
+      "source_line_end": 76,
+      "quote": "iPhone 发布后，App Store 在 2008 年 7 月上线。首周末下载 1000 万次，上线两个月内从 500 款应用增至 3000 款、累计下载突破 1 亿次。到 2023 年，苹果累计向开发者支付 超过 3200 亿美元。这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系——开发者知道在哪里发布、如何变现；用户知道在哪里找应用、支付是否安全。",
+      "quote_sha256": "d945e03bc5c2ae357aaf500ce26f8abc7cd411d87c240ba9e472e2b8b5a21257",
+      "dom_quote": "iPhone 发布后，App Store 在 2008 年 7 月上线。首周末下载 1000 万次，上线两个月内从 500 款应用增至 3000 款、累计下载突破 1 亿次。到 2023 年，苹果累计向开发者支付 超过 3200 亿美元。这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系——开发者知道在哪里发布、如何变现；用户知道在哪里找应用、支付是否安全。",
+      "dom_quote_sha256": "d945e03bc5c2ae357aaf500ce26f8abc7cd411d87c240ba9e472e2b8b5a21257"
+    },
+    {
+      "evidence_id": "E059",
+      "block_id": "b059",
+      "body_start": 5440,
+      "body_end": 5462,
+      "tag": "p",
+      "source_line_start": 77,
+      "source_line_end": 77,
+      "quote": "AI Agent 时代，类似的逻辑正在展开。",
+      "quote_sha256": "b7e0b0a4cdccf8eff83c2a27c99bb5cc2124064dd9029f4ce2f00adfe34911c1",
+      "dom_quote": "AI Agent 时代，类似的逻辑正在展开。",
+      "dom_quote_sha256": "b7e0b0a4cdccf8eff83c2a27c99bb5cc2124064dd9029f4ce2f00adfe34911c1"
+    },
+    {
+      "evidence_id": "E060",
+      "block_id": "b060",
+      "body_start": 5463,
+      "body_end": 5507,
+      "tag": "p",
+      "source_line_start": 78,
+      "source_line_end": 78,
+      "quote": "对企业用户而言，新全栈供给体系的直接意义是：把 AI 落地失败的可能性从技术层面降低了。",
+      "quote_sha256": "0f2ff043d3b3eb95c11973e16fbb126d28666b35c83c3f13b709d2483e823049",
+      "dom_quote": "对企业用户而言，新全栈供给体系的直接意义是：把 AI 落地失败的可能性从技术层面降低了。",
+      "dom_quote_sha256": "0f2ff043d3b3eb95c11973e16fbb126d28666b35c83c3f13b709d2483e823049"
+    },
+    {
+      "evidence_id": "E061",
+      "block_id": "b061",
+      "body_start": 5508,
+      "body_end": 5635,
+      "tag": "p",
+      "source_line_start": 79,
+      "source_line_end": 79,
+      "quote": "此前，在中国主要 AI 服务商中，在 KV Cache 生产架构和 PD 分离量产部署这两个具体维度上，只有月之暗面（Kimi）通过 Mooncake 论文建立了技术上的共识。可惜的是， Kimi 以模型服务为主，没有完整的 Agent Infra 层。",
+      "quote_sha256": "d0f1394fe7bb9bb9363adf2a515c82599252b84adea6c3f5cc2c0510cdd001f9",
+      "dom_quote": "此前，在中国主要 AI 服务商中，在 KV Cache 生产架构和 PD 分离量产部署这两个具体维度上，只有月之暗面（Kimi）通过 Mooncake 论文建立了技术上的共识。可惜的是， Kimi 以模型服务为主，没有完整的 Agent Infra 层。",
+      "dom_quote_sha256": "d0f1394fe7bb9bb9363adf2a515c82599252b84adea6c3f5cc2c0510cdd001f9"
+    },
+    {
+      "evidence_id": "E062",
+      "block_id": "b062",
+      "body_start": 5636,
+      "body_end": 5724,
+      "tag": "p",
+      "source_line_start": 80,
+      "source_line_end": 80,
+      "quote": "这虽然不构成对厂商整体技术能力的评价，但确实能帮助我们百度 Create 这次发布会的产业意义——亮出架构演进方向和实践效果，对 AI 基础设施买家来说，本身就是一种信任凭证。",
+      "quote_sha256": "9e3dfce95d8b672c7189d31fd92523d0cc671522e2afd163094ab9d044ad492d",
+      "dom_quote": "这虽然不构成对厂商整体技术能力的评价，但确实能帮助我们百度 Create 这次发布会的产业意义——亮出架构演进方向和实践效果，对 AI 基础设施买家来说，本身就是一种信任凭证。",
+      "dom_quote_sha256": "9e3dfce95d8b672c7189d31fd92523d0cc671522e2afd163094ab9d044ad492d"
+    },
+    {
+      "evidence_id": "E063",
+      "block_id": "b063",
+      "body_start": 5725,
+      "body_end": 5826,
+      "tag": "p",
+      "source_line_start": 81,
+      "source_line_end": 81,
+      "quote": "同时，AI 基础设施也正从模型竞争阶段进入架构竞争阶段。前几年的核心命题是\"谁的模型能力更强、Benchmark 更高\"；接下来的核心命题是\"谁的系统能在真实企业场景里稳定跑起来、成本可控、性能可期\"。",
+      "quote_sha256": "67e0aa43568da1381beb12b1a8f526f1ecc657e139bc972431736f3bc62378e8",
+      "dom_quote": "同时，AI 基础设施也正从模型竞争阶段进入架构竞争阶段。前几年的核心命题是\"谁的模型能力更强、Benchmark 更高\"；接下来的核心命题是\"谁的系统能在真实企业场景里稳定跑起来、成本可控、性能可期\"。",
+      "dom_quote_sha256": "67e0aa43568da1381beb12b1a8f526f1ecc657e139bc972431736f3bc62378e8"
+    },
+    {
+      "evidence_id": "E064",
+      "block_id": "b064",
+      "body_start": 5827,
+      "body_end": 5872,
+      "tag": "p",
+      "source_line_start": 82,
+      "source_line_end": 82,
+      "quote": "这个判断是不是成立，要看接下来一两年，谁的企业客户真正用 AI 把生意做出了不一样的结果。",
+      "quote_sha256": "1e2ac7b72a09681426eac5ccac5b8fdfc9b1c282684a1ed6fb0c1cbcd2cac3ee",
+      "dom_quote": "这个判断是不是成立，要看接下来一两年，谁的企业客户真正用 AI 把生意做出了不一样的结果。",
+      "dom_quote_sha256": "1e2ac7b72a09681426eac5ccac5b8fdfc9b1c282684a1ed6fb0c1cbcd2cac3ee"
+    }
+  ],
+  "read_coverage_block_spans": [
+    {
+      "block_id": "b001",
+      "body_start": 0,
+      "body_end": 141,
+      "tag": "p",
+      "source_line_start": 1,
+      "source_line_end": 1
+    },
+    {
+      "block_id": "b002",
+      "body_start": 142,
+      "body_end": 368,
+      "tag": "p",
+      "source_line_start": 2,
+      "source_line_end": 2
+    },
+    {
+      "block_id": "b003",
+      "body_start": 369,
+      "body_end": 400,
+      "tag": "p",
+      "source_line_start": 3,
+      "source_line_end": 3
+    },
+    {
+      "block_id": "b004",
+      "body_start": 401,
+      "body_end": 572,
+      "tag": "p",
+      "source_line_start": 4,
+      "source_line_end": 4
+    },
+    {
+      "block_id": "b005",
+      "body_start": 573,
+      "body_end": 681,
+      "tag": "p",
+      "source_line_start": 5,
+      "source_line_end": 5
+    },
+    {
+      "block_id": "b006",
+      "body_start": 682,
+      "body_end": 729,
+      "tag": "p",
+      "source_line_start": 6,
+      "source_line_end": 6
+    },
+    {
+      "block_id": "b007",
+      "body_start": 730,
+      "body_end": 820,
+      "tag": "p",
+      "source_line_start": 7,
+      "source_line_end": 9
+    },
+    {
+      "block_id": "b008",
+      "body_start": 821,
+      "body_end": 842,
+      "tag": "h1",
+      "source_line_start": 10,
+      "source_line_end": 10
+    },
+    {
+      "block_id": "b009",
+      "body_start": 843,
+      "body_end": 876,
+      "tag": "p",
+      "source_line_start": 11,
+      "source_line_end": 11
+    },
+    {
+      "block_id": "b010",
+      "body_start": 877,
+      "body_end": 955,
+      "tag": "p",
+      "source_line_start": 12,
+      "source_line_end": 12
+    },
+    {
+      "block_id": "b011",
+      "body_start": 956,
+      "body_end": 1008,
+      "tag": "p",
+      "source_line_start": 13,
+      "source_line_end": 15
+    },
+    {
+      "block_id": "b012",
+      "body_start": 1009,
+      "body_end": 1210,
+      "tag": "p",
+      "source_line_start": 16,
+      "source_line_end": 16
+    },
+    {
+      "block_id": "b013",
+      "body_start": 1211,
+      "body_end": 1459,
+      "tag": "p",
+      "source_line_start": 17,
+      "source_line_end": 17
+    },
+    {
+      "block_id": "b014",
+      "body_start": 1460,
+      "body_end": 1561,
+      "tag": "p",
+      "source_line_start": 18,
+      "source_line_end": 18
+    },
+    {
+      "block_id": "b015",
+      "body_start": 1562,
+      "body_end": 1719,
+      "tag": "p",
+      "source_line_start": 19,
+      "source_line_end": 19
+    },
+    {
+      "block_id": "b016",
+      "body_start": 1720,
+      "body_end": 1742,
+      "tag": "p",
+      "source_line_start": 20,
+      "source_line_end": 20
+    },
+    {
+      "block_id": "b017",
+      "body_start": 1743,
+      "body_end": 1839,
+      "tag": "p",
+      "source_line_start": 21,
+      "source_line_end": 21
+    },
+    {
+      "block_id": "b018",
+      "body_start": 1840,
+      "body_end": 1967,
+      "tag": "p",
+      "source_line_start": 22,
+      "source_line_end": 24
+    },
+    {
+      "block_id": "b019",
+      "body_start": 1968,
+      "body_end": 2010,
+      "tag": "p",
+      "source_line_start": 25,
+      "source_line_end": 25
+    },
+    {
+      "block_id": "b020",
+      "body_start": 2011,
+      "body_end": 2018,
+      "tag": "h1",
+      "source_line_start": 26,
+      "source_line_end": 26
+    },
+    {
+      "block_id": "b021",
+      "body_start": 2019,
+      "body_end": 2178,
+      "tag": "p",
+      "source_line_start": 27,
+      "source_line_end": 27
+    },
+    {
+      "block_id": "b022",
+      "body_start": 2179,
+      "body_end": 2268,
+      "tag": "p",
+      "source_line_start": 28,
+      "source_line_end": 28
+    },
+    {
+      "block_id": "b023",
+      "body_start": 2269,
+      "body_end": 2468,
+      "tag": "p",
+      "source_line_start": 29,
+      "source_line_end": 31
+    },
+    {
+      "block_id": "b024",
+      "body_start": 2469,
+      "body_end": 2501,
+      "tag": "p",
+      "source_line_start": 32,
+      "source_line_end": 32
+    },
+    {
+      "block_id": "b025",
+      "body_start": 2502,
+      "body_end": 2528,
+      "tag": "h1",
+      "source_line_start": 33,
+      "source_line_end": 33
+    },
+    {
+      "block_id": "b026",
+      "body_start": 2529,
+      "body_end": 2691,
+      "tag": "p",
+      "source_line_start": 34,
+      "source_line_end": 36
+    },
+    {
+      "block_id": "b027",
+      "body_start": 2692,
+      "body_end": 2776,
+      "tag": "p",
+      "source_line_start": 37,
+      "source_line_end": 37
+    },
+    {
+      "block_id": "b028",
+      "body_start": 2777,
+      "body_end": 2840,
+      "tag": "p",
+      "source_line_start": 38,
+      "source_line_end": 40
+    },
+    {
+      "block_id": "b029",
+      "body_start": 2841,
+      "body_end": 2991,
+      "tag": "p",
+      "source_line_start": 41,
+      "source_line_end": 41
+    },
+    {
+      "block_id": "b030",
+      "body_start": 2992,
+      "body_end": 3094,
+      "tag": "p",
+      "source_line_start": 42,
+      "source_line_end": 42
+    },
+    {
+      "block_id": "b031",
+      "body_start": 3095,
+      "body_end": 3153,
+      "tag": "p",
+      "source_line_start": 43,
+      "source_line_end": 44
+    },
+    {
+      "block_id": "b032",
+      "body_start": 3154,
+      "body_end": 3247,
+      "tag": "p",
+      "source_line_start": 45,
+      "source_line_end": 45
+    },
+    {
+      "block_id": "b033",
+      "body_start": 3248,
+      "body_end": 3362,
+      "tag": "p",
+      "source_line_start": 46,
+      "source_line_end": 46
+    },
+    {
+      "block_id": "b034",
+      "body_start": 3363,
+      "body_end": 3423,
+      "tag": "p",
+      "source_line_start": 47,
+      "source_line_end": 48
+    },
+    {
+      "block_id": "b035",
+      "body_start": 3424,
+      "body_end": 3440,
+      "tag": "h1",
+      "source_line_start": 49,
+      "source_line_end": 49
+    },
+    {
+      "block_id": "b036",
+      "body_start": 3441,
+      "body_end": 3547,
+      "tag": "p",
+      "source_line_start": 50,
+      "source_line_end": 52
+    },
+    {
+      "block_id": "b037",
+      "body_start": 3548,
+      "body_end": 3655,
+      "tag": "p",
+      "source_line_start": 53,
+      "source_line_end": 53
+    },
+    {
+      "block_id": "b038",
+      "body_start": 3656,
+      "body_end": 3707,
+      "tag": "p",
+      "source_line_start": 54,
+      "source_line_end": 56
+    },
+    {
+      "block_id": "b039",
+      "body_start": 3708,
+      "body_end": 3758,
+      "tag": "p",
+      "source_line_start": 57,
+      "source_line_end": 57
+    },
+    {
+      "block_id": "b040",
+      "body_start": 3759,
+      "body_end": 3899,
+      "tag": "p",
+      "source_line_start": 58,
+      "source_line_end": 58
+    },
+    {
+      "block_id": "b041",
+      "body_start": 3900,
+      "body_end": 3998,
+      "tag": "p",
+      "source_line_start": 59,
+      "source_line_end": 59
+    },
+    {
+      "block_id": "b042",
+      "body_start": 3999,
+      "body_end": 4024,
+      "tag": "p",
+      "source_line_start": 60,
+      "source_line_end": 60
+    },
+    {
+      "block_id": "b043",
+      "body_start": 4025,
+      "body_end": 4153,
+      "tag": "p",
+      "source_line_start": 61,
+      "source_line_end": 61
+    },
+    {
+      "block_id": "b044",
+      "body_start": 4154,
+      "body_end": 4210,
+      "tag": "p",
+      "source_line_start": 62,
+      "source_line_end": 62
+    },
+    {
+      "block_id": "b045",
+      "body_start": 4211,
+      "body_end": 4335,
+      "tag": "p",
+      "source_line_start": 63,
+      "source_line_end": 63
+    },
+    {
+      "block_id": "b046",
+      "body_start": 4336,
+      "body_end": 4466,
+      "tag": "p",
+      "source_line_start": 64,
+      "source_line_end": 64
+    },
+    {
+      "block_id": "b047",
+      "body_start": 4467,
+      "body_end": 4546,
+      "tag": "p",
+      "source_line_start": 65,
+      "source_line_end": 65
+    },
+    {
+      "block_id": "b048",
+      "body_start": 4547,
+      "body_end": 4636,
+      "tag": "p",
+      "source_line_start": 66,
+      "source_line_end": 66
+    },
+    {
+      "block_id": "b049",
+      "body_start": 4637,
+      "body_end": 4754,
+      "tag": "p",
+      "source_line_start": 67,
+      "source_line_end": 67
+    },
+    {
+      "block_id": "b050",
+      "body_start": 4755,
+      "body_end": 4800,
+      "tag": "p",
+      "source_line_start": 68,
+      "source_line_end": 68
+    },
+    {
+      "block_id": "b051",
+      "body_start": 4801,
+      "body_end": 4825,
+      "tag": "p",
+      "source_line_start": 69,
+      "source_line_end": 69
+    },
+    {
+      "block_id": "b052",
+      "body_start": 4826,
+      "body_end": 4962,
+      "tag": "p",
+      "source_line_start": 70,
+      "source_line_end": 70
+    },
+    {
+      "block_id": "b053",
+      "body_start": 4963,
+      "body_end": 5063,
+      "tag": "p",
+      "source_line_start": 71,
+      "source_line_end": 71
+    },
+    {
+      "block_id": "b054",
+      "body_start": 5064,
+      "body_end": 5117,
+      "tag": "p",
+      "source_line_start": 72,
+      "source_line_end": 72
+    },
+    {
+      "block_id": "b055",
+      "body_start": 5118,
+      "body_end": 5168,
+      "tag": "p",
+      "source_line_start": 73,
+      "source_line_end": 73
+    },
+    {
+      "block_id": "b056",
+      "body_start": 5169,
+      "body_end": 5178,
+      "tag": "h1",
+      "source_line_start": 74,
+      "source_line_end": 74
+    },
+    {
+      "block_id": "b057",
+      "body_start": 5179,
+      "body_end": 5238,
+      "tag": "p",
+      "source_line_start": 75,
+      "source_line_end": 75
+    },
+    {
+      "block_id": "b058",
+      "body_start": 5239,
+      "body_end": 5439,
+      "tag": "p",
+      "source_line_start": 76,
+      "source_line_end": 76
+    },
+    {
+      "block_id": "b059",
+      "body_start": 5440,
+      "body_end": 5462,
+      "tag": "p",
+      "source_line_start": 77,
+      "source_line_end": 77
+    },
+    {
+      "block_id": "b060",
+      "body_start": 5463,
+      "body_end": 5507,
+      "tag": "p",
+      "source_line_start": 78,
+      "source_line_end": 78
+    },
+    {
+      "block_id": "b061",
+      "body_start": 5508,
+      "body_end": 5635,
+      "tag": "p",
+      "source_line_start": 79,
+      "source_line_end": 79
+    },
+    {
+      "block_id": "b062",
+      "body_start": 5636,
+      "body_end": 5724,
+      "tag": "p",
+      "source_line_start": 80,
+      "source_line_end": 80
+    },
+    {
+      "block_id": "b063",
+      "body_start": 5725,
+      "body_end": 5826,
+      "tag": "p",
+      "source_line_start": 81,
+      "source_line_end": 81
+    },
+    {
+      "block_id": "b064",
+      "body_start": 5827,
+      "body_end": 5872,
+      "tag": "p",
+      "source_line_start": 82,
+      "source_line_end": 82
+    }
+  ],
+  "generation": {
+    "method": "Independent full-source assistant reading followed by an in-memory Python JSON writer using source-derived exact evidence spans.",
+    "written_file_only": "data/local/targeted-media-discovery-v1/baidu-supply/target-review.json",
+    "randomness": "No sampling, generated variants, stochastic measurement, or random seed used.",
+    "validation": "Recompute SHA-256 for source, DOM, body, block, metadata, structure, selection and result records; assert acquisition hashes and block reconstruction; validate each quote slice and quote hash; hash canonical evidence JSON."
+  }
+}

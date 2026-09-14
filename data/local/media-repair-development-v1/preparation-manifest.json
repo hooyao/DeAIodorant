@@ -1,0 +1,14 @@
+{
+  "protocol": "media-repair-development-1.0",
+  "status": "prepared_before_editing",
+  "source_hashes": {
+    "doc-03": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "doc-04": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+    "doc-05": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a"
+  },
+  "protocol_hash": "0c904d2250e2d08996e33aa7c14eee7736c278b99896decf4e18627e61747f06",
+  "human_gold": false,
+  "input_contract": "complete Chinese body only; no English original or reviewer labels",
+  "gpu_used": false,
+  "external_api_calls": 0
+}

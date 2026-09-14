@@ -1,0 +1,15 @@
+{
+  "files": [
+    {
+      "path": "docs/routes/compact-refiner/reports/target-coverage-rescreen-v1.md",
+      "status": "translated",
+      "fragments": 4
+    }
+  ],
+  "budget": {
+    "budget_usd": "6",
+    "accounted_usd": "0.5732025",
+    "remaining_usd": "5.4267975",
+    "unfinished_reservations": 0
+  }
+}

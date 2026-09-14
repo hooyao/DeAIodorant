@@ -1,0 +1,222 @@
+{
+  "doc_id": "44aa81958a6c585ee8c06847",
+  "url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII",
+  "preserved_file_sha256": "bcd06d5b5923306d3b4ca6c58d54ce32aa534da4e8677eeaee4f0be2f4a9ba35",
+  "preserved_metadata_content_hash": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+  "preserved_text_chars": 2391,
+  "preserved_lines": 40,
+  "preserved_metadata": {
+    "doc_id": "44aa81958a6c585ee8c06847",
+    "source": "infoq",
+    "period": "post",
+    "url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII",
+    "title": "拒绝传统Router“瞎指挥”，多智能体如何实现智能任务分配？",
+    "authors": [
+      "腾讯云"
+    ],
+    "translators": [],
+    "is_translation": false,
+    "translation_evidence": [],
+    "published_at": "2026-01-16",
+    "modified_at": null,
+    "collected_at": "2026-08-20T09:17:29.607140+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 12450,
+    "comments": 0,
+    "likes": 1,
+    "collects": 2,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 1296,
+    "text_chars": 2350,
+    "line_count": 40,
+    "repeated_line_ratio": 0.0,
+    "quality_pass": true,
+    "visibility_percentile_in_pilot_cell": 0.7778,
+    "content_hash": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "text_file": "44aa81958a6c585ee8c06847.txt"
+  },
+  "jsonl_text_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+  "jsonl_hash_matches_metadata": true,
+  "body_file_exactly_equals_jsonl_plus_terminal_lf": false,
+  "body_file_equals_jsonl_with_crlf_and_terminal_newline": true,
+  "body_file_lf_normalized_equals_jsonl_plus_terminal_lf": true,
+  "body_file_crlf_count": 40,
+  "body_file_lf_count": 40,
+  "body_file_bare_cr_count": 0,
+  "capture_response": {
+    "url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII",
+    "requested_at": "2026-09-14T06:13:17.229687+00:00",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 06:13:19 GMT"
+    },
+    "bytes": 332074,
+    "sha256": "62cf60a63597d237330df06b174866005649b1e73c92ab79cc2563d26d01495f",
+    "capture_file": "44aa81958a6c585ee8c06847.html"
+  },
+  "status": "exact_preserved_text_match",
+  "fresh_collector_text_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+  "fresh_collector_text_chars": 2350,
+  "fresh_metadata": {
+    "doc_id": "44aa81958a6c585ee8c06847",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII",
+    "title": "拒绝传统Router“瞎指挥”，多智能体如何实现智能任务分配？",
+    "authors": [
+      "腾讯云"
+    ],
+    "translators": [],
+    "is_translation": false,
+    "translation_evidence": [],
+    "published_at": "2026-01-16",
+    "modified_at": null,
+    "collected_at": "2026-09-14T06:13:17.229687+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 12602,
+    "comments": 0,
+    "likes": 1,
+    "collects": 2,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 1296,
+    "text_chars": 2350,
+    "line_count": 40,
+    "repeated_line_ratio": 0.0,
+    "quality_pass": true
+  },
+  "page_heading": "拒绝传统 Router“瞎指挥”，多智能体如何实现智能任务分配？",
+  "beginning_matches": true,
+  "ending_matches": true,
+  "block_concatenation_matches_collector": true,
+  "nonempty_semantic_text_blocks": 36,
+  "semantic_text_blocks_with_multiple_collector_lines": 2,
+  "added_collector_line_boundaries_within_semantic_text_blocks": 4,
+  "semantic_text_block_tag_counts": {
+    "h2": 3,
+    "p": 33
+  },
+  "parser_image_nodes_with_paragraph_descendants": 2,
+  "headings": [
+    {
+      "tag": "h2",
+      "text": "为什么传统 Router 在企业运维场景里“玩不转”了？"
+    },
+    {
+      "tag": "h2",
+      "text": "TCAR 的解法：像人类专家一样“先想后做”"
+    },
+    {
+      "tag": "h2",
+      "text": "覆盖全面、命中精准，硬核且强大"
+    }
+  ],
+  "links": [],
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/59/59f3d3f5d8df472e3793060967380b4a.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 9,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/89/890d442348431d5d2f3f2804da184552.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 10,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/c1/c101e510649ddacd2de749050e74ad2e.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 11,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/19/1972e99ed6a4ef6584029842603b9095.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 12,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/c8/c898827dd2a674d104464ca6a3e4c1a2.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 19,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media06",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/ac/accbee1a4fa500c49d98485ba40d8f61.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 21,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media07",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/79/7944b8f50fc5ca92c5a34c6b8437a3c7.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 23,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "element_counts": {
+    "p": 49,
+    "h1": 0,
+    "h2": 3,
+    "h3": 0,
+    "ul": 3,
+    "ol": 0,
+    "li": 8,
+    "img": 7,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "tr": 0,
+    "td": 0,
+    "th": 0,
+    "pre": 0,
+    "code": 0,
+    "blockquote": 0,
+    "a": 0,
+    "br": 0,
+    "strong": 7,
+    "em": 0
+  },
+  "zero_width_space_count": 1,
+  "state_content_is_string": false,
+  "embedded_content_normalized_matches_visible_body": null,
+  "title_matches_preserved": true,
+  "authors_match_preserved": true,
+  "translators_match_preserved": true,
+  "publication_date_matches_preserved": true
+}

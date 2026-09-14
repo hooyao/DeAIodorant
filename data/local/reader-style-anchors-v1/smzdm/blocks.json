@@ -1,0 +1,402 @@
+{
+  "blocks": [
+    {
+      "analysis_end_char": 12,
+      "analysis_start_char": 0,
+      "analysis_text": "这只鸭子，确实在收割全网",
+      "block_id": "b001",
+      "citation_ids": [],
+      "source_dom_html": "<h3>这只鸭子，确实在收割全网</h3>",
+      "source_end_char": 12,
+      "source_start_char": 0,
+      "tag": "h3",
+      "text_with_citation_labels": "这只鸭子，确实在收割全网"
+    },
+    {
+      "analysis_end_char": 295,
+      "analysis_start_char": 13,
+      "analysis_text": "8月27日，Hugging Face 旗下 Pollen Robotics 开售了一只 25 厘米高的机器鸭 Microduck：399 美元（约合 2680 元），首日 4 秒卖出一台，24 小时订单金额破 260 万美元，按单价折算约 6500 台。这组数字是 HF 联创 Thomas Wolf 在 X 上公布的，国内已经有博主（\"陈大叔\"那篇追问文）公开质疑无法第三方验证——观望是对的，但热度不用质疑：B站相关视频一天播放 1.7 万、收藏超点赞，小红书头部笔记 1332 赞、1627 收藏，知乎两天冒出十几个问题，微博上连\"瑞芯微概念股\"都聊出来了。",
+      "block_id": "b002",
+      "citation_ids": [
+        "b002-c01"
+      ],
+      "source_dom_html": "<p>8月27日，Hugging Face 旗下 Pollen Robotics 开售了一只 25 厘米高的机器鸭 Microduck：399 美元（约合 2680 元），首日 4 秒卖出一台，24 小时订单金额破 260 万美元，按单价折算约 6500 台。<span class=\"referer-link\" data-highlight-text=\"Microduck平均每4秒就售出一台\" data-quote-text=\"在8月27日开放预购后，仅6小时销售额就突破100万美元，24小时内更是超过260万美元。另一个数据上Microduck平均每4秒就售出一台。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077523901152761144\">知乎</span>这组数字是 HF 联创 Thomas Wolf 在 X 上公布的，国内已经有博主（\"陈大叔\"那篇追问文）公开质疑无法第三方验证——观望是对的，但热度不用质疑：B站相关视频一天播放 1.7 万、收藏超点赞，小红书头部笔记 1332 赞、1627 收藏，知乎两天冒出十几个问题，微博上连\"瑞芯微概念股\"都聊出来了。</p>",
+      "source_end_char": 297,
+      "source_start_char": 13,
+      "tag": "p",
+      "text_with_citation_labels": "8月27日，Hugging Face 旗下 Pollen Robotics 开售了一只 25 厘米高的机器鸭 Microduck：399 美元（约合 2680 元），首日 4 秒卖出一台，24 小时订单金额破 260 万美元，按单价折算约 6500 台。知乎这组数字是 HF 联创 Thomas Wolf 在 X 上公布的，国内已经有博主（\"陈大叔\"那篇追问文）公开质疑无法第三方验证——观望是对的，但热度不用质疑：B站相关视频一天播放 1.7 万、收藏超点赞，小红书头部笔记 1332 赞、1627 收藏，知乎两天冒出十几个问题，微博上连\"瑞芯微概念股\"都聊出来了。"
+    },
+    {
+      "analysis_end_char": 467,
+      "analysis_start_char": 296,
+      "analysis_text": "巧的是，开售正赶上英伟达约 129 亿美元收购 Hugging Face 的消息发酵期。但对智能硬件 DIY 圈的人来说，收购是资本的事，这只鸭子才是自己的事：它是目前把\"强化学习机器人\"整条链路（仿真训练→真机部署→SDK）打包到 399 美元价位的第一个成品。圈里真正在吵的是三个问题：开源开到什么程度？国内怎么买到？值不值得自己搓一只？",
+      "block_id": "b003",
+      "citation_ids": [
+        "b003-c01"
+      ],
+      "source_dom_html": "<p>巧的是，开售正赶上<a class=\"seo_link brand-hover\" data-brandid=\"4755\" href=\"https://pinpai.smzdm.com/4755/\" target=\"_blank\">英伟达</a>约 129 亿美元收购 Hugging Face 的消息发酵期。<span class=\"referer-link\" data-highlight-text=\"英伟达收购消息还在发酵\" data-quote-text=\"英伟达收购消息还在发酵，一只399美元的机器鸭先卖爆了。\" data-referer-link=\"https://m.weibo.cn/status/5337740305502572\">微博</span>但对智能硬件 DIY 圈的人来说，收购是资本的事，这只鸭子才是自己的事：它是目前把\"强化学习机器人\"整条链路（仿真训练→真机部署→SDK）打包到 399 美元价位的第一个成品。圈里真正在吵的是三个问题：开源开到什么程度？国内怎么买到？值不值得自己搓一只？</p>",
+      "source_end_char": 471,
+      "source_start_char": 298,
+      "tag": "p",
+      "text_with_citation_labels": "巧的是，开售正赶上英伟达约 129 亿美元收购 Hugging Face 的消息发酵期。微博但对智能硬件 DIY 圈的人来说，收购是资本的事，这只鸭子才是自己的事：它是目前把\"强化学习机器人\"整条链路（仿真训练→真机部署→SDK）打包到 399 美元价位的第一个成品。圈里真正在吵的是三个问题：开源开到什么程度？国内怎么买到？值不值得自己搓一只？"
+    },
+    {
+      "analysis_end_char": 491,
+      "analysis_start_char": 468,
+      "analysis_text": "399 美元买的是什么：先把\"开源\"的范围捋清",
+      "block_id": "b004",
+      "citation_ids": [],
+      "source_dom_html": "<h3>399 美元买的是什么：先把\"开源\"的范围捋清</h3>",
+      "source_end_char": 495,
+      "source_start_char": 472,
+      "tag": "h3",
+      "text_with_citation_labels": "399 美元买的是什么：先把\"开源\"的范围捋清"
+    },
+    {
+      "analysis_end_char": 671,
+      "analysis_start_char": 492,
+      "analysis_text": "硬件端，这只鸭子的料在这个价位确实不寒酸：15 个电机分布在双腿、颈部和头部，广角摄像头 + 8×8 ToF 激光雷达 + 双 IMU + 头部、喙部两根 NFC 天线，会活动的鸭喙兼作小夹爪，能叼起接近自重的东西。整机 780 克，用可更换的 NP-F550 电池，续航约 1 小时，附赠一个游戏手柄，四种配色，每只鸭子首次开机生成一个绑定终身的独特声线。",
+      "block_id": "b005",
+      "citation_ids": [
+        "b005-c01",
+        "b005-c02"
+      ],
+      "source_dom_html": "<p>硬件端，这只鸭子的料在这个价位确实不寒酸：15 个电机分布在双腿、颈部和头部，广角<a class=\"seo_link\" href=\"https://www.smzdm.com/fenlei/shexiangtou/\" target=\"_blank\">摄像头</a> + 8×8 ToF 激光雷达 + 双 IMU + 头部、喙部两根 NFC 天线，会活动的鸭喙兼作小夹爪，能叼起接近自重的东西。<span class=\"referer-link\" data-highlight-text=\"15 个电机（分布于双腿、颈部与头部）\" data-quote-text=\"小小的机身里塞下了 15 个电机（分布于双腿、颈部与头部）、一颗广角摄像头、一颗小型激光雷达、两个惯性测量单元（IMU）、麦克风、扬声器、近场通讯（NFC）标签识别，以及 WiFi 和蓝牙。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span>整机 780 克，用可更换的 NP-F550 <a class=\"seo_link\" href=\"https://www.smzdm.com/fenlei/dianchi/\" target=\"_blank\">电池</a>，续航约 1 小时，附赠一个游戏手柄，四种配色，每只鸭子首次开机生成一个绑定终身的独特声线。<span class=\"referer-link\" data-highlight-text=\"可更换NP-F550电池（续航约1小时）\" data-quote-text=\"可更换NP-F550电池（续航约1小时）高25厘米，重780克附赠游戏手柄\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077523901152761144\">知乎</span></p>",
+      "source_end_char": 679,
+      "source_start_char": 496,
+      "tag": "p",
+      "text_with_citation_labels": "硬件端，这只鸭子的料在这个价位确实不寒酸：15 个电机分布在双腿、颈部和头部，广角摄像头 + 8×8 ToF 激光雷达 + 双 IMU + 头部、喙部两根 NFC 天线，会活动的鸭喙兼作小夹爪，能叼起接近自重的东西。知乎整机 780 克，用可更换的 NP-F550 电池，续航约 1 小时，附赠一个游戏手柄，四种配色，每只鸭子首次开机生成一个绑定终身的独特声线。知乎"
+    },
+    {
+      "analysis_end_char": 923,
+      "analysis_start_char": 672,
+      "analysis_text": "计算平台是社区聊得最多的一点：机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板（Firefly ROC-RK3566-PC，四核 A55，1GB 内存 + 32GB 存储）。有开发者写了完整的部署手记：走路、起身这些动作是在英伟达 GPU 上用 mjlab + MuJoCo Warp + PPO 训练 1~2 小时收敛，导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。也就是说，训练靠算力，实机真不靠。",
+      "block_id": "b006",
+      "citation_ids": [
+        "b006-c01"
+      ],
+      "source_dom_html": "<p>计算平台是社区聊得最多的一点：机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板（Firefly ROC-RK3566-PC，四核 A55，1GB <a class=\"seo_link\" href=\"https://www.smzdm.com/fenlei/neicun/\" target=\"_blank\">内存</a> + 32GB 存储）。有开发者写了完整的部署手记：走路、起身这些动作是在英伟达 GPU 上用 mjlab + MuJoCo Warp + PPO 训练 1~2 小时收敛，导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。<span class=\"referer-link\" data-highlight-text=\"15022 个 tick 只漏 3 个\" data-quote-text=\"实测数据非常漂亮：15022 个 tick 只漏 3 个，是非常稳的状态\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077192046805247124\">知乎</span>也就是说，训练靠算力，实机真不靠。</p>",
+      "source_end_char": 933,
+      "source_start_char": 680,
+      "tag": "p",
+      "text_with_citation_labels": "计算平台是社区聊得最多的一点：机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板（Firefly ROC-RK3566-PC，四核 A55，1GB 内存 + 32GB 存储）。有开发者写了完整的部署手记：走路、起身这些动作是在英伟达 GPU 上用 mjlab + MuJoCo Warp + PPO 训练 1~2 小时收敛，导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。知乎也就是说，训练靠算力，实机真不靠。"
+    },
+    {
+      "analysis_end_char": 1018,
+      "analysis_start_char": 924,
+      "analysis_text": "软件端：7 种预训练行为（走路、坐立、下蹲、踢腿、抓取、轮滑、跌倒自起）、仿真环境、SDK 和训练代码在 github.com/pollen-robotics/microduck 全开源。",
+      "block_id": "b007",
+      "citation_ids": [
+        "b007-c01"
+      ],
+      "source_dom_html": "<p>软件端：7 种预训练行为（走路、坐立、下蹲、踢腿、抓取、轮滑、跌倒自起）、仿真环境、SDK 和训练代码在 <a href=\"http://github.com/pollen-robotics/microduck\" rel=\"nofollow\">github.com/pollen-robotics/microduck</a> 全开源。<span class=\"referer-link\" data-highlight-text=\"包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线\" data-quote-text=\"Microduck 的软件栈以 Apache 2.0 协议完全开源，包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077008203443975906\">极客公园</span></p>",
+      "source_end_char": 1032,
+      "source_start_char": 934,
+      "tag": "p",
+      "text_with_citation_labels": "软件端：7 种预训练行为（走路、坐立、下蹲、踢腿、抓取、轮滑、跌倒自起）、仿真环境、SDK 和训练代码在 github.com/pollen-robotics/microduck 全开源。极客公园"
+    },
+    {
+      "analysis_end_char": 1122,
+      "analysis_start_char": 1019,
+      "analysis_text": "但注意，\"全开源\"有边界：开的是软件管线，硬件图纸没开。 评论区已经有人点破\"硬件没开源\"——你拿不到官方 BOM 和结构件图纸，\"照着开源清单攒一只一模一样\"这条路目前不存在。想复刻，得回到它的前身项目。",
+      "block_id": "b008",
+      "citation_ids": [
+        "b008-c01",
+        "b008-c02"
+      ],
+      "source_dom_html": "<p><strong>但注意，\"全开源\"有边界：开的是软件管线，硬件图纸没开。</strong> 评论区已经有人点破\"硬件没开源\"——你拿不到官方 BOM 和结构件图纸，\"照着开源清单攒一只一模一样\"这条路目前不存在。<span class=\"referer-link\" data-highlight-text=\"硬件没开源\" data-quote-text=\"硬件没开源\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span><span class=\"referer-link\" data-highlight-text=\"硬件设计和电路图不会开源\" data-quote-text=\"Pollen Robotics 明确表示，硬件设计和电路图不会开源。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077008203443975906\">极客公园</span>想复刻，得回到它的前身项目。</p>",
+      "source_end_char": 1144,
+      "source_start_char": 1033,
+      "tag": "p",
+      "text_with_citation_labels": "但注意，\"全开源\"有边界：开的是软件管线，硬件图纸没开。 评论区已经有人点破\"硬件没开源\"——你拿不到官方 BOM 和结构件图纸，\"照着开源清单攒一只一模一样\"这条路目前不存在。哔哩哔哩极客公园想复刻，得回到它的前身项目。"
+    },
+    {
+      "analysis_end_char": 1142,
+      "analysis_start_char": 1123,
+      "analysis_text": "账一：官方下单，买的是管线，熬的是时间",
+      "block_id": "b009",
+      "citation_ids": [],
+      "source_dom_html": "<h3>账一：官方下单，买的是管线，熬的是时间</h3>",
+      "source_end_char": 1164,
+      "source_start_char": 1145,
+      "tag": "h3",
+      "text_with_citation_labels": "账一：官方下单，买的是管线，熬的是时间"
+    },
+    {
+      "analysis_end_char": 1352,
+      "analysis_start_char": 1143,
+      "analysis_text": "先说绕不开的两个坑：发货和配送。 官方原本赶在 2026 年圣诞前发货，爆单后已改口\"新订单无法承诺圣诞前发货\"，目前等待 4-6 个月，先订先得。更麻烦的是，社区普遍反馈官方不向中国大陆（及港澳台）提供邮寄。所以国内用户的实际操作是代购/订单转让，小红书 8月30日已经出现代订帖：“已订 2 台（奶白&紫色），带电池包和轮滑包，发货时间以官方为准”。注意，电池包和轮滑包是官方付费配件，默认整机只有手柄和一块电池。",
+      "block_id": "b010",
+      "citation_ids": [
+        "b010-c01",
+        "b010-c02",
+        "b010-c03"
+      ],
+      "source_dom_html": "<p>先说绕不开的两个坑：<strong>发货和配送。</strong> 官方原本赶在 2026 年圣诞前发货，爆单后已改口\"新订单无法承诺圣诞前发货\"，目前等待 4-6 个月，先订先得。<span class=\"referer-link\" data-highlight-text=\"目前新订单的预计等待时间为4-6个月\" data-quote-text=\"先下单先发货。目前新订单的预计等待时间为4-6个月。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077523901152761144\">知乎</span>更麻烦的是，社区普遍反馈官方不向中国大陆（及港澳台）提供邮寄。<span class=\"referer-link\" data-highlight-text=\"中国大陆及港澳台不支持邮递\" data-quote-text=\"$399，而且中国大陆及港澳台不支持邮递\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span>所以国内用户的实际操作是代购/订单转让，小红书 8月30日已经出现代订帖：“已订 2 台（奶白&amp;紫色），带电池包和轮滑包，发货时间以官方为准”。<span class=\"referer-link\" data-highlight-text=\"已订2台（奶白&amp;紫色）\" data-quote-text=\"已订2台（奶白&amp;紫色）\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a93585e000000002102f633\">小红书</span>注意，电池包和轮滑包是官方付费配件，默认整机只有手柄和一块电池。</p>",
+      "source_end_char": 1383,
+      "source_start_char": 1165,
+      "tag": "p",
+      "text_with_citation_labels": "先说绕不开的两个坑：发货和配送。 官方原本赶在 2026 年圣诞前发货，爆单后已改口\"新订单无法承诺圣诞前发货\"，目前等待 4-6 个月，先订先得。知乎更麻烦的是，社区普遍反馈官方不向中国大陆（及港澳台）提供邮寄。哔哩哔哩所以国内用户的实际操作是代购/订单转让，小红书 8月30日已经出现代订帖：“已订 2 台（奶白&紫色），带电池包和轮滑包，发货时间以官方为准”。小红书注意，电池包和轮滑包是官方付费配件，默认整机只有手柄和一块电池。"
+    },
+    {
+      "analysis_end_char": 1558,
+      "analysis_start_char": 1353,
+      "analysis_text": "这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。参照物是 HF 上一款产品 Reachy Mini：299 美元，累计卖了约 1 万台，应用商店聚了 200 多个社区 APP。Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。",
+      "block_id": "b011",
+      "citation_ids": [
+        "b011-c01",
+        "b011-c02"
+      ],
+      "source_dom_html": "<p>这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。参照物是 HF 上一款产品 Reachy Mini：299 美元，累计卖了约 1 万台，应用商店聚了 200 多个社区 APP。<span class=\"referer-link\" data-highlight-text=\"应用商店里聚合了 200 多款社区开发的 APP\" data-quote-text=\"截至今年 5 月，Reachy Mini 累计销量约1万台。软件生态也在同步发展，应用商店里聚合了 200 多款社区开发的 APP。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span>Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。<span class=\"referer-link\" data-highlight-text=\"在模拟环境里训练 Microduck 倒立\" data-quote-text=\"创作者 André Baltazar 最近在模拟环境里训练 Microduck 倒立。\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a92f49f000000002303f93d\">小红书</span>如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。</p>",
+      "source_end_char": 1594,
+      "source_start_char": 1384,
+      "tag": "p",
+      "text_with_citation_labels": "这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。参照物是 HF 上一款产品 Reachy Mini：299 美元，累计卖了约 1 万台，应用商店聚了 200 多个社区 APP。知乎Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。小红书如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。"
+    },
+    {
+      "analysis_end_char": 1577,
+      "analysis_start_char": 1559,
+      "analysis_text": "账二：自己搓，搓的是它开源的\"前身\"",
+      "block_id": "b012",
+      "citation_ids": [],
+      "source_dom_html": "<h3>账二：自己搓，搓的是它开源的\"前身\"</h3>",
+      "source_end_char": 1613,
+      "source_start_char": 1595,
+      "tag": "h3",
+      "text_with_citation_labels": "账二：自己搓，搓的是它开源的\"前身\""
+    },
+    {
+      "analysis_end_char": 1748,
+      "analysis_start_char": 1578,
+      "analysis_text": "DIY 党真正能走的路是 Open Duck Mini——项目发起人 Antoine Pirrone 正是 Microduck 主创，商业版就是这个开源项目的成品形态。V2 版本官方放了 60 秒组装实录：3D 打印件 + 树莓派 + 总线舵机，一步步拼成整机通电迈步，整机高 42 厘米，比鸭子大一圈，官方口径零件成本不到 400 美元。",
+      "block_id": "b013",
+      "citation_ids": [
+        "b013-c01",
+        "b013-c02"
+      ],
+      "source_dom_html": "<p>DIY 党真正能走的路是 Open Duck Mini——项目发起人 Antoine Pirrone 正是 Microduck 主创，商业版就是这个开源项目的成品形态。<span class=\"referer-link\" data-highlight-text=\"安托万·皮龙（Antoine Pirrone）2024 年主导发起了 Open Duck Mini\" data-quote-text=\"为解决这一问题，波伦工程师安托万·皮龙（Antoine Pirrone）2024 年主导发起了 Open Duck Mini。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span>V2 版本官方放了 60 秒组装实录：3D 打印件 + <a class=\"seo_link brand-hover\" data-brandid=\"29271\" href=\"https://pinpai.smzdm.com/29271/\" target=\"_blank\">树莓派</a> + 总线舵机，一步步拼成整机通电迈步，整机高 42 厘米，比鸭子大一圈，官方口径零件成本不到 400 美元。<span class=\"referer-link\" data-highlight-text=\"这只鸭子 42 厘米高，全部零件成本不到 400 美元\" data-quote-text=\"Open Duck Mini V2 官方放出了完整组装实录：工作人员把 3D 打印件、树莓派和舵机一步步拼成整机，通电，迈步。这只鸭子 42 厘米高，全部零件成本不到 400 美元\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a93945f000000000a00af50\">小红书</span></p>",
+      "source_end_char": 1789,
+      "source_start_char": 1614,
+      "tag": "p",
+      "text_with_citation_labels": "DIY 党真正能走的路是 Open Duck Mini——项目发起人 Antoine Pirrone 正是 Microduck 主创，商业版就是这个开源项目的成品形态。知乎V2 版本官方放了 60 秒组装实录：3D 打印件 + 树莓派 + 总线舵机，一步步拼成整机通电迈步，整机高 42 厘米，比鸭子大一圈，官方口径零件成本不到 400 美元。小红书"
+    },
+    {
+      "analysis_end_char": 1955,
+      "analysis_start_char": 1749,
+      "analysis_text": "国内这套已经有小生态：B站\"灵犀机器人\"团队从 3 月起就在出树莓派 4B / 3B+ / Zero 2W 各种版本的 Open Duck Mini 教程，连\"一启动就往前冲怎么治\"都有排坑视频，还能本地跑 Gemma 4 做端侧大模型演示。还有开发者基于它做了 EmoLo 情感步态项目——同一份 RL 策略，让鸭子走出开心、疲惫几种步态，被 IEEE Spectrum 的 Video Friday 收录了。",
+      "block_id": "b014",
+      "citation_ids": [
+        "b014-c01",
+        "b014-c02"
+      ],
+      "source_dom_html": "<p>国内这套已经有小生态：B站\"灵犀机器人\"团队从 3 月起就在出树莓派 4B / 3B+ / Zero 2W 各种版本的 Open Duck Mini 教程，连\"一启动就往前冲怎么治\"都有排坑视频，还能本地跑 Gemma 4 做端侧大模型演示。<span class=\"referer-link\" data-highlight-text=\"如何解决openduckmini机器人一启动一直往前走的问题\" data-quote-text=\"如何解决openduckmini机器人一启动一直往前走的问题\" data-referer-link=\"https://www.bilibili.com/video/BV1nmRvBzEzQ\">哔哩哔哩</span>还有开发者基于它做了 EmoLo 情感步态项目——同一份 RL 策略，让鸭子走出开心、疲惫几种步态，被 IEEE Spectrum 的 Video Friday 收录了。<span class=\"referer-link\" data-highlight-text=\"刚被 IEEE Spectrum 的 Video Friday 收录\" data-quote-text=\"目前有开发者基于它做了 EmoLo 项目——情感启发的运动控制，同一个 RL 策略，这只鸭子能走出开心、难过、兴奋、疲惫几种完全不同的步态，刚被 IEEE Spectrum 的 Video Friday 收录。\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a93945f000000000a00af50\">小红书</span></p>",
+      "source_end_char": 2003,
+      "source_start_char": 1790,
+      "tag": "p",
+      "text_with_citation_labels": "国内这套已经有小生态：B站\"灵犀机器人\"团队从 3 月起就在出树莓派 4B / 3B+ / Zero 2W 各种版本的 Open Duck Mini 教程，连\"一启动就往前冲怎么治\"都有排坑视频，还能本地跑 Gemma 4 做端侧大模型演示。哔哩哔哩还有开发者基于它做了 EmoLo 情感步态项目——同一份 RL 策略，让鸭子走出开心、疲惫几种步态，被 IEEE Spectrum 的 Video Friday 收录了。小红书"
+    },
+    {
+      "analysis_end_char": 2169,
+      "analysis_start_char": 1956,
+      "analysis_text": "但有两笔成本要留神：一是舵机，评论区懂行的说法是\"总线舵机单卖很贵\"，凑不齐渠道价，整机成本压不下来；二是树莓派，上半年那波内存涨价把整个板卡市场抬了一截（这笔账我们前阵子单独算过），现在攒机别按去年的价格预期。有华强北背景的网友给的参照是：“自己采购一套手搓，不会低于 4000 元，比人家零售价都贵”。这是估算不是实测定价，但方向很清楚：散件零售价拼不过整机的规模化采购，DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。",
+      "block_id": "b015",
+      "citation_ids": [
+        "b015-c01"
+      ],
+      "source_dom_html": "<p>但有两笔成本要留神：一是舵机，评论区懂行的说法是\"总线舵机单卖很贵\"，凑不齐渠道价，整机成本压不下来；二是树莓派，上半年那波内存涨价把整个板卡市场抬了一截（这笔账我们前阵子单独算过），现在攒机别按去年的价格预期。有华强北背景的网友给的参照是：“自己采购一套手搓，不会低于 4000 元，比人家零售价都贵”。<span class=\"referer-link\" data-highlight-text=\"手搓出来不会低于4000元\" data-quote-text=\"华强北自己采购一套，手搓出来不会低于4000元，比人家零售价都要贵\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span>这是估算不是实测定价，但方向很清楚：<strong>散件零售价拼不过整机的规模化采购，DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。</strong></p>",
+      "source_end_char": 2221,
+      "source_start_char": 2004,
+      "tag": "p",
+      "text_with_citation_labels": "但有两笔成本要留神：一是舵机，评论区懂行的说法是\"总线舵机单卖很贵\"，凑不齐渠道价，整机成本压不下来；二是树莓派，上半年那波内存涨价把整个板卡市场抬了一截（这笔账我们前阵子单独算过），现在攒机别按去年的价格预期。有华强北背景的网友给的参照是：“自己采购一套手搓，不会低于 4000 元，比人家零售价都贵”。哔哩哔哩这是估算不是实测定价，但方向很清楚：散件零售价拼不过整机的规模化采购，DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。"
+    },
+    {
+      "analysis_end_char": 2196,
+      "analysis_start_char": 2170,
+      "analysis_text": "账三：等国产，图纸抄不出来，但\"国产鸭\"真的在路上了",
+      "block_id": "b016",
+      "citation_ids": [],
+      "source_dom_html": "<h3>账三：等国产，图纸抄不出来，但\"国产鸭\"真的在路上了</h3>",
+      "source_end_char": 2248,
+      "source_start_char": 2222,
+      "tag": "h3",
+      "text_with_citation_labels": "账三：等国产，图纸抄不出来，但\"国产鸭\"真的在路上了"
+    },
+    {
+      "analysis_end_char": 2268,
+      "analysis_start_char": 2197,
+      "analysis_text": "\"坐等华强北发力\"是高赞评论，但结合\"硬件没开源\"这个前提，等来的不会是 399 美元的像素级复刻——只能靠逆向，成本反而更高（参考上一段）。",
+      "block_id": "b017",
+      "citation_ids": [
+        "b017-c01"
+      ],
+      "source_dom_html": "<p>\"坐等华强北发力\"是高赞评论，但结合\"硬件没开源\"这个前提，等来的不会是 399 美元的像素级复刻——只能靠逆向，成本反而更高（参考上一段）。<span class=\"referer-link\" data-highlight-text=\"坐等华强北发力\" data-quote-text=\"坐等华强北发力\" data-referer-link=\"https://www.bilibili.com/video/BV1at4269E47\">哔哩哔哩</span></p>",
+      "source_end_char": 2324,
+      "source_start_char": 2249,
+      "tag": "p",
+      "text_with_citation_labels": "\"坐等华强北发力\"是高赞评论，但结合\"硬件没开源\"这个前提，等来的不会是 399 美元的像素级复刻——只能靠逆向，成本反而更高（参考上一段）。哔哩哔哩"
+    },
+    {
+      "analysis_end_char": 2409,
+      "analysis_start_char": 2269,
+      "analysis_text": "真正值得等的信号是另一个：小红书账号\"桌面具身刘厂长\"已经亮明自己在做的鸭子机器人——同样叫机器鸭，用的是树莓派 + 飞特舵机的完全不同架构，并且承诺\"后续这套方案软硬件开源\"。硬件开源、国内发货、售后本地，这三样凑齐的国产方案，才是给\"不想折腾转运、只想低成本入坑\"的人准备的。",
+      "block_id": "b018",
+      "citation_ids": [
+        "b018-c01"
+      ],
+      "source_dom_html": "<p>真正值得等的信号是另一个：小红书账号\"桌面具身刘厂长\"已经亮明自己在做的鸭子机器人——同样叫机器鸭，用的是树莓派 + 飞特舵机的完全不同架构，并且承诺\"后续这套方案软硬件开源\"。<span class=\"referer-link\" data-highlight-text=\"后续这套方案软硬件会开源出来\" data-quote-text=\"我们采用了完全不同的硬件架构（树莓派和飞特舵机）后续这套方案软硬件会开源出来，供全球的机器人爱好者一起来折腾把玩。\" data-referer-link=\"https://www.xiaohongshu.com/explore/6a938b55000000000400b5b1\">小红书</span>硬件开源、国内发货、售后本地，这三样凑齐的国产方案，才是给\"不想折腾转运、只想低成本入坑\"的人准备的。</p>",
+      "source_end_char": 2468,
+      "source_start_char": 2325,
+      "tag": "p",
+      "text_with_citation_labels": "真正值得等的信号是另一个：小红书账号\"桌面具身刘厂长\"已经亮明自己在做的鸭子机器人——同样叫机器鸭，用的是树莓派 + 飞特舵机的完全不同架构，并且承诺\"后续这套方案软硬件开源\"。小红书硬件开源、国内发货、售后本地，这三样凑齐的国产方案，才是给\"不想折腾转运、只想低成本入坑\"的人准备的。"
+    },
+    {
+      "analysis_end_char": 2420,
+      "analysis_start_char": 2410,
+      "analysis_text": "上车前，四个具体的坑",
+      "block_id": "b019",
+      "citation_ids": [],
+      "source_dom_html": "<h3>上车前，四个具体的坑</h3>",
+      "source_end_char": 2479,
+      "source_start_char": 2469,
+      "tag": "h3",
+      "text_with_citation_labels": "上车前，四个具体的坑"
+    },
+    {
+      "analysis_end_char": 2545,
+      "analysis_start_char": 2421,
+      "analysis_text": "ONNX Runtime 版本对齐：部署手记里的真实翻车——板上的 Runtime 是 1.20.1，策略要求 1.23.x 以上，鸭子直接\"站不起来\"。sim-to-real 的最后一公里不是玄学，是版本管理，自己改训练链路的先把三件套版本绑死。",
+      "block_id": "b020",
+      "citation_ids": [
+        "b020-c01"
+      ],
+      "source_dom_html": "<li><p><strong>ONNX Runtime 版本对齐</strong>：部署手记里的真实翻车——板上的 Runtime 是 1.20.1，策略要求 1.23.x 以上，鸭子直接\"站不起来\"。<span class=\"referer-link\" data-highlight-text=\"板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高\" data-quote-text=\"板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高。控制线程没进入正常循环——鸭子“没站起来”。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2077192046805247124\">知乎</span>sim-to-real 的最后一公里不是玄学，是版本管理，自己改训练链路的先把三件套版本绑死。</p></li>",
+      "source_end_char": 2606,
+      "source_start_char": 2480,
+      "tag": "li",
+      "text_with_citation_labels": "ONNX Runtime 版本对齐：部署手记里的真实翻车——板上的 Runtime 是 1.20.1，策略要求 1.23.x 以上，鸭子直接\"站不起来\"。知乎sim-to-real 的最后一公里不是玄学，是版本管理，自己改训练链路的先把三件套版本绑死。"
+    },
+    {
+      "analysis_end_char": 2603,
+      "analysis_start_char": 2546,
+      "analysis_text": "1 小时续航：一块 NP-F550 的设定，认真跑实验要么多备电池要么考虑持续供电，官方配件清单里电池包是单卖的。",
+      "block_id": "b021",
+      "citation_ids": [],
+      "source_dom_html": "<li><p><strong>1 小时续航</strong>：一块 NP-F550 的设定，认真跑实验要么多备电池要么考虑持续供电，官方配件清单里电池包是单卖的。</p></li>",
+      "source_end_char": 2664,
+      "source_start_char": 2607,
+      "tag": "li",
+      "text_with_citation_labels": "1 小时续航：一块 NP-F550 的设定，认真跑实验要么多备电池要么考虑持续供电，官方配件清单里电池包是单卖的。"
+    },
+    {
+      "analysis_end_char": 2655,
+      "analysis_start_char": 2604,
+      "analysis_text": "代购转让单：先订先得的订单正在被加价转，售后、保修和\"最快圣诞发货\"的承诺都不在你头上，转账前想清楚。",
+      "block_id": "b022",
+      "citation_ids": [],
+      "source_dom_html": "<li><p><strong>代购转让单</strong>：先订先得的订单正在被加价转，售后、保修和\"最快圣诞发货\"的承诺都不在你头上，转账前想清楚。</p></li>",
+      "source_end_char": 2716,
+      "source_start_char": 2665,
+      "tag": "li",
+      "text_with_citation_labels": "代购转让单：先订先得的订单正在被加价转，售后、保修和\"最快圣诞发货\"的承诺都不在你头上，转账前想清楚。"
+    },
+    {
+      "analysis_end_char": 2725,
+      "analysis_start_char": 2656,
+      "analysis_text": "别为销量冲锋：260 万美元是官方口径，无第三方验证，且踩在收购传闻的时间点上。判断产品价值看你自己要不要跑 RL 管线，别看别人抢没抢。",
+      "block_id": "b023",
+      "citation_ids": [],
+      "source_dom_html": "<li><p><strong>别为销量冲锋</strong>：260 万美元是官方口径，无第三方验证，且踩在收购传闻的时间点上。判断产品价值看你自己要不要跑 RL 管线，别看别人抢没抢。</p></li>",
+      "source_end_char": 2786,
+      "source_start_char": 2717,
+      "tag": "li",
+      "text_with_citation_labels": "别为销量冲锋：260 万美元是官方口径，无第三方验证，且踩在收购传闻的时间点上。判断产品价值看你自己要不要跑 RL 管线，别看别人抢没抢。"
+    },
+    {
+      "analysis_end_char": 2737,
+      "analysis_start_char": 2726,
+      "analysis_text": "什么人该动，什么人该缓",
+      "block_id": "b024",
+      "citation_ids": [],
+      "source_dom_html": "<h3>什么人该动，什么人该缓</h3>",
+      "source_end_char": 2798,
+      "source_start_char": 2787,
+      "tag": "h3",
+      "text_with_citation_labels": "什么人该动，什么人该缓"
+    },
+    {
+      "analysis_end_char": 2831,
+      "analysis_start_char": 2738,
+      "analysis_text": "AI/机器人方向学习者、教育工作者：官方单值得排，4-6 个月换一条完整的强化学习真机管线，比拿数千上万元的设备试错便宜；等不及就先在开源仓库的仿真环境里练手，策略文件到手真机直接部署。",
+      "block_id": "b025",
+      "citation_ids": [],
+      "source_dom_html": "<li><p><strong>AI/机器人方向学习者、教育工作者</strong>：官方单值得排，4-6 个月换一条完整的强化学习真机管线，比拿数千上万元的设备试错便宜；等不及就先在开源仓库的仿真环境里练手，策略文件到手真机直接部署。</p></li>",
+      "source_end_char": 2892,
+      "source_start_char": 2799,
+      "tag": "li",
+      "text_with_citation_labels": "AI/机器人方向学习者、教育工作者：官方单值得排，4-6 个月换一条完整的强化学习真机管线，比拿数千上万元的设备试错便宜；等不及就先在开源仓库的仿真环境里练手，策略文件到手真机直接部署。"
+    },
+    {
+      "analysis_end_char": 2903,
+      "analysis_start_char": 2832,
+      "analysis_text": "有 3D 打印机、吃灰树莓派的老 DIY：直接上 Open Duck Mini V2，42 厘米的大身子更耐折腾，教程生态现成，别等官方鸭子。",
+      "block_id": "b026",
+      "citation_ids": [],
+      "source_dom_html": "<li><p><strong>有 3D 打印机、吃灰树莓派的老 DIY</strong>：直接上 Open Duck Mini V2，42 厘米的大身子更耐折腾，教程生态现成，别等官方鸭子。</p></li>",
+      "source_end_char": 2964,
+      "source_start_char": 2893,
+      "tag": "li",
+      "text_with_citation_labels": "有 3D 打印机、吃灰树莓派的老 DIY：直接上 Open Duck Mini V2，42 厘米的大身子更耐折腾，教程生态现成，别等官方鸭子。"
+    },
+    {
+      "analysis_end_char": 2972,
+      "analysis_start_char": 2904,
+      "analysis_text": "想要赛博桌宠的情绪玩家：缓。它是\"为了动而生、随时准备摔倒\"的开发平台，不是一台开箱即萌的电子宠物，等首批真机口碑和国内渠道都稳了再说。",
+      "block_id": "b027",
+      "citation_ids": [
+        "b027-c01"
+      ],
+      "source_dom_html": "<li><p><strong>想要赛博桌宠的情绪玩家</strong>：缓。它是\"为了动而生、随时准备摔倒\"的开发平台，不是一台开箱即萌的电子宠物，等首批真机口碑和国内渠道都稳了再说。<span class=\"referer-link\" data-highlight-text=\"这只鸭子被设计成“为了动而生，随时准备摔倒”\" data-quote-text=\"克莱姆表示，这只鸭子被设计成“为了动而生，随时准备摔倒”。\" data-referer-link=\"https://zhuanlan.zhihu.com/p/2076660862635471651\">知乎</span></p></li>",
+      "source_end_char": 3035,
+      "source_start_char": 2965,
+      "tag": "li",
+      "text_with_citation_labels": "想要赛博桌宠的情绪玩家：缓。它是\"为了动而生、随时准备摔倒\"的开发平台，不是一台开箱即萌的电子宠物，等首批真机口碑和国内渠道都稳了再说。知乎"
+    },
+    {
+      "analysis_end_char": 3013,
+      "analysis_start_char": 2973,
+      "analysis_text": "等 399 元平替的：别等硬件复刻了，盯刘厂长这类软硬件全开源的国产方案更现实。",
+      "block_id": "b028",
+      "citation_ids": [],
+      "source_dom_html": "<li><p><strong>等 399 元平替的</strong>：别等硬件复刻了，盯刘厂长这类软硬件全开源的国产方案更现实。</p></li>",
+      "source_end_char": 3076,
+      "source_start_char": 3036,
+      "tag": "li",
+      "text_with_citation_labels": "等 399 元平替的：别等硬件复刻了，盯刘厂长这类软硬件全开源的国产方案更现实。"
+    },
+    {
+      "analysis_end_char": 3023,
+      "analysis_start_char": 3014,
+      "analysis_text": "接下来盯这几个信号",
+      "block_id": "b029",
+      "citation_ids": [],
+      "source_dom_html": "<h3>接下来盯这几个信号</h3>",
+      "source_end_char": 3086,
+      "source_start_char": 3077,
+      "tag": "h3",
+      "text_with_citation_labels": "接下来盯这几个信号"
+    },
+    {
+      "analysis_end_char": 3231,
+      "analysis_start_char": 3024,
+      "analysis_text": "官方中国区是否有直邮/代理渠道；刘厂长们的国产开源方案什么时候放仓库；HF 会不会在量产压力下放出硬件文档；4-6 个月等待期是继续拉长还是消化完首批订单；社区策略库（跳舞、倒立之后）会不会长出真正有用的技能。这波鸭子给 DIY 圈最实在的东西，其实是把那层窗户纸捅破了：原来强化学习机器人的入场券，真的可以是 399 美元、一块 RK3566、一晚上 GPU。剩下的问题只有一个——你打算用这条管线，教会它什么。",
+      "block_id": "b030",
+      "citation_ids": [],
+      "source_dom_html": "<p>官方中国区是否有直邮/代理渠道；刘厂长们的国产开源方案什么时候放仓库；HF 会不会在量产压力下放出硬件文档；4-6 个月等待期是继续拉长还是消化完首批订单；社区策略库（跳舞、倒立之后）会不会长出真正有用的技能。这波鸭子给 DIY 圈最实在的东西，其实是把那层窗户纸捅破了：原来强化学习机器人的入场券，真的可以是 399 美元、一块 RK3566、一晚上 GPU。剩下的问题只有一个——你打算用这条管线，教会它什么。</p>",
+      "source_end_char": 3294,
+      "source_start_char": 3087,
+      "tag": "p",
+      "text_with_citation_labels": "官方中国区是否有直邮/代理渠道；刘厂长们的国产开源方案什么时候放仓库；HF 会不会在量产压力下放出硬件文档；4-6 个月等待期是继续拉长还是消化完首批订单；社区策略库（跳舞、倒立之后）会不会长出真正有用的技能。这波鸭子给 DIY 圈最实在的东西，其实是把那层窗户纸捅破了：原来强化学习机器人的入场券，真的可以是 399 美元、一块 RK3566、一晚上 GPU。剩下的问题只有一个——你打算用这条管线，教会它什么。"
+    }
+  ],
+  "version": "smzdm-reader-anchor-1.0"
+}

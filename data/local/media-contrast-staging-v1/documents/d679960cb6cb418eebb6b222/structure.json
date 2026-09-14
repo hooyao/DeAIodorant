@@ -1,0 +1,123 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/84/84653df91ff27ae0388b35a2d00d4962.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 24,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/f7/f78be89c4db546edd2db8917fcdbe5e6.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 124,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/e1/e1f1a17d62c6f683e283110ee8956b21.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 125,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b9/b92b46dc2c039a238b3346b601a861d8.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 128,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/e1/e18b13ec3280291dc8c7cfd467336569.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 133,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media06",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/7b/4d/7b610a5fff834dcdbcb3b89c15c8004d.jpg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 183,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media07",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/73/38/734cd85d467f9fbb6f68ba1byya24538.jpg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 185,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "降级",
+      "href": "https://www.pdai.tech/md/arch/arch-y-reduce.html#%e6%9c%8d%e5%8a%a1%e9%99%8d%e7%ba%a7"
+    },
+    {
+      "text": "资料",
+      "href": "https://zhuanlan.zhihu.com/p/362890969"
+    },
+    {
+      "text": "2x、3x是屏幕显示模式",
+      "href": "https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/"
+    },
+    {
+      "text": "架构之高并发：降级和熔断",
+      "href": "https://www.pdai.tech/md/arch/arch-y-reduce.html#%e6%9c%8d%e5%8a%a1%e9%99%8d%e7%ba%a7"
+    },
+    {
+      "text": "Image Size and Resolution",
+      "href": "https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/"
+    },
+    {
+      "text": "京喜APP - 图片库优化",
+      "href": "https://juejin.cn/post/6961403041585037325"
+    },
+    {
+      "text": "https://tech.ipalfish.com/blog/2021/08/30/reading_ios_levelStrategy/",
+      "href": "https://tech.ipalfish.com/blog/2021/08/30/reading_ios_levelStrategy/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 112,
+    "h1": 0,
+    "h2": 7,
+    "h3": 11,
+    "ul": 6,
+    "ol": 3,
+    "li": 19,
+    "img": 7,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 5,
+    "a": 7
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/d679960cb6cb418eebb6b222.html",
+  "raw_html_sha256": "e667fccbb57aad621364ae8a82217547139b5c84184fb7b0ecdf4e24da5c297a"
+}

@@ -1,0 +1,57 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/53/9e/53a592f19ccee76f603eb29b91f71e9e.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 5,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/a7/47/a7f93e16d673a1a64c0aef1cc2a85f47.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 9,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "IBM",
+      "href": "https://www.ibm.com/cn-zh"
+    },
+    {
+      "text": "Cloud Paks",
+      "href": "https://www.ibm.com/cn-zh/cloud/paks?lnk2=learnfeature"
+    },
+    {
+      "text": "Data Fabric",
+      "href": "https://baike.baidu.com/item/Data%20Fabric/57375368?fr=aladdin"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 55,
+    "h1": 0,
+    "h2": 4,
+    "h3": 4,
+    "ul": 2,
+    "ol": 0,
+    "li": 5,
+    "img": 2,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 3
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/ef19bcab9a7f26c8cb50e918.html",
+  "raw_html_sha256": "b9a5a859bec7c2e321b6ce146a48f2be26118335ef84005f57d44a0db711bf46"
+}

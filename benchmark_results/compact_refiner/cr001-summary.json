@@ -1,0 +1,275 @@
+{
+  "content_origin": "constructed_fictional_development_briefs",
+  "cost": {
+    "assistant_agent_editing_cost": "unavailable; not included as free API inference",
+    "attempt_counts": {
+      "failed": 10,
+      "success": 52
+    },
+    "budget_cap_usd": "5",
+    "conservatively_accounted_cost_usd": "0.05459170",
+    "failure_reasons": {
+      "http_429_billing_unknown": 10
+    },
+    "reported_success_cost_usd": "0.01012750",
+    "usage": {
+      "completion_tokens": 11961,
+      "prompt_tokens": 27293,
+      "total_tokens": 39254
+    }
+  },
+  "date": "2026-09-14",
+  "gpu_required_for_next_step": false,
+  "human_preference_count": 0,
+  "input_artifact_hashes": {
+    "feature_runs/compact_refiner/cr001-cost-summary.json": "7601da393d73c50383adbc29f6e141bfbb1b53c2662f20ed73deb301938e120d",
+    "feature_runs/compact_refiner/cr001-edit-v1/assessment-summary.json": "93b69b891ef99456ca30cd78f81baeb2f35b6b91d0e2ea5e1bdd04731074343a",
+    "feature_runs/compact_refiner/cr001-v1/source-summary.json": "dbe4850259197468f9351fb850ac8af1bd7a29c611e3c78893a65b8d610d4cbd",
+    "feature_runs/compact_refiner/cr001b-qwen9b-v1/assessment-summary.json": "e5205eff96456869cf36f8ab1a32b673094f08a59e7450b7cc80f6293dcd31b8"
+  },
+  "limitations": [
+    "Small constructed sample; not natural editing demand.",
+    "No human reading-preference evidence or verified training labels.",
+    "Only one 3B model and one 9B control; family/provider/reviewer differences are confounded.",
+    "Agent proposal and review errors can be correlated.",
+    "One source request was unavailable; all 24 planned groups remain accounted.",
+    "Failed-request billing unknown; reported charges and conservative reservations are separate."
+  ],
+  "primary_candidate_review": {
+    "by_arm": {
+      "assistant_edit": {
+        "count": 13,
+        "fail_ids": [],
+        "fidelity": {
+          "pass": 13
+        },
+        "improvement": {
+          "clear": 2,
+          "limited": 8,
+          "none": 3
+        },
+        "pass_ids": [
+          "cr001-20-draft",
+          "cr001-19-draft",
+          "cr001-01-draft",
+          "cr001-03-draft",
+          "cr001-15-draft",
+          "cr001-08-draft",
+          "cr001-07-draft",
+          "cr001-12-draft",
+          "cr001-09-draft",
+          "cr001-14-draft",
+          "cr001-02-draft",
+          "cr001-11-draft",
+          "cr001-17-draft"
+        ]
+      },
+      "compact_prompt": {
+        "count": 13,
+        "fail_ids": [
+          "cr001-17-draft",
+          "cr001-08-draft",
+          "cr001-14-draft",
+          "cr001-07-draft",
+          "cr001-03-draft",
+          "cr001-20-draft",
+          "cr001-09-draft",
+          "cr001-02-draft",
+          "cr001-15-draft",
+          "cr001-01-draft",
+          "cr001-19-draft"
+        ],
+        "fidelity": {
+          "fail": 11,
+          "pass": 2
+        },
+        "improvement": {
+          "limited": 1,
+          "none": 5,
+          "regression": 7
+        },
+        "pass_ids": [
+          "cr001-12-draft",
+          "cr001-11-draft"
+        ]
+      }
+    },
+    "controls": [
+      {
+        "case_id": "review-04",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      },
+      {
+        "case_id": "review-11",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      },
+      {
+        "case_id": "review-17",
+        "expected": "pass",
+        "observed": "pass",
+        "passed": true
+      },
+      {
+        "case_id": "review-23",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      },
+      {
+        "case_id": "review-25",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      },
+      {
+        "case_id": "review-32",
+        "expected": "pass",
+        "observed": "pass",
+        "passed": true
+      }
+    ],
+    "cross_review": [
+      {
+        "agree": true,
+        "case_id": "review-18",
+        "draft_id": "cr001-08-draft",
+        "kind": "assistant_edit",
+        "primary_fidelity": "pass",
+        "secondary_fidelity": "pass"
+      },
+      {
+        "agree": true,
+        "case_id": "review-19",
+        "draft_id": "cr001-11-draft",
+        "kind": "compact_prompt",
+        "primary_fidelity": "pass",
+        "secondary_fidelity": "pass"
+      },
+      {
+        "agree": false,
+        "case_id": "review-21",
+        "draft_id": "cr001-15-draft",
+        "kind": "compact_prompt",
+        "primary_fidelity": "fail",
+        "secondary_fidelity": "uncertain"
+      },
+      {
+        "agree": true,
+        "case_id": "review-22",
+        "draft_id": "cr001-12-draft",
+        "kind": "assistant_edit",
+        "primary_fidelity": "pass",
+        "secondary_fidelity": "pass"
+      },
+      {
+        "agree": true,
+        "case_id": "review-27",
+        "draft_id": "cr001-19-draft",
+        "kind": "compact_prompt",
+        "primary_fidelity": "fail",
+        "secondary_fidelity": "fail"
+      },
+      {
+        "agree": true,
+        "case_id": "review-30",
+        "draft_id": "cr001-11-draft",
+        "kind": "assistant_edit",
+        "primary_fidelity": "pass",
+        "secondary_fidelity": "pass"
+      }
+    ],
+    "human_reviews": 0,
+    "training_exports": 0
+  },
+  "qwen_9b_control": {
+    "control_results": [
+      {
+        "case_id": "additional-06",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      },
+      {
+        "case_id": "additional-12",
+        "expected": "pass",
+        "observed": "pass",
+        "passed": true
+      },
+      {
+        "case_id": "additional-13",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      },
+      {
+        "case_id": "additional-16",
+        "expected": "pass",
+        "observed": "pass",
+        "passed": true
+      },
+      {
+        "case_id": "additional-17",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      },
+      {
+        "case_id": "additional-19",
+        "expected": "fail",
+        "observed": "fail",
+        "passed": true
+      }
+    ],
+    "count": 13,
+    "fidelity": {
+      "fail": 2,
+      "pass": 8,
+      "uncertain": 3
+    },
+    "human_reviews": 0,
+    "improvement": {
+      "limited": 4,
+      "none": 6,
+      "regression": 3
+    },
+    "training_exports": 0
+  },
+  "report": "docs/routes/compact-refiner/reports/cr001-preflight.md",
+  "review_provenance": "model_assisted_agents_not_human_gold",
+  "route_id": "compact-refiner-v1",
+  "schema_version": "compact-refiner-preflight-summary-1.0",
+  "source": {
+    "generated": 23,
+    "human_reviews": 0,
+    "operationally_unavailable": 1,
+    "opportunity_by_fidelity": {
+      "fail": {
+        "clear": 6,
+        "limited": 1
+      },
+      "pass": {
+        "clear": 4,
+        "limited": 3,
+        "none": 6
+      },
+      "uncertain": {
+        "clear": 2,
+        "limited": 1
+      }
+    },
+    "planned": 24,
+    "source_fidelity_counts": {
+      "fail": 7,
+      "pass": 13,
+      "uncertain": 3
+    },
+    "training_exports": 0
+  },
+  "status": "model_only_complete_human_review_pending",
+  "training_export_count": 0,
+  "training_runs": 0
+}

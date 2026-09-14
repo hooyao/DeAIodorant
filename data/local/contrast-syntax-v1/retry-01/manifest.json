@@ -1,0 +1,119 @@
+{
+  "command": "python experiments/contrast_syntax_feasibility.py --model-dir models/stanza --output-dir data/local/contrast-syntax-v1/retry-01",
+  "created_at": "2026-09-14T08:08:53.961748+00:00",
+  "documents": [
+    {
+      "alias": "doc-03",
+      "elapsed_seconds": 9.952,
+      "offset_issue_count": 2,
+      "sentence_count": 32,
+      "source_characters": 2350,
+      "source_linebreaks": 39,
+      "source_reconstruction_exact": true,
+      "token_count": 1125,
+      "word_count": 1125
+    },
+    {
+      "alias": "doc-05",
+      "elapsed_seconds": 14.224,
+      "offset_issue_count": 2,
+      "sentence_count": 77,
+      "source_characters": 4048,
+      "source_linebreaks": 57,
+      "source_reconstruction_exact": true,
+      "token_count": 2078,
+      "word_count": 2078
+    },
+    {
+      "alias": "doc-11",
+      "elapsed_seconds": 22.811,
+      "offset_issue_count": 24,
+      "sentence_count": 55,
+      "source_characters": 4900,
+      "source_linebreaks": 125,
+      "source_reconstruction_exact": true,
+      "token_count": 2399,
+      "word_count": 2399
+    }
+  ],
+  "elapsed_seconds": 65.328,
+  "external_api_calls": 0,
+  "gpu_used": false,
+  "human_gold": false,
+  "implementation_hashes": {
+    "docs/routes/compact-refiner/contrast-syntax-feasibility.md": "06c60d318d494bc417f0dfaf4a87706834a08ac54e7a41056e8d0e9bba2474f6",
+    "experiments/contrast_syntax_feasibility.py": "63dc60108db7176a2f95206b0a179663428170ac2b3b5a457d93906caefa6b39",
+    "src/deaiodorant/analysis/stanza_backend.py": "1d82eef464d20c2a43c71ccd8c15d9cbf464fc8853ea33390d7b56663e76a2a8",
+    "src/deaiodorant/refine/records.py": "d1d4ab83154ad622916ba9ec0686cf4fb66091388bed871f71cd83eded49e365"
+  },
+  "input_hashes": {
+    "data/local/contrast-context-v1/manifest.json": "aa239d7e2f98f27dc5d9e782d2ae289838312703227b490aa9816cafb802433a",
+    "data/local/contrast-context-v1/packets/doc-03/body.txt": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "data/local/contrast-context-v1/packets/doc-03/occurrences.json": "ebbdbd41682523cfb21c9c2d9eeec1f247ea3ee73fb31498ff0e2087cc6d567b",
+    "data/local/contrast-context-v1/packets/doc-05/body.txt": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+    "data/local/contrast-context-v1/packets/doc-05/occurrences.json": "323ed00d7674391d09eff7d6f47558c7edd278886188f67d6b9a92e7d501868f",
+    "data/local/contrast-context-v1/packets/doc-11/body.txt": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+    "data/local/contrast-context-v1/packets/doc-11/occurrences.json": "09132261f054fa6415f80e848f1b45f526f989694b19d5743fb7b090bc80a0ff"
+  },
+  "interpretation": "Parser feasibility and traceable case inspection only; no automatic prose-quality score.",
+  "logical_cpu_count": 20,
+  "model_directory": "D:\\MyProjects\\cn-corpus-processing\\models\\stanza",
+  "model_file_count": 8,
+  "model_fingerprint": "5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9",
+  "model_hashes": {
+    "resources.json": "4e41c1df152146fa26ed0c006a08feea7a60bb3414bb6d57dbda24ad2e3cb99c",
+    "zh-hans/backward_charlm/gigaword.pt": "bad1b93d518c82cd45446c6cb32dda27bfbf3ed0282abae5c5b0839d3bc36968",
+    "zh-hans/depparse/gsdsimp_charlm.pt": "06f4926eea5dff63226b8a81064ec4b6230db4fb17cb595fae386accc36df20f",
+    "zh-hans/forward_charlm/gigaword.pt": "58362c18d347bc7c553920c9b9dba9e17f1353ebd4bd47c3016cd502c92edcfa",
+    "zh-hans/lemma/gsdsimp_nocharlm.pt": "ac644f35973cbf5a64935b72045a386a07f99f335cdfdba96964810def23e692",
+    "zh-hans/pos/gsdsimp_charlm.pt": "94c63943e0d27a3d955fac2fac0f473a5b7f2abfa2ad1ee8924fb06838bf0dfb",
+    "zh-hans/pretrain/fasttext157.pt": "630daf461d1dc6f49642ee534102bf08783866949f7f046cf2df3667dcc5e112",
+    "zh-hans/tokenize/gsdsimp.pt": "962f2578e2a3dabeb4671053372eb1bd092357921904233556c8d77a46440882"
+  },
+  "network_operations_allowed": false,
+  "output_hashes": {
+    "doc-03/annotations.conllu": "0e225b7e0531e774440e16d0a919e08268a59413f52e30d1ebf3ac932da6d005",
+    "doc-03/annotations.json": "62152b7a80ee0ba72812b80ad2d4ebe806e3bf3a59dbf8aae937245853a70180",
+    "doc-03/body.txt": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "doc-05/annotations.conllu": "3d1398cf14ef36de6d39a166d73043fba7e5734c2452d90c92f765b3a09b67e1",
+    "doc-05/annotations.json": "7834e3f35976a17a07fb2a750fdf317a7bb91e7424f819fd697f5579ffdef1d0",
+    "doc-05/body.txt": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+    "doc-11/annotations.conllu": "ad140861172671a1533d219d22b2899c15269e4b12fb990955d30a694714f6e7",
+    "doc-11/annotations.json": "f61f85e8d9bbf0e27d9a38dec6336e9288d812b2af8ac92ed6083b2b46c77a89",
+    "doc-11/body.txt": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+    "implementation-snapshot/contrast-syntax-feasibility.md": "06c60d318d494bc417f0dfaf4a87706834a08ac54e7a41056e8d0e9bba2474f6",
+    "implementation-snapshot/contrast_syntax_feasibility.py": "63dc60108db7176a2f95206b0a179663428170ac2b3b5a457d93906caefa6b39",
+    "implementation-snapshot/records.py": "d1d4ab83154ad622916ba9ec0686cf4fb66091388bed871f71cd83eded49e365",
+    "implementation-snapshot/stanza_backend.py": "1d82eef464d20c2a43c71ccd8c15d9cbf464fc8853ea33390d7b56663e76a2a8",
+    "run-state.json": "b4c8c3cca3982c94b6d8534805ddcc11026f2d879e3d752f00be8fe1ed8a8ad7"
+  },
+  "package_versions": {
+    "emoji": "2.15.0",
+    "networkx": "3.6.1",
+    "numpy": "2.4.2",
+    "protobuf": "7.35.0",
+    "stanza": "1.14.0",
+    "torch": "2.13.0"
+  },
+  "parser": {
+    "deterministic_algorithms": true,
+    "device": "cpu",
+    "download_method": "NONE",
+    "language": "zh-hans",
+    "name": "stanza",
+    "package": "gsdsimp",
+    "processors": [
+      "tokenize",
+      "pos",
+      "lemma",
+      "depparse"
+    ],
+    "pythonhashseed": "20260914",
+    "seed": 20260914,
+    "torch_interop_threads": 1,
+    "torch_threads": 1
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "protocol": "contrast-syntax-feasibility-1.0",
+  "python_version": "3.13.5"
+}

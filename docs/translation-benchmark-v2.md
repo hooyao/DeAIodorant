@@ -1,110 +1,79 @@
-# Translation gate benchmark v2
+# 翻译筛选 benchmark v2
 
-## Status and purpose
+## 状态与目的
 
-Protocol `translation-gate-2.0-development` replaces the single-source,
-small-sample development workflow with a larger, source-diverse benchmark
-lifecycle. It is not frozen and has not produced a final-test result.
+Protocol `translation-gate-2.0-development` 用更大、来源更多样的 benchmark 生命周期，替代单一来源、小样本的开发流程。该 protocol 尚未冻结，也没有产生 final-test 结果。
 
-The task is translation provenance classification. It does not classify AI
-authorship. A document is admitted only when it is confidently original under
-the fail-closed decision policy.
+任务是翻译来源分类，不判断 AI 作者身份。根据 fail-closed 决策策略，只有高置信度确认原创的文章才准入。
 
-## Non-negotiable split policy
+## 必须遵守的 split 策略
 
-- Prompt text and rules may be changed only after inspecting development data.
-- Validation labels may be used to select among prompt versions that were
-  already fixed on development data. Validation errors must not be converted
-  into new same-cycle prompt rules.
-- The sealed test must not be run until the prompt, model digest, decoding
-  configuration, decision policy, and thresholds are frozen.
-- A sealed-test failure may motivate a new protocol version and new disjoint
-  test, but it may not be used to repair the version that produced the failure.
-- The exposed v1 final test is permanently excluded from v2 construction and
-  tuning.
+- 只能依据 development 数据修改 prompt 文本和规则。
+- Validation 标签可用于选择已在 development 数据上固定的 prompt 版本。不得将 validation 错误转化为同一周期的新 prompt 规则。
+- Prompt、模型 digest、解码配置、决策策略和阈值冻结前，不得运行 sealed test。
+- Sealed-test 失败可以促成新 protocol 版本及与原数据不相交的新测试，但不能用于修补产生该失败的版本。
+- 已暴露的 v1 final test 永久排除在 v2 构建与调优之外。
 
-## Sources
+## 来源
 
-### InfoQ China
+### InfoQ 中国
 
-The collector uses published sitemaps and public article pages at a conservative
-rate. An explicit translator field is deterministic translation evidence.
-Original candidates require a Chinese byline, no translation marker, and a
-Chinese reporting, interview, event, or first-party project signal. They still
-require review before becoming original gold.
+采集器以保守频率使用已发布 sitemap 和公开文章页。显式译者字段是确定性翻译证据。原创候选需要中文作者署名、不带翻译标记，并具有中文报道、访谈、活动或第一方项目信号。成为 original gold 前仍须复核。
 
-The v2 collector prioritizes the 2023-01-01 through 2025-06-30 transition
-period, which is excluded from the primary pre/post corpus contrast.
+v2 采集器优先处理 2023-01-01 至 2025-06-30 过渡期，该时期不属于主要前后时间语料对比。
 
-### Machine Heart
+### 机器之心
 
-Historical pages are retrieved from Common Crawl WARC records. The page-level
-article type `翻译` or `编译` is deterministic translation evidence. The
-article type `原创` creates an original candidate only; it is not sufficient
-gold by itself because platform labels can conflict with body-level foreign
-source evidence.
+历史页从 Common Crawl WARC 记录获取。页面级文章类型 `翻译` 或 `编译` 是确定性翻译证据。文章类型 `原创` 只能产生原创候选，本身不足以作为 gold，因为平台标签可能与正文中的外文来源证据冲突。
 
-Current Machine Heart pages remain behind a data-service notice. The collector
-does not bypass it.
+机器之心当前页面仍显示数据服务通知，采集器不会绕过。
 
 ### LCTT
 
-LCTT is the former Linux China translation project. Published Markdown files
-provide translator, reviewer, foreign author, and original URL metadata. The
-repository is Apache-2.0 licensed. Collection is pinned to a Git commit and
-uses only selected raw files rather than cloning the full repository.
+LCTT 是原 Linux 中国翻译项目。已发布 Markdown 文件提供译者、reviewer、外文作者及原文 URL metadata。仓库采用 Apache-2.0 许可证。采集固定到一个 Git commit，只使用选定的 raw 文件，不克隆整个仓库。
 
-LCTT translations are eligible for development only. Validation and sealed
-test are restricted to sources that provide both translation and original
-candidates, preventing a source name from becoming a perfect label proxy.
+LCTT 译文仅可用于 development。Validation 和 sealed test 限于同时提供翻译与原创候选的来源，防止来源名称成为完美的标签代理。
 
-The xitu/gold-miner repository was considered but excluded from body
-acquisition because it has no repository-level license and describes its
-translations as limited to study, research, and exchange.
+曾考虑 xitu/gold-miner 仓库，但它没有仓库级许可证，并说明译文仅限学习、研究和交流，因此未采集其正文。
 
-## Candidate and label tiers
+## 候选与标签层级
 
-| Tier | Meaning | Allowed use |
+| 层级 | 含义 | 允许用途 |
 |---|---|---|
-| Deterministic translation | Explicit translator, translation/compilation article type, or pinned LCTT publication metadata | Development, validation, sealed test |
-| Reviewed original | Reviewer confirms Chinese reporting, interview, first-party practice, or independent synthesis and finds no specific translated foreign work | Development, validation, sealed test |
-| Silver platform original | Platform says `原创`, but no human review exists | Development diagnostics only |
-| Pending review | Candidate signals are present but no decision exists | No model comparison or release claim |
+| 确定性翻译 | 显式译者、翻译／编译文章类型，或固定版本的 LCTT 发布 metadata | Development、validation、sealed test |
+| 已复核原创 | Reviewer 确认属于中文报道、访谈、第一方实践或独立综合，并未发现具体被翻译的外文作品 | Development、validation、sealed test |
+| 平台原创 silver label | 平台标为 `原创`，但没有人工复核 | 仅限 development 诊断 |
+| 待复核 | 有候选信号但尚无决策 | 不得用于模型比较或发布效果声明 |
 
-Model-assisted review is a measurement, not human gold. Its provenance must be
-recorded in the `reviewer` field and reported separately.
+模型辅助复核属于测量，不是 human gold。其来源必须记录在 `reviewer` 字段中，并单独报告。
 
-## Leakage control
+## 泄漏控制
 
-Before admission to a candidate pool, every document is compared against all
-v1 development, validation, exposed-final, pilot, and smoke records by:
+进入候选池之前，每篇文档都与全部 v1 development、validation、已暴露 final、pilot 和 smoke 记录比较：
 
-1. stable document ID;
-2. canonical URL;
-3. exact normalized-body hash;
-4. character-shingle near-duplicate detection.
+1. 稳定文档 ID；
+2. canonical URL；
+3. 规范化正文的精确 hash；
+4. 基于 character shingle 的近重复检测。
 
-Split construction checks document IDs, URLs, and content hashes again. The
-split seed is the protocol version.
+构建 split 时，再检查文档 ID、URL 和内容 hash。Split seed 使用 protocol 版本。
 
-## Current candidate pool
+## 当前候选池
 
-The initial v2 collection produced 440 candidates:
+初始 v2 采集得到 440 个候选：
 
-| Source | Translation | Original pending review | Total |
+| 来源 | 翻译 | 原创待复核 | 总数 |
 |---|---:|---:|---:|
-| InfoQ China | 80 | 100 | 180 |
-| Machine Heart | 40 | 120 | 160 |
+| InfoQ 中国 | 80 | 100 | 180 |
+| 机器之心 | 40 | 120 | 160 |
 | LCTT | 100 | 0 | 100 |
-| Total | 220 | 220 | 440 |
+| 合计 | 220 | 220 | 440 |
 
-The generated review queue is not a completed gold dataset. The current
-160-document silver development artifact is explicitly diagnostic and must not
-be reported as validation or final evidence.
+生成的复核队列不是已经完成的 gold 数据集。当前含 160 篇文档的 silver development 产物明确用于诊断，不得作为 validation 或最终证据报告。
 
-## Commands
+## 命令
 
-Collect candidates:
+采集候选：
 
 ```powershell
 .\.venv\Scripts\python.exe translation_benchmark_v2.py collect `
@@ -114,171 +83,101 @@ Collect candidates:
   --lctt-translations 100
 ```
 
-Generate the diagnostic silver development set:
+生成诊断用 silver development 集：
 
 ```powershell
 .\.venv\Scripts\python.exe translation_benchmark_v2.py bootstrap-development
 ```
 
-### Local human-review workspace
+### 本地人工复核工作区
 
-Use the local review launcher instead of reading embedded JSONL bodies or
-editing the candidate queue directly:
+使用本地复核启动器，不直接阅读嵌在 JSONL 中的正文或编辑候选队列：
 
 ```powershell
 .\scripts\run-translation-review.ps1 -Reviewer <stable-reviewer-id>
 ```
 
-The command performs the following reproducible steps:
+命令执行以下可复现步骤：
 
-1. selects only `original_pending_review` records;
-2. writes each source body unchanged to
-   `data/local/translation_v2_review/texts/<source>/<doc_id>.txt`;
-3. records the input hashes and review configuration in a workspace manifest;
-4. provisions Label Studio Community Edition 1.23.0 in an isolated local
-   environment;
-5. creates the project and imports all pending records once; and
-6. opens the browser-based reading and classification interface.
+1. 只选择 `original_pending_review` 记录；
+2. 将每篇来源正文原样写入 `data/local/translation_v2_review/texts/<source>/<doc_id>.txt`；
+3. 在工作区 manifest 中记录输入 hash 和复核配置；
+4. 在隔离的本地环境配置 Label Studio Community Edition 1.23.0；
+5. 创建项目，并一次性导入全部待复核记录；
+6. 打开基于浏览器的阅读与分类界面。
 
-The interface shows the full body, title, source, publication date, document
-ID, candidate evidence, and source link together. A reviewer selects either
-`Reviewed original` or `Exclude or uncertain`, then supplies a structured
-rationale and optional notes. Keyboard shortcuts `1` through `9` select the
-decision and provenance rationale. Shortcut `0` records a separate exclusion
-for low research value or primarily promotional material; it is not treated as
-translation evidence. Uncertainty must use the exclusion path.
+界面同时显示完整正文、标题、来源、发布日期、文档 ID、候选证据及来源链接。Reviewer 选择 `Reviewed original` 或 `Exclude or uncertain`，再提供结构化理由和可选说明。快捷键 `1` 至 `9` 用于选择决策与来源理由。快捷键 `0` 单独记录因研究价值低或以宣传为主而排除的情况，不作为翻译证据。不确定时必须走排除路径。
 
-Label Studio Community Edition is Apache-2.0 software. The isolated Windows
-runtime currently uses approximately 700 MiB. The service binds only to
-`127.0.0.1`; credentials, database, logs, raw text, task JSON, and a complete
-dependency snapshot remain under the ignored `data/local/` workspace. If the
-runtime or service is unavailable, review stops and no automatic decision is
-created. The original candidate JSONL and frozen labels are never rewritten.
-Analytics, frontend and backend Sentry, version checks, and online feature
-flags are disabled so source text and review decisions remain local.
-The loopback-only service forces a persistent 14-day login cookie because
-embedded browser sessions may discard non-persistent cookies while a labeling
-page remains open, causing annotation submissions to return HTTP 401.
+Label Studio Community Edition 采用 Apache-2.0。隔离的 Windows runtime 当前约占 700 MiB。服务仅绑定 `127.0.0.1`；凭据、数据库、日志、原文、任务 JSON 和完整依赖快照留在被 Git 忽略的 `data/local/` 工作区。Runtime 或服务不可用时，复核停止，不产生自动决策。原始候选 JSONL 和冻结标签绝不改写。Analytics、前后端 Sentry、版本检查和在线 feature flag 均关闭，确保原文与复核决策留在本地。
 
-### Model-assisted triage
+仅限 loopback 的服务强制使用有效期 14 天的持久登录 cookie，因为内嵌浏览器可能在标注页仍打开时丢弃非持久 cookie，导致提交标注返回 HTTP 401。
 
-Protocol `translation-review-triage-1.1` reduces repetitive human review
-without converting model output into human gold. First export the currently
-submitted annotations, then run and publish triage:
+### 模型辅助分流
+
+Protocol `translation-review-triage-1.1` 减少重复人工复核，不把模型输出转为 human gold。先导出当前已提交标注，再运行并发布分流结果：
 
 ```powershell
 .\scripts\export-translation-review.ps1 -Reviewer <stable-reviewer-id>
 .\scripts\run-dgx-qwen38-review-triage.ps1
 ```
 
-The current triage configuration is deterministic and cacheable:
+当前分流配置具有确定性并可缓存：
 
-- model: `Qwen3.8-27B` in BF16 on the DGX Spark GB10;
-- serving runtime: NVIDIA vLLM 26.04 with batch/concurrency `16`;
-- model configuration SHA-256:
-  `191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab`;
-- temperature: `0`;
-- seed: `42`;
-- foreign-source safeguard:
-  `translation-review-triage-foreign-source-safeguard-v2`; and
-- normal/retry output budgets: `320`/`512` tokens, with a second parse failure
-  mapped to `uncertain/low`.
+- 模型：DGX Spark GB10 上的 BF16 `Qwen3.8-27B`；
+- Serving runtime：NVIDIA vLLM 26.04，batch／并发为 `16`；
+- 模型配置 SHA-256：`191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab`；
+- temperature：`0`；
+- seed：`42`；
+- 外文来源 safeguard：`translation-review-triage-foreign-source-safeguard-v2`；
+- 正常／重试输出预算：`320`/`512` tokens，第二次解析失败映射为 `uncertain/low`。
 
-A submitted human decision always takes precedence. Remaining records are
-operationally routed when the foreign-source safeguard produces a
-high-confidence source-language judgment. The current routing-only run does not
-execute the older primary and verifier profiles. The safeguard explicitly prevents domestic
-Chinese interviews, speeches, conferences, first-party practice, and Chinese
-research interpretation from being excluded merely because they use the
-Chinese marker `整理` (edited/compiled) or contain English paper links. It only
-confirms an exclusion when the evidence establishes a specific non-Chinese
-source work. Any disagreement or weaker result remains `uncertain` and is
-copied into a separate Label Studio project for human review.
+已提交的人工决策始终优先。对于剩余记录，当外文来源 safeguard 给出高置信度源语言判断时，才执行操作性分流。当前仅分流运行不执行旧版 primary 和 verifier profile。Safeguard 明确防止国内中文访谈、演讲、会议、第一方实践和中文研究解读，仅因带有 `整理` 标记或英文论文链接而被排除。只有证据确立了某个具体非中文来源作品时，才确认排除。任何分歧或较弱结果继续标为 `uncertain`，复制到独立 Label Studio 项目供人工复核。
 
-The current run preserved 11 submitted human originals and 3 human exclusions,
-routed 175 documents as model-assisted originals, routed 31 as model-assisted exclusions,
-and left no unresolved records. The earlier 83-document review project remains
-available as an optional human spot-check surface and contains 5 preserved
-submissions. These counts are operational triage results, not
-benchmark accuracy evidence. The full manifest, caches, evidence, and
-per-status artifacts are under `data/local/translation_v2_review/triage_qwen38/`.
+当前运行保留了 11 篇人工确认原创与 3 篇人工排除，175 篇分流为模型辅助原创，31 篇分流为模型辅助排除，没有未解决记录。此前含 83 篇文档的复核项目仍可用于可选人工抽查，其中保留 5 份已提交标注。这些计数是操作性分流结果，不是 benchmark 准确性证据。完整 manifest、缓存、证据和按状态划分的产物位于 `data/local/translation_v2_review/triage_qwen38/`。
 
-Research value is a separate measurement under protocol
-`research-value-triage-1.0`. Two Qwen3.8-27B BF16 profiles,
-`research-value-primary-v3` and `research-value-verifier-v3`, must agree at high
-confidence. Of 186 provenance-eligible documents, 110 were routed as
-substantive, 51 as low value or promotional, and 25 remained uncertain. The 25
-uncertain documents are in Label Studio project 3 with a dedicated quality
-interface. Human review of that project is complete: 9 documents were kept and
-16 were excluded for low research value. Export its submitted decisions with:
+研究价值在独立 protocol `research-value-triage-1.0` 下测量。两个 Qwen3.8-27B BF16 profile——`research-value-primary-v3` 和 `research-value-verifier-v3`——必须在高置信度下达成一致。186 篇来源合格文档中，110 篇分流为内容充实，51 篇为价值低或宣传性内容，25 篇保持不确定。25 篇不确定文档位于 Label Studio 项目 3，并有专门的质量界面。该项目人工复核已完成：保留 9 篇，因研究价值低排除 16 篇。使用以下命令导出其已提交决策：
 
 ```powershell
 .\scripts\export-research-value-review.ps1 -Reviewer <stable-reviewer-id>
 ```
 
-The DGX runtime loaded approximately 50.22 GiB of model memory. The NVIDIA vLLM
-container is governed by NVIDIA's software license terms; model redistribution
-must be checked against the model card. If the remote service, structured
-output, or connection fails, caches preserve completed measurements and the
-record remains uncertain rather than being silently admitted.
+DGX runtime 加载模型约占 50.22 GiB 内存。NVIDIA vLLM 容器受 NVIDIA 软件许可条款约束；模型再分发必须核查 model card。远程服务、结构化输出或连接失败时，缓存保留已完成的测量，该记录继续保持不确定，不会静默准入。
 
-### Transition-period reader observation
+### 过渡期读者观察
 
-A reviewer reported strong machine-like stylistic patterns in the July 2023
-article titled `安卓手机上跑15亿参数大模型，12秒不到就推理完了`, while many other
-2023–2024 articles retained conventional editorial style. This is recorded as
-a diagnostic reader-perception observation, not an authorship label.
+一位 reviewer 报告，2023 年 7 月文章 `安卓手机上跑15亿参数大模型，12秒不到就推理完了` 存在强烈机械化风格，而其他许多 2023–2024 年文章仍保持常规编辑风格。这作为读者感知的诊断观察记录，不作为作者身份标签。
 
-The observation reinforces the frozen cohort policy: material published from
-2023-01-01 through 2025-06-30 is heterogeneous transition-period evidence and
-is excluded from the primary temporal contrast. It may support exploratory
-pattern discovery and evaluation design, but it must not be used to claim that
-an individual article was AI-authored. Pre-2023 and post-2025-06 cohorts measure
-changes in stylistic-pattern prevalence; they do not prove individual
-authorship.
+这项观察支持既定的冻结分组策略：2023-01-01 至 2025-06-30 的材料是异质的过渡期证据，不纳入主要时间对比。它们可用于探索性模式发现与评估设计，但不得据此声称单篇文章由 AI 撰写。2023 年前与 2025 年 6 月之后两组测量风格模式 prevalence 的变化，不证明个体作者身份。
 
-After reviewing the uncertain project, export and merge only the submitted
-human decisions from both Label Studio projects:
+复核不确定项目后，仅导出并合并两个 Label Studio 项目中已提交的人工决策：
 
 ```powershell
 .\scripts\export-translation-triage-review.ps1 -Reviewer <stable-reviewer-id>
 ```
 
-The merged CSV contains no model-assisted decisions. The interface also offers
-`Low research value or promotional material` as a separate exclusion rationale;
-it records a benchmark-quality exclusion and is not translation evidence.
+合并 CSV 不含模型辅助决策。界面还提供 `Low research value or promotional material` 作为独立排除理由，记录 benchmark 质量排除，不作为翻译证据。
 
-Export current decisions in the benchmark CSV schema:
+按 benchmark CSV schema 导出当前决策：
 
 ```powershell
 .\scripts\export-translation-review.ps1 -Reviewer <stable-reviewer-id>
 ```
 
-The export contains `review_include`, `review_gold_label`, `reviewer`,
-`reviewed_at`, and `review_notes`. Unreviewed rows remain blank and are ignored
-by finalization. Stop the service without deleting review data with:
+导出包含 `review_include`、`review_gold_label`、`reviewer`、`reviewed_at` 和 `review_notes`。未复核行保持空白，finalization 时忽略。使用以下命令停止服务，同时保留复核数据：
 
 ```powershell
 .\scripts\stop-translation-review.ps1
 ```
 
-Finalization fails closed when reviewed originals or balanced source cells are
-insufficient:
+已复核原创数量或平衡后的来源单元不足时，finalization 采用 fail-closed：
 
 ```powershell
 .\.venv\Scripts\python.exe translation_benchmark_v2.py finalize `
   --decisions data\local\translation_v2_review\review_decisions.csv
 ```
 
-Default finalized sizes are 160 development documents, 80 validation
-documents, and 100 sealed-test documents, balanced by label. Finalization only
-creates artifacts and hashes; it does not run the sealed test.
+默认定稿规模为 160 篇 development、80 篇 validation 和 100 篇 sealed-test 文档，各自按标签平衡。Finalization 只生成产物和 hash，不运行 sealed test。
 
-## Diagnostic model result
+## 模型诊断结果
 
-Qwen3.8-27B BF16 was run only on the silver development artifact. After
-deterministic body-marker cleanup, the current v1 prompt admitted 76 of 80
-silver originals and zero of 80 deterministic translations. Review showed that
-the four rejected `原创` pages were themselves foreign-source translations or
-compilations, so this result does not justify relaxing the prompt. The labels
-must be reviewed before prompt optimization resumes.
+Qwen3.8-27B BF16 仅在 silver development 产物上运行。经过确定性正文标记清理后，当前 v1 prompt 接受了 80 篇 silver 原创中的 76 篇，80 篇确定性译文全部被拒绝。复核发现，被拒绝的四个 `原创` 页面本身就是外文来源的翻译或编译，因此该结果不足以支持放宽 prompt。恢复 prompt 优化前，必须先复核标签。

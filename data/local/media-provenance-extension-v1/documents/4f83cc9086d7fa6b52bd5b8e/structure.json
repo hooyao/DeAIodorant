@@ -1,0 +1,131 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/af/af2fbb4bad4077a92f6b210a3a9bcfe1.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 13,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/03/03d020cdc52685472dd8be99a98581f7.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 23,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/8f/8f55080f8f800efc0e828099bad165b4.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 35,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "Netflix推出Upper",
+      "href": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d"
+    },
+    {
+      "text": "内容工程",
+      "href": "https://netflixtechblog.com/netflix-studio-engineering-overview-ed60afcfa0ce"
+    },
+    {
+      "text": "W3C标准",
+      "href": "https://www.w3.org/standards/"
+    },
+    {
+      "text": "RDF",
+      "href": "https://www.w3.org/RDF/"
+    },
+    {
+      "text": "SHACL",
+      "href": "https://www.w3.org/TR/shacl/"
+    },
+    {
+      "text": "单调扩展",
+      "href": "https://tomgruber.org/writing/onto-design.pdf#page=4"
+    },
+    {
+      "text": "Netflix技术博客",
+      "href": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d"
+    },
+    {
+      "text": "Alexandre Bertails",
+      "href": "https://www.linkedin.com/in/bertails/"
+    },
+    {
+      "text": "知识图谱",
+      "href": "https://en.wikipedia.org/wiki/Knowledge_graph"
+    },
+    {
+      "text": "Netflix技术博客",
+      "href": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d"
+    },
+    {
+      "text": "GraphQL",
+      "href": "https://graphql.org/"
+    },
+    {
+      "text": "Avro",
+      "href": "https://avro.apache.org/"
+    },
+    {
+      "text": "Apache Iceberg",
+      "href": "https://iceberg.apache.org/"
+    },
+    {
+      "text": "SQL",
+      "href": "https://en.wikipedia.org/wiki/SQL"
+    },
+    {
+      "text": "Netflix技术博客",
+      "href": "https://netflixtechblog.com/uda-unified-data-architecture-6a6aee261d8d"
+    },
+    {
+      "text": "Protobuf",
+      "href": "https://en.wikipedia.org/wiki/Protocol_Buffers"
+    },
+    {
+      "text": "gRPC",
+      "href": "https://en.wikipedia.org/wiki/GRPC"
+    },
+    {
+      "text": "Graph Search",
+      "href": "https://en.wikipedia.org/wiki/Graph_traversal"
+    },
+    {
+      "text": "https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/",
+      "href": "https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 27,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 3,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 19
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/4f83cc9086d7fa6b52bd5b8e.html",
+  "raw_html_sha256": "f5b35d61b40b41fd1526b0278fddd24d001b9b2bef98e9f3f03fe751bf27cefe"
+}

@@ -1,0 +1,29 @@
+{
+  "human_answers": 0,
+  "packet_sha256": "65c497b0455a620bbb44cc0aafc6f77e647bfa628bd327dc1f7a5f0cd581a815",
+  "pairs": [
+    {
+      "a_sha256": "8513d471d0a942bd8396e2ea7761979cae9905e3b873ade0df817774d7e9a96c",
+      "b_sha256": "5329f9d75957ad75555f7fa15afb27b28e6a6a1f233462e3b46799bc8d5394f2",
+      "original_side": "B",
+      "pair_id": 1,
+      "review_case_id": "review-18"
+    },
+    {
+      "a_sha256": "3c6a8a295317eec8d2175f08c75063a4968c4ab4a0366e647fc394080e53eb52",
+      "b_sha256": "343e106d0153f38819bf10c02f40725371a72e99a11da08fffc519828cff2658",
+      "original_side": "A",
+      "pair_id": 2,
+      "review_case_id": "review-22"
+    },
+    {
+      "a_sha256": "df33abacccd00c00ee90d8350544fa81c7d74bfed6fa23d66d20eb4764e92390",
+      "b_sha256": "3c1149ed02686aa4d7512099ac2475a279f29fae30a3b06d043afebe971e4d69",
+      "original_side": "B",
+      "pair_id": 3,
+      "review_case_id": "review-01"
+    }
+  ],
+  "protocol_version": "compact-refiner-reader-preview-1.0",
+  "selection": "Two model-reviewed clear proposals and one smaller edit, selected for qualitative discussion after candidate review; explicitly not a confirmatory sample."
+}

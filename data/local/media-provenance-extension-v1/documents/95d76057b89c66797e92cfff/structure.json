@@ -1,0 +1,23 @@
+{
+  "media": [],
+  "links": [],
+  "figures": [],
+  "element_counts": {
+    "p": 0,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 0
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/95d76057b89c66797e92cfff.html",
+  "raw_html_sha256": "8b51e2d61b531cdd3c87ec5f63df9f332a539e94e46f74c7e003fab8d27bfd10"
+}

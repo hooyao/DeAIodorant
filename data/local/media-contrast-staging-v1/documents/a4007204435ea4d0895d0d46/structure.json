@@ -1,0 +1,47 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/36/3625913187f520bdbc21798ff22d17aa.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 72,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "申请",
+      "href": "https://www.surveymonkey.com/r/dsh2026"
+    },
+    {
+      "text": "https://medium.com/snowflake/adopting-the-mindset-of-a-data-superhero-64b407bd51f6",
+      "href": "https://medium.com/snowflake/adopting-the-mindset-of-a-data-superhero-64b407bd51f6"
+    },
+    {
+      "text": "Ascent - Snowflake Platform Training - China",
+      "href": "https://www.snowflake.com/events/ascent-snowflake-platform-training-china-cn/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 82,
+    "h1": 0,
+    "h2": 0,
+    "h3": 5,
+    "ul": 1,
+    "ol": 0,
+    "li": 5,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 3
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/a4007204435ea4d0895d0d46.html",
+  "raw_html_sha256": "c2b2e04c10707641da5c9fb7251f6f0626ac6a9e73715ae60a3a88b32d2b973f"
+}

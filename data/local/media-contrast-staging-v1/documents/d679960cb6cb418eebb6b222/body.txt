@@ -1,0 +1,302 @@
+背景
+伴鱼绘本发布至今已有 5 年，作为一款主要面向儿童的 App，其包含大量游戏化场景和多媒体资源来保证内容的趣味性、丰富性。我们的产品面向海内外用户，统计发现 iOS 设备中约 3 成是已发布 5 年以上的旧设备。旧的设备意味着 CPU 运算能力差、内存小，同时国外网络环境相较于国内要差。所以在保证产品趣味性和丰富性的同时，我们要让程序维持优秀的用户体验，在各种不同性能的设备上流畅运行。
+所以我们想到根据不同的设备情况，在不影响业务的前提下，对任务的执行做针对性控制。即高优的任务优先保证，低优的任务可以延迟或者不执行。
+综上所述，我们整理了技术需求如下：
+能够识别不同的设备性能情况
+能够支持非业务性功能的分级控制
+侵入性低，无需对现有众多组件进行代码改动
+初探
+需求确定之后，最开始想到根据机型生成功能配置表：将 App 内各个功能配置按照机型进行罗列，高配置设备优先保证体验，低配置设备优先保证流畅性。App 在运行时，按照配置表设定进行功能设置。但是此种形式尝试之后有一定的局限性：
+配置表中的功能开关无法精准判定，各功能启动逻辑、性能消耗各异，开关的设定最终只能以各项累加值不超性能上限设定。
+确定开关设定的工作量大，每个机型每个开关需要多次测试才能最终确定。
+无法根据实时情况动态控制开关，功能的开闭完全由配置表决定，当设备实际性能足以支撑时也无法动态开启。
+所以使用配置表来控制各个功能的开关无法很好满足我们的需求。
+分级策略
+在参考了前端、服务端的
+降级
+思想后，我们想既然都是为了应对资源稀缺无法满足用户访问的问题，那能不能在客户端也制定一个降级的方案，来满足我们的需求？
+所以我们又补充了需求：
+能够收集设备的性能（多维度：CPU、电量、机型等策略）
+能够根据设定值对性能现状分级
+性能监控可以方便拓展
+说整就整，由此我们也制定出来一套客户端的动态性能分级策略。它会对设备的主要性能进行监控，当任意一个性能维度的变化达到了设定的阈值，就会触发分级预警，上层再根据预警做出对应的处理，以实现动态性能分级策略的效果。
+概述
+其大致的工作流程图如下：
+工作流程图
+在分级策略开启后，监听设备性能的关键信息，同时和设定好的设备性能分级指标进行对比，当判断级别发生变化后，发出分级预警。
+在初期，监控主要分为电量、CPU、内存、网络这几个方面。并对其进行了量化分级，等级高则表明当前设备剩余性能充足，等级低则剩余性能很少。
+监控信息来源及分级标准
+电量 :
+UIDevice 提供有 API 和通知，可以拿到实时的设备电量和电量变化。对于电量监控主要是为了识别出低电量状态，并减缓设备当前的耗电速度，降低用户此阶段的电量焦虑。结合
+资料
+和用户使用场景对电量的分级有高(剩余电量 > 10%)、低(剩余电量 ≤ 10%)两种。
+CPU :
+可以通过内核 < mach> 库计算得到数据。我们认为当有运算需求时，对 CPU 高占用是合理的，以尽快得出结果、缩减运算时间，所以多数情况下并没有对 CPU 高占用做限制。对 CPU 的监控只发生在低电量状态下，当 CPU 使用在一段时间内均值超出 80%，便会认为是高能耗，建议进行降级处理。
+内存 :
+同样是通过内核 < mach> 库得到的数据。由于通过实际测试发现，iOS 对 App 的最大内存占用限制在设备总内存的 50% 左右，当使用内存超限时可能导致爆内存崩溃。为了预防这种崩溃，以 App 最大使用设备 50% 内存为限，对内存性能设定了三级：低( App 占用内存 > 45%，濒临爆内存)、中(25% < 内存占用 < 45%，提前预防)、高(< 25%，余量充足)。当中等级时建议部分任务做内存优化，当低等级则建议全部任务调整内存占用。
+网络 :
+系统有网络消耗相关的 API，但只能获取当前消耗的流量，通过前后两个时间点的已用流量差值计算得出的结果，只能算作流量消耗速度。而我们监控网速是想知道当前网络情况所能支持的最大带宽是多少，进而能够使后续的网络相关任务做出对应的判断。所以流量测速不满足需求，由此我们在每次监控循环周期内（秒级别，服务端下发控制），增加了额外的小流量下载任务，来进行最大带宽测量。经测试发现，当带宽高于 100kb/s 时，App 能较为流畅的运行、展示效果；而带宽低于 10kb/s 时，App 只能满足基本的 API 请求，多媒体的加载耗时较长。故对网络也设定了三个级别：高（带宽 > 100kb/s）、中（10kb/s < 带宽 < 100kb/s）、低（带宽 < 10kb/s）
+以上所有分级阈值均由服务端下发控制，实现了动态调整。
+等级判断
+等级判断的具体代码如下：
+- (
+void
+)judgeDeviceLevelChange {
+LevelChangeModel *curStateModel = LevelChangeModel.
+new
+;
+// 网络情况处理
+curStateModel.networkInfo = [self dealWithNetwork];
+// 电量情况处理
+curStateModel.batteryInfo = [self dealWithBattery];
+// 内存情况处理
+curStateModel.memoryInfo = [self dealWithMemory];
+// 汇总
+[
+self.queue push:curStateModel
+];
+LevelChangeReason reason = 0;
+if
+(curStateModel.memoryInfo.level != self.preModel.memoryInfo.level) {
+reason = reason | kLevelChangeReasonMemory;
+}
+if
+(curStateModel.batteryInfo.level != self.preModel.batteryInfo.level) {
+reason = reason | kLevelChangeReasonBattery;
+}
+if
+(curStateModel.networkInfo.level != self.preModel.networkInfo.level) {
+reason = reason | kLevelChangeReasonNetwork;
+}
+curStateModel.changeReason = reason;
+// 发送通知
+[
+self postNotiWithModel:curStateModel
+];
+self.preModel = curStateModel;
+}
+复制代码
+在拿到各个 monitor 的数据之后，将本次性能等级与上次性能等级逐一对比按位运算，最终得出本次性能变动综合原因。与各项性能详细数据组合后，对外发送通知。
+分级响应
+识别到性能等级变化后，用通知进行信息传递，这样避免了和其他各个组件之间的强耦合，有分级需求的组件仅需监听通知即可，应用十分灵活。具体的功能控制分布在各个组件中，对应的开发人员更清楚各自的细节，在进行不同级别调整的时候可以做更加细致的处理。
+通知的具体内容如下：
+{
+"changeReason"
+:
+1
+,
+"networkInfo"
+: {
+"networkValue"
+:
+150
+,
+// 当前网速 单位： kb/s
+"level"
+:
+3
+},
+"memoryInfo"
+: {
+"memoryValue"
+:
+200
+,
+// 当前使用量 单位： mb
+"level"
+:
+2
+},
+"batteryInfo"
+: {
+"batteryValue"
+:
+90
+,
+// 当前余量 单位： %
+"level"
+:
+2
+}
+}
+复制代码
+性能损失
+由于涉及到监控，所以会对设备性能有一定消耗，测试后设备的实际性能情况如下：
+未启用动态性能分级
+启用动态性能分级
+可见，性能分级策略对设备性能的影响有限，不会对原有的业务运行造成性能威胁。
+策略流程
+策略流程图
+从图中可以看到，主要对电量、内存、网络三方面进行并行监控。以电量为例，其目的是减缓设备在低电量情况下的电量消耗速度，所以会先判断是否为低于 10% 电量的非充电状态，符合条件则会进入下一步 CPU 状态判断。因为 CPU 占用率频繁变更，需要统计一段时间内的数据，所以会对其进行多次数据记录（连续 5 次高于 80% ）再确定电量等级。得到结果后，会与上一次的测算记录对比，并将对比结果与本次数据记录。
+内存、网络的等级判定较为简单，获取到性能数据后根据分级阈值就可得到性能等级。这两项比电量的等级区分多了一个中等级，业务可以根据需要做更细致的处理。
+各个单项的数据拿到之后，由管理器统一汇总，会将各项的等级与上一次结果进行对比判断，如果有变动项就会对外发出性能变更预警。
+结构设计
+垂直分层和水平模块
+如图所示分 3 层：1、组件提供性能监控、定级、等级信息分发、分级阈值的更新、配置; 2、业务组件（如需应用分级 可增加通知监听）; 3、壳工程负责分级功能的初始化
+LevelStrategyManager:
+对整个分级策略的主要逻辑控制，包含分级策略的开关，各性能分级阈值的动态更新(循环周期、性能指标阈值，支持远端下发)等。
+各个 Monitor:
+对设备的信息(电量、内存等)进行监控，遵守 LSMonitorProtocol 协议
+LSMonitorProtocol:
+性能指标协议。当分级策略需要拓展监控更多方面的数据时，仅需再增加遵从此协议的 monitor 和配置即可。
+LevelChangeLogic:
+监控到的分级数据汇总到这里并进行逻辑判断，得出结果并交付 manager
+LevelStrategyTool:
+工具类，向 monitor 提供额外的便利方法。
+基于上述的工作方式和结构设计，可以看到分级策略能够解决我们之前的顾虑。不需要前期大量统计各功能的消耗；能够根据设备的实时情况给出对应的分级；升降级接入灵活，仅需注册通知即可。
+对外接口
+LevelStrategyManager 是对外的统一管理类，其头文件如下。可见 manager 的头文件十分简单，使用方只需要在合适的地方开启，如有需要可以对级别标准进行更新。组件监听指定名称的通知就能收到性能级别变动的消息。
+FOUNDATION_EXPORT
+NSString
+*
+const
+kPerformanceLevelChangedNoti;
+// 性能等级变化通知
+FOUNDATION_EXPORT
+NSString
+*
+const
+kFatalLevelChangedNoti;
+// 最差性能通知
+@interface
+LevelStrategyManager
+:
+NSObject
++ (
+instancetype
+)shareInstance;
+// 更新级别标准
+- (
+void
+)updateWithDic:(
+NSDictionary
+*)configDic;
+复制代码
+不能光说不练，我们来看一下分级策略的具体应用效果：
+分级策略在客户端图片组件库中的应用
+介绍
+图片组件基于服务端 OSS 服务，结合客户端功能分级策略动态调整图片 OSS 参数，并且使用链式语法。减少了大量的冗余代码，优化 App 性能和提高用户体验。
+如何应用分级策略？
+在开发中将图片长宽按照设计图设置：pt size*scale，scale 默认按照设备实际值进行设置。但当网络情况较差时，过高的 scale 会导致下载的图片体积偏大，设备在此种情况下无法在短时间将图片下载到本地，会给用户造成较长的等待时间，影响用户的体验。同时，高 scale 也会导致图片处理时大内存和高 CPU 占用。所以需要依据性能等级实时调整，故在图片库中添加了对分级策略的通知监听。当收到等级变化的通知时，图片库会根据通知内容对 scale 动态调整，保证设备可以流畅展示图片。
+以下是运用了动态分级策略前后，在首页多图片加载场景下加载 2000 张图片内存占用的对比：(注：
+2x、3x是屏幕显示模式
+，图片展示尺寸以点为单位设置，倍数越大，一个点代表的像素越多，显示的图片越高清)
+用户真实使用场景
+测试结果根据用户的实际使用过程，在主要页面进行浏览一定时间后得出。可见动态分级策略可以为我们带来较大的内存收益。而当完全模拟为低性能等级时，收益更大：
+用户手机性能不好场景（完全降级）
+目前，图片库根据分级策略平均每日触发约 20 万次的升降级，保证用户在设备性能差的时候尽快地加载图片，在性能好时又能看到高质量图片。
+策略示例
+//ImageMakerDeviceManager.m
+// 通知注册
+[[
+NSNotificationCenter
+defaultCenter] addObserver:
+self
+selector:
+@selector(performanceChange:)
+name:kPerformanceLevelChangedNoti
+object
+:nil];
+// 通知响应
+- (
+void
+)performanceChange:(
+NSNotification
+*)noti {
+LevelModel *model = noti.
+object
+;
+if (!model) {
+return
+;
+}
+// 网络低性能
+if (model.networkInfo.level == kNetworkLevelPoor) {
+self.screenScale = [self scale] -
+1
+;
+return
+;
+}
+// 内存低性能
+if (model.memoryInfo.level == kMemoryLevelPoor) {
+self.screenScale = [self scale] -
+1
+;
+return
+;
+}
+// 电量低性能
+if (model.batteryInfo.level == kBatteryLevelPoor) {
+self.screenScale = [self scale] -
+1
+;
+return
+;
+}
+self.screenScale = [self scale];
+}
+复制代码
+业务层使用图片加载方式较为简单方便，如下：
+//ImageMaker.m
+@interface NSString (
+ImageMaker
+)
+/**
+@brief
+处理图片url回调
+@
+return
+返回新的处理url结果
+*/
+- (
+NSString
+*)imageMaker:(
+void
+(^)(ImageMaker *maker))block;
+@end
+//Demo.m
+NSString
+*oriImgUrl =
+@"https://xxx.xxipalfish.com/kid/img/logo.ad4731cb.png"
+;
+NSString
+*imgUrl = [oriImgUrl imageMaker:^(ImageMaker * _Nonnull maker) {
+maker.resize.w(
+168
+).h(
+125
+).mode(ImageResizeFill).rstUrl();
+//Resize(图片缩放)
+maker.corners.radius(
+12
+).rstUrl();
+// Corner(圆角矩形)
+maker.crop.x(
+100
+).y(
+90
+).rstUrl();
+// Crop(自定义裁剪)
+maker.circle.radii(
+20
+).rstUrl();
+// Circle(内切圆)
+}];
+复制代码
+总结与展望
+动态性能分级策略在绘本 App 上已经应用，每天已有 60 万次的性能等级调整，在图片库中的应用使得我们在低端机上的表现有了初步的改善。除了上述的应用之外，我们也在设备图片库的缓存清理、空间存储上应用了此策略，将 App 的性能指标做了进一步优化。但伴鱼拥有庞大数量的组件库，性能分级策略的应用还需要做进一步推广，包括像日志、音视频、H5 内容等。分级策略本身也有优化空间，我们也将持续打磨做到更高效。
+参考文献
+架构之高并发：降级和熔断
+Image Size and Resolution
+京喜APP - 图片库优化
+作者介绍
+赵杰，伴鱼 iOS 工程师，负责伴鱼绘本客户端研发，功能降级框架等工作
+岑志军，伴鱼 iOS 工程师，负责伴鱼绘本客户端研发，图片性能优化等工作
+吕洪阳，伴鱼 iOS 工程师，伴鱼绘本 iOS 端负责人
+作者：赵杰、岑志军、吕洪阳
+原文：
+https://tech.ipalfish.com/blog/2021/08/30/reading_ios_levelStrategy/
+原文：动态性能分级策略在客户端上的实践
+来源：伴鱼技术博客
+转载：著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

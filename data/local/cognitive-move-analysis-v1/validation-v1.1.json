@@ -1,0 +1,18 @@
+{
+  "version": "cognitive-move-linkage-validation-1.1",
+  "units": 6,
+  "evidence_spans": 80,
+  "unit_file_sha256": "2045ab168946ff08b96e7fe524ddccf683fc007b465731be928bbd18059140f2",
+  "view_sha256": {
+    "smzdm_analysis_body": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "baidu_body": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+    "smzdm_title": "eacd71671a24b923092eb922d2e5642b75367137c4fb33fbec02a4dace3726cc"
+  },
+  "protocol_sha256": "e217e54711899de28803e278f498c7d463c084e06370d0dbf693b459f9599ef0",
+  "validator_sha256": "aa219b7a7ae454585f00731c016a639185ae7013e3d404e819fa6c97c8f5981b",
+  "coverage_and_source_linkage": "passed",
+  "semantic_validity": "not_established_by_this_check",
+  "human_unit_labels": false,
+  "quality_score": null,
+  "command": "python data/local/cognitive-move-analysis-v1/validate_units_v1_1.py"
+}

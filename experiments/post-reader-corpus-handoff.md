@@ -1,17 +1,12 @@
-# Fresh Post-Period Reader Corpus Handoff
+# 新后时期读者语料交接
 
-## Status
+## 状态
 
-Protocol `post-reader-corpus-handoff-1.1` is frozen before another reader task
-is generated. It defines the minimum input for development screening; it does
-not authorize corpus acquisition in this workspace and does not make a corpus
-final or representative.
+协议 `post-reader-corpus-handoff-1.1` 在生成下一读者任务前冻结。它定义开发筛查的最低输入，不授权在本工作区采集语料，也不使语料成为最终或有代表性的集合。
 
-The immediate purpose is to prevent pre-2025-07 and transition material from
-being substituted for prose published on or after 2025-07-01. The validator
-must pass before any new Label Studio project is created.
+直接目的是避免用 2025-07 之前或过渡期材料替代 2025-07-01 当日及之后的文章。新建 Label Studio 项目之前，验证器必须通过。
 
-## Required directory layout
+## 必需目录布局
 
 ~~~text
 <handoff-root>/
@@ -21,12 +16,11 @@ must pass before any new Label Studio project is created.
     <doc_id>.txt
 ~~~
 
-Paths in `documents.jsonl` must be relative to the handoff root. The validator
-never modifies this directory.
+`documents.jsonl` 的路径必须相对交接根目录。验证器不修改该目录。
 
 ## Manifest schema
 
-`manifest.json` must contain:
+`manifest.json` 必须包含：
 
 ~~~json
 {
@@ -40,112 +34,74 @@ never modifies this directory.
 }
 ~~~
 
-The index hash covers the exact bytes of `documents.jsonl`.
+索引 hash 覆盖 `documents.jsonl` 的准确字节。
 
-## Document schema
+## 文档 schema
 
-Each JSON Lines record must contain:
+每条 JSON Lines 记录必须包含：
 
-- `doc_id`: 24 lowercase hexadecimal characters;
-- `source`, `title`, `url`, `published_at`, and `collected_at`;
-- relative `body_path`, `content_hash`, `cjk_chars`, `text_chars`, and
-  `line_count`;
-- `quality_pass`, `is_translation`, and `translation_evidence`;
-- `provenance_status`, `provenance_basis`, and `value_status`;
-- `visibility_status` and structured `visibility_evidence`;
-- `topic_stratum` and `format_stratum`.
+- `doc_id`：24 个小写十六进制字符；
+- `source`、`title`、`url`、`published_at`、`collected_at`；
+- 相对 `body_path`、`content_hash`、`cjk_chars`、`text_chars`、`line_count`；
+- `quality_pass`、`is_translation`、`translation_evidence`；
+- `provenance_status`、`provenance_basis`、`value_status`；
+- `visibility_status` 和结构化 `visibility_evidence`；
+- `topic_stratum`、`format_stratum`。
 
-Admitted records must satisfy all of the following:
+准入记录须全部满足：
 
-- `published_at` is on or after 2025-07-01;
-- `quality_pass` is true and `is_translation` is false;
-- provenance is `human_reviewed_original` or
-  `model_assisted_original`;
-- model-assisted provenance records name the model and have frozen confidence
-  at least 0.90, and record the prompt version;
-- value status is `human_kept` or `model_assisted_substantive`;
-- model-assisted value records name the model and prompt version;
-- visibility status is `verified_high_visibility` with non-empty evidence;
-- format is `technical_practice`, `research_summary`, or
-  `industry_reporting`.
+- `published_at` 为 2025-07-01 当日及之后；
+- `quality_pass` 为 true，`is_translation` 为 false；
+- 来源状态为 `human_reviewed_original` 或 `model_assisted_original`；
+- 模型辅助来源记录注明模型、冻结置信度至少 0.90，并记录 prompt 版本；
+- 价值状态为 `human_kept` 或 `model_assisted_substantive`；
+- 模型辅助价值记录注明模型及 prompt 版本；
+- 传播可见度状态为 `verified_high_visibility`，证据非空；
+- 体裁为 `technical_practice`、`research_summary` 或 `industry_reporting`。
 
-Model-assisted provenance and value decisions remain measurements, not human
-gold. Translation and compilation exclusion must remain fail-closed and
-symmetric with the eventual pre-period comparison.
+模型辅助来源及价值决定仍属测量，不是人工 gold。翻译和编译排除必须 fail closed，并与最终的前时期比较对称。
 
-Body files are strict UTF-8 without a BOM, use LF line endings, and end with
-exactly one LF. `content_hash` is the SHA-256 of the body without that terminal
-LF. Counts use the same body. Exact and near duplicates of the tracked pilot or
-another handoff record are rejected.
+正文文件采用严格 UTF-8，无 BOM，使用 LF 换行，结尾恰好一个 LF。`content_hash` 是去掉该末尾 LF 后正文的 SHA-256，字符数也使用同一正文。拒绝与受版本控制 pilot 或其他交接记录完全或近似重复的正文。
 
-## Minimum coverage gate
+## 最低覆盖门槛
 
-Development is not ready unless the admitted pool contains:
+准入池满足以下要求，开发才准备就绪：
 
-- at least 36 documents;
-- at least two sources with 12 documents each;
-- at least three topic strata with six documents each;
-- at least six documents in each required format stratum.
+- 至少 36 篇文档；
+- 至少两个来源各 12 篇；
+- 至少三个主题分层各六篇；
+- 每个要求的体裁分层至少六篇。
 
-This is a minimum development pool, not a validation pool. A 60-document
-handoff is preferred so a separate document-level reserve can be frozen before
-paragraph inspection. If fewer than 60 pass, development may start but no
-held-out validation claim is available.
+这是最低开发池，不是验证池。优先准备 60 篇，以便看段落前冻结独立文档级保留区。通过少于 60 篇时可以开发，但不能主张 held-out validation。
 
-Visibility must be defined relative to source and collection window. A raw
-current view count alone is insufficient because it creates age and
-survivorship bias.
+传播可见度须相对来源及采集窗口定义。单一当前原始浏览量不足，会引入文章年龄和 survivorship bias。
 
-Version 1.0 proposed a fully crossed source-by-format minimum. It was replaced
-before any handoff or reader exposure because real editorial sources specialize
-in different formats; forcing every source into every cell would encourage
-incorrect format labels. Version 1.1 retains source and format diversity,
-reports the full cross-table, and requires later matching to control the
-imbalance.
+版本 1.0 提出完整交叉的来源×体裁最低要求，后来在任何交接或读者暴露前替换，因为真实编辑来源有各自体裁专长，强制每来源覆盖每单元会诱发错误体裁标签。版本 1.1 保留来源与体裁多样性、报告完整交叉表，并要求后续匹配控制不平衡。
 
-## Exposure and leakage gate
+## 暴露与泄漏门槛
 
-The validator rejects any document ID already named in tracked annotations,
-experiment protocols, or research documentation. It also rejects document IDs,
-URLs, exact bodies, and high-similarity bodies that overlap the tracked pilot.
+验证器拒绝已出现在受版本控制标注、实验协议或研究文档中的文档 ID，也拒绝与受版本控制 pilot 重叠的文档 ID、URL、精确正文和高相似正文。
 
-Discovery, reader development, held-out validation, and the exposed translation
-final test remain disjoint. Passing this validator does not assign a validation
-role; document-level partitioning happens afterward under a fixed seed and is
-recorded before paragraph outcomes.
+Discovery、读者 development、held-out validation 和已暴露的翻译 final test 保持分离。通过验证器不等于分配了 validation 角色；文档级分区随后按固定 seed 完成，并在段落结果前记录。
 
-## Planned reader use
+## 计划中的读者使用
 
-After a handoff passes:
+交接通过后：
 
-1. Freeze document partitions before inspecting reader outcomes.
-2. Select context-complete post-period passages with deterministic formatting
-   gates. Exclude code, captions, interview questions, figure-dependent text,
-   author profiles, and truncated lines.
-3. Begin with a 12-pair post/post discrimination calibration. Match source,
-   topic, format, length, and visibility; balance A/B placement; expose neither
-   metadata nor feature identity.
-4. Ask only which passage makes the reader less willing to continue, with an
-   explicit no-meaningful-difference choice and optional comment.
-5. Stop before a larger comparison graph if the calibration is mostly ties.
-   Do not force distinctions or increase edit intensity.
-6. If discrimination is adequate, compare each development passage two or
-   three times under a connected balanced graph and fit a tie-aware Davidson
-   model. Feature rules remain candidate generators, not labels.
-7. Admit a passage to intervention development only when repeated reader
-   choices place it in the high-friction region. Comments cannot select cases.
-8. Freeze the conservative edit operator and preservation audit before blinded
-   original-versus-revision comparisons.
+1. 查看读者结果前冻结文档分区。
+2. 用确定性格式门槛选出上下文完整的后时期段落，排除代码、图注、采访问题、依赖图的文字、作者简介及截断行。
+3. 先做 12 对后时期／后时期区分校准。匹配来源、主题、体裁、篇幅与传播可见度，平衡 A/B，不展示元数据或特征身份。
+4. 只询问哪段更不愿意继续阅读，提供明确无实质差异选项及可选评论。
+5. 若校准多数为平局，在更大比较图之前停止，不强迫区分或提高编辑强度。
+6. 若区分度足够，使每个开发段落在连通、平衡的图中比较两至三次，拟合考虑平局的 Davidson model。特征规则仍是候选生成器，不是标签。
+7. 只有重复读者选择将段落置于高阻力区域时，才准入干预开发。评论不能选样。
+8. 盲法原文／修订比较前，冻结保守编辑算子及原意保留审查。
 
-The reader never classifies linguistic features or authorship. Meaning
-preservation remains an operation-log and deterministic proposition/entity/
-quantity/negation audit.
+读者不分类语言特征或作者身份。原意保留仍通过操作日志及确定性的命题／实体／数量／否定审查。
 
-Held-out validation requires the separate reserve, at least three formats, and
-multiple independent readers. Development-exposed documents can never be
-renamed as validation material.
+Held-out validation 要求独立保留区、至少三种体裁和多名独立读者。开发已暴露文档绝不能重新命名为验证材料。
 
-## Reproduction
+## 复现
 
 ~~~powershell
 python experiments/validate_post_reader_handoff.py `
@@ -154,36 +110,30 @@ python experiments/validate_post_reader_handoff.py `
   --report feature_runs/post-reader-handoff-v1/validation_report.json
 ~~~
 
-The command exits with status 0 only when the development gate passes. A failed
-gate must not be overridden manually to create reader tasks.
+只有开发门槛通过，命令才以状态 0 退出。不得人工覆盖失败门槛以创建读者任务。
 
-## First completed handoff
+## 首个完成的交接
 
-The first version 1.1 handoff was generated at:
+首个版本 1.1 交接生成于：
 
 ~~~text
 F:\MyProjects\DeAIodorant\data\local\post_reader_handoff_v1
 ~~~
 
-It contains 50 documents, with 25 each from InfoQ and the Meituan technical
-blog. The format composition is 24 technical practice, eight research summary,
-and 18 industry reporting. Publication dates span 2025-08 through 2026-08.
+包含 50 篇文档，InfoQ、美团技术博客各 25 篇。体裁为技术实践 24 篇、研究摘要八篇、行业报道 18 篇，发布日期覆盖 2025-08 至 2026-08。
 
-The validation report contains zero errors and one warning: the handoff passes
-the 36-document development gate but does not reach the preferred 60-document
-threshold for an independent validation reserve.
+验证报告零错误、一条警告：通过 36 篇开发门槛，但未达到优选的 60 篇独立验证保留区阈值。
 
-| Artifact | SHA-256 |
+| 产物 | SHA-256 |
 |---|---|
 | Manifest | `acde6900ae8b26b8da8821424be420ff48433752297c3f021e1a7e05ccfb2b14` |
-| Documents index | `a16f73542edab7f38fb3b24b2dc19fde798b5d14dcc035adfd560bc028c6dc6d` |
-| Validation report | `ccee95e7bdf9c3373fa782497bf60377f1445346ad62d40766a0eb685547a2ce` |
+| 文档索引 | `a16f73542edab7f38fb3b24b2dc19fde798b5d14dcc035adfd560bc028c6dc6d` |
+| 验证报告 | `ccee95e7bdf9c3373fa782497bf60377f1445346ad62d40766a0eb685547a2ce` |
 
-The handoff is ignored local research data and is not committed to Git. Its
-manifest records all acquisition inputs, candidate-flow exclusions, model and
-prompt identities, source/month/format/topic composition, and output hashes.
 
-The acquisition and review sequence was:
+交接属于被忽略的本地研究数据，不提交 Git。Manifest 记录全部采集输入、候选流程排除、模型和 prompt 身份、来源／月份／体裁／主题构成及输出 hash。
+
+采集和复核顺序如下：
 
 ~~~powershell
 $staging = 'F:\MyProjects\DeAIodorant\data\local\post_reader_staging_v1'
@@ -246,32 +196,16 @@ python experiments/validate_post_reader_handoff.py `
   --report "$handoff\validation_report.json"
 ~~~
 
-The InfoQ collector discovered 79 rather than the requested 100 documents and
-therefore returned a nonzero completeness status after writing its staging
-artifacts. The combined two-source staging pool nevertheless contained 108
-documents, above the frozen minimum of 60 raw candidates; no failed record was
-silently admitted.
+InfoQ 采集器只发现 79 篇，未达到请求的 100 篇，因此写出暂存产物后返回非零完整性状态。合并的双来源暂存池仍有 108 篇，超过冻结的 60 条原始候选最低要求；没有静默接纳失败记录。
 
-## Expanded second handoff
+## 扩展的第二次交接
 
-A second handoff was generated after reader projects 5 through 7 exposed most
-of the useful first-pool documents:
+读者项目 5 至 7 暴露第一池多数有用文档后，生成第二次交接：
 
 ~~~text
 F:\MyProjects\DeAIodorant\data\local\post_reader_handoff_v2
 ~~~
 
-It contains 97 unexposed post-period documents across five sources and passes
-this validator with zero errors and zero warnings. The role partition was frozen
-before new paragraph analysis: 67 development documents and a 30-document
-validation reserve. The reserve contains three sources, three formats, and
-three topic strata, but still requires multiple independent readers before any
-validation claim.
+含五个来源的 97 篇未暴露后时期文档，验证器报告零错误、零警告。新段落分析前冻结角色分区：67 篇 development、30 篇 validation reserve。保留区覆盖三个来源、三种体裁及三个主题分层，但仍需多名独立读者才能作验证主张。
 
-QbitAI, Leiphone, and Huawei Cloud Community were added through public editorial
-or recommendation surfaces. Admission required agreement between the local
-Qwen3.8-27B baseline and OpenRouter's live weekly-usage number-two identified
-model, DeepSeek V4 Flash 0731. Model choice, interface smoke tests, disagreement
-rates, value screening, visibility policy, partitioning, and complete artifact
-identity are recorded in
-[Multi-Source Post Corpus Expansion v2](post-reader-corpus-expansion-v2.md).
+通过公开编辑或推荐页面加入量子位、雷锋网和华为云社区。准入要求本地 Qwen3.8-27B 基线与 OpenRouter 实时周使用量排名第二的已识别模型 DeepSeek V4 Flash 0731 一致。模型选择、接口 smoke test、分歧率、价值筛查、传播可见度策略、分区及完整产物身份见[多来源后时期语料扩展 v2](post-reader-corpus-expansion-v2.md)。

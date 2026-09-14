@@ -1,0 +1,9 @@
+{
+  "briefs_sha256": "f5cd121c4841e15ad26923ab4be4346e77c9e81c5bc343c2092159f09d60cdc0",
+  "group_count": 24,
+  "human_gold": false,
+  "rights_status": "project_constructed",
+  "role": "development",
+  "run_manifest_sha256": "349e9cc728e03c66ab9756269188d8cd9dfa51cc0dc980748e6b168dd6d69295",
+  "schema_version": "compact-refiner-development-1.0"
+}

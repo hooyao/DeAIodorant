@@ -1,0 +1,281 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/22/229bbf0e7d84ba6134ce9060c6aadf50.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 6,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/84/84af1869924c53814f241423b3de06cb.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 7,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/ca/caf6efe11878be722651ce5d8a2634de.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 37,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/d8/d82290fe01a54ec5caf5e74456a0c05b.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 41,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b3/b3f0e10709366b4b727d5bc0f73a3c17.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 44,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media06",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/74/749ce8e117dd4d98ce3cfe8048d92efc.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 45,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media07",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/a1/a17a809bdb148f8cb27a50ecc3cba6f3.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 46,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media08",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/99/997976329d8201813164900890e854ac.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 49,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media09",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/19/197aea919a2a038d1d66ff3e6e16aa9e.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 58,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media10",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/74/744e24b3b6994950405c283f527ddb02.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 58,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media11",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/2f/2f5095d33f9165e34063a51a232e12c0.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 69,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media12",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/d1/d1ce8f6c04d8cb06d736c8a32ef15dff.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 87,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media13",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/eb/eb75e2407086bdf99d281a6024c25ee0.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 108,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media14",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/43/43600e99c56cc8896d502ad65c870706.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 109,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media15",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/ca/ca90c9df8ad5acce173b57666b0e7428.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 112,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media16",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/ce/21/cee2e753de9772d789dd5bc90d3c6721.jpg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 121,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "指出",
+      "href": "https://www.theatlantic.com/international/2026/01/iran-disinformation-ai-protests-doubt/685608/"
+    },
+    {
+      "text": "要求暂停更强模型训练的公开信",
+      "href": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+    },
+    {
+      "text": "针对超级智能的联合声明",
+      "href": "https://superintelligence-statement.org/zh"
+    },
+    {
+      "text": "中国航空报",
+      "href": "https://www.news.cn/mil/2024-04/24/c_1212356149.htm"
+    },
+    {
+      "text": "青年参考",
+      "href": "https://qnck.cyol.com/pc/content/202502/28/content_407550.html"
+    },
+    {
+      "text": "环球",
+      "href": "https://www.news.cn/globe/20251124/ec98edac049d4f879924d9a3f1d0ff7d/c.html"
+    },
+    {
+      "text": "怀疑如何在伊朗成为一种武器",
+      "href": "https://www.theatlantic.com/international/2026/01/iran-disinformation-ai-protests-doubt/685608/"
+    },
+    {
+      "text": "DARE",
+      "href": "https://www.eeas.europa.eu/delegations/ukraine/results-pro-russian-information-manipulation-and-disinformation-monitoring-targeting-ukraine-eu_en?s=232"
+    },
+    {
+      "text": "特朗普",
+      "href": "https://federalnewsnetwork.com/federal-insights/2026/01/military-acquisition-reform-has-important-backing/"
+    },
+    {
+      "text": "正式公布",
+      "href": "https://media.defense.gov/2025/Nov/10/2003819439/-1/-1/1/TRANSFORMING-THE-DEFENSE-ACQUISITION-SYSTEM-INTO-THE-WARFIGHTING-ACQUISITION-SYSTEM-TO-ACCELERATE-FIELDING-OF-URGENTLY-NEEDED-CAPABILITIES-TO-OUR-WARRIORS.PDF"
+    },
+    {
+      "text": "宣布",
+      "href": "https://a16z.com/why-did-we-raise-15b/?campaign_id=4&emc=edit_dk_20260112&instance_id=169150&nl=dealbook&regi_id=297464440&segment_id=213529&user_id=bb34479d05a7b8849830c7aced0df618"
+    },
+    {
+      "text": "官网",
+      "href": "https://a16z.com/defense-reform/"
+    },
+    {
+      "text": "宣布",
+      "href": "https://www.army.mil/article-amp/286317/army_launches_detachment_201_executive_innovation_corps_to_drive_tech_transformation"
+    },
+    {
+      "text": "大力推进",
+      "href": "https://ddrd-mafat.mod.gov.il/en/mafat-for-startups"
+    },
+    {
+      "text": "最近的",
+      "href": "https://www.youtube.com/watch?v=Q-ZOAoTRKbo"
+    },
+    {
+      "text": "针对超级智能的联合声明",
+      "href": "https://superintelligence-statement.org/zh"
+    },
+    {
+      "text": "要求暂停更强模型训练的公开信",
+      "href": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+    },
+    {
+      "text": "观察",
+      "href": "https://www.chathamhouse.org/2025/09/can-uns-new-ai-governance-efforts-weather-ai-race"
+    },
+    {
+      "text": "删除了",
+      "href": "https://www.cnbc.com/2024/01/16/openai-quietly-removes-ban-on-military-use-of-its-ai-tools.html"
+    },
+    {
+      "text": "宣布",
+      "href": "https://about.fb.com/news/2024/11/open-source-ai-america-global-security/"
+    },
+    {
+      "text": "评论",
+      "href": "https://www.techradar.com/pro/meta-is-letting-the-us-military-use-its-llama-ai-model-for-national-security-applications"
+    },
+    {
+      "text": "修改《AI 原则》",
+      "href": "https://www.wired.com/story/google-responsible-ai-principles/"
+    },
+    {
+      "text": "硅谷帝国：人工智能的未来之争",
+      "href": "https://www.wired.com/story/book-excerpt-silicon-empires-nick-srnicek/"
+    },
+    {
+      "text": "国防科技发展的伦理：一个投资者的视角",
+      "href": "https://medium.com/@traestephens/the-ethics-of-defense-technology-development-an-investors-perspective-45c71bf6e6af"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 255,
+    "h1": 4,
+    "h2": 0,
+    "h3": 2,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 16,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 24
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/082d0c636e43906b0a2934f7.html",
+  "raw_html_sha256": "278c28a827919a49bbc9ff39b4f32cfd729fc1596385f46b6dc101de05acf958"
+}

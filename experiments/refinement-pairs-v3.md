@@ -1,78 +1,65 @@
-# Third-Round Cross-Genre Development Intervention
+# 第三轮跨体裁开发干预
 
-## Status
+## 状态
 
-Protocol `conservative-reframing-development-3.0` was frozen on 2026-08-22
-before reader outcomes. All 12 responses were completed later that day. This
-is a development intervention, not held-out validation: all source documents
-belong to the transition handoff that has already been used for feature
-discovery.
+协议 `conservative-reframing-development-3.0` 于 2026-08-22、读者结果前冻结，当日晚些时候完成全部 12 个回答。这是开发干预，不是 held-out validation：全部来源文档属于已用于特征发现的过渡期交接。
 
-## Design
+## 设计
 
-The round contains 12 new passages from 12 distinct documents:
+本轮含 12 篇不同文章的 12 个新段落：
 
-| Genre stratum | Pairs |
+| 体裁分层 | 配对数 |
 |---|---:|
-| Technical practice | 4 |
-| Research summary | 4 |
-| Industry reporting | 4 |
+| 技术实践 | 4 |
+| 研究摘要 | 4 |
+| 行业报道 | 4 |
 
-No passage or document was used in the first two intervention rounds. The
-single transition document with a reader style observation is excluded. All
-source documents are transition-period material and must not enter the primary
-pre/post comparison.
 
-The edit operator remains conservative:
+没有段落或文档用于前两轮干预。唯一具有读者风格观察的过渡期文档排除。全部来源材料属于过渡期，不得进入主比较的前后时间对照。
 
-- reduce ornamental contrast, clarification, and emphasis framing;
-- retain every necessary contrast, negation, qualification, uncertainty, and
-  attribution;
-- preserve explicit subjects, predicates, objects, and referents;
-- preserve propositions, entities, numbers, technical terms, rhythm, and
-  authorial voice;
-- avoid maximum compression and uniformly flat prose.
+编辑算子保持保守：
 
-The reader answers only which version makes them more willing to continue.
-Comments are optional, and no linguistic classification is requested.
+- 减少装饰性对比、澄清和强调框架；
+- 保留全部必要对比、否定、限定、不确定性和归因；
+- 保留显式主语、谓语、宾语和指称对象；
+- 保留命题、实体、数字、技术术语、节奏及作者风格；
+- 避免最大压缩和统一平淡文字。
 
-## Passage set
+读者只回答哪个版本更愿意继续阅读。评论可选，不要求语言学分类。
 
-| Pair | Genre | Document | Lines |
+## 段落集
+
+| 配对 | 体裁 | 文档 | 行 |
 |---|---|---|---:|
-| contrast-v3-01 | Technical practice | 44ff5a1d8bda9c7b50f6290f | 36 |
-| contrast-v3-02 | Technical practice | c4f3d04d7db01e65460fb2dd | 14 |
-| contrast-v3-03 | Technical practice | ed4b0601b5481ee4065a337a | 26 |
-| contrast-v3-04 | Technical practice | 2e209708bce31c124797ce6c | 63–65 |
-| contrast-v3-05 | Research summary | 10b4ff947e750938d62a417a | 21 |
-| contrast-v3-06 | Research summary | 7103a1b4c0cb80218a653a03 | 46–48 |
-| contrast-v3-07 | Research summary | 646b73aae2b0dc8f311a9f0c | 18–20 |
-| contrast-v3-08 | Research summary | a76e84a2a44062b098288efc | 29–32 |
-| contrast-v3-09 | Industry reporting | d4407ed937d0f78f325c3fbd | 5–10 |
-| contrast-v3-10 | Industry reporting | 3c33241e2bb2fd68fb3c6147 | 1–7 |
-| contrast-v3-11 | Industry reporting | 9f693cf901d640ffb7312bd9 | 52–57 |
-| contrast-v3-12 | Industry reporting | 51ad0427b938c45e289e9d1a | 1–8 |
+| contrast-v3-01 | 技术实践 | 44ff5a1d8bda9c7b50f6290f | 36 |
+| contrast-v3-02 | 技术实践 | c4f3d04d7db01e65460fb2dd | 14 |
+| contrast-v3-03 | 技术实践 | ed4b0601b5481ee4065a337a | 26 |
+| contrast-v3-04 | 技术实践 | 2e209708bce31c124797ce6c | 63–65 |
+| contrast-v3-05 | 研究摘要 | 10b4ff947e750938d62a417a | 21 |
+| contrast-v3-06 | 研究摘要 | 7103a1b4c0cb80218a653a03 | 46–48 |
+| contrast-v3-07 | 研究摘要 | 646b73aae2b0dc8f311a9f0c | 18–20 |
+| contrast-v3-08 | 研究摘要 | a76e84a2a44062b098288efc | 29–32 |
+| contrast-v3-09 | 行业报道 | d4407ed937d0f78f325c3fbd | 5–10 |
+| contrast-v3-10 | 行业报道 | 3c33241e2bb2fd68fb3c6147 | 1–7 |
+| contrast-v3-11 | 行业报道 | 9f693cf901d640ffb7312bd9 | 52–57 |
+| contrast-v3-12 | 行业报道 | 51ad0427b938c45e289e9d1a | 1–8 |
 
-## Audit
 
-The generator records 19 exact before/after operations, 39 proposition-support
-checks, pair-specific locked literals, numeric-literal equality, retained
-contrasts, and voice anchors. All gates pass. The frozen marker diagnostic
-falls from 21 instances in the originals to six in the revisions; the
-remaining markers occur inside preserved quotations, necessary contrasts, or
-voice-bearing text.
+## 审查
 
-Original placement is balanced: six originals appear as A and six as B. Two
-independent runs produced byte-identical artifacts.
+生成器记录 19 次精确前后操作、39 项命题支撑检查、配对专属锁定字面值、数字字面值相等性、保留的对比及风格锚点。全部门槛通过。冻结标记诊断从原版 21 次降至修订六次；保留标记位于原样引文、必要对比或承载风格的文本中。
 
-| Artifact | SHA-256 |
+原版位置平衡，A、B 各六个。两次独立运行产物逐字节一致。
+
+| 产物 | SHA-256 |
 |---|---|
-| Tasks | f0ee5c5cce52f793d84be891c8e38e307b05c533c655889c3b31c37155a8df04 |
-| Answer key | 83ec5ac78c7a862d6d1750e1282b2bb7e748c84378dfa449373948ffe4abbe86 |
-| Protocol | fb91136846ded20bb3d5cb41614f82762bb3d7f42d160bf90d840ee2747db4f0 |
-| Label config | 9f3a55c8e2e6191ff43c0d27558ffb77ea1fa15a98bbf0c5ac7e173083283a27 |
+| 任务 | f0ee5c5cce52f793d84be891c8e38e307b05c533c655889c3b31c37155a8df04 |
+| 答案键 | 83ec5ac78c7a862d6d1750e1282b2bb7e748c84378dfa449373948ffe4abbe86 |
+| 协议 | fb91136846ded20bb3d5cb41614f82762bb3d7f42d160bf90d840ee2747db4f0 |
+| 标签配置 | 9f3a55c8e2e6191ff43c0d27558ffb77ea1fa15a98bbf0c5ac7e173083283a27 |
 
-## Reproduction
+
+## 复现
 
 ~~~powershell
 python experiments/prepare_refinement_pairs_v3.py `
@@ -81,39 +68,32 @@ python experiments/prepare_refinement_pairs_v3.py `
   --seed 20260822
 ~~~
 
-Generated tasks and the answer key remain under ignored `feature_runs/`. The
-answer key must not be shown before all responses in this round are complete.
+生成任务和 答案键 保留在被忽略的 `feature_runs/` 下。本轮所有回答完成前，不得展示 答案键。
 
-## Outcome
+## 结果
 
-| Outcome | Count |
+| 结果 | 次数 |
 |---|---:|
-| Revised version preferred | 4 |
-| Original version preferred | 1 |
-| Tie or neither preferred | 7 |
+| 偏好修订版 | 4 |
+| 偏好原版 | 1 |
+| 平局或都不偏好 | 7 |
 
-Genre breakdown:
 
-| Genre | Revised | Original | Tie/neither |
+按体裁拆分：
+
+| 体裁 | 修订 | 原版 | 平局／都不偏好 |
 |---|---:|---:|---:|
-| Technical practice | 1 | 1 | 2 |
-| Research summary | 2 | 0 | 2 |
-| Industry reporting | 1 | 0 | 3 |
+| 技术实践 | 1 | 1 | 2 |
+| 研究摘要 | 2 | 0 | 2 |
+| 行业报道 | 1 | 0 | 3 |
 
-The reader's round-level comment was:
+
+读者对整轮的评论为：
 
 > “这一轮几乎都没有区别，全是AI臭味都不明显”
 
-Only one optional pair comment was entered, identifying `换句话说` as a smell;
-that pair favored the revision. The single original win occurred in a
-technical-practice passage whose edit mainly repaired argument structure.
+仅输入一条可选配对评论，指出 `换句话说` 有臭味，该对偏好修订。唯一原版胜出发生在技术实践段落，编辑主要修复论元结构。
 
-This result is primarily a candidate-selection failure. Exact marker presence
-and cross-genre balance did not enrich for passages with enough baseline
-friction to make conservative editing useful. Increasing edit intensity would
-not answer that problem and risks damaging acceptable prose. Future
-development sampling needs a separate low-burden baseline-friction screen; the
-screened passages cannot then be reused as held-out validation.
+这主要是候选选样失败。精确标记存在及跨体裁平衡没有富集到基线阻力足够、可从保守编辑受益的段落。提高强度不能回答该问题，还可能损害可接受文本。后续开发采样需要独立、低负担的基线阻力筛查；被筛查段落不能再作为 held-out validation。
 
-The complete versioned outcome is stored in
-`data/annotations/refinement-pairwise-v3.json`.
+完整版本化结果保存在 `data/annotations/refinement-pairwise-v3.json`。

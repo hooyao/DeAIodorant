@@ -1,0 +1,67 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/news/2026/05/bintrail-mysql-timetravel/en/resources/1Captura-de-pantalla-2026-05-06-a-las-1.58.53-p.m-1024x508-1779305185335.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 11,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "针对特定时间点的查询和行级历史查询功能",
+      "href": "https://blog.dbtrail.com/time-travel-sql-for-mysql-finally/"
+    },
+    {
+      "text": "Daniel Guzman-Burgos",
+      "href": "https://www.linkedin.com/in/danielmauricioguzman/"
+    },
+    {
+      "text": "文章",
+      "href": "https://blog.dbtrail.com/every-major-oltp-has-time-travel-except-mysql/"
+    },
+    {
+      "text": "ProxySQL",
+      "href": "https://www.proxysql.com/"
+    },
+    {
+      "text": "写道",
+      "href": "https://www.linkedin.com/posts/peterzaitsev_time-travel-sql-for-mysql-finally-dbtrail-activity-7458145657837547520-J59o/"
+    },
+    {
+      "text": "指出",
+      "href": "https://www.linkedin.com/posts/roman-agabekov_had-a-cool-conversation-with-daniel-guzm%C3%A1n-share-7460718050913476610-c0o-?utm_source=share&utm_medium=member_desktop&rcm=ACoAABaQ5R4B1z_TPIVzQKBvbJ9SpDn29zaiJcY"
+    },
+    {
+      "text": "Bintrail 已经发布在 GitHub 上",
+      "href": "https://github.com/dbtrail/bintrail"
+    },
+    {
+      "text": "https://www.infoq.com/news/2026/05/bintrail-mysql-timetravel/",
+      "href": "https://www.infoq.com/news/2026/05/bintrail-mysql-timetravel/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 25,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 1,
+    "a": 8
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/28aba7e771aa2e1c3030cc96.html",
+  "raw_html_sha256": "a61b3312d0885d7fd579f3e68381c9b70f0ee60c52c3675b256afad1d7d7f16a"
+}

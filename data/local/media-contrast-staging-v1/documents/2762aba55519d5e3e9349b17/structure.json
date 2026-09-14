@@ -1,0 +1,89 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/d6/d6c896c70ffd17c96a87438e0afc433a.webp",
+      "data_src": null,
+      "alt": "Image",
+      "title": null,
+      "preceding_collector_line": 3,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/3d/3d17cf1ad5aed65b8d140c517a424fee.gif",
+      "data_src": null,
+      "alt": "Image",
+      "title": null,
+      "preceding_collector_line": 27,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/86/86f7d72dc3063574382884db1be12836.gif",
+      "data_src": null,
+      "alt": "Image",
+      "title": null,
+      "preceding_collector_line": 150,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/8c/8c14862d6d7a2151eaea67f4c1251721.webp",
+      "data_src": null,
+      "alt": "Image",
+      "title": null,
+      "preceding_collector_line": 431,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/a6/a6183899dd7bce8164dcae86693fd215.png",
+      "data_src": null,
+      "alt": "Image",
+      "title": null,
+      "preceding_collector_line": 773,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media06",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/d6/d6b91dea4493813e632713d1d79877e2.webp",
+      "data_src": null,
+      "alt": "Image",
+      "title": null,
+      "preceding_collector_line": 776,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "https://mp.weixin.qq.com/s/63YJi2Y3tX8CFsXuJqT9dQ",
+      "href": "https://mp.weixin.qq.com/s/63YJi2Y3tX8CFsXuJqT9dQ"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 96,
+    "h1": 0,
+    "h2": 5,
+    "h3": 2,
+    "ul": 8,
+    "ol": 3,
+    "li": 30,
+    "img": 6,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 7,
+    "a": 1
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/2762aba55519d5e3e9349b17.html",
+  "raw_html_sha256": "c7c705b4e1644d202b69344c68eebdc93a7d9f7b4861b00072664129e45e333a"
+}

@@ -8,6 +8,13 @@ build/
 dist/
 *.egg-info/
 .env
+.env.*
+!.env.example
+*.key
+*.pem
+OPEN_ME_credentials.txt
+cookies.txt
+cookies.json
 .codex-log/
 models/
 feature_runs/

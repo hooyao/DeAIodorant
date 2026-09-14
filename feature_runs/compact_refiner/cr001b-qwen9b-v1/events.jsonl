@@ -1,0 +1,13 @@
+{"case_id": "edit-01", "completed_at_utc": "2026-09-14T04:18:53.955878+00:00", "cost": {"accounted_usd": "0.00006858", "basis": "reported_usage_cost", "reported_usd": "0.00006858"}, "event": "request_complete"}
+{"case_id": "edit-02", "completed_at_utc": "2026-09-14T04:19:04.008983+00:00", "cost": {"accounted_usd": "0.00007269", "basis": "reported_usage_cost", "reported_usd": "0.00007269"}, "event": "request_complete"}
+{"case_id": "edit-03", "completed_at_utc": "2026-09-14T04:19:09.813507+00:00", "cost": {"accounted_usd": "0.00007745", "basis": "reported_usage_cost", "reported_usd": "0.00007745"}, "event": "request_complete"}
+{"case_id": "edit-04", "completed_at_utc": "2026-09-14T04:19:16.007374+00:00", "cost": {"accounted_usd": "0.00007841", "basis": "reported_usage_cost", "reported_usd": "0.00007841"}, "event": "request_complete"}
+{"case_id": "edit-05", "completed_at_utc": "2026-09-14T04:19:22.423929+00:00", "cost": {"accounted_usd": "0.00008353", "basis": "reported_usage_cost", "reported_usd": "0.00008353"}, "event": "request_complete"}
+{"case_id": "edit-06", "completed_at_utc": "2026-09-14T04:19:27.331041+00:00", "cost": {"accounted_usd": "0.00007035", "basis": "reported_usage_cost", "reported_usd": "0.00007035"}, "event": "request_complete"}
+{"case_id": "edit-07", "completed_at_utc": "2026-09-14T04:19:40.186997+00:00", "cost": {"accounted_usd": "0.00007198", "basis": "reported_usage_cost", "reported_usd": "0.00007198"}, "event": "request_complete"}
+{"case_id": "edit-08", "completed_at_utc": "2026-09-14T04:19:44.811198+00:00", "cost": {"accounted_usd": "0.00008159", "basis": "reported_usage_cost", "reported_usd": "0.00008159"}, "event": "request_complete"}
+{"case_id": "edit-09", "completed_at_utc": "2026-09-14T04:19:47.901329+00:00", "cost": {"accounted_usd": "0.00006551", "basis": "reported_usage_cost", "reported_usd": "0.00006551"}, "event": "request_complete"}
+{"case_id": "edit-10", "completed_at_utc": "2026-09-14T04:19:52.670925+00:00", "cost": {"accounted_usd": "0.00007988", "basis": "reported_usage_cost", "reported_usd": "0.00007988"}, "event": "request_complete"}
+{"case_id": "edit-11", "completed_at_utc": "2026-09-14T04:20:11.757127+00:00", "cost": {"accounted_usd": "0.00009403", "basis": "reported_usage_cost", "reported_usd": "0.00009403"}, "event": "request_complete"}
+{"case_id": "edit-12", "completed_at_utc": "2026-09-14T04:20:21.308947+00:00", "cost": {"accounted_usd": "0.000071", "basis": "reported_usage_cost", "reported_usd": "0.000071"}, "event": "request_complete"}
+{"case_id": "edit-13", "completed_at_utc": "2026-09-14T04:20:31.802290+00:00", "cost": {"accounted_usd": "0.00008729", "basis": "reported_usage_cost", "reported_usd": "0.00008729"}, "event": "request_complete"}

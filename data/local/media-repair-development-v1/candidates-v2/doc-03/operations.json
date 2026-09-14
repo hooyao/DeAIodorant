@@ -1,0 +1,194 @@
+{
+  "candidate_id": "doc-03-assistant-proposal-v1-preservation-v2",
+  "editor_identity": "/root/media_repair_editor",
+  "editor_role": "assistant_editor",
+  "external_api_calls": 0,
+  "full_source_read": true,
+  "generation_seed": null,
+  "gpu_used": false,
+  "human_acceptance": false,
+  "human_gold": false,
+  "input_contract": "Complete Chinese bodies, general AGENTS.md instructions, protocol, and preparation manifest only.",
+  "intensity_policy": "Local, source-supported repairs with no edit quota; preserve unique content and meaningful contrasts.",
+  "internal_validation": {
+    "full_replay_exact": true,
+    "operation_count": 13,
+    "source_hash_matches": true,
+    "unchanged_remaining_operations": true
+  },
+  "model_identity": "Codex, GPT-6-based; exact runtime model identifier not exposed in task context.",
+  "offset_convention": "Zero-based Unicode code points in the original UTF-8 decoded body; end_char is exclusive; no newline normalization.",
+  "operations": [
+    {
+      "after": "经常“瞎指挥”。在企业运维的十字路口",
+      "before": "经常“瞎指挥”，在企业运维的十字路口",
+      "end_char": 118,
+      "operation_id": "doc-03-op-001",
+      "operation_type": "sentence_boundary",
+      "preservation_notes": "Both claims and the metaphor remain.",
+      "reason": "Separate the diagnosis from its traffic metaphor.",
+      "start_char": 100
+    },
+    {
+      "after": "但却发现运维系统的十字路口越来越拥堵了",
+      "before": "但却发现运维系统的十字路口却越来越拥堵了",
+      "end_char": 220,
+      "operation_id": "doc-03-op-002",
+      "operation_type": "redundancy_reduction",
+      "preservation_notes": "The claimed congestion and adversative relation remain.",
+      "reason": "Remove a duplicated adversative adverb within one clause.",
+      "start_char": 200
+    },
+    {
+      "after": "与想象中 Agent 们“游刃有余”地自动协同、分工协作不同，传统 Router 的上限太低、智能程度有限，很难跟上 Agent 们“匆匆忙忙”的脚步。",
+      "before": "和想象中的 Agent 们“游刃有余”的自动协同、分工协作不同，因为传统 Router 的上限太低、智能程度有限，很难跟上 Agent 们“匆匆忙忙”的脚步。",
+      "end_char": 301,
+      "operation_id": "doc-03-op-003",
+      "operation_type": "attachment_repair",
+      "preservation_notes": "Retains the contrast, both Router limitations, and both quoted metaphors.",
+      "reason": "Give the comparison and following predicate an explicit common subject; repair the adverbial particle.",
+      "start_char": 222
+    },
+    {
+      "after": "TCAR（Tencent Cloud Andon Router）——一个只有 4B 参数，但学会了“先想清楚，再选择”的智能路由模型。它",
+      "before": "TCAR（Tencent Cloud Andon Router）——\n一个只有 4B 参数，但学会了“先想清楚，再选择”的智能路由模型\n，它",
+      "end_char": 441,
+      "operation_id": "doc-03-op-004",
+      "operation_type": "layout_and_sentence_boundary",
+      "preservation_notes": "The model name, 4B quantity, contrast, and subsequent purpose are retained.",
+      "reason": "Reconnect a model description split by extracted formatting and end its sentence.",
+      "start_char": 371
+    },
+    {
+      "after": "就无法确定是 CDN、COS 还是网络的问题",
+      "before": "就无法确定不确定是 CDN、COS 还是网络的问题",
+      "end_char": 774,
+      "operation_id": "doc-03-op-006",
+      "operation_type": "duplication_repair",
+      "preservation_notes": "Uncertainty and all three possible causes remain.",
+      "reason": "Remove an accidentally repeated uncertainty predicate.",
+      "start_char": 749
+    },
+    {
+      "after": "把路由从直接预测标签，变成先推理再选择 Agent 集合。这时候",
+      "before": "把路由从直接预测标签，变成先推理再选择 Agent 集合\n。这时候",
+      "end_char": 1000,
+      "operation_id": "doc-03-op-007",
+      "operation_type": "layout_repair",
+      "preservation_notes": "No wording or contrast is removed.",
+      "reason": "Reconnect punctuation detached from its sentence.",
+      "start_char": 967
+    },
+    {
+      "after": "它的工作职能也从挑选队列最前面的 agent 完成任务，转向在专家梯队中找到最合适的那个人选来完成任务。",
+      "before": "它的工作职能从挑选队列最前面的 agent 完成任务，到在专家梯队中找到最合适的那个人选来完成任务。",
+      "end_char": 1121,
+      "operation_id": "doc-03-op-008",
+      "operation_type": "coordination_repair",
+      "preservation_notes": "Preserves the queue-versus-expert comparison and the source's singular candidate wording.",
+      "reason": "Complete the predicate of the transition construction.",
+      "start_char": 1071
+    },
+    {
+      "after": "它就像是一个拥有顶尖专家团队、非常聪明且能够自我决策的“项目经理”。",
+      "before": "它就像是一个拥有顶尖专家团队的，高度聪明且能够自我决策的“项目经理”。",
+      "end_char": 1157,
+      "operation_id": "doc-03-op-009",
+      "operation_type": "coordination_repair",
+      "preservation_notes": "The expert team, intelligence, autonomy, and metaphor remain.",
+      "reason": "Coordinate the modifiers of the project-manager metaphor and repair an awkward collocation.",
+      "start_char": 1122
+    },
+    {
+      "after": "明确说明问题可能涉及哪些技术栈、不同 Agent 的职责边界，以及由多个 Agent 执行为什么合理。这样，路由不再是黑盒：决策可以解释、可以 Debug，Agent 描述也可以持续优化。",
+      "before": "明确说明问题可能涉及哪些技术栈，不同 Agent 的职责边界，为什么多个 Agent 执行是合理的，这让路由不再是黑盒，而是可解释、可 Debug、可持续优化 Agent 描述。",
+      "end_char": 1317,
+      "operation_id": "doc-03-op-010",
+      "operation_type": "coordination_and_reference_repair",
+      "preservation_notes": "All three reasoning contents, uncertainty, the black-box contrast, debugging, and Agent-description optimization remain.",
+      "reason": "Separate the reasoning contents from their stated benefits and attach each benefit to a compatible object.",
+      "start_char": 1228
+    },
+    {
+      "after": "当然，这也要求模型足够聪明，能够充分理解指令。",
+      "before": "当然，这也要建立在对指令聪明且充分的理解力上。",
+      "end_char": 1445,
+      "operation_id": "doc-03-op-011",
+      "operation_type": "attachment_repair",
+      "preservation_notes": "The prerequisite remains a requirement rather than a claim of guaranteed performance.",
+      "reason": "Attach intelligence to the model and sufficient understanding to its instructions.",
+      "start_char": 1422
+    },
+    {
+      "after": "最终输出一个完整、无冲突的答案。这套模式在排障类问题上效果尤其明显。",
+      "before": "最终输出一个完整、无冲突的答案，这套模式在排障类问题上效果尤其明显。",
+      "end_char": 1568,
+      "operation_id": "doc-03-op-012",
+      "operation_type": "sentence_boundary",
+      "preservation_notes": "Preserves the source's unverified completeness, conflict-free, and troubleshooting-effect claims.",
+      "reason": "Separate the processing sequence from the assessment of its effect.",
+      "start_char": 1534
+    },
+    {
+      "after": "在高歧义、跨域问题中更稳定。模型参数量为 4B，推理速度快、成本低。更重要的是，下游多 Agent + Refining Agent 的整体成功率显著提升。",
+      "before": "在高歧义、跨域问题中更稳定，4B 参数量推理速度快成本低，更重要的是下游多 Agent + Refining Agent 的整体成功率显著提升。",
+      "end_char": 2097,
+      "operation_id": "doc-03-op-013",
+      "operation_type": "sentence_boundary_and_coordination",
+      "preservation_notes": "Keeps 4B, all comparison scopes, cost, speed, and the significance claim without adding scores.",
+      "reason": "Split different performance claims and supply the local subject for the parameter count.",
+      "start_char": 2025
+    },
+    {
+      "after": "腾讯云还提供了完整的开源范式",
+      "before": "腾讯云还提供了全套的完整开源范式",
+      "end_char": 2114,
+      "operation_id": "doc-03-op-014",
+      "operation_type": "redundancy_reduction",
+      "preservation_notes": "The claim of complete availability and the entire following inventory remain.",
+      "reason": "Remove synonymous completeness modifiers.",
+      "start_char": 2098
+    }
+  ],
+  "output_char_count": 2350,
+  "output_sha256": "9d300647be3e55e7e26062b604bc9af94ddbf9770d82fb56ac7e85fb1f119c92",
+  "parent_candidate_id": "doc-03-assistant-proposal-v1",
+  "parent_operations_sha256": "3dcba6b7d0fb7934147ec9b759408a0326002b81926cdbaf85ed9ca4963b9349",
+  "parent_output_sha256": "50d4de3c53916ac780721b9040fc80360b057dc668565214be135e79aa676acc",
+  "prompt_version": "media-repair-development-1.0-editor-assignment-2026-09-14",
+  "protocol": "media-repair-development-1.0",
+  "protocol_sha256": "0c904d2250e2d08996e33aa7c14eee7736c278b99896decf4e18627e61747f06",
+  "removed_operation_ids": [
+    "doc-03-op-005"
+  ],
+  "replay_order": "Descending start_char; apply every operation to the original body.",
+  "reproduction_command": "python data/local/media-repair-development-v1/create_preservation_revision.py",
+  "review_sha256": "a4753effb24e11f4f69823f7e141680867083c983667089421f82a89c92dfa31",
+  "revision_author": "root-assistant-preservation-correction",
+  "revision_reason": "Revert the uncertain same-problem to same-class substitution; all other operations unchanged.",
+  "seed_note": "Current-assistant generation; deterministic text generation is not claimed.",
+  "source_alias": "doc-03",
+  "source_char_count": 2350,
+  "source_path": "data/local/contrast-context-v1/packets/doc-03/body.txt",
+  "source_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+  "status": "awaiting_focused_revision_review",
+  "training_eligible": false,
+  "unresolved_content_issues": [
+    {
+      "description": "The body asserts broad benchmark superiority, speed/cost benefits, and a significant downstream success-rate increase without quantitative results or comparison conditions. The claims and reference links are retained; this proposal does not verify them.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair.",
+      "end_char": 1991,
+      "issue_id": "doc-03-issue-001",
+      "source_excerpt": "最后，经过 CLINC150、HWU64、MINDS14、SGD、Qcloud 五个数据集的评测",
+      "start_char": 1943
+    },
+    {
+      "description": "The expert-selection metaphor uses a singular candidate while the mechanism elsewhere selects an Agent subset. The text does not establish whether the singular is merely figurative; it is retained rather than silently reconciled.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair.",
+      "end_char": 1120,
+      "issue_id": "doc-03-issue-002",
+      "source_excerpt": "在专家梯队中找到最合适的那个人选来完成任务",
+      "start_char": 1099
+    }
+  ]
+}

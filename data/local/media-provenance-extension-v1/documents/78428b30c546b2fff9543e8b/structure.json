@@ -1,0 +1,32 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "《The Bitter Lesson》",
+      "href": "https://www.cs.utexas.edu/~eunsol/courses/data/bitter_lesson.pdf"
+    },
+    {
+      "text": "https://www.youtube.com/watch?v=JiWgKRgdgpI",
+      "href": "https://www.youtube.com/watch?v=JiWgKRgdgpI"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 500,
+    "h1": 0,
+    "h2": 7,
+    "h3": 0,
+    "ul": 2,
+    "ol": 0,
+    "li": 8,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 2
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/78428b30c546b2fff9543e8b.html",
+  "raw_html_sha256": "8e9011876998323c67fe1e59e20dccd03217644b0806eba329e11cb4fdda2c9c"
+}

@@ -1,0 +1,161 @@
+{
+  "analysis_view": {
+    "limitations": [
+      "Literal counts are exact for supplied text; extraction scope can change them.",
+      "Prefix pairing is lexical and may cross quoted or unrelated clauses.",
+      "The prefix catalog is incomplete; unpaired means unknown, not malformed.",
+      "Frequency alone does not establish reading difficulty, irritation, or authorship.",
+      "No cue warrants deletion without preserving meaning and evaluating reader outcomes.",
+      "Chinese allows zero subjects, shared arguments, intransitives, and nominal predicates."
+    ],
+    "method": {
+      "connector_inventory": [
+        "而不是",
+        "而非",
+        "而是"
+      ],
+      "negative_prefix_families": {
+        "不一定是": "not_necessarily_is",
+        "不仅仅是": "not_only_is",
+        "不仅是": "not_only_is",
+        "不光是": "not_only_is",
+        "不再只是": "no_longer_only_is",
+        "不再是": "no_longer_is",
+        "不单单是": "not_only_is",
+        "不单是": "not_only_is",
+        "不只是": "not_only_is",
+        "不在于": "not_lie_in",
+        "不完全是": "not_entirely_is",
+        "不应是": "should_not_be",
+        "不应该是": "should_not_be",
+        "不意味着": "not_imply",
+        "不是": "not_is",
+        "不认为": "not_believe",
+        "并不只是": "not_only_is",
+        "并不在于": "not_lie_in",
+        "并不意味着": "not_imply",
+        "并不是": "not_is",
+        "并不认为": "not_believe",
+        "并非": "not_be"
+      },
+      "newlines": "Retained; not pairing boundaries.",
+      "pairing_rule": "Nearest catalog prefix after the last terminal or explicit connector.",
+      "quotes": "Retained; not automatically attributed to the article author.",
+      "terminal_boundaries": "。！？!?"
+    },
+    "reading_quality": {
+      "score": null,
+      "status": "unknown"
+    },
+    "schema_version": "deaiodorant-reading-burden-0.1",
+    "scope": {
+      "cjk_character_count": 2118,
+      "input_record_count": 1,
+      "input_record_counts_by_context": {
+        "non_heading": 1
+      },
+      "offset_unit": "unicode_code_points_relative_to_input_record"
+    },
+    "structural_proxies": {
+      "reason": "This version does not analyze predicate arguments or reference continuity.",
+      "status": "not_evaluated"
+    },
+    "style_cues": {
+      "counts_by_family": {},
+      "counts_by_left_prefix": {},
+      "literal_ershi": {
+        "count": 0,
+        "counts_by_context": {},
+        "input_records_with_matches": 0,
+        "instances": [],
+        "per_1000_cjk_characters": 0.0
+      },
+      "negative_alternative_connectors": {
+        "count": 0,
+        "counts_by_literal": {},
+        "instances": []
+      },
+      "replacement_frame_instances": []
+    }
+  },
+  "interpretation": "Existing literal counter only; zero counts do not override the human strong-smell label.",
+  "source_view": {
+    "limitations": [
+      "Literal counts are exact for supplied text; extraction scope can change them.",
+      "Prefix pairing is lexical and may cross quoted or unrelated clauses.",
+      "The prefix catalog is incomplete; unpaired means unknown, not malformed.",
+      "Frequency alone does not establish reading difficulty, irritation, or authorship.",
+      "No cue warrants deletion without preserving meaning and evaluating reader outcomes.",
+      "Chinese allows zero subjects, shared arguments, intransitives, and nominal predicates."
+    ],
+    "method": {
+      "connector_inventory": [
+        "而不是",
+        "而非",
+        "而是"
+      ],
+      "negative_prefix_families": {
+        "不一定是": "not_necessarily_is",
+        "不仅仅是": "not_only_is",
+        "不仅是": "not_only_is",
+        "不光是": "not_only_is",
+        "不再只是": "no_longer_only_is",
+        "不再是": "no_longer_is",
+        "不单单是": "not_only_is",
+        "不单是": "not_only_is",
+        "不只是": "not_only_is",
+        "不在于": "not_lie_in",
+        "不完全是": "not_entirely_is",
+        "不应是": "should_not_be",
+        "不应该是": "should_not_be",
+        "不意味着": "not_imply",
+        "不是": "not_is",
+        "不认为": "not_believe",
+        "并不只是": "not_only_is",
+        "并不在于": "not_lie_in",
+        "并不意味着": "not_imply",
+        "并不是": "not_is",
+        "并不认为": "not_believe",
+        "并非": "not_be"
+      },
+      "newlines": "Retained; not pairing boundaries.",
+      "pairing_rule": "Nearest catalog prefix after the last terminal or explicit connector.",
+      "quotes": "Retained; not automatically attributed to the article author.",
+      "terminal_boundaries": "。！？!?"
+    },
+    "reading_quality": {
+      "score": null,
+      "status": "unknown"
+    },
+    "schema_version": "deaiodorant-reading-burden-0.1",
+    "scope": {
+      "cjk_character_count": 2181,
+      "input_record_count": 1,
+      "input_record_counts_by_context": {
+        "non_heading": 1
+      },
+      "offset_unit": "unicode_code_points_relative_to_input_record"
+    },
+    "structural_proxies": {
+      "reason": "This version does not analyze predicate arguments or reference continuity.",
+      "status": "not_evaluated"
+    },
+    "style_cues": {
+      "counts_by_family": {},
+      "counts_by_left_prefix": {},
+      "literal_ershi": {
+        "count": 0,
+        "counts_by_context": {},
+        "input_records_with_matches": 0,
+        "instances": [],
+        "per_1000_cjk_characters": 0.0
+      },
+      "negative_alternative_connectors": {
+        "count": 0,
+        "counts_by_literal": {},
+        "instances": []
+      },
+      "replacement_frame_instances": []
+    }
+  }
+}

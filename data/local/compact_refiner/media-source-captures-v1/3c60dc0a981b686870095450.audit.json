@@ -1,0 +1,196 @@
+{
+  "doc_id": "3c60dc0a981b686870095450",
+  "url": "https://www.infoq.cn/article/s6TAS5JMIW1miPSqIsk0",
+  "preserved_file_sha256": "3eb65e790ee21712269779f1de900dbf497715ffe4c8a5c16f040a37cc3b9bb2",
+  "preserved_metadata_content_hash": "1d86ea8e2000bc104a266155800018df52aa53a34532a5fd998ebfb5226c61af",
+  "preserved_text_chars": 5932,
+  "preserved_lines": 97,
+  "preserved_metadata": {
+    "doc_id": "3c60dc0a981b686870095450",
+    "source": "infoq",
+    "period": "post",
+    "url": "https://www.infoq.cn/article/s6TAS5JMIW1miPSqIsk0",
+    "title": "当 Agent 成为新的核心云用户：阿里云重新定义“用云范式”",
+    "authors": [
+      "李文朋"
+    ],
+    "translators": [],
+    "is_translation": false,
+    "translation_evidence": [],
+    "published_at": "2026-06-26",
+    "modified_at": null,
+    "collected_at": "2026-08-20T09:17:29.607140+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 12821,
+    "comments": 0,
+    "likes": 0,
+    "collects": 1,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 3877,
+    "text_chars": 5834,
+    "line_count": 97,
+    "repeated_line_ratio": 0.0,
+    "quality_pass": true,
+    "visibility_percentile_in_pilot_cell": 0.8889,
+    "content_hash": "1d86ea8e2000bc104a266155800018df52aa53a34532a5fd998ebfb5226c61af",
+    "text_file": "3c60dc0a981b686870095450.txt"
+  },
+  "jsonl_text_sha256": "1d86ea8e2000bc104a266155800018df52aa53a34532a5fd998ebfb5226c61af",
+  "jsonl_hash_matches_metadata": true,
+  "body_file_exactly_equals_jsonl_plus_terminal_lf": false,
+  "body_file_equals_jsonl_with_crlf_and_terminal_newline": true,
+  "body_file_lf_normalized_equals_jsonl_plus_terminal_lf": true,
+  "body_file_crlf_count": 97,
+  "body_file_lf_count": 97,
+  "body_file_bare_cr_count": 0,
+  "capture_response": {
+    "url": "https://www.infoq.cn/article/s6TAS5JMIW1miPSqIsk0",
+    "requested_at": "2026-09-14T06:13:14.109868+00:00",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/s6TAS5JMIW1miPSqIsk0",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 06:13:15 GMT"
+    },
+    "bytes": 364767,
+    "sha256": "ee333566461d732916bec3428c1eabec041265bbe28496f6121a5268a07f7344",
+    "capture_file": "3c60dc0a981b686870095450.html"
+  },
+  "status": "exact_preserved_text_match",
+  "fresh_collector_text_sha256": "1d86ea8e2000bc104a266155800018df52aa53a34532a5fd998ebfb5226c61af",
+  "fresh_collector_text_chars": 5834,
+  "fresh_metadata": {
+    "doc_id": "3c60dc0a981b686870095450",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/s6TAS5JMIW1miPSqIsk0",
+    "title": "当 Agent 成为新的核心云用户：阿里云重新定义“用云范式”",
+    "authors": [
+      "李文朋"
+    ],
+    "translators": [],
+    "is_translation": false,
+    "translation_evidence": [],
+    "published_at": "2026-06-26",
+    "modified_at": null,
+    "collected_at": "2026-09-14T06:13:14.109868+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 13188,
+    "comments": 0,
+    "likes": 0,
+    "collects": 1,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 3877,
+    "text_chars": 5834,
+    "line_count": 97,
+    "repeated_line_ratio": 0.0,
+    "quality_pass": true
+  },
+  "page_heading": "当 Agent 成为新的核心云用户：阿里云重新定义“用云范式”",
+  "beginning_matches": true,
+  "ending_matches": true,
+  "block_concatenation_matches_collector": true,
+  "nonempty_semantic_text_blocks": 95,
+  "semantic_text_blocks_with_multiple_collector_lines": 1,
+  "added_collector_line_boundaries_within_semantic_text_blocks": 2,
+  "semantic_text_block_tag_counts": {
+    "h1": 1,
+    "h2": 4,
+    "p": 90
+  },
+  "parser_image_nodes_with_paragraph_descendants": 2,
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "引言"
+    },
+    {
+      "tag": "h2",
+      "text": "一、当云遇到一个“不确定的调用方”，需求变了"
+    },
+    {
+      "tag": "h2",
+      "text": "二、让 Agent 接云，真正难的是信任"
+    },
+    {
+      "tag": "h2",
+      "text": "三、从意图到执行，Spec 是 Agent 调云的“稳定器”"
+    },
+    {
+      "tag": "h2",
+      "text": "四、真正的战场，是谁来定义 Agent 时代的云开放标准"
+    }
+  ],
+  "links": [
+    {
+      "text": "云 Skills 门户",
+      "href": "http://skills.aliyun.com"
+    }
+  ],
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/e8/e810d718788dffdad626e8b6d1a4001c.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 10,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/c3/c3cc9b42b980aa459323389acd65b078.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 13,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b6/b6c097e1f89cc523bc3a0df8746629ff.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 78,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "element_counts": {
+    "p": 177,
+    "h1": 1,
+    "h2": 4,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 3,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "tr": 0,
+    "td": 0,
+    "th": 0,
+    "pre": 0,
+    "code": 0,
+    "blockquote": 0,
+    "a": 1,
+    "br": 0,
+    "strong": 0,
+    "em": 0
+  },
+  "zero_width_space_count": 0,
+  "state_content_is_string": false,
+  "embedded_content_normalized_matches_visible_body": null,
+  "title_matches_preserved": true,
+  "authors_match_preserved": true,
+  "translators_match_preserved": true,
+  "publication_date_matches_preserved": true
+}

@@ -1,0 +1,9 @@
+{
+  "human_gold": false,
+  "implementation_sha256": "1dac70554a0b502a039c14a38106a17e323e1ddfd876807ba35624b91f784c30",
+  "operations_sha256": "a613309cd0882dadca70fe924ab65ff4ab890af5001697b3b4d64448d2102cb1",
+  "output_sha256": "05901a14a9df9da71da3cf3a79c503099753e134ee15ecd28d072893f9167838",
+  "parent_output_sha256": "413e094cc29c8084620f7203ee4e4b4e76a60f1e721369ff79be738d155d257f",
+  "reason": "Restore exact source at the failed extent/priority substitution and three uncertain interpretation/scope/addressee substitutions.",
+  "source_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c"
+}

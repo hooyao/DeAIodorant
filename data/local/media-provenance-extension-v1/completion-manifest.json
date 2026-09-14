@@ -1,0 +1,12 @@
+{
+  "status": "complete_with_additive_empty_hash_interpretation_correction",
+  "original_result_manifest_sha256": "54477b371af5f50ca2fc9f44bab34dce941ea9708c966419cbd54f4b9ea170b7",
+  "report_path": "docs/routes/compact-refiner/reports/media-provenance-extension-v1.md",
+  "report_sha256": "a298da55264655a99fdeab2d1a78de1c474b6b42e8c4591c5df724d3af21b881",
+  "post_result_artifacts": {
+    "verification-v1.json": "3d8a399cc23f2d245f87d324fdcd987b7bb9c9c77cddbc3a57f2ea93ba71fbb8",
+    "exclusion-interpretation-addendum-v1.json": "13a4c2602610c50a922ff06383c7889d0a46777f581486b682bd657a0c9b5407"
+  },
+  "source_and_frozen_output_hashes_rechecked": true,
+  "all_repair_candidates_untouched": true
+}

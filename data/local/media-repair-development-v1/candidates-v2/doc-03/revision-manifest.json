@@ -1,0 +1,9 @@
+{
+  "human_gold": false,
+  "implementation_sha256": "d3b3034ddc8fbfc805c2ea0cb79def5907306de5e1d7a02de457921aa9e976ce",
+  "operations_sha256": "054da01d92cfccbda190b8eea8d55e43a0da944cb34db161e626560e63847fc0",
+  "output_sha256": "9d300647be3e55e7e26062b604bc9af94ddbf9770d82fb56ac7e85fb1f119c92",
+  "parent_output_sha256": "50d4de3c53916ac780721b9040fc80360b057dc668565214be135e79aa676acc",
+  "reason": "Revert the uncertain same-problem to same-class substitution; all other operations unchanged.",
+  "source_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04"
+}

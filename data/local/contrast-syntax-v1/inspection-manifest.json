@@ -1,0 +1,32 @@
+{
+  "protocol": "contrast-syntax-feasibility-1.0",
+  "human_gold": false,
+  "reviewer_kind": "assistant_case_inspection",
+  "model_identity": null,
+  "semantic_reviews_read": false,
+  "input_hashes": {
+    "reproduction-02/manifest.json": "5b0c5a2034b341dc2e4708e1a358ca61872fee21cd5cb99a36d612de03bff072",
+    "reproduction-02/doc-03/body.txt": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "reproduction-02/doc-03/annotations.json": "62152b7a80ee0ba72812b80ad2d4ebe806e3bf3a59dbf8aae937245853a70180",
+    "reproduction-02/doc-05/body.txt": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+    "reproduction-02/doc-05/annotations.json": "7834e3f35976a17a07fb2a750fdf317a7bb91e7424f819fd697f5579ffdef1d0",
+    "reproduction-02/doc-11/body.txt": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+    "reproduction-02/doc-11/annotations.json": "f61f85e8d9bbf0e27d9a38dec6336e9288d812b2af8ac92ed6083b2b46c77a89"
+  },
+  "artifact_hashes": {
+    "inspection.json": "fa6f8045c78b09a5f28da97e1d4407a8097e7e3fd0229e6e58cc7ad96690a1b5",
+    "feasibility-report.md": "f11405c42d3341e7197862613e2a0af782a66d2c8691c8f35b06fe52e524a66a",
+    "build_inspection.py": "7a70f1b43a2b38494e65667ecc105dac6a64064d30de431a8582b9c003587b69",
+    "monitoring.json": "c9ca3eae7eafca569dbf1bee6cd30671415b2c7cc503b5e4561bbe2fe3b71f8b",
+    "verification.json": "e2de322ade4a9dd333876e48c7b025124d4416b2fe52b703daa89582cdf7ca16",
+    "reproduction-verification.json": "14cff6c68fdb05c890801518fb1d4f1acade4a28313c15031cff6b6e0c837321",
+    "run-index.json": "66955f5073f78f00ede23347f625ecf014c2cd31d6d0c0e949afd8b226a17b0d"
+  },
+  "evidence_validation": {
+    "whole_bodies": 3,
+    "cases": 6,
+    "source_quotes_exact": true,
+    "token_surface_cases": 4
+  },
+  "limitation": "Manual exploratory cases are not a linguistically validated defect detector or prevalence estimate."
+}

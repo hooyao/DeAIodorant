@@ -1,0 +1,9 @@
+{
+  "attempts": 4,
+  "counts_as_generated_draft": false,
+  "counts_as_semantic_source_failure": false,
+  "draft_id": "cr001-23-draft",
+  "reason": "Four HTTP429 responses including one request after a 120-second cooldown; no further request will be made for this item in CR-001.",
+  "recorded_at_utc": "2026-09-14T04:00:46.553953+00:00",
+  "status": "operationally_unavailable"
+}

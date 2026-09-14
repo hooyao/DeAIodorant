@@ -1,115 +1,92 @@
-# Raw-Passage Reader-Friction Development Screen
+# 原文段落阅读阻力开发筛查
 
-## Status
+## 状态
 
-Protocol `raw-passage-friction-screen-development-1.0` was frozen on
-2026-08-22 before reader outcomes. This is a development candidate screen, not
-an intervention round and not held-out validation.
+协议 `raw-passage-friction-screen-development-1.0` 于 2026-08-22、读者结果前冻结。这是开发候选筛查，不是干预轮次或 held-out validation。
 
-## Rationale
+## 理由
 
-The third intervention round produced four revised wins, one original win, and
-seven ties or neither-preferred judgments. The reader reported that almost all
-source passages had little obvious smell. This indicates a candidate-selection
-failure: marker presence and genre balance did not identify passages with
-enough baseline friction to benefit from conservative editing.
+第三轮干预得到四次修订胜出、一次原版胜出和七次平局或都不偏好。读者表示几乎所有原段落都没有明显臭味。这说明候选选择失败：标记存在和体裁平衡没有识别出基线阻力足够高、可从保守编辑受益的段落。
 
-This screen therefore shows unchanged passages before any edit is prepared. It
-measures willingness to continue reading and does not ask the reader to identify
-AI authorship or classify a linguistic feature.
+因此，本筛查在准备编辑之前展示原样段落，测量继续阅读意愿，不要求识别 AI 作者身份或分类语言特征。
 
-## Sampling design
+## 采样设计
 
-The batch contains 24 transition-period passages from 24 documents in the
-read-only corpus handoff. InfoQ and Machine Heart contribute 12 passages each.
-Within each source, four passages are sampled from each frozen CJK-length band:
+批次包含只读语料交接中 24 篇过渡期文章的 24 个段落，每篇取一段。InfoQ 与机器之心各 12 段，每个来源在各冻结 CJK 篇幅档取四段：
 
-| Band | Inclusive CJK characters | Passages per source |
+| 篇幅档 | CJK 字符范围（含端点） | 每来源段落数 |
 |---|---:|---:|
-| Short | 120-159 | 4 |
-| Medium | 160-199 | 4 |
-| Long | 200-360 | 4 |
+| 短 | 120-159 | 4 |
+| 中 | 160-199 | 4 |
+| 长 | 200-360 | 4 |
 
-The deterministic completeness gates require at least two sentence endings,
-at least 50% CJK characters among visible characters, and no more than 520
-total characters. They reject URLs, interview questions, captions, leading
-punctuation fragments, passages ending in a question or colon, obvious
-dependent line starts caused by extraction, and references that require an
-unseen figure or algorithm. One passage is allowed per document.
 
-All documents previously exposed through a reader rating, intervention, or
-explicit style observation are excluded. The selection uses no smell feature,
-marker count, model score, reader outcome, or author-provenance label. The
-eligible pool contains 463 passages from 55 documents after the frozen gates.
+确定性完整性门槛要求至少两个句末标记，可见字符中 CJK 至少 50%，总字符不超过 520。排除 URL、采访问题、图注、开头为标点的碎片、结尾为问号或冒号的段落、提取造成的明显依赖前文的行首，以及需查看未展示图或算法的引用。每篇只取一段。
 
-## Reader task
+排除此前因读者评分、干预或明确风格观察而暴露的全部文档。选择不使用臭味特征、标记次数、模型分数、读者结果或作者来源标签。冻结门槛后，合格池为 55 篇文章的 463 段。
 
-The reader answers one required question:
+## 读者任务
+
+唯一必答题如下，保留冻结问卷原文，含义为“读完这段原文后，你有多愿意继续阅读”：
 
 > After reading this original passage, how willing are you to continue?
 
-The ordered choices are:
+有序选项为：
 
-1. very willing to continue;
-2. fairly willing to continue;
-3. not very willing to continue;
-4. not at all willing to continue.
+1. 非常愿意继续；
+2. 比较愿意继续；
+3. 不太愿意继续；
+4. 完全不愿意继续。
 
-An optional free-text comment is available. The instruction explicitly says
-not to judge whether the passage was written by AI and not to analyze its
-linguistic features.
+提供可选自由评论。说明明确要求不判断 AI 写作身份，也不分析语言特征。
 
-## Frozen follow-up gate
+## 冻结的后续门槛
 
-Only passages rated `not very willing to continue` or `not at all willing to
-continue` may enter the next development intervention. If fewer than four
-passages qualify, another fresh raw-passage screen must be run; acceptable
-passages must not be edited more aggressively to manufacture a contrast.
+只有评分为 `not very willing to continue` 或 `not at all willing to
+continue` 的段落可进入下一开发干预。少于四段合格时，必须运行另一轮全新原段落筛查；不得加大对可接受段落的编辑强度来制造反差。
 
-At most eight passages may enter the intervention. If more than eight qualify,
-the lower rating is taken first and ties use the precomputed follow-up priority
-below. Optional comments cannot affect selection. Once shown in this screen,
-all 24 documents are development-exposed and cannot be described as held-out
-validation material.
+最多八段进入干预。超过八段时先取评分更低的，并按下表预计算后续优先级打破平局。可选评论不影响选择。一经本筛查展示，全部 24 篇文章都属 development-exposed，不能描述为 held-out validation 材料。
 
-## Frozen passage set
+## 冻结段落集
 
-| Task | Source | Document | Date | Line | Band | CJK | Priority |
+| 任务 | 来源 | 文档 | 日期 | 行 | 篇幅档 | CJK | 优先级 |
 |---:|---|---|---|---:|---|---:|---:|
-| 1 | InfoQ | cf88120b3afa80da3fc4c302 | 2023-12-20 | 20 | Short | 154 | 21 |
-| 2 | InfoQ | 3d2cea36287cf278258bee81 | 2025-01-16 | 50 | Long | 272 | 6 |
-| 3 | Machine Heart | 9f1d90b6ac15dd29465af213 | 2023-03-27 | 26 | Long | 331 | 16 |
-| 4 | InfoQ | ca20838db88af51d53f9d94f | 2024-04-29 | 30 | Medium | 171 | 13 |
-| 5 | Machine Heart | e9d24bfa7ebff01c6a08c4fb | 2024-05-30 | 60 | Medium | 193 | 2 |
-| 6 | InfoQ | 32820b09ec8dd3edac07c47f | 2023-12-07 | 19 | Long | 237 | 14 |
-| 7 | InfoQ | 8edbbf17c05ba07ef9db5e86 | 2023-02-25 | 90 | Long | 295 | 5 |
-| 8 | InfoQ | 3729e9b9209e427e19e16173 | 2025-02-13 | 18 | Short | 125 | 9 |
-| 9 | InfoQ | 78c8f407c8d04f43bd8907f5 | 2024-01-09 | 3 | Medium | 172 | 4 |
-| 10 | Machine Heart | fad56cf7dd43cacc459a9b91 | 2023-09-18 | 23 | Short | 147 | 23 |
-| 11 | Machine Heart | 44f7193de55b94460aa94c83 | 2023-09-08 | 19 | Short | 156 | 1 |
-| 12 | Machine Heart | 552a90a3f24cf3a0a56ae17b | 2023-09-19 | 30 | Medium | 196 | 18 |
-| 13 | InfoQ | ff33cd9163c1c6a848fa040f | 2023-07-25 | 50 | Long | 224 | 10 |
-| 14 | Machine Heart | 043edbbdbc99db8af9111e6c | 2024-06-11 | 21 | Long | 229 | 3 |
-| 15 | InfoQ | c43904af3434cd97a9c1c348 | 2025-05-21 | 7 | Short | 137 | 20 |
-| 16 | Machine Heart | 6d28870921e2543cc882d1a0 | 2023-10-24 | 4 | Short | 159 | 19 |
-| 17 | InfoQ | 82ff13fc3eaf733f81673809 | 2025-03-06 | 15 | Medium | 161 | 22 |
-| 18 | Machine Heart | e7bdd871f45cc11e19b00f02 | 2023-08-04 | 7 | Medium | 161 | 15 |
-| 19 | InfoQ | f1f34167984d5e508d20f41c | 2023-06-27 | 31 | Medium | 170 | 24 |
-| 20 | Machine Heart | 6ef00b4fadbccbd00b6f011c | 2023-06-25 | 6 | Long | 239 | 12 |
-| 21 | Machine Heart | b22137fdaff3ca8dc1d72095 | 2023-07-26 | 86 | Short | 123 | 17 |
-| 22 | Machine Heart | f58aa7e373f216c50420cc5b | 2023-06-09 | 16 | Medium | 184 | 11 |
-| 23 | InfoQ | 48a9230fe1ff0bc5832f1e7c | 2023-02-15 | 48 | Short | 159 | 7 |
-| 24 | Machine Heart | e89331895381298c2efeba0b | 2023-08-07 | 22 | Long | 206 | 8 |
+| 1 | InfoQ | cf88120b3afa80da3fc4c302 | 2023-12-20 | 20 | 短 | 154 | 21 |
+| 2 | InfoQ | 3d2cea36287cf278258bee81 | 2025-01-16 | 50 | 长 | 272 | 6 |
+| 3 | 机器之心 | 9f1d90b6ac15dd29465af213 | 2023-03-27 | 26 | 长 | 331 | 16 |
+| 4 | InfoQ | ca20838db88af51d53f9d94f | 2024-04-29 | 30 | 中 | 171 | 13 |
+| 5 | 机器之心 | e9d24bfa7ebff01c6a08c4fb | 2024-05-30 | 60 | 中 | 193 | 2 |
+| 6 | InfoQ | 32820b09ec8dd3edac07c47f | 2023-12-07 | 19 | 长 | 237 | 14 |
+| 7 | InfoQ | 8edbbf17c05ba07ef9db5e86 | 2023-02-25 | 90 | 长 | 295 | 5 |
+| 8 | InfoQ | 3729e9b9209e427e19e16173 | 2025-02-13 | 18 | 短 | 125 | 9 |
+| 9 | InfoQ | 78c8f407c8d04f43bd8907f5 | 2024-01-09 | 3 | 中 | 172 | 4 |
+| 10 | 机器之心 | fad56cf7dd43cacc459a9b91 | 2023-09-18 | 23 | 短 | 147 | 23 |
+| 11 | 机器之心 | 44f7193de55b94460aa94c83 | 2023-09-08 | 19 | 短 | 156 | 1 |
+| 12 | 机器之心 | 552a90a3f24cf3a0a56ae17b | 2023-09-19 | 30 | 中 | 196 | 18 |
+| 13 | InfoQ | ff33cd9163c1c6a848fa040f | 2023-07-25 | 50 | 长 | 224 | 10 |
+| 14 | 机器之心 | 043edbbdbc99db8af9111e6c | 2024-06-11 | 21 | 长 | 229 | 3 |
+| 15 | InfoQ | c43904af3434cd97a9c1c348 | 2025-05-21 | 7 | 短 | 137 | 20 |
+| 16 | 机器之心 | 6d28870921e2543cc882d1a0 | 2023-10-24 | 4 | 短 | 159 | 19 |
+| 17 | InfoQ | 82ff13fc3eaf733f81673809 | 2025-03-06 | 15 | 中 | 161 | 22 |
+| 18 | 机器之心 | e7bdd871f45cc11e19b00f02 | 2023-08-04 | 7 | 中 | 161 | 15 |
+| 19 | InfoQ | f1f34167984d5e508d20f41c | 2023-06-27 | 31 | 中 | 170 | 24 |
+| 20 | 机器之心 | 6ef00b4fadbccbd00b6f011c | 2023-06-25 | 6 | 长 | 239 | 12 |
+| 21 | 机器之心 | b22137fdaff3ca8dc1d72095 | 2023-07-26 | 86 | 短 | 123 | 17 |
+| 22 | 机器之心 | f58aa7e373f216c50420cc5b | 2023-06-09 | 16 | 中 | 184 | 11 |
+| 23 | InfoQ | 48a9230fe1ff0bc5832f1e7c | 2023-02-15 | 48 | 短 | 159 | 7 |
+| 24 | 机器之心 | e89331895381298c2efeba0b | 2023-08-07 | 22 | 长 | 206 | 8 |
 
-## Reproduction identity
 
-Two independent runs produced byte-identical artifacts.
+## 复现身份
 
-| Artifact | SHA-256 |
+两次独立运行产物逐字节一致。
+
+| 产物 | SHA-256 |
 |---|---|
-| Tasks | `251f2034216e9063b55d4912162eb19fb5c214267fa6941e617aac97a9cafd42` |
-| Protocol | `0d448d12925aa9b808b4c0d8272b3703e15ac6ce686595bec86de1f8cb7bdbd4` |
-| Label config | `0f79332c65416c61c02c984533c7e61d2afd68b6d7eafb900ca03e4a9ba3e698` |
+| 任务 | `251f2034216e9063b55d4912162eb19fb5c214267fa6941e617aac97a9cafd42` |
+| 协议 | `0d448d12925aa9b808b4c0d8272b3703e15ac6ce686595bec86de1f8cb7bdbd4` |
+| 标签配置 | `0f79332c65416c61c02c984533c7e61d2afd68b6d7eafb900ca03e4a9ba3e698` |
+
 
 ~~~powershell
 python experiments/prepare_reader_friction_screen_v1.py `
@@ -118,35 +95,22 @@ python experiments/prepare_reader_friction_screen_v1.py `
   --seed 2026082202
 ~~~
 
-Generated tasks remain under ignored `feature_runs/`. No handoff file is
-modified. This transition-only screen cannot estimate the primary pre/post
-effect or substitute for a matched post-period corpus.
+生成任务保留在被忽略的 `feature_runs/` 下。不修改交接文件。此过渡期筛查不能估计主比较的前后时间效应，也不能替代匹配的后时期语料。
 
-## Outcome
+## 结果
 
-The reader stopped the screen early because the passages felt the same and the
-batch had no useful discrimination. Label Studio persisted 11 completions even
-though the reader reported completing 12; the unpersisted response is not
-imputed.
+读者觉得段落相似、批次没有有效区分度，因而提前停止。读者报告完成 12 题，但 Label Studio 只保存 11 题；未保存回答不作插补。
 
-| Rating | Persisted count |
+| 评分 | 已保存次数 |
 |---|---:|
-| Very willing to continue | 0 |
-| Fairly willing to continue | 10 |
-| Not very willing to continue | 1 |
-| Not at all willing to continue | 0 |
+| 非常愿意继续 | 0 |
+| 比较愿意继续 | 10 |
+| 不太愿意继续 | 1 |
+| 完全不愿意继续 | 0 |
 
-The dominant category contains 90.9% of persisted responses. Only one passage
-reaches the frozen follow-up gate, below the required minimum of four. The
-remaining tasks are terminated rather than completed for protocol appearance.
-No intervention will be prepared from this batch.
 
-This is both an instrument and sampling failure. Absolute four-level ratings
-provided almost no separation, while uniformly sampled editorial passages were
-mostly acceptable. The replacement development design should test whether a
-frozen deterministic ranking enriches for friction by comparing two passages
-from the same document and allowing an explicit no-meaningful-difference
-response. It must not treat a forced relative choice as evidence of a smell.
+主要类别占已保存回答的 90.9%。仅一段达到冻结后续门槛，少于最低四段。终止剩余任务，不为形式上的协议完成继续作答。不从本批次准备干预。
 
-The complete persisted outcome and early-stop decision are stored in
-`data/annotations/reader-friction-screen-v1.json`.
+这同时是工具与采样失败：绝对四级评分几乎无法分离，而均匀抽取的编辑文章大多可接受。替代开发设计应比较同一文章两个段落，检验冻结确定性排序是否富集阅读阻力，并允许明确选择无实质差异。不得将强制相对选择视为臭味证据。
+
+完整已保存结果及提前停止决定保存在 `data/annotations/reader-friction-screen-v1.json`。

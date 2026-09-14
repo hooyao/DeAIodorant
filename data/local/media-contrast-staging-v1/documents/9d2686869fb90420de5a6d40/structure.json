@@ -1,0 +1,88 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "工程实践文章",
+      "href": "https://engineeringblog.yelp.com/2025/09/s3-server-access-logs-at-scale.html"
+    },
+    {
+      "text": "Yelp",
+      "href": "https://www.yelp.com/"
+    },
+    {
+      "text": "Amazon S3",
+      "href": "https://aws.amazon.com/s3/"
+    },
+    {
+      "text": "Amazon Athena",
+      "href": "https://aws.amazon.com/athena/"
+    },
+    {
+      "text": "Parquet",
+      "href": "https://www.databricks.com/glossary/what-is-parquet"
+    },
+    {
+      "text": "AWS Glue Data Catalog",
+      "href": "https://docs.aws.amazon.com/prescriptive-guidance/latest/serverless-etl-aws-glue/aws-glue-data-catalog.html"
+    },
+    {
+      "text": "Lambda",
+      "href": "https://aws.amazon.com/lambda/"
+    },
+    {
+      "text": "IAM ",
+      "href": "https://aws.amazon.com/iam/"
+    },
+    {
+      "text": "Upsolver",
+      "href": "https://www.upsolver.com/"
+    },
+    {
+      "text": "发布",
+      "href": "https://aws.amazon.com/blogs/big-data/extracting-key-insights-from-amazon-s3-access-logs-with-aws-glue-for-ray"
+    },
+    {
+      "text": "Druid",
+      "href": "https://www.druidai.com/"
+    },
+    {
+      "text": "Presto/Trino",
+      "href": "https://en.wikipedia.org/wiki/Presto_%28SQL_query_engine%29"
+    },
+    {
+      "text": "AWS 的博文",
+      "href": "https://aws.amazon.com/blogs/big-data/analyzing-amazon-s3-server-access-logs-using-amazon-opensearch-service"
+    },
+    {
+      "text": "Kibana",
+      "href": "https://www.elastic.co/kibana"
+    },
+    {
+      "text": "Parquet ",
+      "href": "https://www.databricks.com/glossary/what-is-parquet"
+    },
+    {
+      "text": "https://www.infoq.com/news/2025/12/yelp-s3-server-access-logs/",
+      "href": "https://www.infoq.com/news/2025/12/yelp-s3-server-access-logs/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 21,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 16
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/9d2686869fb90420de5a6d40.html",
+  "raw_html_sha256": "f53df7cce777234df95f421da3dc0c05848075335c6e64762688744b21a50e84"
+}

@@ -1,0 +1,28 @@
+{
+  "command": "python experiments/prepare_smzdm_reader_anchor.py",
+  "external_model_api_calls": 0,
+  "gpu_used": false,
+  "implementation_hashes": {
+    "experiments/prepare_smzdm_reader_anchor.py": "3cb6ff3658582db1cb584a80bffe5e61a04a90a1efa40543cc98e0c7b4e021a5",
+    "src/deaiodorant/analysis/reading_burden.py": "eb4d22db4f305c7d8f22cd5c3a4d02d78be273bf9e570892505239b38c8143f9"
+  },
+  "input_hashes": {
+    "data/local/reader-style-anchors-v1/article-request.json": "efc20fe193680ee6ad783f706ba057454be7c8c3d0759cef58059026c060c08c",
+    "data/local/reader-style-anchors-v1/reader-feedback.json": "2e43c4a5309aa61b0f3eca7a74f5af9382f26447979707c3200e4a24fd043220",
+    "data/local/reader-style-anchors-v1/robots-request.json": "d5c7a8b0d45e77e3c2311afde241072e2d37c3ad14bab7f5ea16377c083e1c4f",
+    "data/local/reader-style-anchors-v1/robots.txt": "5229a1a5264050212e4d0f1bb5f45853d13b89e849ec8c129791590ecc7afa19",
+    "data/local/reader-style-anchors-v1/source.html": "bb4e86a8e65eea101c971d0a40d1b2773f53359209c684d4608691e9f1636098"
+  },
+  "network_in_preparation": false,
+  "output_hashes": {
+    "analysis-body.txt": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "article.dom.html": "a6374076405ecc0e06547c6a9a3f1cd361fc9c726c61bfe84a2b2a43d7f40914",
+    "blocks.json": "909bcf0db7d4a4c370e8b01128d96c3491ee424be718e0f41689eef49a9c4965",
+    "body-with-citations.txt": "e2fc58e18a30abda2cdde34ea9f86ef2469382704a40edc88104e65fcec2b1b5",
+    "citations.json": "3b18c3dfb172767a3f55e7c5585621ae7db84f255c74c40038e609a004f048c0",
+    "literal-measurements.json": "cf2e56db508553bc2469b08986f7f77166d8afc20a047e9b3d601a78ce8d4659",
+    "media.json": "64896ef4b721ae24315db25828771cc24b249b1c1a9871a29520e28b11826fbc",
+    "metadata.json": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393"
+  },
+  "version": "smzdm-reader-anchor-1.0"
+}

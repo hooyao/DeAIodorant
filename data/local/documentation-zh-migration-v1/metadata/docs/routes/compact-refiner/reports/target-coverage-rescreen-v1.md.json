@@ -1,0 +1,245 @@
+{
+  "path": "docs/routes/compact-refiner/reports/target-coverage-rescreen-v1.md",
+  "status": "translated",
+  "fragments": 4,
+  "before_sha256": "d03e198be2cdc65fec86593e2df1865aa772917d5f18444ea914bd04e2fe387a",
+  "after_sha256": "627e02b258276a9d745dbe45728f1fdbf2a187f2b879a17eada6d81221c0e0e6",
+  "requests": [
+    {
+      "schema_version": "compact-refiner-openrouter-1.0",
+      "client_version": "compact-refiner-openrouter-1.1",
+      "retry_policy_version": "openrouter-retry-after-1.0",
+      "request_sha256": "b3ce4d0cd2e4c848f24f2dca7d59e070a5965c420b722b97b0f7a0a7c7445d98",
+      "messages_sha256": "b705b480fa95e190f8dee1d08df47324b775029c36dd2aec21c2b7124193016b",
+      "request_config": {
+        "model": "openai/gpt-6-astra",
+        "max_tokens": 12000,
+        "temperature": 0,
+        "stream": false,
+        "usage": {
+          "include": true
+        },
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "prompt": 10.0,
+            "completion": 50.0
+          }
+        },
+        "seed": 20260914,
+        "reasoning": {
+          "effort": "low",
+          "exclude": true
+        }
+      },
+      "transaction_id": "9acc9eb96d654dd289e8e9406e8e699c",
+      "purpose": "documentation-zh-migration-v1",
+      "requested_model": "openai/gpt-6-astra",
+      "returned_model": "openai/gpt-6-astra",
+      "provider": "OpenAI",
+      "provider_missing_reason": null,
+      "checkpoint_revision": null,
+      "checkpoint_revision_missing_reason": "not_exposed_by_response",
+      "seed_supported": null,
+      "seed_support_note": "A requested seed does not establish provider support or deterministic replay.",
+      "started_at_utc": "2026-09-14T10:28:12.718067+00:00",
+      "finished_at_utc": "2026-09-14T10:28:52.245848+00:00",
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "response_id": "gen-1789381694-KBPa4wuZDWphvesLbR87",
+      "usage": {
+        "prompt_tokens": 2683,
+        "completion_tokens": 2835,
+        "total_tokens": 5518,
+        "cost": "0.17528",
+        "reasoning_tokens": 0
+      },
+      "cost": {
+        "reported_usd": "0.17528",
+        "accounted_usd": "0.17528",
+        "basis": "reported_usage_cost"
+      },
+      "attempt_count": 1,
+      "retry": null,
+      "retry_not_before_utc": null,
+      "cache_hit": false
+    },
+    {
+      "schema_version": "compact-refiner-openrouter-1.0",
+      "client_version": "compact-refiner-openrouter-1.1",
+      "retry_policy_version": "openrouter-retry-after-1.0",
+      "request_sha256": "b4e2ae67b700293a11b0c5b97d35bf07ce12d37c9c23578d148b631eede4d481",
+      "messages_sha256": "b061e87adead7e4c238f865fd2f4f7ac9490547b4bb1b10c2b5084cf89fe908c",
+      "request_config": {
+        "model": "openai/gpt-6-astra",
+        "max_tokens": 12000,
+        "temperature": 0,
+        "stream": false,
+        "usage": {
+          "include": true
+        },
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "prompt": 10.0,
+            "completion": 50.0
+          }
+        },
+        "seed": 20260914,
+        "reasoning": {
+          "effort": "low",
+          "exclude": true
+        }
+      },
+      "transaction_id": "0b4518f8651e4870965e58dadf97b4a4",
+      "purpose": "documentation-zh-migration-v1",
+      "requested_model": "openai/gpt-6-astra",
+      "returned_model": "openai/gpt-6-astra",
+      "provider": "OpenAI",
+      "provider_missing_reason": null,
+      "checkpoint_revision": null,
+      "checkpoint_revision_missing_reason": "not_exposed_by_response",
+      "seed_supported": null,
+      "seed_support_note": "A requested seed does not establish provider support or deterministic replay.",
+      "started_at_utc": "2026-09-14T10:28:52.267125+00:00",
+      "finished_at_utc": "2026-09-14T10:29:28.490695+00:00",
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "response_id": "gen-1789381733-qEO5Vj4L8TE3r9tRa2Tl",
+      "usage": {
+        "prompt_tokens": 2576,
+        "completion_tokens": 2743,
+        "total_tokens": 5319,
+        "cost": "0.1693425",
+        "reasoning_tokens": 0
+      },
+      "cost": {
+        "reported_usd": "0.1693425",
+        "accounted_usd": "0.1693425",
+        "basis": "reported_usage_cost"
+      },
+      "attempt_count": 1,
+      "retry": null,
+      "retry_not_before_utc": null,
+      "cache_hit": false
+    },
+    {
+      "schema_version": "compact-refiner-openrouter-1.0",
+      "client_version": "compact-refiner-openrouter-1.1",
+      "retry_policy_version": "openrouter-retry-after-1.0",
+      "request_sha256": "a2bf2e617651fda3736f305f84ffefc63839cf21116c300641306d18ec039102",
+      "messages_sha256": "6a26dec382c3fb25be8529c61732ae0b17804b0973bdc025d8e6eaeb4e5caba8",
+      "request_config": {
+        "model": "openai/gpt-6-astra",
+        "max_tokens": 12000,
+        "temperature": 0,
+        "stream": false,
+        "usage": {
+          "include": true
+        },
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "prompt": 10.0,
+            "completion": 50.0
+          }
+        },
+        "seed": 20260914,
+        "reasoning": {
+          "effort": "low",
+          "exclude": true
+        }
+      },
+      "transaction_id": "27a343dbdc4e44ed83b462c1e90cb4e3",
+      "purpose": "documentation-zh-migration-v1",
+      "requested_model": "openai/gpt-6-astra",
+      "returned_model": "openai/gpt-6-astra",
+      "provider": "OpenAI",
+      "provider_missing_reason": null,
+      "checkpoint_revision": null,
+      "checkpoint_revision_missing_reason": "not_exposed_by_response",
+      "seed_supported": null,
+      "seed_support_note": "A requested seed does not establish provider support or deterministic replay.",
+      "started_at_utc": "2026-09-14T10:29:28.512974+00:00",
+      "finished_at_utc": "2026-09-14T10:30:04.906234+00:00",
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "response_id": "gen-1789381769-SlJNjusuDXTS6gN8ZegY",
+      "usage": {
+        "prompt_tokens": 2671,
+        "completion_tokens": 2811,
+        "total_tokens": 5482,
+        "cost": "0.17393",
+        "reasoning_tokens": 0
+      },
+      "cost": {
+        "reported_usd": "0.17393",
+        "accounted_usd": "0.17393",
+        "basis": "reported_usage_cost"
+      },
+      "attempt_count": 1,
+      "retry": null,
+      "retry_not_before_utc": null,
+      "cache_hit": false
+    },
+    {
+      "schema_version": "compact-refiner-openrouter-1.0",
+      "client_version": "compact-refiner-openrouter-1.1",
+      "retry_policy_version": "openrouter-retry-after-1.0",
+      "request_sha256": "a786c16f3cd4aaa6583c3d23213d7517c863a2fcc9f2ff6e23c143b0020d5cb9",
+      "messages_sha256": "913724aa660f2ced7bffee0aef675b23971745f67874f5b5671250d349d0feb4",
+      "request_config": {
+        "model": "openai/gpt-6-astra",
+        "max_tokens": 12000,
+        "temperature": 0,
+        "stream": false,
+        "usage": {
+          "include": true
+        },
+        "provider": {
+          "allow_fallbacks": false,
+          "max_price": {
+            "prompt": 10.0,
+            "completion": 50.0
+          }
+        },
+        "seed": 20260914,
+        "reasoning": {
+          "effort": "low",
+          "exclude": true
+        }
+      },
+      "transaction_id": "533ade2ef1a74bc7a432c3f375454aed",
+      "purpose": "documentation-zh-migration-v1",
+      "requested_model": "openai/gpt-6-astra",
+      "returned_model": "openai/gpt-6-astra",
+      "provider": "OpenAI",
+      "provider_missing_reason": null,
+      "checkpoint_revision": null,
+      "checkpoint_revision_missing_reason": "not_exposed_by_response",
+      "seed_supported": null,
+      "seed_support_note": "A requested seed does not establish provider support or deterministic replay.",
+      "started_at_utc": "2026-09-14T10:30:04.929168+00:00",
+      "finished_at_utc": "2026-09-14T10:30:18.476002+00:00",
+      "finish_reason": "stop",
+      "native_finish_reason": "completed",
+      "response_id": "gen-1789381806-3p3yzHhujype2otsdlNr",
+      "usage": {
+        "prompt_tokens": 985,
+        "completion_tokens": 896,
+        "total_tokens": 1881,
+        "cost": "0.05465",
+        "reasoning_tokens": 0
+      },
+      "cost": {
+        "reported_usd": "0.05465",
+        "accounted_usd": "0.05465",
+        "basis": "reported_usage_cost"
+      },
+      "attempt_count": 1,
+      "retry": null,
+      "retry_not_before_utc": null,
+      "cache_hit": false
+    }
+  ]
+}

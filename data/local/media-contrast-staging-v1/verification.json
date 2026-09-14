@@ -1,0 +1,71 @@
+{
+  "verified_at": "2026-09-14T06:35:57.694892+00:00",
+  "checks": {
+    "selected_equals_attempted_urls": true,
+    "all_responses_http200_complete": true,
+    "all_raw_response_hashes_match": true,
+    "all_normalized_body_hashes_match": true,
+    "all_block_concatenations_match": true,
+    "all_source_identity_files_unchanged": true,
+    "all_request_urls_unique": true,
+    "script_unchanged_since_selection": true,
+    "collector_unchanged": true,
+    "presentation_script_unchanged": true,
+    "minimum_two_second_spacing": true
+  },
+  "request_count": 27,
+  "article_get_count": 24,
+  "minimum_end_to_start_interval_seconds": 2.000066,
+  "first_article_request": "2026-09-14T06:34:05.488179+00:00",
+  "last_article_completed": "2026-09-14T06:35:19.549208+00:00",
+  "within_batch_exact_duplicate_groups": [
+    [
+      "769ecc5e088514e4261ae7e0",
+      "8a835ce2a2584c3c9040fcc5",
+      "c979e224eb220101fb785893",
+      "94484784827b950a4ea5beea"
+    ]
+  ],
+  "total_private_artifact_bytes_before_verification": 21163718,
+  "utf8_replacement_count": 0,
+  "cohorts": {
+    "pre": {
+      "count": 12,
+      "publication_min": "2020-07-06",
+      "publication_max": "2022-10-28",
+      "translation_status_counts": {
+        "unresolved_no_originality_pass": 11,
+        "excluded_deterministic_evidence": 1
+      },
+      "text_chars_min": 0,
+      "text_chars_max": 8952,
+      "current_views_min": 1360,
+      "current_views_max": 8076,
+      "total_image_or_media_references": 33,
+      "total_links": 44
+    },
+    "post": {
+      "count": 12,
+      "publication_min": "2025-10-30",
+      "publication_max": "2026-06-01",
+      "translation_status_counts": {
+        "unresolved_no_originality_pass": 9,
+        "excluded_deterministic_evidence": 3
+      },
+      "text_chars_min": 243,
+      "text_chars_max": 21891,
+      "current_views_min": 2507,
+      "current_views_max": 18433,
+      "total_image_or_media_references": 30,
+      "total_links": 57
+    }
+  },
+  "translation_flagged_doc_ids": [
+    "9d2686869fb90420de5a6d40",
+    "9656e09a0c8ef6938c517cef",
+    "83e3fb47524511fba7945931",
+    "0c1bc051de0fc98fbcd0524d"
+  ],
+  "model_calls": 0,
+  "admitted_documents": 0
+}

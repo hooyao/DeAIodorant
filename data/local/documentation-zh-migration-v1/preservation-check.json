@@ -1,0 +1,14 @@
+{
+  "changed_documents": 75,
+  "unfinished": [
+    "docs/routes/compact-refiner/media-full-article-design-review.md",
+    "docs/routes/compact-refiner/preference-readiness-audit.md",
+    "experiments/handoff-transition-probe.md",
+    "experiments/modifier-bracketing-probe.md",
+    "experiments/pilot-direction-probe.md",
+    "experiments/relation-support-probe.md"
+  ],
+  "command_block_mismatches": [],
+  "inline_missing": [],
+  "table_structure_mismatches": []
+}

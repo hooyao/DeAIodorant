@@ -1,0 +1,23 @@
+{
+  "version": "media-contrast-staging-v1",
+  "completed_at": "2026-09-14T06:35:20.075925+00:00",
+  "article_attempts": 24,
+  "selected": 24,
+  "status_counts": {
+    "captured_unreviewed": 24
+  },
+  "actual_cohort_counts": {
+    "post": 12,
+    "pre": 12
+  },
+  "period_match_count": 24,
+  "exclusion_counts": {
+    "deterministic_translation_evidence": 4
+  },
+  "stop_reason": null,
+  "admitted_documents": 0,
+  "smell_labels": 0,
+  "model_calls": 0,
+  "selection_manifest_sha256": "e8c479f160f0591b28063fcc77f64f5c63ed4b276c4221dd474cabf8860f5679",
+  "article_attempts_sha256": "348e8cc8ec34d1a6fe5517ee7f7858f6bfa78bb7424bc063b3bc9616858ac6f2"
+}

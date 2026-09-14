@@ -1,0 +1,32 @@
+{
+  "alias": "doc-12",
+  "content_hash": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 1600,
+        "start_char": 1598,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1607,
+        "start_char": 1564,
+        "text": "\n披风之下的专属权益\n成为 Data Superhero 不是终点，而是旅程的加速器。"
+      },
+      "occurrence_id": "doc-12-e01"
+    },
+    {
+      "connector": {
+        "end_char": 1962,
+        "start_char": 1960,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1969,
+        "start_char": 1944,
+        "text": "他们不等待 AI 数据云的未来，而是主动塑造未来。"
+      },
+      "occurrence_id": "doc-12-e02"
+    }
+  ]
+}

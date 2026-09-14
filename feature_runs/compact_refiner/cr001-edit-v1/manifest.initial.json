@@ -1,0 +1,53 @@
+{
+  "actual_drafts": 23,
+  "amendment": "All 24 planned sources are accounted: 23 outputs and one unavailable API request. Editing is confined to separately source-reviewed passes. This is a development-stage operational amendment after source inspection and before P outcomes, not a confirmatory study.",
+  "eligible_draft_ids": [
+    "cr001-01-draft",
+    "cr001-02-draft",
+    "cr001-03-draft",
+    "cr001-07-draft",
+    "cr001-08-draft",
+    "cr001-09-draft",
+    "cr001-11-draft",
+    "cr001-12-draft",
+    "cr001-14-draft",
+    "cr001-15-draft",
+    "cr001-17-draft",
+    "cr001-19-draft",
+    "cr001-20-draft"
+  ],
+  "frozen_at_utc": "2026-09-14T04:06:56.571406+00:00",
+  "frozen_files": {
+    "data/local/compact_refiner/cr001-v1/briefs.jsonl": "f5cd121c4841e15ad26923ab4be4346e77c9e81c5bc343c2092159f09d60cdc0",
+    "data/local/compact_refiner/cr001-v1/drafts.jsonl": "5b03eeb3fac0bc65031bd7e60358ef902e08f4294fe08ae2b8cb4a4a447bdfe1",
+    "data/local/compact_refiner/cr001-v1/source_assessments.jsonl": "413569bf06f780f64bf4c70718bd1d6172fcf8a1f7cca716435761c31b17921e",
+    "docs/routes/compact-refiner/prompts/editor-v1.txt": "04c3fc6b4e800d874eaff974bb462829a125801c1e0fb7acedfeb272cacc77a0",
+    "experiments/compact_refiner_edit_stage.py": "0c2c3ecfb8d83406b8f5466d773472552abdbe138f9b6333e5d4dfeb666044e2",
+    "feature_runs/compact_refiner/cr001-v1/manifest.initial.json": "349e9cc728e03c66ab9756269188d8cd9dfa51cc0dc980748e6b168dd6d69295",
+    "feature_runs/compact_refiner/cr001-v1/source-disposition-23.json": "83b9529cf5164d52afad85df5b78c7bb2c4803b4c0aeba7b26aed8e0a3beec31",
+    "src/deaiodorant/refine/openrouter.py": "05c368f61d9954dbc4eb331a02c83c072b5aded6401bcc1f50be9dbbb0a7333a",
+    "src/deaiodorant/refine/records.py": "d1d4ab83154ad622916ba9ec0686cf4fb66091388bed871f71cd83eded49e365"
+  },
+  "human_review_count": 0,
+  "model": "mistralai/ministral-3b-2512",
+  "operationally_unavailable": [
+    "cr001-23-draft"
+  ],
+  "parent_run_id": "cr001-v1",
+  "planned_source_groups": 24,
+  "pricing": {
+    "completion": "0.0000001",
+    "input_cache_read": "0.00000001",
+    "prompt": "0.0000001"
+  },
+  "schema_version": "compact-refiner-edit-stage-1.0",
+  "settings": {
+    "max_retries": 0,
+    "max_tokens": 2048,
+    "reasoning": null,
+    "seed": 20260914,
+    "shared_parent_budget_usd": "4",
+    "temperature": 0.0
+  },
+  "training_export_count": 0
+}

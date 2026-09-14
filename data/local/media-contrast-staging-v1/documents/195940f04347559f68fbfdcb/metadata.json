@@ -1,0 +1,91 @@
+{
+  "frame_index": 7767,
+  "url": "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2",
+  "doc_id": "195940f04347559f68fbfdcb",
+  "sitemap_lastmod": null,
+  "intended_cohort": "pre",
+  "publication_date": "unknown_until_article_capture",
+  "exclusion_reasons": [],
+  "selected": true,
+  "selection_rank": 5,
+  "capture": {
+    "url": "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2",
+    "requested_at": "2026-09-14T06:34:56.005246+00:00",
+    "capture_file": "raw/195940f04347559f68fbfdcb.html",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 06:34:57 GMT"
+    },
+    "completed_at": "2026-09-14T06:34:57.074285+00:00",
+    "complete_response": true,
+    "bytes": 383800,
+    "sha256": "e03019b230301fc8f97f6cd8376bd3b3c6c6a1808279126e005dd19e3e9c7e67"
+  },
+  "admission_status": "unreviewed_staging_not_admitted",
+  "smell_label": null,
+  "authorship_label": null,
+  "training_rights": "unverified",
+  "quality_status": "unreviewed_no_quality_admission",
+  "visibility_status": "unreviewed_snapshot_only",
+  "exposure_status": "identity_checked_near_duplicate_and_missing_historical_handoffs_pending",
+  "status": "captured_unreviewed",
+  "metadata": {
+    "doc_id": "195940f04347559f68fbfdcb",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2",
+    "title": "关于卫星定位，你想知道的一切",
+    "authors": [
+      "高德技术"
+    ],
+    "translators": [],
+    "translation_evidence": [
+      "original_link_marker"
+    ],
+    "published_at": "2020-11-14",
+    "modified_at": null,
+    "collected_at": "2026-09-14T06:34:56.005246+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 7186,
+    "comments": 0,
+    "likes": 7,
+    "collects": 19,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 5649,
+    "text_chars": 7188,
+    "line_count": 111,
+    "repeated_line_ratio": 0.0
+  },
+  "body_path": "documents/195940f04347559f68fbfdcb/body.txt",
+  "content_hash": "09e020a66c22252b0f94932ae9e8c2a609453a05e96a110e89c1e6bd5ccc1a32",
+  "body_file_sha256": "09e020a66c22252b0f94932ae9e8c2a609453a05e96a110e89c1e6bd5ccc1a32",
+  "embedded_publication_milliseconds": 1605333600528,
+  "published_timestamp_utc": "2020-11-14T06:00:00.528000+00:00",
+  "published_date_asia_shanghai": "2020-11-14",
+  "actual_cohort": "pre",
+  "boundary_timezone_ambiguity": false,
+  "intended_period_match": true,
+  "sitemap_lastmod_is_publication_date": false,
+  "embedded_scalar_time_fields": {
+    "publish_time": 1605333600528,
+    "ctime": 1605333588852,
+    "utime": 1605333588852
+  },
+  "declared_canonical_urls": [
+    "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2"
+  ],
+  "canonical_url_mismatch": false,
+  "known_exact_content_overlap": false,
+  "exclusions_found": [],
+  "translation_status": "unresolved_no_originality_pass",
+  "legacy_quality_pass_diagnostic_only": true,
+  "block_count": 107,
+  "media_reference_count": 14,
+  "link_count": 4,
+  "multimedia_status": "full_captured_text_only_media_references_uninspected",
+  "utf8_decode_replacement_count": 0
+}

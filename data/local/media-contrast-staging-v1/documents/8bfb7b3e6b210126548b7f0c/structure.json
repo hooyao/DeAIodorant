@@ -1,0 +1,195 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/52/52d3856460dd11bcf10fea1b5c98555c.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 8,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/63/6383eba920a2b4c91ee5a64ffaef9654.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 12,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/1b/1b11e3a9cbe63285054fbd05085e6636.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 16,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/e4/e484375894837ef7a004e959d3b37da4.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 25,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/fa/fa6c2eea1175ebe062e4d697cc7a37a7.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 29,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media06",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b7/b7860a9dbdcb8b076c9e3215f219600b.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 30,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media07",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/1a/1ae08a27428711ddcdb0a2eddb805c44.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 34,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media08",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/f1/f117fb65880e997a79f60c7bb46c6055.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 42,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media09",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/a6/a6bd981782304f9161cb346f9a800faf.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 45,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media10",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/2b/2b9bbe2e5454f2f14e879ac56e0100f9.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 49,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media11",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/11/11851bf02dc213107ea864b020925f1e.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 58,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media12",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/5d/5d62589526b0f15508e066f7bb3bb4eb.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 63,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media13",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/ba/ba6dce59829b69bb08712acd33c0be3d.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 114,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media14",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/a5/a575d48869b6b72adc8f5d0781c65707.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 117,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media15",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b7/b76d07bfbf8f08e8c40de15d27fe9913.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 118,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "Apache Doris",
+      "href": "https://doris.apache.org"
+    },
+    {
+      "text": "Doris Manager ",
+      "href": "https://docs.selectdb.com/enterprise/management-guide/what-is-doris-manager"
+    },
+    {
+      "text": "SQL 改写",
+      "href": "https://www.selectdb.com/blog/209"
+    },
+    {
+      "text": "Arrow Flight SQL ",
+      "href": "https://www.selectdb.com/blog/220"
+    },
+    {
+      "text": "异步物化视图",
+      "href": "https://www.selectdb.com/blog/1204"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 89,
+    "h1": 0,
+    "h2": 3,
+    "h3": 7,
+    "ul": 7,
+    "ol": 0,
+    "li": 14,
+    "img": 15,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 1,
+    "a": 5
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/8bfb7b3e6b210126548b7f0c.html",
+  "raw_html_sha256": "ff8ed952f83e49e7c0587f5e8067e577a79846a8df75e0dd3cf32ff9fef33c29"
+}

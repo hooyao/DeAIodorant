@@ -1,0 +1,75 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/wechat/images/99/992fa19dfed07c382e19531460f97900.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 20,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/wechat/images/9b/9b9d74bf56973e8bf0944a789b3f1f13.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 32,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/wechat/images/36/36b92cca984b2c74b7b96e879a83400d.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 45,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "《解读大前端的 2021：究竟“卷”出了什么名堂？》",
+      "href": "https://www.infoq.cn/article/PRfJpajWiffdE6CvDiJ6"
+    },
+    {
+      "text": "《2022 年移动应用技术趋势白皮书》",
+      "href": "https://developer.huawei.com/consumer/cn/forum/topic/0202977783444380030?fid=18&ha_source=InfoQLTT"
+    },
+    {
+      "text": "HarmonyOS",
+      "href": "https://xie.infoq.cn/article/1461af9ca6767822a59c90941"
+    },
+    {
+      "text": "HMS Core",
+      "href": "https://www.infoq.cn/article/KOXlSO37RIOdy6wFbKAJ"
+    },
+    {
+      "text": "《2022 年移动应用技术趋势白皮书》",
+      "href": "https://developer.huawei.com/consumer/cn/forum/topic/0202977783444380030?fid=18&ha_source=InfoQLTT"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 71,
+    "h1": 0,
+    "h2": 4,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 3,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 5
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/c34f50cd88749aef7d938f86.html",
+  "raw_html_sha256": "27bc9ad1874412078132fa210e6f62392f73f650003b7185658ec4a957619d72"
+}

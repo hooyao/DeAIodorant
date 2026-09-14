@@ -1,0 +1,45 @@
+{
+  "alias": "doc-06",
+  "content_hash": "b39e5f1cbf5e133318106ecbc0eafc92b3277e71c705cc65d93fd56ee3e9014e",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 7507,
+        "start_char": 7505,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 7516,
+        "start_char": 7490,
+        "text": "这些规范文档不是一次性的废纸，而是该项目的永久记忆。"
+      },
+      "occurrence_id": "doc-06-e01"
+    },
+    {
+      "connector": {
+        "end_char": 8440,
+        "start_char": 8438,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 8475,
+        "start_char": 8430,
+        "text": "它并非繁文缛节，而是关键的质量检查点：智能体在每个阶段都必须获得您的明确批准方可继续推进。"
+      },
+      "occurrence_id": "doc-06-e02"
+    },
+    {
+      "connector": {
+        "end_char": 8736,
+        "start_char": 8734,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 8748,
+        "start_char": 8718,
+        "text": "\n这一切的初衷并非为了放慢速度，而是为了“一次把事情做对”。"
+      },
+      "occurrence_id": "doc-06-e03"
+    }
+  ]
+}

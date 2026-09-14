@@ -1,0 +1,159 @@
+{
+  "budget_scope": "Shares the original CR-001 USD4 durable ledger; the separately capped USD1 smoke allowance keeps the combined ceilings within USD5.",
+  "cache_directory": "feature_runs/compact_refiner/cr001-v1/api-cache",
+  "cost_note": "Frozen catalog prices are USD0.10 per million prompt tokens and USD0.15 per million completion tokens. The existing client enforces matching provider price ceilings and reserves each request before submission.",
+  "experiment_id": "CR-001B",
+  "frozen_at_utc": "2026-09-14T04:18:23.710921+00:00",
+  "frozen_files": {
+    "data/local/compact_refiner/cr001-v1/teacher_inputs.jsonl": "501d5e7560b66a66813c7f25ff8bce71c404587772dbeded903b94386f8ec348",
+    "feature_runs/compact_refiner/cr001-catalog-20260914/models.json": "6875124fd348cbf584154a4413b8cd8cd01122f0563e048689546a13aa740f2b",
+    "feature_runs/compact_refiner/cr001b-qwen9b-v1/hf-model-metadata.json": "54e33d0128a9eb0fd1ce114d52908e0e365f0bb053d02fb957a8edb63eb478e5",
+    "feature_runs/compact_refiner/cr001b-qwen9b-v1/run.py": "15bdb98e28e1226d88ef2e3604b564c9353e06f903415df61686473206efc1ba",
+    "src/deaiodorant/refine/openrouter.py": "05c368f61d9954dbc4eb331a02c83c072b5aded6401bcc1f50be9dbbb0a7333a",
+    "src/deaiodorant/refine/records.py": "d1d4ab83154ad622916ba9ec0686cf4fb66091388bed871f71cd83eded49e365"
+  },
+  "input_count": 13,
+  "input_order": [
+    "edit-01",
+    "edit-02",
+    "edit-03",
+    "edit-04",
+    "edit-05",
+    "edit-06",
+    "edit-07",
+    "edit-08",
+    "edit-09",
+    "edit-10",
+    "edit-11",
+    "edit-12",
+    "edit-13"
+  ],
+  "input_prompt_hashes": {
+    "edit-01": "d28aafcdaee23b0b4a88730b06a9276530ef245cae74663b2332903c5aaf95c3",
+    "edit-02": "76a4d8e9399f4187c8afd8699a43b3966c6ce9343d94084b2f455524615e6202",
+    "edit-03": "fcbf344e4788d5eb799495a3803d5463413543d69fcbcd4c05bd3715c9dd5319",
+    "edit-04": "85cc75bfd3de4ada3992bd9d434620266ba2a56d7f218e4ff0dc07cfc705a092",
+    "edit-05": "0b095859236337813d1a9c5f014b8e4acdf6de659888eda26d9e27b4763d369a",
+    "edit-06": "7af2cde5f91a0671d9a8dc0803596de3449d085e383d9a87cb1e1f3039f1a29b",
+    "edit-07": "464f5b6970c3a2570237a833b45fed637b153fc14dd3ccd77021999453aceb49",
+    "edit-08": "cba8f3a85cd182eb6d64fa68a7763bc621bfaf90c9ba823cfc6f24dfb00684fb",
+    "edit-09": "05241b789784e2b621013e7c54e73e48e2dcd50b992c72cb13fe8eb4414dd35c",
+    "edit-10": "e8c39b4c89ed7ab8a074c9377dae6540a5173e0e42fd50b95561a780c7d94421",
+    "edit-11": "9a36c86d0f5a04745923ad7f61093f38e5459682ccd76e83d53867e148f404d4",
+    "edit-12": "618d55b1df6d33b16ea9f55d6b6ad320be7ef6cd2db74ffb71639dacafc15abf",
+    "edit-13": "3ef1d7eb0cc40a5f4fef9ab2fc1e83d20f03bb5f307fa901b1519a7c4fda21f4"
+  },
+  "license": {
+    "evidence_url": "https://huggingface.co/api/models/Qwen/Qwen3.5-9B",
+    "hugging_face_repository": "Qwen/Qwen3.5-9B",
+    "hugging_face_revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "identifier": "apache-2.0",
+    "limitation": "The repository license is verified; a hosted endpoint does not expose evidence that its exact checkpoint equals this repository revision. Hosted service terms still apply."
+  },
+  "model": {
+    "architecture": {
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "instruct_type": null,
+      "modality": "text+image+video->text",
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen3"
+    },
+    "benchmarks": {
+      "artificial_analysis": {
+        "agentic_index": null,
+        "coding_index": 28.7,
+        "intelligence_index": null
+      },
+      "design_arena": []
+    },
+    "canonical_slug": "qwen/qwen3.5-9b-20260310",
+    "context_length": 262144,
+    "created": 1773152396,
+    "default_parameters": {
+      "frequency_penalty": null,
+      "presence_penalty": null,
+      "repetition_penalty": null,
+      "temperature": null,
+      "top_k": null,
+      "top_p": null
+    },
+    "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design...",
+    "expiration_date": null,
+    "hugging_face_id": "Qwen/Qwen3.5-9B",
+    "id": "qwen/qwen3.5-9b",
+    "knowledge_cutoff": null,
+    "links": {
+      "details": "/api/v1/models/qwen/qwen3.5-9b-20260310/endpoints"
+    },
+    "name": "Qwen: Qwen3.5-9B",
+    "per_request_limits": null,
+    "pricing": {
+      "completion": "0.00000015",
+      "prompt": "0.0000001"
+    },
+    "reasoning": {
+      "mandatory": false
+    },
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "min_p",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_logprobs",
+      "top_p"
+    ],
+    "supported_voices": null,
+    "top_provider": {
+      "context_length": 262144,
+      "is_moderated": false,
+      "max_completion_tokens": 235929
+    }
+  },
+  "output_path": "data/local/compact_refiner/cr001-v1/qwen9b_proposals.jsonl",
+  "protocol": {
+    "author_evaluates_own_outputs": false,
+    "held_out_evaluation": false,
+    "human_gold": false,
+    "prompt_retries": false,
+    "requests_per_input": 1,
+    "selective_regeneration": false,
+    "stop_on_any_api_failure": true,
+    "student_selection": false,
+    "training": false
+  },
+  "rationale": "After initial pipeline evidence, add a Chinese-capable 9B capacity control rather than inferring a general need for SFT from one weak 3B baseline. This arm adds evidence and does not replace or conceal the earlier arm.",
+  "role": "exploratory_development_follow_up",
+  "run_id": "cr001b-qwen9b-v1",
+  "schema_version": "compact-refiner-capacity-control-1.0",
+  "selection_timing": "After CR-001 model-assisted pipeline evidence and before observing this arm's outcomes.",
+  "settings": {
+    "max_retries": 0,
+    "max_tokens": 2048,
+    "reasoning": {
+      "enabled": false
+    },
+    "seed": 20260914,
+    "shared_parent_budget_usd": "4",
+    "temperature": 0,
+    "timeout_seconds": 120
+  }
+}

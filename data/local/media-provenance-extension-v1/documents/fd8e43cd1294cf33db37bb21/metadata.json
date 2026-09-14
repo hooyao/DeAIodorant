@@ -1,0 +1,102 @@
+{
+  "frame_index": 5214,
+  "url": "https://www.infoq.cn/article/r6ffGQdvozfv8C5zc3ET",
+  "doc_id": "fd8e43cd1294cf33db37bb21",
+  "intended_cohort": "pre",
+  "sitemap_lastmod": null,
+  "publication_date": "unknown_until_article_capture",
+  "exclusion_reasons": [],
+  "selected": true,
+  "selection_rank": 6,
+  "capture": {
+    "url": "https://www.infoq.cn/article/r6ffGQdvozfv8C5zc3ET",
+    "requested_at": "2026-09-14T08:39:02.326258+00:00",
+    "capture_file": "raw/fd8e43cd1294cf33db37bb21.html",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/r6ffGQdvozfv8C5zc3ET",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 08:39:04 GMT"
+    },
+    "completed_at": "2026-09-14T08:39:03.555702+00:00",
+    "complete_response": true,
+    "bytes": 361868,
+    "sha256": "9ae8edef31d0854ada9d3869bfc20d51a0e7e61c215837d8fa234ea858e4dcae"
+  },
+  "admission_status": "unreviewed_staging_not_admitted",
+  "smell_label": null,
+  "authorship_label": null,
+  "training_rights": "unverified",
+  "quality_status": "unreviewed_no_quality_admission",
+  "visibility_status": "unreviewed_snapshot_only",
+  "exposure_status": "identity_checked_near_duplicate_and_missing_historical_handoffs_pending",
+  "status": "captured_unreviewed",
+  "metadata": {
+    "doc_id": "fd8e43cd1294cf33db37bb21",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/r6ffGQdvozfv8C5zc3ET",
+    "title": "怎样节省 2/3 的 GPU？爱奇艺 vGPU 的探索与实践",
+    "authors": [
+      "爱奇艺技术产品团队"
+    ],
+    "translators": [],
+    "translation_evidence": [
+      "original_link_marker"
+    ],
+    "published_at": "2021-06-06",
+    "modified_at": null,
+    "collected_at": "2026-09-14T08:39:02.326258+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 5324,
+    "comments": 0,
+    "likes": 2,
+    "collects": 9,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 4294,
+    "text_chars": 7109
+  },
+  "body_path": "documents/fd8e43cd1294cf33db37bb21/body.txt",
+  "content_hash": "ba65b4b18da6141a599ad0f68034cb2b683700b1bf88dae3ac2c7b7d80cfd3bc",
+  "body_file_sha256": "ba65b4b18da6141a599ad0f68034cb2b683700b1bf88dae3ac2c7b7d80cfd3bc",
+  "embedded_publication_milliseconds": 1623020400115,
+  "published_timestamp_utc": "2021-06-06T23:00:00.115000+00:00",
+  "published_date_asia_shanghai": "2021-06-07",
+  "actual_cohort": "pre",
+  "boundary_timezone_ambiguity": false,
+  "intended_period_match": true,
+  "sitemap_lastmod_is_publication_date": false,
+  "embedded_scalar_time_fields": {
+    "publish_time": 1623020400115,
+    "ctime": 1623020388082,
+    "utime": 1623020388082
+  },
+  "declared_canonical_urls": [
+    "https://www.infoq.cn/article/r6ffGQdvozfv8C5zc3ET"
+  ],
+  "canonical_url_mismatch": false,
+  "known_exact_content_overlap": false,
+  "translation_status": "unresolved",
+  "block_count": 70,
+  "media_reference_count": 9,
+  "link_count": 4,
+  "multimedia_status": "full_captured_text_only_media_references_uninspected",
+  "utf8_decode_replacement_count": 0,
+  "legacy_extractor_exclusions": [],
+  "exclusions_found": [],
+  "provenance": {
+    "stratum": "unresolved",
+    "method": "fixed_existing_deterministic_evidence_rules",
+    "evidence": [
+      "original_link_marker"
+    ],
+    "direct_expression_matches": [],
+    "original_chinese_certified": false,
+    "production_history_verified": false,
+    "translation_is_research_exclusion": false
+  },
+  "research_retained": true,
+  "intended_period_mismatch_is_reassigned_by_actual_date": true
+}

@@ -1,89 +1,55 @@
-# Current-Model Post Corpus Expansion v3
+# 当前模型后时期语料扩展 v3
 
-## Status
+## 状态
 
-The local handoff was generated on 2026-08-30 and passes the frozen
-`post-reader-corpus-handoff-1.1` validator with zero errors and zero warnings.
-It is discovery material, not a representative, matched, validation, or final-
-test corpus.
+本地交接于 2026-08-30 生成，通过冻结的 `post-reader-corpus-handoff-1.1` 验证器，零错误、零警告。它是发现材料，不是具有代表性、匹配、验证或 final-test 语料。
 
 ~~~text
 F:\MyProjects\DeAIodorant\data\local\post_reader_handoff_v3
 ~~~
 
-## Acquisition and deterministic exclusion
+## 采集与确定性排除
 
-Public acquisition produced 720 post-period records: 240 each from QbitAI,
-Leiphone, and Huawei Cloud Community. Access controls, authentication, paywalls,
-CAPTCHAs, and source limits were not bypassed.
+公开采集得到后时期记录 720 条，量子位、雷锋网、华为云社区各 240。未绕过访问控制、身份认证、付费墙、CAPTCHA 或来源限制。
 
-Deterministic translation evidence and cross-corpus exact and near-duplicate
-checks reduced the pool to 561 records: Huawei 232, Leiphone 194, and QbitAI
-135. The exclusions were 92 explicit translations, 59 duplicate document IDs,
-and eight near duplicates. There is no document-ID, URL, hash, or near-duplicate
-overlap with the first two post handoffs, the pre/transition handoff, the
-tracked pilot, or existing reader artifacts.
+确定性翻译证据及跨语料精确／近重复检查将池缩为 561 条：华为 232、雷锋网 194、量子位 135。排除明确译文 92、重复文档 ID 59、近重复八条。与前两个后时期交接、前／过渡期交接、受版本控制 pilot 及已有读者产物，在文档 ID、URL、hash 和近重复方面均无重叠。
 
-## Current-model admission
+## 当前模型准入
 
-Model selection used a live OpenRouter weekly-usage snapshot, a same-day live
-model catalog, and the fixed 12-document interface panel documented in
-[Current OpenRouter Corpus-Model Interface Audit](openrouter-corpus-model-interface-audit.md).
+模型选择使用实时 OpenRouter 周用量快照、同日实时模型目录和固定 12 篇接口面板，记录见[当前 OpenRouter 语料模型接口审查](openrouter-corpus-model-interface-audit.md)。
 
-DeepSeek V4 Flash 0731 and GLM 5.3 Flash screened all 561 deterministic
-candidates. Their high-confidence provenance intersection retained 372. Their
-two-prompt, within-model and cross-model high-confidence research-value
-intersection retained 130. Qwen3.8 Max then reviewed only those provisional
-passes: all 130 passed its provenance safeguard, and 103 passed both value
-prompts. The frozen Huawei source-quarter visibility threshold excluded 10,
-leaving 93 high-confidence stratified documents.
+DeepSeek V4 Flash 0731 和 GLM 5.3 Flash 筛查全部 561 个确定性候选，高置信度来源交集保留 372 篇；双 prompt、模型内及跨模型高置信度研究价值交集保留 130 篇。Qwen3.8 Max 只复核这些暂时通过项：全部 130 通过来源保护，103 通过两个价值 prompt。冻结的华为来源—季度传播可见度阈值排除 10 篇，剩 93 篇高置信度分层文档。
 
-Every request error, malformed result, non-high confidence, uncertainty, or
-model disagreement failed closed. These labels remain measurements rather than
-human gold.
+每次请求错误、格式错误、非高置信度、不确定或模型分歧均 fail closed。这些标签仍是测量，不是人工 gold。
 
-## Run anomaly
+## 运行异常
 
-A failed DeepSeek provenance retry left an orphaned process while a lower-
-concurrency retry began. Two processes appended to the same cache before the
-condition was detected. The original cache is retained and contains 95 duplicate
-cache-key groups and 95 extra lines. Both stale processes were stopped. The
-final provenance result was regenerated from the cache-key index and contains
-exactly 561 rows and 561 unique document IDs. Every value cache has zero
-duplicate keys. The anomaly is recorded in the local manifest and admission-
-flow artifact rather than hidden.
+一次失败的 DeepSeek 来源重试留下孤儿进程，而较低并发的重试已启动。发现前，两进程向同一缓存追加。保留原缓存，其中有 95 个重复缓存键组和 95 个额外行。停止两个残留进程，从 cache-key 索引重建最终来源结果，得到恰好 561 行、561 个唯一文档 ID。全部价值缓存均零重复键。异常明确记录在本地 manifest 和准入流程产物中。
 
-## Final composition
+## 最终构成
 
-| Dimension | Counts |
+| 维度 | 数量 |
 |---|---|
-| Sources | Leiphone 39; Huawei 32; QbitAI 22 |
-| Formats | Industry reporting 40; technical practice 34; research summary 19 |
-| Topics | AI/models/agents 57; business/industry 17; data infrastructure 13; software engineering 6 |
-| Roles at handoff generation | Discovery reserve 93; development 0; validation 0; final test 0 |
+| 来源 | 雷锋网 39; 华为 32; 量子位 22 |
+| 体裁 | 行业报道 40; 技术实践 34; 研究摘要 19 |
+| 主题 | AI／模型／Agent 57; 商业／行业 17; 数据基础设施 13; 软件工程 6 |
+| 交接生成时角色 | 发现保留区 93; 开发 0; 验证 0; 最终测试 0 |
 
-The monthly distribution is strongly recent: 53 of 93 documents were published
-in 2026-08. Source and format are also confounded: all 32 Huawei documents are
-technical practice, while Leiphone and QbitAI contribute most reporting and
-research summaries. QbitAI and Leiphone visibility is official editorial
-distribution evidence, not article-level readership. Huawei visibility is a
-collection-time source-quarter view percentile.
 
-After handoff validation, all 93 documents were opened by the frozen
-deterministic motif inventory. They are therefore feature-discovery exposed and
-must not be repurposed as validation or final-test documents.
+月份明显集中于近期：93 篇中 53 篇于 2026-08 发布。来源与体裁也混杂：华为 32 篇全部为技术实践，雷锋网和量子位贡献多数报道和研究摘要。量子位与雷锋网传播可见度为官方编辑分发证据，不是文章级阅读量；华为为采集时来源—季度浏览量百分位。
 
-## Artifact identity
+交接验证后，冻结确定性模式清点打开全部 93 篇，因此均已暴露于特征发现，不得改用为 validation 或 final-test 文档。
 
-| Artifact | SHA-256 |
+## 产物身份
+
+| 产物 | SHA-256 |
 |---|---|
 | Manifest | `5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac` |
-| Documents index | `dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d` |
-| Text-set identity | `58bf3d51fddedb053c8f6fa8d99ea660e7616d95ff013d5d39bba8285039b095` |
-| Validation report | `d180dda220274c0989588fdc9072e66b74216bb7b650f4b750ab817e2aa771c2` |
-| External overlap report | `d78e0d9d68b803363cb88fa654fe99e99eaf378fc09c605f145c266d93e8b5df` |
-| Admission flow | `13a7d9df4701f8d96e57dd0ee51d8f6390225aa29107599ac6b1fbc58d37572c` |
+| 文档索引 | `dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d` |
+| 文本集身份 | `58bf3d51fddedb053c8f6fa8d99ea660e7616d95ff013d5d39bba8285039b095` |
+| 验证报告 | `d180dda220274c0989588fdc9072e66b74216bb7b650f4b750ab817e2aa771c2` |
+| 外部重叠报告 | `d78e0d9d68b803363cb88fa654fe99e99eaf378fc09c605f145c266d93e8b5df` |
+| 准入流程 | `13a7d9df4701f8d96e57dd0ee51d8f6390225aa29107599ac6b1fbc58d37572c` |
 
-All source bodies, model caches, live catalog snapshots, comparison results,
-and generated handoffs remain in ignored local storage. No API key, credential,
-corpus body, or model output is committed.
+
+全部原文、模型缓存、实时目录快照、比较结果和生成交接保留在被忽略的本地存储。不提交 API key、凭据、语料正文或模型输出。

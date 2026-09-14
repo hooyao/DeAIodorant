@@ -1,0 +1,501 @@
+{
+  "schema_version": "media-contrast-qualification-1.1",
+  "review_prompt_version": "media-contrast-source-qualification-1.1-policy-correction",
+  "created_at": "2026-09-14T06:52:16.487209+00:00",
+  "reviewer": "Codex sub-agent /root/new_media_qualification",
+  "review_model_identifier": "not_exposed_in_agent_context",
+  "method": "Policy-corrected reappraisal of the same six previously read full texts, their structure metadata, and the exact verifier/benchmark policy. No external model inference or source fetch.",
+  "random_seed": null,
+  "sampling_temperature": null,
+  "input_packet": "data\\local\\media-contrast-review-v1\\qualification-inputs.json",
+  "input_packet_sha256": "a809c8de44623b538cede9acb762802901bdafe2194eac2603fcc98f1fcba5c7",
+  "scope": "Same six full-text articles; correction of provenance evidence strength using policy only. No new article sources, network calls, image inspection, benchmark artifacts, or API use.",
+  "status": "model_assisted_qualification_not_human_gold_unadmitted_staging",
+  "constraints": [
+    "No source text changed; no images or external sources fetched or inspected.",
+    "Policy correction uses the same six article bodies. No benchmark data or gold-label artifacts were opened.",
+    "No authorship, target intensity, writing-style ranking, edit efficacy, or training-readiness labels assigned.",
+    "Original-language support is provisional model-assisted provenance assessment, not formal corpus admission.",
+    "Proven translation/foreign compilation is excluded symmetrically; foreign-source citations alone do not prove either.",
+    "Uncertain originality remains pending and is withheld from formal corpus admission.",
+    "Concrete information, mechanisms, examples, and limitations support substantive value; polished prose and absence of the expression problem are not eligibility requirements.",
+    "All training licenses remain unverified; public accessibility and domestic reprint attribution do not establish training permission.",
+    "Visibility snapshots and publication dates alone do not establish high-quality/high-visibility corpus eligibility."
+  ],
+  "summary_counts": {
+    "articles_fully_read": 6,
+    "supported_original_at_model_assisted_level": 3,
+    "plausible_original_but_uncertain": 1,
+    "uncertain_pending_review": 2,
+    "deterministic_foreign_compilation_exclusions": 0,
+    "direct_document_level_translation_evidence_located": 0,
+    "substantive_content_present": 6,
+    "formal_admissions": 0,
+    "human_labels": 0,
+    "training_licenses_verified": 0
+  },
+  "articles": [
+    {
+      "article_id": "pair-01-A",
+      "doc_id": "738c96bc2777301fdaf9f078",
+      "title": "云原生时代，CNStack 如何解决企业数字化转型难题？",
+      "canonical_url_reported": "https://www.infoq.cn/article/4CFTC0TgkMout6hFBxG2",
+      "published_at_reported": "2021-12-03",
+      "publication_evidence_reported": "embedded_server_state",
+      "modified_at_reported": null,
+      "collected_at_reported": "2026-09-14T06:35:02.399724+00:00",
+      "metadata_authors": [
+        "闫园园"
+      ],
+      "cohort_from_reported_publication_date": "pre_2023",
+      "status": "model_assisted_qualification_not_human_gold_unadmitted_staging",
+      "formal_corpus_admission": false,
+      "training_license_status": "unverified",
+      "authorship_label": null,
+      "target_intensity_label": null,
+      "full_text_reviewed": true,
+      "images_reviewed": false,
+      "network_or_model_api_used": false,
+      "captured_body_sha256_reported": "077d41bcb5d9a9a20f15284bcd480656eddf3f4c3a0a2f4e23733b777a79715d",
+      "presentation_sha256_verified": "4bad1b381c2d64e1981242316b3387d67c85cec50a561c32c4bb015e37f2fee6",
+      "structure_path": "data\\local\\media-contrast-staging-v1\\documents\\738c96bc2777301fdaf9f078\\structure.json",
+      "structure_sha256": "b5844fb8b98d52a15a79b55250e1e63ec6fdaa49c7dd0d720d30059d1b71a97e",
+      "raw_html_sha256_reported_not_reread": "f1f75dc4342b0fb2a5fa8c3382899c64619086a143b1b1b44f1961c3b1112ac2",
+      "image_reference_count": 1,
+      "code_block_count_reported": 0,
+      "visibility": {
+        "views_snapshot": 3143,
+        "evidence": "page_view_snapshot",
+        "assessment": "Observed nonzero page-view evidence only. No age-adjusted visibility qualification or cross-cohort matching is established."
+      },
+      "metadata_translation_evidence": [],
+      "metadata_translators": [],
+      "originality_disposition": "supported_original_at_model_assisted_level",
+      "deterministic_translation_or_foreign_compilation_evidence": false,
+      "source_quotes": [
+        "采访嘉宾：张军（游骥）",
+        "以下内容节选自当天的分享，InfoQ 做了不改变原意的编辑："
+      ],
+      "provenance_assessment": "The article identifies an InfoQ-hosted discussion, a named Alibaba Cloud interviewee, an editor, and an editorial policy for excerpts. The repeated InfoQ/interviewee turns support an original Chinese interview origin. The source link points to the recorded discussion. A reference to CNCF and the Supercell anecdote does not make the whole interview a foreign compilation.",
+      "provenance_uncertainty": "The recording and interview permissions were not inspected. The product claims are attributed to the vendor representative and are not independently verified. Full published-article capture does not mean the underlying discussion was transcribed in full.",
+      "genre": "Edited expert interview and vendor product discussion",
+      "topic": "CNStack cloud-native PaaS, application delivery, SaaS deployment, and enterprise infrastructure",
+      "substantive_content_present": true,
+      "substantive_content_evidence": [
+        "Distinguishes Application, SaaS, and Edge offerings and explains infrastructure abstraction, application lifecycle support, middleware, and IaaS adaptation.",
+        "Gives an unnamed financial-customer migration example and describes deployment automation and availability mechanisms.",
+        "Attributes fivefold delivery efficiency and a 90% middleware operations cost reduction to the vendor; discusses heterogeneous hardware, compatibility, early deployment problems, and product boundaries."
+      ],
+      "content_value_limitations": "This is vendor testimony with unnamed customer evidence, not an independent benchmark. Its useful product and implementation detail does not establish factual accuracy, neutral coverage, or writing quality.",
+      "textual_article_assessment": "Substantive and complete enough as the published textual interview for scoped qualitative inspection: it has an introduction, sustained question-and-answer sections, limitations, plans, and a terminal product link.",
+      "extraction_findings": [
+        "No obvious abrupt textual ending or misplaced navigation block in the reviewed presentation."
+      ],
+      "essential_image_assessment": "One image reference has no alt text or caption. The argument remains intelligible from the text, and no essential image-dependent result is explicit, but visual completeness is unverified. The separate discussion video is a provenance resource, not evidence that this published excerpt article was truncated.",
+      "inspection_eligibility": "eligible_for_textual_qualitative_inspection_with_limits",
+      "full_article_reader_comparison_readiness": "conditional_on_retaining_the_unreviewed_image_context",
+      "matching_caveats": [
+        "Interview turn-taking",
+        "Vendor speaker and product promotion",
+        "Substantially longer than pair-01-B"
+      ],
+      "direct_document_level_translation_evidence": [],
+      "correction_from_v1": "Disposition unchanged after policy review; original support uses the recorded interview, domestic professional narrative, author/source linkage, and first-party context together, not the Chinese byline alone."
+    },
+    {
+      "article_id": "pair-01-B",
+      "doc_id": "3fdc45a2c7759e78fc9013c9",
+      "title": "Snowflake 换了战场：守住数据之后，要管住AI",
+      "canonical_url_reported": "https://www.infoq.cn/article/JCXUmEkVTBw3mjjtgwgY",
+      "published_at_reported": "2026-06-01",
+      "publication_evidence_reported": "embedded_server_state",
+      "modified_at_reported": null,
+      "collected_at_reported": "2026-09-14T06:34:36.950160+00:00",
+      "metadata_authors": [
+        "黎科峰"
+      ],
+      "cohort_from_reported_publication_date": "post_2025_06",
+      "status": "model_assisted_qualification_not_human_gold_unadmitted_staging",
+      "formal_corpus_admission": false,
+      "training_license_status": "unverified",
+      "authorship_label": null,
+      "target_intensity_label": null,
+      "full_text_reviewed": true,
+      "images_reviewed": false,
+      "network_or_model_api_used": false,
+      "captured_body_sha256_reported": "3cba893879346e9c7258dcfe11da82ffb4201406efe4ec3fe5e4fc3907ea158f",
+      "presentation_sha256_verified": "b407bbc6a3fb2735f9f04553b11e913494021315f0af63b734e477050c03b60f",
+      "structure_path": "data\\local\\media-contrast-staging-v1\\documents\\3fdc45a2c7759e78fc9013c9\\structure.json",
+      "structure_sha256": "1e410a78d9fd022ec859a7bd5489ca930106a36bcfd5c15cf1f785bc4617a7cf",
+      "raw_html_sha256_reported_not_reread": "14f165895edc714eac4050a6d7fab0b530ef7c1de501c6a4fe84c8dd37e2bb07",
+      "image_reference_count": 0,
+      "code_block_count_reported": 0,
+      "visibility": {
+        "views_snapshot": 9190,
+        "evidence": "page_view_snapshot",
+        "assessment": "Observed nonzero page-view evidence only. No age-adjusted visibility qualification or cross-cohort matching is established."
+      },
+      "metadata_translation_evidence": [],
+      "metadata_translators": [],
+      "originality_disposition": "supported_original_at_model_assisted_level",
+      "deterministic_translation_or_foreign_compilation_evidence": false,
+      "source_quotes": [
+        "明天我去旧金山，参加 Snowflake Summit 以及见一些硅谷的 AI 公司和久违的朋友。",
+        "黎科峰（Kenny），数势科技创始人兼 CEO。",
+        "我们数势是较早公开表态支持 OSI 的中国厂商之一"
+      ],
+      "provenance_assessment": "A named Chinese company founder supplies a first-person viewpoint, an explicit company interest, local product descriptions, and an original WeChat link. These features support original Chinese commentary at the model-assisted level. Foreign-company financial figures and two attributed English quotations are supporting material; they are not sufficient by themselves to classify this first-person argument as foreign compilation.",
+      "provenance_uncertainty": "The original WeChat page, first-publication date, acquisition figures, and quoted statements were not checked. The supplied page identifies a reprint source; its publication timestamp is not verified as the first appearance of the text.",
+      "genre": "Founder opinion essay and vendor positioning",
+      "topic": "Enterprise AI data semantics, agent governance, Snowflake strategy, and Shushi product positioning",
+      "substantive_content_present": true,
+      "substantive_content_evidence": [
+        "Connects named OSI, AWS, and Natoma developments to data semantics, infrastructure, and action permissions.",
+        "Explains business-metric ambiguity with tax and rebate definitions and separates analysis expertise from tool authorization.",
+        "Names SwiftMetrics, SwiftAgent, and ClawTeams, assigning distinct roles to a four-layer product architecture and giving role-specific applications."
+      ],
+      "content_value_limitations": "The writer has a disclosed commercial interest. Corporate figures and deployment claims remain unverified, and the argument supplies no independent comparison or measured customer evaluation.",
+      "textual_article_assessment": "Substantive and complete enough for textual qualitative inspection: introduction, extended argument, product explanation, prospective observation list, conclusion, author biography, and source link are present.",
+      "extraction_findings": [
+        "No obvious abrupt ending, code corruption, or orphaned figure reference in the reviewed presentation."
+      ],
+      "essential_image_assessment": "No image, figure, table, or code block is recorded in the supplied structure. No essential missing visual context is apparent in this captured page. Completeness of the unvisited original WeChat publication remains unverified.",
+      "inspection_eligibility": "eligible_for_textual_qualitative_inspection_with_limits",
+      "full_article_reader_comparison_readiness": "textual_capture_ready_with_source_and_fact_verification_limits",
+      "matching_caveats": [
+        "Founder opinion rather than an interview",
+        "Declared commercial interest",
+        "Foreign corporate news mixed with domestic product argument"
+      ],
+      "direct_document_level_translation_evidence": [],
+      "correction_from_v1": "Disposition unchanged after policy review; original support uses the recorded interview, domestic professional narrative, author/source linkage, and first-party context together, not the Chinese byline alone."
+    },
+    {
+      "article_id": "pair-02-A",
+      "doc_id": "8bfb7b3e6b210126548b7f0c",
+      "title": "Apache Doris 在小米统一 OLAP 和湖仓一体的实践",
+      "canonical_url_reported": "https://www.infoq.cn/article/yGwXLYsrhMDwUqoYgMsh",
+      "published_at_reported": "2025-12-05",
+      "publication_evidence_reported": "embedded_server_state",
+      "modified_at_reported": null,
+      "collected_at_reported": "2026-09-14T06:34:05.488179+00:00",
+      "metadata_authors": [
+        "SelectDB"
+      ],
+      "cohort_from_reported_publication_date": "post_2025_06",
+      "status": "model_assisted_qualification_not_human_gold_unadmitted_staging",
+      "formal_corpus_admission": false,
+      "training_license_status": "unverified",
+      "authorship_label": null,
+      "target_intensity_label": null,
+      "full_text_reviewed": true,
+      "images_reviewed": false,
+      "network_or_model_api_used": false,
+      "captured_body_sha256_reported": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+      "presentation_sha256_verified": "d41e71c0c334f847e2f22374a4d965ab81ee5bb0e4e747e9456f65c92fe5ff2a",
+      "structure_path": "data\\local\\media-contrast-staging-v1\\documents\\8bfb7b3e6b210126548b7f0c\\structure.json",
+      "structure_sha256": "8a764292d1937869962b91c59cfaa136f720d227a16a5ff33647a0236044aa51",
+      "raw_html_sha256_reported_not_reread": "ff8ed952f83e49e7c0587f5e8067e577a79846a8df75e0dd3cf32ff9fef33c29",
+      "image_reference_count": 15,
+      "code_block_count_reported": 1,
+      "visibility": {
+        "views_snapshot": 11189,
+        "evidence": "page_view_snapshot",
+        "assessment": "Observed nonzero page-view evidence only. No age-adjusted visibility qualification or cross-cohort matching is established."
+      },
+      "metadata_translation_evidence": [],
+      "metadata_translators": [],
+      "originality_disposition": "plausible_original_but_uncertain",
+      "deterministic_translation_or_foreign_compilation_evidence": false,
+      "source_quotes": [
+        "2025 年，我们正式引入了湖仓一体与存算分离能力成熟的 Doris 3.0 稳定版本",
+        "目前该功能基于增量方式实现，主要支持仅追加场景，更新场景仍处于研发状态。"
+      ],
+      "provenance_assessment": "The body presents a domestic Xiaomi engineering case with internal systems, incidents, and first-person implementation details. The metadata byline is SelectDB, while the narrative speaks as the Xiaomi team. The supplied text and links do not identify a named Xiaomi writer, interview, presentation, or original publication, so the adaptation and original-author chain is unresolved.",
+      "provenance_uncertainty": "There is no deterministic foreign-translation marker, but missing translator fields cannot establish originality. Resolve the vendor-byline/client-narrator relationship before treating this as an original-language primary candidate. The introductory five-year history is also not an independently verified original-writing timestamp.",
+      "genre": "Vendor-attributed engineering case study",
+      "topic": "Xiaomi OLAP consolidation, Apache Doris 3.0, lakehouse queries, resource isolation, and operations",
+      "substantive_content_present": true,
+      "substantive_content_evidence": [
+        "Reports more than 40 clusters, PB-scale data, and 50 million daily queries and discusses internal/external warehouse integration.",
+        "Describes a 2023 data-center fire, evaluated replication alternatives, minimum 3 FE plus 3 BE deployment overhead, and migration to compute/storage separation.",
+        "Names query gateway authentication, Arrow Flight SQL/ADBC, asynchronous materialized views with append-only limits, Kubernetes resource management, and OpenTelemetry/Hera observability.",
+        "Supplies specific reported performance and resource changes, including 3-5 times query efficiency and a 36% query-time reduction."
+      ],
+      "content_value_limitations": "The detailed claims are source assertions. Benchmark charts, workload conditions, attribution, and measurement provenance are not independently available in the text-only inspection. Substantive implementation content remains present despite these limits.",
+      "textual_article_assessment": "Substantive and complete in its narrative progression, but not complete enough as a self-contained technical evidence presentation. It reaches future work after architecture, challenges, and implementation sections.",
+      "extraction_findings": [
+        "The sole recorded preformatted SQL block is flattened into joined tokens such as mvBUILD DEFERREDREFRESH; whitespace loss compromises code readability and executability.",
+        "A copy-code interface label remains in the presented body.",
+        "Several captions name performance comparisons without carrying the underlying chart data."
+      ],
+      "essential_image_assessment": "Fifteen image references have empty alt text and no figure captions in structure metadata. Architecture and benchmark discussions likely depend on some of them; text names TPC-DS and internal-query comparisons without giving full values or setup. Visual review is necessary before claiming whole-article evidence completeness.",
+      "inspection_eligibility": "provenance_hold_with_textual_inspection_only",
+      "full_article_reader_comparison_readiness": "hold_for_provenance_and_essential_figures_and_code_presentation",
+      "matching_caveats": [
+        "Unnamed client narrator under a vendor byline",
+        "Backend database operations",
+        "Fifteen figures and one code block",
+        "Performance claims with missing graphical evidence"
+      ],
+      "direct_document_level_translation_evidence": [],
+      "correction_from_v1": "Provenance uncertainty retained; domestic project detail supports plausibility but does not resolve the vendor-byline/client-narrator relationship."
+    },
+    {
+      "article_id": "pair-02-B",
+      "doc_id": "d679960cb6cb418eebb6b222",
+      "title": "动态性能分级策略在客户端上的实践",
+      "canonical_url_reported": "https://www.infoq.cn/article/omyedsPw1aNVgoWz0G61",
+      "published_at_reported": "2021-09-27",
+      "publication_evidence_reported": "embedded_server_state",
+      "modified_at_reported": null,
+      "collected_at_reported": "2026-09-14T06:34:49.748085+00:00",
+      "metadata_authors": [
+        "伴鱼技术团队"
+      ],
+      "cohort_from_reported_publication_date": "pre_2023",
+      "status": "model_assisted_qualification_not_human_gold_unadmitted_staging",
+      "formal_corpus_admission": false,
+      "training_license_status": "unverified",
+      "authorship_label": null,
+      "target_intensity_label": null,
+      "full_text_reviewed": true,
+      "images_reviewed": false,
+      "network_or_model_api_used": false,
+      "captured_body_sha256_reported": "9d6e2701206f1e35f222242c0b9aa3f08dd10b1a68ad431b22d0a66f14589557",
+      "presentation_sha256_verified": "906d119fd5e32b9ec715472bdef4b1d1f84957515205736ae1157525c36469f8",
+      "structure_path": "data\\local\\media-contrast-staging-v1\\documents\\d679960cb6cb418eebb6b222\\structure.json",
+      "structure_sha256": "f179af7ed52cf7d86c9102bbbeb3d4c5524c13ca2b9e35797066be3d18af942f",
+      "raw_html_sha256_reported_not_reread": "e667fccbb57aad621364ae8a82217547139b5c84184fb7b0ecdf4e24da5c297a",
+      "image_reference_count": 7,
+      "code_block_count_reported": 5,
+      "visibility": {
+        "views_snapshot": 5194,
+        "evidence": "page_view_snapshot",
+        "assessment": "Observed nonzero page-view evidence only. No age-adjusted visibility qualification or cross-cohort matching is established."
+      },
+      "metadata_translation_evidence": [],
+      "metadata_translators": [],
+      "originality_disposition": "supported_original_at_model_assisted_level",
+      "deterministic_translation_or_foreign_compilation_evidence": false,
+      "source_quotes": [
+        "作者：赵杰、岑志军、吕洪阳",
+        "来源：伴鱼技术博客",
+        "转载：著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"
+      ],
+      "provenance_assessment": "The article names three PalFish iOS engineers and their roles, identifies the domestic technical-blog source and original URL, and describes first-person app implementation. The Apple documentation citation is a technical reference, not evidence that the case study is a translated foreign article.",
+      "provenance_uncertainty": "The original page was not fetched, and the reuse notice is not a training license. The original URL contains 2021/08/30 while InfoQ metadata gives 2021-09-27; these should remain distinct original-source and reprint date signals, both within the historical cohort.",
+      "genre": "Named engineering-team implementation article and domestic reprint",
+      "topic": "Dynamic iOS performance tiers, resource monitoring, and image-loading adaptation",
+      "substantive_content_present": true,
+      "substantive_content_evidence": [
+        "Motivates the design with a reported older-device share, tests a static configuration alternative, and explains why runtime adaptation is needed.",
+        "Specifies battery, CPU, memory, and bandwidth thresholds, monitoring sources, notification delivery, and remotely supplied configuration.",
+        "Describes named components and Objective-C interfaces, explains image scale adjustments, and reports approximately 200,000 daily image-library changes and 600,000 overall performance-tier changes.",
+        "Acknowledges monitoring overhead and further integration and optimization work."
+      ],
+      "content_value_limitations": "The testing claims are not independently verified. Images carry apparent measurement evidence for monitoring overhead and memory benefit, so the text cannot substantiate effect sizes by itself. The two daily-event totals describe different scopes and should not be silently merged.",
+      "textual_article_assessment": "Substantive with a complete article arc and explicit source footer. The narrative is usable for scoped textual inspection, but missing measurement figures and damaged code layout prevent a complete technical reading.",
+      "extraction_findings": [
+        "All five recorded preformatted code blocks are flattened; line comments and adjacent tokens merge, changing apparent code semantics.",
+        "Repeated copy-code interface labels remain in the presented body.",
+        "Before/after captions and claims of memory savings appear without the numerical data shown in the referenced images."
+      ],
+      "essential_image_assessment": "Seven image references have empty alt text. Flow and module diagrams are partially explained in prose, but the monitoring-overhead and memory-comparison results explicitly depend on unseen images. Preserve and review those figures before a whole-article reader comparison, and restore original code layout from a verified capture without rewriting source code.",
+      "inspection_eligibility": "eligible_for_textual_qualitative_inspection_with_limits",
+      "full_article_reader_comparison_readiness": "hold_for_essential_figures_and_code_presentation",
+      "matching_caveats": [
+        "Code-heavy mobile engineering article",
+        "Named practitioner authors and explicit reprint source",
+        "Seven figures and five code blocks",
+        "Backend-versus-client topic difference from pair-02-A"
+      ],
+      "direct_document_level_translation_evidence": [],
+      "correction_from_v1": "Disposition unchanged after policy review; original support uses the recorded interview, domestic professional narrative, author/source linkage, and first-party context together, not the Chinese byline alone."
+    },
+    {
+      "article_id": "pair-03-A",
+      "doc_id": "550a11e0e8987efc94c654b7",
+      "title": "全面审查Twitter代码、当场炒掉CEO等众多高管：马斯克正式入主Twitter",
+      "canonical_url_reported": "https://www.infoq.cn/article/1jdi4LDTycjblozS8QwV",
+      "published_at_reported": "2022-10-28",
+      "publication_evidence_reported": "embedded_server_state",
+      "modified_at_reported": null,
+      "collected_at_reported": "2026-09-14T06:34:52.845286+00:00",
+      "metadata_authors": [
+        "褚杏娟"
+      ],
+      "cohort_from_reported_publication_date": "pre_2023",
+      "status": "model_assisted_qualification_not_human_gold_unadmitted_staging",
+      "formal_corpus_admission": false,
+      "training_license_status": "unverified",
+      "authorship_label": null,
+      "target_intensity_label": null,
+      "full_text_reviewed": true,
+      "images_reviewed": false,
+      "network_or_model_api_used": false,
+      "captured_body_sha256_reported": "6b65668574e6036aedae3f6af6d5d0495f720c0a27e827739a855022138e6c47",
+      "presentation_sha256_verified": "f4b09f711da66693d0fed5ca84b429e928fe03bac64ae8d49631f8290e0d451d",
+      "structure_path": "data\\local\\media-contrast-staging-v1\\documents\\550a11e0e8987efc94c654b7\\structure.json",
+      "structure_sha256": "53e39ca383c43971eddd01eb37969b260f0c0ea0153c965f50e611be19475ca3",
+      "raw_html_sha256_reported_not_reread": "c17fcf398d2e4909ec68cebdddcb44c8b8b7859baa280127ba77add171af59de",
+      "image_reference_count": 1,
+      "code_block_count_reported": 0,
+      "visibility": {
+        "views_snapshot": 6569,
+        "evidence": "page_view_snapshot",
+        "assessment": "Observed nonzero page-view evidence only. No age-adjusted visibility qualification or cross-cohort matching is established."
+      },
+      "metadata_translation_evidence": [],
+      "metadata_translators": [],
+      "originality_disposition": "uncertain_pending_review",
+      "deterministic_translation_or_foreign_compilation_evidence": false,
+      "source_quotes": [
+        "根据外媒报道",
+        "根据彭博社消息",
+        "据《纽约时报》报道"
+      ],
+      "provenance_assessment": "Observed: the article attributes many facts and quotations to foreign sources and lists several underlying works. Inference: the whole Chinese article is a translation or compilation of a specific foreign work is not established. Existing policy allows Chinese reporting/commentary and independent synthesis using these sources. The Chinese byline and multi-topic arrangement are compatible with original synthesis but do not prove it. Originality remains unresolved.",
+      "provenance_uncertainty": "No explicit translator, translation/compilation publication label, foreign-original-author biography linked to the article, or foreign interview transcript adaptation is present. The provided material does not establish whether the Chinese narrative independently synthesizes sources or closely follows specific foreign works. Keep pending; do not formally admit and do not label it a proven translation.",
+      "genre": "Foreign-news roundup and biographical explainer",
+      "topic": "Musk Twitter acquisition, executive departures, code review, platform strategy, and coding history",
+      "substantive_content_present": true,
+      "substantive_content_evidence": [
+        "Supplies named executives, transaction and compensation amounts, layoff accounts, and source-linked chronology.",
+        "Explains code freeze and recommendation-system review limitations and includes contrasting attributed views about transparency.",
+        "Adds the X application plan and earlier software-business history with references."
+      ],
+      "content_value_limitations": "Its reporting content may be useful, but source truthfulness, quoted context, and referenced accounts were not checked. The unresolved originality assessment is independent of its substantive value and does not establish translation or compilation.",
+      "textual_article_assessment": "Substantive and textually complete enough for provisional qualitative inspection: lead, topical sections, background, and terminal reference list are present. Provenance remains pending rather than deterministically excluded.",
+      "extraction_findings": [
+        "No obvious abrupt ending or major prose truncation in the reviewed presentation."
+      ],
+      "essential_image_assessment": "One uncaptioned image reference is preserved. No explicit numerical argument depends on it in the text, but its information and visual completeness remain unverified.",
+      "inspection_eligibility": "provenance_hold_with_textual_inspection_only",
+      "full_article_reader_comparison_readiness": "provisional_diagnostic_reading_only_pending_provenance_and_visual_context",
+      "matching_caveats": [
+        "Foreign-source dependence with unresolved independent-synthesis provenance",
+        "News and biography format"
+      ],
+      "observed_foreign_source_dependencies": [
+        "The lead explicitly attributes the acquisition report to foreign media; later passages attribute staffing and code-review information to Bloomberg and the New York Times.",
+        "References identify Business Insider, The Code Bytes, Wired, Bloomberg, foreign tweets, and a biography as information sources.",
+        "The article contains attributed foreign quotations within a Chinese news-and-background narrative."
+      ],
+      "inferred_whole_article_foreign_compilation": "not_established_from_supplied_evidence",
+      "direct_document_level_translation_evidence": [],
+      "independent_chinese_synthesis_evidence": [
+        "The Chinese narrative combines acquisition news, algorithm-governance discussion, product strategy, and coding biography in a multi-source article.",
+        "That organization is compatible with independently written Chinese reporting, but no source-work comparison or explicit reporting-process statement establishes the degree of original composition."
+      ],
+      "primary_original_language_claim_status": "not_supported_pending_review",
+      "correction_from_v1": "Withdraw deterministic foreign-compilation exclusion. Directly observed citations and attributions do not establish a specific translated foreign work under project policy."
+    },
+    {
+      "article_id": "pair-03-B",
+      "doc_id": "c526ed941b8de39a5388df3d",
+      "title": "Anthropic深夜放出王炸！白领饭碗要被AI砸了？网友：不支持Linux，差评",
+      "canonical_url_reported": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl",
+      "published_at_reported": "2026-01-13",
+      "publication_evidence_reported": "embedded_server_state",
+      "modified_at_reported": null,
+      "collected_at_reported": "2026-09-14T06:34:11.971905+00:00",
+      "metadata_authors": [
+        "李冬梅"
+      ],
+      "cohort_from_reported_publication_date": "post_2025_06",
+      "status": "model_assisted_qualification_not_human_gold_unadmitted_staging",
+      "formal_corpus_admission": false,
+      "training_license_status": "unverified",
+      "authorship_label": null,
+      "target_intensity_label": null,
+      "full_text_reviewed": true,
+      "images_reviewed": false,
+      "network_or_model_api_used": false,
+      "captured_body_sha256_reported": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+      "presentation_sha256_verified": "bf3e1319321f483132d4497e08bb4d86035c77862be5c993b0b4112d13c7adc9",
+      "structure_path": "data\\local\\media-contrast-staging-v1\\documents\\c526ed941b8de39a5388df3d\\structure.json",
+      "structure_sha256": "23c985f880faf8fb88f614d691eaba9e34bbd4250ffdfff269061321e0fefd40",
+      "raw_html_sha256_reported_not_reread": "f377223dd4ba3368417975ed6edc145198f5a81dcdeece6e99fb3d54515881cb",
+      "image_reference_count": 4,
+      "code_block_count_reported": 0,
+      "visibility": {
+        "views_snapshot": 10361,
+        "evidence": "page_view_snapshot",
+        "assessment": "Observed nonzero page-view evidence only. No age-adjusted visibility qualification or cross-cohort matching is established."
+      },
+      "metadata_translation_evidence": [],
+      "metadata_translators": [],
+      "originality_disposition": "uncertain_pending_review",
+      "deterministic_translation_or_foreign_compilation_evidence": false,
+      "source_quotes": [
+        "Anthropic 工程师、Claude Code 创建者 Boris Cherny 在 X 上发帖宣布了该消息。他写道：",
+        "在 Reddit 上的最新讨论串里"
+      ],
+      "provenance_assessment": "Observed: an attributed announcement quotation, product-statement summaries, and Reddit reactions depend on identifiable foreign material. A bounded quotation may be translated inside an otherwise original Chinese report. Neither that quotation nor the reference list proves that the whole article translates or closely compiles a specific foreign work. Existing policy permits independently written Chinese product reporting and commentary, so originality remains unresolved.",
+      "provenance_uncertainty": "No explicit translator, translation/compilation label, foreign-original-author biography with an original-work link, or foreign-interview transcript adaptation was located. The article has a Chinese byline, but that does not establish independence of composition. No external work was read for correspondence. Keep pending and fail closed for admission without converting this uncertainty into a translation verdict.",
+      "genre": "Foreign-product announcement explainer and community-reaction roundup",
+      "topic": "Cowork capabilities, file access, agent safety, product availability, and user response",
+      "substantive_content_present": true,
+      "substantive_content_evidence": [
+        "Specifies the stated macOS/Claude Max research-preview availability and relationship to Claude Code.",
+        "Discusses selected-folder access, connectors, document skills, browser work, task updates, and proposed platform expansion.",
+        "Separates destructive-file-operation risks from prompt-injection risks and reports product and community caveats."
+      ],
+      "content_value_limitations": "Product claims and community quotations remain unverified. The article itself says some quoted dissatisfaction was not specifically about Cowork. This limits the use of that material as evidence of product reception, independently of any writing impression.",
+      "textual_article_assessment": "Substantive with a complete textual arc and reference footer. Suitable for provisional qualitative inspection with provenance and unreviewed-image limits, rather than as a proven compilation exclusion.",
+      "extraction_findings": [
+        "Literal double-asterisk markers surround one paragraph in the captured text; their origin is not established and they should remain unchanged in the source.",
+        "No obvious abrupt textual ending in the reviewed presentation."
+      ],
+      "essential_image_assessment": "Four image references have empty alt text and no captions. The prose explains the central product narrative, but images near announcement and reaction material may carry quotation or interface context that has not been inspected. No visual verification is claimed.",
+      "inspection_eligibility": "provenance_hold_with_textual_inspection_only",
+      "full_article_reader_comparison_readiness": "provisional_diagnostic_reading_only_pending_provenance_and_visual_context",
+      "matching_caveats": [
+        "Foreign-source dependence with unresolved independent-synthesis provenance",
+        "Product-announcement and reaction format"
+      ],
+      "observed_foreign_source_dependencies": [
+        "The article attributes a bounded Chinese quotation to a Boris Cherny X announcement and repeatedly reports Anthropic product statements.",
+        "The reference list points to an official product announcement, an X post, and a Reddit discussion.",
+        "The body reports Reddit reactions, including its own caveat that some dissatisfaction was not specific to Cowork."
+      ],
+      "inferred_whole_article_foreign_compilation": "not_established_from_supplied_evidence",
+      "direct_document_level_translation_evidence": [],
+      "independent_chinese_synthesis_evidence": [
+        "The narrative organizes product capabilities, operational risks, roadmap, intended users, and community responses into Chinese explanatory sections.",
+        "Its interpretive framing and stated qualification about non-Cowork-specific comments are compatible with editorial synthesis, but the supplied text does not establish how independently the article was composed from the referenced works."
+      ],
+      "primary_original_language_claim_status": "not_supported_pending_review",
+      "correction_from_v1": "Withdraw deterministic foreign-compilation exclusion. A quoted foreign announcement and references establish source dependence, not document-level translation or compilation."
+    }
+  ],
+  "revision_reason": "The v1 pair-03 decisions conflated observed foreign-source dependencies with proven translation/compilation. Existing policy permits independently written Chinese reporting, commentary, and synthesis of foreign sources.",
+  "prior_review_path": "data\\local\\media-contrast-review-v1\\qualification-review.json",
+  "prior_review_sha256": "fd42950d978291f634b64956128751f9171efb9a305f3623db2aa344f86f8080",
+  "prior_report_path": "docs\\routes\\compact-refiner\\reports\\media-contrast-qualification-v1.md",
+  "prior_report_sha256": "eff864cac93e3ce525af68e6123ebc47282228674dc5946ea826b23ce58203a9",
+  "supersedes_decisions": [
+    "pair-03-A",
+    "pair-03-B"
+  ],
+  "version_preservation": "The v1 JSON and report are preserved unchanged as an audit record. Their pair-03 deterministic-exclusion judgments are superseded and must not be used as active findings.",
+  "policy_references": [
+    {
+      "path": "pilot_collect.py",
+      "sha256": "3d98d353e1d9e1c117aa79d7c3a14b3cb10ebac2a52f80a5c3847e909724cbe6"
+    },
+    {
+      "path": "docs\\translation-benchmark-v2.md",
+      "sha256": "7850c5fc5f1e5b4d4b60180174c84d4bf9711e06cb067452755a66ea02bfe8f7"
+    }
+  ],
+  "policy_interpretation": [
+    "Foreign news, product-announcement, paper, and reference links are source-dependency evidence, not sufficient document-level translation evidence.",
+    "Independently written Chinese reporting, commentary, and synthesis may be original under the existing verifier and translation-gate-2.0-development policy.",
+    "A Chinese byline alone does not establish original authorship or independent composition.",
+    "Direct document-level translation/compilation evidence can include an explicit translator or translation label, a specific foreign-author/original-work relationship, or a demonstrable foreign transcript adaptation.",
+    "No such direct document-level proof was located in the provided six articles. Embedded foreign quotations are not themselves proof that the surrounding article is a translated work.",
+    "Unresolved originality remains pending and fails closed for formal corpus admission; it must not be renamed a proven translation exclusion."
+  ]
+}

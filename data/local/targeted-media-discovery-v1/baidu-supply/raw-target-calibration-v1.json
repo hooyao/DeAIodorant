@@ -1,0 +1,17 @@
+{
+  "version": "raw-target-calibration-1.0",
+  "status": "awaiting_target_representativeness_feedback",
+  "doc_id": "92ade4253c08a43329164bf5",
+  "source_url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+  "source_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+  "independent_review_sha256": "33725db52dc6548122c5e1c5bb55a91fbb52f2bc47e88f62f874363c77c6f3e6",
+  "selection_bias": "keyword-enriched development discovery",
+  "assistant_nomination": "sustained_target_candidate",
+  "assistant_confidence": "moderate",
+  "purpose": "Calibrate whether the unchanged complete article exhibits the maintainer intended typical strong Chinese style problem; not readability preference or edit efficacy.",
+  "question": "这篇原文是否更接近你说的典型、浓重的 AI 臭味？",
+  "response": null,
+  "human_label": null,
+  "rewrites_created": false,
+  "training_eligible": false
+}

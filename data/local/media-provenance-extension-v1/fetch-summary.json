@@ -1,0 +1,19 @@
+{
+  "protocol": "media-provenance-extension-1.0",
+  "completed_at": "2026-09-14T08:40:00.368462+00:00",
+  "selected": 24,
+  "article_attempts": 24,
+  "stop_reason": null,
+  "status_counts": {
+    "captured_unreviewed": 21,
+    "empty_extraction": 3
+  },
+  "actual_cohort_counts": {
+    "pre": 12,
+    "post": 12
+  },
+  "attempts_sha256": "dd94587f3ab39098f65e1971daae1ca38819079bc75c10d9602e8a469daf87f0",
+  "admitted_documents": 0,
+  "model_calls": 0,
+  "gpu_used": false
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "doc_id": "3c60dc0a981b686870095450",
+    "operations": [
+      "Remove depth-announcement and direction-announcement metadiscourse.",
+      "Replace two paired contrast frames and the shackle metaphor with direct process claims.",
+      "Preserve every named tool, control dimension, automation boundary, and production-validation qualification."
+    ],
+    "original_side": "B",
+    "pair_id": "contrast-03",
+    "target_lines": [
+      79,
+      81
+    ],
+    "task_number": 1
+  },
+  {
+    "doc_id": "0431c592d5de8246cebcb8e2",
+    "operations": [
+      "Replace emphatic discovery framing with a direct causal transition.",
+      "Convert the ornamental contrast frame into two explicit claims while preserving the negation.",
+      "Remove unattributed quotation styling and repeated product-positioning phrases without changing the reported figures or product purpose."
+    ],
+    "original_side": "A",
+    "pair_id": "contrast-02",
+    "target_lines": [
+      7,
+      10
+    ],
+    "task_number": 2
+  },
+  {
+    "doc_id": "44aa81958a6c585ee8c06847",
+    "operations": [
+      "Collapse repeated decision-maker and project-manager reframing into the stated routing mechanism.",
+      "Replace repeated not-X-but-Y frames with direct declarative claims.",
+      "Preserve the reasoning-chain, multi-agent selection, explainability, uncertainty, conflict-resolution, and instruction-understanding propositions."
+    ],
+    "original_side": "B",
+    "pair_id": "contrast-01",
+    "target_lines": [
+      15,
+      22
+    ],
+    "task_number": 3
+  }
+]

@@ -1,0 +1,260 @@
+{
+  "status": "passed",
+  "documents": 23,
+  "checks": "这些检查验证结构性保留；语义完整性在逐段翻译时复核。本次迁移不产生新的研究结论。",
+  "results": [
+    {
+      "path": "docs/research-progress.md",
+      "original_sha256": "fa8bb5b91d34f9f9a588d607d56abdf260947181896ceaf0f3545ce57ec37385",
+      "translated_sha256": "4a538cc067379b3f9213bbcf46a11b427db4c1628538902ad95578f9ee21a728",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "docs/smell-catalog.md",
+      "original_sha256": "620c6e9eeba41b04ef8b02751c1808177f10ec8797b3460e9ab4db426213da77",
+      "translated_sha256": "36eb6c437449dd709f851a7e854607e6346c3d651b7f8fed5fd47639f096d67d",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/boundary-competition-development.md",
+      "original_sha256": "9dceaaa589ac46c6b6a362db178577970703e17f38d7f8ec9bf0bced6891b796",
+      "translated_sha256": "ceb48f4eac74867a382c9aae77f11647739cfe22f62fc64401973bfe9f982afd",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/compositional-burden-probe.md",
+      "original_sha256": "a3b79efc7a4512139ffccf80f164242085c13f6bfc0544c974e223f2e0ae0ae9",
+      "translated_sha256": "3fe02c7022b2f85b7a0e710a8535dffcfd3399ade08d226711d0b6019775aae0",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/discourse-graph-probe.md",
+      "original_sha256": "823ff5427d1510a3edd8211eeb830ec034afc4cf9949e6cf26d8f0fa390732de",
+      "translated_sha256": "68297e90aef7d17071f730d5ea48ad5f4e729978a47cd094ba55e09cc281f2e1",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/handoff-transition-probe.md",
+      "original_sha256": "42ce0ea4972211800e4f3fee5c4d5c155ffd5c67183879257dd00b4f4f1f4ff4",
+      "translated_sha256": "b9284436e97b56fae4df0bb36f53cc2fb5a37109f64600d13d26c67c9dfcf295",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/head-final-modifier-probe.md",
+      "original_sha256": "7c4b0d92fe95667ead5114705d44315a59fb394ea4eeed71f3afeac9aa6af138",
+      "translated_sha256": "61d1ae66cb2ec051c08beae13e6be8dfcbf801c330e98061f1335afe659f2c40",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/integration-pairs-v1.md",
+      "original_sha256": "0b2f53f506ff1e233a81cd033cda761f43e3019c4f445b8ce1ed0cd69ca22a61",
+      "translated_sha256": "aa44249da783debf29a67d9270b2d1fb8b100f5c3485a5860308039133b6fd0e",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/modifier-bracketing-probe.md",
+      "original_sha256": "505b9d2557dd3feb72d957c1c06d0df78af1ac29120ffec43c99388024b2d33c",
+      "translated_sha256": "ed5d2b07272ac3ab1b81c9707e23d82325e701b4c744030ea6df8038c764c92c",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/nominal-chain-integration-probe.md",
+      "original_sha256": "ed18a1c2e1bb9ea8e7555996d4e2668c361e23a4011a31c4431a11067b963818",
+      "translated_sha256": "4c85ba8127a94bd668fb6ed5e35c8a07824746ace6c62d28576860b06e4cc0d7",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/openrouter-corpus-model-interface-audit.md",
+      "original_sha256": "69479897e79c72c2e4f7289525ec355ce3cd19107d4a7571674a682193bb03e0",
+      "translated_sha256": "e54a88ea28f976cf8be3839391dd5db4c4cde376f04d66ec64744821ac2c279a",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/pilot-direction-probe.md",
+      "original_sha256": "639c058365c320db4fbf690fc325fb0c53ac64acaa5a4aac0a6bfb2501ff753a",
+      "translated_sha256": "035e04bbd852fe7133c3eb0f3c88582e144edbb9816b51aba3cb3112410919aa",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/post-development-motif-inventory.md",
+      "original_sha256": "d4b962a36fe90bde73b130e5d6372a845c36e1d35667fe94b687c322d26c1cd5",
+      "translated_sha256": "4c6e0acad3dd5c7a999db590d31abba9183f41b3f91c2275d3ccd768dc0af7da",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/post-reader-corpus-expansion-v2.md",
+      "original_sha256": "eaca49168ee3d23f2243f89e9784bced7616d792b4bb7a07a1c957179ebb00f7",
+      "translated_sha256": "4e8a197b76f4e2c78a5bd50a03a8bc5c1acb26df370c2679f60a0dde8743af0b",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/post-reader-corpus-expansion-v3.md",
+      "original_sha256": "d018534283258f97074e6ab4349f7e0179fd1a5123087ace69dce38760e3f6a0",
+      "translated_sha256": "48a4ad6c1ef1297b3cb525bd1987ed2d35130036da7abe9fd9d16494862f7fb4",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/post-reader-corpus-handoff.md",
+      "original_sha256": "a399357ed313a2cf0421f6616ae2b2ac382c8d02602ae9a749178ed91c7db133",
+      "translated_sha256": "4e13c482a5f9b0e7e6c6c781729efb1326c5f1a00ec5d3979c56e58a41d47225",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/reader-friction-screen-v1.md",
+      "original_sha256": "eb7435079b915f673423e5cfa2da6deae1e14b7081caed36a9f8261b51d70ca0",
+      "translated_sha256": "680d3ab57eea7a0c52afb8dc5206f3780d86cfa4debfef4a6c60f361dff67c3b",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/reader-friction-screen-v2.md",
+      "original_sha256": "f8e922c588d9404f04670465844d4f43538f81e44f1520eebb2b14a9dab10534",
+      "translated_sha256": "40280f21a33c497b63d691e14b902ac1dfd86d8f6acc909f6ea981da4a53d75e",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/reader-friction-screen-v3.md",
+      "original_sha256": "9920c83d0ab522b9566af7521b9f1d960a445335231c26377410907e628a0b9c",
+      "translated_sha256": "00aa8e1cd921f5baadbbcb85d30e62671429e17b9942099e5bfb1c22664568c2",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/refinement-pairs-v2.md",
+      "original_sha256": "fa091321a12f7485027786d725af48f48ff0a51c54013a6d9dc973f470cda69e",
+      "translated_sha256": "bb9021d723eea04f76fba777cb0516a6ba0cb4c21bc6a78611560874df8422cf",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/refinement-pairs-v3.md",
+      "original_sha256": "71595fd64d6de4795b5dbd56622b937f622fd4a43e04bbe87790eba75fb41d67",
+      "translated_sha256": "7d790bacdd2d2d8001a3009d3e8dbf5f6168c7f21c12153de57efe5fa1b3b5a9",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/refinement-pairs-v4.md",
+      "original_sha256": "18a2e7d8782b86d43e2875fab38404f3f32c92bd4970a14324a5a1d110bff1af",
+      "translated_sha256": "46c0bcb67d6c1744544dc7f9e49da558f2019b5ac6b35b79576c4bdc4ddb90c3",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    },
+    {
+      "path": "experiments/relation-support-probe.md",
+      "original_sha256": "46cdc42230471701918ff54917318161b7d8b8a8f3288370c858e4800b09d187",
+      "translated_sha256": "879611b30f3c4c3317f0abb8a165c281ad1d00336ea668a60e5195ebcbecd355",
+      "fenced_blocks_identical": true,
+      "inline_literals_identical": true,
+      "original_numbers_retained": true,
+      "link_destinations_identical": true,
+      "table_row_counts_identical": true,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "candidate_sha256": "b6b1b958d8ba6809093d54240d622f5ff0f7c14f0e4d81082e73f2d7e68391de",
+    "case_id": "additional-01",
+    "control": false,
+    "draft_id": "cr001-09-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "none",
+    "issues": [],
+    "original_sha256": "58e25ffdf21d4d4dc1edbf787c2852c02e30b061001d121b04aece9006d2f9d6",
+    "proposal_case_id": "edit-06",
+    "reason": "The four-to-one consolidation, both deadlines, filename requirements, backup-before-assembly sequence, source preservation, parallel handling of conflicting accounts, responsible-owner confirmation, nonresponse rule, internal retention, and actual confirmation date all remain. The stronger administrative wording expresses the same mandatory workflow. It makes the register more formal but provides no clear improvement in concision or operational clarity.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "7b8b3480aa9a6f0bcc524865c098862da975502e70f1073dfc7f5e2691577841",
+    "case_id": "additional-02",
+    "control": false,
+    "draft_id": "cr001-11-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "uncertain",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "limited",
+    "issues": [
+      {
+        "candidate_evidence": "本月我们主要接收儿童故事书和自然科普书，暂不接收练习册与杂志。",
+        "explanation": "Adding the main-category qualifier makes the accepted categories sound nonexhaustive. The source's later reference to the reception scope supports treating its stated categories as operational boundaries, but the source does not explicitly say that every other category is excluded. The effect on admission scope is therefore uncertain rather than an established contradiction.",
+        "original_evidence": "本月我们接收儿童故事书和自然科普书，暂不接收练习册与杂志。",
+        "type": "scope_ambiguity"
+      }
+    ],
+    "original_sha256": "e30191d216e095073b0c6e962d0cc4c979c764a316f803bf1575ff74ad716946",
+    "proposal_case_id": "edit-07",
+    "reason": "Apart from the uncertain reception-scope qualifier, the candidate preserves counting before sorting, counting not implying acceptance, page and telephone checks in order, the responsible person's handling of telephone details, no volunteer alteration, per-title quantities and two-copy limit, pending-box transfer, the shelving prohibition, and immediate donor retrieval. Paragraph separation modestly improves scanning for new volunteers, although the wording becomes longer.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "b67be27445c50708a7b67d7da9a9ab6a405050534ef8bce08d811ce839bcc4aa",
+    "case_id": "additional-03",
+    "control": false,
+    "draft_id": "cr001-20-draft",
+    "exact_lock_status": "pass",
+    "fidelity": "uncertain",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "none",
+    "issues": [
+      {
+        "candidate_evidence": "施工期间通往二层的主楼梯暂停使用。",
+        "explanation": "The source restricts reader use; the candidate states an unqualified suspension of use. In a notice addressed to readers, these may communicate the same visitor instruction. Read literally, however, the candidate can also exclude staff or construction use, which the source does not establish. The input does not resolve whether that broader reading is intended.",
+        "original_evidence": "施工期间通往二层的主楼梯不供读者使用。",
+        "type": "scope_ambiguity"
+      }
+    ],
+    "original_sha256": "3c1149ed02686aa4d7512099ac2475a279f29fae30a3b06d043afebe971e4d69",
+    "proposal_case_id": "edit-13",
+    "reason": "Closure dates and times, the unaffected exhibition hall, alternative activity room, step-free route, return-desk instructions, three-day extension limited to books due during closure, conditional planned reopening, consultation hours, and the exact locked announcement remain. The staircase restriction loses its explicit actor qualifier, creating limited scope uncertainty. The other edits are primarily spacing and sentence rearrangement, with no clear editorial gain.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "3ef4a00de91f95b684820c4738d86cb94cb27f09760c1c81c9519a1b7354e961",
+    "case_id": "additional-04",
+    "control": false,
+    "draft_id": "cr001-07-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "fail",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "regression",
+    "issues": [
+      {
+        "candidate_evidence": "如果您家中种子较少或没有，也欢迎参加",
+        "explanation": "The source explicitly permits attending with few or no seeds regardless of what a resident owns. The candidate attaches the invitation to having few or no seeds at home. A resident who owns seeds but chooses to bring none loses the source's explicit permission; bringing and owning are different conditions.",
+        "original_evidence": "少带或不带种子也都可以参加",
+        "type": "condition_narrowing"
+      }
+    ],
+    "original_sha256": "eae2faa4dc4bd140491b6b91b8c63c1c11175a6b50083ceb7b7c7422ae2b90f0",
+    "proposal_case_id": "edit-04",
+    "reason": "The time, venue, three-kind and five-bag limits, drying and paper-bag preparation, required labels, unknown-month instruction, accepted and rejected seed conditions, volunteer duties, and germination and identification disclaimers remain. Paragraphs organize preparation clearly, but replacing the unconditional no-seed attendance option with a possession-based condition weakens a substantive part of the welcoming instructions.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "86f123354c5dfc181e66fc96566dc7d2d39d1cbef39dbfd932649a871846074f",
+    "case_id": "additional-05",
+    "control": false,
+    "draft_id": "cr001-01-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "limited",
+    "issues": [],
+    "original_sha256": "187a111274ec69d71ad4df9447818363e52a922f9d2de4c77fffe0575777fdf2",
+    "proposal_case_id": "edit-01",
+    "reason": "The initial online download and 48 MB size, package contents and exclusion of live closures, offline availability, separate location-permission limitation, confirmation before replacing an old package, failed-update fallback, online-only closure refresh, timestamp meaning, stale-message caution, and on-site guidance remain. Combining the download description and adding a direct caution slightly improves flow without changing the technical assurances or uncertainty.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "72593c64579959a7ed464058e71bfc527c7935c349e2482d7f69d5d059875164",
+    "case_id": "additional-07",
+    "control": false,
+    "draft_id": "cr001-03-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "uncertain",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "regression",
+    "issues": [
+      {
+        "candidate_evidence": "索引每日 02:00 自动更新一次",
+        "explanation": "The candidate explicitly calls the update automatic. A regular scheduled index update may reasonably imply automation in this context, but the source states the schedule without specifying the mechanism. The input does not establish that added operational detail.",
+        "original_evidence": "索引每天02:00更新一次",
+        "type": "unsupported_mechanism"
+      },
+      {
+        "candidate_evidence": "团队要求在执行引用操作流程前，务必检查文档内的适用版本",
+        "explanation": "Adding the execution verb makes the trigger unclear: the phrase can refer to executing a citation workflow or to executing a referenced procedure, whereas the source requires checking before citing an operating procedure. A reader may reconstruct the original intention, so this is ambiguous rather than a definite replacement instruction.",
+        "original_evidence": "团队要求引用操作流程前检查文档内的适用版本",
+        "type": "workflow_ambiguity"
+      }
+    ],
+    "original_sha256": "ddf19e7f1c55c3731879afb7869ae9ca68c8dd89b176edf2acafe48e20fb991d",
+    "proposal_case_id": "edit-03",
+    "reason": "Published-only indexing, delayed search visibility, the refresh advice, ranking and timestamp rules, no implied extra review, snapshot summaries versus current documents, archived-search status, and the reader's responsibility for project applicability remain. Explicit automation is not confirmed, and the final instruction becomes harder to parse and less precise about when the version check is required. These ambiguities prevent a confident preservation pass.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "42db9051c3067c3283c96ed01461485e116676071eaf14b80e587db9b5e473d4",
+    "case_id": "additional-08",
+    "control": false,
+    "draft_id": "cr001-19-draft",
+    "exact_lock_status": "pass",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "none",
+    "issues": [],
+    "original_sha256": "89b3bc877210e982ac11f0faff4e7640b6e1a7488ca625197480f6df1e46ba75",
+    "proposal_case_id": "edit-12",
+    "reason": "The trial dates, two daily time slots, six-person capacity, two-slot weekly cap, canceled-booking exemption and rebooking, waiting-list status, exact locked confirmation requirement, existing-member fee condition, unchanged tool rules, two-hour cancellation deadline, end-of-trial usage review, and absence of a permanent decision remain. The edits mostly expand already clear instructions and add numeric spacing, without a clear improvement in organization or voice.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "ea42889f43cfb0dcb0fac79e3f9fecf645e7754f75125aab3996ab462c8e9fde",
+    "case_id": "additional-09",
+    "control": false,
+    "draft_id": "cr001-14-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "fail",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "regression",
+    "issues": [
+      {
+        "candidate_evidence": "",
+        "explanation": "The candidate omits that departure reasons were not recorded for readers who did not reach the bottom. This is a distinct missing-data limitation, not fully preserved by the remaining general warning against claiming improved completion.",
+        "original_evidence": "站方未记录未读到底部者的离开原因",
+        "type": "omitted_measurement_limit"
+      },
+      {
+        "candidate_evidence": "",
+        "explanation": "The candidate removes the absence of random assignment to outline and no-outline versions, losing a concrete limitation on causal interpretation.",
+        "original_evidence": "也未将读者随机分配至有提纲与无提纲版本",
+        "type": "omitted_design_limit"
+      }
+    ],
+    "original_sha256": "f70d982b572d081c4cca933a6b234b935ba082d81301b64f557eed95ff34f204",
+    "proposal_case_id": "edit-09",
+    "reason": "The optional outline, first-week scope, 180 bottom-reaching logged-in readers, 72 outline users, 60 responses, 42 positive respondents, respondent-selection caution, conditional next comparison, consent, and absence of a comprehension test remain. Restating the denominators helps locally, but deleting two separate study limitations materially reduces the account's explanatory and evidential value.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "e20b5501b9d344b0956f85e8c7519df77856ec3cd2b063bdc3296c6613870888",
+    "case_id": "additional-10",
+    "control": false,
+    "draft_id": "cr001-08-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "none",
+    "issues": [],
+    "original_sha256": "5329f9d75957ad75555f7fa15afb27b28e6a6a1f233462e3b46799bc8d5394f2",
+    "proposal_case_id": "edit-05",
+    "reason": "All timing, the 18 framed photographs, back-number verification and table placement, completion of checking and placement before hanging, venue-staff ownership of hanging, existing-hook restrictions, two-person handling for two long photographs, mismatch isolation and marking, separate final checks, and the unfinished-list and unopened-area safeguards remain. Numeric spacing, a colon, and an unambiguous pronoun substitution produce no substantive editorial improvement.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "1077b45c46265eb5cad312da1bbf34670033e3c90b228a4342805acd50be64bf",
+    "case_id": "additional-11",
+    "control": false,
+    "draft_id": "cr001-15-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "limited",
+    "issues": [],
+    "original_sha256": "a72cbd9563f758ff61552bb391c9b7c25f36914719cda40877a3113e15713097",
+    "proposal_case_id": "edit-10",
+    "reason": "The 30 seats, six consecutive weekdays, three daily observation times and 18 observations, all three means, distinction from unique visitors, possible repeat counting, unobserved weekends and turned-away demand, two-week evening-hours proposal, duty burden, unapproved status, and lack of proof of increased beneficiaries remain. The six observations per time are still entailed by the explicit daily schedule. Separating measurement limitations from the proposal modestly improves scanning, although some cautionary phrasing is longer.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "f181c358ae3d6a0c4f4653ff9b3c0b91bd5d34e0db2d35d8e3fcec9eb07a6076",
+    "case_id": "additional-14",
+    "control": false,
+    "draft_id": "cr001-17-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "none",
+    "issues": [],
+    "original_sha256": "89bda7c520d02d7717ab39030fda4a9b7e3c1027ebc0c93d51292618849f6a09",
+    "proposal_case_id": "edit-11",
+    "reason": "The material-mass-only scope, 12 kg per cardboard-box exhibition, 36 kg initial reusable set, average 1 kg repair including after the first exhibition, six observed uses without full replacement, conditional 18-use calculation, 54 and 216 kg totals, unmeasured transport, cleaning, energy and disposal, attributed conclusion, and prohibition on treating the ratio as an emissions reduction all remain. Expanded formal wording and repeated measurement language do not clearly improve an already explicit comparison.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "405b04844ae3ecfbf9c9be2156f423a175d31f6b9bfa9a3ae4b80e6c711fce4b",
+    "case_id": "additional-15",
+    "control": false,
+    "draft_id": "cr001-12-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "limited",
+    "issues": [],
+    "original_sha256": "3c6a8a295317eec8d2175f08c75063a4968c4ab4a0366e647fc394080e53eb52",
+    "proposal_case_id": "edit-08",
+    "reason": "The named activity, Sunday times, both comparison locations, paper-and-pen instruction and recording/privacy prohibitions, five minutes at each site, category and salience notes, illustrative examples, equal intended durations, no frequency counting, discomfort-based early exit with actual duration, restricted observation window and locations, non-measurement of all-day neighborhood noise, and participant-respecting voice remain. Moving the early-exit option next to the duration instruction modestly clarifies the practical exception without removing it.",
+    "reviewer_kind": "model_assisted_agent"
+  },
+  {
+    "candidate_sha256": "b0b0c29fe55410f19e9e56634874f058b8b120be3b107751c95f9aadc8bb9d38",
+    "case_id": "additional-18",
+    "control": false,
+    "draft_id": "cr001-02-draft",
+    "exact_lock_status": "not_applicable",
+    "fidelity": "pass",
+    "hashes_verified": true,
+    "human_gold": false,
+    "improvement": "none",
+    "issues": [],
+    "original_sha256": "e1cef88ca9496cc17ead415b5aadf045f94ad37a63c2c32fcf08b224acc11dcb",
+    "proposal_case_id": "edit-02",
+    "reason": "The ten-minute intervals, millimeter units, sum rather than average, numerical example, missing-versus-zero distinction, incomplete-record warning, maximum 24-hour local backfill, possible cumulative increase without sudden new rain, and single-instrument spatial limit are all preserved. The edits consist of spacing around numerals and leave the wording and organization essentially unchanged.",
+    "reviewer_kind": "model_assisted_agent"
+  }
+]

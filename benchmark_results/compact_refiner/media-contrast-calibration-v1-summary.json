@@ -1,0 +1,39 @@
+{
+  "article_requests": 24,
+  "contrast_reviewers": 2,
+  "date": "2026-09-14",
+  "date_cohorts": {
+    "post": 12,
+    "pre": 12
+  },
+  "deterministic_translation_exclusions": 4,
+  "feature_validation_results": 0,
+  "full_text_agent_review_panel": 6,
+  "further_review_candidates": {
+    "post": 9,
+    "pre": 7
+  },
+  "gpu_required": false,
+  "human_strong_smell_labels": 0,
+  "new_edits": 0,
+  "nomination": {
+    "article_id": "pair-03-B",
+    "doc_id": "c526ed941b8de39a5388df3d",
+    "formal_admission": false,
+    "originality": "uncertain_pending_review",
+    "published_at": "2026-01-13",
+    "status": "agent_nomination_only",
+    "url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl"
+  },
+  "nonempty_bodies": 20,
+  "preserved_prior_input_hashes": 54,
+  "primary_cohort_boundaries": {
+    "post_start_inclusive": "2025-07-01",
+    "pre_end_exclusive": "2023-01-01"
+  },
+  "report": "docs/routes/compact-refiner/reports/media-contrast-calibration-v1.md",
+  "schema_version": "media-contrast-calibration-summary-1.0",
+  "source_review_correction": "v1.1 withdraws the claim that foreign citations alone establish compilation; v1 is preserved.",
+  "status": "awaiting_maintainer_target_intensity_judgment",
+  "training_exports": 0
+}

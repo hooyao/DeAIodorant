@@ -1,0 +1,259 @@
+# Project Roadmap
+
+## Active priority, 2026-09-14
+
+The maintainer has supplied a strong SMZDM example and a lower-intensity Baidu
+reference. The current [anchor study](routes/compact-refiner/reports/reader-anchor-feature-discovery-v1.md)
+localizes a small candidate feature inventory. This establishes a reader-reported
+positive case, not feature generalization or readiness for training. Independent
+examples and comparable genre controls are the next discovery requirement.
+
+The [calibrated objective](target-feature-discovery.md) retains acquisition and
+temporal cohorts while prioritizing adequately contrasted real-media samples
+for repeatable target-feature discovery. Old low-signal experiments remain
+paused. The [compact-refiner route](routes/compact-refiner/README.md) records
+downstream editing, SFT, DPO, and RL options; training is deferred. Historical
+milestones below do not override this priority or resume failed probes.
+
+The latest scope explicitly includes translated Chinese articles as a core
+compact-refiner capability. Translation becomes a provenance stratum; original-
+only selection is a control. Current work localizes repetitive framing, sentence
+defects, and unsupported discourse relations on complete real media, then tests
+bounded, source-supported edits. Default model input remains Chinese only.
+
+The product objective is reader-preferred Chinese refinement, not AI-text
+classification. Corpus research and product evaluation therefore proceed in
+parallel rather than as a strict sequence.
+
+Alternative technical routes, minimum experiments, hardware mapping, and
+decision rules are defined in
+[DeAIodorant Refinement Roadmap](refinement-roadmap.md).
+
+## Milestone 0: Repository foundation
+
+Status: complete.
+
+Deliverables:
+
+- project instructions and contribution workflow;
+- Python package metadata and CI;
+- architecture, data boundaries, and branch policy;
+- deterministic feature extraction and provenance manifests.
+
+## Workstream A: Corpus-based hypothesis discovery
+
+Status: acquisition infrastructure and temporal grouping retained; target-sample
+coverage is being reassessed before further feature claims. Historical execution
+used a DGX Spark, which is unavailable in the current environment.
+
+Purpose:
+
+- collect high-quality, high-visibility pre-2023 and post-2025-06 Chinese text;
+- retain direct Chinese, translated, mixed/adapted, and unresolved provenance;
+- match source, topic, format, length, and visibility where possible;
+- extract interpretable and sparse linguistic features;
+- produce candidate writing-pattern hypotheses.
+
+This workstream does not determine what readers dislike. A corpus difference
+becomes a product candidate only after an editing intervention improves blinded
+reader preference.
+
+## Workstream B: Reader benchmark
+
+Status: immediate next work.
+
+This workstream does not wait for the large corpus.
+
+Status: in progress. The local acquisition pipeline is reproducible and
+structurally validated, but its output remains diagnostic pilot material and
+does not yet satisfy the exit criteria below.
+
+The translation-gate v2 candidate pool now has multiple sources and global
+leakage checks. Original candidates still require review before development,
+validation, and a sealed final test can be finalized. A local, reproducible
+Label Studio workspace now exposes all pending originals for structured human
+review and exports fail-closed decisions in the benchmark schema. Versioned
+Qwen3.8-27B BF16 provenance and research-value triage on the DGX Spark may
+reduce the active human queue, but their outputs remain model-assisted
+measurements rather than benchmark gold.
+Initial human reading also found heterogeneous machine-like style signals in
+the 2023-01-01 through 2025-06-30 transition period, supporting its continued
+exclusion from the primary pre/post contrast rather than any document-level
+authorship interpretation.
+
+Deliverables:
+
+- 20 passages across at least three genres;
+- unchanged inputs and 5–10 careful human edits;
+- locked fact, entity, number, citation, negation, and modality fields;
+- blinded pairwise preference questions;
+- span-level notes about irritating passages and accepted edits.
+
+Exit criteria:
+
+- rating questions are understandable;
+- readers can identify meaningful quality differences without guessing
+  authorship;
+- preservation failures can be recorded separately from style preference.
+
+## Milestone 1: Smell hypothesis catalog
+
+Inputs:
+
+- corpus feature differences;
+- direct editor observations;
+- reader-highlighted spans;
+- recurring rejected and accepted edits.
+
+Each hypothesis records:
+
+- a precise description;
+- detector or locator;
+- proposed edit operations;
+- positive examples and counterexamples;
+- known genre and source confounders;
+- reader-intervention result;
+- preservation risks.
+
+The canonical records and their evidence status are maintained in
+[Chinese Writing Smell Catalog](smell-catalog.md).
+
+Exit criterion:
+
+At least three smell categories have evidence that a bounded edit improves
+reader preference without meaning loss.
+
+## Milestone 2: Baseline route comparison
+
+Run on the same 20 passages:
+
+1. unchanged input;
+2. high-precision deterministic rules;
+3. one frozen prompt-only rewrite;
+4. targeted span rewriting;
+5. human edit on the upper-bound subset.
+
+Measure:
+
+- blinded reading preference;
+- meaning and factual preservation;
+- edit size;
+- latency, memory, and throughput;
+- failure and fallback rate.
+
+Exit criterion:
+
+Select the simplest approach that produces a reproducible preference gain while
+passing preservation gates.
+
+## Milestone 3: Hybrid refinement MVP
+
+Recommended architecture:
+
+~~~text
+deterministic span analysis
+    -> explicit edit plan
+    -> bounded local rewrite
+    -> preservation checks
+    -> accept or revert each operation
+    -> inspectable diff
+~~~
+
+Deliverables:
+
+- low, medium, and high refinement intensity;
+- operation reason codes;
+- locked-content support;
+- deterministic fallback to the original;
+- batch CLI;
+- human accept, reject, modify, and revert events.
+
+Exit criteria:
+
+- improved blinded reader preference over unchanged text;
+- better preservation than prompt-only full-document rewriting;
+- no critical fact, number, entity, citation, negation, or modality changes;
+- every edit can be inspected and reverted.
+
+## Milestone 4: Candidate generation and reranking
+
+Add only if several candidates materially improve the MVP.
+
+Deliverables:
+
+- bounded candidate generation;
+- deterministic preservation rejection;
+- feature and edit-size diagnostics;
+- human-selected candidate benchmark;
+- optional small preference reranker.
+
+Exit criterion:
+
+Automatic selection approaches human candidate choice without increasing
+meaning failures enough to outweigh the quality gain.
+
+## Milestone 5: Data flywheel
+
+Collect:
+
+- original generated draft;
+- proposed operation and candidate;
+- accepted, rejected, modified, or reverted result;
+- reason code and genre;
+- preservation-check outcome;
+- optional blinded preference.
+
+Private text is excluded from logs by default. Training use requires explicit
+rights and retention policy.
+
+Exit criterion:
+
+Enough reliable paired edits exist to justify a learned editor. A raw pre/post
+corpus is not a substitute for paired editing data.
+
+## Milestone 6: Learned compact refiner
+
+Candidate methods:
+
+- supervised LoRA or QLoRA;
+- edit-operation prediction;
+- encoder-decoder editing;
+- teacher generation with human review;
+- preference optimization;
+- distillation into a production-sized model.
+
+Start with supervised accepted edits. Add preference optimization only after
+pairwise feedback is large and stable.
+
+Exit criteria:
+
+- match or exceed the hybrid MVP on reader preference;
+- pass the same preservation gates;
+- reduce latency or operating cost;
+- remain stable across genres and refinement intensities.
+
+## Milestone 7: Product interfaces
+
+Deliverables:
+
+- stable local API and service contract;
+- editor or publishing integration;
+- diff review and per-edit controls;
+- privacy, retention, observability, and rollback policies;
+- backend-independent configuration.
+
+Exit criteria:
+
+- all interfaces use the same evaluation and preservation contract;
+- private text is not logged by default;
+- deployments can be rolled back safely;
+- model or rule updates cannot bypass quality gates.
+
+## Standing non-goals
+
+- classifying individual documents as human or AI;
+- optimizing against commercial AI detectors;
+- assuming every pre/post corpus difference is undesirable;
+- fabricating voice, anecdotes, facts, citations, or personal experience;
+- using unreviewed synthetic rewrites as gold training data;
+- making the large corpus a prerequisite for small reader experiments.

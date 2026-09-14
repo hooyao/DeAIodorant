@@ -1,0 +1,417 @@
+{
+  "brief_count": 24,
+  "dataset_root": "data/local/compact_refiner/cr001-v1",
+  "dataset_version": "cr001-v1",
+  "frozen_at_utc": "2026-09-14T03:53:17.063614+00:00",
+  "frozen_files": {
+    "docs/routes/compact-refiner/prompts/draft-v1.txt": "98bea5accc5358f50bea08df893bcdad86d85adf6cbd6bb8941c52d10ba7d9e4",
+    "docs/routes/compact-refiner/prompts/editor-v1.txt": "04c3fc6b4e800d874eaff974bb462829a125801c1e0fb7acedfeb272cacc77a0",
+    "experiments/compact_refiner_run.py": "14bcac9def9cc19639d9fa71e5305217dff213682bcdb35f056058fd8a36af32",
+    "experiments/fixtures/compact-refiner/briefs.v1.jsonl": "23f7d43004c672e53e1269e12be14e7990f81e738ef29701d23d386edb713932",
+    "feature_runs/compact_refiner/cr001-catalog-20260914/models.json": "6875124fd348cbf584154a4413b8cd8cd01122f0563e048689546a13aa740f2b",
+    "src/deaiodorant/refine/openrouter.py": "05c368f61d9954dbc4eb331a02c83c072b5aded6401bcc1f50be9dbbb0a7333a",
+    "src/deaiodorant/refine/records.py": "d1d4ab83154ad622916ba9ec0686cf4fb66091388bed871f71cd83eded49e365"
+  },
+  "generator_assignments": {
+    "cr001-01": "deepseek/deepseek-v4.1-flash",
+    "cr001-02": "qwen/qwen3.8-27b",
+    "cr001-03": "deepseek/deepseek-v4.1-flash",
+    "cr001-04": "qwen/qwen3.8-27b",
+    "cr001-05": "deepseek/deepseek-v4.1-flash",
+    "cr001-06": "qwen/qwen3.8-27b",
+    "cr001-07": "deepseek/deepseek-v4.1-flash",
+    "cr001-08": "qwen/qwen3.8-27b",
+    "cr001-09": "deepseek/deepseek-v4.1-flash",
+    "cr001-10": "qwen/qwen3.8-27b",
+    "cr001-11": "deepseek/deepseek-v4.1-flash",
+    "cr001-12": "qwen/qwen3.8-27b",
+    "cr001-13": "deepseek/deepseek-v4.1-flash",
+    "cr001-14": "qwen/qwen3.8-27b",
+    "cr001-15": "deepseek/deepseek-v4.1-flash",
+    "cr001-16": "qwen/qwen3.8-27b",
+    "cr001-17": "deepseek/deepseek-v4.1-flash",
+    "cr001-18": "qwen/qwen3.8-27b",
+    "cr001-19": "deepseek/deepseek-v4.1-flash",
+    "cr001-20": "qwen/qwen3.8-27b",
+    "cr001-21": "deepseek/deepseek-v4.1-flash",
+    "cr001-22": "qwen/qwen3.8-27b",
+    "cr001-23": "deepseek/deepseek-v4.1-flash",
+    "cr001-24": "qwen/qwen3.8-27b"
+  },
+  "genre_counts": {
+    "evidence-based analysis/commentary": 6,
+    "practical instructions": 6,
+    "technical explanation": 6,
+    "workplace/public-facing communication": 6
+  },
+  "git_commit": "306e5e0ec1802da2c6f7a741d2ea557d4db04be9",
+  "human_review_count": 0,
+  "limitations": [
+    "Constructed fictional briefs do not estimate natural editing demand.",
+    "All independent agent reviews are model-assisted, not human gold.",
+    "Remote provider checkpoint revisions may be unavailable."
+  ],
+  "materialized_briefs_sha256": "f5cd121c4841e15ad26923ab4be4346e77c9e81c5bc343c2092159f09d60cdc0",
+  "models": {
+    "deepseek/deepseek-v4.1-flash": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek"
+      },
+      "benchmarks": {
+        "artificial_analysis": {
+          "agentic_index": null,
+          "coding_index": null,
+          "intelligence_index": 39.5
+        },
+        "design_arena": []
+      },
+      "canonical_slug": "deepseek/deepseek-v4.1-flash-20260910",
+      "context_length": 1048576,
+      "created": 1789021285,
+      "default_parameters": {},
+      "description": "DeepSeek V4.1 Flash is a sparse mixture-of-experts model from DeepSeek, and the first built on the company's Causal Encoder-Decoder (CED) architecture. It activates 8B parameters on input and 16B on...",
+      "expiration_date": null,
+      "hugging_face_id": "deepseek-ai/DeepSeek-V4.1-Flash",
+      "id": "deepseek/deepseek-v4.1-flash",
+      "knowledge_cutoff": null,
+      "links": {
+        "details": "/api/v1/models/deepseek/deepseek-v4.1-flash-20260910/endpoints"
+      },
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "per_request_limits": null,
+      "pricing": {
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000006",
+        "overrides": [
+          {
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003",
+            "prompt": "0.00000015",
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ]
+          },
+          {
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003",
+            "prompt": "0.00000015",
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 100,
+            "utc_start": 0
+          },
+          {
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006",
+            "prompt": "0.0000003",
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 400,
+            "utc_start": 100
+          },
+          {
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003",
+            "prompt": "0.00000015",
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 600,
+            "utc_start": 400
+          },
+          {
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006",
+            "prompt": "0.0000003",
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 1000,
+            "utc_start": 600
+          },
+          {
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003",
+            "prompt": "0.00000015",
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_end": 0,
+            "utc_start": 1000
+          }
+        ],
+        "prompt": "0.0000003"
+      },
+      "reasoning": {
+        "default_effort": "high",
+        "default_enabled": true,
+        "mandatory": false,
+        "supported_efforts": [
+          "max",
+          "high",
+          "low"
+        ]
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "supported_voices": null,
+      "top_provider": {
+        "context_length": 1048576,
+        "is_moderated": false,
+        "max_completion_tokens": 384000
+      }
+    },
+    "mistralai/ministral-3b-2512": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "instruct_type": null,
+        "modality": "text+image->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral"
+      },
+      "benchmarks": {
+        "artificial_analysis": {
+          "agentic_index": 0.8,
+          "coding_index": 4.8,
+          "intelligence_index": 4.8
+        },
+        "design_arena": [
+          {
+            "arena": "models",
+            "category": "3d",
+            "elo": 991,
+            "rank": 107,
+            "win_rate": 35.9
+          },
+          {
+            "arena": "models",
+            "category": "codecategories",
+            "elo": 1025,
+            "rank": 109,
+            "win_rate": 37.3
+          },
+          {
+            "arena": "models",
+            "category": "gamedev",
+            "elo": 971,
+            "rank": 115,
+            "win_rate": 33
+          },
+          {
+            "arena": "models",
+            "category": "website",
+            "elo": 1040,
+            "rank": 110,
+            "win_rate": 38.2
+          }
+        ]
+      },
+      "canonical_slug": "mistralai/ministral-3b-2512",
+      "context_length": 131072,
+      "created": 1764681560,
+      "default_parameters": {
+        "frequency_penalty": null,
+        "temperature": 0.3,
+        "top_p": null
+      },
+      "description": "The smallest model in the Ministral 3 family, Ministral 3 3B is a powerful, efficient tiny language model with vision capabilities.",
+      "expiration_date": null,
+      "hugging_face_id": "mistralai/Ministral-3-3B-Instruct-2512",
+      "id": "mistralai/ministral-3b-2512",
+      "knowledge_cutoff": null,
+      "links": {
+        "details": "/api/v1/models/mistralai/ministral-3b-2512/endpoints"
+      },
+      "name": "Mistral: Ministral 3 3B 2512",
+      "per_request_limits": null,
+      "pricing": {
+        "completion": "0.0000001",
+        "input_cache_read": "0.00000001",
+        "prompt": "0.0000001"
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "supported_voices": null,
+      "top_provider": {
+        "context_length": 131072,
+        "is_moderated": false,
+        "max_completion_tokens": 104857
+      }
+    },
+    "qwen/qwen3.8-27b": {
+      "architecture": {
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "instruct_type": null,
+        "modality": "text+image+video->text",
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen"
+      },
+      "benchmarks": {
+        "artificial_analysis": {
+          "agentic_index": 46.5,
+          "coding_index": 68.1,
+          "intelligence_index": 33.9
+        },
+        "design_arena": []
+      },
+      "canonical_slug": "qwen/qwen3.8-27b-20260814",
+      "context_length": 1000000,
+      "created": 1786722910,
+      "default_parameters": {
+        "temperature": 1,
+        "top_k": 20,
+        "top_p": 0.95
+      },
+      "description": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking that can be...",
+      "expiration_date": null,
+      "hugging_face_id": "Qwen/Qwen3.8-27B",
+      "id": "qwen/qwen3.8-27b",
+      "knowledge_cutoff": null,
+      "links": {
+        "details": "/api/v1/models/qwen/qwen3.8-27b-20260814/endpoints"
+      },
+      "name": "Qwen: Qwen3.8 27B",
+      "per_request_limits": null,
+      "pricing": {
+        "completion": "0.00000255",
+        "input_cache_read": "0.00000015",
+        "prompt": "0.000000214"
+      },
+      "reasoning": {
+        "default_effort": "xhigh",
+        "default_enabled": true,
+        "mandatory": false,
+        "supported_efforts": [
+          "xhigh",
+          "medium",
+          "low"
+        ]
+      },
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "supported_voices": null,
+      "top_provider": {
+        "context_length": 262144,
+        "is_moderated": false,
+        "max_completion_tokens": 131072
+      }
+    }
+  },
+  "python_version": "3.13.5",
+  "role": "development_only",
+  "route_id": "compact-refiner-v1",
+  "run_id": "cr001-v1",
+  "schema_version": "compact-refiner-autonomous-preflight-1.0",
+  "settings": {
+    "budget_usd": "4",
+    "compact_reasoning": null,
+    "editor_temperature": 0.0,
+    "generator_reasoning": {
+      "enabled": false
+    },
+    "generator_temperature": 0.4,
+    "intensity": "medium",
+    "max_retries": 2,
+    "max_tokens": 2048,
+    "seed": 20260914,
+    "timeout_seconds": 120
+  },
+  "state": "frozen_before_generation",
+  "tracked_diff_sha256": "cb9650b01bbc80e536a9663178f523a498907c890532814a8b4a79f7f107fb5e",
+  "training_export_count": 0
+}

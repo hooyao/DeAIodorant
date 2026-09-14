@@ -1,0 +1,1370 @@
+{
+  "counterexamples": 25,
+  "documents": 13,
+  "full_body_review_attested_not_independently_provable": true,
+  "human_gold": false,
+  "localized_defect_proposals": 23,
+  "model_identity": "unknown",
+  "occurrences": 57,
+  "resolved_evidence": [
+    {
+      "alias": "doc-01",
+      "record_id": "doc-01-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 636,
+          "start_char": 590
+        }
+      ]
+    },
+    {
+      "alias": "doc-01",
+      "record_id": "doc-01-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 3360,
+          "start_char": 3331
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 3164,
+            "start_char": 3082
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-01",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 2296,
+          "start_char": 2201
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 2449,
+          "start_char": 2414
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 3318,
+          "start_char": 3269
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e03",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 3473,
+          "start_char": 3427
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e04",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 4039,
+          "start_char": 4002
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e05",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 4781,
+          "start_char": 4713
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e06",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 4828,
+          "start_char": 4781
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e07",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 5275,
+          "start_char": 5202
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-e08",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 5315,
+          "start_char": 5276
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": "doc-02-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 146,
+          "start_char": 91
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 90,
+            "start_char": 28
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 4526,
+          "start_char": 4441
+        }
+      ]
+    },
+    {
+      "alias": "doc-02",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 5275,
+          "start_char": 5202
+        }
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": "doc-03-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 69,
+          "start_char": 0
+        }
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": "doc-03-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1043,
+          "start_char": 997
+        }
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": "doc-03-e03",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1317,
+          "start_char": 1158
+        }
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": "doc-03-e04",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1422,
+          "start_char": 1318
+        }
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": "doc-03-e05",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1422,
+          "start_char": 1318
+        }
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": "doc-03-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 775,
+          "start_char": 739
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 724,
+            "start_char": 711
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": "doc-03-d02",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 1317,
+          "start_char": 1278
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 1277,
+            "start_char": 1196
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1422,
+          "start_char": 1396
+        }
+      ]
+    },
+    {
+      "alias": "doc-03",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1942,
+          "start_char": 1915
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 159,
+          "start_char": 85
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1096,
+          "start_char": 989
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e03",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1994,
+          "start_char": 1963
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e04",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 4473,
+          "start_char": 4406
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e05",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 7579,
+          "start_char": 7487
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e06",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 8081,
+          "start_char": 7998
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e07",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 8450,
+          "start_char": 8425
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e08",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 8617,
+          "start_char": 8586
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e09",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 9297,
+          "start_char": 9234
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e10",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 10744,
+          "start_char": 10683
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e11",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 11443,
+          "start_char": 11411
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e12",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 12432,
+          "start_char": 12380
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e13",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 13276,
+          "start_char": 13244
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e14",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 13374,
+          "start_char": 13316
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e15",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 14513,
+          "start_char": 14452
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e16",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 19630,
+          "start_char": 19583
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e17",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 20144,
+          "start_char": 20082
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e18",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 20188,
+          "start_char": 20144
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-e19",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 20992,
+          "start_char": 20944
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 1094,
+          "start_char": 1039
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 21190,
+            "start_char": 21132
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-d02",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 3070,
+          "start_char": 3036
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 3036,
+            "start_char": 2998
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-d03",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 8018,
+          "start_char": 7998
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 10327,
+            "start_char": 10294
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": "doc-04-d04",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 16533,
+          "start_char": 16442
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 16128,
+            "start_char": 16079
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 12432,
+          "start_char": 12380
+        }
+      ]
+    },
+    {
+      "alias": "doc-04",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 12704,
+          "start_char": 12671
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 833,
+          "start_char": 732
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1085,
+          "start_char": 1047
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e03",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1196,
+          "start_char": 1157
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e04",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1349,
+          "start_char": 1302
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e05",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1842,
+          "start_char": 1792
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e06",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 2240,
+          "start_char": 2180
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e07",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 2411,
+          "start_char": 2311
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-e08",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 2942,
+          "start_char": 2899
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 1493,
+          "start_char": 1453
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 3259,
+            "start_char": 3214
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": "doc-05-d02",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 3713,
+          "start_char": 3621
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 3834,
+            "start_char": 3777
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1085,
+          "start_char": 1047
+        }
+      ]
+    },
+    {
+      "alias": "doc-05",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1301,
+          "start_char": 1238
+        }
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": "doc-06-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 7516,
+          "start_char": 7490
+        }
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": "doc-06-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 8475,
+          "start_char": 8430
+        }
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": "doc-06-e03",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 8748,
+          "start_char": 8719
+        }
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": "doc-06-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 544,
+          "start_char": 510
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 611,
+            "start_char": 563
+          }
+        ],
+        [
+          {
+            "end_char": 8518,
+            "start_char": 8475
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": "doc-06-d02",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 7676,
+          "start_char": 7633
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 7829,
+            "start_char": 7770
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": "doc-06-d03",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 7455,
+          "start_char": 7403
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 4047,
+            "start_char": 3964
+          }
+        ],
+        [
+          {
+            "end_char": 4075,
+            "start_char": 4048
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 2498,
+          "start_char": 2468
+        }
+      ]
+    },
+    {
+      "alias": "doc-06",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 7245,
+          "start_char": 7221
+        }
+      ]
+    },
+    {
+      "alias": "doc-07",
+      "record_id": "doc-07-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 6258,
+          "start_char": 6188
+        }
+      ]
+    },
+    {
+      "alias": "doc-07",
+      "record_id": "doc-07-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 1936,
+          "start_char": 1888
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 36,
+            "start_char": 16
+          },
+          {
+            "end_char": 1818,
+            "start_char": 1798
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-07",
+      "record_id": "doc-07-d02",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 6239,
+          "start_char": 6215
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 6338,
+            "start_char": 6292
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-07",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 6385,
+          "start_char": 6339
+        }
+      ]
+    },
+    {
+      "alias": "doc-07",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 6567,
+          "start_char": 6558
+        }
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": "doc-08-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 914,
+          "start_char": 841
+        }
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": "doc-08-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1044,
+          "start_char": 1004
+        }
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": "doc-08-e03",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1428,
+          "start_char": 1347
+        }
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": "doc-08-e04",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1921,
+          "start_char": 1857
+        }
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": "doc-08-e05",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 2635,
+          "start_char": 2558
+        }
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": "doc-08-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 2306,
+          "start_char": 2234
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 2163,
+            "start_char": 2100
+          }
+        ],
+        [
+          {
+            "end_char": 2379,
+            "start_char": 2347
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": "doc-08-d02",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 3211,
+          "start_char": 3169
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 320,
+            "start_char": 293
+          }
+        ],
+        [
+          {
+            "end_char": 1993,
+            "start_char": 1921
+          }
+        ],
+        [
+          {
+            "end_char": 3271,
+            "start_char": 3244
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1921,
+          "start_char": 1875
+        }
+      ]
+    },
+    {
+      "alias": "doc-08",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1579,
+          "start_char": 1548
+        }
+      ]
+    },
+    {
+      "alias": "doc-09",
+      "record_id": "doc-09-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1335,
+          "start_char": 1258
+        }
+      ]
+    },
+    {
+      "alias": "doc-09",
+      "record_id": "doc-09-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1764,
+          "start_char": 1663
+        }
+      ]
+    },
+    {
+      "alias": "doc-09",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1297,
+          "start_char": 1258
+        }
+      ]
+    },
+    {
+      "alias": "doc-09",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1186,
+          "start_char": 1160
+        }
+      ]
+    },
+    {
+      "alias": "doc-10",
+      "record_id": "doc-10-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 672,
+          "start_char": 616
+        }
+      ]
+    },
+    {
+      "alias": "doc-10",
+      "record_id": "doc-10-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 672,
+          "start_char": 626
+        }
+      ],
+      "support_spans": []
+    },
+    {
+      "alias": "doc-10",
+      "record_id": "doc-10-d02",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 2897,
+          "start_char": 2840
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 2630,
+            "start_char": 2570
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-10",
+      "record_id": "doc-10-d03",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 3284,
+          "start_char": 3243
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 3565,
+            "start_char": 3518
+          }
+        ],
+        [
+          {
+            "end_char": 3672,
+            "start_char": 3606
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-10",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 2811,
+          "start_char": 2743
+        }
+      ]
+    },
+    {
+      "alias": "doc-10",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 5055,
+          "start_char": 5003
+        }
+      ]
+    },
+    {
+      "alias": "doc-11",
+      "record_id": "doc-11-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 2497,
+          "start_char": 2365
+        }
+      ]
+    },
+    {
+      "alias": "doc-11",
+      "record_id": "doc-11-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 2219,
+          "start_char": 2181
+        }
+      ],
+      "support_spans": []
+    },
+    {
+      "alias": "doc-11",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1713,
+          "start_char": 1681
+        }
+      ]
+    },
+    {
+      "alias": "doc-11",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 3424,
+          "start_char": 3388
+        }
+      ]
+    },
+    {
+      "alias": "doc-12",
+      "record_id": "doc-12-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1607,
+          "start_char": 1565
+        }
+      ]
+    },
+    {
+      "alias": "doc-12",
+      "record_id": "doc-12-e02",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 1969,
+          "start_char": 1944
+        }
+      ]
+    },
+    {
+      "alias": "doc-12",
+      "record_id": "doc-12-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 1564,
+          "start_char": 1531
+        }
+      ],
+      "support_spans": []
+    },
+    {
+      "alias": "doc-12",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 450,
+          "start_char": 437
+        }
+      ]
+    },
+    {
+      "alias": "doc-12",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 1177,
+          "start_char": 1153
+        }
+      ]
+    },
+    {
+      "alias": "doc-13",
+      "record_id": "doc-13-e01",
+      "record_type": "occurrence",
+      "spans": [
+        {
+          "end_char": 7382,
+          "start_char": 7267
+        }
+      ]
+    },
+    {
+      "alias": "doc-13",
+      "record_id": "doc-13-d01",
+      "record_type": "reading_defect",
+      "spans": [
+        {
+          "end_char": 4486,
+          "start_char": 4450
+        }
+      ],
+      "support_spans": [
+        [
+          {
+            "end_char": 3621,
+            "start_char": 3545
+          }
+        ]
+      ]
+    },
+    {
+      "alias": "doc-13",
+      "record_id": 1,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 8585,
+          "start_char": 8567
+        }
+      ]
+    },
+    {
+      "alias": "doc-13",
+      "record_id": 2,
+      "record_type": "counterexample",
+      "spans": [
+        {
+          "end_char": 7338,
+          "start_char": 7267
+        }
+      ]
+    }
+  ],
+  "reviewer": "assistant-reviewer-b"
+}

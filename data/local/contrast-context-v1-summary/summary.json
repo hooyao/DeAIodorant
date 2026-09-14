@@ -1,0 +1,1234 @@
+{
+  "agreement": {
+    "packaging": {
+      "agree": 44,
+      "total": 57
+    },
+    "relation": {
+      "agree": 51,
+      "total": 57
+    },
+    "voice": {
+      "agree": 56,
+      "total": 57
+    }
+  },
+  "comparisons": [
+    {
+      "alias": "doc-01",
+      "cohort": "post",
+      "occurrence_id": "doc-01-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "procedural_alternative",
+        "agree": true,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e02",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e03",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e04",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": false,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "procedural_alternative",
+        "agree": true,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e05",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e06",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e07",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-02",
+      "cohort": "post",
+      "occurrence_id": "doc-02-e08",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-03",
+      "cohort": "post",
+      "occurrence_id": "doc-03-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-03",
+      "cohort": "post",
+      "occurrence_id": "doc-03-e02",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "temporal_change",
+        "agree": false,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-03",
+      "cohort": "post",
+      "occurrence_id": "doc-03-e03",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": false,
+        "b": "temporal_change"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-03",
+      "cohort": "post",
+      "occurrence_id": "doc-03-e04",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": false,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-03",
+      "cohort": "post",
+      "occurrence_id": "doc-03-e05",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "procedural_alternative",
+        "agree": true,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e02",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e03",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e04",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e05",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e06",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e07",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e08",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": false,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e09",
+      "packaging": {
+        "a": "uncertain",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": false,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e10",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e11",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e12",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "procedural_alternative",
+        "agree": true,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e13",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e14",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e15",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e16",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "procedural_alternative",
+        "agree": true,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e17",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e18",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "temporal_change",
+        "agree": true,
+        "b": "temporal_change"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-04",
+      "cohort": "post",
+      "occurrence_id": "doc-04-e19",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "mixed",
+        "agree": true,
+        "b": "mixed"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e02",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e03",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e04",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e05",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e06",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e07",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-05",
+      "cohort": "post",
+      "occurrence_id": "doc-05-e08",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "scope_extension",
+        "agree": true,
+        "b": "scope_extension"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-06",
+      "cohort": "post",
+      "occurrence_id": "doc-06-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-06",
+      "cohort": "post",
+      "occurrence_id": "doc-06-e02",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-06",
+      "cohort": "post",
+      "occurrence_id": "doc-06-e03",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-07",
+      "cohort": "pre",
+      "occurrence_id": "doc-07-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "temporal_change",
+        "agree": true,
+        "b": "temporal_change"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": false,
+        "b": "mixed"
+      }
+    },
+    {
+      "alias": "doc-08",
+      "cohort": "post",
+      "occurrence_id": "doc-08-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-08",
+      "cohort": "post",
+      "occurrence_id": "doc-08-e02",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "temporal_change",
+        "agree": true,
+        "b": "temporal_change"
+      },
+      "voice": {
+        "a": "uncertain",
+        "agree": true,
+        "b": "uncertain"
+      }
+    },
+    {
+      "alias": "doc-08",
+      "cohort": "post",
+      "occurrence_id": "doc-08-e03",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "temporal_change",
+        "agree": true,
+        "b": "temporal_change"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-08",
+      "cohort": "post",
+      "occurrence_id": "doc-08-e04",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "correction",
+        "agree": true,
+        "b": "correction"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-08",
+      "cohort": "post",
+      "occurrence_id": "doc-08-e05",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "temporal_change",
+        "agree": false,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-09",
+      "cohort": "pre",
+      "occurrence_id": "doc-09-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "procedural_alternative",
+        "agree": true,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-09",
+      "cohort": "pre",
+      "occurrence_id": "doc-09-e02",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    },
+    {
+      "alias": "doc-10",
+      "cohort": "pre",
+      "occurrence_id": "doc-10-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "unclear_or_malformed",
+        "agree": true,
+        "b": "unclear_or_malformed"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-11",
+      "cohort": "post",
+      "occurrence_id": "doc-11-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "temporal_change",
+        "agree": true,
+        "b": "temporal_change"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-12",
+      "cohort": "post",
+      "occurrence_id": "doc-12-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": true,
+        "b": "ordinary"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-12",
+      "cohort": "post",
+      "occurrence_id": "doc-12-e02",
+      "packaging": {
+        "a": "repetition_candidate",
+        "agree": true,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "evaluative_reframing",
+        "agree": true,
+        "b": "evaluative_reframing"
+      },
+      "voice": {
+        "a": "reporter",
+        "agree": true,
+        "b": "reporter"
+      }
+    },
+    {
+      "alias": "doc-13",
+      "cohort": "pre",
+      "occurrence_id": "doc-13-e01",
+      "packaging": {
+        "a": "ordinary",
+        "agree": false,
+        "b": "repetition_candidate"
+      },
+      "relation": {
+        "a": "procedural_alternative",
+        "agree": true,
+        "b": "procedural_alternative"
+      },
+      "voice": {
+        "a": "attributed_quote_or_paraphrase",
+        "agree": true,
+        "b": "attributed_quote_or_paraphrase"
+      }
+    }
+  ],
+  "human_gold": false,
+  "limitations": [
+    "All semantic judgments are assistant proposals, not reader labels or measured reading harm.",
+    "Positive-count documents were selected by the nominated cue; no population prevalence follows.",
+    "Reviewers share a model family; agreement is not independent human validation.",
+    "Exact quotes establish source linkage, not correctness of interpretation.",
+    "Metadata masking cannot conceal dates or genres revealed inside articles."
+  ],
+  "occurrences": 57,
+  "protocol": "contrast-context-review-validation-1.0",
+  "review_coverage": {
+    "a": {
+      "counterexamples": 18,
+      "documents": 13,
+      "full_body_review_attested_not_independently_provable": true,
+      "human_gold": false,
+      "localized_defect_proposals": 25,
+      "model_identity": "unknown",
+      "occurrences": 57,
+      "reviewer": "review-a"
+    },
+    "b": {
+      "counterexamples": 25,
+      "documents": 13,
+      "full_body_review_attested_not_independently_provable": true,
+      "human_gold": false,
+      "localized_defect_proposals": 23,
+      "model_identity": "unknown",
+      "occurrences": 57,
+      "reviewer": "assistant-reviewer-b"
+    }
+  },
+  "reviewer_category_counts": {
+    "a": {
+      "packaging": {
+        "ordinary": 47,
+        "repetition_candidate": 9,
+        "uncertain": 1
+      },
+      "relation": {
+        "correction": 12,
+        "evaluative_reframing": 19,
+        "procedural_alternative": 7,
+        "scope_extension": 11,
+        "temporal_change": 7,
+        "unclear_or_malformed": 1
+      },
+      "voice": {
+        "attributed_quote_or_paraphrase": 24,
+        "mixed": 1,
+        "reporter": 31,
+        "uncertain": 1
+      }
+    },
+    "b": {
+      "packaging": {
+        "ordinary": 37,
+        "repetition_candidate": 20
+      },
+      "relation": {
+        "correction": 10,
+        "evaluative_reframing": 19,
+        "procedural_alternative": 8,
+        "scope_extension": 13,
+        "temporal_change": 6,
+        "unclear_or_malformed": 1
+      },
+      "voice": {
+        "attributed_quote_or_paraphrase": 23,
+        "mixed": 2,
+        "reporter": 31,
+        "uncertain": 1
+      }
+    }
+  },
+  "status": "assistant_consistency_and_exact_source_validation_only"
+}

@@ -1,16 +1,16 @@
-## Summary
+## 变更说明
 
-Describe the user, research, or infrastructure outcome.
+说明这次变更为用户、研究或基础设施带来的结果。
 
-## Validation
+## 验证
 
-List the commands and datasets used to validate the change.
+列出用于验证变更的命令和数据集。
 
-## Checklist
+## 检查项
 
-- [ ] Tests pass locally.
-- [ ] Frozen benchmark inputs and gold labels were not modified.
-- [ ] Corpus changes preserve provenance and monthly metadata invariants.
-- [ ] Product changes preserve meaning and expose inspectable edits.
-- [ ] Generated artifacts include reproduction metadata.
-- [ ] Documentation reflects changed behavior or scope.
+- [ ] 本地测试通过。
+- [ ] 未修改冻结的 benchmark 输入和 gold labels。
+- [ ] 语料变更保留了来源信息和每月 metadata 的约束。
+- [ ] 产品变更保留原意，并提供可检查的修改记录。
+- [ ] 生成的产物包含复现所需的 metadata。
+- [ ] 文档已反映行为或范围的变化，正文使用中文，必要的专业术语保留英文。

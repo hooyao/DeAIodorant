@@ -1,9 +1,8 @@
-# Translation benchmark v2 artifacts
+# 翻译 benchmark v2 产物
 
-This directory contains third-party research data and generated benchmark
-construction artifacts for protocol `translation-gate-2.0-development`.
+本目录包含 protocol `translation-gate-2.0-development` 所使用的第三方研究数据，以及生成的 benchmark 构建产物。
 
-The candidate pool was generated with:
+候选池由以下命令生成：
 
 ```powershell
 .\.venv\Scripts\python.exe translation_benchmark_v2.py collect `
@@ -16,11 +15,6 @@ The candidate pool was generated with:
   --delay 0.12 --http-timeout 60
 ```
 
-`candidates/review_queue.csv` is unfinished review material. Blank review
-fields do not imply original status. `development_silver.jsonl` contains silver
-platform labels and is restricted to prompt-development diagnostics.
+`candidates/review_queue.csv` 是尚未完成的复核材料，复核字段为空不代表原创。`development_silver.jsonl` 包含平台提供的 silver labels，仅限用于 prompt 开发诊断。
 
-No validation or sealed-test file in this directory may be used to revise a
-prompt after its predictions have been inspected. See
-`docs/translation-benchmark-v2.md` for the complete access policy, provenance,
-rights, and split rules.
+本目录中的任何 validation 或 sealed-test 文件，一旦其预测已被查看，就不得再用于修改 prompt。完整访问策略、来源、权利及 split 规则参见 `docs/translation-benchmark-v2.md`。

@@ -1,180 +1,140 @@
-# Deterministic Discourse-Relation Support Probe
+# 确定性篇章关系支撑探测
 
-## Purpose
+## 目的
 
-This experiment asks whether an explicit Chinese discourse relation can be
-modeled as a typed edge whose local propositions independently support the
-claimed relation. It uses deterministic Stanza dependencies, frozen lexicons,
-and graph-style overlap. It does not use an LLM judge, embedding model, or
-authorship classifier.
+实验检验显式中文篇章关系是否可建模为带类型的边，由局部命题独立支撑所宣称的关系。使用确定性 Stanza 依存、冻结词表和图式重叠，不使用 LLM judge、embedding 模型或作者分类器。
 
-The intended distinction is:
+目标区分如下，公式中的边表示显式标记所宣称的关系，旁支表示排除标记本身的局部证据路径：
 
 ~~~text
-proposition A --[explicit marker claims relation type]--> proposition B
+命题 A --[显式标记所宣称的关系类型]--> 命题 B
                     |
-                    +-- local evidence path excluding the marker itself
+                    +-- 排除标记本身的局部证据路径
 ~~~
 
-The probe is deliberately allowed to return `indeterminate`. An indeterminate
-instance is not counted as unsupported.
+探测允许返回 `indeterminate`，此类实例不计作无支撑。
 
-## Representation v0.1
+## 表示 v0.1
 
-The extractor recognizes five claimed relation types:
+提取器识别五类宣称关系：
 
-- contrast;
-- cause;
-- inference;
-- clarification;
-- emphasis.
+- 对比；
+- 原因；
+- 推断；
+- 澄清；
+- 强调。
 
-It handles sentence-initial and intra-sentence markers plus complete paired
-contrast frames such as `不是...而是...`. Each instance stores the marker,
-left and right argument spans, sentence indices, typed evidence, a decision,
-and reason codes.
+处理句首、句内标记，以及 `不是...而是...` 等完整成对对比框架。每个实例保存标记、左右论元 span、句子索引、类型化证据、决定及原因码。
 
-The frozen evidence vector contains:
+冻结证据向量包含：
 
-- proposition presence on both sides;
-- entity, content-word, predicate, and dependency-role overlap;
-- negation flips on a shared non-generic predicate;
-- a small frozen antonym lexicon;
-- explicit comparative terms;
-- new concrete entities, predicates, numbers, and other payload;
-- abstract-shell-only payload;
-- a weighted local anchor score.
+- 两侧是否存在命题；
+- 实体、实词、谓词和依存角色重叠；
+- 共享非泛化谓词上的否定翻转；
+- 小型冻结反义词表；
+- 显式比较词；
+- 新具体实体、谓词、数字及其他信息；
+- 仅含 abstract shell 的信息；
+- 加权局部锚点分数。
 
-The five decisions are `supported`, `redundant`, `type_mismatch`,
-`unsupported`, and `indeterminate`. Document metrics retain all decisions and
-the abstention rate. Counts are normalized per 100 parsed sentences before
-time-cohort interpretation.
+五种决定为 `supported`、`redundant`、`type_mismatch`、`unsupported`、`indeterminate`。文档指标保留全部决定及弃判率。时间分组解释前，将次数归一到每 100 个解析句。
 
-The implementation is
-`src/deaiodorant/analysis/discourse_relations.py`. The experiment runner is
-`experiments/relation_support_probe.py`.
+实现为 `src/deaiodorant/analysis/discourse_relations.py`，实验运行器为 `experiments/relation_support_probe.py`。
 
-## Existing data
+## 既有数据
 
-The probe uses only already tracked material:
+只使用已有受版本控制材料：
 
-- 10 pre-period and 10 post-period InfoQ documents;
-- the eight post-period reader-friction passages;
-- the 10 completed second-round original/revised pairs.
+- 前时期 InfoQ 10 篇、后时期 InfoQ 10 篇；
+- 八个后时期阅读阻力段落；
+- 10 个已完成第二轮原文／修订配对。
 
-The time comparison uses feature-wise cohort-local Huber locations, 5,000
-fixed-seed label permutations, leave-one-document-out direction checks, and a
-known-translation sensitivity analysis. The passage analysis uses exact
-Spearman permutations. The refinement comparison is descriptive because the
-variants were constructed to alter these markers.
+时间比较采用逐特征组内 Huber 位置、固定 seed 的 5,000 次标签置换、leave-one-document-out 方向检查及移除已知译文的敏感性分析。段落分析使用 exact Spearman permutations。改写比较为描述性，因为变体本来就是为改变这些标记而构造。
 
-## Instance output
+## 实例输出
 
-Across all document, passage, and refinement scopes, the probe emitted 476
-instances:
+跨文档、段落及改写范围共输出 476 个实例：
 
-| Decision | Count |
+| 决定 | 次数 |
 |---|---:|
-| Indeterminate | 241 |
-| Supported | 147 |
-| Type mismatch | 88 |
-| Redundant | 0 |
-| Unsupported | 0 |
+| 无法确定 | 241 |
+| 有支撑 | 147 |
+| 类型不匹配 | 88 |
+| 冗余 | 0 |
+| 无支撑 | 0 |
 
-The absence of `unsupported` and `redundant` results does not show that those
-relations are sound. It shows that the current high-precision rules do not
-reach those decisions on this material.
 
-## Time comparison
+没有 `unsupported` 或 `redundant` 结果，不能说明关系正确，只说明当前高精度规则未在这些材料上作出此类判断。
 
-| Feature | Pre mean | Post mean | Robust post-minus-pre effect | Permutation p | BH q | LOO stability |
+## 时间比较
+
+| 特征 | 前时期均值 | 后时期均值 | 稳健后减前效应 | Permutation p | BH q | LOO 稳定性 |
 |---|---:|---:|---:|---:|---:|---:|
-| Emphasis instances / 100 sentences | 1.07 | 3.84 | 1.34 | 0.100 | 0.564 | 1.00 |
-| Indeterminate ratio | 0.60 | 0.41 | -1.13 | 0.032 | 0.564 | 1.00 |
-| Mean payload gain | 11.49 | 8.23 | -0.83 | 0.123 | 0.564 | 1.00 |
-| Mean local anchor score | 0.054 | 0.045 | -0.58 | 0.242 | 0.618 | 1.00 |
-| All relation instances / 100 sentences | 15.48 | 14.64 | 0.28 | 0.806 | 0.968 | 0.85 |
-| Contrast instances / 100 sentences | 8.94 | 8.18 | 0.06 | 0.921 | 0.968 | 0.60 |
-| Problem decisions / 100 sentences | 2.05 | 2.20 | 0.04 | 0.912 | 0.968 | 0.65 |
-| Problem-decision ratio | 0.15 | 0.13 | -0.03 | 0.941 | 0.968 | 0.60 |
+| 每 100 句强调实例数 | 1.07 | 3.84 | 1.34 | 0.100 | 0.564 | 1.00 |
+| 无法确定比例 | 0.60 | 0.41 | -1.13 | 0.032 | 0.564 | 1.00 |
+| 平均信息增量 | 11.49 | 8.23 | -0.83 | 0.123 | 0.564 | 1.00 |
+| 平均局部锚点分数 | 0.054 | 0.045 | -0.58 | 0.242 | 0.618 | 1.00 |
+| 每 100 句全部关系实例数 | 15.48 | 14.64 | 0.28 | 0.806 | 0.968 | 0.85 |
+| 每 100 句对比实例数 | 8.94 | 8.18 | 0.06 | 0.921 | 0.968 | 0.60 |
+| 每 100 句问题判断数 | 2.05 | 2.20 | 0.04 | 0.912 | 0.968 | 0.65 |
+| 问题判断比例 | 0.15 | 0.13 | -0.03 | 0.941 | 0.968 | 0.60 |
 
-No feature survives correction. The normalized broad contrast rate and problem
-rate do not reproduce the stronger result for the specific complete negative
-contrast frame. Translation removal reverses the already tiny directions for
-relation density, contrast density, and problem density.
 
-The lower post-period indeterminate ratio is stable but is not a quality
-signal. The rules simply find more concrete payload and therefore make more
-decisions in the post-period documents.
+没有特征通过校正。归一化宽泛对比率及问题率未复现特定完整否定对比框架的更强结果。移除译文会反转关系密度、对比密度和问题密度原本极小的方向。
 
-## Reader-friction comparison
+后时期更低的无法确定比例稳定，但不是质量信号。规则只是找到更多具体信息，因而在后时期文章中作出更多决定。
 
-| Feature | Post-only Spearman rho | Exact p | BH q | LOO stability |
+## 阅读阻力比较
+
+| 特征 | 仅后时期 Spearman rho | Exact p | BH q | LOO 稳定性 |
 |---|---:|---:|---:|---:|
-| Contrast instances / 100 sentences | 0.51 | 0.232 | 1.00 | 1.00 |
-| All relation instances / 100 sentences | 0.46 | 0.304 | 1.00 | 1.00 |
-| Mean payload gain | 0.39 | 0.393 | 1.00 | 1.00 |
-| Mean local anchor score | -0.34 | 0.446 | 1.00 | 1.00 |
-| Emphasis instances / 100 sentences | 0.17 | 0.786 | 1.00 | 0.88 |
-| Problem decisions / 100 sentences | 0.06 | 1.000 | 1.00 | 0.50 |
-| Problem-decision ratio | 0.00 | 1.000 | 1.00 | 0.00 |
+| 每 100 句对比实例数 | 0.51 | 0.232 | 1.00 | 1.00 |
+| 每 100 句全部关系实例数 | 0.46 | 0.304 | 1.00 | 1.00 |
+| 平均信息增量 | 0.39 | 0.393 | 1.00 | 1.00 |
+| 平均局部锚点分数 | -0.34 | 0.446 | 1.00 | 1.00 |
+| 每 100 句强调实例数 | 0.17 | 0.786 | 1.00 | 0.88 |
+| 每 100 句问题判断数 | 0.06 | 1.000 | 1.00 | 0.50 |
+| 问题判断比例 | 0.00 | 1.000 | 1.00 | 0.00 |
 
-Broad contrast and overall relation density move in the expected reader
-direction, but the sample is eight passages and neither aligns with a useful
-time effect. The proposed problem decision is unrelated to the observed
-reading-friction levels.
 
-## Refinement manipulation
+宽泛对比和整体关系密度沿预期读者方向变化，但只有八段，也都没有与有用时间效应一致。拟议的问题决定与观察到的阅读阻力层级无关。
 
-| Feature | Mean revised-minus-original delta | Pairs decreased | Unchanged | Increased |
+## 改写操作
+
+| 特征 | 平均修订减原文差值 | 减少配对数 | 不变 | 增加 |
 |---|---:|---:|---:|---:|
-| All relation instances / 100 sentences | -21.96 | 9 | 1 | 0 |
-| Contrast instances / 100 sentences | -11.62 | 7 | 3 | 0 |
-| Emphasis instances / 100 sentences | -10.49 | 8 | 2 | 0 |
-| Problem decisions / 100 sentences | -2.57 | 4 | 6 | 0 |
-| Problem-decision ratio | 0.014 | 2 | 7 | 1 |
+| 每 100 句全部关系实例数 | -21.96 | 9 | 1 | 0 |
+| 每 100 句对比实例数 | -11.62 | 7 | 3 | 0 |
+| 每 100 句强调实例数 | -10.49 | 8 | 2 | 0 |
+| 每 100 句问题判断数 | -2.57 | 4 | 6 | 0 |
+| 问题判断比例 | 0.014 | 2 | 7 | 1 |
 
-The large count reductions confirm that the second-round operator manipulated
-the intended surface relations. They do not validate the typed support
-decision. The problem ratio does not track the six revised wins.
 
-## Qualitative audit
+大幅减少的次数确认第二轮算子改变了预期表层关系，不能验证带类型的支撑判断。问题比例并未跟随六次修订胜出。
 
-One target behaved as hoped. The original multi-tool passage contained:
+## 定性审查
+
+一个目标符合预期。原始多工具段落包含：
 
 > 阿里云没有让 Agent 绕过既有工程体系，直接裸调 API。相反，它让 Agent 沿着成熟工具链进入云……
 
-The probe marked `相反` as `type_mismatch` with reason
-`ELABORATION_EVIDENCE_WITHOUT_CONTRAST`, matching the reader's optional
-comment. The revised version removed the instance.
+探测将 `相反` 标为 `type_mismatch`，原因为 `ELABORATION_EVIDENCE_WITHOUT_CONTRAST`，与读者可选评论一致。修订删去了该实例。
 
-The same rule also produced clear counterexamples:
+同一规则也产生清楚反例：
 
-- it marked the temporal contrast between the connected buildings at 7:00 and
-  their changed state at 7:31 as a mismatch;
-- it marked human monitoring versus LLM monitoring as elaboration rather than
-  an alternative;
-- it treated several disliked `真正` frames as supported merely because a
-  concrete payload followed them.
+- 将 7:00 相连建筑与 7:31 变化后状态的时间对比判为不匹配；
+- 将人工监控与 LLM 监控判为展开说明，而非备选方案；
+- 仅因后面有具体信息，就把若干读者反感的 `真正` 框架判为有支撑。
 
-These errors are structural, not threshold errors. Lexical overlap and
-dependency roles do not establish contradiction, alternative choice,
-causality, or rhetorical necessity.
+这些是结构错误，不是阈值错误。词汇重叠和依存角色不能确立矛盾、备选选择、因果或修辞必要性。
 
-## Decision
+## 决定
 
-Reject `relation_support_problem_*` v0.1 as a smell score or reader-friction
-metric. Keep the deterministic instance extraction, evidence vectors, and
-reason codes as audit tooling only.
+否决 `relation_support_problem_*` v0.1 作为臭味分数或阅读阻力指标。确定性实例提取、证据向量和原因码只保留作审查工具。
 
-Do not generalize the specific complete contrast-frame result into a broad
-claim about all connectives. Emphasis density remains a time-cohort hypothesis,
-not a reader-supported target. Actual relation support requires either a much
-narrower formally testable motif or independent expert span annotations. The
-reader must continue to provide only low-burden reading preference, not
-linguistic classifications.
+不得将特定完整对比框架结果泛化为所有连接词的广泛主张。强调密度仍是时间分组假设，不是读者支持的目标。真正的关系支撑需要更窄、可形式化检验的模式，或独立专家 span 标注。读者继续只提供低负担读者偏好，不作语言学分类。
 
-## Reproduction
+## 复现
 
 ~~~powershell
 deaiodorant-analysis download-syntax-model `
@@ -209,14 +169,14 @@ python experiments/relation_support_probe.py `
   --tuning-constant 1.5
 ~~~
 
-Reproduction identity:
+复现身份：
 
-| Artifact | Fingerprint |
+| 产物 | 指纹 |
 |---|---|
-| Corpus | d6cfb16560de7904ab5dc34a09e35e69642e7f39cb61d517a9bd1ffbc2a43014 |
-| Stanza model files | 5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9 |
-| Annotation manifest | fad4aa303d130cc6bbb3a22f1d602068f7dca6c8c625a5112f1daef4df510081 |
-| Results | 95ce3dfbed147027b68c16b043af04b8e8e107d73f46a2587a68859f7663ee9b |
+| 语料 | d6cfb16560de7904ab5dc34a09e35e69642e7f39cb61d517a9bd1ffbc2a43014 |
+| Stanza 模型文件 | 5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9 |
+| 标注 manifest | fad4aa303d130cc6bbb3a22f1d602068f7dca6c8c625a5112f1daef4df510081 |
+| 结果 | 95ce3dfbed147027b68c16b043af04b8e8e107d73f46a2587a68859f7663ee9b |
 
-All generated instances, annotations, and matrices remain under ignored
-`feature_runs/` and `models/` directories.
+
+全部生成实例、标注及矩阵保留在被忽略的 `feature_runs/` 和 `models/` 目录下。

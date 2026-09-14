@@ -1,0 +1,16 @@
+{
+  "artifact_hashes": {
+    "briefs.jsonl": "f5cd121c4841e15ad26923ab4be4346e77c9e81c5bc343c2092159f09d60cdc0"
+  },
+  "candidate_counts": {},
+  "drafts": 0,
+  "human_review_count": 0,
+  "independent_draft_groups": 0,
+  "operational_failure_records": 0,
+  "planned_groups": 24,
+  "run_id": "cr001-v1",
+  "schema_version": "compact-refiner-autonomous-preflight-1.0",
+  "state": "model_only_development",
+  "training_export_count": 0,
+  "updated_at_utc": "2026-09-14T03:53:46.199543+00:00"
+}

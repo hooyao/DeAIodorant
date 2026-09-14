@@ -1,0 +1,32 @@
+{
+  "interpretation": {
+    "baseline_cutoff_exclusive": "2023-01-01",
+    "do_not_infer": [
+      "Old annotations prove strong target coverage",
+      "Synthetic editing preference proves media smell removal",
+      "Publication date proves individual authorship",
+      "July2025 is a statistically established discontinuity"
+    ],
+    "front_half": "Discover repeatable features of the subjective target impression from adequately contrasted real-media samples.",
+    "post_cutoff_inclusive": "2025-07-01",
+    "retain": [
+      "acquisition infrastructure",
+      "media bodies and provenance",
+      "temporal cohorts",
+      "all historical observations and failed results",
+      "reusable engineering tools"
+    ],
+    "training_ready": false,
+    "transition_excluded_from_primary": true
+  },
+  "reader_id": "project_maintainer",
+  "recorded_at_utc": "2026-09-14T06:26:17.571300+00:00",
+  "schema_version": "deaiodorant-research-calibration-1.0",
+  "source_kind": "direct_user_messages",
+  "statements": [
+    "之前的人工标注实验有重大问题，让我标注的文章都并没有很重的ai味道，那些样例特征都不明显",
+    "那些实验都没有什么意义",
+    "这个项目难度在与，即使作为人类，ai臭味也只是一个感觉，这个项目的前半部分就是要把ai臭味的特征提取出来在，之前的努力都在原地绕圈，在ai臭味不足的文章里要把ai臭味提取出来，这个方法本身就是bullshit",
+    "但是前边工作对数据抓取和分来还是有可取之处的，2023年前必然是人类写的，ai臭味转折点是2025年7月样子"
+  ]
+}

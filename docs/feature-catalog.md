@@ -1,246 +1,210 @@
-# Quantifiable Chinese Text Feature Catalog
+# 可量化的中文文本特征目录
 
-## Scope
+## 范围
 
-The current task is feature extraction. Given a prepared pre-2023 corpus and a
-prepared post-2025-06 corpus, the pipeline emits one numeric row per document.
-It does not select corpus documents, test statistical significance, train a
-classifier, detect AI authorship, or interpret differences.
+当前任务是特征提取。输入已准备好的 2023 年前语料和 2025 年 6 月之后语料，流程为每篇文档输出一行数值。它不选择语料文档、不检验统计显著性、不训练分类器、不检测 AI 作者身份，也不解释差异。
 
-All features are deterministic. They use direct text statistics or a fixed
-Stanza Universal Dependencies parse. No LLM, embedding model, prompt, or
-generative judgment is used.
+所有特征都是确定性的，使用直接文本统计或固定的 Stanza Universal Dependencies 解析。不使用 LLM、embedding 模型、prompt 或生成式判断。
 
-## Output unit
+## 输出单位
 
-The document is the feature unit. Each row starts with non-feature identifiers:
+以文档为特征单位。每行首先包含以下非特征标识列：
 
-| Column | Meaning |
+| 列 | 含义 |
 |---|---|
-| doc_id | Stable corpus document ID |
-| cohort | Date-derived pre or post cohort |
-| source | Publishing source |
-| published_at | ISO publication date |
-| published_month | Calendar month |
-| topic | Prepared-corpus topic label, or a missing-value marker |
-| format | Prepared-corpus format label, or a missing-value marker |
+| doc_id | 稳定的语料文档 ID |
+| cohort | 根据日期划分的 pre 或 post 组 |
+| source | 发布来源 |
+| published_at | ISO 发布日期 |
+| published_month | 日历月份 |
+| topic | 已准备语料的主题标签，或缺失值标记 |
+| format | 已准备语料的体裁标签，或缺失值标记 |
 
-All remaining columns are numeric features. Raw text and raw titles are not
-copied into the matrix.
+其余列均为数值特征。原始正文与标题不复制到矩阵中。
 
-## Shared definitions
+## 共同定义
 
-- **CJK character**: a character in Unicode ranges U+3400–U+4DBF or
-  U+4E00–U+9FFF.
-- **Ratio**: numerator divided by the explicitly stated denominator.
-- **Density**: occurrences divided by non-whitespace character count unless the
-  feature name specifies another denominator.
-- **Entropy**: Shannon entropy in bits, negative sum of
-  **p(x) * log2(p(x))**.
-- **Coefficient of variation (CV)**: population standard deviation divided by
-  arithmetic mean. It is zero when the mean is zero.
-- **MATTR**: mean type-token ratio over all overlapping fixed-size windows. If
-  the document is shorter than the configured window, ordinary type-token
-  ratio is used.
+- **CJK character**：Unicode 范围 U+3400–U+4DBF 或 U+4E00–U+9FFF 内的字符。
+- **Ratio**：分子除以明确指定的分母。
+- **Density**：出现次数除以非空白字符数，除非特征名称指定了其他分母。
+- **Entropy**：以 bit 为单位的 Shannon entropy，即 **p(x) * log2(p(x))** 之和的负值。
+- **Coefficient of variation (CV)**：总体标准差除以算术平均值。平均值为零时，CV 为零。
+- **MATTR**：所有重叠固定窗口的平均 type-token ratio。文档短于配置窗口时，使用普通 type-token ratio。
 
-## Character composition
+## 字符构成
 
-| Feature group | Quantities |
+| 特征组 | 测量量 |
 |---|---|
-| Length | total characters, non-whitespace characters, CJK characters |
-| Script composition | CJK ratio, ASCII-letter ratio, digit ratio |
-| Character diversity | CJK entropy, CJK type-token ratio, 500-character MATTR |
-| Compressibility | zlib level-9 compressed bytes divided by original UTF-8 bytes |
-| External references | detected URL count per 1,000 CJK characters |
+| 长度 | 总字符数、非空白字符数、CJK 字符数 |
+| 文字构成 | CJK 占比、ASCII 字母占比、数字占比 |
+| 字符多样性 | CJK entropy、CJK type-token ratio、500 字符 MATTR |
+| 可压缩性 | zlib level-9 压缩后的字节数除以原始 UTF-8 字节数 |
+| 外部引用 | 每 1,000 个 CJK 字符中检测到的 URL 数 |
 
-Raw length counts are useful for matching and diagnostics. They should not be
-treated as style differences unless the cohorts have been length matched.
+原始长度计数可用于匹配和诊断。在完成组间篇幅匹配前，不应把长度差异当作风格差异。
 
-## Document structure and rhythm
+## 文档结构与节奏
 
-Paragraphs are non-empty normalized lines. Sentences are split after Chinese or
-ASCII full stops, question marks, and exclamation marks.
+段落定义为规范化后的非空行。句子在中文或 ASCII 句号、问号和感叹号之后切分。
 
-| Feature | Formula |
+| 特征 | 公式 |
 |---|---|
-| Mean paragraph length | Mean CJK characters per paragraph |
-| Paragraph-length CV | CV of paragraph CJK-character counts |
-| Short-paragraph ratio | Paragraphs with 1–19 CJK characters divided by paragraphs |
-| Long-paragraph ratio | Paragraphs with more than 200 CJK characters divided by paragraphs |
-| Mean sentence length | Mean CJK characters per sentence |
-| Sentence-length CV | CV of sentence CJK-character counts |
-| Sentence-length autocorrelation | Pearson correlation of adjacent sentence-length sequences |
-| Adjacent sentence-length change | Mean absolute adjacent length change divided by mean length |
-| Mean sentences per paragraph | Mean detected sentence count in each paragraph |
-| List-item ratio | Paragraphs beginning with bullets or ordinal markers divided by paragraphs |
-| Question-sentence ratio | Sentences ending in a question mark divided by sentences |
-| Exclamatory-sentence ratio | Sentences ending in an exclamation mark divided by sentences |
+| 平均段落长度 | 每段 CJK 字符数的均值 |
+| 段落长度 CV | 段落 CJK 字符数的 CV |
+| 短段落比例 | 含 1–19 个 CJK 字符的段落数除以段落数 |
+| 长段落比例 | 含超过 200 个 CJK 字符的段落数除以段落数 |
+| 平均句长 | 每句 CJK 字符数的均值 |
+| 句长 CV | 句子 CJK 字符数的 CV |
+| 句长 autocorrelation | 相邻句长序列的 Pearson correlation |
+| 相邻句长变化 | 相邻句长绝对变化的均值除以平均句长 |
+| 每段平均句数 | 各段中检测到的句子数的均值 |
+| 列表项比例 | 以 bullet 或序号标记开头的段落数除以段落数 |
+| 疑问句比例 | 以问号结尾的句子数除以句子数 |
+| 感叹句比例 | 以感叹号结尾的句子数除以句子数 |
 
-These features quantify structural uniformity without assigning a positive or
-negative interpretation.
+这些特征量化结构的一致程度，不赋予正面或负面解释。
 
-## Repetition and regularity
+## 重复与规律性
 
-| Feature | Formula |
+| 特征 | 公式 |
 |---|---|
-| Repeated character n-gram ratio | Repeated occurrences among all configured CJK n-grams |
-| Sentence-opening repetition | Duplicate first four-CJK-character sequences divided by eligible sentences |
-| Paragraph-opening repetition | Duplicate first four-CJK-character sequences divided by eligible paragraphs |
-| Exact sentence repetition | Duplicate whitespace-normalized sentences divided by sentences |
-| Exact paragraph repetition | Duplicate whitespace-normalized paragraphs divided by paragraphs |
-| Compression ratio | Deterministic compressed size divided by source byte size |
+| 重复字符 n-gram 比例 | 全部已配置 CJK n-gram 中重复出现的比例 |
+| 句首重复 | 开头四个 CJK 字符序列的重复数除以符合条件的句子数 |
+| 段首重复 | 开头四个 CJK 字符序列的重复数除以符合条件的段落数 |
+| 完全相同句子重复 | 空白规范化后重复的句子数除以句子数 |
+| 完全相同段落重复 | 空白规范化后重复的段落数除以段落数 |
+| Compression ratio | 确定性压缩大小除以来源字节大小 |
 
-The character n-gram size is stored in the feature configuration. Repetition
-features are sensitive to boilerplate, quotations, and document genre.
+字符 n-gram 大小保存在特征配置中。重复特征对 boilerplate、引用和文档体裁敏感。
 
-## Punctuation
+## 标点
 
-The matrix includes total punctuation density, punctuation entropy, and
-separate densities for:
+矩阵包含总标点 density、标点 entropy，以及以下各类标点的独立 density：
 
-- commas and enumeration commas;
-- full stops, question marks, and exclamation marks;
-- colons;
-- semicolons;
-- dashes and hyphens;
-- quotation marks;
-- parentheses and brackets.
+- 逗号和顿号；
+- 句号、问号和感叹号；
+- 冒号；
+- 分号；
+- 破折号和连字符；
+- 引号；
+- 圆括号和方括号。
 
-Punctuation style is source- and editor-sensitive, so source remains an
-identifier column for later stratification.
+标点风格受来源和编辑者影响，因此保留来源标识列，供后续分层使用。
 
-## Title form
+## 标题形式
 
-Title features include:
+标题特征包括：
 
-- CJK-character count;
-- ASCII-letter ratio;
-- presence of digits, a colon, a question mark, an exclamation mark, or
-  quotation marks;
-- proportion of distinct title CJK characters also appearing in the body.
+- CJK 字符数；
+- ASCII 字母占比；
+- 是否包含数字、冒号、问号、感叹号或引号；
+- 标题中不同 CJK 字符也出现在正文中的比例。
 
-The raw title is read from metadata but is not written to the feature matrix.
+从 metadata 读取原始标题，但不将其写入特征矩阵。
 
-## Discourse and epistemic markers
+## 篇章与认识情态标记
 
-Fixed phrase lists quantify rates per 10,000 CJK characters for:
+固定短语表按每 10,000 个 CJK 字符量化以下频率：
 
-- causal transitions;
-- contrastive transitions;
-- enumeration;
-- framing phrases;
-- metadiscourse;
-- summary phrases;
-- epistemic boosters;
-- epistemic hedges;
-- directives.
+- 因果过渡；
+- 对比过渡；
+- 列举；
+- 框架引导短语；
+- metadiscourse；
+- 总结短语；
+- epistemic boosters；
+- epistemic hedges；
+- 指令性表达。
 
-The matrix also records total discourse-marker rate and marker-type coverage.
-The exact Chinese phrases are versioned in
-**src/deaiodorant/analysis/surface.py**. These are lexicon measurements, not
-semantic judgments. They are sensitive to topic and genre.
+矩阵还记录篇章标记总频率和标记类型覆盖率。精确中文短语在 **src/deaiodorant/analysis/surface.py** 中进行版本管理。这些是词表测量，不是语义判断，受主题和体裁影响。
 
-## Token and lexical features
+## Token 与词汇特征
 
-Stanza tokenization, lemmatization, and Universal POS tags provide:
+Stanza 的分词、lemmatization 和 Universal POS 标签提供：
 
-| Feature | Formula |
+| 特征 | 公式 |
 |---|---|
-| Lexical token count | Tokens excluding PUNCT and SYM |
-| Token type-token ratio | Distinct case-folded token forms divided by lexical tokens |
-| Token MATTR | Mean 100-token window type-token ratio |
-| Hapax ratio | Token types occurring once divided by lexical tokens |
-| Token entropy | Shannon entropy of lexical token forms |
-| Mean token length | Mean CJK characters per lexical token |
-| Token-length CV | CV of lexical-token CJK lengths |
-| Content-word ratio | ADJ, ADV, NOUN, PROPN, and VERB tokens divided by lexical tokens |
-| Function-word ratio | ADP, AUX, CCONJ, DET, PART, PRON, and SCONJ tokens divided by lexical tokens |
-| First-person pronoun ratio | Fixed first-person forms divided by lexical tokens |
-| Second-person pronoun ratio | Fixed second-person forms divided by lexical tokens |
+| 词汇 token 数 | 排除 PUNCT 和 SYM 的 token 数 |
+| Token type-token ratio | 不同 case-folded token 形式数除以词汇 token 数 |
+| Token MATTR | 100-token 窗口的平均 type-token ratio |
+| Hapax ratio | 仅出现一次的 token 类型数除以词汇 token 数 |
+| Token entropy | 词汇 token 形式的 Shannon entropy |
+| 平均 token 长度 | 每个词汇 token 中 CJK 字符数的均值 |
+| Token 长度 CV | 词汇 token 的 CJK 长度 CV |
+| 实词比例 | ADJ、ADV、NOUN、PROPN 和 VERB token 数除以词汇 token 数 |
+| 功能词比例 | ADP、AUX、CCONJ、DET、PART、PRON 和 SCONJ token 数除以词汇 token 数 |
+| 第一人称代词比例 | 固定词表中第一人称形式的出现次数除以词汇 token 数 |
+| 第二人称代词比例 | 固定词表中第二人称形式的出现次数除以词汇 token 数 |
 
-Token features are parser- and segmentation-dependent. Both cohorts must use
-the identical model files.
+Token 特征依赖 parser 和分词，两组必须使用完全相同的模型文件。
 
-## Local lexical cohesion
+## 局部词汇衔接
 
-For each pair of adjacent parsed sentences, the extractor calculates Jaccard
-overlap for:
+对于每一对已解析的相邻句子，提取器计算以下词集的 Jaccard overlap：
 
-- lemmatized content words tagged ADJ, ADV, NOUN, PROPN, or VERB;
-- lemmatized nouns tagged NOUN or PROPN.
+- 标签为 ADJ、ADV、NOUN、PROPN 或 VERB 的 lemmatized 实词；
+- 标签为 NOUN 或 PROPN 的 lemmatized 名词。
 
-The document feature is the mean adjacent-sentence overlap. This is a
-transparent local-cohesion approximation and does not require embeddings or a
-coreference model.
+文档特征是相邻句子重叠程度的均值。这是透明的局部衔接近似，不需要 embedding 或 coreference 模型。
 
-## Universal POS distribution
+## Universal POS 分布
 
-For every Universal POS tag, the matrix contains:
+矩阵对每个 Universal POS 标签都包含：
 
-**tokens with that tag / all parsed tokens**
+**该标签的 token 数 / 全部已解析 token 数**
 
-The tags are ADJ, ADP, ADV, AUX, CCONJ, DET, INTJ, NOUN, NUM, PART, PRON,
-PROPN, PUNCT, SCONJ, SYM, VERB, and X.
+标签为 ADJ、ADP、ADV、AUX、CCONJ、DET、INTJ、NOUN、NUM、PART、PRON、PROPN、PUNCT、SCONJ、SYM、VERB 和 X。
 
-POS bigram and trigram entropy measure the diversity of local grammatical
-sequences without retaining the sequences themselves.
+POS bigram 和 trigram entropy 测量局部语法序列的多样性，但不保留序列本身。
 
-## Dependency-tree complexity
+## 依存树复杂度
 
-| Feature | Formula |
+| 特征 | 公式 |
 |---|---|
-| Dependency distance | Absolute token-position distance between dependent and head |
-| Mean, median, maximum dependency distance | Document aggregates over non-root arcs |
-| Dependency-distance CV | CV over non-root dependency distances |
-| Left-dependent ratio | Dependents to the left of their head divided by non-root arcs |
-| Mean and maximum tree depth | Root-to-token edge counts |
-| Mean and maximum non-leaf branching | Child count among tokens with at least one child |
-| Root relative position | Root token index divided by sentence token count, averaged by document |
-| Crossing-arc ratio | Crossing arc pairs divided by all non-root arc pairs, averaged by sentence |
-| Dependency-relation entropy | Entropy of base Universal Dependencies relations |
-| Treelet entropy | Entropy of head-POS, relation, dependent-POS triples |
+| Dependency distance | 依存词与中心词之间 token 位置差的绝对值 |
+| 平均、中位数及最大 dependency distance | 对文档非 root 弧进行聚合 |
+| Dependency-distance CV | 非 root 依存距离的 CV |
+| 左侧依存词比例 | 位于中心词左侧的依存词数除以非 root 弧数 |
+| 平均及最大树深度 | root 到 token 的边数 |
+| 平均及最大非叶节点分支数 | 至少有一个子节点的 token 的子节点数 |
+| Root 相对位置 | root token 索引除以句子 token 数，再按文档取均值 |
+| 交叉弧比例 | 交叉弧对数除以全部非 root 弧对数，再按句子取平均 |
+| 依存关系 entropy | 基础 Universal Dependencies 关系的 entropy |
+| Treelet entropy | 中心词 POS、关系、依存词 POS 三元组的 entropy |
 
-## Clause and modification structure
+## 分句与修饰结构
 
-| Feature | Formula |
+| 特征 | 公式 |
 |---|---|
-| Subordinate-relation ratio | acl, advcl, ccomp, csubj, and xcomp arcs divided by tokens |
-| Clause relations per sentence | Same relation count divided by parsed sentences |
-| Coordinate-relation ratio | cc and conj arcs divided by tokens |
-| Nominal-modifier ratio | acl, amod, compound, and nmod arcs divided by tokens |
-| Passive-relation ratio | Dependency subtypes containing pass divided by tokens |
+| 从属关系比例 | acl、advcl、ccomp、csubj 和 xcomp 弧数除以 token 数 |
+| 每句分句关系数 | 上述关系数除以已解析句子数 |
+| 并列关系比例 | cc 和 conj 弧数除以 token 数 |
+| 名词修饰关系比例 | acl、amod、compound 和 nmod 弧数除以 token 数 |
+| 被动关系比例 | 依存关系子类型包含 pass 的弧数除以 token 数 |
 
-The matrix additionally includes one proportion for every base Universal
-Dependencies relation. This preserves detail for later exploration without
-requiring a new parse.
+矩阵还包含每种基础 Universal Dependencies 关系的比例，以便保留细节供后续探索，无需重新解析。
 
-## Sparse stylometric features
+## 稀疏 stylometry 特征
 
-In addition to the 150-column dense matrix, schema 1.0 can emit sparse pattern
-features for:
+除了 150 列的稠密矩阵，schema 1.0 还可以为以下模式输出稀疏特征：
 
-- CJK character 2-grams, 3-grams, and 4-grams;
-- POS 2-grams, 3-grams, and 4-grams;
-- function-word forms;
-- content lemmas, explicitly marked as topic-sensitive;
-- sentence-opening CJK sequences;
-- punctuation runs;
-- root POS values;
-- dependency treelets shaped as head POS, relation, and dependent POS;
-- two-edge dependency-relation paths.
+- CJK 字符 2-gram、3-gram 和 4-gram；
+- POS 2-gram、3-gram 和 4-gram；
+- 功能词形式；
+- 实词 lemma，明确标记为对主题敏感；
+- 句首 CJK 序列；
+- 连续标点序列；
+- root POS 值；
+- 由中心词 POS、关系和依存词 POS 构成的 dependency treelet；
+- 两条边的依存关系路径。
 
-Vocabulary selection pools both cohorts and uses only combined document
-frequency and combined total count. It never consults the cohort label. Each
-selected pattern receives a deterministic feature ID. Non-zero values contain
-both raw count and count per 1,000 opportunities in that feature family.
+词表选择合并两组，仅使用合并后的 document frequency 和总计数，绝不读取时间组标签。每个选定模式分配确定性的 feature ID。非零值同时包含原始计数，以及该特征家族每 1,000 次机会的计数。
 
-The vocabulary limits and minimum document frequency are stored in
-**configs/features.v1.json**. Sparse features are exploratory: topic-sensitive
-families must not be interpreted as writing style without topic control.
+词表上限和最小 document frequency 保存在 **configs/features.v1.json** 中。稀疏特征属于探索性特征：没有主题控制时，不能将对主题敏感的家族解释为写作风格。
 
-## Parser and reproducibility contract
+## Parser 与复现契约
 
-The syntax layer uses:
+句法层使用：
 
 ~~~text
 Stanza 1.14.0
@@ -249,30 +213,20 @@ package: gsdsimp
 processors: tokenize,pos,lemma,depparse
 ~~~
 
-Stanza is a learned NLP parser, not an LLM. Annotation output is frozen as
-CoNLL-U before feature extraction. The annotation manifest records exact
-package versions, model-file fingerprint, device, seed, corpus fingerprint, and
-every CoNLL-U file hash.
+Stanza 是学习型 NLP parser，不是 LLM。在特征提取之前，将标注输出冻结为 CoNLL-U。标注 manifest 记录精确包版本、模型文件指纹、device、seed、语料指纹和每个 CoNLL-U 文件的 hash。
 
-Stanza is distributed under Apache-2.0. The selected Universal Dependencies
-Chinese GSD treebank is distributed under CC BY-SA 4.0. The optional
-installation includes PyTorch and several hundred megabytes of model files, so
-it is materially larger than the core package. CPU annotation is the default
-for reproducibility and can be slow on a large corpus.
+Stanza 使用 Apache-2.0 许可证。选定的 Universal Dependencies Chinese GSD treebank 使用 CC BY-SA 4.0。可选安装包含 PyTorch 和数百 MB 模型文件，体积显著大于核心包。为保证可复现性，默认使用 CPU 标注；处理大语料时可能较慢。
 
-Feature extraction never downloads a model implicitly. Missing model files,
-incomplete parser output, malformed dependency trees, corpus-fingerprint
-mismatches, and annotation-hash changes stop the command instead of silently
-substituting data.
+特征提取不会隐式下载模型。模型文件缺失、parser 输出不完整、依存树格式错误、语料指纹不匹配或标注 hash 改变时，命令停止，不会静默替换数据。
 
-Model download is explicit:
+模型下载必须显式执行：
 
 ~~~powershell
 python -m pip install -e ".[syntax]"
 deaiodorant-analysis download-syntax-model --model-dir models/stanza
 ~~~
 
-Extract a feature matrix after the prepared corpus arrives:
+准备好的语料可用后，提取特征矩阵：
 
 ~~~powershell
 deaiodorant-analysis annotate --corpus data/final/monthly --config configs/features.v1.json --model-dir models/stanza --output feature_runs/annotations-v1 --device cpu
@@ -280,7 +234,7 @@ deaiodorant-analysis annotate --corpus data/final/monthly --config configs/featu
 deaiodorant-analysis extract --corpus data/final/monthly --config configs/features.v1.json --annotations feature_runs/annotations-v1 --output feature_runs/matrix-v1
 ~~~
 
-The output directory contains:
+输出目录包含：
 
 ~~~text
 document_features.csv
@@ -292,16 +246,14 @@ sparse_feature_catalog.json
 sparse_feature_values.csv
 ~~~
 
-The manifest hashes every artifact. An existing output directory is never
-overwritten.
+manifest 为每个产物记录 hash。绝不覆盖已有输出目录。
 
-## Comparison constraints for later work
+## 后续比较的约束
 
-Feature extraction does not establish a difference between human and
-AI-era writing. Later comparisons must, at minimum:
+特征提取本身不能确立人类写作与 AI 时代写作的差异。后续比较至少必须：
 
-- match or stratify by source, topic, format, length, and visibility;
-- use documents rather than sentences as independent observations;
-- separate raw counts from normalized rates;
-- report parser sensitivity and missing metadata;
-- keep exploratory feature selection separate from held-out confirmation.
+- 按来源、主题、体裁、篇幅和传播可见度匹配或分层；
+- 将文档而非句子作为独立观察；
+- 区分原始计数和归一化频率；
+- 报告 parser 敏感性及缺失 metadata；
+- 将探索性特征选择与 held-out 确认分开。

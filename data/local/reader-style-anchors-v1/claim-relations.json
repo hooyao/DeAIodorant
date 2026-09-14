@@ -1,0 +1,810 @@
+{
+  "schema_version": "reader-anchor-claim-relations-1.0",
+  "protocol_version": "reader-anchor-feature-discovery-1.0",
+  "protocol_file": "docs/routes/compact-refiner/reader-anchor-feature-discovery.md",
+  "created_at_utc": "2026-09-14T09:41:02.982755+00:00",
+  "document": {
+    "doc_id": "e3dd9c4a95dd4e1fbdacd281",
+    "url": "https://post.smzdm.com/p/a70dm4ll/",
+    "published_at": "2026-08-31T03:59:12+08:00",
+    "collected_at_utc": "2026-09-14T09:32:10.352935+00:00",
+    "corpus_role": "development_strong_positive_anchor_not_validation_or_training",
+    "analysis_body_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "human_evidence": {
+      "reader_term": "恶臭",
+      "status": "Supplied human article-level observation; retained without reassessment or numerical conversion."
+    }
+  },
+  "audit_identity": {
+    "method": "Independent model-assisted source-grounded relation audit.",
+    "model_identifier": "Not exposed as an exact version by the current runtime.",
+    "epistemic_status": "Exploratory interpretation conditioned on the supplied human anchor label; not blinded confirmation.",
+    "source_scope": "All 30 saved article blocks in both text views and all 22 embedded citation quote/highlight pairs.",
+    "other_reviewers_outputs_read": false,
+    "outside_network_or_upstream_fetches": false,
+    "external_model_api_calls": 0,
+    "gpu_used": false,
+    "training_performed": false,
+    "article_rewritten": false,
+    "media_inspected": false,
+    "authorship_or_generation_model_inferred": false,
+    "random_seed": null,
+    "random_seed_reason": "No sampling or stochastic computation was performed by the local artifact construction and validation."
+  },
+  "offset_convention": {
+    "unit": "Unicode code points",
+    "indexing": "Zero-based, end-exclusive",
+    "reference": "Exact UTF-8-decoded bytes of smzdm/analysis-body.txt; no newline conversion.",
+    "quote_evidence": "Complete paragraph evidence is keyed by block ID in analysis_evidence. Findings reference those exact paragraphs rather than silently normalized excerpts."
+  },
+  "publisher_evidence_limit": "Embedded data-quote-text and data-highlight-text are publisher-provided attributions, not authenticated upstream source gold. Inherited means present in the supplied snippet only. Absence from a snippet does not establish absence from the full upstream source or fabrication.",
+  "selection": {
+    "principal_finding_count": 4,
+    "maximum_principal_findings": 6,
+    "selection_basis": "The strongest bounded scope, reference, and inferential-continuity issues found in the complete article. No composite smell score or exhaustive post-hoc defect inventory.",
+    "actual_factual_contradictions_established": 0,
+    "reader_or_editing_effect_validated": false
+  },
+  "source_file_hashes": [
+    {
+      "file": "smzdm/analysis-body.txt",
+      "sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/article.dom.html",
+      "sha256": "a6374076405ecc0e06547c6a9a3f1cd361fc9c726c61bfe84a2b2a43d7f40914",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/blocks.json",
+      "sha256": "909bcf0db7d4a4c370e8b01128d96c3491ee424be718e0f41689eef49a9c4965",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/body-with-citations.txt",
+      "sha256": "e2fc58e18a30abda2cdde34ea9f86ef2469382704a40edc88104e65fcec2b1b5",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/citations.json",
+      "sha256": "3b18c3dfb172767a3f55e7c5585621ae7db84f255c74c40038e609a004f048c0",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/literal-measurements.json",
+      "sha256": "cf2e56db508553bc2469b08986f7f77166d8afc20a047e9b3d601a78ce8d4659",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/media.json",
+      "sha256": "64896ef4b721ae24315db25828771cc24b249b1c1a9871a29520e28b11826fbc",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/metadata.json",
+      "sha256": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393",
+      "matches_preparation_manifest": true
+    },
+    {
+      "file": "smzdm/manifest.json",
+      "sha256": "75c2f118e9ecea106653597a51ff1518484cbc4599d4fc14e97a4f016974671c"
+    },
+    {
+      "file": "docs/routes/compact-refiner/reader-anchor-feature-discovery.md",
+      "sha256": "7c711e3cf75b5b35fbebf7113bd0dc46cef56bd4e20cd1751d931e3da2c166ac"
+    }
+  ],
+  "analysis_evidence": {
+    "b002": {
+      "block_id": "b002",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 13,
+      "end_char": 295,
+      "quote": "8月27日，Hugging Face 旗下 Pollen Robotics 开售了一只 25 厘米高的机器鸭 Microduck：399 美元（约合 2680 元），首日 4 秒卖出一台，24 小时订单金额破 260 万美元，按单价折算约 6500 台。这组数字是 HF 联创 Thomas Wolf 在 X 上公布的，国内已经有博主（\"陈大叔\"那篇追问文）公开质疑无法第三方验证——观望是对的，但热度不用质疑：B站相关视频一天播放 1.7 万、收藏超点赞，小红书头部笔记 1332 赞、1627 收藏，知乎两天冒出十几个问题，微博上连\"瑞芯微概念股\"都聊出来了。",
+      "quote_sha256": "19f268baf210112cab07a9c6f64772409bd85ddfaef6911bcea9ee9e9b351a31",
+      "block_citation_ids": [
+        "b002-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b003": {
+      "block_id": "b003",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 296,
+      "end_char": 467,
+      "quote": "巧的是，开售正赶上英伟达约 129 亿美元收购 Hugging Face 的消息发酵期。但对智能硬件 DIY 圈的人来说，收购是资本的事，这只鸭子才是自己的事：它是目前把\"强化学习机器人\"整条链路（仿真训练→真机部署→SDK）打包到 399 美元价位的第一个成品。圈里真正在吵的是三个问题：开源开到什么程度？国内怎么买到？值不值得自己搓一只？",
+      "quote_sha256": "724235404074959b5c14378fab1702d52f558df446484d770396872cec85369a",
+      "block_citation_ids": [
+        "b003-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b006": {
+      "block_id": "b006",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 672,
+      "end_char": 923,
+      "quote": "计算平台是社区聊得最多的一点：机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板（Firefly ROC-RK3566-PC，四核 A55，1GB 内存 + 32GB 存储）。有开发者写了完整的部署手记：走路、起身这些动作是在英伟达 GPU 上用 mjlab + MuJoCo Warp + PPO 训练 1~2 小时收敛，导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。也就是说，训练靠算力，实机真不靠。",
+      "quote_sha256": "da1e2588dd4a859356c797c6558f3c33eab139627744d65f6a57fbea9f736a20",
+      "block_citation_ids": [
+        "b006-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b007": {
+      "block_id": "b007",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 924,
+      "end_char": 1018,
+      "quote": "软件端：7 种预训练行为（走路、坐立、下蹲、踢腿、抓取、轮滑、跌倒自起）、仿真环境、SDK 和训练代码在 github.com/pollen-robotics/microduck 全开源。",
+      "quote_sha256": "2d6bdec2dca63aca54033cab252a39369d11f291b3fcef939a5be3f4a1c1fe10",
+      "block_citation_ids": [
+        "b007-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b008": {
+      "block_id": "b008",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 1019,
+      "end_char": 1122,
+      "quote": "但注意，\"全开源\"有边界：开的是软件管线，硬件图纸没开。 评论区已经有人点破\"硬件没开源\"——你拿不到官方 BOM 和结构件图纸，\"照着开源清单攒一只一模一样\"这条路目前不存在。想复刻，得回到它的前身项目。",
+      "quote_sha256": "221896ab3203f0e960ed89399a56d2b260fecdef33c8bf432d1cb464b24f742f",
+      "block_citation_ids": [
+        "b008-c01",
+        "b008-c02"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b010": {
+      "block_id": "b010",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 1143,
+      "end_char": 1352,
+      "quote": "先说绕不开的两个坑：发货和配送。 官方原本赶在 2026 年圣诞前发货，爆单后已改口\"新订单无法承诺圣诞前发货\"，目前等待 4-6 个月，先订先得。更麻烦的是，社区普遍反馈官方不向中国大陆（及港澳台）提供邮寄。所以国内用户的实际操作是代购/订单转让，小红书 8月30日已经出现代订帖：“已订 2 台（奶白&紫色），带电池包和轮滑包，发货时间以官方为准”。注意，电池包和轮滑包是官方付费配件，默认整机只有手柄和一块电池。",
+      "quote_sha256": "415c25b7e6be681f8cdfd4d3ad9e44073f25239cb49d9f4a0dc3df74429fe090",
+      "block_citation_ids": [
+        "b010-c01",
+        "b010-c02",
+        "b010-c03"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b011": {
+      "block_id": "b011",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 1353,
+      "end_char": 1558,
+      "quote": "这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。参照物是 HF 上一款产品 Reachy Mini：299 美元，累计卖了约 1 万台，应用商店聚了 200 多个社区 APP。Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。",
+      "quote_sha256": "cac7f9f207cc0ed9a92f3d3b06a9ae6e156d4b4a3b1ed9fc77631d2c64eeb46a",
+      "block_citation_ids": [
+        "b011-c01",
+        "b011-c02"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b013": {
+      "block_id": "b013",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 1578,
+      "end_char": 1748,
+      "quote": "DIY 党真正能走的路是 Open Duck Mini——项目发起人 Antoine Pirrone 正是 Microduck 主创，商业版就是这个开源项目的成品形态。V2 版本官方放了 60 秒组装实录：3D 打印件 + 树莓派 + 总线舵机，一步步拼成整机通电迈步，整机高 42 厘米，比鸭子大一圈，官方口径零件成本不到 400 美元。",
+      "quote_sha256": "dc0914b6d168d197a340a8021da438d54c530e33940ad1203d3b5276f64f55d0",
+      "block_citation_ids": [
+        "b013-c01",
+        "b013-c02"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b015": {
+      "block_id": "b015",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 1956,
+      "end_char": 2169,
+      "quote": "但有两笔成本要留神：一是舵机，评论区懂行的说法是\"总线舵机单卖很贵\"，凑不齐渠道价，整机成本压不下来；二是树莓派，上半年那波内存涨价把整个板卡市场抬了一截（这笔账我们前阵子单独算过），现在攒机别按去年的价格预期。有华强北背景的网友给的参照是：“自己采购一套手搓，不会低于 4000 元，比人家零售价都贵”。这是估算不是实测定价，但方向很清楚：散件零售价拼不过整机的规模化采购，DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。",
+      "quote_sha256": "a9b6472a6f47e55265746109297f37355357e44f9b5ea397b161348280d71cc2",
+      "block_citation_ids": [
+        "b015-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b017": {
+      "block_id": "b017",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 2197,
+      "end_char": 2268,
+      "quote": "\"坐等华强北发力\"是高赞评论，但结合\"硬件没开源\"这个前提，等来的不会是 399 美元的像素级复刻——只能靠逆向，成本反而更高（参考上一段）。",
+      "quote_sha256": "76e62c0f62115a80fb76eb4fbb2bcf7893ad6948f2d10ec63392a03220d88b0e",
+      "block_citation_ids": [
+        "b017-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b018": {
+      "block_id": "b018",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 2269,
+      "end_char": 2409,
+      "quote": "真正值得等的信号是另一个：小红书账号\"桌面具身刘厂长\"已经亮明自己在做的鸭子机器人——同样叫机器鸭，用的是树莓派 + 飞特舵机的完全不同架构，并且承诺\"后续这套方案软硬件开源\"。硬件开源、国内发货、售后本地，这三样凑齐的国产方案，才是给\"不想折腾转运、只想低成本入坑\"的人准备的。",
+      "quote_sha256": "67857a0a431a3e2235faf54e3995af8a0045a61ef0ce09626e8c1503ae586251",
+      "block_citation_ids": [
+        "b018-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b020": {
+      "block_id": "b020",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 2421,
+      "end_char": 2545,
+      "quote": "ONNX Runtime 版本对齐：部署手记里的真实翻车——板上的 Runtime 是 1.20.1，策略要求 1.23.x 以上，鸭子直接\"站不起来\"。sim-to-real 的最后一公里不是玄学，是版本管理，自己改训练链路的先把三件套版本绑死。",
+      "quote_sha256": "939d4d81e649010f2bb7c0abb2f42a2c5b287f5300df42de405f3e996dcfd60e",
+      "block_citation_ids": [
+        "b020-c01"
+      ],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b021": {
+      "block_id": "b021",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 2546,
+      "end_char": 2603,
+      "quote": "1 小时续航：一块 NP-F550 的设定，认真跑实验要么多备电池要么考虑持续供电，官方配件清单里电池包是单卖的。",
+      "quote_sha256": "f48364b4ba51541a1177afceaef534741009d77d76994954723882117691e7ea",
+      "block_citation_ids": [],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b025": {
+      "block_id": "b025",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 2738,
+      "end_char": 2831,
+      "quote": "AI/机器人方向学习者、教育工作者：官方单值得排，4-6 个月换一条完整的强化学习真机管线，比拿数千上万元的设备试错便宜；等不及就先在开源仓库的仿真环境里练手，策略文件到手真机直接部署。",
+      "quote_sha256": "4aaccf43e8c1d5375539b2ad45521cbb3911dd5933f329d86613cd1314170652",
+      "block_citation_ids": [],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b026": {
+      "block_id": "b026",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 2832,
+      "end_char": 2903,
+      "quote": "有 3D 打印机、吃灰树莓派的老 DIY：直接上 Open Duck Mini V2，42 厘米的大身子更耐折腾，教程生态现成，别等官方鸭子。",
+      "quote_sha256": "3ed9594e0744528e45caeb0962241e7d21282765912a51bc01b0dd086c7ef561",
+      "block_citation_ids": [],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b028": {
+      "block_id": "b028",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 2973,
+      "end_char": 3013,
+      "quote": "等 399 元平替的：别等硬件复刻了，盯刘厂长这类软硬件全开源的国产方案更现实。",
+      "quote_sha256": "ac1f8251ad911582796dc3e890881028d56457aa09b66a1c78e1cd2f84a15506",
+      "block_citation_ids": [],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    },
+    "b030": {
+      "block_id": "b030",
+      "source_file": "smzdm/analysis-body.txt",
+      "start_char": 3024,
+      "end_char": 3231,
+      "quote": "官方中国区是否有直邮/代理渠道；刘厂长们的国产开源方案什么时候放仓库；HF 会不会在量产压力下放出硬件文档；4-6 个月等待期是继续拉长还是消化完首批订单；社区策略库（跳舞、倒立之后）会不会长出真正有用的技能。这波鸭子给 DIY 圈最实在的东西，其实是把那层窗户纸捅破了：原来强化学习机器人的入场券，真的可以是 399 美元、一块 RK3566、一晚上 GPU。剩下的问题只有一个——你打算用这条管线，教会它什么。",
+      "quote_sha256": "5ae1d9706f7e5a9b9e65584fb6ab0667388013fadfe3af1149fc14acfbaaf96e",
+      "block_citation_ids": [],
+      "span_role": "Complete paragraph retained to preserve qualifiers and counterinterpretations."
+    }
+  },
+  "publisher_citation_evidence": {
+    "b002-c01": {
+      "citation_id": "b002-c01",
+      "block_id": "b002",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "知乎",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077523901152761144",
+      "publisher_quote_text": "在8月27日开放预购后，仅6小时销售额就突破100万美元，24小时内更是超过260万美元。另一个数据上Microduck平均每4秒就售出一台。",
+      "publisher_quote_sha256": "778894d6a8e827507a93174a06439c21328c348b86b2e09e0b0ba9a62c624fb4",
+      "publisher_highlight_text": "Microduck平均每4秒就售出一台",
+      "publisher_highlight_sha256": "8d4cc9db987f0c44efa463b467ce8a80757e44ef017a4b24c16d77f7b422c949",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b006-c01": {
+      "citation_id": "b006-c01",
+      "block_id": "b006",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "知乎",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077192046805247124",
+      "publisher_quote_text": "实测数据非常漂亮：15022 个 tick 只漏 3 个，是非常稳的状态",
+      "publisher_quote_sha256": "deca01c6ac28dbc46dadcc7554ed5b701a6bc087dd0f4e24fbedd34e5f05c8a1",
+      "publisher_highlight_text": "15022 个 tick 只漏 3 个",
+      "publisher_highlight_sha256": "927de346e56b61c1e0bdc678c125153b1164b8f0d892ee8bd0ee7d8d68df34e2",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b007-c01": {
+      "citation_id": "b007-c01",
+      "block_id": "b007",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "极客公园",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077008203443975906",
+      "publisher_quote_text": "Microduck 的软件栈以 Apache 2.0 协议完全开源，包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线。",
+      "publisher_quote_sha256": "da04040d932ce8138b1ada480f74218b2b624c903c10151ebb86ffa9a77a7f71",
+      "publisher_highlight_text": "包括 SDK、MuJoCo 仿真环境和完整的强化学习训练管线",
+      "publisher_highlight_sha256": "415643b7f04d475ed317f8f4305ae94d1dc56694923cc3e528c685ecb1caabd4",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b008-c01": {
+      "citation_id": "b008-c01",
+      "block_id": "b008",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "哔哩哔哩",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47",
+      "publisher_quote_text": "硬件没开源",
+      "publisher_quote_sha256": "c45bf8f4a0de72190bd7d6f0013c4626683e19f788efd296374d7bf34239fbc8",
+      "publisher_highlight_text": "硬件没开源",
+      "publisher_highlight_sha256": "c45bf8f4a0de72190bd7d6f0013c4626683e19f788efd296374d7bf34239fbc8",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b008-c02": {
+      "citation_id": "b008-c02",
+      "block_id": "b008",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "极客公园",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077008203443975906",
+      "publisher_quote_text": "Pollen Robotics 明确表示，硬件设计和电路图不会开源。",
+      "publisher_quote_sha256": "f3661db2657dfc41df17a4dd501103ed39e74f96f660a38ef57e25526e09acc8",
+      "publisher_highlight_text": "硬件设计和电路图不会开源",
+      "publisher_highlight_sha256": "363209f569ad9176a8c578bbdb594e8a8f3e73562073fa07b51641bd35e16a4e",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b010-c01": {
+      "citation_id": "b010-c01",
+      "block_id": "b010",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "知乎",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077523901152761144",
+      "publisher_quote_text": "先下单先发货。目前新订单的预计等待时间为4-6个月。",
+      "publisher_quote_sha256": "2d3778f8663776e004072c45fd6195b5c64668e770312284000bfaba6a7baf56",
+      "publisher_highlight_text": "目前新订单的预计等待时间为4-6个月",
+      "publisher_highlight_sha256": "63a98a064adf0978e021458183ed6bd7f6cee7a3c14c9f09bab499b313815658",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b010-c02": {
+      "citation_id": "b010-c02",
+      "block_id": "b010",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "哔哩哔哩",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47",
+      "publisher_quote_text": "$399，而且中国大陆及港澳台不支持邮递",
+      "publisher_quote_sha256": "13d792827757884f83daaf318da13e42ff90d07e636461f733737113e8586237",
+      "publisher_highlight_text": "中国大陆及港澳台不支持邮递",
+      "publisher_highlight_sha256": "4f801e17e0e0d84066444c915bb0bb18c6be84b0167b16e8862d71e6023c34a6",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b011-c01": {
+      "citation_id": "b011-c01",
+      "block_id": "b011",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "知乎",
+      "source_url": "https://zhuanlan.zhihu.com/p/2076660862635471651",
+      "publisher_quote_text": "截至今年 5 月，Reachy Mini 累计销量约1万台。软件生态也在同步发展，应用商店里聚合了 200 多款社区开发的 APP。",
+      "publisher_quote_sha256": "0f63d76eecb67b6dc58d2005fc77f3d9a5dd5c37f9aec4e2ba9204929a25d650",
+      "publisher_highlight_text": "应用商店里聚合了 200 多款社区开发的 APP",
+      "publisher_highlight_sha256": "536889cbbcc7f65679628afe7b8ab23a7fa50fead60d5cd12dfead40dc813ac8",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b011-c02": {
+      "citation_id": "b011-c02",
+      "block_id": "b011",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "小红书",
+      "source_url": "https://www.xiaohongshu.com/explore/6a92f49f000000002303f93d",
+      "publisher_quote_text": "创作者 André Baltazar 最近在模拟环境里训练 Microduck 倒立。",
+      "publisher_quote_sha256": "38fc879b38bce94e19f0ef07af7bfd7ad406dde13207b02cf18478ae6a9ffc29",
+      "publisher_highlight_text": "在模拟环境里训练 Microduck 倒立",
+      "publisher_highlight_sha256": "f418a0a50ae3a40dbc50666807b453db250ccbcc50ff38f9696554ec7b42b199",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b013-c02": {
+      "citation_id": "b013-c02",
+      "block_id": "b013",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "小红书",
+      "source_url": "https://www.xiaohongshu.com/explore/6a93945f000000000a00af50",
+      "publisher_quote_text": "Open Duck Mini V2 官方放出了完整组装实录：工作人员把 3D 打印件、树莓派和舵机一步步拼成整机，通电，迈步。这只鸭子 42 厘米高，全部零件成本不到 400 美元",
+      "publisher_quote_sha256": "b4d707757264738f341fddb0ece2ff657572c074670a3633e270172aeff37785",
+      "publisher_highlight_text": "这只鸭子 42 厘米高，全部零件成本不到 400 美元",
+      "publisher_highlight_sha256": "40c7a04dfbd84ba3b1f3cb24d5be3b108bb82f6f189d87f72c55596e9c261022",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b015-c01": {
+      "citation_id": "b015-c01",
+      "block_id": "b015",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "哔哩哔哩",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47",
+      "publisher_quote_text": "华强北自己采购一套，手搓出来不会低于4000元，比人家零售价都要贵",
+      "publisher_quote_sha256": "797d36a76f675858f8e854cb7bdf1b26c79cf1a54ba46378789d0e95b400ce59",
+      "publisher_highlight_text": "手搓出来不会低于4000元",
+      "publisher_highlight_sha256": "68d95fc64a4b4e623cffefd03733c75d524782552375ad8a604774b9ef3725b1",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b017-c01": {
+      "citation_id": "b017-c01",
+      "block_id": "b017",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "哔哩哔哩",
+      "source_url": "https://www.bilibili.com/video/BV1at4269E47",
+      "publisher_quote_text": "坐等华强北发力",
+      "publisher_quote_sha256": "0461be5c2a041e9d9e86bb60e8016c5183cff7f270f3d981a7ddd9878baec52a",
+      "publisher_highlight_text": "坐等华强北发力",
+      "publisher_highlight_sha256": "0461be5c2a041e9d9e86bb60e8016c5183cff7f270f3d981a7ddd9878baec52a",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b018-c01": {
+      "citation_id": "b018-c01",
+      "block_id": "b018",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "小红书",
+      "source_url": "https://www.xiaohongshu.com/explore/6a938b55000000000400b5b1",
+      "publisher_quote_text": "我们采用了完全不同的硬件架构（树莓派和飞特舵机）后续这套方案软硬件会开源出来，供全球的机器人爱好者一起来折腾把玩。",
+      "publisher_quote_sha256": "8300bd6f3ce170097895452c097ec7e010afa409ec766d6150ac9c4f827620f9",
+      "publisher_highlight_text": "后续这套方案软硬件会开源出来",
+      "publisher_highlight_sha256": "ed86b9ccc9046f6ba353801f16e7940b231ac5b220223c686f9a005efebd4392",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    },
+    "b020-c01": {
+      "citation_id": "b020-c01",
+      "block_id": "b020",
+      "source_file": "smzdm/citations.json",
+      "publisher_label": "知乎",
+      "source_url": "https://zhuanlan.zhihu.com/p/2077192046805247124",
+      "publisher_quote_text": "板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高。控制线程没进入正常循环——鸭子“没站起来”。",
+      "publisher_quote_sha256": "917c2614d6608bccbac634b4769bcddfff5942741756b0ffe39843eeca5202e4",
+      "publisher_highlight_text": "板上的 ONNX Runtime 是 1.20.1，策略要求 1.23.x 或更高",
+      "publisher_highlight_sha256": "b10bdd8bbb2939435db9a08656bb546b4eac90930ba4fe347b8683dc86e0f20d",
+      "evidence_status": "publisher_embedded_attribution_not_independently_verified"
+    }
+  },
+  "principal_findings": [
+    {
+      "finding_id": "smzdm-cr01",
+      "title": "A local parts-cost anecdote is generalized, then transferred to commercial reverse-engineering costs",
+      "finding_types": [
+        "unsupported_extrapolation",
+        "comparison_scope_shift",
+        "uncertain_source_reference"
+      ],
+      "evidence_block_ids": [
+        "b013",
+        "b015",
+        "b017",
+        "b008",
+        "b010",
+        "b026"
+      ],
+      "citation_ids_used": [
+        "b013-c02",
+        "b015-c01",
+        "b017-c01",
+        "b008-c01",
+        "b008-c02"
+      ],
+      "support": {
+        "in_article": "The Open Duck Mini paragraph reports an official parts cost below USD 400. The following paragraph describes expensive retail servos and boards, quotes one estimate of at least CNY 4,000, and explicitly calls it an estimate rather than measured pricing. It then declares that DIY cannot save money. The next price conclusion says a pixel-identical reverse-engineered product cannot arrive at USD 399 and refers back to that paragraph for a higher-cost claim.",
+        "publisher_snippet_relation": "b013-c02 repeats the below-USD-400 Open Duck Mini V2 parts claim. b015-c01 repeats one Huaqiangbei self-procurement estimate but does not identify the precise build, bill of materials, price date, or included costs. b017-c01 only says that the commenter is waiting for Huaqiangbei; it provides no reverse-engineering cost estimate. The hardware-closure snippets support the stated distinction between published software and unpublished hardware designs.",
+        "inherited_claims_supported_by_supplied_snippets": [
+          "The two different quoted cost claims are present in the snippets; neither is independently established.",
+          "The hardware designs are described as unavailable in the relevant snippets."
+        ],
+        "article_level_steps_not_established_by_supplied_snippets": [
+          "One retail build estimate is treated as establishing a general no-savings result.",
+          "Retail single-build procurement costs are treated as establishing the unit-price floor of a commercial reverse-engineered product."
+        ]
+      },
+      "missing_link": "The comparison needs a consistent target build and accounting basis: Open Duck Mini V2 versus Microduck replica, parts bought anew versus reused parts, local current retail prices versus other procurement conditions, and sticker price versus delivered usable cost. The reference from b017 additionally needs the connection between reverse-engineering development costs, production volume, and per-unit selling price. Neither an unavailable drawing nor a one-off retail estimate supplies that connection.",
+      "relation_edges": [
+        {
+          "from_block_ids": [
+            "b013",
+            "b015"
+          ],
+          "to_block_ids": [
+            "b015"
+          ],
+          "issue": "A contextual estimate becomes a categorical verdict without resolving build identity or procurement conditions."
+        },
+        {
+          "from_block_ids": [
+            "b015",
+            "b008"
+          ],
+          "to_block_ids": [
+            "b017"
+          ],
+          "issue": "The comparison unit changes from one DIY parts purchase to a commercial replica; the explicit backward reference does not supply the new cost model."
+        }
+      ],
+      "counterinterpretation": "The estimate could concern current Chinese retail purchase of every part, while the official figure could use different specifications, timing, geography, or channels. Those possibilities can reconcile the quoted costs, so this is not a demonstrated numerical contradiction. Economies of scale and nonzero reverse-engineering costs are plausible concerns, and the article does acknowledge the estimate. The specific absence of an official hardware build list is a legitimate constraint. What remains unsupported is the certainty and breadth of the resulting price verdicts.",
+      "repairability": {
+        "status": "needs_source_info",
+        "target": "Preserving a definite cost comparison or commercial price-floor conclusion.",
+        "existing_content_sufficient_for": "Retaining the attributed anecdote, price uncertainty, unavailable-drawing boundary, and practical warning that a fresh retail DIY build may not be cheaper.",
+        "missing_information": [
+          "The intended build and bill of materials behind the CNY 4,000 anecdote.",
+          "Comparable current all-in costs and treatment of existing components.",
+          "A commercial production and reverse-engineering cost basis if the USD 399 exclusion is retained."
+        ],
+        "do_not_invent": "Do not fill these gaps with assumed exchange rates, component prices, a guessed build identity, or a reverse-engineering cost model."
+      },
+      "confidence": {
+        "level": "high",
+        "basis": "The estimate qualifier, categorical conclusion, and cross-paragraph cost reference are explicit; confidence concerns the missing inferential bridge, not the true prices."
+      },
+      "cheap_nlp_observability": {
+        "directly_observable": [
+          "Currency amounts and comparative expressions.",
+          "An estimate qualifier followed by a categorical conclusion.",
+          "An explicit backward reference in the reverse-engineering paragraph."
+        ],
+        "semantic_inspection_required": "Resolve product identity, procurement scale, cost basis, and whether the cited premise licenses the new conclusion.",
+        "use": "Nomination for relation review, not automatic rejection or a smell score."
+      },
+      "actual_factual_contradiction_established": false,
+      "reader_or_editing_effect_validated": false
+    },
+    {
+      "finding_id": "smzdm-cr02",
+      "title": "The version advice does not identify its triplet",
+      "finding_types": [
+        "uncertain_reference",
+        "actionability_gap"
+      ],
+      "evidence_block_ids": [
+        "b020",
+        "b006"
+      ],
+      "citation_ids_used": [
+        "b020-c01"
+      ],
+      "support": {
+        "in_article": "The failure report names the installed ONNX Runtime version and a policy runtime requirement. The concluding instruction tells people changing the training chain to pin a triplet of versions, without naming its three members. An earlier paragraph contains a different three-item sequence, mjlab + MuJoCo Warp + PPO, but the article never explicitly links that sequence to the version advice.",
+        "publisher_snippet_relation": "b020-c01 contains Runtime 1.20.1, a requirement for 1.23.x or later, and failure to enter the control loop. It contains no identified three-component compatibility set.",
+        "inherited_claims_supported_by_supplied_snippets": [
+          "The runtime mismatch and failed start are repeated from the embedded snippet."
+        ],
+        "article_level_steps_not_established_by_supplied_snippets": [
+          "The prescribed three-member version set is introduced by the article without a recoverable unique membership list."
+        ]
+      },
+      "missing_link": "The reader needs the names of the three intended components and their relationship to the reported mismatch. Two version values for one runtime are not three component identities; the earlier training sequence is only a possible antecedent. The complete article does not select among these interpretations.",
+      "counterinterpretation": "A specialist familiar with the linked deployment note might know an established local triplet. The earlier three-item training chain could also be intended. Neither interpretation is uniquely recoverable from the supplied full article or embedded snippet. This is an underdetermined set reference in an operational instruction, not a missing grammatical subject or ordinary Chinese ellipsis.",
+      "repairability": {
+        "status": "needs_source_info",
+        "target": "Preserving the specific instruction to pin three components.",
+        "existing_content_sufficient_for": "Retaining the narrower advice to check the named ONNX Runtime requirement before deployment.",
+        "missing_information": [
+          "The intended three components and compatibility relationship."
+        ],
+        "do_not_invent": "Do not substitute a guessed exporter, opset, simulator, trainer, or policy package as the missing component."
+      },
+      "confidence": {
+        "level": "high",
+        "basis": "All 30 blocks were checked; no unique triplet is defined. The truth of the reported runtime incident is not assessed."
+      },
+      "cheap_nlp_observability": {
+        "directly_observable": [
+          "The three-member expression and local version numbers.",
+          "Named component lists elsewhere in the article."
+        ],
+        "semantic_inspection_required": "Determine whether a unique antecedent and compatibility relationship are recoverable.",
+        "use": "A reference-resolution candidate, not an SVO-presence rule."
+      },
+      "actual_factual_contradiction_established": false,
+      "reader_or_editing_effect_validated": false
+    },
+    {
+      "finding_id": "smzdm-cr03",
+      "title": "Ecosystem examples do not establish market-wide novelty or lack of substitutes",
+      "finding_types": [
+        "unsupported_extrapolation",
+        "missing_comparison_scope"
+      ],
+      "evidence_block_ids": [
+        "b003",
+        "b007",
+        "b011",
+        "b010"
+      ],
+      "citation_ids_used": [
+        "b007-c01",
+        "b011-c01",
+        "b011-c02"
+      ],
+      "support": {
+        "in_article": "The article calls Microduck the first finished product to package the stated reinforcement-learning chain at USD 399. Later it cites Reachy Mini sales and app counts and Microduck simulation videos, then says there is no substitute below CNY 4,000 for the stated degree of readiness for teaching, experiments, and deployment.",
+        "publisher_snippet_relation": "b007-c01 describes an open software stack and training pipeline. b011-c01 describes Reachy Mini sales and community apps. b011-c02 describes a Microduck handstand trained in simulation. These snippets support the existence of ecosystem and pipeline claims; none supplies a market comparison, a first-to-market survey, or a CNY 4,000 substitute boundary.",
+        "inherited_claims_supported_by_supplied_snippets": [
+          "Open pipeline, predecessor ecosystem counts, and a simulation example are present as publisher-attributed claims."
+        ],
+        "article_level_steps_not_established_by_supplied_snippets": [
+          "The first-product assertion and no-substitute conclusion exceed those examples."
+        ]
+      },
+      "missing_link": "The comparative conclusion needs a defined candidate set, evaluation criteria for readiness and comparable functions, a time and market scope, and consistent price and availability assumptions. Counts from another product and a simulated skill example do not establish those comparisons. The article itself separately acknowledges transfer costs and long delivery waits, which need treatment in a usable alternative comparison.",
+      "counterinterpretation": "The narrow combination of price, ready-made hardware, and an open reinforcement-learning pipeline might in fact be unusual or unique. The word substitute may mean an equally integrated ready-made package rather than any inexpensive robot. No competing product is asserted here, and the unavailable wider source context may contain comparisons. The finding is that the supplied article does not establish its comparative certainty, not that the claim is false.",
+      "repairability": {
+        "status": "needs_source_info",
+        "target": "Preserving either a market-first assertion or an exclusion of all substitutes below CNY 4,000.",
+        "existing_content_sufficient_for": "Describing the particular software bundle, intended uses, reported ecosystem examples, and stated delivery limitations.",
+        "missing_information": [
+          "A bounded comparison set and criteria.",
+          "Comparable prices, delivery assumptions, and evidence for the declared time and market scope."
+        ],
+        "do_not_invent": "Do not fabricate alternative products, benchmarks, ownership costs, or a market survey."
+      },
+      "confidence": {
+        "level": "high",
+        "basis": "The market-wide conclusions and the narrower examples are explicit; confidence concerns evidential scope rather than market truth."
+      },
+      "cheap_nlp_observability": {
+        "directly_observable": [
+          "First-product and no-substitute expressions.",
+          "The price threshold and nearby named products."
+        ],
+        "semantic_inspection_required": "Assess the comparison domain and whether the examples establish its exclusion or ranking.",
+        "use": "Nominate absolute comparative claims for review; do not ban comparisons."
+      },
+      "actual_factual_contradiction_established": false,
+      "reader_or_editing_effect_validated": false
+    },
+    {
+      "finding_id": "smzdm-cr04",
+      "title": "The sales rate and revenue-derived count lack a common observation window and counting basis",
+      "finding_types": [
+        "missing_quantitative_qualification",
+        "temporal_scope_ambiguity"
+      ],
+      "evidence_block_ids": [
+        "b002",
+        "b010"
+      ],
+      "citation_ids_used": [
+        "b002-c01"
+      ],
+      "support": {
+        "in_article": "One sentence places a unit every four seconds in the first day, reports more than USD 2.6 million in 24-hour orders, and derives about 6,500 units using the USD 399 unit price. It later explicitly cautions that these official figures cannot be independently verified.",
+        "publisher_snippet_relation": "b002-c01 contains the 24-hour revenue threshold and an average unit every four seconds, introduced as another data point without an explicit time window for that average. Relative to the supplied snippet, the article adds first-day wording for the rate and the approximately 6,500-unit conversion. This does not establish what the full upstream source said.",
+        "inherited_claims_supported_by_supplied_snippets": [
+          "The four-second rate and the revenue threshold already appear in the publisher snippet."
+        ],
+        "article_level_steps_not_established_by_supplied_snippets": [
+          "The shared first-day presentation and derived approximate unit count are not reconciled with a stated averaging window or order composition."
+        ]
+      },
+      "deterministic_arithmetic": {
+        "condition": "Only if the four-second rate is averaged over a complete 24-hour day.",
+        "units_from_full_day_rate": 21600.0,
+        "formula_for_units_from_rate": "24 * 60 * 60 / 4",
+        "base_price_revenue_from_full_day_rate_usd": 8618400.0,
+        "units_at_revenue_threshold_and_base_price": 6516.290726817043,
+        "formula_for_threshold_units": "2600000 / 399",
+        "seconds_per_unit_at_threshold_count": 13.259076923076922,
+        "interpretation": "A whole-day four-second average gives 21,600 units and USD 8,618,400 at base price; the USD 2.6 million threshold corresponds to approximately 6,516 base-price units. Because the stated revenue exceeds a threshold rather than being an exact total, these are not logically inconsistent revenue claims."
+      },
+      "missing_link": "The rate needs its actual averaging interval and the revenue needs its counting basis if a unit total is derived. A peak or shorter-window rate, a threshold rather than a final total, and revenue including paid accessories can produce different but compatible figures. The text does not identify which explanation applies.",
+      "counterinterpretation": "The first-day wording can describe an observed short burst rather than a full-day average. The revenue is explicitly a lower bound and may be much higher. Approximate conversion may merely convey scale, and orders may include accessories. Those interpretations block a factual-contradiction finding; the narrower concern is the missing basis needed to compare the adjacent numbers.",
+      "repairability": {
+        "status": "needs_source_info",
+        "target": "Reconciling the figures into a definite daily unit total and average sales rate.",
+        "existing_content_sufficient_for": "Keeping the separate figures attributed, preserving their uncertainty, and avoiding an asserted reconciliation.",
+        "missing_information": [
+          "The actual averaging interval for the four-second figure.",
+          "Whether USD 2.6 million is a threshold or near-final total.",
+          "The contents of order revenue and the appropriate average selling price."
+        ],
+        "do_not_invent": "Do not choose a peak window, an accessory mix, a corrected total, or a corrected rate without source information."
+      },
+      "confidence": {
+        "level": "moderate",
+        "basis": "The missing common measurement basis is visible, but ordinary shorthand and compatible numerical interpretations remain plausible."
+      },
+      "cheap_nlp_observability": {
+        "directly_observable": [
+          "Rate, duration, price, revenue, and approximate count expressions.",
+          "The arithmetic under explicitly stated common-window assumptions."
+        ],
+        "semantic_inspection_required": "Decide whether the time scopes actually coincide, whether a threshold is being approximated, and what counts as revenue.",
+        "use": "A quantitative-consistency candidate; never automatically mark the source as contradictory from the arithmetic alone."
+      },
+      "actual_factual_contradiction_established": false,
+      "reader_or_editing_effect_validated": false
+    }
+  ],
+  "preserved_counterinterpretations_and_useful_content": [
+    {
+      "preservation_id": "p01",
+      "evidence_block_ids": [
+        "b007",
+        "b008"
+      ],
+      "citation_ids_used": [
+        "b007-c01",
+        "b008-c01",
+        "b008-c02"
+      ],
+      "reason": "The article explicitly restricts full openness to the software pipeline and distinguishes unpublished hardware designs. This is a useful category boundary. It does not create a software-versus-hardware contradiction, and the lack of an official identical-build list should remain visible."
+    },
+    {
+      "preservation_id": "p02",
+      "evidence_block_ids": [
+        "b010",
+        "b015",
+        "b021",
+        "b026"
+      ],
+      "citation_ids_used": [
+        "b010-c01",
+        "b010-c02",
+        "b015-c01"
+      ],
+      "reason": "Delivery waits, shipping limitations, paid accessories, uncertain cost estimates, spare batteries, and the separate audience with existing parts are useful decision conditions. The two reported parts prices are not certified as contradictory. Ordinary topic-led advice to different reader groups is not a grammatical defect."
+    },
+    {
+      "preservation_id": "p03",
+      "evidence_block_ids": [
+        "b006"
+      ],
+      "citation_ids_used": [
+        "b006-c01"
+      ],
+      "reason": "The short final contrast in b006 can be read as not requiring training-class GPU compute on the physical robot. The same paragraph names its CPU board and a bounded locomotion workload. Without further evidence, do not reinterpret conventional contextual ellipsis as a literal claim that inference uses no computation, or certify a broader compute defect."
+    },
+    {
+      "preservation_id": "p04",
+      "evidence_block_ids": [
+        "b018",
+        "b028",
+        "b030"
+      ],
+      "citation_ids_used": [
+        "b018-c01"
+      ],
+      "reason": "The domestic project is introduced with a future openness promise. The three desired local-supply conditions can be read as a conditional recommendation, and the ending explicitly leaves repository release and channels to be watched. These passages do not establish current stock, price, shipping, or support, but their most charitable full-article reading also does not falsely assert that all are already delivered. They are not counted as a principal defect."
+    },
+    {
+      "preservation_id": "p05",
+      "evidence_block_ids": [
+        "b020",
+        "b025"
+      ],
+      "citation_ids_used": [
+        "b020-c01"
+      ],
+      "reason": "Practising in simulation while waiting for hardware is useful advice. The earlier runtime warning supplies a compatibility condition for the later brief deployment recommendation. The two passages can be read consistently; the audit does not turn that summary or ordinary ellipsis into a confirmed contradiction. The undefined triplet remains the narrower actionable reference problem."
+    }
+  ],
+  "limits": [
+    "Four findings describe recoverable relation or qualification gaps, not a new judgment of the human-reported smell.",
+    "Publisher-disclosed AI generation does not establish a model, translation pipeline, claim reliability, or reader-quality outcome.",
+    "The audit certifies no external technical or commercial fact and performs no network fact checking.",
+    "The cost and sales figures can have compatible interpretations; none is marked as a proven factual contradiction.",
+    "Repairability is assessed for retaining the strong original claim. Existing content can often support a narrower attributed statement, but the audit supplies no replacement prose and invents no missing facts.",
+    "No frequency, comparative prevalence, causal explanation of intensity, or editing benefit is established by this single-article relation audit."
+  ],
+  "validation": {
+    "all_30_blocks_read": true,
+    "all_22_publisher_quote_and_highlight_pairs_read": true,
+    "block_offsets_verified_in_both_text_views": 30,
+    "all_manifest_output_hashes_verified": 8,
+    "all_citation_attributes_verified_against_saved_dom": 22,
+    "saved_analysis_quote_spans_verified": 17,
+    "saved_publisher_evidence_pairs_verified": 14,
+    "all_saved_quote_hashes_verified": true,
+    "commands": [
+      "Read the saved UTF-8 body, block, citation, metadata, and manifest files with Python pathlib/json.",
+      "Verify SHA-256 file hashes, both-view block slices, HTML-decoded citation attributes, all saved quotation hashes, and all evidence references using Python hashlib/html.parser and assertions."
+    ],
+    "validation_scope": "Artifact identity and quote fidelity only; not independent technical truth, reader-effect validation, or automated endorsement of semantic findings."
+  }
+}

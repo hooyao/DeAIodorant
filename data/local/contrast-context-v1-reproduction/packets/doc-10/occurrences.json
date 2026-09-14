@@ -1,0 +1,19 @@
+{
+  "alias": "doc-10",
+  "content_hash": "aab37554f58fed82c166c06cd7b15d9a3e70c13640b50bf03a98d40b065729c1",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 647,
+        "start_char": 645,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 672,
+        "start_char": 615,
+        "text": "\n对于所有这些环境，\nchroot\n似乎是一个真正的根目录，而是实际上，它只是将路径名添加到任何以/开头的名字上。"
+      },
+      "occurrence_id": "doc-10-e01"
+    }
+  ]
+}

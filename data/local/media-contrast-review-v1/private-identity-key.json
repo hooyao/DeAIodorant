@@ -1,0 +1,56 @@
+[
+  {
+    "actual_cohort": "pre",
+    "article_id": "pair-01-A",
+    "doc_id": "738c96bc2777301fdaf9f078",
+    "metadata_path": "data\\local\\media-contrast-staging-v1\\documents\\738c96bc2777301fdaf9f078\\metadata.json",
+    "presentation_sha256": "4bad1b381c2d64e1981242316b3387d67c85cec50a561c32c4bb015e37f2fee6",
+    "published_at": "2021-12-03",
+    "url": "https://www.infoq.cn/article/4CFTC0TgkMout6hFBxG2"
+  },
+  {
+    "actual_cohort": "post",
+    "article_id": "pair-01-B",
+    "doc_id": "3fdc45a2c7759e78fc9013c9",
+    "metadata_path": "data\\local\\media-contrast-staging-v1\\documents\\3fdc45a2c7759e78fc9013c9\\metadata.json",
+    "presentation_sha256": "b407bbc6a3fb2735f9f04553b11e913494021315f0af63b734e477050c03b60f",
+    "published_at": "2026-06-01",
+    "url": "https://www.infoq.cn/article/JCXUmEkVTBw3mjjtgwgY"
+  },
+  {
+    "actual_cohort": "post",
+    "article_id": "pair-02-A",
+    "doc_id": "8bfb7b3e6b210126548b7f0c",
+    "metadata_path": "data\\local\\media-contrast-staging-v1\\documents\\8bfb7b3e6b210126548b7f0c\\metadata.json",
+    "presentation_sha256": "d41e71c0c334f847e2f22374a4d965ab81ee5bb0e4e747e9456f65c92fe5ff2a",
+    "published_at": "2025-12-05",
+    "url": "https://www.infoq.cn/article/yGwXLYsrhMDwUqoYgMsh"
+  },
+  {
+    "actual_cohort": "pre",
+    "article_id": "pair-02-B",
+    "doc_id": "d679960cb6cb418eebb6b222",
+    "metadata_path": "data\\local\\media-contrast-staging-v1\\documents\\d679960cb6cb418eebb6b222\\metadata.json",
+    "presentation_sha256": "906d119fd5e32b9ec715472bdef4b1d1f84957515205736ae1157525c36469f8",
+    "published_at": "2021-09-27",
+    "url": "https://www.infoq.cn/article/omyedsPw1aNVgoWz0G61"
+  },
+  {
+    "actual_cohort": "pre",
+    "article_id": "pair-03-A",
+    "doc_id": "550a11e0e8987efc94c654b7",
+    "metadata_path": "data\\local\\media-contrast-staging-v1\\documents\\550a11e0e8987efc94c654b7\\metadata.json",
+    "presentation_sha256": "f4b09f711da66693d0fed5ca84b429e928fe03bac64ae8d49631f8290e0d451d",
+    "published_at": "2022-10-28",
+    "url": "https://www.infoq.cn/article/1jdi4LDTycjblozS8QwV"
+  },
+  {
+    "actual_cohort": "post",
+    "article_id": "pair-03-B",
+    "doc_id": "c526ed941b8de39a5388df3d",
+    "metadata_path": "data\\local\\media-contrast-staging-v1\\documents\\c526ed941b8de39a5388df3d\\metadata.json",
+    "presentation_sha256": "bf3e1319321f483132d4497e08bb4d86035c77862be5c993b0b4112d13c7adc9",
+    "published_at": "2026-01-13",
+    "url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "completed_cases": 13,
+  "finished_at_utc": "2026-09-14T04:20:31.835119+00:00",
+  "human_gold": false,
+  "output_sha256": "a54046536271d462db2467a0fa6f8627ca3d08d244817b44459e79d4f174e2b9",
+  "reported_arm_cost_usd": "0.00100229",
+  "shared_budget": {
+    "accounted_usd": "0.05442080",
+    "budget_usd": "4",
+    "remaining_usd": "3.94557920",
+    "unfinished_reservations": 0
+  },
+  "state": "generated_awaiting_independent_review"
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "status": "failed_before_freeze_and_before_network",
+    "error_type": "KeyError",
+    "reason": "Some existing identity-export records have no content_hash; ID/URL exclusions remain available.",
+    "resolution": "Handle optional hashes explicitly and report their missingness; no article selection or result was observed."
+  }
+]

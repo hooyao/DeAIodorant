@@ -1,0 +1,133 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/05/34/05d43a74da581a5b3bbcf493c7e64f34.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 9,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/8c/c0/8c031ac0b487da0454da14f4837b0ac0.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 28,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/7b/8e/7b3d7d7ca392c426e1dee1936e30a88e.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 39,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/92/6f/9277b6084f773567237315150fef636f.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 43,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/ef/01/efb3d59f47e1c4cc96da5fd48d3db001.jpg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 47,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media06",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/32/21/328fdb6d6e2a5420b9c6e22ebf290f21.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 55,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media07",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/2f/66/2f6b4d74068d21fce97da55827895c66.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 65,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media08",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/18/56/18f48529f0fa6c865714e5758cbe3156.jpg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 68,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "TGO 鲲鹏会",
+      "href": "https://tgo.infoq.cn/"
+    },
+    {
+      "text": " GTLC 全球技术领导力峰会",
+      "href": "https://gtlc.infoq.cn/2020/chengdu"
+    },
+    {
+      "text": "FITURE",
+      "href": "https://www.fiture.com/"
+    },
+    {
+      "text": "《创业创造》",
+      "href": "https://book.douban.com/subject/1494043/"
+    },
+    {
+      "text": "自动驾驶",
+      "href": "https://www.infoq.cn/article/AgFr2VewLo7C0ouj9amg"
+    },
+    {
+      "text": "“内啡肽”",
+      "href": "https://baike.baidu.com/item/%E5%86%85%E5%95%A1%E8%82%BD/1902660?fr=aladdin"
+    },
+    {
+      "text": "《游戏改变世界》",
+      "href": "https://book.douban.com/subject/10828002/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 107,
+    "h1": 0,
+    "h2": 3,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 8,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 7
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/6eb12f680dd44db72e08fcdf.html",
+  "raw_html_sha256": "7778be8eae8ae59706237b63204b4ef7f2657b91baa2ba7bf0445493b2a9f0fe"
+}

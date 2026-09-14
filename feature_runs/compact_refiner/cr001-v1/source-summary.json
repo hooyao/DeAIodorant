@@ -1,0 +1,27 @@
+{
+  "generated": 23,
+  "human_reviews": 0,
+  "operationally_unavailable": 1,
+  "opportunity_by_fidelity": {
+    "fail": {
+      "clear": 6,
+      "limited": 1
+    },
+    "pass": {
+      "clear": 4,
+      "limited": 3,
+      "none": 6
+    },
+    "uncertain": {
+      "clear": 2,
+      "limited": 1
+    }
+  },
+  "planned": 24,
+  "source_fidelity_counts": {
+    "fail": 7,
+    "pass": 13,
+    "uncertain": 3
+  },
+  "training_exports": 0
+}

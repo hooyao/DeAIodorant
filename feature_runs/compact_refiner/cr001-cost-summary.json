@@ -1,0 +1,18 @@
+{
+  "assistant_agent_editing_cost": "unavailable; not included as free API inference",
+  "attempt_counts": {
+    "failed": 10,
+    "success": 52
+  },
+  "budget_cap_usd": "5",
+  "conservatively_accounted_cost_usd": "0.05459170",
+  "failure_reasons": {
+    "http_429_billing_unknown": 10
+  },
+  "reported_success_cost_usd": "0.01012750",
+  "usage": {
+    "completion_tokens": 11961,
+    "prompt_tokens": 27293,
+    "total_tokens": 39254
+  }
+}

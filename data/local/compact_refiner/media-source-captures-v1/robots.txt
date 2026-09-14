@@ -1,0 +1,12 @@
+User-agent: Slackbot
+Disallow: /
+
+User-agent: *
+Disallow: /data/
+Disallow: /plus/
+Disallow: /content/
+Disallow: /*.php$
+Disallow: /*.asp$
+Disallow: /feed/
+
+Sitemap: https://www.infoq.cn/sitemap/sitemap.xml

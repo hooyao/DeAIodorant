@@ -1,0 +1,46 @@
+{
+  "command": "python experiments/ershi_cohort_statistics.py --output-dir feature_runs/ershi-cohort-v1",
+  "external_model_calls": 0,
+  "gpu_used": false,
+  "implementation_hashes": {
+    "docs/routes/compact-refiner/ershi-cohort-statistics.md": "9afbf26dda8f789ff51447c41fc9795200f898e0270b40d84cdef5baf4a0a81a",
+    "experiments/ershi_cohort_statistics.py": "d8455ea8c672e4be599b670df69d430dcb18c37a0e364dac7e9f518f230d0df9",
+    "src/deaiodorant/analysis/reading_burden.py": "eb4d22db4f305c7d8f22cd5c3a4d02d78be273bf9e570892505239b38c8143f9"
+  },
+  "input_hashes": {
+    "data/local/media-contrast-staging-v1/article-attempts.jsonl": "348e8cc8ec34d1a6fe5517ee7f7858f6bfa78bb7424bc063b3bc9616858ac6f2",
+    "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/body.txt": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+    "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/body.txt": "08363c162d1d7cb2d6bcdbf6daddd4c71c13b664dfe820797f1a44c8c489ca7e",
+    "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/body.txt": "09e020a66c22252b0f94932ae9e8c2a609453a05e96a110e89c1e6bd5ccc1a32",
+    "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/body.txt": "1a36bc412473026811a8ca01a47b10ed0b3d2b001b62d188d93afd8252774ce4",
+    "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/body.txt": "fdf4dfbff1bf57a3ddd6bea8403f469a205208ce7555763da9222ec021d1499b",
+    "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/body.txt": "81afc10bc423ed8346ca57c1bcc147783ff06ff70ef251ae13ea13a1f57557a3",
+    "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/body.txt": "3cba893879346e9c7258dcfe11da82ffb4201406efe4ec3fe5e4fc3907ea158f",
+    "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/body.txt": "6b65668574e6036aedae3f6af6d5d0495f720c0a27e827739a855022138e6c47",
+    "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/body.txt": "f897ffb00e5b08abdb1cfd9fbdfdf06e0392047f1a32fdf15094eee580f93d83",
+    "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/body.txt": "a65e6ea0c1e6e22ee8ad1173d2f7da62af206863d4cb5a94824bffeb149961ce",
+    "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/body.txt": "3822a1ef3ee3cc893856e6c45544196f8e2652851f1a72921128895c4687e9af",
+    "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/body.txt": "077d41bcb5d9a9a20f15284bcd480656eddf3f4c3a0a2f4e23733b777a79715d",
+    "data/local/media-contrast-staging-v1/documents/769ecc5e088514e4261ae7e0/body.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/local/media-contrast-staging-v1/documents/83e3fb47524511fba7945931/body.txt": "4cdead9c6ef6d1cf5d8fedddfdb0ed45267d494cb1cb491be513c7caaa838f16",
+    "data/local/media-contrast-staging-v1/documents/8a835ce2a2584c3c9040fcc5/body.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/body.txt": "2397a4634ace531cb68430ac67e9351c0554c878d5b29772bef34e11a31ba7e5",
+    "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/body.txt": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+    "data/local/media-contrast-staging-v1/documents/94484784827b950a4ea5beea/body.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt": "f3dd1e6d13acf98ba6e9354fdd197c7016a7d1d4d958b8336729f5e4aec65a9c",
+    "data/local/media-contrast-staging-v1/documents/9d2686869fb90420de5a6d40/body.txt": "6b0ad8587528dade22d40d9c39cfad1dbacfe9783bc5bb1b103d4c88ccab0ff2",
+    "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/body.txt": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+    "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/body.txt": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+    "data/local/media-contrast-staging-v1/documents/c979e224eb220101fb785893/body.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/body.txt": "9d6e2701206f1e35f222242c0b9aa3f08dd10b1a68ad431b22d0a66f14589557",
+    "data/pilot/pilot_corpus.jsonl": "a46ed37102a273746948c556d6e8d4c4bcf19c2c00fce2dccf14e731996e270f"
+  },
+  "output_hashes": {
+    "document_counts.csv": "af62701dd74661c663654283af8adfc5755b6503ce8a4bf8272e54c8c9d5341a",
+    "document_counts.jsonl": "d12b8214d39981aa0f48a9528a2ce544abaf658d800ea6ff1045a8563b419e82",
+    "instances.jsonl": "a1f27391906164a91f4c90ddeadc41c6991b77f5ac5d5f5a5826d0db0032bc1a",
+    "summary.json": "e77210b7271d8c20b27daf952785bb60b226208d4d35125e414d3b79a194415e"
+  },
+  "protocol": "ershi-cohort-statistics-1.0",
+  "python": "3.13.5"
+}

@@ -1,285 +1,250 @@
-# Pilot Direction Probe
+# Pilot 方向探测
 
-## Purpose
+## 目的
 
-This is a one-off feasibility experiment for finding promising research
-directions. It is not a product component, an AI detector, or a confirmatory
-study.
+这是一次性可行性实验，用于寻找有前景的研究方向，不是产品组件、AI detector 或确认性研究。
 
-The probe asks whether the current small corpus contains reproducible signals
-worth investigating before the larger corpus arrives.
+探测检验当前小语料是否包含值得在大语料到位前研究的可复现信号。
 
-## Data
+## 数据
 
-Primary comparison:
+主比较：
 
-- 10 pre-period InfoQ documents;
-- 10 post-period InfoQ documents.
+- 前时期 InfoQ 10 篇；
+- 后时期 InfoQ 10 篇。
 
-Sensitivity checks:
+敏感性检查：
 
-- remove the known translated post document
-  **b186cdd4f9004e0413395bf3**, leaving 10 versus 9;
-- compare pre-period InfoQ with pre-period Machine Heart to estimate source
-  sensitivity.
+- 移除已知的后时期译文 **b186cdd4f9004e0413395bf3**，剩 10 对 9；
+- 比较前时期 InfoQ 与前时期机器之心，估计来源敏感性。
 
-Known limitations:
+已知限制：
 
-- the pilot is not a clean corpus;
-- additional unmarked translated or compiled documents may remain;
-- publication topic and article format are not matched;
-- there are only 20 same-source documents;
-- current page selection is not representative of either period.
+- Pilot 不是干净语料；
+- 可能仍有未标出的翻译或编译文档；
+- 发布主题与文章体裁未匹配；
+- 同来源文档仅 20 篇；
+- 当前页面选择不代表任一时期。
 
-## Computation
+## 计算
 
-- Stanza 1.14.0 Chinese Universal Dependencies annotation;
-- 150 dense document features;
-- 6,597 cohort-blind sparse patterns;
-- 20,000 GPU label permutations for dense features;
-- 5,000 GPU label permutations for sparse patterns;
-- leave-one-out direction stability;
-- Hedges' g and Cliff's delta;
-- known-translation removal;
-- source-to-time effect ratio;
-- PCA and fold-local feature-selected ridge leave-one-out diagnostics.
+- Stanza 1.14.0 中文 Universal Dependencies 标注；
+- 150 个稠密文档特征；
+- 6,597 个不读取分组标签的稀疏模式；
+- 稠密特征 20,000 次 GPU 标签置换；
+- 稀疏模式 5,000 次 GPU 标签置换；
+- Leave-one-out 方向稳定性；
+- Hedges' g 和 Cliff's delta；
+- 移除已知译文；
+- 来源效应与时间效应之比；
+- PCA 和每折内部特征选择的 ridge leave-one-out 诊断。
 
-Dense and sparse matrix computation ran on an RTX 4090 with PyTorch CUDA. Only
-document IDs, numeric features, and extracted short patterns were uploaded to
-the cloud instance. Article bodies remained local.
+稠密及稀疏矩阵计算在 RTX 4090 上使用 PyTorch CUDA 运行。只上传文档 ID、数值特征和提取的短模式到云实例，正文留在本地。
 
-## Dense results
+## 稠密结果
 
-### Strongest result: punctuation system
+### 最强结果：标点系统
 
-| Feature | Pre mean | Post mean | Hedges' g | Known-translation-removed g | Permutation p | BH q |
+| 特征 | 前时期均值 | 后时期均值 | Hedges' g | 移除已知译文后 g | Permutation p | BH q |
 |---|---:|---:|---:|---:|---:|---:|
-| Total punctuation density | 0.08 | 0.10 | 2.08 | 2.00 | 0.0002 | 0.030 |
-| Punctuation entropy, bits | 2.40 | 3.22 | 1.70 | 1.81 | 0.0018 | 0.090 |
-| Dash density | approximately 0.00 | approximately 0.01 | 1.58 | 1.79 | 0.0006 | 0.045 |
+| 总标点密度 | 0.08 | 0.10 | 2.08 | 2.00 | 0.0002 | 0.030 |
+| 标点熵，bits | 2.40 | 3.22 | 1.70 | 1.81 | 0.0018 | 0.090 |
+| 破折号密度 | 约 0.00 | 约 0.01 | 1.58 | 1.79 | 0.0006 | 0.045 |
 
-All three directions survived leave-one-out removal. Total punctuation density
-also had a small pre-period source effect relative to its time effect. Dash and
-punctuation-entropy differences had larger source sensitivity but remained
-smaller than the InfoQ time effect.
 
-The result is real in this sample, but its interpretation is unresolved. It may
-measure:
+三个方向在 leave-one-out 删除后均保留。总标点密度的前时期来源效应相对时间效应也较小。破折号和标点熵的来源敏感性较大，但仍小于 InfoQ 时间效应。
 
-- formulaic contrast and emphasis;
-- quotation and parenthetical asides;
-- newer InfoQ formatting and editorial conventions;
-- translated or compiled content;
-- code, lists, headings, and product walkthrough structure.
+样本内结果真实存在，解释仍未确定。它可能测量：
 
-The next probe must strip or separately model headings, code, quotations, and
-list formatting before treating punctuation as a smell.
+- 程式化对比和强调；
+- 引文和括注；
+- 较新的 InfoQ 格式与编辑习惯；
+- 翻译或编译内容；
+- 代码、列表、标题及产品教程结构。
 
-### Secondary candidates
+下一探测必须移除或单独建模标题、代码、引文和列表格式，之后才能将标点视为臭味。
 
-| Feature | Pre mean | Post mean | Hedges' g | BH q | Interpretation risk |
+### 次要候选
+
+| 特征 | 前时期均值 | 后时期均值 | Hedges' g | BH q | 解释风险 |
 |---|---:|---:|---:|---:|---|
-| Lexical MATTR | 0.73 | 0.77 | 1.13 | 0.35 | topic and technical vocabulary |
-| Adjacent-sentence content Jaccard | 0.07 | 0.05 | -0.98 | 0.52 | topic breadth and article length |
-| Long-paragraph ratio | 0.02 | approximately 0.00 | -0.80 | 0.52 | web formatting |
-| Mean paragraph CJK characters | 59.72 | 40.33 | -0.81 | 0.52 | editorial layout |
-| Clause relations per sentence | 3.49 | 2.76 | -0.81 | 0.52 | parser and genre |
+| 词汇 MATTR | 0.73 | 0.77 | 1.13 | 0.35 | 主题及技术词汇 |
+| 相邻句内容 Jaccard | 0.07 | 0.05 | -0.98 | 0.52 | 主题广度及文章长度 |
+| 长段比例 | 0.02 | 约 0.00 | -0.80 | 0.52 | 网页格式 |
+| 平均段落 CJK 字符数 | 59.72 | 40.33 | -0.81 | 0.52 | 编辑布局 |
+| 每句分句关系数 | 3.49 | 2.76 | -0.81 | 0.52 | 解析器及体裁 |
 
-These effects are large enough to retain as hypotheses, but the current sample
-does not support a reliable claim after multiple testing.
 
-The higher post-period lexical diversity contradicts a simple “AI text has
-lower lexical entropy” hypothesis. That direction should not be adopted without
-topic matching.
+这些效应足够大，可保留为假设，但当前样本经 multiple testing 后不能支持可靠主张。
 
-## Feature-family results
+后时期词汇多样性更高，与简单的“AI 文本词汇熵更低”假设相反。未匹配主题前不应采用该方向。
 
-| Family | Median absolute g | Features with absolute g at least 0.8 | BH q below 0.1 |
+## 特征族结果
+
+| 特征族 | 绝对 g 中位数 | 绝对 g 至少 0.8 的特征数 | BH q 低于 0.1 |
 |---|---:|---:|---:|
-| Punctuation | 0.89 | 6 | 3 |
-| Character composition | 0.60 | 1 | 0 |
-| Discourse and stance | 0.45 | 0 | 0 |
-| Document structure | 0.42 | 3 | 0 |
-| Dependency syntax | 0.35 | 2 | 0 |
-| Title form | 0.33 | 1 | 0 |
+| 标点 | 0.89 | 6 | 3 |
+| 字符构成 | 0.60 | 1 | 0 |
+| 篇章及立场 | 0.45 | 0 | 0 |
+| 文档结构 | 0.42 | 3 | 0 |
+| 依存句法 | 0.35 | 2 | 0 |
+| 标题形式 | 0.33 | 1 | 0 |
 | Universal POS | 0.32 | 2 | 0 |
-| Token and lexical | 0.31 | 1 | 0 |
-| Dependency relation | 0.27 | 3 | 0 |
-| Repetition and regularity | 0.14 | 0 | 0 |
+| Token 与词汇 | 0.31 | 1 | 0 |
+| 依存关系 | 0.27 | 3 | 0 |
+| 重复与规律性 | 0.14 | 0 | 0 |
 
-The current pilot does not support the initial idea that ordinary repetition
-metrics or a generic discourse-marker list are the main direction.
 
-## Sparse patterns
+当前 pilot 不支持最初“普通重复指标或通用篇章标记表是主要方向”的想法。
 
-No sparse pattern survived Benjamini-Hochberg correction over 6,597 candidates.
-Sparse findings therefore generate hypotheses only.
+## 稀疏模式
 
-The most interesting manually consolidated pattern is contrastive reframing:
+6,597 个候选中，无稀疏模式通过 Benjamini-Hochberg 校正。因此稀疏发现只用于提出假设。
 
-| Pattern | Pre InfoQ documents | Post InfoQ documents | Pre occurrences | Post occurrences |
+人工汇总后最值得研究的模式是对比式重新表述：
+
+| 模式 | 前时期 InfoQ 文档数 | 后时期 InfoQ 文档数 | 前时期次数 | 后时期次数 |
 |---|---:|---:|---:|---:|
 | “不是/并非/不再是 ... 而是 ...” | 0 | 5 | 0 | 24 |
-| Same pattern after removing the known translation | 0 | 4 of 9 | 0 | 15 |
+| 移除已知译文后的同一模式 | 0 | 9 篇中的 4 篇 | 0 | 15 |
 | “正是” | 1 | 8 | 1 | 14 |
 | “关键” | 2 | 10 | 5 | 35 |
 | “系统性” | 0 | 5 | 0 | 6 |
 | “缺乏” | 0 | 5 | 0 | 7 |
 
-Representative post-period constructions include repeated sequences shaped as:
 
-- “not X, but Y”;
-- “no longer X, but Y”;
-- “the key is...”;
-- “it is precisely...”;
-- “the problem is not..., but...”.
+代表性后时期结构包括反复出现的以下形态；保留英文语言示例原文：
 
-This suggests a candidate direction:
+- “not X, but Y”；
+- “no longer X, but Y”；
+- “the key is...” ；
+- “it is precisely...” ；
+- “the problem is not..., but...”。
 
-> generated-era prose may overuse contrast and emphasis frames to create a
-> sense of argument, even when a direct declarative sentence would carry the
-> same information.
+由此提出候选方向：
 
-This direction is more specific and editable than generic “AI style.” It needs
-a preregistered detector and a matched-corpus replication.
+> 生成内容普及后的文字可能过度使用对比和强调框架，制造论证感，即使直接陈述句可以承载相同信息。
 
-## PCA and linear diagnostic
+这个方向比泛化的“AI 风格”更具体、可编辑，需要预注册检测方法和匹配语料复现。
 
-PCA did not reveal a single global cohort axis:
+## PCA 与线性诊断
 
-- PC1 explained 26.2% of variance;
-- PC1 cohort correlation was only 0.19;
-- content, format, and source variation dominate the first component.
+PCA 没有揭示单一全局时间组轴：
 
-Fold-local top-five-feature ridge leave-one-out:
+- PC1 解释 26.2% 方差；
+- PC1 与时间组相关仅 0.19；
+- 内容、体裁和来源变化主导第一主成分。
 
-- accuracy: 75%;
-- AUC: 0.82;
-- label-permutation p varied around 0.06–0.08 across 100-permutation runs;
-- permutation mean accuracy: approximately 0.46–0.49.
+每折内部选前五特征的 ridge leave-one-out：
 
-The features selected in nearly every fold were punctuation density,
-punctuation entropy, dash density, punctuation dependency ratio, and title
-length. The classifier is therefore mostly a punctuation and editorial-format
-diagnostic.
+- 准确率 75%；
+- AUC 0.82；
+- 100 次置换的各次运行中，label-permutation p 约在 0.06–0.08 变化；
+- 置换平均准确率约 0.46–0.49。
 
-## Feature-family ablation
+几乎每折都会选中标点密度、标点熵、破折号密度、标点依存比例及标题长度。因此分类器主要是标点与编辑格式诊断。
 
-| Feature subset | Accuracy | AUC | Label-permutation p |
+## 特征族消融
+
+| 特征子集 | 准确率 | AUC | Label-permutation p |
 |---|---:|---:|---:|
-| All dense features | 0.75 | 0.82 | 0.079 |
-| Lexical and character | 0.65 | 0.66 | 0.158 |
-| Discourse and repetition | 0.50 | 0.53 | 0.515 |
-| Document structure | 0.40 | 0.48 | 0.723 |
-| Grammar only | 0.30 | 0.12 | 0.832 |
-| Without punctuation or title | 0.20 | 0.03 | 0.921 |
+| 全部稠密特征 | 0.75 | 0.82 | 0.079 |
+| 词汇及字符 | 0.65 | 0.66 | 0.158 |
+| 篇章及重复 | 0.50 | 0.53 | 0.515 |
+| 文档结构 | 0.40 | 0.48 | 0.723 |
+| 仅语法 | 0.30 | 0.12 | 0.832 |
+| 排除标点及标题 | 0.20 | 0.03 | 0.921 |
 
-The below-chance results in the last two rows reflect severe fold instability,
-not useful reverse classifiers. With only 20 documents, the selected directions
-change when one document is held out.
 
-Traditional machine learning is feasible, but it currently confirms only that
-the punctuation family contains a sample signal. It does not provide a stable
-general “AI smell” representation.
+最后两行低于机会水平的结果反映严重折间不稳定，不是有用的反向分类器。只有 20 篇文档，留出一篇就会改变选中方向。
 
-## Direction decisions
+传统 machine learning 可行，但当前只确认标点族包含样本信号，没有提供稳定的通用“AI 臭味”表示。
 
-### Priority 1: Contrastive and emphatic rhetorical frames
+## 方向决定
 
-Why:
+### 优先级 1：对比与强调修辞框架
 
-- concrete span-level patterns;
-- large document-presence differences;
-- remains after known-translation removal;
-- directly testable through minimal edits;
-- more interpretable than a classifier.
+理由：
 
-Next probe:
+- 具体的 span 级模式；
+- 文档出现比例差异较大；
+- 移除已知译文后仍保留；
+- 可通过最小编辑直接检验；
+- 比分类器更可解释。
 
-- freeze a lexicon and syntactic detector before viewing more data;
-- count normalized uses per 1,000 sentences;
-- distinguish necessary logical contrast from ornamental reframing;
-- replicate on the larger matched corpus.
+下一探测：
 
-### Priority 1: Punctuation and inserted emphasis
+- 查看更多数据前冻结词表与句法检测方法；
+- 按每 1,000 句归一化计数；
+- 区分必要逻辑对比与装饰性重新表述；
+- 在更大匹配语料上复现。
 
-Why:
+### 优先级 1：标点与插入式强调
 
-- strongest dense effect;
-- only family surviving dense multiple-testing correction;
-- stable under leave-one-out and known-translation removal.
+理由：
 
-Next probe:
+- 最强稠密效应；
+- 唯一通过稠密特征 multiple-testing correction 的特征族；
+- Leave-one-out 和移除已知译文后稳定。
 
-- separate body prose from headings, lists, code, quotations, and transcripts;
-- split dash uses into range/hyphen, parenthetical insertion, quotation, and
-  emphatic turn;
-- rerun within matched article formats;
-- test whether punctuation is a symptom of rhetorical templates rather than an
-  independent target.
+下一探测：
 
-### Priority 2: Local cohesion
+- 正文与标题、列表、代码、引文、转录稿分离；
+- 将破折号用途分为范围／连字符、括注插入、引用及强调转折；
+- 在匹配文章体裁内重跑；
+- 检验标点是否只是修辞模板的症状，而非独立目标。
 
-Why:
+### 优先级 2：局部衔接
 
-- post-period adjacent content overlap is lower;
-- the direction survives leave-one-out and translation removal;
-- could measure idea hopping or weak local continuity.
+理由：
 
-Next probe:
+- 后时期相邻内容重叠更低；
+- 方向在 leave-one-out 和移除译文后保留；
+- 可能测量思路跳跃或局部连续性弱。
 
-- calculate entity and noun-chain carryover;
-- control sentence count, article length, and topic breadth;
-- inspect paragraph-boundary versus within-paragraph cohesion separately.
+下一探测：
 
-### Priority 2: Clause and paragraph compression
+- 计算实体和名词链承接；
+- 控制句数、文章长度与主题广度；
+- 分别检查段落边界及段落内部衔接。
 
-Why:
+### 优先级 2：分句与段落压缩
 
-- shorter paragraphs and fewer clause relations per sentence appear in post
-  documents;
-- may interact with web formatting and list-heavy writing.
+理由：
 
-Next probe:
+- 后时期文档段落较短、每句分句关系更少；
+- 可能与网页格式及大量列表的写作相互作用。
 
-- normalize out headings and bullet lists;
-- compare prose-only sentences;
-- add constituency production and clause-depth features only if the effect
-  remains.
+下一探测：
 
-### Deprioritize: Generic repetition metrics
+- 归一处理标题和项目列表影响；
+- 比较纯正文句；
+- 只有效应保留，才增加 constituency production 和分句深度特征。
 
-No current repetition or regularity feature had absolute g of at least 0.8.
-Do not invest in a large repetition subsystem until a different definition of
-semantic restatement is available.
+### 降低优先级：通用重复指标
 
-### Deprioritize: Generic transition lexicon
+当前没有重复或规律性特征的绝对 g 达到 0.8。在得到另一种语义复述定义之前，不投入大型重复子系统。
 
-The current causal, contrast, enumeration, summary, framing, hedge, booster, and
-directive category totals did not separate the cohorts reliably. Broad category
-counts hide the more specific “not X, but Y” construction.
+### 降低优先级：通用过渡词表
 
-### Deprioritize: General classifier
+当前因果、对比、列举、总结、框架、hedge、booster 和指令类别总量无法可靠区分时间组。宽泛类别计数掩盖了更具体的“not X, but Y”结构。
 
-The small linear model is unstable and driven by editorial punctuation.
-Improving its accuracy would move the project toward authorship classification
-without identifying editable reader-disliked behavior.
+### 降低优先级：通用分类器
 
-## Feasibility conclusion
+小型线性模型不稳定，由编辑标点驱动。提高其准确率会将项目推向作者身份分类，却不能识别可编辑的读者反感行为。
 
-The direction-finding workflow is feasible:
+## 可行性结论
 
-- deterministic parsing completed for all 30 documents;
-- dense and sparse matrices were produced;
-- GPU permutation and linear diagnostics completed in seconds;
-- known translation and source sensitivity can be measured explicitly.
+方向发现流程可行：
 
-The pilot does not support a broad conclusion about AI-generated Chinese text.
-It does support two concrete next directions:
+- 全部 30 篇完成确定性解析；
+- 已产出稠密和稀疏矩阵；
+- GPU 置换及线性诊断在数秒内完成；
+- 可明确测量已知翻译和来源敏感性。
 
-1. repeated contrastive/emphatic rhetorical framing;
-2. punctuation and inserted emphasis after removing editorial-format effects.
+Pilot 不支持关于 AI 生成中文的广泛结论，但支持两个具体下一方向：
 
-Local cohesion is the strongest secondary direction. Generic repetition,
-generic discourse markers, and general classification should not receive more
-effort at this stage.
+1. 重复的对比／强调修辞框架；
+2. 去掉编辑格式效应后的标点与插入式强调。
+
+局部衔接是最强次要方向。当前阶段不应再向通用重复、通用篇章标记和通用分类投入更多工作。

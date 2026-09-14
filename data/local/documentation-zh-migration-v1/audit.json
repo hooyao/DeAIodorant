@@ -1,0 +1,3366 @@
+{
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "changed": true,
+      "before_sha256": "26b5bb1ebaccf2c050ec3dc2119e1ca3b1651de228f07ec848b41b96c454f84e",
+      "after_sha256": "c70f9eca3bb36979551e4e05eb4e3864ec0d018ce7ae315fadfdff4809d2fa7a",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [
+            "https://post.smzdm.com/p/a70dm4ll/`,"
+          ],
+          "added_count": 1
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 458
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "README.md",
+      "changed": true,
+      "before_sha256": "bf870f0e36c030806d042f2c5efa2970e388b8e5425977404bd132b266f6a0d1",
+      "after_sha256": "0205178935fef8aacb68e93927eb5bf6262cca12405848c7c2e271e4efd54c71",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 1
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 388
+        },
+        "code_fences_equal": false,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "changed": true,
+      "before_sha256": "27d2a876573e86ab63053fdfefb61ceab1256f6cb3bce72fd41e503cff5868be",
+      "after_sha256": "707138d42920a98dd3b216cf1e5ee9a75b5c2a3e935458744546739656fd6557",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 72
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/architecture.md",
+      "changed": true,
+      "before_sha256": "986b765cc5f7b4735f6f64c2469883f86fa7ab386bb876b56746c12b90c3bb76",
+      "after_sha256": "e022cb0bc1ddb99874cbe58e4c7f5cfe92899b04582e2caf4b77a81611f54af0",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 230
+        },
+        "code_fences_equal": false,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/feature-catalog.md",
+      "changed": true,
+      "before_sha256": "2772c52d6e707c064230a6a710a0cd1dd8a1a593223a3ec2643c125faa60f830",
+      "after_sha256": "61b496d2f6424f78e1c57a95b245631bed4a2d1ac92b7adaa82ac6eadb711939",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 406
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/feature-directions.md",
+      "changed": true,
+      "before_sha256": "73553cf1d5abcba51f568b14a3249a25374e5f1f1f36ebdcc484465356070222",
+      "after_sha256": "42a50f31248eb6b6373868ab42905589916d2e7d491b4f217b3b6f3ffa55225f",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 175
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/refinement-roadmap.md",
+      "changed": true,
+      "before_sha256": "cff79ab154bdb5866568de8f2eb19b96a72f59686fd0031603d65e31467518ec",
+      "after_sha256": "2081edd50413a91beb6b9991047c6997fcb193d0691714459dc366644b9cd8d0",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 809
+        },
+        "code_fences_equal": false,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/research-progress.md",
+      "changed": true,
+      "before_sha256": "fa8bb5b91d34f9f9a588d607d56abdf260947181896ceaf0f3545ce57ec37385",
+      "after_sha256": "66509f35653227ecbcad513d962c22ec81e5827333e328fa3ef61a40f9696302",
+      "checks": {
+        "inline_code": {
+          "missing": [
+            "`. The head noun `"
+          ],
+          "added_count": 1
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 1924
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": [
+          {
+            "line": 556,
+            "text": "MiMo-V2.5、MiMo-V2.5-Pro、Hy3、Hy4 Preview、"
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/research-reassessment-2026-09-14.md",
+      "changed": true,
+      "before_sha256": "816ee5ee29aeee7c01c745e55d775cb7b27e859c0e62f87a10ad1e56625b77fb",
+      "after_sha256": "3e24d85ed24193a2f765d58033f03b85a3d6874d70537c5ed014f86daf483e12",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 512
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/roadmap.md",
+      "changed": true,
+      "before_sha256": "733d94406a5e9746e6fffa7679ee1077ce8152df39bd9248025c85fe12526da9",
+      "after_sha256": "485e3102e310318db4ef8bbfd39a587882b84d843866338fa920c39aa3f97da7",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 284
+        },
+        "code_fences_equal": false,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/briefs-v1-notes.md",
+      "changed": true,
+      "before_sha256": "991d08102aadfa94df945acda551c009ce665e25264a03643d03c2345c32d6b0",
+      "after_sha256": "01d6add1f239ecfdbf639c3d9617d301441fa9d3f0234bb727aa2c5ab7224aaf",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 366
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/client-maintenance-2026-09-14.md",
+      "changed": true,
+      "before_sha256": "d83ebdc92f679aa5e87eb559cfb92b3dc1084e468c4bc10b50db823a6e5453b8",
+      "after_sha256": "88ce31a115c47a0455168ce0633b4b2c18e65598dbbdab40d3168596f22baaee",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 117
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/cognitive-move-analysis.md",
+      "changed": true,
+      "before_sha256": "e217e54711899de28803e278f498c7d463c084e06370d0dbf693b459f9599ef0",
+      "after_sha256": "4e9e5407be4033a0cf018749fe90115dc37f19355e36fb83b5ea7c681d404038",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 1
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 207
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/contrast-context-audit.md",
+      "changed": true,
+      "before_sha256": "097946e95e1d5557738c307c5a289109356422d6d22e13ef5641d3b9d8e02f81",
+      "after_sha256": "a6369e43e00d03a009ccbb173c31f682402bf39eedb41f8688c8d103368d58a1",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 172
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/contrast-syntax-feasibility.md",
+      "changed": true,
+      "before_sha256": "06c60d318d494bc417f0dfaf4a87706834a08ac54e7a41056e8d0e9bba2474f6",
+      "after_sha256": "8781649cd4e3761cbc56913da80c3e353a64132703454b7f5e734d04381f610b",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 149
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/data-contract.md",
+      "changed": true,
+      "before_sha256": "aafca8fd0703d7a35485d99f7847c7836de0e1ce926e84a4ec0c4797da1b105c",
+      "after_sha256": "3ac1de08b9ba46c88cd7ad07633e39251d6c66144ae6802a87f845eb7779d4d4",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 380
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/decisions.md",
+      "changed": true,
+      "before_sha256": "5c88c51c4a7fa89c4ee4b253136eaf2e379f2bb71efd832f1b43348d9f81fc17",
+      "after_sha256": "f110561a3067beb83ed7eea4c7e4c146f576b5ee7a72b315948a1dcc2e9ca088",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 698
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/ershi-cohort-statistics.md",
+      "changed": true,
+      "before_sha256": "9afbf26dda8f789ff51447c41fc9795200f898e0270b40d84cdef5baf4a0a81a",
+      "after_sha256": "ed0b355118759320e2221f787dca9532b24392687df75cab75dc9198d7e2e2d3",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 121
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/evaluation.md",
+      "changed": true,
+      "before_sha256": "c153d0b4d3c78aea7a57c154da6c30b28dbde87313d14723ab0cde1c2d2407fb",
+      "after_sha256": "dfd642212c032937b6d7b9c7e2cb2e06ca2d0bbf8a71211d748d611234fdc72d",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 294
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/experiments.md",
+      "changed": true,
+      "before_sha256": "23f9bd6697cd4bf7abfda68620b26f411b5e349695e1cb6f73f99e429d135a5d",
+      "after_sha256": "62c32c8d961e2eaadffd5af5153b202079d16a6b131cddc897fe848ebcb6b694",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 240
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/first-batch.md",
+      "changed": true,
+      "before_sha256": "f5fa61a0dc843f8b2af33e0a08c672584424a19f52eb5ee28955fa7e9072ef29",
+      "after_sha256": "b6f126a4c45c10ed50e898e5f75b540e2174a6d1c298ddc60b0d71b307691556",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 197
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/full-article-source-probe.md",
+      "changed": true,
+      "before_sha256": "d1fb40cedb8bd9a1645f56868d79650232cc46a331ebea27f8e0981cab4c294a",
+      "after_sha256": "af11704d97fc1c6efd1e62febe25306a7d00470edbe4bd059c3040ff99dabb6a",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 132
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/generation-mechanism-hypotheses.md",
+      "changed": true,
+      "before_sha256": "4bbab48cb643c66a559811bef3bff7ed34da5d4d40800076cec1dcf0f2969f3d",
+      "after_sha256": "a7ba287c8fa94fb21dc7aebeccf7c859bbe4c50a705171a62d1653254801e7e0",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 159
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/media-full-article-design-review.md",
+      "changed": true,
+      "before_sha256": "2c991fe10b6a175cca85863ab857661c171bc075c155b262f621e23183ad19b3",
+      "after_sha256": "d26b641d7e36b54e3a7ebc2fe2f2c17a5763d5e9864864c20eda02971150b8e8",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 496
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/media-provenance-extension.md",
+      "changed": true,
+      "before_sha256": "59caa30c72c9fc62ffb7f389f718f67717b80eb0047905c0e02ac7dc226d49ed",
+      "after_sha256": "1413dbfdf33dc2d8d62b8911b16a6e13b38048f81dda3f6f06af4868647fd21c",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 216
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/media-repair-development.md",
+      "changed": true,
+      "before_sha256": "0c904d2250e2d08996e33aa7c14eee7736c278b99896decf4e18627e61747f06",
+      "after_sha256": "a2f99cad6e74f91c241d4cc2718271f6486a01747c38004e6615c9f7c72328eb",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 127
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/preference-readiness-audit.md",
+      "changed": true,
+      "before_sha256": "a81d6ec510d2b1b9df7bfd45d8742314a36f003c79b4d1b297850df5eaf7affc",
+      "after_sha256": "85bf75d5630f25fc87ee270b9fcdaa2ab96a9bc159c2d56b7b51736042d04d68",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 467
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reader-anchor-feature-discovery.md",
+      "changed": true,
+      "before_sha256": "7c711e3cf75b5b35fbebf7113bd0dc46cef56bd4e20cd1751d931e3da2c166ac",
+      "after_sha256": "5f85427fdb547de29f0c0698f61435a84e80019686e9a581ec4b752840c74cae",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 132
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/README.md",
+      "changed": true,
+      "before_sha256": "5788a255f5152427f7d267f9d242f36df4af3bc435adfc7751aa44d1b5741fbc",
+      "after_sha256": "8a0dddf648ebc8110e4e7cca8b977e59c25ff521fbc38a4dfbe2fe6278f4570e",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 303
+        },
+        "code_fences_equal": false,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/cognitive-move-analysis-v1.md",
+      "changed": true,
+      "before_sha256": "4ff049258ec2e733385114031114d87d3c0569b14bea251f6b46f36aee43f373",
+      "after_sha256": "fce0ee13968deb5f18802d147a392ee0c2cb5834feaf1a97a655f70fd62f9c18",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 1
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 214
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/contrast-context-audit-v1.md",
+      "changed": true,
+      "before_sha256": "7af35ef19a5421ae7284449341d8c3cfd21ff5799526720536638382a617c390",
+      "after_sha256": "f125c3081af284ac7bc24c1f77f1a0872ec39c9652cb8d094dda6353fc58df75",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 359
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/cowork-preview-withdrawal.md",
+      "changed": true,
+      "before_sha256": "b539c224e64de94a670433f0ada5849b6e0ff2c41d8361c90ba9d3a03f1c0a9d",
+      "after_sha256": "c6c22bbf2aa89c640ca389ff44b27236a8ebb02bab321d45683042bcc4e5511b",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 86
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/cr001-generation-chain-audit.md",
+      "changed": true,
+      "before_sha256": "5865b1b337b4d5b57ab6e6e3ad6db33bcf8ee4b2cf55eefb9ddd36a7255bb8d9",
+      "after_sha256": "44d89ca328c7dd47431553245849c36335401ee149a5fcdf499c3587bc9b0303",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 391
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": [
+          {
+            "line": 91,
+            "text": "| `cr001-12` | 227 / 196 | 376 / 330 | Inviting and precise, with respect for participant choice |"
+          },
+          {
+            "line": 92,
+            "text": "| `cr001-20` | 256 / 203 | 366 / 296 | Considerate and straightforward, with directions stated explicitly |"
+          }
+        ]
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/cr001-preflight.md",
+      "changed": true,
+      "before_sha256": "62dca1e4f83c0393f03359d0b54b2647715903faca543032e0225f8198cd62f4",
+      "after_sha256": "27d10f04b8d0b508c6364bc633b0017b3f8644aad19d688ab4fe95b325a7e3c6",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 402
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/cr001-reader-preview-v1.md",
+      "changed": true,
+      "before_sha256": "2243c40e0577a498005f19d60391a3c9430e408ab7dde5ab1459868174c7d0b1",
+      "after_sha256": "533e2409d763765e8c1ce93a110e26914f033706ca65f3b96eb0a80bfb11d2b5",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 187
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/ershi-cohort-statistics-v1.md",
+      "changed": true,
+      "before_sha256": "c02437eb3cb86ac7a625583dbcabe57c2d9a10f2d046daceae6267b6dbfd783e",
+      "after_sha256": "22239a135343eb64c013f6452db74e85fa3835059933c9465ad57eed5b5c9ce5",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 224
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-calibration-v1.md",
+      "changed": true,
+      "before_sha256": "7eb7d0e75535a272af62c3a4aae950f180dd11a9c2d98bc479a3782e0ded43b1",
+      "after_sha256": "0f70126e9b463abbe7bd467d0f9c30706bd14541e0ece1dd4760afc9fd05afdb",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 259
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-qualification-v1.1.md",
+      "changed": true,
+      "before_sha256": "e34d264d75f1d6d52d553b0cb61b280a9214e788f66e1609b6aa57ce23c95d49",
+      "after_sha256": "869f02dc084f921bc9f8e011073394eb0cb26610a0464a625749248f0917987b",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 142
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-qualification-v1.md",
+      "changed": true,
+      "before_sha256": "eff864cac93e3ce525af68e6123ebc47282228674dc5946ea826b23ce58203a9",
+      "after_sha256": "1d67c685024b9d5a156e48c0446e611f0f9ebfc2aca81d862a2d05620e4197fd",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 195
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-review-a.md",
+      "changed": true,
+      "before_sha256": "e1fb2365b7fad460ad5d6a3f87d9dd460b19c1fc2e1c72298a7a63912e6f3cf9",
+      "after_sha256": "86a1db1c29a37218b04c00ab5f0e2b508b1cf322136e960cac994aa48b302195",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 113
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-review-b.md",
+      "changed": true,
+      "before_sha256": "f375dc182eb49fe3e9ffa92a7496624f96bd9f767244c60962e915c7099fc8ef",
+      "after_sha256": "ce84ffa1f077d46388d7123d4598f10c919da3ae598a64273d9d68ebd0a43f1c",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 167
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-staging-v1.md",
+      "changed": true,
+      "before_sha256": "4a09c923670d6b50f0c02676f995578d4dca06392cc3f8ba66c75b7a9e4bb9a9",
+      "after_sha256": "97d209c8fb20459a34fd4283a562e8f7e81b7b4e95b14752f4b84341076f73b0",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 299
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-development-inventory.md",
+      "changed": true,
+      "before_sha256": "cf3719f40592a9192d58e6bc1d91c3e93dfd8162906b9769bde631cafab65475",
+      "after_sha256": "bdd21b21f924123c2a5ed6dd20b033d2963cbf583619453f848a70110b30e7a6",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 371
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-provenance-extension-v1.md",
+      "changed": true,
+      "before_sha256": "a298da55264655a99fdeab2d1a78de1c474b6b42e8c4591c5df724d3af21b881",
+      "after_sha256": "f2899031cb30c7b937c64f214dea379c8fea2385da2514d774f06cf3371bb41f",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 265
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-repair-development-v1.md",
+      "changed": true,
+      "before_sha256": "f981a2853a6a5fdd3a01f324ef946c7392997bc5840b329d3b0a6bba91a5bea6",
+      "after_sha256": "29d0aa0a23fc312071d6efc9bd008bd39918e653d29930691b74477933a6fc4a",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 192
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-source-completeness-v1.md",
+      "changed": true,
+      "before_sha256": "6fc18c31fc629e3c7349ca9c4afc08b9c23605140ffcc8ae076fc6d7d1ac126c",
+      "after_sha256": "e48ed43fe30ff851b58c09de1adfb8a9e87f77daad007356a7189625f8bfb3b5",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 302
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/reader-anchor-feature-discovery-v1.md",
+      "changed": true,
+      "before_sha256": "b10442c78af2892240da0b32355b366667aa295febaad7a358c2baa372df9665",
+      "after_sha256": "ff8e1ab0841f17719ab9d0e6bc310b067d8554ce7beadb613adeffd973a57643",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 265
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/target-coverage-rescreen-v1.md",
+      "changed": true,
+      "before_sha256": "d03e198be2cdc65fec86593e2df1865aa772917d5f18444ea914bd04e2fe387a",
+      "after_sha256": "627e02b258276a9d745dbe45728f1fdbf2a187f2b879a17eada6d81221c0e0e6",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 708
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/targeted-media-discovery-v1.md",
+      "changed": true,
+      "before_sha256": "4dba9b447aa8d5d778461d1918c17bacf59899f4f9d75cc6ff585d8324edd75c",
+      "after_sha256": "ab7ee90676b74963680e268b345fa0d92b185f61561dfe2375bd9c99f6f1cd30",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 132
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/rhetorical-frame-measurement.md",
+      "changed": true,
+      "before_sha256": "ee457a33013565cc6f1ab46aeec4b06eaf7fd4112f6fa63fa2728c15c64c9e4b",
+      "after_sha256": "fc8d5ba9178fcbb9271abc0d3d08de551454ae00a2c4b516d5bfe57e52c19b10",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 125
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/rhetorical-mechanism-hypothesis.md",
+      "changed": true,
+      "before_sha256": "a25a90a954c0be53a4abf7c1d9781c38345de64b3a377dd9624b394df63cc412",
+      "after_sha256": "9e1e5a4db9449ff7714243ebe51e84f2187dfd7b211da5d9fd91fad0d1672c87",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 116
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/target-coverage-rescreen.md",
+      "changed": true,
+      "before_sha256": "0c0a6d7415926b096ae13c18f77bb12f0e99eb8183a48dba1c2ad761e79da930",
+      "after_sha256": "eab5a10ad214e0936907af685e714cb691e90540bdaee316870bf2ef5aef33d0",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 106
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/templates/experiment-report.md",
+      "changed": true,
+      "before_sha256": "5a08fcfe4a5ed45a037323743a5f5203dcf8466dcda8c5fdebee4a630bf82da5",
+      "after_sha256": "7f7ad9cc1756a3d48139f52c7ee47a19804fb6e716e49bd449aab6be102bcb7b",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 83
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/routes/compact-refiner/training.md",
+      "changed": true,
+      "before_sha256": "3ef98760c1c161c99aa45237a67d199ef32e6b5d5f5ee05ba71f17c89cdf7497",
+      "after_sha256": "4004b41090182f08bd8bae4839d446a5b74f719c787f84d6c178cdfbeaaac52a",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 1
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 359
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/smell-catalog.md",
+      "changed": true,
+      "before_sha256": "620c6e9eeba41b04ef8b02751c1808177f10ec8797b3460e9ab4db426213da77",
+      "after_sha256": "48b441bbb2ea0f34b1e8e9ff9378f6c295dda93ee2e5dd9591a4c65b05df4869",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 1304
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/target-feature-discovery.md",
+      "changed": true,
+      "before_sha256": "ac0c192f74bdc119204a62e28ad57aff4a1f8fac39520ccff22ea983a2c0ab33",
+      "after_sha256": "f0c346fc12fecd5ce9a48c1980d62ce2187b9c47dd96256b6a861d1c7d5b3282",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 404
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/translation-benchmark-v2.md",
+      "changed": true,
+      "before_sha256": "7850c5fc5f1e5b4d4b60180174c84d4bf9711e06cb067452755a66ea02bfe8f7",
+      "after_sha256": "cc220f33a32ea6a5a97d6760259f5e3c274f4d8c917942f93ac3568827a05369",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 354
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "docs/translation-benchmark.md",
+      "changed": true,
+      "before_sha256": "d2f7f630fbcff01c65dfbb146a139660418df42aa2b222d483419b86aa0c3236",
+      "after_sha256": "48634228d4d77088bb8891ddff30f19f4356cfd5af99ebf911b445f56d82dfc0",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 40
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/boundary-competition-development.md",
+      "changed": true,
+      "before_sha256": "9dceaaa589ac46c6b6a362db178577970703e17f38d7f8ec9bf0bced6891b796",
+      "after_sha256": "ceb48f4eac74867a382c9aae77f11647739cfe22f62fc64401973bfe9f982afd",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 544
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": [
+          {
+            "line": 43,
+            "text": "  （RethinkCWS，<https://doi.org/10.18653/v1/2020.emnlp-main.457>）。"
+          },
+          {
+            "line": 146,
+            "text": "passage log-ratio + 0.20 * normalized absolute sentence log-ratio + 0.10 *"
+          },
+          {
+            "line": 201,
+            "text": "> Which version makes you more willing to continue reading?"
+          }
+        ]
+      }
+    },
+    {
+      "path": "experiments/compositional-burden-probe.md",
+      "changed": true,
+      "before_sha256": "a3b79efc7a4512139ffccf80f164242085c13f6bfc0544c974e223f2e0ae0ae9",
+      "after_sha256": "9886c7d58dc524af9462af89988cf19c272c0eecf3788aee0cea438a58673d03",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 156
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/discourse-graph-probe.md",
+      "changed": true,
+      "before_sha256": "823ff5427d1510a3edd8211eeb830ec034afc4cf9949e6cf26d8f0fa390732de",
+      "after_sha256": "68297e90aef7d17071f730d5ea48ad5f4e729978a47cd094ba55e09cc281f2e1",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 135
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/handoff-transition-probe.md",
+      "changed": true,
+      "before_sha256": "42ce0ea4972211800e4f3fee5c4d5c155ffd5c67183879257dd00b4f4f1f4ff4",
+      "after_sha256": "b9284436e97b56fae4df0bb36f53cc2fb5a37109f64600d13d26c67c9dfcf295",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 186
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/head-final-modifier-probe.md",
+      "changed": true,
+      "before_sha256": "7c4b0d92fe95667ead5114705d44315a59fb394ea4eeed71f3afeac9aa6af138",
+      "after_sha256": "61d1ae66cb2ec051c08beae13e6be8dfcbf801c330e98061f1335afe659f2c40",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 133
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/integration-pairs-v1.md",
+      "changed": true,
+      "before_sha256": "0b2f53f506ff1e233a81cd033cda761f43e3019c4f445b8ce1ed0cd69ca22a61",
+      "after_sha256": "8255210f7fb72d8c4ab4b7409eba035cc447afa17612b7c9c15c7cec4e37fb17",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 145
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/modifier-bracketing-probe.md",
+      "changed": false,
+      "before_sha256": "505b9d2557dd3feb72d957c1c06d0df78af1ac29120ffec43c99388024b2d33c",
+      "after_sha256": "505b9d2557dd3feb72d957c1c06d0df78af1ac29120ffec43c99388024b2d33c",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 0
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": [
+          {
+            "line": 5,
+            "text": "Protocol `modifier-bracketing-probe-0.2` was frozen on 2026-08-31 before its"
+          },
+          {
+            "line": 6,
+            "text": "revised Stanza run, association count, candidate score, or reader task was"
+          },
+          {
+            "line": 8,
+            "text": "This is an exploratory computational gate over development-exposed material."
+          },
+          {
+            "line": 9,
+            "text": "It is not an intervention, a validation study, or an authorship analysis."
+          },
+          {
+            "line": 11,
+            "text": "The preceding character-to-word boundary model failed its frozen Stage 0 gate."
+          },
+          {
+            "line": 12,
+            "text": "The present protocol is a new hypothesis with new measurements; it does not"
+          },
+          {
+            "line": 13,
+            "text": "relax, replace, or reinterpret the failed thresholds after the fact."
+          },
+          {
+            "line": 15,
+            "text": "Version 0.1 completed one operational run but was not scientifically"
+          },
+          {
+            "line": 16,
+            "text": "interpretable. Twenty-six of 34 scorable candidates had a best-versus-second"
+          },
+          {
+            "line": 17,
+            "text": "margin below `1e-12`. The implementation compared each margin's percentile"
+          },
+          {
+            "line": 18,
+            "text": "midrank with 0.20; the tied minimum received midrank 0.382, making the intended"
+          },
+          {
+            "line": 19,
+            "text": "\"at or below the 20th-percentile value\" gate impossible. Version 0.2 freezes"
+          },
+          {
+            "line": 20,
+            "text": "two numerical corrections before rerunning: margins below `1e-12` become zero,"
+          },
+          {
+            "line": 21,
+            "text": "and raw values are compared with nearest-rank empirical quantiles. No semantic"
+          },
+          {
+            "line": 22,
+            "text": "threshold, corpus, candidate, association window, familiarity rule, or reader"
+          },
+          {
+            "line": 23,
+            "text": "outcome changed. Version 0.1 artifacts are retained as an operational"
+          },
+          {
+            "line": 28,
+            "text": "One reader reported that the words in `AI 原生时代全新算力服务需求` were"
+          },
+          {
+            "line": 29,
+            "text": "individually understandable but difficult to assemble, and that the late head"
+          },
+          {
+            "line": 30,
+            "text": "`需求` delayed a stable reading. This is a single development observation."
+          },
+          {
+            "line": 32,
+            "text": "The frozen SUBTLEX probe subsequently found no ambiguous character gap in the"
+          },
+          {
+            "line": 33,
+            "text": "pre-head string and assigned an unresolved distance of two. Across all 87"
+          },
+          {
+            "line": 34,
+            "text": "structural candidates it produced zero high-stratum cases. The observation is"
+          },
+          {
+            "line": 35,
+            "text": "therefore not explained by the tested character-to-word segmentation model."
+          },
+          {
+            "line": 39,
+            "text": "OpenAlex, Crossref, and Semantic Scholar were searched on 2026-08-31. Search"
+          },
+          {
+            "line": 40,
+            "text": "queries, result limits, API failures, and coverage limitations are preserved in"
+          },
+          {
+            "line": 41,
+            "text": "`modifier-bracketing-search-boundary.json`; source-to-claim links are in"
+          },
+          {
+            "line": 43,
+            "text": "English-metadata dominant. It does not establish novelty or a comprehensive"
+          },
+          {
+            "line": 44,
+            "text": "Chinese-language literature review. Semantic Scholar returned HTTP 429, and"
+          },
+          {
+            "line": 45,
+            "text": "OpenAlex exhausted its anonymous daily search budget after bounded pages."
+          },
+          {
+            "line": 47,
+            "text": "The operational route is analogous rather than directly validated for Chinese"
+          },
+          {
+            "line": 50,
+            "text": "- Lauer (1995, <https://doi.org/10.3115/981658.981665>) compared statistical"
+          },
+          {
+            "line": 51,
+            "text": "  noun-compound analyses and found a dependency model more accurate than a"
+          },
+          {
+            "line": 52,
+            "text": "  deepest-constituent model in the reported English task."
+          },
+          {
+            "line": 54,
+            "text": "  <https://doi.org/10.3115/V1/W14-5708>) combined lexical, relational, and"
+          },
+          {
+            "line": 55,
+            "text": "  coordinate association evidence for multiword noun-compound bracketing."
+          },
+          {
+            "line": 56,
+            "text": "- Nakov (<https://arxiv.org/abs/1912.01113>) treated structural bracketing and"
+          },
+          {
+            "line": 57,
+            "text": "  explicit paraphrases of hidden noun relations as distinct problems."
+          },
+          {
+            "line": 58,
+            "text": "- Fares (2016, <https://doi.org/10.18653/V1/P16-3011>) likewise represented"
+          },
+          {
+            "line": 59,
+            "text": "  bracketing and semantic relation interpretation as linked but separable"
+          },
+          {
+            "line": 61,
+            "text": "- Dronjic (2011, <https://doi.org/10.1093/wsr/wsr005>) reviewed evidence that"
+          },
+          {
+            "line": 62,
+            "text": "  the word, rather than the morpheme, is the basic Mandarin compound"
+          },
+          {
+            "line": 65,
+            "text": "  <https://doi.org/10.1177/21582440241256249>) reported processing differences"
+          },
+          {
+            "line": 66,
+            "text": "  involving word frequency, semantic transparency, and word structure."
+          },
+          {
+            "line": 68,
+            "text": "None of these sources shows that the reader-localized construction is a"
+          },
+          {
+            "line": 69,
+            "text": "general smell or that the proposed measurement will work."
+          },
+          {
+            "line": 75,
+            "text": "Familiar words in a long head-final nominal sequence support several similarly"
+          },
+          {
+            "line": 76,
+            "text": "plausible modifier-attachment trees. The reader must retain alternatives until"
+          },
+          {
+            "line": 77,
+            "text": "the final head, increasing integration effort."
+          },
+          {
+            "line": 81,
+            "text": "The attachment structure may be recoverable, but relations such as how an"
+          },
+          {
+            "line": 82,
+            "text": "`AI 原生时代` makes a service requirement `全新` remain unstated. Structural"
+          },
+          {
+            "line": 83,
+            "text": "reordering without an explicit relation will therefore be insufficient."
+          },
+          {
+            "line": 85,
+            "text": "### H-TERM: domain term or name mismatch"
+          },
+          {
+            "line": 87,
+            "text": "Low corpus association may reflect an established product name, technical"
+          },
+          {
+            "line": 88,
+            "text": "compound, title, or new domain term absent from the reference corpus. The"
+          },
+          {
+            "line": 89,
+            "text": "measurement would then mistake corpus coverage for reader friction."
+          },
+          {
+            "line": 93,
+            "text": "The nominal span may only be a salient symptom. Clause density, proposition"
+          },
+          {
+            "line": 94,
+            "text": "load, referential structure, or surrounding argument organization may account"
+          },
+          {
+            "line": 99,
+            "text": "Stanza segmentation or dependency errors may manufacture the candidate span or"
+          },
+          {
+            "line": 100,
+            "text": "its apparent ambiguity. Parser agreement is not linguistic ground truth."
+          },
+          {
+            "line": 102,
+            "text": "The predictions that distinguish these candidates are frozen in"
+          },
+          {
+            "line": 108,
+            "text": "The probe uses exactly the 87 instances in"
+          },
+          {
+            "line": 111,
+            "text": "They come from 67 development documents in `post_reader_handoff_v2` and all 93"
+          },
+          {
+            "line": 112,
+            "text": "discovery-exposed documents in `post_reader_handoff_v3`. The 30-document"
+          },
+          {
+            "line": 113,
+            "text": "validation reserve is excluded by the earlier candidate generation and must"
+          },
+          {
+            "line": 116,
+            "text": "All association counts use only the same 160 development/discovery documents"
+          },
+          {
+            "line": 117,
+            "text": "and the frozen complete-prose gate. Counts for a candidate exclude its entire"
+          },
+          {
+            "line": 118,
+            "text": "source document. This leave-one-document-out rule avoids using repetition"
+          },
+          {
+            "line": 119,
+            "text": "inside one article as attachment support."
+          },
+          {
+            "line": 123,
+            "text": "Parsing runs only on `gx10` with Stanza `zh-hans/gsdsimp`, processors"
+          },
+          {
+            "line": 124,
+            "text": "`tokenize,pos,lemma,depparse`, and the already recorded model fingerprint"
+          },
+          {
+            "line": 127,
+            "text": "For every candidate, reparsing must reproduce the source sentence, head form,"
+          },
+          {
+            "line": 128,
+            "text": "left boundary, and pre-head lexical-token count. The target sequence contains"
+          },
+          {
+            "line": 129,
+            "text": "all non-punctuation tokens from the left boundary through the head. Candidates"
+          },
+          {
+            "line": 130,
+            "text": "with fewer than four or more than 10 target tokens, an internal verb, an overt"
+          },
+          {
+            "line": 131,
+            "text": "coordination or `的/之` boundary, or failed alignment abstain. No token or"
+          },
+          {
+            "line": 132,
+            "text": "dependency correction is allowed by hand."
+          },
+          {
+            "line": 136,
+            "text": "Content-token lemmas are case-folded; missing lemmas fall back to surface form."
+          },
+          {
+            "line": 137,
+            "text": "The association corpus records, separately by document and source:"
+          },
+          {
+            "line": 139,
+            "text": "- token occurrence count and document/source frequency;"
+          },
+          {
+            "line": 140,
+            "text": "- ordered token-pair count within the next four content tokens;"
+          },
+          {
+            "line": 142,
+            "text": "- exact target-sequence document and source frequency;"
+          },
+          {
+            "line": 145,
+            "text": "For candidate document `d`, all counts contributed by `d` are subtracted."
+          },
+          {
+            "line": 146,
+            "text": "The primary attachment probability is Lauer-style conditional association:"
+          },
+          {
+            "line": 154,
+            "text": "Adjacent NPMI, pair document/source frequency, coordinate evidence, and exact"
+          },
+          {
+            "line": 155,
+            "text": "sequence termhood remain separate diagnostics. They do not alter the primary"
+          },
+          {
+            "line": 158,
+            "text": "A token is `cross-corpus familiar` only when it occurs in at least five other"
+          },
+          {
+            "line": 159,
+            "text": "documents and at least two sources. The fraction of familiar target tokens is"
+          },
+          {
+            "line": 160,
+            "text": "reported. Low familiarity is evidence for H-TERM or corpus insufficiency, not"
+          },
+          {
+            "line": 165,
+            "text": "Enumerate every full binary bracketing over the target word sequence. Every"
+          },
+          {
+            "line": 166,
+            "text": "constituent inherits its rightmost lexical head. Combining left and right"
+          },
+          {
+            "line": 167,
+            "text": "constituents adds one directed attachment from the left constituent's head"
+          },
+          {
+            "line": 168,
+            "text": "to the right constituent's head. A tree score is the sum of log conditional"
+          },
+          {
+            "line": 171,
+            "text": "Softmax normalization over all tree scores yields:"
+          },
+          {
+            "line": 174,
+            "text": "- best-versus-second tree margin divided by `n - 1` attachments;"
+          },
+          {
+            "line": 176,
+            "text": "- number of best-tree attachments supported by no more than one other document"
+          },
+          {
+            "line": 178,
+            "text": "- best bracketing and its attachment audit."
+          },
+          {
+            "line": 180,
+            "text": "The probe exposes this vector and does not collapse it into a generic writing-"
+          },
+          {
+            "line": 185,
+            "text": "Percentiles are computed over scorable instances in the fixed 87-candidate"
+          },
+          {
+            "line": 186,
+            "text": "pool. This makes the run exploratory and relative to this pool; it does not"
+          },
+          {
+            "line": 189,
+            "text": "The 80th-, 20th-, and 50th-percentile gates use the nearest-rank empirical"
+          },
+          {
+            "line": 190,
+            "text": "value: sort `n` measurements and select item `ceil(p * n)`, with one-based"
+          },
+          {
+            "line": 191,
+            "text": "indexing. The gate compares the raw measurement to that value. Midrank"
+          },
+          {
+            "line": 196,
+            "text": "- normalized tree entropy is at or above the pooled 80th percentile;"
+          },
+          {
+            "line": 197,
+            "text": "- normalized best-versus-second margin is at or below the pooled 20th"
+          },
+          {
+            "line": 199,
+            "text": "- at least 80% of its target tokens are cross-corpus familiar;"
+          },
+          {
+            "line": 200,
+            "text": "- at least two best-tree attachments have support from no more than one other"
+          },
+          {
+            "line": 203,
+            "text": "The working example must be fully aligned, have familiar-token fraction at"
+          },
+          {
+            "line": 204,
+            "text": "least 0.80, entropy at or above the pooled median, margin at or below the pooled"
+          },
+          {
+            "line": 205,
+            "text": "median, and at least two weak best-tree attachments. Failure challenges"
+          },
+          {
+            "line": 206,
+            "text": "H-BRACKET under this measurement and stops the route."
+          },
+          {
+            "line": 208,
+            "text": "The multi-source gate additionally requires at least eight high-competition"
+          },
+          {
+            "line": 209,
+            "text": "documents from at least three sources. Select at most three documents per"
+          },
+          {
+            "line": 210,
+            "text": "source by the fixed tuple of decreasing entropy, increasing margin, decreasing"
+          },
+          {
+            "line": 211,
+            "text": "familiarity-adjusted weak-edge count, and SHA-256 tie break. The selected eight"
+          },
+          {
+            "line": 212,
+            "text": "must include at least four cases without a proper-name, numeric, ASCII, or"
+          },
+          {
+            "line": 213,
+            "text": "quoted-title anchor. This is a coverage requirement, not manual deletion of"
+          },
+          {
+            "line": 214,
+            "text": "anchored cases; anchor-stratified counts remain in the report."
+          },
+          {
+            "line": 216,
+            "text": "Failure of the working-example gate or multi-source gate ends version 0.2. Do"
+          },
+          {
+            "line": 217,
+            "text": "not change association windows, smoothing, familiarity counts, percentiles,"
+          },
+          {
+            "line": 218,
+            "text": "parser tokens, or anchor definitions after seeing results."
+          },
+          {
+            "line": 222,
+            "text": "- Example and multi-source gates pass, anchors do not dominate: retain"
+          },
+          {
+            "line": 223,
+            "text": "  H-BRACKET as a test-ready development candidate and design a separate"
+          },
+          {
+            "line": 225,
+            "text": "- High scores occur mainly in anchors or unfamiliar terms: retain H-TERM and"
+          },
+          {
+            "line": 227,
+            "text": "- The example has low tree entropy despite valid measurement: challenge"
+          },
+          {
+            "line": 229,
+            "text": "- Parser alignment or association coverage fails: the result is indeterminate;"
+          },
+          {
+            "line": 230,
+            "text": "  revise measurement on independent material rather than interpreting it as"
+          },
+          {
+            "line": 232,
+            "text": "- Global passage features may coexist with any result and require a future"
+          },
+          {
+            "line": 235,
+            "text": "No outcome from this computational probe authorizes Project 8 directly. A"
+          },
+          {
+            "line": 236,
+            "text": "reader experiment still requires a separately frozen operator, preservation"
+          },
+          {
+            "line": 237,
+            "text": "audit, high/low matching, position controls, and the same low-burden continued-"
+          },
+          {
+            "line": 242,
+            "text": "The tracked implementation will emit token and attachment audits, candidate"
+          },
+          {
+            "line": 243,
+            "text": "measurements, gate attrition, source/anchor composition, parser identity, input"
+          },
+          {
+            "line": 244,
+            "text": "hashes, and a summary under ignored `feature_runs/`. Two independent `gx10`"
+          },
+          {
+            "line": 245,
+            "text": "runs must be byte-identical before the result is interpreted."
+          },
+          {
+            "line": 249,
+            "text": "Version 0.2 ran twice on `gx10` and produced byte-identical artifacts. It parsed"
+          },
+          {
+            "line": 250,
+            "text": "1,393 complete passages from 133 of the 160 requested documents, yielding"
+          },
+          {
+            "line": 251,
+            "text": "5,670 sentences, 9,100 content-token types, and 160,747 ordered pair types. The"
+          },
+          {
+            "line": 252,
+            "text": "30-document validation reserve was not requested or opened."
+          },
+          {
+            "line": 254,
+            "text": "Of the 87 frozen candidates, 34 contain only the prespecified content POS and"
+          },
+          {
+            "line": 255,
+            "text": "are scorable. The other 53 abstain because a non-content token occurs inside"
+          },
+          {
+            "line": 256,
+            "text": "the target sequence; there are zero fatal alignment failures. This exclusion"
+          },
+          {
+            "line": 257,
+            "text": "is mechanical and was fixed before the run."
+          },
+          {
+            "line": 259,
+            "text": "The reader example passes its case-level gate:"
+          },
+          {
+            "line": 262,
+            "text": "- normalized tree entropy: 0.822, above the empirical median 0.636;"
+          },
+          {
+            "line": 263,
+            "text": "- best-versus-second margin: 0.000, at the empirical median 0.000;"
+          },
+          {
+            "line": 266,
+            "text": "- entropy percentile among the 34 scorable candidates: 0.765."
+          },
+          {
+            "line": 268,
+            "text": "The example result is a successful localization of the one observed case, not"
+          },
+          {
+            "line": 269,
+            "text": "independent evidence for a general selector. Its best tree has only 0.065"
+          },
+          {
+            "line": 270,
+            "text": "posterior probability, and four attachments have support from at most one"
+          },
+          {
+            "line": 284,
+            "text": "The five high-entropy, zero-margin instances are low-familiarity names or"
+          },
+          {
+            "line": 285,
+            "text": "technical strings, including source phrases beginning `Multi Animate`,"
+          },
+          {
+            "line": 288,
+            "text": "the same high-entropy/low-margin pattern. This is consistent with H-TERM or"
+          },
+          {
+            "line": 289,
+            "text": "association-corpus sparsity and yields no multi-source H-BRACKET set."
+          },
+          {
+            "line": 292,
+            "text": "H-BRACKET only as a localized candidate explanation for the reader example;"
+          },
+          {
+            "line": 293,
+            "text": "reject the current tree-entropy vector as an intervention selector. H-SEMANTIC,"
+          },
+          {
+            "line": 294,
+            "text": "in which the hidden relations between familiar words remain unspecified, is"
+          },
+          {
+            "line": 295,
+            "text": "now the stronger development direction. This comparison does not establish"
+          },
+          {
+            "line": 298,
+            "text": "Do not create Project 8, relax the familiarity rule, lower the entropy gate, or"
+          },
+          {
+            "line": 299,
+            "text": "manually remove names from these outcomes. A new test of familiar-word weak"
+          },
+          {
+            "line": 300,
+            "text": "relations must freeze its measurement and use an independent corpus rather"
+          },
+          {
+            "line": 305,
+            "text": "The tracked script copied to `gx10` has SHA-256"
+          }
+        ]
+      }
+    },
+    {
+      "path": "experiments/nominal-chain-integration-probe.md",
+      "changed": true,
+      "before_sha256": "ed18a1c2e1bb9ea8e7555996d4e2668c361e23a4011a31c4431a11067b963818",
+      "after_sha256": "4c85ba8127a94bd668fb6ed5e35c8a07824746ace6c62d28576860b06e4cc0d7",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 181
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/openrouter-corpus-model-interface-audit.md",
+      "changed": true,
+      "before_sha256": "69479897e79c72c2e4f7289525ec355ce3cd19107d4a7571674a682193bb03e0",
+      "after_sha256": "e54a88ea28f976cf8be3839391dd5db4c4cde376f04d66ec64744821ac2c279a",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 113
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/pilot-direction-probe.md",
+      "changed": false,
+      "before_sha256": "639c058365c320db4fbf690fc325fb0c53ac64acaa5a4aac0a6bfb2501ff753a",
+      "after_sha256": "639c058365c320db4fbf690fc325fb0c53ac64acaa5a4aac0a6bfb2501ff753a",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 0
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": [
+          {
+            "line": 5,
+            "text": "This is a one-off feasibility experiment for finding promising research"
+          },
+          {
+            "line": 6,
+            "text": "directions. It is not a product component, an AI detector, or a confirmatory"
+          },
+          {
+            "line": 9,
+            "text": "The probe asks whether the current small corpus contains reproducible signals"
+          },
+          {
+            "line": 10,
+            "text": "worth investigating before the larger corpus arrives."
+          },
+          {
+            "line": 21,
+            "text": "- remove the known translated post document"
+          },
+          {
+            "line": 23,
+            "text": "- compare pre-period InfoQ with pre-period Machine Heart to estimate source"
+          },
+          {
+            "line": 28,
+            "text": "- the pilot is not a clean corpus;"
+          },
+          {
+            "line": 29,
+            "text": "- additional unmarked translated or compiled documents may remain;"
+          },
+          {
+            "line": 30,
+            "text": "- publication topic and article format are not matched;"
+          },
+          {
+            "line": 31,
+            "text": "- there are only 20 same-source documents;"
+          },
+          {
+            "line": 32,
+            "text": "- current page selection is not representative of either period."
+          },
+          {
+            "line": 39,
+            "text": "- 20,000 GPU label permutations for dense features;"
+          },
+          {
+            "line": 40,
+            "text": "- 5,000 GPU label permutations for sparse patterns;"
+          },
+          {
+            "line": 45,
+            "text": "- PCA and fold-local feature-selected ridge leave-one-out diagnostics."
+          },
+          {
+            "line": 47,
+            "text": "Dense and sparse matrix computation ran on an RTX 4090 with PyTorch CUDA. Only"
+          },
+          {
+            "line": 48,
+            "text": "document IDs, numeric features, and extracted short patterns were uploaded to"
+          },
+          {
+            "line": 49,
+            "text": "the cloud instance. Article bodies remained local."
+          },
+          {
+            "line": 55,
+            "text": "| Feature | Pre mean | Post mean | Hedges' g | Known-translation-removed g | Permutation p | BH q |"
+          },
+          {
+            "line": 61,
+            "text": "All three directions survived leave-one-out removal. Total punctuation density"
+          },
+          {
+            "line": 62,
+            "text": "also had a small pre-period source effect relative to its time effect. Dash and"
+          },
+          {
+            "line": 63,
+            "text": "punctuation-entropy differences had larger source sensitivity but remained"
+          },
+          {
+            "line": 64,
+            "text": "smaller than the InfoQ time effect."
+          },
+          {
+            "line": 66,
+            "text": "The result is real in this sample, but its interpretation is unresolved. It may"
+          },
+          {
+            "line": 71,
+            "text": "- newer InfoQ formatting and editorial conventions;"
+          },
+          {
+            "line": 73,
+            "text": "- code, lists, headings, and product walkthrough structure."
+          },
+          {
+            "line": 75,
+            "text": "The next probe must strip or separately model headings, code, quotations, and"
+          },
+          {
+            "line": 76,
+            "text": "list formatting before treating punctuation as a smell."
+          },
+          {
+            "line": 80,
+            "text": "| Feature | Pre mean | Post mean | Hedges' g | BH q | Interpretation risk |"
+          },
+          {
+            "line": 82,
+            "text": "| Lexical MATTR | 0.73 | 0.77 | 1.13 | 0.35 | topic and technical vocabulary |"
+          },
+          {
+            "line": 83,
+            "text": "| Adjacent-sentence content Jaccard | 0.07 | 0.05 | -0.98 | 0.52 | topic breadth and article length |"
+          },
+          {
+            "line": 84,
+            "text": "| Long-paragraph ratio | 0.02 | approximately 0.00 | -0.80 | 0.52 | web formatting |"
+          },
+          {
+            "line": 85,
+            "text": "| Mean paragraph CJK characters | 59.72 | 40.33 | -0.81 | 0.52 | editorial layout |"
+          },
+          {
+            "line": 86,
+            "text": "| Clause relations per sentence | 3.49 | 2.76 | -0.81 | 0.52 | parser and genre |"
+          },
+          {
+            "line": 88,
+            "text": "These effects are large enough to retain as hypotheses, but the current sample"
+          },
+          {
+            "line": 89,
+            "text": "does not support a reliable claim after multiple testing."
+          },
+          {
+            "line": 91,
+            "text": "The higher post-period lexical diversity contradicts a simple “AI text has"
+          },
+          {
+            "line": 92,
+            "text": "lower lexical entropy” hypothesis. That direction should not be adopted without"
+          },
+          {
+            "line": 97,
+            "text": "| Family | Median absolute g | Features with absolute g at least 0.8 | BH q below 0.1 |"
+          },
+          {
+            "line": 110,
+            "text": "The current pilot does not support the initial idea that ordinary repetition"
+          },
+          {
+            "line": 111,
+            "text": "metrics or a generic discourse-marker list are the main direction."
+          },
+          {
+            "line": 115,
+            "text": "No sparse pattern survived Benjamini-Hochberg correction over 6,597 candidates."
+          },
+          {
+            "line": 116,
+            "text": "Sparse findings therefore generate hypotheses only."
+          },
+          {
+            "line": 118,
+            "text": "The most interesting manually consolidated pattern is contrastive reframing:"
+          },
+          {
+            "line": 120,
+            "text": "| Pattern | Pre InfoQ documents | Post InfoQ documents | Pre occurrences | Post occurrences |"
+          },
+          {
+            "line": 123,
+            "text": "| Same pattern after removing the known translation | 0 | 4 of 9 | 0 | 15 |"
+          },
+          {
+            "line": 129,
+            "text": "Representative post-period constructions include repeated sequences shaped as:"
+          },
+          {
+            "line": 139,
+            "text": "> generated-era prose may overuse contrast and emphasis frames to create a"
+          },
+          {
+            "line": 140,
+            "text": "> sense of argument, even when a direct declarative sentence would carry the"
+          },
+          {
+            "line": 143,
+            "text": "This direction is more specific and editable than generic “AI style.” It needs"
+          },
+          {
+            "line": 144,
+            "text": "a preregistered detector and a matched-corpus replication."
+          },
+          {
+            "line": 148,
+            "text": "PCA did not reveal a single global cohort axis:"
+          },
+          {
+            "line": 152,
+            "text": "- content, format, and source variation dominate the first component."
+          },
+          {
+            "line": 154,
+            "text": "Fold-local top-five-feature ridge leave-one-out:"
+          },
+          {
+            "line": 158,
+            "text": "- label-permutation p varied around 0.06–0.08 across 100-permutation runs;"
+          },
+          {
+            "line": 161,
+            "text": "The features selected in nearly every fold were punctuation density,"
+          },
+          {
+            "line": 162,
+            "text": "punctuation entropy, dash density, punctuation dependency ratio, and title"
+          },
+          {
+            "line": 163,
+            "text": "length. The classifier is therefore mostly a punctuation and editorial-format"
+          },
+          {
+            "line": 168,
+            "text": "| Feature subset | Accuracy | AUC | Label-permutation p |"
+          },
+          {
+            "line": 177,
+            "text": "The below-chance results in the last two rows reflect severe fold instability,"
+          },
+          {
+            "line": 178,
+            "text": "not useful reverse classifiers. With only 20 documents, the selected directions"
+          },
+          {
+            "line": 179,
+            "text": "change when one document is held out."
+          },
+          {
+            "line": 181,
+            "text": "Traditional machine learning is feasible, but it currently confirms only that"
+          },
+          {
+            "line": 182,
+            "text": "the punctuation family contains a sample signal. It does not provide a stable"
+          },
+          {
+            "line": 187,
+            "text": "### Priority 1: Contrastive and emphatic rhetorical frames"
+          },
+          {
+            "line": 199,
+            "text": "- freeze a lexicon and syntactic detector before viewing more data;"
+          },
+          {
+            "line": 201,
+            "text": "- distinguish necessary logical contrast from ornamental reframing;"
+          },
+          {
+            "line": 202,
+            "text": "- replicate on the larger matched corpus."
+          },
+          {
+            "line": 209,
+            "text": "- only family surviving dense multiple-testing correction;"
+          },
+          {
+            "line": 210,
+            "text": "- stable under leave-one-out and known-translation removal."
+          },
+          {
+            "line": 214,
+            "text": "- separate body prose from headings, lists, code, quotations, and transcripts;"
+          },
+          {
+            "line": 215,
+            "text": "- split dash uses into range/hyphen, parenthetical insertion, quotation, and"
+          },
+          {
+            "line": 218,
+            "text": "- test whether punctuation is a symptom of rhetorical templates rather than an"
+          },
+          {
+            "line": 225,
+            "text": "- post-period adjacent content overlap is lower;"
+          },
+          {
+            "line": 226,
+            "text": "- the direction survives leave-one-out and translation removal;"
+          },
+          {
+            "line": 227,
+            "text": "- could measure idea hopping or weak local continuity."
+          },
+          {
+            "line": 231,
+            "text": "- calculate entity and noun-chain carryover;"
+          },
+          {
+            "line": 232,
+            "text": "- control sentence count, article length, and topic breadth;"
+          },
+          {
+            "line": 233,
+            "text": "- inspect paragraph-boundary versus within-paragraph cohesion separately."
+          },
+          {
+            "line": 239,
+            "text": "- shorter paragraphs and fewer clause relations per sentence appear in post"
+          },
+          {
+            "line": 241,
+            "text": "- may interact with web formatting and list-heavy writing."
+          },
+          {
+            "line": 245,
+            "text": "- normalize out headings and bullet lists;"
+          },
+          {
+            "line": 247,
+            "text": "- add constituency production and clause-depth features only if the effect"
+          },
+          {
+            "line": 252,
+            "text": "No current repetition or regularity feature had absolute g of at least 0.8."
+          },
+          {
+            "line": 253,
+            "text": "Do not invest in a large repetition subsystem until a different definition of"
+          },
+          {
+            "line": 258,
+            "text": "The current causal, contrast, enumeration, summary, framing, hedge, booster, and"
+          },
+          {
+            "line": 259,
+            "text": "directive category totals did not separate the cohorts reliably. Broad category"
+          },
+          {
+            "line": 260,
+            "text": "counts hide the more specific “not X, but Y” construction."
+          },
+          {
+            "line": 264,
+            "text": "The small linear model is unstable and driven by editorial punctuation."
+          },
+          {
+            "line": 265,
+            "text": "Improving its accuracy would move the project toward authorship classification"
+          },
+          {
+            "line": 266,
+            "text": "without identifying editable reader-disliked behavior."
+          },
+          {
+            "line": 270,
+            "text": "The direction-finding workflow is feasible:"
+          },
+          {
+            "line": 272,
+            "text": "- deterministic parsing completed for all 30 documents;"
+          },
+          {
+            "line": 273,
+            "text": "- dense and sparse matrices were produced;"
+          },
+          {
+            "line": 274,
+            "text": "- GPU permutation and linear diagnostics completed in seconds;"
+          },
+          {
+            "line": 275,
+            "text": "- known translation and source sensitivity can be measured explicitly."
+          },
+          {
+            "line": 277,
+            "text": "The pilot does not support a broad conclusion about AI-generated Chinese text."
+          },
+          {
+            "line": 278,
+            "text": "It does support two concrete next directions:"
+          },
+          {
+            "line": 281,
+            "text": "2. punctuation and inserted emphasis after removing editorial-format effects."
+          },
+          {
+            "line": 283,
+            "text": "Local cohesion is the strongest secondary direction. Generic repetition,"
+          },
+          {
+            "line": 284,
+            "text": "generic discourse markers, and general classification should not receive more"
+          }
+        ]
+      }
+    },
+    {
+      "path": "experiments/post-development-motif-inventory.md",
+      "changed": true,
+      "before_sha256": "d4b962a36fe90bde73b130e5d6372a845c36e1d35667fe94b687c322d26c1cd5",
+      "after_sha256": "4c6e0acad3dd5c7a999db590d31abba9183f41b3f91c2275d3ccd768dc0af7da",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 139
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/post-reader-corpus-expansion-v2.md",
+      "changed": true,
+      "before_sha256": "eaca49168ee3d23f2243f89e9784bced7616d792b4bb7a07a1c957179ebb00f7",
+      "after_sha256": "4e8a197b76f4e2c78a5bd50a03a8bc5c1acb26df370c2679f60a0dde8743af0b",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 231
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/post-reader-corpus-expansion-v3.md",
+      "changed": true,
+      "before_sha256": "d018534283258f97074e6ab4349f7e0179fd1a5123087ace69dce38760e3f6a0",
+      "after_sha256": "48a4ad6c1ef1297b3cb525bd1987ed2d35130036da7abe9fd9d16494862f7fb4",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 144
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/post-reader-corpus-handoff.md",
+      "changed": true,
+      "before_sha256": "a399357ed313a2cf0421f6616ae2b2ac382c8d02602ae9a749178ed91c7db133",
+      "after_sha256": "4e13c482a5f9b0e7e6c6c781729efb1326c5f1a00ec5d3979c56e58a41d47225",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 223
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/reader-friction-screen-v1.md",
+      "changed": true,
+      "before_sha256": "eb7435079b915f673423e5cfa2da6deae1e14b7081caed36a9f8261b51d70ca0",
+      "after_sha256": "5de17a6af814c2a366228fb55b11ea9d33d53c41b82f761dc406dd5219a2ebcd",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 169
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": [
+          {
+            "line": 32,
+            "text": "> After reading this original passage, how willing are you to continue?"
+          }
+        ]
+      }
+    },
+    {
+      "path": "experiments/reader-friction-screen-v2.md",
+      "changed": true,
+      "before_sha256": "f8e922c588d9404f04670465844d4f43538f81e44f1520eebb2b14a9dab10534",
+      "after_sha256": "84578a7c6f08d42a176ab4fec8f7447c6ccf8f574e154eef439cb740788a6e76",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 157
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/reader-friction-screen-v3.md",
+      "changed": true,
+      "before_sha256": "9920c83d0ab522b9566af7521b9f1d960a445335231c26377410907e628a0b9c",
+      "after_sha256": "0df7facef0207c5d08cd81896d99642ede97c1cc51f7cb5541930661d1e0ed93",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 157
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/refinement-pairs-v2.md",
+      "changed": true,
+      "before_sha256": "fa091321a12f7485027786d725af48f48ff0a51c54013a6d9dc973f470cda69e",
+      "after_sha256": "606893c50d937ecc675c45bb061ef527d43a42f8b2a793811b6510c18dcfb88c",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 171
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": [
+          {
+            "line": 11,
+            "text": "> Which version makes you more willing to continue reading?"
+          }
+        ]
+      }
+    },
+    {
+      "path": "experiments/refinement-pairs-v3.md",
+      "changed": true,
+      "before_sha256": "71595fd64d6de4795b5dbd56622b937f622fd4a43e04bbe87790eba75fb41d67",
+      "after_sha256": "c767c1199ceeaab6312260ac60a5f728d40d39a16b75cca98787e0f15ba54280",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 116
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/refinement-pairs-v4.md",
+      "changed": true,
+      "before_sha256": "18a2e7d8782b86d43e2875fab38404f3f32c92bd4970a14324a5a1d110bff1af",
+      "after_sha256": "409c291ffe82fe5918d10f127f59170b3ac7bd683b0cb832cd671d9906ab0687",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 142
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "experiments/relation-support-probe.md",
+      "changed": true,
+      "before_sha256": "46cdc42230471701918ff54917318161b7d8b8a8f3288370c858e4800b09d187",
+      "after_sha256": "879611b30f3c4c3317f0abb8a165c281ad1d00336ea668a60e5195ebcbecd355",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 197
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "data/translation_v2/README.md",
+      "changed": true,
+      "before_sha256": "55e0c5ac3718936e87b1147f24bd8e4500214576b869e6cd5e02e735c71186e5",
+      "after_sha256": "d918003a580f079cd3b492ad8be9055ae824cd264598b806d5910e7bea5acb29",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 21
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "changed": true,
+      "before_sha256": "2826e7d554fcc28888a24dde7750e31b0a56a494db2992d9a2043b188cf3c3b7",
+      "after_sha256": "0f3e2a4f1a43f5c9e955785eb15e45891e61c19e430967b72e0f4d7ded4b7b44",
+      "checks": {
+        "inline_code": {
+          "missing": [],
+          "added_count": 0
+        },
+        "link_targets": {
+          "missing": [],
+          "added_count": 0
+        },
+        "urls": {
+          "missing": [],
+          "added_count": 0
+        },
+        "chinese_runs": {
+          "missing": [],
+          "added_count": 17
+        },
+        "code_fences_equal": true,
+        "heading_levels_equal": true,
+        "table_shapes_equal": true,
+        "english_lines": []
+      }
+    },
+    {
+      "path": "src/deaiodorant/corpus/label_studio_review.py",
+      "changed": true,
+      "before_sha256": "ecedbe39ef2bbbec423d7252a20bf95d334d4a5acffd9e56151ec075595c22de",
+      "after_sha256": "ea0332b1ac51a6caac4ce5d62bb5834967bc0ea2474a1a171eacb8c17747133e",
+      "checks": {}
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "frame_index": 8709,
+  "url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA",
+  "doc_id": "a4007204435ea4d0895d0d46",
+  "sitemap_lastmod": null,
+  "intended_cohort": "post",
+  "publication_date": "unknown_until_article_capture",
+  "exclusion_reasons": [],
+  "selected": true,
+  "selection_rank": 10,
+  "capture": {
+    "url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA",
+    "requested_at": "2026-09-14T06:34:33.788549+00:00",
+    "capture_file": "raw/a4007204435ea4d0895d0d46.html",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA",
+    "headers": {
+      "Content-Type": "text/html;charset=utf-8",
+      "Date": "Mon, 14 Sep 2026 06:34:35 GMT"
+    },
+    "completed_at": "2026-09-14T06:34:34.950001+00:00",
+    "complete_response": true,
+    "bytes": 335956,
+    "sha256": "c2b2e04c10707641da5c9fb7251f6f0626ac6a9e73715ae60a3a88b32d2b973f"
+  },
+  "admission_status": "unreviewed_staging_not_admitted",
+  "smell_label": null,
+  "authorship_label": null,
+  "training_rights": "unverified",
+  "quality_status": "unreviewed_no_quality_admission",
+  "visibility_status": "unreviewed_snapshot_only",
+  "exposure_status": "identity_checked_near_duplicate_and_missing_historical_handoffs_pending",
+  "status": "captured_unreviewed",
+  "metadata": {
+    "doc_id": "a4007204435ea4d0895d0d46",
+    "source": "infoq",
+    "period": null,
+    "url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA",
+    "title": "培养 Data Superhero 的思维模式",
+    "authors": [
+      "Amilee Alesna"
+    ],
+    "translators": [],
+    "translation_evidence": [
+      "original_link_marker"
+    ],
+    "published_at": "2025-12-16",
+    "modified_at": null,
+    "collected_at": "2026-09-14T06:34:33.788549+00:00",
+    "crawl_at": null,
+    "date_confidence": "embedded_server_state",
+    "views": 4915,
+    "comments": 0,
+    "likes": 0,
+    "collects": 1,
+    "visibility_evidence": "page_view_snapshot",
+    "acquisition_method": "published_sitemap_and_live_public_page",
+    "cjk_chars": 1377,
+    "text_chars": 2301,
+    "line_count": 74,
+    "repeated_line_ratio": 0.0
+  },
+  "body_path": "documents/a4007204435ea4d0895d0d46/body.txt",
+  "content_hash": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+  "body_file_sha256": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+  "embedded_publication_milliseconds": 1765854967418,
+  "published_timestamp_utc": "2025-12-16T03:16:07.418000+00:00",
+  "published_date_asia_shanghai": "2025-12-16",
+  "actual_cohort": "post",
+  "boundary_timezone_ambiguity": false,
+  "intended_period_match": true,
+  "sitemap_lastmod_is_publication_date": false,
+  "embedded_scalar_time_fields": {
+    "publish_time": 1765854967418,
+    "ctime": 1765847817111,
+    "utime": 1777432971549
+  },
+  "declared_canonical_urls": [
+    "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA"
+  ],
+  "canonical_url_mismatch": false,
+  "known_exact_content_overlap": false,
+  "exclusions_found": [],
+  "translation_status": "unresolved_no_originality_pass",
+  "legacy_quality_pass_diagnostic_only": true,
+  "block_count": 70,
+  "media_reference_count": 1,
+  "link_count": 3,
+  "multimedia_status": "full_captured_text_only_media_references_uninspected",
+  "utf8_decode_replacement_count": 0
+}

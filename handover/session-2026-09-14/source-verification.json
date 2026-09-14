@@ -1,0 +1,30 @@
+{
+  "version": "research-handover-verification-1.0",
+  "source_linkage": "passed",
+  "semantic_validity": "not_established_by_this_check",
+  "human_unit_labels": false,
+  "units": 6,
+  "semantic_fields_per_unit": 8,
+  "evidence_span_occurrences": 80,
+  "unique_evidence_spans": 58,
+  "source_manifest_files_verified": 16,
+  "block_counts": {
+    "smzdm_title": 1,
+    "smzdm_analysis_body": 30,
+    "baidu_body": 64
+  },
+  "unit_file_sha256": "2045ab168946ff08b96e7fe524ddccf683fc007b465731be928bbd18059140f2",
+  "view_sha256": {
+    "smzdm_analysis_body": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "baidu_body": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+    "smzdm_title": "eacd71671a24b923092eb922d2e5642b75367137c4fb33fbec02a4dace3726cc"
+  },
+  "historical_protocol_path": "data/local/documentation-zh-migration-v1/originals/docs/routes/compact-refiner/cognitive-move-analysis.md",
+  "historical_protocol_sha256": "e217e54711899de28803e278f498c7d463c084e06370d0dbf693b459f9599ef0",
+  "historical_validator_sha256": "aa219b7a7ae454585f00731c016a639185ae7013e3d404e819fa6c97c8f5981b",
+  "inventory": {
+    "status": "passed",
+    "files_verified": 993,
+    "bytes_verified": 91243715
+  }
+}

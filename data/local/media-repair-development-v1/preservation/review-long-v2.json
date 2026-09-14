@@ -1,0 +1,772 @@
+{
+  "schema_version": "media-repair-preservation-focused-revision-review-1.0",
+  "reviewer": "independent_current_assistant_full_article_preservation_reviewer_long",
+  "model_identity": "unknown",
+  "human_gold": false,
+  "judgment_type": "model_only",
+  "review_date": "2026-09-14",
+  "protocol": "media-repair-development-1.0",
+  "review_scope": {
+    "type": "focused_identity_chain_and_exact_reversion_verification",
+    "new_full_text_reread_performed": false,
+    "explanation": "No new full reread was performed. This reviewer previously read the complete original and v1 candidate. Byte hashes identify that reviewed source, parent candidate, operation log, and frozen review. The v2 candidate is proven both to equal a full source replay of the identical 36 previously passed operations and to equal the reviewed v1 output after exactly reverting operations 008, 012, 034, and 040. Those checks exclude any additional edits and permit the completed contextual review to carry forward. This is a follow-up by the same reviewer, not a second independent full-text judgment."
+  },
+  "prior_review": {
+    "path": "data/local/media-repair-development-v1/preservation/review-long.json",
+    "sha256": "cdb17a21309ccee7c1f4e82c91e905c1a5e568f36975db375ffe73b622b576b1",
+    "schema_version": "media-repair-preservation-review-1.0",
+    "reviewer": "independent_current_assistant_full_article_preservation_reviewer_long",
+    "model_identity": "unknown",
+    "full_original_read": true,
+    "full_parent_candidate_read": true,
+    "disposition": "fail",
+    "operation_disposition_counts": {
+      "pass": 36,
+      "fail": 1,
+      "uncertain": 3
+    }
+  },
+  "identity_chain": {
+    "source": {
+      "path": "data/local/contrast-context-v1/packets/doc-04/body.txt",
+      "sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c"
+    },
+    "parent_output": {
+      "path": "data/local/media-repair-development-v1/candidates/doc-04/output.txt",
+      "sha256": "413e094cc29c8084620f7203ee4e4b4e76a60f1e721369ff79be738d155d257f"
+    },
+    "parent_operations": {
+      "path": "data/local/media-repair-development-v1/candidates/doc-04/operations.json",
+      "sha256": "e11c430b30104d7c4c235efd1fdbe52ae034d022f17395fcfbf85d149430548d"
+    },
+    "prior_review": {
+      "path": "data/local/media-repair-development-v1/preservation/review-long.json",
+      "sha256": "cdb17a21309ccee7c1f4e82c91e905c1a5e568f36975db375ffe73b622b576b1"
+    },
+    "revision_output": {
+      "path": "data/local/media-repair-development-v1/candidates-v2/doc-04/output.txt",
+      "sha256": "05901a14a9df9da71da3cf3a79c503099753e134ee15ecd28d072893f9167838"
+    },
+    "revision_operations": {
+      "path": "data/local/media-repair-development-v1/candidates-v2/doc-04/operations.json",
+      "sha256": "a613309cd0882dadca70fe924ab65ff4ab890af5001697b3b4d64448d2102cb1"
+    },
+    "revision_manifest": {
+      "path": "data/local/media-repair-development-v1/candidates-v2/doc-04/revision-manifest.json",
+      "sha256": "9288c31bae83d141324fc12158a5002b26b5567b74a95df5cefdcfab5f0c714a"
+    },
+    "builder": {
+      "path": "data/local/media-repair-development-v1/create_interview_revision.py",
+      "sha256": "1dac70554a0b502a039c14a38106a17e323e1ddfd876807ba35624b91f784c30"
+    }
+  },
+  "identity_chain_explanation": "The revision manifest identifies the v2 operation log and builder by hash. The v2 operation log identifies the unchanged source, parent output, parent operation log, and frozen preservation review by hash. Every referenced hash matches the current file bytes. The builder was not executed; its identity and the resulting artifacts were checked directly.",
+  "documents": [
+    {
+      "alias": "doc-04",
+      "candidate_id": "doc-04-assistant-proposal-v1-preservation-v2",
+      "parent_candidate_id": "doc-04-assistant-proposal-v1",
+      "input_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+      "parent_output_sha256": "413e094cc29c8084620f7203ee4e4b4e76a60f1e721369ff79be738d155d257f",
+      "output_sha256": "05901a14a9df9da71da3cf3a79c503099753e134ee15ecd28d072893f9167838",
+      "operations_sha256": "a613309cd0882dadca70fe924ab65ff4ab890af5001697b3b4d64448d2102cb1",
+      "source_unicode_characters": 21891,
+      "parent_output_unicode_characters": 21923,
+      "output_unicode_characters": 21918,
+      "full_original_read_in_prior_review": true,
+      "full_parent_candidate_read_in_prior_review": true,
+      "full_current_candidate_reread": false,
+      "disposition": "pass",
+      "disposition_explanation": "Preservation passes as a carried-forward model judgment relative to the original source. All 36 retained operations are byte-for-byte equivalent in their complete JSON values to operations that passed the prior full-context review. The only output changes from v1 are exact source restorations at all four failed or uncertain operations. No candidate-induced failure or uncertainty from that review remains. Existing source ambiguities and factual or attribution issues remain unadjudicated.",
+      "operation_disposition_counts": {
+        "pass": 36,
+        "fail": 0,
+        "uncertain": 0
+      },
+      "removed_operation_ids": [
+        "doc-04-op-008",
+        "doc-04-op-012",
+        "doc-04-op-034",
+        "doc-04-op-040"
+      ],
+      "resolved_prior_findings": [
+        {
+          "operation_id": "doc-04-op-008",
+          "prior_disposition": "uncertain",
+          "resolution": "reverted_to_exact_source",
+          "source_span": {
+            "start_char": 3036,
+            "end_char": 3070
+          },
+          "parent_output_span": {
+            "start_char": 3035,
+            "end_char": 3072
+          },
+          "revision_output_span": {
+            "start_char": 3035,
+            "end_char": 3069
+          },
+          "source_quote": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+          "parent_output_quote": "还是因为我对开源软件的运作方式不够了解，才没看出团队为什么能这样快速前进？",
+          "revision_output_quote": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+          "explanation": "The disputed candidate wording is absent. The exact source wording is restored, so this candidate-induced preservation concern is resolved by reversion. This does not resolve or validate any ambiguity already present in the source."
+        },
+        {
+          "operation_id": "doc-04-op-012",
+          "prior_disposition": "fail",
+          "resolution": "reverted_to_exact_source",
+          "source_span": {
+            "start_char": 5066,
+            "end_char": 5120
+          },
+          "parent_output_span": {
+            "start_char": 5070,
+            "end_char": 5123
+          },
+          "revision_output_span": {
+            "start_char": 5067,
+            "end_char": 5121
+          },
+          "source_quote": "因此，我们与 Codex 合作的大部分目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "parent_output_quote": "因此，我们与 Codex 合作的主要目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "revision_output_quote": "因此，我们与 Codex 合作的大部分目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+          "explanation": "The disputed candidate wording is absent. The exact source wording is restored, so this candidate-induced preservation concern is resolved by reversion. This does not resolve or validate any ambiguity already present in the source."
+        },
+        {
+          "operation_id": "doc-04-op-034",
+          "prior_disposition": "uncertain",
+          "resolution": "reverted_to_exact_source",
+          "source_span": {
+            "start_char": 18898,
+            "end_char": 18933
+          },
+          "parent_output_span": {
+            "start_char": 18913,
+            "end_char": 18951
+          },
+          "revision_output_span": {
+            "start_char": 18911,
+            "end_char": 18946
+          },
+          "source_quote": "想象我们要覆盖的所有世界范围的任务，智能体每天有可能帮助你成千上万次。",
+          "parent_output_quote": "想象一下，我们要覆盖世界范围内的所有任务，智能体每天有可能帮助你成千上万次。",
+          "revision_output_quote": "想象我们要覆盖的所有世界范围的任务，智能体每天有可能帮助你成千上万次。",
+          "explanation": "The disputed candidate wording is absent. The exact source wording is restored, so this candidate-induced preservation concern is resolved by reversion. This does not resolve or validate any ambiguity already present in the source."
+        },
+        {
+          "operation_id": "doc-04-op-040",
+          "prior_disposition": "uncertain",
+          "resolution": "reverted_to_exact_source",
+          "source_span": {
+            "start_char": 21453,
+            "end_char": 21475
+          },
+          "parent_output_span": {
+            "start_char": 21485,
+            "end_char": 21507
+          },
+          "revision_output_span": {
+            "start_char": 21480,
+            "end_char": 21502
+          },
+          "source_quote": "如果你明年是一家创业公司，正在构建一个新应用",
+          "parent_output_quote": "如果你明年在一家创业公司，正在构建一个新应用",
+          "revision_output_quote": "如果你明年是一家创业公司，正在构建一个新应用",
+          "explanation": "The disputed candidate wording is absent. The exact source wording is restored, so this candidate-induced preservation concern is resolved by reversion. This does not resolve or validate any ambiguity already present in the source."
+        }
+      ],
+      "operation_reviews": [
+        {
+          "operation_id": "doc-04-op-001",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 0,
+            "end_char": 84
+          },
+          "revision_output_span": {
+            "start_char": 0,
+            "end_char": 81
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-001"
+        },
+        {
+          "operation_id": "doc-04-op-002",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 565,
+            "end_char": 593
+          },
+          "revision_output_span": {
+            "start_char": 562,
+            "end_char": 588
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-002"
+        },
+        {
+          "operation_id": "doc-04-op-003",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 989,
+            "end_char": 1096
+          },
+          "revision_output_span": {
+            "start_char": 984,
+            "end_char": 1086
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-003"
+        },
+        {
+          "operation_id": "doc-04-op-004",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 1097,
+            "end_char": 1140
+          },
+          "revision_output_span": {
+            "start_char": 1087,
+            "end_char": 1128
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-004"
+        },
+        {
+          "operation_id": "doc-04-op-005",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 1669,
+            "end_char": 1692
+          },
+          "revision_output_span": {
+            "start_char": 1657,
+            "end_char": 1687
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-005"
+        },
+        {
+          "operation_id": "doc-04-op-006",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 2460,
+            "end_char": 2493
+          },
+          "revision_output_span": {
+            "start_char": 2455,
+            "end_char": 2488
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-006"
+        },
+        {
+          "operation_id": "doc-04-op-007",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 2916,
+            "end_char": 2958
+          },
+          "revision_output_span": {
+            "start_char": 2911,
+            "end_char": 2957
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-007"
+        },
+        {
+          "operation_id": "doc-04-op-009",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 3410,
+            "end_char": 3440
+          },
+          "revision_output_span": {
+            "start_char": 3409,
+            "end_char": 3441
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-009"
+        },
+        {
+          "operation_id": "doc-04-op-010",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 3670,
+            "end_char": 3692
+          },
+          "revision_output_span": {
+            "start_char": 3671,
+            "end_char": 3691
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-010"
+        },
+        {
+          "operation_id": "doc-04-op-011",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 4293,
+            "end_char": 4337
+          },
+          "revision_output_span": {
+            "start_char": 4292,
+            "end_char": 4338
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-011"
+        },
+        {
+          "operation_id": "doc-04-op-013",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 5596,
+            "end_char": 5617
+          },
+          "revision_output_span": {
+            "start_char": 5597,
+            "end_char": 5623
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-013"
+        },
+        {
+          "operation_id": "doc-04-op-014",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 7637,
+            "end_char": 7677
+          },
+          "revision_output_span": {
+            "start_char": 7643,
+            "end_char": 7695
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-014"
+        },
+        {
+          "operation_id": "doc-04-op-015",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 7785,
+            "end_char": 7827
+          },
+          "revision_output_span": {
+            "start_char": 7803,
+            "end_char": 7844
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-015"
+        },
+        {
+          "operation_id": "doc-04-op-016",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 7998,
+            "end_char": 8018
+          },
+          "revision_output_span": {
+            "start_char": 8015,
+            "end_char": 8039
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-016"
+        },
+        {
+          "operation_id": "doc-04-op-017",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 9316,
+            "end_char": 9340
+          },
+          "revision_output_span": {
+            "start_char": 9337,
+            "end_char": 9363
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-017"
+        },
+        {
+          "operation_id": "doc-04-op-018",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 9712,
+            "end_char": 9742
+          },
+          "revision_output_span": {
+            "start_char": 9735,
+            "end_char": 9766
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-018"
+        },
+        {
+          "operation_id": "doc-04-op-019",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 9809,
+            "end_char": 9836
+          },
+          "revision_output_span": {
+            "start_char": 9833,
+            "end_char": 9861
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-019"
+        },
+        {
+          "operation_id": "doc-04-op-020",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 11016,
+            "end_char": 11053
+          },
+          "revision_output_span": {
+            "start_char": 11041,
+            "end_char": 11080
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-020"
+        },
+        {
+          "operation_id": "doc-04-op-021",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 11663,
+            "end_char": 11673
+          },
+          "revision_output_span": {
+            "start_char": 11690,
+            "end_char": 11698
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-021"
+        },
+        {
+          "operation_id": "doc-04-op-022",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 12432,
+            "end_char": 12471
+          },
+          "revision_output_span": {
+            "start_char": 12457,
+            "end_char": 12497
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-022"
+        },
+        {
+          "operation_id": "doc-04-op-023",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 14038,
+            "end_char": 14072
+          },
+          "revision_output_span": {
+            "start_char": 14064,
+            "end_char": 14097
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-023"
+        },
+        {
+          "operation_id": "doc-04-op-024",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 14697,
+            "end_char": 14730
+          },
+          "revision_output_span": {
+            "start_char": 14722,
+            "end_char": 14753
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-024"
+        },
+        {
+          "operation_id": "doc-04-op-025",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 15603,
+            "end_char": 15664
+          },
+          "revision_output_span": {
+            "start_char": 15626,
+            "end_char": 15685
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-025"
+        },
+        {
+          "operation_id": "doc-04-op-026",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 16053,
+            "end_char": 16078
+          },
+          "revision_output_span": {
+            "start_char": 16074,
+            "end_char": 16102
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-026"
+        },
+        {
+          "operation_id": "doc-04-op-027",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 16267,
+            "end_char": 16346
+          },
+          "revision_output_span": {
+            "start_char": 16291,
+            "end_char": 16368
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-027"
+        },
+        {
+          "operation_id": "doc-04-op-028",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 16572,
+            "end_char": 16630
+          },
+          "revision_output_span": {
+            "start_char": 16594,
+            "end_char": 16651
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-028"
+        },
+        {
+          "operation_id": "doc-04-op-029",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 16839,
+            "end_char": 16875
+          },
+          "revision_output_span": {
+            "start_char": 16860,
+            "end_char": 16896
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-029"
+        },
+        {
+          "operation_id": "doc-04-op-030",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 17124,
+            "end_char": 17140
+          },
+          "revision_output_span": {
+            "start_char": 17145,
+            "end_char": 17159
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-030"
+        },
+        {
+          "operation_id": "doc-04-op-031",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 17342,
+            "end_char": 17365
+          },
+          "revision_output_span": {
+            "start_char": 17361,
+            "end_char": 17386
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-031"
+        },
+        {
+          "operation_id": "doc-04-op-032",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 17672,
+            "end_char": 17704
+          },
+          "revision_output_span": {
+            "start_char": 17693,
+            "end_char": 17719
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-032"
+        },
+        {
+          "operation_id": "doc-04-op-033",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 18475,
+            "end_char": 18497
+          },
+          "revision_output_span": {
+            "start_char": 18490,
+            "end_char": 18510
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-033"
+        },
+        {
+          "operation_id": "doc-04-op-035",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 18986,
+            "end_char": 19065
+          },
+          "revision_output_span": {
+            "start_char": 18999,
+            "end_char": 19090
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-035"
+        },
+        {
+          "operation_id": "doc-04-op-036",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 19221,
+            "end_char": 19236
+          },
+          "revision_output_span": {
+            "start_char": 19246,
+            "end_char": 19259
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-036"
+        },
+        {
+          "operation_id": "doc-04-op-037",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 19363,
+            "end_char": 19381
+          },
+          "revision_output_span": {
+            "start_char": 19386,
+            "end_char": 19405
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-037"
+        },
+        {
+          "operation_id": "doc-04-op-038",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 20636,
+            "end_char": 20661
+          },
+          "revision_output_span": {
+            "start_char": 20660,
+            "end_char": 20685
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-038"
+        },
+        {
+          "operation_id": "doc-04-op-039",
+          "disposition": "pass",
+          "review_basis": "carried_forward_from_identical_operation_in_frozen_full_text_review",
+          "source_span": {
+            "start_char": 20737,
+            "end_char": 20762
+          },
+          "revision_output_span": {
+            "start_char": 20761,
+            "end_char": 20789
+          },
+          "complete_operation_object_unchanged": true,
+          "prior_review_operation_id": "doc-04-op-039"
+        }
+      ],
+      "verification": {
+        "stable_source_hash": true,
+        "stable_parent_output_hash": true,
+        "stable_parent_operations_hash": true,
+        "stable_frozen_review_hash": true,
+        "expected_revision_output_hash": true,
+        "revision_metadata_identity_links_match": true,
+        "manifest_identity_links_match": true,
+        "builder_hash_matches_manifest": true,
+        "removed_ids_are_exactly_008_012_034_040": true,
+        "no_other_parent_operation_removed": true,
+        "no_new_operation_added": true,
+        "remaining_complete_operation_objects_unchanged": true,
+        "remaining_operation_order_unchanged": true,
+        "bounds_and_nonoverlap_valid": true,
+        "all_before_spans_equal_source": true,
+        "parent_full_replay_exact": true,
+        "revision_full_replay_exact": true,
+        "inverse_reversion_of_parent_output_exact": true,
+        "all_four_revision_spans_equal_original_source": true,
+        "no_additional_output_changes": true,
+        "all_remaining_operations_previously_passed": true,
+        "all_reviewed_input_artifact_bytes_stable_through_verification": true
+      },
+      "preexisting_content_issues": {
+        "status": "carried_forward_unresolved",
+        "reference_review_sha256": "cdb17a21309ccee7c1f4e82c91e905c1a5e568f36975db375ffe73b622b576b1",
+        "issue_ids": [
+          "doc-04-source-001",
+          "doc-04-source-002",
+          "doc-04-source-003",
+          "doc-04-source-004",
+          "doc-04-source-005",
+          "doc-04-source-006"
+        ],
+        "explanation": "The earlier editorial/interview qualification discrepancy, platform/store association, milestone relationship, unlabeled apparent speaker turn, growth metric/baseline ambiguity, and disputed source phrasing remain source issues. Reverting an interpretive repair restores these original ambiguities; it does not certify their factual accuracy or improve their readability."
+      },
+      "readability_observation": {
+        "status": "not_reassessed",
+        "explanation": "The source wording is restored at four disputed spans, including awkward or ambiguous expressions. No new whole-article readability judgment, preference measurement, or willingness-to-continue-reading claim follows from this focused preservation check."
+      }
+    }
+  ],
+  "limits": {
+    "human_acceptance": false,
+    "reader_benefit_certified": false,
+    "training_eligibility_conferred": false,
+    "external_fact_checking_performed": false,
+    "full_reread_claimed": false,
+    "text_or_candidate_modified": false
+  },
+  "artifact_integrity_note": "Only this new review artifact is written. The source, v1 candidate, frozen v1 review, v2 candidate, builder, and revision manifest remain unchanged."
+}

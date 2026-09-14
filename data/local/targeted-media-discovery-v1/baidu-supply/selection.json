@@ -1,0 +1,15 @@
+{
+  "version": "targeted-media-discovery-1.0",
+  "selected_url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+  "doc_id": "92ade4253c08a43329164bf5",
+  "discovery": "One Google UI query and the visible domestic-company analysis result; identity checked before body inspection.",
+  "query": "site:infoq.cn/article \"不是\" \"而是\" \"2025\" \"本质\"",
+  "selection_bias": "Keyword-enriched development discovery, not frequency replication or a representative sample.",
+  "publication_date_basis": "Pending embedded article metadata, not query terms or search snippet.",
+  "article_get_cap": 1,
+  "backfill": false,
+  "source_hash": "697d453a3879e13776edb23a151eaac859f04caa273e1380a7a2ba8d4c81146c",
+  "identity_exclusions_sha256": "45498d391ee872108b710e9c64777159c0c2994b09f67026d893348d1d7cbbe4",
+  "translation_is_global_exclusion": false,
+  "human_label": null
+}

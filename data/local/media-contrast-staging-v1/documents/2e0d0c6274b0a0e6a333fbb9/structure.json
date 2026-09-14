@@ -1,0 +1,40 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "Linux Mint",
+      "href": "https://linuxmint.com"
+    },
+    {
+      "text": "Mozilla",
+      "href": "https://www.mozilla.org/en-US"
+    },
+    {
+      "text": "Firefox",
+      "href": "https://www.mozilla.org/en-US/firefox/new"
+    },
+    {
+      "text": "https://blog.linuxmint.com/?p=4244",
+      "href": "https://blog.linuxmint.com/?p=4244"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 18,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 1,
+    "ol": 0,
+    "li": 6,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 4
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/2e0d0c6274b0a0e6a333fbb9.html",
+  "raw_html_sha256": "0e4d32f760ebc6e4936961c4d615c755dcea3ec4bd1eba8e81fe59e97c79eca1"
+}

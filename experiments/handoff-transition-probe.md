@@ -1,112 +1,88 @@
-# Read-Only Handoff Transition Probe
+# 只读交接过渡期探测
 
-## Purpose
+## 目的
 
-This experiment uses a locally materialized corpus handoff to expand
-deterministic feature discovery without collecting new material. It does not
-estimate the primary pre/post effect because the handoff contains no documents
-published on or after 2025-07-01.
+实验利用已在本地落盘的语料交接扩展确定性特征发现，不采集新材料。交接没有 2025-07-01 当日及之后发布的文档，因此不估计主比较前后时间效应。
 
-The analysis has two bounded purposes:
+分析限定为两个目的：
 
-1. discover within-transition feature trends while controlling source and
-   document length;
-2. describe the 23 unmatched pre-period Machine Heart candidates with
-   feature-wise Huber weights, without deleting any document.
+1. 控制来源和文档长度，发现过渡期内部的特征趋势；
+2. 以逐特征 Huber 权重描述 23 篇未匹配的前时期机器之心候选，不删除文档。
 
-The one reader observation is profiled only after feature extraction. It is not
-used as an authorship label, validation label, or feature-selection target.
+唯一的读者观察仅在特征提取后作画像，不作为作者身份标签、验证标签或特征选择目标。
 
-## Handoff audit
+## 交接审查
 
-The read-only inputs use protocol `analysis-corpus-handoff-1.0` and are marked
-`exploratory_pool_not_final_corpus`.
+只读输入采用协议 `analysis-corpus-handoff-1.0`，状态为 `exploratory_pool_not_final_corpus`。
 
-| Check | Result |
+| 检查 | 结果 |
 |---|---:|
-| Indexed documents | 119 |
-| Strict UTF-8 bodies readable | 119 |
-| Body SHA-256 matches | 119 |
-| CJK metadata matches | 119 |
-| Line-count metadata matches | 119 |
-| Overlap with tracked pilot IDs | 0 |
-| Pre-period candidates | 23 |
-| Transition discovery documents | 96 |
-| Post-period documents | 0 |
+| 索引文档数 | 119 |
+| 严格 UTF-8 正文可读 | 119 |
+| 正文 SHA-256 匹配 | 119 |
+| CJK 元数据匹配 | 119 |
+| 行数元数据匹配 | 119 |
+| 与受版本控制 pilot ID 重叠 | 0 |
+| 前时期候选 | 23 |
+| 过渡期发现文档 | 96 |
+| 后时期文档 | 0 |
 
-Source composition is 23 pre-period Machine Heart documents, 53 transition
-Machine Heart documents, and 43 transition InfoQ documents. Four provenance
-decisions are human-reviewed and 115 are model-assisted measurements. Nine
-value decisions are human-kept and 110 are model-assisted measurements. These
-statuses are not human gold.
 
-Machine Heart visibility remains `editorial_source_only_unverified`. The 23
-pre-period documents therefore remain unmatched candidates rather than members
-of a final primary cohort.
+来源构成为前时期机器之心 23 篇、过渡期机器之心 53 篇、过渡期 InfoQ 43 篇。四个来源决定经人工复核，115 个为模型辅助测量；九个价值决定为人工保留，110 个为模型辅助测量。这些状态不是人工 gold。
 
-## Frozen exploratory method
+机器之心传播可见度仍为 `editorial_source_only_unverified`，23 篇前时期文章因此仍是未匹配候选，不是最终主比较分组成员。
 
-The probe extracts deterministic surface, punctuation, discourse-marker,
-rhetorical-hypothesis, and title-form features. Raw counts, MATTR, type-token
-ratios, and entropy values are excluded from the transition trend test because
-of their direct length sensitivity. Fifty-three normalized or structural
-features remain.
+## 冻结探索方法
 
-For each feature, the transition analysis:
+提取确定性的表层、标点、篇章标记、修辞假设及标题形式特征。原始计数、MATTR、type-token ratios 和熵因直接受长度影响，排除出过渡期趋势检验，剩 53 个归一化或结构特征。
 
-1. computes a Spearman partial correlation with publication date separately
-   inside InfoQ and Machine Heart;
-2. controls log CJK length within each source;
-3. combines the two source-specific correlations by source sample size;
-4. permutes date ranks 5,000 times within source;
-5. records leave-one-document-out direction stability;
-6. applies Benjamini-Hochberg correction across the 53 features.
+对每个特征，过渡期分析：
 
-This is discovery analysis. A source-consistent transition trend is not a
-pre/post effect and cannot validate a refinement target.
+1. 分别在 InfoQ 与机器之心内部计算与发布日期的 Spearman partial correlation；
+2. 每个来源内控制 log CJK 长度；
+3. 按来源样本量合并两个来源相关；
+4. 在来源内置换日期排名 5,000 次；
+5. 记录 leave-one-document-out 方向稳定性；
+6. 对 53 个特征作 Benjamini-Hochberg 校正。
 
-For the pre-period candidates, Huber locations and weights are computed
-separately for every feature with tuning constant 1.5. Unweighted values and
-full distributions are retained. The document-level mean weight is descriptive
-only and cannot be used for admission or deletion.
+这是发现分析。跨来源一致的过渡期趋势不等于前后时间效应，不能验证改写目标。
 
-## Transition results
+对前时期候选，每项特征独立计算 Huber 位置和权重，tuning constant 为 1.5。保留未加权值和完整分布。文档级平均权重只作描述，不能用于准入或删除。
 
-No feature has BH q below 0.10.
+## 过渡期结果
 
-| Feature | Combined partial rho | InfoQ rho | Machine Heart rho | Permutation p | BH q | LOO stability |
+没有特征的 BH q 低于 0.10。
+
+| 特征 | 合并 partial rho | InfoQ rho | 机器之心 rho | Permutation p | BH q | LOO 稳定性 |
 |---|---:|---:|---:|---:|---:|---:|
-| Quote-mark density | 0.286 | 0.355 | 0.229 | 0.0054 | 0.286 | 1.00 |
-| Dash density | 0.250 | 0.221 | 0.274 | 0.0138 | 0.336 | 1.00 |
-| URLs per 1,000 CJK | 0.240 | 0.204 | 0.270 | 0.0190 | 0.336 | 1.00 |
-| List-item ratio | -0.224 | -0.172 | -0.266 | 0.0366 | 0.388 | 1.00 |
-| Emphatic frames per 1,000 CJK | 0.221 | 0.262 | 0.189 | 0.0320 | 0.388 | 1.00 |
-| Title colon present | 0.206 | 0.268 | 0.156 | 0.0470 | 0.415 | 1.00 |
+| 引号密度 | 0.286 | 0.355 | 0.229 | 0.0054 | 0.286 | 1.00 |
+| 破折号密度 | 0.250 | 0.221 | 0.274 | 0.0138 | 0.336 | 1.00 |
+| 每 1,000 CJK 的 URL 数 | 0.240 | 0.204 | 0.270 | 0.0190 | 0.336 | 1.00 |
+| 列表项比例 | -0.224 | -0.172 | -0.266 | 0.0366 | 0.388 | 1.00 |
+| 每 1,000 CJK 的强调框架数 | 0.221 | 0.262 | 0.189 | 0.0320 | 0.388 | 1.00 |
+| 标题含冒号 | 0.206 | 0.268 | 0.156 | 0.0470 | 0.415 | 1.00 |
 
-Quote marks, dashes, and emphatic frames are source-consistent discovery
-directions. The URL and list signals are likely format-sensitive. None may be
-described as a reader-disliked pattern without a bounded intervention.
 
-The existing focal features do not form one common trend:
+引号、破折号和强调框架是跨来源一致的发现方向。URL 和列表信号可能对体裁敏感。没有限定编辑干预，均不得描述为读者反感模式。
 
-| Feature | Combined partial rho | Source directions consistent | Permutation p | BH q |
+既有重点特征没有形成共同趋势：
+
+| 特征 | 合并 partial rho | 来源方向一致 | Permutation p | BH q |
 |---|---:|---|---:|---:|
-| Complete negative contrast frames | 0.050 | No | 0.626 | 0.834 |
-| Emphatic frames | 0.221 | Yes | 0.032 | 0.388 |
-| Meta frames | 0.062 | Yes | 0.561 | 0.804 |
-| Total punctuation density | 0.088 | No | 0.396 | 0.670 |
-| Colon density | 0.099 | No | 0.336 | 0.670 |
+| 完整否定对比框架 | 0.050 | 否 | 0.626 | 0.834 |
+| 强调框架 | 0.221 | 是 | 0.032 | 0.388 |
+| 元叙述框架 | 0.062 | 是 | 0.561 | 0.804 |
+| 总标点密度 | 0.088 | 否 | 0.396 | 0.670 |
+| 冒号密度 | 0.099 | 否 | 0.336 | 0.670 |
 
-Complete negative contrast frames rise weakly in transition InfoQ but are flat
-to slightly lower in transition Machine Heart. This handoff does not strengthen
-the earlier post-period complete-frame result. It instead shows why source
-matching remains necessary.
 
-## Pre-period distribution audit
+完整否定对比框架在过渡期 InfoQ 中弱增，在机器之心中持平至略降。此次交接未加强早先后时期完整框架结果，反而显示来源匹配仍必要。
 
-The lowest descriptive mean Huber weights are:
+## 前时期分布审查
 
-| Document | Date | CJK characters | Mean weight | Minimum feature weight |
+最低描述性平均 Huber 权重如下：
+
+| 文档 | 日期 | CJK 字符数 | 平均权重 | 最低特征权重 |
 |---|---|---:|---:|---:|
 | 0bacfeaea20d086539948d1d | 2021-07-20 | 1,580 | 0.79 | 0.09 |
 | cbf364e6fe771c6b1f5d5147 | 2021-10-24 | 4,027 | 0.85 | 0.17 |
@@ -114,45 +90,29 @@ The lowest descriptive mean Huber weights are:
 | 8d03602a0069443799951a8d | 2021-10-21 | 992 | 0.93 | 0.16 |
 | 70294f6e4051db3347bfcba2 | 2021-10-18 | 2,864 | 0.94 | 0.20 |
 
-The first document is downweighted mainly for dash, punctuation, parenthesis,
-list, and paragraph-structure features in a technical article. The next two are
-strongly affected by title questions, list formatting, digits, and discourse
-markers. These are format signals, not evidence that the articles should be
-removed.
 
-All 23 documents remain in the unweighted distribution artifacts. Machine
-Heart visibility is unverified, and no post-period Machine Heart match exists
-in this handoff. The existing limitation that generic typicality did not
-identify the disliked 2022 Red Hat passage remains unchanged; no manual weight
-is introduced here.
+第一篇是技术文章，主要因破折号、标点、括号、列表和段落结构被降权。之后两篇受标题问题、列表格式、数字及篇章标记强烈影响。这些是体裁信号，不能证明应删除文章。
 
-## Reader-observation case
+全部 23 篇保留在未加权分布产物中。机器之心传播可见度未核验，交接也没有后时期机器之心匹配项。通用典型性没有识别读者不喜欢的 2022 年 Red Hat 段落这一既有限制不变，此处不引入人工权重。
 
-The transition document `55a8c05716103aaced6ecf7f` has one diagnostic reader
-observation. Its largest same-source robust deviation is only 1.84, for a digit
-in the title. Comma density reaches robust z 1.66; sentence-length
-autocorrelation reaches 1.18; emphatic-frame density reaches 0.72.
+## 读者观察案例
 
-The current deterministic features therefore do not make this reader-observed
-case a strong multivariate outlier. This is a representation limitation, not a
-reason to treat the observation as an authorship label or to tune thresholds
-against one document.
+过渡期文档 `55a8c05716103aaced6ecf7f` 有一个诊断性读者观察。其最大的同来源稳健偏离只有 1.84，对应标题数字。逗号密度的 robust z 为 1.66，句长自相关 1.18，强调框架密度 0.72。
 
-## Decision
+当前确定性特征因此没有使该读者观察案例成为强多变量异常点。这是表示限制，不能据此把观察当作者标签，也不能针对一篇文章调阈值。
 
-This handoff substantially improves discovery coverage but does not fill the
-missing validation data:
+## 决定
 
-- retain quote-mark density, dash density, and emphatic-frame density as
-  transition discovery directions;
-- do not promote them to smells or product rules;
-- do not generalize the complete contrast-frame direction across sources;
-- keep all pre-period candidates and their unweighted feature values;
-- require new post-period samples matched by source, topic, format, length, and
-  visibility for the primary analysis;
-- require new cross-genre, multi-reader interventions for product validation.
+交接显著扩大发现覆盖，但没有补齐缺失的验证数据：
 
-## Reproduction
+- 保留引号密度、破折号密度、强调框架密度作为过渡期发现方向；
+- 不升级为臭味或产品规则；
+- 不将完整对比框架方向跨来源泛化；
+- 保留全部前时期候选及未加权特征值；
+- 主分析需要按来源、主题、体裁、篇幅和传播可见度匹配的新后时期样本；
+- 产品验证需要新的跨体裁、多读者干预。
+
+## 复现
 
 ~~~powershell
 python experiments/handoff_transition_probe.py `
@@ -166,14 +126,14 @@ python experiments/handoff_transition_probe.py `
   --tuning-constant 1.5
 ~~~
 
-Reproduction identity:
+复现身份：
 
-| Artifact | SHA-256 |
+| 产物 | SHA-256 |
 |---|---|
-| Handoff manifest | 00bbd66d54e7beabd03a86c87031ef0cd7cc7b49c6eb38bce1c5dc8f7e98a604 |
-| Analysis pool | 58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2 |
-| Reader observation | d9666a3bf73e0ececac6cdd0d32c4fd68d8ed4f59c6994d4b8678e0a24a92d5b |
-| Results | b07b1897d922723ba028bc98163ca4dcdf7f438f8dcf1baa98af4e9619cf3d15 |
+| 交接 manifest | 00bbd66d54e7beabd03a86c87031ef0cd7cc7b49c6eb38bce1c5dc8f7e98a604 |
+| 分析池 | 58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2 |
+| 读者观察 | d9666a3bf73e0ececac6cdd0d32c4fd68d8ed4f59c6994d4b8678e0a24a92d5b |
+| 结果 | b07b1897d922723ba028bc98163ca4dcdf7f438f8dcf1baa98af4e9619cf3d15 |
 
-The handoff files remain unmodified. Generated matrices and weights remain
-under ignored `feature_runs/`.
+
+交接文件不改动。生成矩阵及权重保留在被忽略的 `feature_runs/` 下。

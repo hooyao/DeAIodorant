@@ -1,0 +1,19 @@
+{
+  "alias": "doc-07",
+  "content_hash": "2397a4634ace531cb68430ac67e9351c0554c878d5b29772bef34e11a31ba7e5",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 6217,
+        "start_char": 6215,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 6258,
+        "start_char": 6187,
+        "text": "\n今后的机器人不再是冰冷的按照脚本回应主人的交流和问题，而是能够查颜观笑后回应适当的更加自然的表情和交流，ERICA 目前就已经做到了这一点。"
+      },
+      "occurrence_id": "doc-07-e01"
+    }
+  ]
+}

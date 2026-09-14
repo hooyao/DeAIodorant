@@ -1,0 +1,17 @@
+{
+  "version": "media-extension-concentration-addendum-1.0",
+  "post_hoc": true,
+  "reason": "Describe concentration after observing the completed fixed batch; no document is deleted.",
+  "largest_contributor": {
+    "doc_id": "78428b30c546b2fff9543e8b",
+    "cjk_chars": 22696,
+    "ershi_occurrences": 19
+  },
+  "post_total_occurrences": 28,
+  "post_without_largest_documents": 11,
+  "post_without_largest_occurrences": 9,
+  "post_without_largest_per_10000_cjk": 3.790590911005349,
+  "pre_per_10000_cjk": 0.6469769999676511,
+  "rate_ratio_without_largest": 5.858926841595418,
+  "human_gold": false
+}

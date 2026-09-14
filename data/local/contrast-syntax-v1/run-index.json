@@ -1,0 +1,8 @@
+{
+  "failed_initial_attempt_preserved": true,
+  "inspection": "inspection.json",
+  "manifest": "reproduction-02/manifest.json",
+  "protocol": "contrast-syntax-feasibility-1.0",
+  "ready_run": "reproduction-02",
+  "successful_earlier_run_preserved": "retry-01"
+}

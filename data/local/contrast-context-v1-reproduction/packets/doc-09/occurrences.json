@@ -1,0 +1,32 @@
+{
+  "alias": "doc-09",
+  "content_hash": "6b65668574e6036aedae3f6af6d5d0495f720c0a27e827739a855022138e6c47",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 1277,
+        "start_char": 1275,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1335,
+        "start_char": 1258,
+        "text": "这些模型不能像常规代码一样被检查，而是需要在尽可能接近真实世界的环境中进行测试，而且为响应不断涌现的新数据、用户行为等，这些模型在真实系统中也会迅速变化。"
+      },
+      "occurrence_id": "doc-09-e01"
+    },
+    {
+      "connector": {
+        "end_char": 1682,
+        "start_char": 1680,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1764,
+        "start_char": 1662,
+        "text": "\n“在机器学习时代，重要的不是算法，而是数据，”麻省理工学院教授兼计算机科学家\nDavid Karger曾表示\n，马斯克可以通过使平台更加开放来改进 Twitter，以便其他人可以在此基础上构建新的方式。"
+      },
+      "occurrence_id": "doc-09-e02"
+    }
+  ]
+}

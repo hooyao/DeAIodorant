@@ -1,236 +1,219 @@
-# Project Roadmap
+# 项目路线图
 
-The product objective is reader-preferred Chinese refinement, not AI-text
-classification. Corpus research and product evaluation therefore proceed in
-parallel rather than as a strict sequence.
+## 当前优先事项，2026-09-14
 
-Alternative technical routes, minimum experiments, hardware mapping, and
-decision rules are defined in
-[DeAIodorant Refinement Roadmap](refinement-roadmap.md).
+维护者提供了一个强烈的 SMZDM 样例，以及强度较低的百度参照。当前[锚点研究](routes/compact-refiner/reports/reader-anchor-feature-discovery-v1.md)定位了一小组候选特征。这确立了读者报告的正例，尚不能证明特征可泛化或已经可以训练。下一步发现工作需要独立样例及可比体裁的对照。
 
-## Milestone 0: Repository foundation
+[校准后的目标](target-feature-discovery.md)保留采集工作和时间分组，优先用反差充分的真实媒体样本发现可重复的目标特征。旧的弱信号实验继续暂停。[小模型改写路线](routes/compact-refiner/README.md)记录下游编辑、SFT、DPO 和 RL 选项；训练暂缓。下方历史里程碑不能覆盖这一优先级，也不能据此恢复失败的探针。
 
-Status: complete.
+最新范围明确把中文译文优化纳入小模型改写器的核心能力。翻译是来源分层，仅原创筛选作为对照。当前工作先在完整真实媒体文章中定位重复框架、句子缺陷和缺乏支持的篇章关系，再检验限定范围且有来源支撑的编辑。默认模型输入仍只有中文。
 
-Deliverables:
+产品目标是读者更偏好的中文改写，不是 AI 文本分类。因此语料研究与产品评估并行推进，而非严格串行。
 
-- project instructions and contribution workflow;
-- Python package metadata and CI;
-- architecture, data boundaries, and branch policy;
-- deterministic feature extraction and provenance manifests.
+可选技术路线、最小实验、硬件对应关系和决策规则见 [DeAIodorant 改写路线图](refinement-roadmap.md)。
 
-## Workstream A: Corpus-based hypothesis discovery
+## 里程碑 0：仓库基础
 
-Owner: the corpus-preparation workflow running independently on the DGX Spark.
+状态：已完成。
 
-Purpose:
+交付物：
 
-- collect high-quality, high-visibility pre-2023 and post-2025-06 Chinese text;
-- exclude translated and compiled foreign content;
-- match source, topic, format, length, and visibility where possible;
-- extract interpretable and sparse linguistic features;
-- produce candidate writing-pattern hypotheses.
+- 项目指令和贡献流程；
+- Python 包 metadata 与 CI；
+- 架构、数据边界和分支策略；
+- 确定性特征提取与来源 manifest。
 
-This workstream does not determine what readers dislike. A corpus difference
-becomes a product candidate only after an editing intervention improves blinded
-reader preference.
+## 工作线 A：基于语料的假设发现
 
-## Workstream B: Reader benchmark
+状态：保留采集基础设施与时间分组；在提出更多特征结论之前，重新评估目标样本覆盖。历史执行曾使用 DGX Spark，当前环境不可用。
 
-Status: immediate next work.
+目的：
 
-This workstream does not wait for the large corpus.
+- 采集高质量、高传播可见度的 2023 年前及 2025 年 6 月之后的中文文本；
+- 保留中文原创、翻译、混合／改编和来源未明材料；
+- 尽可能匹配来源、主题、体裁、篇幅和传播可见度；
+- 提取可解释及稀疏的语言特征；
+- 产生候选写作模式假设。
 
-Status: in progress. The local acquisition pipeline is reproducible and
-structurally validated, but its output remains diagnostic pilot material and
-does not yet satisfy the exit criteria below.
+这条工作线不决定读者讨厌什么。语料差异只有经过编辑干预、提高盲评读者偏好后，才成为产品候选。
 
-The translation-gate v2 candidate pool now has multiple sources and global
-leakage checks. Original candidates still require review before development,
-validation, and a sealed final test can be finalized. A local, reproducible
-Label Studio workspace now exposes all pending originals for structured human
-review and exports fail-closed decisions in the benchmark schema. Versioned
-Qwen3.8-27B BF16 provenance and research-value triage on the DGX Spark may
-reduce the active human queue, but their outputs remain model-assisted
-measurements rather than benchmark gold.
-Initial human reading also found heterogeneous machine-like style signals in
-the 2023-01-01 through 2025-06-30 transition period, supporting its continued
-exclusion from the primary pre/post contrast rather than any document-level
-authorship interpretation.
+## 工作线 B：读者 benchmark
 
-Deliverables:
+状态：立即开展的下一步工作。
 
-- 20 passages across at least three genres;
-- unchanged inputs and 5–10 careful human edits;
-- locked fact, entity, number, citation, negation, and modality fields;
-- blinded pairwise preference questions;
-- span-level notes about irritating passages and accepted edits.
+这条工作线不等待大规模语料。
 
-Exit criteria:
+状态：进行中。本地采集流程可复现，结构已验证，但输出仍是诊断性 pilot 材料，尚未满足下方退出条件。
 
-- rating questions are understandable;
-- readers can identify meaningful quality differences without guessing
-  authorship;
-- preservation failures can be recorded separately from style preference.
+翻译筛选 v2 候选池已有多个来源和全局泄漏检查。原创候选仍需复核，之后才能完成 development、validation 和密封 final test。本地可复现的 Label Studio 工作区已提供所有待确认原创文章，支持结构化人工复核，并按 benchmark schema 导出 fail-closed 决策。DGX Spark 上带版本的 Qwen3.8-27B BF16 来源与研究价值分流可以缩减当前人工队列，但输出仍是模型辅助测量，不是 benchmark gold。
 
-## Milestone 1: Smell hypothesis catalog
+初步人工阅读还发现，2023-01-01 至 2025-06-30 过渡期的机械化风格信号并不均一。这支持继续将其排除在主要前后时间对比之外，不能据此解释单篇文章的作者身份。
 
-Inputs:
+交付物：
 
-- corpus feature differences;
-- direct editor observations;
-- reader-highlighted spans;
-- recurring rejected and accepted edits.
+- 覆盖至少三种体裁的 20 个段落；
+- 未修改输入，以及 5–10 个仔细完成的人工编辑版本；
+- 锁定事实、实体、数字、引用、否定和情态字段；
+- 盲评成对偏好问题；
+- 关于令人不适的段落和已接受编辑的 span 级说明。
 
-Each hypothesis records:
+退出条件：
 
-- a precise description;
-- detector or locator;
-- proposed edit operations;
-- positive examples and counterexamples;
-- known genre and source confounders;
-- reader-intervention result;
-- preservation risks.
+- 评分问题易于理解；
+- 读者能够识别有意义的质量差别，不依赖猜测作者身份；
+- 原意保留失败可与风格偏好分开记录。
 
-The canonical records and their evidence status are maintained in
-[Chinese Writing Smell Catalog](smell-catalog.md).
+## 里程碑 1：臭味假设目录
 
-Exit criterion:
+输入：
 
-At least three smell categories have evidence that a bounded edit improves
-reader preference without meaning loss.
+- 语料特征差异；
+- 编辑者的直接观察；
+- 读者标出的 span；
+- 反复被拒绝或被接受的编辑。
 
-## Milestone 2: Baseline route comparison
+每个假设记录：
 
-Run on the same 20 passages:
+- 精确描述；
+- detector 或 locator；
+- 拟议编辑操作；
+- 正例与反例；
+- 已知体裁和来源混杂因素；
+- 读者干预结果；
+- 原意保留风险。
 
-1. unchanged input;
-2. high-precision deterministic rules;
-3. one frozen prompt-only rewrite;
-4. targeted span rewriting;
-5. human edit on the upper-bound subset.
+正式记录与证据状态维护在[中文写作臭味目录](smell-catalog.md)中。
 
-Measure:
+退出条件：
 
-- blinded reading preference;
-- meaning and factual preservation;
-- edit size;
-- latency, memory, and throughput;
-- failure and fallback rate.
+至少三类臭味已有证据表明：限定范围的编辑能在不损失原意的情况下提高读者偏好。
 
-Exit criterion:
+## 里程碑 2：Baseline 路线比较
 
-Select the simplest approach that produces a reproducible preference gain while
-passing preservation gates.
+在同一批 20 个段落上运行：
 
-## Milestone 3: Hybrid refinement MVP
+1. 未修改输入；
+2. 高 precision 的确定性规则；
+3. 一个冻结的、仅依赖 prompt 的改写；
+4. 定向 span 改写；
+5. 在上限参照子集上进行人工编辑。
 
-Recommended architecture:
+测量：
+
+- 盲评阅读偏好；
+- 原意和事实保留；
+- 编辑幅度；
+- latency、内存和吞吐；
+- 失败与 fallback 比率。
+
+退出条件：
+
+选择能产生可复现偏好收益、同时通过原意保留检查的最简单方案。
+
+## 里程碑 3：混合式改写 MVP
+
+推荐架构：
 
 ~~~text
-deterministic span analysis
-    -> explicit edit plan
-    -> bounded local rewrite
-    -> preservation checks
-    -> accept or revert each operation
-    -> inspectable diff
+确定性的 span 分析
+    -> 显式编辑计划
+    -> 限定范围的局部改写
+    -> 原意保留检查
+    -> 逐项接受或撤回操作
+    -> 可检查的 diff
 ~~~
 
-Deliverables:
+交付物：
 
-- low, medium, and high refinement intensity;
-- operation reason codes;
-- locked-content support;
-- deterministic fallback to the original;
-- batch CLI;
-- human accept, reject, modify, and revert events.
+- 低、中、高三级改写强度；
+- 操作原因码；
+- 锁定内容支持；
+- 确定性回退至原文；
+- 批量 CLI；
+- 人工接受、拒绝、修改和撤回事件。
 
-Exit criteria:
+退出条件：
 
-- improved blinded reader preference over unchanged text;
-- better preservation than prompt-only full-document rewriting;
-- no critical fact, number, entity, citation, negation, or modality changes;
-- every edit can be inspected and reverted.
+- 相比原文，盲评读者偏好提高；
+- 原意保留优于仅依赖 prompt 的全文改写；
+- 关键事实、数字、实体、引用、否定和情态均不改变；
+- 每项编辑都可检查、可撤回。
 
-## Milestone 4: Candidate generation and reranking
+## 里程碑 4：候选生成与 reranking
 
-Add only if several candidates materially improve the MVP.
+仅当多个候选能实质性改善 MVP 时增加此阶段。
 
-Deliverables:
+交付物：
 
-- bounded candidate generation;
-- deterministic preservation rejection;
-- feature and edit-size diagnostics;
-- human-selected candidate benchmark;
-- optional small preference reranker.
+- 有界候选生成；
+- 确定性的原意保留拒绝检查；
+- 特征与编辑幅度诊断；
+- 人工选择候选的 benchmark；
+- 可选的小型偏好 reranker。
 
-Exit criterion:
+退出条件：
 
-Automatic selection approaches human candidate choice without increasing
-meaning failures enough to outweigh the quality gain.
+自动选择接近人工候选选择，同时新增的原意保留失败不会抵消质量收益。
 
-## Milestone 5: Data flywheel
+## 里程碑 5：数据反馈循环
 
-Collect:
+采集：
 
-- original generated draft;
-- proposed operation and candidate;
-- accepted, rejected, modified, or reverted result;
-- reason code and genre;
-- preservation-check outcome;
-- optional blinded preference.
+- 原始生成草稿；
+- 拟议操作和候选；
+- 被接受、拒绝、修改或撤回的结果；
+- 原因码和体裁；
+- 原意保留检查结果；
+- 可选的盲评偏好。
 
-Private text is excluded from logs by default. Training use requires explicit
-rights and retention policy.
+私有文本默认不进入日志。用于训练需要明确的使用权利和保留策略。
 
-Exit criterion:
+退出条件：
 
-Enough reliable paired edits exist to justify a learned editor. A raw pre/post
-corpus is not a substitute for paired editing data.
+拥有足够可靠的成对编辑数据，能够支持学习型编辑器。原始前后时间语料不能替代成对编辑数据。
 
-## Milestone 6: Learned compact refiner
+## 里程碑 6：学习型小模型改写器
 
-Candidate methods:
+候选方法：
 
-- supervised LoRA or QLoRA;
-- edit-operation prediction;
-- encoder-decoder editing;
-- teacher generation with human review;
-- preference optimization;
-- distillation into a production-sized model.
+- 有监督的 LoRA 或 QLoRA；
+- 编辑操作预测；
+- encoder-decoder 编辑；
+- 经人工复核的 teacher 生成；
+- preference optimization；
+- 蒸馏为适合生产部署的模型。
 
-Start with supervised accepted edits. Add preference optimization only after
-pairwise feedback is large and stable.
+从监督学习已接受的编辑开始。只有成对反馈足够多且稳定后，才加入 preference optimization。
 
-Exit criteria:
+退出条件：
 
-- match or exceed the hybrid MVP on reader preference;
-- pass the same preservation gates;
-- reduce latency or operating cost;
-- remain stable across genres and refinement intensities.
+- 读者偏好达到或超过混合式 MVP；
+- 通过相同的原意保留检查；
+- 降低 latency 或运行成本；
+- 在不同体裁和改写强度下保持稳定。
 
-## Milestone 7: Product interfaces
+## 里程碑 7：产品接口
 
-Deliverables:
+交付物：
 
-- stable local API and service contract;
-- editor or publishing integration;
-- diff review and per-edit controls;
-- privacy, retention, observability, and rollback policies;
-- backend-independent configuration.
+- 稳定的本地 API 与服务契约；
+- 编辑器或发布集成；
+- diff 复核与逐项编辑控制；
+- 隐私、保留、可观测性和回滚策略；
+- 独立于 backend 的配置。
 
-Exit criteria:
+退出条件：
 
-- all interfaces use the same evaluation and preservation contract;
-- private text is not logged by default;
-- deployments can be rolled back safely;
-- model or rule updates cannot bypass quality gates.
+- 所有接口使用同一套评估与原意保留契约；
+- 私有文本默认不记入日志；
+- 部署可安全回滚；
+- 模型或规则更新不能绕过质量检查。
 
-## Standing non-goals
+## 长期不做的事项
 
-- classifying individual documents as human or AI;
-- optimizing against commercial AI detectors;
-- assuming every pre/post corpus difference is undesirable;
-- fabricating voice, anecdotes, facts, citations, or personal experience;
-- using unreviewed synthetic rewrites as gold training data;
-- making the large corpus a prerequisite for small reader experiments.
+- 将单篇文章分类为人类或 AI 写作；
+- 针对商业 AI detector 优化；
+- 假定每个前后时间语料差异都不受欢迎；
+- 编造语气、轶事、事实、引用或个人经历；
+- 将未经复核的合成改写用作 gold 训练数据；
+- 把大规模语料作为小规模读者实验的前提。

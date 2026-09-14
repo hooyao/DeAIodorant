@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-14",
+  "directional_preferences": [
+    "revised",
+    "revised",
+    "revised"
+  ],
+  "feedback_sha256": "9d608934d14609716a19ff1c26acf6739002cececb93ef365beaa112a7ea75a4",
+  "gpu_required": false,
+  "historical_preflight_summary": "benchmark_results/compact_refiner/cr001-summary.json",
+  "human_preservation_pass_count": 0,
+  "interpretation": "Do not report three validated wins or successful smell removal. Distinguish general editing preference from target-smell coverage.",
+  "no_obvious_smell_reported_for_all_displayed_pairs": true,
+  "packet_sha256": "65c497b0455a620bbb44cc0aafc6f77e647bfa628bd327dc1f7a5f0cd581a815",
+  "pair_count": 3,
+  "preservation_concerns": [
+    1
+  ],
+  "reader_count": 1,
+  "report": "docs/routes/compact-refiner/reports/cr001-reader-preview-v1.md",
+  "route_id": "compact-refiner-v1",
+  "schema_version": "compact-refiner-reader-preview-summary-1.0",
+  "selected_sides": [
+    "A",
+    "B",
+    "A"
+  ],
+  "smell_reduction_validated": false,
+  "status": "qualitative_reader_feedback_recorded_not_validation",
+  "strengths": [
+    "unspecified",
+    "unspecified",
+    "slight"
+  ],
+  "training_export_count": 0,
+  "unique_source_groups": 3
+}

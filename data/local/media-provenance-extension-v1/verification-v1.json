@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-09-14T08:42:56.533848+00:00",
+  "protected_input_hashes_checked": 72,
+  "frozen_output_hashes_checked": 165,
+  "article_gets": 24,
+  "unique_requested_urls": 24,
+  "all_article_responses_complete_http_200": true,
+  "all_raw_response_and_body_hashes_match": true,
+  "literal_and_cjk_counts_recomputed": 21,
+  "minimum_completed_to_next_request_seconds": 2.000132,
+  "robots_gets": 2,
+  "fetch_process_observations": "Initial 10-second session snapshot: 2 selections complete; independent live PID/log checks at 10, 16, and 23; successful terminal exit and final process-dead/complete check at 24.",
+  "analysis_process_observations": "Initial 10-second session snapshot indexed four of six protected files; final direct PID check found completed stage and successful terminal exit. The analysis finished before one minute.",
+  "focused_comparator_test": "python -B -m pytest -q tests/test_translation_benchmark_v2.py -k exclusion_index -p no:cacheprovider",
+  "commands_executed": [
+    "python -B experiments/stage_media_provenance_extension.py freeze",
+    "python -B experiments/stage_media_provenance_extension.py inspect",
+    "python -B -u experiments/stage_media_provenance_extension.py fetch",
+    "python -B -u experiments/stage_media_provenance_extension.py analyze"
+  ],
+  "implementation_sha256": "5eb15e23d7bf69409b0e91171cef10f2dd49147bde9ba413e8d44a11468a788d",
+  "protocol_sha256": "59caa30c72c9fc62ffb7f389f718f67717b80eb0047905c0e02ac7dc226d49ed",
+  "selection_manifest_sha256": "46ebccdf0251c6b548fd1ca70093e093bf6566f55e3675d1f9717db23a0e0f3b",
+  "result_manifest_sha256": "54477b371af5f50ca2fc9f44bab34dce941ea9708c966419cbd54f4b9ea170b7",
+  "addendum_sha256": "13a4c2602610c50a922ff06383c7889d0a46777f581486b682bd657a0c9b5407",
+  "network_retries": 0,
+  "model_calls": 0,
+  "gpu_used": false
+}

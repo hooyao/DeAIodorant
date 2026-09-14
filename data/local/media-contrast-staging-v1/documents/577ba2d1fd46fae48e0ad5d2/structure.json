@@ -1,0 +1,40 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "华为开发者联盟社区",
+      "href": "https://developer.huawei.com/consumer/cn/forum/?ha_source=InfoQ&ha_sourceId=70000011"
+    },
+    {
+      "text": "startup",
+      "href": "https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-startup"
+    },
+    {
+      "text": "提升应用冷启动速度",
+      "href": "https://developer.huawei.com/consumer/cn/doc/best-practices/bpta-application-cold-start-optimization"
+    },
+    {
+      "text": "大佬们有冷启动的优化经验吗？-华为开发者问答 | 华为开发者联盟 (huawei.com)",
+      "href": "https://developer.huawei.com/consumer/cn/forum/topic/0204175429542067241"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 12,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 1,
+    "ol": 0,
+    "li": 4,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 4
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/577ba2d1fd46fae48e0ad5d2.html",
+  "raw_html_sha256": "70732780e4618bb4baa22639f933c37eccfdc2348ad79e46e580996af3502138"
+}

@@ -1,0 +1,83 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/d7/d7879f025b057f1753c50ec085479d44.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 11,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "Kubescape",
+      "href": "https://kubescape.io/"
+    },
+    {
+      "text": "KubeCon + CloudNativeCon大会",
+      "href": "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe/"
+    },
+    {
+      "text": "Ben Hirschberg",
+      "href": "https://www.linkedin.com/in/ben-hirschberg-66141890/"
+    },
+    {
+      "text": "发布公告",
+      "href": "https://www.cncf.io/blog/2026/03/26/announcing-kubescape-4-0-enterprise-stability-meets-the-ai-era/"
+    },
+    {
+      "text": "底层架构",
+      "href": "https://www.youtube.com/watch?v=ifwNDvRSQWU"
+    },
+    {
+      "text": "KAgent",
+      "href": "https://kagent.dev/"
+    },
+    {
+      "text": "它于2025年5月纳入CNCF沙箱",
+      "href": "https://www.opsworker.ai/blog/kagent-100-days-and-graduated-to-cncf-sandbox/"
+    },
+    {
+      "text": "OPA的Rego 语言",
+      "href": "https://www.openpolicyagent.org/docs/policy-language"
+    },
+    {
+      "text": "CRD",
+      "href": "https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/"
+    },
+    {
+      "text": "智能体AI日益普及的趋势",
+      "href": "https://www.shakudo.io/blog/deploy-ai-agents-on-kubernetes"
+    },
+    {
+      "text": "LinkedIn帖子",
+      "href": "https://www.linkedin.com/posts/craine-io_kagent-when-ai-agents-meet-kubernetes-activity-7333497410721103873-p1_F"
+    },
+    {
+      "text": "Kubescape 4.0 Brings Runtime Security and AI Agent Scanning to Kubernetes",
+      "href": "https://www.infoq.com/news/2026/03/kubescape-40/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 27,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 12
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/83e3fb47524511fba7945931.html",
+  "raw_html_sha256": "171b92000aeadd59e45522794f72fa63c29031994636831ea6f8b820490d65c8"
+}

@@ -1,0 +1,371 @@
+{
+  "all_period_sensitivity": {
+    "permutation_count": 1260,
+    "task_count": 10,
+    "top_features": [
+      {
+        "absolute_rho": 0.8643325211229224,
+        "bh_q_value": 0.44126984126984126,
+        "exact_p_value": 0.0031746031746031746,
+        "feature": "syntax_mean_root_relative_position",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.8643325211229224
+      },
+      {
+        "absolute_rho": 0.7839294959021854,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.012698412698412698,
+        "feature": "deprel_advmod_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.7839294959021854
+      },
+      {
+        "absolute_rho": 0.7236272269866326,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.025396825396825397,
+        "feature": "upos_adv_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.7236272269866326
+      },
+      {
+        "absolute_rho": 0.7035264706814484,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.03015873015873016,
+        "feature": "syntax_pos_bigram_entropy_bits",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.7035264706814484
+      },
+      {
+        "absolute_rho": 0.6231234454607114,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.06190476190476191,
+        "feature": "deprel_clf_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.6231234454607114
+      },
+      {
+        "absolute_rho": 0.6231234454607114,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.06190476190476191,
+        "feature": "syntax_left_dependency_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.6231234454607114
+      },
+      {
+        "absolute_rho": 0.6231234454607114,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.06190476190476191,
+        "feature": "upos_part_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.6231234454607114
+      },
+      {
+        "absolute_rho": 0.6030226891555271,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.0761904761904762,
+        "feature": "upos_noun_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.6030226891555271
+      },
+      {
+        "absolute_rho": 0.6001068280966357,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.1,
+        "feature": "hypothesis_complete_contrast_frames_per_1k_sentences",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.6001068280966357
+      },
+      {
+        "absolute_rho": 0.582921932850343,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.08412698412698413,
+        "feature": "upos_pron_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.582921932850343
+      },
+      {
+        "absolute_rho": 0.5789407688124093,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.08095238095238096,
+        "feature": "discourse_causal_markers_per_10k_cjk",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.5789407688124093
+      },
+      {
+        "absolute_rho": 0.5763753889237944,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.09126984126984126,
+        "feature": "surface_sentence_count",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.5763753889237944
+      },
+      {
+        "absolute_rho": 0.5737753105492469,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.18888888888888888,
+        "feature": "surface_parenthesis_density",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.5737753105492469
+      },
+      {
+        "absolute_rho": 0.5628211765451587,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.09523809523809523,
+        "feature": "graph_proposition_restatement_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.5628211765451587
+      },
+      {
+        "absolute_rho": 0.5544535140000394,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.09841269841269841,
+        "feature": "syntax_sentence_count",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.5544535140000394
+      },
+      {
+        "absolute_rho": 0.5427204202399745,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.11587301587301588,
+        "feature": "deprel_cop_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.5427204202399745
+      },
+      {
+        "absolute_rho": 0.5427204202399745,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.11587301587301588,
+        "feature": "upos_num_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.5427204202399745
+      },
+      {
+        "absolute_rho": 0.502518907629606,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.14603174603174604,
+        "feature": "graph_abstract_shell_count_per_100_cjk",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.502518907629606
+      },
+      {
+        "absolute_rho": 0.502518907629606,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.14603174603174604,
+        "feature": "hypothesis_abstract_shells_per_1k_cjk",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.502518907629606
+      },
+      {
+        "absolute_rho": 0.502518907629606,
+        "bh_q_value": 0.8609088079676315,
+        "exact_p_value": 0.14603174603174604,
+        "feature": "syntax_dependency_distance_mean",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.502518907629606
+      }
+    ]
+  },
+  "artifact_type": "reader-friction-calibration",
+  "caveats": [
+    "The sample contains only ten purposively selected passages.",
+    "The same reader supplied all ratings.",
+    "Feature correlations are exploratory and not validation results.",
+    "The hypothesis proxy list predates these ratings but remains weak by design."
+  ],
+  "feature_count": 138,
+  "model": {
+    "device": "cpu",
+    "file_count": 8,
+    "fingerprint": "5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9",
+    "language": "zh-hans",
+    "package": "gsdsimp",
+    "processors": [
+      "tokenize",
+      "pos",
+      "lemma",
+      "depparse"
+    ],
+    "stanza_version": "1.14.0"
+  },
+  "post_period_primary": {
+    "permutation_count": 56,
+    "task_count": 8,
+    "top_features": [
+      {
+        "absolute_rho": 0.8451542547285166,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.03571428571428571,
+        "feature": "syntax_mean_root_relative_position",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.8451542547285166
+      },
+      {
+        "absolute_rho": 0.8451542547285166,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.03571428571428571,
+        "feature": "upos_part_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.8451542547285166
+      },
+      {
+        "absolute_rho": 0.7803902927439634,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.03571428571428571,
+        "feature": "hypothesis_complete_contrast_frames_per_1k_sentences",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.7803902927439634
+      },
+      {
+        "absolute_rho": 0.7406560798180413,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.08928571428571429,
+        "feature": "discourse_marker_type_coverage",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.7406560798180413
+      },
+      {
+        "absolute_rho": 0.7324670207647144,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.07142857142857142,
+        "feature": "deprel_advmod_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.7324670207647144
+      },
+      {
+        "absolute_rho": 0.7324670207647144,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.07142857142857142,
+        "feature": "deprel_obl_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.7324670207647144
+      },
+      {
+        "absolute_rho": 0.720360270225197,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.10714285714285714,
+        "feature": "discourse_all_markers_per_10k_cjk",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.720360270225197
+      },
+      {
+        "absolute_rho": 0.6197797868009122,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.14285714285714285,
+        "feature": "surface_compression_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.6197797868009122
+      },
+      {
+        "absolute_rho": 0.6197797868009122,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.14285714285714285,
+        "feature": "syntax_mean_nonleaf_branching",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.6197797868009122
+      },
+      {
+        "absolute_rho": 0.6197797868009122,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.14285714285714285,
+        "feature": "syntax_pos_bigram_entropy_bits",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.6197797868009122
+      },
+      {
+        "absolute_rho": 0.6197797868009122,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.14285714285714285,
+        "feature": "upos_adv_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.6197797868009122
+      },
+      {
+        "absolute_rho": 0.5809475019311126,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.2857142857142857,
+        "feature": "discourse_causal_markers_per_10k_cjk",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.5809475019311126
+      },
+      {
+        "absolute_rho": 0.5809475019311126,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.2857142857142857,
+        "feature": "discourse_enumeration_markers_per_10k_cjk",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.5809475019311126
+      },
+      {
+        "absolute_rho": 0.50709255283711,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.25,
+        "feature": "deprel_clf_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.50709255283711
+      },
+      {
+        "absolute_rho": 0.50709255283711,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.25,
+        "feature": "deprel_mark_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.50709255283711
+      },
+      {
+        "absolute_rho": 0.50709255283711,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.25,
+        "feature": "deprel_root_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": -0.50709255283711
+      },
+      {
+        "absolute_rho": 0.50709255283711,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.25,
+        "feature": "graph_proposition_restatement_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.50709255283711
+      },
+      {
+        "absolute_rho": 0.50709255283711,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.25,
+        "feature": "surface_cjk_char_mattr",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.50709255283711
+      },
+      {
+        "absolute_rho": 0.50709255283711,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.25,
+        "feature": "surface_cjk_char_type_token_ratio",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.50709255283711
+      },
+      {
+        "absolute_rho": 0.50709255283711,
+        "bh_q_value": 0.9511278195488722,
+        "exact_p_value": 0.25,
+        "feature": "syntax_dependency_distance_mean",
+        "loo_direction_stability": 1.0,
+        "spearman_rho": 0.50709255283711
+      }
+    ]
+  },
+  "python_version": "3.13.5",
+  "rating_counts": {
+    "0": 1,
+    "1": 5,
+    "2": 4
+  },
+  "rating_scale": {
+    "很难读，不想继续": 2,
+    "有点卡，但还能读": 1,
+    "顺畅，愿意继续读": 0
+  },
+  "ratings_sha256": "fd228aa54050a718989f7cd58c719af1dd1980be01200046a4a88262557673b8",
+  "seed": 20260821,
+  "task_count": 10,
+  "tasks_sha256": "5c4e50c7c1e72cc96a757f65f31e8f032cbd87c1f143ec0abbaf796a8766f9b6"
+}

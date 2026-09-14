@@ -1,0 +1,6 @@
+# 冻结语料与研究产物按原始字节保存，避免跨系统换行转换破坏 SHA256。
+data/** -text
+feature_runs/** -text
+benchmark_results/** -text
+experiments/fixtures/** -text
+docs/routes/compact-refiner/prompts/** -text

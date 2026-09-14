@@ -1,0 +1,110 @@
+{
+  "alias": "doc-02",
+  "content_hash": "1d86ea8e2000bc104a266155800018df52aa53a34532a5fd998ebfb5226c61af",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 2430,
+        "start_char": 2428,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 2449,
+        "start_char": 2414,
+        "text": "阿里云没有另起一套封闭体系，而是把云能力接入更大的 Agent 生态。"
+      },
+      "occurrence_id": "doc-02-e01"
+    },
+    {
+      "connector": {
+        "end_char": 3296,
+        "start_char": 3294,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 3318,
+        "start_char": 3268,
+        "text": "\n这样一来，Agent 的能力不再悬浮在自然语言上，而是落进一条可校验、可审计、可回滚的工程链路里。"
+      },
+      "occurrence_id": "doc-02-e02"
+    },
+    {
+      "connector": {
+        "end_char": 3453,
+        "start_char": 3451,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 3473,
+        "start_char": 3426,
+        "text": "\n它真正解决的，不只是让 Agent 更容易调云，而是让企业敢把一部分云操作交给 Agent。"
+      },
+      "occurrence_id": "doc-02-e03"
+    },
+    {
+      "connector": {
+        "end_char": 4029,
+        "start_char": 4027,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 4039,
+        "start_char": 4002,
+        "text": "这里的关键在于：Agent 不是绕开现有工程体系，而是进入 IaC 路径。"
+      },
+      "occurrence_id": "doc-02-e04"
+    },
+    {
+      "connector": {
+        "end_char": 4752,
+        "start_char": 4750,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 4781,
+        "start_char": 4712,
+        "text": "\n但方向已经清楚：Agent 调云，不是把\"人点按钮\"换成\"AI 点按钮\"，而是把云操作重新纳入一套可规划、可校验、可追溯的工程秩序之中。"
+      },
+      "occurrence_id": "doc-02-e05"
+    },
+    {
+      "connector": {
+        "end_char": 4794,
+        "start_char": 4792,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 4828,
+        "start_char": 4781,
+        "text": "这不是给智能套上枷锁，而是给智能划定一条能够被信任的边界——唯有可控，自动化才谈得上真正可用。"
+      },
+      "occurrence_id": "doc-02-e06"
+    },
+    {
+      "connector": {
+        "end_char": 5219,
+        "start_char": 5217,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 5275,
+        "start_char": 5201,
+        "text": "\n它不是简单把 API 包一层，而是把稳定的 API、场景化 SOP、权限边界和调用规则，打包成一个 Agent 能理解、能调用、能组合的能力单元。"
+      },
+      "occurrence_id": "doc-02-e07"
+    },
+    {
+      "connector": {
+        "end_char": 5299,
+        "start_char": 5297,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 5315,
+        "start_char": 5275,
+        "text": "\n云 Skills 门户也不是传统产品目录，而是面向 Agent 的云能力入口。"
+      },
+      "occurrence_id": "doc-02-e08"
+    }
+  ]
+}

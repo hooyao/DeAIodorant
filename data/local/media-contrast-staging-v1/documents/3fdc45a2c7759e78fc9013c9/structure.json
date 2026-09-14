@@ -1,0 +1,28 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "https://mp.weixin.qq.com/s/wNg-IlteYFhJvxbqYOyfPA",
+      "href": "https://mp.weixin.qq.com/s/wNg-IlteYFhJvxbqYOyfPA"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 82,
+    "h1": 0,
+    "h2": 6,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 1
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/3fdc45a2c7759e78fc9013c9.html",
+  "raw_html_sha256": "14f165895edc714eac4050a6d7fab0b530ef7c1de501c6a4fe84c8dd37e2bb07"
+}

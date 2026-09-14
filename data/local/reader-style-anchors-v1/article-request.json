@@ -1,0 +1,13 @@
+{
+  "url": "https://post.smzdm.com/p/a70dm4ll/",
+  "requested_at": "2026-09-14T09:32:10.352935+00:00",
+  "status": 200,
+  "response_url": "https://post.smzdm.com/p/a70dm4ll/",
+  "headers": {
+    "Content-Type": "text/html; charset=UTF-8",
+    "Date": "Mon, 14 Sep 2026 09:32:12 GMT"
+  },
+  "bytes": 181913,
+  "sha256": "bb4e86a8e65eea101c971d0a40d1b2773f53359209c684d4608691e9f1636098",
+  "capture_file": "source.html"
+}

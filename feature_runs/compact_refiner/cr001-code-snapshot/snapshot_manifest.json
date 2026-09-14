@@ -1,0 +1,18 @@
+{
+  "files": {
+    "data/local/compact_refiner/cr001-v1/briefs.jsonl": "f5cd121c4841e15ad26923ab4be4346e77c9e81c5bc343c2092159f09d60cdc0",
+    "data/local/compact_refiner/cr001-v1/drafts.jsonl": "5b03eeb3fac0bc65031bd7e60358ef902e08f4294fe08ae2b8cb4a4a447bdfe1",
+    "data/local/compact_refiner/cr001-v1/source_assessments.jsonl": "413569bf06f780f64bf4c70718bd1d6172fcf8a1f7cca716435761c31b17921e",
+    "docs/routes/compact-refiner/prompts/draft-v1.txt": "98bea5accc5358f50bea08df893bcdad86d85adf6cbd6bb8941c52d10ba7d9e4",
+    "docs/routes/compact-refiner/prompts/editor-v1.txt": "04c3fc6b4e800d874eaff974bb462829a125801c1e0fb7acedfeb272cacc77a0",
+    "experiments/compact_refiner_edit_stage.py": "0c2c3ecfb8d83406b8f5466d773472552abdbe138f9b6333e5d4dfeb666044e2",
+    "experiments/compact_refiner_run.py": "14bcac9def9cc19639d9fa71e5305217dff213682bcdb35f056058fd8a36af32",
+    "experiments/fixtures/compact-refiner/briefs.v1.jsonl": "23f7d43004c672e53e1269e12be14e7990f81e738ef29701d23d386edb713932",
+    "feature_runs/compact_refiner/cr001-catalog-20260914/models.json": "6875124fd348cbf584154a4413b8cd8cd01122f0563e048689546a13aa740f2b",
+    "feature_runs/compact_refiner/cr001-v1/manifest.initial.json": "349e9cc728e03c66ab9756269188d8cd9dfa51cc0dc980748e6b168dd6d69295",
+    "feature_runs/compact_refiner/cr001-v1/source-disposition-23.json": "83b9529cf5164d52afad85df5b78c7bb2c4803b4c0aeba7b26aed8e0a3beec31",
+    "src/deaiodorant/refine/openrouter.py": "05c368f61d9954dbc4eb331a02c83c072b5aded6401bcc1f50be9dbbb0a7333a",
+    "src/deaiodorant/refine/records.py": "d1d4ab83154ad622916ba9ec0686cf4fb66091388bed871f71cd83eded49e365"
+  },
+  "purpose": "Preserve exact CR-001 measurement code and inputs before later maintenance"
+}

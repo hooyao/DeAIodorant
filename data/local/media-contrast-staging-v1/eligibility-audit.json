@@ -1,0 +1,468 @@
+{
+  "version": "media-contrast-staging-eligibility-audit-v1",
+  "created_at": "2026-09-14T06:36:42.377475+00:00",
+  "interpretation": "Captured HTTP responses and extracted metadata do not guarantee nonempty or complete article text. Empty collector bodies are extraction failures for downstream text analysis. No final admission is made.",
+  "attempts_sha256": "348e8cc8ec34d1a6fe5517ee7f7858f6bfa78bb7424bc063b3bc9616858ac6f2",
+  "records": [
+    {
+      "doc_id": "8bfb7b3e6b210126548b7f0c",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 4900,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "0be079018045fbf1f2d47d7f",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 21891,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "c526ed941b8de39a5388df3d",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 4048,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "577ba2d1fd46fae48e0ad5d2",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 334,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "9d2686869fb90420de5a6d40",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 1913,
+      "blocking_findings": [
+        "deterministic_translation_evidence"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "21fb54b8f31d94d5f58b2b86",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 243,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "9656e09a0c8ef6938c517cef",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 1957,
+      "blocking_findings": [
+        "deterministic_translation_evidence"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "83e3fb47524511fba7945931",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 2450,
+      "blocking_findings": [
+        "deterministic_translation_evidence"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "6e1b7928a8a00ba027e8c8fa",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 1346,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "a4007204435ea4d0895d0d46",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 2301,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "3fdc45a2c7759e78fc9013c9",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 4164,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "5eccef97088993c9842a4e4c",
+      "intended_cohort": "post",
+      "actual_cohort": "post",
+      "text_chars": 1042,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "769ecc5e088514e4261ae7e0",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 0,
+      "blocking_findings": [
+        "empty_collector_body_not_usable_text_capture"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "8a835ce2a2584c3c9040fcc5",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 0,
+      "blocking_findings": [
+        "empty_collector_body_not_usable_text_capture"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "d679960cb6cb418eebb6b222",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 7034,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "550a11e0e8987efc94c654b7",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 3582,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "195940f04347559f68fbfdcb",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 7188,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "8bdf575aae4fe9a3b509a492",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 7013,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "738c96bc2777301fdaf9f078",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 8952,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "c979e224eb220101fb785893",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 0,
+      "blocking_findings": [
+        "empty_collector_body_not_usable_text_capture"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "94484784827b950a4ea5beea",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 0,
+      "blocking_findings": [
+        "empty_collector_body_not_usable_text_capture"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "0c1bc051de0fc98fbcd0524d",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 4484,
+      "blocking_findings": [
+        "deterministic_translation_evidence"
+      ],
+      "candidate_for_further_review": false,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "2e0d0c6274b0a0e6a333fbb9",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 740,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    },
+    {
+      "doc_id": "2762aba55519d5e3e9349b17",
+      "intended_cohort": "pre",
+      "actual_cohort": "pre",
+      "text_chars": 8649,
+      "blocking_findings": [],
+      "candidate_for_further_review": true,
+      "admission_status": "not_admitted",
+      "pending_checks": [
+        "translation_originality_review",
+        "substantive_article_quality",
+        "age_appropriate_visibility",
+        "near_duplicate_and_exposure_audit",
+        "source_text_and_multimedia_completeness",
+        "training_rights_if_training_is_proposed"
+      ],
+      "source_attempt_record_unchanged": true
+    }
+  ],
+  "counts": {
+    "http_captured": 24,
+    "nonempty_collector_bodies": 20,
+    "empty_collector_body_failures": 4,
+    "deterministic_translation_exclusions": 4,
+    "remaining_for_further_review": 16,
+    "admitted": 0
+  },
+  "review_candidate_cohort_counts": {
+    "post": 9,
+    "pre": 7
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "alias": "doc-13",
+  "content_hash": "077d41bcb5d9a9a20f15284bcd480656eddf3f4c3a0a2f4e23733b777a79715d",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 7296,
+        "start_char": 7294,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 7382,
+        "start_char": 7267,
+        "text": "我们不希望 CNStack 提供的能力仍是组件化形态，而是希望能够真正围绕应用构建、运行、管理、运维整个生命周期里，能真正打通端到端的技术环节，提供可观测能力、监控告警能力，同时具备高可用和安全生产的能力，能保障整个业务的稳定性。"
+      },
+      "occurrence_id": "doc-13-e01"
+    }
+  ]
+}

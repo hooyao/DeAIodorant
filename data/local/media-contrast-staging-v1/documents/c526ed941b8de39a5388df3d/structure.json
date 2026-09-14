@@ -1,0 +1,77 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/27/2798224b81184116211242f420b586d4.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 3,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/fa/fa95ea01942eb8bff88234f7195c111d.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 8,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/84/842f272a3e6e92967e9aabc5c537d87e.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 44,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/80/8060c0e9f39720be6dc7c63fd4acf667.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 47,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "https://claude.com/blog/cowork-research-preview",
+      "href": "https://claude.com/blog/cowork-research-preview"
+    },
+    {
+      "text": "https://x.com/bcherny/status/2010809450844831752",
+      "href": "https://x.com/bcherny/status/2010809450844831752"
+    },
+    {
+      "text": "https://www.reddit.com/r/singularity/comments/1qb6qv1/introducing_cowork_claude_claude/?utm_source=chatgpt.com",
+      "href": "https://www.reddit.com/r/singularity/comments/1qb6qv1/introducing_cowork_claude_claude/?utm_source=chatgpt.com"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 83,
+    "h1": 0,
+    "h2": 3,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 4,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 3
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/c526ed941b8de39a5388df3d.html",
+  "raw_html_sha256": "f377223dd4ba3368417975ed6edc145198f5a81dcdeece6e99fb3d54515881cb"
+}

@@ -1,0 +1,12 @@
+{
+  "case_ids": [
+    "review-19",
+    "review-22",
+    "review-18",
+    "review-21",
+    "review-27",
+    "review-30"
+  ],
+  "method": "fixed hash order over all26 non-control candidate IDs; no assessment outcomes used",
+  "seed_string": "20260914-secondary-candidate"
+}

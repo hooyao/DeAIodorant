@@ -1,118 +1,84 @@
-# Deterministic Discourse Graph Probe
+# 确定性篇章图探测
 
-## Purpose
+## 目的
 
-This experiment tests whether reader-described Chinese “AI smell” is better
-represented as a mismatch between surface reading cost and discourse structure
-than as isolated word frequencies. It is an exploratory direction probe, not a
-classifier, authorship detector, or validated quality score.
+本实验检验：读者描述的中文“AI 臭味”，是否更适合表示为表层阅读成本与篇章结构的失配。它是探索性方向探测，不是分类器、作者身份检测器或已验证的质量分数。
 
-## Representation
+## 表示
 
-Each passage becomes a heterogeneous graph with four node types:
+每段转为包含四类节点的异构图：
 
-- sentence occurrences;
-- proposition occurrences derived from dependency predicates;
-- concrete entity and noun-chain mentions;
-- abstract shell concepts such as `体系`, `框架`, `能力`, and `意义`.
+- 句子实例；
+- 从依存谓词导出的命题实例；
+- 具体实体及名词链提及；
+- `体系`、`框架`、`能力`、`意义` 等抽象 shell 概念。
 
-Edges record:
+边记录：
 
-- sentence-to-proposition containment;
-- sentence-to-entity mention;
-- proposition-to-argument dependency roles;
-- adjacent-sentence discourse bridges with entity, content-word, and predicate
-  overlap;
-- explicit causal, contrastive, clarification, or enumeration markers.
+- 句子包含命题；
+- 句子提及实体；
+- 命题到论元的依存角色；
+- 相邻句的篇章衔接，包括实体、实词及谓词重叠；
+- 显式因果、对比、澄清或列举标记。
 
-The implementation uses Stanza 1.14 Chinese Universal Dependencies, fixed
-rules, and set overlap. It does not use an LLM or embedding model.
+实现使用 Stanza 1.14 中文 Universal Dependencies、固定规则及集合重叠，不使用 LLM 或 embedding 模型。
 
-## Mathematical hypothesis
+## 数学假设
 
-The working hypothesis is a **surface-to-structure mismatch**:
+工作假设为**表层与结构失配**：
 
-> Reading cost grows while the graph adds few grounded propositions, weakly
-> connects adjacent propositions, repeatedly revisits the same local claim, or
-> inserts low-connectivity detours into the main path.
+> 阅读成本增加，但图中有依据的新命题很少，相邻命题联系较弱，反复返回同一局部主张，或向主线插入连接稀疏的绕行。
 
-The initial graph features include:
+初始图特征包括：
 
-- propositions per 100 CJK characters;
-- CJK characters per unique proposition signature;
-- proposition restatement ratio;
-- mean adjacent bridge weight;
-- zero-bridge and unsupported-explicit-edge ratios;
-- semantic component and isolated-sentence ratios;
-- largest connected sentence-component coverage;
-- mainline detour ratio;
-- abstract-shell and ungrounded-abstract-shell ratios;
-- argumentless-proposition ratio.
+- 每 100 CJK 字符的命题数；
+- 每个唯一命题签名的 CJK 字符数；
+- 命题复述比例；
+- 相邻衔接平均权重；
+- 零衔接比例及缺少支撑的显式边比例；
+- 语义连通分量比例与孤立句比例；
+- 最大连通句子分量覆盖率；
+- 主线绕行比例；
+- 抽象 shell 及无具体支撑的抽象 shell 比例；
+- 无论元命题比例。
 
-## Data and separation policy
+## 数据与分离策略
 
-The time comparison uses 10 pre-period and 10 post-period InfoQ documents. It
-applies feature-wise Huber weights separately inside each cohort. No document
-is manually deleted. The post-period reading analysis uses only the eight
-post-period rated passages; the two pre-period passages remain a separate
-sensitivity analysis.
+时间比较使用前时期 10 篇及后时期 10 篇 InfoQ 文档。每个分组内部单独应用逐特征 Huber 权重，不人工删除文档。后时期阅读分析只使用八个已评分后时期段落；两个前时期段落保留为单独敏感性分析。
 
-This separation prevents the disliked 2022 Red Hat passage from defining a
-post-period reading-friction relationship. The current generic feature space
-did **not** confidently identify that document as the lowest-typicality
-pre-period document, which is evidence that the weighting representation is
-still incomplete rather than permission to override it manually.
+这一分离防止读者不喜欢的 2022 年 Red Hat 段落定义后时期阅读阻力关系。当前通用特征空间**没有**高置信度地将该文档识别为前时期最不典型文档，这说明加权表示仍不完整，不能据此人工覆盖结果。
 
-## Exploratory results
+## 探索结果
 
-| Feature | Robust post-minus-pre effect | Time permutation p | Post-only friction Spearman rho | Direction aligned |
+| 特征 | 稳健的后减前效应 | 时间 permutation p | 仅后时期阻力 Spearman rho | 方向一致 |
 |---|---:|---:|---:|---|
-| Complete contrast frames | 1.51 | 0.033 | 0.78 | Yes |
-| Mean adjacent graph bridge | -1.88 | 0.026 | -0.39 | Yes |
-| Mainline detour ratio | 0.83 | 0.089 | 0.35 | Yes |
-| Abstract-shell density | 0.71 | 0.189 | 0.28 | Yes |
-| Unsupported explicit edge ratio | 0.50 | 0.531 | 0.22 | Yes |
-| Total punctuation density | 2.36 | 0.0016 | 0.39 | Yes |
+| 完整对比框架 | 1.51 | 0.033 | 0.78 | 是 |
+| 平均相邻图衔接 | -1.88 | 0.026 | -0.39 | 是 |
+| 主线绕行比例 | 0.83 | 0.089 | 0.35 | 是 |
+| 抽象 shell 密度 | 0.71 | 0.189 | 0.28 | 是 |
+| 缺少支撑的显式边比例 | 0.50 | 0.531 | 0.22 | 是 |
+| 总标点密度 | 2.36 | 0.0016 | 0.39 | 是 |
 
-All listed time directions survived leave-one-document-out analysis and known
-translation removal. None of the graph or rhetorical results survives global
-multiple-testing correction in this expanded 161-feature probe. The eight
-post-period passage ratings contain only two ordinal levels and are far too
-small for confirmation.
+所列时间方向在 leave-one-document-out 和移除已知译文后均保留。但在扩展的 161 特征探测中，没有图或修辞结果通过全局 multiple-testing correction。八个后时期段落评分只有两个 ordinal 层级，样本远不足以确认。
 
-Exact proposition-signature restatement is currently invalid as a general
-measure. It is lower in the post-period full documents (robust effect -0.98)
-but higher in the most disliked post-period passages (rho 0.51). The rule misses
-semantic restatement expressed through different predicates and metaphors.
+精确命题签名复述目前不能作为通用测量：它在后时期全文中更低（稳健效应 -0.98），却在最不受喜欢的后时期段落中更高（rho 0.51）。规则遗漏了以不同谓词和比喻表达的语义复述。
 
-## Direction decision
+## 方向决定
 
-Continue with two graph-related hypotheses:
+继续研究两个图相关假设：
 
-1. formulaic contrast and emphasis create redundant discourse edges;
-2. weak adjacent bridges and mainline detours create local reading breaks.
+1. 程式化对比与强调制造冗余篇章边；
+2. 薄弱相邻衔接及主线绕行导致局部阅读中断。
 
-The first minimal intervention tested contrastive and emphatic reframing
-because it had the strongest aligned time and reader signal. Three blinded A/B
-tasks were generated by `experiments/prepare_refinement_pairs.py`.
+第一次最小干预测试了对比与强调式重新表述，因为其时间和读者信号的一致性最强。`experiments/prepare_refinement_pairs.py` 生成了三个盲法 A/B 任务。
 
-Two revised versions were clearly preferred and no original was clearly
-preferred. The third comparison was rated as a tie or as two bad versions. The
-reader independently reported the same tradeoff in both wins: the revisions
-explained the content more clearly but sounded too emotionally flat. In the
-failed comparison, aggressive compression omitted too many explicit
-grammatical arguments and made the revision effortful to parse.
+两个修订版被明确偏好，没有原版被明确偏好。第三对被评为平局或两个版本都不好。读者在两次胜出中独立报告相同取舍：修订解释更清楚，但情感过平。在失败配对中，激进压缩省掉过多显式语法论元，导致修订难解析。
 
-This is positive directional evidence for removing ornamental contrast and
-repeated reframing. It is also a direct counterexample to maximum compression.
-Future variants must preserve explicit subject-predicate-object structure and
-moderate authorial voice.
+这为删去装饰性对比和反复重新表述提供正向方向证据，也直接反驳最大压缩。后续变体必须保留显式主谓宾结构和适度作者风格。
 
-Do not promote the graph score as a smell index. Feature weights and thresholds
-remain provisional, and the current graph is lexical rather than fully
-semantic.
+不将图分数升级为臭味指数。特征权重和阈值仍是暂定，当前图基于词汇，并非完整语义。
 
-## Reproduction
+## 复现
 
 ~~~powershell
 python experiments/robust_typicality_probe.py `
@@ -137,9 +103,6 @@ python experiments/prepare_refinement_pairs.py `
   --seed 20260821
 ~~~
 
-The generated graph schema is
-`deaiodorant-discourse-graph-0.1`. Intermediate matrices and graph instances
-remain under ignored `feature_runs/` directories.
+生成的图 schema 为 `deaiodorant-discourse-graph-0.1`。中间矩阵及图实例保留在被忽略的 `feature_runs/` 目录。
 
-The frozen pairwise outcomes are stored in
-`data/annotations/refinement-pairwise-v1.json`.
+冻结配对结果保存在 `data/annotations/refinement-pairwise-v1.json`。

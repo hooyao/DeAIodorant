@@ -1,0 +1,15 @@
+{
+  "stage": "metadata_only_inspection_complete",
+  "inspected_at": "2026-09-14T08:38:19.088689+00:00",
+  "inspector": "assistant_agent",
+  "selected": 24,
+  "intended_cohorts": {
+    "pre": 12,
+    "post": 12
+  },
+  "known_identity_overlap": 0,
+  "ranking_reproduced": true,
+  "article_gets_before_inspection": 0,
+  "selection_manifest_sha256": "46ebccdf0251c6b548fd1ca70093e093bf6566f55e3675d1f9717db23a0e0f3b",
+  "command": "python experiments/stage_media_provenance_extension.py inspect"
+}

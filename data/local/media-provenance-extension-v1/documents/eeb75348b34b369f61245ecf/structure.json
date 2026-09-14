@@ -1,0 +1,34 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "",
+      "data_src": null,
+      "alt": "特斯拉首席执行官埃隆·马斯克",
+      "title": null,
+      "preceding_collector_line": 4,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [],
+  "figures": [],
+  "element_counts": {
+    "p": 14,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 0
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/eeb75348b34b369f61245ecf.html",
+  "raw_html_sha256": "95c527110a113e4350243ec21523730baa49ccbe78af9f4ecdbd40f109579f7c"
+}

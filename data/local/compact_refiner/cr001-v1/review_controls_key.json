@@ -1,0 +1,51 @@
+{
+  "schema_version": "compact-refiner-semantic-review-controls-1.0",
+  "fixture_kind": "constructed_semantic_review_controls",
+  "created_on": "2026-09-14",
+  "author_kind": "model_assisted_agent",
+  "author_id": "openrouter_client_control_author",
+  "human_gold": false,
+  "study_sample_count": 0,
+  "control_count": 6,
+  "rights_status": "project_constructed",
+  "contains_personal_data": false,
+  "instructions": "Strip expected_fidelity, reason, author identity, control identity, and all answer-key fields before blinded review. Preserve the private mapping to the answer key. These constructed fixtures test the review instrument, are excluded from treatment estimates and training exports, and do not establish human acceptance or reviewer reliability on ordinary experiment items.",
+  "controls": [
+    {
+      "control_id": "cr001-control-01",
+      "expected_fidelity": "pass",
+      "control_type": "exact_unchanged",
+      "reason": "The output exactly equals the input."
+    },
+    {
+      "control_id": "cr001-control-02",
+      "expected_fidelity": "pass",
+      "control_type": "faithful_order_and_grammar_rewrite",
+      "reason": "All stated facts, limits, conditions, and responsibilities survive the reordering."
+    },
+    {
+      "control_id": "cr001-control-03",
+      "expected_fidelity": "fail",
+      "control_type": "quantity_change",
+      "reason": "The per-loan allowance changes from two books to three."
+    },
+    {
+      "control_id": "cr001-control-04",
+      "expected_fidelity": "fail",
+      "control_type": "negation_reversal",
+      "reason": "Monday changes from closed to open."
+    },
+    {
+      "control_id": "cr001-control-05",
+      "expected_fidelity": "fail",
+      "control_type": "modality_and_population_scope_change",
+      "reason": "A possible effect reported by some volunteers becomes an established effect for all employees."
+    },
+    {
+      "control_id": "cr001-control-06",
+      "expected_fidelity": "fail",
+      "control_type": "unsupported_attribution",
+      "reason": "An organizational recommendation is added without support in the original."
+    }
+  ]
+}

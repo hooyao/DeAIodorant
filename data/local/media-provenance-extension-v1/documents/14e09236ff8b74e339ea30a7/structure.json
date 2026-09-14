@@ -1,0 +1,44 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "DownDetector.com",
+      "href": "https://downdetector.com\n"
+    },
+    {
+      "text": "阿卡迈科技（Akamai Technologies）",
+      "href": "https://www.akamai.com/cn/zh/"
+    },
+    {
+      "text": "云端服务供应商 Fastly",
+      "href": "https://www.fastly.com/"
+    },
+    {
+      "text": "戴尔科技（Dell Technologies）",
+      "href": "https://www.delltechnologies.com/zh-cn/index.htm"
+    },
+    {
+      "text": "Idax Software ",
+      "href": "https://idaxsoftware.com/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 31,
+    "h1": 0,
+    "h2": 2,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 5
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/14e09236ff8b74e339ea30a7.html",
+  "raw_html_sha256": "96e56f28970e7b7e4ac71c218f0d9faf615d65cdcf6ed14c6c663ac1b1e11f48"
+}

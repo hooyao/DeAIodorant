@@ -1,0 +1,107 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/53/530e16f47212a89395e0fefce0c85ba9.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 34,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "外媒报",
+      "href": "https://www.nytimes.com/2022/10/27/technology/elon-musk-twitter-deal-complete.html"
+    },
+    {
+      "text": "抱着“水槽”",
+      "href": "https://twitter.com/elonmusk/status/1585341984679469056"
+    },
+    {
+      "text": "彭博社",
+      "href": "https://www.bloomberg.com/news/articles/2022-10-27/musk-tells-twitter-employees-he-doesn-t-plan-to-cut-75-of-jobs#xj4y7vzkg?leadSource=uverify%20wall"
+    },
+    {
+      "text": "据《纽约时报》报道",
+      "href": "https://www.nytimes.com/2022/10/27/technology/musk-twitter.html"
+    },
+    {
+      "text": "推特",
+      "href": "https://twitter.com/SEP/status/1585624570052202497"
+    },
+    {
+      "text": "彭博社报道",
+      "href": "https://www.bloomberg.com/news/articles/2022-10-28/musk-is-said-to-take-twitter-ceo-role-reverse-life-bans#xj4y7vzkg"
+    },
+    {
+      "text": "解释",
+      "href": "https://twitter.com/elonmusk/status/1585619322239561728"
+    },
+    {
+      "text": "据报道",
+      "href": "https://www.bloomberg.com/news/articles/2022-10-27/tesla-engineers-visit-twitter-office-to-review-code-for-musk?leadSource=uverify%20wall"
+    },
+    {
+      "text": "投票。",
+      "href": "https://twitter.com/elonmusk/status/1507041396242407424"
+    },
+    {
+      "text": "David Karger曾表示",
+      "href": "https://people.csail.mit.edu/karger/"
+    },
+    {
+      "text": "发推表示",
+      "href": "https://twitter.com/elonmusk/status/1577428272056389633"
+    },
+    {
+      "text": "在大约 3 天内完成",
+      "href": "https://amzn.to/3y8PqxJ"
+    },
+    {
+      "text": "以 500 美元的",
+      "href": "https://amzn.to/3y8PqxJ"
+    },
+    {
+      "text": "Ashlee Vance",
+      "href": "https://amzn.to/3RuWb3H"
+    },
+    {
+      "text": "https://www.businessinsider.com/elon-musk-twitter-reach-agreement-to-close-acquisition-deal-2022-10",
+      "href": "https://www.businessinsider.com/elon-musk-twitter-reach-agreement-to-close-acquisition-deal-2022-10"
+    },
+    {
+      "text": "https://thecodebytes.com/can-elon-musk-code-yes-but-hes-not-the-greatest-coder-alive/",
+      "href": "https://thecodebytes.com/can-elon-musk-code-yes-but-hes-not-the-greatest-coder-alive/"
+    },
+    {
+      "text": "https://www.wired.com/story/twitter-open-algorithm-problem/",
+      "href": "https://www.wired.com/story/twitter-open-algorithm-problem/"
+    },
+    {
+      "text": "https://www.bloomberg.com/news/articles/2022-10-27/musk-tells-twitter-employees-he-doesn-t-plan-to-cut-75-of-jobs",
+      "href": "https://www.bloomberg.com/news/articles/2022-10-27/musk-tells-twitter-employees-he-doesn-t-plan-to-cut-75-of-jobs"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 73,
+    "h1": 0,
+    "h2": 4,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 18
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/550a11e0e8987efc94c654b7.html",
+  "raw_html_sha256": "c17fcf398d2e4909ec68cebdddcb44c8b8b7859baa280127ba77add171af59de"
+}

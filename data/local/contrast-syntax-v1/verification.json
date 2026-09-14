@@ -1,0 +1,30 @@
+{
+  "checks": [
+    {
+      "alias": "doc-03",
+      "sentences": 32,
+      "structural_check_failures": [],
+      "parser_sentence_text_mismatches": 0,
+      "token_surface_mismatches": 1,
+      "word_surface_mismatches": 1
+    },
+    {
+      "alias": "doc-05",
+      "sentences": 77,
+      "structural_check_failures": [],
+      "parser_sentence_text_mismatches": 0,
+      "token_surface_mismatches": 1,
+      "word_surface_mismatches": 1
+    },
+    {
+      "alias": "doc-11",
+      "sentences": 55,
+      "structural_check_failures": [],
+      "parser_sentence_text_mismatches": 0,
+      "token_surface_mismatches": 12,
+      "word_surface_mismatches": 12
+    }
+  ],
+  "all_passed": true,
+  "interpretation": "Structural and source-alignment validation only, not linguistic correctness."
+}

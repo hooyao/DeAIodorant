@@ -1,0 +1,20 @@
+{
+  "version": "media-repair-qualitative-preview-1.0",
+  "status": "awaiting_reader_response",
+  "alias": "doc-05",
+  "source_sha256": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+  "candidate_sha256": "72a76b15b41e2554f69fb2f01ba03aabaf120a5d3730a3f33b76a1ff323b30ca",
+  "presentation_path": "data/local/media-repair-development-v1/presentation-v1/doc-05/review.html",
+  "presentation_manifest_sha256": "97b36cb10d352c27d70a8e542a73fee766ba6000c008d465d5ecb37f385e5a73",
+  "presentation_mapping": {
+    "left": "original",
+    "right": "candidate"
+  },
+  "blinded": false,
+  "previous_source_exposure": true,
+  "purpose": "Qualitative willingness-to-continue and readability feedback, not strong-smell labeling or formal efficacy validation.",
+  "question": "这篇全文对照中，你更愿意继续读哪一版？没有改善也请直接说。",
+  "response": null,
+  "human_gold": false,
+  "training_eligible": false
+}

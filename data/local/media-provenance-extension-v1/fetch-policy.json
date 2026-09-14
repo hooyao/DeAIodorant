@@ -1,0 +1,22 @@
+{
+  "robots_request": {
+    "url": "https://www.infoq.cn/robots.txt",
+    "requested_at": "2026-09-14T08:38:44.061357+00:00",
+    "capture_file": "raw/robots-fetch.txt",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/robots.txt",
+    "headers": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Content-Length": "206",
+      "Date": "Mon, 14 Sep 2026 08:38:45 GMT",
+      "ETag": "\"5eb37846-ce\"",
+      "Last-Modified": "Thu, 07 May 2020 02:53:58 GMT"
+    },
+    "completed_at": "2026-09-14T08:38:44.785690+00:00",
+    "complete_response": true,
+    "bytes": 206,
+    "sha256": "1e4c6eb0a4aaf3610cfe4185584578c15cfa7cdb4bceb4568b1ed3fafe37c30e"
+  },
+  "delay_seconds": 2.0,
+  "stop_reason": null
+}

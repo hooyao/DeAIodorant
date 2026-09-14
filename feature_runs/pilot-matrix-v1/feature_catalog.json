@@ -1,0 +1,1672 @@
+[
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation acl divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_acl_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation advcl divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_advcl_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation advmod divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_advmod_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation amod divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_amod_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation appos divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_appos_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation aux divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_aux_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation case divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_case_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation cc divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_cc_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation ccomp divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_ccomp_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation clf divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_clf_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation compound divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_compound_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation conj divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_conj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation cop divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_cop_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation csubj divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_csubj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation dep divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_dep_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation det divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_det_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation discourse divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_discourse_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation dislocated divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_dislocated_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation expl divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_expl_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation fixed divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_fixed_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation flat divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_flat_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation goeswith divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_goeswith_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation iobj divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_iobj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation list divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_list_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation mark divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_mark_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation nmod divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_nmod_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation nsubj divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_nsubj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation nummod divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_nummod_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation obj divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_obj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation obl divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_obl_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation orphan divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_orphan_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation parataxis divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_parataxis_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation punct divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_punct_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation reparandum divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_reparandum_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation root divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_root_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation vocative divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_vocative_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed dependencies with the Universal Dependencies relation xcomp divided by all parsed tokens.",
+    "family": "dependency_relation",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "deprel_xcomp_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Occurrences of fixed all marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_all_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed booster marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_booster_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed causal marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_causal_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed contrast marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_contrast_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed directive marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_directive_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed enumeration marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_enumeration_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed framing marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_framing_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed hedge marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_hedge_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Document-level discourse marker type coverage. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_marker_type_coverage",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Occurrences of fixed metadiscourse marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_metadiscourse_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Occurrences of fixed summary marker phrases divided by CJK character count and multiplied by 10,000.",
+    "family": "discourse_and_stance",
+    "known_sensitivities": [
+      "genre",
+      "marker_lexicon",
+      "topic"
+    ],
+    "name": "discourse_summary_markers_per_10k_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 10,000 CJK characters"
+  },
+  {
+    "definition": "Document-level surface adjacent sentence length change. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_adjacent_sentence_length_change",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level surface ascii letter ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_ascii_letter_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface char count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "document_length",
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_char_count",
+    "requires_syntax_annotation": false,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level surface cjk char count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "document_length",
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_cjk_char_count",
+    "requires_syntax_annotation": false,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level surface cjk char entropy bits. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_cjk_char_entropy_bits",
+    "requires_syntax_annotation": false,
+    "unit": "bits"
+  },
+  {
+    "definition": "Document-level surface cjk char mattr. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_cjk_char_mattr",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface cjk char type token ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_cjk_char_type_token_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface cjk ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_cjk_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface colon density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_colon_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface comma density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_comma_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface compression ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_compression_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface dash density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_dash_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface digit ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_digit_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface exact paragraph repeat ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_exact_paragraph_repeat_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface exact sentence repeat ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_exact_sentence_repeat_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface exclamatory sentence ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_exclamatory_sentence_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface list item ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_list_item_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface long paragraph ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_long_paragraph_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface mean paragraph cjk chars. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_mean_paragraph_cjk_chars",
+    "requires_syntax_annotation": false,
+    "unit": "CJK characters"
+  },
+  {
+    "definition": "Document-level surface mean sentence cjk chars. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_mean_sentence_cjk_chars",
+    "requires_syntax_annotation": false,
+    "unit": "CJK characters"
+  },
+  {
+    "definition": "Document-level surface mean sentences per paragraph. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_mean_sentences_per_paragraph",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level surface non whitespace char count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "document_length",
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_non_whitespace_char_count",
+    "requires_syntax_annotation": false,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level surface paragraph count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "document_length",
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_paragraph_count",
+    "requires_syntax_annotation": false,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level surface paragraph length cv. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_paragraph_length_cv",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless coefficient of variation"
+  },
+  {
+    "definition": "Document-level surface paragraph opening repeat ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_paragraph_opening_repeat_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface parenthesis density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_parenthesis_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface period density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_period_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface punctuation density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_punctuation_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface punctuation entropy bits. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_punctuation_entropy_bits",
+    "requires_syntax_annotation": false,
+    "unit": "bits"
+  },
+  {
+    "definition": "Document-level surface question sentence ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_question_sentence_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface quote mark density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_quote_mark_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface repeated char ngram ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_repeated_char_ngram_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface semicolon density. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "punctuation",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_semicolon_density",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per non-whitespace character"
+  },
+  {
+    "definition": "Document-level surface sentence count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "document_length",
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_sentence_count",
+    "requires_syntax_annotation": false,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level surface sentence length autocorrelation. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_sentence_length_autocorrelation",
+    "requires_syntax_annotation": false,
+    "unit": "correlation coefficient"
+  },
+  {
+    "definition": "Document-level surface sentence length cv. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_sentence_length_cv",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless coefficient of variation"
+  },
+  {
+    "definition": "Document-level surface sentence opening repeat ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "repetition_and_regularity",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_sentence_opening_repeat_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface short paragraph ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "document_structure",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_short_paragraph_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level surface url count per 1000 cjk. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "character_composition",
+    "known_sensitivities": [
+      "genre",
+      "text_normalization"
+    ],
+    "name": "surface_url_count_per_1000_cjk",
+    "requires_syntax_annotation": false,
+    "unit": "occurrences per 1,000 CJK characters"
+  },
+  {
+    "definition": "Document-level syntax adjacent content jaccard mean. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_adjacent_content_jaccard_mean",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level syntax adjacent noun jaccard mean. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_adjacent_noun_jaccard_mean",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level syntax clause relations per sentence. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_clause_relations_per_sentence",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level syntax content word ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_content_word_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax coordinate relation ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_coordinate_relation_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax crossing arc ratio mean. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_crossing_arc_ratio_mean",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level syntax dependency distance cv. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_dependency_distance_cv",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless coefficient of variation"
+  },
+  {
+    "definition": "Document-level syntax dependency distance max. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_dependency_distance_max",
+    "requires_syntax_annotation": true,
+    "unit": "token positions"
+  },
+  {
+    "definition": "Document-level syntax dependency distance mean. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_dependency_distance_mean",
+    "requires_syntax_annotation": true,
+    "unit": "token positions"
+  },
+  {
+    "definition": "Document-level syntax dependency distance median. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_dependency_distance_median",
+    "requires_syntax_annotation": true,
+    "unit": "token positions"
+  },
+  {
+    "definition": "Document-level syntax dependency relation entropy bits. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_dependency_relation_entropy_bits",
+    "requires_syntax_annotation": true,
+    "unit": "bits"
+  },
+  {
+    "definition": "Document-level syntax first person pronoun ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_first_person_pronoun_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax function word ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_function_word_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax left dependency ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_left_dependency_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax lexical hapax ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_lexical_hapax_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax lexical mattr. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_lexical_mattr",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax lexical token count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "document_length",
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_lexical_token_count",
+    "requires_syntax_annotation": true,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level syntax lexical token entropy bits. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_lexical_token_entropy_bits",
+    "requires_syntax_annotation": true,
+    "unit": "bits"
+  },
+  {
+    "definition": "Document-level syntax lexical type token ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_lexical_type_token_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax max nonleaf branching. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_max_nonleaf_branching",
+    "requires_syntax_annotation": true,
+    "unit": "dependents per non-leaf token"
+  },
+  {
+    "definition": "Document-level syntax max tree depth. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_max_tree_depth",
+    "requires_syntax_annotation": true,
+    "unit": "dependency edges"
+  },
+  {
+    "definition": "Document-level syntax mean lexical token cjk chars. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_mean_lexical_token_cjk_chars",
+    "requires_syntax_annotation": true,
+    "unit": "CJK characters"
+  },
+  {
+    "definition": "Document-level syntax mean nonleaf branching. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_mean_nonleaf_branching",
+    "requires_syntax_annotation": true,
+    "unit": "dependents per non-leaf token"
+  },
+  {
+    "definition": "Document-level syntax mean root relative position. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_mean_root_relative_position",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level syntax mean sentence tokens. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_mean_sentence_tokens",
+    "requires_syntax_annotation": true,
+    "unit": "tokens per sentence"
+  },
+  {
+    "definition": "Document-level syntax mean tree depth. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_mean_tree_depth",
+    "requires_syntax_annotation": true,
+    "unit": "dependency edges"
+  },
+  {
+    "definition": "Document-level syntax median sentence tokens. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_median_sentence_tokens",
+    "requires_syntax_annotation": true,
+    "unit": "tokens per sentence"
+  },
+  {
+    "definition": "Document-level syntax nominal modifier relation ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_nominal_modifier_relation_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax passive relation ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_passive_relation_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax pos bigram entropy bits. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_pos_bigram_entropy_bits",
+    "requires_syntax_annotation": true,
+    "unit": "bits"
+  },
+  {
+    "definition": "Document-level syntax pos trigram entropy bits. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_pos_trigram_entropy_bits",
+    "requires_syntax_annotation": true,
+    "unit": "bits"
+  },
+  {
+    "definition": "Document-level syntax second person pronoun ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_second_person_pronoun_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax sentence count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "document_length",
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_sentence_count",
+    "requires_syntax_annotation": true,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level syntax sentence length cv. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_sentence_length_cv",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless coefficient of variation"
+  },
+  {
+    "definition": "Document-level syntax subordinate relation ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_subordinate_relation_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level syntax token count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "document_length",
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_token_count",
+    "requires_syntax_annotation": true,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level syntax token length cv. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "token_and_lexical",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_token_length_cv",
+    "requires_syntax_annotation": true,
+    "unit": "dimensionless coefficient of variation"
+  },
+  {
+    "definition": "Document-level syntax treelet entropy bits. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "dependency_syntax",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "syntax_treelet_entropy_bits",
+    "requires_syntax_annotation": true,
+    "unit": "bits"
+  },
+  {
+    "definition": "Document-level title ascii letter ratio. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_ascii_letter_ratio",
+    "requires_syntax_annotation": false,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Document-level title body cjk type overlap. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_body_cjk_type_overlap",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level title cjk char count. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "document_length",
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_cjk_char_count",
+    "requires_syntax_annotation": false,
+    "unit": "count"
+  },
+  {
+    "definition": "Document-level title colon present. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_colon_present",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level title digit present. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_digit_present",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level title exclamation present. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_exclamation_present",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level title question present. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_question_present",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Document-level title quote present. The exact deterministic formula and normalization are specified in docs/feature-catalog.md.",
+    "family": "title_form",
+    "known_sensitivities": [
+      "genre",
+      "platform_title_policy"
+    ],
+    "name": "title_quote_present",
+    "requires_syntax_annotation": false,
+    "unit": "dimensionless"
+  },
+  {
+    "definition": "Parsed tokens tagged ADJ divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_adj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged ADP divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_adp_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged ADV divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_adv_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged AUX divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_aux_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged CCONJ divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_cconj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged DET divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_det_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged INTJ divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_intj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged NOUN divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_noun_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged NUM divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_num_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged PART divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_part_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged PRON divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_pron_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged PROPN divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_propn_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged PUNCT divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_punct_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged SCONJ divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_sconj_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged SYM divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_sym_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged VERB divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_verb_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  },
+  {
+    "definition": "Parsed tokens tagged X divided by all parsed tokens.",
+    "family": "universal_pos",
+    "known_sensitivities": [
+      "parser_model",
+      "tokenization"
+    ],
+    "name": "upos_x_ratio",
+    "requires_syntax_annotation": true,
+    "unit": "proportion"
+  }
+]

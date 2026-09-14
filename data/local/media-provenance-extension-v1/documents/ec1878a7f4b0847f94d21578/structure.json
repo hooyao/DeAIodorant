@@ -1,0 +1,43 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/06/0649c2709e9ab921d4136d04ba5bcb39.webp",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 24,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "https://www.infoq.cn/theme/268",
+      "href": "https://www.infoq.cn/theme/268"
+    },
+    {
+      "text": "https://qdrl.qq.com/vxOnEptf",
+      "href": "https://qdrl.qq.com/vxOnEptf"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 27,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 1,
+    "ol": 0,
+    "li": 3,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 2
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/ec1878a7f4b0847f94d21578.html",
+  "raw_html_sha256": "e5477bf7e078382e2c3a5ad2b6d6129d7f218815979e55920417d9273c1a740f"
+}

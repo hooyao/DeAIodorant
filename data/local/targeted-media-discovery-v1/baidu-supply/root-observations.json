@@ -1,0 +1,50 @@
+{
+  "version": "targeted-media-root-observations-1.0",
+  "doc_id": "92ade4253c08a43329164bf5",
+  "source_sha256": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+  "full_body_read": true,
+  "model_identity": "unknown",
+  "human_gold": false,
+  "human_severity": "unknown",
+  "disposition": "requires_independent_target_coverage_review",
+  "observations": [
+    {
+      "kind": "predicate_gap",
+      "quote": "主语的变化，背后意味着背后的技术工作，最具代表性的领域即是",
+      "start_char": 956,
+      "end_char": 985,
+      "root_observation": "The predicate after the subject-change metaphor does not express a clear relation; recurrence of the behind framing further obscures what changes."
+    },
+    {
+      "kind": "predicate_gap",
+      "quote": "但确实能帮助我们百度 Create 这次发布会的产业意义",
+      "start_char": 5655,
+      "end_char": 5683,
+      "root_observation": "A relation such as understanding the stated significance appears missing; do not insert one before checking preservation and context."
+    },
+    {
+      "kind": "abstract_reframing",
+      "quote": "新的 AI 使用范式，新的全栈供给体系，是百度智能云在这次大会上真正要回应的真问题。",
+      "start_char": 1968,
+      "end_char": 2010,
+      "root_observation": "Repeated new/full-stack/supply labels and true-problem emphasis require comparison with the nearby concrete mechanisms."
+    },
+    {
+      "kind": "closing_opposition",
+      "quote": "这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系",
+      "start_char": 5358,
+      "end_char": 5403,
+      "root_observation": "The historical analogy frames a causal explanation exclusively without showing why price and ecosystem mechanisms must be opposed; source facts and reader effect are unverified."
+    },
+    {
+      "kind": "counterexample",
+      "quote": "KV Cache 把这些中间运算结果保存下来，避免每次都重新计算。",
+      "start_char": 1050,
+      "end_char": 1083,
+      "root_observation": "A concrete mechanism is supplied, so the article is not uniformly empty or incoherent."
+    }
+  ],
+  "selection_bias": "One keyword-enriched search; not a population sample or held-out validation",
+  "provenance": "The article reports firsthand conference listening and InfoQ tests; publication metadata alone does not prove generation route.",
+  "no_rewrite_or_reader_task_created": true
+}

@@ -1,0 +1,22 @@
+{
+  "alias": "doc-03",
+  "all_non_whitespace_content_preserved": true,
+  "blocks_sha256": "73e0d45ba8f61484b9678918888c9716dc35bf0ec692ea1d810971b0c20a4e4b",
+  "candidate_sha256": "9d300647be3e55e7e26062b604bc9af94ddbf9770d82fb56ac7e85fb1f119c92",
+  "changed_paragraphs": 12,
+  "command": "python experiments/render_media_repair_review.py --alias doc-03 --candidate-dir data/local/media-repair-development-v1/candidates-v2/doc-03 --output-dir data/local/media-repair-development-v1/presentation-v1/doc-03",
+  "human_gold": false,
+  "implementation_sha256": "899bb93532c6ff91228308e89b0540a1b7eca0bdb0331ab91250c8a1383c51cf",
+  "layout_only_operations_neutralized": [
+    "doc-03-op-007"
+  ],
+  "operations_sha256": "054da01d92cfccbda190b8eea8d55e43a0da944cb34db161e626560e63847fc0",
+  "output_hashes": {
+    "paragraphs.json": "77723c8379094728e94c15f6c6241d72ca7e8d2e73c7b64669c20dbb993b1622",
+    "review.html": "600cc8cd03eaab8536f8783dc44390c6e5508db3e479bc15400484c7a475b3f3"
+  },
+  "paragraphs": 36,
+  "purpose": "identified qualitative review; no preference outcome collected",
+  "source_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+  "version": "media-repair-shared-presentation-1.0"
+}

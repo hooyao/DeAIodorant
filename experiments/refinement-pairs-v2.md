@@ -1,74 +1,51 @@
-# Second-Round Conservative Contrast Intervention
+# 第二轮保守对比干预
 
-## Status
+## 状态
 
-Protocol version `conservative-contrast-reduction-2.0` was frozen on
-2026-08-21 before any second-round preference outcome was available. All 10
-ratings were completed later that day. This is a small exploratory
-intervention, not a validated product rule or a preregistration for
-confirmatory inference.
+协议版本 `conservative-contrast-reduction-2.0` 于 2026-08-21、任何第二轮偏好结果可用之前冻结。当日晚些时候完成全部 10 项评分。这是小规模探索性干预，不是已验证产品规则，也不是确认性推断的预注册。
 
-## Question
+## 问题
 
-The sole required reader question is:
+唯一必答问题如下，保留冻结问卷原文，含义为“哪个版本让你更愿意继续阅读”：
 
 > Which version makes you more willing to continue reading?
 
-The reader chooses version A, version B, or “about the same / neither.” A free
-comment is optional. The form does not ask the reader to identify linguistic
-features, infer authorship, or explain the preference.
+读者选择 A、B 或“差不多／都不偏好”。自由评论可选。表单不要求识别语言特征、推断作者身份或解释偏好。
 
-## Frozen operator
+## 冻结算子
 
-The intervention is conservative contrast reduction. It permits four bounded
-operations:
+干预为保守减少对比，允许四种限定操作：
 
-1. remove an ornamental attention, importance, or revelation frame when its
-   payload is stated directly in the same passage;
-2. restate an ornamental contrast directly while retaining both sides,
-   negation, direction of change, and modality;
-3. merge adjacent frames that repeat one relation while retaining every unique
-   proposition and necessary logical contrast;
-4. repair an interrupted or implicit grammatical argument using only an actor
-   or object already explicit in the source passage.
+1. 当实际信息已在同段直接说明时，删除装饰性的注意、重要性或揭示框架；
+2. 直接重述装饰性对比，同时保留两侧、否定、变化方向和模态；
+3. 合并反复表达同一关系的相邻框架，同时保留每个独有命题及必要逻辑对比；
+4. 仅用原段落已明确的行动者或对象，修复被打断或隐含的语法论元。
 
-The operator must not:
+算子不得：
 
-- delete or weaken a proposition, entity, number, negation, qualifier,
-  uncertainty, or attribution;
-- invent a fact, example, causal link, opinion, anecdote, or authority;
-- remove a necessary logical contrast merely because it matches a surface
-  pattern;
-- maximize compression or normalize the passage into uniformly flat prose;
-- drop explicit subjects, predicates, objects, or cross-sentence referents.
+- 删除或削弱命题、实体、数字、否定、限定、不确定性或归因；
+- 编造事实、示例、因果链接、观点、轶事或权威；
+- 仅因匹配表层模式就删除必要逻辑对比；
+- 最大压缩或将段落统一成平淡文字；
+- 丢弃显式主语、谓语、宾语或跨句指称对象。
 
-Selective metaphors, questions, parallel rhythm, first-person stance, and
-evaluative language remain when they carry the passage's voice. The operation
-log records retained necessary contrasts and voice anchors separately from
-changed spans.
+有选择的比喻、提问、并列节奏、第一人称姿态及评价性表达，在承载段落风格时保留。操作日志将保留的必要对比和风格锚点，与改动 span 分开记录。
 
-## Development-data separation
+## 开发数据分离
 
-The first-round result and the 10 quick reader-friction ratings informed only
-the operator-level constraints: preserve explicit arguments and avoid a cold,
-maximum-compression style. None of the second-round line ranges overlaps any of
-the 10 rated development passages. In particular, the three first-round ranges
-remain excluded:
+第一轮结果及 10 个快速阅读阻力评分只影响算子层约束：保留显式论元，避免冷淡、最大压缩的风格。第二轮行范围均不重叠于这 10 个已评分开发段落。尤其继续排除第一轮三组范围：
 
-- `3c60dc0a981b686870095450`, lines 79–81;
-- `0431c592d5de8246cebcb8e2`, lines 7–10;
-- `44aa81958a6c585ee8c06847`, lines 15–22.
+- `3c60dc0a981b686870095450`，79–81 行；
+- `0431c592d5de8246cebcb8e2`，7–10 行；
+- `44aa81958a6c585ee8c06847`，15–22 行。
 
-No second-round outcome was inspected while selecting passages or editing
-variants.
+选段和编辑变体时，没有查看第二轮结果。
 
-## Passage set
+## 段落集
 
-All 10 passages are post-period material published on or after 2025-07-01.
-They come from seven documents and have no recorded translation evidence in
-their monthly metadata.
+10 段均为 2025-07-01 当日及之后发布的后时期材料，来自七篇文章，月度元数据中没有记录翻译证据。
 
-| Pair | Month | Document | Lines |
+| 配对 | 月份 | 文档 | 行 |
 |---|---|---|---:|
 | contrast-v2-01 | 2026-03 | b77b09a419c1631227112f0c | 7–10 |
 | contrast-v2-02 | 2025-10 | a127f5baf364930a89fb4005 | 8–15 |
@@ -81,79 +58,54 @@ their monthly metadata.
 | contrast-v2-09 | 2025-10 | 0431c592d5de8246cebcb8e2 | 21–23 |
 | contrast-v2-10 | 2026-05 | b186cdd4f9004e0413395bf3 | 169–174 |
 
-The set includes passages where a real contrast must remain, passages where
-several reveal frames can be merged, and a first-person interview passage that
-tests voice retention.
 
-## Audit and preservation
+集合包括必须保留真实对比的段落、可合并多个揭示框架的段落，以及测试风格保留的第一人称访谈段落。
 
-`experiments/prepare_refinement_pairs_v2.py` stores every change as an exact,
-ordered before/after replacement with an operator code, reason, and linked
-claim IDs. Generation fails if an edit span is missing or ambiguous.
+## 审查与原意保留
 
-Each pair also records:
+`experiments/prepare_refinement_pairs_v2.py` 将每次变化保存为精确、有序的前后替换，附算子代码、理由和关联主张 ID。编辑 span 缺失或有歧义时生成失败。
 
-- the SHA-256 of the exact source passage;
-- an exact set comparison of numeric literals;
-- pair-specific locked names and technical terms;
-- source and revised support spans for every proposition group;
-- retained necessary contrasts;
-- voice anchors that must remain in the revised passage.
+每对还记录：
 
-The support-span manifest is a transparent manual audit, not proof of semantic
-equivalence. It makes the preservation judgment inspectable and allows the
-reader or a later reviewer to reject a variant. It does not use an LLM judge.
+- 精确原段落的 SHA-256；
+- 数字字面值集合的精确比较；
+- 配对专属锁定名称及技术术语；
+- 每组命题的原文与修订支撑 span；
+- 保留的必要对比；
+- 修订必须保留的风格锚点。
 
-The frozen batch contains 26 logged replacements and 62 proposition checks.
-The surface diagnostics decrease from nine complete contrast frames and 16
-emphasis markers in the originals to zero counted instances in the revisions.
-These counts verify that the intended manipulation occurred; they are not a
-quality score.
+支撑 span manifest 是透明人工审查，不是语义等价证明。它使原意保留判断可检查，允许读者或后续复核者否决变体，不使用 LLM judge。
 
-## Outcome
+冻结批次含 26 次已记录替换、62 项命题检查。表层诊断从原版九个完整对比框架和 16 个强调标记，降为修订中的零个计数实例。这些次数核验预期操作发生，不是质量分数。
 
-All 10 tasks received one blinded response:
+## 结果
 
-| Outcome | Count |
+10 个任务均各收到一个盲法回答：
+
+| 结果 | 次数 |
 |---|---:|
-| Revised version preferred | 6 |
-| Original version preferred | 0 |
-| Tie or neither preferred | 4 |
+| 偏好修订版 | 6 |
+| 偏好原版 | 0 |
+| 平局或都不偏好 | 4 |
 
-All six decisive choices favored the revision. Two comments attached to ties
-described the revision as slightly better, but the required choice remains a
-tie and is counted as such. No comment reported missing facts, changed logic,
-or damaged attribution.
 
-The comments also narrow the interpretation:
+六个明确选择全部偏好修订。两条附于平局的评论称修订稍好，但必答选择仍为平局，按平局统计。没有评论报告事实丢失、逻辑改变或归因破坏。
 
-- one tied pair was described as having little initial smell, so a small edit
-  produced no meaningful difference;
-- the one-sentence emphasis removal was judged to make no difference;
-- a retained sentence about cloud changes requiring engineering support was
-  still described as an AI-smelling abstraction;
-- the revised multi-tool passage was preferred, while the reader specifically
-  rejected `相反`, `这样一来`, and `它真正解决的` as empty or misleading
-  relation framing;
-- splitting the VBench result from the capability claim improved preference,
-  but the reader still identified the original combined sentence as difficult.
+评论也收窄了解释：
 
-Across the first and second intervention rounds, the descriptive total is
-eight revised wins, zero original wins, and five ties. Both rounds used the
-same reader, and the passages were deliberately selected rather than sampled
-for population inference. Four second-round passages also come from one
-document. The result therefore strengthens the intervention direction but does
-not establish generalization or justify an “intervention validated” status.
+- 一个平局配对被认为原先臭味很轻，小改动没有实质差异；
+- 单句强调删除被认为没有差别；
+- 保留的“云变化需要工程支持”一句仍被描述为有 AI 臭味的抽象表达；
+- 多工具段落的修订被偏好，但读者明确反感 `相反`、`这样一来`、`它真正解决的`，认为它们是空洞或误导的关系框架；
+- 将 VBench 结果与能力主张拆开改善了偏好，但读者仍指出原先合并句难读。
 
-The complete versioned outcome is stored in
-`data/annotations/refinement-pairwise-v2.json`.
+前两轮描述性合计为修订八胜、原版零胜、五平。两轮使用同一读者，段落是有意选择的，不是用于总体推断的采样；第二轮还有四段来自同一文章。因此结果加强干预方向，却未确立推广能力，也不能赋予“intervention validated”状态。
 
-## Blinding and reproduction
+完整版本化结果保存在 `data/annotations/refinement-pairwise-v2.json`。
 
-The fixed seed balances the original side exactly: five originals appear as A
-and five as B. Pair order and side assignment are deterministic. Generated
-tasks and the answer key remain in ignored `feature_runs/`; the answer key must
-not be shown during rating.
+## 盲法与复现
+
+固定 seed 精确平衡原版侧别：A、B 各五个。配对顺序和侧别分配确定性生成。生成任务和 答案键 保留在被忽略的 `feature_runs/`；评分时不得展示 答案键。
 
 ~~~powershell
 python experiments/prepare_refinement_pairs_v2.py `
@@ -162,7 +114,4 @@ python experiments/prepare_refinement_pairs_v2.py `
   --seed 20260821
 ~~~
 
-Import `tasks.json` with `label_config.xml` into Label Studio. Store any future
-replication as a new versioned annotation artifact rather than modifying this
-completed result. Report all outcomes, including ties, original wins,
-preservation concerns, and unchanged or rejected variants.
+将 `tasks.json` 与 `label_config.xml` 导入 Label Studio。后续复现保存为新的版本化标注产物，不修改已完成结果。报告全部结果，包括平局、原版胜出、原意保留问题及未改动或被拒绝变体。

@@ -1,0 +1,58 @@
+{
+  "version": "media-repair-ready-selection-1.0",
+  "status": "ready_for_qualitative_reader_feedback",
+  "human_gold": false,
+  "human_feedback": null,
+  "training_eligible": false,
+  "prior_failed_uncertain_versions_retained": true,
+  "documents": [
+    {
+      "alias": "doc-03",
+      "candidate_path": "data/local/media-repair-development-v1/candidates-v2/doc-03",
+      "source_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+      "output_sha256": "9d300647be3e55e7e26062b604bc9af94ddbf9770d82fb56ac7e85fb1f119c92",
+      "operations_sha256": "054da01d92cfccbda190b8eea8d55e43a0da944cb34db161e626560e63847fc0",
+      "review_path": "data/local/media-repair-development-v1/preservation/review-short-v2.json",
+      "review_sha256": "2711435364122b109f6d0e6f1781bfaaf75351b9c252367eb96c06266bc36442",
+      "assistant_preservation": "pass",
+      "operations": 13,
+      "presentation_path": "data/local/media-repair-development-v1/presentation-v1/doc-03/review.html",
+      "presentation_manifest_sha256": "0b10e89abdb973f93174aa578157cb5239baea0494baf6a393274c8679dce8ed",
+      "neutralized_layout_operations": 1
+    },
+    {
+      "alias": "doc-04",
+      "candidate_path": "data/local/media-repair-development-v1/candidates-v2/doc-04",
+      "source_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+      "output_sha256": "05901a14a9df9da71da3cf3a79c503099753e134ee15ecd28d072893f9167838",
+      "operations_sha256": "a613309cd0882dadca70fe924ab65ff4ab890af5001697b3b4d64448d2102cb1",
+      "review_path": "data/local/media-repair-development-v1/preservation/review-long-v2.json",
+      "review_sha256": "1dd545bfccb950d9ed954ef047dc51505968d29ac37581283e190c6b48ce5c3c",
+      "assistant_preservation": "pass",
+      "operations": 36,
+      "presentation_path": "data/local/media-repair-development-v1/presentation-v1/doc-04/review.html",
+      "presentation_manifest_sha256": "f33fb372da5648f752926018e4d68126167d6771401587bfbfb73f8c165916dc",
+      "neutralized_layout_operations": 5
+    },
+    {
+      "alias": "doc-05",
+      "candidate_path": "data/local/media-repair-development-v1/candidates/doc-05",
+      "source_sha256": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+      "output_sha256": "72a76b15b41e2554f69fb2f01ba03aabaf120a5d3730a3f33b76a1ff323b30ca",
+      "operations_sha256": "d5ecea2d8e6bb429166d80249ade1f533784941a808f916bbea2542c8a22e7ab",
+      "review_path": "data/local/media-repair-development-v1/preservation/review-short.json",
+      "review_sha256": "a4753effb24e11f4f69823f7e141680867083c983667089421f82a89c92dfa31",
+      "assistant_preservation": "pass",
+      "operations": 13,
+      "presentation_path": "data/local/media-repair-development-v1/presentation-v1/doc-05/review.html",
+      "presentation_manifest_sha256": "97b36cb10d352c27d70a8e542a73fee766ba6000c008d465d5ecb37f385e5a73",
+      "neutralized_layout_operations": 5
+    }
+  ],
+  "validation": {
+    "offline_tests_passed": 168,
+    "required_compilation_passed": true
+  },
+  "openrouter_requests": 0,
+  "gpu_used": false
+}

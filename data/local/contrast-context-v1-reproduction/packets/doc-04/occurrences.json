@@ -1,0 +1,253 @@
+{
+  "alias": "doc-04",
+  "content_hash": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 141,
+        "start_char": 139,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 159,
+        "start_char": 84,
+        "text": "\n“Codex 能快速实现 20 倍的增长，不只是因为模型变强了，还因为我们理解了，真正的智能体不是一个模型，而是模型、API 和框架共同努力的结果。"
+      },
+      "occurrence_id": "doc-04-e01"
+    },
+    {
+      "connector": {
+        "end_char": 1066,
+        "start_char": 1064,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1096,
+        "start_char": 988,
+        "text": "\n对于\n未来 AGI 会何时到来\n，Alexander Embiricos 也给出了一个有趣的视角，\n他认为当前真正的限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限\n，正在拖累其发展\n。"
+      },
+      "occurrence_id": "doc-04-e02"
+    },
+    {
+      "connector": {
+        "end_char": 1986,
+        "start_char": 1984,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 1994,
+        "start_char": 1962,
+        "text": "\n人工智能生产力的最大瓶颈不是人工智能本身，而是人类的打字速度。"
+      },
+      "occurrence_id": "doc-04-e03"
+    },
+    {
+      "connector": {
+        "end_char": 4439,
+        "start_char": 4437,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 4473,
+        "start_char": 4406,
+        "text": "当我们谈到“队友”这样的词时，我们设想的并不仅是让它编写代码，而是让它参与软件编写的整个流程，从构思、规划，到下游的验证、部署与维护。"
+      },
+      "occurrence_id": "doc-04-e04"
+    },
+    {
+      "connector": {
+        "end_char": 7536,
+        "start_char": 7534,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 7579,
+        "start_char": 7487,
+        "text": "过去，我们更多认为“只要训练最好的模型就好了”，但现在我们意识到真正的智能体并不只是一种模型，而是由三层结构组成：一个非常智能的推理模型、一套 API，以及一个能让模型发挥能力的框架。"
+      },
+      "occurrence_id": "doc-04-e05"
+    },
+    {
+      "connector": {
+        "end_char": 8059,
+        "start_char": 8057,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 8081,
+        "start_char": 7997,
+        "text": "\n写代码是模型最好的方式与编码智能体的未来\nLenny：从你的描述来看，真正推动 Codex 的，不只是模型能力的提升，而是模型、API 和框架三者共同构成的整体系统。"
+      },
+      "occurrence_id": "doc-04-e06"
+    },
+    {
+      "connector": {
+        "end_char": 8436,
+        "start_char": 8434,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 8450,
+        "start_char": 8425,
+        "text": "这不仅是提升效率，而是改变整个开发流程的思维方式。"
+      },
+      "occurrence_id": "doc-04-e07"
+    },
+    {
+      "connector": {
+        "end_char": 8609,
+        "start_char": 8607,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 8617,
+        "start_char": 8585,
+        "text": "\nLenny：听起来，智能体未来不只是工具，而是真正的团队成员。"
+      },
+      "occurrence_id": "doc-04-e08"
+    },
+    {
+      "connector": {
+        "end_char": 9280,
+        "start_char": 9278,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 9297,
+        "start_char": 9233,
+        "text": "\nAlex：这让我想到一个重要概念：人工智能的未来不仅是拥有几个你认识的队友来帮你写代码，而是拥有一种真正意义上的团队合作精神。"
+      },
+      "occurrence_id": "doc-04-e09"
+    },
+    {
+      "connector": {
+        "end_char": 10717,
+        "start_char": 10715,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 10744,
+        "start_char": 10683,
+        "text": "因此，当我们问“通往胜利的道路是什么”，答案不是模型彼此比速度，而是构建一个能够写代码、能随着团队使用而成长的智能体体系。"
+      },
+      "occurrence_id": "doc-04-e10"
+    },
+    {
+      "connector": {
+        "end_char": 11431,
+        "start_char": 11429,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 11443,
+        "start_char": 11411,
+        "text": "我认为人工智能并不会让工程岗位消失，而是会改变工程师的工作内容。"
+      },
+      "occurrence_id": "doc-04-e11"
+    },
+    {
+      "connector": {
+        "end_char": 12396,
+        "start_char": 12394,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 12432,
+        "start_char": 12380,
+        "text": "并不是每件事都需要正式规范，而是有人提一个想法，有人再补充说明，有人提出下一步行动，然后工程师直接去做。"
+      },
+      "occurrence_id": "doc-04-e12"
+    },
+    {
+      "connector": {
+        "end_char": 13269,
+        "start_char": 13267,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 13276,
+        "start_char": 13244,
+        "text": "在浏览器里，人们每天处理的大量信息并不是代码，而是各种网页内容。"
+      },
+      "occurrence_id": "doc-04-e13"
+    },
+    {
+      "connector": {
+        "end_char": 13337,
+        "start_char": 13335,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 13374,
+        "start_char": 13316,
+        "text": "一个真正的队友不会只处理你给到的任务，而是会在你浏览网页、查资料、阅读文档的时候主动理解你在做什么，并快速提供协助。"
+      },
+      "occurrence_id": "doc-04-e14"
+    },
+    {
+      "connector": {
+        "end_char": 14483,
+        "start_char": 14481,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 14513,
+        "start_char": 14452,
+        "text": "许多真正处在技术前沿的团队现在遇到最大的瓶颈并不是写代码，而是弄清楚要构建什么，然后在最后阶段花大量时间审查、确认、验证。"
+      },
+      "occurrence_id": "doc-04-e15"
+    },
+    {
+      "connector": {
+        "end_char": 19617,
+        "start_char": 19615,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 19630,
+        "start_char": 19582,
+        "text": "\nAlex：实际上，使用 Codex 的最佳方式不是给它简单任务，而是给它最困难、最真实的问题。"
+      },
+      "occurrence_id": "doc-04-e16"
+    },
+    {
+      "connector": {
+        "end_char": 20104,
+        "start_char": 20102,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 20144,
+        "start_char": 20081,
+        "text": "\n另一面是，真正关键的不是“打字写程序”，而是理解软件系统结构、理解什么使系统高效、能够推理复杂架构，并具备团队沟通协作能力。"
+      },
+      "occurrence_id": "doc-04-e17"
+    },
+    {
+      "connector": {
+        "end_char": 20163,
+        "start_char": 20161,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 20188,
+        "start_char": 20144,
+        "text": "AI 不会突然让所有人不用写代码，而是会逐步扩展抽象层，但系统设计与判断力仍然属于人类。"
+      },
+      "occurrence_id": "doc-04-e18"
+    },
+    {
+      "connector": {
+        "end_char": 20965,
+        "start_char": 20963,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 20992,
+        "start_char": 20944,
+        "text": "它理解代码库，却不仅仅服务于代码本身，而是可以在整个复杂系统运行过程中发挥“智能监护人”的作用。"
+      },
+      "occurrence_id": "doc-04-e19"
+    }
+  ]
+}

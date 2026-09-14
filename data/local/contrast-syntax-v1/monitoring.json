@@ -1,0 +1,61 @@
+{
+  "initial_failure": "The initial Windows os.execve seeded relaunch detached from the tool capture and its child stopped before producing document annotations. The exact exception was not captured. Replacing it with waited subprocess.run restored observable completion; this does not establish the unobserved original exception cause.",
+  "method": "Direct PID/process CPU inspection, completed annotation artifacts, run-state counts, and final exec completion; no watcher-only inference.",
+  "observations": [
+    {
+      "attempt": "initial",
+      "cpu_seconds": 15.33,
+      "pid": 57480,
+      "status": "loading_model",
+      "working_set_bytes": 361005056
+    },
+    {
+      "attempt": "initial",
+      "pid": 57480,
+      "stale_state": "parsing doc-03, completed_documents 0",
+      "status": "process_absent"
+    },
+    {
+      "attempt": "retry-01",
+      "completed_documents": 0,
+      "pid": 47880,
+      "status": "loading_model"
+    },
+    {
+      "attempt": "retry-01",
+      "completed_documents": 1,
+      "cpu_seconds": 27.38,
+      "pid": 47880,
+      "status": "parsing doc-05",
+      "working_set_bytes": 1366757376
+    },
+    {
+      "attempt": "retry-01",
+      "completed_documents": 2,
+      "cpu_seconds": 55.7,
+      "pid": 47880,
+      "status": "parsing doc-11",
+      "working_set_bytes": 1844023296
+    },
+    {
+      "attempt": "retry-01",
+      "completed_documents": 3,
+      "exec_exit_code": 0,
+      "pid": 47880,
+      "status": "complete"
+    },
+    {
+      "attempt": "reproduction-02",
+      "completed_documents": 0,
+      "pid": 24076,
+      "status": "loading_model"
+    },
+    {
+      "attempt": "reproduction-02",
+      "completed_documents": 3,
+      "exec_exit_code": 0,
+      "pid": 24076,
+      "status": "complete"
+    }
+  ]
+}

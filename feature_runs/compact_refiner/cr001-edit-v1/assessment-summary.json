@@ -1,0 +1,150 @@
+{
+  "by_arm": {
+    "assistant_edit": {
+      "count": 13,
+      "fail_ids": [],
+      "fidelity": {
+        "pass": 13
+      },
+      "improvement": {
+        "clear": 2,
+        "limited": 8,
+        "none": 3
+      },
+      "pass_ids": [
+        "cr001-20-draft",
+        "cr001-19-draft",
+        "cr001-01-draft",
+        "cr001-03-draft",
+        "cr001-15-draft",
+        "cr001-08-draft",
+        "cr001-07-draft",
+        "cr001-12-draft",
+        "cr001-09-draft",
+        "cr001-14-draft",
+        "cr001-02-draft",
+        "cr001-11-draft",
+        "cr001-17-draft"
+      ]
+    },
+    "compact_prompt": {
+      "count": 13,
+      "fail_ids": [
+        "cr001-17-draft",
+        "cr001-08-draft",
+        "cr001-14-draft",
+        "cr001-07-draft",
+        "cr001-03-draft",
+        "cr001-20-draft",
+        "cr001-09-draft",
+        "cr001-02-draft",
+        "cr001-15-draft",
+        "cr001-01-draft",
+        "cr001-19-draft"
+      ],
+      "fidelity": {
+        "fail": 11,
+        "pass": 2
+      },
+      "improvement": {
+        "limited": 1,
+        "none": 5,
+        "regression": 7
+      },
+      "pass_ids": [
+        "cr001-12-draft",
+        "cr001-11-draft"
+      ]
+    }
+  },
+  "controls": [
+    {
+      "case_id": "review-04",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    },
+    {
+      "case_id": "review-11",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    },
+    {
+      "case_id": "review-17",
+      "expected": "pass",
+      "observed": "pass",
+      "passed": true
+    },
+    {
+      "case_id": "review-23",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    },
+    {
+      "case_id": "review-25",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    },
+    {
+      "case_id": "review-32",
+      "expected": "pass",
+      "observed": "pass",
+      "passed": true
+    }
+  ],
+  "cross_review": [
+    {
+      "agree": true,
+      "case_id": "review-18",
+      "draft_id": "cr001-08-draft",
+      "kind": "assistant_edit",
+      "primary_fidelity": "pass",
+      "secondary_fidelity": "pass"
+    },
+    {
+      "agree": true,
+      "case_id": "review-19",
+      "draft_id": "cr001-11-draft",
+      "kind": "compact_prompt",
+      "primary_fidelity": "pass",
+      "secondary_fidelity": "pass"
+    },
+    {
+      "agree": false,
+      "case_id": "review-21",
+      "draft_id": "cr001-15-draft",
+      "kind": "compact_prompt",
+      "primary_fidelity": "fail",
+      "secondary_fidelity": "uncertain"
+    },
+    {
+      "agree": true,
+      "case_id": "review-22",
+      "draft_id": "cr001-12-draft",
+      "kind": "assistant_edit",
+      "primary_fidelity": "pass",
+      "secondary_fidelity": "pass"
+    },
+    {
+      "agree": true,
+      "case_id": "review-27",
+      "draft_id": "cr001-19-draft",
+      "kind": "compact_prompt",
+      "primary_fidelity": "fail",
+      "secondary_fidelity": "fail"
+    },
+    {
+      "agree": true,
+      "case_id": "review-30",
+      "draft_id": "cr001-11-draft",
+      "kind": "assistant_edit",
+      "primary_fidelity": "pass",
+      "secondary_fidelity": "pass"
+    }
+  ],
+  "human_reviews": 0,
+  "training_exports": 0
+}

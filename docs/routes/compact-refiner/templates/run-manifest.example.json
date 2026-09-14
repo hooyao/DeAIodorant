@@ -1,0 +1,86 @@
+{
+  "schema_version": "compact-refiner-run-1.0",
+  "is_template": true,
+  "route_id": "compact-refiner-v1",
+  "run_id": null,
+  "stage": null,
+  "state": "planned",
+  "created_at_utc": null,
+  "started_at_utc": null,
+  "finished_at_utc": null,
+  "protocol": {
+    "version": null,
+    "path": null,
+    "sha256": null,
+    "frozen_before_execution": false
+  },
+  "code": {
+    "git_commit": null,
+    "branch": "init",
+    "dirty": null,
+    "tracked_diff_sha256": null,
+    "relevant_untracked_file_hashes": {}
+  },
+  "inputs": {
+    "dataset_version": null,
+    "dataset_manifest_sha256": null,
+    "split_manifest_sha256": null,
+    "role": null,
+    "group_count": 0,
+    "record_count": 0,
+    "rights_check": "not_run",
+    "overlap_check": "not_run"
+  },
+  "prompts": [],
+  "models": [],
+  "inference": {
+    "endpoint": "https://openrouter.ai/api/v1",
+    "api_key_environment_variable": "OPENAI_API_KEY",
+    "temperature": null,
+    "top_p": null,
+    "max_output_tokens": null,
+    "reasoning_mode": null,
+    "seed": 20260914,
+    "seed_supported": null,
+    "provider_policy": null,
+    "concurrency": 1,
+    "timeout_seconds": 120,
+    "max_retries": 2,
+    "request_config_sha256": null
+  },
+  "training": null,
+  "evaluation": {
+    "policy_version": "compact-refiner-evaluation-1.0",
+    "allocation_sha256": null,
+    "analysis_plan_sha256": null,
+    "primary_contrasts": [],
+    "decision_thresholds": null,
+    "reader_count": 0,
+    "group_count": 0,
+    "review_status": "not_started"
+  },
+  "runtime": {
+    "host": null,
+    "os": null,
+    "python": null,
+    "gpu": null,
+    "dependency_snapshot_sha256": null
+  },
+  "budget": {
+    "currency": "USD",
+    "cap": null,
+    "price_snapshot_sha256": null,
+    "estimated_maximum_cost": null,
+    "actual_cost": null,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "reasoning_tokens": 0,
+    "failed_attempts": 0
+  },
+  "commands": [],
+  "artifacts": {},
+  "failure": null,
+  "limitations": [],
+  "report_path": null,
+  "decision_id": null
+}

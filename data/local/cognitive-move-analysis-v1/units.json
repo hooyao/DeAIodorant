@@ -1,0 +1,852 @@
+{
+  "version": "cognitive-move-analysis-1.0",
+  "created_date": "2026-09-14",
+  "analyst": {
+    "kind": "model_assisted_source_grounded_annotation",
+    "agent_task": "/root/cognitive_move_examples",
+    "runtime": "Codex",
+    "exact_backend_model_identifier": "unavailable_in_agent_context",
+    "human_validation": false,
+    "independent_review_status": "pending"
+  },
+  "human_labels": {
+    "scope": "article_only",
+    "source_path": "data/local/reader-style-anchors-v1/reader-feedback.json",
+    "new_labels_created": false,
+    "articles": [
+      {
+        "document_id": "e3dd9c4a95dd4e1fbdacd281",
+        "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+        "terms_verbatim": [
+          "极其臭",
+          "恶臭"
+        ],
+        "relative_role": "primary_strong_positive_discovery_anchor"
+      },
+      {
+        "document_id": "92ade4253c08a43329164bf5",
+        "source_url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+        "terms_verbatim": [
+          "一般臭"
+        ],
+        "relative_role": "lower_intensity_reference"
+      }
+    ]
+  },
+  "source_hashes": {
+    "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "data/local/reader-style-anchors-v1/smzdm/body-with-citations.txt": "e2fc58e18a30abda2cdde34ea9f86ef2469382704a40edc88104e65fcec2b1b5",
+    "data/local/reader-style-anchors-v1/smzdm/article.dom.html": "a6374076405ecc0e06547c6a9a3f1cd361fc9c726c61bfe84a2b2a43d7f40914",
+    "data/local/reader-style-anchors-v1/smzdm/blocks.json": "909bcf0db7d4a4c370e8b01128d96c3491ee424be718e0f41689eef49a9c4965",
+    "data/local/reader-style-anchors-v1/smzdm/metadata.json": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393",
+    "data/local/reader-style-anchors-v1/smzdm/citations.json": "3b18c3dfb172767a3f55e7c5585621ae7db84f255c74c40038e609a004f048c0",
+    "data/local/reader-style-anchors-v1/source.html": "bb4e86a8e65eea101c971d0a40d1b2773f53359209c684d4608691e9f1636098",
+    "data/local/reader-style-anchors-v1/reader-feedback.json": "2e43c4a5309aa61b0f3eca7a74f5af9382f26447979707c3200e4a24fd043220",
+    "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2",
+    "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/article.dom.html": "b4d9f45ff40fc0556fe256ac48deb1d4b78cdf8c0ce66135598607afd421f85d",
+    "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/blocks.json": "a777c63f84f86a8e565d1bdc89081c82199e964b705311cd23cc192474f06894",
+    "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/metadata.json": "dac1d87294c9226baf78e0910e258c3e616fba55bd8901195a728f76ded3de1b",
+    "data/local/targeted-media-discovery-v1/baidu-supply/source.html": "4c1c19a5af60215b2b454d569423d661e7c36ec8b42550cb69debe639d968ec3",
+    "docs/routes/compact-refiner/cognitive-move-analysis.md": "e217e54711899de28803e278f498c7d463c084e06370d0dbf693b459f9599ef0"
+  },
+  "views": {
+    "smzdm_analysis_body": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "transformation": "Existing analytical view excluding publisher citation chips; no additional transformation."
+    },
+    "smzdm_title": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/metadata.json",
+      "json_pointer": "/title",
+      "sha256_utf8_value": "eacd71671a24b923092eb922d2e5642b75367137c4fb33fbec02a4dace3726cc"
+    },
+    "baidu_body": {
+      "path": "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt",
+      "transformation": "None; exact saved UTF-8 body, including collector newlines."
+    }
+  },
+  "provenance_notes": {
+    "scope": "Six exposed worked examples selected by protocol for explanatory contrast; not prevalence, independent validation, edits, training or authorship evidence.",
+    "source_context_read": "Both complete saved articles, all DOM block texts/boundaries, metadata, and relevant SMZDM publisher citation attributes were inspected before annotation.",
+    "analytical_text": "English descriptions and paraphrases are analyst-produced. Only quote values in source-span dictionaries are verbatim body/title evidence.",
+    "external_verification": "None. Publisher quotations, attribution, metrics, and causal claims remain source assertions.",
+    "reader_prior_beliefs": "Not measured. A negated proposition is not evidence of an actual reader belief.",
+    "execution": "Manual structured annotation assembled using Python standard-library source lookup, hashing, JSON serialization and exact-span assertions; no network, model API, GPU, rewrites or scalar scores."
+  },
+  "offset_convention": {
+    "unit": "Unicode code points",
+    "interval": "zero-based, end-exclusive",
+    "basis": "Exact UTF-8 decoded view; global view offsets, not block-relative; no newline normalization."
+  },
+  "units": [
+    {
+      "id": "M01",
+      "document_id": "e3dd9c4a95dd4e1fbdacd281",
+      "document_view": "smzdm_title",
+      "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+      "source_spans": [
+        {
+          "view": "smzdm_title",
+          "block_id": "title",
+          "start_char": 0,
+          "end_char": 44,
+          "quote": "开源不含硬件、国内不直邮：上手机器鸭 Microduck 前，先把买、搓、等三条路算明白"
+        }
+      ],
+      "context_block_ids": [
+        "b003",
+        "b004",
+        "b008",
+        "b009",
+        "b010",
+        "b012",
+        "b013",
+        "b016",
+        "b018"
+      ],
+      "operation": {
+        "primary": "agenda_setting",
+        "secondary": []
+      },
+      "question_under_discussion": {
+        "provenance": "explicit",
+        "analytical_paraphrase": "Which purchase, DIY, or waiting route should a prospective Microduck user consider? The title names these routes rather than stating a reader misconception.",
+        "evidence": [
+          {
+            "view": "smzdm_title",
+            "block_id": "title",
+            "start_char": 31,
+            "end_char": 44,
+            "quote": "先把买、搓、等三条路算明白"
+          }
+        ]
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "Before taking up Microduck, the article promises to clarify three routes: buy, build, or wait. The title also asserts that open source excludes hardware and that direct domestic delivery is unavailable; these are topical constraints, not evidence of prior reader error."
+      },
+      "relation": {
+        "types": [
+          "means_end"
+        ],
+        "analytical_paraphrase": "Organizing options is presented as preparation for a decision. No A-versus-B opposition is required."
+      },
+      "grounds_and_warrant": {
+        "evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b008",
+            "start_char": 1019,
+            "end_char": 1047,
+            "quote": "但注意，\"全开源\"有边界：开的是软件管线，硬件图纸没开。"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b010",
+            "start_char": 1217,
+            "end_char": 1248,
+            "quote": "更麻烦的是，社区普遍反馈官方不向中国大陆（及港澳台）提供邮寄。"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b009",
+            "start_char": 1123,
+            "end_char": 1142,
+            "quote": "账一：官方下单，买的是管线，熬的是时间"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b012",
+            "start_char": 1559,
+            "end_char": 1577,
+            "quote": "账二：自己搓，搓的是它开源的\"前身\""
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b016",
+            "start_char": 2170,
+            "end_char": 2196,
+            "quote": "账三：等国产，图纸抄不出来，但\"国产鸭\"真的在路上了"
+          }
+        ],
+        "supplied_bridge": "The three section headings implement the promised organization. The body states the opening and delivery constraints, attributing delivery to community reports.",
+        "plausible_unstated_bridge": "Comparing available routes can help a buyer decide.",
+        "unknowns": "No evidence that the reader was confused; no independent verification of hardware disclosure or delivery policy. Matching sections demonstrate organization, not that every cost or option has been adequately resolved; M04 records remaining comparison gaps."
+      },
+      "information_update": {
+        "types": [
+          "reorganization"
+        ],
+        "analytical_paraphrase": "Provides an advance route map, subsequently realized in three sections."
+      },
+      "stance_and_presentation": {
+        "analytical_description": "The pre-action instruction positions the article as a guide that will settle the options. Parallel route labels make the agenda memorable. A second preparatory instruction recurs in the opening heading.",
+        "recurrence_evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b004",
+            "start_char": 468,
+            "end_char": 491,
+            "quote": "399 美元买的是什么：先把\"开源\"的范围捋清"
+          }
+        ]
+      },
+      "assessments": {
+        "content_relationship_status": "Coherent agenda with concrete delivery of its three-part organization. Whether the options are fully clarified remains separate and uncertain. No absent foil needs to be invented.",
+        "possible_style_burden": "Repeated instructions to get matters clear may feel teacherly or over-managed; this remains an analyst hypothesis, separate from organizational delivery.",
+        "preserved_utility": "Signals constraints and makes the three route sections navigable.",
+        "counterinterpretation": "A conventional service-journalism headline can legitimately promise to organize choices without correcting anyone.",
+        "confidence": "High about agenda function and heading correspondence; reader response to this unit is unmeasured.",
+        "unresolved_questions": [
+          "Does repeated guidance across the full article burden reading despite useful organization?",
+          "Do the substantive comparisons justify the stronger promise of clarified choices, given the unresolved cost scopes in M04?"
+        ]
+      }
+    },
+    {
+      "id": "M02",
+      "document_id": "e3dd9c4a95dd4e1fbdacd281",
+      "document_view": "smzdm_analysis_body",
+      "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+      "source_spans": [
+        {
+          "view": "smzdm_analysis_body",
+          "block_id": "b006",
+          "start_char": 672,
+          "end_char": 923,
+          "quote": "计算平台是社区聊得最多的一点：机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板（Firefly ROC-RK3566-PC，四核 A55，1GB 内存 + 32GB 存储）。有开发者写了完整的部署手记：走路、起身这些动作是在英伟达 GPU 上用 mjlab + MuJoCo Warp + PPO 训练 1~2 小时收敛，导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。也就是说，训练靠算力，实机真不靠。"
+        }
+      ],
+      "context_block_ids": [
+        "b005",
+        "b006",
+        "b007"
+      ],
+      "operation": {
+        "primary": "correction",
+        "secondary": [
+          "explanation",
+          "recap"
+        ]
+      },
+      "question_under_discussion": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "Which computer is onboard Microduck, and how does its deployment workload differ from training?"
+      },
+      "prior_or_foil": {
+        "analytical_paraphrase": "Microduck carries a Jetson onboard. This proposition is negated in the unit; it is not an established reader belief.",
+        "source_status": "introduced_here_as_negated_alternative",
+        "evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b006",
+            "start_char": 687,
+            "end_char": 699,
+            "quote": "机载的不是 Jetson"
+          }
+        ],
+        "reader_belief_evidence": {
+          "status": "absent",
+          "actual_reader_belief": "unknown"
+        }
+      },
+      "asserted_or_promised_content": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "The onboard computer is a domestic Rockchip RK3566 core board, Firefly ROC-RK3566-PC, with four A55 cores, 1GB memory and 32GB storage. An attributed developer account reports walking/rising policies trained on NVIDIA GPU with mjlab, MuJoCo Warp and PPO, converging in 1~2 hours; ONNX deployment runs at 50Hz/20ms per tick, missing 3 of 15022 ticks. The closing recap contrasts training compute with real-device requirements."
+      },
+      "relation": {
+        "types": [
+          "same_dimension_alternatives",
+          "restatement"
+        ],
+        "analytical_paraphrase": "Jetson and RK3566 fill the same onboard-platform slot. The training/deployment contrast concerns different workloads; it does not establish that the device uses no computation."
+      },
+      "grounds_and_warrant": {
+        "evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b006",
+            "start_char": 767,
+            "end_char": 906,
+            "quote": "有开发者写了完整的部署手记：走路、起身这些动作是在英伟达 GPU 上用 mjlab + MuJoCo Warp + PPO 训练 1~2 小时收敛，导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。"
+          }
+        ],
+        "publisher_citation_ids": [
+          "b006-c01"
+        ],
+        "supplied_bridge": "Training elsewhere and running the resulting policy on the named board explains why powerful onboard GPU hardware need not follow from GPU training.",
+        "plausible_unstated_bridge": "The reported trial is representative enough for the reader to understand deployment feasibility.",
+        "unknowns": "Developer logs, workload coverage and hardware specifications were not independently checked. The tick result cannot establish absence of all onboard compute needs."
+      },
+      "information_update": {
+        "types": [
+          "concrete_specification",
+          "clarification",
+          "recap"
+        ],
+        "analytical_paraphrase": "Adds actionable hardware and runtime detail, followed by a compressed training/deployment distinction."
+      },
+      "stance_and_presentation": {
+        "analytical_description": "A bare-copula corrective replacement names a concrete alternative. The emphatic recap strengthens the contrast after detailed explanation. Similar replacement form recurs in a different, evaluative role.",
+        "recurrence_evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b011",
+            "start_char": 1369,
+            "end_char": 1405,
+            "quote": "买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。"
+          }
+        ]
+      },
+      "assessments": {
+        "content_relationship_status": "Useful same-dimension correction with attributed operational support; the final recap is interpretable as relative compute demand, but literal zero-compute reading would exceed the evidence.",
+        "possible_style_burden": "Correction plus emphatic recap may add repetitive insistence; form alone does not make the useful distinction defective.",
+        "preserved_utility": "Board identity, resources, toolchain, timing and training/deployment distinction.",
+        "counterinterpretation": "The contrast efficiently answers a plausible hardware question without claiming readers actually chose Jetson.",
+        "confidence": "High about the platform relationship; moderate about intended scope of the compressed recap.",
+        "unresolved_questions": [
+          "Does the recap mean no powerful onboard GPU, or a broader hardware-independence claim?"
+        ]
+      }
+    },
+    {
+      "id": "M03",
+      "document_id": "e3dd9c4a95dd4e1fbdacd281",
+      "document_view": "smzdm_analysis_body",
+      "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+      "source_spans": [
+        {
+          "view": "smzdm_analysis_body",
+          "block_id": "b011",
+          "start_char": 1353,
+          "end_char": 1558,
+          "quote": "这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。参照物是 HF 上一款产品 Reachy Mini：299 美元，累计卖了约 1 万台，应用商店聚了 200 多个社区 APP。Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。"
+        }
+      ],
+      "context_block_ids": [
+        "b006",
+        "b007",
+        "b009",
+        "b010",
+        "b011",
+        "b025",
+        "b027"
+      ],
+      "operation": {
+        "primary": "evaluative_reframing",
+        "secondary": [
+          "inference"
+        ]
+      },
+      "question_under_discussion": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "What is the main value of paying for Microduck, particularly for teaching, experimentation, or learning RL deployment?"
+      },
+      "prior_or_foil": {
+        "analytical_paraphrase": "The core purchase value is a toy. The text rejects this emphasis, without necessarily denying that the platform can also entertain.",
+        "source_status": "introduced_here_as_negated_value_focus",
+        "evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b011",
+            "start_char": 1369,
+            "end_char": 1378,
+            "quote": "买到的核心不是玩具"
+          }
+        ],
+        "reader_belief_evidence": {
+          "status": "absent",
+          "actual_reader_belief": "unknown"
+        }
+      },
+      "asserted_or_promised_content": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "For USD399 plus forwarding trouble/cost, the core value is a ready sim-to-real RL pipeline. Reachy Mini is offered as a reference: USD299, roughly 10000 cumulative sales, over 200 community apps. Microduck simulation dance/handstand videos reportedly appeared within two days. Conditional on teaching, experimentation or learning RL deployment, the article claims no current alternative below CNY4000 matches the pipeline readiness."
+      },
+      "relation": {
+        "types": [
+          "compatible_dimensions",
+          "means_end"
+        ],
+        "analytical_paraphrase": "Toy enjoyment and learning infrastructure are compatible dimensions. The retained core-value qualifier makes prioritization a stronger reading than a logical exclusion; the learning condition supplies its purpose."
+      },
+      "grounds_and_warrant": {
+        "evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b007",
+            "start_char": 924,
+            "end_char": 1018,
+            "quote": "软件端：7 种预训练行为（走路、坐立、下蹲、踢腿、抓取、轮滑、跌倒自起）、仿真环境、SDK 和训练代码在 github.com/pollen-robotics/microduck 全开源。"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b011",
+            "start_char": 1469,
+            "end_char": 1506,
+            "quote": "Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b011",
+            "start_char": 1506,
+            "end_char": 1558,
+            "quote": "如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。"
+          }
+        ],
+        "publisher_citation_ids": [
+          "b007-c01",
+          "b011-c01",
+          "b011-c02"
+        ],
+        "supplied_bridge": "Open training tools and early policy demonstrations make the pipeline relevant to the named learning uses. Reachy Mini supplies a community-ecosystem analogy.",
+        "plausible_unstated_bridge": "Comparable community growth and integration will translate into useful Microduck learning readiness.",
+        "unknowns": "No comparison inventory, readiness criterion or independent check establishes the below-CNY4000 exclusivity claim. Reachy Mini uptake is not Microduck performance evidence."
+      },
+      "information_update": {
+        "types": [
+          "value_prioritization",
+          "qualification"
+        ],
+        "analytical_paraphrase": "Reuses earlier pipeline facts to connect product value to a specified user purpose; reuse can support a purchasing judgment."
+      },
+      "stance_and_presentation": {
+        "analytical_description": "The replacement prioritizes core value, then conditional direct address identifies the audience. The final market comparison presents a strong current verdict. The value focus recurs in the later recommendation.",
+        "recurrence_evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b025",
+            "start_char": 2738,
+            "end_char": 2799,
+            "quote": "AI/机器人方向学习者、教育工作者：官方单值得排，4-6 个月换一条完整的强化学习真机管线，比拿数千上万元的设备试错便宜；"
+          }
+        ]
+      },
+      "assessments": {
+        "content_relationship_status": "Coherent purpose-conditioned value emphasis; market exclusivity remains unsupported within the inspected article, not disproved.",
+        "possible_style_burden": "Repeated pronouncements about core value can feel overinsistent even where the recommendation is useful.",
+        "preserved_utility": "Links the pipeline to learning goals and distinguishes those goals from an effortless desk-pet expectation.",
+        "counterinterpretation": "Product reviewing commonly prioritizes a main benefit; compatible uses need not be listed in every verdict.",
+        "confidence": "High about the core-value qualifier and learning condition; independent comparative validity is unknown.",
+        "unresolved_questions": [
+          "Which alternatives and readiness criteria support the current CNY4000 comparison?"
+        ]
+      }
+    },
+    {
+      "id": "M04",
+      "document_id": "e3dd9c4a95dd4e1fbdacd281",
+      "document_view": "smzdm_analysis_body",
+      "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+      "source_spans": [
+        {
+          "view": "smzdm_analysis_body",
+          "block_id": "b015",
+          "start_char": 1956,
+          "end_char": 2169,
+          "quote": "但有两笔成本要留神：一是舵机，评论区懂行的说法是\"总线舵机单卖很贵\"，凑不齐渠道价，整机成本压不下来；二是树莓派，上半年那波内存涨价把整个板卡市场抬了一截（这笔账我们前阵子单独算过），现在攒机别按去年的价格预期。有华强北背景的网友给的参照是：“自己采购一套手搓，不会低于 4000 元，比人家零售价都贵”。这是估算不是实测定价，但方向很清楚：散件零售价拼不过整机的规模化采购，DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。"
+        },
+        {
+          "view": "smzdm_analysis_body",
+          "block_id": "b016",
+          "start_char": 2170,
+          "end_char": 2196,
+          "quote": "账三：等国产，图纸抄不出来，但\"国产鸭\"真的在路上了"
+        },
+        {
+          "view": "smzdm_analysis_body",
+          "block_id": "b017",
+          "start_char": 2197,
+          "end_char": 2268,
+          "quote": "\"坐等华强北发力\"是高赞评论，但结合\"硬件没开源\"这个前提，等来的不会是 399 美元的像素级复刻——只能靠逆向，成本反而更高（参考上一段）。"
+        }
+      ],
+      "context_block_ids": [
+        "b002",
+        "b006",
+        "b008",
+        "b010",
+        "b013",
+        "b014",
+        "b015",
+        "b016",
+        "b017",
+        "b018",
+        "b026"
+      ],
+      "operation": {
+        "primary": "inference",
+        "secondary": [
+          "evaluative_reframing"
+        ]
+      },
+      "question_under_discussion": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "Will buying parts or waiting for a domestic Microduck replica save money relative to buying the commercial robot?"
+      },
+      "prior_or_foil": {
+        "analytical_paraphrase": "DIY saves money; domestic production may provide a cheap replica. The first is explicitly rejected here. A quoted wait-for-Huaqiangbei comment supports expressed interest in domestic production, not an exact price or faithful-replica belief.",
+        "source_status": "mixed_introduced_rejected_proposition_and_attributed_comment",
+        "evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b015",
+            "start_char": 2144,
+            "end_char": 2156,
+            "quote": "DIY 搓鸭省钱是伪命题"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b017",
+            "start_char": 2197,
+            "end_char": 2211,
+            "quote": "\"坐等华强北发力\"是高赞评论"
+          }
+        ],
+        "reader_belief_evidence": {
+          "status": "unknown",
+          "analytical_description": "The attributed comment gives limited evidence about a commenter; it does not establish the current reader believes either cost proposition."
+        }
+      },
+      "asserted_or_promised_content": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "Separate retail servos and increased Raspberry Pi prices are presented as cost pressures. A commenter with a Huaqiangbei background estimates self-procurement at no less than CNY4000, above retail. The author explicitly calls this an estimate, then declares that retail parts cannot beat bulk procurement and DIY buys freedom rather than savings. The following section infers that closed hardware means no exact USD399 replica, only reverse engineering at higher cost."
+      },
+      "relation": {
+        "types": [
+          "cause",
+          "epistemic_strengthening"
+        ],
+        "analytical_paraphrase": "Cost drivers and a qualified estimate support a procurement warning; the text strengthens that into a broad savings verdict and carries it across to a replication-cost claim."
+      },
+      "grounds_and_warrant": {
+        "evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b015",
+            "start_char": 2109,
+            "end_char": 2143,
+            "quote": "这是估算不是实测定价，但方向很清楚：散件零售价拼不过整机的规模化采购"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b017",
+            "start_char": 2197,
+            "end_char": 2268,
+            "quote": "\"坐等华强北发力\"是高赞评论，但结合\"硬件没开源\"这个前提，等来的不会是 399 美元的像素级复刻——只能靠逆向，成本反而更高（参考上一段）。"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b013",
+            "start_char": 1662,
+            "end_char": 1748,
+            "quote": "V2 版本官方放了 60 秒组装实录：3D 打印件 + 树莓派 + 总线舵机，一步步拼成整机通电迈步，整机高 42 厘米，比鸭子大一圈，官方口径零件成本不到 400 美元。"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b026",
+            "start_char": 2832,
+            "end_char": 2903,
+            "quote": "有 3D 打印机、吃灰树莓派的老 DIY：直接上 Open Duck Mini V2，42 厘米的大身子更耐折腾，教程生态现成，别等官方鸭子。"
+          }
+        ],
+        "publisher_citation_ids": [
+          "b013-c02",
+          "b015-c01",
+          "b017-c01"
+        ],
+        "supplied_bridge": "Retail parts lack bulk purchasing advantages; missing drawings are said to require reverse engineering. The latter paragraph explicitly refers back to the former.",
+        "plausible_unstated_bridge": "The estimate applies to comparable configurations and purchasing conditions; replication costs cannot be offset by scale, redesign or existing parts.",
+        "unknowns": "The 42cm Raspberry-Pi predecessor differs from the commercial 25cm/RK3566 unit. The under-USD400 parts account is not reconciled with the CNY4000 estimate. Owned equipment in b026 changes marginal outlay; freight, component equivalence and replication scale are unpriced."
+      },
+      "information_update": {
+        "types": [
+          "qualification",
+          "unsupported_extrapolation"
+        ],
+        "analytical_paraphrase": "Useful cost cautions and an explicit estimate qualification precede conclusions broader than the supplied comparison."
+      },
+      "stance_and_presentation": {
+        "analytical_description": "Expertise attribution, an acknowledged estimate, then a clear-direction verdict compress remaining contingencies. Section-level parallelism extends the decision framing across routes.",
+        "recurrence_evidence": [
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b009",
+            "start_char": 1123,
+            "end_char": 1142,
+            "quote": "账一：官方下单，买的是管线，熬的是时间"
+          },
+          {
+            "view": "smzdm_analysis_body",
+            "block_id": "b012",
+            "start_char": 1559,
+            "end_char": 1577,
+            "quote": "账二：自己搓，搓的是它开源的\"前身\""
+          }
+        ]
+      },
+      "assessments": {
+        "content_relationship_status": "Directionally plausible warning with an unresolved scope/comparability gap; the article does not establish universal DIY or replication economics. No claim is classified as false.",
+        "possible_style_burden": "Definitive verdicts may outrun the estimate qualification and discourage attention to conditional differences.",
+        "preserved_utility": "Warns about retail sourcing, price changes, unavailable drawings and the nonfinancial value of DIY.",
+        "counterinterpretation": "The intended audience may be new buyers sourcing every part at current retail; b026 shows the article can separately recommend DIY to equipped hobbyists.",
+        "confidence": "High about the qualification-to-verdict shift and configuration differences; true costs remain unknown.",
+        "unresolved_questions": [
+          "Which exact build, procurement region, owned parts and production scale define each comparison?"
+        ]
+      }
+    },
+    {
+      "id": "M05",
+      "document_id": "92ade4253c08a43329164bf5",
+      "document_view": "baidu_body",
+      "source_url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+      "source_spans": [
+        {
+          "view": "baidu_body",
+          "block_id": "b012",
+          "start_char": 1009,
+          "end_char": 1210,
+          "quote": "大模型推理过程中，每处理一个 token，都需要对整个上下文历史进行大量矩阵运算。KV Cache 把这些中间运算结果保存下来，避免每次都重新计算。在 Agent 时代，这个机制变成了系统性能的命脉——Agent 的多轮调用之间上下文高度重叠，如果 KV Cache 命中，就不需要重新推理整个上下文，速度和成本都会大幅改善。反之，对于一个调用 30-60 次的 Agent 任务，就是巨大的算力浪费。"
+        }
+      ],
+      "context_block_ids": [
+        "b002",
+        "b011",
+        "b012",
+        "b013",
+        "b014",
+        "b015",
+        "b018"
+      ],
+      "operation": {
+        "primary": "explanation",
+        "secondary": []
+      },
+      "question_under_discussion": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "How can KV Cache reuse improve repeated Agent calls, and why do cache misses matter?"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "The passage describes repeated matrix computation over context, then explains that KV Cache retains intermediate results. Because Agent calls have highly overlapping context, a cache hit avoids repeating context computation and is said to improve speed and cost substantially; for a task requiring 30-60 calls, missing this reuse is presented as substantial waste."
+      },
+      "relation": {
+        "types": [
+          "cause",
+          "means_end"
+        ],
+        "analytical_paraphrase": "Saving reusable computation links overlapping context to lower repeated work. The hit/miss conditional compares system states; it need not reject any reader belief."
+      },
+      "grounds_and_warrant": {
+        "evidence": [
+          {
+            "view": "baidu_body",
+            "block_id": "b012",
+            "start_char": 1050,
+            "end_char": 1083,
+            "quote": "KV Cache 把这些中间运算结果保存下来，避免每次都重新计算。"
+          },
+          {
+            "view": "baidu_body",
+            "block_id": "b012",
+            "start_char": 1110,
+            "end_char": 1172,
+            "quote": "Agent 的多轮调用之间上下文高度重叠，如果 KV Cache 命中，就不需要重新推理整个上下文，速度和成本都会大幅改善。"
+          },
+          {
+            "view": "baidu_body",
+            "block_id": "b002",
+            "start_char": 142,
+            "end_char": 259,
+            "quote": "参与 SWE-bench 编程评测基准的主流 Agent 系统技术报告显示（2025 年），完成一个标准编程任务，最先进的 Agent 系统平均需要调用 API 30 到 60 次，一次任务的成本在 0.07 到 0.75 美元之间。"
+          }
+        ],
+        "supplied_bridge": "Repeated inputs allow reuse; saved intermediate results reduce redundant computation. Earlier attributed task statistics supply the 30-60-call context.",
+        "plausible_unstated_bridge": "Reusable context is sufficiently shared, retained and accessible across relevant requests.",
+        "unknowns": "Architecture, caching scope, eviction/transfer overhead and workload-specific gains are unspecified. No benchmark or cited report was independently verified; the saved passage does not justify treating all context computation as eliminated."
+      },
+      "information_update": {
+        "types": [
+          "concrete_specification",
+          "clarification"
+        ],
+        "analytical_paraphrase": "Turns the preceding cache-hit-rate topic into an accessible causal mechanism. This explanatory utility does not depend on being novel to every reader."
+      },
+      "stance_and_presentation": {
+        "analytical_description": "Mechanistic explanation is amplified by high-importance and large-waste evaluations. The adjacent paragraph makes a stronger commercial interpretation; it is context, not automatically part of this unit.",
+        "recurrence_evidence": [
+          {
+            "view": "baidu_body",
+            "block_id": "b013",
+            "start_char": 1400,
+            "end_char": 1459,
+            "quote": "这是 KV Cache 优化背后真正的商业逻辑，也是为什么各方都把 KV Cache 命中率当作核心竞争力指标来对待。"
+          }
+        ]
+      },
+      "assessments": {
+        "content_relationship_status": "Recognizable causal explanation with no necessary foil; simplified implementation scope and magnitude remain unspecified.",
+        "possible_style_burden": "Intensity words may dramatize the mechanism; no reading defect follows from the explanatory move itself.",
+        "preserved_utility": "Connects context overlap, retained computation, cache hits and repeated-task costs.",
+        "counterinterpretation": "A non-specialist introduction can reasonably simplify caching before the later architecture discussion.",
+        "confidence": "High about explanatory function; task-specific technical scope and effect size are not established here.",
+        "unresolved_questions": [
+          "Which forms of within-request and cross-request reuse are intended, and under what conditions?"
+        ]
+      }
+    },
+    {
+      "id": "M06",
+      "document_id": "92ade4253c08a43329164bf5",
+      "document_view": "baidu_body",
+      "source_url": "https://www.infoq.cn/article/rDTKqBrlGD5R93NFDOI8",
+      "source_spans": [
+        {
+          "view": "baidu_body",
+          "block_id": "b058",
+          "start_char": 5239,
+          "end_char": 5439,
+          "quote": "iPhone 发布后，App Store 在 2008 年 7 月上线。首周末下载 1000 万次，上线两个月内从 500 款应用增至 3000 款、累计下载突破 1 亿次。到 2023 年，苹果累计向开发者支付 超过 3200 亿美元。这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系——开发者知道在哪里发布、如何变现；用户知道在哪里找应用、支付是否安全。"
+        }
+      ],
+      "context_block_ids": [
+        "b057",
+        "b058",
+        "b059",
+        "b060",
+        "b061",
+        "b062",
+        "b063",
+        "b064"
+      ],
+      "operation": {
+        "primary": "explanation",
+        "secondary": [
+          "correction",
+          "inference"
+        ]
+      },
+      "question_under_discussion": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "What explains the cited App Store growth and developer payments, and how might that history support a claim about Agent infrastructure?"
+      },
+      "prior_or_foil": {
+        "analytical_paraphrase": "The cited App Store outcomes happened because Apple phones were the cheapest. This causal explanation is negated here; the preceding discussion does not establish that readers believed it.",
+        "source_status": "introduced_here_as_negated_cause",
+        "evidence": [
+          {
+            "view": "baidu_body",
+            "block_id": "b058",
+            "start_char": 5358,
+            "end_char": 5371,
+            "quote": "这不是因为苹果的手机最便宜"
+          }
+        ],
+        "reader_belief_evidence": {
+          "status": "absent",
+          "actual_reader_belief": "unknown"
+        }
+      },
+      "asserted_or_promised_content": {
+        "provenance": "analyst_reconstruction",
+        "analytical_paraphrase": "The paragraph reports App Store launch in July 2008 after iPhone, 10 million first-weekend downloads, growth from 500 to 3000 apps and over 100 million downloads within two months, and over USD320 billion paid to developers by 2023. It attributes these outcomes to Apple being first to establish a predictable developer/user supply system: publication and monetization for developers, discovery and payment safety for users."
+      },
+      "relation": {
+        "types": [
+          "cause",
+          "same_dimension_alternatives"
+        ],
+        "analytical_paraphrase": "Low price and platform organization are rival explanations of success, not inherently mutually exclusive causes. This historical account then serves the explicit analogy to Agent infrastructure in b059."
+      },
+      "grounds_and_warrant": {
+        "evidence": [
+          {
+            "view": "baidu_body",
+            "block_id": "b058",
+            "start_char": 5405,
+            "end_char": 5439,
+            "quote": "开发者知道在哪里发布、如何变现；用户知道在哪里找应用、支付是否安全。"
+          },
+          {
+            "view": "baidu_body",
+            "block_id": "b057",
+            "start_char": 5179,
+            "end_char": 5238,
+            "quote": "有一个在产业史上反复出现的规律是：在范式转型期，第一个建好新供给体系的，获得的往往不只是市场份额，而是代际的架构优势。"
+          },
+          {
+            "view": "baidu_body",
+            "block_id": "b059",
+            "start_char": 5440,
+            "end_char": 5462,
+            "quote": "AI Agent 时代，类似的逻辑正在展开。"
+          },
+          {
+            "view": "baidu_body",
+            "block_id": "b062",
+            "start_char": 5636,
+            "end_char": 5654,
+            "quote": "这虽然不构成对厂商整体技术能力的评价"
+          },
+          {
+            "view": "baidu_body",
+            "block_id": "b064",
+            "start_char": 5827,
+            "end_char": 5872,
+            "quote": "这个判断是不是成立，要看接下来一两年，谁的企业客户真正用 AI 把生意做出了不一样的结果。"
+          }
+        ],
+        "supplied_bridge": "Predictability on both sides is offered as a success mechanism. The preceding paragraph proposes a recurrent architecture advantage for early supply-system builders; the following paragraph transfers similar logic to Agents. The conclusion reserves judgment on future business outcomes.",
+        "plausible_unstated_bridge": "That mechanism was causally decisive for App Store outcomes and is sufficiently comparable to enterprise Agent adoption.",
+        "unknowns": "Outcome totals do not isolate causes, establish first-mover priority, or exclude price contributions. No independent verification or comparative causal evidence was inspected. The antecedent of the causal demonstrative may cover the outcome cluster rather than one statistic."
+      },
+      "information_update": {
+        "types": [
+          "clarification",
+          "unsupported_extrapolation"
+        ],
+        "analytical_paraphrase": "Adds a concrete two-sided mechanism and historical analogy; categorical rejection of the price explanation, causal priority, and broader transfer exceed the demonstrated evidence."
+      },
+      "stance_and_presentation": {
+        "analytical_description": "The negated cheap-phone cause introduces a decisive replacement, backed by numerical outcome history and parallel developer/user benefits. Broad historical-law language precedes it; the later conclusion is explicitly conditional.",
+        "recurrence_evidence": [
+          {
+            "view": "baidu_body",
+            "block_id": "b057",
+            "start_char": 5179,
+            "end_char": 5238,
+            "quote": "有一个在产业史上反复出现的规律是：在范式转型期，第一个建好新供给体系的，获得的往往不只是市场份额，而是代际的架构优势。"
+          },
+          {
+            "view": "baidu_body",
+            "block_id": "b064",
+            "start_char": 5827,
+            "end_char": 5872,
+            "quote": "这个判断是不是成立，要看接下来一两年，谁的企业客户真正用 AI 把生意做出了不一样的结果。"
+          }
+        ]
+      },
+      "assessments": {
+        "content_relationship_status": "A plausible explanatory hypothesis and illustrative analogy, not established comparative causation. Missing evidence for reader belief does not by itself establish a straw man.",
+        "possible_style_burden": "The corrective causal certainty may make an open historical interpretation sound settled.",
+        "preserved_utility": "Makes platform predictability concrete for both developer and user and connects it to the article thesis.",
+        "counterinterpretation": "A short industry essay may use Apple illustratively rather than offer a causal study; b064 limits the forward-looking judgment.",
+        "confidence": "High about causal replacement and analogy; moderate about causal scope; historical truth remains unchecked.",
+        "unresolved_questions": [
+          "What evidence supports causal priority, first-mover status, and comparability with Agent markets?"
+        ]
+      }
+    }
+  ],
+  "quote_validation": {
+    "status": "passed",
+    "span_occurrences_checked": 43,
+    "unique_spans_checked": 37,
+    "all_hashes_recomputed": true,
+    "six_unique_ids": true,
+    "block_membership_checked": true,
+    "validation_note": "Every primary and nested evidence span was validated against its named source view and block."
+  }
+}

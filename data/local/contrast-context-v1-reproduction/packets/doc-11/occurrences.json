@@ -1,0 +1,19 @@
+{
+  "alias": "doc-11",
+  "content_hash": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 2408,
+        "start_char": 2406,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 2497,
+        "start_char": 2364,
+        "text": "\n基于此，数据开发平台的整体架构发生变化：Doris 不再局限于传统“外仓”的角色，而是向上演进为统一的查询引擎层，与底层 Iceberg、Paimon 等湖仓格式解耦，直接进行联邦查询，同时利用自身的数据缓存、物化视图等能力对热点数据进行加速，兼顾灵活性与高性能。"
+      },
+      "occurrence_id": "doc-11-e01"
+    }
+  ]
+}

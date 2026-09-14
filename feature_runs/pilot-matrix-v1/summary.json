@@ -1,0 +1,51 @@
+{
+  "cohort_counts": {
+    "post": 10,
+    "pre": 20
+  },
+  "cohort_source_counts": {
+    "post": {
+      "infoq": 10
+    },
+    "pre": {
+      "infoq": 10,
+      "jiqizhixin": 10
+    }
+  },
+  "document_count": 30,
+  "excluded_transition_documents": 0,
+  "feature_count": 150,
+  "feature_family_counts": {
+    "character_composition": 10,
+    "dependency_relation": 37,
+    "dependency_syntax": 27,
+    "discourse_and_stance": 11,
+    "document_structure": 12,
+    "punctuation": 9,
+    "repetition_and_regularity": 8,
+    "title_form": 8,
+    "token_and_lexical": 11,
+    "universal_pos": 17
+  },
+  "sparse_features": {
+    "family_vocabulary_sizes": {
+      "char_2gram": 1581,
+      "char_3gram": 349,
+      "char_4gram": 31,
+      "content_lemma": 802,
+      "dependency_path": 283,
+      "dependency_treelet": 259,
+      "function_word": 215,
+      "pos_2gram": 182,
+      "pos_3gram": 931,
+      "pos_4gram": 1921,
+      "punctuation_run": 36,
+      "root_pos": 7,
+      "sentence_opening": 0
+    },
+    "nonzero_value_count": 71941,
+    "selection_uses_cohort_labels": false,
+    "vocabulary_size": 6597
+  },
+  "syntax_annotations_used": true
+}

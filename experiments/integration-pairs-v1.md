@@ -1,89 +1,73 @@
-# Proposition-Decompression Development Intervention
+# 命题解压缩开发干预
 
-## Status
+## 状态
 
-Protocol `proposition-decompression-development-1.0` was frozen on 2026-08-27
-before reader outcomes. This is post-only, single-reader development work, not
-held-out validation.
+协议 `proposition-decompression-development-1.0` 于 2026-08-27、读者结果产生前冻结。这是仅后时期、单读者开发工作，不是 held-out validation。
 
-## Rationale
+## 理由
 
-The fourth intervention ended with five revised preferences, four original
-preferences, and one no-difference answer. Those treatment totals are not
-interpretable because all nine decisive answers selected side B. The reader
-also identified a different problem from obvious formulaic AI-style markers:
-technical prose can use familiar words yet remain unusually difficult to
-assemble as a whole.
+第四轮干预以五次修订偏好、四次原版偏好、一次无差异结束。全部九个明确回答都选 B 侧，因此不能解释处理汇总。读者还指出不同于明显程式化 AI 风格标记的问题：技术文本可使用熟悉词，却异常难以整合理解。
 
-This intervention tests a bounded response to that observation. It distributes
-an unchanged proposition set across clearer integration units instead of
-deleting more framing language or maximizing compression.
+本干预测试对此观察的限定响应，将不变命题集合分配到更清楚的整合单位，不再以多删框架性表达或最大压缩为目标。
 
-## Frozen operator
+## 冻结算子
 
-The `decompress_proposition_chain` operator may:
+`decompress_proposition_chain` 算子可以：
 
-- split a dense proposition chain at an existing semantic boundary;
-- repeat an already-fixed referent when needed to anchor a new sentence;
-- turn an existing parallel list into separate, explicitly anchored clauses.
+- 沿已有语义边界拆开密集命题链；
+- 必要时重复已经固定的指称对象，为新句提供锚点；
+- 将已有并列列表改为分别具有显式锚点的分句。
 
-It must:
+必须：
 
-- preserve every proposition, entity, number, technical term, negation,
-  qualifier, uncertainty marker, attribution, and logical relation;
-- retain authorial voice and domain terminology;
-- keep CJK length between 95% and 125% of the source;
-- increase sentence count;
-- avoid adding premises, evidence, mechanisms, examples, or causal relations;
-- avoid treating formulaic-marker removal as the intervention target.
+- 保留全部命题、实体、数字、技术术语、否定、限定、不确定性标记、归因及逻辑关系；
+- 保留作者风格与领域术语；
+- CJK 长度维持在原文的 95% 至 125%；
+- 增加句数；
+- 不添加前提、证据、机制、示例或因果关系；
+- 不将删除程式化标记作为干预目标。
 
-Every edit has a structured operation record, three explicit proposition-
-support checks, locked literals, voice anchors, exact numeric preservation, an
-exact source hash, and a full diff.
+每次编辑附结构化操作记录、三项显式命题支撑检查、锁定字面值、风格锚点、精确数字保留、精确来源 hash 和完整 diff。
 
-## Passage set
+## 段落集
 
-The six intervention passages come from previously unselected post-period
-documents. The set balances source three-to-three and contains two passages
-each from industry reporting, research summaries, and technical practice.
+六个干预段落来自此前未选中的后时期文章。来源按三比三平衡，行业报道、研究摘要、技术实践各两个。
 
-| Base pair | Source | Format | Date | Document | Line | Revised/original CJK ratio | Added sentences |
+| 基础配对 | 来源 | 体裁 | 日期 | 文档 | 行 | 修订／原文 CJK 比 | 新增句数 |
 |---|---|---|---|---|---:|---:|---:|
-| 01 | InfoQ | Industry reporting | 2025-09-29 | 4e2108f7b04c3847a564bfd4 | 1 | 1.078 | 4 |
-| 02 | InfoQ | Industry reporting | 2026-04-10 | 8873215c1410ad3babd84bbb | 1 | 1.006 | 4 |
-| 03 | InfoQ | Technical practice | 2026-04-02 | 24fb6134577093ddcff37689 | 8 | 1.080 | 4 |
-| 04 | Meituan | Research summary | 2026-06-11 | 610ba7a9b468d78a3d59def1 | 18 | 0.954 | 5 |
-| 05 | Meituan | Research summary | 2026-06-05 | 75583336dc40b896d68598d0 | 11 | 1.045 | 3 |
-| 06 | Meituan | Technical practice | 2026-03-20 | 69566776f457ecf4c98ecbe0 | 34 | 1.080 | 3 |
+| 01 | InfoQ | 行业报道 | 2025-09-29 | 4e2108f7b04c3847a564bfd4 | 1 | 1.078 | 4 |
+| 02 | InfoQ | 行业报道 | 2026-04-10 | 8873215c1410ad3babd84bbb | 1 | 1.006 | 4 |
+| 03 | InfoQ | 技术实践 | 2026-04-02 | 24fb6134577093ddcff37689 | 8 | 1.080 | 4 |
+| 04 | 美团 | 研究摘要 | 2026-06-11 | 610ba7a9b468d78a3d59def1 | 18 | 0.954 | 5 |
+| 05 | 美团 | 研究摘要 | 2026-06-05 | 75583336dc40b896d68598d0 | 11 | 1.045 | 3 |
+| 06 | 美团 | 技术实践 | 2026-03-20 | 69566776f457ecf4c98ecbe0 | 34 | 1.080 | 3 |
 
-The ratio column is revised CJK characters divided by original CJK characters.
-The six intervention originals are balanced three on A and three on B.
 
-## Position diagnostics
+比例列为修订 CJK 字符数除以原文 CJK 字符数。六个干预原版在 A、B 两侧各三个。
 
-The reader sees eight tasks:
+## 位置诊断
 
-- six distinct intervention pairs;
-- one pair whose A and B texts are byte-identical;
-- one nonadjacent repetition of pair 01 with A and B swapped.
+读者看到八个任务：
 
-The identical control must receive a no-difference answer. The two presentations
-of pair 01 must agree on content rather than display side. Aggregate treatment
-preference is not interpreted unless both conditions pass.
+- 六个不同干预对；
+- 一个 A、B 文本逐字节相同的配对；
+- 配对 01 的一个不相邻重复，A、B 互换。
 
-The controls diagnose the complete side-B pattern from project 6. They are not
-attention checks and are not counted as intervention wins.
+相同文本控制必须选择无差异。配对 01 的两次展示必须保持内容偏好，不能跟随侧别。两个条件均通过后，才解释汇总处理偏好。
 
-## Reproduction identity
+控制用于诊断项目 6 全选 B 的模式，不是注意力测试，也不计作干预胜出。
 
-Two independent generations must reproduce these frozen artifacts:
+## 复现身份
 
-| Artifact | SHA-256 |
+两次独立生成必须复现以下冻结产物：
+
+| 产物 | SHA-256 |
 |---|---|
-| Tasks | `cf84bbfa9a2add22bb86adcd6ad9f4841f85cbe943e8ed93bcdbe09d9be74389` |
-| Answer key | `73edf62b5b5be63f2e3efa67bf974e62a6c80f02293b5bfa6a83439c7975eba8` |
-| Protocol | `57c57847d275daa0b708ee463ff2ffd14feeafd57b5d0a2e3e4a67e205823779` |
-| Label config | `0ff910c04d65c908b917d4c962ae185d6bab829e66df3cb2826d98c60b92116a` |
+| 任务 | `cf84bbfa9a2add22bb86adcd6ad9f4841f85cbe943e8ed93bcdbe09d9be74389` |
+| 答案键 | `73edf62b5b5be63f2e3efa67bf974e62a6c80f02293b5bfa6a83439c7975eba8` |
+| 协议 | `57c57847d275daa0b708ee463ff2ffd14feeafd57b5d0a2e3e4a67e205823779` |
+| 标签配置 | `0ff910c04d65c908b917d4c962ae185d6bab829e66df3cb2826d98c60b92116a` |
+
 
 ~~~powershell
 python experiments/prepare_integration_pairs_v1.py `
@@ -92,34 +76,19 @@ python experiments/prepare_integration_pairs_v1.py `
   --seed 2026082705
 ~~~
 
-Generated tasks, diffs, full operation logs, source text, and the blinded answer
-key remain under ignored `feature_runs/`.
+生成任务、diff、完整操作日志、原文和盲法 答案键 保留在被忽略的 `feature_runs/` 下。
 
-## Reader outcome
+## 读者结果
 
-All eight tasks were completed. Both position diagnostics passed:
+八题全部完成，两个位置诊断均通过：
 
-- the byte-identical A/B control received a no-difference answer;
-- pair 01 was preferred in its original form both before and after A/B sides
-  were reversed.
+- 逐字节相同的 A/B 控制得到无差异回答；
+- 配对 01 在互换 A/B 前后均偏好原版。
 
-The six unique interventions therefore enter development interpretation. Three
-revisions were preferred and three originals were preferred, with no ties. The
-generic proposition-decompression operator has no aggregate advantage and must
-not be promoted.
+因此，六项唯一干预进入开发解释。三次偏好修订、三次偏好原版，无平局。通用命题解压缩算子没有汇总优势，不得升级。
 
-The reader localized a narrower residual problem in pair 03. Its revision was
-preferred, but the phrase `AI 原生时代全新的算力服务需求` remained difficult:
-the head noun arrived after a long modifier stack, and the stack itself did not
-state what was substantively new. This yields a more specific head-delay and
-low-anchor abstract-stacking hypothesis. See
-[Head-Final Modifier Delay Probe](head-final-modifier-probe.md).
+读者在配对 03 中定位了更窄的残留问题。虽然偏好修订版，`AI 原生时代全新的算力服务需求` 仍然难读：中心名词在长修饰堆叠后才出现，堆叠本身也未说明实质上新在哪里。这形成更具体的中心词延迟与低锚点抽象堆叠假设。参见[后置中心词修饰语延迟探测](head-final-modifier-probe.md)。
 
-## Interpretation boundary
+## 解释边界
 
-This round can only establish whether proposition decompression deserves
-further development. It cannot establish a general smell detector, a pre/post
-time effect, or authorship. The six passages were selected after a reader-
-reported hypothesis and deterministic discovery scan, so all outcomes are
-development evidence. Independent validation still requires fresh documents,
-multiple readers, and a frozen analysis plan.
+本轮只能判断命题解压缩是否值得继续开发，不能确立通用臭味检测器、前后时间效应或作者身份。六段是在读者提出假设和确定性发现扫描后选出的，因此全部结果都属于开发证据。独立验证仍需新文档、多读者及冻结分析计划。

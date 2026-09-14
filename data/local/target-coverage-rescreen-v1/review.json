@@ -1,0 +1,5132 @@
+{
+  "version": "target-coverage-rescreen-1.0",
+  "artifact_version": "target-coverage-rescreen-review-1.0",
+  "review_date": "2026-09-14",
+  "created_at_utc": "2026-09-14T09:10:00.259162+00:00",
+  "protocol_path": "docs/routes/compact-refiner/target-coverage-rescreen.md",
+  "protocol_sha256": "0c0a6d7415926b096ae13c18f77bb12f0e99eb8183a48dba1c2ad761e79da930",
+  "input_manifest_path": "data/local/target-coverage-rescreen-v1/input-manifest.json",
+  "input_manifest_sha256": "74b8bd66f4ac028c9f4db56e65a4e3d30f4243f820453cd0eb10d051eb485feb",
+  "reviewer": {
+    "role": "assistant_exploratory_screening",
+    "identity": "Codex assistant subagent /root/target_coverage_rescreen",
+    "model_identifier": null,
+    "model_identifier_note": "The exact serving model identifier was not exposed to this reviewer; no API model identifier is invented.",
+    "human_gold": false
+  },
+  "scope": {
+    "frame": "All twelve post-period bodies in the supplied manifest, in manifest order.",
+    "body_count": 12,
+    "total_body_unicode_codepoints": 64709,
+    "total_body_bytes": 167872,
+    "total_blocks": 690,
+    "primary_post_period_start": "2025-07-01",
+    "pre_period_documents_read": 0,
+    "exposure": "Previously acquired exposed development material; no new validation evidence.",
+    "selection_basis": "Recency and availability; no cue-count filter, ranking, threshold, or optimization.",
+    "prior_semantic_or_rewrite_reviews_read": false,
+    "benchmarks_or_held_out_data_opened": false,
+    "new_bodies_acquired": false,
+    "external_model_api_used": false,
+    "network_used": false,
+    "training_or_gpu_used": false,
+    "user_reader_task_created": false
+  },
+  "offset_definition": "Zero-based half-open Unicode code-point offsets in the exact UTF-8-decoded body.txt bytes, including collector-inserted line separators. Byte offsets and UTF-16 code units are not used.",
+  "presentation_policy": "Each cited collector span is checked against its saved DOM block and records the saved presentation text. Collector line breaks inside a DOM paragraph are not treated as grammatical defects. Media references and the video original were not opened.",
+  "method": {
+    "read_order": "input-manifest order",
+    "full_read_attestation": "The reviewer read every displayed complete body block, including all 267 DHH blocks. Programmatic coverage checks verify the attestation records and source identities, not the qualitative judgment itself.",
+    "decision_basis": "Whole-article comparison of candidate problems with coherent explanations, necessary contrasts, speaker/genre context, and local nonqualifying defects.",
+    "positive_quota": null,
+    "scores_used": false,
+    "human_severity_inferred": false,
+    "source_authorship_inferred": false,
+    "corpus_admission_changed": false,
+    "source_metadata_changed": false
+  },
+  "result": {
+    "sustained_target_candidate_count": 0,
+    "disposition_counts": {
+      "weak_or_ambiguous": 9,
+      "poor_format_fit": 3
+    },
+    "finding": "No adequately strong sustained target-style candidate emerged in this bounded frame. Local redundancy is recorded without promoting generic repairability, translated awkwardness, promotional rhetoric, or interview recap into target coverage.",
+    "next_step_constraint": "Completion of this screen does not authorize a new reader task or rewrite experiment. Preserve the target-coverage gap; any further sampling requires a separately bounded acquisition/discovery decision.",
+    "human_preference_outcome": null,
+    "intervention_efficacy_outcome": null
+  },
+  "limitations": [
+    "All twelve sources are InfoQ pages selected for availability and recency; this is not a representative corpus.",
+    "No pre-period comparison, source/topic/format/visibility matching, or reader contrast was performed.",
+    "Current view snapshots do not establish comparable historical visibility.",
+    "Only captured text and saved DOM text blocks were inspected; embedded media and upstream originals were not inspected.",
+    "Saved metadata recognizes three translated items and nine unresolved items; one unresolved item, DHH, contains explicit translated-and-edited evidence. Production history is otherwise not certified.",
+    "No human severity, authorship, preference, semantic-preservation, or training label is created.",
+    "Zero nominations means this frame did not resolve target coverage; it does not imply absence of the phenomenon from real media or translations."
+  ],
+  "generation": {
+    "command": "PowerShell single-quoted here-string containing an inline Python artifact assembler, piped to python -.",
+    "configuration": "target-coverage-rescreen-1.0 plus the supplied input-manifest.json; qualitative specifications were authored by the identified assistant after complete reading.",
+    "python_version": "3.13.5",
+    "random_seed": null,
+    "randomness_used": false,
+    "generated_artifacts": [
+      "data/local/target-coverage-rescreen-v1/review.json",
+      "docs/routes/compact-refiner/reports/target-coverage-rescreen-v1.md"
+    ]
+  },
+  "validation": {
+    "manifest_coverage": "12/12 exact ordered document IDs",
+    "body_hashes": "12/12 match manifest SHA-256",
+    "block_mapping": "All saved collector blocks map in order with only whitespace gaps",
+    "complete_read_batches": "All blocks covered exactly once by the recorded read batches",
+    "evidence_count": 91,
+    "quote_and_offset_checks": "Every quote equals both the body Unicode slice and the cited block collector text",
+    "dom_presentation_checks": "Every presentation quotation equals the saved block presentation text",
+    "candidate_and_counterexample_references": "All resolve to evidence in the same document",
+    "saved_source_hashes": "Body, metadata, and blocks hashes recorded",
+    "status": "passed_after_independent_readback",
+    "public_quote_checks": "26/26 displayed quotations match the private exact-span audit",
+    "report_table_and_whitespace_checks": "14 contiguous table rows; no trailing whitespace"
+  },
+  "documents": [
+    {
+      "doc_id": "082d0c636e43906b0a2934f7",
+      "title": "理想主义者们，没能阻止AI进入伊朗“战场”",
+      "english_title": "AI, the Iran information conflict, and military governance",
+      "body_path": "data/local/media-provenance-extension-v1/documents/082d0c636e43906b0a2934f7/body.txt",
+      "body_sha256": "5f98c480f8651441f8585dee3b22ae91a6a4656ffff15a00463d8b933fa58cbb",
+      "body_bytes": 27850,
+      "body_unicode_codepoints": 10830,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/082d0c636e43906b0a2934f7/metadata.json",
+      "metadata_sha256": "3b3e45516d67191d61c1ca843ed93bf98c53e7359cdfc5e3a9712b0a8de17072",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/082d0c636e43906b0a2934f7/blocks.json",
+      "blocks_sha256": "6c8cda66c66aba049d5922d69e5f7cf8e0783b2aa5b9670afe5b4834dad55075",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b060",
+            "body_unicode_start": 0,
+            "body_unicode_end": 4601
+          },
+          {
+            "first_block": "b061",
+            "last_block": "b126",
+            "body_unicode_start": 4602,
+            "body_unicode_end": 10830
+          }
+        ],
+        "covered_block_count": 126,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            12,
+            13
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            45,
+            46
+          ],
+          [
+            85,
+            86
+          ],
+          [
+            145,
+            146
+          ],
+          [
+            224,
+            225
+          ],
+          [
+            326,
+            327
+          ],
+          [
+            428,
+            429
+          ],
+          [
+            462,
+            463
+          ],
+          [
+            586,
+            587
+          ],
+          [
+            595,
+            596
+          ],
+          [
+            668,
+            669
+          ],
+          [
+            779,
+            780
+          ],
+          [
+            817,
+            818
+          ],
+          [
+            914,
+            915
+          ],
+          [
+            969,
+            970
+          ],
+          [
+            1126,
+            1127
+          ],
+          [
+            1265,
+            1266
+          ],
+          [
+            1441,
+            1442
+          ],
+          [
+            1527,
+            1528
+          ],
+          [
+            1545,
+            1546
+          ],
+          [
+            1583,
+            1584
+          ],
+          [
+            1658,
+            1659
+          ],
+          [
+            1705,
+            1706
+          ],
+          [
+            1731,
+            1732
+          ],
+          [
+            1784,
+            1785
+          ],
+          [
+            1877,
+            1878
+          ],
+          [
+            1905,
+            1906
+          ],
+          [
+            1944,
+            1945
+          ],
+          [
+            1964,
+            1965
+          ],
+          [
+            2023,
+            2024
+          ],
+          [
+            2077,
+            2078
+          ],
+          [
+            2098,
+            2099
+          ],
+          [
+            2201,
+            2202
+          ],
+          [
+            2244,
+            2245
+          ],
+          [
+            2478,
+            2479
+          ],
+          [
+            2555,
+            2556
+          ],
+          [
+            2623,
+            2624
+          ],
+          [
+            2765,
+            2766
+          ],
+          [
+            2824,
+            2825
+          ],
+          [
+            2979,
+            2980
+          ],
+          [
+            2991,
+            2992
+          ],
+          [
+            3022,
+            3023
+          ],
+          [
+            3060,
+            3061
+          ],
+          [
+            3183,
+            3184
+          ],
+          [
+            3316,
+            3317
+          ],
+          [
+            3338,
+            3339
+          ],
+          [
+            3433,
+            3434
+          ],
+          [
+            3481,
+            3482
+          ],
+          [
+            3556,
+            3557
+          ],
+          [
+            3666,
+            3667
+          ],
+          [
+            3733,
+            3734
+          ],
+          [
+            3920,
+            3921
+          ],
+          [
+            4015,
+            4016
+          ],
+          [
+            4146,
+            4147
+          ],
+          [
+            4349,
+            4350
+          ],
+          [
+            4425,
+            4426
+          ],
+          [
+            4508,
+            4509
+          ],
+          [
+            4526,
+            4527
+          ],
+          [
+            4601,
+            4602
+          ],
+          [
+            4680,
+            4681
+          ],
+          [
+            4750,
+            4751
+          ],
+          [
+            4795,
+            4796
+          ],
+          [
+            4804,
+            4805
+          ],
+          [
+            4832,
+            4833
+          ],
+          [
+            4949,
+            4950
+          ],
+          [
+            4961,
+            4962
+          ],
+          [
+            4975,
+            4976
+          ],
+          [
+            5102,
+            5103
+          ],
+          [
+            5240,
+            5241
+          ],
+          [
+            5359,
+            5360
+          ],
+          [
+            5372,
+            5373
+          ],
+          [
+            5610,
+            5611
+          ],
+          [
+            5640,
+            5641
+          ],
+          [
+            5691,
+            5692
+          ],
+          [
+            5736,
+            5737
+          ],
+          [
+            5930,
+            5931
+          ],
+          [
+            5991,
+            5992
+          ],
+          [
+            6158,
+            6159
+          ],
+          [
+            6188,
+            6189
+          ],
+          [
+            6210,
+            6211
+          ],
+          [
+            6340,
+            6341
+          ],
+          [
+            6533,
+            6534
+          ],
+          [
+            6772,
+            6773
+          ],
+          [
+            6873,
+            6874
+          ],
+          [
+            7032,
+            7033
+          ],
+          [
+            7103,
+            7104
+          ],
+          [
+            7175,
+            7176
+          ],
+          [
+            7210,
+            7211
+          ],
+          [
+            7357,
+            7358
+          ],
+          [
+            7526,
+            7527
+          ],
+          [
+            7723,
+            7724
+          ],
+          [
+            7752,
+            7753
+          ],
+          [
+            7993,
+            7994
+          ],
+          [
+            8182,
+            8183
+          ],
+          [
+            8216,
+            8217
+          ],
+          [
+            8376,
+            8377
+          ],
+          [
+            8464,
+            8465
+          ],
+          [
+            8491,
+            8492
+          ],
+          [
+            8501,
+            8502
+          ],
+          [
+            8536,
+            8537
+          ],
+          [
+            8558,
+            8559
+          ],
+          [
+            8647,
+            8648
+          ],
+          [
+            8665,
+            8666
+          ],
+          [
+            8869,
+            8870
+          ],
+          [
+            8923,
+            8924
+          ],
+          [
+            8982,
+            8983
+          ],
+          [
+            9032,
+            9033
+          ],
+          [
+            9229,
+            9230
+          ],
+          [
+            9282,
+            9283
+          ],
+          [
+            9359,
+            9360
+          ],
+          [
+            9523,
+            9524
+          ],
+          [
+            9568,
+            9569
+          ],
+          [
+            9668,
+            9669
+          ],
+          [
+            9849,
+            9850
+          ],
+          [
+            10025,
+            10026
+          ],
+          [
+            10094,
+            10095
+          ],
+          [
+            10135,
+            10136
+          ],
+          [
+            10253,
+            10254
+          ],
+          [
+            10314,
+            10315
+          ],
+          [
+            10360,
+            10361
+          ],
+          [
+            10523,
+            10524
+          ],
+          [
+            10599,
+            10600
+          ],
+          [
+            10616,
+            10617
+          ],
+          [
+            10735,
+            10736
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "informative_media_article",
+        "fit": "yes",
+        "reason": "A complete reported feature with an editorial argument, named sources, policy examples, section headings, and image captions."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/RuJMiEsSJguUXza6HsrM",
+        "published_date_asia_shanghai": "2026-01-21",
+        "published_timestamp_utc": "2026-01-21T09:47:10.500000+00:00",
+        "collected_at": "2026-09-14T08:39:24.607449+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "陈姚戈",
+          "允毅",
+          "王一鹏"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "The saved stratum is unresolved. Named Chinese bylines do not establish original Chinese composition. The body incorporates attributed reporting, English quotations, and translated source descriptions; the article-level production history remains unknown.",
+        "body_evidence_refs": [
+          "b036"
+        ]
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "abstract_restatement_and_opposition",
+          "evidence_refs": [
+            "b057",
+            "b060",
+            "b061",
+            "b080"
+          ],
+          "assessment": "Repeated formulations are identifiable, but they introduce or conclude distinct evidence-bearing sections. Their necessity is debatable; the complete article does not establish a sustained run of unsupported opposition or disconnected progression.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b036",
+          "role": "provenance",
+          "block_id": "b036",
+          "body_unicode_start": 2245,
+          "body_unicode_end": 2478,
+          "source_line_start": 51,
+          "source_line_end": 55,
+          "quote": "非营利组织 WITNESS “技术威胁与机遇”项目副主任 Mahsa Alimardani 在网络欺骗、审查和监控领域有超过 15 年的研究经验。她在最近发表的文章《\n怀疑如何在伊朗成为一种武器\n》中指出：“\nAI 对信息的操纵，以及围绕这种操纵产生的怀疑，本身都会成为掩盖真相的工具。\n”（AI manipulation, and the very suspicion of it, serves those who have the most to hide.）",
+          "dom_presentation_quote": "非营利组织 WITNESS “技术威胁与机遇”项目副主任 Mahsa Alimardani 在网络欺骗、审查和监控领域有超过 15 年的研究经验。她在最近发表的文章《怀疑如何在伊朗成为一种武器》中指出：“AI 对信息的操纵，以及围绕这种操纵产生的怀疑，本身都会成为掩盖真相的工具。”（AI manipulation, and the very suspicion of it, serves those who have the most to hide.）",
+          "collector_differs_from_presentation": true,
+          "interpretation": "An attributed English-language source is quoted with a Chinese rendering; this establishes local quotation provenance, not the production history of the entire feature."
+        },
+        {
+          "evidence_id": "b057",
+          "role": "candidate_problem",
+          "block_id": "b057",
+          "body_unicode_start": 4350,
+          "body_unicode_end": 4425,
+          "source_line_start": 78,
+          "source_line_end": 78,
+          "quote": "科技企业正主动嵌入战争的运行机制之中。技术开始按市场与投资逻辑被快速设计、部署和迭代，战争由此进入一套新的商业-政治结构，对既有国际规则形成持续挤压。",
+          "dom_presentation_quote": "科技企业正主动嵌入战争的运行机制之中。技术开始按市场与投资逻辑被快速设计、部署和迭代，战争由此进入一套新的商业-政治结构，对既有国际规则形成持续挤压。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A broad technology-market-war synthesis repeats the earlier integration thesis."
+        },
+        {
+          "evidence_id": "b060",
+          "role": "candidate_problem",
+          "block_id": "b060",
+          "body_unicode_start": 4527,
+          "body_unicode_end": 4601,
+          "source_line_start": 81,
+          "source_line_end": 82,
+          "quote": "正在美国和以色列发生的事情，为我们提供了一种更现实的视角：\n当科技公司、金融资本与国家安全机器深度绑定，战争的技术形态、节奏与激励机制都会随之改变。",
+          "dom_presentation_quote": "正在美国和以色列发生的事情，为我们提供了一种更现实的视角：当科技公司、金融资本与国家安全机器深度绑定，战争的技术形态、节奏与激励机制都会随之改变。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The next section restates the same three-party binding before adding detail."
+        },
+        {
+          "evidence_id": "b061",
+          "role": "candidate_problem",
+          "block_id": "b061",
+          "body_unicode_start": 4602,
+          "body_unicode_end": 4680,
+          "source_line_start": 83,
+          "source_line_end": 85,
+          "quote": "一个共同趋势正在显现——\n私营科技公司再次被系统性地拉入国防体系核心\n。它们不再只是为军方提供工具的外包商，而是直接参与战争工具的设计、部署，甚至作战本身。",
+          "dom_presentation_quote": "一个共同趋势正在显现——私营科技公司再次被系统性地拉入国防体系核心。它们不再只是为军方提供工具的外包商，而是直接参与战争工具的设计、部署，甚至作战本身。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The tools-versus-participation contrast restates the section thesis."
+        },
+        {
+          "evidence_id": "b080",
+          "role": "candidate_problem",
+          "block_id": "b080",
+          "body_unicode_start": 6159,
+          "body_unicode_end": 6188,
+          "source_line_start": 115,
+          "source_line_end": 115,
+          "quote": "硅谷不再只是为战争“提供工具”，也开始参与战争体系的设计。",
+          "dom_presentation_quote": "硅谷不再只是为战争“提供工具”，也开始参与战争体系的设计。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The tools-versus-design formulation recurs after the US examples."
+        },
+        {
+          "evidence_id": "b098",
+          "role": "nonqualifying_observation",
+          "block_id": "b098",
+          "body_unicode_start": 8377,
+          "body_unicode_end": 8464,
+          "source_line_start": 137,
+          "source_line_end": 141,
+          "quote": "很多人可能已经忘了互联网开始于军用网络。\n而今天这些\n科技公司、金融资本与国家安全机器\n在“国防”领域的合作，无疑都在提醒我们，一个把科技当作美好创新代表的时代已经结束了\n。",
+          "dom_presentation_quote": "很多人可能已经忘了互联网开始于军用网络。而今天这些科技公司、金融资本与国家安全机器在“国防”领域的合作，无疑都在提醒我们，一个把科技当作美好创新代表的时代已经结束了。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The categorical end-of-an-era conclusion exceeds the descriptive examples. This is an argumentative generalization, not sufficient evidence of a strong stylistic cluster."
+        },
+        {
+          "evidence_id": "b056",
+          "role": "counterexample",
+          "block_id": "b056",
+          "body_unicode_start": 4147,
+          "body_unicode_end": 4349,
+          "source_line_start": 77,
+          "source_line_end": 77,
+          "quote": "Palantir 是由 PayPal 创始人 Peter Thiel 创立的国防科技公司，已经成为多国国防部的供应商。就在今年 1 月，Palantir 与乌克兰国防科技集群 Brave1 启动 Dataroom 项目。该平台允许工程师利用大量经实战验证的数据训练和测试 AI 模型，目标之一是开发新一代自主拦截无人机，使其在缺乏人工干预、且 GPS 与通信受干扰的环境下，仍能完成探测、分类与拦截任务。",
+          "dom_presentation_quote": "Palantir 是由 PayPal 创始人 Peter Thiel 创立的国防科技公司，已经成为多国国防部的供应商。就在今年 1 月，Palantir 与乌克兰国防科技集群 Brave1 启动 Dataroom 项目。该平台允许工程师利用大量经实战验证的数据训练和测试 AI 模型，目标之一是开发新一代自主拦截无人机，使其在缺乏人工干预、且 GPS 与通信受干扰的环境下，仍能完成探测、分类与拦截任务。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A named project, partner, data use, and operating conditions give the integration thesis concrete content."
+        },
+        {
+          "evidence_id": "b070",
+          "role": "counterexample",
+          "block_id": "b070",
+          "body_unicode_start": 5103,
+          "body_unicode_end": 5240,
+          "source_line_start": 97,
+          "source_line_end": 99,
+          "quote": "2025 年 11 月 7 日，美国国防部长 Pete Hegseth\n正式公布\n新一轮国防采购改革，目标是缩短装备交付周期，为长期僵化的采购体系引入更大的灵活性。在面向国防与科技行业高管的演讲中，他直言原有的“国防采购系统”已经走到尽头，并宣布启动全新的“作战采购系统”。",
+          "dom_presentation_quote": "2025 年 11 月 7 日，美国国防部长 Pete Hegseth 正式公布新一轮国防采购改革，目标是缩短装备交付周期，为长期僵化的采购体系引入更大的灵活性。在面向国防与科技行业高管的演讲中，他直言原有的“国防采购系统”已经走到尽头，并宣布启动全新的“作战采购系统”。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The procurement section supplies a dated policy announcement rather than only repeating abstractions."
+        },
+        {
+          "evidence_id": "b112",
+          "role": "counterexample",
+          "block_id": "b112",
+          "body_unicode_start": 9360,
+          "body_unicode_end": 9523,
+          "source_line_start": 159,
+          "source_line_end": 163,
+          "quote": "但这份好不容易到来的“治理机制”并不试图建立一套具有强制力的普适规则，而是强调在部分议题上促进协调与共识，同时有意避开高度敏感的领域。尤其值得注意的是，独立政策研究机构 Chatham House\n观察\n到，\n人工智能在军事领域的应用，被明确排除在联合国讨论议程之外\n，这也直接引发了对“军民两用技术”将如何被监管的广泛疑虑。",
+          "dom_presentation_quote": "但这份好不容易到来的“治理机制”并不试图建立一套具有强制力的普适规则，而是强调在部分议题上促进协调与共识，同时有意避开高度敏感的领域。尤其值得注意的是，独立政策研究机构 Chatham House 观察到，人工智能在军事领域的应用，被明确排除在联合国讨论议程之外，这也直接引发了对“军民两用技术”将如何被监管的广泛疑虑。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The governance distinction identifies the scope and limit of a specific institution, with attribution."
+        },
+        {
+          "evidence_id": "b126",
+          "role": "nonqualifying_observation",
+          "block_id": "b126",
+          "body_unicode_start": 10736,
+          "body_unicode_end": 10830,
+          "source_line_start": 191,
+          "source_line_end": 191,
+          "quote": "当这群世界上“最聪明”“最有野心”的人聚集在一起，不断提高武器创新和部署的效率时，很难相信“威慑”仍是他们唯一的动机——当从战争中公开获利变得越来越容易，又有什么理由真正去阻止战争的发生？",
+          "dom_presentation_quote": "当这群世界上“最聪明”“最有野心”的人聚集在一起，不断提高武器创新和部署的效率时，很难相信“威慑”仍是他们唯一的动机——当从战争中公开获利变得越来越容易，又有什么理由真正去阻止战争的发生？",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The ending questions investors' motives. Verifying or disputing that inference is separate from establishing a characteristic Chinese style problem."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b056",
+        "b070",
+        "b112"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "Repeated thematic framing is present, but concrete procurement, company, and governance evidence carries the argument forward. Broad editorial conclusions and questionable motive inferences do not by themselves meet the corrected strong-style target.",
+      "uncertainty": "The source reports are not independently verified, and illustrations are uninspected. Assistant reading cannot determine reader aversion or whether particular turns originated in source material.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "28aba7e771aa2e1c3030cc96",
+      "title": "Bintrail：利用索引二进制日志实现 MySQL 时间旅行查询",
+      "english_title": "Bintrail point-in-time queries",
+      "body_path": "data/local/media-provenance-extension-v1/documents/28aba7e771aa2e1c3030cc96/body.txt",
+      "body_sha256": "5424df763b43bb7cc944c23505df93cdcfa933fad66cef2d0b7b09993e533e0c",
+      "body_bytes": 4594,
+      "body_unicode_codepoints": 2199,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/28aba7e771aa2e1c3030cc96/metadata.json",
+      "metadata_sha256": "0eca4624efe7d8deb9a9bd2ef59d0736fc78eab732ffa78ee9d2e853985f8b70",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/28aba7e771aa2e1c3030cc96/blocks.json",
+      "blocks_sha256": "735d3f195c1f1d47d64c6fc7093120152f0578a69b81dbf4611ef87d5735e8fb",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b018",
+            "body_unicode_start": 0,
+            "body_unicode_end": 2199
+          }
+        ],
+        "covered_block_count": 18,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            181,
+            182
+          ],
+          [
+            387,
+            388
+          ],
+          [
+            560,
+            561
+          ],
+          [
+            576,
+            577
+          ],
+          [
+            667,
+            668
+          ],
+          [
+            755,
+            756
+          ],
+          [
+            964,
+            965
+          ],
+          [
+            1154,
+            1155
+          ],
+          [
+            1457,
+            1458
+          ],
+          [
+            1462,
+            1463
+          ],
+          [
+            1656,
+            1657
+          ],
+          [
+            1773,
+            1774
+          ],
+          [
+            1810,
+            1811
+          ],
+          [
+            1864,
+            1865
+          ],
+          [
+            1905,
+            1906
+          ],
+          [
+            2018,
+            2019
+          ],
+          [
+            2131,
+            2132
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "technical_news_explainer",
+        "fit": "yes",
+        "reason": "A self-contained technical report with mechanisms, an example query, limitations, and source attribution."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/78T9QsuOzWscUxadORto",
+        "published_date_asia_shanghai": "2026-05-25",
+        "published_timestamp_utc": "2026-05-25T09:41:00.369000+00:00",
+        "collected_at": "2026-09-14T08:39:28.033786+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [],
+        "translators": [
+          "平川"
+        ],
+        "recorded_translation_status": "translated",
+        "recorded_provenance": {
+          "stratum": "translated",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [
+            "explicit_translator_field",
+            "original_link_marker"
+          ],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Explicit translator metadata and an original-link marker establish translated provenance. The English original was not opened, so the origin of any awkward causal wording is unknown.",
+        "body_evidence_refs": [
+          "b018"
+        ]
+      },
+      "candidate_problem_clusters": [],
+      "evidence": [
+        {
+          "evidence_id": "b006",
+          "role": "nonqualifying_observation",
+          "block_id": "b006",
+          "body_unicode_start": 668,
+          "body_unicode_end": 755,
+          "source_line_start": 14,
+          "source_line_end": 16,
+          "quote": "在一篇专门比较主流关系型数据库选项的\n文章\n中，作者指出，可查询的历史数据与原始日志数据之间的实际差距，正是许多恢复和审计事件发生的原因。Guzman-Burgos 补充道：",
+          "dom_presentation_quote": "在一篇专门比较主流关系型数据库选项的文章中，作者指出，可查询的历史数据与原始日志数据之间的实际差距，正是许多恢复和审计事件发生的原因。Guzman-Burgos 补充道：",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The gloss that the gap between queryable history and logs causes recovery/audit incidents is semantically unclear. It is an isolated causal formulation, not a sustained stylistic maneuver."
+        },
+        {
+          "evidence_id": "b016",
+          "role": "nonqualifying_observation",
+          "block_id": "b016",
+          "body_unicode_start": 1906,
+          "body_unicode_end": 2018,
+          "source_line_start": 67,
+          "source_line_end": 67,
+          "quote": "完整地恢复备份通常耗时过长、速度过慢且风险过高。尤其是在当前这种情况下更是如此，因为由 AI 生成的 SQL 语句、自动化脚本以及运维变更的速度都比以往更快了。自动化程度的提高虽然加快了速度，但也对精准恢复提出了更高的要求。",
+          "dom_presentation_quote": "完整地恢复备份通常耗时过长、速度过慢且风险过高。尤其是在当前这种情况下更是如此，因为由 AI 生成的 SQL 语句、自动化脚本以及运维变更的速度都比以往更快了。自动化程度的提高虽然加快了速度，但也对精准恢复提出了更高的要求。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A quoted response repeats slowness and expands into automation risk. Quotation and translation are plausible explanations; this does not qualify the entire article."
+        },
+        {
+          "evidence_id": "b008",
+          "role": "counterexample",
+          "block_id": "b008",
+          "body_unicode_start": 965,
+          "body_unicode_end": 1154,
+          "source_line_start": 18,
+          "source_line_end": 18,
+          "quote": "_diff 查询会返回指定时间范围内所有的行级变更，包括事件类型、GTID 以及变更前后的值。虽然 SQL Server、MariaDB 和 Oracle 提供了多种形式的行级历史查询，但它们通常仅提供存储的行版本，并且依赖于时间存储或保留设置。相比之下，Bintrail 直接从已经建立索引的 MySQL 二进制日志中读取数据，从而能够重建行在任意选定时间段内的完整变更序列。",
+          "dom_presentation_quote": "_diff 查询会返回指定时间范围内所有的行级变更，包括事件类型、GTID 以及变更前后的值。虽然 SQL Server、MariaDB 和 Oracle 提供了多种形式的行级历史查询，但它们通常仅提供存储的行版本，并且依赖于时间存储或保留设置。相比之下，Bintrail 直接从已经建立索引的 MySQL 二进制日志中读取数据，从而能够重建行在任意选定时间段内的完整变更序列。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The contrast describes different history representations and reconstruction behavior, giving both sides technical content."
+        },
+        {
+          "evidence_id": "b017",
+          "role": "counterexample",
+          "block_id": "b017",
+          "body_unicode_start": 2019,
+          "body_unicode_end": 2131,
+          "source_line_start": 68,
+          "source_line_end": 70,
+          "quote": "就目前的限制而言，Bintrail 仅支持字面时间戳查询、主键查找以及受限的全表恢复，而连接操作和更复杂的过滤则必须在适配层之外处理。\nBintrail 已经发布在 GitHub 上\n，采用 BUSL 许可（一种开源许可）。",
+          "dom_presentation_quote": "就目前的限制而言，Bintrail 仅支持字面时间戳查询、主键查找以及受限的全表恢复，而连接操作和更复杂的过滤则必须在适配层之外处理。Bintrail 已经发布在 GitHub 上，采用 BUSL 许可（一种开源许可）。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "Explicit query limitations constrain the product account. The license description may raise a factual terminology issue, which is outside style nomination."
+        },
+        {
+          "evidence_id": "b018",
+          "role": "provenance",
+          "block_id": "b018",
+          "body_unicode_start": 2132,
+          "body_unicode_end": 2199,
+          "source_line_start": 71,
+          "source_line_end": 72,
+          "quote": "原文链接：\nhttps://www.infoq.com/news/2026/05/bintrail-mysql-timetravel/",
+          "dom_presentation_quote": "原文链接：https://www.infoq.com/news/2026/05/bintrail-mysql-timetravel/",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The source provides an original-language article link."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b008",
+        "b017"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "The account progresses from the missing capability to implementation, examples, and limits. A local causal ambiguity and redundant quoted phrasing do not establish sustained characteristic Chinese style problems.",
+      "uncertainty": "No upstream comparison or implementation verification was performed. Translation is retained in scope, but the source is not nominated merely for being awkward.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "436d2545973410a305a4fa93",
+      "title": "开源AI编程工具第一来啦：智谱GLM-5.2上线模力工场，还有专属折扣！",
+      "english_title": "GLM-5.2 commercial launch and usage promotion",
+      "body_path": "data/local/media-provenance-extension-v1/documents/436d2545973410a305a4fa93/body.txt",
+      "body_sha256": "d5c9cb731a670b3a0375e16e1c80861c9b0a1122ae0e9f551053bff3ccb28d91",
+      "body_bytes": 6612,
+      "body_unicode_codepoints": 2664,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/436d2545973410a305a4fa93/metadata.json",
+      "metadata_sha256": "4c6f1fc5c109423c0d8ce94e4eba959ab5ac3b6ada0ff1e673244c7e0f4ea15e",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/436d2545973410a305a4fa93/blocks.json",
+      "blocks_sha256": "bef1e5658dfe22e21824a7d71d0a7d028ffc83e74d8beb77a8cde7ae21f7f962",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b059",
+            "body_unicode_start": 0,
+            "body_unicode_end": 2664
+          }
+        ],
+        "covered_block_count": 59,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            5,
+            6
+          ],
+          [
+            49,
+            50
+          ],
+          [
+            97,
+            98
+          ],
+          [
+            143,
+            144
+          ],
+          [
+            174,
+            175
+          ],
+          [
+            236,
+            237
+          ],
+          [
+            249,
+            250
+          ],
+          [
+            306,
+            307
+          ],
+          [
+            315,
+            316
+          ],
+          [
+            419,
+            420
+          ],
+          [
+            457,
+            458
+          ],
+          [
+            471,
+            472
+          ],
+          [
+            555,
+            556
+          ],
+          [
+            593,
+            594
+          ],
+          [
+            680,
+            681
+          ],
+          [
+            696,
+            697
+          ],
+          [
+            750,
+            751
+          ],
+          [
+            779,
+            780
+          ],
+          [
+            874,
+            875
+          ],
+          [
+            920,
+            921
+          ],
+          [
+            963,
+            964
+          ],
+          [
+            1010,
+            1011
+          ],
+          [
+            1051,
+            1052
+          ],
+          [
+            1085,
+            1086
+          ],
+          [
+            1113,
+            1114
+          ],
+          [
+            1143,
+            1144
+          ],
+          [
+            1178,
+            1179
+          ],
+          [
+            1228,
+            1229
+          ],
+          [
+            1278,
+            1279
+          ],
+          [
+            1327,
+            1328
+          ],
+          [
+            1369,
+            1370
+          ],
+          [
+            1392,
+            1393
+          ],
+          [
+            1443,
+            1444
+          ],
+          [
+            1491,
+            1492
+          ],
+          [
+            1509,
+            1510
+          ],
+          [
+            1532,
+            1533
+          ],
+          [
+            1598,
+            1599
+          ],
+          [
+            1658,
+            1659
+          ],
+          [
+            1682,
+            1683
+          ],
+          [
+            1714,
+            1715
+          ],
+          [
+            1765,
+            1766
+          ],
+          [
+            1857,
+            1858
+          ],
+          [
+            1906,
+            1907
+          ],
+          [
+            1953,
+            1954
+          ],
+          [
+            2021,
+            2022
+          ],
+          [
+            2049,
+            2050
+          ],
+          [
+            2094,
+            2095
+          ],
+          [
+            2126,
+            2127
+          ],
+          [
+            2179,
+            2180
+          ],
+          [
+            2240,
+            2241
+          ],
+          [
+            2342,
+            2343
+          ],
+          [
+            2386,
+            2387
+          ],
+          [
+            2442,
+            2443
+          ],
+          [
+            2463,
+            2464
+          ],
+          [
+            2522,
+            2523
+          ],
+          [
+            2546,
+            2547
+          ],
+          [
+            2610,
+            2611
+          ],
+          [
+            2652,
+            2653
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "commercial_launch_promotion_with_usage_instructions",
+        "fit": "limited",
+        "reason": "The publisher speaks as the seller, advertises a discount and signup credit, and ends by directing readers to a tutorial. Substantive feature descriptions are embedded in a conversion-oriented announcement."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/woKuALR13UH0o9XicUlZ",
+        "published_date_asia_shanghai": "2026-07-07",
+        "published_timestamp_utc": "2026-07-07T07:04:51.004000+00:00",
+        "collected_at": "2026-09-14T08:39:49.690944+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "木子"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Saved provenance is unresolved. A short translated English slogan and Chinese byline cannot establish the origin of the Chinese promotional body. Testimonials and test claims are attributed loosely rather than independently verified.",
+        "body_evidence_refs": []
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "local_restatement_and_parallel_promotion",
+          "evidence_refs": [
+            "b035",
+            "b036",
+            "b052"
+          ],
+          "assessment": "Local low-information praise is visible, but the primary explanation is commercial launch rhetoric. This is not adequate evidence of the requested sustained informative-article phenomenon.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b004",
+          "role": "format",
+          "block_id": "b004",
+          "body_unicode_start": 98,
+          "body_unicode_end": 143,
+          "source_line_start": 8,
+          "source_line_end": 8,
+          "quote": "价格也直接摆出来：我们在智谱官方定价基础上，为模力工场的用户伙伴们争取到了 95 折优惠～",
+          "dom_presentation_quote": "价格也直接摆出来：我们在智谱官方定价基础上，为模力工场的用户伙伴们争取到了 95 折优惠～",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The first-person commercial offer establishes the announcement's sales purpose."
+        },
+        {
+          "evidence_id": "b035",
+          "role": "candidate_problem",
+          "block_id": "b035",
+          "body_unicode_start": 1492,
+          "body_unicode_end": 1509,
+          "source_line_start": 41,
+          "source_line_end": 41,
+          "quote": "对于开发来说，这种稳定性非常重要。",
+          "dom_presentation_quote": "对于开发来说，这种稳定性非常重要。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "This local importance statement adds little after the examples of long-task stability."
+        },
+        {
+          "evidence_id": "b036",
+          "role": "candidate_problem",
+          "block_id": "b036",
+          "body_unicode_start": 1510,
+          "body_unicode_end": 1532,
+          "source_line_start": 42,
+          "source_line_end": 42,
+          "quote": "而 GLM-5.2 在这方面的表现还挺稳的。",
+          "dom_presentation_quote": "而 GLM-5.2 在这方面的表现还挺稳的。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The following sentence repeats the favorable stability verdict without adding a new condition."
+        },
+        {
+          "evidence_id": "b052",
+          "role": "candidate_problem",
+          "block_id": "b052",
+          "body_unicode_start": 2343,
+          "body_unicode_end": 2386,
+          "source_line_start": 59,
+          "source_line_end": 59,
+          "quote": "二者强强联手：模型能读懂，框架能执行；模型能规划，框架能落地；模型能修正，框架能验证。",
+          "dom_presentation_quote": "二者强强联手：模型能读懂，框架能执行；模型能规划，框架能落地；模型能修正，框架能验证。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The model/framework triad repeats benefits as parallel slogans; it is also ordinary promotional copy."
+        },
+        {
+          "evidence_id": "b023",
+          "role": "counterexample",
+          "block_id": "b023",
+          "body_unicode_start": 1011,
+          "body_unicode_end": 1051,
+          "source_line_start": 29,
+          "source_line_end": 29,
+          "quote": "它先读取官网项目目录和小程序开发文档，理解原项目的页面结构、数据来源和功能边界。",
+          "dom_presentation_quote": "它先读取官网项目目录和小程序开发文档，理解原项目的页面结构、数据来源和功能边界。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The migration example specifies actual preparation steps rather than only declaring capability."
+        },
+        {
+          "evidence_id": "b027",
+          "role": "counterexample",
+          "block_id": "b027",
+          "body_unicode_start": 1144,
+          "body_unicode_end": 1178,
+          "source_line_start": 33,
+          "source_line_end": 33,
+          "quote": "虽然 GLM-5.2 在中途有误判，但能自我修正，最后找到正确方向。",
+          "dom_presentation_quote": "虽然 GLM-5.2 在中途有误判，但能自我修正，最后找到正确方向。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The example acknowledges an intermediate mistake and correction."
+        },
+        {
+          "evidence_id": "b045",
+          "role": "counterexample",
+          "block_id": "b045",
+          "body_unicode_start": 1954,
+          "body_unicode_end": 2021,
+          "source_line_start": 51,
+          "source_line_end": 51,
+          "quote": "从已有测评反馈来看，GLM-5.2 在 400K～500K tokens 的长上下文区间里，依然能保持比较稳定的准确性和指令遵循能力。",
+          "dom_presentation_quote": "从已有测评反馈来看，GLM-5.2 在 400K～500K tokens 的长上下文区间里，依然能保持比较稳定的准确性和指令遵循能力。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The long-context claim is tied to a stated test range, although the underlying tests are not verified."
+        },
+        {
+          "evidence_id": "b059",
+          "role": "format",
+          "block_id": "b059",
+          "body_unicode_start": 2653,
+          "body_unicode_end": 2664,
+          "source_line_start": 66,
+          "source_line_end": 66,
+          "quote": "此处，放上保姆级教程：",
+          "dom_presentation_quote": "此处，放上保姆级教程：",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The ending points to a tutorial medium beyond the captured prose; its content was not inspected."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b023",
+        "b027",
+        "b045"
+      ],
+      "disposition": "poor_format_fit",
+      "reason": "The primary format is a sales announcement with a tutorial pointer. Repeated praise and benefit triads are genre-confounded, while parts of the copy remain concrete. This disposition is format-specific and does not exclude all commercial or translated media.",
+      "uncertainty": "Embedded screenshots/tutorial material is uninspected. Capability and testimonial claims are not validated; factual doubts would not strengthen the style nomination.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "4f83cc9086d7fa6b52bd5b8e",
+      "title": "打破孤岛：Netflix推出Upper元模型实现内容工程一致性",
+      "english_title": "Netflix Upper metamodel",
+      "body_path": "data/local/media-provenance-extension-v1/documents/4f83cc9086d7fa6b52bd5b8e/body.txt",
+      "body_sha256": "e1635e37cf42d6d605c8592cc52c2052bfc9c909369ad108d2d1c2e22ddb8091",
+      "body_bytes": 3547,
+      "body_unicode_codepoints": 1439,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/4f83cc9086d7fa6b52bd5b8e/metadata.json",
+      "metadata_sha256": "2b3f41275ee09fe8064e5d11c03aa329d9b42c7df7032fd9a0a3716706bea69e",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/4f83cc9086d7fa6b52bd5b8e/blocks.json",
+      "blocks_sha256": "9de01d160cbf551c87c6cc77e5cc27b5115d7f77c7579d94561b38ceb63ad5df",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b013",
+            "body_unicode_start": 0,
+            "body_unicode_end": 1439
+          }
+        ],
+        "covered_block_count": 13,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            181,
+            182
+          ],
+          [
+            382,
+            383
+          ],
+          [
+            421,
+            422
+          ],
+          [
+            463,
+            464
+          ],
+          [
+            579,
+            580
+          ],
+          [
+            705,
+            706
+          ],
+          [
+            741,
+            742
+          ],
+          [
+            976,
+            977
+          ],
+          [
+            1009,
+            1010
+          ],
+          [
+            1216,
+            1217
+          ],
+          [
+            1366,
+            1367
+          ],
+          [
+            1372,
+            1373
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "technical_news_explainer",
+        "fit": "yes",
+        "reason": "A complete architecture news report describing the model, projections, adoption, and future work; diagrams are referenced."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/vWvl2cJwD62P6KW1qg5f",
+        "published_date_asia_shanghai": "2025-12-18",
+        "published_timestamp_utc": "2025-12-18T02:30:00.767000+00:00",
+        "collected_at": "2026-09-14T08:39:59.059258+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [],
+        "translators": [
+          "平川"
+        ],
+        "recorded_translation_status": "translated",
+        "recorded_provenance": {
+          "stratum": "translated",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [
+            "explicit_translator_field",
+            "original_link_marker"
+          ],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Translator metadata and original-link markers establish translated provenance. The original article and diagrams were not opened.",
+        "body_evidence_refs": [
+          "b013"
+        ]
+      },
+      "candidate_problem_clusters": [],
+      "evidence": [
+        {
+          "evidence_id": "b005",
+          "role": "nonqualifying_observation",
+          "block_id": "b005",
+          "body_unicode_start": 464,
+          "body_unicode_end": 579,
+          "source_line_start": 20,
+          "source_line_end": 20,
+          "quote": "Upper 旨在通过四个基础属性实现自我引导：自描述（定义了领域模型是什么）、自引用（将自己建模为一个领域）、自管理（根据自己的规则进行验证）以及联合（对修改关闭，对扩展开放）。这种自我管理的基础促成了支持 UDA 扩展的治理链。",
+          "dom_presentation_quote": "Upper 旨在通过四个基础属性实现自我引导：自描述（定义了领域模型是什么）、自引用（将自己建模为一个领域）、自管理（根据自己的规则进行验证）以及联合（对修改关闭，对扩展开放）。这种自我管理的基础促成了支持 UDA 扩展的治理链。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The quoted self-description/self-reference/governance terminology is dense and potentially difficult. Technical density or translation choices alone are not evidence of the requested style cluster."
+        },
+        {
+          "evidence_id": "b006",
+          "role": "counterexample",
+          "block_id": "b006",
+          "body_unicode_start": 580,
+          "body_unicode_end": 705,
+          "source_line_start": 21,
+          "source_line_end": 23,
+          "quote": "UDA 采用了一个命名图优先的信息模型，其中每个命名图均遵循\n知识图谱\n内的管理模型。知识图谱包含三个组成部分：领域模型、数据容器表示和映射关系，它们分别定义概念、定位数据容器并将概念与物理数据源相关联。该结构为整个图谱提供了模块化、解析和治理机制。",
+          "dom_presentation_quote": "UDA 采用了一个命名图优先的信息模型，其中每个命名图均遵循知识图谱内的管理模型。知识图谱包含三个组成部分：领域模型、数据容器表示和映射关系，它们分别定义概念、定位数据容器并将概念与物理数据源相关联。该结构为整个图谱提供了模块化、解析和治理机制。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The three graph components are named and assigned different functions."
+        },
+        {
+          "evidence_id": "b008",
+          "role": "counterexample",
+          "block_id": "b008",
+          "body_unicode_start": 742,
+          "body_unicode_end": 976,
+          "source_line_start": 27,
+          "source_line_end": 35,
+          "quote": "在 UDA 底层，Upper 中定义的领域实体通过一个名为投影的过程转化为数据容器表示。投影会生成具体的技术工件，包括\nGraphQL\n模式、\nAvro\n记录、\nApache Iceberg\n表、\nSQL\n模式和 Java 类型，下游系统可以消费这些工件。UDA 维护了概念定义和这些物理数据容器之间的显式映射，可以在模型演进过程中确保一致性。Netflix 工程师这样描述该方法：允许领域概念的变更自动传播至所有表示，无需人工更新，既支持工程工作流，也支持运营报告。",
+          "dom_presentation_quote": "在 UDA 底层，Upper 中定义的领域实体通过一个名为投影的过程转化为数据容器表示。投影会生成具体的技术工件，包括GraphQL模式、Avro记录、Apache Iceberg表、SQL模式和 Java 类型，下游系统可以消费这些工件。UDA 维护了概念定义和这些物理数据容器之间的显式映射，可以在模型演进过程中确保一致性。Netflix 工程师这样描述该方法：允许领域概念的变更自动传播至所有表示，无需人工更新，既支持工程工作流，也支持运营报告。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The projection explanation connects concepts to concrete output artifacts and change propagation."
+        },
+        {
+          "evidence_id": "b010",
+          "role": "counterexample",
+          "block_id": "b010",
+          "body_unicode_start": 1010,
+          "body_unicode_end": 1216,
+          "source_line_start": 39,
+          "source_line_end": 39,
+          "quote": "主要数据管理（PDM）和运营报告（Sphere）是最早采用 Upper 的两个团队。内容制作团队使用 UDA 跟踪资产摄取、审批和内容准备情况。广告与个性化团队利用知识图谱统一了营销活动、促销活动及定向元数据的定义，减少了人工核对工作，实现了自动化工作流生成。PDM 提供一个基于分类法的界面，使业务用户无需掌握本体语言即可浏览领域概念。Sphere 能从图谱中自动生成查询语句，最大限度地减少了手动连接的需求。",
+          "dom_presentation_quote": "主要数据管理（PDM）和运营报告（Sphere）是最早采用 Upper 的两个团队。内容制作团队使用 UDA 跟踪资产摄取、审批和内容准备情况。广告与个性化团队利用知识图谱统一了营销活动、促销活动及定向元数据的定义，减少了人工核对工作，实现了自动化工作流生成。PDM 提供一个基于分类法的界面，使业务用户无需掌握本体语言即可浏览领域概念。Sphere 能从图谱中自动生成查询语句，最大限度地减少了手动连接的需求。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The adoption section distinguishes teams, tasks, and interfaces rather than repeating a single abstract benefit."
+        },
+        {
+          "evidence_id": "b013",
+          "role": "provenance",
+          "block_id": "b013",
+          "body_unicode_start": 1373,
+          "body_unicode_end": 1439,
+          "source_line_start": 48,
+          "source_line_end": 48,
+          "quote": "https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/",
+          "dom_presentation_quote": "https://www.infoq.com/news/2025/12/netflix-upper-uda-architecture/",
+          "collector_differs_from_presentation": false,
+          "interpretation": "An original-language source URL is supplied."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b006",
+        "b008",
+        "b010"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "The technical progression is coherent. Dense terminology and a compressed quoted definition could impede reading, but no repeated unsupported opposition, referential drift, or disconnected argumentative progression was found.",
+      "uncertainty": "The uninspected diagrams may supply additional clarity. This review does not certify technical correctness or translation fidelity.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "501803a8b2116e69ec6e26cd",
+      "title": "Linus 之后的 Linux？内核社区终于写下“接班预案”",
+      "english_title": "Linux project continuity plan",
+      "body_path": "data/local/media-provenance-extension-v1/documents/501803a8b2116e69ec6e26cd/body.txt",
+      "body_sha256": "a1096051c2d477ff40ca6bf90d98b5c2064af2bf2ad23f10cd0c4d4a684c9d97",
+      "body_bytes": 4174,
+      "body_unicode_codepoints": 1718,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/501803a8b2116e69ec6e26cd/metadata.json",
+      "metadata_sha256": "c77efbaea20b32091deaa881d9775833aa67c344acfc5719bfd7f93603e21bc7",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/501803a8b2116e69ec6e26cd/blocks.json",
+      "blocks_sha256": "144890860165d0129d6446de9e0259652bf4c5215b54ef3cb329698e1f91b0d7",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b017",
+            "body_unicode_start": 0,
+            "body_unicode_end": 1718
+          }
+        ],
+        "covered_block_count": 17,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            79,
+            80
+          ],
+          [
+            212,
+            213
+          ],
+          [
+            340,
+            341
+          ],
+          [
+            468,
+            469
+          ],
+          [
+            477,
+            478
+          ],
+          [
+            591,
+            592
+          ],
+          [
+            720,
+            721
+          ],
+          [
+            868,
+            869
+          ],
+          [
+            951,
+            952
+          ],
+          [
+            1188,
+            1189
+          ],
+          [
+            1308,
+            1309
+          ],
+          [
+            1319,
+            1320
+          ],
+          [
+            1381,
+            1382
+          ],
+          [
+            1494,
+            1495
+          ],
+          [
+            1612,
+            1613
+          ],
+          [
+            1618,
+            1619
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "reported_news_explainer",
+        "fit": "yes",
+        "reason": "A complete account of a continuity plan with its trigger, selection mechanism, historical example, and reference link."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/rxKQhGxLH5lYkeo51kCZ",
+        "published_date_asia_shanghai": "2026-01-29",
+        "published_timestamp_utc": "2026-01-29T08:12:34.622000+00:00",
+        "collected_at": "2026-09-14T08:39:46.617079+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "Tina"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "The saved stratum is unresolved. The ZDNET reference establishes an upstream source, but a reference alone does not prove whether the Chinese piece is translated, adapted, or independently composed.",
+        "body_evidence_refs": [
+          "b017"
+        ]
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "closing_recap",
+          "evidence_refs": [
+            "b015"
+          ],
+          "assessment": "One closing recap is present; it is neither sustained nor evidence of a characteristic Chinese style problem.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b015",
+          "role": "candidate_problem",
+          "block_id": "b015",
+          "body_unicode_start": 1495,
+          "body_unicode_end": 1612,
+          "source_line_start": 15,
+          "source_line_end": 15,
+          "quote": "可以确定的是：Torvalds 并不会在短期内让位。他仍会继续监督主线开发，并一直做到自己“做不动”为止。只是至少现在，那个终极的“Linus 依赖”风险终于有了明确的处理流程——等到真正需要的那一天，可以直接套用，而不必临时抱佛脚。",
+          "dom_presentation_quote": "可以确定的是：Torvalds 并不会在短期内让位。他仍会继续监督主线开发，并一直做到自己“做不动”为止。只是至少现在，那个终极的“Linus 依赖”风险终于有了明确的处理流程——等到真正需要的那一天，可以直接套用，而不必临时抱佛脚。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The ending repeats no-imminent-retirement and process readiness from the lead; it is an ordinary news wrap-up rather than a sustained series of empty conclusions."
+        },
+        {
+          "evidence_id": "b007",
+          "role": "counterexample",
+          "block_id": "b007",
+          "body_unicode_start": 592,
+          "body_unicode_end": 720,
+          "source_line_start": 7,
+          "source_line_end": 7,
+          "quote": "计划并没有给出一个“唯一继承人”。相反，它明确了一套选择流程：一旦需要交接，由社区召集一次类似“秘密会议”的讨论机制，集中权衡候选人或候选团队，尽量做出对项目长期健康最有利的决定。有维护者开玩笑说，干脆学选教皇：把人都锁在房间里，等决定出来再放出一缕白烟。",
+          "dom_presentation_quote": "计划并没有给出一个“唯一继承人”。相反，它明确了一套选择流程：一旦需要交接，由社区召集一次类似“秘密会议”的讨论机制，集中权衡候选人或候选团队，尽量做出对项目长期健康最有利的决定。有维护者开玩笑说，干脆学选教皇：把人都锁在房间里，等决定出来再放出一缕白烟。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The named-heir versus selection-process distinction is the concrete subject of the report."
+        },
+        {
+          "evidence_id": "b010",
+          "role": "counterexample",
+          "block_id": "b010",
+          "body_unicode_start": 952,
+          "body_unicode_end": 1188,
+          "source_line_start": 10,
+          "source_line_end": 10,
+          "quote": "Torvalds 还在 2024 年和好友 Dirk Hohndel（Verizon Open Source 负责人）聊过这个话题。Hohndel 认为，要成为 Linux 的主维护者，需要极其丰富的经验；而目前最自然的“备份选项”就是 Greg Kroah-Hartman。Torvalds 的看法则更偏向长期视角：关键不在于某个人，而在于谁能获得社区的信任；这种信任通常来自长期参与、稳定协作，以及社区对其工作方式的充分了解，但“资历够久”并不意味着必须三十年如一日。",
+          "dom_presentation_quote": "Torvalds 还在 2024 年和好友 Dirk Hohndel（Verizon Open Source 负责人）聊过这个话题。Hohndel 认为，要成为 Linux 的主维护者，需要极其丰富的经验；而目前最自然的“备份选项”就是 Greg Kroah-Hartman。Torvalds 的看法则更偏向长期视角：关键不在于某个人，而在于谁能获得社区的信任；这种信任通常来自长期参与、稳定协作，以及社区对其工作方式的充分了解，但“资历够久”并不意味着必须三十年如一日。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The person-versus-community-trust distinction is attributed and explains the long-term selection criterion."
+        },
+        {
+          "evidence_id": "b011",
+          "role": "counterexample",
+          "block_id": "b011",
+          "body_unicode_start": 1189,
+          "body_unicode_end": 1308,
+          "source_line_start": 11,
+          "source_line_end": 11,
+          "quote": "Kroah-Hartman 也确实曾短暂顶上过。2018 年 Torvalds 一度暂离内核工作、反思并改善自己对待其他开发者和维护者的方式时，Kroah-Hartman 曾临时承担顶层职责。不过，他的年龄甚至比 Torvalds 还大。",
+          "dom_presentation_quote": "Kroah-Hartman 也确实曾短暂顶上过。2018 年 Torvalds 一度暂离内核工作、反思并改善自己对待其他开发者和维护者的方式时，Kroah-Hartman 曾临时承担顶层职责。不过，他的年龄甚至比 Torvalds 还大。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A prior substitution and the alternative maintainer's age provide a concrete bridge toward the shared-successor discussion."
+        },
+        {
+          "evidence_id": "b017",
+          "role": "provenance",
+          "block_id": "b017",
+          "body_unicode_start": 1619,
+          "body_unicode_end": 1718,
+          "source_line_start": 17,
+          "source_line_end": 17,
+          "quote": "https://www.zdnet.com/article/linux-community-project-continuity-plan-for-replacing-linus-torvalds/",
+          "dom_presentation_quote": "https://www.zdnet.com/article/linux-community-project-continuity-plan-for-replacing-linus-torvalds/",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The text gives its external reference source."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b007",
+        "b010",
+        "b011"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "The contrasts answer the actual succession question and the text preserves the distinction between contingency planning and imminent retirement. The single recap does not qualify it as a strong-style case.",
+      "uncertainty": "The upstream source was not read; the exact relationship between the Chinese article and reference is unknown.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "78428b30c546b2fff9543e8b",
+      "title": "从拒绝 AI 到一切先问 Agent，DHH：这是我最爽的编程时刻之一，但程序员黄金时代到头了",
+      "english_title": "DHH interview on agents and programming",
+      "body_path": "data/local/media-provenance-extension-v1/documents/78428b30c546b2fff9543e8b/body.txt",
+      "body_sha256": "20d69d78f2296c0d3bfeb81974c53e433fd6682214d75089307c6233cce0c69e",
+      "body_bytes": 79979,
+      "body_unicode_codepoints": 29491,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/78428b30c546b2fff9543e8b/metadata.json",
+      "metadata_sha256": "4a3975de6f5fad12662bb8aead795f082f55a4b16f0945662eb09239c690831e",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/78428b30c546b2fff9543e8b/blocks.json",
+      "blocks_sha256": "27ea3f963f7094c89744d723128533d2b8c514f76a8efd51f289574f2d84c4a0",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b045",
+            "body_unicode_start": 0,
+            "body_unicode_end": 4587
+          },
+          {
+            "first_block": "b046",
+            "last_block": "b090",
+            "body_unicode_start": 4588,
+            "body_unicode_end": 9728
+          },
+          {
+            "first_block": "b091",
+            "last_block": "b135",
+            "body_unicode_start": 9729,
+            "body_unicode_end": 14896
+          },
+          {
+            "first_block": "b136",
+            "last_block": "b180",
+            "body_unicode_start": 14897,
+            "body_unicode_end": 20107
+          },
+          {
+            "first_block": "b181",
+            "last_block": "b225",
+            "body_unicode_start": 20108,
+            "body_unicode_end": 24680
+          },
+          {
+            "first_block": "b226",
+            "last_block": "b267",
+            "body_unicode_start": 24681,
+            "body_unicode_end": 29491
+          }
+        ],
+        "covered_block_count": 267,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            130,
+            131
+          ],
+          [
+            251,
+            252
+          ],
+          [
+            364,
+            365
+          ],
+          [
+            393,
+            394
+          ],
+          [
+            426,
+            427
+          ],
+          [
+            449,
+            450
+          ],
+          [
+            475,
+            476
+          ],
+          [
+            503,
+            504
+          ],
+          [
+            529,
+            530
+          ],
+          [
+            550,
+            551
+          ],
+          [
+            679,
+            680
+          ],
+          [
+            791,
+            792
+          ],
+          [
+            827,
+            828
+          ],
+          [
+            905,
+            906
+          ],
+          [
+            1055,
+            1056
+          ],
+          [
+            1214,
+            1215
+          ],
+          [
+            1398,
+            1399
+          ],
+          [
+            1454,
+            1455
+          ],
+          [
+            1591,
+            1592
+          ],
+          [
+            1739,
+            1740
+          ],
+          [
+            1935,
+            1936
+          ],
+          [
+            2051,
+            2052
+          ],
+          [
+            2257,
+            2258
+          ],
+          [
+            2351,
+            2352
+          ],
+          [
+            2446,
+            2447
+          ],
+          [
+            2468,
+            2469
+          ],
+          [
+            2592,
+            2593
+          ],
+          [
+            2717,
+            2718
+          ],
+          [
+            2866,
+            2867
+          ],
+          [
+            2885,
+            2886
+          ],
+          [
+            2974,
+            2975
+          ],
+          [
+            3092,
+            3093
+          ],
+          [
+            3205,
+            3206
+          ],
+          [
+            3338,
+            3339
+          ],
+          [
+            3509,
+            3510
+          ],
+          [
+            3652,
+            3653
+          ],
+          [
+            3772,
+            3773
+          ],
+          [
+            3894,
+            3895
+          ],
+          [
+            4029,
+            4030
+          ],
+          [
+            4062,
+            4063
+          ],
+          [
+            4172,
+            4173
+          ],
+          [
+            4270,
+            4271
+          ],
+          [
+            4364,
+            4365
+          ],
+          [
+            4445,
+            4446
+          ],
+          [
+            4587,
+            4588
+          ],
+          [
+            4708,
+            4709
+          ],
+          [
+            4819,
+            4820
+          ],
+          [
+            4928,
+            4929
+          ],
+          [
+            4992,
+            4993
+          ],
+          [
+            5153,
+            5154
+          ],
+          [
+            5342,
+            5343
+          ],
+          [
+            5433,
+            5434
+          ],
+          [
+            5464,
+            5465
+          ],
+          [
+            5608,
+            5609
+          ],
+          [
+            5772,
+            5773
+          ],
+          [
+            5884,
+            5885
+          ],
+          [
+            6039,
+            6040
+          ],
+          [
+            6150,
+            6151
+          ],
+          [
+            6242,
+            6243
+          ],
+          [
+            6350,
+            6351
+          ],
+          [
+            6421,
+            6422
+          ],
+          [
+            6529,
+            6530
+          ],
+          [
+            6621,
+            6622
+          ],
+          [
+            6751,
+            6752
+          ],
+          [
+            6887,
+            6888
+          ],
+          [
+            7000,
+            7001
+          ],
+          [
+            7071,
+            7072
+          ],
+          [
+            7273,
+            7274
+          ],
+          [
+            7337,
+            7338
+          ],
+          [
+            7436,
+            7437
+          ],
+          [
+            7550,
+            7551
+          ],
+          [
+            7691,
+            7692
+          ],
+          [
+            7795,
+            7796
+          ],
+          [
+            7920,
+            7921
+          ],
+          [
+            8030,
+            8031
+          ],
+          [
+            8094,
+            8095
+          ],
+          [
+            8198,
+            8199
+          ],
+          [
+            8289,
+            8290
+          ],
+          [
+            8391,
+            8392
+          ],
+          [
+            8498,
+            8499
+          ],
+          [
+            8526,
+            8527
+          ],
+          [
+            8707,
+            8708
+          ],
+          [
+            8830,
+            8831
+          ],
+          [
+            8933,
+            8934
+          ],
+          [
+            9054,
+            9055
+          ],
+          [
+            9161,
+            9162
+          ],
+          [
+            9357,
+            9358
+          ],
+          [
+            9541,
+            9542
+          ],
+          [
+            9645,
+            9646
+          ],
+          [
+            9728,
+            9729
+          ],
+          [
+            9809,
+            9810
+          ],
+          [
+            9928,
+            9929
+          ],
+          [
+            10012,
+            10013
+          ],
+          [
+            10078,
+            10079
+          ],
+          [
+            10204,
+            10205
+          ],
+          [
+            10377,
+            10378
+          ],
+          [
+            10526,
+            10527
+          ],
+          [
+            10721,
+            10722
+          ],
+          [
+            10755,
+            10756
+          ],
+          [
+            10894,
+            10895
+          ],
+          [
+            11000,
+            11001
+          ],
+          [
+            11166,
+            11167
+          ],
+          [
+            11294,
+            11295
+          ],
+          [
+            11376,
+            11377
+          ],
+          [
+            11399,
+            11400
+          ],
+          [
+            11533,
+            11534
+          ],
+          [
+            11701,
+            11702
+          ],
+          [
+            11723,
+            11724
+          ],
+          [
+            11843,
+            11844
+          ],
+          [
+            12064,
+            12065
+          ],
+          [
+            12085,
+            12086
+          ],
+          [
+            12188,
+            12189
+          ],
+          [
+            12282,
+            12283
+          ],
+          [
+            12411,
+            12412
+          ],
+          [
+            12547,
+            12548
+          ],
+          [
+            12706,
+            12707
+          ],
+          [
+            12888,
+            12889
+          ],
+          [
+            13082,
+            13083
+          ],
+          [
+            13239,
+            13240
+          ],
+          [
+            13258,
+            13259
+          ],
+          [
+            13287,
+            13288
+          ],
+          [
+            13492,
+            13493
+          ],
+          [
+            13590,
+            13591
+          ],
+          [
+            13728,
+            13729
+          ],
+          [
+            13808,
+            13809
+          ],
+          [
+            13935,
+            13936
+          ],
+          [
+            14010,
+            14011
+          ],
+          [
+            14164,
+            14165
+          ],
+          [
+            14329,
+            14330
+          ],
+          [
+            14380,
+            14381
+          ],
+          [
+            14540,
+            14541
+          ],
+          [
+            14623,
+            14624
+          ],
+          [
+            14775,
+            14776
+          ],
+          [
+            14879,
+            14880
+          ],
+          [
+            14896,
+            14897
+          ],
+          [
+            15032,
+            15033
+          ],
+          [
+            15148,
+            15149
+          ],
+          [
+            15337,
+            15338
+          ],
+          [
+            15505,
+            15506
+          ],
+          [
+            15622,
+            15623
+          ],
+          [
+            15776,
+            15777
+          ],
+          [
+            15793,
+            15794
+          ],
+          [
+            15886,
+            15887
+          ],
+          [
+            16030,
+            16031
+          ],
+          [
+            16150,
+            16151
+          ],
+          [
+            16278,
+            16279
+          ],
+          [
+            16370,
+            16371
+          ],
+          [
+            16487,
+            16488
+          ],
+          [
+            16593,
+            16594
+          ],
+          [
+            16703,
+            16704
+          ],
+          [
+            16798,
+            16799
+          ],
+          [
+            16890,
+            16891
+          ],
+          [
+            16950,
+            16951
+          ],
+          [
+            17123,
+            17124
+          ],
+          [
+            17184,
+            17185
+          ],
+          [
+            17297,
+            17298
+          ],
+          [
+            17497,
+            17498
+          ],
+          [
+            17635,
+            17636
+          ],
+          [
+            17712,
+            17713
+          ],
+          [
+            17927,
+            17928
+          ],
+          [
+            18062,
+            18063
+          ],
+          [
+            18241,
+            18242
+          ],
+          [
+            18318,
+            18319
+          ],
+          [
+            18420,
+            18421
+          ],
+          [
+            18436,
+            18437
+          ],
+          [
+            18540,
+            18541
+          ],
+          [
+            18640,
+            18641
+          ],
+          [
+            18685,
+            18686
+          ],
+          [
+            18796,
+            18797
+          ],
+          [
+            18916,
+            18917
+          ],
+          [
+            19005,
+            19006
+          ],
+          [
+            19149,
+            19150
+          ],
+          [
+            19398,
+            19399
+          ],
+          [
+            19543,
+            19544
+          ],
+          [
+            19586,
+            19587
+          ],
+          [
+            19726,
+            19727
+          ],
+          [
+            19765,
+            19766
+          ],
+          [
+            19893,
+            19894
+          ],
+          [
+            19961,
+            19962
+          ],
+          [
+            20107,
+            20108
+          ],
+          [
+            20186,
+            20187
+          ],
+          [
+            20270,
+            20271
+          ],
+          [
+            20346,
+            20347
+          ],
+          [
+            20457,
+            20458
+          ],
+          [
+            20572,
+            20573
+          ],
+          [
+            20658,
+            20659
+          ],
+          [
+            20740,
+            20741
+          ],
+          [
+            20808,
+            20809
+          ],
+          [
+            20941,
+            20942
+          ],
+          [
+            21024,
+            21025
+          ],
+          [
+            21067,
+            21068
+          ],
+          [
+            21183,
+            21184
+          ],
+          [
+            21360,
+            21361
+          ],
+          [
+            21382,
+            21383
+          ],
+          [
+            21412,
+            21413
+          ],
+          [
+            21564,
+            21565
+          ],
+          [
+            21658,
+            21659
+          ],
+          [
+            21760,
+            21761
+          ],
+          [
+            21888,
+            21889
+          ],
+          [
+            22076,
+            22077
+          ],
+          [
+            22147,
+            22148
+          ],
+          [
+            22265,
+            22266
+          ],
+          [
+            22343,
+            22344
+          ],
+          [
+            22409,
+            22410
+          ],
+          [
+            22534,
+            22535
+          ],
+          [
+            22598,
+            22599
+          ],
+          [
+            22692,
+            22693
+          ],
+          [
+            22952,
+            22953
+          ],
+          [
+            23034,
+            23035
+          ],
+          [
+            23136,
+            23137
+          ],
+          [
+            23247,
+            23248
+          ],
+          [
+            23343,
+            23344
+          ],
+          [
+            23504,
+            23505
+          ],
+          [
+            23589,
+            23590
+          ],
+          [
+            23721,
+            23722
+          ],
+          [
+            23804,
+            23805
+          ],
+          [
+            23819,
+            23820
+          ],
+          [
+            23885,
+            23886
+          ],
+          [
+            23919,
+            23920
+          ],
+          [
+            24112,
+            24113
+          ],
+          [
+            24218,
+            24219
+          ],
+          [
+            24309,
+            24310
+          ],
+          [
+            24409,
+            24410
+          ],
+          [
+            24555,
+            24556
+          ],
+          [
+            24680,
+            24681
+          ],
+          [
+            24768,
+            24769
+          ],
+          [
+            24881,
+            24882
+          ],
+          [
+            24899,
+            24900
+          ],
+          [
+            25048,
+            25049
+          ],
+          [
+            25141,
+            25142
+          ],
+          [
+            25203,
+            25204
+          ],
+          [
+            25346,
+            25347
+          ],
+          [
+            25427,
+            25428
+          ],
+          [
+            25549,
+            25550
+          ],
+          [
+            25659,
+            25660
+          ],
+          [
+            25763,
+            25764
+          ],
+          [
+            25845,
+            25846
+          ],
+          [
+            25863,
+            25864
+          ],
+          [
+            25984,
+            25985
+          ],
+          [
+            26092,
+            26093
+          ],
+          [
+            26187,
+            26188
+          ],
+          [
+            26319,
+            26320
+          ],
+          [
+            26468,
+            26469
+          ],
+          [
+            26606,
+            26607
+          ],
+          [
+            26734,
+            26735
+          ],
+          [
+            26841,
+            26842
+          ],
+          [
+            26995,
+            26996
+          ],
+          [
+            27112,
+            27113
+          ],
+          [
+            27241,
+            27242
+          ],
+          [
+            27412,
+            27413
+          ],
+          [
+            27664,
+            27665
+          ],
+          [
+            27773,
+            27774
+          ],
+          [
+            27870,
+            27871
+          ],
+          [
+            27971,
+            27972
+          ],
+          [
+            28117,
+            28118
+          ],
+          [
+            28233,
+            28234
+          ],
+          [
+            28371,
+            28372
+          ],
+          [
+            28508,
+            28509
+          ],
+          [
+            28609,
+            28610
+          ],
+          [
+            28714,
+            28715
+          ],
+          [
+            28828,
+            28829
+          ],
+          [
+            28964,
+            28965
+          ],
+          [
+            29066,
+            29067
+          ],
+          [
+            29222,
+            29223
+          ],
+          [
+            29303,
+            29304
+          ],
+          [
+            29440,
+            29441
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "long_translated_edited_interview_with_editorial_introduction",
+        "fit": "yes_with_interview_stratum",
+        "reason": "The complete captured body includes an introduction, speaker-labelled questions and answers, thematic headings, and an original video reference. Interview recaps and digressions must be treated as genre context."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/dOey7eV1T9p3dtPWTPCV",
+        "published_date_asia_shanghai": "2026-04-13",
+        "published_timestamp_utc": "2026-04-13T08:19:48.129000+00:00",
+        "collected_at": "2026-09-14T08:39:37.287936+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "蔡芳芳"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Saved provenance is unresolved, but b012 explicitly says InfoQ translated and edited the interview, and b267 gives the source video. The review records the direct textual evidence without rewriting metadata. The extent of translation, editorial expansion, and source-speech phrasing remains unknown.",
+        "body_evidence_refs": [
+          "b012",
+          "b267"
+        ]
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "abstract_restatement",
+          "evidence_refs": [
+            "b083",
+            "b090"
+          ],
+          "assessment": "A local philosophical answer contains abstraction and repetition, but it answers a question about aesthetics and includes intervening examples. This cannot establish a sustained Chinese editorial-style phenomenon.",
+          "sustained_strong_target_established": false
+        },
+        {
+          "family": "repeated_advice",
+          "evidence_refs": [
+            "b248",
+            "b249"
+          ],
+          "assessment": "The adjacent advice is partly redundant. It is a late interview recap, not a disconnected sequence, and does not justify upgrading the whole interview.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b012",
+          "role": "provenance",
+          "block_id": "b012",
+          "body_unicode_start": 680,
+          "body_unicode_end": 791,
+          "source_line_start": 16,
+          "source_line_end": 16,
+          "quote": "下面是本次访谈的完整内容，由 InfoQ 翻译整理，力求完整呈现出 DHH 对 Agent-First 编程实践、设计审美、团队结构变化，以及软件工程未来形态的系统性思考，也希望能把他在访谈中展现出的充沛能量同样传递给你。",
+          "dom_presentation_quote": "下面是本次访谈的完整内容，由 InfoQ 翻译整理，力求完整呈现出 DHH 对 Agent-First 编程实践、设计审美、团队结构变化，以及软件工程未来形态的系统性思考，也希望能把他在访谈中展现出的充沛能量同样传递给你。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The body explicitly identifies the text as translated and edited by InfoQ, contradicting the absence of recognized evidence in saved metadata."
+        },
+        {
+          "evidence_id": "b083",
+          "role": "candidate_problem",
+          "block_id": "b083",
+          "body_unicode_start": 8708,
+          "body_unicode_end": 8830,
+          "source_line_start": 115,
+          "source_line_end": 116,
+          "quote": "DHH：\n完全正确。我非常认同这一点。在我看来，美感本身就意味着某种程度上的“正确”。当一个东西是美的，它往往也是对的。这一点在数学里成立，在物理里成立，在很多领域里都成立。当你抵达一种正确的审美状态时，往往意味着你已经接近某种更深层的正确性。",
+          "dom_presentation_quote": "DHH：完全正确。我非常认同这一点。在我看来，美感本身就意味着某种程度上的“正确”。当一个东西是美的，它往往也是对的。这一点在数学里成立，在物理里成立，在很多领域里都成立。当你抵达一种正确的审美状态时，往往意味着你已经接近某种更深层的正确性。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The speaker repeats beauty/correctness at increasing abstraction. This occurs in a direct answer about craft and aesthetics."
+        },
+        {
+          "evidence_id": "b090",
+          "role": "candidate_problem",
+          "block_id": "b090",
+          "body_unicode_start": 9646,
+          "body_unicode_end": 9728,
+          "source_line_start": 123,
+          "source_line_end": 123,
+          "quote": "总体来说，我认为我们必须使用美的工具，也必须创造美的系统，还必须设计流畅自然的交互体验。这正是我们作为“手艺人”应该追求的目标——不断打磨它，直到没有任何毛刺为止。",
+          "dom_presentation_quote": "总体来说，我认为我们必须使用美的工具，也必须创造美的系统，还必须设计流畅自然的交互体验。这正是我们作为“手艺人”应该追求的目标——不断打磨它，直到没有任何毛刺为止。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The aesthetics passage ends with another broad beauty-and-craft conclusion."
+        },
+        {
+          "evidence_id": "b124",
+          "role": "nonqualifying_observation",
+          "block_id": "b124",
+          "body_unicode_start": 13591,
+          "body_unicode_end": 13728,
+          "source_line_start": 170,
+          "source_line_end": 170,
+          "quote": "当然，我也并不是完全喜欢他们所有决策，就像我对 Apple 也有很多意见一样。但与此同时，我始终还戴着另一顶帽子：我首先只是一个喜欢计算机的人。比如他们的新 Neo，我甚至可能会买一台来试试；再比如 Opus 每月 500 美元的订阅费，我也完全愿意付，因为它确实值这个价。",
+          "dom_presentation_quote": "当然，我也并不是完全喜欢他们所有决策，就像我对 Apple 也有很多意见一样。但与此同时，我始终还戴着另一顶帽子：我首先只是一个喜欢计算机的人。比如他们的新 Neo，我甚至可能会买一台来试试；再比如 Opus 每月 500 美元的订阅费，我也完全愿意付，因为它确实值这个价。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The pronoun shifts across Anthropic, Apple/Neo, and Opus can cause a local referent hesitation. The nearby Apple mention permits recovery; it is not sustained reference collapse."
+        },
+        {
+          "evidence_id": "b248",
+          "role": "candidate_problem",
+          "block_id": "b248",
+          "body_unicode_start": 26996,
+          "body_unicode_end": 27112,
+          "source_line_start": 336,
+          "source_line_end": 336,
+          "quote": "所以现在其实出现了一种分化状态：我们一方面知道未来充满不确定性，这确实会带来焦虑，尤其当你的收入关系到孩子七年后的大学学费时，这种焦虑完全可以理解。但问题是，这种焦虑本身并不能转化成任何建设性行动。唯一有效的路径，就是主动投入进去。",
+          "dom_presentation_quote": "所以现在其实出现了一种分化状态：我们一方面知道未来充满不确定性，这确实会带来焦虑，尤其当你的收入关系到孩子七年后的大学学费时，这种焦虑完全可以理解。但问题是，这种焦虑本身并不能转化成任何建设性行动。唯一有效的路径，就是主动投入进去。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The later response restates uncertainty versus constructive action."
+        },
+        {
+          "evidence_id": "b249",
+          "role": "candidate_problem",
+          "block_id": "b249",
+          "body_unicode_start": 27113,
+          "body_unicode_end": 27241,
+          "source_line_start": 337,
+          "source_line_end": 337,
+          "quote": "如果你只是坐在那里反复思考七年后的世界会变成什么样，那其实是在浪费时间。真正可行的路径只有一个：开始使用这些工具，而且通常这并不需要太大努力。比如把一个你以前一直没完成的业余项目拿出来，用模型试试看。如果你真的喜欢计算机，我很难想象你不会觉得这个过程有趣。",
+          "dom_presentation_quote": "如果你只是坐在那里反复思考七年后的世界会变成什么样，那其实是在浪费时间。真正可行的路径只有一个：开始使用这些工具，而且通常这并不需要太大努力。比如把一个你以前一直没完成的业余项目拿出来，用模型试试看。如果你真的喜欢计算机，我很难想象你不会觉得这个过程有趣。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The next paragraph repeats the instruction to use tools rather than dwell on forecasts."
+        },
+        {
+          "evidence_id": "b094",
+          "role": "counterexample",
+          "block_id": "b094",
+          "body_unicode_start": 10013,
+          "body_unicode_end": 10078,
+          "source_line_start": 128,
+          "source_line_end": 129,
+          "quote": "DHH：\n这个问题其实有点微妙，甚至可能听起来像是在替自己辩护，但我真的觉得：我的观点本身并没有改变，改变的是现实条件和客观事实。",
+          "dom_presentation_quote": "DHH：这个问题其实有点微妙，甚至可能听起来像是在替自己辩护，但我真的觉得：我的观点本身并没有改变，改变的是现实条件和客观事实。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The respondent directly states the stable-view/changed-conditions distinction behind the introduction's contrast."
+        },
+        {
+          "evidence_id": "b107",
+          "role": "counterexample",
+          "block_id": "b107",
+          "body_unicode_start": 11534,
+          "body_unicode_end": 11701,
+          "source_line_start": 146,
+          "source_line_end": 146,
+          "quote": "二是模型能力本身的跃迁。对我来说，像 Opus 4.5 这样的模型是另一个明显的时间节点。那是第一个让我持续、稳定地被输出质量震惊的模型。无论是分析能力，还是在模糊输入条件下生成代码的能力，都达到了新的水平。更关键的是，它生成的代码往往可以直接合并进项目，而几乎不需要修改。即使需要调整，只要我告诉它一次，它下次就不会再犯同样的错误。",
+          "dom_presentation_quote": "二是模型能力本身的跃迁。对我来说，像 Opus 4.5 这样的模型是另一个明显的时间节点。那是第一个让我持续、稳定地被输出质量震惊的模型。无论是分析能力，还是在模糊输入条件下生成代码的能力，都达到了新的水平。更关键的是，它生成的代码往往可以直接合并进项目，而几乎不需要修改。即使需要调整，只要我告诉它一次，它下次就不会再犯同样的错误。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A model-quality threshold specifies what changed in the working conditions."
+        },
+        {
+          "evidence_id": "b177",
+          "role": "counterexample",
+          "block_id": "b177",
+          "body_unicode_start": 19727,
+          "body_unicode_end": 19765,
+          "source_line_start": 239,
+          "source_line_end": 241,
+          "quote": "DHH：\n正是这样。\n真正关键的变化不是效率提升，而是问题空间在爆炸式扩大。",
+          "dom_presentation_quote": "DHH：正是这样。真正关键的变化不是效率提升，而是问题空间在爆炸式扩大。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The apparent efficiency-versus-problem-space opposition answers the preceding question and is immediately developed with an example."
+        },
+        {
+          "evidence_id": "b178",
+          "role": "counterexample",
+          "block_id": "b178",
+          "body_unicode_start": 19766,
+          "body_unicode_end": 19893,
+          "source_line_start": 242,
+          "source_line_end": 242,
+          "quote": "现在我们内部启动了大量以前根本不会考虑的项目。比如有一次性能优化项目，通常大家关注的是 P50、P95、P99 延迟指标。但 Jeremy——我们团队里最擅长使用 Agent 的工程师之一——提出一个问题：为什么不优化 P1？也就是最快的那 1% 请求。",
+          "dom_presentation_quote": "现在我们内部启动了大量以前根本不会考虑的项目。比如有一次性能优化项目，通常大家关注的是 P50、P95、P99 延迟指标。但 Jeremy——我们团队里最擅长使用 Agent 的工程师之一——提出一个问题：为什么不优化 P1？也就是最快的那 1% 请求。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The P1 optimization project supplies a concrete counterpart for the expansion-of-problem-space claim."
+        },
+        {
+          "evidence_id": "b236",
+          "role": "counterexample",
+          "block_id": "b236",
+          "body_unicode_start": 25660,
+          "body_unicode_end": 25763,
+          "source_line_start": 319,
+          "source_line_end": 320,
+          "quote": "DHH：\n没错，不过这种故事本身就是典型的“创始人叙事”，不能轻易外推成一种通用路径。几乎所有创始人故事都有这个特点。但其中真正具有普适性的原则，其实很简单：愿意出现，愿意投入，努力做到最好，并且持续学习。",
+          "dom_presentation_quote": "DHH：没错，不过这种故事本身就是典型的“创始人叙事”，不能轻易外推成一种通用路径。几乎所有创始人故事都有这个特点。但其中真正具有普适性的原则，其实很简单：愿意出现，愿意投入，努力做到最好，并且持续学习。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The respondent explicitly limits generalization from his founder story."
+        },
+        {
+          "evidence_id": "b264",
+          "role": "counterexample",
+          "block_id": "b264",
+          "body_unicode_start": 29067,
+          "body_unicode_end": 29222,
+          "source_line_start": 356,
+          "source_line_end": 358,
+          "quote": "而且过去三个月之后，我现在已经非常坚定地投入到\nAgent 可访问性（agent accessibility）\n这个方向上了。最近几周我们就在开发新的 Basecamp CLI。这个过程也再次提醒我：我们还没有达到 AGI。你当然可以让 Agent 写 CLI，但如果你希望它“刚刚好”，仍然需要人工参与优化。",
+          "dom_presentation_quote": "而且过去三个月之后，我现在已经非常坚定地投入到 Agent 可访问性（agent accessibility） 这个方向上了。最近几周我们就在开发新的 Basecamp CLI。这个过程也再次提醒我：我们还没有达到 AGI。你当然可以让 Agent 写 CLI，但如果你希望它“刚刚好”，仍然需要人工参与优化。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The closing section returns to a concrete CLI project and retains the need for human optimization."
+        },
+        {
+          "evidence_id": "b267",
+          "role": "provenance",
+          "block_id": "b267",
+          "body_unicode_start": 29441,
+          "body_unicode_end": 29491,
+          "source_line_start": 361,
+          "source_line_end": 362,
+          "quote": "视频原链接：\nhttps://www.youtube.com/watch?v=JiWgKRgdgpI",
+          "dom_presentation_quote": "视频原链接：https://www.youtube.com/watch?v=JiWgKRgdgpI",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The source video is identified; it was not opened."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b094",
+        "b107",
+        "b177",
+        "b178",
+        "b236",
+        "b264"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "Across the complete interview, frequent distinctions are motivated by questions, self-reported changes, technical examples, and scope qualifications. Local abstract passages and duplicated advice remain possible editing targets, but no sustained strong-style nomination is justified by whole-document reading.",
+      "uncertainty": "The video and original speech were not inspected. The translation/editorial boundary is unknown, and the long interview is not interchangeable with a short expository article. No marker count was used.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "b145102dedeba53efa9de826",
+      "title": "Snowflake 落地中国两年：迈向智能体企业时代，关键在上下文",
+      "english_title": "Snowflake keynote report on enterprise context",
+      "body_path": "data/local/media-provenance-extension-v1/documents/b145102dedeba53efa9de826/body.txt",
+      "body_sha256": "f3d25219c06352a666d9acb8e8bd4db1062fea872c0fb8626a912159ff725fe2",
+      "body_bytes": 17671,
+      "body_unicode_codepoints": 7093,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/b145102dedeba53efa9de826/metadata.json",
+      "metadata_sha256": "a019a929ca34fdea32f3ae57fd138491d6342e7f2b626679e35045e251f6a869",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/b145102dedeba53efa9de826/blocks.json",
+      "blocks_sha256": "ca9540208bea1af399f4fbe5ddd1f268b6004048fae292657d6d57c2dfb42af1",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b045",
+            "body_unicode_start": 0,
+            "body_unicode_end": 4342
+          },
+          {
+            "first_block": "b046",
+            "last_block": "b070",
+            "body_unicode_start": 4343,
+            "body_unicode_end": 7093
+          }
+        ],
+        "covered_block_count": 70,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            68,
+            69
+          ],
+          [
+            134,
+            135
+          ],
+          [
+            250,
+            251
+          ],
+          [
+            381,
+            382
+          ],
+          [
+            412,
+            413
+          ],
+          [
+            586,
+            587
+          ],
+          [
+            668,
+            669
+          ],
+          [
+            755,
+            756
+          ],
+          [
+            913,
+            914
+          ],
+          [
+            934,
+            935
+          ],
+          [
+            1012,
+            1013
+          ],
+          [
+            1032,
+            1033
+          ],
+          [
+            1180,
+            1181
+          ],
+          [
+            1202,
+            1203
+          ],
+          [
+            1340,
+            1341
+          ],
+          [
+            1494,
+            1495
+          ],
+          [
+            1524,
+            1525
+          ],
+          [
+            1759,
+            1760
+          ],
+          [
+            1782,
+            1783
+          ],
+          [
+            1989,
+            1990
+          ],
+          [
+            2134,
+            2135
+          ],
+          [
+            2328,
+            2329
+          ],
+          [
+            2366,
+            2367
+          ],
+          [
+            2392,
+            2393
+          ],
+          [
+            2424,
+            2425
+          ],
+          [
+            2568,
+            2569
+          ],
+          [
+            2580,
+            2581
+          ],
+          [
+            2714,
+            2715
+          ],
+          [
+            2878,
+            2879
+          ],
+          [
+            2936,
+            2937
+          ],
+          [
+            3046,
+            3047
+          ],
+          [
+            3059,
+            3060
+          ],
+          [
+            3244,
+            3245
+          ],
+          [
+            3299,
+            3300
+          ],
+          [
+            3467,
+            3468
+          ],
+          [
+            3481,
+            3482
+          ],
+          [
+            3532,
+            3533
+          ],
+          [
+            3648,
+            3649
+          ],
+          [
+            3761,
+            3762
+          ],
+          [
+            3855,
+            3856
+          ],
+          [
+            3945,
+            3946
+          ],
+          [
+            4079,
+            4080
+          ],
+          [
+            4106,
+            4107
+          ],
+          [
+            4221,
+            4222
+          ],
+          [
+            4342,
+            4343
+          ],
+          [
+            4451,
+            4452
+          ],
+          [
+            4587,
+            4588
+          ],
+          [
+            4636,
+            4637
+          ],
+          [
+            4703,
+            4704
+          ],
+          [
+            4775,
+            4776
+          ],
+          [
+            4792,
+            4793
+          ],
+          [
+            4804,
+            4805
+          ],
+          [
+            4831,
+            4832
+          ],
+          [
+            5068,
+            5069
+          ],
+          [
+            5099,
+            5100
+          ],
+          [
+            5364,
+            5365
+          ],
+          [
+            5383,
+            5384
+          ],
+          [
+            5658,
+            5659
+          ],
+          [
+            5836,
+            5837
+          ],
+          [
+            5865,
+            5866
+          ],
+          [
+            6168,
+            6169
+          ],
+          [
+            6201,
+            6202
+          ],
+          [
+            6347,
+            6348
+          ],
+          [
+            6485,
+            6486
+          ],
+          [
+            6610,
+            6611
+          ],
+          [
+            6653,
+            6654
+          ],
+          [
+            6787,
+            6788
+          ],
+          [
+            6804,
+            6805
+          ],
+          [
+            6995,
+            6996
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "informative_vendor_event_report",
+        "fit": "yes_with_event_reporting_stratum",
+        "reason": "A complete multi-section event report with named speakers, a simulated business workflow, architecture explanations, customer cases, and a conclusion."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/RCa5y6tvZXbjGKeLSGZt",
+        "published_date_asia_shanghai": "2026-09-10",
+        "published_timestamp_utc": "2026-09-10T11:57:48.175000+00:00",
+        "collected_at": "2026-09-14T08:39:43.533862+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "王玮"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Saved provenance is unresolved. The body attributes positions and demonstrations to event speakers, but Chinese bylines and local event context do not establish original Chinese production. Vendor claims and internal tests remain attributed claims.",
+        "body_evidence_refs": [
+          "b004"
+        ]
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "adjacent_restatement",
+          "evidence_refs": [
+            "b021",
+            "b022"
+          ],
+          "assessment": "A redundant recap pair is identifiable, but it closes an explained demonstration and explicitly reports the speaker's recap.",
+          "sustained_strong_target_established": false
+        },
+        {
+          "family": "adjacent_restatement",
+          "evidence_refs": [
+            "b048",
+            "b049"
+          ],
+          "assessment": "The same schema/definition/relationship mechanism is repeated. This is a bounded redundancy finding, not proof of sustained strongly characteristic Chinese style across the article.",
+          "sustained_strong_target_established": false
+        },
+        {
+          "family": "abstract_closing_restatement",
+          "evidence_refs": [
+            "b069",
+            "b070"
+          ],
+          "assessment": "The closing stakes are broadly restated, but the first paragraph still adds concrete competitive positioning. Overgeneralized industry claims are not a substitute for style evidence.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b004",
+          "role": "provenance",
+          "block_id": "b004",
+          "body_unicode_start": 251,
+          "body_unicode_end": 381,
+          "source_line_start": 5,
+          "source_line_end": 6,
+          "quote": "“当 AI 无处不在，只有准确的上下文才能让 AI 真正值得信赖。”\n张莹由此将 Context 提到了企业级 AI 落地的前提位置。她同时提到，随着 Agent 开始接触客户、访问企业数据并参与业务流程，身份边界、权限、数据血缘和成本也需要一并进入治理体系。",
+          "dom_presentation_quote": "“当 AI 无处不在，只有准确的上下文才能让 AI 真正值得信赖。” 张莹由此将 Context 提到了企业级 AI 落地的前提位置。她同时提到，随着 Agent 开始接触客户、访问企业数据并参与业务流程，身份边界、权限、数据血缘和成本也需要一并进入治理体系。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "A named speaker's quoted thesis establishes the event-reporting context."
+        },
+        {
+          "evidence_id": "b021",
+          "role": "candidate_problem",
+          "block_id": "b021",
+          "body_unicode_start": 1990,
+          "body_unicode_end": 2134,
+          "source_line_start": 30,
+          "source_line_end": 30,
+          "quote": "这也解释了 Snowflake 所说的智能体企业为什么仍然要从数据开始。智能体能够规划任务、调用工具和执行动作，但这些能力并不会替代企业原有的数据基础。恰恰相反，当 AI 从回答问题进一步走向自主行动，数据是否准确、权限是否明确、业务定义是否一致，都会直接影响智能体最终做出的判断和行动。",
+          "dom_presentation_quote": "这也解释了 Snowflake 所说的智能体企业为什么仍然要从数据开始。智能体能够规划任务、调用工具和执行动作，但这些能力并不会替代企业原有的数据基础。恰恰相反，当 AI 从回答问题进一步走向自主行动，数据是否准确、权限是否明确、业务定义是否一致，都会直接影响智能体最终做出的判断和行动。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The paragraph restates that agent capability does not replace data readiness after the workflow demonstration."
+        },
+        {
+          "evidence_id": "b022",
+          "role": "candidate_problem",
+          "block_id": "b022",
+          "body_unicode_start": 2135,
+          "body_unicode_end": 2328,
+          "source_line_start": 31,
+          "source_line_end": 32,
+          "quote": "数据不会因为智能体的出现而自动变得 AI Ready。企业需要先让数据可用、可信，再让 AI 理解这些数据在自身业务中究竟意味着什么。\nChristian 在演讲结束前再次回到这一点：企业需要主动现代化数据体系，并将 Horizon Context、Semantic View、Agent Definition、Eval Set 等能力纳入数据准备过程，随后才是进一步构建企业级智能体。",
+          "dom_presentation_quote": "数据不会因为智能体的出现而自动变得 AI Ready。企业需要先让数据可用、可信，再让 AI 理解这些数据在自身业务中究竟意味着什么。 Christian 在演讲结束前再次回到这一点：企业需要主动现代化数据体系，并将 Horizon Context、Semantic View、Agent Definition、Eval Set 等能力纳入数据准备过程，随后才是进一步构建企业级智能体。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The following paragraph repeats the same readiness thesis and attributes a return to it to the speaker."
+        },
+        {
+          "evidence_id": "b048",
+          "role": "candidate_problem",
+          "block_id": "b048",
+          "body_unicode_start": 4588,
+          "body_unicode_end": 4636,
+          "source_line_start": 59,
+          "source_line_end": 59,
+          "quote": "背后的逻辑并不复杂：上下文越完整，模型越不需要在每一轮交互里重新猜测表结构、指标定义和业务关系。",
+          "dom_presentation_quote": "背后的逻辑并不复杂：上下文越完整，模型越不需要在每一轮交互里重新猜测表结构、指标定义和业务关系。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The paragraph supplies the explanatory phrase about repeatedly guessing schemas, definitions, and relationships."
+        },
+        {
+          "evidence_id": "b049",
+          "role": "candidate_problem",
+          "block_id": "b049",
+          "body_unicode_start": 4637,
+          "body_unicode_end": 4703,
+          "source_line_start": 60,
+          "source_line_end": 60,
+          "quote": "这让“上下文”开始从准确率问题，进一步变成成本与效率问题。模型越少花力气猜测企业内部的表结构、指标定义和业务关系，调用链路也就越短。",
+          "dom_presentation_quote": "这让“上下文”开始从准确率问题，进一步变成成本与效率问题。模型越少花力气猜测企业内部的表结构、指标定义和业务关系，调用链路也就越短。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The next paragraph repeats that same list and causal idea while adding cost/efficiency framing. This is the clearest local duplication."
+        },
+        {
+          "evidence_id": "b069",
+          "role": "candidate_problem",
+          "block_id": "b069",
+          "body_unicode_start": 6805,
+          "body_unicode_end": 6995,
+          "source_line_start": 96,
+          "source_line_end": 96,
+          "quote": "上下文、本体、语义层的叙事，正在成为全行业的公约数。Palantir 的 Ontology、Databricks 的 Unity Catalog 语义能力、各家向量检索与 RAG 方案，都在讲“让 AI 理解你的业务”。Snowflake 的差异化主张是原生与统一，本体存在 Snowflake 表里、无需图数据库、与数据共享同一套权限和审计。围绕上下文层的这场竞赛，才刚刚开始。",
+          "dom_presentation_quote": "上下文、本体、语义层的叙事，正在成为全行业的公约数。Palantir 的 Ontology、Databricks 的 Unity Catalog 语义能力、各家向量检索与 RAG 方案，都在讲“让 AI 理解你的业务”。Snowflake 的差异化主张是原生与统一，本体存在 Snowflake 表里、无需图数据库、与数据共享同一套权限和审计。围绕上下文层的这场竞赛，才刚刚开始。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The closing section reasserts the context competition, while also naming competing approaches and the vendor's differentiation."
+        },
+        {
+          "evidence_id": "b070",
+          "role": "candidate_problem",
+          "block_id": "b070",
+          "body_unicode_start": 6996,
+          "body_unicode_end": 7093,
+          "source_line_start": 97,
+          "source_line_end": 97,
+          "quote": "两年前 Snowflake 落地中国时，企业 AI 的竞速还停留在模型层；如今话题已经整体挪到了数据和意义层。转向本身透露出一个正在成形的行业共识：AI 的下一程，比拼的将是谁更了解自己的生意。",
+          "dom_presentation_quote": "两年前 Snowflake 落地中国时，企业 AI 的竞速还停留在模型层；如今话题已经整体挪到了数据和意义层。转向本身透露出一个正在成形的行业共识：AI 的下一程，比拼的将是谁更了解自己的生意。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The final paragraph again frames a model-to-meaning transition. Its industry-wide scope is broader than the event evidence."
+        },
+        {
+          "evidence_id": "b015",
+          "role": "counterexample",
+          "block_id": "b015",
+          "body_unicode_start": 1203,
+          "body_unicode_end": 1340,
+          "source_line_start": 20,
+          "source_line_end": 20,
+          "quote": "Snowflake 中国高级解决方案工程师丁煜恒在现场模拟了一家职业体育联赛公司的经营场景：一场深圳赛事取得成功后，管理层希望判断这一模式是否能够复制到其他城市。但收入、成本、客户、人员以及实时舆情分别存在于不同系统中，单独依靠已有报表，很难直接回答增长与盈利能否同时成立。",
+          "dom_presentation_quote": "Snowflake 中国高级解决方案工程师丁煜恒在现场模拟了一家职业体育联赛公司的经营场景：一场深圳赛事取得成功后，管理层希望判断这一模式是否能够复制到其他城市。但收入、成本、客户、人员以及实时舆情分别存在于不同系统中，单独依靠已有报表，很难直接回答增长与盈利能否同时成立。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The simulated league-expansion decision gives the readiness discussion a concrete business question."
+        },
+        {
+          "evidence_id": "b018",
+          "role": "counterexample",
+          "block_id": "b018",
+          "body_unicode_start": 1525,
+          "body_unicode_end": 1759,
+          "source_line_start": 23,
+          "source_line_end": 27,
+          "quote": "同一个指标在不同部门可能对应不同定义，Agent 同样会面临“应该使用哪一个口径”的问题。现场演示通过 Semantic View 对粉丝互动、商品销售、票务等核心指标进行统一定义，同时记录指标之间的计算关系，让人和不同 Agent 都能够依据同一套企业语义进行分析和交流。Snowflake 将这三个环节分别概括为\nData Ready、Security Ready 和 Context Ready\n；只有三者同时具备，企业的数据基础才真正达到\nAI Ready\n。",
+          "dom_presentation_quote": "同一个指标在不同部门可能对应不同定义，Agent 同样会面临“应该使用哪一个口径”的问题。现场演示通过 Semantic View 对粉丝互动、商品销售、票务等核心指标进行统一定义，同时记录指标之间的计算关系，让人和不同 Agent 都能够依据同一套企业语义进行分析和交流。Snowflake 将这三个环节分别概括为 Data Ready、Security Ready 和 Context Ready；只有三者同时具备，企业的数据基础才真正达到 AI Ready。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The Semantic View description names competing metric definitions and a mechanism for reconciling them."
+        },
+        {
+          "evidence_id": "b039",
+          "role": "counterexample",
+          "block_id": "b039",
+          "body_unicode_start": 3649,
+          "body_unicode_end": 3761,
+          "source_line_start": 49,
+          "source_line_end": 49,
+          "quote": "Snowflake AI 技术战略首席架构师贾天下用「图纸」和「楼」来区分本体与知识图谱：本体定义抽象规则，知识图谱记录具体事实。比如，「球员是一种人，可以任职于俱乐部」属于本体；「姆巴佩效力于皇马」则是会随时间变化的事实。",
+          "dom_presentation_quote": "Snowflake AI 技术战略首席架构师贾天下用「图纸」和「楼」来区分本体与知识图谱：本体定义抽象规则，知识图谱记录具体事实。比如，「球员是一种人，可以任职于俱乐部」属于本体；「姆巴佩效力于皇马」则是会随时间变化的事实。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The ontology/knowledge-graph distinction is illustrated by rules and a changing football fact."
+        },
+        {
+          "evidence_id": "b047",
+          "role": "counterexample",
+          "block_id": "b047",
+          "body_unicode_start": 4452,
+          "body_unicode_end": 4587,
+          "source_line_start": 58,
+          "source_line_end": 58,
+          "quote": "Snowflake 同时给出了一组内部测试数据。面对同一批高难度问题，编程智能体直接连接 SQL 时准确率为 24.1%，Snowflake 产品在没有语义模型时为 47.1%，加入治理后的上下文后达到 86.3%；单次提问成本从 1.76 美元下降到 0.59 美元。",
+          "dom_presentation_quote": "Snowflake 同时给出了一组内部测试数据。面对同一批高难度问题，编程智能体直接连接 SQL 时准确率为 24.1%，Snowflake 产品在没有语义模型时为 47.1%，加入治理后的上下文后达到 86.3%；单次提问成本从 1.76 美元下降到 0.59 美元。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The preceding internal test reports accuracy and cost, explaining why the next paragraphs discuss both outcomes. The test is attributed, not independently verified."
+        },
+        {
+          "evidence_id": "b064",
+          "role": "counterexample",
+          "block_id": "b064",
+          "body_unicode_start": 6348,
+          "body_unicode_end": 6485,
+          "source_line_start": 91,
+          "source_line_end": 91,
+          "quote": "制造业里的 IT/OT 分离，又把这个问题往更底层推了一步。Snowflake 全球制造行业首席专家 Pugal Janakiraman 在现场举了一个很简单的例子：传感器返回一个数值 85.34，如果没有单位、设备位置、维护记录和运行状态，这个数字对 AI 几乎没有意义。",
+          "dom_presentation_quote": "制造业里的 IT/OT 分离，又把这个问题往更底层推了一步。Snowflake 全球制造行业首席专家 Pugal Janakiraman 在现场举了一个很简单的例子：传感器返回一个数值 85.34，如果没有单位、设备位置、维护记录和运行状态，这个数字对 AI 几乎没有意义。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The sensor value with missing units and location concretely demonstrates the need for context."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b015",
+        "b018",
+        "b039",
+        "b047",
+        "b064"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "Several exact recap counterparts are present, especially b048-b049. However, demonstrations and technical distinctions advance the article between them, and the event recap explains part of the repetition. The evidence supports local redundancy concerns, not an adequately strong whole-article target nomination.",
+      "uncertainty": "No reader severity judgment exists. Whether the recaps feel aversive beyond normal event reporting remains unresolved; no comparative positive or independent source transcript was available within this frame.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "d405fbb6bb5cfd461d29cc40",
+      "title": "亚马逊云科技推出S3 Files，为S3 Bucket带来文件系统访问能力",
+      "english_title": "S3 Files technical announcement",
+      "body_path": "data/local/media-provenance-extension-v1/documents/d405fbb6bb5cfd461d29cc40/body.txt",
+      "body_sha256": "53b5545fb2901480dbfdbec0915ef8a9b0fc53a5ec12195e22b9568198c593d6",
+      "body_bytes": 4322,
+      "body_unicode_codepoints": 1909,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/d405fbb6bb5cfd461d29cc40/metadata.json",
+      "metadata_sha256": "faacff5feacaf7959550743a9fc21a84d1754d134b4d2f64a9234430b549366a",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/d405fbb6bb5cfd461d29cc40/blocks.json",
+      "blocks_sha256": "ff7cac3e1cf54a9464969568a8bac44237e339e2a6ecb40cdc86766b946cd4fc",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b016",
+            "body_unicode_start": 0,
+            "body_unicode_end": 1909
+          }
+        ],
+        "covered_block_count": 16,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            120,
+            121
+          ],
+          [
+            178,
+            179
+          ],
+          [
+            330,
+            331
+          ],
+          [
+            438,
+            439
+          ],
+          [
+            601,
+            602
+          ],
+          [
+            761,
+            762
+          ],
+          [
+            999,
+            1000
+          ],
+          [
+            1100,
+            1101
+          ],
+          [
+            1282,
+            1283
+          ],
+          [
+            1406,
+            1407
+          ],
+          [
+            1487,
+            1488
+          ],
+          [
+            1733,
+            1734
+          ],
+          [
+            1806,
+            1807
+          ],
+          [
+            1836,
+            1837
+          ],
+          [
+            1842,
+            1843
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "technical_news_report",
+        "fit": "yes",
+        "reason": "A complete report with storage behavior, consistency, synchronization, pricing reactions, limitations, and availability."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/KAzBrz8uBPq3g2OxETbw",
+        "published_date_asia_shanghai": "2026-05-04",
+        "published_timestamp_utc": "2026-05-04T04:11:07.310000+00:00",
+        "collected_at": "2026-09-14T08:39:40.467545+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "Renato Losio"
+        ],
+        "translators": [
+          "张卫滨"
+        ],
+        "recorded_translation_status": "translated",
+        "recorded_provenance": {
+          "stratum": "translated",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [
+            "explicit_translator_field",
+            "original_link_marker"
+          ],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Named author and translator fields and an original-link marker establish translated provenance. Quotes are attributed to vendor engineers and community commenters; no original-language comparison was performed.",
+        "body_evidence_refs": [
+          "b016"
+        ]
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "topic_shift",
+          "evidence_refs": [
+            "b013"
+          ],
+          "assessment": "One signposted related-news aside is present. It does not establish sustained disconnected progression.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b005",
+          "role": "nonqualifying_observation",
+          "block_id": "b005",
+          "body_unicode_start": 439,
+          "body_unicode_end": 601,
+          "source_line_start": 12,
+          "source_line_end": 12,
+          "quote": "在底层，S3 Files 使用 Amazon EFS，并可为活跃数据提供约 1ms 的延迟。该文件系统支持多个计算资源并发访问，并具备 NFS 的 close-to-open 一致性，非常适合会修改数据的交互式共享工作负载，从通过基于文件工具协作的 Agentic AI Agent，到处理数据集的 ML 训练流水线均适用。",
+          "dom_presentation_quote": "在底层，S3 Files 使用 Amazon EFS，并可为活跃数据提供约 1ms 的延迟。该文件系统支持多个计算资源并发访问，并具备 NFS 的 close-to-open 一致性，非常适合会修改数据的交互式共享工作负载，从通过基于文件工具协作的 Agentic AI Agent，到处理数据集的 ML 训练流水线均适用。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The quoted phrase about Agentic AI agents is jargon-heavy. It is a local terminology issue, not a sustained style cluster."
+        },
+        {
+          "evidence_id": "b013",
+          "role": "candidate_problem",
+          "block_id": "b013",
+          "body_unicode_start": 1734,
+          "body_unicode_end": 1806,
+          "source_line_start": 41,
+          "source_line_end": 43,
+          "quote": "在另一项公告中，Amazon S3 推出了\n新的默认安全设置\n，对新的和现有 bucket 禁用了使用客户自提供密钥的服务端加密(SSE-C)。",
+          "dom_presentation_quote": "在另一项公告中，Amazon S3 推出了新的默认安全设置，对新的和现有 bucket 禁用了使用客户自提供密钥的服务端加密(SSE-C)。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "A separate S3 security announcement is tangential to the main filesystem report, but is explicitly introduced as a different announcement."
+        },
+        {
+          "evidence_id": "b007",
+          "role": "counterexample",
+          "block_id": "b007",
+          "body_unicode_start": 762,
+          "body_unicode_end": 999,
+          "source_line_start": 16,
+          "source_line_end": 16,
+          "quote": "当创建或修改文件时，变更会被聚合，并且大约每 60 秒以单次 PUT 请求的形式提交回 S3。同步是双向进行的，因此当其他应用修改 bucket 中的对象时，S3 Files 会自动发现这些修改，并自动反映到文件系统视图中。如果出现两侧同时修改文件的冲突，S3 是事实源，文件系统版本会被移动到 lost+found 目录，并通过 CloudWatch 指标标记该事件。30 天未访问的文件数据会从文件系统视图中逐出，但不会从 S3 删除，因此存储成本会与活跃工作集成正比。",
+          "dom_presentation_quote": "当创建或修改文件时，变更会被聚合，并且大约每 60 秒以单次 PUT 请求的形式提交回 S3。同步是双向进行的，因此当其他应用修改 bucket 中的对象时，S3 Files 会自动发现这些修改，并自动反映到文件系统视图中。如果出现两侧同时修改文件的冲突，S3 是事实源，文件系统版本会被移动到 lost+found 目录，并通过 CloudWatch 指标标记该事件。30 天未访问的文件数据会从文件系统视图中逐出，但不会从 S3 删除，因此存储成本会与活跃工作集成正比。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "Synchronization interval, conflict resolution, and eviction behavior provide concrete connected mechanisms."
+        },
+        {
+          "evidence_id": "b009",
+          "role": "counterexample",
+          "block_id": "b009",
+          "body_unicode_start": 1101,
+          "body_unicode_end": 1282,
+          "source_line_start": 22,
+          "source_line_end": 28,
+          "quote": "在“\nS3 Is Not a Filesystem (But Now There's One In Front of It)\n”一文中，\nCorey Quinn\n称赞了该实现(“他们并不是简单给 S3 套一层 POSIX 就敷衍交差”)，强调了它与\nMountpoint for Amazon S3\n的差异，认为其定价模型合理，并分析了它与 EFS 定价的对比。",
+          "dom_presentation_quote": "在“S3 Is Not a Filesystem (But Now There's One In Front of It)”一文中，Corey Quinn称赞了该实现(“他们并不是简单给 S3 套一层 POSIX 就敷衍交差”)，强调了它与Mountpoint for Amazon S3的差异，认为其定价模型合理，并分析了它与 EFS 定价的对比。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The object-store/filesystem opposition is an attributed technical distinction, not an unsupported rhetorical replacement."
+        },
+        {
+          "evidence_id": "b012",
+          "role": "counterexample",
+          "block_id": "b012",
+          "body_unicode_start": 1488,
+          "body_unicode_end": 1733,
+          "source_line_start": 36,
+          "source_line_end": 40,
+          "quote": "S3 Files 运行在 EFS 基础设施之上，并按设计采用相同的定价；但由于它仅对文件系统上的小规模高频访问数据计费，因此即便单价一致，总成本仍可能更低。Provenant CTO\nDzhuneyt Ahmed\n在测试这一新选项后，\n指出了当前的限制\n：必须启用 S3 版本控制，发布时不支持基础设施即代码（Infrastructure as Code），且 IAM 配置不够直观，信任策略使用的是 EFS 服务主体（service principal）和 S3 Files 的特定条件。",
+          "dom_presentation_quote": "S3 Files 运行在 EFS 基础设施之上，并按设计采用相同的定价；但由于它仅对文件系统上的小规模高频访问数据计费，因此即便单价一致，总成本仍可能更低。Provenant CTODzhuneyt Ahmed在测试这一新选项后，指出了当前的限制：必须启用 S3 版本控制，发布时不支持基础设施即代码（Infrastructure as Code），且 IAM 配置不够直观，信任策略使用的是 EFS 服务主体（service principal）和 S3 Files 的特定条件。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The price qualification and explicit deployment limits constrain the favorable claims."
+        },
+        {
+          "evidence_id": "b016",
+          "role": "provenance",
+          "block_id": "b016",
+          "body_unicode_start": 1843,
+          "body_unicode_end": 1909,
+          "source_line_start": 48,
+          "source_line_end": 48,
+          "quote": "AWS Introduces S3 Files, Bringing File System Access to S3 Buckets",
+          "dom_presentation_quote": "AWS Introduces S3 Files, Bringing File System Access to S3 Buckets",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The English original title appears after the original-link label."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b007",
+        "b009",
+        "b012"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "Most contrasts explain real design and pricing tradeoffs. A single related-news aside and dense translated terminology do not supply the requested sustained style manifestation.",
+      "uncertainty": "Technical correctness and upstream translation fidelity are not verified. The community quotations have their own genre and speaker context.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "dad0b3ae7ff6c3190379cc7d",
+      "title": "西部数据 Tim Rausch：AI不是只有GPU，数据最终还要回到存储系统",
+      "english_title": "Tim Rausch on AI storage economics",
+      "body_path": "data/local/media-provenance-extension-v1/documents/dad0b3ae7ff6c3190379cc7d/body.txt",
+      "body_sha256": "714c6b048894a7a0b07571c8ef7d43895823410887630f5be2485d41f04ce5cb",
+      "body_bytes": 10095,
+      "body_unicode_codepoints": 3833,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/dad0b3ae7ff6c3190379cc7d/metadata.json",
+      "metadata_sha256": "e50f4dbb285ffe97a884ca3b927d8e7cf1f6329d3e242d9c61c54d49fd2fbac8",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/dad0b3ae7ff6c3190379cc7d/blocks.json",
+      "blocks_sha256": "b1f2eca782c106cdeb9c8dd85a7507e174c7c1702c84187d24ba6f4321ebd148",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b038",
+            "body_unicode_start": 0,
+            "body_unicode_end": 3833
+          }
+        ],
+        "covered_block_count": 38,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            90,
+            91
+          ],
+          [
+            239,
+            240
+          ],
+          [
+            388,
+            389
+          ],
+          [
+            405,
+            406
+          ],
+          [
+            519,
+            520
+          ],
+          [
+            630,
+            631
+          ],
+          [
+            765,
+            766
+          ],
+          [
+            858,
+            859
+          ],
+          [
+            946,
+            947
+          ],
+          [
+            1058,
+            1059
+          ],
+          [
+            1124,
+            1125
+          ],
+          [
+            1148,
+            1149
+          ],
+          [
+            1242,
+            1243
+          ],
+          [
+            1344,
+            1345
+          ],
+          [
+            1476,
+            1477
+          ],
+          [
+            1598,
+            1599
+          ],
+          [
+            1630,
+            1631
+          ],
+          [
+            1717,
+            1718
+          ],
+          [
+            1833,
+            1834
+          ],
+          [
+            1957,
+            1958
+          ],
+          [
+            1975,
+            1976
+          ],
+          [
+            2150,
+            2151
+          ],
+          [
+            2331,
+            2332
+          ],
+          [
+            2421,
+            2422
+          ],
+          [
+            2562,
+            2563
+          ],
+          [
+            2647,
+            2648
+          ],
+          [
+            2741,
+            2742
+          ],
+          [
+            2762,
+            2763
+          ],
+          [
+            2808,
+            2809
+          ],
+          [
+            2941,
+            2942
+          ],
+          [
+            3052,
+            3053
+          ],
+          [
+            3189,
+            3190
+          ],
+          [
+            3328,
+            3329
+          ],
+          [
+            3425,
+            3426
+          ],
+          [
+            3498,
+            3499
+          ],
+          [
+            3618,
+            3619
+          ],
+          [
+            3720,
+            3721
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "informative_technical_talk_report",
+        "fit": "yes",
+        "reason": "A complete report structured around data lifecycle, storage tiers, hardware roadmaps, and software cost tradeoffs."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/d5wZmCfW9GSEA7FMg40C",
+        "published_date_asia_shanghai": "2026-07-22",
+        "published_timestamp_utc": "2026-07-22T06:12:17.113000+00:00",
+        "collected_at": "2026-09-14T08:39:31.141773+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "李冬梅"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Saved provenance is unresolved. The article attributes examples, estimates, and roadmaps to a named speaker and company. The language and editing history of the talk/report remain unknown.",
+        "body_evidence_refs": []
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "framing_opposition_and_closing_recap",
+          "evidence_refs": [
+            "b003",
+            "b016",
+            "b037",
+            "b038"
+          ],
+          "assessment": "Several framing devices recur, but the middle sections explain each tradeoff and constrain the generalizations. They do not form an unsupported or disconnected chain.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b003",
+          "role": "candidate_problem",
+          "block_id": "b003",
+          "body_unicode_start": 240,
+          "body_unicode_end": 388,
+          "source_line_start": 3,
+          "source_line_end": 3,
+          "quote": "这并不意味着 HDD 会取代 SSD，更不意味着所有 AI 数据都应该回到机械硬盘。真正发生的变化是，HBM、DRAM、SSD 和 HDD 之间的边界正在重新划分。AI 基础设施竞争的下一阶段，不只是购买更多 GPU，还包括如何把数据放在合适的介质上，并控制每 TB 数据在整个生命周期内的成本。",
+          "dom_presentation_quote": "这并不意味着 HDD 会取代 SSD，更不意味着所有 AI 数据都应该回到机械硬盘。真正发生的变化是，HBM、DRAM、SSD 和 HDD 之间的边界正在重新划分。AI 基础设施竞争的下一阶段，不只是购买更多 GPU，还包括如何把数据放在合适的介质上，并控制每 TB 数据在整个生命周期内的成本。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The lead uses repeated negation before a general reclassification of storage. Whole-article evidence is needed to distinguish a necessary scope limit from gratuitous opposition."
+        },
+        {
+          "evidence_id": "b016",
+          "role": "candidate_problem",
+          "block_id": "b016",
+          "body_unicode_start": 1477,
+          "body_unicode_end": 1598,
+          "source_line_start": 16,
+          "source_line_end": 16,
+          "quote": "这种分层并不是厂商人为划定的产品边界，而是由性能和经济性共同决定。没有大型 AI 系统会把所有数据长期保存在 HBM 或 DRAM 中，也不可能把需要高并发随机访问的数据全部放到 HDD 上。数据必须根据热度，从内存迁移到闪存，再进入容量层。",
+          "dom_presentation_quote": "这种分层并不是厂商人为划定的产品边界，而是由性能和经济性共同决定。没有大型 AI 系统会把所有数据长期保存在 HBM 或 DRAM 中，也不可能把需要高并发随机访问的数据全部放到 HDD 上。数据必须根据热度，从内存迁移到闪存，再进入容量层。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The vendor-boundary versus performance/economics contrast sounds categorical, but the following resource constraints supply its counterpart."
+        },
+        {
+          "evidence_id": "b037",
+          "role": "candidate_problem",
+          "block_id": "b037",
+          "body_unicode_start": 3619,
+          "body_unicode_end": 3720,
+          "source_line_start": 37,
+          "source_line_end": 37,
+          "quote": "AI 基础设施正在把行业带回一个并不新鲜、却更加迫切的问题：昂贵的计算资源需要高速数据供给，但不断累积的数据又不可能全部留在高性能介质中。未来的数据中心必须在速度、容量、功耗和成本之间进行更精细的分层。",
+          "dom_presentation_quote": "AI 基础设施正在把行业带回一个并不新鲜、却更加迫切的问题：昂贵的计算资源需要高速数据供给，但不断累积的数据又不可能全部留在高性能介质中。未来的数据中心必须在速度、容量、功耗和成本之间进行更精细的分层。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The penultimate paragraph recaps the tradeoff at a broad level."
+        },
+        {
+          "evidence_id": "b038",
+          "role": "candidate_problem",
+          "block_id": "b038",
+          "body_unicode_start": 3721,
+          "body_unicode_end": 3833,
+          "source_line_start": 38,
+          "source_line_end": 38,
+          "quote": "GPU 决定模型能够算多快，存储系统则决定这些计算产生的数据能否被长期、经济地保存和再次利用。随着 AI 生成内容进入持续复制和循环训练阶段，存储不再只是计算之后的配套环节，而正在成为规模化 AI 能否维持经济性的关键约束。",
+          "dom_presentation_quote": "GPU 决定模型能够算多快，存储系统则决定这些计算产生的数据能否被长期、经济地保存和再次利用。随着 AI 生成内容进入持续复制和循环训练阶段，存储不再只是计算之后的配套环节，而正在成为规模化 AI 能否维持经济性的关键约束。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The final paragraph repeats the compute/storage relationship as a concluding significance claim."
+        },
+        {
+          "evidence_id": "b007",
+          "role": "counterexample",
+          "block_id": "b007",
+          "body_unicode_start": 631,
+          "body_unicode_end": 765,
+          "source_line_start": 7,
+          "source_line_end": 7,
+          "quote": "Rausch 在演讲中演示了一个视频生成请求：让 AI 生成一段 8 秒、720p 的短片。最终下载的视频大小只有 3.97MB，但按照其展示的系统估算，生成过程中约有 44GB 数据经过 GPU 处理，涉及约 40GB 模型权重、4GB 潜在张量以及解码后的原始帧。",
+          "dom_presentation_quote": "Rausch 在演讲中演示了一个视频生成请求：让 AI 生成一段 8 秒、720p 的短片。最终下载的视频大小只有 3.97MB，但按照其展示的系统估算，生成过程中约有 44GB 数据经过 GPU 处理，涉及约 40GB 模型权重、4GB 潜在张量以及解码后的原始帧。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The video example supplies separate generated-file, model-weight, and processing quantities."
+        },
+        {
+          "evidence_id": "b009",
+          "role": "counterexample",
+          "block_id": "b009",
+          "body_unicode_start": 859,
+          "body_unicode_end": 946,
+          "source_line_start": 9,
+          "source_line_end": 9,
+          "quote": "这一比例显然不能直接外推到所有 AI 应用，不同平台对中间结果、日志和合规数据的保留策略差异很大。但它揭示了一个普遍现象：用户看到的生成结果，只是 AI 数据足迹的一小部分。",
+          "dom_presentation_quote": "这一比例显然不能直接外推到所有 AI 应用，不同平台对中间结果、日志和合规数据的保留策略差异很大。但它揭示了一个普遍现象：用户看到的生成结果，只是 AI 数据足迹的一小部分。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The report explicitly prohibits directly generalizing the example ratio to every application."
+        },
+        {
+          "evidence_id": "b024",
+          "role": "counterexample",
+          "block_id": "b024",
+          "body_unicode_start": 2332,
+          "body_unicode_end": 2421,
+          "source_line_start": 24,
+          "source_line_end": 24,
+          "quote": "不过，容量增加也会带来新的问题。如果单盘容量翻倍，但读写性能没有同步提升，完成一次全盘扫描、数据重建或故障恢复所需的时间也会明显延长。在大规模存储集群中，这会直接影响系统可用性。",
+          "dom_presentation_quote": "不过，容量增加也会带来新的问题。如果单盘容量翻倍，但读写性能没有同步提升，完成一次全盘扫描、数据重建或故障恢复所需的时间也会明显延长。在大规模存储集群中，这会直接影响系统可用性。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A capacity increase without throughput growth is linked to concrete scan/rebuild/recovery costs."
+        },
+        {
+          "evidence_id": "b030",
+          "role": "counterexample",
+          "block_id": "b030",
+          "body_unicode_start": 2809,
+          "body_unicode_end": 2941,
+          "source_line_start": 30,
+          "source_line_end": 30,
+          "quote": "SMR 通过让相邻磁道像屋瓦一样部分重叠，在相同盘片面积上增加约 20%的容量。但其代价是写入方式发生变化。传统 CMR 硬盘可以直接改写任意磁道，SMR 则需要按照分区顺序写入。删除数据后，系统还要读取分区中的有效内容，将保留数据与新数据重新写回，完成垃圾回收。",
+          "dom_presentation_quote": "SMR 通过让相邻磁道像屋瓦一样部分重叠，在相同盘片面积上增加约 20%的容量。但其代价是写入方式发生变化。传统 CMR 硬盘可以直接改写任意磁道，SMR 则需要按照分区顺序写入。删除数据后，系统还要读取分区中的有效内容，将保留数据与新数据重新写回，完成垃圾回收。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The SMR explanation supplies the physical layout and write/reclamation mechanism."
+        },
+        {
+          "evidence_id": "b031",
+          "role": "counterexample",
+          "block_id": "b031",
+          "body_unicode_start": 2942,
+          "body_unicode_end": 3052,
+          "source_line_start": 31,
+          "source_line_end": 31,
+          "quote": "这意味着 SMR 并不是简单替换硬盘即可获得 20%容量。主机和存储软件必须理解分区状态、管理顺序写入，并根据业务负载安排垃圾回收。它更适合写入模式可预测、大文件占比较高，或者软件栈能够进行针对性改造的超大规模存储系统。",
+          "dom_presentation_quote": "这意味着 SMR 并不是简单替换硬盘即可获得 20%容量。主机和存储软件必须理解分区状态、管理顺序写入，并根据业务负载安排垃圾回收。它更适合写入模式可预测、大文件占比较高，或者软件栈能够进行针对性改造的超大规模存储系统。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The contrast with a drop-in replacement identifies the actual software obligations and applicable workloads."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b007",
+        "b009",
+        "b024",
+        "b030",
+        "b031"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "The negations prevent an incorrect HDD-replaces-SSD interpretation and the later contrasts describe specific engineering costs. Closing recap is present, but the report is substantially explanatory rather than a sustained cluster of the nominated problems.",
+      "uncertainty": "Vendor figures and roadmaps are attributed, not independently validated. This screen does not certify the technical claims or infer provenance from the Chinese report.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "e594db9c3260b60d8b18d62c",
+      "title": "科大讯飞面向超大规模教育场景的 Agent 系统架构演进与工程实践｜AICon上海",
+      "english_title": "AICon education-agent session announcement",
+      "body_path": "data/local/media-provenance-extension-v1/documents/e594db9c3260b60d8b18d62c/body.txt",
+      "body_sha256": "c25276041815c3ce9e809d2a9471e045df980b3540132390606eda82e2c4afc5",
+      "body_bytes": 5380,
+      "body_unicode_codepoints": 2086,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/e594db9c3260b60d8b18d62c/metadata.json",
+      "metadata_sha256": "77fe0b9f494c25243588be35ba9cefa2ad8eabcc53ec8c45964055e7657d1087",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/e594db9c3260b60d8b18d62c/blocks.json",
+      "blocks_sha256": "f3e8fee7be7c35dbaf63027f80d7926dde85bd2a2372a173e5ace230b4770673",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b041",
+            "body_unicode_start": 0,
+            "body_unicode_end": 2086
+          }
+        ],
+        "covered_block_count": 41,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            81,
+            82
+          ],
+          [
+            282,
+            283
+          ],
+          [
+            567,
+            568
+          ],
+          [
+            748,
+            749
+          ],
+          [
+            754,
+            755
+          ],
+          [
+            783,
+            784
+          ],
+          [
+            822,
+            823
+          ],
+          [
+            874,
+            875
+          ],
+          [
+            923,
+            924
+          ],
+          [
+            964,
+            965
+          ],
+          [
+            1001,
+            1002
+          ],
+          [
+            1045,
+            1046
+          ],
+          [
+            1094,
+            1095
+          ],
+          [
+            1123,
+            1124
+          ],
+          [
+            1155,
+            1156
+          ],
+          [
+            1182,
+            1183
+          ],
+          [
+            1218,
+            1219
+          ],
+          [
+            1262,
+            1263
+          ],
+          [
+            1288,
+            1289
+          ],
+          [
+            1322,
+            1323
+          ],
+          [
+            1376,
+            1377
+          ],
+          [
+            1407,
+            1408
+          ],
+          [
+            1447,
+            1448
+          ],
+          [
+            1481,
+            1482
+          ],
+          [
+            1529,
+            1530
+          ],
+          [
+            1556,
+            1557
+          ],
+          [
+            1597,
+            1598
+          ],
+          [
+            1616,
+            1617
+          ],
+          [
+            1642,
+            1643
+          ],
+          [
+            1662,
+            1663
+          ],
+          [
+            1688,
+            1689
+          ],
+          [
+            1718,
+            1719
+          ],
+          [
+            1738,
+            1739
+          ],
+          [
+            1761,
+            1762
+          ],
+          [
+            1785,
+            1786
+          ],
+          [
+            1791,
+            1792
+          ],
+          [
+            1819,
+            1820
+          ],
+          [
+            1836,
+            1837
+          ],
+          [
+            1872,
+            1873
+          ],
+          [
+            2053,
+            2054
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "conference_session_promotion_and_outline",
+        "fit": "no_for_developed_informative_article",
+        "reason": "The body announces a future event, introduces a speaker, lists an agenda and audience benefits, and ends with a booking contact. It promises an explanation rather than supplying a developed article."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/yuljK2uBsZXszoWbZhOS",
+        "published_date_asia_shanghai": "2026-05-15",
+        "published_timestamp_utc": "2026-05-15T02:00:00.843000+00:00",
+        "collected_at": "2026-09-14T08:39:34.170668+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "AICon 全球人工智能开发与应用大会"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Saved provenance is unresolved. The conference byline and speaker biography establish the promotional setting, not native-Chinese authorship or the origin of agenda wording.",
+        "body_evidence_refs": []
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "outline_opposition",
+          "evidence_refs": [
+            "b009",
+            "b010",
+            "b027"
+          ],
+          "assessment": "Repeated oppositions occur, but the source is an agenda designed to compress claims. Missing exposition in an outline cannot be treated as a full-article argumentative defect.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b002",
+          "role": "format",
+          "block_id": "b002",
+          "body_unicode_start": 82,
+          "body_unicode_end": 282,
+          "source_line_start": 2,
+          "source_line_end": 4,
+          "quote": "6 月 26 日-6 月 27 日，\nAICon全球人工智能开发与应用大会\n将在上海举办。本次大会将围绕以上问题，邀请来自腾讯、阿里、快手、华为、飞猪等 50+头部企业的技术负责人、高校与科研机构的一线专家，分享 Agent 在真实生产环境中的落地经验与前瞻思考。深入探讨 Agent 从原型到量产的工程挑战、数据与记忆的基础设施底座、安全可信的落地保障，以及大模型推理优化、智算架构升级等关键命题。",
+          "dom_presentation_quote": "6 月 26 日-6 月 27 日，AICon全球人工智能开发与应用大会将在上海举办。本次大会将围绕以上问题，邀请来自腾讯、阿里、快手、华为、飞猪等 50+头部企业的技术负责人、高校与科研机构的一线专家，分享 Agent 在真实生产环境中的落地经验与前瞻思考。深入探讨 Agent 从原型到量产的工程挑战、数据与记忆的基础设施底座、安全可信的落地保障，以及大模型推理优化、智算架构升级等关键命题。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The text announces a future conference and promised expert sessions."
+        },
+        {
+          "evidence_id": "b009",
+          "role": "candidate_problem",
+          "block_id": "b009",
+          "body_unicode_start": 875,
+          "body_unicode_end": 923,
+          "source_line_start": 15,
+          "source_line_end": 15,
+          "quote": "在复杂业务里，决定系统表现的往往不只是模型，而是整个运行时如何让系统更快感知、更快纠偏、更快恢复",
+          "dom_presentation_quote": "在复杂业务里，决定系统表现的往往不只是模型，而是整个运行时如何让系统更快感知、更快纠偏、更快恢复",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A model-versus-runtime claim appears as an agenda assertion rather than a developed argument."
+        },
+        {
+          "evidence_id": "b010",
+          "role": "candidate_problem",
+          "block_id": "b010",
+          "body_unicode_start": 924,
+          "body_unicode_end": 964,
+          "source_line_start": 16,
+          "source_line_end": 16,
+          "quote": "2. WISH 平台的核心定位：不是一个画布，而是 Agent 时代的运行时底座",
+          "dom_presentation_quote": "2. WISH 平台的核心定位：不是一个画布，而是 Agent 时代的运行时底座",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The canvas-versus-runtime replacement is a session-positioning slogan; its premises are not supplied in this outline."
+        },
+        {
+          "evidence_id": "b027",
+          "role": "candidate_problem",
+          "block_id": "b027",
+          "body_unicode_start": 1557,
+          "body_unicode_end": 1597,
+          "source_line_start": 33,
+          "source_line_end": 33,
+          "quote": "5. 混合云弹性与线上稳定性：Agent 系统不能只会做题，还要能活在生产环境里",
+          "dom_presentation_quote": "5. 混合云弹性与线上稳定性：Agent 系统不能只会做题，还要能活在生产环境里",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The test-taking-versus-production contrast is another promotional outline heading."
+        },
+        {
+          "evidence_id": "b015",
+          "role": "counterexample",
+          "block_id": "b015",
+          "body_unicode_start": 1124,
+          "body_unicode_end": 1155,
+          "source_line_start": 21,
+          "source_line_end": 21,
+          "quote": "调度器内核：节点状态机设计（未调度→预备→就绪→执行→已执行）",
+          "dom_presentation_quote": "调度器内核：节点状态机设计（未调度→预备→就绪→执行→已执行）",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A concrete node-state sequence shows that the outline contains specific technical subjects."
+        },
+        {
+          "evidence_id": "b023",
+          "role": "counterexample",
+          "block_id": "b023",
+          "body_unicode_start": 1408,
+          "body_unicode_end": 1447,
+          "source_line_start": 29,
+          "source_line_end": 29,
+          "quote": "分布式授权精准控制：基于 CRDT PN-Counter 的无冲突并发解决方案",
+          "dom_presentation_quote": "分布式授权精准控制：基于 CRDT PN-Counter 的无冲突并发解决方案",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The named CRDT counter mechanism identifies a concrete planned subject; it is not itself an explanation or evidence of rhetorical harm."
+        },
+        {
+          "evidence_id": "b039",
+          "role": "nonqualifying_observation",
+          "block_id": "b039",
+          "body_unicode_start": 1837,
+          "body_unicode_end": 1872,
+          "source_line_start": 45,
+          "source_line_end": 45,
+          "quote": "对于 Agent 时代下，对于底层 AI 基础设施超高要求的复杂度认知",
+          "dom_presentation_quote": "对于 Agent 时代下，对于底层 AI 基础设施超高要求的复杂度认知",
+          "collector_differs_from_presentation": false,
+          "interpretation": "Repeated prepositions make this audience-benefit item awkward. An isolated outline-grammar defect is not the requested strong-style phenomenon."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b015",
+        "b023"
+      ],
+      "disposition": "poor_format_fit",
+      "reason": "The text is a session advertisement and agenda, so it cannot stand in for a developed informative article. Slogans and one awkward audience-benefit item do not justify a strong-style nomination.",
+      "uncertainty": "The planned talk and slides were not inspected. This is a format disposition, not a readability-based research exclusion.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "ec1878a7f4b0847f94d21578",
+      "title": "2780 亿市场风口，MongoDB 游戏数据新基建技术揭秘！| Q推荐",
+      "english_title": "MongoDB livestream promotion",
+      "body_path": "data/local/media-provenance-extension-v1/documents/ec1878a7f4b0847f94d21578/body.txt",
+      "body_sha256": "346dc847689f09d8fcf9e56d43257d6df355067cf3e013f318c97c93a63ad1f4",
+      "body_bytes": 2048,
+      "body_unicode_codepoints": 863,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/ec1878a7f4b0847f94d21578/metadata.json",
+      "metadata_sha256": "c682dc7a0902fb442ab0268a22db631ac9864c5fa528b1181c6275828b8d96cd",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/ec1878a7f4b0847f94d21578/blocks.json",
+      "blocks_sha256": "21297d1255b3f1394ff8da941d4f733c0efc64e2a1473665fbaa6d508a9c6262",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b018",
+            "body_unicode_start": 0,
+            "body_unicode_end": 863
+          }
+        ],
+        "covered_block_count": 18,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            161,
+            162
+          ],
+          [
+            249,
+            250
+          ],
+          [
+            272,
+            273
+          ],
+          [
+            296,
+            297
+          ],
+          [
+            319,
+            320
+          ],
+          [
+            338,
+            339
+          ],
+          [
+            361,
+            362
+          ],
+          [
+            463,
+            464
+          ],
+          [
+            490,
+            491
+          ],
+          [
+            506,
+            507
+          ],
+          [
+            530,
+            531
+          ],
+          [
+            565,
+            566
+          ],
+          [
+            695,
+            696
+          ],
+          [
+            706,
+            707
+          ],
+          [
+            735,
+            736
+          ],
+          [
+            761,
+            762
+          ],
+          [
+            791,
+            792
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "livestream_promotion",
+        "fit": "no_for_developed_informative_article",
+        "reason": "Market framing and pain-point questions lead to a scheduled livestream, topic promises, and a reservation call to action. The body does not deliver the advertised technical explanation."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/8xtF2tvBopc4PBmQL32P",
+        "published_date_asia_shanghai": "2025-11-19",
+        "published_timestamp_utc": "2025-11-19T05:47:55.514000+00:00",
+        "collected_at": "2026-09-14T08:39:52.787577+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "Luna"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Saved provenance is unresolved. The report citation, event branding, and Chinese byline do not determine whether the copy was original, translated, or adapted.",
+        "body_evidence_refs": []
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "promotional_inference_and_restatement",
+          "evidence_refs": [
+            "b001",
+            "b013"
+          ],
+          "assessment": "A weak market-to-personal-benefit inference repeats, but it is ordinary event sales framing in a short announcement, not adequate coverage of sustained informative-article style.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b001",
+          "role": "candidate_problem",
+          "block_id": "b001",
+          "body_unicode_start": 0,
+          "body_unicode_end": 161,
+          "source_line_start": 1,
+          "source_line_end": 1,
+          "quote": "MongoDB 作为 NoSQL 数据库的重要代表，近年来市场表现强劲。据贝哲斯咨询发布的报告显示，2025 年，全球和中国 NoSQL 数据库市场规模分别达到 638.83 亿元与 216.31 亿元，预计 2032 年全球 NoSQL 数据库市场规模将会突破 2780 亿元。掌握其核心技术，正成为开发者的核心竞争力。",
+          "dom_presentation_quote": "MongoDB 作为 NoSQL 数据库的重要代表，近年来市场表现强劲。据贝哲斯咨询发布的报告显示，2025 年，全球和中国 NoSQL 数据库市场规模分别达到 638.83 亿元与 216.31 亿元，预计 2032 年全球 NoSQL 数据库市场规模将会突破 2780 亿元。掌握其核心技术，正成为开发者的核心竞争力。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The copy moves from the broad NoSQL market forecast to individual developer competitiveness without an explained link."
+        },
+        {
+          "evidence_id": "b013",
+          "role": "candidate_problem",
+          "block_id": "b013",
+          "body_unicode_start": 566,
+          "body_unicode_end": 695,
+          "source_line_start": 13,
+          "source_line_end": 16,
+          "quote": "无论是数据库开发者、运维人员，还是游戏行业技术负责人，这场直播将助你掌握 MongoDB 核心优化能力，让你在 2780 亿市场风口抢占先机！（\n2025 腾讯云 DBTalk 往期直播回顾：\nhttps://www.infoq.cn/theme/268\n）",
+          "dom_presentation_quote": "无论是数据库开发者、运维人员，还是游戏行业技术负责人，这场直播将助你掌握 MongoDB 核心优化能力，让你在 2780 亿市场风口抢占先机！（2025 腾讯云 DBTalk 往期直播回顾：https://www.infoq.cn/theme/268）",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The market-opportunity promise is repeated as a benefit of attending the livestream."
+        },
+        {
+          "evidence_id": "b008",
+          "role": "format",
+          "block_id": "b008",
+          "body_unicode_start": 362,
+          "body_unicode_end": 463,
+          "source_line_start": 8,
+          "source_line_end": 8,
+          "quote": "⏰ 11 月 25 日 19 点，「腾讯云 NoSQL」技术解密之 MongoDB 篇的直播重磅来袭，三位数据库技术专家坐镇，带来“游戏数据新基建”的技术创新与内核深度优化解析，一次性解决你的核心难题！",
+          "dom_presentation_quote": "⏰ 11 月 25 日 19 点，「腾讯云 NoSQL」技术解密之 MongoDB 篇的直播重磅来袭，三位数据库技术专家坐镇，带来“游戏数据新基建”的技术创新与内核深度优化解析，一次性解决你的核心难题！",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The scheduled livestream and broad promise to solve core problems establish the promotional function."
+        },
+        {
+          "evidence_id": "b018",
+          "role": "format",
+          "block_id": "b018",
+          "body_unicode_start": 792,
+          "body_unicode_end": 863,
+          "source_line_start": 21,
+          "source_line_end": 24,
+          "quote": "👇 11 月 25 日 19：00，扫描下方二维码或点击【\n链接\nhttps://qdrl.qq.com/vxOnEptf\n】，立即预约直播。",
+          "dom_presentation_quote": "👇 11 月 25 日 19：00，扫描下方二维码或点击【链接https://qdrl.qq.com/vxOnEptf】，立即预约直播。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The ending explicitly solicits reservations."
+        },
+        {
+          "evidence_id": "b004",
+          "role": "counterexample",
+          "block_id": "b004",
+          "body_unicode_start": 273,
+          "body_unicode_end": 296,
+          "source_line_start": 4,
+          "source_line_end": 4,
+          "quote": "❓ 大文档备份 / 回档效率低，影响用户体验？",
+          "dom_presentation_quote": "❓ 大文档备份 / 回档效率低，影响用户体验？",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The backup/rollback question identifies a concrete workload pain point, even though the article does not explain its solution."
+        },
+        {
+          "evidence_id": "b012",
+          "role": "counterexample",
+          "block_id": "b012",
+          "body_unicode_start": 531,
+          "body_unicode_end": 565,
+          "source_line_start": 12,
+          "source_line_end": 12,
+          "quote": "破解游戏行业高并发冲击难题：MongoDB 精细化限流与无损迁移架构",
+          "dom_presentation_quote": "破解游戏行业高并发冲击难题：MongoDB 精细化限流与无损迁移架构",
+          "collector_differs_from_presentation": false,
+          "interpretation": "Rate limiting and migration are concrete advertised topics; their list-like presentation is normal for this format."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b004",
+        "b012"
+      ],
+      "disposition": "poor_format_fit",
+      "reason": "The primary object is a reservation advertisement. Its unearned market-to-benefit leap is observable, but genre and the absence of developed exposition make it a poor substitute for the target article format.",
+      "uncertainty": "The market forecast and advertised event content are not verified. Promotional overclaiming is not treated as evidence of authorship or a strong AI-style label.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    },
+    {
+      "doc_id": "eeb75348b34b369f61245ecf",
+      "title": "1万亿美元天价薪酬敲定，马斯克离全球首位“万亿富豪”又近了一步",
+      "english_title": "Tesla compensation vote news brief",
+      "body_path": "data/local/media-provenance-extension-v1/documents/eeb75348b34b369f61245ecf/body.txt",
+      "body_sha256": "8a38f1c57abd28f8b82eefa83a5d51f3c633e4852a7654ad558beb32d5592471",
+      "body_bytes": 1600,
+      "body_unicode_codepoints": 584,
+      "metadata_path": "data/local/media-provenance-extension-v1/documents/eeb75348b34b369f61245ecf/metadata.json",
+      "metadata_sha256": "50e86f66b9a094b5014ea4e60bdab60643d3e6a6701a06721ee02dcfbedf5f70",
+      "blocks_path": "data/local/media-provenance-extension-v1/documents/eeb75348b34b369f61245ecf/blocks.json",
+      "blocks_sha256": "4d56578186e4355dbc2c3b0199d2466fb9b146f62fc3e2df0ac54d2df00b39fb",
+      "full_read": {
+        "attested": true,
+        "reviewer_identity": "Codex assistant subagent /root/target_coverage_rescreen",
+        "complete_body_read": true,
+        "read_method": "Sequential complete collector text in bounded DOM-block batches; each block was displayed with exact body offsets and saved source line locations. Saved presentation text was available for evidence interpretation.",
+        "read_batches": [
+          {
+            "first_block": "b001",
+            "last_block": "b007",
+            "body_unicode_start": 0,
+            "body_unicode_end": 584
+          }
+        ],
+        "covered_block_count": 7,
+        "block_mapping_verified": true,
+        "only_whitespace_between_blocks": true,
+        "interblock_whitespace_spans": [
+          [
+            165,
+            166
+          ],
+          [
+            216,
+            217
+          ],
+          [
+            311,
+            312
+          ],
+          [
+            346,
+            347
+          ],
+          [
+            450,
+            451
+          ],
+          [
+            526,
+            527
+          ]
+        ],
+        "all_body_text_covered": true,
+        "media_inspected": false
+      },
+      "format_fit": {
+        "classification": "self_contained_news_brief",
+        "fit": "limited_but_informative",
+        "reason": "The seven-paragraph captured body reports a vote, conditions, a scene, and an analyst comment. It is brief and compressed but complete as captured; length alone is not an exclusion."
+      },
+      "source_evidence": {
+        "url": "https://www.infoq.cn/article/sEkcNoIvYiRxviu5qw90",
+        "published_date_asia_shanghai": "2025-11-07",
+        "published_timestamp_utc": "2025-11-07T02:17:29.577000+00:00",
+        "collected_at": "2026-09-14T08:39:55.948295+00:00",
+        "acquisition_method": "published_sitemap_and_live_public_page",
+        "authors": [
+          "李冬梅"
+        ],
+        "translators": [],
+        "recorded_translation_status": "unresolved",
+        "recorded_provenance": {
+          "stratum": "unresolved",
+          "method": "fixed_existing_deterministic_evidence_rules",
+          "evidence": [],
+          "direct_expression_matches": [],
+          "original_chinese_certified": false,
+          "production_history_verified": false,
+          "translation_is_research_exclusion": false
+        },
+        "visibility_evidence": "page_view_snapshot",
+        "assessment": "Saved provenance is unresolved. A named analyst quotation establishes local attribution; the article-level language and editing history remain unknown.",
+        "body_evidence_refs": [
+          "b006"
+        ]
+      },
+      "candidate_problem_clusters": [
+        {
+          "family": "brief_recap_and_abstract_close",
+          "evidence_refs": [
+            "b002",
+            "b007"
+          ],
+          "assessment": "Two compressed news-writing conventions are visible, but there is insufficient sustained developed discourse to establish the requested strong-style pattern.",
+          "sustained_strong_target_established": false
+        }
+      ],
+      "evidence": [
+        {
+          "evidence_id": "b001",
+          "role": "counterexample",
+          "block_id": "b001",
+          "body_unicode_start": 0,
+          "body_unicode_end": 165,
+          "source_line_start": 1,
+          "source_line_end": 3,
+          "quote": "美国当地时间本周四，特斯拉股东以压倒性投票（75%）通过了一项前所未有的薪酬计划——如果所有目标实现，这将让 CEO 埃隆·马斯克获得高达\n1 万亿美元\n的薪酬包。这项计划预计将于 2035 年全面生效，前提是马斯克及特斯拉能够完成一系列雄心勃勃的财务和生产目标。届时，马斯克在公司的持股比例将从目前的 12% 提升至约 25%。",
+          "dom_presentation_quote": "美国当地时间本周四，特斯拉股东以压倒性投票（75%）通过了一项前所未有的薪酬计划——如果所有目标实现，这将让 CEO 埃隆·马斯克获得高达 1 万亿美元的薪酬包。这项计划预计将于 2035 年全面生效，前提是马斯克及特斯拉能够完成一系列雄心勃勃的财务和生产目标。届时，马斯克在公司的持股比例将从目前的 12% 提升至约 25%。",
+          "collector_differs_from_presentation": true,
+          "interpretation": "The lead retains the conditional nature of the compensation and names future targets and timing."
+        },
+        {
+          "evidence_id": "b002",
+          "role": "candidate_problem",
+          "block_id": "b002",
+          "body_unicode_start": 166,
+          "body_unicode_end": 216,
+          "source_line_start": 4,
+          "source_line_end": 4,
+          "quote": "在初步投票中，超过 75%的特斯拉股东支持这一方案，显示出投资者对马斯克领导力和公司未来的强烈信心。",
+          "dom_presentation_quote": "在初步投票中，超过 75%的特斯拉股东支持这一方案，显示出投资者对马斯克领导力和公司未来的强烈信心。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The vote statistic is repeated and interpreted as confidence, adding little new reporting."
+        },
+        {
+          "evidence_id": "b007",
+          "role": "candidate_problem",
+          "block_id": "b007",
+          "body_unicode_start": 527,
+          "body_unicode_end": 584,
+          "source_line_start": 9,
+          "source_line_end": 9,
+          "quote": "这项创纪录的薪酬计划不仅彰显了马斯克与特斯拉之间的高度绑定，也代表着股东们对公司未来十年技术转型与产业拓展的豪赌。",
+          "dom_presentation_quote": "这项创纪录的薪酬计划不仅彰显了马斯克与特斯拉之间的高度绑定，也代表着股东们对公司未来十年技术转型与产业拓展的豪赌。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The closing sentence expands the event into a broad binding-and-bet conclusion, without further detail."
+        },
+        {
+          "evidence_id": "b005",
+          "role": "counterexample",
+          "block_id": "b005",
+          "body_unicode_start": 347,
+          "body_unicode_end": 450,
+          "source_line_start": 7,
+          "source_line_end": 7,
+          "quote": "除了保持电动汽车领域的领先地位，公司还需在自动驾驶技术、机器人以及 AI 制造等行业中超越竞争对手。分析人士指出，Optimus 必须成为一个真正具备商业与生产价值的机器人，而不仅仅是“会跳舞的秀场明星”。",
+          "dom_presentation_quote": "除了保持电动汽车领域的领先地位，公司还需在自动驾驶技术、机器人以及 AI 制造等行业中超越竞争对手。分析人士指出，Optimus 必须成为一个真正具备商业与生产价值的机器人，而不仅仅是“会跳舞的秀场明星”。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "The robot-performance versus stage-show contrast specifies the commercial condition being discussed."
+        },
+        {
+          "evidence_id": "b006",
+          "role": "provenance",
+          "block_id": "b006",
+          "body_unicode_start": 451,
+          "body_unicode_end": 526,
+          "source_line_start": 8,
+          "source_line_end": 8,
+          "quote": "“特斯拉不仅要在美国市场保持领先，还必须在欧洲及全球范围内确立统治地位，”晨星公司高级股票分析师塞思·戈德斯坦（Seth Goldstein） 表示。",
+          "dom_presentation_quote": "“特斯拉不仅要在美国市场保持领先，还必须在欧洲及全球范围内确立统治地位，”晨星公司高级股票分析师塞思·戈德斯坦（Seth Goldstein） 表示。",
+          "collector_differs_from_presentation": false,
+          "interpretation": "A named analyst is directly quoted; that does not establish the production history of the surrounding prose."
+        }
+      ],
+      "counterexample_evidence_refs": [
+        "b001",
+        "b005"
+      ],
+      "disposition": "weak_or_ambiguous",
+      "reason": "There is a repeated vote statistic and a generic closing line, but the conditional lead and commercial-performance contrast are meaningful. A short, self-contained brief is not promoted to a strong-style case on these local observations.",
+      "uncertainty": "The brief does not detail all performance targets, and the source claims are not independently verified. Limited discourse scope reduces nomination confidence rather than creating a length-based admission failure.",
+      "human_label": false,
+      "authorship_inference": false,
+      "reader_validation": false,
+      "rewrite_generated": false
+    }
+  ]
+}

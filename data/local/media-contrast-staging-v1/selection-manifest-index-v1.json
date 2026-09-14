@@ -1,0 +1,381 @@
+{
+  "version": "media-contrast-staging-v1",
+  "seed": "media-contrast-staging-v1-20260914",
+  "created_at": "2026-09-14T06:31:58.983834+00:00",
+  "user_agent": "DeAIodorantMediaStaging/1.0 (bounded non-commercial public research)",
+  "source_frames": {
+    "post": "https://www.infoq.cn/sitemap/index_1.xml",
+    "pre": "https://www.infoq.cn/sitemap/index_3.xml"
+  },
+  "limit_per_intended_cohort": 12,
+  "selection_rule": "Use each specified sitemap index as an intended-period frame without inferring URL publication dates. Exclude known identities and robots-disallowed URLs, rank canonical URLs by SHA-256(seed + '-' + cohort + NUL + URL), and select exactly 12 per index. Actual publication dates come from captured article state; keep all wrong-period/failure outcomes without backfill.",
+  "primary_dates": {
+    "pre_exclusive_end": "2023-01-01",
+    "post_inclusive_start": "2025-07-01"
+  },
+  "identity_exclusions_sha256": "80e298e0ef32cefb7afc72e1787180e238795b5342544fc6d78947f1037de9d6",
+  "root_identity_export_sha256": "55db010a1781c76ce03a257bfcbd836ae6a81c5d1438fc414cfdc87749abcaf1",
+  "script_sha256_at_freeze": "9aaf59e38c4abeb32b30f9a74be628f973e32b7f37bc85607e0fb3c772820f2e",
+  "collector_sha256": "3d98d353e1d9e1c117aa79d7c3a14b3cb10ebac2a52f80a5c3847e909724cbe6",
+  "presentation_script_sha256": "a5a6e60a6dce2fa3cc0fa31628f6cc61afad535cab0931284abe3fa2737e0417",
+  "runtime": {
+    "python": "3.13.5",
+    "requests": "2.32.4",
+    "beautifulsoup4": "4.14.3",
+    "parser": "html.parser"
+  },
+  "frames": {
+    "post": {
+      "request": {
+        "url": "https://www.infoq.cn/sitemap/index_1.xml",
+        "requested_at": "2026-09-14T06:32:02.065784+00:00",
+        "capture_file": "raw/sitemap-post.xml",
+        "status": 200,
+        "response_url": "https://www.infoq.cn/sitemap/index_1.xml",
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8",
+          "Date": "Mon, 14 Sep 2026 06:32:03 GMT",
+          "Last-Modified": "Sat, 12 Sep 2026 20:03:44 GMT"
+        },
+        "completed_at": "2026-09-14T06:32:03.060569+00:00",
+        "complete_response": true,
+        "bytes": 1404787,
+        "sha256": "d91858055241a25d519d6c15c970e9db656368e82dd8c7252331c1dbd63c78c7"
+      },
+      "article_entries": 4023,
+      "unique_article_urls": 4023,
+      "selected": 12,
+      "lastmod_min": null,
+      "lastmod_max": null,
+      "exclusion_counts": {
+        "known_identity_exclusion": 56
+      },
+      "frame_file_sha256": "95d936d070956df64fb1a14b3058b34504eda853f8d593d764c60a6d34407ddb",
+      "eligible_index_frame": 3967
+    },
+    "pre": {
+      "request": {
+        "url": "https://www.infoq.cn/sitemap/index_3.xml",
+        "requested_at": "2026-09-14T06:32:05.060664+00:00",
+        "capture_file": "raw/sitemap-pre.xml",
+        "status": 200,
+        "response_url": "https://www.infoq.cn/sitemap/index_3.xml",
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8",
+          "Date": "Mon, 14 Sep 2026 06:32:06 GMT",
+          "Last-Modified": "Sat, 12 Sep 2026 20:03:44 GMT"
+        },
+        "completed_at": "2026-09-14T06:32:06.080578+00:00",
+        "complete_response": true,
+        "bytes": 1436192,
+        "sha256": "1d5e50773f1c83e8704a1c24a16718fdf11a650d012e95aab266f97fad711bfd"
+      },
+      "article_entries": 7868,
+      "unique_article_urls": 7868,
+      "selected": 12,
+      "lastmod_min": null,
+      "lastmod_max": null,
+      "exclusion_counts": {
+        "known_identity_exclusion": 66
+      },
+      "frame_file_sha256": "f4801ed11915d8bb95a317d4c21c1416821bff8ae92207051c2b654f371223c4",
+      "eligible_index_frame": 7802
+    }
+  },
+  "selections": [
+    {
+      "frame_index": 8843,
+      "url": "https://www.infoq.cn/article/yGwXLYsrhMDwUqoYgMsh",
+      "doc_id": "8bfb7b3e6b210126548b7f0c",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 1
+    },
+    {
+      "frame_index": 8689,
+      "url": "https://www.infoq.cn/article/Gqltf7tslmJY8iK9GXLo",
+      "doc_id": "0be079018045fbf1f2d47d7f",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 2
+    },
+    {
+      "frame_index": 8343,
+      "url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl",
+      "doc_id": "c526ed941b8de39a5388df3d",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 3
+    },
+    {
+      "frame_index": 7981,
+      "url": "https://www.infoq.cn/article/jBHvjgz11gvzGRJf818T",
+      "doc_id": "577ba2d1fd46fae48e0ad5d2",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 4
+    },
+    {
+      "frame_index": 8618,
+      "url": "https://www.infoq.cn/article/yYvYwDZJOIEVI2h1rKvq",
+      "doc_id": "9d2686869fb90420de5a6d40",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 5
+    },
+    {
+      "frame_index": 7797,
+      "url": "https://www.infoq.cn/article/DsLsUs6SNlB6M4FFMIar",
+      "doc_id": "21fb54b8f31d94d5f58b2b86",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 6
+    },
+    {
+      "frame_index": 7249,
+      "url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ",
+      "doc_id": "9656e09a0c8ef6938c517cef",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 7
+    },
+    {
+      "frame_index": 7200,
+      "url": "https://www.infoq.cn/article/FA7cwRtSJMI63GFiHFDX",
+      "doc_id": "83e3fb47524511fba7945931",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 8
+    },
+    {
+      "frame_index": 8197,
+      "url": "https://www.infoq.cn/article/WVlzEl33IYR1SH7mBssb",
+      "doc_id": "6e1b7928a8a00ba027e8c8fa",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 9
+    },
+    {
+      "frame_index": 8709,
+      "url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA",
+      "doc_id": "a4007204435ea4d0895d0d46",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 10
+    },
+    {
+      "frame_index": 6525,
+      "url": "https://www.infoq.cn/article/JCXUmEkVTBw3mjjtgwgY",
+      "doc_id": "3fdc45a2c7759e78fc9013c9",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 11
+    },
+    {
+      "frame_index": 9670,
+      "url": "https://www.infoq.cn/article/QlBwolS6TLQ36PaYGYf5",
+      "doc_id": "5eccef97088993c9842a4e4c",
+      "sitemap_lastmod": null,
+      "intended_cohort": "post",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 12
+    },
+    {
+      "frame_index": 9695,
+      "url": "https://www.infoq.cn/article/lYUw79lJH9bZv7HrgGH5",
+      "doc_id": "769ecc5e088514e4261ae7e0",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 1
+    },
+    {
+      "frame_index": 9281,
+      "url": "https://www.infoq.cn/article/8PBvbU3Dagb5Bsut663J",
+      "doc_id": "8a835ce2a2584c3c9040fcc5",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 2
+    },
+    {
+      "frame_index": 4140,
+      "url": "https://www.infoq.cn/article/omyedsPw1aNVgoWz0G61",
+      "doc_id": "d679960cb6cb418eebb6b222",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 3
+    },
+    {
+      "frame_index": 424,
+      "url": "https://www.infoq.cn/article/1jdi4LDTycjblozS8QwV",
+      "doc_id": "550a11e0e8987efc94c654b7",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 4
+    },
+    {
+      "frame_index": 7767,
+      "url": "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2",
+      "doc_id": "195940f04347559f68fbfdcb",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 5
+    },
+    {
+      "frame_index": 628,
+      "url": "https://www.infoq.cn/article/VLIDZiKBqtCyrMm8mjc1",
+      "doc_id": "8bdf575aae4fe9a3b509a492",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 6
+    },
+    {
+      "frame_index": 3514,
+      "url": "https://www.infoq.cn/article/4CFTC0TgkMout6hFBxG2",
+      "doc_id": "738c96bc2777301fdaf9f078",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 7
+    },
+    {
+      "frame_index": 8653,
+      "url": "https://www.infoq.cn/article/iDHE7UyH91pALUZh9OaV",
+      "doc_id": "c979e224eb220101fb785893",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 8
+    },
+    {
+      "frame_index": 9666,
+      "url": "https://www.infoq.cn/article/7W4l7Riw6Z5ZFvHwqASy",
+      "doc_id": "94484784827b950a4ea5beea",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 9
+    },
+    {
+      "frame_index": 2918,
+      "url": "https://www.infoq.cn/article/mZ8qWjhqZyhDj7UfgTl1",
+      "doc_id": "0c1bc051de0fc98fbcd0524d",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 10
+    },
+    {
+      "frame_index": 3128,
+      "url": "https://www.infoq.cn/article/Ra4l1gamNjHqQ9ZNlaKQ",
+      "doc_id": "2e0d0c6274b0a0e6a333fbb9",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 11
+    },
+    {
+      "frame_index": 5147,
+      "url": "https://www.infoq.cn/article/PHir9fGyTSQtiAQ035gi",
+      "doc_id": "2762aba55519d5e3e9349b17",
+      "sitemap_lastmod": null,
+      "intended_cohort": "pre",
+      "publication_date": "unknown_until_article_capture",
+      "exclusion_reasons": [],
+      "selected": true,
+      "selection_rank": 12
+    }
+  ],
+  "corpus_admission": "none_unreviewed_acquisition_staging",
+  "network_policy": "Unauthenticated public GET only; no environment credentials, redirects, cookies, hidden endpoints, retries, or referenced-media requests; stop on 429/Retry-After.",
+  "robots_request": {
+    "url": "https://www.infoq.cn/robots.txt",
+    "requested_at": "2026-09-14T06:31:59.017060+00:00",
+    "capture_file": "raw/robots.txt",
+    "status": 200,
+    "response_url": "https://www.infoq.cn/robots.txt",
+    "headers": {
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Content-Length": "206",
+      "Date": "Mon, 14 Sep 2026 06:32:00 GMT",
+      "ETag": "\"5eb37846-ce\"",
+      "Last-Modified": "Thu, 07 May 2020 02:53:58 GMT"
+    },
+    "completed_at": "2026-09-14T06:32:00.065550+00:00",
+    "complete_response": true,
+    "bytes": 206,
+    "sha256": "1e4c6eb0a4aaf3610cfe4185584578c15cfa7cdb4bceb4568b1ed3fafe37c30e"
+  },
+  "minimum_request_interval_seconds": 2.0,
+  "frozen_at": "2026-09-14T06:33:42.587458+00:00",
+  "amendment": {
+    "version": "index-frame-selection-amendment-v1",
+    "authorized_at": "2026-09-14T06:33:37.801190+00:00",
+    "authority": "Parent agent approved before any article GET; fixed original indexes and quota retained.",
+    "reason": "Both captured sitemaps provide only loc/changefreq/priority; no per-URL date exists.",
+    "superseded_empty_selection_manifest_sha256": "8b594583e336cc675d9f237c0ae61a33af8fc1a86a02cfd30934f6816bdb1c5d",
+    "no_backfill": true
+  }
+}

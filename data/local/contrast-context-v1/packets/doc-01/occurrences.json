@@ -1,0 +1,19 @@
+{
+  "alias": "doc-01",
+  "content_hash": "f509113688836b5f21592f1a12066277fc262dddc7ad42d4a830771fcf2f2f0e",
+  "occurrences": [
+    {
+      "connector": {
+        "end_char": 627,
+        "start_char": 625,
+        "text": "而是"
+      },
+      "mechanical_context": {
+        "end_char": 636,
+        "start_char": 589,
+        "text": "\n但如果我们查询的是 key_n+1，元数据会显示该路径不在动态路径中，而是存储在共享数据中。"
+      },
+      "occurrence_id": "doc-01-e01"
+    }
+  ]
+}

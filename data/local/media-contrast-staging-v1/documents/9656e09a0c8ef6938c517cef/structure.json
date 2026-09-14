@@ -1,0 +1,64 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "Nuxt Test Utils",
+      "href": "https://github.com/nuxt/test-utils"
+    },
+    {
+      "text": "2026年2月7日发布",
+      "href": "https://github.com/nuxt/test-utils/releases/tag/v4.0.0"
+    },
+    {
+      "text": "配置文件中注册的端点会丢失",
+      "href": "https://github.com/nuxt/test-utils/pull/1549"
+    },
+    {
+      "text": "URL模式包含查询参数的端点",
+      "href": "https://github.com/nuxt/test-utils/pull/1560"
+    },
+    {
+      "text": "Nuxt官方测试文档",
+      "href": "http://nuxt.com/docs/getting-started/testing"
+    },
+    {
+      "text": "4.0.0版本说明",
+      "href": "https://github.com/nuxt/test-utils/releases/tag/v4.0.0"
+    },
+    {
+      "text": "GitHub迁移问题",
+      "href": "https://github.com/nuxt/test-utils/issues/644"
+    },
+    {
+      "text": "Daniel Roe",
+      "href": "https://roe.dev/"
+    },
+    {
+      "text": "每周npm的下载量超过47万次",
+      "href": "https://www.npmjs.com/package/@nuxt/test-utils"
+    },
+    {
+      "text": " Nuxt Test Utils v4: Vitest v4 Requirement, Mocking Overhaul and Stricter Environment Setup",
+      "href": "https://www.infoq.com/news/2026/03/nuxt-test-utils-4/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 24,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 1,
+    "a": 10
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/9656e09a0c8ef6938c517cef.html",
+  "raw_html_sha256": "331f9664328ea5188cb3018a21433ac0be61e291cb82bfd4015ceee8c15c241e"
+}

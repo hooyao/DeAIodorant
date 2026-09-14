@@ -1,0 +1,91 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/5f/5f64c521137d6e4b82da1438399f2f21.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 2,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "亚马逊云科技近期推出了S3 Files",
+      "href": "https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-s3-files/"
+    },
+    {
+      "text": "Sébastien Stormacq",
+      "href": "https://www.linkedin.com/in/sebastienstormacq/"
+    },
+    {
+      "text": "bucket在挂载后如何暴露数据",
+      "href": "https://aws.amazon.com/blogs/aws/launching-s3-files-making-s3-buckets-accessible-as-file-systems/"
+    },
+    {
+      "text": "Andrew Warfield",
+      "href": "https://www.linkedin.com/in/andywarfield/"
+    },
+    {
+      "text": "更广泛社区的反馈",
+      "href": "https://www.reddit.com/r/aws/comments/1sf6c4x/launching_s3_files_making_s3_buckets_accessible/"
+    },
+    {
+      "text": "S3 Is Not a Filesystem (But Now There's One In Front of It)",
+      "href": "https://www.lastweekinaws.com/blog/s3-is-not-a-filesystem-but-now-theres-one-in-front-of-it/"
+    },
+    {
+      "text": "Corey Quinn",
+      "href": "https://www.linkedin.com/in/coquinn/"
+    },
+    {
+      "text": "Mountpoint for Amazon S3",
+      "href": "https://www.infoq.com/news/2023/08/mountpoint-amazon-s3-ga/"
+    },
+    {
+      "text": "费用",
+      "href": "https://aws.amazon.com/s3/pricing/"
+    },
+    {
+      "text": "Hacker News讨论帖子",
+      "href": "https://news.ycombinator.com/item?id=47680404"
+    },
+    {
+      "text": "Dzhuneyt Ahmed",
+      "href": "https://www.linkedin.com/in/juneit/"
+    },
+    {
+      "text": "指出了当前的限制",
+      "href": "https://www.linkedin.com/pulse/aws-s3-files-missing-conversation-dzhuneyt-ahmed-8fuef/"
+    },
+    {
+      "text": "新的默认安全设置",
+      "href": "https://aws.amazon.com/about-aws/whats-new/2026/04/s3-default-bucket-security-setting/"
+    },
+    {
+      "text": "AWS Introduces S3 Files, Bringing File System Access to S3 Buckets",
+      "href": "https://www.infoq.com/news/2026/04/aws-s3-files/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 25,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 14
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/d405fbb6bb5cfd461d29cc40.html",
+  "raw_html_sha256": "c983bddb93e6c829b936144429a7546487af5c8477481f9bfbea331c6a654075"
+}

@@ -1,0 +1,470 @@
+{
+  "protocol": "media-provenance-extension-1.0",
+  "completed_at": "2026-09-14T08:41:00.909826+00:00",
+  "status": "descriptive_unmatched_available_frame_extension",
+  "selected": 24,
+  "article_attempts": 24,
+  "fetch_stop_reason": null,
+  "fetch_status_counts": {
+    "captured_unreviewed": 21,
+    "empty_extraction": 3
+  },
+  "diagnostic_documents": 21,
+  "intended_to_actual": {
+    "pre->pre": 12,
+    "post->post": 12
+  },
+  "exclusion_counts": {
+    "known_exact_content_overlap": 3,
+    "empty_extraction": 3
+  },
+  "known_overlap_count": 0,
+  "within_batch_overlap_count": 0,
+  "guard_sources": [
+    {
+      "path": "data/pilot/pilot_corpus.jsonl",
+      "status": "available",
+      "sha256": "a46ed37102a273746948c556d6e8d4c4bcf19c2c00fce2dccf14e731996e270f",
+      "records": 30,
+      "body_indexed": 30,
+      "missing_bodies": 0
+    },
+    {
+      "path": "data/smoke/pilot_corpus.jsonl",
+      "status": "available",
+      "sha256": "6e44850f3f66b8e2967ad61e4c6fff24f25b730450adec5cad8375db10e8cbb7",
+      "records": 6,
+      "body_indexed": 6,
+      "missing_bodies": 0
+    },
+    {
+      "path": "data/translation_eval/gold.jsonl",
+      "status": "available",
+      "sha256": "d0a197c9a467f745f1324687d2eb1319e5fc0aa92776995ce497ca7fb3e41621",
+      "records": 40,
+      "body_indexed": 40,
+      "missing_bodies": 0
+    },
+    {
+      "path": "data/translation_holdout/gold.jsonl",
+      "status": "available",
+      "sha256": "2460b87486517eca1d15896be9f3d33f681226c02e86d6bc31fece4fb5f8b9cc",
+      "records": 40,
+      "body_indexed": 40,
+      "missing_bodies": 0
+    },
+    {
+      "path": "data/translation_test/gold.jsonl",
+      "status": "available",
+      "sha256": "05bc02f40d48a9bad89cf35e1f34404ae8f839167656b18e644103d64edff0bd",
+      "records": 100,
+      "body_indexed": 100,
+      "missing_bodies": 0
+    },
+    {
+      "path": "data/translation_v2/candidates/infoq_candidates.jsonl",
+      "status": "available",
+      "sha256": "31e3a0ab43dc280e7a14df5fb627988526bcd115020b714b792f46d8c7d8e16d",
+      "records": 180,
+      "body_indexed": 180,
+      "missing_bodies": 0
+    }
+  ],
+  "prior_staging_bodies_indexed": 20,
+  "groups": [
+    {
+      "actual_cohort": "pre",
+      "source": "infoq",
+      "provenance_stratum": "all",
+      "documents": 9,
+      "zero_count_documents": 7,
+      "cjk_chars": 30913,
+      "ershi_occurrences": 2,
+      "pooled_per_1000_cjk": 0.06469769999676511,
+      "pooled_per_10000_cjk": 0.6469769999676511,
+      "publication_min": "2020-11-18",
+      "publication_max": "2022-10-12",
+      "concentration_count_distributions": {
+        "500": {
+          "0": 7,
+          "1": 2
+        },
+        "1000": {
+          "0": 7,
+          "1": 2
+        }
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "pre",
+      "source": "infoq",
+      "provenance_stratum": "original_chinese",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "pre",
+      "source": "infoq",
+      "provenance_stratum": "translated",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "pre",
+      "source": "infoq",
+      "provenance_stratum": "mixed_adapted",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "pre",
+      "source": "infoq",
+      "provenance_stratum": "unresolved",
+      "documents": 9,
+      "zero_count_documents": 7,
+      "cjk_chars": 30913,
+      "ershi_occurrences": 2,
+      "pooled_per_1000_cjk": 0.06469769999676511,
+      "pooled_per_10000_cjk": 0.6469769999676511,
+      "publication_min": "2020-11-18",
+      "publication_max": "2022-10-12",
+      "concentration_count_distributions": {
+        "500": {
+          "0": 7,
+          "1": 2
+        },
+        "1000": {
+          "0": 7,
+          "1": 2
+        }
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "transition",
+      "source": "infoq",
+      "provenance_stratum": "all",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "transition",
+      "source": "infoq",
+      "provenance_stratum": "original_chinese",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "transition",
+      "source": "infoq",
+      "provenance_stratum": "translated",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "transition",
+      "source": "infoq",
+      "provenance_stratum": "mixed_adapted",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "transition",
+      "source": "infoq",
+      "provenance_stratum": "unresolved",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "post",
+      "source": "infoq",
+      "provenance_stratum": "all",
+      "documents": 12,
+      "zero_count_documents": 6,
+      "cjk_chars": 46439,
+      "ershi_occurrences": 28,
+      "pooled_per_1000_cjk": 0.6029414931415406,
+      "pooled_per_10000_cjk": 6.029414931415405,
+      "publication_min": "2025-11-07",
+      "publication_max": "2026-09-10",
+      "concentration_count_distributions": {
+        "500": {
+          "0": 6,
+          "1": 4,
+          "2": 1,
+          "3": 1
+        },
+        "1000": {
+          "0": 6,
+          "1": 4,
+          "2": 1,
+          "4": 1
+        }
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "post",
+      "source": "infoq",
+      "provenance_stratum": "original_chinese",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "post",
+      "source": "infoq",
+      "provenance_stratum": "translated",
+      "documents": 3,
+      "zero_count_documents": 3,
+      "cjk_chars": 3165,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": 0.0,
+      "pooled_per_10000_cjk": 0.0,
+      "publication_min": "2025-12-18",
+      "publication_max": "2026-05-25",
+      "concentration_count_distributions": {
+        "500": {
+          "0": 3
+        },
+        "1000": {
+          "0": 3
+        }
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "post",
+      "source": "infoq",
+      "provenance_stratum": "mixed_adapted",
+      "documents": 0,
+      "zero_count_documents": 0,
+      "cjk_chars": 0,
+      "ershi_occurrences": 0,
+      "pooled_per_1000_cjk": null,
+      "pooled_per_10000_cjk": null,
+      "publication_min": null,
+      "publication_max": null,
+      "concentration_count_distributions": {
+        "500": {},
+        "1000": {}
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    },
+    {
+      "actual_cohort": "post",
+      "source": "infoq",
+      "provenance_stratum": "unresolved",
+      "documents": 9,
+      "zero_count_documents": 3,
+      "cjk_chars": 43274,
+      "ershi_occurrences": 28,
+      "pooled_per_1000_cjk": 0.6470397929472662,
+      "pooled_per_10000_cjk": 6.470397929472663,
+      "publication_min": "2025-11-07",
+      "publication_max": "2026-09-10",
+      "concentration_count_distributions": {
+        "500": {
+          "0": 3,
+          "1": 4,
+          "2": 1,
+          "3": 1
+        },
+        "1000": {
+          "0": 3,
+          "1": 4,
+          "2": 1,
+          "4": 1
+        }
+      },
+      "missing_visibility_fields": {
+        "views": 0,
+        "comments": 0,
+        "likes": 0,
+        "collects": 0
+      }
+    }
+  ],
+  "original_chinese_certifications": 0,
+  "human_smell_labels": 0,
+  "admitted_documents": 0,
+  "external_model_api_calls": 0,
+  "gpu_used": false,
+  "limitations": [
+    "Available cached sitemap frames are not a population sample.",
+    "Actual periods, topic, genre, length, and visibility are unmatched.",
+    "Provenance evidence can be incomplete; unresolved is not original.",
+    "The duplicate heuristic does not prove semantic independence.",
+    "Media references are retained but not downloaded or visually verified.",
+    "Cue counts and concentration do not establish authorship, reading harm, or temporal causation."
+  ]
+}

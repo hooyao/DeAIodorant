@@ -1,0 +1,53 @@
+{
+  "control_results": [
+    {
+      "case_id": "additional-06",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    },
+    {
+      "case_id": "additional-12",
+      "expected": "pass",
+      "observed": "pass",
+      "passed": true
+    },
+    {
+      "case_id": "additional-13",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    },
+    {
+      "case_id": "additional-16",
+      "expected": "pass",
+      "observed": "pass",
+      "passed": true
+    },
+    {
+      "case_id": "additional-17",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    },
+    {
+      "case_id": "additional-19",
+      "expected": "fail",
+      "observed": "fail",
+      "passed": true
+    }
+  ],
+  "count": 13,
+  "fidelity": {
+    "fail": 2,
+    "pass": 8,
+    "uncertain": 3
+  },
+  "human_reviews": 0,
+  "improvement": {
+    "limited": 4,
+    "none": 6,
+    "regression": 3
+  },
+  "training_exports": 0
+}

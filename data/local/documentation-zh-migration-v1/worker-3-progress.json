@@ -1,0 +1,123 @@
+{
+  "files": [
+    {
+      "path": "docs/refinement-roadmap.md",
+      "status": "translated",
+      "fragments": 3
+    },
+    {
+      "path": "docs/routes/compact-refiner/decisions.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/cr001-generation-chain-audit.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "experiments/modifier-bracketing-probe.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/data-contract.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/training.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "experiments/pilot-direction-probe.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/evaluation.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-calibration-v1.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "experiments/reader-friction-screen-v2.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/experiments.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-qualification-v1.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-review-b.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/first-batch.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "experiments/post-development-motif-inventory.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "experiments/refinement-pairs-v3.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "experiments/openrouter-corpus-model-interface-audit.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/client-maintenance-2026-09-14.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/target-coverage-rescreen.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    }
+  ],
+  "budget": {
+    "budget_usd": "6",
+    "accounted_usd": "5.9267500",
+    "remaining_usd": "0.0732500",
+    "unfinished_reservations": 0
+  }
+}

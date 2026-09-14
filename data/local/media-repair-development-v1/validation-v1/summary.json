@@ -1,0 +1,88 @@
+{
+  "documents": [
+    {
+      "alias": "doc-03",
+      "diagnostics": {
+        "added_numeric_occurrences": {},
+        "added_url_tokens": {},
+        "limitation": "Literal warnings require contextual review; no entailment or acceptance is inferred.",
+        "missing_numeric_occurrences": {},
+        "missing_protected_literals": [],
+        "missing_url_tokens": {},
+        "original_cjk_chars": 1296,
+        "output_cjk_chars": 1298,
+        "output_ershi": 4,
+        "output_unicode_chars": 2353,
+        "schema_version": "compact-refiner-literal-diagnostics-1.0",
+        "semantic_disposition": "unreviewed",
+        "source_ershi": 5,
+        "source_unicode_chars": 2350,
+        "unchanged": false
+      },
+      "human_gold": false,
+      "operation_count": 14,
+      "operations_sha256": "3dcba6b7d0fb7934147ec9b759408a0326002b81926cdbaf85ed9ca4963b9349",
+      "output_sha256": "50d4de3c53916ac780721b9040fc80360b057dc668565214be135e79aa676acc",
+      "replay_exact": true,
+      "semantic_preservation": "pending_independent_review",
+      "source_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04"
+    },
+    {
+      "alias": "doc-04",
+      "diagnostics": {
+        "added_numeric_occurrences": {},
+        "added_url_tokens": {},
+        "limitation": "Literal warnings require contextual review; no entailment or acceptance is inferred.",
+        "missing_numeric_occurrences": {},
+        "missing_protected_literals": [],
+        "missing_url_tokens": {},
+        "original_cjk_chars": 17540,
+        "output_cjk_chars": 17561,
+        "output_ershi": 19,
+        "output_unicode_chars": 21923,
+        "schema_version": "compact-refiner-literal-diagnostics-1.0",
+        "semantic_disposition": "unreviewed",
+        "source_ershi": 19,
+        "source_unicode_chars": 21891,
+        "unchanged": false
+      },
+      "human_gold": false,
+      "operation_count": 40,
+      "operations_sha256": "e11c430b30104d7c4c235efd1fdbe52ae034d022f17395fcfbf85d149430548d",
+      "output_sha256": "413e094cc29c8084620f7203ee4e4b4e76a60f1e721369ff79be738d155d257f",
+      "replay_exact": true,
+      "semantic_preservation": "pending_independent_review",
+      "source_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c"
+    },
+    {
+      "alias": "doc-05",
+      "diagnostics": {
+        "added_numeric_occurrences": {},
+        "added_url_tokens": {},
+        "limitation": "Literal warnings require contextual review; no entailment or acceptance is inferred.",
+        "missing_numeric_occurrences": {},
+        "missing_protected_literals": [],
+        "missing_url_tokens": {},
+        "original_cjk_chars": 2669,
+        "output_cjk_chars": 2675,
+        "output_ershi": 8,
+        "output_unicode_chars": 4036,
+        "schema_version": "compact-refiner-literal-diagnostics-1.0",
+        "semantic_disposition": "unreviewed",
+        "source_ershi": 8,
+        "source_unicode_chars": 4048,
+        "unchanged": false
+      },
+      "human_gold": false,
+      "operation_count": 13,
+      "operations_sha256": "d5ecea2d8e6bb429166d80249ade1f533784941a808f916bbea2542c8a22e7ab",
+      "output_sha256": "72a76b15b41e2554f69fb2f01ba03aabaf120a5d3730a3f33b76a1ff323b30ca",
+      "replay_exact": true,
+      "semantic_preservation": "pending_independent_review",
+      "source_sha256": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a"
+    }
+  ],
+  "human_gold": false,
+  "status": "mechanical_replay_and_literal_diagnostics_only",
+  "version": "media-repair-development-validation-1.0"
+}

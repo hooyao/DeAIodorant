@@ -1,116 +1,82 @@
-# Within-Document Friction Enrichment Development Screen
+# 文档内阅读阻力富集开发筛查
 
-## Status
+## 状态
 
-Protocol `within-document-friction-enrichment-development-2.0` was frozen on
-2026-08-22 before reader outcomes. This is a test of deterministic candidate
-enrichment, not an edit intervention and not held-out validation.
+协议 `within-document-friction-enrichment-development-2.0` 于 2026-08-22、读者结果前冻结。这检验确定性候选富集，不是编辑干预或 held-out validation。
 
-## Rationale
+## 理由
 
-The first raw-passage screen was stopped after 11 persisted responses. Ten
-occupied the same `fairly willing to continue` category, and the reader
-described the batch as having no discrimination. Repeating an absolute rating
-on another uniform random sample would not identify whether the feature ranking
-adds any useful information.
+首次原段落筛查保存 11 个回答后停止，其中 10 个为 `fairly willing to continue`，读者认为批次没有区分度。再对一批均匀随机样本做绝对评分，无法识别特征排序是否提供有用信息。
 
-This replacement compares two unchanged passages from the same document. One
-is selected by a frozen transparent ranking, and the other is a matched
-zero-marker control. The reader may explicitly report no meaningful
-difference. No reader outcome from the failed screen was used to define a
-feature, threshold, or weight.
+替代设计比较同一篇文章中两个未改动段落：一个由冻结透明排序选择，另一个为匹配的零标记对照。读者可明确报告无实质差异。失败筛查的读者结果没有用于定义特征、阈值或权重。
 
-## Passage eligibility
+## 段落准入
 
-Passages inherit the first screen's deterministic completeness gates and add
-two exclusions: each passage must end with sentence punctuation, and compact
-author-profile blocks are removed. Passages requiring an unseen figure,
-algorithm, code block, interview prompt, or truncated neighboring line remain
-ineligible.
+继承首次筛查的确定性完整性门槛，并新增两项排除：段落必须以句末标点结尾，排除紧凑作者简介块。需要未展示图、算法、代码块、采访问题或截断相邻行才能理解的段落仍不合格。
 
-Documents used before the first raw screen remain excluded. A document from
-that failed screen may contribute a different passage because this is still
-development work, but the previously selected line and either adjacent line
-are excluded. Selection does not use the previous absolute rating.
+首次原文筛查前使用过的文档继续排除。因仍属开发工作，失败筛查的文档可贡献另一段，但此前选中行及其两侧相邻行排除。不使用之前的绝对评分选样。
 
-The resulting pool contains 414 eligible passages in 54 transition documents.
-Only 10 documents satisfy every candidate and control constraint: eight InfoQ
-and two Machine Heart documents. The source imbalance is retained as a
-limitation rather than weakened through looser matching.
+结果池为 54 篇过渡期文档中的 414 个合格段落。只有 10 篇满足全部候选与对照约束：InfoQ 八篇、机器之心两篇。保留来源不平衡为限制，不通过放宽匹配来掩盖。
 
-## Frozen ranking
+## 冻结排序
 
-Every eligible passage is ranked only against other eligible passages in the
-same document. Ties receive deterministic midranks scaled to `[0, 1]`.
+每段仅相对同篇其他合格段落排序。并列使用确定性 midrank，缩放到 `[0, 1]`。
 
-The five rank features are:
+五个排序特征为：
 
-1. count of complete negative contrast frames and frozen target markers;
-2. abstract-shell density;
-3. comma, semicolon, and colon density;
-4. mean sentence length in CJK characters;
-5. ratio of sentences beginning with a referential or connective form.
+1. 完整否定对比框架及冻结目标标记次数；
+2. Abstract-shell 密度；
+3. 逗号、分号及冒号密度；
+4. 平均句子 CJK 长度；
+5. 以指代或连接形式开头的句子比例。
 
-The target-marker lexicon contains the previously versioned emphatic and meta
-frames plus `也就是说`, `正因如此`, `相反`, `反而`, `因此`, `因而`,
-`然而`, `不过`, `所以`, and `由此`. This is a candidate ranking, not a
-claim that every occurrence is a smell.
+目标标记词表包含此前版本化的强调及元叙述框架，加上 `也就是说`、`正因如此`、`相反`、`反而`、`因此`、`因而`、`然而`、`不过`、`所以`、`由此`。这只是候选排序，不代表每次出现都有臭味。
 
-A candidate must contain at least one target marker, rank in the top quartile
-for marker count, and rank in the top quartile for at least one of the other
-four features. Its control must contain no target marker. The pair must also
-satisfy all of the following:
+候选至少含一个目标标记，标记数处于最高四分位，并在另外四项中至少一项处于最高四分位。对照不含目标标记。配对还须全部满足：
 
-- same frozen passage-length band;
-- control-to-candidate CJK-length ratio from 0.8 through 1.25;
-- sentence-count difference no greater than one;
-- at least two source lines between the passages;
-- candidate-minus-control rank-sum gap of at least 1.0;
-- CJK character-bigram Jaccard similarity of at least 0.02.
+- 同一冻结篇幅档；
+- 对照／候选 CJK 长度比 0.8 至 1.25；
+- 句数差不超过一；
+- 两段间至少隔两条来源行；
+- 候选减对照的排名和差至少 1.0；
+- CJK 字符 bigram Jaccard 至少 0.02。
 
-The last constraint reduces within-document topic drift. It is a matching
-control, not a semantic-similarity claim.
+最后一项减少文档内主题漂移，是匹配控制，不是语义相似度主张。
 
-## Reader task and decision rule
+## 读者任务与决策规则
 
-The reader answers which passage makes them less willing to continue. The
-choices are `A`, `B`, and `no meaningful difference (both acceptable or both
-bad)`. Comments are optional, and the reader is not asked to classify a
-linguistic feature. Candidate placement is balanced five-to-five and remains
-hidden until all responses are complete.
+读者回答哪段更不愿意继续阅读。选项为 `A`、`B`、`no meaningful difference (both acceptable or both
+bad)`。评论可选，不要求分类语言特征。候选位置按五比五平衡，全部作答完成前保持隐藏。
 
-A pair counts as a candidate win only when the candidate is explicitly chosen
-as more discouraging. A no-difference response is not a win. The ranking is
-directionally useful only if at least eight pairs are decisive and candidates
-account for at least 75% of decisive choices. At least four candidate wins and
-the directional threshold are both required before any candidate may enter a
-later intervention. Optional comments cannot select cases.
+只有明确选择候选更劝退时，才计候选胜出。无差异不算胜出。至少八对有明确选择，且候选占明确选择至少 75%，排序才具有方向价值。候选进入后续干预前，必须同时满足至少四次候选胜出和方向阈值。可选评论不能选样。
 
-## Frozen pair set
+## 冻结配对集
 
-| Task | Source | Document | Candidate line | Control line | Markers | Auxiliary votes | Rank gap | Bigram Jaccard |
+| 任务 | 来源 | 文档 | 候选行 | 对照行 | 标记数 | 辅助票数 | 排名差 | Bigram Jaccard |
 |---:|---|---|---:|---:|---:|---:|---:|---:|
 | 1 | InfoQ | b0f066a3a5abd771dc88d05d | 48 | 45 | 2 | 2 | 2.000 | 0.044 |
 | 2 | InfoQ | 09c15d722428969f39d55a35 | 36 | 42 | 1 | 2 | 1.833 | 0.057 |
-| 3 | Machine Heart | 9f1d90b6ac15dd29465af213 | 49 | 70 | 2 | 1 | 1.250 | 0.021 |
+| 3 | 机器之心 | 9f1d90b6ac15dd29465af213 | 49 | 70 | 2 | 1 | 1.250 | 0.021 |
 | 4 | InfoQ | f1f34167984d5e508d20f41c | 98 | 36 | 1 | 3 | 1.294 | 0.040 |
 | 5 | InfoQ | 38edb35e93d5075f63c4a6cc | 6 | 9 | 1 | 1 | 1.571 | 0.053 |
 | 6 | InfoQ | 48a9230fe1ff0bc5832f1e7c | 62 | 20 | 2 | 1 | 1.333 | 0.030 |
 | 7 | InfoQ | 38790cda56298be3819d3798 | 95 | 67 | 1 | 2 | 1.643 | 0.052 |
 | 8 | InfoQ | 3d2cea36287cf278258bee81 | 112 | 110 | 2 | 2 | 1.433 | 0.037 |
 | 9 | InfoQ | 9894f671b6015ea06feb6543 | 33 | 14 | 1 | 2 | 1.750 | 0.038 |
-| 10 | Machine Heart | b2e18d9fb55b6c290390b211 | 33 | 6 | 1 | 3 | 1.700 | 0.059 |
+| 10 | 机器之心 | b2e18d9fb55b6c290390b211 | 33 | 6 | 1 | 3 | 1.700 | 0.059 |
 
-## Reproduction identity
 
-Two independent runs produced byte-identical artifacts.
+## 复现身份
 
-| Artifact | SHA-256 |
+两次独立运行产物逐字节一致。
+
+| 产物 | SHA-256 |
 |---|---|
-| Tasks | `d6fd858c55968da3461604050a15b211c045a2df92313d476f76ef46ea9839c7` |
-| Answer key | `31ceac5b56360bf668dce7f1de08d9c432254be3feefd399af5236ac43705375` |
-| Protocol | `a717c41dc7932bacf684c2ef2e8353533c551ba1c88c7782d9ad020d4b43254c` |
-| Label config | `8ab3fbf59f6c85803789125596fd18561fa4347d63675e00956ca3ede9307179` |
+| 任务 | `d6fd858c55968da3461604050a15b211c045a2df92313d476f76ef46ea9839c7` |
+| 答案键 | `31ceac5b56360bf668dce7f1de08d9c432254be3feefd399af5236ac43705375` |
+| 协议 | `a717c41dc7932bacf684c2ef2e8353533c551ba1c88c7782d9ad020d4b43254c` |
+| 标签配置 | `8ab3fbf59f6c85803789125596fd18561fa4347d63675e00956ca3ede9307179` |
+
 
 ~~~powershell
 python experiments/prepare_reader_friction_screen_v2.py `
@@ -119,33 +85,16 @@ python experiments/prepare_reader_friction_screen_v2.py `
   --seed 2026082203
 ~~~
 
-Generated tasks and the blinded answer key remain under ignored
-`feature_runs/`. No handoff file is modified. All passages are transition-only
-development material and cannot estimate the primary pre/post effect.
+生成任务及盲法 答案键 保留在被忽略的 `feature_runs/` 下。不修改交接文件。全部段落都属过渡期开发材料，不能估计主比较前后时间效应。
 
-## Outcome and termination
+## 结果与终止
 
-The screen was terminated after the first three pairs. Their publication dates
-were 2023-07-18, 2023-10-09, and 2023-03-27, and all three received the
-no-meaningful-difference response. The reader correctly identified that the
-batch came from before 2025-07 and generally lacked the stronger AI-style
-friction of interest.
+完成前三对后终止。发布日期分别为 2023-07-18、2023-10-09 和 2023-03-27，三对均回答无实质差异。读者正确指出批次来自 2025-07 之前，普遍缺少目标中的较强 AI 风格阻力。
 
-This is a corpus-period mismatch, not evidence against the frozen ranking. The
-three responses are retained but the enrichment threshold is not evaluated.
-The remaining seven pairs should not be completed, and no passage from this
-batch may enter an intervention.
+这是语料时期不匹配，不能反驳冻结排序。保留三个回答，不评估富集阈值。不应完成剩余七对，本批次任何段落都不得进入干预。
 
-The read-only handoff contains 23 pre, 96 transition, and zero post documents;
-its latest publication date is 2025-06-11. The tracked pilot has 10 post
-documents, but nine have already appeared in reader ratings or interventions.
-Only `084c17f921cc74b858d04cdb` is fully unexposed, which is insufficient for a
-new screen and comes from the same small diagnostic InfoQ pilot.
+只读交接含前时期 23 篇、过渡期 96 篇、后时期零篇，最新日期为 2025-06-11。受版本控制的 pilot 有后时期 10 篇，但九篇已用于读者评分或干预。仅 `084c17f921cc74b858d04cdb` 完全未暴露，既不足新筛查，也仍来自同一小型 InfoQ 诊断 pilot。
 
-The next reader round requires a fresh disjoint pool published on or after
-2025-07-01. It must be matched across source, topic, format, length, and
-visibility. Transition material may continue to support feature discovery but
-must not substitute for this target corpus.
+下一读者轮次需要 2025-07-01 当日及之后发布、全新且分离的池，并按来源、主题、体裁、篇幅和传播可见度匹配。过渡期材料可继续支持特征发现，不能替代目标语料。
 
-The complete early-stop outcome is stored in
-`data/annotations/reader-friction-screen-v2.json`.
+完整提前停止结果保存在 `data/annotations/reader-friction-screen-v2.json`。

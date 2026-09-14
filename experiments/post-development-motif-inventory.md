@@ -1,42 +1,28 @@
-# Frozen Post Development Motif Inventory
+# 冻结的后时期开发模式清点
 
-## Status
+## 状态
 
-Protocol `post-development-motif-inventory-0.1` is frozen before its rules are
-applied to the 67-document development partition. The 30-document validation
-reserve is not opened.
+协议 `post-development-motif-inventory-0.1` 在将规则应用于 67 篇 development 分区之前冻结。30 篇 validation reserve 不打开。
 
-## Purpose
+## 目的
 
-The inventory asks whether narrow, deterministic surface motifs recur often
-enough to justify manual candidate auditing. It does not detect AI authorship,
-assign reader dislike, or promote any motif to a refinement rule.
+清点检验狭义确定性表层模式是否足够频繁复现，以值得人工审查候选。它不检测 AI 作者身份、不赋予读者反感标签，也不把模式升级为改写规则。
 
-Five candidate families are recorded:
+记录五组候选：
 
-1. the existing complete negative contrast frame;
-2. an existing emphatic marker followed by a short, anchor-free payload with
-   at least two existing abstract-shell terms;
-3. three existing abstract-shell terms whose span contains at most 24 visible
-   characters and no number, quoted phrase, or non-generic ASCII term;
-4. a sentence-level dense-clause proxy requiring at least 55 CJK characters,
-   four clause separators, two abstract-shell terms, and two explicit
-   connectives;
-5. the already frozen strict delayed-head, low-anchor abstract-stack rule.
+1. 既有完整否定对比框架；
+2. 既有强调标记后接短、无锚点的载荷，至少含两个既有 abstract-shell 词；
+3. 三个既有 abstract-shell 词，其跨度至多 24 个可见字符，且无数字、引号短语或非泛化 ASCII 术语；
+4. 句级密集分句代理，要求至少 55 个 CJK 字符、四个分句分隔符、两个 abstract-shell 词及两个显式连接词；
+5. 已冻结的严格中心词延迟、低锚点抽象堆叠规则。
 
-The lexicons come from the existing discourse-graph and delayed-head probes.
-Thresholds are constants in the script and must not be relaxed after results
-are viewed.
+词表来自既有篇章图和中心词延迟探测。阈值是脚本常量，查看结果后不得放宽。
 
-## Frequency gate
+## 频次门槛
 
-A motif can proceed to manual coherence review only when it appears in at least
-six independent documents across at least three sources. Passing this gate is
-necessary, not sufficient. A reader intervention additionally requires a
-single coherent construction, a bounded edit operator, a structured operation
-log, and the existing meaning-preservation checks.
+模式至少出现在三个来源的六篇独立文章中，才可进入人工一致性复核。通过该门槛是必要但非充分条件。读者干预还需一种一致结构、限定编辑算子、结构化操作日志及既有原意保留检查。
 
-## Reproduction
+## 复现
 
 ~~~powershell
 python experiments/inventory_post_development_motifs.py `
@@ -44,68 +30,51 @@ python experiments/inventory_post_development_motifs.py `
   --output-dir feature_runs/post-development-motif-inventory-v1
 ~~~
 
-Generated candidate text remains under ignored `feature_runs/`. The repository
-records only the frozen rules, aggregate interpretation, and artifact identity.
+生成的候选正文保留在被忽略的 `feature_runs/` 下。仓库仅记录冻结规则、汇总解释及产物身份。
 
-## Result
+## 结果
 
-The scan opened all 67 development documents and no reserve document. It found
-146 instances in total.
+扫描打开全部 67 篇 development 文档，未打开 reserve 文档，总计发现 146 个实例。
 
-| Motif | Instances | Documents | Sources | Frequency gate |
+| 模式 | 实例数 | 文档数 | 来源数 | 频次门槛 |
 |---|---:|---:|---:|---|
-| Complete contrast frame | 124 | 37 | 5 | Pass |
-| Abstract-shell cluster | 14 | 12 | 4 | Pass |
-| Dense-clause surface proxy | 4 | 4 | 3 | Fail |
-| Emphatic abstract payload | 4 | 3 | 2 | Fail |
-| Strict delayed-head low-anchor stack | 0 | 0 | 0 | Fail |
+| 完整对比框架 | 124 | 37 | 5 | 通过 |
+| Abstract-shell 聚集 | 14 | 12 | 4 | 通过 |
+| 密集分句表层代理 | 4 | 4 | 3 | 失败 |
+| 强调式抽象载荷 | 4 | 3 | 2 | 失败 |
+| 严格中心词延迟低锚点堆叠 | 0 | 0 | 0 | 失败 |
 
-Frequency did not produce an intervention candidate. All 14 abstract-shell
-clusters were inspected. They mix repeated literal senses such as boundary
-analysis, normal technical terms, list fragments, and unrelated shell-noun
-uses; they do not describe one editable construction.
 
-For the much larger contrast set, a deterministic source-stratified audit took
-the first six instances from each source, or every instance when a source had
-fewer than six. The sample contains genuine alternatives, mechanism
-distinctions, quoted definitions, benchmark criteria, and source fragments in
-addition to possible rhetorical framing. Exact marker presence therefore does
-not isolate ornamental contrast. This reproduces the selection-precision limit
-seen in the third intervention rather than supplying a new intervention set.
+频次没有产生干预候选。全部 14 个 abstract-shell 聚集均已检查，它们混合了边界分析等重复字面义、普通技术术语、列表片段和无关 shell 名词用法，没有描述一种可编辑结构。
 
-No Project 8 is prepared from this inventory. The frequency gate remains fixed,
-and neither the shell rule nor the contrast rule may be relaxed or semantically
-relabeled against these results.
+对于大得多的对比集合，确定性的来源分层审查取各来源前六例；不足六例则全取。样本除可能的修辞框架外，还含真实备选项、机制区别、引述定义、benchmark 标准及来源片段。因此精确标记存在不能隔离装饰性对比。这复现了第三轮干预的选样精度限制，没有提供新干预集合。
 
-## Artifact identity
+不从本清点准备 Project 8。频次门槛保持固定，不得依据这些结果放宽 shell 或对比规则，也不得重新赋予语义标签。
 
-| Input | SHA-256 |
+## 产物身份
+
+| 输入 | SHA-256 |
 |---|---|
-| Handoff manifest | `ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01` |
-| Document index | `096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80` |
+| 交接 manifest | `ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01` |
+| 文档索引 | `096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80` |
 
-## Independent discovery replication
 
-The same frozen rules were later applied to all 93 documents in
-`post_reader_handoff_v3`. Those documents were assigned to a discovery reserve
-before the scan. The scan therefore makes them feature-discovery exposed; they
-cannot now be used as validation or final-test material.
+## 独立发现复现
 
-| Motif | Instances | Documents | Sources | Frequency gate |
+同一冻结规则随后应用于 `post_reader_handoff_v3` 的全部 93 篇文章。这些文档扫描前被分配到 discovery reserve；扫描使其暴露于特征发现，现不能用于 validation 或 final test。
+
+| 模式 | 实例数 | 文档数 | 来源数 | 频次门槛 |
 |---|---:|---:|---:|---|
-| Complete contrast frame | 131 | 44 | 3 | Pass |
-| Abstract-shell cluster | 20 | 13 | 3 | Pass |
-| Dense-clause surface proxy | 2 | 2 | 1 | Fail |
-| Emphatic abstract payload | 2 | 2 | 2 | Fail |
-| Strict delayed-head low-anchor stack | 0 | 0 | 0 | Fail |
+| 完整对比框架 | 131 | 44 | 3 | 通过 |
+| Abstract-shell 聚集 | 20 | 13 | 3 | 通过 |
+| 密集分句表层代理 | 2 | 2 | 1 | 失败 |
+| 强调式抽象载荷 | 2 | 2 | 2 | 失败 |
+| 严格中心词延迟低锚点堆叠 | 0 | 0 | 0 | 失败 |
 
-The strict delayed-head motif fails to replicate again. The shell-cluster
-instances again mix repeated category labels, literal technical senses,
-coordinate lists, and ordinary uses of polysemous shell terms. Their increased
-frequency does not repair the rejected selector. Complete contrast remains
-frequent but semantically heterogeneous. No Project 8 is prepared.
 
-| Input | SHA-256 |
+严格中心词延迟模式再次未复现。Shell 聚集仍混合重复类别标签、字面技术义、并列列表及多义 shell 词的普通用法。频次增加不能修复已被否决的筛选器。完整对比仍频繁，但语义异质。不准备 Project 8。
+
+| 输入 | SHA-256 |
 |---|---|
-| v3 handoff manifest | `5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac` |
-| v3 document index | `dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d` |
+| v3 交接 manifest | `5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac` |
+| v3 文档索引 | `dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d` |

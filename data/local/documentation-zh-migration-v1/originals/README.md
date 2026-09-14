@@ -1,0 +1,310 @@
+# DeAIodorant
+
+DeAIodorant is a Chinese-text refinement layer for the space between generation
+and publication. It aims to reduce repetitive, generic, and recognizably
+machine-like writing patterns while preserving the author's meaning, factual
+content, and useful detail.
+
+Inputs include articles written directly in Chinese and articles translated
+into Chinese. The planned compact refiner must work from the Chinese article
+alone; an English original is optional. Translation provenance is a research
+stratum, not a reason to discard a target article.
+
+In 2026, generated content is common across the Chinese internet. The problem
+DeAIodorant addresses is not whether a model wrote a document, but whether the
+result is worth reading. The project is designed to help creators keep the
+productivity benefits of generative AI without sacrificing reader attention,
+voice, or clarity.
+
+> **Project status:** research foundation. The repository currently implements
+> a corpus-acquisition pilot, a translation-content gate, and a deterministic
+> non-LLM feature-extraction framework. It does not yet contain the text-refinement
+> engine.
+
+The active front half is [real-media target-feature discovery](docs/target-feature-discovery.md),
+retaining the pre-2023 and post-2025-06 cohorts and existing acquisition work.
+The [compact-refiner route](docs/routes/compact-refiner/README.md) is retained for
+downstream accepted edits, SFT, and conditional preference optimization. Old
+low-signal experiments are not being extended as if they had validated the
+target. No SFT or local GPU training has started; agent assessments are not
+human gold.
+
+## Product principles
+
+The current [research objective and evidence plan](docs/target-feature-discovery.md)
+uses complete real media articles, preserves the established temporal cohorts,
+and prioritizes adequately contrasted subjective impressions before feature
+validation or model training. Synthetic editing pilots remain engineering
+controls; prior weak-sample experiments do not establish smell-removal efficacy.
+
+- **Chinese first.** Analyze and improve patterns specific to modern written
+  Chinese instead of translating English style advice.
+- **Meaning preservation.** Never trade factual content, qualifications, or the
+  author's actual position for a more natural surface style.
+- **Reader value over detector scores.** Evaluate clarity, specificity,
+  coherence, information retention, and reader preference. DeAIodorant is not
+  an AI detector and is not optimized to defeat one.
+- **Evidence before heuristics.** Derive transformations from controlled corpus
+  comparisons and human evaluation rather than a list of internet folklore.
+- **Auditable refinement.** Keep edits inspectable and make the intensity of
+  rewriting controllable.
+
+## Research design
+
+The following pre/post design remains the primary sampling framework. Its
+corpus and frozen evidence remain intact. Synthetic engineering pilots are
+separate from target-media evidence; editing provenance is described in the
+[data contract](docs/routes/compact-refiner/data-contract.md).
+
+The primary comparison uses high-quality, high-visibility Chinese web writing
+from two deliberately separated periods:
+
+| Cohort | Publication date | Role |
+|---|---:|---|
+| Pre-ChatGPT baseline | before 2023-01-01 | Reference for established human-authored web writing |
+| Post-adoption cohort | on or after 2025-07-01 | Reference for writing after widespread generative-AI adoption |
+
+The intervening period is excluded from the primary contrast. Individual
+documents are not classified as human- or AI-written. Retain editorial relevance,
+source integrity, and audience-attention evidence without filtering away poor
+readability. Compare provenance strata within the same time windows: direct
+Chinese, translation, mixed/adapted content, and unresolved origin. Legacy
+original-only results remain a control view; translation is itself a target
+capability for refinement.
+
+The intended project pipeline is:
+
+```text
+source acquisition
+    -> source integrity, visibility, and provenance strata
+    -> matched pre/post corpus
+    -> linguistic contrast and pattern catalog
+    -> automatic and human evaluation suite
+    -> Chinese refinement engine
+    -> CLI/API and publishing integrations
+```
+
+See [the project roadmap](docs/roadmap.md) for phase boundaries and acceptance
+criteria and [the refinement roadmap](docs/refinement-roadmap.md) for the
+alternative methods that lead from corpus research to the product.
+
+Validated and candidate reader-disliked patterns, including exact
+quantification and reproduction procedures, are maintained in the
+[Chinese Writing Smell Catalog](docs/smell-catalog.md).
+
+## What exists today
+
+The current collector validates source accessibility, publication dates, body
+extraction, basic quality gates, available visibility signals, and low-cost
+translation filtering. The initial sources are InfoQ China and Machine Heart.
+
+| Source | Pilot window | Acquisition route |
+|---|---|---|
+| InfoQ China | 2021-07 to 2022-06; 2025-07 to 2026-06 | Published sitemap and public article pages |
+| Machine Heart | June 2022; current-access probe | Common Crawl WARC for historical pages |
+
+Machine Heart currently replaces recent article pages with a data-service
+notice. The collector records this state and does not attempt to bypass it.
+
+The tracked `data/pilot/` directory is pilot material, not a clean research
+corpus. It includes known problematic examples retained for evaluation and
+reproducibility.
+
+The analysis package is intentionally separate from collection. It consumes a
+future prepared monthly corpus, validates frozen metadata and content hashes,
+extracts model-free surface features and fixed Universal Dependencies syntax
+features, and writes a self-describing numeric matrix. It never calls an LLM or
+makes a statistical claim.
+
+## Repository layout
+
+```text
+src/deaiodorant/            Python package namespace for the future product
+src/deaiodorant/analysis/   Reproducible document-feature extraction
+pilot_collect.py            Corpus acquisition and extraction pilot
+translation_eval.py         Translation-gate development-set tooling
+translation_holdout.py      Validation and holdout construction
+translation_final_test.py   Frozen benchmark runner
+tests/                      Automated tests
+data/                       Pilot corpora and benchmark artifacts
+benchmark_results/          Published benchmark summaries
+docs/                       Research protocol, architecture, and roadmap
+```
+
+## Reproducible non-LLM feature extraction
+
+Install the optional fixed syntax parser:
+
+~~~powershell
+python -m pip install -e ".[dev,syntax]"
+deaiodorant-analysis download-syntax-model --model-dir models/stanza
+~~~
+
+Once the formal corpus is available, freeze Universal Dependencies annotations
+and extract the feature matrix:
+
+~~~powershell
+deaiodorant-analysis annotate --corpus data/final/monthly --config configs/features.v1.json --model-dir models/stanza --output feature_runs/annotations-v1 --device cpu
+
+deaiodorant-analysis extract --corpus data/final/monthly --config configs/features.v1.json --annotations feature_runs/annotations-v1 --output feature_runs/matrix-v1
+~~~
+
+The matrix contains character, structural, punctuation, discourse, title,
+lexical, POS, and dependency-tree features. See
+[the feature catalog](docs/feature-catalog.md) for formulas, units, and known
+sensitivities. Additional traditional NLP feature spaces are tracked in
+[feature exploration directions](docs/feature-directions.md).
+
+The same extraction run also emits a cohort-blind sparse stylometry vocabulary
+covering character/POS n-grams, function words, sentence openings, punctuation
+runs, and dependency treelets.
+
+## Setup
+
+Python 3.10 or newer is required.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e ".[dev]"
+python -m pytest
+```
+
+On Windows, the reproducible local pipeline entry point creates and uses
+`.venv`, installs the project, runs the offline checks, provisions the optional
+local translation gate, collects a new diagnostic run, and validates the
+monthly corpus layout:
+
+```powershell
+.\scripts\run-corpus-pipeline.ps1 -TargetPerCell 2
+```
+
+Each run is written to a new ignored directory under `data/local/`. It includes
+the normalized monthly corpus, review queue, collector report, integrity
+report, dependency snapshot, collection log, and a run manifest containing the
+Git revision, Python executable, GPU details, collection windows, model digest,
+prompt versions, timeouts, and deterministic selection seeds. The script calls
+`.venv\Scripts\python.exe` explicitly, so shell activation is not required.
+The run fails if a required source/time cell misses its target, a model-gated
+document lacks a passing decision from the configured model, or monthly corpus
+integrity checks fail.
+
+Use `-TargetPerCell 10` for the current full pilot size. Use
+`-WithoutTranslationModel` only for a low-cost diagnostic run; it does not
+provide the model-backed fail-closed admission gate.
+
+Run a small collection pilot:
+
+```powershell
+python pilot_collect.py --target-per-cell 2 --output-dir data/smoke
+```
+
+Run the full current pilot:
+
+```powershell
+python pilot_collect.py --target-per-cell 10 --output-dir data/pilot
+```
+
+## Corpus layout
+
+Normalized article bodies are stored as UTF-8 text with one metadata file per
+publication month:
+
+```text
+data/pilot/monthly/
+  2022-06/
+    <doc_id>.txt
+    meta.jsonl
+  2025-09/
+    <doc_id>.txt
+    meta.jsonl
+```
+
+Each line in `meta.jsonl` maps to one body through its `text_file` field. New
+collection work must preserve source URL, publication timestamp, collection
+timestamp, source, quality signals, visibility signals, and filter decisions.
+
+## Legacy original-only translation gate
+
+The following tools and frozen benchmarks remain available for reproducing
+original-only controls. The current research retains translated and unresolved
+articles in their own provenance strata; this gate does not define product
+eligibility or reject all translated research material.
+
+Explicit translation metadata is rejected deterministically. In ambiguous
+cases, the optional local classifier is fail-closed: only a high-confidence
+`original` decision may enter the formal corpus. It judges translation status,
+not AI authorship.
+
+```powershell
+.\.venv\Scripts\python.exe pilot_collect.py --translation-model qwen3.5:9b
+```
+
+The Qwen3.5-4B frozen final test did not meet the target: it retained 56% of
+originals and admitted 2% of translations. Do not tune against that exposed
+test. See [the translation benchmark protocol](docs/translation-benchmark.md)
+for the current 9B validation procedure.
+
+Translation-gate v2 candidate acquisition is available through
+`translation_benchmark_v2.py`. It builds a globally deduplicated, multi-source
+review pool from InfoQ China, Machine Heart archives, and the Apache-2.0 LCTT
+translation project. Prompt changes are restricted to reviewed development
+data; validation only selects a frozen candidate, and the new sealed test may
+not be run or used for tuning. See
+[the v2 protocol](docs/translation-benchmark-v2.md).
+
+The pending-original pool can be reviewed in a local Label Studio interface.
+The launcher materializes every pending body as a separate UTF-8 file, creates
+the review project, imports the tasks, and opens the browser:
+
+```powershell
+.\scripts\run-translation-review.ps1 -Reviewer <stable-reviewer-id>
+```
+
+Label Studio Community Edition 1.23.0 is an optional Apache-2.0 dependency. It
+is installed into an ignored, isolated environment under `data/local/` and
+uses approximately 700 MiB in the current Windows environment. The service
+binds only to `127.0.0.1`; its credentials, database, generated task file, raw
+text copies, dependency snapshot, and logs remain in the ignored review
+workspace. If installation or the local service fails, no document receives a
+decision and the candidate data remains unchanged. Analytics, Sentry, version
+checks, and online feature flags are disabled so article text remains local.
+
+After preserving submitted human annotations, the remaining pool can be routed
+through conservative local model-assisted triage:
+
+```powershell
+.\scripts\run-dgx-qwen38-review-triage.ps1
+```
+
+Human decisions take precedence. Remaining records are operationally routed
+only when the foreign-source safeguard returns a high-confidence source-language
+judgment. Research value is evaluated separately by two agreeing profiles;
+weaker results are published to a separate Label Studio project. The current
+review-triage runtime is Qwen3.8-27B BF16 on the DGX Spark. Model-assisted
+results are diagnostic measurements and are never exported as human gold.
+
+The default Windows pipeline uses the Ollama `qwen3.5:9b` quantized package.
+Its current download is approximately 6.6 GB and it fits fully on a 16 GB RTX
+4080-class GPU. Qwen3.5 is distributed under the Apache 2.0 license; verify the
+model card and Ollama package metadata before redistribution. The model is an
+optional local operational dependency, not a Python package dependency. Model
+responses are cached inside the run directory. If Ollama, the requested model,
+or an inference call is unavailable, the model-backed run stops instead of
+admitting uncertain documents.
+
+## Data and rights
+
+This repository contains third-party article bodies for research transfer and
+reproducibility. Their presence does not grant a license to republish, train on,
+or commercially use them. Contributors are responsible for source terms,
+copyright, privacy, robots directives, rate limits, and takedown requests. A
+production corpus should prefer references and reproducible acquisition
+manifests over redistributing full text when rights are unclear.
+
+## Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) and the repository instructions in
+[AGENTS.md](AGENTS.md) before making changes. The `main` branch is intentionally
+untouched beyond its initialization commit; current development belongs on
+`init` until the maintainer explicitly changes that policy.

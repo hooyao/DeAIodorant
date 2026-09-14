@@ -1,0 +1,43 @@
+{
+  "schema_version": "research-handover-validation-1.0",
+  "date": "2026-09-14",
+  "base_commit": "306e5e0ec1802da2c6f7a741d2ea557d4db04be9",
+  "branch": "init",
+  "remote": "https://github.com/hooyao/DeAIodorant.git",
+  "tests": {
+    "command": "python -m pytest",
+    "passed": 179,
+    "failed": 0
+  },
+  "compileall": {
+    "command": "python -m compileall -q src pilot_collect.py translation_eval.py translation_holdout.py translation_final_test.py experiments/verify_research_handover.py",
+    "status": "passed"
+  },
+  "source_and_active_document_diff_check": "passed",
+  "credential_scan": {
+    "publication_files_checked": 1205,
+    "actual_dotenv_secret_values_checked": true,
+    "known_token_patterns_checked": true,
+    "credential_filename_check": "passed",
+    "findings": 0,
+    "credential_values_recorded": false
+  },
+  "artifacts_manifest_sha256": "767ef05f7ccc389cc9d6156ccb6360b8611fe089a0cacd75e7bbfaef6c7e5e13",
+  "artifact_counts": {
+    "files": 993,
+    "bytes": 91243715,
+    "excluded_rebuildable_files": 8
+  },
+  "fresh_index_checkout": {
+    "status": "passed",
+    "source_linkage": "passed",
+    "inventory": {
+      "status": "passed",
+      "files_verified": 993,
+      "bytes_verified": 91243715
+    },
+    "line_endings": "Raw research bytes retained using .gitattributes and explicit restaging; no historical labels or results rewritten."
+  },
+  "scope_note": "Linkage and file-integrity checks do not validate semantics or reader efficacy. Frozen text is excluded from source-code whitespace linting.",
+  "main_preserved_at": "af751e236c084c0de3cc45a5979749bad0778378"
+}

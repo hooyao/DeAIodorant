@@ -1,0 +1,1669 @@
+{
+  "identities": [
+    {
+      "content_hash": "c49a20609ad73546069c9df8ddcbba081fec9d8bb2a7f1cb1134e9f76e5ec99a",
+      "doc_id": "7d5e92ccde58b3b78616293c",
+      "url": "https://www.infoq.cn/article/d9N51XgSHzETcAC15Amb"
+    },
+    {
+      "doc_id": "5c49ab04e7b11485f4f2a517",
+      "url": "https://www.infoq.cn/article/Q3FWRJID1LzNdEFWXNGh"
+    },
+    {
+      "content_hash": "edbc948b69bdf518398966d66bf5b735c844a8335eeea193ee7088b900bdee8a",
+      "doc_id": "2176304c3523784c901e14e0",
+      "url": "https://www.jiqizhixin.com/articles/2022-06-28-2"
+    },
+    {
+      "content_hash": "41fd8c83ff5d0ef7255561fc14a0800bd844cb815445631540bde247d484a4a6",
+      "doc_id": "34be1e39038614fec204e995",
+      "url": "https://www.jiqizhixin.com/articles/2022-06-26-2"
+    },
+    {
+      "content_hash": "314a83cba4213643bb8a7c1bd8be842ab82cad2ef577c64efdd24b695d6e1b73",
+      "doc_id": "48a7a6192771112323fd6820",
+      "url": "https://www.infoq.cn/article/6DDhlbmtGRomwDCHh4Ts"
+    },
+    {
+      "doc_id": "f3056e22a70ace107c3f40ba",
+      "url": "https://www.infoq.cn/article/ter8jgXrHtz3EpapFkVy"
+    },
+    {
+      "doc_id": "1e307bf2ab522a641773835f",
+      "url": "https://www.infoq.cn/article/zSPHprcxUrIh8pOmlVAm"
+    },
+    {
+      "content_hash": "db55accdcd8d20ba0d540f40177772c9bff6a8461d5bd9781b29b146b56ac8b8",
+      "doc_id": "d8917e9eedea037e2ed53511",
+      "url": "https://www.infoq.cn/article/7SWwNUZLAPTM5TIAqwMI"
+    },
+    {
+      "doc_id": "ea4dd3dc8901fdef3e0aaefc",
+      "url": "https://www.infoq.cn/article/Rm7lLUGqej1TzMVpsNWB"
+    },
+    {
+      "doc_id": "dbab9cfa09d61c90a6fb520b",
+      "url": "https://www.infoq.cn/article/T3jVNmkEYTX7uLr8dpBA"
+    },
+    {
+      "doc_id": "b935be2e5e1689de3cafe128",
+      "url": "https://www.infoq.cn/article/Bpz3oN3tByqK3z0r5YY6"
+    },
+    {
+      "doc_id": "db8d2d92c64b720ee15be71d",
+      "url": "https://www.infoq.cn/article/8CkOCTfYXxB6mAvITevx"
+    },
+    {
+      "content_hash": "13198102813b4a56c58aaaf7a43b5c97230de91e0ee8166063ee66a8c6256fbd",
+      "doc_id": "2d8b8db77aefcdcbf86f23b4",
+      "url": "https://www.infoq.cn/article/mtyRVkfZ9dQNcqlslfJe"
+    },
+    {
+      "content_hash": "025ca52d1704795fcdc5e43582e149227b8d713e2b1643304e10c8d3c4f0a502",
+      "doc_id": "9e271d7b118c949e83c9ff8d",
+      "url": "https://www.infoq.cn/article/NGt234WtjgPOwITMlXWo"
+    },
+    {
+      "doc_id": "553d4d4ae86f8f5b1da9b7a8",
+      "url": "https://www.infoq.cn/article/7Vi5mUFuG5kAyWNheWK4"
+    },
+    {
+      "content_hash": "9178ed0193979b6ebe06d2693ee2384982b7fac9e37d4c74b6a4fecbda664667",
+      "doc_id": "9b964dd771030c4c78575a88",
+      "url": "https://www.jiqizhixin.com/articles/2022-06-14-8"
+    },
+    {
+      "doc_id": "079ef0e5feae43f3e6603e19",
+      "url": "https://www.infoq.cn/article/wltEH9kJKZzQ1N0mAG4T"
+    },
+    {
+      "content_hash": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+      "doc_id": "44aa81958a6c585ee8c06847",
+      "url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII"
+    },
+    {
+      "doc_id": "e966d8077a7b43802c22262d",
+      "url": "https://www.infoq.cn/article/vl9UfPTm6oOPAUgYpN5c"
+    },
+    {
+      "content_hash": "76f1bc7b74a16d06e3bad8271a2e227240c5ce2df44d3486fbfc264c180c2f06",
+      "doc_id": "1a5bf7a3c811a61f24384560",
+      "url": "https://www.jiqizhixin.com/articles/2022-06-06-21"
+    },
+    {
+      "doc_id": "909ae98aa3213669da91dacb",
+      "url": "https://www.infoq.cn/article/bc2s3cFS2UOgCmHCgVAJ"
+    },
+    {
+      "content_hash": "7cbedb1dd858787c2a9c1b3cdce0dbc2225b291c15d9178780226c526da8b606",
+      "doc_id": "bf1abf6ca461ec0bbac14bd7",
+      "url": "https://www.infoq.cn/article/Mcqw76pE8CZbkCby1Bz6"
+    },
+    {
+      "content_hash": "95136114d99aafc4ffaa7abd2f2950c0bb66c89ab349072a2d909d5fea2dd149",
+      "doc_id": "48bda219eb0776f623161899",
+      "url": "https://www.infoq.cn/article/hmKcZ2hdjDk3SspgikfV"
+    },
+    {
+      "content_hash": "5918bed2bad847d05f0d8e47e86d38380ad3dcfcb76c278101954de37a79e97e",
+      "doc_id": "728a99c83fb531b12cc55802",
+      "url": "https://www.jiqizhixin.com/articles/2022-06-23-4"
+    },
+    {
+      "doc_id": "4298c16e9f09d89086323113",
+      "url": "https://www.infoq.cn/article/cuu94IXoxxAYtlyjhajf"
+    },
+    {
+      "doc_id": "db1bafb2b24a94e103eee485",
+      "url": "https://www.infoq.cn/article/qe1NPrgb0CCHX1iHotYM"
+    },
+    {
+      "doc_id": "e2e16a59f58cbe2282474a54",
+      "url": "https://www.infoq.cn/article/iG3CS5HgoYr0DVET4LfG"
+    },
+    {
+      "doc_id": "6e4f25bd9db63ddd597f992f",
+      "url": "https://www.infoq.cn/article/euXpcb8cpRJHLJSaxZaE"
+    },
+    {
+      "doc_id": "783116a6bb68cfdac512f52e",
+      "url": "https://www.infoq.cn/article/ekJYDbz9HRr2Pf6ucvzN"
+    },
+    {
+      "content_hash": "bcb67e435c169c3b73cf6f3d6d2355bc88d5f6a859f070449719e0c0bcd3baaa",
+      "doc_id": "b77b09a419c1631227112f0c",
+      "url": "https://www.infoq.cn/article/aFl3mHPMjIGb6mZX5Dv1"
+    },
+    {
+      "content_hash": "542f8ca9d36c09231bf4746e3f1b32117154e42bae8590597fa1d4ce96a0f652",
+      "doc_id": "be3e4a9eccc5d3a7e69212c3",
+      "url": "https://www.infoq.cn/article/v0V0CYr4i9lGR6c7US00"
+    },
+    {
+      "doc_id": "48c1dec7a8d105f357d01d5b",
+      "url": "https://www.infoq.cn/article/WU7mLPeqIgdlOMOolsP8"
+    },
+    {
+      "content_hash": "61d9b990c595b958f62b92c1245460929890a7033f25b739b0f20ab939fb5768",
+      "doc_id": "2046a00e2b504539234c6c70",
+      "url": "https://www.jiqizhixin.com/articles/2022-06-24-2"
+    },
+    {
+      "doc_id": "c1acb6fefd14df4d352233ec",
+      "url": "https://www.infoq.cn/article/CZKMjHaxbf1Z7xcSzisX"
+    },
+    {
+      "content_hash": "60ea47ef9f6ce619684886acb8c0a00e60b170565c8dd18f7d1ec3c89900da09",
+      "doc_id": "81938af852e380b36bede22b",
+      "url": "https://www.infoq.cn/article/N00FLzs20hlJZU56qVx4"
+    },
+    {
+      "content_hash": "6539d21cd1074588b249725dc6e49f3415b95de1070de94f8694cd188c000e31",
+      "doc_id": "0dfc33ff7071975b48e12981",
+      "url": "https://www.infoq.cn/article/tX4oPEA5QwLGeK8wCg0W"
+    },
+    {
+      "content_hash": "99e1acabc7f921ef1cfc4119b00fe5875d7b55fe65bffd68e61bb8b72f6a0c40",
+      "doc_id": "a05a8bb2f7fe7bfe85ba7e46",
+      "url": "https://www.infoq.cn/article/4HpjOJPUjHsMZ3gv1CHT"
+    },
+    {
+      "content_hash": "244175531e3e6eb0dcd8a5819a3fb120122c38e320f721d3aeab6217e14300bc",
+      "doc_id": "084c17f921cc74b858d04cdb",
+      "url": "https://www.infoq.cn/article/VcK5bVdskQZ2j7uEdbvN"
+    },
+    {
+      "doc_id": "4029e1168847485f559b8747",
+      "url": "https://www.infoq.cn/article/jiiiiFJdf3hgQKP3UXXA"
+    },
+    {
+      "doc_id": "9e14d4163558053b1bc3e3a2",
+      "url": "https://www.infoq.cn/article/iPvZo3QMVWqF4oyjIAJ7"
+    },
+    {
+      "doc_id": "c6ef002483934a89375aec13",
+      "url": "https://www.infoq.cn/article/GdARgp4bG83LP5oXMZar"
+    },
+    {
+      "doc_id": "47b5c430be2a1684a001e4d9",
+      "url": "https://www.infoq.cn/article/xCz1CewwoLeS0OCkT7KN"
+    },
+    {
+      "doc_id": "cd080d62276d8d0feefd1db7",
+      "url": "https://www.infoq.cn/article/f6yJvAjA3xSfmHuscIpv"
+    },
+    {
+      "doc_id": "2e79d16e7b96fe51442f371d",
+      "url": "https://www.infoq.cn/article/Iod7sGZuQkWjVloJOGuz"
+    },
+    {
+      "doc_id": "7f563d4e1c30b2a930ca5a0d",
+      "url": "https://www.infoq.cn/article/6J3KfVc2u5AjN7fZAyfG"
+    },
+    {
+      "doc_id": "458acad41347c74fa036146f",
+      "url": "https://www.infoq.cn/article/LyiYMbWPe0086GK5U97H"
+    },
+    {
+      "doc_id": "cb5bcbdff86b25adc6944efe",
+      "url": "https://www.infoq.cn/article/G9PE7RqNE2zkAPxVQcSa"
+    },
+    {
+      "doc_id": "d12545fabc3cd66649d937e0",
+      "url": "https://www.infoq.cn/article/GLV2qyBOst18dXj3ubDz"
+    },
+    {
+      "doc_id": "9d9f371533e7f9a364f073a5",
+      "url": "https://www.infoq.cn/article/DC0RIBly3IkxTTUMfy6U"
+    },
+    {
+      "doc_id": "c06602a79bc033fe03155098",
+      "url": "https://www.infoq.cn/article/e5zF5JmXKEzjNfLqIbas"
+    },
+    {
+      "doc_id": "ff07b00a6e4c547e0fa4d19f",
+      "url": "https://www.infoq.cn/article/7PsJIm4r5EKqUasq3xYt"
+    },
+    {
+      "doc_id": "be9bf6627bdbe0b171687c2c",
+      "url": "https://www.infoq.cn/article/mGWsrgj8sWVCHQjqe62W"
+    },
+    {
+      "doc_id": "d6a38accae032ab7395281fd",
+      "url": "https://www.infoq.cn/article/9l0iNRmrrkyfHb4UbAmC"
+    },
+    {
+      "doc_id": "31b5b61ebf10d5d5852cbd97",
+      "url": "https://www.infoq.cn/article/7RA5wkyTy6i3NapcOP4Q"
+    },
+    {
+      "doc_id": "505b28fe8eb798942198b933",
+      "url": "https://www.infoq.cn/article/tQjr79KiqeK88KgjhUJY"
+    },
+    {
+      "doc_id": "c8a509ee43d514dcc862df48",
+      "url": "https://www.infoq.cn/article/sDE1xx9GYjG5ZCVB5iy2"
+    },
+    {
+      "doc_id": "22577d06aa423c7d807065a6",
+      "url": "https://www.infoq.cn/article/Re9iENKpsDzhMfSY5vVM"
+    },
+    {
+      "doc_id": "7d2f237a932242383955a32b",
+      "url": "https://www.infoq.cn/article/JCuCXOHoxLCEMzwV2eao"
+    },
+    {
+      "doc_id": "9c7ab033c81e663cab3b47ac",
+      "url": "https://www.infoq.cn/article/PMNWFckRiL038RIvEz7S"
+    },
+    {
+      "doc_id": "05ab17cb5ac1c2e51b81d454",
+      "url": "https://www.infoq.cn/article/2heEZa0BP0uAg0EdQ43V"
+    },
+    {
+      "doc_id": "573a665050cb23c1954ed27d",
+      "url": "https://www.infoq.cn/article/xDJrtIC1prmhIdfLWJW7"
+    },
+    {
+      "doc_id": "0a19eda714b93a613f5ab22c",
+      "url": "https://www.infoq.cn/article/AkEzbyrwDoCRTH1JLTSs"
+    },
+    {
+      "doc_id": "6d3797a3e7f4dcc77236ba61",
+      "url": "https://www.infoq.cn/article/pBFwWpsBaISFff3Fojpm"
+    },
+    {
+      "doc_id": "7e78e1f44b2eef5de7691c10",
+      "url": "https://www.infoq.cn/article/FgogdjehRCRt9QjD4fMG"
+    },
+    {
+      "doc_id": "5e0ffb111c9f4d84f8ab763c",
+      "url": "https://www.infoq.cn/article/LwtOzQJuVh94QqQIy7PA"
+    },
+    {
+      "doc_id": "584b830aefcf4b0f10b3197c",
+      "url": "https://www.infoq.cn/article/bQuMN74EUwtLiXs4etRQ"
+    },
+    {
+      "doc_id": "6b632cb0be638c8fc835b659",
+      "url": "https://www.infoq.cn/article/iFYVIhBJZNWFrHO1gMzu"
+    },
+    {
+      "doc_id": "3b75ef87a499f04df0b0e067",
+      "url": "https://www.infoq.cn/article/iOokIrlEdQkx7uaqhvKc"
+    },
+    {
+      "doc_id": "bf85f9108e5fa57c10854d30",
+      "url": "https://www.infoq.cn/article/5IGp1f3dlFaO86FRAgT9"
+    },
+    {
+      "doc_id": "cd341f16981b7dc3e83dff2a",
+      "url": "https://www.infoq.cn/article/KFQqjM9hsZb1qCZARDok"
+    },
+    {
+      "doc_id": "dcf0f856289fdd2b490eab0a",
+      "url": "https://www.infoq.cn/article/bdVx72jsR4fzEmiPNNH3"
+    },
+    {
+      "doc_id": "c40c9c04915dc5ecfe3155f8",
+      "url": "https://www.infoq.cn/article/bHP6xu9EChRzE0ZOTafW"
+    },
+    {
+      "doc_id": "d426c50b45bb6cb075ab1a58",
+      "url": "https://www.infoq.cn/article/Ui3JSdRN2cSbqkPDjoJH"
+    },
+    {
+      "doc_id": "d8863cb00c6136e2fa230e48",
+      "url": "https://www.infoq.cn/article/80LEVQim5dggzmbMQR5d"
+    },
+    {
+      "doc_id": "7900fb228b65c0ff69fbfba0",
+      "url": "https://www.infoq.cn/article/qoS6kC1jpIBxb4l5Y0FO"
+    },
+    {
+      "doc_id": "716b0c8b5481b5059ae68f88",
+      "url": "https://www.infoq.cn/article/TLGRcZ8Zz7JmyNvd6rCQ"
+    },
+    {
+      "doc_id": "5e8d387d4e35e5f065e42cd9",
+      "url": "https://www.infoq.cn/article/CUf74e6M6pmc1F3Na7yi"
+    },
+    {
+      "doc_id": "d88973bd031fd2dde6fd77a0",
+      "url": "https://www.infoq.cn/article/BoQA9wk5oMH26xKamLrZ"
+    },
+    {
+      "doc_id": "c1567529c23d7fb3b61a8ca9",
+      "url": "https://www.infoq.cn/article/MH31ImCRsNERwJgN2jdu"
+    },
+    {
+      "doc_id": "edd5749762aa59efd2b8e791",
+      "url": "https://www.infoq.cn/article/9iXLu4KjAPg3ufHYmM3J"
+    },
+    {
+      "doc_id": "6d737a2f01124ae54fdc3bf5",
+      "url": "https://www.infoq.cn/article/HgeggrBTRm7iE5FqEkmR"
+    },
+    {
+      "doc_id": "f2cc6d98fa0855d026ab8dad",
+      "url": "https://www.infoq.cn/article/VRAAlq3wA7aM40NIaeht"
+    },
+    {
+      "doc_id": "269817ef44635ed64b1fd359",
+      "url": "https://www.infoq.cn/article/GrHwv4MghR6WkPQdU1FR"
+    },
+    {
+      "doc_id": "7e3ecc36017508b6fb5c9e37",
+      "url": "https://www.infoq.cn/article/ixcNvwClOzTSal48vR6k"
+    },
+    {
+      "doc_id": "f0f2c2f96df9898ee992acc1",
+      "url": "https://www.infoq.cn/article/Bqh3ALTNTBO78PJ8kwyR"
+    },
+    {
+      "doc_id": "0fdec827a93bc18ffbae7946",
+      "url": "https://www.infoq.cn/article/ruW1ETT3VhEVvE6YKe24"
+    },
+    {
+      "doc_id": "16cdf75ed16e90d810f8febe",
+      "url": "https://www.infoq.cn/article/BVX31hO4ZBgsjIYC5gmj"
+    },
+    {
+      "doc_id": "193469556d33cdc21f6b6c6c",
+      "url": "https://www.infoq.cn/article/Q5z8QUqmh2JePWWG6Q6W"
+    },
+    {
+      "doc_id": "f83391b77b05cc736e66656b",
+      "url": "https://www.infoq.cn/article/wkNxYG7etWDWzsz4sXL8"
+    },
+    {
+      "doc_id": "71941d56c9f569ab6a6c2331",
+      "url": "https://www.infoq.cn/article/Jys1CmkLHLLvGTNsiIKx"
+    },
+    {
+      "doc_id": "50aee2797478baf8ea26038e",
+      "url": "https://www.infoq.cn/article/HwpjfIajSSJDB2Yw0BiZ"
+    },
+    {
+      "doc_id": "17eea2a4f6a4981b445ec19c",
+      "url": "https://www.infoq.cn/article/m6iCV0ktTwCm4ZaWBjgm"
+    },
+    {
+      "doc_id": "aecb74da739edd9c172befb5",
+      "url": "https://www.infoq.cn/article/CaxtxQieN9I2F7dI4akg"
+    },
+    {
+      "doc_id": "56cac8166bab084741329df6",
+      "url": "https://www.infoq.cn/article/KOcaWVjk3jdAmOFUYEpU"
+    },
+    {
+      "doc_id": "4b221f58bacd2e0645b7fb98",
+      "url": "https://www.infoq.cn/article/ONzGRMNCpkM5mVAYbjQi"
+    },
+    {
+      "doc_id": "596992dbfeeed14752e22b0b",
+      "url": "https://www.infoq.cn/article/zaUGz5EB7W3375ZDBPgm"
+    },
+    {
+      "doc_id": "a041b0e5505f06686cb0f770",
+      "url": "https://www.infoq.cn/article/CypshKGFtNX0M5wORczw"
+    },
+    {
+      "doc_id": "7f7f2081ecf3f0b4cbdd7814",
+      "url": "https://www.infoq.cn/article/08Di69sh0qRZmQvcrq9o"
+    },
+    {
+      "doc_id": "36923c8cbf2198082d34bd1f",
+      "url": "https://www.infoq.cn/article/roOrqjUw99VSZ9x1WSUE"
+    },
+    {
+      "doc_id": "6762d8b907d467fd0c77b537",
+      "url": "https://www.infoq.cn/article/UK2dZLEX9okc4ppaVpwe"
+    },
+    {
+      "doc_id": "051283bbe3edfaf9f3f7bde2",
+      "url": "https://www.infoq.cn/article/ettgwgXcs5b5QTuIG7gi"
+    },
+    {
+      "doc_id": "618ea39179b5456c609df952",
+      "url": "https://www.infoq.cn/article/A9r8NkrD9H1CsbD12bvX"
+    },
+    {
+      "doc_id": "b7d00b38313423e72a96d1d3",
+      "url": "https://www.infoq.cn/article/AVRJAU6tE2FA70QD6pOg"
+    },
+    {
+      "doc_id": "a6b052eca7cf5842385f8775",
+      "url": "https://www.infoq.cn/article/H3apoNFt8TKhGN069j89"
+    },
+    {
+      "doc_id": "c62a7e46736a6fd649fd8838",
+      "url": "https://www.infoq.cn/article/85uvfSS8YssNx6MVeDpj"
+    },
+    {
+      "doc_id": "817fd218c20f8497d6898ef6",
+      "url": "https://www.infoq.cn/article/r4DJeq48hJNvl4H2WwYC"
+    },
+    {
+      "doc_id": "2e23ba885be6c0dbc33065d3",
+      "url": "https://www.infoq.cn/article/easicFT0LYT3I9uuzUjP"
+    },
+    {
+      "doc_id": "fcc69d5e9f3f33d530624b27",
+      "url": "https://www.infoq.cn/article/ZQEP69byw99C818CzmF6"
+    },
+    {
+      "doc_id": "9c61af127bd9da756467cb35",
+      "url": "https://www.infoq.cn/article/3rBcBW7v2z46Wv6LVoX6"
+    },
+    {
+      "doc_id": "c1fefafaa2d728451d54ec70",
+      "url": "https://www.infoq.cn/article/MoOd1tjpDNx8j5PQLRtA"
+    },
+    {
+      "doc_id": "3c8053a3cb49a3e101f04337",
+      "url": "https://www.infoq.cn/article/Au8A0GLJcHPNJQp3Vizx"
+    },
+    {
+      "doc_id": "d164e36fe23d5d790978f3b9",
+      "url": "https://www.infoq.cn/article/uKgQIZksvpT1rkLPi4Hq"
+    },
+    {
+      "doc_id": "d61a45e5840113ae41dfa3a6",
+      "url": "https://www.infoq.cn/article/eUcJa1KiLxhIOJZrUjWr"
+    },
+    {
+      "doc_id": "f3224ad5bc8838e2b56c0e8a",
+      "url": "https://www.infoq.cn/article/liUSDE1OqvSe6PmcWbJN"
+    },
+    {
+      "doc_id": "6e55ebf6676b5a11d86d1a61",
+      "url": "https://www.infoq.cn/article/yF7s2buZfbjX61eBEhs0"
+    },
+    {
+      "doc_id": "71b6eb673ab754253461b004",
+      "url": "https://www.infoq.cn/article/Dx5t48SFfPjaZwbvsPNT"
+    },
+    {
+      "doc_id": "4d13f4c3e746144fb55d581d",
+      "url": "https://www.infoq.cn/article/uW0HmUR1tx8Z02iZXm3c"
+    },
+    {
+      "doc_id": "c54d0ecc3ebec207fc286956",
+      "url": "https://www.infoq.cn/article/I7hLFf5u56JJZQrNz7dT"
+    },
+    {
+      "doc_id": "b6bbf89b70259405ee655741",
+      "url": "https://www.infoq.cn/article/RYOdRKo8J7DWmAUN9zUb"
+    },
+    {
+      "doc_id": "828e954f83611c7005572387",
+      "url": "https://www.infoq.cn/article/DXzhsW63lQ5IoohR1uDD"
+    },
+    {
+      "doc_id": "039958e9f1ef3e4a73a16837",
+      "url": "https://www.infoq.cn/article/TSJ11yamzsfFuwgXP3cF"
+    },
+    {
+      "doc_id": "084d59924987036024d5a5ea",
+      "url": "https://www.infoq.cn/article/EcYFuPVq0EJKYBjW6N3a"
+    },
+    {
+      "doc_id": "9386e212467a49eb51a91eed",
+      "url": "https://www.infoq.cn/article/bb2xZYR7MY56rLQSwcPf"
+    },
+    {
+      "doc_id": "f8861bbc8491dbdbfc799424",
+      "url": "https://www.infoq.cn/article/Tw95p8r6dzNJhzOjK0DC"
+    },
+    {
+      "doc_id": "686c2e9feebb4228153baf42",
+      "url": "https://www.infoq.cn/article/Ltr0rQhNuqxPqv4pECfb"
+    },
+    {
+      "doc_id": "0f184b4c841e79f8f006b204",
+      "url": "https://www.infoq.cn/article/W9RoXvrVvdmfk5Qr06Q4"
+    },
+    {
+      "doc_id": "759daa59daebed2bdb1a1b4f",
+      "url": "https://www.infoq.cn/article/v1IZVU01X9fFfFh24hgc"
+    },
+    {
+      "doc_id": "8c559c9e6c470f75fe38c045",
+      "url": "https://www.infoq.cn/article/bSmyqZt6tIY38xBOMmO1"
+    },
+    {
+      "doc_id": "a066a6a45de3f1258f1916fd",
+      "url": "https://www.infoq.cn/article/3L4va9oqqew1EfXDOuMt"
+    },
+    {
+      "doc_id": "e9ba61664508abf5a8efe37a",
+      "url": "https://www.infoq.cn/article/ePtWEQZ7vkpqTjOlsMHU"
+    },
+    {
+      "doc_id": "80f9f549b347fc3053154f6e",
+      "url": "https://www.infoq.cn/article/744gLufBQwFPXMbt9lj1"
+    },
+    {
+      "doc_id": "624dd8c3e4e72e125266129b",
+      "url": "https://www.infoq.cn/article/1EExCH4lsBKlozyciS2B"
+    },
+    {
+      "doc_id": "ded42e070803dcd30f734bc3",
+      "url": "https://www.infoq.cn/article/xyDSrOGbg6tVDVEb261O"
+    },
+    {
+      "doc_id": "0c800ad6452086e0d6fd0e93",
+      "url": "https://www.infoq.cn/article/wX1rbgaIIw4RSl3qCsDY"
+    },
+    {
+      "doc_id": "6ab74b60fa0e2f96cce5b2a8",
+      "url": "https://www.infoq.cn/article/NiG0iwdQNhJgkelM25rg"
+    },
+    {
+      "doc_id": "3e53d82279322787d10b84ad",
+      "url": "https://www.infoq.cn/article/LVwlqFQmEIhrdM3cpCXg"
+    },
+    {
+      "doc_id": "e449bece68017616c96e949d",
+      "url": "https://www.infoq.cn/article/aT4arzVewS3ozgOJS83h"
+    },
+    {
+      "doc_id": "680127616159ccc8aaa413d0",
+      "url": "https://www.infoq.cn/article/srAzDpPcFFSyUy5h8JGi"
+    },
+    {
+      "doc_id": "cc62f0277d23943c68ac762c",
+      "url": "https://www.infoq.cn/article/C4YPsXppXImVKSpG4IMF"
+    },
+    {
+      "doc_id": "8b289117bc9690692c8f7a66",
+      "url": "https://www.infoq.cn/article/Hmv1mofeWmMRQEduveoQ"
+    },
+    {
+      "doc_id": "3e49fa067a91d15b0dfc008b",
+      "url": "https://www.infoq.cn/article/GICIrEsTJwEgGsDYFvCM"
+    },
+    {
+      "doc_id": "a4918b85ff3d2c7b997315dd",
+      "url": "https://www.infoq.cn/article/0g9REIMh9IzIqa467fVY"
+    },
+    {
+      "doc_id": "b825d06a5868efb1a383b4a8",
+      "url": "https://www.infoq.cn/article/Uj6yBUgwIFa1lwvVyyu8"
+    },
+    {
+      "doc_id": "6fb95b22027c32b2506f7ca0",
+      "url": "https://www.infoq.cn/article/8WjWTHeWhipZerhv55To"
+    },
+    {
+      "doc_id": "9eb70f6a20de5245ef84f6e6",
+      "url": "https://www.infoq.cn/article/44aSfCiMd905NBRMSFY6"
+    },
+    {
+      "doc_id": "6e1a9d01c50b4f05577be210",
+      "url": "https://www.infoq.cn/article/0Dwil04MvMwBGcPIHc2k"
+    },
+    {
+      "doc_id": "634ffabaf912a6d407133c6d",
+      "url": "https://www.infoq.cn/article/9BHdpZpDStroUqmDxhch"
+    },
+    {
+      "doc_id": "757ab664fa626aec16285776",
+      "url": "https://www.infoq.cn/article/9Ex1XEgeed0FYZCLf2Sb"
+    },
+    {
+      "doc_id": "319a0f6ab7881ebbf4a258b7",
+      "url": "https://www.infoq.cn/article/ZCHjdm7EEHQJaZr7aPxz"
+    },
+    {
+      "doc_id": "8eb6cc9620927812a199d3f4",
+      "url": "https://www.infoq.cn/article/fxBMtQmN3Dd29JCTOdEQ"
+    },
+    {
+      "doc_id": "89374f6f99ffd1b57b464f21",
+      "url": "https://www.infoq.cn/article/4wj8IF5MLjHd3QdvkzTt"
+    },
+    {
+      "doc_id": "b41ecb6b75e6782f069b4b10",
+      "url": "https://www.infoq.cn/article/A7VCO3RePjBOPTLKS79B"
+    },
+    {
+      "doc_id": "9839084d52b594c265b5bc62",
+      "url": "https://www.infoq.cn/article/x1i76AMqr3moMfjoQsUq"
+    },
+    {
+      "doc_id": "81f0d86394ca8129b8945bf6",
+      "url": "https://www.infoq.cn/article/7sF8sdidMt9kKqhLRhRY"
+    },
+    {
+      "doc_id": "52330d34c91d018e0f310857",
+      "url": "https://www.infoq.cn/article/1KqNGCc9UamMzojQYs9h"
+    },
+    {
+      "doc_id": "71644f661aedee1fa8197205",
+      "url": "https://www.infoq.cn/article/EGdxPRvIZexgBCvtaeJP"
+    },
+    {
+      "doc_id": "e371a840299186dd48f4522d",
+      "url": "https://www.infoq.cn/article/ae6Ujf36FrleCSeGK0GC"
+    },
+    {
+      "doc_id": "4fb5f72b324d3b007dba72f6",
+      "url": "https://www.infoq.cn/article/7NZcr7M3Q6ZmwKd4vpaq"
+    },
+    {
+      "doc_id": "868c8c829d3e7f648ae90a43",
+      "url": "https://www.infoq.cn/article/Vl88ZlCX2tAXIwjQm3Hj"
+    },
+    {
+      "doc_id": "579006622184cf94daf1fee8",
+      "url": "https://www.infoq.cn/article/pe4dSavhT55QZtwwyPkc"
+    },
+    {
+      "doc_id": "88c605af6b64eb80d0c26ad3",
+      "url": "https://www.infoq.cn/article/xQizqd3wt0h1FxIhAvMJ"
+    },
+    {
+      "doc_id": "d442a05277b291429532e65c",
+      "url": "https://www.infoq.cn/article/OAB4mwvb8lPX23Ybmjey"
+    },
+    {
+      "doc_id": "9107d3de535ecf4011726a91",
+      "url": "https://www.infoq.cn/article/kpRCyyMQHu26uN5S5Gk8"
+    },
+    {
+      "doc_id": "ae1be11e307f6f2b80520b73",
+      "url": "https://www.infoq.cn/article/Kwud4ha7syxRDDk5I4Yj"
+    },
+    {
+      "doc_id": "abdc3bb4c97ed4d1568a2971",
+      "url": "https://www.infoq.cn/article/UMDxT7ZwLNrYRL8B31qg"
+    },
+    {
+      "doc_id": "9bb14e6682e8d6ed05209012",
+      "url": "https://www.infoq.cn/article/ZiLdF4HaE2o3ieYydQQv"
+    },
+    {
+      "doc_id": "d7c624fa68dc1bcf9855378a",
+      "url": "https://www.infoq.cn/article/CooVH5E2U0Tpm0Q1j7KN"
+    },
+    {
+      "doc_id": "e742cba53a1b213a0d14941f",
+      "url": "https://www.infoq.cn/article/F86YjSTGYMCppgulxOVd"
+    },
+    {
+      "doc_id": "bee078ae76386812b81e5b78",
+      "url": "https://www.infoq.cn/article/B6vpwhb9BYBuGhzwzw7Q"
+    },
+    {
+      "doc_id": "2445b177e6df72772650acf0",
+      "url": "https://www.infoq.cn/article/j9s1NYqJMqUe31WGGLqA"
+    },
+    {
+      "doc_id": "ab1f47c113cc0db2f6f94ea4",
+      "url": "https://www.infoq.cn/article/f7EDMtpjfUukLE0cTNdR"
+    },
+    {
+      "doc_id": "62ee226805684cf0912652e4",
+      "url": "https://www.infoq.cn/article/Lit2P3yMmO0bMKXQv6mF"
+    },
+    {
+      "doc_id": "d48c17a20a8cb4627a650b1d",
+      "url": "https://www.infoq.cn/article/wNagIlfVkEvRyUW3Y1rF"
+    },
+    {
+      "doc_id": "12284ecea9c3821339504797",
+      "url": "https://www.infoq.cn/article/qRUmRqzgExGNhekGB5i7"
+    },
+    {
+      "doc_id": "de1d269319cbb339e5f071f8",
+      "url": "https://www.infoq.cn/article/AwNyTByLjdiUv7A97tGN"
+    },
+    {
+      "doc_id": "68a6f93170f487cf8de44cf3",
+      "url": "https://www.infoq.cn/article/4im5YCyfmYg7NAi1SRSl"
+    },
+    {
+      "doc_id": "161d49bad59c04271d9839cd",
+      "url": "https://www.infoq.cn/article/GiU3PQAkf6pw2eubtuap"
+    },
+    {
+      "doc_id": "c9b1a88e4314a100c09528b2",
+      "url": "https://www.infoq.cn/article/Ozido9W74XEO9eIqrWxm"
+    },
+    {
+      "doc_id": "c1b0b9bfabffefbe30ce13bf",
+      "url": "https://www.infoq.cn/article/Szkb4Zld4RplFWYUpfq6"
+    },
+    {
+      "doc_id": "f75467454e2d599895e0d1e5",
+      "url": "https://www.infoq.cn/article/EDDOcpOGJOO97h8uzm8Q"
+    },
+    {
+      "content_hash": "0394dcaf15d1f419698c8eecbf1dfe78c09ba7b60fed62ac1590927ec2981fca",
+      "doc_id": "09c15d722428969f39d55a35",
+      "url": "https://www.infoq.cn/article/TJg7MXJ5WM1ayMsW8xtc"
+    },
+    {
+      "content_hash": "8e34635e569c0c99d0f6a29ae44aab3eeb75effd20dea640beaf0c924247e57a",
+      "doc_id": "38edb35e93d5075f63c4a6cc",
+      "url": "https://www.infoq.cn/article/NJHwIZmKPC2mXewiQKdN"
+    },
+    {
+      "content_hash": "082f193a7afb7cc28d6821f3006a04f8cb118afa7bf12f9cb6becc32da9dd03b",
+      "doc_id": "5fcec0451f82441b3ee2b459",
+      "url": "https://www.infoq.cn/article/fWMAUohjNxLecGN27FSq"
+    },
+    {
+      "content_hash": "d2f59b19179443aaea3177236ebfbc7c01a4921ac55224417b47baddefcfde98",
+      "doc_id": "3885a2679c3c2853fa75cd3d",
+      "url": "https://www.infoq.cn/article/UiSw83Z2FESVJwdY54v3"
+    },
+    {
+      "content_hash": "15e32a1247fae6355ac1b1b558831dcbab484cbb37b94ff770974aeb85595f61",
+      "doc_id": "acb8060469fc5f7ee7197d06",
+      "url": "https://www.infoq.cn/article/jkHiRQXX95Y9tyVsj9dR"
+    },
+    {
+      "content_hash": "ff289286e9c44564ae9d31fc411ff858d77d50f7420d1f26e5d66273f2e67f34",
+      "doc_id": "fbc6e8025cca7397610f12dc",
+      "url": "https://www.infoq.cn/article/xqzPRqbWKPeXDrze7U7P"
+    },
+    {
+      "content_hash": "822dc3f61b7099ef7e91deead06cbf4130b76dcd3481bc2869ae4a69ec444c3e",
+      "doc_id": "9486d9512261aa67235da0f7",
+      "url": "https://www.infoq.cn/article/jKGFRSDFJGC7R4g4dfdi"
+    },
+    {
+      "content_hash": "4db885d6d5a9da02d90395e6f7ced8b6356e33b6f8ef094d3c4263948a94e439",
+      "doc_id": "90a47cb7ae454b08a0d984cc",
+      "url": "https://www.infoq.cn/article/PGEF8j6a0wSLQMPBEIs7"
+    },
+    {
+      "content_hash": "1fcbd9f615804c84095dae0c5ff79ad29dd5581d77081c306fdb323a7c33f7f6",
+      "doc_id": "cda74795ca5dd8c147e278f4",
+      "url": "https://www.infoq.cn/article/t9Olysl803omSfN5JfVe"
+    },
+    {
+      "content_hash": "db0fdcd656f6ac1772cbf90c7de0d8e60023f9b6d7488ec9736b506c1158f0a4",
+      "doc_id": "efe81f9f6cfd9467fd76d549",
+      "url": "https://www.infoq.cn/article/XTVfdNbKaRD2L7Oj7czg"
+    },
+    {
+      "content_hash": "b620cbad0aeed0ca8388b4b1ed3ea7f086b0f8915658869628d9d5493bfe3743",
+      "doc_id": "f8eaf8c775faf92b7cbd825f",
+      "url": "https://www.infoq.cn/article/AUKUr4sPOwBOi2IiFk0w"
+    },
+    {
+      "content_hash": "a69029f853142741e0213bc71ce735d4dc4d3c7d2ede456b38b31317349b6d9a",
+      "doc_id": "4d9d4058b4aa448d724adceb",
+      "url": "https://www.infoq.cn/article/dqNJ8wEP5DlGbdxK3KQK"
+    },
+    {
+      "content_hash": "e3b0c7ce2d4bae564c2ee2666233c3fe0dc03b51fac67f1d97023644b6636f37",
+      "doc_id": "27317c5d050adc8e86d511b1",
+      "url": "https://www.infoq.cn/article/4rQRdft9ps5mfbXu2gRs"
+    },
+    {
+      "content_hash": "46c0366f8c6b15242cc7630dc42fabdc22736948afe7ed59254c2732c3ac7f9f",
+      "doc_id": "69a72ba58cc95a7d25e148a1",
+      "url": "https://www.infoq.cn/article/zT7BgPgJaJU2jGdZpQ2Q"
+    },
+    {
+      "content_hash": "33f787ac9e207a01ac360fe788219232f1bc4a445056f8f761dd047fcc167dab",
+      "doc_id": "081fc13106e1ecce38807387",
+      "url": "https://www.infoq.cn/article/wxfU8AS9uJQ2TwIIBt7D"
+    },
+    {
+      "content_hash": "0159e314d0a2b35633d95d9714549379b815a8892e8c0b882bc10ddb28e584df",
+      "doc_id": "c4f3d04d7db01e65460fb2dd",
+      "url": "https://www.infoq.cn/article/02PZj1V1HgEQKTgbC9ol"
+    },
+    {
+      "content_hash": "b43a8e9056a26d3f26275fc506e6ac35f256476a1db4e28abcdc5051364f3f18",
+      "doc_id": "82ff13fc3eaf733f81673809",
+      "url": "https://www.infoq.cn/article/BtacpdqHAqhaZYQH1Lo3"
+    },
+    {
+      "content_hash": "36f34f9ddb4c124b4392c0b344c2810e58e9528e803e6e5437d2e8f069ed5d5d",
+      "doc_id": "83c2c3c91d2827b772157805",
+      "url": "https://www.infoq.cn/article/stCMjmTuODmzZmGzaNUr"
+    },
+    {
+      "content_hash": "a109a8aea1c1be2c3b90fcdb37b729c234ab08c75036e026a9f4e60c2cd82f4d",
+      "doc_id": "d16d5e992d93522e48e6d9a9",
+      "url": "https://www.infoq.cn/article/etaokYfgLHFXpFa5DpSK"
+    },
+    {
+      "content_hash": "c54609079bfdfd5eec229880bb3ccf798d1068b351a128524cfaf696344b3e68",
+      "doc_id": "31826e80d78937e1f27fd934",
+      "url": "https://www.infoq.cn/article/dWT6bw3Mh76rfS5Hu0kK"
+    },
+    {
+      "content_hash": "ad62a4333bc1d97c91989d4d4a80914f47e675f563cb5c3fddf27b54db0b5eef",
+      "doc_id": "44079570ddf13bf9bacba3cb",
+      "url": "https://www.infoq.cn/article/XVRINNYgprSOwajdgNii"
+    },
+    {
+      "content_hash": "49aa6fcc3c16e0fd60ba37a8125a7c90cf3ae33300eec0a80c108f50404f728e",
+      "doc_id": "38790cda56298be3819d3798",
+      "url": "https://www.infoq.cn/article/Fi2tE34ZtKMSt02CazMf"
+    },
+    {
+      "content_hash": "c8f3cedb13956e6f37e58102ea50ceed86da465258dda5db1108beee604f3af6",
+      "doc_id": "9e308ad1abed80a4363e0094",
+      "url": "https://www.infoq.cn/article/jK3bi2rpjkrg90BZMasC"
+    },
+    {
+      "content_hash": "719e37202c02f58dbafc195afd23bab7b007940038e5578091790d2362e887f3",
+      "doc_id": "3f7afce94ddad2c3acccbf54",
+      "url": "https://www.infoq.cn/article/vrFf9KauwxZ4bqWr454P"
+    },
+    {
+      "content_hash": "ecc722086dee26e8a2c398820677dcabc8605b2d77cc271a3b4eff995059a311",
+      "doc_id": "96b2235dfe11da603db0240f",
+      "url": "https://www.infoq.cn/article/fEABoclZW0Fswu2g5Vvu"
+    },
+    {
+      "content_hash": "4064b0b9aa1ec977f455c755343c4cfbc79ea654b91ca5abdbffbe2bb22cee0c",
+      "doc_id": "ff33cd9163c1c6a848fa040f",
+      "url": "https://www.infoq.cn/article/x5pfVaM4F0ghRfKr8ZQB"
+    },
+    {
+      "content_hash": "23ec905d18193c4921f68a7d3b410554ba569835325faa630bc15e1a99949b40",
+      "doc_id": "2408023d3d58884862c9c791",
+      "url": "https://www.infoq.cn/article/cvbSVelibiMQFrzrS54P"
+    },
+    {
+      "content_hash": "5650e344a72b9e63a3061a7e5512a9bf596d24730441eafc8cea92ce6a63889d",
+      "doc_id": "01c80105c82fca09e69dd4c0",
+      "url": "https://www.infoq.cn/article/FoQgYNZbKTtHPj2yvMpY"
+    },
+    {
+      "content_hash": "507e216a035326ef42eb6bc88598483756073eb4b41dc8dcdf94ccffedf03bb2",
+      "doc_id": "0603327bb491975831a4428b",
+      "url": "https://www.infoq.cn/article/3GqjomSQFG2DPKUpSmpf"
+    },
+    {
+      "content_hash": "b6b58a2f39359725808316ad778ab7519c4fa3493c782a8702e75ad4da790b4b",
+      "doc_id": "258685fc1a91d76b9c42f49b",
+      "url": "https://www.infoq.cn/article/uzw2yBS6S5Sexa4lr6ei"
+    },
+    {
+      "content_hash": "0be5be309b1f65f73d1947379415ac6665ba862045ba5659160401df58eab333",
+      "doc_id": "9544149ba2baac1a7ed6dc0b",
+      "url": "https://www.infoq.cn/article/QiEA7L4yQNaoBluK51Ps"
+    },
+    {
+      "content_hash": "7de812a2d660eaafd53beb09ea23325a56cb7e4d809d2c547b60378bcf20b2dc",
+      "doc_id": "44ff5a1d8bda9c7b50f6290f",
+      "url": "https://www.infoq.cn/article/uIbplGaLM0pJTTWcLsgT"
+    },
+    {
+      "content_hash": "57ccdcf9250d4ab47053011e55af09166ceb4ca6942e7a9fe57b0b6ef02e8920",
+      "doc_id": "0e5d2914f90590fcd80e3389",
+      "url": "https://www.infoq.cn/article/XHtQAsLqxiV10J9typAV"
+    },
+    {
+      "content_hash": "5f625f7824170ef2323874872cf3c5495ba71249d250b0f00324d2e65f495d21",
+      "doc_id": "8edbbf17c05ba07ef9db5e86",
+      "url": "https://www.infoq.cn/article/sb8Wlxg3ekJ7ZRP5371U"
+    },
+    {
+      "content_hash": "eb932df557add897bc586c72373b88156503743f3c96c1dbfbec0487d5d35d5f",
+      "doc_id": "2777c740c41b066ea4dd657d",
+      "url": "https://www.infoq.cn/article/3tzrDWuf29rQmQmg2hZ1"
+    },
+    {
+      "content_hash": "de5ff3e38a2432d6a1f507a2fffd295b6538df1846a04491662477f4b15fc594",
+      "doc_id": "3d2cea36287cf278258bee81",
+      "url": "https://www.infoq.cn/article/OoeFvt0pyHi4q7lVBSuW"
+    },
+    {
+      "content_hash": "c85278c100c0a9be83f9fd2e277bf0d9fb195ebf28d3543488958ee474f300bf",
+      "doc_id": "c0baee8ef7b63cd9cb501143",
+      "url": "https://www.infoq.cn/article/28ZmXcrRWC90ibRpzgTB"
+    },
+    {
+      "content_hash": "a34395cac1b3085b74b802851a6a06f9ebd6f53890f84394ebafebffa60918ff",
+      "doc_id": "5cfba8529f2e7480435153c1",
+      "url": "https://www.infoq.cn/article/41SS54OqQT5OrbQLoULs"
+    },
+    {
+      "content_hash": "2cb7a2f585e40b01395728a73bc0c8fe1c56596b2bdcf196a48799d9a3ae1431",
+      "doc_id": "275c457d9c99df1f1f654d15",
+      "url": "https://www.infoq.cn/article/wXR4fUpJdPmEjSwOxEvy"
+    },
+    {
+      "content_hash": "71dbdf383175e29d4ee6c38ef3f79f82b8798b62a2d8cb50461953cf92aad320",
+      "doc_id": "8c4909bcd038fb2bd4269b78",
+      "url": "https://www.infoq.cn/article/RtEJ34DXUR8ObbtXr1Td"
+    },
+    {
+      "content_hash": "c6873bee7be260b4e0eb5af28dabe2264682087c2b5dfe3db0905ba0cd162e9b",
+      "doc_id": "51563ba626aa1e2f6869b9cb",
+      "url": "https://www.infoq.cn/article/oy53MuMMJiIsixTKMLjR"
+    },
+    {
+      "content_hash": "3326695131fc0407835d24ec9ba6f45e7c2ba4b61082d2e4009b32e14c765d7f",
+      "doc_id": "b4b54ce3a5f78a6c58a2892d",
+      "url": "https://www.infoq.cn/article/7Ps0qyHfQhp59g7YrEvZ"
+    },
+    {
+      "content_hash": "503045a26d58fb0dde0b11fc2451f835c2401835ab29a06c34e135a6c5ed3e30",
+      "doc_id": "f2a7adac5af4ea327b312cc9",
+      "url": "https://www.infoq.cn/article/7EvDLvvufhxyKm9YHBUY"
+    },
+    {
+      "content_hash": "42a4255d420df5d73b5c1d73030d75472417b94b12c0d6c595157736583d9853",
+      "doc_id": "6e6ffe0a3b88fb27708df84d",
+      "url": "https://www.infoq.cn/article/2RFSDCaIIRq47h0qwIkJ"
+    },
+    {
+      "content_hash": "9449f678d844b1e71d535cd2d8d7bc4e2a3fa8e67f654ae46e3818f08ee4ca56",
+      "doc_id": "3729e9b9209e427e19e16173",
+      "url": "https://www.infoq.cn/article/jb8R7GNWs1camEcY2sy5"
+    },
+    {
+      "content_hash": "83814d0fdae318235477224dfd706fdd61b163dd735eef3e6860aeb66d1dd94e",
+      "doc_id": "fafc7d023c1f3ffcaae39da8",
+      "url": "https://www.infoq.cn/article/IzPVkcZg0jeHGcD4xP7H"
+    },
+    {
+      "content_hash": "1ff212a772884e2d27f96dc3b8ed209be2ae9c72362fbfccb4d3b5e811c9d5a3",
+      "doc_id": "b21aebbca6c6c8460eac1053",
+      "url": "https://www.infoq.cn/article/R6MJrxFKZo5Scm6KjSzD"
+    },
+    {
+      "content_hash": "ba7e0fad38427482c7d500a1dc177d2ab1bc597e789bbce7e15bd57b06834d2a",
+      "doc_id": "b0f066a3a5abd771dc88d05d",
+      "url": "https://www.infoq.cn/article/2qfkJWH2eTJATBopyjQA"
+    },
+    {
+      "content_hash": "52313483a33fdf424298055b09fa066933b7fe90e8c44db4d5d3fec8af1a35c2",
+      "doc_id": "03fe86395b7a0653d6fd5846",
+      "url": "https://www.infoq.cn/article/QyqSOLZD8L7OkrhqsvNz"
+    },
+    {
+      "content_hash": "5f5a3f14ad908338417982a3f1ecb97d297d97328e9b03b60f9ec105e1007693",
+      "doc_id": "5f77b77c1da3bbb94313f0e6",
+      "url": "https://www.infoq.cn/article/1Ew2VWi3W1NRtXu2ou3x"
+    },
+    {
+      "content_hash": "44733f852bc8c09d539a3cdaa30e6dbf2ffaa2ff20554d2d3da75f02424f519f",
+      "doc_id": "e3eeaedae1c9c4ae66fee651",
+      "url": "https://www.infoq.cn/article/KITIpk2ghO879t9xaXEM"
+    },
+    {
+      "content_hash": "d78ba2fbdac99869ef9992c7311c3884d9d7bae6050323b3df930cd18385d853",
+      "doc_id": "ca20838db88af51d53f9d94f",
+      "url": "https://www.infoq.cn/article/eVugB4V9E9cEsqaEJ27O"
+    },
+    {
+      "content_hash": "c5e54028d10ea743792ac12966beb8f42bbc49e5b3a5213c2bbe0ce6120a9548",
+      "doc_id": "a7fd7d5390aa13c60b12f80f",
+      "url": "https://www.infoq.cn/article/pkzVJ26fmHcY8evAGEvo"
+    },
+    {
+      "content_hash": "003ca13a3c131e8ffdcdf41e127b41e247d2f07c547466ae4b653e9f6ed5aeb6",
+      "doc_id": "2e209708bce31c124797ce6c",
+      "url": "https://www.infoq.cn/article/kIyDR7DqOaj1LMJXX1ek"
+    },
+    {
+      "content_hash": "14d4a8685c5ea4915bd5520be81cc6d15d11faeab48cb21fcc6aba206fa2acad",
+      "doc_id": "32e845fd988144c0c0b75501",
+      "url": "https://www.infoq.cn/article/VBShRGMBJ6SYFoYLJOqL"
+    },
+    {
+      "content_hash": "f1a57b33035bd9de39ef92a07a2fb6429dc503b3ee518a5b9598a1eaaaf21de1",
+      "doc_id": "5b69a1aacc1e5249cb708302",
+      "url": "https://www.infoq.cn/article/wwNEKxmVjCfzolv2mBcz"
+    },
+    {
+      "content_hash": "55104996c285f6a6a4592e92f9b6bac71889134ebdb2937b8b3a507e0afce5e4",
+      "doc_id": "4699aac2b68e1b89d21ee057",
+      "url": "https://www.infoq.cn/article/8HSamdS5C15xXZWGwte2"
+    },
+    {
+      "content_hash": "69def1d5e7e8d6956e00f892b87317902a0cc1ef5fb1bf199affc5e370f881b9",
+      "doc_id": "4b8c373329335c5131bc02bd",
+      "url": "https://www.infoq.cn/article/A2lNTBuAFpFHM6zKg6QO"
+    },
+    {
+      "content_hash": "5edb10c69eaf77f0d7b0c0629eb1bfe98d2d30ad01f39d24b5370612fd4204fb",
+      "doc_id": "0690c28f5cefe57d777790c2",
+      "url": "https://www.infoq.cn/article/P8GbpADUSd1GbVMMhUCE"
+    },
+    {
+      "content_hash": "9d8b394dbf2dcdc1e4f09e7dacbf3b212e6cc886ebf9c99fe038b39cec4cf5a2",
+      "doc_id": "7a45e014e056e594e5642f86",
+      "url": "https://www.infoq.cn/article/VNev0USiz2LvbMrq5wtQ"
+    },
+    {
+      "content_hash": "a053a260134265de87fc890dc3172d19663fea053f4377fa3ee6856aadb4504d",
+      "doc_id": "99436e4ced655edd8d387fc6",
+      "url": "https://www.infoq.cn/article/TggzC1PbadxdDozk0C7B"
+    },
+    {
+      "content_hash": "f10da07fdd34dee420c5c717986fa7dd904cef60d93f5adf3266a59352e8bad8",
+      "doc_id": "a0fd5e8cd0927bd549986bc2",
+      "url": "https://www.infoq.cn/article/VoCrv9M9CBcOiBt6d5M9"
+    },
+    {
+      "content_hash": "3a9fa0bdffc9cc915ea411a59e36303286505e33fa3b551f8d17b24914e2cfc6",
+      "doc_id": "9abc3497824840748a8e54db",
+      "url": "https://www.infoq.cn/article/g3MeddmScRBY2CXPfcmS"
+    },
+    {
+      "content_hash": "42c9867bafc77b16c08a6bf8bcbe0402d4fb7943631f59ece2dd560389a4d3fb",
+      "doc_id": "d6179857ad64a5791ea201a5",
+      "url": "https://www.infoq.cn/article/w7BTZJPJc72ABJsWfrgy"
+    },
+    {
+      "content_hash": "7d2012c7d11a38cae065c9deee150103052cf18aab4657be5811982d8eab3a19",
+      "doc_id": "c43904af3434cd97a9c1c348",
+      "url": "https://www.infoq.cn/article/uODzFMKGcuLcWmILXslZ"
+    },
+    {
+      "content_hash": "95f7e1b2c5623cceb3a264a6f8779f0d9fd6497e1c19801a131575e5ac7e23db",
+      "doc_id": "9a44940794df7ef5ba8a3a2f",
+      "url": "https://www.infoq.cn/article/aCMzt4NNPj9jSqKbHK7b"
+    },
+    {
+      "content_hash": "b7cabc160ddbc0ff494b51b34f94455d911c0dc5834b3c6bc708823db7177861",
+      "doc_id": "14f4d6ea032549bc97235910",
+      "url": "https://www.infoq.cn/article/LNZVV3MHvlYAMvKFOmpD"
+    },
+    {
+      "content_hash": "ee51bc8078076a8e22ba1b1486caa75066b79329643e591b07c0641c36d6640a",
+      "doc_id": "70b4bd5f673de570bda1484b",
+      "url": "https://www.infoq.cn/article/aJpZce53z33Lh1IUJ3L9"
+    },
+    {
+      "content_hash": "38d047cdbb9a33d101d43df815f91c212f6a35a102903b6b99fd9fd98210f4d3",
+      "doc_id": "5edb2f994de7b7d6ba73cecb",
+      "url": "https://www.infoq.cn/article/9AOLdPagedh8OjDw4BlA"
+    },
+    {
+      "content_hash": "453d14a810e29d625b8f5d744d14a88b8f7443568330c4d06a87799310df85f3",
+      "doc_id": "cf88120b3afa80da3fc4c302",
+      "url": "https://www.infoq.cn/article/hhvpVOXJQJqzYzrlwzq8"
+    },
+    {
+      "content_hash": "7878c2aaf910b5b21561ecd2bfbb55a44e78dfdd9176622ca73d94873d7aa5f2",
+      "doc_id": "3ed1d3510ecfb47ffeaff9c5",
+      "url": "https://www.infoq.cn/article/MA8YLIQ96AgqacRklaBP"
+    },
+    {
+      "content_hash": "645f44f1de406d52447bf65ed4cc26c97e94fa58cb19cb4d23683800c6ca7f09",
+      "doc_id": "c87d60581af3c160b02ce58b",
+      "url": "https://www.infoq.cn/article/0VJSOSpO6qdakUj6dMYe"
+    },
+    {
+      "content_hash": "79db27078faa71016551fef598fcdbe7dc07e43c4c8fb0e042083195574f4d4d",
+      "doc_id": "b69592eaa45ace0d3151790a",
+      "url": "https://www.infoq.cn/article/E6BKAtak6p7mZoWwmzsz"
+    },
+    {
+      "content_hash": "cd1e31b92140185dc2922afd19620086a59ec8868454bec98598efe2c0f98162",
+      "doc_id": "dd050acbf191c837da990a1e",
+      "url": "https://www.infoq.cn/article/kmIMtLupslTIPo11XqcV"
+    },
+    {
+      "content_hash": "f26a7522b5756ac24d801063a98c1416fbc2016edebf6bb5716cfd407a4377f4",
+      "doc_id": "6dd4cef57623da5615e341ca",
+      "url": "https://www.infoq.cn/article/yAEo200pmK3aSXAzc07o"
+    },
+    {
+      "content_hash": "8819cf9582e7258a82b2f262930b51875f244b47615e5613985a9a7ea1571b6e",
+      "doc_id": "83947d1a5ac42ecbfdfa1dc6",
+      "url": "https://www.infoq.cn/article/xFMCxKs9IF76ldKAjbYO"
+    },
+    {
+      "content_hash": "8fd0c492ba0d29ffc8c239f74da8cf8608804d0bedb58f4d8b7bf07a08d05f0a",
+      "doc_id": "f88138aeb0fc421e9bff7e6b",
+      "url": "https://www.infoq.cn/article/xCQqtJOjmTmsB6ixN7qx"
+    },
+    {
+      "content_hash": "fe19a5e868f3e74e0f784efe361815c927f36d566072220d9f7167f2726be688",
+      "doc_id": "685013987d422362b8c9887d",
+      "url": "https://www.infoq.cn/article/x1TsysZokOlI5BdfIrpy"
+    },
+    {
+      "content_hash": "bc6e86e767cfc1857dae78d44abbfbf7324b14f68d401c0b92ab5b3ec00b2202",
+      "doc_id": "8d7e9a2f5fe16e89c65bb53f",
+      "url": "https://www.infoq.cn/article/wuQ0kxr4ogfpqM040JOw"
+    },
+    {
+      "content_hash": "28a5aef907aa8d9c5f920111eae4abaf8d6cb4b21ef829972200d573af5c60bb",
+      "doc_id": "ab096b08ae57be61da96e440",
+      "url": "https://www.infoq.cn/article/uUuzHWaU95vsg0ocGATx"
+    },
+    {
+      "content_hash": "0210fc5cda05a517e9f8515bf9373e211f4d5bb66bbfe62002e570144e4a6fa0",
+      "doc_id": "b4ad1d3c1f4cb52dd34bdc8e",
+      "url": "https://www.infoq.cn/article/yr9cz9Dzoy16UBxW8ZVF"
+    },
+    {
+      "content_hash": "90df2483567426d9e69f9cb73a91fa46516601c650141f5a83a2f51e25a72364",
+      "doc_id": "b23cfe70ba1f735d92672ae1",
+      "url": "https://www.infoq.cn/article/rhOwjTudBxhpRiqCV0Yy"
+    },
+    {
+      "content_hash": "02f679400038ecf409f1e817165c678f58ea7e10e17cec93f3b3ac69f740927a",
+      "doc_id": "d4407ed937d0f78f325c3fbd",
+      "url": "https://www.infoq.cn/article/bTNpjxSzFZ8fKkewU5Dz"
+    },
+    {
+      "content_hash": "a21883bb2ff09cafde3c3a0851e57e06606f0f5670598fbe984ab65d1d68f4e2",
+      "doc_id": "11f0d6f5ae4a9d5de45617c1",
+      "url": "https://www.infoq.cn/article/4ulKLNTV8Og2HZy5eX6Z"
+    },
+    {
+      "content_hash": "acd9eba9a69630a69b661ca9e0e7dcf16362d39fd4a4fe5dc6e44d34f44d5f19",
+      "doc_id": "be7b55bdec45e207697d6731",
+      "url": "https://www.infoq.cn/article/fYPmNo7Icskh1xuwCssZ"
+    },
+    {
+      "content_hash": "62425905f5c4c6f5c8758f443cc46daa47690308e97495c62e672dabd855fc75",
+      "doc_id": "78c8f407c8d04f43bd8907f5",
+      "url": "https://www.infoq.cn/article/KsxVykNGVXcxYprfBdf0"
+    },
+    {
+      "content_hash": "228caa38f36bd16953aea4301e099efec29d81a0106d7c4bbf573500df4b9cae",
+      "doc_id": "62d98f15a79bad71b03b57de",
+      "url": "https://www.infoq.cn/article/XBNcLIEZVE9U7JtCephH"
+    },
+    {
+      "content_hash": "9d11fa290773d7c59eb6d353a26d14db07b88dbbf61ca4e8fde429b855dd6f3a",
+      "doc_id": "34a3ff43863b4276a47e1bd1",
+      "url": "https://www.infoq.cn/article/YSvwFN4YxQSO61iIJLI4"
+    },
+    {
+      "content_hash": "93dd87d176ee380d8652f04d25ce26739f768e0eb7b03c63b22cc2c65e7f956b",
+      "doc_id": "e0f34b610111eba1f25d9db2",
+      "url": "https://www.infoq.cn/article/GA9YQg0AsjHdQOCwdGX0"
+    },
+    {
+      "content_hash": "d22c1b896d98831af937dc2d511cb824ff9164626e08d9987a336cf01de074cf",
+      "doc_id": "fc3f30d6be43fd1fc2ce5d24",
+      "url": "https://www.infoq.cn/article/uwjRymcH7rdDVxXi7WYR"
+    },
+    {
+      "content_hash": "c63aaf525fac29ef5a9a3aa04cfe138bf0b336bd7337089cefe7083edc33590d",
+      "doc_id": "8f0967e04bbf010da835c152",
+      "url": "https://www.infoq.cn/article/CsiC1DgdR94TEDf3X3rQ"
+    },
+    {
+      "content_hash": "85af268e7fd1dd7ba28eba6d91f05ffae6fddde387746117ca0a19e13aee83b1",
+      "doc_id": "74147ea3142b967848e6deb8",
+      "url": "https://www.infoq.cn/article/VZjQEe2YVtwL4DZSW93U"
+    },
+    {
+      "content_hash": "04f99430e0a0da7fdea409948f379f4c2fdea4ffe1057c7ec85644b5870f1a10",
+      "doc_id": "8fbc0c380bb3f2194cc7b180",
+      "url": "https://www.infoq.cn/article/BNiefsWtdjeQmreGkaUI"
+    },
+    {
+      "content_hash": "12457bd82d27548c780a3308eb49a327478ae370db03e386ab300677bf8d134a",
+      "doc_id": "acc1ebcd12d0be91b7db87d4",
+      "url": "https://www.infoq.cn/article/2p6sA7AhrH4tDVR0gY1B"
+    },
+    {
+      "content_hash": "e5e5058b4336e9ab48b7d28f1aec319e9d3c1c8179c62acb6f0829d64e032a71",
+      "doc_id": "5d22d926c410049b9e18da18",
+      "url": "https://www.infoq.cn/article/Cpge73IKHuvtVRimGdDE"
+    },
+    {
+      "content_hash": "56ae773653f29db56855259d23ce13a8293cabd934fdc24b2678421724a63a34",
+      "doc_id": "67ee042bcfbd07c949938f79",
+      "url": "https://www.infoq.cn/article/6puCE2lCFJPgz0YLexg5"
+    },
+    {
+      "content_hash": "10a2f7891d00e670116794d065e178ce6ec292fe3020ea9996d0c4d8153016bd",
+      "doc_id": "a21d501fb0cfd65c9e4a08d7",
+      "url": "https://www.infoq.cn/article/MmfUCdZGpWaW8xoP5juV"
+    },
+    {
+      "content_hash": "24e14ec707f4e631dae19c2bfe6c72d81c8302cca768836c0b71fcfbd12f539b",
+      "doc_id": "057bb0d707fd21a3f77a4416",
+      "url": "https://www.infoq.cn/article/bRPkwkdiHdcR7hRij3IB"
+    },
+    {
+      "content_hash": "9d40e62c32ee9664c0eec19b515ffa1b9a81272576c8e136ac98092054200ac8",
+      "doc_id": "541fb2742943bdd8ef751db1",
+      "url": "https://www.infoq.cn/article/5KNbKfNmKPdOOV7yVZev"
+    },
+    {
+      "content_hash": "f52d807a1a5c85988256ad6eb0a3a84d3d81cd752b9db21a7298d4550e30bbb2",
+      "doc_id": "9c1c4355673793fb04bd06ae",
+      "url": "https://www.infoq.cn/article/JpDBvSQJwPqf3PMvTFm2"
+    },
+    {
+      "content_hash": "e6c0540d206ad8c00fa822984063fd44742a87b0f54045a8570ff811485b4092",
+      "doc_id": "267076ea748aaddaff05674c",
+      "url": "https://www.infoq.cn/article/PJx8SCipIZhf7e6gM10I"
+    },
+    {
+      "content_hash": "fac2979eb7da7664033a1a2ecdb1054dbade02a518657b7d29550bd6cdbe6a9f",
+      "doc_id": "ed4b0601b5481ee4065a337a",
+      "url": "https://www.infoq.cn/article/14WP6FKreY2uWfPGF8Yx"
+    },
+    {
+      "content_hash": "37412795d66a92e50d9fb024d8cb10f2f6d1b4e956145db071074b3c42ac00f3",
+      "doc_id": "b1ac22757929eb8d131fe693",
+      "url": "https://www.infoq.cn/article/3ADJu7CuDq8B7xEqJhar"
+    },
+    {
+      "content_hash": "e0d546e7bbbb6f9c51f713df7628bb147e285bf6902d5a123a1fb20df72ae2f6",
+      "doc_id": "d2f963e12258ba058f560e17",
+      "url": "https://www.infoq.cn/article/4HpZbDRqVwMMhPfUWQ0W"
+    },
+    {
+      "content_hash": "9d72fc82b88e7cf1ccc77a1fc98b30d032a9295e08cba4ba0797a929e0ed35f3",
+      "doc_id": "a77ee0587f56c26a1c7309a6",
+      "url": "https://www.infoq.cn/article/hzqWDTkJbUCLghFPXmel"
+    },
+    {
+      "content_hash": "36462dfe2e0e6293f0f08c4dae1f428bb68ad2e3bd309d5ccf59827864c23430",
+      "doc_id": "cf487c6ea72f839493ca80d3",
+      "url": "https://www.infoq.cn/article/F1vZ0dLvd7cH9BdejdUS"
+    },
+    {
+      "content_hash": "da56432935de2164e9bd51644335515aa7d61f62a9ea8c81e386d95da08237e1",
+      "doc_id": "d4c4a4d7334cf312e9a4858a",
+      "url": "https://www.infoq.cn/article/tGmKw5zqR6aRA5bvoNlR"
+    },
+    {
+      "content_hash": "94e85366034aadb91ca25794a3d18f23d9980b97f70cab2c9f239cffb005ed94",
+      "doc_id": "dd86672b2fb8f41a0a14698a",
+      "url": "https://www.infoq.cn/article/NI75sRNGCt2yqH0gp5jq"
+    },
+    {
+      "content_hash": "47cf6d6119f014f09b5d98826caf4d2e806ec2c27f7344604a1771b35c7734fe",
+      "doc_id": "efab0f19314b6c55cdee5cb4",
+      "url": "https://www.infoq.cn/article/z30mE0bxrvItO9Mm52Nw"
+    },
+    {
+      "content_hash": "97f55ab43e996121e71077cee89a983dd4d19cd00077f9385d84e4d7fd967c79",
+      "doc_id": "a2457ffb90d2a6753839816c",
+      "url": "https://www.infoq.cn/article/e4Jck97hysiIvHo8rsx1"
+    },
+    {
+      "content_hash": "ffba242d7fc2e3111e511ec1219ba0b69331db0874f1a01c2321b2a2d32dd7cd",
+      "doc_id": "996890ce501a108116687c87",
+      "url": "https://www.infoq.cn/article/keyQoFMZkUj081kAFAD5"
+    },
+    {
+      "content_hash": "4b70572e8cbfb0eef3927f348c6a8d4886e44842e8ea9bd27111c9bb6ce37f4a",
+      "doc_id": "a9ec034e93124abe2bd90320",
+      "url": "https://www.infoq.cn/article/R0d8o3gWaf2PbpqKYBeq"
+    },
+    {
+      "content_hash": "fea844685cb083a81d717f8045d7b5cbf1278c085a9b76676c901079f4b42dfc",
+      "doc_id": "70b95ceafdc900ef2cea0ed4",
+      "url": "https://www.infoq.cn/article/sbYgeIQPwWH6q7DXvLsj"
+    },
+    {
+      "content_hash": "789ee8c004a81265e1bee2cde109ec7161573dfa3a9b976258316cca96a867f4",
+      "doc_id": "545767d129be70b3d71697f3",
+      "url": "https://www.infoq.cn/article/f2M3o2deL6XIaomHvlSK"
+    },
+    {
+      "content_hash": "2e9f598dd300604c27b2b1635928c9cca451865d86c843ff2a203baf94cb34ea",
+      "doc_id": "7b75bd58519814a11c9c8612",
+      "url": "https://www.infoq.cn/article/ElR50iqZXP6j2Umx78qS"
+    },
+    {
+      "content_hash": "306fce778c017525b2e5bcdc6db3bf849a0efdb55de7a1b685e8530389355b4c",
+      "doc_id": "3c33241e2bb2fd68fb3c6147",
+      "url": "https://www.infoq.cn/article/ySHeOmiAcJo6Gs5zEbwy"
+    },
+    {
+      "content_hash": "923590d5a4e9d28f4e74435799f097fa680d61347e0365c523e3835e389a9c6f",
+      "doc_id": "e8156292261a127bd402e803",
+      "url": "https://www.infoq.cn/article/HrxcMhZREEfQjcQC9Qbi"
+    },
+    {
+      "content_hash": "6fe3b86812de9afebbc9097aff92060c3a18ba29eccb476b8f66316cd172370c",
+      "doc_id": "b628d33e1534522b9df25b9c",
+      "url": "https://www.infoq.cn/article/isePjDZVPmGkh1pCuZMM"
+    },
+    {
+      "content_hash": "137468c6088f5af0731e78713052249b4e3844308192d53e44f3f420ba7986cc",
+      "doc_id": "0d0ed9e0faafe69f1fbe1c37",
+      "url": "https://www.infoq.cn/article/2hgvNSuRdHqGjkWLy1zJ"
+    },
+    {
+      "content_hash": "541f9e068fb206aa6deeecddea6c2fcdf58c8245c73a3d80fa2f2b0629972043",
+      "doc_id": "3189f4bf0e2baa78f7371e1c",
+      "url": "https://www.infoq.cn/article/acKp2Z82dgPzAJ0uUO0f"
+    },
+    {
+      "content_hash": "c562fa35cac7d07305b7f7eedad5d14e7834f0d7f30820c03b0554fa55504347",
+      "doc_id": "6fae69693c06af10149af605",
+      "url": "https://www.infoq.cn/article/oViWcDkOOpE7rM83mPC1"
+    },
+    {
+      "content_hash": "3c4f3a445cb12b6a50dc0cddfad58b8f9a6f62c34186a136b55c34347950e9d7",
+      "doc_id": "a517a6a54892b38d87f04556",
+      "url": "https://www.infoq.cn/article/J6O7EptLmHKMfxTdNiBK"
+    },
+    {
+      "content_hash": "882b315c1951d33e8a9e3bc09d4e79c21192977990608ac95c355474aa21f7f4",
+      "doc_id": "61d6d3065c4b08f5ef5b7b20",
+      "url": "https://www.infoq.cn/article/u1gDuYhhFvX4xXmyIFGi"
+    },
+    {
+      "content_hash": "ec6f7bd41e5ac97739e6aefb75f376088f71c485c5db375646059541b128cb4d",
+      "doc_id": "51ad0427b938c45e289e9d1a",
+      "url": "https://www.infoq.cn/article/tFzIk6Ywm1tr4EuJ1e95"
+    },
+    {
+      "content_hash": "ca11bce99ee03f3629f3ce04dab0a48ea0dc8aaaf72994907226e951bbc6b7c0",
+      "doc_id": "263fcf10d78c3848992e309e",
+      "url": "https://www.infoq.cn/article/btJIccVeRc4b7jCUGX7y"
+    },
+    {
+      "content_hash": "1ae61f68b7bc4888d7623720adbb105b239502dea512f6f618fa383692f2700f",
+      "doc_id": "6b185556226849a28f7c2d77",
+      "url": "https://www.infoq.cn/article/Xtz7v8sDc8tqFrRtyyN0"
+    },
+    {
+      "content_hash": "2296d8df5d08466fc290327a23d67951c38f952ddbbb5c2d326dfa5b09f74772",
+      "doc_id": "c0e9d987562ee7db55a0c021",
+      "url": "https://www.infoq.cn/article/mq0Wo3OfLMU1Hjh4ef5o"
+    },
+    {
+      "content_hash": "1ffbe8524ec85e313fdf024064d94c145a5b5ce906665036378c46451e749d8c",
+      "doc_id": "99c34f63e07d1605f0024545",
+      "url": "https://www.infoq.cn/article/zwmQq3aq7I7RiAqVCOpr"
+    },
+    {
+      "content_hash": "189caf5dfb69b1e405498f8216f79360ddb576068347bc85c69720db4a42debf",
+      "doc_id": "45280cd1d91c630c068d7dd1",
+      "url": "https://www.infoq.cn/article/bFf3XYDz2MgzM8bbS1iM"
+    },
+    {
+      "content_hash": "c043b580b751d5d696f2287914ca54b901b6e198a75ce7d7baeffc75b2138141",
+      "doc_id": "fad6c64b74d0a163a882f092",
+      "url": "https://www.infoq.cn/article/kgFyRwZx2ruihJlcZDRv"
+    },
+    {
+      "content_hash": "5ffcff5d486bcc13a7528d2a4343c1c488b7a9d7299af6aefa1a0451381844a2",
+      "doc_id": "f5032fd8894db7ddb167cb82",
+      "url": "https://www.infoq.cn/article/cSiTICNXcNJveDEvKdA6"
+    },
+    {
+      "content_hash": "a17fdad6bd64fa88ae845b1764d29f50556f5461359d160bab0692f71e822139",
+      "doc_id": "829bd7620f174a03524a93eb",
+      "url": "https://www.infoq.cn/article/A8ZIAPqRcYKSJ5fRB0D8"
+    },
+    {
+      "content_hash": "d118900daa1de5cefa3fa1dba0bc02bfb02a5a3e6540f5cf6679dcbfc376af13",
+      "doc_id": "f1f34167984d5e508d20f41c",
+      "url": "https://www.infoq.cn/article/uui4NVydvW9GO32OA3tB"
+    },
+    {
+      "content_hash": "3d31dec5aa84e2d3c2a5712f211e34f35e953f2e2963e50c9ab58ba3f155a28d",
+      "doc_id": "04056c55fcd49e5eb3b486ac",
+      "url": "https://www.infoq.cn/article/fpevIyjLZm1sElt6um25"
+    },
+    {
+      "content_hash": "58687d83082e632afa5c4b35ad95fd7ba331462ec1306ccf497a42e85486042a",
+      "doc_id": "1084f0a4134576b53eab1359",
+      "url": "https://www.infoq.cn/article/9RsNpcVNEZorwctMtfqy"
+    },
+    {
+      "content_hash": "30275ee23e2094e3421aa61b4b014262c4d44209fde20a2bf131231f17d1ef19",
+      "doc_id": "12ce929177098d1c6f85909c",
+      "url": "https://www.infoq.cn/article/bRFsxoX9FVreb9sfckA5"
+    },
+    {
+      "content_hash": "bf633e7dffd85e3ebc80a678977521cf54eb2a6c927d7866b5eaa612da05b41a",
+      "doc_id": "9edae0292a987b27ead298dc",
+      "url": "https://www.infoq.cn/article/P0i2zyh1Ym0FVx8IsTIL"
+    },
+    {
+      "content_hash": "a1e4257b88e77dc8f36e8844be24de6e10fcf06a4f8ab8d32f273c9e26be0dec",
+      "doc_id": "b07814731015ce5344fc6318",
+      "url": "https://www.infoq.cn/article/VCOhDQYa1uNLgduoS4Ba"
+    },
+    {
+      "content_hash": "24d48a683ff9129eae1e905e2fc55d0b468ad76625fef6b7c9edf14e001a2784",
+      "doc_id": "bcad5e0aea7fead7ebd4d013",
+      "url": "https://www.infoq.cn/article/g9leV67ZVXcfsyQ1Pkqr"
+    },
+    {
+      "content_hash": "73226d82f3fb624415be0c7c355377a701a4980d282f2ed222d37e0447c709d6",
+      "doc_id": "00b41fb97376b97ae8042b85",
+      "url": "https://www.infoq.cn/article/ju0KiE95GPKQK9TbeMaS"
+    },
+    {
+      "content_hash": "d0e850d2f1cc16f4c758563c4d60c59305cd99643131ae660b0c19a0412c2416",
+      "doc_id": "3c73d2bc8a75868d73e8a1f1",
+      "url": "https://www.infoq.cn/article/kwBWj86QfAl0vjYARviI"
+    },
+    {
+      "content_hash": "283ac0a518aeeb188781a263ff873a0c6c6f0ed69fca0ec7e9e4e59992771b17",
+      "doc_id": "11ecb5758d77b39ffca98f0e",
+      "url": "https://www.infoq.cn/article/65eyopxmeRRgreOY9zvp"
+    },
+    {
+      "content_hash": "7e1460c98b2d8f41075af93f7b30aaa234c788908c755b0098927b9de415735c",
+      "doc_id": "9f693cf901d640ffb7312bd9",
+      "url": "https://www.infoq.cn/article/IuWLyzIGUu1keZ2XreEb"
+    },
+    {
+      "content_hash": "b110d6939ff407d9dda3cab59635e3a606ff2ce16ff015238b95bf597d597562",
+      "doc_id": "caaeb7e72e492fae34e311c8",
+      "url": "https://www.infoq.cn/article/sKl6w7KhhFr7DMQkCrVf"
+    },
+    {
+      "content_hash": "ff94a7c23444617f964adfe6abb7478f3ff19644b67d1aac43d01bc7eafa3145",
+      "doc_id": "fed44f93815203d3293d5e86",
+      "url": "https://www.infoq.cn/article/N8Wcppi2vFxkh3C0VdAw"
+    },
+    {
+      "content_hash": "2f2ef47c5275fd33c5d3befce72f0391db88ba261f1a3617cf33faa9433d82aa",
+      "doc_id": "48a9230fe1ff0bc5832f1e7c",
+      "url": "https://www.infoq.cn/article/z4MCCu8W62Je7d2fED7p"
+    },
+    {
+      "content_hash": "b0a3d729a9ecf0be26a65fe14eee16d9b7db76da4d792d6a28553833a070fc74",
+      "doc_id": "1baad64bbd408257575836fc",
+      "url": "https://www.infoq.cn/article/dbKqfktaIvrxmR5XeXyi"
+    },
+    {
+      "content_hash": "e95395409a16f7d64d3420ecd0ff2ab553ae748321f204eec4af2b80dbcaa0e8",
+      "doc_id": "9894f671b6015ea06feb6543",
+      "url": "https://www.infoq.cn/article/C2KN4TWI03iOyhXg2eaw"
+    },
+    {
+      "content_hash": "39360fdacc63ffac92ea3250a878d0f1ace8d91dabe538ecd5e33dbd6cbfc089",
+      "doc_id": "c57627156af61667a0d09911",
+      "url": "https://www.infoq.cn/article/6ZxFDYIa5Vf8eG0XUVgh"
+    },
+    {
+      "content_hash": "bcd2c37b05446753bbd7f84df2a94061399157ad1419471feb71c5da69574720",
+      "doc_id": "32820b09ec8dd3edac07c47f",
+      "url": "https://www.infoq.cn/article/LAvHdllNrSpdZlsAk9x4"
+    },
+    {
+      "content_hash": "91d099d9567cd6a6a717d46afc2dccdc23f8dc4df80029dcc18dd33d37492ed7",
+      "doc_id": "f63a7b2bd944a87278bb8c6d",
+      "url": "https://www.infoq.cn/article/VfaDjlOi0HYmxmPPwiEH"
+    },
+    {
+      "content_hash": "c1a804fe4d3527184bcb49f89820a6b12db93c14380ddee15bda673e0f5a8acd",
+      "doc_id": "3c30e60531012a7637fe1467",
+      "url": "https://www.infoq.cn/article/LtPvGTzFsJOhc9xXE9aL"
+    },
+    {
+      "content_hash": "8974baae817a45a0cfb98449a5b0680a168bce5b7fba23258616948332644afe",
+      "doc_id": "cc7d9df46145b74d0c7a51fd",
+      "url": "https://www.infoq.cn/article/vQPmQgIfdxACVJpi5W7b"
+    },
+    {
+      "content_hash": "83f3bec27556849e1d84d80160c9205d03a6e99e7b5ebdfb60f5d693ac45d2d1",
+      "doc_id": "27bb8bd65a321c72ac727513",
+      "url": "https://www.infoq.cn/article/RkUrtwmzlG3MuNuXskuK"
+    },
+    {
+      "content_hash": "485b90a04bd9cf2a199ffdb097708db84f74423df84a4d76af1077990282b188",
+      "doc_id": "f290056b9bb19e8ab3b06ea1",
+      "url": "https://www.infoq.cn/article/xXqZUxDxGqHlT7hXsaOC"
+    },
+    {
+      "content_hash": "edc5324c5ddd59ceae9d77032e8140d4f78291895b1a48d14e75e06547ba9566",
+      "doc_id": "77c839071847428bd3e81839",
+      "url": "https://www.infoq.cn/article/1I9fO3MDaqpkoMIVY8Ka"
+    },
+    {
+      "content_hash": "ebf4524fb356fb229a854029c9392e28887873f82a3f9a4acd7a62f8210dc25c",
+      "doc_id": "f0f3a85f6c080ce3e935fe26",
+      "url": "https://www.infoq.cn/article/fbKugCt382Noyah2KLcr"
+    },
+    {
+      "content_hash": "d2dfb2f0fa5eaf63e108851c94a68a173af3403d7624409870ce65e2cf2a6a48",
+      "doc_id": "93a70e6243c4d2582830ee15",
+      "url": "https://www.infoq.cn/article/6bT6kDa1ADuCKeTU4VlI"
+    },
+    {
+      "content_hash": "a89c25612cd2c6f6589ceb7b8d3537c8a33dd03d887af5ab6dabb8beb756d9ef",
+      "doc_id": "2c1074af7abe0ec161ca6233",
+      "url": "https://www.infoq.cn/article/empFkGQ183cHqHp5HGDR"
+    },
+    {
+      "content_hash": "5f7bed235d1c7e4ddfcb56eafe68ad2cd82c62868879f225be59aa7688a1521c",
+      "doc_id": "cd5bb2d0850e3ddac90ac905",
+      "url": "https://www.infoq.cn/article/xzjZxV84u118R0GDTPii"
+    },
+    {
+      "content_hash": "ff4853d7508e3388fa46de9c8a8fbd4032c4a53fb9e86435c124dba974459abc",
+      "doc_id": "726c4f1d979ef605e5b46eac",
+      "url": "https://www.infoq.cn/article/k5vF3f3OWoelh1peYipW"
+    },
+    {
+      "content_hash": "470c7c1e48874aceaa0c0f026f9ad0eb4f10264d801f5788a2390b1cfc5a203b",
+      "doc_id": "7e4141b61664119987edc23a",
+      "url": "https://www.infoq.cn/article/vpaJpzLvErAuLDpmeQAl"
+    },
+    {
+      "content_hash": "feb4144c6277d54bc8bc1904c8f6f22c2b20b906a1a38c6c9a9e7f24602b6483",
+      "doc_id": "4da5a651dfcb461d0547b188",
+      "url": "https://www.infoq.cn/article/hkqHm2GKjCFUggQ7urfA"
+    },
+    {
+      "content_hash": "55e24634cb4b3bb539d964f59095edbf69a47f3724190572023213ca883cdf8b",
+      "doc_id": "ff75c9e66814622f43d9bba1",
+      "url": "https://www.infoq.cn/article/h7BvDcU3expoSIKyY3aH"
+    },
+    {
+      "content_hash": "1e20d3c951d55cb3530abb45f1611cd01684aa2e797b809093c395c62cb985b4",
+      "doc_id": "6d477d126e4b179290df4572",
+      "url": "https://www.infoq.cn/article/a1j6cpcITWqxIv2LlX7S"
+    },
+    {
+      "content_hash": "f4953afd54ec161d4a4410e5a82e16721e927eb0bf84783e239a0e944462d74e",
+      "doc_id": "ff157f4533b3348188477c0b",
+      "url": "https://www.infoq.cn/article/k0z2UK3JWvWe2y0I9fsK"
+    },
+    {
+      "content_hash": "51b2f3687ad4c47a47da17a0b9447b09d09e9c038e30ad4dd1848a95fcd53c47",
+      "doc_id": "15d205a0b9cd89b52d9735a5",
+      "url": "https://www.infoq.cn/article/ufETaZS9EjAsBimqmJBA"
+    },
+    {
+      "content_hash": "b03024ac072ba430d598dec461b0c5b91952985d050104953bdc075c9be28d75",
+      "doc_id": "134e324547e5384cb7c4d186",
+      "url": "https://www.infoq.cn/article/OBY1si0QCkbxXbblcBxl"
+    },
+    {
+      "content_hash": "65a23fc4f5daeed43c13d4f28af248612aa068649bd9dc7a8988320f07668f53",
+      "doc_id": "1e91359082930ab108927aa0",
+      "url": "https://www.infoq.cn/article/fAblSufcSfzWr0cePFTs"
+    },
+    {
+      "content_hash": "2576f4a11219877f7e53a2de228153312bbc4de6e3ab17cfe4d4a8ecababac4a",
+      "doc_id": "72172284373bce95b8e8f87e",
+      "url": "https://www.infoq.cn/article/HKsPfKWmCpbHHA7diwNA"
+    },
+    {
+      "content_hash": "537c6009aca9bbc593b45f6bb60f0f4bc47a22e7b43a0656dcc4ae75bf32d4ce",
+      "doc_id": "bb019356cb712f4be965ccc4",
+      "url": "https://www.infoq.cn/article/uIIl5rr3w3AG6y2AROic"
+    },
+    {
+      "content_hash": "78d4780a70cbb6cf3f3ef6fe339f12c5b3dcd0bc4b1b999ac106d22fe967b71f",
+      "doc_id": "0ae8d5d5ad0ad5479e738907",
+      "url": "https://www.infoq.cn/article/uMaGfH0kjZB89bouaxl2"
+    },
+    {
+      "content_hash": "e9230e98d8efbee21ce3572ba1bf25640c450a5fe98b728a683cc8a5608b1e42",
+      "doc_id": "6249be3dbf220b39450848df",
+      "url": "https://www.infoq.cn/article/7V1bQKpo78LrRElDX2qs"
+    },
+    {
+      "content_hash": "cca50680dcc389d5e1b4ef6ab7aac34e630621a186b1c083fd70db09ab989422",
+      "doc_id": "7013cd12b2c35af30ef244b0",
+      "url": "https://www.infoq.cn/article/9zeztJFGeqBXWgRvvwS7"
+    },
+    {
+      "content_hash": "ad5762f76923897c5b8720da84a748275f6a10c0c331db6a2cb2505424408cd9",
+      "doc_id": "f5e3c2dd262cfa1c6947740b",
+      "url": "https://www.infoq.cn/article/qwYKyUUWSBZtE0YzLlMm"
+    },
+    {
+      "content_hash": "f86e85397d255fc5ef3dc639343e2967106365b3cebe7bd948180ec206201cce",
+      "doc_id": "0a63ee8ade87e4a40f3a23df",
+      "url": "https://www.infoq.cn/article/wtufrhBsNxaTlJi70DCK"
+    },
+    {
+      "content_hash": "ac9fbed0a3b14009ce153df11ee3eeb13ea5de1edf9db7e97d2b1f80247f2cf0",
+      "doc_id": "e6a29a07f96828fef2043306",
+      "url": "https://www.infoq.cn/article/dwoG7HTEvAXYR09arJyQ"
+    },
+    {
+      "content_hash": "bc51b2cd300a105370547d58afd43dd1cee86787446e29e035dee77006a45bb2",
+      "doc_id": "fe4575bc2a3fa46e213c036b",
+      "url": "https://www.infoq.cn/article/L1Uf3EsRQNGU0NdM9FrR"
+    },
+    {
+      "content_hash": "3a3c67ce950b40d540d973c31885d93051bb45ca06f65ef32d87c4e4095f9bbf",
+      "doc_id": "fb4236ac29b38e60cc3bed61",
+      "url": "https://www.infoq.cn/article/Sv17xjqQKeZwdzqPTWIk"
+    },
+    {
+      "content_hash": "5ce9abf418beed7f128a54f3377042c649ed42b10df3cee81f0c3b8c5b900d46",
+      "doc_id": "d470c391c60fceb2b9c7ed30",
+      "url": "https://www.infoq.cn/article/rEoBohpb2NMs8Qe0lwuT"
+    }
+  ],
+  "near_duplicate_check": "not_performed_by_this_identity_export",
+  "purpose": "Mechanical identity-only leakage exclusion; no body, gold label, model decision, score, or outcome is exported or inspected for research.",
+  "schema_version": "media-identity-exclusions-1.0",
+  "sources": [
+    {
+      "identity_records": 40,
+      "path": "data/translation_eval/gold.jsonl",
+      "sha256": "d0a197c9a467f745f1324687d2eb1319e5fc0aa92776995ce497ca7fb3e41621"
+    },
+    {
+      "identity_records": 40,
+      "path": "data/translation_holdout/gold.jsonl",
+      "sha256": "2460b87486517eca1d15896be9f3d33f681226c02e86d6bc31fece4fb5f8b9cc"
+    },
+    {
+      "identity_records": 100,
+      "path": "data/translation_test/gold.jsonl",
+      "sha256": "05bc02f40d48a9bad89cf35e1f34404ae8f839167656b18e644103d64edff0bd"
+    },
+    {
+      "identity_records": 180,
+      "path": "data/translation_v2/candidates/infoq_candidates.jsonl",
+      "sha256": "31e3a0ab43dc280e7a14df5fb627988526bcd115020b714b792f46d8c7d8e16d"
+    }
+  ]
+}

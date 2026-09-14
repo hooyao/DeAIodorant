@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "attempt_count": 1,
+    "cache_hit": false,
+    "checkpoint_revision": null,
+    "checkpoint_revision_missing_reason": "not_exposed_by_response",
+    "cost": {
+      "accounted_usd": "0.0000372",
+      "basis": "reported_usage_cost",
+      "reported_usd": "0.0000372"
+    },
+    "finish_reason": "stop",
+    "finished_at_utc": "2026-09-14T03:48:27.063211+00:00",
+    "messages_sha256": "55c03bbbf78de4aaa780ba4c941eceeb7d2c268c1634c30882b7c89872d937cb",
+    "native_finish_reason": "stop",
+    "provider": "Relace",
+    "provider_missing_reason": null,
+    "purpose": "cr001-interface-smoke-1.0",
+    "request_config": {
+      "max_tokens": 1024,
+      "model": "deepseek/deepseek-v4.1-flash",
+      "provider": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "completion": 1.2,
+          "prompt": 0.3
+        }
+      },
+      "reasoning": {
+        "enabled": false
+      },
+      "seed": 20260914,
+      "stream": false,
+      "temperature": 0,
+      "usage": {
+        "include": true
+      }
+    },
+    "request_sha256": "60226209421a117122473ef6806fd7d01f134e8d89c3ae2ad6170895d80bb604",
+    "requested_model": "deepseek/deepseek-v4.1-flash",
+    "response_id": "gen-1789357699-95nSaSlaioTalgTlWlY9",
+    "returned_model": "deepseek/deepseek-v4.1-flash",
+    "schema_version": "compact-refiner-openrouter-1.0",
+    "seed_support_note": "A requested seed does not establish provider support or deterministic replay.",
+    "seed_supported": null,
+    "started_at_utc": "2026-09-14T03:48:18.314530+00:00",
+    "transaction_id": "432dba3342be4d9d98eab4847965e3a5",
+    "usage": {
+      "completion_tokens": 43,
+      "cost": "0.0000372",
+      "prompt_tokens": 76,
+      "reasoning_tokens": 0,
+      "total_tokens": 119
+    }
+  },
+  "text": "纸桥阅览室周六开放时间为9:00至16:00，最多接待20人，不接受电话预约。线上预约成功后仍需现场签到。本安排试行两周，之后是否继续尚未决定。"
+}

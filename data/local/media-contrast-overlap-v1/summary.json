@@ -1,0 +1,56 @@
+{
+  "admitted_documents": 0,
+  "candidates": 24,
+  "human_smell_labels": 0,
+  "inspection_eligible": 16,
+  "internal_overlap_count": 0,
+  "known_overlap_count": 0,
+  "method": "Existing exact/normalized/simhash-prefiltered shingle guard at fixed threshold0.9; not a guarantee of semantic non-overlap.",
+  "privacy": "No benchmark body, label, score, or outcome is emitted or used for prompt/rule tuning.",
+  "source_datasets": [
+    {
+      "body_indexed": 30,
+      "missing_body": 0,
+      "path": "data/pilot/pilot_corpus.jsonl",
+      "records": 30,
+      "sha256": "a46ed37102a273746948c556d6e8d4c4bcf19c2c00fce2dccf14e731996e270f"
+    },
+    {
+      "body_indexed": 6,
+      "missing_body": 0,
+      "path": "data/smoke/pilot_corpus.jsonl",
+      "records": 6,
+      "sha256": "6e44850f3f66b8e2967ad61e4c6fff24f25b730450adec5cad8375db10e8cbb7"
+    },
+    {
+      "body_indexed": 40,
+      "missing_body": 0,
+      "path": "data/translation_eval/gold.jsonl",
+      "records": 40,
+      "sha256": "d0a197c9a467f745f1324687d2eb1319e5fc0aa92776995ce497ca7fb3e41621"
+    },
+    {
+      "body_indexed": 40,
+      "missing_body": 0,
+      "path": "data/translation_holdout/gold.jsonl",
+      "records": 40,
+      "sha256": "2460b87486517eca1d15896be9f3d33f681226c02e86d6bc31fece4fb5f8b9cc"
+    },
+    {
+      "body_indexed": 100,
+      "missing_body": 0,
+      "path": "data/translation_test/gold.jsonl",
+      "records": 100,
+      "sha256": "05bc02f40d48a9bad89cf35e1f34404ae8f839167656b18e644103d64edff0bd"
+    },
+    {
+      "body_indexed": 180,
+      "missing_body": 0,
+      "path": "data/translation_v2/candidates/infoq_candidates.jsonl",
+      "records": 180,
+      "sha256": "31e3a0ab43dc280e7a14df5fb627988526bcd115020b714b792f46d8c7d8e16d"
+    }
+  ],
+  "staging_attempts_sha256": "348e8cc8ec34d1a6fe5517ee7f7858f6bfa78bb7424bc063b3bc9616858ac6f2",
+  "version": "media-staging-overlap-audit-1.0"
+}

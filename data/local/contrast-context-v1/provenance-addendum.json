@@ -1,0 +1,2004 @@
+{
+  "version": "contrast-context-provenance-addendum-1.0",
+  "date": "2026-09-14",
+  "reviewer": "assistant-review-a-separate-provenance-audit",
+  "model_identity": "unknown",
+  "human_gold": false,
+  "scope": "all 35 deduplicated retained InfoQ documents returned by experiments.ershi_cohort_statistics.load_articles(), restricted to pre/post and not known_translation, including all zero-connector documents",
+  "selection_expression": "source == 'infoq' and cohort in ('pre', 'post') and not known_translation",
+  "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+  "current_methodological_role": "Translation is a provenance stratum. The legacy original-only temporal comparison is a sensitivity/control view; translated documents remain research and product-diagnostic material.",
+  "legacy_status_note": "The status field preserves the requested legacy exclusion nomenclature for transparent recalculation. current_provenance_status records the current translation/provenance finding; no row is globally excluded from research.",
+  "methods": [
+    "Read the full bodies computationally for targeted provenance markers, then inspect all marker contexts and article openings or endings as relevant. This is not full semantic verification of every source relationship.",
+    "Inspect author, translator, and recorded translation-evidence fields for all 35 retained documents.",
+    "Inspect the retained article scope and embedded author/translator fields of 18 available full local HTML captures (16 staged captures and 2 later pilot recaptures), excluding unrelated recommended articles from provenance reasoning.",
+    "Validate each evidence quotation and its zero-based end-exclusive Unicode offsets against the exact UTF-8-decoded source file, preserving CRLF where present.",
+    "Verify retained corpus-body hashes separately from monthly-file serialization hashes; never modify bodies, metadata, frozen semantic reviews, or historical outcomes."
+  ],
+  "marker_pattern": "译|譯|翻訳|[编編][纂輯]|整理|改编|改編|摘编|摘編|原作|原文|授权|授權|转载|轉載|來源|来源|translated|translation|compiled|adapted\\s+from",
+  "decision_rule": "A disclosure that the article or its substantial interview/source content was translated or compiled from foreign content is decisive. A verified foreign-language source/author relationship with an original link can also be decisive, but a romanized name, biography alone, English URL slug, foreign citation, foreign topic, Chinese republication, or translationese alone is insufficient.",
+  "summary": {
+    "documents": 35,
+    "zero_connector_documents": 22,
+    "positive_connector_documents": 13,
+    "confirmed_translation_documents": 1,
+    "unresolved_documents": 34,
+    "new_legacy_original_only_exclusion_doc_ids": [
+      "0be079018045fbf1f2d47d7f"
+    ],
+    "full_html_capture_documents": 18,
+    "documents_without_located_full_html": 17
+  },
+  "limitations": [
+    "Absence of a located disclosure is not evidence of original composition, high quality, or corpus admission.",
+    "This audit is bounded to the 35 previously retained local InfoQ documents; it does not establish provenance prevalence for InfoQ, other sources, or the full temporal corpus.",
+    "No external originals, author profiles, or network resources were fetched. Seventeen documents have no located full HTML capture in the searched local data tree.",
+    "Image-only disclosures were not OCR-reviewed. Uncaptured, omitted, or differently worded provenance statements can remain undetected.",
+    "The two Snowflake external-original-link cases remain unresolved because local evidence does not establish source language or adaptation; names and English URL slugs are not substitutes.",
+    "For translated media, an observed reading defect can be inherited from the source, introduced during translation, or affected by editing/capture. This audit does not allocate those causes without paired source evidence.",
+    "Translated interviews with local introductions remain whole-document translated provenance strata. Their source bodies and diagnostic semantic reviews are retained.",
+    "No original/high-quality labels, authorship labels, training labels, admission decisions, or editing-efficacy claims are produced."
+  ],
+  "frozen_semantic_review": {
+    "path": "data/local/contrast-context-v1/review-a.json",
+    "sha256": "cbe7c60ccd4b7fd884917ba59924a0c1727537e09343fb4672a936e90e77cd51",
+    "unchanged": true,
+    "review_b_read": false
+  },
+  "network_requests": 0,
+  "gpu_used": false,
+  "documents": [
+    {
+      "doc_id": "73e9f6e61e27e1e32264551f",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2021-07-02",
+      "title": "不止Docker：8款容器管理开源方案",
+      "canonical_url": "https://www.infoq.cn/article/YE7LJiEI4rOPGRaCJE08",
+      "legacy_known_translation": false,
+      "source_body_sha256": "aab37554f58fed82c166c06cd7b15d9a3e70c13640b50bf03a98d40b065729c1",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "73e9f6e61e27e1e32264551f",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2021-07/73e9f6e61e27e1e32264551f.txt",
+      "body_file_sha256": "a4065546bb59b567408a0b430979dc118a42fc7af909a16a71aa10e4e2ff0e7f",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 5793,
+      "literal_connector_count": 1,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 2,
+      "local_metadata_authors": [
+        "Rancher by SUSE"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [
+        "original_link_marker"
+      ],
+      "checked_artifacts": [
+        "data/pilot/monthly/2021-07/73e9f6e61e27e1e32264551f.txt",
+        "data/pilot/monthly/2021-07/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "本文转载自：RancherLabs（ID：RancherLabs）",
+          "source_path": "data/pilot/monthly/2021-07/73e9f6e61e27e1e32264551f.txt",
+          "start_char": 5836,
+          "end_char": 5869,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "原文链接：",
+          "source_path": "data/pilot/monthly/2021-07/73e9f6e61e27e1e32264551f.txt",
+          "start_char": 5871,
+          "end_char": 5876,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The body explicitly credits a RancherLabs republication and an original-link label, but the available local material does not establish the source language or a translation/adaptation process. A republication label is not sufficient.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "0dfc33ff7071975b48e12981",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2021-10-14",
+      "title": "定位你的到底是App，还是手机厂商的操作系统？",
+      "canonical_url": "https://www.infoq.cn/article/tX4oPEA5QwLGeK8wCg0W",
+      "legacy_known_translation": false,
+      "source_body_sha256": "6539d21cd1074588b249725dc6e49f3415b95de1070de94f8694cd188c000e31",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "0dfc33ff7071975b48e12981",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2021-10/0dfc33ff7071975b48e12981.txt",
+      "body_file_sha256": "dcd0f39a438f5f263b00ba5cdfa6d1dcc19c82eb917bff811940bd58e60be143",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 1126,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "Tina"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2021-10/0dfc33ff7071975b48e12981.txt",
+        "data/pilot/monthly/2021-10/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [],
+      "assessment": "The body reports a foreign research study. Foreign subject matter and attributed study quotations do not establish whole-document translation or compilation.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "9e271d7b118c949e83c9ff8d",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2022-06-09",
+      "title": "被称作CentOS未来的CentOS Stream是个啥？",
+      "canonical_url": "https://www.infoq.cn/article/NGt234WtjgPOwITMlXWo",
+      "legacy_known_translation": false,
+      "source_body_sha256": "025ca52d1704795fcdc5e43582e149227b8d713e2b1643304e10c8d3c4f0a502",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "9e271d7b118c949e83c9ff8d",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2022-06/9e271d7b118c949e83c9ff8d.txt",
+      "body_file_sha256": "e5f079df309d0997ee2f30da7410fe4131567830f6a1fbcc4e69be1cdd6bc580",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 4681,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 3,
+      "local_metadata_authors": [
+        "赵钰莹"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2022-06/9e271d7b118c949e83c9ff8d.txt",
+        "data/pilot/monthly/2022-06/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "这不是一个编译系统，编译参数可能会有变化",
+          "source_path": "data/pilot/monthly/2022-06/9e271d7b118c949e83c9ff8d.txt",
+          "start_char": 3658,
+          "end_char": 3678,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The matching compilation terms refer to building software. They do not disclose prose translation or foreign-source adaptation.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "be3e4a9eccc5d3a7e69212c3",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2021-11-05",
+      "title": "Angular 13 发布：全面弃用 View Engine",
+      "canonical_url": "https://www.infoq.cn/article/v0V0CYr4i9lGR6c7US00",
+      "legacy_known_translation": false,
+      "source_body_sha256": "542f8ca9d36c09231bf4746e3f1b32117154e42bae8590597fa1d4ce96a0f652",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "be3e4a9eccc5d3a7e69212c3",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2021-11/be3e4a9eccc5d3a7e69212c3.txt",
+      "body_file_sha256": "544c9547012bf05cb017eae2c83d953bdd6b64b8a0f436e765aafb58f3f80185",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 2308,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 4,
+      "local_metadata_authors": [
+        "闫园园"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2021-11/be3e4a9eccc5d3a7e69212c3.txt",
+        "data/pilot/monthly/2021-11/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "旧编译和渲染引擎 View Engine",
+          "source_path": "data/pilot/monthly/2021-11/be3e4a9eccc5d3a7e69212c3.txt",
+          "start_char": 54,
+          "end_char": 74,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The matching compilation terms describe Angular compilers and build behavior, not article provenance.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "d8917e9eedea037e2ed53511",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2021-10-19",
+      "title": "苹果再放出两款“王炸”自研芯片，英特尔再难换回库克的心",
+      "canonical_url": "https://www.infoq.cn/article/7SWwNUZLAPTM5TIAqwMI",
+      "legacy_known_translation": false,
+      "source_body_sha256": "db55accdcd8d20ba0d540f40177772c9bff6a8461d5bd9781b29b146b56ac8b8",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "d8917e9eedea037e2ed53511",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2021-10/d8917e9eedea037e2ed53511.txt",
+      "body_file_sha256": "8d98d635cba40fc9125b215ca67b563a27ebe22a723123a793e1045984496800",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 4766,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "刘燕"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2021-10/d8917e9eedea037e2ed53511.txt",
+        "data/pilot/monthly/2021-10/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "Xcode 中完成最多达四倍的代码编译工作",
+          "source_path": "data/pilot/monthly/2021-10/d8917e9eedea037e2ed53511.txt",
+          "start_char": 3139,
+          "end_char": 3160,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The compilation term describes Xcode workload. Foreign product coverage is not deterministic translation evidence.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "bf1abf6ca461ec0bbac14bd7",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2022-01-20",
+      "title": "工商银行实时大数据平台建设历程及展望",
+      "canonical_url": "https://www.infoq.cn/article/Mcqw76pE8CZbkCby1Bz6",
+      "legacy_known_translation": false,
+      "source_body_sha256": "7cbedb1dd858787c2a9c1b3cdce0dbc2225b291c15d9178780226c526da8b606",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "bf1abf6ca461ec0bbac14bd7",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2022-01/bf1abf6ca461ec0bbac14bd7.txt",
+      "body_file_sha256": "0b00ffbce337eb49d31931b0cfaed6624f9e81eed460bdc57afbc0965fe9f82c",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 4639,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "袁一"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2022-01/bf1abf6ca461ec0bbac14bd7.txt",
+        "data/pilot/monthly/2022-01/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [],
+      "assessment": "The source-related marker concerns data leakage. No new translation or foreign-compilation disclosure was located.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "81938af852e380b36bede22b",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2022-01-26",
+      "title": "中国电信宣布5G消息正式商用",
+      "canonical_url": "https://www.infoq.cn/article/N00FLzs20hlJZU56qVx4",
+      "legacy_known_translation": false,
+      "source_body_sha256": "60ea47ef9f6ce619684886acb8c0a00e60b170565c8dd18f7d1ec3c89900da09",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "81938af852e380b36bede22b",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2022-01/81938af852e380b36bede22b.txt",
+      "body_file_sha256": "b23cfa225fd680aca4a3f1c2e422d43f900f6d87a7c9153b0e530c5b9d3972a3",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 1149,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "罗燕珊"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2022-01/81938af852e380b36bede22b.txt",
+        "data/pilot/monthly/2022-01/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [],
+      "assessment": "No new deterministic translation or foreign-compilation disclosure was located in the inspected local material.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "7d5e92ccde58b3b78616293c",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2021-07-19",
+      "title": "旷视十年，回答AI技术价值跃迁的“灵魂”三问",
+      "canonical_url": "https://www.infoq.cn/article/d9N51XgSHzETcAC15Amb",
+      "legacy_known_translation": false,
+      "source_body_sha256": "c49a20609ad73546069c9df8ddcbba081fec9d8bb2a7f1cb1134e9f76e5ec99a",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "7d5e92ccde58b3b78616293c",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2021-07/7d5e92ccde58b3b78616293c.txt",
+      "body_file_sha256": "5d3a7efef53bdc37095c4f4ee1dfe47605b6d3af91b26137e6f88709310e08e9",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 3025,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "刘燕"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2021-07/7d5e92ccde58b3b78616293c.txt",
+        "data/pilot/monthly/2021-07/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [],
+      "assessment": "The article describes a technology event; no new deterministic translation or foreign-compilation disclosure was located.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "2d8b8db77aefcdcbf86f23b4",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2022-01-10",
+      "title": "数据库内核杂谈(二十二) 自动驾驶数据库 - Behavior Modeling",
+      "canonical_url": "https://www.infoq.cn/article/mtyRVkfZ9dQNcqlslfJe",
+      "legacy_known_translation": false,
+      "source_body_sha256": "13198102813b4a56c58aaaf7a43b5c97230de91e0ee8166063ee66a8c6256fbd",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "2d8b8db77aefcdcbf86f23b4",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2022-01/2d8b8db77aefcdcbf86f23b4.txt",
+      "body_file_sha256": "7d85a80ec5feecdf05b056a3611650448ae8e82f30ee981a337c4dda95588599",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 3710,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "顾仲贤"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2022-01/2d8b8db77aefcdcbf86f23b4.txt",
+        "data/pilot/monthly/2022-01/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "想要了解细节的同学可以去阅读原文。",
+          "source_path": "data/pilot/monthly/2022-01/2d8b8db77aefcdcbf86f23b4.txt",
+          "start_char": 3436,
+          "end_char": 3453,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The article discusses a research paper and invites readers to consult the original. Research commentary and an original-paper reference alone do not establish translation of the entire article.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "a05a8bb2f7fe7bfe85ba7e46",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "pre",
+      "published_at": "2022-04-28",
+      "title": "从理论到实战，带你全面解读智能物联网技术！",
+      "canonical_url": "https://www.infoq.cn/article/4HpjOJPUjHsMZ3gv1CHT",
+      "legacy_known_translation": false,
+      "source_body_sha256": "99e1acabc7f921ef1cfc4119b00fe5875d7b55fe65bffd68e61bb8b72f6a0c40",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "a05a8bb2f7fe7bfe85ba7e46",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2022-04/a05a8bb2f7fe7bfe85ba7e46.txt",
+      "body_file_sha256": "08f9f123ec03d52ad0f2a6d9ffa32c3299cef8ada022811f514d5cff6e8d8670",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 3132,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 3,
+      "local_metadata_authors": [
+        "郑思宇"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2022-04/a05a8bb2f7fe7bfe85ba7e46.txt",
+        "data/pilot/monthly/2022-04/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "智能问答、天气、笑话、翻译等功能",
+          "source_path": "data/pilot/monthly/2022-04/a05a8bb2f7fe7bfe85ba7e46.txt",
+          "start_char": 2839,
+          "end_char": 2855,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "Translation is listed as a speech-platform capability; other marker hits concern organizing data. These are topic uses, not provenance disclosures.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "213dcab213f816c7c548fc09",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2026-04-24",
+      "title": "Snowflake Cortex Code 的规范驱动开发：将 SDLC 方法论引入 AI 辅助工作流 ｜ 技术实践",
+      "canonical_url": "https://www.infoq.cn/article/o8dh3dRH6Kk8vzrzKdJd",
+      "legacy_known_translation": false,
+      "source_body_sha256": "b39e5f1cbf5e133318106ecbc0eafc92b3277e71c705cc65d93fd56ee3e9014e",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "213dcab213f816c7c548fc09",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2026-04/213dcab213f816c7c548fc09.txt",
+      "body_file_sha256": "fc2973276618d5c76d1991473ed3356e8c5027b62ecbd3c07647e1b3fe3374c1",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 9269,
+      "literal_connector_count": 3,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 2,
+      "local_metadata_authors": [
+        "Tianxia Jia"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [
+        "original_link_marker"
+      ],
+      "checked_artifacts": [
+        "data/pilot/monthly/2026-04/213dcab213f816c7c548fc09.txt",
+        "data/pilot/monthly/2026-04/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "关于作者：\r\nTianxia Jia\r\n，人工智能与云专家，专注于在 Snowflake 和 AWS 上架构前沿的 AI/ML 解决方案。",
+          "source_path": "data/pilot/monthly/2026-04/213dcab213f816c7c548fc09.txt",
+          "start_char": 9255,
+          "end_char": 9324,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "原文地址：\r\nhttps://medium.com/snowflake/spec-driven-development-in-snowflake-cortex-code-applying-sdlc-rigor-to-ai-assisted-workflows-b6882926c1bc",
+          "source_path": "data/pilot/monthly/2026-04/213dcab213f816c7c548fc09.txt",
+          "start_char": 9326,
+          "end_char": 9468,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "byline_name_not_source_language_evidence",
+          "evidence_quote": "Tianxia Jia",
+          "source_path": "data/pilot/monthly/2026-04/meta.jsonl",
+          "start_char": 220,
+          "end_char": 231,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "A dedicated biography names Tianxia Jia and a labeled original-article URL points to Medium. The local evidence does not establish the source language or adaptation process; a romanized name, corporate affiliation, and English URL slug do not do so. Source-language and relationship verification remain necessary.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "3c60dc0a981b686870095450",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2026-06-26",
+      "title": "当 Agent 成为新的核心云用户：阿里云重新定义“用云范式”",
+      "canonical_url": "https://www.infoq.cn/article/s6TAS5JMIW1miPSqIsk0",
+      "legacy_known_translation": false,
+      "source_body_sha256": "1d86ea8e2000bc104a266155800018df52aa53a34532a5fd998ebfb5226c61af",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "3c60dc0a981b686870095450",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2026-06/3c60dc0a981b686870095450.txt",
+      "body_file_sha256": "3eb65e790ee21712269779f1de900dbf497715ffe4c8a5c16f040a37cc3b9bb2",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 5834,
+      "literal_connector_count": 8,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 6,
+      "local_metadata_authors": [
+        "李文朋"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2026-06/3c60dc0a981b686870095450.txt",
+        "data/pilot/monthly/2026-06/meta.jsonl",
+        "data/local/compact_refiner/media-source-captures-v1/3c60dc0a981b686870095450.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/compact_refiner/media-source-captures-v1/3c60dc0a981b686870095450.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "把一句自然语言翻译成一次 API 调用，只解决了最表层的问题。",
+          "source_path": "data/pilot/monthly/2026-06/3c60dc0a981b686870095450.txt",
+          "start_char": 1799,
+          "end_char": 1830,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The translation and organization terms describe mapping natural language to APIs and organizing cloud capabilities. The later local HTML capture adds no deterministic article-translation disclosure.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "44aa81958a6c585ee8c06847",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2026-01-16",
+      "title": "拒绝传统Router“瞎指挥”，多智能体如何实现智能任务分配？",
+      "canonical_url": "https://www.infoq.cn/article/cYlRMETcNGxhDvBqCDII",
+      "legacy_known_translation": false,
+      "source_body_sha256": "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "44aa81958a6c585ee8c06847",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2026-01/44aa81958a6c585ee8c06847.txt",
+      "body_file_sha256": "bcd06d5b5923306d3b4ca6c58d54ce32aa534da4e8677eeaee4f0be2f4a9ba35",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 2350,
+      "literal_connector_count": 5,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "腾讯云"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2026-01/44aa81958a6c585ee8c06847.txt",
+        "data/pilot/monthly/2026-01/meta.jsonl",
+        "data/local/compact_refiner/media-source-captures-v1/44aa81958a6c585ee8c06847.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/compact_refiner/media-source-captures-v1/44aa81958a6c585ee8c06847.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [],
+      "assessment": "The credited organization and repository/paper links are not proof of originality, but no deterministic translation disclosure was located. The later local HTML capture adds no decisive evidence.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "0431c592d5de8246cebcb8e2",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2025-10-05",
+      "title": "5个月内失败十几次，几人团队在压力下做出爆款App！网友：AI时代懂人性比懂技术更重要",
+      "canonical_url": "https://www.infoq.cn/article/zYz0h5ygZd1M3cuWfUam",
+      "legacy_known_translation": false,
+      "source_body_sha256": "84d4d5b4db0d8d9c91232ec7ad41a6665401b9cd0637c65dad0578ddd3b28afc",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "0431c592d5de8246cebcb8e2",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2025-10/0431c592d5de8246cebcb8e2.txt",
+      "body_file_sha256": "7d808529bc6e9235309650ded193e801f4d93ff0b8200c0aa29809881881ed62",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 4215,
+      "literal_connector_count": 5,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "李冬梅"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2025-10/0431c592d5de8246cebcb8e2.txt",
+        "data/pilot/monthly/2025-10/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "https://techcrunch.com/2025/09/24/these-yc-founders-pivoted-5-times-before-building-a-social-app-that-nabbed-300k-users-and-over-1m-arr-in-6-months/",
+          "source_path": "data/pilot/monthly/2025-10/0431c592d5de8246cebcb8e2.txt",
+          "start_char": 4100,
+          "end_char": 4248,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "Founder statements and foreign-news reference links are present, but no explicit whole-article translation or foreign-compilation disclosure was located.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "48bda219eb0776f623161899",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2026-01-29",
+      "title": "世界模型混战，蚂蚁炸出开源牌",
+      "canonical_url": "https://www.infoq.cn/article/hmKcZ2hdjDk3SspgikfV",
+      "legacy_known_translation": false,
+      "source_body_sha256": "95136114d99aafc4ffaa7abd2f2950c0bb66c89ab349072a2d909d5fea2dd149",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "48bda219eb0776f623161899",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2026-01/48bda219eb0776f623161899.txt",
+      "body_file_sha256": "aef14aad13898e5f7c67bd7f5babd679673577c1c0ee6d9ccade79ec2f03eca7",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 7428,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "陈姚戈"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2026-01/48bda219eb0776f623161899.txt",
+        "data/pilot/monthly/2026-01/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [],
+      "assessment": "External model and paper links describe the subject. They do not establish the language or adaptation provenance of this article.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "084c17f921cc74b858d04cdb",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2026-05-22",
+      "title": "阶跃星辰副总裁俞刚确认出席AICon上海站，分享多模态生成与理解的架构演进",
+      "canonical_url": "https://www.infoq.cn/article/VcK5bVdskQZ2j7uEdbvN",
+      "legacy_known_translation": false,
+      "source_body_sha256": "244175531e3e6eb0dcd8a5819a3fb120122c38e320f721d3aeab6217e14300bc",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "084c17f921cc74b858d04cdb",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2026-05/084c17f921cc74b858d04cdb.txt",
+      "body_file_sha256": "0937ab9c404e631678118adc0511bc8d41775e415652f25e77f983e8cdda166f",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 1120,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "AICon 全球人工智能开发与应用大会"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2026-05/084c17f921cc74b858d04cdb.txt",
+        "data/pilot/monthly/2026-05/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [],
+      "assessment": "The organization term appears in a presentation outline. Speaker background and conference promotion do not constitute a translation disclosure.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "b77b09a419c1631227112f0c",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2026-03-27",
+      "title": "aiXcoder全新推出代码变更应用模型aiX-apply-4B，效果比肩DeepSeek-V3.2，推理效率提升15倍",
+      "canonical_url": "https://www.infoq.cn/article/aFl3mHPMjIGb6mZX5Dv1",
+      "legacy_known_translation": false,
+      "source_body_sha256": "bcb67e435c169c3b73cf6f3d6d2355bc88d5f6a859f070449719e0c0bcd3baaa",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "b77b09a419c1631227112f0c",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2026-03/b77b09a419c1631227112f0c.txt",
+      "body_file_sha256": "b7d2229fa9572ca50732b033c3eb02565f66c16b27c06ed640cb58c62621b94e",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 2090,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "aiXcoder"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2026-03/b77b09a419c1631227112f0c.txt",
+        "data/pilot/monthly/2026-03/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [],
+      "assessment": "No new deterministic translation or foreign-compilation disclosure was located in the product announcement.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "48a7a6192771112323fd6820",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2026-02-24",
+      "title": "当AI开始学做⼈：逐句解读OpenClaw的AgentS.md ——SOUL.md定义了灵魂，AgentS.md教会它怎么活",
+      "canonical_url": "https://www.infoq.cn/article/6DDhlbmtGRomwDCHh4Ts",
+      "legacy_known_translation": false,
+      "source_body_sha256": "314a83cba4213643bb8a7c1bd8be842ab82cad2ef577c64efdd24b695d6e1b73",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "48a7a6192771112323fd6820",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2026-02/48a7a6192771112323fd6820.txt",
+      "body_file_sha256": "1615f709cdea6e5256e9a4fc4ede26a722d0f044d6820e27a915362abd8585c0",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 22167,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 9,
+      "local_metadata_authors": [
+        "晋梅"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2026-02/48a7a6192771112323fd6820.txt",
+        "data/pilot/monthly/2026-02/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "本文是 OpenClaw 专题系列的第三篇",
+          "source_path": "data/pilot/monthly/2026-02/48a7a6192771112323fd6820.txt",
+          "start_char": 0,
+          "end_char": 21,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The body is a line-by-line commentary containing English source quotations and Chinese discussion. Quotation or interpretation of a technical document is not sufficient to classify the complete media article as translated; scope and source relationships remain unresolved.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "a127f5baf364930a89fb4005",
+      "source": "infoq",
+      "dataset": "pilot",
+      "cohort": "post",
+      "published_at": "2025-10-23",
+      "title": "性能飞跃！ClickHouse 处理复杂 JSON，速度提升58倍，内存减少3300倍",
+      "canonical_url": "https://www.infoq.cn/article/3EJlljs8O1UyuWfEMB1H",
+      "legacy_known_translation": false,
+      "source_body_sha256": "f509113688836b5f21592f1a12066277fc262dddc7ad42d4a830771fcf2f2f0e",
+      "primary_body_source": {
+        "path": "data/pilot/pilot_corpus.jsonl",
+        "record_doc_id": "a127f5baf364930a89fb4005",
+        "field": "text"
+      },
+      "body_path": "data/pilot/monthly/2025-10/a127f5baf364930a89fb4005.txt",
+      "body_file_sha256": "fda0d0254dadf6bc14b3f0978021cd3e7e7c6781956ec1e82779241da8230a1a",
+      "body_file_serialization": "CRLF with terminal newline; corpus body uses LF without terminal newline",
+      "body_unicode_chars": 3646,
+      "literal_connector_count": 1,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "ClickHouse"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/pilot/monthly/2025-10/a127f5baf364930a89fb4005.txt",
+        "data/pilot/monthly/2025-10/meta.jsonl"
+      ],
+      "available_full_html_captures": [],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "我们先快速回顾一下，在 ClickHouse v24.8 中，JSON 数据在 MergeTree 分区中的存储方式",
+          "source_path": "data/pilot/monthly/2025-10/a127f5baf364930a89fb4005.txt",
+          "start_char": 215,
+          "end_char": 273,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "https://clickhouse.com/blog/a-new-powerful-json-data-type-for-clickhouse",
+          "source_path": "data/pilot/monthly/2025-10/a127f5baf364930a89fb4005.txt",
+          "start_char": 276,
+          "end_char": 348,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The ClickHouse byline, first-person narration, and a link used to recall an earlier release do not independently establish the current article source language or a translation process. Provenance remains unresolved.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "8bfb7b3e6b210126548b7f0c",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2025-12-05",
+      "title": "Apache Doris 在小米统一 OLAP 和湖仓一体的实践",
+      "canonical_url": "https://www.infoq.cn/article/yGwXLYsrhMDwUqoYgMsh",
+      "legacy_known_translation": false,
+      "source_body_sha256": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/body.txt",
+      "body_file_sha256": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 4900,
+      "literal_connector_count": 1,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "SelectDB"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/body.txt",
+        "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/8bfb7b3e6b210126548b7f0c.html",
+        "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/8bfb7b3e6b210126548b7f0c.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [],
+      "assessment": "No new deterministic translation or foreign-compilation disclosure was located in the case study or local article metadata.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "0be079018045fbf1f2d47d7f",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2025-12-16",
+      "title": "Codex负责人打脸Cursor CEO“规范驱动开发论”！18天造Sora爆款，靠智能体24小时不停跑，曝OpenAI狂飙内幕",
+      "canonical_url": "https://www.infoq.cn/article/Gqltf7tslmJY8iK9GXLo",
+      "legacy_known_translation": false,
+      "source_body_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/body.txt",
+      "body_file_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 21891,
+      "literal_connector_count": 19,
+      "status": "explicit_translation_exclusion",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "confirmed_translation",
+      "research_disposition": "retain_as_translated_provenance_stratum_and_diagnostic_material",
+      "legacy_original_only_view_action": "exclude_for_control_recalculation",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 3,
+      "local_metadata_authors": [
+        "允毅"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/body.txt",
+        "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/0be079018045fbf1f2d47d7f.html",
+        "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/0be079018045fbf1f2d47d7f.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "translation_disclosure",
+          "evidence_quote": "播客里还分享了更多关于 Codex 背后的细节和 Alexander Embiricos 的精彩观点，我们翻译了该内容，并在不改变原意基础上进行了删减和整理，以飨读者。",
+          "source_path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/body.txt",
+          "start_char": 1181,
+          "end_char": 1265,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "https://www.youtube.com/watch?v=z1ISq9Ty4Cg&t=224s",
+          "source_path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/body.txt",
+          "start_char": 21841,
+          "end_char": 21891,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "rendered_html_translation_disclosure",
+          "evidence_quote": "我们翻译了该内容，并在不改变原意基础上进行了删减和整理，以飨读者。",
+          "source_path": "data/local/media-contrast-staging-v1/raw/0be079018045fbf1f2d47d7f.html",
+          "start_char": 266735,
+          "end_char": 266768,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The editorial introduction explicitly says the podcast content was translated, shortened, and organized. This is document-level translated-interview provenance even though the document includes a local introduction. It is retained as translated research and diagnostic material; only the legacy original-only control view excludes it.",
+      "provenance_followup_required": false
+    },
+    {
+      "doc_id": "c526ed941b8de39a5388df3d",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2026-01-13",
+      "title": "Anthropic深夜放出王炸！白领饭碗要被AI砸了？网友：不支持Linux，差评",
+      "canonical_url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl",
+      "legacy_known_translation": false,
+      "source_body_sha256": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/body.txt",
+      "body_file_sha256": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 4048,
+      "literal_connector_count": 8,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 8,
+      "local_metadata_authors": [
+        "李冬梅"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/body.txt",
+        "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/c526ed941b8de39a5388df3d.html",
+        "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/c526ed941b8de39a5388df3d.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "参考链接：\nhttps://claude.com/blog/cowork-research-preview\nhttps://x.com/bcherny/status/2010809450844831752",
+          "source_path": "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/body.txt",
+          "start_char": 3835,
+          "end_char": 3937,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The body cites and quotes product announcements and community posts, but these references do not by themselves establish whole-document translation or foreign compilation.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "577ba2d1fd46fae48e0ad5d2",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2026-02-09",
+      "title": "如何对应用进行冷启动优化？",
+      "canonical_url": "https://www.infoq.cn/article/jBHvjgz11gvzGRJf818T",
+      "legacy_known_translation": false,
+      "source_body_sha256": "f897ffb00e5b08abdb1cfd9fbdfdf06e0392047f1a32fdf15094eee580f93d83",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/body.txt",
+      "body_file_sha256": "f897ffb00e5b08abdb1cfd9fbdfdf06e0392047f1a32fdf15094eee580f93d83",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 334,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "HarmonyOS"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/body.txt",
+        "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/577ba2d1fd46fae48e0ad5d2.html",
+        "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/577ba2d1fd46fae48e0ad5d2.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "本问答帖原创发布在\n华为开发者联盟社区",
+          "source_path": "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/body.txt",
+          "start_char": 0,
+          "end_char": 19,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The body claims initial publication in a Chinese developer community. That claim is recorded as local provenance context, not independently certified originality or admission.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "21fb54b8f31d94d5f58b2b86",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2026-03-06",
+      "title": "元服务如何获取/设置屏幕亮度？",
+      "canonical_url": "https://www.infoq.cn/article/DsLsUs6SNlB6M4FFMIar",
+      "legacy_known_translation": false,
+      "source_body_sha256": "1a36bc412473026811a8ca01a47b10ed0b3d2b001b62d188d93afd8252774ce4",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/body.txt",
+      "body_file_sha256": "1a36bc412473026811a8ca01a47b10ed0b3d2b001b62d188d93afd8252774ce4",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 243,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "HarmonyOS"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/body.txt",
+        "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/21fb54b8f31d94d5f58b2b86.html",
+        "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/21fb54b8f31d94d5f58b2b86.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "本问答帖原创发布在\n华为开发者联盟社区",
+          "source_path": "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/body.txt",
+          "start_char": 0,
+          "end_char": 19,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The body claims initial publication in a Chinese developer community. That claim is recorded as local provenance context, not independently certified originality or admission.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "6e1b7928a8a00ba027e8c8fa",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2026-01-27",
+      "title": "让机器人“看清”三维世界，蚂蚁灵波开源LingBot-Depth模型",
+      "canonical_url": "https://www.infoq.cn/article/WVlzEl33IYR1SH7mBssb",
+      "legacy_known_translation": false,
+      "source_body_sha256": "3822a1ef3ee3cc893856e6c45544196f8e2652851f1a72921128895c4687e9af",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/body.txt",
+      "body_file_sha256": "3822a1ef3ee3cc893856e6c45544196f8e2652851f1a72921128895c4687e9af",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 1346,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "蚂蚁集团"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/body.txt",
+        "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/6e1b7928a8a00ba027e8c8fa.html",
+        "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/6e1b7928a8a00ba027e8c8fa.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [],
+      "assessment": "The source marker concerns training data. No new deterministic prose-translation or foreign-compilation evidence was located.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "a4007204435ea4d0895d0d46",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2025-12-16",
+      "title": "培养 Data Superhero 的思维模式",
+      "canonical_url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA",
+      "legacy_known_translation": false,
+      "source_body_sha256": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/body.txt",
+      "body_file_sha256": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 2301,
+      "literal_connector_count": 2,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "Amilee Alesna"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [
+        "original_link_marker"
+      ],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/body.txt",
+        "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/a4007204435ea4d0895d0d46.html",
+        "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/a4007204435ea4d0895d0d46.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "原文地址：\nhttps://medium.com/snowflake/adopting-the-mindset-of-a-data-superhero-64b407bd51f6",
+          "source_path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/body.txt",
+          "start_char": 2108,
+          "end_char": 2196,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "byline_name_not_source_language_evidence",
+          "evidence_quote": "Amilee Alesna",
+          "source_path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/metadata.json",
+          "start_char": 1555,
+          "end_char": 1568,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The local metadata and visible byline credit Amilee Alesna, and the body labels a Medium link as the original article. No author biography or other local evidence establishes source language or translation. A personal name and an English URL slug do not satisfy that requirement.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "3fdc45a2c7759e78fc9013c9",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2026-06-01",
+      "title": "Snowflake 换了战场：守住数据之后，要管住AI",
+      "canonical_url": "https://www.infoq.cn/article/JCXUmEkVTBw3mjjtgwgY",
+      "legacy_known_translation": false,
+      "source_body_sha256": "3cba893879346e9c7258dcfe11da82ffb4201406efe4ec3fe5e4fc3907ea158f",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/body.txt",
+      "body_file_sha256": "3cba893879346e9c7258dcfe11da82ffb4201406efe4ec3fe5e4fc3907ea158f",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 4164,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "黎科峰"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/body.txt",
+        "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/3fdc45a2c7759e78fc9013c9.html",
+        "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/3fdc45a2c7759e78fc9013c9.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "作者简介\n黎科峰（Kenny），数势科技创始人兼 CEO。北京航空航天大学博士，曾任京东集团技术委员会主席，京东商城技术负责人，手机百度总经理，平安金融 CTO。",
+          "source_path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/body.txt",
+          "start_char": 4026,
+          "end_char": 4107,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "https://mp.weixin.qq.com/s/wNg-IlteYFhJvxbqYOyfPA",
+          "source_path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/body.txt",
+          "start_char": 4115,
+          "end_char": 4164,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The biography and WeChat original link identify a Chinese-source republication context. An English nickname inside a Chinese biography is not foreign-language-source evidence.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "5eccef97088993c9842a4e4c",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "post",
+      "published_at": "2025-10-30",
+      "title": "Cursor 2.0发布：自研代码模型 Composer 上线，8 个代理并行，速度提升 4 倍",
+      "canonical_url": "https://www.infoq.cn/article/QlBwolS6TLQ36PaYGYf5",
+      "legacy_known_translation": false,
+      "source_body_sha256": "a65e6ea0c1e6e22ee8ad1173d2f7da62af206863d4cb5a94824bffeb149961ce",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/body.txt",
+      "body_file_sha256": "a65e6ea0c1e6e22ee8ad1173d2f7da62af206863d4cb5a94824bffeb149961ce",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 1042,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "Tina"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/body.txt",
+        "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/5eccef97088993c9842a4e4c.html",
+        "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/5eccef97088993c9842a4e4c.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [],
+      "assessment": "Foreign product reporting alone is insufficient; no new deterministic translation or foreign-compilation disclosure was located.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "d679960cb6cb418eebb6b222",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "pre",
+      "published_at": "2021-09-27",
+      "title": "动态性能分级策略在客户端上的实践",
+      "canonical_url": "https://www.infoq.cn/article/omyedsPw1aNVgoWz0G61",
+      "legacy_known_translation": false,
+      "source_body_sha256": "9d6e2701206f1e35f222242c0b9aa3f08dd10b1a68ad431b22d0a66f14589557",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/body.txt",
+      "body_file_sha256": "9d6e2701206f1e35f222242c0b9aa3f08dd10b1a68ad431b22d0a66f14589557",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 7034,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 9,
+      "local_metadata_authors": [
+        "伴鱼技术团队"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/body.txt",
+        "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/d679960cb6cb418eebb6b222.html",
+        "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/d679960cb6cb418eebb6b222.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "作者：赵杰、岑志军、吕洪阳",
+          "source_path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/body.txt",
+          "start_char": 6880,
+          "end_char": 6893,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "来源：伴鱼技术博客",
+          "source_path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/body.txt",
+          "start_char": 6987,
+          "end_char": 6996,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The footer credits a Chinese technical team and its technical blog. English terms in the URL and cited technical literature do not establish translation.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "550a11e0e8987efc94c654b7",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "pre",
+      "published_at": "2022-10-28",
+      "title": "全面审查Twitter代码、当场炒掉CEO等众多高管：马斯克正式入主Twitter",
+      "canonical_url": "https://www.infoq.cn/article/1jdi4LDTycjblozS8QwV",
+      "legacy_known_translation": false,
+      "source_body_sha256": "6b65668574e6036aedae3f6af6d5d0495f720c0a27e827739a855022138e6c47",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/body.txt",
+      "body_file_sha256": "6b65668574e6036aedae3f6af6d5d0495f720c0a27e827739a855022138e6c47",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 3582,
+      "literal_connector_count": 2,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "褚杏娟"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/body.txt",
+        "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/550a11e0e8987efc94c654b7.html",
+        "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/550a11e0e8987efc94c654b7.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "https://www.wired.com/story/twitter-open-algorithm-problem/",
+          "source_path": "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/body.txt",
+          "start_char": 3409,
+          "end_char": 3468,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The body lists foreign-news references. The local material does not disclose that the entire article was translated or compiled from foreign content; citations alone are insufficient.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "195940f04347559f68fbfdcb",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "pre",
+      "published_at": "2020-11-14",
+      "title": "关于卫星定位，你想知道的一切",
+      "canonical_url": "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2",
+      "legacy_known_translation": false,
+      "source_body_sha256": "09e020a66c22252b0f94932ae9e8c2a609453a05e96a110e89c1e6bd5ccc1a32",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/body.txt",
+      "body_file_sha256": "09e020a66c22252b0f94932ae9e8c2a609453a05e96a110e89c1e6bd5ccc1a32",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 7188,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 4,
+      "local_metadata_authors": [
+        "高德技术"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [
+        "original_link_marker"
+      ],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/body.txt",
+        "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/195940f04347559f68fbfdcb.html",
+        "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/195940f04347559f68fbfdcb.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "虽然直接翻译过来是导航卫星系统",
+          "source_path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/body.txt",
+          "start_char": 158,
+          "end_char": 173,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "本文转载自公众号高德技术（ID：amap_tech）。",
+          "source_path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/body.txt",
+          "start_char": 7139,
+          "end_char": 7166,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The translation term explains an English technical term. The footer separately credits a Chinese technology account as the republication source; neither constitutes a foreign-language adaptation disclosure.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "8bdf575aae4fe9a3b509a492",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "pre",
+      "published_at": "2022-10-02",
+      "title": "元宇宙相关岗位平均月薪1.85万元；台积电：砍单可以，降价免谈；特斯拉人形机器人“擎天柱”亮相 | AI一周资讯",
+      "canonical_url": "https://www.infoq.cn/article/VLIDZiKBqtCyrMm8mjc1",
+      "legacy_known_translation": false,
+      "source_body_sha256": "2397a4634ace531cb68430ac67e9351c0554c878d5b29772bef34e11a31ba7e5",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/body.txt",
+      "body_file_sha256": "2397a4634ace531cb68430ac67e9351c0554c878d5b29772bef34e11a31ba7e5",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 7013,
+      "literal_connector_count": 1,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 1,
+      "local_metadata_authors": [
+        "凌敏"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/body.txt",
+        "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/8bdf575aae4fe9a3b509a492.html",
+        "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/8bdf575aae4fe9a3b509a492.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [],
+      "assessment": "The body is a multi-topic news roundup with both local and foreign attributions. That genre and the foreign references do not alone establish a document-level foreign-compilation disclosure.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "738c96bc2777301fdaf9f078",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "pre",
+      "published_at": "2021-12-03",
+      "title": "云原生时代，CNStack 如何解决企业数字化转型难题？",
+      "canonical_url": "https://www.infoq.cn/article/4CFTC0TgkMout6hFBxG2",
+      "legacy_known_translation": false,
+      "source_body_sha256": "077d41bcb5d9a9a20f15284bcd480656eddf3f4c3a0a2f4e23733b777a79715d",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/body.txt",
+      "body_file_sha256": "077d41bcb5d9a9a20f15284bcd480656eddf3f4c3a0a2f4e23733b777a79715d",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 8952,
+      "literal_connector_count": 1,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "闫园园"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/body.txt",
+        "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/738c96bc2777301fdaf9f078.html",
+        "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/738c96bc2777301fdaf9f078.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "以下内容节选自\n当天的分享\n，InfoQ 做了不改变原意的编辑：",
+          "source_path": "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/body.txt",
+          "start_char": 334,
+          "end_char": 366,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The body describes an edited local interview with a named guest. Editing or excerpting an interview is not itself a translation disclosure; no source-language certification is made.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "2e0d0c6274b0a0e6a333fbb9",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "pre",
+      "published_at": "2022-01-13",
+      "title": "Linux Mint 宣布与 Mozilla 达成新交易",
+      "canonical_url": "https://www.infoq.cn/article/Ra4l1gamNjHqQ9ZNlaKQ",
+      "legacy_known_translation": false,
+      "source_body_sha256": "81afc10bc423ed8346ca57c1bcc147783ff06ff70ef251ae13ea13a1f57557a3",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/body.txt",
+      "body_file_sha256": "81afc10bc423ed8346ca57c1bcc147783ff06ff70ef251ae13ea13a1f57557a3",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 740,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 0,
+      "local_metadata_authors": [
+        "闫园园"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/body.txt",
+        "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/2e0d0c6274b0a0e6a333fbb9.html",
+        "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/2e0d0c6274b0a0e6a333fbb9.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "参考链接：\nhttps://blog.linuxmint.com/?p=4244",
+          "source_path": "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/body.txt",
+          "start_char": 700,
+          "end_char": 740,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "A reference to the Linux Mint blog is present. A foreign reference URL alone does not establish source-language adaptation of the whole article.",
+      "provenance_followup_required": true
+    },
+    {
+      "doc_id": "2762aba55519d5e3e9349b17",
+      "source": "infoq",
+      "dataset": "staging",
+      "cohort": "pre",
+      "published_at": "2021-06-15",
+      "title": "解析 React 性能利器 — Fiber",
+      "canonical_url": "https://www.infoq.cn/article/PHir9fGyTSQtiAQ035gi",
+      "legacy_known_translation": false,
+      "source_body_sha256": "fdf4dfbff1bf57a3ddd6bea8403f469a205208ce7555763da9222ec021d1499b",
+      "primary_body_source": {
+        "path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/body.txt"
+      },
+      "body_path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/body.txt",
+      "body_file_sha256": "fdf4dfbff1bf57a3ddd6bea8403f469a205208ce7555763da9222ec021d1499b",
+      "body_file_serialization": "exact corpus-body UTF-8 serialization",
+      "body_unicode_chars": 8649,
+      "literal_connector_count": 0,
+      "status": "unresolved_no_new_deterministic_evidence",
+      "exclusion_scope": "exclusion_from_legacy_original_only_view_not_from_research",
+      "current_provenance_status": "unresolved",
+      "research_disposition": "retain_with_unresolved_provenance_no_originality_or_quality_claim",
+      "legacy_original_only_view_action": "no_new_deterministic_exclusion_originality_unresolved",
+      "full_body_marker_scan": true,
+      "body_marker_hits_reviewed": 7,
+      "local_metadata_authors": [
+        "微医大前端技术"
+      ],
+      "local_metadata_translators": [],
+      "local_metadata_translation_evidence": [],
+      "checked_artifacts": [
+        "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/body.txt",
+        "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/metadata.json",
+        "data/local/media-contrast-staging-v1/raw/2762aba55519d5e3e9349b17.html",
+        "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/article.dom.html"
+      ],
+      "available_full_html_captures": [
+        {
+          "path": "data/local/media-contrast-staging-v1/raw/2762aba55519d5e3e9349b17.html",
+          "embedded_translator_names": [],
+          "article_scope_and_author_fields_inspected": true
+        }
+      ],
+      "evidence": [
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "作者：武晓慧",
+          "source_path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/body.txt",
+          "start_char": 8494,
+          "end_char": 8500,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        },
+        {
+          "kind": "contextual_provenance_clue_not_independently_decisive",
+          "evidence_quote": "来源：微医大前端技术 - 微信公众号 [ID：wed_fed]",
+          "source_path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/body.txt",
+          "start_char": 8580,
+          "end_char": 8611,
+          "coordinate_system": "raw_utf8_decoded_file_unicode_zero_based_end_exclusive"
+        }
+      ],
+      "assessment": "The footer credits a Chinese author and Chinese technical-community republication. No new deterministic foreign-language translation or compilation disclosure was located.",
+      "provenance_followup_required": true
+    }
+  ],
+  "input_file_sha256": {
+    "data/local/compact_refiner/media-source-captures-v1/3c60dc0a981b686870095450.html": "ee333566461d732916bec3428c1eabec041265bbe28496f6121a5268a07f7344",
+    "data/local/compact_refiner/media-source-captures-v1/44aa81958a6c585ee8c06847.html": "62cf60a63597d237330df06b174866005649b1e73c92ab79cc2563d26d01495f",
+    "data/local/media-contrast-staging-v1/article-attempts.jsonl": "348e8cc8ec34d1a6fe5517ee7f7858f6bfa78bb7424bc063b3bc9616858ac6f2",
+    "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/article.dom.html": "d4283ab7dff5be184da13d57cba13afb484cceb9974fd8a38d2b00eb8888391a",
+    "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/body.txt": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+    "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/metadata.json": "26c0997201143f196e6cee5971bd801e4cf6aaaec56973e6e287cf7d4c885b9e",
+    "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/article.dom.html": "e549ddb7080f7391cd131ee63800d3257122b5823a6f7c60fb0c8475d21bb31d",
+    "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/body.txt": "09e020a66c22252b0f94932ae9e8c2a609453a05e96a110e89c1e6bd5ccc1a32",
+    "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/metadata.json": "cf0ddb1b155f1e27a74b78cf453a5d5f5b631890ccc21d51105990b7c9f9e699",
+    "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/article.dom.html": "0ebd9b7a502adbfa79e44d7509524d57fc31c0365e59c11864e3c6d7c7c487c5",
+    "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/body.txt": "1a36bc412473026811a8ca01a47b10ed0b3d2b001b62d188d93afd8252774ce4",
+    "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/metadata.json": "fe546a9d041d1c5dcca42dc3b4d27d2e6fde042ee1ffe7e9fd2302bd1acfe979",
+    "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/article.dom.html": "792d188f3d3a975cafeeaaca327f9f7bd2ab14766dade216a952cf49c0055c62",
+    "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/body.txt": "fdf4dfbff1bf57a3ddd6bea8403f469a205208ce7555763da9222ec021d1499b",
+    "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/metadata.json": "2a818f29e1fbedf1e4adadf71f18ec215798a7a314020a518554850a3ffd327d",
+    "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/article.dom.html": "afcbb545949365882054d1d4044479aa34c6691c8d11c9b6312b427c2054d1b8",
+    "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/body.txt": "81afc10bc423ed8346ca57c1bcc147783ff06ff70ef251ae13ea13a1f57557a3",
+    "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/metadata.json": "7cc1517e3f9af5e59590bf9d38f7f50aee53e0eff5356e2393c45cf5a7de8eb3",
+    "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/article.dom.html": "7a00693390cfe8783d8ad4f8dcca81d07a9fb493b766bb0dc2284bcf1a24c9de",
+    "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/body.txt": "3cba893879346e9c7258dcfe11da82ffb4201406efe4ec3fe5e4fc3907ea158f",
+    "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/metadata.json": "1f93bf9b946ce912f7f73f52932e2673131980df88ed2a407ff448aecdd9df03",
+    "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/article.dom.html": "18391b7fb51713f6744f2c2657ace627fecc6d9cc5cbf8fe13a4c0647e65f1a1",
+    "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/body.txt": "6b65668574e6036aedae3f6af6d5d0495f720c0a27e827739a855022138e6c47",
+    "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/metadata.json": "e7a89c17541128942b70888c568eb9900e86cc16e0cbc2f621480a20c44aaf3e",
+    "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/article.dom.html": "dd9ba2f04011ac4a13b19927d9c34ac36cc0ddde69c0276d030fcca8d7b45f0e",
+    "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/body.txt": "f897ffb00e5b08abdb1cfd9fbdfdf06e0392047f1a32fdf15094eee580f93d83",
+    "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/metadata.json": "5fa58c1133de667dad0f42b1885735cf0d3ce0db872a1270baa4390a1011f681",
+    "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/article.dom.html": "6ebb4c5faf16fc2c79878128cc9ac059eefafac98f81f3c3120abb8cd3efe243",
+    "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/body.txt": "a65e6ea0c1e6e22ee8ad1173d2f7da62af206863d4cb5a94824bffeb149961ce",
+    "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/metadata.json": "96fadc645a6a50f6d30727fb7d80e83fc7c6cb298ef6f3c87d27eceaf7e1a791",
+    "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/article.dom.html": "f25dfd8447584b7526dbf5e33d2500f7bd2cc0f15199df01dbb1d5359d43b53b",
+    "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/body.txt": "3822a1ef3ee3cc893856e6c45544196f8e2652851f1a72921128895c4687e9af",
+    "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/metadata.json": "cb6cb5239a44a75d31224a531661eac0db7d9654efcbd51341a8b53f36b65757",
+    "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/article.dom.html": "e445689920b75497286c371ff6fec3a32813ceda1b1ce521614a6f1fd31d3b91",
+    "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/body.txt": "077d41bcb5d9a9a20f15284bcd480656eddf3f4c3a0a2f4e23733b777a79715d",
+    "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/metadata.json": "e3b3137f1c830215249aec5f532578ca7539663f3d693882e6582dc61a7811e4",
+    "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/article.dom.html": "a6087cc5e7ba44de752352881a4519fd9f79e6874fdc4f807b3c062967bc92d7",
+    "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/body.txt": "2397a4634ace531cb68430ac67e9351c0554c878d5b29772bef34e11a31ba7e5",
+    "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/metadata.json": "50ddee65bb7400affdd6658a543cb3d829f95764ba23e169b5002de8f6fbc584",
+    "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/article.dom.html": "36a57b8ce2999c64f29f8e782f8e5abbe4b3785438bce612f7094db020bf19c3",
+    "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/body.txt": "04c10bf969abcf147e94923ae2f4fb0c9bd543c7bb08df3bcf0076f675d4d0a2",
+    "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/metadata.json": "282ab53cdde9d7e18a608eade0e698a8b7fb1cd41d7d8540111318879c377065",
+    "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/article.dom.html": "8e7c32df9481e9d96135ca015a402ea3e02e4935b651ca8163f8b0d3b82dcddc",
+    "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/body.txt": "e37f35365af4d00c70ff1c726be07241b4ba6fb0f1791adcc7fe1006dd5ecb4f",
+    "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/metadata.json": "ced7b77c7f06b1a18b43b44eafa91ae9c76189258153ab44a15a43fb454f00dc",
+    "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/article.dom.html": "049ad7afcf139e2834a9356690bdb2d56cdad488827df1bffe765fa3feaa6355",
+    "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/body.txt": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+    "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/metadata.json": "f3a5a432731a11b6d4b91c9a3ec9a1616fa19bd6e649372645346b4d4e7806e6",
+    "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/article.dom.html": "7e02437bac665fb7449988e88f0bb43690ce66013b4ade32eca68e3a2c884ad5",
+    "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/body.txt": "9d6e2701206f1e35f222242c0b9aa3f08dd10b1a68ad431b22d0a66f14589557",
+    "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/metadata.json": "5cf25f8dcd2f987fb19dd0831579ef1f8803ae7403dfac178de6908049a62ad9",
+    "data/local/media-contrast-staging-v1/raw/0be079018045fbf1f2d47d7f.html": "0fa18ea0685ed098418d991fe81f26dfdc2b69af91a66e700c841789494b495c",
+    "data/local/media-contrast-staging-v1/raw/195940f04347559f68fbfdcb.html": "e03019b230301fc8f97f6cd8376bd3b3c6c6a1808279126e005dd19e3e9c7e67",
+    "data/local/media-contrast-staging-v1/raw/21fb54b8f31d94d5f58b2b86.html": "61a95b828899553fb2d9cecafa2be5a59e257005a04d05985872942550027b9c",
+    "data/local/media-contrast-staging-v1/raw/2762aba55519d5e3e9349b17.html": "c7c705b4e1644d202b69344c68eebdc93a7d9f7b4861b00072664129e45e333a",
+    "data/local/media-contrast-staging-v1/raw/2e0d0c6274b0a0e6a333fbb9.html": "0e4d32f760ebc6e4936961c4d615c755dcea3ec4bd1eba8e81fe59e97c79eca1",
+    "data/local/media-contrast-staging-v1/raw/3fdc45a2c7759e78fc9013c9.html": "14f165895edc714eac4050a6d7fab0b530ef7c1de501c6a4fe84c8dd37e2bb07",
+    "data/local/media-contrast-staging-v1/raw/550a11e0e8987efc94c654b7.html": "c17fcf398d2e4909ec68cebdddcb44c8b8b7859baa280127ba77add171af59de",
+    "data/local/media-contrast-staging-v1/raw/577ba2d1fd46fae48e0ad5d2.html": "70732780e4618bb4baa22639f933c37eccfdc2348ad79e46e580996af3502138",
+    "data/local/media-contrast-staging-v1/raw/5eccef97088993c9842a4e4c.html": "1d896db5099902bb2e873c59a9582d3916260b610c6cab8fb902f0ebc34966fb",
+    "data/local/media-contrast-staging-v1/raw/6e1b7928a8a00ba027e8c8fa.html": "f9128492b52f44b4984130be17f292b8e2b5038fe60fdf61807864ee51b87ad9",
+    "data/local/media-contrast-staging-v1/raw/738c96bc2777301fdaf9f078.html": "f1f75dc4342b0fb2a5fa8c3382899c64619086a143b1b1b44f1961c3b1112ac2",
+    "data/local/media-contrast-staging-v1/raw/8bdf575aae4fe9a3b509a492.html": "557cc7b8b6231492fef5e1b0a2136d19a9bb4dd34aa49244d31bea315242bac6",
+    "data/local/media-contrast-staging-v1/raw/8bfb7b3e6b210126548b7f0c.html": "ff8ed952f83e49e7c0587f5e8067e577a79846a8df75e0dd3cf32ff9fef33c29",
+    "data/local/media-contrast-staging-v1/raw/a4007204435ea4d0895d0d46.html": "c2b2e04c10707641da5c9fb7251f6f0626ac6a9e73715ae60a3a88b32d2b973f",
+    "data/local/media-contrast-staging-v1/raw/c526ed941b8de39a5388df3d.html": "f377223dd4ba3368417975ed6edc145198f5a81dcdeece6e99fb3d54515881cb",
+    "data/local/media-contrast-staging-v1/raw/d679960cb6cb418eebb6b222.html": "e667fccbb57aad621364ae8a82217547139b5c84184fb7b0ecdf4e24da5c297a",
+    "data/pilot/monthly/2021-07/73e9f6e61e27e1e32264551f.txt": "a4065546bb59b567408a0b430979dc118a42fc7af909a16a71aa10e4e2ff0e7f",
+    "data/pilot/monthly/2021-07/7d5e92ccde58b3b78616293c.txt": "5d3a7efef53bdc37095c4f4ee1dfe47605b6d3af91b26137e6f88709310e08e9",
+    "data/pilot/monthly/2021-07/meta.jsonl": "e87ebb2d4d28d38f1ce6dfa710d9f750892586d4f2f5ef31477bd87eeceb1230",
+    "data/pilot/monthly/2021-10/0dfc33ff7071975b48e12981.txt": "dcd0f39a438f5f263b00ba5cdfa6d1dcc19c82eb917bff811940bd58e60be143",
+    "data/pilot/monthly/2021-10/d8917e9eedea037e2ed53511.txt": "8d98d635cba40fc9125b215ca67b563a27ebe22a723123a793e1045984496800",
+    "data/pilot/monthly/2021-10/meta.jsonl": "b994b194fec0ab20e33ff07728f8c424002021cc8f1fcdb73a53436cfb393d41",
+    "data/pilot/monthly/2021-11/be3e4a9eccc5d3a7e69212c3.txt": "544c9547012bf05cb017eae2c83d953bdd6b64b8a0f436e765aafb58f3f80185",
+    "data/pilot/monthly/2021-11/meta.jsonl": "05d2e34da9ec54f73dd4f9d2bac33f9273aeea34e66b3012931d2f26cdb814b6",
+    "data/pilot/monthly/2022-01/2d8b8db77aefcdcbf86f23b4.txt": "7d85a80ec5feecdf05b056a3611650448ae8e82f30ee981a337c4dda95588599",
+    "data/pilot/monthly/2022-01/81938af852e380b36bede22b.txt": "b23cfa225fd680aca4a3f1c2e422d43f900f6d87a7c9153b0e530c5b9d3972a3",
+    "data/pilot/monthly/2022-01/bf1abf6ca461ec0bbac14bd7.txt": "0b00ffbce337eb49d31931b0cfaed6624f9e81eed460bdc57afbc0965fe9f82c",
+    "data/pilot/monthly/2022-01/meta.jsonl": "627801c3566df0b29751265f4129f62cea7276cebbd3e1f6f9ec0c751b89865a",
+    "data/pilot/monthly/2022-04/a05a8bb2f7fe7bfe85ba7e46.txt": "08f9f123ec03d52ad0f2a6d9ffa32c3299cef8ada022811f514d5cff6e8d8670",
+    "data/pilot/monthly/2022-04/meta.jsonl": "249decb4e35ffa29433cb71fecb2d7b89789e11b8e3c16465026b94376671d2a",
+    "data/pilot/monthly/2022-06/9e271d7b118c949e83c9ff8d.txt": "e5f079df309d0997ee2f30da7410fe4131567830f6a1fbcc4e69be1cdd6bc580",
+    "data/pilot/monthly/2022-06/meta.jsonl": "a8a2b8ea4335874cc06b0a3c2845a1ec67821580fd9f3afdca3eee10450667d1",
+    "data/pilot/monthly/2025-10/0431c592d5de8246cebcb8e2.txt": "7d808529bc6e9235309650ded193e801f4d93ff0b8200c0aa29809881881ed62",
+    "data/pilot/monthly/2025-10/a127f5baf364930a89fb4005.txt": "fda0d0254dadf6bc14b3f0978021cd3e7e7c6781956ec1e82779241da8230a1a",
+    "data/pilot/monthly/2025-10/meta.jsonl": "788e288501954fae53fc15ea90b21e14f86016b00780ff439bdebfbae2db6147",
+    "data/pilot/monthly/2026-01/44aa81958a6c585ee8c06847.txt": "bcd06d5b5923306d3b4ca6c58d54ce32aa534da4e8677eeaee4f0be2f4a9ba35",
+    "data/pilot/monthly/2026-01/48bda219eb0776f623161899.txt": "aef14aad13898e5f7c67bd7f5babd679673577c1c0ee6d9ccade79ec2f03eca7",
+    "data/pilot/monthly/2026-01/meta.jsonl": "0da1b4b486d28e9a220046133a09c0e94cf49ec47aad0271b762888874e3f1e9",
+    "data/pilot/monthly/2026-02/48a7a6192771112323fd6820.txt": "1615f709cdea6e5256e9a4fc4ede26a722d0f044d6820e27a915362abd8585c0",
+    "data/pilot/monthly/2026-02/meta.jsonl": "3f4a4531dd052f21d18ccfb34dc52db95084144f906e2342d37fdddfe4f8dea0",
+    "data/pilot/monthly/2026-03/b77b09a419c1631227112f0c.txt": "b7d2229fa9572ca50732b033c3eb02565f66c16b27c06ed640cb58c62621b94e",
+    "data/pilot/monthly/2026-03/meta.jsonl": "815a1326819aaa2d4547bfe7053577f78af1b0f93a7c63bc35e08a80c434849d",
+    "data/pilot/monthly/2026-04/213dcab213f816c7c548fc09.txt": "fc2973276618d5c76d1991473ed3356e8c5027b62ecbd3c07647e1b3fe3374c1",
+    "data/pilot/monthly/2026-04/meta.jsonl": "965f2b7e593584b40384f5860b010cd8a7fd2513a3ff5fc58577efec89b80e62",
+    "data/pilot/monthly/2026-05/084c17f921cc74b858d04cdb.txt": "0937ab9c404e631678118adc0511bc8d41775e415652f25e77f983e8cdda166f",
+    "data/pilot/monthly/2026-05/meta.jsonl": "bc1a26170642c43e29f7babcf4bae1bfe0c176d994cae3a9e088c937d4c4248c",
+    "data/pilot/monthly/2026-06/3c60dc0a981b686870095450.txt": "3eb65e790ee21712269779f1de900dbf497715ffe4c8a5c16f040a37cc3b9bb2",
+    "data/pilot/monthly/2026-06/meta.jsonl": "c22a1b0ebb762ccd61228b0ad012bc871c17f5d1a8f89ac2c2e5c38694b6d7b8",
+    "data/pilot/pilot_corpus.jsonl": "a46ed37102a273746948c556d6e8d4c4bcf19c2c00fce2dccf14e731996e270f",
+    "experiments/ershi_cohort_statistics.py": "d8455ea8c672e4be599b670df69d430dcb18c37a0e364dac7e9f518f230d0df9"
+  }
+}

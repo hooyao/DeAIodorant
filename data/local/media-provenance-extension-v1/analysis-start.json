@@ -1,0 +1,5 @@
+{
+  "started_at": "2026-09-14T08:40:37.739655+00:00",
+  "pid": 40168,
+  "command": "python experiments/stage_media_provenance_extension.py analyze"
+}

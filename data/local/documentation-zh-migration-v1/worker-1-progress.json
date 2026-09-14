@@ -1,0 +1,118 @@
+{
+  "files": [
+    {
+      "path": "docs/smell-catalog.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/research-reassessment-2026-09-14.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-development-inventory.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/translation-benchmark-v2.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "experiments/post-reader-corpus-handoff.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-source-completeness-v1.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-provenance-extension-v1.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "experiments/handoff-transition-probe.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/ershi-cohort-statistics-v1.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "experiments/reader-friction-screen-v3.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/media-provenance-extension.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: http_402_billing_unknown.",
+      "type": "CompletionError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/contrast-context-audit.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "experiments/discourse-graph-probe.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/media-contrast-qualification-v1.1.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reader-anchor-feature-discovery.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/media-repair-development.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/routes/compact-refiner/full-article-source-probe.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    },
+    {
+      "path": "docs/translation-benchmark.md",
+      "status": "failed",
+      "reason": "OpenRouter request failed: insufficient_budget_for_all_attempts.",
+      "type": "BudgetError"
+    }
+  ],
+  "budget": {
+    "budget_usd": "6",
+    "accounted_usd": "5.9997475",
+    "remaining_usd": "0.0002525",
+    "unfinished_reservations": 0
+  }
+}

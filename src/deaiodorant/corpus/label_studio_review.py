@@ -206,12 +206,12 @@ def _write_local_credentials(workspace: Path, reviewer: str, port: int) -> None:
     credentials_path.write_text(
         "\n".join(
             [
-                "DeAIodorant local translation review",
+                "DeAIodorant 本地翻译来源复核",
                 f"URL: http://127.0.0.1:{values['LABEL_STUDIO_PORT']}",
-                f"Username: {values['LABEL_STUDIO_USERNAME']}",
-                f"Password: {values['LABEL_STUDIO_PASSWORD']}",
+                f"用户名：{values['LABEL_STUDIO_USERNAME']}",
+                f"密码：{values['LABEL_STUDIO_PASSWORD']}",
                 "",
-                "These credentials are local-only. The service binds to 127.0.0.1.",
+                "这些凭据仅供本地使用。服务绑定到 127.0.0.1。",
                 "",
             ]
         ),

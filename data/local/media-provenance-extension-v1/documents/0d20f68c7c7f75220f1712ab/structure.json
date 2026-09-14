@@ -1,0 +1,103 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b2/b271b8487d4c55f0df28dfc085a8eadc.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 16,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/96/96cd1333be1584d6ddfabccbaa445f84.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 29,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media03",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/cd/cd872817c2aea22f120687b34b1153d5.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 38,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media04",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/af/af00b4b64b10477d4e80071f64d27007.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 45,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media05",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/62/62e530824eee913af1a76fe28707a2b6.webp",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 65,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "数据库内核杂谈",
+      "href": "https://www.infoq.cn/theme/46"
+    },
+    {
+      "text": "Alibaba Hologres: A Cloud-Native Service for Hybrid Serving/Analytical Processing",
+      "href": "http://www.vldb.org/pvldb/vol13/p3272-jiang.pdf"
+    },
+    {
+      "text": "LSM tree的工作方式",
+      "href": "https://xie.infoq.cn/article/253f731e621992c7d3f032092"
+    },
+    {
+      "text": "OLTP和OLAP workloads",
+      "href": "https://xie.infoq.cn/article/a04f154de08ec69cbf5ff9795"
+    },
+    {
+      "text": "NewSQL",
+      "href": "https://www.infoq.cn/article/fd6mk3yGUEsfTm0D6QZW"
+    },
+    {
+      "text": "Apache Hudi",
+      "href": "https://hudi.apache.org/"
+    },
+    {
+      "text": "Apache Iceberg",
+      "href": "https://iceberg.apache.org/"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 57,
+    "h1": 0,
+    "h2": 10,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 5,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 7
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/0d20f68c7c7f75220f1712ab.html",
+  "raw_html_sha256": "3b56f80d4bb115643e2f554a562e925ddf1cb8eac90e58e0d6252085a1bf0f22"
+}

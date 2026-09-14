@@ -1,0 +1,15 @@
+{
+  "command": "python experiments/summarize_contrast_context_reviews.py --input-dir data/local/contrast-context-v1 --output-dir data/local/contrast-context-v1-summary",
+  "implementation_hash": "5ae2c42560c2522a619e61c588521840f40fb0b18939ecfa98fccbb978a94663",
+  "input_manifest_hash": "aa239d7e2f98f27dc5d9e782d2ae289838312703227b490aa9816cafb802433a",
+  "output_hashes": {
+    "summary.json": "7048cac23e8fba936f83858d5a70420adf6cb4179196e874770a619745fbbe2a",
+    "validated-review-a.json": "8e75fdfa1ffbf2fa2e4db069bb15720bd2a9423f48814f5c8fcfe0d2a45abf80",
+    "validated-review-b.json": "dcaa9b942e60005d63d52c4fb22c7bf8a904dfb5da1db731ce58f33b1134d8fa"
+  },
+  "protocol": "contrast-context-review-validation-1.0",
+  "review_hashes": {
+    "review-a.json": "cbe7c60ccd4b7fd884917ba59924a0c1727537e09343fb4672a936e90e77cd51",
+    "review-b.json": "64230895ce09e31006ede406b2880ea24b485ce665680c73f51092073be317cf"
+  }
+}

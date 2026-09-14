@@ -1,0 +1,12 @@
+{
+  "version": "media-repair-ready-selection-status-1.1",
+  "parent_ready_selection_sha256": "f5fcfa355ee0f96412b31202a2c00cdfa515f758fb14c003d139776b984b628c",
+  "status": "archived_engineering_artifacts_reader_task_withdrawn",
+  "reason": "Sample mismatch; editing readiness did not establish target coverage.",
+  "withdrawn_preview_path": "data/local/media-repair-development-v1/reader-preview-v1.1.json",
+  "withdrawn_preview_sha256": "b29150918b9475d2773f79af7daabc39c4998b47036a66eb6e6dac96f361f8fc",
+  "all_prior_candidates_reviews_sources_retained": true,
+  "other_candidates_automatically_substituted": false,
+  "human_preference": null,
+  "training_eligible": false
+}

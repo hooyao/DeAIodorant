@@ -1,0 +1,15 @@
+{
+  "url": "https://post.smzdm.com/robots.txt",
+  "requested_at": "2026-09-14T09:31:44.266636+00:00",
+  "status": 200,
+  "response_url": "https://post.smzdm.com/robots.txt",
+  "headers": {
+    "Content-Type": "text/plain",
+    "Date": "Mon, 14 Sep 2026 09:31:46 GMT",
+    "ETag": "W/\"6a7998d0-ee\"",
+    "Last-Modified": "Mon, 10 Aug 2026 09:24:32 GMT"
+  },
+  "bytes": 238,
+  "sha256": "5229a1a5264050212e4d0f1bb5f45853d13b89e849ec8c129791590ecc7afa19",
+  "capture_file": "robots.txt"
+}

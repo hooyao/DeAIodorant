@@ -1,0 +1,75 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/b5/b5cec3458e756ce1e881c4bf5e96ff74.jpeg",
+      "data_src": null,
+      "alt": "图片",
+      "title": null,
+      "preceding_collector_line": 17,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "QCon 全球软件开发大会（广州站）",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "Web 3.0 基础设施",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1382/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "数据驱动决策",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1379/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "演进中的架构",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1387/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "现代数据架构选型",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1381/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "核心系统数字化转型",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1384/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "AI 工程与 MLOps",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1383/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "XOps",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1380/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "大前端技术融合",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/track/1386/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    },
+    {
+      "text": "点击此处了解更多详情",
+      "href": "https://qcon.infoq.cn/2022/guangzhou/?utm_source=infoq&utm_medium=presentation&utm_campaign=8&utm_term=20220608&utm_content=广州Web3"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 39,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 1,
+    "ol": 0,
+    "li": 4,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 10
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/14c0c4e73b98cb2e30af42ec.html",
+  "raw_html_sha256": "07aa4e35931f56d83b0134f5f6893fb7d02a4ad451b39ae583364e83a31e885c"
+}

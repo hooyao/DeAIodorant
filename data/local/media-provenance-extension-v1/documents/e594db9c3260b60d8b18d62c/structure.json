@@ -1,0 +1,85 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/80/809d12276985ccbb8cd0a618de22ac38.png",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 9,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    },
+    {
+      "media_id": "media02",
+      "tag": "img",
+      "src": "https://static001.geekbang.org/infoq/e8/e875a3a74fb41d131beffd9719dc7535.jpeg",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 61,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "AICon全球人工智能开发与应用大会",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track"
+    },
+    {
+      "text": "Agent 系统架构与工程化实践",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1926"
+    },
+    {
+      "text": "面向超大规模教育场景的 Agent 系统架构演进与工程实践",
+      "href": "https://aicon.infoq.cn/2026/shanghai/presentation/7059"
+    },
+    {
+      "text": "端侧 AI、物理与数字空间智能化",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1931"
+    },
+    {
+      "text": "世界模型与多模态智能突破",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1937"
+    },
+    {
+      "text": "Agent 架构与工程化实践",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1926"
+    },
+    {
+      "text": "Agent 安全与可信治理",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1928"
+    },
+    {
+      "text": "企业级研发体系重构",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1938"
+    },
+    {
+      "text": "AI 原生数据工程",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1943"
+    },
+    {
+      "text": "AI 时代的个人提效与组织变革",
+      "href": "https://aicon.infoq.cn/2026/shanghai/track/1936"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 47,
+    "h1": 0,
+    "h2": 0,
+    "h3": 0,
+    "ul": 7,
+    "ol": 1,
+    "li": 28,
+    "img": 2,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 10
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/e594db9c3260b60d8b18d62c.html",
+  "raw_html_sha256": "75d5237e0215412e0b29a7d159b7aa8260d7b70b40915ab50dd18d1951ef75bc"
+}

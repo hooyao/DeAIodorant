@@ -1,0 +1,515 @@
+{
+  "protocol": "media-repair-development-1.0",
+  "protocol_sha256": "0c904d2250e2d08996e33aa7c14eee7736c278b99896decf4e18627e61747f06",
+  "candidate_id": "doc-04-assistant-proposal-v1",
+  "source_alias": "doc-04",
+  "source_path": "data/local/contrast-context-v1/packets/doc-04/body.txt",
+  "source_sha256": "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+  "output_sha256": "413e094cc29c8084620f7203ee4e4b4e76a60f1e721369ff79be738d155d257f",
+  "source_char_count": 21891,
+  "output_char_count": 21923,
+  "offset_convention": "Zero-based Unicode code points in the original UTF-8 decoded body; end_char is exclusive; no newline normalization.",
+  "replay_order": "Descending start_char; apply every operation to the original body.",
+  "editor_role": "assistant_editor",
+  "editor_identity": "/root/media_repair_editor",
+  "model_identity": "Codex, GPT-6-based; exact runtime model identifier not exposed in task context.",
+  "prompt_version": "media-repair-development-1.0-editor-assignment-2026-09-14",
+  "generation_seed": null,
+  "seed_note": "Current-assistant generation; deterministic text generation is not claimed.",
+  "intensity_policy": "Local, source-supported repairs with no edit quota; preserve unique content and meaningful contrasts.",
+  "input_contract": "Complete Chinese bodies, general AGENTS.md instructions, protocol, and preparation manifest only.",
+  "full_source_read": true,
+  "status": "assistant_proposal_pending_independent_preservation_review",
+  "human_gold": false,
+  "human_acceptance": false,
+  "training_eligible": false,
+  "external_api_calls": 0,
+  "gpu_used": false,
+  "operations": [
+    {
+      "start_char": 0,
+      "end_char": 84,
+      "before": "自 8 月 GPT-5 发布以来，\nCodex\n展现出惊人的爆发力，\n用户增长 20 倍\n，每周处理数万亿 tokens，成为了 Open AI 最受欢迎的编程智能体。",
+      "after": "自 8 月 GPT-5 发布以来，Codex 展现出惊人的爆发力，用户增长 20 倍，每周处理数万亿 tokens，成为了 Open AI 最受欢迎的编程智能体。",
+      "operation_type": "layout_repair",
+      "reason": "Reconnect the opening sentence fragmented by extracted emphasis formatting.",
+      "preservation_notes": "Preserves every name, quantity, date expression, popularity claim, and the source's growth metric wording.",
+      "operation_id": "doc-04-op-001"
+    },
+    {
+      "start_char": 565,
+      "end_char": 593,
+      "before": "早期的 Codex\n“太过未来”\n，采用远程异步交互方式",
+      "after": "早期的 Codex“太过未来”，采用远程异步交互方式",
+      "operation_type": "layout_repair",
+      "reason": "Reconnect the quoted characterization and its explanation.",
+      "preservation_notes": "Preserves the characterization and remote asynchronous interaction.",
+      "operation_id": "doc-04-op-002"
+    },
+    {
+      "start_char": 989,
+      "end_char": 1096,
+      "before": "对于\n未来 AGI 会何时到来\n，Alexander Embiricos 也给出了一个有趣的视角，\n他认为当前真正的限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限\n，正在拖累其发展\n。",
+      "after": "对于未来 AGI 会何时到来，Alexander Embiricos 也给出了一个有趣的视角。他认为，当前真正限制 AGI 的因素不是模型能力，而是人类——我们输入速度有限、审查速度有限，正在拖累其发展。",
+      "operation_type": "layout_and_attachment_repair",
+      "reason": "Reconnect the passage, separate the introduction from the attributed claim, and repair the modifier of limiting factors.",
+      "preservation_notes": "Keeps attribution, the model-versus-human contrast, both limits, and the claim that they impede development.",
+      "operation_id": "doc-04-op-003"
+    },
+    {
+      "start_char": 1097,
+      "end_char": 1140,
+      "before": "他做了一个预判，\n第一批生产力曲线出现陡增的用户将在明年出现，其后的变化会加速扩散\n。",
+      "after": "他做了一个预判：第一批生产力曲线出现陡增的用户将在明年出现，其后的变化会加速扩散。",
+      "operation_type": "layout_and_sentence_boundary",
+      "reason": "Attach the forecast to its introduction with a colon and remove formatting breaks.",
+      "preservation_notes": "Retains prediction status, next-year timing, first-user scope, and subsequent acceleration.",
+      "operation_id": "doc-04-op-004"
+    },
+    {
+      "start_char": 1669,
+      "end_char": 1692,
+      "before": "当它将 Codex 带回工程师们日常工作的地方",
+      "after": "当 OpenAI 将 Codex 带回工程师们日常工作的地方",
+      "operation_type": "reference_clarification",
+      "reason": "Replace a pronoun that could refer to Codex with the organization named in the same paragraph.",
+      "preservation_notes": "The organization, relocation claim, and following developer-environment description remain source-supported.",
+      "operation_id": "doc-04-op-005"
+    },
+    {
+      "start_char": 2460,
+      "end_char": 2493,
+      "before": "OpenAI 显然是一家与你过去工作过的所有公司都截然不同的地方。",
+      "after": "OpenAI 显然是一个与你过去工作过的所有公司都截然不同的地方。",
+      "operation_type": "classifier_repair",
+      "reason": "Match the classifier to the predicate noun for a place.",
+      "preservation_notes": "Preserves the comparison with all prior workplaces and the interviewer's emphasis.",
+      "operation_id": "doc-04-op-006"
+    },
+    {
+      "start_char": 2916,
+      "end_char": 2958,
+      "before": "不过在 OpenAI，我深刻意识到影响力之巨大，而要把工作做好，需要投入极高的精力。",
+      "after": "不过在 OpenAI，我深刻意识到这项工作的影响力之巨大，而要把它做好，需要投入极高的精力。",
+      "operation_type": "reference_clarification",
+      "reason": "Connect the influence and effort predicates to the work already being discussed.",
+      "preservation_notes": "Retains the OpenAI context and the speaker's high influence and effort claims without assigning a new project.",
+      "operation_id": "doc-04-op-007"
+    },
+    {
+      "start_char": 3036,
+      "end_char": 3070,
+      "before": "还是因为我对开源软件的运作方式不够了解，所以才让团队能这样快速前进？",
+      "after": "还是因为我对开源软件的运作方式不够了解，才没看出团队为什么能这样快速前进？",
+      "operation_type": "logical_attachment_repair",
+      "reason": "Repair a question that grammatically makes the interviewer's lack of knowledge cause team speed; the surrounding question asks for an explanation of that speed.",
+      "preservation_notes": "Retains the interviewer's uncertainty, the exact open-source-software reference, and the rapid-team-progress premise.",
+      "operation_id": "doc-04-op-008"
+    },
+    {
+      "start_char": 3410,
+      "end_char": 3440,
+      "before": "这里的组织架构设计为高度自下而上运作，每个人都渴望快速推进。",
+      "after": "这里的组织架构采用高度自下而上的运作方式，每个人都渴望快速推进。",
+      "operation_type": "expression_repair",
+      "reason": "Use a complete predicate for the organizational structure.",
+      "preservation_notes": "Preserves the degree of bottom-up operation and every person's desire for speed.",
+      "operation_id": "doc-04-op-009"
+    },
+    {
+      "start_char": 3670,
+      "end_char": 3692,
+      "before": "这个比喻有一定道理，但目标成分本身是模糊的。",
+      "after": "这个比喻有一定道理，但目标本身是模糊的。",
+      "operation_type": "expression_repair",
+      "reason": "Remove an extraneous noun in the qualification of the aiming metaphor.",
+      "preservation_notes": "Preserves qualified agreement and uncertainty about the target.",
+      "operation_id": "doc-04-op-010"
+    },
+    {
+      "start_char": 4293,
+      "end_char": 4337,
+      "before": "安装后，你可以与 Codex 互动，回答与代码相关的问题，编写代码，运行测试，执行代码等",
+      "after": "安装后，你可以与 Codex 互动，让它回答与代码相关的问题、编写代码、运行测试、执行代码等",
+      "operation_type": "subject_and_coordination_repair",
+      "reason": "Attach the listed software actions to Codex rather than grammatically to the user.",
+      "preservation_notes": "Retains all four actions and the following software-lifecycle scope; this follows the paragraph's product-capability description.",
+      "operation_id": "doc-04-op-011"
+    },
+    {
+      "start_char": 5066,
+      "end_char": 5120,
+      "before": "因此，我们与 Codex 合作的大部分目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+      "after": "因此，我们与 Codex 合作的主要目标，是弄清楚如何打造这样一种默认情况下就能提供帮助的“队友智能体”。",
+      "operation_type": "expression_repair",
+      "reason": "Use a singular principal goal for the single purpose supplied by the sentence.",
+      "preservation_notes": "Retains cooperation, the exploratory goal, and default helpfulness; does not claim that goal is already achieved.",
+      "operation_id": "doc-04-op-012"
+    },
+    {
+      "start_char": 5596,
+      "end_char": 5617,
+      "before": "Codex 模型目前每周服务数万亿级的代币",
+      "after": "Codex 模型目前每周处理数万亿级的 tokens",
+      "operation_type": "terminology_and_collocation_repair",
+      "reason": "Use the token terminology already supplied in the article's opening and a compatible processing verb.",
+      "preservation_notes": "The current weekly scale and model attribution are unchanged; no metric value is inferred.",
+      "operation_id": "doc-04-op-013"
+    },
+    {
+      "start_char": 7637,
+      "end_char": 7677,
+      "before": "这已经超过传统模型的上下文长度，因此我们必须为此设计出解决方案，也就是“压缩”。",
+      "after": "这种长时间运行所需的上下文已经超过传统模型的上下文长度，因此我们必须为此设计出解决方案，也就是“压缩”。",
+      "operation_type": "reference_and_quantity_scope_repair",
+      "reason": "Make context, rather than the preceding duration, the thing compared with context length.",
+      "preservation_notes": "Preserves the stated overflow problem and compaction solution without supplying a context limit or new duration.",
+      "operation_id": "doc-04-op-014"
+    },
+    {
+      "start_char": 7785,
+      "end_char": 7827,
+      "before": "如果想训练一个模型，让它在所有框架下都表现最佳，可能并非不可能，但速度一定会被拖慢。",
+      "after": "如果想训练一个模型，让它在所有框架下都表现最佳，或许可以做到，但速度一定会被拖慢。",
+      "operation_type": "redundancy_reduction",
+      "reason": "Reduce a nested possibility/negation phrase while retaining uncertainty.",
+      "preservation_notes": "Keeps the all-framework optimum, qualified feasibility, and categorical speed tradeoff as source claims.",
+      "operation_id": "doc-04-op-015"
+    },
+    {
+      "start_char": 7998,
+      "end_char": 8018,
+      "before": "写代码是模型最好的方式与编码智能体的未来",
+      "after": "写代码是模型执行任务的最佳方式与编码智能体的未来",
+      "operation_type": "reference_clarification",
+      "reason": "Supply the missing activity in a heading using the section's repeated explanation that models act by writing code.",
+      "preservation_notes": "Retains the strongest-way claim and coding-agent-future topic; adds no new mechanism.",
+      "operation_id": "doc-04-op-016"
+    },
+    {
+      "start_char": 9316,
+      "end_char": 9340,
+      "before": "他们会安排日程、移动会议、主动修复问题、提出建议",
+      "after": "他们会安排日程、调整会议安排、主动修复问题、提出建议",
+      "operation_type": "collocation_repair",
+      "reason": "Replace a literal movement collocation with adjustment of meeting arrangements.",
+      "preservation_notes": "Keeps every example without inventing a particular meeting time, place, or cancellation.",
+      "operation_id": "doc-04-op-017"
+    },
+    {
+      "start_char": 9712,
+      "end_char": 9742,
+      "before": "当你只需要表达任务时，聊天就够了。所以我们希望构建的人工智能",
+      "after": "当你只需要表达任务时，聊天就够了。\n所以我们希望构建的人工智能",
+      "operation_type": "paragraph_boundary",
+      "reason": "Separate the interface-use example from the broader assistant-product goal.",
+      "preservation_notes": "All words and the same Alex speaker turn remain.",
+      "operation_id": "doc-04-op-018"
+    },
+    {
+      "start_char": 9809,
+      "end_char": 9836,
+      "before": "你甚至在工作之外也会使用它。等你开始工作时，你自然会说",
+      "after": "你甚至在工作之外也会使用它。\n等你开始工作时，你自然会说",
+      "operation_type": "paragraph_boundary",
+      "reason": "Separate the personal-use analogy from the return-to-work example.",
+      "preservation_notes": "No content or speaker attribution is removed.",
+      "operation_id": "doc-04-op-019"
+    },
+    {
+      "start_char": 11016,
+      "end_char": 11053,
+      "before": "你能从工程师如何使用你的工具里学到巨量东西，也能更清楚应该把什么融入产品。",
+      "after": "你能从工程师如何使用你的工具中学到非常多的东西，也能更清楚应该把什么融入产品。",
+      "operation_type": "collocation_repair",
+      "reason": "Repair a literal quantity collocation while retaining its strong degree.",
+      "preservation_notes": "Both learning from engineers and deciding what to integrate remain.",
+      "operation_id": "doc-04-op-020"
+    },
+    {
+      "start_char": 11663,
+      "end_char": 11673,
+      "before": "让用户感到拥有掌控感",
+      "after": "让用户拥有掌控感",
+      "operation_type": "redundancy_reduction",
+      "reason": "Remove a duplicated feeling construction.",
+      "preservation_notes": "The intended sense of control and following contrast remain.",
+      "operation_id": "doc-04-op-021"
+    },
+    {
+      "start_char": 12432,
+      "end_char": 12471,
+      "before": "这种方式其实比写规范更普遍，也更贴近日常行为模式。如果人工智能智能体要融入团队",
+      "after": "这种方式其实比写规范更普遍，也更贴近日常行为模式。\n如果人工智能智能体要融入团队",
+      "operation_type": "paragraph_boundary",
+      "reason": "Separate the account of existing teamwork from its proposed implication for agents.",
+      "preservation_notes": "Preserves prevalence, naturalness, the conditional, and the same speaker turn.",
+      "operation_id": "doc-04-op-022"
+    },
+    {
+      "start_char": 14038,
+      "end_char": 14072,
+      "before": "工程师能愿意写代码，但大型团队投入最多时间的活动往往是代码审查和验证",
+      "after": "工程师愿意写代码，但大型团队投入最多时间的活动往往是代码审查和验证",
+      "operation_type": "predicate_repair",
+      "reason": "Remove a stray modal preceding willingness.",
+      "preservation_notes": "Keeps willingness, the contrast, the largest-time claim, and its often qualification.",
+      "operation_id": "doc-04-op-023"
+    },
+    {
+      "start_char": 14697,
+      "end_char": 14730,
+      "before": "Alex：对我来说，我感受到的最大变化是“能力被大幅增强”的感觉。",
+      "after": "Alex：对我来说，最大的变化是感到自己的“能力被大幅增强”。",
+      "operation_type": "redundancy_reduction",
+      "reason": "Remove the repeated experience/feeling frame around one subjective observation.",
+      "preservation_notes": "Retains Alex attribution, subjectivity, superlative scope, and the quoted description.",
+      "operation_id": "doc-04-op-024"
+    },
+    {
+      "start_char": 15603,
+      "end_char": 15664,
+      "before": "OpenAI 的技术复杂度非常高，而过去一年我们看到全公司各类角色的使用技巧都大幅提升，而 Codex 的影响也随之增强。",
+      "after": "OpenAI 的技术复杂度非常高。过去一年，我们看到全公司各类角色的使用技巧都大幅提升，Codex 的影响也随之增强。",
+      "operation_type": "sentence_boundary_and_coordination",
+      "reason": "Separate the background statement from the past-year observation and remove a repeated weak coordinator.",
+      "preservation_notes": "Retains technical complexity, timing, company-wide role scope, large skill gains, and the corresponding Codex effect.",
+      "operation_id": "doc-04-op-025"
+    },
+    {
+      "start_char": 16053,
+      "end_char": 16078,
+      "before": "而现在的团队基本都是高级用户级别地使用 Codex",
+      "after": "而现在的团队使用 Codex 基本都达到了高级用户的水平",
+      "operation_type": "collocation_repair",
+      "reason": "Replace an awkward adverbial level construction with a compatible predicate.",
+      "preservation_notes": "Keeps the current-team scope and basically qualification.",
+      "operation_id": "doc-04-op-026"
+    },
+    {
+      "start_char": 16267,
+      "end_char": 16346,
+      "before": "整个公司因为 Codex 而加速，从研究到模型训练速度，再到设计与营销，我们经常看到产品营销人员直接在 Slack 里更新字符串或文案，这些都是变化的一部分。",
+      "after": "从研究和模型训练，到设计与营销，整个公司都因为 Codex 而加速。我们经常看到产品营销人员直接在 Slack 里更新字符串或文案，这些都是变化的一部分。",
+      "operation_type": "coordination_and_sentence_boundary",
+      "reason": "Coordinate work areas at the same grammatical level and separate the concrete marketing example.",
+      "preservation_notes": "Retains acceleration across the company, research, training, design, marketing, frequency, Slack, strings, and copy.",
+      "operation_id": "doc-04-op-027"
+    },
+    {
+      "start_char": 16572,
+      "end_char": 16630,
+      "before": "你仍然需要对自己构建的东西的本质有理解，但具体细节将越来越抽象，就像你不用懂汇编语言也能写 Swift，一样的道理。",
+      "after": "你仍然需要理解自己构建的东西的本质，但具体细节将越来越抽象。就像你不用懂汇编语言也能写 Swift，道理是一样的。",
+      "operation_type": "collocation_and_sentence_boundary",
+      "reason": "Use a direct understanding predicate and separate the analogy.",
+      "preservation_notes": "Retains necessity, increasing abstraction, and the exact assembly/Swift example without changing the prediction.",
+      "operation_id": "doc-04-op-028"
+    },
+    {
+      "start_char": 16839,
+      "end_char": 16875,
+      "before": "未来 Codex 甚至能自动告诉你如何设置环境，甚至在代码库里自动设置。",
+      "after": "未来 Codex 甚至能自动告诉你如何设置环境，还能在代码库里自动设置。",
+      "operation_type": "redundancy_reduction",
+      "reason": "Remove repeated escalation framing from two coordinated future capabilities.",
+      "preservation_notes": "Both future capabilities, automation, and the codebase location remain.",
+      "operation_id": "doc-04-op-029"
+    },
+    {
+      "start_char": 17124,
+      "end_char": 17140,
+      "before": "一切所有的前后环节都显得更关键了",
+      "after": "所有的前后环节都显得更关键了",
+      "operation_type": "redundancy_reduction",
+      "reason": "Remove duplicated universal quantification.",
+      "preservation_notes": "The full scope and stronger-importance claim remain.",
+      "operation_id": "doc-04-op-030"
+    },
+    {
+      "start_char": 17342,
+      "end_char": 17365,
+      "before": "尤其是面对被现有 AI 工具严重服务不足的客户",
+      "after": "尤其是面对现有 AI 工具远远无法满足其需求的客户",
+      "operation_type": "collocation_repair",
+      "reason": "Replace a malformed passive service construction with the same substantial unmet-need relation.",
+      "preservation_notes": "Keeps the emphasis on severely underserved customers and existing AI tools; no specific unmet need is invented.",
+      "operation_id": "doc-04-op-031"
+    },
+    {
+      "start_char": 17672,
+      "end_char": 17704,
+      "before": "Alex：一个我不断提醒自己的事情是，像 Codex 这样的产品",
+      "after": "Alex：我不断提醒自己：像 Codex 这样的产品",
+      "operation_type": "redundancy_reduction",
+      "reason": "Remove an unnecessary thing-is frame around the recurring self-reminder.",
+      "preservation_notes": "Preserves Alex attribution, recurrence, and the entire reminder.",
+      "operation_id": "doc-04-op-032"
+    },
+    {
+      "start_char": 18475,
+      "end_char": 18497,
+      "before": "做过一个关于屏幕共享与结对编程方向的创业项目",
+      "after": "做过一个屏幕共享与结对编程方向的创业项目",
+      "operation_type": "redundancy_reduction",
+      "reason": "Remove duplicated topic-marking around the startup-project domain.",
+      "preservation_notes": "Both screen sharing and pair programming remain.",
+      "operation_id": "doc-04-op-033"
+    },
+    {
+      "start_char": 18898,
+      "end_char": 18933,
+      "before": "想象我们要覆盖的所有世界范围的任务，智能体每天有可能帮助你成千上万次。",
+      "after": "想象一下，我们要覆盖世界范围内的所有任务，智能体每天有可能帮助你成千上万次。",
+      "operation_type": "modifier_attachment_repair",
+      "reason": "Attach worldwide scope to tasks rather than leaving stacked incompatible modifiers.",
+      "preservation_notes": "Preserves universal task scope, daily frequency, large quantity, and possibility.",
+      "operation_id": "doc-04-op-034"
+    },
+    {
+      "start_char": 18986,
+      "end_char": 19065,
+      "before": "真正理想的方式是，当你专注于某个工作，比如查看仪表盘时指标突然下降，智能体可以在右侧出现，为你解释原因，并告诉你可能的解决方案，而且它只在你关心的那一刻出现。",
+      "after": "真正理想的方式，是让智能体在你专注于某项工作时提供帮助。比如，你查看仪表盘时，指标突然下降，智能体可以在右侧出现，为你解释原因，并告诉你可能的解决方案，而且它只在你关心的那一刻出现。",
+      "operation_type": "example_attachment_and_sentence_boundary",
+      "reason": "Separate the desired contextual-help behavior from the dashboard example so the timing clause is complete.",
+      "preservation_notes": "Keeps user focus, dashboard, falling metric, right-side placement, explanation, possible solutions, and only-at-the-relevant-moment scope.",
+      "operation_id": "doc-04-op-035"
+    },
+    {
+      "start_char": 19221,
+      "end_char": 19236,
+      "before": "在你最需要的恰当时刻表现出智能",
+      "after": "在你最需要的时候表现出智能",
+      "operation_type": "redundancy_reduction",
+      "reason": "Reduce duplicated timing qualification.",
+      "preservation_notes": "Retains need-sensitive timing and the contrast with notification overload.",
+      "operation_id": "doc-04-op-036"
+    },
+    {
+      "start_char": 19363,
+      "end_char": 19381,
+      "before": "确实有很多意想不到的用法，但目前为止",
+      "after": "确实有很多意想不到的用法，但到目前为止",
+      "operation_type": "expression_repair",
+      "reason": "Complete the conventional up-to-now expression.",
+      "preservation_notes": "Preserves surprise, quantity, temporal limitation, and the following qualification.",
+      "operation_id": "doc-04-op-037"
+    },
+    {
+      "start_char": 20636,
+      "end_char": 20661,
+      "before": "Lenny ：Codex 的自我训练到底意味着什么",
+      "after": "Lenny：Codex 的自我训练到底意味着什么？",
+      "operation_type": "speaker_label_and_punctuation",
+      "reason": "Normalize spacing in an existing speaker label and complete its explicit question.",
+      "preservation_notes": "Does not add a speaker turn or alter the question's subject.",
+      "operation_id": "doc-04-op-038"
+    },
+    {
+      "start_char": 20737,
+      "end_char": 20762,
+      "before": "所以 Codex 会在循环中持续检查这些图表的表现",
+      "after": "所以 Codex 会在循环中持续检查这些图表所显示的情况",
+      "operation_type": "reference_clarification",
+      "reason": "Attach monitoring to the information shown in the charts rather than the charts' performance.",
+      "preservation_notes": "Preserves the causal link, continuous loop, same charts, and subsequent inference from them without specifying unseen metrics.",
+      "operation_id": "doc-04-op-039"
+    },
+    {
+      "start_char": 21453,
+      "end_char": 21475,
+      "before": "如果你明年是一家创业公司，正在构建一个新应用",
+      "after": "如果你明年在一家创业公司，正在构建一个新应用",
+      "operation_type": "predicate_repair",
+      "reason": "Repair the person-is-a-company construction using the parallel employment setting in the following SAP example.",
+      "preservation_notes": "Retains next-year timing, startup context, and new-app activity without assigning an ownership role.",
+      "operation_id": "doc-04-op-040"
+    }
+  ],
+  "unresolved_content_issues": [
+    {
+      "issue_id": "doc-04-issue-001",
+      "start_char": 444,
+      "end_char": 516,
+      "source_excerpt": "Sora 团队更是依靠 Codex，在短短 28 天时间，从 0 到 1 完成 Android 应用的上线，直接冲到 App Store 第一。",
+      "description": "The article combines an Android launch with an App Store ranking and repeats this combination in its summary. The Chinese body does not establish the exact store or ranking scope; both names and the claim are retained rather than corrected using outside knowledge.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-002",
+      "start_char": 1724,
+      "end_char": 1752,
+      "source_excerpt": "过去 6 个月里，Codex 的使用量增长了 20 倍。",
+      "description": "Growth appears as users in the lead, usage here, and model growth elsewhere; the body also alternates since-August and past-six-month windows without an article date in the supplied body. No shared metric or time window is inferred.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-003",
+      "start_char": 6674,
+      "end_char": 6771,
+      "source_excerpt": "因此，我的理解是：最初版本的 Codex 太“未来”，像一个远程云端智能体，以异步方式工作；而你们所做的，是把它重新拉回开发者熟悉的环境，让它在 IDE 本地工作，使用户更容易习惯新的开发方式。",
+      "description": "This apparent interviewer restatement lacks a speaker label, although the following turn is labeled Alex. The candidate does not invent a Lenny attribution or alter the supplied turn sequence.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-004",
+      "start_char": 7265,
+      "end_char": 7284,
+      "source_excerpt": "GPT-5.1.1 Codex Max",
+      "description": "The precise model identifier is not independently established by the supplied Chinese body. It remains exactly as written, along with other model names; this is not a model-name correction pass.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-005",
+      "start_char": 12619,
+      "end_char": 12646,
+      "source_excerpt": "智能体人像使用手机一样工作，它看到的一切都是竖屏视频流",
+      "description": "The subject in this speculative interface description is malformed, and the passage shifts between an agent's observation and a user swiping suggestions. The body alone does not establish which entity operates a phone or sees a vertical feed. The ambiguity remains instead of changing the actor.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-006",
+      "start_char": 12942,
+      "end_char": 12958,
+      "source_excerpt": "Branded Codebase",
+      "description": "This proper-name-like expression is linked to an early OpenAI product, the model behind GitHub Copilot, and a reused brand, but its identity is not resolved in the Chinese body. It is retained verbatim without substituting another product name.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-007",
+      "start_char": 15323,
+      "end_char": 15375,
+      "source_excerpt": "他们甚至建立了类似 “Vibe-coded” 的分类体系，把自己的原型直接做成 Codex 使用的版本。",
+      "description": "The taxonomy and the relationship between prototypes and a version used by Codex are underspecified. The proposal retains the assertion rather than choosing an implementation or prototype workflow.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-008",
+      "start_char": 15929,
+      "end_char": 15959,
+      "source_excerpt": "团队只用了两周时间就完成上线准备，而整个四周流程包括投产上线",
+      "description": "This two-week/four-week account appears alongside 18 days to employee testing and 10 additional days to public release. Different milestones may be intended, but the body does not reconcile them. All quantities and milestones remain.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    },
+    {
+      "issue_id": "doc-04-issue-009",
+      "start_char": 20609,
+      "end_char": 20634,
+      "source_excerpt": "使 Codex 帮助 Codex 自身服务训练系统",
+      "description": "The grammatical relationship among helping Codex, its own training, and serving training systems is unclear. The surrounding paragraph supports involvement in training infrastructure but not a unique repair of this clause; no extra agent relationship or self-training mechanism is supplied.",
+      "disposition": "Retained in the candidate; requires source or content verification beyond Chinese-only expression repair."
+    }
+  ],
+  "internal_validation": {
+    "source_hash_matches_manifest": true,
+    "protocol_hash_matches_manifest": true,
+    "exact_before_spans": true,
+    "bounds_and_nonoverlap": true,
+    "right_to_left_replay": true,
+    "left_to_right_full_coverage": true,
+    "output_utf8_hash_recorded": true,
+    "semantic_preservation": "Editor proposal only; independent review pending."
+  },
+  "reproduction_command": "python data/local/media-repair-development-v1/candidates/doc-03/create_candidates.py"
+}

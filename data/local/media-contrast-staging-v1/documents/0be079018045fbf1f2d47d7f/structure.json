@@ -1,0 +1,28 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "https://www.youtube.com/watch?v=z1ISq9Ty4Cg&t=224s",
+      "href": "https://www.youtube.com/watch?v=z1ISq9Ty4Cg&t=224s"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 313,
+    "h1": 12,
+    "h2": 1,
+    "h3": 0,
+    "ul": 10,
+    "ol": 0,
+    "li": 10,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 1
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/0be079018045fbf1f2d47d7f.html",
+  "raw_html_sha256": "0fa18ea0685ed098418d991fe81f26dfdc2b69af91a66e700c841789494b495c"
+}

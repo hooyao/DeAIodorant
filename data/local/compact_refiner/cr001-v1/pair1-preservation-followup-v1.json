@@ -1,0 +1,219 @@
+{
+  "artifact_version": "pair1-preservation-followup-v1",
+  "review_date": "2026-09-14",
+  "reviewer_kind": "model_assisted_agent",
+  "human_gold": false,
+  "human_concern_resolved": false,
+  "source_artifact": "data/local/compact_refiner/cr001-v1/reader-preview-v1.md",
+  "pair": 1,
+  "human_feedback_quotation": "两段内容并不完全一样，A看上去更好读",
+  "review_scope": {
+    "materials_reviewed": [
+      "AGENTS.md",
+      "Pair 1, labels A and B, in the source artifact",
+      "The human feedback quotation supplied with this review task"
+    ],
+    "candidate_identity_known": false,
+    "earlier_model_judgments_reviewed": false,
+    "other_pairs_reviewed": false,
+    "final_or_legacy_test_material_reviewed": false,
+    "external_inference_calls": 0,
+    "source_or_candidate_modified": false,
+    "method": "Compare explicit claims, quantities, actors, permissions, prohibitions, and condition scope in both directions. Evaluate the full passage and identify sentence-level differences separately. Do not infer which label is the source or candidate.",
+    "limitations": [
+      "This is a model-assisted close reading, not a human preservation judgment or a new reader-preference observation.",
+      "The human has not specified which content difference prompted the concern.",
+      "No inference about candidate identity or the direction of an edit is warranted from A/B labels.",
+      "Absence of a confirmed semantic defect in this review does not establish equivalence or resolve the human concern."
+    ]
+  },
+  "claim_alignment": [
+    {
+      "claim_id": "C01",
+      "claim": "The shared task is setting up the corridor photography exhibition on Saturday from 09:00 to 11:00.",
+      "a_evidence": ["周六09:00至11:00，我们将共同完成长廊影展的布展工作。"],
+      "b_evidence": ["周六09:00至11:00，我们将共同完成长廊影展的布展工作。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The event, weekday, time window, and collective actor are identical. Neither passage specifies a calendar date."
+    },
+    {
+      "claim_id": "C02",
+      "claim": "There are 18 photographs on site, already fitted with lightweight frames.",
+      "a_evidence": ["现场共有18幅已装好轻质框的照片。"],
+      "b_evidence": ["现场共有18幅已装好轻质框的照片。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The count, on-site location, completed framing, and frame type are identical."
+    },
+    {
+      "claim_id": "C03",
+      "claim": "Volunteers first check the numbers on the backs of the photographs.",
+      "a_evidence": ["请志愿者先核对照片背面的编号"],
+      "b_evidence": ["请志愿者首先核对照片背面的编号"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The actor, object of checking, number location, and initial ordering are preserved."
+    },
+    {
+      "claim_id": "C04",
+      "claim": "After confirming the numbers are correct, volunteers place the photographs on the table below the already numbered locations on the wall.",
+      "a_evidence": ["确认无误后，把照片放在墙面已贴好编号的位置下方的桌上。"],
+      "b_evidence": ["确认无误后，将照片放置于墙面已贴好编号位置下方的桌上。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The verification prerequisite and destination are preserved. The wording differs without an identified change to the physical destination."
+    },
+    {
+      "claim_id": "C05",
+      "claim": "If a numbering mismatch is discovered, volunteers must not change the number themselves, must move the photograph to the pending-confirmation area beside the entrance, and must mark the list.",
+      "a_evidence": ["若发现编号不符，不要自行修改编号，应将照片移至入口旁的待确认区，并在清单上做出标记。"],
+      "b_evidence": ["若在核对过程中发现编号不符，请勿自行修改编号，应将照片移至入口旁的待确认区，并在清单上做出标记。"],
+      "a_to_b": "supported_for_discovery_during_verification_other_timing_ambiguous",
+      "b_to_a": "supported_for_the_explicit_verification_case",
+      "assessment": "All three required responses and the location are preserved for a mismatch discovered during verification. B explicitly restricts the discovery condition to the verification process; A does not state that restriction, though A's surrounding context concerns verification. Coverage outside verification remains ambiguous; see F02."
+    },
+    {
+      "claim_id": "C06",
+      "claim": "The two long horizontal photographs require two people to carry them; each remaining photograph may be carried by one person.",
+      "a_evidence": ["搬运时，两幅横向长照片需两人协作搬运，其余照片可由一人搬运。"],
+      "b_evidence": ["搬运时请注意，两幅横向长照片需两人协作搬运，其余照片可由一人搬运。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The two exceptional photographs, their orientation and length, the two-person requirement, and the one-person permission for the remainder are preserved. Moving the instruction does not itself assign carrying to a different actor or time."
+    },
+    {
+      "claim_id": "C07",
+      "claim": "Hanging is prohibited until all 18 photographs have been checked and placed in position.",
+      "a_evidence": ["18幅照片全部完成核对并归位前，请勿悬挂。"],
+      "b_evidence": ["在18幅照片全部完成核对并归位前，请勿进行悬挂操作。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The all-18 scope, conjunction of checking and placement, and prohibition before both are complete are explicit in both passages."
+    },
+    {
+      "claim_id": "C08",
+      "claim": "Venue staff hang the photographs together on the existing hooks after the prerequisites are complete.",
+      "a_evidence": ["全部核对并归位后，由场地方工作人员统一将照片挂上现有挂钩。"],
+      "b_evidence": ["当所有照片核对完毕，将由场地方工作人员统一将照片挂上现有挂钩。", "在18幅照片全部完成核对并归位前，请勿进行悬挂操作。"],
+      "a_to_b": "supported_by_full_passage_with_local_trigger_ambiguity",
+      "b_to_a": "supported_if_b_trigger_is_read_with_its_preceding_prohibition",
+      "assessment": "The hanging actor, collective handling, objects, and existing hooks are identical. A repeats checking and placement in the affirmative trigger. B repeats only checking there; its earlier prohibition still requires placement. This is a visible difference in prerequisite restatement, with possible local ambiguity, not a confirmed removal of the global placement requirement; see F01."
+    },
+    {
+      "claim_id": "C09",
+      "claim": "During this process, volunteers must not independently drill holes or move hooks.",
+      "a_evidence": ["在此过程中，志愿者请勿自行打孔或移动挂钩。"],
+      "b_evidence": ["在此过程中，志愿者请勿自行打孔或移动挂钩。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The actor, both forbidden actions, independent-action qualification, and process reference are identical. In both passages the preceding sentence describes hanging by venue staff."
+    },
+    {
+      "claim_id": "C10",
+      "claim": "After all hanging is complete, two volunteers perform a recheck.",
+      "a_evidence": ["全部悬挂完成后，由两名志愿者复核："],
+      "b_evidence": ["全部悬挂完成后，需进行双人复核：一名志愿者负责核对照片顺序，另一名志愿者负责核对标签文字。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The all-hanging-complete prerequisite and two-volunteer staffing are preserved. B names the volunteer roles in the continuation of the same sentence."
+    },
+    {
+      "claim_id": "C11",
+      "claim": "One volunteer checks photograph order and the other checks label text.",
+      "a_evidence": ["一人核对照片顺序，另一人核对标签文字。"],
+      "b_evidence": ["一名志愿者负责核对照片顺序，另一名志愿者负责核对标签文字。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The two distinct actors and division of checking duties are preserved. A identifies both as volunteers immediately before this quotation."
+    },
+    {
+      "claim_id": "C12",
+      "claim": "If any work remains unfinished at 11:00, leave an unfinished-work list for venue staff.",
+      "a_evidence": ["若至11:00仍未完成全部工作，请留下未完成清单交给场地方工作人员"],
+      "b_evidence": ["若至11:00仍未完成全部工作，请留下未完成清单交给场地方工作人员"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The deadline, conditional nature, all-work scope, handoff artifact, and recipient are identical. Neither passage grants an extension or instructs staff how to finish the remaining work."
+    },
+    {
+      "claim_id": "C13",
+      "claim": "Do not directly open an unchecked exhibition area to the public.",
+      "a_evidence": ["切勿将未检查的展区直接对外开放。"],
+      "b_evidence": ["切勿将未检查的展区直接对外开放。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The prohibition, unchecked-area qualification, and public-opening action are identical. Its placement within the 11:00 conditional sentence is also identical, so any ambiguity about broader temporal scope is shared."
+    },
+    {
+      "claim_id": "C14",
+      "claim": "Maintain communication, keep each step's dependencies clear, and complete the setup together.",
+      "a_evidence": ["请保持沟通，确保每一步依赖关系清晰，共同完成布展。"],
+      "b_evidence": ["请保持沟通，确保每一步依赖关系清晰，共同完成布展。"],
+      "a_to_b": "explicitly_supported",
+      "b_to_a": "explicitly_supported",
+      "assessment": "The closing instructions are identical. They do not resolve the local scope questions identified in this review."
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "F01",
+      "category": "precondition_restatement_ambiguity",
+      "confirmed_wording_difference": true,
+      "confirmed_semantic_change": false,
+      "a_evidence": ["全部核对并归位后"],
+      "b_evidence": ["当所有照片核对完毕", "在18幅照片全部完成核对并归位前，请勿进行悬挂操作。"],
+      "observation": "A states both completion of checking and placement immediately before venue staff begin hanging. B's corresponding affirmative sentence states only completion of checking; the placement prerequisite occurs in the previous paragraph's prohibition.",
+      "potential_difference": "If B's affirmative sentence is interpreted independently, checking alone appears to trigger hanging. A's affirmative sentence does not permit that reading. Reading B as a whole retains the explicit prohibition until both checking and placement are complete.",
+      "disposition": "Keep unresolved as a local dependency-clarity and scope concern. Do not classify the omitted restatement as a confirmed global loss, and do not use the earlier prohibition to dismiss the human report.",
+      "smallest_clarification_if_future_edit_is_authorized": "Express both checking and placement in the affirmative hanging trigger. No text was edited during this review."
+    },
+    {
+      "finding_id": "F02",
+      "category": "exception_trigger_scope_ambiguity",
+      "confirmed_wording_difference": true,
+      "confirmed_semantic_change": false,
+      "a_evidence": ["若发现编号不符"],
+      "b_evidence": ["若在核对过程中发现编号不符"],
+      "observation": "B explicitly conditions the mismatch-handling procedure on discovering the mismatch during verification. A's condition is unqualified, but is embedded in a paragraph that begins with verification instructions.",
+      "potential_difference": "On a broad reading of A, a mismatch noticed during later carrying or hanging still requires quarantine and a list mark. B does not explicitly cover that later-discovery case. On a contextual reading that limits A to verification, the procedures align.",
+      "disposition": "Keep unresolved as a potentially narrower exception trigger in B. The wording-level qualifier is certain; a substantive difference in intended operational scope is not confirmed by this review.",
+      "smallest_clarification_if_future_edit_is_authorized": "Make the intended discovery-time scope explicit and consistent, after confirming that scope. No text was edited during this review."
+    },
+    {
+      "finding_id": "F03",
+      "category": "instruction_order_and_paragraphing",
+      "confirmed_wording_difference": true,
+      "confirmed_semantic_change": false,
+      "observation": "A places mismatch handling directly after verification and placement, then gives carrying rules before hanging rules. B gives the no-hanging prerequisite in its first paragraph, the hanging instructions before carrying rules in its second paragraph, and mismatch handling in a separate third paragraph.",
+      "potential_difference": "This changes when readers encounter exceptions and dependencies. It may affect perceived readability or operational clarity, but this reviewer cannot determine that it caused the human's A preference.",
+      "disposition": "Record a visible organization change. Do not treat textual order alone as an instruction to carry after hanging or to postpone mismatch handling."
+    },
+    {
+      "finding_id": "F04",
+      "category": "shared_unresolved_procedure",
+      "confirmed_wording_difference": false,
+      "confirmed_semantic_change": false,
+      "observation": "Both passages send mismatched photographs to a pending-confirmation area and require all 18 photographs to be checked and placed before hanging, but neither specifies who resolves a mismatch or returns such a photograph to its position.",
+      "potential_difference": "This is a shared omission rather than evidence of content being added or lost between A and B.",
+      "disposition": "Do not attribute this shared procedural gap to either candidate or count it as a preservation defect."
+    }
+  ],
+  "bidirectional_summary": {
+    "a_to_b": "All enumerated content has a counterpart in B, except that the reach of A's unqualified mismatch-discovery trigger outside verification is not explicit in B. The full-passage hanging prerequisite is preserved, but B's affirmative trigger omits its placement restatement.",
+    "b_to_a": "All enumerated operational content in B is represented in A for the verification case. B's explicit verification-time qualifier is not stated in A's mismatch condition, so exact scope equivalence is not established. No distinct new entity, number, actor duty, permission, or deadline was found.",
+    "confirmed_unsupported_additions": [],
+    "confirmed_losses": [],
+    "unresolved_ambiguities": ["F01", "F02"],
+    "entity_quantity_actor_checks": "The event, 18 framed photographs, two long horizontal photographs, two-person versus one-person carrying rules, venue-staff hanging and handoff roles, two-volunteer recheck roles, entrance-side holding location, existing hooks, and both 11:00 references align.",
+    "negation_and_modality_checks": "Both retain prohibitions on changing numbers independently, hanging before all photographs are checked and placed, volunteers drilling holes or moving hooks, and directly opening unchecked areas. Both retain required two-person carrying and permitted one-person carrying for the other photographs. No uncertainty claim or citation is present to compare."
+  },
+  "conclusion": {
+    "definite_preservation_defect_found": false,
+    "preservation_status": "unresolved_human_concern_with_two_scope_ambiguities",
+    "counts_as_preservation_pass": false,
+    "human_preference_record": "The supplied human feedback says A looks easier to read and reports that the contents are not completely identical. This review neither replaces that feedback nor supplies a new human preference or equivalence label.",
+    "interpretation": "There are definite wording and organization differences and two plausible scope ambiguities. This bounded model-assisted review did not confirm an unsupported addition or loss under a full-passage reading. That finding is insufficient to resolve the human's content concern or establish semantic equivalence.",
+    "resolution_requirement": "Only explicit subsequent human resolution can set human_concern_resolved to true; no such resolution has been provided."
+  }
+}

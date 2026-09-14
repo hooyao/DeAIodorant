@@ -1,0 +1,38 @@
+[
+  {
+    "draft_id": "cr001-03-draft",
+    "fidelity_agrees": true,
+    "primary": "pass",
+    "secondary": "pass"
+  },
+  {
+    "draft_id": "cr001-09-draft",
+    "fidelity_agrees": true,
+    "primary": "pass",
+    "secondary": "pass"
+  },
+  {
+    "draft_id": "cr001-10-draft",
+    "fidelity_agrees": true,
+    "primary": "fail",
+    "secondary": "fail"
+  },
+  {
+    "draft_id": "cr001-11-draft",
+    "fidelity_agrees": true,
+    "primary": "pass",
+    "secondary": "pass"
+  },
+  {
+    "draft_id": "cr001-12-draft",
+    "fidelity_agrees": true,
+    "primary": "pass",
+    "secondary": "pass"
+  },
+  {
+    "draft_id": "cr001-14-draft",
+    "fidelity_agrees": true,
+    "primary": "pass",
+    "secondary": "pass"
+  }
+]

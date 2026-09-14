@@ -1,0 +1,32 @@
+{
+  "annotation": {
+    "seed": 20260821
+  },
+  "cohorts": {
+    "post_start_inclusive": "2025-07-01",
+    "pre_end_exclusive": "2023-01-01"
+  },
+  "features": {
+    "char_mattr_window": 500,
+    "char_ngram_size": 4,
+    "require_syntax": true,
+    "token_mattr_window": 100
+  },
+  "schema_version": "deaiodorant-features-1.0",
+  "sparse_features": {
+    "char_ngram_sizes": [
+      2,
+      3,
+      4
+    ],
+    "enabled": true,
+    "maximum_features_per_family": 2000,
+    "minimum_document_frequency": 5,
+    "opening_cjk_chars": 6,
+    "pos_ngram_sizes": [
+      2,
+      3,
+      4
+    ]
+  }
+}

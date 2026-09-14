@@ -1,0 +1,59 @@
+{
+  "media": [
+    {
+      "media_id": "media01",
+      "tag": "img",
+      "src": "https://static001.infoq.cn/resource/image/b6/05/b65a366125f0104f661c478376200d05.gif",
+      "data_src": null,
+      "alt": "",
+      "title": null,
+      "preceding_collector_line": 8,
+      "capture_status": "reference_only_not_downloaded_or_inspected"
+    }
+  ],
+  "links": [
+    {
+      "text": "“擎天柱”",
+      "href": "https://www.infoq.cn/article/JXtTvQgCbANTMYtecDe9"
+    },
+    {
+      "text": "Istio",
+      "href": "https://www.infoq.cn/news/tfJtw1pWmbEIFNSxDK8q"
+    },
+    {
+      "text": "摩尔定律",
+      "href": "https://www.infoq.cn/article/07JFquThmH4DbC9iMqIx"
+    },
+    {
+      "text": "2022 元宇宙行业人才发展报告",
+      "href": "https://www.infoq.cn/news/uKVmglLJtPzMtxUs4uEd"
+    },
+    {
+      "text": "https://github.com/LambdaLabsML/examples/tree/main/stable-diffusion-finetuning",
+      "href": "https://github.com/LambdaLabsML/examples/tree/main/stable-diffusion-finetuning"
+    },
+    {
+      "text": "https://github.com/TencentAILabHealthcare/scBERT",
+      "href": "https://github.com/TencentAILabHealthcare/scBERT"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 100,
+    "h1": 0,
+    "h2": 3,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 1,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 6
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/8bdf575aae4fe9a3b509a492.html",
+  "raw_html_sha256": "557cc7b8b6231492fef5e1b0a2136d19a9bb4dd34aa49244d31bea315242bac6"
+}

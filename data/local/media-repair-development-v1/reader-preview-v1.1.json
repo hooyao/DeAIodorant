@@ -1,0 +1,38 @@
+{
+  "version": "media-repair-qualitative-preview-1.1",
+  "status": "withdrawn_sample_mismatch",
+  "alias": "doc-05",
+  "source_sha256": "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a",
+  "candidate_sha256": "72a76b15b41e2554f69fb2f01ba03aabaf120a5d3730a3f33b76a1ff323b30ca",
+  "presentation_path": "data/local/media-repair-development-v1/presentation-v1/doc-05/review.html",
+  "presentation_manifest_sha256": "97b36cb10d352c27d70a8e542a73fee766ba6000c008d465d5ecb37f385e5a73",
+  "presentation_mapping": {
+    "left": "original",
+    "right": "candidate"
+  },
+  "blinded": false,
+  "previous_source_exposure": true,
+  "purpose": "Qualitative willingness-to-continue and readability feedback, not strong-smell labeling or formal efficacy validation.",
+  "question": "这篇全文对照中，你更愿意继续读哪一版？没有改善也请直接说。",
+  "response": null,
+  "human_gold": false,
+  "training_eligible": false,
+  "parent_preview_sha256": "ccfeb988a285cd0a158f389800d7e6d5d5f3f000bd1fcc8f7e20259f478504e4",
+  "withdrawal_recorded_at_utc": "2026-09-14T09:01:59.496002+00:00",
+  "withdrawal_reason": "Maintainer rejects Cowork as a representative, strongly characteristic Chinese AI-style sample; do not repeat the task under a generic readability objective.",
+  "reader_feedback_kind": "sample_selection_rejection_not_AB_preference",
+  "reader_feedback_verbatim": [
+    "你为什么就死磕cowork这一篇，这一篇不是个好的例子，它是译文，所以并没有llm生成的中文典型的问题",
+    "但是这里边会有很多llm生成英文的问题翻译成中文了，反正就不是典型的AI臭味浓重的中文文章"
+  ],
+  "preference_response": null,
+  "interpretation": {
+    "target_representativeness": "rejected_by_maintainer",
+    "upstream_llm_defects": "Maintainer says English LLM defects may be inherited; not a verified production history.",
+    "translation_as_severity_label": false,
+    "rewrite_readability_outcome": "not_provided",
+    "semantic_preservation_human_verdict": "not_provided"
+  },
+  "retained_role": "translation/readability engineering evidence; not current primary target demonstration",
+  "reissue_as_readability_task": false
+}

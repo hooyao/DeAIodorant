@@ -1,0 +1,32 @@
+{
+  "media": [],
+  "links": [
+    {
+      "text": "华为开发者联盟社区",
+      "href": "https://developer.huawei.com/consumer/cn/forum/?ha_source=InfoQ&ha_sourceId=70000011"
+    },
+    {
+      "text": "元服务如何获取/设置屏幕亮度-华为开发者问答 | 华为开发者联盟 (huawei.com)",
+      "href": "https://developer.huawei.com/consumer/cn/forum/topic/0207166812051982882?fid=0109140870620153026"
+    }
+  ],
+  "figures": [],
+  "element_counts": {
+    "p": 5,
+    "h1": 0,
+    "h2": 2,
+    "h3": 0,
+    "ul": 0,
+    "ol": 0,
+    "li": 0,
+    "img": 0,
+    "figure": 0,
+    "figcaption": 0,
+    "table": 0,
+    "pre": 0,
+    "a": 2
+  },
+  "multimedia_completeness": "References preserved; no referenced media downloaded or visually inspected.",
+  "raw_html_path": "raw/21fb54b8f31d94d5f58b2b86.html",
+  "raw_html_sha256": "61a95b828899553fb2d9cecafa2be5a59e257005a04d05985872942550027b9c"
+}
