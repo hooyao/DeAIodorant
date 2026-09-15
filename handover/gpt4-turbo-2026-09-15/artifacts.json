@@ -1,0 +1,107 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "9ae786bcea0ae7549d4cf8dbf6c05c3fbedba1e1",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "第一版负面读者反馈、GPT-4单句零交易预算中止、GPT-4 Turbo一次全文原样输出和复核；不修改历史输入。",
+  "files": [
+    {
+      "path": "data/local/gpt4-sentence-probe-v1/api-cache/catalog-f698253b3f6e8b569926a71eee63eb209745075b028c5a94b6042b525170198d.json",
+      "bytes": 735855,
+      "sha256": "6b5c17f8a2d8716fde29cabd8da33c694d24590e6bb6eb5d501be0b74cd04a05"
+    },
+    {
+      "path": "data/local/gpt4-sentence-probe-v1/api-cache/ledger.json",
+      "bytes": 142,
+      "sha256": "0607f24d861fc640b4482f328fb42d70f9b1af89efd67cee23d96c27b9d97d40"
+    },
+    {
+      "path": "data/local/gpt4-sentence-probe-v1/failure.json",
+      "bytes": 237,
+      "sha256": "296c024df4787b2213220663863266e17a47b45b53a41f0beb63a63c2b1c435e"
+    },
+    {
+      "path": "data/local/gpt4-sentence-probe-v1/model-catalog-selection.json",
+      "bytes": 1993,
+      "sha256": "96d076531a596d2836c8089ed744af7f0962df9e6030243c971d05b003f9a213"
+    },
+    {
+      "path": "data/local/gpt4-sentence-probe-v1/request.json",
+      "bytes": 1437,
+      "sha256": "c0d08deaf8499c927747bcae3ff59b81f6193e35b9f6dced3ff24ac12d6216a7"
+    },
+    {
+      "path": "data/local/gpt4-sentence-probe-v1/run.py",
+      "bytes": 3806,
+      "sha256": "2aedd02390a8c20ee067be85b49c6773df5b35ab88661af9d70c848c20249cbf"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/api-cache/catalog-f698253b3f6e8b569926a71eee63eb209745075b028c5a94b6042b525170198d.json",
+      "bytes": 735855,
+      "sha256": "796f692559ff8fe107008c16d4cad3c5688aec90dc12286eb8f465383b750aa7"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/api-cache/ledger.json",
+      "bytes": 1713,
+      "sha256": "163f31c7d232d9c62f26aea09d1af6bd2ac39fd72cb39fc5c6a4f537ca6f2128"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/api-cache/result-3a3187ad91243467ce837ca257ec233ded7ae23273b6683524a8f0032fdd982d.json",
+      "bytes": 4619,
+      "sha256": "462bb17b09b3c13dc3276994c4a2c242025fd2756f801be591a028de59b4a2ed"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/budget-status.json",
+      "bytes": 119,
+      "sha256": "58497558296c054c294fa4474b0393ed9435ab5511bedbd96b89eb0f80b8d188"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/check.py",
+      "bytes": 3766,
+      "sha256": "c6cb503f22d2bb4e9825698faff91bb5c31d18842c46965d45c06b8f606fe5d7"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/mechanical-check.json",
+      "bytes": 4754,
+      "sha256": "3074770db8fe22c44c0109f1c54f362241efa7a87245449659aa7b1780d1a442"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/model-catalog-selection.json",
+      "bytes": 1925,
+      "sha256": "5cc64d25f7ee975259868e9cf72619bb279eaa081bc9c0eb3e5965b1b541fd10"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/preservation-review.json",
+      "bytes": 12706,
+      "sha256": "cdba414fa8998a95fa8c3fbccc276a27998a68213e5e312bae1be2dff86f13ef"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/reader-feedback-on-v1.json",
+      "bytes": 3694,
+      "sha256": "ab96539db0140080325209bd088a526cd1227f25ebbb090f396431080ec923ce"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/request.json",
+      "bytes": 11306,
+      "sha256": "365998503b23b42e425296cd0f23939368b0763bd0fb9f8f84e5a811d25be6b7"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/response.json",
+      "bytes": 5005,
+      "sha256": "371c92ffd23608ebc196273c3f721a20f914d776e2570fabc426781ef1095e4e"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/rewritten-article.md",
+      "bytes": 3103,
+      "sha256": "3335b62a67debc232859f5065aeb4d7d707fce9f9054557d70f9e2135c03253a"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/run.py",
+      "bytes": 5074,
+      "sha256": "d52ab2210567f26d332eee03e9a3a246d55afcb0bf78d711ecf0ad61f1179017"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "url": "https://openrouter.ai/api/v1/models",
+  "fetched_at_utc": "2026-09-15T06:26:43.255705+00:00",
+  "full_catalog_sha256": "f698253b3f6e8b569926a71eee63eb209745075b028c5a94b6042b525170198d",
+  "selected": {
+    "id": "openai/gpt-4",
+    "canonical_slug": "openai/gpt-4",
+    "hugging_face_id": null,
+    "name": "OpenAI: GPT-4",
+    "created": 1685232000,
+    "description": "OpenAI's flagship model, GPT-4 is a large-scale multimodal language model capable of solving difficult problems with greater accuracy than previous models due to its broader general knowledge and advanced reasoning...",
+    "context_length": 8191,
+    "architecture": {
+      "modality": "text->text",
+      "input_modalities": [
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00003",
+      "completion": "0.00006"
+    },
+    "top_provider": {
+      "context_length": 8191,
+      "max_completion_tokens": 4096,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_completion_tokens",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2021-09-30",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-4/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": null,
+        "coding_index": 13.1,
+        "agentic_index": null
+      }
+    }
+  },
+  "dated_gpt4_0314_present": false,
+  "note": "目录别名不能证明路由到 2023 年某个历史快照；实际路由以响应 metadata 为准。"
+}

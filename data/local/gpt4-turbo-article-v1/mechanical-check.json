@@ -1,0 +1,130 @@
+{
+  "source_sha256": "57e6161f10978bbca1c737e6660abf9b9332be60631c2d0c1a3069d48ebb51f4",
+  "output_sha256": "3335b62a67debc232859f5065aeb4d7d707fce9f9054557d70f9e2135c03253a",
+  "source_characters_including_markdown": 3342,
+  "output_characters": 1201,
+  "character_ratio": 0.3593656493117893,
+  "output_matches_unedited_response": true,
+  "input_contains_complete_original": true,
+  "feedback_source_spans": [
+    {
+      "start_char": 21,
+      "end_char": 47,
+      "quote": "但想玩这个《七日杀》传奇MOD，先把版本锁在v2.6"
+    },
+    {
+      "start_char": 159,
+      "end_char": 168,
+      "quote": "没有公告，没有预告"
+    },
+    {
+      "start_char": 296,
+      "end_char": 313,
+      "quote": "各版本详解视频的评论区明显分成两派"
+    },
+    {
+      "start_char": 345,
+      "end_char": 384,
+      "quote": "那么现在是不是入坑的时机？这周我把UL官网、B站、知乎和Steam都核对了一遍"
+    },
+    {
+      "start_char": 385,
+      "end_char": 401,
+      "quote": "复活是真的，但现在入坑要先做功课"
+    },
+    {
+      "start_char": 1843,
+      "end_char": 1865,
+      "quote": "它们提到的安装困难本身是真的，但结论就是广告"
+    },
+    {
+      "start_char": 441,
+      "end_char": 455,
+      "quote": "它更接近资料片，而不是MOD"
+    },
+    {
+      "start_char": 2881,
+      "end_char": 2910,
+      "quote": "修理物品掉线丢装备、技能树锁死，这些问题在联机场景里最致命"
+    },
+    {
+      "start_char": 2907,
+      "end_char": 2910,
+      "quote": "最致命"
+    },
+    {
+      "start_char": 3077,
+      "end_char": 3126,
+      "quote": "2.7.x的第一个稳定版什么时候来，已经有玩家在评论区问“不知道今年过年能不能玩到亡灵遗产稳定版”"
+    }
+  ],
+  "feedback_offsets_definition": "相对第一版 Markdown 经 universal newline 解码后的 Unicode 字符，从零开始，左闭右开。",
+  "missing_numeric_occurrences": {
+    "2.6": 1,
+    "2022": 1,
+    "20": 2,
+    "11": 2,
+    "8": 1,
+    "2.7": 3,
+    "1.9": 1,
+    "9000": 1,
+    "10": 1,
+    "27": 1,
+    "2.7.19": 4,
+    "2.7.15": 3,
+    "3": 3,
+    "6": 1,
+    "3.0": 2,
+    "3.2": 4,
+    "64": 1,
+    "96": 1,
+    "0": 1,
+    "2.7.14": 1,
+    "100": 1,
+    "4.0": 1,
+    "3.1": 1
+  },
+  "added_numeric_occurrences": {
+    "1": 1,
+    "2": 1,
+    "5": 1
+  },
+  "missing_exact_quotations": [
+    "“亡灵遗产”",
+    "“亡灵遗产”",
+    "“时隔四年终于更新”",
+    "“全体起立”",
+    "“等稳定版出来再玩”",
+    "“改一半”",
+    "“七日杀本体游戏内容丰富程度不如亡灵遗产一根，亡灵遗产就是打了10个dlc和捆绑包的七日杀”",
+    "“兼容V3.0新方块架构”",
+    "“要这样搞天天更新我得天天开新档，肝真受不了”",
+    "“亡灵遗产这MOD是真的神，唯一缺点就是太吃内存了，我64G的内存都时不时卡顿，我看小破站UP里甚至有96G都卡的”",
+    "“啥时候开饭创意工坊”",
+    "“亡灵遗产资源合集”",
+    "“口令福利”",
+    "“七日杀大型MOD亡灵遗产安装教程”",
+    "“一键部署开服”",
+    "“想要亡灵遗产模组的小伙伴看这里”",
+    "“限时会员0元领”",
+    "“这个玩家动力根本不能用，领了口令还是流量不够，寻思还钱了事，结果花钱买了会员还是不给下载，卡住不动”",
+    "“一键安装”",
+    "“当前版本bug太多了，昨晚2.7.15版本联机。队友一用维修包就掉线，然后上线武器和维修包全没了，就这样整没了3把武器”",
+    "“我点了突击的技能点之后正常来说，会把这个方向的技能解锁，其余几个方向锁上。但是当我下一次进入技能点界面之后，发现五个方向全部锁上了，导致我这个存档一个技能都点不了，直接废了”",
+    "“天天更新、天天修”",
+    "“我想做皮革，皮革要裁缝工作台做，但是裁缝工作台要皮革，只能去砍沙发”",
+    "“真的好玩，一晚上没停过，也死了一晚上，难度太高了”",
+    "“这个mod只能看，不能自己玩儿，对我来说太折磨了”",
+    "“搜刮、盖房、等血月”",
+    "“不知道今年过年能不能玩到亡灵遗产稳定版”",
+    "“本体不如一根”"
+  ],
+  "requested_stability_sentence_omitted": true,
+  "paid_attempt_count": 1,
+  "single_sentence_paid_attempt_count": 0,
+  "reported_cost_usd": "0.07395",
+  "mechanical_identity_checks": "passed",
+  "meaning_preservation": "不能依据这些机械检查通过；另见独立复核。",
+  "reader_benefit": null,
+  "training_eligible": false
+}

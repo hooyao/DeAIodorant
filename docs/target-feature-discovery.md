@@ -1,9 +1,9 @@
 # 校准后的研究目标与证据计划
 
-版本：`deaiodorant-target-discovery-1.7`。
+版本：`deaiodorant-target-discovery-1.8`。
 依据：维护者在 2026-09-14 对项目目标和证据作出的澄清。这是当前研究优先级的记录；已完成实验的输入和结果保留原始版本。
 
-最新执行检查点见 [HANDOFF.md](../HANDOFF.md)：[契约1.1的文章隔离检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)已完成四篇新文章、八份回答和393处精确引用。维护者此后确认 n01《亡灵遗产》“很臭”，并重申目标是让读者看得舒服，范围限于面向公众讲清问题的信息文章。本阶段进入有限改写；字段歧义继续作为保真与诊断风险保留，不把完善标注契约当成主成果。[首轮36条记录](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)和早期发现均保留。
+最新执行检查点见 [HANDOFF.md](../HANDOFF.md)：维护者明确否定 n01《亡灵遗产》第一版改写，表示开头已使其不愿继续读。随后指定的 [GPT-4 Turbo 全文试写](routes/compact-refiner/reports/gpt4-turbo-article-v1.md)执行一次，因大量摘要化和内容改变未通过保真检查。1.8 记录这次负面结果，产品目标不变；不继续要求维护者逐句挑错，不把删掉问题段当成等义改写成功。既有[契约1.1检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)与[首轮36条记录](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)保留为辅助。
 
 ## 要解决的问题
 

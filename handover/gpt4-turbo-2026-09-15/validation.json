@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-15",
+  "pytest": {
+    "command": "python -m pytest -q",
+    "status": "passed",
+    "tests": 201,
+    "exit_code": 0
+  },
+  "compileall": {
+    "status": "passed",
+    "scope": "src、五个既有根脚本、本次两个 run.py 与 check.py"
+  },
+  "new_inventory": {
+    "files_verified": 19,
+    "bytes_verified": 1537109,
+    "status": "passed"
+  },
+  "previous_information_refinement_inventory": {
+    "files_verified": 27,
+    "bytes_verified": 275743,
+    "status": "passed"
+  },
+  "feedback_and_model_response_linkage": "passed",
+  "independent_review_input_hashes_and_quotes": "passed",
+  "full_article_content_preservation": "fail",
+  "human_readability_result_for_gpt4_turbo": null,
+  "model_call": {
+    "requested_model": "openai/gpt-4-turbo",
+    "returned_model": "openai/gpt-4-turbo",
+    "paid_attempts": 1,
+    "reported_cost_usd": "0.07395",
+    "raw_output_not_edited": true
+  },
+  "single_sentence_gpt4": {
+    "paid_attempts": 0,
+    "status": "blocked_by_local_reservation_before_post"
+  },
+  "credential_scan": {
+    "actual_dotenv_key_checked": true,
+    "findings": 0,
+    "staged_files_scanned": 29,
+    "patterns_checked": true
+  },
+  "presentation": {
+    "markdown_open_in_codex": "queued",
+    "visibly_rendered_verified": false,
+    "browser_navigation_attempted": false
+  },
+  "main_unchanged": "af751e236c084c0de3cc45a5979749bad0778378",
+  "artifact_manifest_sha256": "b1ad2ab305f13373ffe80fbf9f383b0cb2406ad3e579a83868a0bf7239ffdf5d",
+  "git_index_artifact_hashes": "passed"
+}

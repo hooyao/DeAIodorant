@@ -1,0 +1,8 @@
+{
+  "reason": "insufficient_budget_for_all_attempts",
+  "metadata": {
+    "request_sha256": "28433b69f86fd42900500085549dcd14ded564dcf1025bf702c4c12cdc0f42ae",
+    "required_reservation_usd": "0.16089",
+    "remaining_usd": "0.10"
+  }
+}

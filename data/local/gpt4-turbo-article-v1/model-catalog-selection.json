@@ -1,0 +1,68 @@
+{
+  "url": "https://openrouter.ai/api/v1/models",
+  "fetched_at_utc": "2026-09-15T06:27:50.489497+00:00",
+  "full_catalog_sha256": "f698253b3f6e8b569926a71eee63eb209745075b028c5a94b6042b525170198d",
+  "selected": {
+    "id": "openai/gpt-4-turbo",
+    "canonical_slug": "openai/gpt-4-turbo",
+    "hugging_face_id": null,
+    "name": "OpenAI: GPT-4 Turbo",
+    "created": 1712620800,
+    "description": "The latest GPT-4 Turbo model with vision capabilities. Vision requests can now use JSON mode and function calling.\n\nTraining data: up to December 2023.",
+    "context_length": 128000,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "GPT",
+      "instruct_type": null
+    },
+    "pricing": {
+      "prompt": "0.00001",
+      "completion": "0.00003"
+    },
+    "top_provider": {
+      "context_length": 128000,
+      "max_completion_tokens": 4096,
+      "is_moderated": true
+    },
+    "per_request_limits": null,
+    "supported_parameters": [
+      "frequency_penalty",
+      "logit_bias",
+      "logprobs",
+      "max_tokens",
+      "presence_penalty",
+      "response_format",
+      "seed",
+      "stop",
+      "structured_outputs",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_logprobs",
+      "top_p"
+    ],
+    "default_parameters": {},
+    "supported_voices": null,
+    "knowledge_cutoff": "2023-12-31",
+    "expiration_date": null,
+    "links": {
+      "details": "/api/v1/models/openai/gpt-4-turbo/endpoints"
+    },
+    "benchmarks": {
+      "design_arena": [],
+      "artificial_analysis": {
+        "intelligence_index": null,
+        "coding_index": 21.5,
+        "agentic_index": null
+      }
+    }
+  },
+  "note": "目录可见只表示列出型号，成功响应才表明本次请求实际可用；不声称是 GPT-4 0314/0613。"
+}

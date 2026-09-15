@@ -1,0 +1,26 @@
+{
+  "created_at_utc": "2026-09-15T06:26:41.967352+00:00",
+  "purpose": "维护者明确要求查找 OpenRouter 上的 GPT-4 并改写这一句话。",
+  "authorization": "本次明确指定 GPT-4 是对通常仅使用便宜小模型约定的单次例外；不调用外部 Astra。",
+  "input_sentence": "2.7.x的第一个稳定版什么时候来，已经有玩家在评论区问“不知道今年过年能不能玩到亡灵遗产稳定版”",
+  "messages": [
+    {
+      "role": "user",
+      "content": "请将下面这句话改写得自然、通顺，保留原意，不补充原文没有的信息。只输出改写结果。\n\n2.7.x的第一个稳定版什么时候来，已经有玩家在评论区问“不知道今年过年能不能玩到亡灵遗产稳定版”"
+    }
+  ],
+  "model": "openai/gpt-4",
+  "temperature": 0,
+  "seed": 20260915,
+  "max_tokens": 256,
+  "budget_usd": "0.10",
+  "max_retries": 0,
+  "license_and_cost": "现有 OpenRouter 商业 API 服务，无新增模型权重或软件依赖；按目录 token 价格收费。",
+  "failure_behavior": "一次付费尝试；失败保留原因及预算占用，不更换模型、不自动重试。",
+  "scope": "已暴露开发样句；不比较模型整体能力，不推断早期与后期训练机制。",
+  "pricing": {
+    "prompt": "0.00003",
+    "completion": "0.00006"
+  },
+  "generator_sha256": "2aedd02390a8c20ee067be85b49c6773df5b35ab88661af9d70c848c20249cbf"
+}

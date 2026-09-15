@@ -1,6 +1,6 @@
 # 项目路线图
 
-2026-09-15 最新进展：维护者确认新原文“很臭”，并明确项目只让公众信息文章的读者看得舒服，不考虑艺术文体。[有限改写试做](routes/compact-refiner/information-refinement-pilot-v1.md)已有一份经含义复核的完整文字稿。下一步检查真实阅读体验；既有[契约检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)保留作辅助，不扩大 schema、重标旧回答或进入训练。后文关于跨体裁的旧规划不代表跨艺术文体目标。
+2026-09-15 最新进展：维护者已否定第一版有限改写，表示开头就让其不想继续阅读。按维护者指定进行的 [GPT-4 Turbo 单次全文试写](routes/compact-refiner/reports/gpt4-turbo-article-v1.md)又因摘要化、遗漏与内容改变未通过保真检查。当前没有合格的训练目标；继续处理具体句意、内容关系和阅读表达，保留失败稿与反馈，不增加付费重试或通用 schema 工作。项目限于向公众讲清问题的信息文章；后文跨体裁旧规划不代表艺术文体目标。
 
 ## 当前优先事项，2026-09-14
 

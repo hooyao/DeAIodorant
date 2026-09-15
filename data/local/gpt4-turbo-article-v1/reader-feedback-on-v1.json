@@ -1,0 +1,48 @@
+{
+  "version": "reader-feedback-on-information-refinement-v1.0",
+  "date": "2026-09-15",
+  "reviewed_article": {
+    "path": "data/local/style-intervention-v1/refined-article.md",
+    "sha256": "8314ec0b185a665ce1e8399d3b50a764d4445faddd203ad361b041ee398debac",
+    "body_path": "data/local/style-intervention-v1/draft-v1/combined.txt",
+    "body_sha256": "ff708f73de811831bbf8872cad0deac7e8c2f4adac0ee97c45e220051aa79657"
+  },
+  "source_article": {
+    "url": "https://post.smzdm.com/p/a6zdv5o0/",
+    "path": "data/local/style-intervention-v1/original-article.md",
+    "sha256": "57e6161f10978bbca1c737e6660abf9b9332be60631c2d0c1a3069d48ebb51f4"
+  },
+  "verbatim_messages_in_order": [
+    "就看改写搞\n但想玩这个《七日杀》传奇MOD，先把版本锁在v2.6 但...先  恶臭\n，没有公告，没有预告 排比 臭\n各版本详解视频的评论区明显分成两派 这句话在中文是病句 恶臭\n那么现在是不是入坑的时机？这周我把UL官网、B站、知乎和Steam都核对了一遍, 自问+我把...都捋了一遍/过了一遍/核对了一遍  恶臭\n... 是真的，但... 恶臭\n\n\n",
+    "下边的我也不想看了，第一段就这么恶臭",
+    "它更接近资料片，而不是MOD ， 更...而不是 恶臭",
+    "你这篇改写，大部分的文字都是AI味道的病句，我随便看看，“修理物品掉线丢装备、技能树锁死，这些问题在联机场景里最致命”这种恶臭的文字遍地都是",
+    "...最致命 也是恶臭指示剂",
+    "2.7.x的第一个稳定版什么时候来，已经有玩家在评论区问“不知道今年过年能不能玩到亡灵遗产稳定版” <-- 人类不会这么写的，你去看下openrouter上还有没有gpt4, 让gpt4改一下这句话",
+    "我看到还有gpt4 turbo，你去试试让gpt4改一下这篇文章，但是gpt4很贵，不要滥用"
+  ],
+  "interpretation_by_root": {
+    "reader_result": "维护者明确认为第一版仍有大量令人反感的表达，开头已经降低继续阅读意愿；不要求维护者继续逐句挑错。",
+    "evaluation_design": "知道来源、已看过原文的直接开发反馈；没有随机化、盲评、数值评分或完整阅读声明。",
+    "not_a_label": "“人类不会这么写的”记录为维护者原话，不转为作者身份标签或普适语法规则。",
+    "failure_of_v1": "只替换六处呈现用语并增加空行，漏掉标题、开头和大量句内／篇章问题；旧保真通过不证明改写成功。",
+    "severity_word": "“最致命”本身被提名为反感指示剂；不能只补主语，或换成另一个最高级就认定解决。",
+    "next_action": "按维护者要求做一次 GPT-4 Turbo 全文改写；保留未经 Root 润色的输出，以便真实判断。",
+    "no_new_general_rule": true,
+    "reader_preference_score": null,
+    "training_eligible": false
+  },
+  "exact_source_spans_to_locate": [
+    "但想玩这个《七日杀》传奇MOD，先把版本锁在v2.6",
+    "没有公告，没有预告",
+    "各版本详解视频的评论区明显分成两派",
+    "那么现在是不是入坑的时机？这周我把UL官网、B站、知乎和Steam都核对了一遍",
+    "复活是真的，但现在入坑要先做功课",
+    "它们提到的安装困难本身是真的，但结论就是广告",
+    "它更接近资料片，而不是MOD",
+    "修理物品掉线丢装备、技能树锁死，这些问题在联机场景里最致命",
+    "最致命",
+    "2.7.x的第一个稳定版什么时候来，已经有玩家在评论区问“不知道今年过年能不能玩到亡灵遗产稳定版”"
+  ],
+  "historical_artifacts_modified": false
+}

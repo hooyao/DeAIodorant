@@ -1,0 +1,58 @@
+{
+  "text": "《亡灵遗产》重返《七日杀》：13天推出15个版本，想体验请锁定v2.6版本\n\n《七日杀》是一款深受玩家喜爱的游戏，而“亡灵遗产”（Undead Legacy，简称UL）作为其最受欢迎的MOD之一，自2022年11月25日发布2.6.17版本后便鲜有更新，直到2026年8月才再次亮相。这次更新的节奏异常迅速，从8月17日至8月29日，短短13天内就推出了15个新版本。这一系列更新引起了广泛关注，B站UP主“林小天丿”发布的相关视频播放量接近45万，获得了众多点赞和收藏。\n\n尽管更新频繁，但现在是否适合开始玩UL？经过对UL官网、B站、知乎和Steam的信息核对，建议玩家在尝试前需要注意将游戏版本锁定在v2.6。\n\n### 亡灵遗产简介\n\n对于不熟悉UL的玩家，这个MOD的改动非常深入，几乎相当于一个全新的资料片。它首次发布于2017年，由开发者Subquake独立维护。UL彻底改造了用户界面、背包系统、物品属性展示等，甚至包括研究台和制造链条的全面重建。此外，还增加了类似《辐射》的开锁小游戏和更加复杂的载具系统。\n\n### 开始游戏前的注意事项\n\n1. **版本兼容性**：《七日杀》本体已更新至v3.2.0，而UL的最新版本2.7.19仅支持到v2.6 b14。如果你的游戏已更新至更高版本，需要先回退至v2.6。\n\n2. **存档问题**：UL的更新可能导致需要重新开始游戏，因为大型更新往往使旧存档无法正常使用。建议在每次更新前备份存档，以避免数据丢失。\n\n3. **系统要求**：UL对内存的需求非常高，16G内存的电脑可能无法流畅运行，32G是基本要求，而64G或更高内存会有更好的体验。\n\n4. **下载渠道**：目前可通过UL官网或社区维护的资源合集下载，避免使用带有广告或附加条件的第三方平台。\n\n5. **已知bug**：当前版本中存在一些已知的bug，如在背包中使用维修包可能导致掉线和物品消失。官方正在逐步修复这些问题。\n\n### 游戏体验\n\nUL的游戏体验和原版《七日杀》截然不同，它的科技树和生存挑战让即使是经验丰富的玩家也可能感到困惑和挑战。玩家对此有截然不同的看法，一些玩家享受这种挑战，而另一些则可能觉得太过繁复。\n\n### 是否应该开始玩？\n\n- **单人游戏的资深玩家**：如果你喜欢挑战，可以尝试UL，但需要准备好随时可能需要重新开始游戏的心理，并确保有足够的内存。\n- **多人游戏玩家**：由于当前版本中存在一些影响多人游戏的bug，建议暂时等待更稳定的版本。\n- **新玩家**：如果你是通过视频等渠道了解到UL，建议先观看更多游戏实况，确保自己能接受其游戏节奏和难度后再开始尝试。\n\n总之，虽然《亡灵遗产》为《七日杀》带来了许多新的内容和挑战，但它也需要玩家有较高的技术准备和对游戏机制的深入了解。在决定是否投入之前，务必做好充分的准备和研究。",
+  "metadata": {
+    "schema_version": "compact-refiner-openrouter-1.0",
+    "client_version": "compact-refiner-openrouter-1.1",
+    "retry_policy_version": "openrouter-retry-after-1.0",
+    "request_sha256": "3a3187ad91243467ce837ca257ec233ded7ae23273b6683524a8f0032fdd982d",
+    "messages_sha256": "4ff41e0317136031fb360235cb33fbc013d36b7e22e9e50592e04fc33e92cb8e",
+    "request_config": {
+      "model": "openai/gpt-4-turbo",
+      "max_tokens": 8192,
+      "temperature": 0,
+      "stream": false,
+      "usage": {
+        "include": true
+      },
+      "provider": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "prompt": 10.0,
+          "completion": 30.0
+        }
+      },
+      "seed": 20260915
+    },
+    "transaction_id": "150ae434ab0640f89bab2fdd5d7fbb7e",
+    "purpose": "gpt4_turbo_article_v1",
+    "requested_model": "openai/gpt-4-turbo",
+    "returned_model": "openai/gpt-4-turbo",
+    "provider": "OpenAI",
+    "provider_missing_reason": null,
+    "checkpoint_revision": null,
+    "checkpoint_revision_missing_reason": "not_exposed_by_response",
+    "seed_supported": null,
+    "seed_support_note": "A requested seed does not establish provider support or deterministic replay.",
+    "started_at_utc": "2026-09-15T06:27:50.540136+00:00",
+    "finished_at_utc": "2026-09-15T06:28:25.593036+00:00",
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "response_id": "gen-1789453672-LYzgt9X4bSOFVx1nEjY4",
+    "usage": {
+      "prompt_tokens": 3825,
+      "completion_tokens": 1190,
+      "total_tokens": 5015,
+      "cost": "0.07395",
+      "reasoning_tokens": 0
+    },
+    "cost": {
+      "reported_usd": "0.07395",
+      "accounted_usd": "0.07395",
+      "basis": "reported_usage_cost"
+    },
+    "attempt_count": 1,
+    "retry": null,
+    "retry_not_before_utc": null,
+    "cache_hit": false
+  }
+}
