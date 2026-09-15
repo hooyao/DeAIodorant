@@ -1,0 +1,23 @@
+{
+  "mode": "article_dom",
+  "nonwhitespace_text_coverage_equal": true,
+  "removed_nodes": [
+    {
+      "selector": "h1.item-name",
+      "text": "DIY礼物比购买礼物更珍贵？聊聊你和DIY礼物的故事",
+      "html": "<h1 class=\"item-name\">\n<span class=\"edit_interface\"></span>\r\n                                                                DIY礼物比购买礼物更珍贵？聊聊你和DIY礼物的故事                            </h1>"
+    },
+    {
+      "selector": ".recommend-tab",
+      "text": "2016-12-22 12:20:00 35点赞 356收藏 77评论",
+      "html": "<div class=\"recommend-tab z-clearfix item-preferential\">\n<span class=\"xilie\">\n<span>2016-12-22 12:20:00</span>\n<span>35点赞</span>\n<span>356收藏</span>\n<span>77评论</span>\n</span>\n<!-- 风险提示 -->\n<!-- 直达链接-->\n</div>"
+    },
+    {
+      "selector": ".the-end",
+      "text": "",
+      "html": "<div class=\"the-end\"><img alt=\"\" src=\"https://res.smzdm.com/pc/pc_shequ/dist/img/the-end.png\"/></div>"
+    }
+  ],
+  "citation_chips_separate": true,
+  "render_verified": false
+}

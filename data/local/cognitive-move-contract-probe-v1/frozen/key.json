@@ -1,0 +1,25 @@
+{
+  "packets": {
+    "p41f827571b4a": {
+      "document_id": "n01",
+      "assignment_a": "a2d320ff57bf6",
+      "assignment_b": "a1a3e28c92dbe"
+    },
+    "p82b58f312728": {
+      "document_id": "n02",
+      "assignment_a": "a317b4b4f22ef",
+      "assignment_b": "ad6ae677b7701"
+    },
+    "pe9cb045b4398": {
+      "document_id": "n03",
+      "assignment_a": "ac837554aa281",
+      "assignment_b": "af0681a48b8bc"
+    },
+    "p44d2bba58f24": {
+      "document_id": "n04",
+      "assignment_a": "a2a85b3824864",
+      "assignment_b": "aa3f3a42dd34f"
+    }
+  },
+  "excluded": []
+}

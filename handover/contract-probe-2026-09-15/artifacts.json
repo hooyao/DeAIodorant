@@ -1,0 +1,398 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "4ee4a5841d1deffcd33678106e380887ba6d652d",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "Incremental four-article contract 1.1 development; earlier 2198-file release remains frozen under its original inventory.",
+  "files": [
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/article-request.json",
+      "bytes": 515,
+      "sha256": "28722886f896f51108f09dbc8d7f35692159a45a6f5a80dc245db17a43fd0b98"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/article.dom.html",
+      "bytes": 17106,
+      "sha256": "da239845b64a1f7d51af6a9dd799a4ea9f876bdfb5234d376c4fc087285acaeb"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/article.html",
+      "bytes": 180457,
+      "sha256": "c463bd56167afb962759fffe9d39c895680bf76594d86ca8654295f8c8454b88"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/blocks.json",
+      "bytes": 12714,
+      "sha256": "85296b70c14ecf99f80620209f735e3e8eb65e847d07ba0cc105362b66d1ea2f"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/body.txt",
+      "bytes": 9031,
+      "sha256": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/citations.json",
+      "bytes": 10071,
+      "sha256": "45cfc82c85fc71e3f3f332ae9d7699bb47d4357f80fe3bc0317adf3e5808b574"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/coverage.json",
+      "bytes": 159,
+      "sha256": "21bd4e96ffce9dc2ed0b16db09af778976bf7f45551dc1d57dfaa793e323eab3"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/media.json",
+      "bytes": 1141,
+      "sha256": "8ccaaf74f6acc6efdd321aab1b735fdc4f71726ff92ee68c87cbbc910410f043"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/metadata.json",
+      "bytes": 1153,
+      "sha256": "d7994b76ce43e40a57f39818d9f9c8eee6a3613be43b96f1f4dba9d4f033e56d"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/article-request.json",
+      "bytes": 515,
+      "sha256": "c5cabcdea0fa4b5167638d68278700e1b788a1194894a440ee8fa6800333aa6a"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/article.html",
+      "bytes": 421052,
+      "sha256": "959f119a37562774b041e0b60207f99a32d06cd9364bae749ed2dbb5fa8f03ef"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/blocks.json",
+      "bytes": 4719,
+      "sha256": "bf12f1db3d01c531e633570db31b2bd4d3fd10ae82163888229442349ae92ad9"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/body.txt",
+      "bytes": 2651,
+      "sha256": "d07f105061a9f11e7bb4ff3668b1586e0ac3ec01d5a7d81fa37aaab5680a36e7"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/citations.json",
+      "bytes": 4023,
+      "sha256": "76ab5d13c2db4c44f14a9cea2f37f7ac6383a1b7daf655ddf59d3377c6f38b5e"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/coverage.json",
+      "bytes": 198,
+      "sha256": "5027a54353e0fbb2fb02deba4fa936cb476fc4db22755d08cba54bd08d06ad9c"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/embedded-components.json",
+      "bytes": 5821,
+      "sha256": "97b55ce89c2c446444b0b95eed4f677ef40950b86fa6982bca92311e0052cba3"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/media.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/metadata.json",
+      "bytes": 1160,
+      "sha256": "c3a7c02e611b0bfdf28333b1d1c7272973ff6e5f593eeb4ee2d6411f6791d977"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/article-request.json",
+      "bytes": 513,
+      "sha256": "3d32e06e6070a89f918ea52fb22fe3226b3dcbce10117c97f12933733cf9e89d"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/article.dom.html",
+      "bytes": 26154,
+      "sha256": "97ca619f13224ac2f2a5f43fa796e8d7af11cb32735aae372b267b82dfd92be6"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/article.html",
+      "bytes": 970244,
+      "sha256": "ba941a2fe9d99d3810fde11a575d267640e545fe154726dbf193530e250bf28c"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/blocks.json",
+      "bytes": 15257,
+      "sha256": "c802a9c5113b923449bde55c86d1b2e9513b4958e5a5b53bfb80624e2d9f862f"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/body.txt",
+      "bytes": 10268,
+      "sha256": "8d700e5a2abe5a1cda4251331094bdfa512736688f5d20777955652b07d857bd"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/citations.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/coverage.json",
+      "bytes": 1104,
+      "sha256": "cce59749b1acf1932c1bffb726b601e1db7e91b5b0127caaa3e70430fca48d7a"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/media.json",
+      "bytes": 7533,
+      "sha256": "04085ac44e486794c84e0896a6e78df69ff2909c0097edb365da2a5b192e9653"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/metadata.json",
+      "bytes": 1119,
+      "sha256": "6e08c2c6000d113f44ed84dd33cfb80c0206af11ac9735118cdf3ddd2d8237b0"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/article-request.json",
+      "bytes": 514,
+      "sha256": "2cb378fd28c82e50c299c8cc71c6c29dedc3077b4b3d72350a8825d8b93cd78f"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/article.dom.html",
+      "bytes": 47934,
+      "sha256": "04d82add80954d628bf07deb4ce0b79cf3ad1956daedb385376a38ecefdcae17"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/article.html",
+      "bytes": 1268958,
+      "sha256": "9aa53d6466cb83de9725e0d0534b4ef85834eea27f9a57cc318965743f5f53ed"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/blocks.json",
+      "bytes": 41418,
+      "sha256": "ea85b0f3a21d247309b3a0b05d7584a7bd05938a1848e862f78751bfab22ce46"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/body.txt",
+      "bytes": 16511,
+      "sha256": "28bb82f30feed519d203576cb9bafc8f2fbb6194e14708d7e4c1ac51829e3fbd"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/citations.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/coverage.json",
+      "bytes": 1078,
+      "sha256": "ced4409547e48133cad8df5baa0251bbbfc9ad7b804ba4fe85c311acf645c328"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/media.json",
+      "bytes": 24258,
+      "sha256": "467bdf30807ebffc0445a5aeee56ec1c3f22aeb03b885f9aa5283a6c5c5c79d2"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/metadata.json",
+      "bytes": 1095,
+      "sha256": "31ad24a3b4927f4d917dd73bf07b810e41c20654ca858e5f3bfbc5436ad865ee"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/execution-audit.json",
+      "bytes": 5757,
+      "sha256": "8a0ada823a6815e0eee9995a68b74eabeb838388797b6c88d8e038ad17546653"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/extract.py",
+      "bytes": 6129,
+      "sha256": "0a0edac196a7642dd6dec15b709964b23352326e407143ecaa05101cc5844682"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/fetch_public.py",
+      "bytes": 3386,
+      "sha256": "e6d490d94de9a4f2ed396224c8f4816bfc19a1d6976eb2ee5abcbbb4f0949720"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+      "bytes": 6791,
+      "sha256": "f6531bd4624e0d4d94c548440b2521b5dd16b3a89d6153d4bdf67a4d782b2fa6"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a1a3e28c92dbe.json",
+      "bytes": 280,
+      "sha256": "ccb6e1e8c3192480515290fd58a06d8d68cf69f5e4a645701d90a4d1d97ead28"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a2a85b3824864.json",
+      "bytes": 280,
+      "sha256": "7378e144f911ae133bdc866628cd8a099268359af4ffd1926fb13f7600c04a31"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a2d320ff57bf6.json",
+      "bytes": 280,
+      "sha256": "f0a4b1aa8363a14ccd2f4e0f875913c98f2c294850d504388a23659fb9e5918b"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a317b4b4f22ef.json",
+      "bytes": 280,
+      "sha256": "1b94bcb08c24a53c9a362e9d001316fbe98d783d6db45375339bf0e3695bf42b"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/aa3f3a42dd34f.json",
+      "bytes": 280,
+      "sha256": "eed5cb5ce2fc95cb08c7331fe4a4edbd16ebd90749b92dfe75c9532eff4674d8"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/ac837554aa281.json",
+      "bytes": 280,
+      "sha256": "40583185f2b86e740118af6539e2fb22740817acf31d1999a58c63f6cb169d55"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/ad6ae677b7701.json",
+      "bytes": 280,
+      "sha256": "dc17c4d924d81384ad085ab138e4a7b73ca6dbe8528b49a30cb444d787ce6154"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/af0681a48b8bc.json",
+      "bytes": 280,
+      "sha256": "6ce88257036dae3283b4a1608dca842f9779e4887f9659cb5458ec79adb3f4eb"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/freeze.json",
+      "bytes": 4891,
+      "sha256": "d4a73129676c93dccd457a4b3363e2841d15d9a3e9dc52ee388422265ba6e7a5"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/generator.py",
+      "bytes": 21838,
+      "sha256": "0419baeffec6464f87b1feba78b7849ca7b1d1dd433a3f5bcac484f119b11980"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/key.json",
+      "bytes": 580,
+      "sha256": "b70d2e8f4e206e53a16d19682600a7322d3145a7d8f684f1ea706ed7db1c5b3a"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/packets/p41f827571b4a.json",
+      "bytes": 14398,
+      "sha256": "b4f544a275e2a6a80ef37926628f437061beb4f28090a691a94f9fed5e0cc0a2"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/packets/p44d2bba58f24.json",
+      "bytes": 47748,
+      "sha256": "3afaa313c7f091c3901f72c605ecd6b79d07e0dc3a457192891dda5d7a209049"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/packets/p82b58f312728.json",
+      "bytes": 6036,
+      "sha256": "dd207f22060fa348d5c4ef6956c921fb8505a5116db93da211d8f4db7dfb482e"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/packets/pe9cb045b4398.json",
+      "bytes": 17150,
+      "sha256": "d893a3a046f003bbf3e3f5daa334bf4da387ab729c15125c27ab16c76edf806b"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/protocol.md",
+      "bytes": 5917,
+      "sha256": "2cec9ead2a1f90e3c81e3ca1d2a793df8b0a1a206d40f8c925320a99800956f0"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/frozen/record-contract.md",
+      "bytes": 3680,
+      "sha256": "cf1cbc506319b935a9b1f9273d8b7ccafa91fb9df4b5020fcd67efab5821ccc7"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/independent-review-n01-n02.json",
+      "bytes": 49337,
+      "sha256": "d445b6af65d10fd784b69025dec12d7e85945e2536674709e272179fd7f7fa85"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/launch-plan.json",
+      "bytes": 2299,
+      "sha256": "f9ce0242c8df6897af71d3c8026c3196bad65b86112abb3a9871966d1c5cbf61"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/mechanical-verification.json",
+      "bytes": 15696,
+      "sha256": "275464c2914755eb81749469f4dba505476dbc7dd23fd2164593924d1fe7d03f"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/opportunity-map.json",
+      "bytes": 6672,
+      "sha256": "0aeb5b57ed5e9311ea9d5612dbfbf5891279c87ed0ce54f8926024d4858b4e41"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/overlap-check.json",
+      "bytes": 5073,
+      "sha256": "baf438d672ed13eb3b16bb3f779f45b4b516ec8acef6e7186131ac4fbfb3d974"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/reader-calibration-request.json",
+      "bytes": 891,
+      "sha256": "11fdfa781842bf93dfb2113967407a7ff7114eb052cad86a9561a4afab95a0ce"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/a1a3e28c92dbe.json",
+      "bytes": 36030,
+      "sha256": "c8380384fb318bd8b031cc12a1c25fb9b13829cfb4490f1f09902066a2fbd963"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/a2a85b3824864.json",
+      "bytes": 38889,
+      "sha256": "faa8b5037d1f0cd5b41d1189ce7407490e79948ae229995f68c4535a36f24480"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/a2d320ff57bf6.json",
+      "bytes": 38153,
+      "sha256": "0c337f2f016d2b43ca6197c2f52fec1508ef6b9aafee2c94788f7454c14b002c"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/a317b4b4f22ef.json",
+      "bytes": 28284,
+      "sha256": "505b5abe3b5cde803c8cd1db1452cf3a646f4f873c938577d17737a776fe6efa"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/aa3f3a42dd34f.json",
+      "bytes": 38744,
+      "sha256": "0696f0e95ad6538d5b2247a33a8a9bd1ff699d683a7d67dc71bc133a0e317879"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/ac837554aa281.json",
+      "bytes": 37288,
+      "sha256": "77e8837ca76b44ebea77834f7d2df521592688e48b9a7a7a57ecd311f87aac63"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/ad6ae677b7701.json",
+      "bytes": 29150,
+      "sha256": "3bb3b09ec3ae08b21f2eed01fae255f0a9aaf7763c1348f9f2a0300a009bc180"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/responses/af0681a48b8bc.json",
+      "bytes": 29603,
+      "sha256": "f4db7e8ab0ffc63ac87fb76f55bdaecdb709fcc0a2489363d0886baa7eeb44f3"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/review-linkage-validation.json",
+      "bytes": 275,
+      "sha256": "a62df2027fcbdfa1bad41e3b97b59315aeea17fbf6831d6814885eb20eb99043"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/robots/post.smzdm.com/robots-request.json",
+      "bytes": 497,
+      "sha256": "a3acf8d7856c9772a4694e860be4248bb4f2e1d744d4408b58722a3af664f2c3"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/robots/post.smzdm.com/robots.html",
+      "bytes": 238,
+      "sha256": "5229a1a5264050212e4d0f1bb5f45853d13b89e849ec8c129791590ecc7afa19"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/root-adjudication.json",
+      "bytes": 8458,
+      "sha256": "381d52ea18ef72ee302faf7816015db2a33d11b386fd21efb3cf17a38c4f7720"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/selections.json",
+      "bytes": 2608,
+      "sha256": "9dc01a031c8f0b747d92d555894477b2801b525293197f98a2f4316880492579"
+    }
+  ],
+  "counts": {
+    "files": 76,
+    "bytes": 3621179
+  },
+  "credential_findings": 0,
+  "reader_calibration": "pending; this inventory does not establish a human target label"
+}

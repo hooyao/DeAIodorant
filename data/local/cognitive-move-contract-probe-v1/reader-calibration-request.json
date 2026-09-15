@@ -1,0 +1,13 @@
+{
+  "version": "contract-probe-reader-calibration-request-1.0",
+  "requested_at_utc": "2026-09-15T03:48:58.977698+00:00",
+  "status": "pending_reader_response",
+  "article_id": "n01",
+  "url": "https://post.smzdm.com/p/a6zdv5o0/",
+  "body_sha256": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+  "prompt": "请看这篇新采集的原文：《亡灵遗产》回来了：13天15个版本，但想玩这个《七日杀》传奇MOD，先把版本锁在v2.6。https://post.smzdm.com/p/a6zdv5o0/ 你直观感觉这篇的 AI 臭味有多重？按你的感觉描述即可，用于确认新样例的强度。",
+  "response": null,
+  "source_unmodified": true,
+  "purpose": "new article subjective target coverage, not authorship or edit efficacy",
+  "evidence_timing": "after model annotations and semantic review; separate calibration, not held-out validation"
+}

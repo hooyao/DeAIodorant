@@ -1,0 +1,213 @@
+{
+  "version": "contract-probe-overlap-check-1.0",
+  "scope": "new four sources, exposed five discovery texts, SMZDM and Baidu anchors only; old reserves not opened",
+  "exact_duplicates": 0,
+  "comparisons": [
+    {
+      "first": "n01",
+      "second": "d01",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00019619383951343929
+    },
+    {
+      "first": "n01",
+      "second": "d02",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00013392259274139549
+    },
+    {
+      "first": "n01",
+      "second": "d03",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n01",
+      "second": "d04",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00015098897780462027
+    },
+    {
+      "first": "n01",
+      "second": "d06",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n01",
+      "second": "smzdm_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0004944783253667381
+    },
+    {
+      "first": "n01",
+      "second": "baidu_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00012162490878131841
+    },
+    {
+      "first": "n01",
+      "second": "n02",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0002440214738897023
+    },
+    {
+      "first": "n01",
+      "second": "n03",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n01",
+      "second": "n04",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n02",
+      "second": "d01",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00034916201117318437
+    },
+    {
+      "first": "n02",
+      "second": "d02",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 7.872775940796725e-05
+    },
+    {
+      "first": "n02",
+      "second": "d03",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n02",
+      "second": "d04",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n02",
+      "second": "d06",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n02",
+      "second": "smzdm_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00026068821689259646
+    },
+    {
+      "first": "n02",
+      "second": "baidu_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0001669727834362999
+    },
+    {
+      "first": "n02",
+      "second": "n03",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n02",
+      "second": "n04",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n03",
+      "second": "d01",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n03",
+      "second": "d02",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n03",
+      "second": "d03",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00018542555164101615
+    },
+    {
+      "first": "n03",
+      "second": "d04",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n03",
+      "second": "d06",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n03",
+      "second": "smzdm_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n03",
+      "second": "baidu_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n03",
+      "second": "n04",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n04",
+      "second": "d01",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n04",
+      "second": "d02",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n04",
+      "second": "d03",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n04",
+      "second": "d04",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.00011137097672346586
+    },
+    {
+      "first": "n04",
+      "second": "d06",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n04",
+      "second": "smzdm_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    },
+    {
+      "first": "n04",
+      "second": "baidu_anchor",
+      "exact_normalized_equal": false,
+      "jaccard_5gram": 0.0
+    }
+  ],
+  "threshold_used": null,
+  "interpretation": "Source-overlap diagnostic, not a style score or general corpus independence claim."
+}

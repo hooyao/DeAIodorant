@@ -1,0 +1,884 @@
+{
+  "assignment_id": "ac837554aa281",
+  "packet_id": "pe9cb045b4398",
+  "identity": {
+    "agent_task": "/root/contract_article_07",
+    "model": "Codex（开发者说明标识为 GPT-6）；精确 backend unknown；Astra 身份仅见于自动注入的项目指南，未独立核实",
+    "full_article_read": true,
+    "other_outputs_seen": false,
+    "read_paths": [
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/ac837554aa281.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/pe9cb045b4398.json"
+    ],
+    "inherited_guidance": [
+      "自动注入了项目 AGENTS.md 全文，包含研究目标、时间分组、翻译分层、篇章动作假设、当前路线及执行环境等背景；这些背景并非本篇的独立证据。",
+      "自动注入的旧评价包括 Microduck 文章被维护者评为“极其臭”“恶臭”、百度文章被评为“一般臭”，以及 Cowork 预览目标信号较弱的说明；未主动读取这些文章或其标注。",
+      "自动注入了系统及开发者关于工具、安全、语言、协作和工作区的说明，以及父任务限定三个读取文件和首次独占保存的要求。本任务不是双盲，未获得本篇人工质量或强度标签。"
+    ],
+    "procedure_violations": []
+  },
+  "article_map": [
+    {
+      "move_id": "m01",
+      "block_ids": [
+        "title",
+        "b001",
+        "b002"
+      ],
+      "operation": [
+        "设定送礼议程",
+        "扩大困难适用范围",
+        "条件建议",
+        "强调投入心思的价值"
+      ],
+      "description": "以节日临近引出送礼困难，说明女性也会苦恼；转述小伙伴对购买与亲手投入的比较，提出不知买什么时可DIY，并说明将汇集教程。此处没有建立DIY一概比购买更珍贵的证据。",
+      "recurrence_group": "care_value"
+    },
+    {
+      "move_id": "m02",
+      "block_ids": [
+        "b003",
+        "b004",
+        "b005",
+        "b006",
+        "b007"
+      ],
+      "operation": [
+        "建议替代材料",
+        "解释保存优势",
+        "限定成品尺寸"
+      ],
+      "description": "在送花这一选择内比较鲜花易凋谢与手工花可保存，推荐不同花盒和折纸，并提醒避免体积过大；三张预览卡提供链接线索。呈现沿用类别介绍、优点说明、推荐教程的组织方式。",
+      "recurrence_group": "category_guidance"
+    },
+    {
+      "move_id": "m03",
+      "block_ids": [
+        "b008",
+        "b009",
+        "b010",
+        "b011",
+        "b012",
+        "b013"
+      ],
+      "operation": [
+        "限定受礼偏好范围",
+        "条件建议",
+        "降低制作顾虑",
+        "转述评论与回应"
+      ],
+      "description": "说明并非人人喜欢花，推荐小饰品并附材料、步骤与细心程度的条件；再以评论中的未兑现承诺作调侃。四张预览卡为其他作品的截断介绍，其第一人称不属于本文叙述者。",
+      "recurrence_group": "category_guidance"
+    },
+    {
+      "move_id": "m04",
+      "block_ids": [
+        "b014",
+        "b015",
+        "b016",
+        "b017"
+      ],
+      "operation": [
+        "建议小众选项",
+        "比较购买与自制",
+        "降低顾虑",
+        "建议先行试做"
+      ],
+      "description": "以TN笔记本价格和自制自由度、心意作比较，带有“应该”这一保留并建议先做一个；所附卡片之一自行声明并非严格完整版教程，不能把预览等同于可执行的完整教学。",
+      "recurrence_group": "category_guidance"
+    },
+    {
+      "move_id": "m05",
+      "block_ids": [
+        "b018",
+        "b019",
+        "b020",
+        "b021",
+        "b022",
+        "b023"
+      ],
+      "operation": [
+        "扩展礼物类别",
+        "按偏好分支建议",
+        "以动手条件限定效果",
+        "引介教程"
+      ],
+      "description": "从皮质笔记本延伸到包和钱包，以收礼者是否有喜欢的款式分支推荐；效果另以心灵手巧为条件。“包治百病”及数量递进为夸张玩笑，四张卡片提供皮具作品入口。",
+      "recurrence_group": "category_guidance"
+    },
+    {
+      "move_id": "m06",
+      "block_ids": [
+        "b024",
+        "b025",
+        "b026",
+        "b027"
+      ],
+      "operation": [
+        "补充类别",
+        "比较入门难度",
+        "强调实用与心意",
+        "引介教程"
+      ],
+      "description": "补入木制品，声称相较前文金属物件更好入手，列举木梳、收纳工具、手串与适用对象，再引介站内教程。没有在当前正文中展开系统难度比较。",
+      "recurrence_group": "category_guidance"
+    },
+    {
+      "move_id": "m07",
+      "block_ids": [
+        "b028",
+        "b029",
+        "b030",
+        "b031"
+      ],
+      "operation": [
+        "回应假设性制作困难",
+        "推荐食品选项",
+        "强调易做和送礼效果"
+      ],
+      "description": "以读者自觉无法完成上述手工为假设条件，建议牛轧糖、生巧及包装；用低难度和广受欢迎作鼓励，并附两张预览卡。条件句不证明实际读者已有这种自我判断。",
+      "recurrence_group": "category_guidance"
+    },
+    {
+      "move_id": "m08",
+      "block_ids": [
+        "b032",
+        "b033"
+      ],
+      "operation": [
+        "邀请回忆",
+        "讲述个人经历",
+        "回顾价值判断",
+        "招募互动"
+      ],
+      "description": "提出做礼物和收礼物的互动问题，以小学收到纸星星的自述引入，保留得知其他同学也收到后仍开心的转折；回到时间与心思值得珍惜的开篇判断，并给出参与截止日期。",
+      "recurrence_group": "care_value"
+    },
+    {
+      "move_id": "m09",
+      "block_ids": [
+        "b034",
+        "b035"
+      ],
+      "operation": [
+        "说明奖励机制",
+        "规定计算及参与限制"
+      ],
+      "description": "列出按楼层总数十个百分比抽取10位获奖者、赠与10金币的规则，另述四舍五入、特定冲突楼层加1、同ID不重复获奖及评论资格限制。这些数字是活动规则，不是估算或阅读效果证据。",
+      "recurrence_group": null
+    }
+  ],
+  "records": [
+    {
+      "move_id": "m01",
+      "focal_spans": [
+        {
+          "block_id": "title",
+          "quote": "DIY礼物比购买礼物更珍贵？聊聊你和DIY礼物的故事"
+        },
+        {
+          "block_id": "b002",
+          "quote": "送礼可不只是广大男同胞们的苦恼，女生也是费尽了脑细胞。"
+        },
+        {
+          "block_id": "b002",
+          "quote": "用小伙伴的话来说，在这个快消年代，花钱什么买不到，但真正肯静下来为你花时间又花心思亲手准备礼物的可不多了。"
+        },
+        {
+          "block_id": "b002",
+          "quote": "如果不知道买啥好，那就自己亲手做一份吧！"
+        }
+      ],
+      "operation": [
+        "扩大困难适用范围",
+        "转述价值比较",
+        "提出条件性方案",
+        "强调心意"
+      ],
+      "question_under_discussion": {
+        "text": "DIY礼物比购买礼物更珍贵？",
+        "provenance": "explicit"
+      },
+      "prior_or_foil": {
+        "proposition": "送礼只是广大男同胞们的苦恼。",
+        "role": "negated_proposition",
+        "source_spans": [
+          {
+            "block_id": "b002",
+            "quote": "送礼可不只是广大男同胞们的苦恼，女生也是费尽了脑细胞。"
+          }
+        ],
+        "prior_holder": null
+      },
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "女性也会为送礼费心。",
+          "source_spans": [
+            {
+              "block_id": "b002",
+              "quote": "送礼可不只是广大男同胞们的苦恼，女生也是费尽了脑细胞。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文直接陈述",
+            "epistemic_status": "泛称判断，未独立核验"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "在所谓快消年代，花钱购买容易，愿为对方亲手投入时间与心思的人不多。",
+          "source_spans": [
+            {
+              "block_id": "b002",
+              "quote": "用小伙伴的话来说，在这个快消年代，花钱什么买不到，但真正肯静下来为你花时间又花心思亲手准备礼物的可不多了。"
+            }
+          ],
+          "attribution": {
+            "proposer": "未具名的“小伙伴”",
+            "reporting_layer": "本文叙述者转述小伙伴的话",
+            "epistemic_status": "带夸张表达的概括，非已核验的数量估计"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "不知道买什么时可亲手制作；即使实物效果欠佳，也应珍惜对方投入的心思。",
+          "source_spans": [
+            {
+              "block_id": "b002",
+              "quote": "如果不知道买啥好，那就自己亲手做一份吧！"
+            },
+            {
+              "block_id": "b002",
+              "quote": "如果遇到愿意亲手为你打造礼物的人，不管实物效果怎么样，这份心思也是难能可贵，大家且行且珍惜吧~"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文建议与评价",
+            "epistemic_status": "条件建议与规范性价值判断"
+          }
+        }
+      ],
+      "relation": {
+        "type": "范围扩展与价值维度对照",
+        "text": "性别否定限定送礼困难的适用范围，不证明真实读者有误解。购买可得性与亲手投入被并置，支持重视心思；两种价值可以兼容，不能据此认定购买礼物没有心意。",
+        "comparands": [
+          {
+            "text": "花钱购买礼物的可得性",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b002",
+                "quote": "花钱什么买不到"
+              }
+            ]
+          },
+          {
+            "text": "为对方亲手投入时间和心思",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b002",
+                "quote": "真正肯静下来为你花时间又花心思亲手准备礼物的可不多了"
+              }
+            ]
+          },
+          {
+            "text": "不知道买什么",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b002",
+                "quote": "如果不知道买啥好"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [],
+          "stated_link": null,
+          "unstated_assumption": null,
+          "unknowns": [
+            "当前文字未给出性别范围判断的调查依据；这不等于读者原先认为只有男性苦恼。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2",
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b002",
+              "quote": "用小伙伴的话来说，在这个快消年代，花钱什么买不到，但真正肯静下来为你花时间又花心思亲手准备礼物的可不多了。"
+            }
+          ],
+          "stated_link": "用投入时间与心思者少见的对照，引出制作建议和珍惜心意的评价。",
+          "unstated_assumption": "对方自愿投入时间与心思具有值得珍惜的关系价值。",
+          "unknowns": [
+            "小伙伴身份与概括依据未说明；此处没有证明所有DIY都优于购买。"
+          ]
+        }
+      ],
+      "information_update": "将送礼困难组织成可采用DIY方案的议题，并确立心思可独立于成品效果被珍惜的评价维度。",
+      "stance_and_presentation": "以节日问候、泛称和祈使鼓励引导参与；“且行且珍惜”在b033的珍惜判断中回返，形成首尾呼应。未将否定句判作实际读者纠错。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留不知道买什么这一建议条件。",
+        "保留小伙伴的转述归属，以及心意与成品效果可以分别评价的区分。"
+      ],
+      "possible_reader_cost": [
+        "购买容易与亲手投入少见的概括可能使不同送礼处境被压缩；是否造成阅读成本需读者验证。"
+      ],
+      "uncertainties": [
+        "标题提出比较问题，正文未进行普遍优劣检验。",
+        "未读取图片、页面视觉和上游材料。"
+      ]
+    },
+    {
+      "move_id": "m03",
+      "focal_spans": [
+        {
+          "block_id": "b009",
+          "quote": "当然，也不是所有人都会对送花买账，如果对方不喜欢花，也还有其它很多方式表现自己，比如亲手DIY一份初一无二的小饰品。"
+        },
+        {
+          "block_id": "b009",
+          "quote": "这些小玩意看着复杂其实上手并不难，准备好材料按部就班细心点一般都不会出什么幺蛾子。"
+        },
+        {
+          "block_id": "b009",
+          "quote": "当然不是所有的对象都这么有实践精神的，心疼评论里那位“男票N年前夸海口说用激光给我在水晶摆饰品上刻字到现在连个影子都没有”的妹子，说不定今年就等到了呢。"
+        }
+      ],
+      "operation": [
+        "限定偏好范围",
+        "提供条件性替代",
+        "缓解制作顾虑",
+        "转述评论并作调侃"
+      ],
+      "question_under_discussion": {
+        "text": "对方不喜欢花时，还可以制作什么礼物，制作和兑现是否有条件？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "proposition": "所有人都会接受送花。",
+        "role": "negated_proposition",
+        "source_spans": [
+          {
+            "block_id": "b009",
+            "quote": "当然，也不是所有人都会对送花买账"
+          }
+        ],
+        "prior_holder": null
+      },
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "对方不喜欢花时，可用亲手制作的小饰品表达心意；并非人人都接受送花。",
+          "source_spans": [
+            {
+              "block_id": "b009",
+              "quote": "当然，也不是所有人都会对送花买账，如果对方不喜欢花，也还有其它很多方式表现自己，比如亲手DIY一份初一无二的小饰品。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文直接建议",
+            "epistemic_status": "范围限制与条件建议"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "作者称这些饰品上手不难，在备好材料、遵循步骤且细心的情况下，一般不会出问题。",
+          "source_spans": [
+            {
+              "block_id": "b009",
+              "quote": "这些小玩意看着复杂其实上手并不难，准备好材料按部就班细心点一般都不会出什么幺蛾子。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文直接评价",
+            "epistemic_status": "附条件及“一般”限定的难度判断，未独立实作核验"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "被引评论者称男朋友多年前承诺为其水晶摆饰品激光刻字，至今仍未见成品。",
+          "source_spans": [
+            {
+              "block_id": "b009",
+              "quote": "心疼评论里那位“男票N年前夸海口说用激光给我在水晶摆饰品上刻字到现在连个影子都没有”的妹子"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文引述的评论者",
+            "reporting_layer": "本文叙述者引用评论者对其男朋友承诺及后续情况的陈述",
+            "epistemic_status": "被报道的个人经历，未核验原评论或兑现情况"
+          }
+        },
+        {
+          "claim_id": "c4",
+          "text": "作者提出今年也许能等到的可能性。",
+          "source_spans": [
+            {
+              "block_id": "b009",
+              "quote": "说不定今年就等到了呢。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文对所引评论的回应",
+            "epistemic_status": "带调侃的可能性表达，非确定预测"
+          }
+        }
+      ],
+      "relation": {
+        "type": "偏好限制后的替代建议与兑现反例",
+        "text": "不喜欢花构成选择饰品的条件；制作建议与未兑现的承诺形成局部落差。看着复杂只是作者呈现的表观难度，未被归给实际读者。",
+        "comparands": [
+          {
+            "text": "受礼者不喜欢花",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b009",
+                "quote": "如果对方不喜欢花"
+              }
+            ]
+          },
+          {
+            "text": "备好材料、遵循步骤且细心制作",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b009",
+                "quote": "准备好材料按部就班细心点一般都不会出什么幺蛾子"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b009",
+              "quote": "关键是精致小巧不占地方而且男女都适用，还是很适合拿来表达心意的，感兴趣的可以参考值友往期原创。"
+            },
+            {
+              "block_id": "b010",
+              "quote": "#原创新人#工科男的浪漫——DIY木质钻戒盒"
+            }
+          ],
+          "stated_link": "精致、体积和适用对象被用来说明推荐价值，并指向往期文章。",
+          "unstated_assumption": "读者具有完成所选饰品所需的材料、工具和基本操作条件。",
+          "unknowns": [
+            "预览卡证明存在相关作品线索，未在本视图展开制作步骤或比较不同经验者的难度；图片未读。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3",
+            "c4"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b009",
+              "quote": "男票N年前夸海口说用激光给我在水晶摆饰品上刻字到现在连个影子都没有"
+            }
+          ],
+          "stated_link": "引文说明所述个案中的承诺未兑现。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "引文不提供今年会兑现的依据，也不证明一般送礼者均缺乏实践精神。"
+          ]
+        }
+      ],
+      "information_update": "在花类方案后加入偏好例外、具体替代与操作条件，并通过一则被报道的未兑现经历限制理想化执行图景。",
+      "stance_and_presentation": "“看着复杂其实”降低顾虑；这类容易上手的鼓励在b015、b025、b029复现，内容对象不同。末尾的心疼与可能性回应是作者姿态，不能当作评论者的全部情绪。",
+      "reader_belief_evidence": [
+        {
+          "proposition": "男朋友多年前承诺为自己的水晶摆饰品激光刻字，至今没有见到成品。",
+          "holder": "被本文引述的评论者（原文称“妹子”）",
+          "source_span": {
+            "block_id": "b009",
+            "quote": "男票N年前夸海口说用激光给我在水晶摆饰品上刻字到现在连个影子都没有"
+          },
+          "reporting_layer": "本文叙述者引用的评论者经历判断，未独立查看原评论"
+        }
+      ],
+      "preserved_usefulness": [
+        "保留受礼偏好差异与制作条件、“一般”和“说不定”的限定。",
+        "保留评论者、被其提及的男朋友与本文叙述者三个归属层次。"
+      ],
+      "possible_reader_cost": [
+        "多类工艺反复被描述为容易，可能压缩工具与技能差异，是否误导须另行核验。"
+      ],
+      "uncertainties": [
+        "不能从未兑现陈述推断评论者的等待意向、价格判断或具体技术判断。",
+        "各预览卡是截断材料，其中人物的第一人称不归于本文作者。"
+      ]
+    },
+    {
+      "move_id": "m05",
+      "focal_spans": [
+        {
+          "block_id": "b019",
+          "quote": "当然，除了DIY笔记本，皮具还有很多可以发挥的空间，比如各种精美的皮包和钱包。"
+        },
+        {
+          "block_id": "b019",
+          "quote": "俗话说，包治百病，没有什么问题是一个包解决不了的，如果有，那就来2个吧。"
+        },
+        {
+          "block_id": "b019",
+          "quote": "如果对方有特别喜欢的款式，可以直接在网上找来教程跟着做，如果没有就有更大选择余地啦。"
+        },
+        {
+          "block_id": "b019",
+          "quote": "我站手工达人的皮具DIY文章多如牛毛，心灵手巧的话，做出来的效果也是相当不错哒~"
+        }
+      ],
+      "operation": [
+        "扩展礼物类别",
+        "按受礼偏好分支建议",
+        "限定制作效果",
+        "引介站内资料"
+      ],
+      "question_under_discussion": {
+        "text": "考虑皮包或钱包作为DIY礼物时，怎样根据收礼者的款式偏好选择教程？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "皮具DIY不止笔记本，还可考虑皮包和钱包。",
+          "source_spans": [
+            {
+              "block_id": "b019",
+              "quote": "当然，除了DIY笔记本，皮具还有很多可以发挥的空间，比如各种精美的皮包和钱包。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文直接建议",
+            "epistemic_status": "类别扩展"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "若对方有特别喜欢的款式，可在线找教程；若没有此种偏好，选择余地更大。",
+          "source_spans": [
+            {
+              "block_id": "b019",
+              "quote": "如果对方有特别喜欢的款式，可以直接在网上找来教程跟着做，如果没有就有更大选择余地啦。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文条件建议",
+            "epistemic_status": "假设分支，不是对实际读者偏好的观察"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "作者声称本站皮具DIY文章很多，并以心灵手巧为取得较好制作效果的条件。",
+          "source_spans": [
+            {
+              "block_id": "b019",
+              "quote": "我站手工达人的皮具DIY文章多如牛毛，心灵手巧的话，做出来的效果也是相当不错哒~"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文站内资料介绍与效果评价",
+            "epistemic_status": "未量化的数量概括及附条件的效果判断"
+          }
+        }
+      ],
+      "relation": {
+        "type": "普通条件分支与类别扩展",
+        "text": "先由皮质笔记本扩展到包和钱包，再按是否有特定喜好分支。两种条件没有被指认成错误认知；“包治百病”一段的否定和数量递进属于夸张玩笑，不建立真实读者持有的命题。",
+        "comparands": [
+          {
+            "text": "对方有特别喜欢的款式",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b019",
+                "quote": "如果对方有特别喜欢的款式"
+              }
+            ]
+          },
+          {
+            "text": "对方没有特别喜欢的款式",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b019",
+                "quote": "如果没有就有更大选择余地啦"
+              }
+            ]
+          },
+          {
+            "text": "制作者心灵手巧",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b019",
+                "quote": "心灵手巧的话"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1",
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b021",
+              "quote": "送给女王的礼物——鸢尾花~不一样的手工马鞍包DIY攻略"
+            },
+            {
+              "block_id": "b023",
+              "quote": "七夕礼物，教你一针一线做纯皮钱包送给他（她）"
+            }
+          ],
+          "stated_link": "后附预览卡提供包和钱包的具体作品入口。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "卡片可支持存在这些类别的站内文章，不能独自证实总量“多如牛毛”或所有制作者的成品效果；完整教程与图片未读。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b019",
+              "quote": "如果对方有特别喜欢的款式，可以直接在网上找来教程跟着做，如果没有就有更大选择余地啦。"
+            }
+          ],
+          "stated_link": "明确喜好限定款式，没有特定喜好则选择余地更大。",
+          "unstated_assumption": "能找到适合所选款式且可供本人完成的教程。",
+          "unknowns": [
+            "特定款式教程是否存在、材料工具需求与耗时在该段未展开；未读取的教程可能提供这些信息。"
+          ]
+        }
+      ],
+      "information_update": "给出按收礼者偏好寻找资料的简单决策办法，并把皮具选择从笔记本扩展到包和钱包。",
+      "stance_and_presentation": "先用口语夸张引入，再给条件建议与正向效果评价，延续b004、b009、b015等处的类别推荐方式。这里的“如果”主要组织可兼容的选择情境。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留有无特定款式偏好的分支和心灵手巧这一效果条件。",
+        "保留具体作品入口及轻松口语的体裁功能。"
+      ],
+      "possible_reader_cost": [
+        "宽泛的动手能力条件不足以帮助读者估计材料、工具与耗时，可能需要继续查看教程；此处仍是导览文章。"
+      ],
+      "uncertainties": [
+        "不能把玩笑中的2个包当作经验估算或真实解决问题的效果证据。",
+        "正文导览、预览卡和未读的链接全文具有不同证据范围。"
+      ]
+    },
+    {
+      "move_id": "m08",
+      "focal_spans": [
+        {
+          "block_id": "b032",
+          "quote": "互动话题：上一次DIY礼物是什么时候？是为了谁？上一次收到礼物又是什么时候？"
+        },
+        {
+          "block_id": "b033",
+          "quote": "小小值印象最深的是小学的时候，班上妹子送了一罐自己叠的星星作为生日给我，感动到哭欸~后来发现妹子给其他男男同学的生日礼物也是星星……不过还是很开心呀~"
+        },
+        {
+          "block_id": "b033",
+          "quote": "如今的快消年代，时间宝贵，礼物好买，肯花心思做为你手工做一份礼物的人值得珍惜"
+        }
+      ],
+      "operation": [
+        "邀请回忆与分享",
+        "自述收礼经历",
+        "保留情绪转折",
+        "回顾投入心思的价值"
+      ],
+      "question_under_discussion": {
+        "text": "上一次DIY礼物是什么时候？是为了谁？上一次收到礼物又是什么时候？",
+        "provenance": "explicit"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "叙述者回忆小学时收到同班女生亲手折的一罐星星，十分感动；后来发现其他男同学也收到星星，仍然开心。",
+          "source_spans": [
+            {
+              "block_id": "b033",
+              "quote": "小小值印象最深的是小学的时候，班上妹子送了一罐自己叠的星星作为生日给我，感动到哭欸~后来发现妹子给其他男男同学的生日礼物也是星星……不过还是很开心呀~"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者“小小值”",
+            "reporting_layer": "本文第一人称回忆",
+            "epistemic_status": "作者自述经历与情绪，未独立核验"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "作者再次主张时间宝贵、礼物容易买，愿花心思亲手制作的人值得珍惜。",
+          "source_spans": [
+            {
+              "block_id": "b033",
+              "quote": "如今的快消年代，时间宝贵，礼物好买，肯花心思做为你手工做一份礼物的人值得珍惜"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文价值总结",
+            "epistemic_status": "价值判断与概括性背景陈述"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "作者邀请分享为他人做礼物及最近收礼物的故事，活动时间为即日起至2016.12.26。",
+          "source_spans": [
+            {
+              "block_id": "b033",
+              "quote": "一起聊聊你之前为别人做礼物的故事嘛，当然，也想听你最近一次收礼物的故事。"
+            },
+            {
+              "block_id": "b033",
+              "quote": "时间：即日起至2016.12.26"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文活动邀请与时间说明",
+            "epistemic_status": "明确邀请和活动安排"
+          }
+        }
+      ],
+      "relation": {
+        "type": "个人经历引入与首尾价值回顾",
+        "text": "例子把赠礼心意放入具体回忆；得知其他人也收星星与仍感开心并存。文章未明说叙述者最初认为礼物只送给自己，不能补造这一被纠正信念。随后回顾开篇价值并导向互动。",
+        "comparands": [
+          {
+            "text": "自己收到亲手折的星星并感动",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b033",
+                "quote": "班上妹子送了一罐自己叠的星星作为生日给我，感动到哭欸~"
+              }
+            ]
+          },
+          {
+            "text": "后来发现其他同学也收到星星，仍感开心",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b033",
+                "quote": "后来发现妹子给其他男男同学的生日礼物也是星星……不过还是很开心呀~"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b033",
+              "quote": "小小值印象最深的是小学的时候"
+            }
+          ],
+          "stated_link": "明确标为叙述者自己的记忆。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "回忆真实性和最初感动的具体原因未独立核验；不能推断当事人的恋爱关系或排他性期待。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b033",
+              "quote": "不过还是很开心呀~"
+            },
+            {
+              "block_id": "b002",
+              "quote": "如果遇到愿意亲手为你打造礼物的人，不管实物效果怎么样，这份心思也是难能可贵，大家且行且珍惜吧~"
+            }
+          ],
+          "stated_link": "个人收礼回忆之后重申珍惜亲手投入，呼应开篇。",
+          "unstated_assumption": "亲手投入的心思可构成独立于是否唯一收礼人的情感价值。",
+          "unknowns": [
+            "个案是价值判断的例示，不能证明所有收礼者均更偏好DIY。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b032",
+              "quote": "互动话题：上一次DIY礼物是什么时候？是为了谁？上一次收到礼物又是什么时候？"
+            }
+          ],
+          "stated_link": "小标题问题与末段邀请共同明确参与话题。",
+          "unstated_assumption": null,
+          "unknowns": []
+        }
+      ],
+      "information_update": "新增一段自述收礼经历和活动时间；价值判断属于有组织功能的回顾，同时把文章从教程导览转为读者交流。",
+      "stance_and_presentation": "自嘲式转折和语气词营造亲近感；末尾“时间宝贵，礼物好买”重复b002的价值对照。重复可以承担收束和招募功能，不能仅凭再次出现判为缺陷。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留得知其他同学也收礼后仍开心的转折，不增写此前的排他性期待。",
+        "保留活动问题、截止日期及首尾呼应的组织作用。"
+      ],
+      "possible_reader_cost": [
+        "对投入心思应当珍惜的再次劝说可能让部分读者感到评价压力，尚无读者效果证据。"
+      ],
+      "uncertainties": [
+        "这里的情绪来自本文叙述者，不是读者群体测量。",
+        "问句邀请读者回忆，未提供读者实际经历或信念。"
+      ]
+    }
+  ],
+  "omitted_opportunities": [
+    "m02未作详细记录：鲜花易凋谢与手工花可保存的比較、尺寸过大可能占地方的提醒，构成另一种利弊与条件限定；位置图保留了这些动作，未把其推荐效果计作已验证。",
+    "m04、m06未作详细记录：TN官方价格与自制自由度的比较、“应该”及先试做的保留、木制品相较金属更好入手的判断，均值得另查其适用范围。四项额度优先留给不同归属、普通条件和首尾回顾。",
+    "m07未作详细记录：以读者自觉手工困难为条件的食品替代建议，以及低难度、广受欢迎的概括，和前文鼓励方式复现；不能因此确认读者实际缺乏动手能力或喜欢这些食品。",
+    "m09未作详细记录：抽奖数字、楼层计算与排除规则有明确操作价值，不是估算或认知纠正。本次未检验该活动规则的实际执行。",
+    "预览卡已全部阅读，但没有逐卡展开内部动作；其中声明并非完整教程、赠礼动机、第一人称经历及其他人物评价仍属于各卡片的截断原文，不能并入本文作者经历或视为链接全文证据。",
+    "覆盖限制：完整读取了title及b001–b035的文字，未读取23项媒体引用对应的图片像素、图中表格、页面视觉或上游来源；不能把这些未读取材料中可能存在的支持判为不存在。未见需要独立追踪的数值估算，“N年前”为被引评论者的模糊时间，互动数字未作正文数量解释。未覆盖机会不记为成功。"
+  ]
+}

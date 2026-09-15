@@ -1,0 +1,114 @@
+[
+  {
+    "block_id": "b001",
+    "text": "字节跳动旗下即梦AI平台于2026年2月7日正式上线Seedance 2.0视频生成模型，定位为“电影级全流程生成引擎”，标志着AI视频生成从“抽卡式玩具”迈向“可控、可规模化”的工业级工具。该模型支持文本、图片、视频、音频四模态混合输入，具备原生音画同步、多镜头叙事、角色一致性保持等核心能力，并已在即梦平台开启灰度测试，面向会员用户开放使用。",
+    "tag": "p",
+    "source_path": "/0/data/content",
+    "start_char": 0,
+    "end_char": 173
+  },
+  {
+    "block_id": "b002",
+    "text": "01",
+    "tag": "h",
+    "source_path": "/1/data/number",
+    "start_char": 174,
+    "end_char": 176
+  },
+  {
+    "block_id": "b003",
+    "text": "核心升级：从“素材生成器”到“AI导演”",
+    "tag": "h",
+    "source_path": "/1/data/title",
+    "start_char": 177,
+    "end_char": 197
+  },
+  {
+    "block_id": "b004",
+    "text": "四模态混合输入支持最多12个参考文件（9张图片 + 3段视频 + 3段音频，总时长均≤15秒），配合文本提示词，实现高精度内容控制。",
+    "tag": "li",
+    "source_path": "/2/data/items/0/content",
+    "start_char": 198,
+    "end_char": 264
+  },
+  {
+    "block_id": "b005",
+    "text": "@语法精准调度首创在Prompt中通过@语法指定素材用途（如@图1为首帧、@视频1参考运镜），将提示词工程升维为“导演级调度”。",
+    "tag": "li",
+    "source_path": "/2/data/items/1/content",
+    "start_char": 265,
+    "end_char": 329
+  },
+  {
+    "block_id": "b006",
+    "text": "原生音画同步采用双分支扩散变换器架构，实现毫秒级口型对齐与空间混响计算，支持8种语言的音素级同步，显著优于早期模型。",
+    "tag": "li",
+    "source_path": "/2/data/items/2/content",
+    "start_char": 330,
+    "end_char": 388
+  },
+  {
+    "block_id": "b007",
+    "text": "多镜头叙事与一致性自动生成分镜与运镜，跨镜头保持角色面部、服饰、光影高度一致，支持视频延长、局部编辑与“接着拍”功能。",
+    "tag": "li",
+    "source_path": "/2/data/items/3/content",
+    "start_char": 389,
+    "end_char": 448
+  },
+  {
+    "block_id": "b008",
+    "text": "物理效果增强引入V2运动合成技术，提升重力、动量、流体、碰撞等物理建模精度，使动作更自然流畅。",
+    "tag": "li",
+    "source_path": "/2/data/items/4/content",
+    "start_char": 449,
+    "end_char": 496
+  },
+  {
+    "block_id": "b009",
+    "text": "02",
+    "tag": "h",
+    "source_path": "/3/data/number",
+    "start_char": 497,
+    "end_char": 499
+  },
+  {
+    "block_id": "b010",
+    "text": "实际影响：降低门槛，重构创作流程",
+    "tag": "h",
+    "source_path": "/3/data/title",
+    "start_char": 500,
+    "end_char": 516
+  },
+  {
+    "block_id": "b011",
+    "text": "Seedance 2.0的推出显著降低了高质量视频创作的技术门槛。广告主、短剧团队、自媒体创作者等无需专业拍摄或剪辑技能，即可通过简单描述或参考素材生成具备电影感的成片。据实测，15秒视频生成耗时约30–60秒，一次性成功率超90%，大幅减少“废片率”。同时，模型已集成至即梦、豆包、小云雀等字节系产品，提供免费试用（如小云雀新用户3次）及会员付费模式（69元起），便于快速上手。然而，因真人生成引发的伦理风险，平台已于2月9日紧急限制真人图片/视频作为主体参考，仅支持活体认证后的数字分身。",
+    "tag": "p",
+    "source_path": "/4/data/content",
+    "start_char": 517,
+    "end_char": 763
+  },
+  {
+    "block_id": "b012",
+    "text": "03",
+    "tag": "h",
+    "source_path": "/5/data/number",
+    "start_char": 764,
+    "end_char": 766
+  },
+  {
+    "block_id": "b013",
+    "text": "行动建议：如何应对这一变革",
+    "tag": "h",
+    "source_path": "/5/data/title",
+    "start_char": 767,
+    "end_char": 780
+  },
+  {
+    "block_id": "b014",
+    "text": "对于营销从业者与内容创作者，建议尽快通过即梦官网（jimeng.jianying.com）或小云雀APP体验Seedance 2.0，熟悉其多模态输入与@语法调度机制。初期可聚焦于品牌宣传片、短剧分镜、产品演示等场景，利用参考图+视频复刻运镜与动作，提升内容一致性与专业感。同时，需关注平台合规政策变化，避免使用受限素材。企业用户可留意2月14日火山引擎API正式上线，以便集成至自有工作流。",
+    "tag": "p",
+    "source_path": "/6/data/content",
+    "start_char": 781,
+    "end_char": 977
+  }
+]

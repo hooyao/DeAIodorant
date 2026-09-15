@@ -3,7 +3,7 @@
 版本：`deaiodorant-target-discovery-1.6`。
 依据：维护者在 2026-09-14 对项目目标和证据作出的澄清。这是当前研究优先级的记录；已完成实验的输入和结果保留原始版本。
 
-最新执行检查点见 [HANDOVER.md](../HANDOVER.md)：[首轮篇章动作测量](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)已完成36条记录，发现估算归属覆盖和槽位角色问题；[独立文章发现](routes/compact-refiner/reports/independent-media-discovery-v1.md)保存新候选及反例。下一步以记录契约1.1草案按文章隔离检验，不回改旧输出，不将已读新文当未见验证。文末的较早“下一步复筛”属于阶段记录，不应重复执行。
+最新执行检查点见 [HANDOFF.md](../HANDOFF.md)：[契约1.1的文章隔离检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)已完成四篇新文章、八份回答和393处精确引用。字段层级及暗示性否定仍有歧义，一处覆盖说明过度解释读者意向；保留原输出，不升级为自动特征。新 n01 的主观强度校准单独等待维护者反馈。[首轮36条记录](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)和早期发现均保留。文末的较早“下一步复筛”属于阶段记录，不应重复执行。
 
 ## 要解决的问题
 

@@ -1,0 +1,54 @@
+{
+  "schema_version": "contract-probe-publication-validation-1.0",
+  "date": "2026-09-15",
+  "base_commit": "4ee4a5841d1deffcd33678106e380887ba6d652d",
+  "target_branch": "init",
+  "tests": {
+    "passed": 201,
+    "failed": 0,
+    "command": "python -X utf8 -m pytest"
+  },
+  "compileall": "passed",
+  "original_release_inventory": {
+    "files": 2198,
+    "bytes": 213143896,
+    "status": "passed_before_new_work"
+  },
+  "original_pilot": {
+    "records": 36,
+    "quote_occurrences": 191,
+    "frozen_inputs": "passed_before_new_work"
+  },
+  "clean_index_checkout": {
+    "status": "passed",
+    "new_probe": {
+      "frozen_inputs": "passed",
+      "received_responses": 8,
+      "mechanically_valid_responses": 8,
+      "records": 32,
+      "valid_quote_occurrences": 393,
+      "complete": true
+    },
+    "new_inventory": {
+      "status": "passed",
+      "files_verified": 76,
+      "bytes_verified": 3621179
+    },
+    "historical_source_linkage": "passed"
+  },
+  "artifact_manifest_sha256": "8ed1240b9c631b50756fdc5ec3cdd9fce3f0977c3f57ae8812865cd422aa576b",
+  "credential_scan": {
+    "new_or_changed_files_checked": 89,
+    "actual_dotenv_secret_values_checked": true,
+    "known_token_patterns_checked": true,
+    "findings": 0
+  },
+  "method_limits": [
+    "same model family; precise backend unknown",
+    "auto-injected project and historical anchor guidance retained",
+    "self-reported file scope is not a filesystem sandbox",
+    "exclude ad6ae677b7701 in conservative pristine-output sensitivity",
+    "mechanical validity is not semantic accuracy or human preference"
+  ],
+  "human_calibration": "pending n01 severity response; no training or reward export"
+}

@@ -1,0 +1,56 @@
+{
+  "version": "cognitive-move-contract-probe-selection-1.0",
+  "frozen_at_utc": "2026-09-15T03:08:12.972931+00:00",
+  "base_commit": "4ee4a5841d1deffcd33678106e380887ba6d652d",
+  "articles": [
+    {
+      "id": "n01",
+      "url": "https://post.smzdm.com/p/a6zdv5o0/",
+      "search_id": "s07",
+      "result_position": 5,
+      "metadata_title": "《亡灵遗产》回来了：13天15个版本，但想玩这个《七日杀》传奇MOD，先把版本锁在v2.6",
+      "search_date": "2026年08月01日",
+      "reason": "后期技术使用指南，标题包含版本约束；用于检查限制、归属及指引动作，尚未读取全文。"
+    },
+    {
+      "id": "n02",
+      "url": "https://post.smzdm.com/p/agopr2mm/",
+      "search_id": "s06",
+      "result_position": 4,
+      "metadata_title": "字节跳动即梦AI平台2026年2月7日上线Seedance 2.0视频生成模型，定位“电影级全流程生成引擎”",
+      "search_date": "2026年02月07日",
+      "reason": "后期技术产品说明，预期有平台声明与功能条件；不预判正文角色或臭味。"
+    },
+    {
+      "id": "n03",
+      "url": "https://post.smzdm.com/p/519270/",
+      "search_id": "s06",
+      "result_position": 7,
+      "metadata_title": "DIY礼物比购买礼物更珍贵？聊聊你和DIY礼物的故事",
+      "search_date": "2016年12月22日",
+      "reason": "早期DIY价值讨论，标题为开放问题；保留与技术购买指南的体裁差异，不能当干净阴性。"
+    },
+    {
+      "id": "n04",
+      "url": "https://post.smzdm.com/p/199676/",
+      "search_id": "s06",
+      "result_position": 10,
+      "metadata_title": "装修前后的对比和自己DIY的一些细节",
+      "search_date": "2014年11月04日",
+      "reason": "早期DIY过程与对比，检查叙述者经验、条件比较和支持边界；图片支持可能缺失。"
+    }
+  ],
+  "selection_scope": "metadata-only reuse of exposed search result pool; no selected article body read before this freeze",
+  "replacement_policy": "none; retain failures and missing coverage",
+  "article_get_limit": 4,
+  "robots_get_limit": 1,
+  "redirects_allowed": false,
+  "retry_policy": "none; stop affected source on access restrictions",
+  "external_llm_calls": 0,
+  "human_severity_labels": null,
+  "temporal_design": "not a matched cohort or prevalence study",
+  "search_file_hashes": {
+    "s06": "b6d436b37719d4c57a6a7707f42994ed99672f7b30a81a3c0d59c12d1fd74031",
+    "s07": "497aed8b2d983a76f7041bcf198d39803bd60e0e96d69e9c1d1b49bd0ea7a8f2"
+  }
+}

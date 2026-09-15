@@ -1,0 +1,23 @@
+{
+  "mode": "article_dom",
+  "nonwhitespace_text_coverage_equal": true,
+  "removed_nodes": [
+    {
+      "selector": "h1.item-name",
+      "text": "装修前后的对比和自己DIY的一些细节",
+      "html": "<h1 class=\"item-name\">\n<span class=\"edit_interface\"></span>\r\n                                                                装修前后的对比和自己DIY的一些细节                            </h1>"
+    },
+    {
+      "selector": ".recommend-tab",
+      "text": "2014-11-04 18:31:00 1637点赞 3096收藏 1091评论",
+      "html": "<div class=\"recommend-tab z-clearfix item-preferential\">\n<span class=\"xilie\">\n<span>2014-11-04 18:31:00</span>\n<span>1637点赞</span>\n<span>3096收藏</span>\n<span>1091评论</span>\n</span>\n<!-- 风险提示 -->\n<!-- 直达链接-->\n</div>"
+    },
+    {
+      "selector": ".the-end",
+      "text": "",
+      "html": "<div class=\"the-end\"><img alt=\"\" src=\"https://res.smzdm.com/pc/pc_shequ/dist/img/the-end.png\"/></div>"
+    }
+  ],
+  "citation_chips_separate": true,
+  "render_verified": false
+}

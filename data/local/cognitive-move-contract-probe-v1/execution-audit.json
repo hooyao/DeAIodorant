@@ -1,0 +1,155 @@
+{
+  "version": "contract-probe-execution-audit-1.0",
+  "recorded_at_utc": "2026-09-15T03:47:05.157665+00:00",
+  "agents_guidance_unchanged": true,
+  "opportunity_map_unchanged": true,
+  "input_freeze_unchanged": true,
+  "tasks": [
+    {
+      "task": "contract_article_01",
+      "assignment": "ad6ae677b7701",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "3bb3b09ec3ae08b21f2eed01fae255f0a9aaf7763c1348f9f2a0300a009bc180"
+    },
+    {
+      "task": "contract_article_02",
+      "assignment": "aa3f3a42dd34f",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "0696f0e95ad6538d5b2247a33a8a9bd1ff699d683a7d67dc71bc133a0e317879"
+    },
+    {
+      "task": "contract_article_03",
+      "assignment": "a317b4b4f22ef",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "505b5abe3b5cde803c8cd1db1452cf3a646f4f873c938577d17737a776fe6efa"
+    },
+    {
+      "task": "contract_article_04",
+      "assignment": "a2d320ff57bf6",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "0c337f2f016d2b43ca6197c2f52fec1508ef6b9aafee2c94788f7454c14b002c"
+    },
+    {
+      "task": "contract_article_05",
+      "assignment": "a1a3e28c92dbe",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "c8380384fb318bd8b031cc12a1c25fb9b13829cfb4490f1f09902066a2fbd963"
+    },
+    {
+      "task": "contract_article_06",
+      "assignment": "af0681a48b8bc",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "f4db7e8ab0ffc63ac87fb76f55bdaecdb709fcc0a2489363d0886baa7eeb44f3"
+    },
+    {
+      "task": "contract_article_07",
+      "assignment": "ac837554aa281",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "77e8837ca76b44ebea77834f7d2df521592688e48b9a7a7a57ecd311f87aac63"
+    },
+    {
+      "task": "contract_article_08",
+      "assignment": "a2a85b3824864",
+      "self_reported_read_scope_matches": true,
+      "full_article_read_self_report": true,
+      "other_outputs_seen_self_report": false,
+      "reported_procedure_violations": [],
+      "response_sha256": "faa8b5037d1f0cd5b41d1189ce7407490e79948ae229995f68c4535a36f24480"
+    }
+  ],
+  "scope_evidence_limit": "Allowed-path instructions, persisted identity reports and task completion messages; shared filesystem not enforced and no independent full trace replay. Auto-injected project hypotheses and historical anchor labels are acknowledged.",
+  "operational_events": [
+    {
+      "assignment": "ad6ae677b7701",
+      "event": "first File.Open failed because responses directory absent; no file created. Rebuilt payload changed three m06 map-operation phrases before first persistence. Not driven by verifier feedback; raw first generated payload not available as a persisted artifact.",
+      "handling": "preserve persisted response unchanged; exclude this record in conservative repeated-output sensitivity; do not call all eight pristine first generations."
+    },
+    {
+      "assignment": "a317b4b4f22ef",
+      "event": "first File.Open failed because responses directory absent; no file created. Agent reports same payload was written after creating parent directory.",
+      "handling": "retain operational caveat; no known annotation revision."
+    }
+  ],
+  "http": {
+    "robots_gets": 1,
+    "article_gets": 4,
+    "article_statuses": [
+      200,
+      200,
+      200,
+      200
+    ],
+    "retries": 0,
+    "additional_paid_searches": 0
+  },
+  "source_checks": [
+    {
+      "id": "n01",
+      "html_hash_matches": true,
+      "body_hash_matches": true,
+      "characters": 3255,
+      "blocks": 26,
+      "media_unread": 4,
+      "citation_records_not_independently_verified": 21
+    },
+    {
+      "id": "n02",
+      "html_hash_matches": true,
+      "body_hash_matches": true,
+      "characters": 977,
+      "blocks": 14,
+      "media_unread": 0,
+      "citation_records_not_independently_verified": 8
+    },
+    {
+      "id": "n03",
+      "html_hash_matches": true,
+      "body_hash_matches": true,
+      "characters": 3814,
+      "blocks": 35,
+      "media_unread": 23,
+      "citation_records_not_independently_verified": 0
+    },
+    {
+      "id": "n04",
+      "html_hash_matches": true,
+      "body_hash_matches": true,
+      "characters": 5745,
+      "blocks": 175,
+      "media_unread": 94,
+      "citation_records_not_independently_verified": 0
+    }
+  ],
+  "cost": {
+    "external_llm_requests": 0,
+    "gpu_jobs": 0,
+    "codex_inference_cost": "not separately available; not asserted zero"
+  },
+  "tests": {
+    "passed": 201,
+    "failed": 0,
+    "compileall": "passed"
+  },
+  "semantic_validity": "requires_adjudication"
+}

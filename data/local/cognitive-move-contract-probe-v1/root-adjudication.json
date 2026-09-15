@@ -1,0 +1,209 @@
+{
+  "version": "contract-probe-root-adjudication-1.0",
+  "recorded_at_utc": "2026-09-15T03:51:10.741870+00:00",
+  "reviewer": "root; knows design, sources and old labels; not independent human gold",
+  "scope": "all four full source texts and all eight responses; citation validation is separate",
+  "comparison": {
+    "n01": {
+      "map_entries": [
+        11,
+        11
+      ],
+      "paired_detailed_moves": [
+        "版本条件与下载页归属",
+        "内存反馈与参考线",
+        "硬核否定与玩家体验"
+      ],
+      "unpaired_detailed_moves": [
+        "a2d320ff57bf6:后续观察及预测",
+        "a1a3e28c92dbe:三类玩家建议"
+      ],
+      "summary": "明确版本条件与反馈层级保留；参考线的当前提出者/最早出处解释不一，暗示低预期是否进入foil不一。省略说明将时间疑问扩大为等待意向，不能当作证据仅仅记录在正确字段就全部可靠。"
+    },
+    "n02": {
+      "map_entries": [
+        6,
+        6
+      ],
+      "paired_detailed_moves": [
+        "发布及阶段判断",
+        "技能必要性与未署名实测",
+        "政策限制",
+        "行动建议及未来API日程"
+      ],
+      "unpaired_detailed_moves": [],
+      "summary": "两份均把未署名据实测的提出者记为not_stated，保留参数范围与未来日期。仅支持的排他语义与prior字段角色仍需区分；不是实际读者误解。发生写入载荷漂移的回答排除后，只剩一份原文语义观察，不再有重复一致性证据。"
+    },
+    "n03": {
+      "map_entries": [
+        9,
+        9
+      ],
+      "paired_detailed_moves": [
+        "开场否定与小伙伴价值转述",
+        "花偏好条件及未兑现承诺评论",
+        "皮具普通条件分支",
+        "作者星星回忆及邀请"
+      ],
+      "unpaired_detailed_moves": [],
+      "summary": "两份均保留否定对象而不补持有者；区分小伙伴、评论者、男友和作者，未将作者调侃当评论者等待/预测。星星回忆未补造先前排他性信念。预览卡归属仅在位置图及省略中检查，未详细逐卡核验。"
+    },
+    "n04": {
+      "map_entries": [
+        12,
+        12
+      ],
+      "paired_detailed_moves": [
+        "朋友兴趣与写作安排",
+        "外部建议/父亲/本人布线和尺寸取舍",
+        "作者自我重估与母亲话语"
+      ],
+      "unpaired_detailed_moves": [
+        "a2a85b3824864:洗衣机高度与母亲未来判断",
+        "aa3f3a42dd34f:宜家评价与定制条件"
+      ],
+      "summary": "三项共同详细焦点的提出者、转述层和条件可对原文恢复；第四焦点不同，保留覆盖分歧。家庭对话不进入读者信念，图片依赖短句不自动记成句法缺陷；审美与情感价值可以并存。"
+    }
+  },
+  "root_additional_findings": [
+    {
+      "id": "r-n03-source-binding",
+      "dimension": "explicit_attribution",
+      "status": "supported_when_selected",
+      "source_blocks": [
+        "n03:b002",
+        "n03:b009"
+      ],
+      "response_pointers": [
+        {
+          "assignment": "ac837554aa281",
+          "pointer": "/records/0/asserted_or_promised_content/1/attribution"
+        },
+        {
+          "assignment": "af0681a48b8bc",
+          "pointer": "/records/0/asserted_or_promised_content/1/attribution"
+        },
+        {
+          "assignment": "ac837554aa281",
+          "pointer": "/records/1/reader_belief_evidence"
+        },
+        {
+          "assignment": "af0681a48b8bc",
+          "pointer": "/records/1/reader_belief_evidence"
+        }
+      ],
+      "judgment": "小伙伴价值判断、评论者未兑现经历与作者建议/调侃明确分层；没有把今年可能等到改成评论者的预测或等待决定。"
+    },
+    {
+      "id": "r-n03-conditions-and-self-narrative",
+      "dimension": "prior_vs_conditions",
+      "status": "supported_when_selected",
+      "source_blocks": [
+        "n03:b009",
+        "n03:b019",
+        "n03:b033"
+      ],
+      "response_pointers": [
+        {
+          "assignment": "ac837554aa281",
+          "pointer": "/records/2/prior_or_foil"
+        },
+        {
+          "assignment": "af0681a48b8bc",
+          "pointer": "/records/2/prior_or_foil"
+        },
+        {
+          "assignment": "ac837554aa281",
+          "pointer": "/records/3/relation"
+        },
+        {
+          "assignment": "af0681a48b8bc",
+          "pointer": "/records/3/relation"
+        }
+      ],
+      "judgment": "普通有无款式偏好保持foil为空；知道别人也收星星之后仍开心，不需要反推原先相信礼物独享。"
+    },
+    {
+      "id": "r-n04-three-source-chain",
+      "dimension": "explicit_attribution",
+      "status": "supported_when_selected",
+      "source_blocks": [
+        "n04:b071",
+        "n04:b072",
+        "n04:b073",
+        "n04:b074",
+        "n04:b080"
+      ],
+      "response_pointers": [
+        {
+          "assignment": "a2a85b3824864",
+          "pointer": "/records/2/asserted_or_promised_content"
+        },
+        {
+          "assignment": "aa3f3a42dd34f",
+          "pointer": "/records/1/asserted_or_promised_content"
+        }
+      ],
+      "judgment": "外部作者建议两根线、父亲认为可换线、本篇作者因价钱只布一根分开；约84寸估算没有因与前文作者相同而转移提出者。"
+    },
+    {
+      "id": "r-n04-reframing-is-useful-counterexample",
+      "dimension": "meaning_preservation_and_recurrence",
+      "status": "supported_interpretation_not_reader_effect",
+      "source_blocks": [
+        "n04:b155",
+        "n04:b156",
+        "n04:b157",
+        "n04:b158"
+      ],
+      "response_pointers": [
+        {
+          "assignment": "a2a85b3824864",
+          "pointer": "/records/3/relation"
+        },
+        {
+          "assignment": "aa3f3a42dd34f",
+          "pointer": "/records/2/relation"
+        }
+      ],
+      "judgment": "作者确实改变了评价重点，母亲对话和共同经历提供连接；外观不满保留。不能把认知重构或价值转向自身列为臭味。"
+    },
+    {
+      "id": "r-n04-reader-interest",
+      "dimension": "reader_evidence_binding",
+      "status": "supported_when_selected",
+      "source_blocks": [
+        "n04:b001"
+      ],
+      "response_pointers": [
+        {
+          "assignment": "a2a85b3824864",
+          "pointer": "/records/0/reader_belief_evidence"
+        },
+        {
+          "assignment": "aa3f3a42dd34f",
+          "pointer": "/records/0/reader_belief_evidence"
+        }
+      ],
+      "judgment": "只有作者所报部分朋友对细节的兴趣；不是读者赞成方案，也不是独立测量或全体读者态度。"
+    }
+  ],
+  "independent_review_adoption": {
+    "file": "independent-review-n01-n02.json",
+    "sha256": "d445b6af65d10fd784b69025dec12d7e85945e2536674709e272179fd7f7fa85",
+    "accepted_categories": "Supported literal roles; reference-line level and implicit/exclusive-foil ambiguities; coverage differences.",
+    "clear_error_qualification": "n01 temporal-question to waiting-intent overreach is in omitted_opportunities[5] of a1a3e28c92dbe, not its detailed reader_belief_evidence; do not report all detailed reader fields as wrong. Other n01 response preserves the question as uncertainty."
+  },
+  "decisions": {
+    "explicitly_marked_sources": "narrow selected cases supported; no generic accuracy claim",
+    "general_proposer_field": "not_ready_due_to_current_assertor_vs_ultimate_origin_ambiguity",
+    "implicit_or_exclusive_foil_field": "not_ready_for_counting",
+    "reader_evidence_over_entire_output": "not_ready_due_to_overreach_in_coverage_note",
+    "repeated_output_sensitivity": "exclude ad6ae677b7701 from pristine repeated-output evidence; n02 then single response",
+    "automatic_features": false,
+    "reward": false,
+    "training_export": false,
+    "schema_expansion": "Do not immediately add another broad schema revision or retune these exposed outputs; preserve narrow failures as regression cases."
+  },
+  "next_human_input": "new n01 article severity calibration is separately pending; does not change the frozen engineering responses or validate editing efficacy"
+}

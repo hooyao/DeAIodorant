@@ -1,0 +1,8 @@
+{
+  "version": "contract-probe-review-linkage-1.0",
+  "reviewed_findings": 17,
+  "source_and_output_links_checked": 103,
+  "source_hashes_checked": 17,
+  "passed": true,
+  "semantic_validity": "root and reviewer judgments, not established by this mechanical check"
+}

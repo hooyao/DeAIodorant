@@ -1,5 +1,7 @@
 # 项目路线图
 
+2026-09-15 最新进展：[四篇新文章的契约1.1检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)已完成；通用归属、暗示性否定和自由文字中的读者证据仍不能自动计数。下一步等待新原文的主观强度校准，保留窄回归例及已定位的结构，不立即扩大 schema、重标旧回答或进入训练。
+
 ## 当前优先事项，2026-09-14
 
 交接后的[篇章动作测量工程实验](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)已完成36条记录和191处引文检查。下一步用[记录契约1.1草案](routes/compact-refiner/cognitive-move-record-contract-v1.1.md)收紧归属覆盖、否定对象与条件对照、读者证据指向，并按文章隔离新任务。[独立文章发现](routes/compact-refiner/reports/independent-media-discovery-v1.md)保留新候选及反例；仍未进入训练。

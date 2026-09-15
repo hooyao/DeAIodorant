@@ -11,3 +11,9 @@ experiments/cognitive_move_pilot.py -text
 docs/routes/compact-refiner/reports/independent-media-discovery-v1.md -text
 handover/session-2026-09-14-continuation/** -text
 handover/release-2026-09-15/** -text
+
+# 契约 1.1 开发检验的冻结输入。
+docs/routes/compact-refiner/cognitive-move-contract-probe-v1.1.md -text
+docs/routes/compact-refiner/cognitive-move-record-contract-v1.1.md -text
+experiments/cognitive_move_contract_probe.py -text
+handover/contract-probe-2026-09-15/** -text

@@ -1,5 +1,20 @@
 # 续研 handoff：2026-09-15
 
+## 本机续研检查点：契约 1.1 的四篇新文章检验
+
+已完成[本轮报告](docs/routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)：四篇新文章、八个单篇任务、32 项详细记录，393 处引用机械核验通过。新工具及默认离线测试为 201 passed。原 2,198 项归档及旧 36 条记录恢复检查通过，未改写。
+
+明确来源链、普通条件和若干读者态度能被保留，但 proposer 的当前发言者／更早出处、暗示预期及“仅支持”的否定角色仍有编码歧义。一处省略说明把时间疑问扩大为等待意向。两份回答先遇到输出目录缺失，其中一份重建载荷时有措辞漂移，已保留偏差和排除它后的敏感性说明。不得把八份都称为无偏差首次生成，也不得转成自动特征、reward 或训练输出。
+
+当前不继续扩张 schema 或回改回答。新 n01 原文的主观臭味强度校准已单独向维护者提出，`data/local/cognitive-move-contract-probe-v1/reader-calibration-request.json` 记录该请求；目前等待反馈。维护者回答前，不将该文升级为人工强正例，不自动启动下一批改写。新结果、原文及判定在 `data/local/cognitive-move-contract-probe-v1/`，对应增量清单见 `handover/contract-probe-2026-09-15/artifacts.json`。
+
+```powershell
+python experiments/cognitive_move_contract_probe.py verify --run data/local/cognitive-move-contract-probe-v1
+python experiments/verify_research_handover.py --inventory handover/contract-probe-2026-09-15/artifacts.json
+```
+
+以下是上一台机器的完整归档检查点，其旧“下一项可执行工作”已经由本轮部分执行。
+
 本文件是本次完整归档的最新入口。维护者已明确要求将现有进度和全部研究文件提交、推送，无需再次确认。提交分支为 `init`；`main` 保持初始化提交。发布前基线为 `47ba3bfacba5f0a808ab998a49f5a15bfa96e1c4`。
 
 ## 从这里恢复

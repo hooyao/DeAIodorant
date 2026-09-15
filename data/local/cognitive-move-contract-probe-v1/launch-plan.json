@@ -1,0 +1,52 @@
+{
+  "version": "contract-probe-launch-plan-1.0",
+  "created_at_utc": "2026-09-15T03:21:31.182846+00:00",
+  "jobs": [
+    {
+      "task_name": "contract_article_01",
+      "assignment_id": "ad6ae677b7701",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/ad6ae677b7701.json"
+    },
+    {
+      "task_name": "contract_article_02",
+      "assignment_id": "aa3f3a42dd34f",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/aa3f3a42dd34f.json"
+    },
+    {
+      "task_name": "contract_article_03",
+      "assignment_id": "a317b4b4f22ef",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a317b4b4f22ef.json"
+    },
+    {
+      "task_name": "contract_article_04",
+      "assignment_id": "a2d320ff57bf6",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a2d320ff57bf6.json"
+    },
+    {
+      "task_name": "contract_article_05",
+      "assignment_id": "a1a3e28c92dbe",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a1a3e28c92dbe.json"
+    },
+    {
+      "task_name": "contract_article_06",
+      "assignment_id": "af0681a48b8bc",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/af0681a48b8bc.json"
+    },
+    {
+      "task_name": "contract_article_07",
+      "assignment_id": "ac837554aa281",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/ac837554aa281.json"
+    },
+    {
+      "task_name": "contract_article_08",
+      "assignment_id": "a2a85b3824864",
+      "assignment_path": "data/local/cognitive-move-contract-probe-v1/frozen/assignments/a2a85b3824864.json"
+    }
+  ],
+  "fork_turns": "none",
+  "agents_guidance_sha256": "ebb07e109a304d78d43d1775ebba18c9a07dee544381f4918a51f903e8f9ff5c",
+  "guidance_modified": false,
+  "opportunity_map_sha256": "0aeb5b57ed5e9311ea9d5612dbfbf5891279c87ed0ce54f8926024d4858b4e41",
+  "input_freeze_sha256": "d4a73129676c93dccd457a4b3363e2841d15d9a3e9dc52ee388422265ba6e7a5",
+  "interpretation": "Fresh tasks, one article each, no other outputs provided; same model family and auto-injected project guidance remain limitations."
+}

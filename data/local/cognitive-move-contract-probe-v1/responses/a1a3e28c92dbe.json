@@ -1,0 +1,888 @@
+{
+  "assignment_id": "a1a3e28c92dbe",
+  "packet_id": "p41f827571b4a",
+  "identity": {
+    "agent_task": "/root/contract_article_05",
+    "model": "Codex（GPT-6；精确模型与 backend unknown；注入项目指南称当前 Agent 为 Astra）",
+    "full_article_read": true,
+    "other_outputs_seen": false,
+    "read_paths": [
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/a1a3e28c92dbe.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p41f827571b4a.json"
+    ],
+    "inherited_guidance": [
+      "自动注入了完整项目 AGENTS.md，包括研究目标、先分析篇章动作而不只匹配连接词、保留语义与正常中文省略等指导；不是双盲。",
+      "自动注入的项目指南包含旧锚点评价：Microduck 文章被评为“极其臭”“恶臭”，百度文章为“一般臭”，Cowork 预览的目标信号被认为较弱；这些属于既有项目背景，本篇未提供人工质量或强度标签。",
+      "收到 Root 的单篇受控任务说明，限制只读三个指定文件，并要求独占保存第一次完整回答；未收到其他文章标注结果。",
+      "已见运行环境及通用工具、协作和安全规则。"
+    ],
+    "procedure_violations": []
+  },
+  "article_map": [
+    {
+      "move_id": "m01",
+      "block_ids": [
+        "title",
+        "b001",
+        "b002"
+      ],
+      "operation": [
+        "回顾",
+        "引入读者反应",
+        "提出问题",
+        "预告建议"
+      ],
+      "description": "用回归时间、更新密度和互动量建立事件背景，报道欢呼与等待两种反应，明确提出现在是否入坑，并预告锁定版本的优先建议。",
+      "recurrence_group": "先准备再行动"
+    },
+    {
+      "move_id": "m02",
+      "block_ids": [
+        "b003",
+        "b004",
+        "b005",
+        "b006",
+        "b007"
+      ],
+      "operation": [
+        "重述分类",
+        "价值强调",
+        "具体化",
+        "转述评价"
+      ],
+      "description": "以更接近资料片而非普通 MOD 的比较突出改造规模，再列出开发历史、界面、制造链、开锁及载具内容；社区夸张评价与可辨识改动共同承担展示作用。",
+      "recurrence_group": null
+    },
+    {
+      "move_id": "m03",
+      "block_ids": [
+        "b008",
+        "b009"
+      ],
+      "operation": [
+        "设置检查议程",
+        "限定兼容条件",
+        "解释",
+        "建议"
+      ],
+      "description": "将游戏本体版本与 MOD 版本分开，转述下载页兼容及存档要求，用方块架构变化解释适配延迟，按当前版本给出锁定或回退操作。",
+      "recurrence_group": "先准备再行动"
+    },
+    {
+      "move_id": "m04",
+      "block_ids": [
+        "b010"
+      ],
+      "operation": [
+        "提示风险",
+        "转述反馈",
+        "限定变通办法",
+        "建议"
+      ],
+      "description": "强调快速更新对存档的风险，同时记录升级补丁与硬升级的例外及副作用，导向限制投入和更新前备份。",
+      "recurrence_group": "版本波动与存档风险"
+    },
+    {
+      "move_id": "m05",
+      "block_ids": [
+        "b011"
+      ],
+      "operation": [
+        "抬高门槛预期",
+        "转述反馈",
+        "给出参考线",
+        "限定效果"
+      ],
+      "description": "以高内存仍卡顿的玩家反馈引出分档内存建议，再将增加虚拟内存限定为缓解办法；并未给出读者原先预期的具体门槛。",
+      "recurrence_group": null
+    },
+    {
+      "move_id": "m06",
+      "block_ids": [
+        "b012",
+        "b013",
+        "b014"
+      ],
+      "operation": [
+        "筛选渠道",
+        "揭示商业导向",
+        "区分评测与广告",
+        "建议"
+      ],
+      "description": "先解释站外安装需求和推荐渠道，再通过相同教程导向云服务器、会员下载失败反馈，提醒读者区分安装困难、商业推广与 MOD 本体免费。",
+      "recurrence_group": "先准备再行动"
+    },
+    {
+      "move_id": "m07",
+      "block_ids": [
+        "b015"
+      ],
+      "operation": [
+        "列举问题",
+        "区分已修复与遗留",
+        "转述反馈",
+        "建议"
+      ],
+      "description": "汇集联机维修、技能树等问题，保留版本和部分修复进展，提醒遇到异常时考虑已知问题并为连续更新做准备。",
+      "recurrence_group": "版本波动与存档风险"
+    },
+    {
+      "move_id": "m08",
+      "block_ids": [
+        "b016",
+        "b017",
+        "b018",
+        "b019"
+      ],
+      "operation": [
+        "否定弱化解释",
+        "举例",
+        "呈现不同态度",
+        "按偏好推断",
+        "建议"
+      ],
+      "description": "以科技树循环支持硬核具有实际游戏负担的判断，对照两种玩家体验，再按节奏偏好预测适配性，建议先看完整实况。",
+      "recurrence_group": "先准备再行动"
+    },
+    {
+      "move_id": "m09",
+      "block_ids": [
+        "b020",
+        "b021",
+        "b022",
+        "b023",
+        "b024"
+      ],
+      "operation": [
+        "回顾",
+        "按人群分流",
+        "设置条件",
+        "建议"
+      ],
+      "description": "将此前内容整理成单人老玩家、联机车队、视频新人三类建议，分别保留入坑前提、短期尝试例外和偏好轻松联机时的原版替代方案。",
+      "recurrence_group": "先准备再行动"
+    },
+    {
+      "move_id": "m10",
+      "block_ids": [
+        "b025"
+      ],
+      "operation": [
+        "设置后续观察点",
+        "转述等待意向",
+        "外推",
+        "建议"
+      ],
+      "description": "列出适配 3.x、首个稳定版、本体更新节奏三个观察点；从研发并行推及更新频繁与兼容压力，并建议长期存档玩家等待。",
+      "recurrence_group": "版本波动与存档风险"
+    },
+    {
+      "move_id": "m11",
+      "block_ids": [
+        "b026"
+      ],
+      "operation": [
+        "总结",
+        "限定充分条件",
+        "回顾",
+        "价值强调"
+      ],
+      "description": "用热情不足以单独支持入坑重申准备要求，回收版本、备份、内存、渠道四项内容，并以值得投入时间作结。",
+      "recurrence_group": "先准备再行动"
+    }
+  ],
+  "records": [
+    {
+      "move_id": "m03",
+      "focal_spans": [
+        {
+          "block_id": "b009",
+          "quote": "但UL官网下载页上的最新版2.7.19对应的是本体v2.6 b14"
+        },
+        {
+          "block_id": "b009",
+          "quote": "所以想玩UL，请把游戏版本锁在v2.6；如果你的游戏已经自动更新到3.2，先回退版本，别急着开新档等UL追赶。"
+        }
+      ],
+      "operation": [
+        "限定兼容条件",
+        "解释适配延迟",
+        "按条件建议"
+      ],
+      "question_under_discussion": {
+        "text": "目前安装 UL 应使用什么本体版本，并如何处理版本已更新及旧存档的情况？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "作者称 UL 下载页所列 2.7.19 对应本体 v2.6 b14，安装须关闭 EAC，来自 2.7.15 或更早版本的存档更新至 2.7.19 须重开。",
+          "source_spans": [
+            {
+              "block_id": "b009",
+              "quote": "但UL官网下载页上的最新版2.7.19对应的是本体v2.6 b14，安装时必须关闭EAC，页面上还写着提醒：存档如果来自2.7.15或更早版本，更新2.7.19就必须重新开档。"
+            }
+          ],
+          "attribution": {
+            "proposer": "UL 官网下载页（按作者归属）",
+            "reporting_layer": "作者转述页面要求",
+            "epistemic_status": "来源声称，未外部核验"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "作者用本体 3.0 的方块架构变化解释 UL 需要时间重做兼容。",
+          "source_spans": [
+            {
+              "block_id": "b009",
+              "quote": "6月的3.0大版本给本体换了一套新的方块架构，UL这种体量的MOD需要时间重做兼容"
+            }
+          ],
+          "attribution": {
+            "proposer": "本篇叙述者",
+            "reporting_layer": "作者解释",
+            "epistemic_status": "由技术变化推及适配负担"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "想玩 UL 的玩家应锁定本体 v2.6；已自动更新至 3.2 时，应先回退版本。",
+          "source_spans": [
+            {
+              "block_id": "b009",
+              "quote": "所以想玩UL，请把游戏版本锁在v2.6；如果你的游戏已经自动更新到3.2，先回退版本，别急着开新档等UL追赶。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本篇叙述者",
+            "reporting_layer": "作者直接建议",
+            "epistemic_status": "基于所报兼容要求的行动建议"
+          }
+        }
+      ],
+      "relation": {
+        "type": "compatibility_constraint_and_conditional_advice",
+        "text": "本体最新版本与当前 MOD 所需版本不同，构成操作条件差异；文本未提供某位读者相信最新版必然兼容的证据。",
+        "comparands": [
+          {
+            "text": "游戏已经自动更新到 3.2，需要回退。",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b009",
+                "quote": "如果你的游戏已经自动更新到3.2，先回退版本"
+              }
+            ]
+          },
+          {
+            "text": "UL 2.7.19 所对应的运行版本。",
+            "role": "required_compatibility_baseline",
+            "source_spans": [
+              {
+                "block_id": "b009",
+                "quote": "最新版2.7.19对应的是本体v2.6 b14"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1",
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b009",
+              "quote": "但UL官网下载页上的最新版2.7.19对应的是本体v2.6 b14"
+            }
+          ],
+          "stated_link": "“所以”把下载页对应版本连接到锁定及回退建议。",
+          "unstated_assumption": "该对应版本要求仍适用于读者当前取得的安装包。",
+          "unknowns": [
+            "未读取下载页、安装包或页面图片；b010 另提升级补丁与变通办法，须保留这一后续限定。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b009",
+              "quote": "从第三方工具作者的适配说明里也能看到，“兼容V3.0新方块架构”是当时大家都要过的一道坎。"
+            }
+          ],
+          "stated_link": "以第三方工具的适配说明类比 UL 的兼容负担。",
+          "unstated_assumption": "该架构变化对 UL 的影响与第三方工具面临的适配问题有关。",
+          "unknowns": [
+            "未提供 UL 开发者对延迟原因的直接引述。"
+          ]
+        }
+      ],
+      "information_update": "把开头的锁版本建议具体化为版本对应关系、安装要求和条件动作。",
+      "stance_and_presentation": "“最容易搞错”“请”“先”“别急着”形成操作引导，并与标题、b002 及结尾复现；纠错式口吻不证明实际读者已有错误判断。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留本体与 MOD 两套版本号、b14、EAC 和存档版本范围。",
+        "保留普通条件分支及后续升级补丁限定。"
+      ],
+      "possible_reader_cost": [
+        "若只记住“v2.6”而忽略完整对应版本或后续补丁说明，可能难以判断自己的具体升级路径；效果待检验。"
+      ],
+      "uncertainties": [
+        "全文文字视图之外的引用与图示可能补充支持，未作核验。"
+      ]
+    },
+    {
+      "move_id": "m05",
+      "focal_spans": [
+        {
+          "block_id": "b011",
+          "quote": "第三是内存，门槛比你想的高。"
+        },
+        {
+          "block_id": "b011",
+          "quote": "给个参考线：16G基本可以放弃，32G算入门，想流畅运行或者开多人联机，64G更稳。"
+        }
+      ],
+      "operation": [
+        "引导门槛预期",
+        "转述反馈",
+        "给出参考线",
+        "限定缓解效果"
+      ],
+      "question_under_discussion": {
+        "text": "运行 UL 应准备多少内存，内存不足时能怎样缓解？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "被引玩家称自己 64G 内存仍偶发卡顿，并称见过 UP 主使用 96G 仍卡。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "我64G的内存都时不时卡顿，我看小破站UP里甚至有96G都卡的"
+            }
+          ],
+          "attribution": {
+            "proposer": "被引用的未具名玩家",
+            "reporting_layer": "作者引述玩家自身反馈及该玩家对 UP 主的转述",
+            "epistemic_status": "未经核验的个别反馈和二层转述"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "本文给出 16G 基本放弃、32G 入门、流畅运行或多人联机时 64G 更稳的参考线。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "给个参考线：16G基本可以放弃，32G算入门，想流畅运行或者开多人联机，64G更稳。"
+            }
+          ],
+          "attribution": {
+            "proposer": "not_stated",
+            "reporting_layer": "作者直接给出参考线，未明确原始提出者",
+            "epistemic_status": "参考性估计，未说明测试方法"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "作者称评论区普遍建议增加虚拟内存，并将其效果限定为缓解而非明显改变体验。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "内存不够的玩家，评论区普遍给出的方案是加虚拟内存，能缓解，但别指望质变。"
+            }
+          ],
+          "attribution": {
+            "proposer": "评论区玩家（方案，按作者归属）；效果判断的原始提出者 not_stated",
+            "reporting_layer": "作者概括评论方案并限定效果",
+            "epistemic_status": "概括及效果判断，未核验"
+          }
+        }
+      ],
+      "relation": {
+        "type": "reported_experience_to_hardware_guidance",
+        "text": "先用高配置仍卡的反馈说明资源压力，再给容量分档和替代办法；容量与体验并非保证关系。",
+        "comparands": [
+          {
+            "text": "16G、32G、64G 的容量分档。",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b011",
+                "quote": "16G基本可以放弃，32G算入门，想流畅运行或者开多人联机，64G更稳。"
+              }
+            ]
+          },
+          {
+            "text": "内存不足时增加虚拟内存。",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b011",
+                "quote": "内存不够的玩家，评论区普遍给出的方案是加虚拟内存"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1",
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b011",
+              "quote": "最有代表性的一条反馈：“亡灵遗产这MOD是真的神，唯一缺点就是太吃内存了，我64G的内存都时不时卡顿，我看小破站UP里甚至有96G都卡的”。"
+            }
+          ],
+          "stated_link": "原文称该反馈最具代表性，随后给出参考线。",
+          "unstated_assumption": "反馈中的卡顿与内存压力有关，且相关运行场景可供容量建议参考。",
+          "unknowns": [
+            "“最有代表性”的样本依据、其他硬件、设置、版本与内存占用未知。",
+            "该反馈本身不能推出 16G、32G 和 64G 的具体分界。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b011",
+              "quote": "评论区普遍给出的方案是加虚拟内存，能缓解，但别指望质变。"
+            }
+          ],
+          "stated_link": "正文直接并置方案与有限效果。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "评论采样范围和效果测量未说明。"
+          ]
+        }
+      ],
+      "information_update": "提供可用于准备硬件的容量参考，并保留虚拟内存不能保证改善的限制。",
+      "stance_and_presentation": "“比你想的高”设置预期差，但具体读者及原先阈值均未出现；“参考线”降低精确性，“基本可以放弃”又给出较强分流语气。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留“时不时”“基本”“算入门”“更稳”等范围和情态。",
+        "区分玩家自己的 64G 反馈与其看到的 96G 情况，保留参考线提出者未明。"
+      ],
+      "possible_reader_cost": [
+        "分档形式容易被当作通用硬件门槛，而文中可见反馈缺少运行条件；这只是待检验的理解风险。"
+      ],
+      "uncertainties": [
+        "该段未称实测，不能替它补成实测结论。",
+        "图片或上游引用是否提供配置资料未知。"
+      ]
+    },
+    {
+      "move_id": "m08",
+      "focal_spans": [
+        {
+          "block_id": "b017",
+          "quote": "如果你是看视频入坑的，先要明白一件事：UL的硬核不是噱头。"
+        },
+        {
+          "block_id": "b018",
+          "quote": "一派说“真的好玩，一晚上没停过，也死了一晚上，难度太高了”；另一派直言“这个mod只能看，不能自己玩儿，对我来说太折磨了”。"
+        },
+        {
+          "block_id": "b019",
+          "quote": "先看几个完整实况，确认自己能接受这种节奏，再动手。"
+        }
+      ],
+      "operation": [
+        "否定弱化解释",
+        "举例",
+        "对照体验态度",
+        "按偏好推断",
+        "建议"
+      ],
+      "question_under_discussion": {
+        "text": "UL 的难度如何影响体验，潜在玩家应怎样判断是否适合自己？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "proposition": "UL 的硬核只是噱头。",
+        "role": "negated_proposition",
+        "source_spans": [
+          {
+            "block_id": "b017",
+            "quote": "UL的硬核不是噱头。"
+          }
+        ],
+        "prior_holder": null
+      },
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "作者认为 UL 的硬核体现在实际游戏进度负担中，并非只有宣传说法。",
+          "source_spans": [
+            {
+              "block_id": "b017",
+              "quote": "UL的硬核不是噱头。它的科技树循环能让老玩家都怀疑人生"
+            }
+          ],
+          "attribution": {
+            "proposer": "本篇叙述者",
+            "reporting_layer": "作者判断",
+            "epistemic_status": "以玩家例子支持的解释"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "作者引用两种玩家态度：有人虽频繁死亡仍觉得好玩，有人认为亲自玩太折磨。",
+          "source_spans": [
+            {
+              "block_id": "b018",
+              "quote": "一派说“真的好玩，一晚上没停过，也死了一晚上，难度太高了”；另一派直言“这个mod只能看，不能自己玩儿，对我来说太折磨了”。"
+            }
+          ],
+          "attribution": {
+            "proposer": "被文章分别引用的未具名玩家",
+            "reporting_layer": "作者选引并概括为两派",
+            "epistemic_status": "报道的主观体验；群体分布未核验"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "作者按是否享受进度受阻预测玩家适配性，建议先看完整实况并确认能接受节奏。",
+          "source_spans": [
+            {
+              "block_id": "b018",
+              "quote": "享受进度被折磨的人会上头，追求轻松生存的人大概率会弃坑。"
+            },
+            {
+              "block_id": "b019",
+              "quote": "先看几个完整实况，确认自己能接受这种节奏，再动手。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本篇叙述者",
+            "reporting_layer": "作者推断及建议",
+            "epistemic_status": "偏好条件下的预测，不是已观察到的总体弃坑率"
+          }
+        }
+      ],
+      "relation": {
+        "type": "experience_contrast_and_preference_condition",
+        "text": "否定对象是硬核只属噱头；两种体验评价可同时成立，后续建议依据偏好差异分流，并未证明观看视频者已有该被否定信念。",
+        "comparands": [
+          {
+            "text": "享受受阻进度的玩家。",
+            "role": "preference_condition",
+            "source_spans": [
+              {
+                "block_id": "b018",
+                "quote": "享受进度被折磨的人会上头"
+              }
+            ]
+          },
+          {
+            "text": "追求轻松生存的玩家。",
+            "role": "preference_condition",
+            "source_spans": [
+              {
+                "block_id": "b018",
+                "quote": "追求轻松生存的人大概率会弃坑。"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b017",
+              "quote": "“我想做皮革，皮革要裁缝工作台做，但是裁缝工作台要皮革，只能去砍沙发”。"
+            }
+          ],
+          "stated_link": "科技树循环作为硬核带来实际负担的例子。",
+          "unstated_assumption": "这类获取材料的阻力能代表本文所说的硬核体验。",
+          "unknowns": [
+            "具体版本、完整获取路径和引语的原始出处未核验。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2",
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b018",
+              "quote": "一派说“真的好玩，一晚上没停过，也死了一晚上，难度太高了”；另一派直言“这个mod只能看，不能自己玩儿，对我来说太折磨了”。"
+            }
+          ],
+          "stated_link": "两类反馈后接偏好预测，b019 用“所以”导向先看实况。",
+          "unstated_assumption": "玩家对难度的态度有助于潜在玩家判断个人适配性。",
+          "unknowns": [
+            "评论数量、选取方法及两派占比未知；看完整实况的判断效果未测量。"
+          ]
+        }
+      ],
+      "information_update": "把抽象的硬核评价具体化为材料循环与玩家体验，并转化为选择前的判断步骤。",
+      "stance_and_presentation": "“先要明白一件事”具有纠正式引导，“两派”组织不同态度；b019 的先确认再行动与开头和其他风险段复现。",
+      "reader_belief_evidence": [
+        {
+          "proposition": "觉得游戏好玩，同时认为难度高。",
+          "holder": "b018 被引用的一派评论玩家",
+          "source_span": {
+            "block_id": "b018",
+            "quote": "真的好玩，一晚上没停过，也死了一晚上，难度太高了"
+          },
+          "reporting_layer": "文章引述玩家判断，非独立观察"
+        },
+        {
+          "proposition": "认为亲自玩太折磨，自己只适合观看。",
+          "holder": "b018 被引用的另一派评论玩家",
+          "source_span": {
+            "block_id": "b018",
+            "quote": "这个mod只能看，不能自己玩儿，对我来说太折磨了"
+          },
+          "reporting_layer": "文章引述玩家主观体验，保留“对我来说”的范围"
+        }
+      ],
+      "preserved_usefulness": [
+        "保留两种不同体验及个人范围，不能改成所有人都不适合。",
+        "保留“如果”“大概率”和先确认个人接受程度的建议。"
+      ],
+      "possible_reader_cost": [
+        "“两派”及后续两种偏好可能简化更复杂的玩家体验，需读者验证。"
+      ],
+      "uncertainties": [
+        "被否定命题没有已指认的持有者。",
+        "本文报道的评论态度不等于读者盲评结果。"
+      ]
+    },
+    {
+      "move_id": "m09",
+      "focal_spans": [
+        {
+          "block_id": "b021",
+          "quote": "三类人，三个建议："
+        },
+        {
+          "block_id": "b022",
+          "quote": "前提有三条：锁定v2.6、接受随时重开存档、把内存备足。"
+        },
+        {
+          "block_id": "b023",
+          "quote": "实在想玩，先开短期存档试水，别攒好装备。"
+        },
+        {
+          "block_id": "b024",
+          "quote": "如果你想要的是轻松联机生存，原版V3.2其实更适合你。"
+        }
+      ],
+      "operation": [
+        "回顾",
+        "按人群分流",
+        "限定建议",
+        "提供替代方案"
+      ],
+      "question_under_discussion": {
+        "text": "那现在到底该不该入坑",
+        "provenance": "explicit"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "单人硬核老玩家可以入坑，前提是锁定 v2.6、接受随时重开并准备足够内存；作者称内容骨架完整且探索、制造和血月压力远超原版。",
+          "source_spans": [
+            {
+              "block_id": "b022",
+              "quote": "单人硬核老玩家：可以入。2.7的内容骨架已经完整，探索、制造、血月压力都远超原版。前提有三条：锁定v2.6、接受随时重开存档、把内存备足。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本篇叙述者",
+            "reporting_layer": "作者评价及条件建议",
+            "epistemic_status": "建议；内容完整性及比较强度未独立核验"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "联机车队宜等待，因为作者称相关问题到 2.7.19 尚未完全修好；仍想玩时可先用短期存档，避免积攒装备。",
+          "source_spans": [
+            {
+              "block_id": "b023",
+              "quote": "联机车队：建议再等等。修理物品掉线丢装备、技能树锁死，这些问题在联机场景里最致命，而且到2.7.19还没完全修好。实在想玩，先开短期存档试水，别攒好装备。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本篇叙述者",
+            "reporting_layer": "作者综合问题报道给出建议",
+            "epistemic_status": "风险判断及带例外的建议"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "看视频入坑的新人应先多看；若追求轻松联机生存，作者认为原版 V3.2 更适合。",
+          "source_spans": [
+            {
+              "block_id": "b024",
+              "quote": "看视频入坑的新人：先多看。UL的难度和肝度都高于原版，如果你想要的是轻松联机生存，原版V3.2其实更适合你。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本篇叙述者",
+            "reporting_layer": "作者条件建议",
+            "epistemic_status": "基于玩法和偏好的适配判断"
+          }
+        }
+      ],
+      "relation": {
+        "type": "conditional_audience_guidance",
+        "text": "三类人对应不同风险容忍和体验偏好；可以入、再等等及先多看具有各自条件，不构成彼此排斥的事实断言。",
+        "comparands": [
+          {
+            "text": "单人硬核老玩家且满足版本、存档及内存前提。",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b022",
+                "quote": "单人硬核老玩家：可以入。"
+              },
+              {
+                "block_id": "b022",
+                "quote": "前提有三条：锁定v2.6、接受随时重开存档、把内存备足。"
+              }
+            ]
+          },
+          {
+            "text": "联机车队；强烈想玩者另有短期尝试分支。",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b023",
+                "quote": "联机车队：建议再等等。"
+              },
+              {
+                "block_id": "b023",
+                "quote": "实在想玩，先开短期存档试水，别攒好装备。"
+              }
+            ]
+          },
+          {
+            "text": "看视频入坑的新人，其中偏好轻松联机者可选原版。",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b024",
+                "quote": "看视频入坑的新人：先多看。"
+              },
+              {
+                "block_id": "b024",
+                "quote": "如果你想要的是轻松联机生存，原版V3.2其实更适合你。"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b006",
+              "quote": "整套UI重做，背包改成负重制"
+            },
+            {
+              "block_id": "b009",
+              "quote": "最新版2.7.19对应的是本体v2.6 b14"
+            },
+            {
+              "block_id": "b010",
+              "quote": "版本稳定之前，别在单个存档里投入几百小时"
+            }
+          ],
+          "stated_link": "本节回收前文的内容展示、兼容及存档风险作为入坑条件。",
+          "unstated_assumption": "单人硬核老玩家更能接受这些投入和风险。",
+          "unknowns": [
+            "所列改动不足以独立确定“内容骨架完整”或“远超原版”的范围。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b015",
+              "quote": "多个四人小队都反馈过类似情况。"
+            },
+            {
+              "block_id": "b015",
+              "quote": "但技能树锁死仍是遗留问题"
+            }
+          ],
+          "stated_link": "b023 明说未修完的掉线丢装备及技能问题是等待的理由。",
+          "unstated_assumption": "减少存档期限和装备积累可降低受损投入。",
+          "unknowns": [
+            "b015 引用故障涉及 2.7.15，未展示到 2.7.19 的逐项核验。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b018",
+              "quote": "追求轻松生存的人大概率会弃坑。"
+            },
+            {
+              "block_id": "b019",
+              "quote": "先看几个完整实况，确认自己能接受这种节奏，再动手。"
+            }
+          ],
+          "stated_link": "回收此前节奏适配判断并提供原版选择。",
+          "unstated_assumption": "观看实况能帮助了解自身对该节奏的接受程度。",
+          "unknowns": [
+            "未测量具体新人的偏好或建议效果。"
+          ]
+        }
+      ],
+      "information_update": "主要贡献是整理和分流已有信息，使读者能按场景作选择；有用回顾不要求每句都新增事实。",
+      "stance_and_presentation": "“三类人，三个建议”形成对称结构；短结论后附前提与例外，延续全文准备后行动的呈现。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留三类适用对象、全部前提、联机短期尝试例外及轻松联机的条件。",
+        "不能将视频新人一概判定为追求轻松，也不能把可入坑概括成适合所有人。"
+      ],
+      "possible_reader_cost": [
+        "单人、联机、新人身份可能交叉，三类并列未说明交叉时如何取舍；实际影响待检验。"
+      ],
+      "uncertainties": [
+        "推荐依赖此前来源报道与作者推断，不是本次标注完成的运行验证。"
+      ]
+    }
+  ],
+  "omitted_opportunities": [
+    "m01 的评论反应未作详细记录。“等稳定版出来再玩”可支持文章所报的等待意向，不能据此推定玩家对价格、技术或当前稳定性的具体判断；观看互动量也未经核验。",
+    "m02 的“更接近资料片，而不是MOD”是在改造规模上重述分类；普通 MOD 与资料片的比较标准、社区“10个dlc”夸张评价的归属尚未逐条展开。",
+    "m04 同时出现重开近乎不可避免、官方升级补丁和玩家变通办法，值得单独检查一般性风险与例外是否清楚；受四项上限限制，仅在 m03 和 m09 保留关联。",
+    "m06 将安装困难真实性与推广结论分开，又用个人付费下载失败反馈提出渠道建议；未逐条记录广告判断的证据范围及“本体免费”与付费安装服务的关系。",
+    "m07 的版本性故障、已修复项目和遗留问题未逐项展开；m09 仅追踪支撑联机建议的部分，不能视为其他故障均已核验。",
+    "m10 的等待稳定版评论只证明文章报道的等待意向；从 v4.0 并行研发推到小更新越来越频繁、每次都造成兼容压力，以及“适配3.x才真正值得开大档”的阈值，仍是未详细记录的外推与优先级机会。",
+    "m11 回顾四项准备并强调价值，与前文持续复现；“圈最大事件”和完成准备后值得投入时间的范围未详细检查。复现存在不等于阅读成本或人工质量结论。",
+    "仅阅读完整文字 blocks。四处媒体引用、图片内表格、21 条引用的上游内容及页面视觉未读取；不能把不可见支持一概判为缺失。"
+  ]
+}

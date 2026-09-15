@@ -1,0 +1,14 @@
+{
+  "url": "https://post.smzdm.com/p/agopr2mm/",
+  "requested_at_utc": "2026-09-15T03:08:20.937993+00:00",
+  "method": "GET",
+  "user_agent": "DeAIodorantResearch/1.0 (bounded public article inspection)",
+  "timeout_seconds": 20,
+  "redirects_allowed": false,
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "location": null,
+  "bytes": 421052,
+  "sha256": "959f119a37562774b041e0b60207f99a32d06cd9364bae749ed2dbb5fa8f03ef",
+  "completed_at_utc": "2026-09-15T03:08:22.344275+00:00"
+}

@@ -1,0 +1,1402 @@
+[
+  {
+    "block_id": "b001",
+    "text": "前面两篇系列晒单都是晒产品，原本下面一篇准备用晒投影做完结，有些朋友对装修的细节有兴趣，这让某人很欣慰，临时赶工一篇装修细节篇出来（没东西可晒了），算是抛砖引玉。",
+    "tag": "p",
+    "source_path": "article/3",
+    "start_char": 0,
+    "end_char": 81
+  },
+  {
+    "block_id": "b002",
+    "text": "第一次装修有很多遗憾，这里欢迎大家丢砖咯",
+    "tag": "p",
+    "source_path": "article/4",
+    "start_char": 82,
+    "end_char": 102
+  },
+  {
+    "block_id": "b003",
+    "text": "装修的背景",
+    "tag": "p",
+    "source_path": "article/5",
+    "start_char": 103,
+    "end_char": 108
+  },
+  {
+    "block_id": "b004",
+    "text": "房子是多年前的老房子，小两室，面积七十多，房型也蛮多槽点，一直有装修的打算拖着没做，说白了因为我是单身汉，不装修一样住，用我爸妈的话是，以后装修什么样还是要你媳妇决定的，这点我也同意。结果前段时间意外身体不舒服，在医院躺了几天，不好自理，只好把在别的城市的父母叫来了，出院后装修也就是顺理成章的事情了",
+    "tag": "p",
+    "source_path": "article/6",
+    "start_char": 109,
+    "end_char": 259
+  },
+  {
+    "block_id": "b005",
+    "text": "装修前考虑的几点",
+    "tag": "p",
+    "source_path": "article/7",
+    "start_char": 260,
+    "end_char": 268
+  },
+  {
+    "block_id": "b006",
+    "text": "1 好看，或者说不难看（这是废话···）",
+    "tag": "p",
+    "source_path": "article/8",
+    "start_char": 269,
+    "end_char": 289
+  },
+  {
+    "block_id": "b007",
+    "text": "2 尽量少花钱，电器旧的能不换的就不换，省的以后还要换",
+    "tag": "p",
+    "source_path": "article/9",
+    "start_char": 290,
+    "end_char": 317
+  },
+  {
+    "block_id": "b008",
+    "text": "3 房子是自己住的，风格自己把握，不需要遵循“别人都是这样做的”，适合自己最重要（父母不住一起）",
+    "tag": "p",
+    "source_path": "article/10",
+    "start_char": 318,
+    "end_char": 366
+  },
+  {
+    "block_id": "b009",
+    "text": "4 因为房子小，收纳很重要。",
+    "tag": "p",
+    "source_path": "article/11",
+    "start_char": 367,
+    "end_char": 381
+  },
+  {
+    "block_id": "b010",
+    "text": "5风格方面，没家居设计功底和经验，就用宜家风格，或者所谓的没有风格的风格",
+    "tag": "p",
+    "source_path": "article/12",
+    "start_char": 382,
+    "end_char": 418
+  },
+  {
+    "block_id": "b011",
+    "text": "（家里基本用的白色，比如墙面，当时背景墙和房间我就想做颜色，背景墙被老爸否决掉，房间用颜色担心搭配功底不够，为了保险做整体白色，然后用小件色彩点缀，点缀色打算用绿色）",
+    "tag": "p",
+    "source_path": "article/13",
+    "start_char": 419,
+    "end_char": 502
+  },
+  {
+    "block_id": "b012",
+    "text": "交代下背景，老爸是老的木工，几十年的手艺在，现在还在做装潢行业，技能比较全面，动手能力强，（我是没遗传到他天赋），所以决定做很多木制品",
+    "tag": "p",
+    "source_path": "article/14",
+    "start_char": 503,
+    "end_char": 570
+  },
+  {
+    "block_id": "b013",
+    "text": "不会sketchup画图，在线软件大致画一个结构图（其他晒单的大哥门图画的都很漂亮，小弟就不花时间去学软件了）",
+    "tag": "p",
+    "source_path": "article/16",
+    "start_char": 571,
+    "end_char": 626
+  },
+  {
+    "block_id": "b014",
+    "text": "进门左边厕所右边厨房，对称的房间，房间中间有浪费空间的走廊，阳台很长但是很窄实际用途很小",
+    "tag": "p",
+    "source_path": "article/17",
+    "start_char": 627,
+    "end_char": 671
+  },
+  {
+    "block_id": "b015",
+    "text": "而且家里墙基本都是承重墙，不过好处是南北通透，空气流动比较好",
+    "tag": "p",
+    "source_path": "article/18",
+    "start_char": 672,
+    "end_char": 702
+  },
+  {
+    "block_id": "b016",
+    "text": "装修前",
+    "tag": "p",
+    "source_path": "article/20",
+    "start_char": 703,
+    "end_char": 706
+  },
+  {
+    "block_id": "b017",
+    "text": "阳台看下大门，厨房的墙壁上被前任房主开了个门，厨房和厕所门对门",
+    "tag": "p",
+    "source_path": "article/22",
+    "start_char": 707,
+    "end_char": 738
+  },
+  {
+    "block_id": "b018",
+    "text": "客厅看向阳台，宽度是1.8。有两堵装饰墙",
+    "tag": "p",
+    "source_path": "article/24",
+    "start_char": 739,
+    "end_char": 759
+  },
+  {
+    "block_id": "b019",
+    "text": "餐厅看向客厅，这些是自己后来买的了",
+    "tag": "p",
+    "source_path": "article/26",
+    "start_char": 760,
+    "end_char": 777
+  },
+  {
+    "block_id": "b020",
+    "text": "两个小房间，很屌丝，有人看出我床头的画是什么了么，看出来握手",
+    "tag": "p",
+    "source_path": "article/29",
+    "start_char": 778,
+    "end_char": 808
+  },
+  {
+    "block_id": "b021",
+    "text": "旧房的一些细节改造",
+    "tag": "p",
+    "source_path": "article/31",
+    "start_char": 809,
+    "end_char": 818
+  },
+  {
+    "block_id": "b022",
+    "text": "首先是拆，旧的全部拆掉，",
+    "tag": "p",
+    "source_path": "article/32",
+    "start_char": 819,
+    "end_char": 831
+  },
+  {
+    "block_id": "b023",
+    "text": "教训是，如果可以还是买新房吧，国内的老房子砖混结构，拆起来非常费工费时间，而且瓷砖砖头建筑垃圾特别多，我家还是悲催的在六楼",
+    "tag": "p",
+    "source_path": "article/33",
+    "start_char": 832,
+    "end_char": 893
+  },
+  {
+    "block_id": "b024",
+    "text": "重新开个洞做强电盒",
+    "tag": "p",
+    "source_path": "article/35",
+    "start_char": 894,
+    "end_char": 903
+  },
+  {
+    "block_id": "b025",
+    "text": "水电管道全部重新改造，这些好像都没拍图···拍砖吧，原本没打算晒过程的。",
+    "tag": "p",
+    "source_path": "article/36",
+    "start_char": 904,
+    "end_char": 940
+  },
+  {
+    "block_id": "b026",
+    "text": "水电改造也由老爸一个人搞定,他也是第一次独立布水电，感情拿家里做试验了，布的也是最简陋的那种，甚至没搞弱电箱，不能和站里那些大神比，比如家里网络布置什么的，我这个天天对着电脑的也看不懂，何况老爸了，直接入户网线拖到背景墙接路由器，书房单独拉了两根网线到背景墙插路由器",
+    "tag": "p",
+    "source_path": "article/37",
+    "start_char": 941,
+    "end_char": 1074
+  },
+  {
+    "block_id": "b027",
+    "text": "没有用专门的网线插座，直接空白插座开个孔，各种线从里面出，挡在柜子后面也看不到",
+    "tag": "p",
+    "source_path": "article/38",
+    "start_char": 1075,
+    "end_char": 1114
+  },
+  {
+    "block_id": "b028",
+    "text": "屋子小有个好处是路由器放客厅全家每个角落信号满格",
+    "tag": "p",
+    "source_path": "article/39",
+    "start_char": 1115,
+    "end_char": 1139
+  },
+  {
+    "block_id": "b029",
+    "text": "卫生间厨房原来的窗户太低，加高处理",
+    "tag": "p",
+    "source_path": "article/42",
+    "start_char": 1140,
+    "end_char": 1157
+  },
+  {
+    "block_id": "b030",
+    "text": "这套房子阳台是最奇葩的所在，长度差不多五米底盘，宽度七十厘米，栏杆还不直，封阳台很耗材料，这边算多了一笔额外的费用，更纠结的是阳台栏杆高于窗台，又戳在窗户中间，没记得拍图，找张以前的图来说明下",
+    "tag": "p",
+    "source_path": "article/45",
+    "start_char": 1158,
+    "end_char": 1254
+  },
+  {
+    "block_id": "b031",
+    "text": "妹子旁边的就是阳台栏杆，很神奇的设计吧，",
+    "tag": "p",
+    "source_path": "article/47",
+    "start_char": 1255,
+    "end_char": 1275
+  },
+  {
+    "block_id": "b032",
+    "text": "只好把窗户加高，把窗户变窄",
+    "tag": "p",
+    "source_path": "article/48",
+    "start_char": 1276,
+    "end_char": 1289
+  },
+  {
+    "block_id": "b033",
+    "text": "洗手间的处理",
+    "tag": "p",
+    "source_path": "article/52",
+    "start_char": 1290,
+    "end_char": 1296
+  },
+  {
+    "block_id": "b034",
+    "text": "卫生间的一根管子没办法去，把砖头敲碎用水泥包裹，这样可以尽量包裹的体积小点，",
+    "tag": "p",
+    "source_path": "article/54",
+    "start_char": 1297,
+    "end_char": 1335
+  },
+  {
+    "block_id": "b035",
+    "text": "如果是找工人做，一定要叮嘱这样做，不过不一愿意，很费时间",
+    "tag": "p",
+    "source_path": "article/55",
+    "start_char": 1336,
+    "end_char": 1364
+  },
+  {
+    "block_id": "b036",
+    "text": "关于镜柜和洗手柜，价格都普遍不低，淘宝的现成的很多很丑也不便宜，宜家一套下来得个两三千，考虑到白色瓷砖配原木色的家具蛮搭的，决定手工做了",
+    "tag": "p",
+    "source_path": "article/58",
+    "start_char": 1365,
+    "end_char": 1433
+  },
+  {
+    "block_id": "b037",
+    "text": "可以看到左边因为封管子所以凸出的一角，85厘米的柜子原本想买个宜家85的台盆，不用大理石台面，直接扣上去那种，但是因为那个角搞不起来。大家做的时候可以考虑下，宜家的东西在外观细节考虑上还是很到位的",
+    "tag": "p",
+    "source_path": "article/59",
+    "start_char": 1434,
+    "end_char": 1532
+  },
+  {
+    "block_id": "b038",
+    "text": "柜子是打的，玻璃是裁了自己贴的",
+    "tag": "p",
+    "source_path": "article/63",
+    "start_char": 1533,
+    "end_char": 1548
+  },
+  {
+    "block_id": "b039",
+    "text": "台盆是淘宝买的台中盆，以前在网站有看到经验建议别搞台上盆，",
+    "tag": "p",
+    "source_path": "article/65",
+    "start_char": 1549,
+    "end_char": 1578
+  },
+  {
+    "block_id": "b040",
+    "text": "然后台盆的位置尽量往外面靠一点，太里面了够不到",
+    "tag": "p",
+    "source_path": "article/66",
+    "start_char": 1579,
+    "end_char": 1602
+  },
+  {
+    "block_id": "b041",
+    "text": "拉手是淘宝的",
+    "tag": "p",
+    "source_path": "article/69",
+    "start_char": 1603,
+    "end_char": 1609
+  },
+  {
+    "block_id": "b042",
+    "text": "抽屉里挖了个洞，要不然管子会挡到",
+    "tag": "p",
+    "source_path": "article/71",
+    "start_char": 1610,
+    "end_char": 1626
+  },
+  {
+    "block_id": "b043",
+    "text": "整体来看还不算丑，浴缸还没来得及买，打算买那种独立的，款式已选好",
+    "tag": "p",
+    "source_path": "article/74",
+    "start_char": 1627,
+    "end_char": 1659
+  },
+  {
+    "block_id": "b044",
+    "text": "（对的，浴缸就是我坚持之一）以前旧房子也是有浴缸的，习惯冬天泡浴，",
+    "tag": "p",
+    "source_path": "article/75",
+    "start_char": 1660,
+    "end_char": 1693
+  },
+  {
+    "block_id": "b045",
+    "text": "缺点是需要打理容易脏，女性用不太卫生，另外就是小孩有点危险，玩水什么的，所以有小孩的家庭要注意下",
+    "tag": "p",
+    "source_path": "article/76",
+    "start_char": 1694,
+    "end_char": 1742
+  },
+  {
+    "block_id": "b046",
+    "text": "厨房的处理",
+    "tag": "p",
+    "source_path": "article/77",
+    "start_char": 1743,
+    "end_char": 1748
+  },
+  {
+    "block_id": "b047",
+    "text": "原来的窗户太低加高，墙上打好油烟机燃气热水器排气口",
+    "tag": "p",
+    "source_path": "article/79",
+    "start_char": 1749,
+    "end_char": 1774
+  },
+  {
+    "block_id": "b048",
+    "text": "过程图没有 ，贴装完之后的图",
+    "tag": "p",
+    "source_path": "article/80",
+    "start_char": 1775,
+    "end_char": 1789
+  },
+  {
+    "block_id": "b049",
+    "text": "发生了一个奇怪的事情，我的烟灶套装记不起来在哪个网站买的了，几个网站都查了一下全部没有购买记录，记忆里不是苏宁就是国美哎，好奇怪",
+    "tag": "p",
+    "source_path": "article/85",
+    "start_char": 1790,
+    "end_char": 1854
+  },
+  {
+    "block_id": "b050",
+    "text": "牌子是康纳，帅康的下属品牌，声音大点，其他感觉还OK吧",
+    "tag": "p",
+    "source_path": "article/86",
+    "start_char": 1855,
+    "end_char": 1882
+  },
+  {
+    "block_id": "b051",
+    "text": "价格应该是不到2500",
+    "tag": "p",
+    "source_path": "article/87",
+    "start_char": 1883,
+    "end_char": 1894
+  },
+  {
+    "block_id": "b052",
+    "text": "我自己感觉反正网上卖的也是网络专供的，买专门用来做网络销售的下属品牌也差不多吧",
+    "tag": "p",
+    "source_path": "article/88",
+    "start_char": 1895,
+    "end_char": 1934
+  },
+  {
+    "block_id": "b053",
+    "text": "洗衣机买自易迅，2049的价格不算很低（主要旧房改造不方先把东西全部买好，油漆的时候放家里碍事，所以提前购买周期不长）",
+    "tag": "p",
+    "source_path": "article/91",
+    "start_char": 1935,
+    "end_char": 1994
+  },
+  {
+    "block_id": "b054",
+    "text": "[商品：LG WD-N12435D 6公斤 静音系列滚筒洗衣机]",
+    "tag": "p",
+    "source_path": "article/92",
+    "start_char": 1995,
+    "end_char": 2027
+  },
+  {
+    "block_id": "b055",
+    "text": "家里的电器这些就不额外晒单了，网站单独晒的很多，这台洗衣机的容量不大（大了我也装不进去了）",
+    "tag": "p",
+    "source_path": "article/94",
+    "start_char": 2028,
+    "end_char": 2073
+  },
+  {
+    "block_id": "b056",
+    "text": "工作时候的噪声满轻微，当然甩干的时候还是挺大的，启动和完成音乐和悦耳，好评",
+    "tag": "p",
+    "source_path": "article/95",
+    "start_char": 2074,
+    "end_char": 2111
+  },
+  {
+    "block_id": "b057",
+    "text": "滚筒洗衣机的出水口比较高，这个方面厨房排水",
+    "tag": "p",
+    "source_path": "article/96",
+    "start_char": 2112,
+    "end_char": 2133
+  },
+  {
+    "block_id": "b058",
+    "text": "要问为什么洗衣机房厨房，因为卫生间我要放浴缸",
+    "tag": "p",
+    "source_path": "article/97",
+    "start_char": 2134,
+    "end_char": 2156
+  },
+  {
+    "block_id": "b059",
+    "text": "阳台的下水没有往下接下水道的管子，直接一截管子往人家院子里浇的（虽然其实麻烦点也能自己加装）",
+    "tag": "p",
+    "source_path": "article/98",
+    "start_char": 2157,
+    "end_char": 2203
+  },
+  {
+    "block_id": "b060",
+    "text": "超薄的洗衣机可以放厨房，弊端也不少，油烟问题还不是，最主要的是洗衣机是85的高度，加上大理石的厚度，柜体的厚度，橱柜的高度差不多要90+，国内大家一般的橱柜高度是80-85",
+    "tag": "p",
+    "source_path": "article/99",
+    "start_char": 2204,
+    "end_char": 2290
+  },
+  {
+    "block_id": "b061",
+    "text": "我自己用高度正好，老妈说你以后自己做菜，媳妇够不到···",
+    "tag": "p",
+    "source_path": "article/100",
+    "start_char": 2291,
+    "end_char": 2319
+  },
+  {
+    "block_id": "b062",
+    "text": "这样还是不够收纳，下面估计还的有个架子放调料，调料放上面也不方便做菜使用",
+    "tag": "p",
+    "source_path": "article/102",
+    "start_char": 2320,
+    "end_char": 2356
+  },
+  {
+    "block_id": "b063",
+    "text": "另外厨房里装了比较多的开关，而且都是得开关的，作用是电饭锅这种不需要插拔",
+    "tag": "p",
+    "source_path": "article/103",
+    "start_char": 2357,
+    "end_char": 2393
+  },
+  {
+    "block_id": "b064",
+    "text": "电饭锅那边还需要添置个高低架，下面用来放微波炉",
+    "tag": "p",
+    "source_path": "article/104",
+    "start_char": 2394,
+    "end_char": 2417
+  },
+  {
+    "block_id": "b065",
+    "text": "这边原本要封死的，现在特意让加了一排抽屉，厨房里薄抽屉还是有用的，装上分隔来装餐具什么的",
+    "tag": "p",
+    "source_path": "article/106",
+    "start_char": 2418,
+    "end_char": 2462
+  },
+  {
+    "block_id": "b066",
+    "text": "[商品：康宝（Canbo）ZTP108E-5T消毒柜（嵌入式消毒柜 舒适内嵌式拉手 海纳餐具空间设计 ）]",
+    "tag": "p",
+    "source_path": "article/108",
+    "start_char": 2463,
+    "end_char": 2516
+  },
+  {
+    "block_id": "b067",
+    "text": "这个别吐槽，纯粹当拉篮，我是看靠谱的拉篮也要五百以上，索性整个现成的，结果选着选着整贵了，买的1000，罢了，特价没赶上，记得后来限地区有600",
+    "tag": "p",
+    "source_path": "article/109",
+    "start_char": 2517,
+    "end_char": 2589
+  },
+  {
+    "block_id": "b068",
+    "text": "Canbo 康宝 ZTP108E-5T 消...",
+    "tag": "p",
+    "source_path": "article/110",
+    "start_char": 2590,
+    "end_char": 2614
+  },
+  {
+    "block_id": "b069",
+    "text": "客厅的布线、背景墙的处理",
+    "tag": "p",
+    "source_path": "article/111",
+    "start_char": 2615,
+    "end_char": 2627
+  },
+  {
+    "block_id": "b070",
+    "text": "装修之前来色魔张大妈参考了很多经验",
+    "tag": "p",
+    "source_path": "article/114",
+    "start_char": 2628,
+    "end_char": 2645
+  },
+  {
+    "block_id": "b071",
+    "text": "其中这一篇参考了很多 不屈的折腾——晒二...",
+    "tag": "p",
+    "source_path": "article/115",
+    "start_char": 2646,
+    "end_char": 2669
+  },
+  {
+    "block_id": "b072",
+    "text": "作者建议大家预留两条HDMI线，这样坏了一条还有另外一条备用，",
+    "tag": "p",
+    "source_path": "article/116",
+    "start_char": 2670,
+    "end_char": 2701
+  },
+  {
+    "block_id": "b073",
+    "text": "我只布了一条，老爸说线坏了是可以换的起来的",
+    "tag": "p",
+    "source_path": "article/117",
+    "start_char": 2702,
+    "end_char": 2723
+  },
+  {
+    "block_id": "b074",
+    "text": "实际是因为线好贵，还买的开博尔便宜点的，圆粗，好硬",
+    "tag": "p",
+    "source_path": "article/118",
+    "start_char": 2724,
+    "end_char": 2749
+  },
+  {
+    "block_id": "b075",
+    "text": "作者建议多布插座，他小房子布了150个插座，给他跪了，我甩着布，布了五十几个",
+    "tag": "p",
+    "source_path": "article/119",
+    "start_char": 2750,
+    "end_char": 2788
+  },
+  {
+    "block_id": "b076",
+    "text": "比如背景墙这里就豪迈的来了十个",
+    "tag": "p",
+    "source_path": "article/120",
+    "start_char": 2789,
+    "end_char": 2804
+  },
+  {
+    "block_id": "b077",
+    "text": "书房的电脑桌下面豪迈的来了十个",
+    "tag": "p",
+    "source_path": "article/121",
+    "start_char": 2805,
+    "end_char": 2820
+  },
+  {
+    "block_id": "b078",
+    "text": "就这样也才五十几个哎···",
+    "tag": "p",
+    "source_path": "article/122",
+    "start_char": 2821,
+    "end_char": 2834
+  },
+  {
+    "block_id": "b079",
+    "text": "原来的背景墙只有1.8米宽，沙发这边的墙壁和背景墙的距离差不多是3米多点，",
+    "tag": "p",
+    "source_path": "article/124",
+    "start_char": 2835,
+    "end_char": 2872
+  },
+  {
+    "block_id": "b080",
+    "text": "根据换算公式，可以投84寸左右，和上文作者的尺寸一样，",
+    "tag": "p",
+    "source_path": "article/125",
+    "start_char": 2873,
+    "end_char": 2900
+  },
+  {
+    "block_id": "b081",
+    "text": "84寸的屏幕记得是加外壳是2.1米多点，原来墙壁1.8宽，选择隔墙，不考虑短距投影仪",
+    "tag": "p",
+    "source_path": "article/126",
+    "start_char": 2901,
+    "end_char": 2943
+  },
+  {
+    "block_id": "b082",
+    "text": "如果投一百寸，那把过道封的只剩一点点了",
+    "tag": "p",
+    "source_path": "article/127",
+    "start_char": 2944,
+    "end_char": 2963
+  },
+  {
+    "block_id": "b083",
+    "text": "吊顶完毕，没隔墙之前",
+    "tag": "p",
+    "source_path": "article/131",
+    "start_char": 2964,
+    "end_char": 2974
+  },
+  {
+    "block_id": "b084",
+    "text": "隔墙做柜子以后",
+    "tag": "p",
+    "source_path": "article/132",
+    "start_char": 2975,
+    "end_char": 2982
+  },
+  {
+    "block_id": "b085",
+    "text": "餐厅角度看看过去，拓宽的墙面背面也做成柜子，后面是书柜架子",
+    "tag": "p",
+    "source_path": "article/133",
+    "start_char": 2983,
+    "end_char": 3012
+  },
+  {
+    "block_id": "b086",
+    "text": "同样角度来一张完成后的",
+    "tag": "p",
+    "source_path": "article/135",
+    "start_char": 3013,
+    "end_char": 3024
+  },
+  {
+    "block_id": "b087",
+    "text": "这里好像忘了说明了，客厅里的背景墙柜子和电视柜是自己做了贴的烤漆面",
+    "tag": "p",
+    "source_path": "article/136",
+    "start_char": 3025,
+    "end_char": 3058
+  },
+  {
+    "block_id": "b088",
+    "text": "这样能正好的控制长度，定制同理",
+    "tag": "p",
+    "source_path": "article/137",
+    "start_char": 3059,
+    "end_char": 3074
+  },
+  {
+    "block_id": "b089",
+    "text": "吊柜的厚度是20.下面电视柜的厚度是40，墙壁里预埋线管，投影放下之后吊柜不碍事，也可以正常装液晶电视",
+    "tag": "p",
+    "source_path": "article/138",
+    "start_char": 3075,
+    "end_char": 3126
+  },
+  {
+    "block_id": "b090",
+    "text": "餐厅的处理",
+    "tag": "p",
+    "source_path": "article/140",
+    "start_char": 3127,
+    "end_char": 3132
+  },
+  {
+    "block_id": "b091",
+    "text": "书房看过去，冰箱是旧的，留的是180X68的尺寸用来装以后的冰箱",
+    "tag": "p",
+    "source_path": "article/143",
+    "start_char": 3133,
+    "end_char": 3165
+  },
+  {
+    "block_id": "b092",
+    "text": "白天",
+    "tag": "p",
+    "source_path": "article/145",
+    "start_char": 3166,
+    "end_char": 3168
+  },
+  {
+    "block_id": "b093",
+    "text": "单开餐厅灯，半透明的，便宜又漂亮",
+    "tag": "p",
+    "source_path": "article/147",
+    "start_char": 3169,
+    "end_char": 3185
+  },
+  {
+    "block_id": "b094",
+    "text": "餐厅这块算是半成品，有整两面墙壁，装修后期发现墙面太空，重心太低，已经来不及做吊柜",
+    "tag": "p",
+    "source_path": "article/148",
+    "start_char": 3186,
+    "end_char": 3227
+  },
+  {
+    "block_id": "b095",
+    "text": "而宜家的贝达橱柜的宽度是固定的60，和客厅对应的餐厅墙壁宽度是220，匹配不了",
+    "tag": "p",
+    "source_path": "article/149",
+    "start_char": 3228,
+    "end_char": 3267
+  },
+  {
+    "block_id": "b096",
+    "text": "现在在考虑在这面墙上挂两幅画，至于钟如果影响可以换到别地方",
+    "tag": "p",
+    "source_path": "article/151",
+    "start_char": 3268,
+    "end_char": 3297
+  },
+  {
+    "block_id": "b097",
+    "text": "半个月了还在纠结挂什么画，多大尺寸，长的还是宽的···给自己醉了",
+    "tag": "p",
+    "source_path": "article/152",
+    "start_char": 3298,
+    "end_char": 3330
+  },
+  {
+    "block_id": "b098",
+    "text": "选择恐惧症加美感欠缺 ，画应该是绿色为主",
+    "tag": "p",
+    "source_path": "article/153",
+    "start_char": 3331,
+    "end_char": 3351
+  },
+  {
+    "block_id": "b099",
+    "text": "书房的处理",
+    "tag": "p",
+    "source_path": "article/155",
+    "start_char": 3352,
+    "end_char": 3357
+  },
+  {
+    "block_id": "b100",
+    "text": "客厅看向阳台",
+    "tag": "p",
+    "source_path": "article/158",
+    "start_char": 3358,
+    "end_char": 3364
+  },
+  {
+    "block_id": "b101",
+    "text": "阳台看向客厅",
+    "tag": "p",
+    "source_path": "article/160",
+    "start_char": 3365,
+    "end_char": 3371
+  },
+  {
+    "block_id": "b102",
+    "text": "阳光很好，理想的家里必须有大排的书柜是吧，纸质书才是真爱",
+    "tag": "p",
+    "source_path": "article/162",
+    "start_char": 3372,
+    "end_char": 3400
+  },
+  {
+    "block_id": "b103",
+    "text": "原本想把客厅的左边做一排书柜的，直接爸妈否决，我也没坚持",
+    "tag": "p",
+    "source_path": "article/163",
+    "start_char": 3401,
+    "end_char": 3429
+  },
+  {
+    "block_id": "b104",
+    "text": "书柜这边门其实不满意的，本来想做全玻璃的，老爸的意思是下面做玻璃的小孩不安全，",
+    "tag": "p",
+    "source_path": "article/164",
+    "start_char": 3430,
+    "end_char": 3469
+  },
+  {
+    "block_id": "b105",
+    "text": "这个到无所谓，但是烤漆厂做出来的门板比我想象中的边框宽太多，玻璃的面积小",
+    "tag": "p",
+    "source_path": "article/165",
+    "start_char": 3470,
+    "end_char": 3506
+  },
+  {
+    "block_id": "b106",
+    "text": "大家找好点的厂应该可以做的更好看点",
+    "tag": "p",
+    "source_path": "article/166",
+    "start_char": 3507,
+    "end_char": 3524
+  },
+  {
+    "block_id": "b107",
+    "text": "加宽背景墙背后做的收纳柜",
+    "tag": "p",
+    "source_path": "article/168",
+    "start_char": 3525,
+    "end_char": 3537
+  },
+  {
+    "block_id": "b108",
+    "text": "电脑桌，电脑桌并没有全部贴片，可以看到颜色的不同",
+    "tag": "p",
+    "source_path": "article/171",
+    "start_char": 3538,
+    "end_char": 3562
+  },
+  {
+    "block_id": "b109",
+    "text": "这种结构要全贴太麻烦了，烤漆的面做工作台磨损起来也会很严重",
+    "tag": "p",
+    "source_path": "article/172",
+    "start_char": 3563,
+    "end_char": 3592
+  },
+  {
+    "block_id": "b110",
+    "text": "长度是2米样子，勉强够四个人开黑···五个人坐不下···",
+    "tag": "p",
+    "source_path": "article/173",
+    "start_char": 3593,
+    "end_char": 3621
+  },
+  {
+    "block_id": "b111",
+    "text": "鞋柜的处理",
+    "tag": "p",
+    "source_path": "article/174",
+    "start_char": 3622,
+    "end_char": 3627
+  },
+  {
+    "block_id": "b112",
+    "text": "大门左边被原来的房东开了一个门，所以现在选择再拓宽点，然后做个内嵌的柜子",
+    "tag": "p",
+    "source_path": "article/176",
+    "start_char": 3628,
+    "end_char": 3664
+  },
+  {
+    "block_id": "b113",
+    "text": "这几张是以前手机拍的老爸工作图，在贴烤漆面",
+    "tag": "p",
+    "source_path": "article/180",
+    "start_char": 3665,
+    "end_char": 3686
+  },
+  {
+    "block_id": "b114",
+    "text": "如果让工人贴一定要自己在旁边看着",
+    "tag": "p",
+    "source_path": "article/181",
+    "start_char": 3687,
+    "end_char": 3703
+  },
+  {
+    "block_id": "b115",
+    "text": "上面储物",
+    "tag": "p",
+    "source_path": "article/186",
+    "start_char": 3704,
+    "end_char": 3708
+  },
+  {
+    "block_id": "b116",
+    "text": "下面鞋柜",
+    "tag": "p",
+    "source_path": "article/188",
+    "start_char": 3709,
+    "end_char": 3713
+  },
+  {
+    "block_id": "b117",
+    "text": "家里的柜子只装了必要的拉手，拉手选来选去最终也是用的宜家的，自己打孔安装",
+    "tag": "p",
+    "source_path": "article/190",
+    "start_char": 3714,
+    "end_char": 3750
+  },
+  {
+    "block_id": "b118",
+    "text": "大门看过去",
+    "tag": "p",
+    "source_path": "article/192",
+    "start_char": 3751,
+    "end_char": 3756
+  },
+  {
+    "block_id": "b119",
+    "text": "主房间的处理",
+    "tag": "p",
+    "source_path": "article/193",
+    "start_char": 3757,
+    "end_char": 3763
+  },
+  {
+    "block_id": "b120",
+    "text": "这些是以前拍的",
+    "tag": "p",
+    "source_path": "article/197",
+    "start_char": 3764,
+    "end_char": 3771
+  },
+  {
+    "block_id": "b121",
+    "text": "特意把床垫去掉，做的时候有留十公分床垫槽，现在主流的床垫高度都是20+的",
+    "tag": "p",
+    "source_path": "article/199",
+    "start_char": 3772,
+    "end_char": 3808
+  },
+  {
+    "block_id": "b122",
+    "text": "装进去会高出两边",
+    "tag": "p",
+    "source_path": "article/200",
+    "start_char": 3809,
+    "end_char": 3817
+  },
+  {
+    "block_id": "b123",
+    "text": "床垫下面的收纳",
+    "tag": "p",
+    "source_path": "article/202",
+    "start_char": 3818,
+    "end_char": 3825
+  },
+  {
+    "block_id": "b124",
+    "text": "左边是一个长的，用来放席子之类，我这边放了一个没拆的床垫，为了下面的展示把他开封了",
+    "tag": "p",
+    "source_path": "article/204",
+    "start_char": 3826,
+    "end_char": 3867
+  },
+  {
+    "block_id": "b125",
+    "text": "这个床垫的高度是14（是的我算好高度买的）",
+    "tag": "p",
+    "source_path": "article/208",
+    "start_char": 3868,
+    "end_char": 3889
+  },
+  {
+    "block_id": "b126",
+    "text": "床头的靠板全部打开的样子，细心的童鞋会发现插座颜色不一样，是的···",
+    "tag": "p",
+    "source_path": "article/212",
+    "start_char": 3890,
+    "end_char": 3924
+  },
+  {
+    "block_id": "b127",
+    "text": "为了便宜，不纠结这些细节",
+    "tag": "p",
+    "source_path": "article/213",
+    "start_char": 3925,
+    "end_char": 3937
+  },
+  {
+    "block_id": "b128",
+    "text": "窗口另外有两个小抽屉",
+    "tag": "p",
+    "source_path": "article/215",
+    "start_char": 3938,
+    "end_char": 3948
+  },
+  {
+    "block_id": "b129",
+    "text": "床是用免漆板做的，分体式做的，老爸也是第一次做这个，免漆板做好坏我也不晓得，但是可以不用盖榻榻米专用的那种席子",
+    "tag": "p",
+    "source_path": "article/217",
+    "start_char": 3949,
+    "end_char": 4004
+  },
+  {
+    "block_id": "b130",
+    "text": "另外免漆板横截面会需要用U形卡条，这边都是选择的更老的做法，买同样花纹贴皮手工沾贴的，因为我嫌卡条丑，比较费工夫，动手能力强的同学可以尝试",
+    "tag": "p",
+    "source_path": "article/218",
+    "start_char": 4005,
+    "end_char": 4074
+  },
+  {
+    "block_id": "b131",
+    "text": "另外一个房间",
+    "tag": "p",
+    "source_path": "article/219",
+    "start_char": 4075,
+    "end_char": 4081
+  },
+  {
+    "block_id": "b132",
+    "text": "两边房间都有一个这样的角···又一个奇葩的设计",
+    "tag": "p",
+    "source_path": "article/222",
+    "start_char": 4082,
+    "end_char": 4105
+  },
+  {
+    "block_id": "b133",
+    "text": "这边变焦的衣柜做成斜的",
+    "tag": "p",
+    "source_path": "article/224",
+    "start_char": 4106,
+    "end_char": 4117
+  },
+  {
+    "block_id": "b134",
+    "text": "装上柜门之后整体看去是齐平的了",
+    "tag": "p",
+    "source_path": "article/227",
+    "start_char": 4118,
+    "end_char": 4133
+  },
+  {
+    "block_id": "b135",
+    "text": "关于衣柜，资金可以的话还是找大的店订做吧，而且现在订做也可以做内嵌滑轨了，就像宜家那种一样，是不需要在地上做轨道，我这边还是采用的老方式（单独订做门因为便宜）",
+    "tag": "p",
+    "source_path": "article/228",
+    "start_char": 4134,
+    "end_char": 4213
+  },
+  {
+    "block_id": "b136",
+    "text": "装饰城提供的衣柜门的模板真的是···所谓的主流审美，你想找一个不带花的都难，所以选的这种木板门的，另外要做玻璃也要做钢化的，小孩安全问题",
+    "tag": "p",
+    "source_path": "article/229",
+    "start_char": 4214,
+    "end_char": 4282
+  },
+  {
+    "block_id": "b137",
+    "text": "现在这个房间没床，用途是衣帽间加杂物间",
+    "tag": "p",
+    "source_path": "article/230",
+    "start_char": 4283,
+    "end_char": 4302
+  },
+  {
+    "block_id": "b138",
+    "text": "补两张客厅的",
+    "tag": "p",
+    "source_path": "article/233",
+    "start_char": 4303,
+    "end_char": 4309
+  },
+  {
+    "block_id": "b139",
+    "text": "以上图片不是同一时间拍的，所以光线颜色区别很大",
+    "tag": "p",
+    "source_path": "article/234",
+    "start_char": 4310,
+    "end_char": 4333
+  },
+  {
+    "block_id": "b140",
+    "text": "总结一下",
+    "tag": "p",
+    "source_path": "article/236",
+    "start_char": 4334,
+    "end_char": 4338
+  },
+  {
+    "block_id": "b141",
+    "text": "大致上说装修是结束了，但是装饰还在一直进行，比如墙面装饰，和家里的色彩的点缀，比如花瓶啊，包括一些植物啊这样的，植物也是绿色的嘛，以后充实了，就不会显得太单调了",
+    "tag": "p",
+    "source_path": "article/237",
+    "start_char": 4339,
+    "end_char": 4419
+  },
+  {
+    "block_id": "b142",
+    "text": "还有收纳多的情况下，合理的利用收纳空间也是个很花时间的事情，各种尺寸的收纳盒，根据柜子抽屉的面积选择整合什么的非常花费时间，那个我不是处女座···",
+    "tag": "p",
+    "source_path": "article/238",
+    "start_char": 4420,
+    "end_char": 4493
+  },
+  {
+    "block_id": "b143",
+    "text": "对了，提一下，这次装修很多东西都是网购的",
+    "tag": "p",
+    "source_path": "article/239",
+    "start_char": 4494,
+    "end_char": 4514
+  },
+  {
+    "block_id": "b144",
+    "text": "包括地板（还是自己铺的)瓷砖，所有灯具，全部的电器，花洒五金",
+    "tag": "p",
+    "source_path": "article/240",
+    "start_char": 4515,
+    "end_char": 4545
+  },
+  {
+    "block_id": "b145",
+    "text": "遇到一些问题，总体来说尚满意，在网络上满东西看不到实物的时候要多找点图带入一下",
+    "tag": "p",
+    "source_path": "article/241",
+    "start_char": 4546,
+    "end_char": 4585
+  },
+  {
+    "block_id": "b146",
+    "text": "遗憾点",
+    "tag": "p",
+    "source_path": "article/243",
+    "start_char": 4586,
+    "end_char": 4589
+  },
+  {
+    "block_id": "b147",
+    "text": "很多，想几个先，比如卫生间洗手台管子那边处理的不好，洗手盆也买大了",
+    "tag": "p",
+    "source_path": "article/244",
+    "start_char": 4590,
+    "end_char": 4623
+  },
+  {
+    "block_id": "b148",
+    "text": "厨卫的灯具买错了",
+    "tag": "p",
+    "source_path": "article/245",
+    "start_char": 4624,
+    "end_char": 4632
+  },
+  {
+    "block_id": "b149",
+    "text": "松下的灯也是买错了，还提前买了",
+    "tag": "p",
+    "source_path": "article/246",
+    "start_char": 4633,
+    "end_char": 4648
+  },
+  {
+    "block_id": "b150",
+    "text": "厨房的瓷砖是因为老爸说不要厨卫一样妥协的，现在觉得一般",
+    "tag": "p",
+    "source_path": "article/247",
+    "start_char": 4649,
+    "end_char": 4676
+  },
+  {
+    "block_id": "b151",
+    "text": "榻榻米那边其实有个最大的遗憾，不晓得有没有人可以找出来",
+    "tag": "p",
+    "source_path": "article/248",
+    "start_char": 4677,
+    "end_char": 4704
+  },
+  {
+    "block_id": "b152",
+    "text": "油漆工的手艺极度不满意，刷了不平的地方还是不平的，另外昨晚也不打扫屋子，那脏的",
+    "tag": "p",
+    "source_path": "article/249",
+    "start_char": 4705,
+    "end_char": 4744
+  },
+  {
+    "block_id": "b153",
+    "text": "瓦工一样不靠谱，来一天失踪两天，三四天的活拖了两周，油漆工拖更久",
+    "tag": "p",
+    "source_path": "article/250",
+    "start_char": 4745,
+    "end_char": 4777
+  },
+  {
+    "block_id": "b154",
+    "text": "自己的设计天赋平庸，也没有家装设计经验，在采用尽量简单的简约风格下，依旧各种感觉到自己的能力不够",
+    "tag": "p",
+    "source_path": "article/251",
+    "start_char": 4778,
+    "end_char": 4826
+  },
+  {
+    "block_id": "b155",
+    "text": "有些的老爸自己自顾着做的，他觉得现在流行的，比如书房前面的棱形凹槽装筒灯",
+    "tag": "p",
+    "source_path": "article/252",
+    "start_char": 4827,
+    "end_char": 4863
+  },
+  {
+    "block_id": "b156",
+    "text": "这个做完之后我下班看到，觉得超难看说了几句，后来我妈私下和我说你爸多费时间做的，因为他觉得好看，你说他他会难过的，那时候感觉真的是满难受，自己还是不懂事，或者说因为和爸妈太久没住一起不太会相处。后来想想，在一起的这两个月老爸和记忆里的古板严厉不同，更多的时候像小孩，而且对老妈在我面前说他不好时反应很大。现在觉得这些都有他们的痕迹，因为分隔两地，老了以后他们也是回老家，以后相处的时间恐怕也不会多，家里这些装修不管是遗憾的地方还是满意的地方，都是值得怀恋的。",
+    "tag": "p",
+    "source_path": "article/253",
+    "start_char": 4864,
+    "end_char": 5093
+  },
+  {
+    "block_id": "b157",
+    "text": "因为身体在恢复期加上动手能力差，白天还要上班，装修期间除了买东西提想法之外只能做做帮手，但是也多了很多父子两独处的机会，比如装一晚投影仪结果没信号，装个马桶搞到十二点等等（附送的水管楼漏水）。比较值得记忆的经历，再之前这样独处还是小时候他在背后盯着我写作业，写错就一个脑勺···",
+    "tag": "p",
+    "source_path": "article/254",
+    "start_char": 5094,
+    "end_char": 5233
+  },
+  {
+    "block_id": "b158",
+    "text": "不过还是要吐槽，现在一般装修工人所谓流行的东西，真的让人不忍直视···",
+    "tag": "p",
+    "source_path": "article/255",
+    "start_char": 5234,
+    "end_char": 5269
+  },
+  {
+    "block_id": "b159",
+    "text": "一些建议",
+    "tag": "p",
+    "source_path": "article/257",
+    "start_char": 5270,
+    "end_char": 5274
+  },
+  {
+    "block_id": "b160",
+    "text": "宜家的大件慎重考虑，价格并不便宜，质量相对来说不太耐用，但是很多布置思维值得参考",
+    "tag": "p",
+    "source_path": "article/258",
+    "start_char": 5275,
+    "end_char": 5315
+  },
+  {
+    "block_id": "b161",
+    "text": "如果没靠谱的木工什么的，家具还是定制，会很符合家里的结构",
+    "tag": "p",
+    "source_path": "article/259",
+    "start_char": 5316,
+    "end_char": 5344
+  },
+  {
+    "block_id": "b162",
+    "text": "现在定制的家具可以做到很棒，但是不要贪便宜",
+    "tag": "p",
+    "source_path": "article/260",
+    "start_char": 5345,
+    "end_char": 5366
+  },
+  {
+    "block_id": "b163",
+    "text": "烤漆面板时间久了会渐渐发黄，要做的话要考虑到",
+    "tag": "p",
+    "source_path": "article/261",
+    "start_char": 5367,
+    "end_char": 5389
+  },
+  {
+    "block_id": "b164",
+    "text": "橱柜烤漆板的周期大概是一周，烤漆门的周期是一个月，可以提前先定好做",
+    "tag": "p",
+    "source_path": "article/262",
+    "start_char": 5390,
+    "end_char": 5423
+  },
+  {
+    "block_id": "b165",
+    "text": "橱柜设计之前要把家里的电器类型和大致尺寸考虑好，现在同类型的电器尺寸都差不多，但是类型不同会有差异，比如双开门的冰箱还是传统型的，高度大概是多少",
+    "tag": "p",
+    "source_path": "article/263",
+    "start_char": 5424,
+    "end_char": 5496
+  },
+  {
+    "block_id": "b166",
+    "text": "买电器的和家具的时候要注意下整体的风格搭配，比如简约装潢搭个宫廷式水晶灯",
+    "tag": "p",
+    "source_path": "article/264",
+    "start_char": 5497,
+    "end_char": 5533
+  },
+  {
+    "block_id": "b167",
+    "text": "不要太听信工人说别人都是怎么做的什么的，要选择合适自己的，当然自己得事先有整体考虑",
+    "tag": "p",
+    "source_path": "article/265",
+    "start_char": 5534,
+    "end_char": 5575
+  },
+  {
+    "block_id": "b168",
+    "text": "一些经常使用的东西不要贪便宜，",
+    "tag": "p",
+    "source_path": "article/266",
+    "start_char": 5576,
+    "end_char": 5591
+  },
+  {
+    "block_id": "b169",
+    "text": "哎呀暂时只想到这些···如果想到评论里补充吧",
+    "tag": "p",
+    "source_path": "article/268",
+    "start_char": 5592,
+    "end_char": 5614
+  },
+  {
+    "block_id": "b170",
+    "text": "急着有事出去浪了···",
+    "tag": "p",
+    "source_path": "article/269",
+    "start_char": 5615,
+    "end_char": 5626
+  },
+  {
+    "block_id": "b171",
+    "text": "另外无锡朋友有装修需求的可以联系我哦，老爸在那边",
+    "tag": "p",
+    "source_path": "article/270",
+    "start_char": 5627,
+    "end_char": 5651
+  },
+  {
+    "block_id": "b172",
+    "text": "上面有贴过一个姑娘的图，知道会有同学要，顺带贴几张同一天的",
+    "tag": "p",
+    "source_path": "article/272",
+    "start_char": 5652,
+    "end_char": 5681
+  },
+  {
+    "block_id": "b173",
+    "text": "是多年前的片子了，10年好像，楼下的小路上",
+    "tag": "p",
+    "source_path": "article/276",
+    "start_char": 5682,
+    "end_char": 5703
+  },
+  {
+    "block_id": "b174",
+    "text": "时间能改变很多，现在已经从小女孩变成一个大姑娘，",
+    "tag": "p",
+    "source_path": "article/278",
+    "start_char": 5704,
+    "end_char": 5728
+  },
+  {
+    "block_id": "b175",
+    "text": "唯独不变的是楼主依旧是单身···",
+    "tag": "p",
+    "source_path": "article/279",
+    "start_char": 5729,
+    "end_char": 5745
+  }
+]

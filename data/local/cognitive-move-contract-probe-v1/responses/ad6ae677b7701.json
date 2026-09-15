@@ -1,0 +1,694 @@
+{
+  "assignment_id": "ad6ae677b7701",
+  "packet_id": "p82b58f312728",
+  "identity": {
+    "agent_task": "/root/contract_article_01",
+    "model": "GPT-6（开发者身份说明；精确 backend unknown；自动注入项目指南另称当前 Agent 为 Astra）",
+    "full_article_read": true,
+    "other_outputs_seen": false,
+    "read_paths": [
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/ad6ae677b7701.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p82b58f312728.json"
+    ],
+    "inherited_guidance": [
+      "自动注入了全局语言、后台监控规定及 Codex 系统与开发者操作规则。",
+      "自动注入了本项目 AGENTS.md 内容，包括研究目标、时间分组、翻译分层、特征与读者效果的区分、来源完整性和原意保留等约束；没有另行读取 AGENTS.md、HANDOVER.md 或 HANDOFF 文件。",
+      "自动注入的旧锚点评价包含：Microduck 文章 https://post.smzdm.com/p/a70dm4ll/ 被称为“极其臭”“恶臭”，某百度文章被称为“一般臭”；还包含对 Cowork 预览代表性及否定—替换句式的讨论。这些背景构成暴露，本任务不能声称双盲；没有将本 packet 匹配到旧评价，也没有获得本篇人工强度标签。",
+      "Root 分配消息规定仅可读取冻结说明、assignment 和指定单篇 packet，独占创建首次完整回答，不运行校验器、不修改首次回答、不访问网络/API、不启动其他 Agent。"
+    ],
+    "procedure_violations": []
+  },
+  "article_map": [
+    {
+      "move_id": "m01",
+      "block_ids": [
+        "title",
+        "b001"
+      ],
+      "operation": [
+        "报道上线",
+        "概括能力与开放状态",
+        "赋予阶段意义"
+      ],
+      "description": "以发布日期和平台开放状态介绍模型，同时把这次上线表述为视频生成从玩具走向工业级工具的阶段转变。",
+      "recurrence_group": "能力升级被概括为角色或行业转变"
+    },
+    {
+      "move_id": "m02",
+      "block_ids": [
+        "b002",
+        "b003",
+        "b004",
+        "b005"
+      ],
+      "operation": [
+        "组织功能说明",
+        "具体化操作",
+        "提高角色定位"
+      ],
+      "description": "用参考文件限制及 @ 语法示例说明控制方式，把素材调度概括为从素材生成器到 AI 导演、从提示词工程到导演级调度。",
+      "recurrence_group": "能力升级被概括为角色或行业转变"
+    },
+    {
+      "move_id": "m03",
+      "block_ids": [
+        "b006",
+        "b007",
+        "b008"
+      ],
+      "operation": [
+        "列举技术能力",
+        "比较早期表现",
+        "解释预期效果"
+      ],
+      "description": "依次介绍音画同步、跨镜头一致性和物理建模，以架构或技术名称衔接更准确、更一致、更自然的效果判断。",
+      "recurrence_group": "技术名称或能力说明衔接效果评价"
+    },
+    {
+      "move_id": "m04",
+      "block_ids": [
+        "b009",
+        "b010",
+        "b011"
+      ],
+      "operation": [
+        "概括使用影响",
+        "否定技能必要性",
+        "转述实测数值",
+        "介绍产品与价格入口"
+      ],
+      "description": "以降低门槛和重构流程概括影响，承诺无专业拍摄或剪辑技能也能生成成片，转述生成耗时与成功率，再提供试用和付费入口信息。",
+      "recurrence_group": "能力升级被概括为角色或行业转变"
+    },
+    {
+      "move_id": "m05",
+      "block_ids": [
+        "b011"
+      ],
+      "operation": [
+        "补充使用限制",
+        "说明限制原因",
+        "限定可用主体参考"
+      ],
+      "description": "在便利性介绍后补充真人素材政策，把伦理风险与 2 月 9 日的平台限制相连，并交代活体认证数字分身这一适用条件。",
+      "recurrence_group": "使用建议受平台政策约束"
+    },
+    {
+      "move_id": "m06",
+      "block_ids": [
+        "b012",
+        "b013",
+        "b014"
+      ],
+      "operation": [
+        "设置行动议程",
+        "按受众提出建议",
+        "提醒限制",
+        "预告集成机会"
+      ],
+      "description": "将前文称为需要应对的变革，建议营销和内容创作者尽快体验并选定初期场景，提醒素材限制，另向企业用户提出留意 API 上线的建议。",
+      "recurrence_group": "使用建议受平台政策约束"
+    }
+  ],
+  "records": [
+    {
+      "move_id": "m01",
+      "focal_spans": [
+        {
+          "block_id": "b001",
+          "quote": "字节跳动旗下即梦AI平台于2026年2月7日正式上线Seedance 2.0视频生成模型，定位为“电影级全流程生成引擎”，标志着AI视频生成从“抽卡式玩具”迈向“可控、可规模化”的工业级工具。"
+        }
+      ],
+      "operation": [
+        "报道上线",
+        "概括定位",
+        "赋予阶段意义"
+      ],
+      "question_under_discussion": {
+        "text": "此次模型上线提供什么能力，并被赋予怎样的行业意义？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "文章称 Seedance 2.0 于 2026 年 2 月 7 日在即梦 AI 上线，并以电影级全流程生成引擎描述其定位。",
+          "source_spans": [
+            {
+              "block_id": "b001",
+              "quote": "字节跳动旗下即梦AI平台于2026年2月7日正式上线Seedance 2.0视频生成模型，定位为“电影级全流程生成引擎”"
+            }
+          ],
+          "attribution": {
+            "proposer": "not_stated",
+            "reporting_layer": "本文报道上线及定位，没有在该句明确指明定位措辞的提出者",
+            "epistemic_status": "文章声称，未作外部核验"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "文章把这次上线判断为 AI 视频生成从抽卡式玩具迈向可控、可规模化的工业级工具。",
+          "source_spans": [
+            {
+              "block_id": "b001",
+              "quote": "标志着AI视频生成从“抽卡式玩具”迈向“可控、可规模化”的工业级工具。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文对上线事件的意义判断",
+            "epistemic_status": "概括性评价，未独立验证"
+          }
+        }
+      ],
+      "relation": {
+        "type": "阶段转变框架",
+        "text": "玩具与工业级工具被安排为前后阶段，形成进步叙述；文本没有因此证明存在持相反判断的实际读者。",
+        "comparands": [
+          {
+            "text": "被描绘的此前阶段",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b001",
+                "quote": "“抽卡式玩具”"
+              }
+            ]
+          },
+          {
+            "text": "被描绘的新阶段",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b001",
+                "quote": "“可控、可规模化”的工业级工具"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b001",
+              "quote": "于2026年2月7日正式上线Seedance 2.0视频生成模型"
+            }
+          ],
+          "stated_link": null,
+          "unstated_assumption": null,
+          "unknowns": [
+            "没有读取上线公告及定位措辞的上游来源。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b005",
+              "quote": "首创在Prompt中通过@语法指定素材用途（如@图1为首帧、@视频1参考运镜）"
+            },
+            {
+              "block_id": "b007",
+              "quote": "跨镜头保持角色面部、服饰、光影高度一致"
+            }
+          ],
+          "stated_link": "文章以随后列举的控制与一致性能力具体化开头的升级判断。",
+          "unstated_assumption": "从这些能力推到工业级、可规模化，还需它们在相应工作负载下稳定成立。",
+          "unknowns": [
+            "工业级和规模化的操作定义、负载与可靠性依据未在文字视图中展开；未读取独立引用 UI 或上游来源。"
+          ]
+        }
+      ],
+      "information_update": "将上线信息组织为一项阶段性进步判断；具体功能提供了有用概览，工业级结论另包含外推。",
+      "stance_and_presentation": "“标志着”提高结论确定感。m02 再以 AI 导演和导演级调度抬高角色定位，m04 的“重构”和 m06 的“变革”延续这一呈现；这不等于已证明读者误解或反感。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留上线日期、平台定位及具体能力与行业评价之间的区分。"
+      ],
+      "possible_reader_cost": [
+        "玩具到工业级的概括跨度可能让读者难以判断具体适用范围，效果仍需读者检验。"
+      ],
+      "uncertainties": [
+        "只读取全文文字视图，没有核验上游来源；不可断言其他材料完全没有支持。"
+      ]
+    },
+    {
+      "move_id": "m04",
+      "focal_spans": [
+        {
+          "block_id": "b011",
+          "quote": "广告主、短剧团队、自媒体创作者等无需专业拍摄或剪辑技能，即可通过简单描述或参考素材生成具备电影感的成片。"
+        },
+        {
+          "block_id": "b011",
+          "quote": "据实测，15秒视频生成耗时约30–60秒，一次性成功率超90%，大幅减少“废片率”。"
+        }
+      ],
+      "operation": [
+        "否定技能必要性",
+        "描述使用效果",
+        "转述实测数值",
+        "推断产出效率"
+      ],
+      "question_under_discussion": {
+        "text": "这些创作者使用模型需要什么技能，生成效率和成片结果如何？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "proposition": "所列创作者必须具备专业拍摄或剪辑技能，才能通过该模型生成具备电影感的成片。",
+        "role": "negated_proposition",
+        "source_spans": [
+          {
+            "block_id": "b011",
+            "quote": "无需专业拍摄或剪辑技能"
+          }
+        ],
+        "prior_holder": null
+      },
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "广告主、短剧团队、自媒体创作者等无需专业拍摄或剪辑技能，使用简单描述或参考素材即可生成具备电影感的成片。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "广告主、短剧团队、自媒体创作者等无需专业拍摄或剪辑技能，即可通过简单描述或参考素材生成具备电影感的成片。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文对使用要求与结果的概括",
+            "epistemic_status": "使用效果声称，未独立验证"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "文中所称实测报告：15 秒视频生成耗时约 30–60 秒，一次性成功率超 90%。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "据实测，15秒视频生成耗时约30–60秒，一次性成功率超90%"
+            }
+          ],
+          "attribution": {
+            "proposer": "not_stated",
+            "reporting_layer": "本文转述未说明执行者的实测",
+            "epistemic_status": "原文称实测；保留约值与下限，不代表本标注核实了测试"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "文章由前述表现进一步概括为大幅减少废片率。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "大幅减少“废片率”。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文紧接实测数值给出的效果概括",
+            "epistemic_status": "推断性评价；是否来自同一测试方未说明"
+          }
+        }
+      ],
+      "relation": {
+        "type": "技能必要性限制与性能支持",
+        "text": "“无需”否定技能门槛这一必要条件，没有提供读者先前持有该判断的证据；耗时与成功率是随后提出的性能信息，不能直接等同于电影感或低技能可用性的验证。",
+        "comparands": []
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b004",
+              "quote": "配合文本提示词，实现高精度内容控制。"
+            },
+            {
+              "block_id": "b007",
+              "quote": "自动生成分镜与运镜"
+            }
+          ],
+          "stated_link": null,
+          "unstated_assumption": "自动控制功能足以使没有所述专业技能的用户完成文章承诺的成片。",
+          "unknowns": [
+            "未见分技能用户结果、电影感判据或所需迭代次数；上游材料未核验。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b011",
+              "quote": "据实测，15秒视频生成耗时约30–60秒，一次性成功率超90%"
+            }
+          ],
+          "stated_link": "“据实测”是原文给出这些数值的依据归属。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "测试执行者、样本量、输入任务、计时边界和成功标准未在当前文字中说明。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b011",
+              "quote": "一次性成功率超90%，大幅减少“废片率”。"
+            }
+          ],
+          "stated_link": "文章在成功率之后衔接废片率减少的结论。",
+          "unstated_assumption": "成功与废片的定义能相互对应，且存在可比基线。",
+          "unknowns": [
+            "未给出此前废片率或可比场景。"
+          ]
+        }
+      ],
+      "information_update": "把功能概览具体化为技能门槛、时间和成功比例；数值与效率结论的信息层级需要分别保留。",
+      "stance_and_presentation": "“无需……即可”作出明确的可用性承诺，“据实测”引入经验依据的口吻；本记录没有把这种表述自动标成读者认知纠正。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留目标人群、两种输入途径、15 秒、约 30–60 秒和超 90% 的原始范围与归属。"
+      ],
+      "possible_reader_cost": [
+        "缺少测试条件时，读者可能把局部数值理解为自己的使用保证；实际成本尚未评估。"
+      ],
+      "uncertainties": [
+        "“据实测”没有说明是谁测试，不能赋给本文作者；当前材料也不能排除引用来源有补充。"
+      ]
+    },
+    {
+      "move_id": "m05",
+      "focal_spans": [
+        {
+          "block_id": "b011",
+          "quote": "然而，因真人生成引发的伦理风险，平台已于2月9日紧急限制真人图片/视频作为主体参考，仅支持活体认证后的数字分身。"
+        }
+      ],
+      "operation": [
+        "补充使用限制",
+        "解释限制原因",
+        "限定可用条件"
+      ],
+      "question_under_discussion": {
+        "text": "真人相关素材作为主体参考时，文章报道了什么平台限制？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "文章称平台因真人生成的伦理风险，于 2 月 9 日紧急限制真人图片或视频作为主体参考。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "因真人生成引发的伦理风险，平台已于2月9日紧急限制真人图片/视频作为主体参考"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文报道平台行为及其原因",
+            "epistemic_status": "政策与原因的转述性声称，未核验公告"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "在这项真人主体参考限制的语境内，文章称仅支持活体认证后的数字分身。",
+          "source_spans": [
+            {
+              "block_id": "b011",
+              "quote": "仅支持活体认证后的数字分身。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文概括平台允许条件",
+            "epistemic_status": "当前文字中的范围限制，不视为平台全部输入能力的完整规定"
+          }
+        }
+      ],
+      "relation": {
+        "type": "政策范围与适用条件",
+        "text": "伦理风险被说明为限制原因，认证后的数字分身被列为可支持条件。这限定前文便利性的适用范围，不需要构造一个持错误判断的读者。",
+        "comparands": [
+          {
+            "text": "真人图片或视频直接作为主体参考",
+            "role": "restricted_scenario",
+            "source_spans": [
+              {
+                "block_id": "b011",
+                "quote": "限制真人图片/视频作为主体参考"
+              }
+            ]
+          },
+          {
+            "text": "使用经过活体认证的数字分身",
+            "role": "conditional_baseline",
+            "source_spans": [
+              {
+                "block_id": "b011",
+                "quote": "仅支持活体认证后的数字分身"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b011",
+              "quote": "因真人生成引发的伦理风险"
+            }
+          ],
+          "stated_link": "原文用“因”把伦理风险与平台限制联系起来。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "风险事件、官方原因说明及限制实际实施情况未核验。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b011",
+              "quote": "仅支持活体认证后的数字分身。"
+            }
+          ],
+          "stated_link": "“仅”明确收紧可支持的真人主体参考条件。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "具体产品、认证方式和其他例外未在这段展开；不能从此句推定平台全面禁止其他非真人素材。"
+          ]
+        }
+      ],
+      "information_update": "为前文功能和使用入口添加有用的边界，并给后文关注政策、避免受限素材的建议提供上下文。",
+      "stance_and_presentation": "“然而”引出实用限制，“紧急”强调行动的时间姿态；m06 再提醒政策变化，形成限制与建议的呼应。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留日期、主体参考这一用途限制以及认证条件，避免把局部限制扩大成全面禁用。"
+      ],
+      "possible_reader_cost": [],
+      "uncertainties": [
+        "只依据文字记录报道层；未读取公告或页面引用，无法确认政策在文章发布时的完整范围。"
+      ]
+    },
+    {
+      "move_id": "m06",
+      "focal_spans": [
+        {
+          "block_id": "b013",
+          "quote": "行动建议：如何应对这一变革"
+        },
+        {
+          "block_id": "b014",
+          "quote": "对于营销从业者与内容创作者，建议尽快通过即梦官网（jimeng.jianying.com）或小云雀APP体验Seedance 2.0，熟悉其多模态输入与@语法调度机制。"
+        },
+        {
+          "block_id": "b014",
+          "quote": "同时，需关注平台合规政策变化，避免使用受限素材。企业用户可留意2月14日火山引擎API正式上线，以便集成至自有工作流。"
+        }
+      ],
+      "operation": [
+        "设置行动议程",
+        "按受众提出建议",
+        "提醒限制",
+        "预告集成机会"
+      ],
+      "question_under_discussion": {
+        "text": "营销、内容创作和企业用户可以怎样尝试或接入所述模型？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "作者建议营销从业者和内容创作者尽快体验，熟悉多模态与 @ 语法，并先尝试品牌宣传片、短剧分镜、产品演示等场景。",
+          "source_spans": [
+            {
+              "block_id": "b014",
+              "quote": "对于营销从业者与内容创作者，建议尽快通过即梦官网（jimeng.jianying.com）或小云雀APP体验Seedance 2.0，熟悉其多模态输入与@语法调度机制。"
+            },
+            {
+              "block_id": "b014",
+              "quote": "初期可聚焦于品牌宣传片、短剧分镜、产品演示等场景"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文向特定受众提出建议",
+            "epistemic_status": "建议，非已观察到的用户行为或偏好"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "作者建议关注合规政策变化并避免使用受限素材。",
+          "source_spans": [
+            {
+              "block_id": "b014",
+              "quote": "同时，需关注平台合规政策变化，避免使用受限素材。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文叙述者",
+            "reporting_layer": "本文的使用提醒",
+            "epistemic_status": "建议"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "文章将火山引擎 API 正式上线时间表述为 2 月 14 日，并建议企业用户留意，以便集成自有工作流。",
+          "source_spans": [
+            {
+              "block_id": "b014",
+              "quote": "企业用户可留意2月14日火山引擎API正式上线，以便集成至自有工作流。"
+            }
+          ],
+          "attribution": {
+            "proposer": "上线时间提出者 not_stated；留意和集成建议由本文叙述者提出",
+            "reporting_layer": "本文在建议中嵌入未来上线日程",
+            "epistemic_status": "相对于文章发布日期的未来安排声称与建议，未核验是否兑现"
+          }
+        }
+      ],
+      "relation": {
+        "type": "能力到行动的衔接与受众分流",
+        "text": "前文能力介绍被转化为尝试场景，政策限制被转化为素材提醒，企业接入则另列 API 路径；这些分流可兼容，不构成互斥价值选择。",
+        "comparands": [
+          {
+            "text": "营销从业者和内容创作者体验现有产品",
+            "role": "audience_scenario",
+            "source_spans": [
+              {
+                "block_id": "b014",
+                "quote": "对于营销从业者与内容创作者"
+              }
+            ]
+          },
+          {
+            "text": "企业用户留意 API 以接入工作流",
+            "role": "audience_scenario",
+            "source_spans": [
+              {
+                "block_id": "b014",
+                "quote": "企业用户可留意2月14日火山引擎API正式上线"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b005",
+              "quote": "通过@语法指定素材用途（如@图1为首帧、@视频1参考运镜）"
+            },
+            {
+              "block_id": "b007",
+              "quote": "自动生成分镜与运镜"
+            }
+          ],
+          "stated_link": "建议沿用前文介绍的多模态、调度和运镜能力。",
+          "unstated_assumption": "这些能力适合所列业务场景，且读者当前有尝试需求。",
+          "unknowns": [
+            "“尽快”的时间必要性、不同场景的实际效果与投入未在文中分别论证。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b011",
+              "quote": "平台已于2月9日紧急限制真人图片/视频作为主体参考"
+            }
+          ],
+          "stated_link": "前文的平台限制构成后文避免受限素材的直接上下文。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "后续政策变化未读取。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b014",
+              "quote": "以便集成至自有工作流。"
+            }
+          ],
+          "stated_link": "原文明说留意 API 的用途是工作流集成。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "日程来源、API 权限、定价和集成条件未在当前文字中说明。"
+          ]
+        }
+      ],
+      "information_update": "将已有信息组织成分受众的下一步，补充试用场景和未来接入日期；组织与回顾本身有用。",
+      "stance_and_presentation": "标题称“变革”，正文以“尽快”“需”“可”分别表达较强建议、提醒与可选行动。没有报道读者确有等待意向或技术、价格判断。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留建议对象、入口、起步场景、政策提醒与未来日期，区分建议和已发生事实。"
+      ],
+      "possible_reader_cost": [
+        "“尽快”及“变革”可能增加紧迫感，而未提供每类读者都需要立即采用的依据；阅读效果待检验。"
+      ],
+      "uncertainties": [
+        "本篇没有可支持的实际读者态度证据；被建议的人群不能因此视为持有某种信念。"
+      ]
+    }
+  ],
+  "omitted_opportunities": [
+    "m02 未单列详细记录：参考文件总上限 12、图片/视频/音频分项数量及“总时长均≤15秒”的适用范围值得核对，但当前文字不足以确定分项额度是否可以同时取满，不能直接判定数量矛盾。其导演角色升级表述已在 m01 中记录复现，未因此视为技术参数已获核验。",
+    "m03 未单列详细记录：双分支架构、毫秒级口型、8 种语言、早期模型比较、V2 技术及物理效果是不同的技术与效果声称。受最多四项限制，没有逐一展开归属与比较基线，不能把未覆盖内容计为证据充分。",
+    "m04 的产品集成范围、免费试用次数和 69 元起会员价格未作详细记录；这些是有用入口信息，但各产品适用关系及收费条件未核验。",
+    "没有发现明确报道的读者态度或实际读者误解，因此所有 reader_belief_evidence 为空；未为满足机会类型而构造等待意向、价格判断或认知纠正。",
+    "全部 document.blocks 已读取。packet metadata 记载 8 条 citation_records，但本任务输入未呈现引用 UI 的具体内容，也未读取上游来源或页面视觉；详细记录中的支持限制只限于当前可见文字，不等于判定其他材料没有依据。"
+  ]
+}

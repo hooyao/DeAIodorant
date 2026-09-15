@@ -1,0 +1,933 @@
+{
+  "review_id": "independent-review-n01-n02-v1",
+  "review_date": "2026-09-15",
+  "reviewer": {
+    "agent_task": "/root/contract11_semantic_review",
+    "model": "当前任务的 Codex；精确 backend unknown",
+    "independent_of_root_adjudication": true
+  },
+  "scope": {
+    "articles": [
+      "n01",
+      "n02"
+    ],
+    "responses": [
+      "a2d320ff57bf6",
+      "a1a3e28c92dbe",
+      "a317b4b4f22ef",
+      "ad6ae677b7701"
+    ],
+    "reading_order": "先阅读契约与冻结说明，再完整阅读两篇 body、标题和全部 blocks，之后读取四份 response；辅助读取仅限指定 metadata、coverage 和 citations。",
+    "forbidden_materials_not_read": [
+      "Root opportunity-map",
+      "其他文章",
+      "历史标注",
+      "结果报告",
+      "未获准的 packet、assignment 或 runner"
+    ],
+    "network_or_api_used": false,
+    "other_agents_started": false,
+    "source_files_modified": false,
+    "limitations": [
+      "独立性限于未见 Root 的机会清单与裁定，不是独立模型或严格盲法；自动注入了项目指南、历史锚点信息及本轮任务说明。",
+      "本复核能够读取保存的引用 UI 数据；没有访问任何上游网页，也没有读取图片像素或页面视觉。",
+      "首次生成与恢复写入的操作背景来自 Root 明确告知，未读取被禁止的任务轨迹来独立验证。",
+      "不报告整体准确率、臭味分数、自然发生率或人工改写效果；两份相同记录不构成正确性的独立依据。"
+    ]
+  },
+  "category_definitions": {
+    "clear_error": "文本或证据所允许的命题范围被明确扩大、错绑或改写；给出最小收窄。",
+    "role_encoding_ambiguity": "命题实质仍可恢复，但字段角色的边界、层级或空值规则没有唯一稳定编码；不把合理解释差异直接算错。",
+    "coverage_difference": "位置、细节或机会被不同程度展开或明确省略；不算该机会语义通过或失败。",
+    "supported": "在当前可见文字与契约范围内有据支持，另注明不能推出的结论。"
+  },
+  "operational_context": [
+    {
+      "assignment_id": "ad6ae677b7701",
+      "provenance": "Root 的本次分配消息",
+      "reported_events": [
+        "第一次 File.Open 因输出目录缺失而失败，当时没有创建 response 文件。",
+        "重建载荷时自报 article_map 的 m06 三个标签措辞发生变化。",
+        "当前文件是第一次成功落盘文件，保留原样，未经过校验反馈。",
+        "当前 identity.procedure_violations 为 [] 不能替代这段另行披露的操作记录。"
+      ],
+      "known_semantic_change": "已知变化限于自报的 m06 三标签措辞；本复核未见初次未落盘载荷，不能还原标签差异，也不能认证其余载荷逐字相同。",
+      "analytical_handling": "可复核当前落盘文本的语义，但不能作为无操作偏差的原始生成重复；另给排除该回答后的定性敏感性说明。"
+    },
+    {
+      "assignment_id": "a317b4b4f22ef",
+      "provenance": "Root 的本次分配消息",
+      "reported_events": [
+        "另一份 n02 回答自报恢复时按相同内容写入，无已知语义改动。"
+      ],
+      "analytical_handling": "保留恢复写入披露；没有据此推定发生未披露的语义变化，也不把自报相同当作已做字节级追溯验证。"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "n01-conditional-versions",
+      "category": "supported",
+      "dimension": "否定对象与条件基线",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b009",
+          "quote": "UL官网下载页上的最新版2.7.19对应的是本体v2.6 b14"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b009",
+          "quote": "如果你的游戏已经自动更新到3.2，先回退版本"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/0/prior_or_foil",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/0/relation/text",
+          "excerpt": "已升级到 3.2 是触发回退建议的普通条件"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/0/prior_or_foil",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/0/relation/text",
+          "excerpt": "构成操作条件差异"
+        }
+      ],
+      "judgment": "两份都把运行版本差异保留为条件和对应关系，没有补造“读者相信最新版必然兼容”的命题。v2.6 与已升级 3.2 分别被叫作 baseline 或 scenario，是允许的角色名称差异。",
+      "alternative_interpretations": [
+        "“最容易搞错”“别急着”有纠错或劝阻口吻，但口吻本身不能证明读者已持错误兼容判断；也不迫使普通 if 分支进入 prior_or_foil。"
+      ],
+      "minimal_action": "保留这一区分，无需修正文意；本项只支持所选版本条件，不覆盖整段全部安装规则。"
+    },
+    {
+      "finding_id": "n01-feedback-layers",
+      "category": "supported",
+      "dimension": "提出者与报道层级",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b011",
+          "quote": "我64G的内存都时不时卡顿，我看小破站UP里甚至有96G都卡的"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/asserted_or_promised_content/0/attribution/reporting_layer",
+          "excerpt": "作者引述玩家自身体验"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/asserted_or_promised_content/1/attribution/reporting_layer",
+          "excerpt": "存在第二层转述"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/asserted_or_promised_content/0/attribution/reporting_layer",
+          "excerpt": "作者引述玩家自身反馈及该玩家对 UP 主的转述"
+        }
+      ],
+      "judgment": "64G 是被引玩家自己的体验，96G 是该玩家声称看到的 UP 主情况。两份都保留这一层级。拆成两项和合为一项都可接受，没有把作者当作亲测者。",
+      "alternative_interpretations": [
+        "96G 情况未必来自 UP 主亲口报告，原文只说玩家看见；回答均保留了所见／转述层，而未新增测试者身份。"
+      ],
+      "minimal_action": "无语义修正需要；不能由两条反馈得出实际硬件效果已经核验。"
+    },
+    {
+      "finding_id": "n01-reference-line-proposer",
+      "category": "role_encoding_ambiguity",
+      "dimension": "直接给出建议与原始出处",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b011",
+          "quote": "给个参考线：16G基本可以放弃，32G算入门，想流畅运行或者开多人联机，64G更稳。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/asserted_or_promised_content/2/attribution/proposer",
+          "excerpt": "本篇叙述者"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/asserted_or_promised_content/1/attribution/proposer",
+          "excerpt": "not_stated"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/asserted_or_promised_content/1/attribution/reporting_layer",
+          "excerpt": "作者直接给出参考线，未明确原始提出者"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/preserved_usefulness/1",
+          "excerpt": "保留参考线提出者未明"
+        }
+      ],
+      "judgment": "按文章中的当前发言行为，“给个参考线”最自然是叙述者直接提出建议；没有把这条参考线归给前面的玩家。A 记录了该层提出者，B 则把 proposer 理解为未知的更早原始出处，虽然 reporting_layer 仍保存作者直接给出。两份不是同一角色编码，不能作为 proposer 字段一致可用的证据。",
+      "alternative_interpretations": [
+        "若 proposer 专指文字未揭示的终极原创者，B 的 not_stated 可以成立；但这一解释会与该契约对作者直接判断的通常编码发生层级混用。",
+        "不能仅因作者没写“我”或没有署名，就认为提出参考线的当前话语主体不可恢复；正常省略不等于角色缺失。",
+        "这不是将参考线错归给那位 64G 玩家，也未丢失其全部报道归属，因此与明确的人物串用错误分开。"
+      ],
+      "minimal_action": "后续裁定固定 proposer 的层级；建议这里记录本文叙述者，更早出处是否借用仍放 unknowns。冻结原回答不改，当前字段差异保持可见。"
+    },
+    {
+      "finding_id": "n01-lower-expectation-foil",
+      "category": "role_encoding_ambiguity",
+      "dimension": "暗示性预期与 prior_or_foil",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b011",
+          "quote": "第三是内存，门槛比你想的高。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/prior_or_foil/proposition",
+          "excerpt": "UL 所需的内存低于作者随后给出的参考门槛。"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/prior_or_foil/role",
+          "excerpt": "questioned_proposition"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/prior_or_foil/prior_holder",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/prior_or_foil",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/stance_and_presentation",
+          "excerpt": "设置预期差，但具体读者及原先阈值均未出现"
+        }
+      ],
+      "judgment": "A 将作者构造的较低预期编码为被质疑命题，B 只在呈现描述中保留预期差。原文支持相对的低预期，却没有具体旧阈值或真实持有者。A 并未把先前阈值虚构为具体数值，也明确否认这是观察到的读者信念；B 没有丢掉预期姿态的描述。此处是暗示性 foil 的编码边界，不能仅按非空／空值判定谁通过。",
+      "alternative_interpretations": [
+        "若 prior_or_foil 包含由作者构造并重新定位的预期，A 更完整；“具体读者未出现”不能单独成为置空理由。",
+        "若字段只收可明确恢复的所处理命题而不收比较姿态，B 的空值可接受，但需另保留这一持续呈现机会。",
+        "A 的表述应理解为作者所构造的先前判断，不能重新解释成已经测到实际读者低估了多少。"
+      ],
+      "minimal_action": "裁定时把相对低预期与数值阈值分开，并明确该类暗示性预期是否进入字段；原记录均保留。"
+    },
+    {
+      "finding_id": "n01-memory-support-scope",
+      "category": "supported",
+      "dimension": "支持不足与未核验",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b011",
+          "quote": "我64G的内存都时不时卡顿"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b011",
+          "quote": "32G算入门，想流畅运行或者开多人联机，64G更稳"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/relation/text",
+          "excerpt": "个别 64G 环境仍卡顿与相对更稳在逻辑上可以兼容"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/1/grounds_and_warrant/1/unknowns/0",
+          "excerpt": "不能仅凭这些反馈把卡顿归因于内存"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/grounds_and_warrant/0/unknowns/1",
+          "excerpt": "该反馈本身不能推出 16G、32G 和 64G 的具体分界。"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/1/uncertainties/1",
+          "excerpt": "图片或上游引用是否提供配置资料未知。"
+        }
+      ],
+      "judgment": "两份都准确区分个别卡顿反馈与跨配置的容量建议。高容量偶发卡顿不直接反驳“更稳”，反馈本身也推不出三档通用阈值。所指出的是当前文字的论证跨度，没有把未读图像或上游当作不存在。",
+      "alternative_interpretations": [
+        "作者可能另有未展示的经验或测试，因此只能说眼前反馈不足以推出精确分界，不能据此断言配置建议必然错误。"
+      ],
+      "minimal_action": "保留未知项；没有外部核验时不提升为事实真伪结论。"
+    },
+    {
+      "finding_id": "n01-explicit-negation-and-attitudes",
+      "category": "supported",
+      "dimension": "明确否定与读者证据指向",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b017",
+          "quote": "UL的硬核不是噱头。"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b018",
+          "quote": "真的好玩，一晚上没停过，也死了一晚上，难度太高了"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b018",
+          "quote": "这个mod只能看，不能自己玩儿，对我来说太折磨了"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/2/prior_or_foil/proposition",
+          "excerpt": "UL 的硬核只是噱头。"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/2/prior_or_foil/prior_holder",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/2/reader_belief_evidence/1/proposition",
+          "excerpt": "对该评论者而言，自己游玩 UL 太折磨。"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/2/prior_or_foil/proposition",
+          "excerpt": "UL 的硬核只是噱头。"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/2/reader_belief_evidence/0/reporting_layer",
+          "excerpt": "文章引述玩家判断，非独立观察"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/2/relation/text",
+          "excerpt": "两种体验评价可同时成立"
+        }
+      ],
+      "judgment": "被否定的命题可恢复而持有者未知，两份均保留。评论证据分别绑定好玩且难、个人感到折磨，没有扩成普遍反感，也没有把它们当作有人认定硬核只是噱头的证据。未见这一焦点的实质语义错误。",
+      "alternative_interpretations": [
+        "“只是噱头”是对原句否定对象的自然显化，不新增被引读者；好玩与困难并不互斥。"
+      ],
+      "minimal_action": "无修正需要；仅支持这些报道层内的态度与否定记录，不证明口碑比例或编辑效果。"
+    },
+    {
+      "finding_id": "n01-future-source-chain-coverage",
+      "category": "coverage_difference",
+      "dimension": "官方消息与作者预测",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b025",
+          "quote": "官方已确认v4.0的研发在并行推进。"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b025",
+          "quote": "3.1、3.2这类小更新只会越来越频繁，本体每动一次，MOD兼容性就要重新博弈一轮"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/3/asserted_or_promised_content/1/attribution/proposer",
+          "excerpt": "《七日杀》官方，按本文归属"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/3/asserted_or_promised_content/2/attribution/proposer",
+          "excerpt": "本篇叙述者"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/3/asserted_or_promised_content/2/attribution/epistemic_status",
+          "excerpt": "趋势和范围外推；未明确归给官方"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/omitted_opportunities/5",
+          "excerpt": "仍是未详细记录的外推与优先级机会"
+        }
+      ],
+      "judgment": "A 正确保留官方研发消息与作者对小更新频率、每次兼容压力的后续外推。B 只在位置图和省略说明识别这一机会，不能把 A 的正确记录外推为 B 也完成字段绑定；这也不是 B 发生了人物错归。",
+      "alternative_interpretations": [
+        "相邻两句可能共享背景来源，但文字只明确将 v4.0 研发归给官方，不能自动把所有后续预测也归给官方。"
+      ],
+      "minimal_action": "保留单份详细覆盖状态；不以只看共同焦点的方式删除这项差异。"
+    },
+    {
+      "finding_id": "n01-stability-question-is-not-waiting-decision",
+      "category": "clear_error",
+      "dimension": "读者证据指向",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b025",
+          "quote": "不知道今年过年能不能玩到亡灵遗产稳定版"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b001",
+          "quote": "等稳定版出来再玩"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/3/reader_belief_evidence/0/proposition",
+          "excerpt": "对今年过年能否玩到 UL 稳定版表示不确定。"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/article_map/9/operation/1",
+          "excerpt": "转述等待意向"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/omitted_opportunities/5",
+          "excerpt": "m10 的等待稳定版评论只证明文章报道的等待意向"
+        }
+      ],
+      "judgment": "b025 是对稳定版届时能否可玩的疑问，最多支持所报道的不确定或期待。B 把它说成已经被该评论证明的“等待意向”，若按契约中的行为意向理解，就把证据推进了一步。明确“等稳定版出来再玩”的话在 b001，不能跨段移作 b025 评论者的意向证据。A 在 b025 绑定不确定性更准确。问题位于位置图和省略说明，B 的详细 reader_belief_evidence 并未因此新增错误条目。",
+      "alternative_interpretations": [
+        "日常语言中“等待”可宽泛表示盼望某版本，若 B 仅作这种简称，其意图未必是推断延后游玩决定；但“只证明……等待意向”的写法仍不能用于编码已作出的等待选择。",
+        "本裁定只要求收窄到原句确有的态度，没有由此推断 B 把该态度扩大成价格、技术或当前稳定性判断。"
+      ],
+      "minimal_action": "在裁定记录中将 b025 收窄为“对过年时能否玩到稳定版表示不确定／期待”；将明确等待后再玩的意向保留给 b001。冻结回答不修改。"
+    },
+    {
+      "finding_id": "n01-audience-branches-coverage",
+      "category": "coverage_difference",
+      "dimension": "条件分流与焦点选择",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b022",
+          "quote": "前提有三条：锁定v2.6、接受随时重开存档、把内存备足。"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b023",
+          "quote": "实在想玩，先开短期存档试水，别攒好装备。"
+        },
+        {
+          "article_id": "n01",
+          "block_id": "b024",
+          "quote": "如果你想要的是轻松联机生存，原版V3.2其实更适合你。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/article_map/8/description",
+          "excerpt": "三类条件并非读者必须持有的错误信念。"
+        },
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/omitted_opportunities/5",
+          "excerpt": "m09 的三类读者条件及建议回顾"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/3/relation/text",
+          "excerpt": "可以入、再等等及先多看具有各自条件"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/records/3/preserved_usefulness/1",
+          "excerpt": "不能将视频新人一概判定为追求轻松"
+        }
+      ],
+      "judgment": "B 详细保留三类建议、前提与联机短期试水例外，并防止把所有新人当作偏好轻松；A 只绘入位置图并承认未详录。条件建议不矛盾的判断有据支持，但详细覆盖只属于 B。",
+      "alternative_interpretations": [
+        "玩家身份可以交叉，这可作为待检验的使用问题，不能反过来认定原文按场景给建议必然逻辑错误。"
+      ],
+      "minimal_action": "与上一项未来来源链一起保留两个不同第四焦点，不做仅共同记录的筛选。"
+    },
+    {
+      "finding_id": "n02-skill-necessity-negation",
+      "category": "supported",
+      "dimension": "否定对象独立于此前持有者",
+      "source_evidence": [
+        {
+          "article_id": "n02",
+          "block_id": "b011",
+          "quote": "广告主、短剧团队、自媒体创作者等无需专业拍摄或剪辑技能，即可通过简单描述或参考素材生成具备电影感的成片。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/1/prior_or_foil/proposition",
+          "excerpt": "这些创作者生成所述成片必须具备专业拍摄或剪辑技能。"
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/1/prior_or_foil/prior_holder",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/1/prior_or_foil/proposition",
+          "excerpt": "所列创作者必须具备专业拍摄或剪辑技能，才能通过该模型生成具备电影感的成片。"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/1/prior_or_foil/prior_holder",
+          "observed_value": null
+        }
+      ],
+      "judgment": "两份均保留被否定的技能必要条件，同时将此前持有者置空，没有因没有读者证据而删除否定对象。人群、所述成片和通过模型的语境可恢复。未见该明确否定焦点的实质错误。",
+      "alternative_interpretations": [
+        "这可以是事实性能力声称，并不需要被称作纠正误解；两份都没有由否定句制造实际读者。"
+      ],
+      "minimal_action": "保留；只能说文章这样声称，不能说模型已证明低技能用户能够获得电影感成片。"
+    },
+    {
+      "finding_id": "n02-unnamed-test-proposer",
+      "category": "supported",
+      "dimension": "测试提出者、报道者与比较结论",
+      "source_evidence": [
+        {
+          "article_id": "n02",
+          "block_id": "b011",
+          "quote": "据实测，15秒视频生成耗时约30–60秒，一次性成功率超90%，大幅减少“废片率”。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/1/asserted_or_promised_content/1/attribution/proposer",
+          "excerpt": "not_stated"
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/1/asserted_or_promised_content/1/attribution/reporting_layer",
+          "excerpt": "测试者未说明"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/1/asserted_or_promised_content/1/attribution/proposer",
+          "excerpt": "not_stated"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/1/asserted_or_promised_content/1/attribution/epistemic_status",
+          "excerpt": "不代表本标注核实了测试"
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/1/asserted_or_promised_content/2/attribution/reporting_layer",
+          "excerpt": "是否沿用测试者结论未说明"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/1/asserted_or_promised_content/2/attribution/epistemic_status",
+          "excerpt": "是否来自同一测试方未说明"
+        }
+      ],
+      "judgment": "正文“据实测”没有说明测试者，两份都未把报道作者补成测试者，并保留 15 秒、约 30–60 秒与超 90% 的范围。废片率减少被作为作者当前呈现的效果概括，同时承认可能沿用同一测试来源。未见明确错归。",
+      "alternative_interpretations": [
+        "“大幅减少废片率”也可能包含在整句所转述的实测结果中，不一定是作者新推断；两份已保留该来源边界未知，因此不将作者表述层误当终极出处。",
+        "保存的 citations 给 b011 所在组件列出多个链接，但没有逐命题测试者身份，且上游未读，不能据此补出具名测试者。"
+      ],
+      "minimal_action": "保留未知身份与比较基线；不得将来源声称或当前未展开的条件当成已核验性能，也不因缺少核验判定数值虚假。"
+    },
+    {
+      "finding_id": "n02-exclusive-policy-role",
+      "category": "role_encoding_ambiguity",
+      "dimension": "排他限制与普通条件",
+      "source_evidence": [
+        {
+          "article_id": "n02",
+          "block_id": "b011",
+          "quote": "平台已于2月9日紧急限制真人图片/视频作为主体参考，仅支持活体认证后的数字分身。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/2/prior_or_foil",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/2/relation/text",
+          "excerpt": "不需要设定读者此前相信所有真人素材均可使用"
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/2/relation/comparands/1/role",
+          "excerpt": "eligible_input_case"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/2/prior_or_foil",
+          "observed_value": null
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/2/relation/text",
+          "excerpt": "不需要构造一个持错误判断的读者"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/2/relation/comparands/1/role",
+          "excerpt": "conditional_baseline"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/2/grounds_and_warrant/1/stated_link",
+          "excerpt": "“仅”明确收紧可支持的真人主体参考条件"
+        }
+      ],
+      "judgment": "两份都没有丢失政策的实质排除范围：真人主体参考受限，只保留认证数字分身，也没有扩大成全部真人或非真人能力禁用。但两份都把 prior_or_foil 置空，说明时又强调无需构造错误读者。排他“仅支持”可恢复不被支持的对象，因此其空值不能仅由没有读者持有者来论证。当前契约没有把所有“仅”类排除与普通条件分支的编码边界写尽；此项不是两份一致即可认定正确。",
+      "alternative_interpretations": [
+        "按政策适用条件组织，restricted/eligible comparands 能忠实记录同一事实，此时 null 不一定意味着漏读否定。",
+        "若契约要求每个明确的排他限制都恢复否定对象，则应记录“真人主体参考中不满足所述认证数字分身条件的输入也获支持”这一被排除命题，并把持有者留空；两份当前 prior 字段共同未覆盖它。",
+        "不能直接把被否定对象写成“所有真人相关功能都能用”，否则会扩大用途范围。"
+      ],
+      "minimal_action": "保持为尚待裁定的字段边界：明确仅类排他是否必须进入 prior_or_foil，或允许 comparands 完整承载排除。规则确定前，不把这一共享空值用作自动否定特征或字段稳定性的通过证据。"
+    },
+    {
+      "finding_id": "n02-launch-positioning-attribution",
+      "category": "role_encoding_ambiguity",
+      "dimension": "合并命题的提出层级",
+      "source_evidence": [
+        {
+          "article_id": "n02",
+          "block_id": "b001",
+          "quote": "字节跳动旗下即梦AI平台于2026年2月7日正式上线Seedance 2.0视频生成模型，定位为“电影级全流程生成引擎”"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/0/asserted_or_promised_content/0/attribution/proposer",
+          "excerpt": "本文叙述者（未署名）；定位措辞的原始提出者 not_stated"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/0/asserted_or_promised_content/0/attribution/proposer",
+          "excerpt": "not_stated"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/0/asserted_or_promised_content/0/attribution/reporting_layer",
+          "excerpt": "没有在该句明确指明定位措辞的提出者"
+        }
+      ],
+      "judgment": "两份都没有把“电影级”擅自归为字节官方原话。C 将文章陈述层与定位措辞未知出处同时写入 proposer；D 对合并的上线加定位命题统一填 not_stated，但解释实际只针对定位措辞。差别主要来自字段层级和命题打包，不足以判定哪方编造了一个确定提出者。",
+      "alternative_interpretations": [
+        "该句可被阅读为介绍平台定位，但没有明确“官方称”或定位引文来源；保持定位原始出处未知是合理的。",
+        "上线陈述与定位措辞分开后，可以分别保存本文报道与定位出处未知，不必把两个来源层级压进同一个自由字符串。"
+      ],
+      "minimal_action": "后续分析区分文章报道层和定位措辞出处；本轮记为角色打包歧义，不强制用字符串是否含作者作为对错标准。"
+    },
+    {
+      "finding_id": "n02-reader-evidence-absence",
+      "category": "supported",
+      "dimension": "无正向读者机会",
+      "source_evidence": [
+        {
+          "article_id": "n02",
+          "block_id": "b014",
+          "quote": "对于营销从业者与内容创作者，建议尽快通过即梦官网（jimeng.jianying.com）或小云雀APP体验Seedance 2.0"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/omitted_opportunities/3",
+          "excerpt": "不能用行动建议推导读者已存在的信念"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/3/asserted_or_promised_content/0/attribution/epistemic_status",
+          "excerpt": "建议，非已观察到的用户行为或偏好"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/omitted_opportunities/3",
+          "excerpt": "所有 reader_belief_evidence 为空"
+        }
+      ],
+      "judgment": "两份的空 reader_belief_evidence 与全文一致：文章对用户提建议，没有引述其态度、选择或信念。没有凭空补造是有据支持的记录行为，但 n02 本身没有正向证据绑定机会，不能与 n01 合在一起声称读者证据绑定在两篇均被验证。",
+      "alternative_interpretations": [
+        "“创作者无需专业技能”是作者能力判断，目标人群被提及不等于该人群已发表观点。"
+      ],
+      "minimal_action": "将此维度标为无正向机会，同时保留未补造的观察；不据空值稳定性给出性能结论。"
+    },
+    {
+      "finding_id": "n02-omitted-controls-and-parameters",
+      "category": "coverage_difference",
+      "dimension": "焦点遗漏与数量关系",
+      "source_evidence": [
+        {
+          "article_id": "n02",
+          "block_id": "b003",
+          "quote": "核心升级：从“素材生成器”到“AI导演”"
+        },
+        {
+          "article_id": "n02",
+          "block_id": "b004",
+          "quote": "支持最多12个参考文件（9张图片 + 3段视频 + 3段音频，总时长均≤15秒）"
+        },
+        {
+          "article_id": "n02",
+          "block_id": "b005",
+          "quote": "将提示词工程升维为“导演级调度”"
+        },
+        {
+          "article_id": "n02",
+          "block_id": "b006",
+          "quote": "支持8种语言的音素级同步，显著优于早期模型。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/omitted_opportunities/0",
+          "excerpt": "组合上限和各类型上限的关系没有在文字中明确"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/omitted_opportunities/0",
+          "excerpt": "不能直接判定数量矛盾"
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/omitted_opportunities/1",
+          "excerpt": "未覆盖不算验证成功"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/omitted_opportunities/1",
+          "excerpt": "没有逐一展开归属与比较基线"
+        }
+      ],
+      "judgment": "两份共同没有为 m02、m03 单列详细记录，虽然 m01 描述了导演／工业化框架的复现。参数、首创归属和具体性能比较因此仍未被详细核验。两份均不把 9+3+3 大于 12 直接判作矛盾，合理保留总上限与分项上限可能同时存在的解释。",
+      "alternative_interpretations": [
+        "数量与时长范围确实需要澄清，但这与确认参数错误不同；角色提升的复现分析也不等于已经验证“首创”或所有技术效果。"
+      ],
+      "minimal_action": "保持共同遗漏为未覆盖，不因两份都略过而删去机会；不要求为达到四条之外的覆盖去重写首次输出。"
+    },
+    {
+      "finding_id": "n02-acquisition-and-date-focus",
+      "category": "coverage_difference",
+      "dimension": "合理分段与未来日程",
+      "source_evidence": [
+        {
+          "article_id": "n02",
+          "block_id": "b011",
+          "quote": "提供免费试用（如小云雀新用户3次）及会员付费模式（69元起）"
+        },
+        {
+          "article_id": "n02",
+          "block_id": "b014",
+          "quote": "企业用户可留意2月14日火山引擎API正式上线，以便集成至自有工作流。"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/2/asserted_or_promised_content/0/text",
+          "excerpt": "其中小云雀新用户可试用3次"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/omitted_opportunities/2",
+          "excerpt": "免费试用次数和 69 元起会员价格未作详细记录"
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/records/3/asserted_or_promised_content/1/attribution/epistemic_status",
+          "excerpt": "待发生的上线安排"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/3/asserted_or_promised_content/2/attribution/proposer",
+          "excerpt": "上线时间提出者 not_stated；留意和集成建议由本文叙述者提出"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/records/3/asserted_or_promised_content/2/attribution/epistemic_status",
+          "excerpt": "相对于文章发布日期的未来安排"
+        }
+      ],
+      "judgment": "C 在 m05 同时记录入口价格与政策，D 在 m05 只详录政策并明确省略价格；同一 b011 允许按不同局部动作分段，不算冲突。两份都把 2 月 14 日相对 2 月 12 日发布日期理解为未来日程，保留未知日程来源与作者建议的区别。",
+      "alternative_interpretations": [
+        "未知来源的未来安排不是已兑现的上线事实；当前复核没有查证后续实际日期。"
+      ],
+      "minimal_action": "保留获取方式的单份覆盖与未来时态，不把 m04/m05 的位置重叠当作重复错误。"
+    },
+    {
+      "finding_id": "visible-support-boundaries",
+      "category": "supported",
+      "dimension": "未展示、未读取与不存在",
+      "source_evidence": [
+        {
+          "article_id": "n01",
+          "block_id": "b009",
+          "quote": "从第三方工具作者的适配说明里也能看到，“兼容V3.0新方块架构”是当时大家都要过的一道坎。"
+        },
+        {
+          "article_id": "n02",
+          "block_id": "b011",
+          "quote": "据实测，15秒视频生成耗时约30–60秒，一次性成功率超90%"
+        }
+      ],
+      "response_evidence": [
+        {
+          "assignment_id": "a2d320ff57bf6",
+          "pointer": "/records/0/grounds_and_warrant/1/unknowns/0",
+          "excerpt": "图片或上游来源可能提供更多依据"
+        },
+        {
+          "assignment_id": "a1a3e28c92dbe",
+          "pointer": "/omitted_opportunities/7",
+          "excerpt": "不能把不可见支持一概判为缺失"
+        },
+        {
+          "assignment_id": "a317b4b4f22ef",
+          "pointer": "/omitted_opportunities/4",
+          "excerpt": "不能把当前视图未展开的支持一概判为不存在"
+        },
+        {
+          "assignment_id": "ad6ae677b7701",
+          "pointer": "/omitted_opportunities/4",
+          "excerpt": "支持限制只限于当前可见文字"
+        }
+      ],
+      "judgment": "四份都区分当前文字缺少细节与外部材料不存在，未见把未读图像或上游来源直接判为空白证据的实质错误。独立复核看到 n01 有 21 条引用记录、4 个媒体引用，n02 有 8 条引用记录、0 个媒体引用；这些元数据不证明上游支持内容为真，也不补全测试者或性能条件。",
+      "alternative_interpretations": [
+        "某些 grounds 重复引用被分析的来源声称，这只能定位文章声称，不能作独立验证；回答已明确报告这一限制。"
+      ],
+      "minimal_action": "维持支持状态分层；本复核不访问上游，不将未核验升级成错误，也不借引用数量升级成证据充分。"
+    }
+  ],
+  "coverage_alignment": {
+    "n01": {
+      "article_maps": "两份均为 11 项，覆盖 title 与 b001–b026；不同 recurrence_group 的粒度不直接构成语义冲突。",
+      "detailed_common": [
+        "m03：版本条件与适配解释",
+        "m05：内存反馈和参考线",
+        "m08：硬核否定与玩家体验"
+      ],
+      "detailed_A_only": [
+        "m10：后续观察、官方研发消息、作者预测、评论时间疑问"
+      ],
+      "detailed_B_only": [
+        "m09：三类玩家的条件建议"
+      ],
+      "retained_omissions": [
+        "b001 明确等待稳定版后再玩的意向，两份都只在图或省略说明保留。",
+        "b003 的资料片／MOD 规模类比，b012–b014 的广告判断与来源链，b015 的全部故障和修复链，b026 的热情不足及价值总结，没有完整详细字段覆盖。",
+        "EAC 和旧存档条件在 B 的版本记录展开，在 A 明确省略；虚拟内存方案和效果在 B 展开，在 A 明确省略。"
+      ],
+      "recurrence_assessment": "先检查风险再投入在 b002、b008–b015、b019、b022–b026 持续出现，且带有版本、备份、内存和玩法条件等实际信息。反复提醒、优先级强调可能形成待检验的读者成本，但当前记录不能证明重复无用或存在人工反感。"
+    },
+    "n02": {
+      "article_maps": "两份均为 6 项，覆盖 title 与 b001–b014；m04、m05 共享 b011 是按门槛、数值、获取方式、政策等局部动作切分。",
+      "detailed_common": [
+        "m01：上线定位与行业阶段判断",
+        "m04：技能否定和据实测数字",
+        "m05：政策范围",
+        "m06：行动建议和 API 日程"
+      ],
+      "retained_omissions": [
+        "m02：输入参数、@ 语法首创与导演角色提升的详细归属",
+        "m03：技术名称与具体性能效果的详细证据绑定"
+      ],
+      "recurrence_assessment": "从玩具到工业工具、从素材生成器到 AI 导演、升维为导演级调度、重构流程与应对变革构成可以定位的提升框架。两份均记录框架并保留功能价值；它尚不是已经验证的臭味规则或改写收益。",
+      "positive_reader_binding_opportunity": "无；不能用 n02 的空列表作为第二篇正向绑定成功。"
+    }
+  },
+  "sensitivity_excluding_ad6ae677b7701": {
+    "excluded_assignment_id": "ad6ae677b7701",
+    "reason": "恢复载荷时自报 m06 三标签发生变化，不能当作无操作偏差的原始生成重复。",
+    "retained_responses": [
+      "a2d320ff57bf6",
+      "a1a3e28c92dbe",
+      "a317b4b4f22ef"
+    ],
+    "qualitative_result": [
+      "n01 的稳定版时间疑问被概括为等待意向的问题、参考线 proposer 歧义、低预期 foil 差异与第四焦点覆盖差异全部保留。",
+      "n02 仅剩 a317b4b4f22ef 一份；技能必要条件否定、未知测试者和无读者证据仍可对原文逐项支持，但不再有两份重复记录的证据。",
+      "n02“仅支持”排他限制的 prior_or_foil 空值边界在保留回答中仍存在，不因排除另一份而解决。",
+      "m02、m03 详细覆盖不足仍存在。对重复措辞与阅读效果仍无人工验证结论。"
+    ],
+    "no_rate_recalculation": true
+  },
+  "concise_conclusion": [
+    "明确的必要条件否定、运行条件、玩家自述与二层转述、未知测试者等主要焦点有据支持，未见将测试数字认证为实测真值或把未读材料当作不存在的实质错误。",
+    "n01 b025 的时间疑问被一份记录说成已证明等待意向，需在裁定中收窄；这不是 b001 那条明确等待后再玩的评论。",
+    "参考线 proposer 的层级、暗示低预期的 prior 编码，以及“仅支持”的排他限制仍有未解决的字段边界，不能因两份一致或文字说明充分就算自动字段可用。",
+    "不同第四焦点、共同略过的输入参数／技术效果及缺少正向读者机会，均保留为覆盖信息。排除发生载荷变化的 n02 回答后，以上边界不消失。"
+  ],
+  "source_integrity": {
+    "read_paths": [
+      "D:/MyProjects/cn-corpus-processing/docs/routes/compact-refiner/cognitive-move-contract-probe-v1.1.md",
+      "D:/MyProjects/cn-corpus-processing/docs/routes/compact-refiner/cognitive-move-record-contract-v1.1.md",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n01/metadata.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n01/body.txt",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n01/blocks.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n01/coverage.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n01/citations.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n02/metadata.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n02/body.txt",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n02/blocks.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n02/coverage.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/documents/n02/citations.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/responses/a2d320ff57bf6.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/responses/a1a3e28c92dbe.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/responses/a317b4b4f22ef.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/responses/ad6ae677b7701.json"
+    ],
+    "sha256_at_review": {
+      "docs/routes/compact-refiner/cognitive-move-contract-probe-v1.1.md": "2cec9ead2a1f90e3c81e3ca1d2a793df8b0a1a206d40f8c925320a99800956f0",
+      "docs/routes/compact-refiner/cognitive-move-record-contract-v1.1.md": "cf1cbc506319b935a9b1f9273d8b7ccafa91fb9df4b5020fcd67efab5821ccc7",
+      "data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md": "f6531bd4624e0d4d94c548440b2521b5dd16b3a89d6153d4bdf67a4d782b2fa6",
+      "data/local/cognitive-move-contract-probe-v1/documents/n01/metadata.json": "d7994b76ce43e40a57f39818d9f9c8eee6a3613be43b96f1f4dba9d4f033e56d",
+      "data/local/cognitive-move-contract-probe-v1/documents/n01/body.txt": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+      "data/local/cognitive-move-contract-probe-v1/documents/n01/blocks.json": "85296b70c14ecf99f80620209f735e3e8eb65e847d07ba0cc105362b66d1ea2f",
+      "data/local/cognitive-move-contract-probe-v1/documents/n01/coverage.json": "21bd4e96ffce9dc2ed0b16db09af778976bf7f45551dc1d57dfaa793e323eab3",
+      "data/local/cognitive-move-contract-probe-v1/documents/n01/citations.json": "45cfc82c85fc71e3f3f332ae9d7699bb47d4357f80fe3bc0317adf3e5808b574",
+      "data/local/cognitive-move-contract-probe-v1/documents/n02/metadata.json": "c3a7c02e611b0bfdf28333b1d1c7272973ff6e5f593eeb4ee2d6411f6791d977",
+      "data/local/cognitive-move-contract-probe-v1/documents/n02/body.txt": "d07f105061a9f11e7bb4ff3668b1586e0ac3ec01d5a7d81fa37aaab5680a36e7",
+      "data/local/cognitive-move-contract-probe-v1/documents/n02/blocks.json": "bf12f1db3d01c531e633570db31b2bd4d3fd10ae82163888229442349ae92ad9",
+      "data/local/cognitive-move-contract-probe-v1/documents/n02/coverage.json": "5027a54353e0fbb2fb02deba4fa936cb476fc4db22755d08cba54bd08d06ad9c",
+      "data/local/cognitive-move-contract-probe-v1/documents/n02/citations.json": "76ab5d13c2db4c44f14a9cea2f37f7ac6383a1b7daf655ddf59d3377c6f38b5e",
+      "data/local/cognitive-move-contract-probe-v1/responses/a2d320ff57bf6.json": "0c337f2f016d2b43ca6197c2f52fec1508ef6b9aafee2c94788f7454c14b002c",
+      "data/local/cognitive-move-contract-probe-v1/responses/a1a3e28c92dbe.json": "c8380384fb318bd8b031cc12a1c25fb9b13829cfb4490f1f09902066a2fbd963",
+      "data/local/cognitive-move-contract-probe-v1/responses/a317b4b4f22ef.json": "505b5abe3b5cde803c8cd1db1452cf3a646f4f873c938577d17737a776fe6efa",
+      "data/local/cognitive-move-contract-probe-v1/responses/ad6ae677b7701.json": "3bb3b09ec3ae08b21f2eed01fae255f0a9aaf7763c1348f9f2a0300a009bc180"
+    },
+    "write_scope": "仅独占创建本独立复核 JSON；所有原文件不改。",
+    "evidence_pointer_and_exact_quote_checks": 103,
+    "check_scope": "机械检查仅确认本复核的 JSON 定位与连续引述匹配；语义判断由逐项裁定承担。",
+    "output_transport_note": "一次超出 Windows 命令长度限制、一次非交互 stdin 为空的写入准备均在目标文件创建前失败；未因此改动语义裁定。最后采用独占创建及分块写入同一新文件。"
+  }
+}

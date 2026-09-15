@@ -1,0 +1,1080 @@
+{
+  "assignment_id": "a2a85b3824864",
+  "packet_id": "p44d2bba58f24",
+  "identity": {
+    "agent_task": "/root/contract_article_08",
+    "model": "Codex（开发者说明基于 GPT-6；精确模型与 backend unknown）",
+    "full_article_read": true,
+    "other_outputs_seen": false,
+    "read_paths": [
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/a2a85b3824864.json",
+      "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p44d2bba58f24.json"
+    ],
+    "inherited_guidance": [
+      "自动注入了项目 AGENTS.md、项目使命、研究约束、路线历史和运行环境；其中包含其他文章的旧锚点评价，如 Microduck 被评价为“极其臭”“恶臭”，百度文章被评价为“一般臭”。这些不是本篇人工质量标签，本任务不能称为双盲。",
+      "自动注入的项目指南称当前 Agent 为 Astra；本次没有读取额外资料或调用服务核验精确模型身份。",
+      "收到父任务限定的三个可读文件、单篇标注、独占创建首份回答及不得校验后修补的指令。没有读取 HANDOVER/HANDOFF，也没有接管其他研究工作。"
+    ],
+    "procedure_violations": []
+  },
+  "article_map": [
+    {
+      "move_id": "m01",
+      "block_ids": [
+        "title",
+        "b001",
+        "b002",
+        "b003",
+        "b004"
+      ],
+      "operation": [
+        "说明选题由来",
+        "回应读者兴趣",
+        "交代个人背景"
+      ],
+      "description": "以系列晒单和朋友对细节的兴趣说明临时新增此篇，邀请批评，再叙述老房、单身和生病后父母前来等装修背景。",
+      "recurrence_group": "写作安排与读者互动"
+    },
+    {
+      "move_id": "m02",
+      "block_ids": [
+        "b005",
+        "b006",
+        "b007",
+        "b008",
+        "b009",
+        "b010",
+        "b011",
+        "b012",
+        "b013",
+        "b014",
+        "b015"
+      ],
+      "operation": [
+        "列出优先事项",
+        "限定经验与能力",
+        "说明可用资源及户型"
+      ],
+      "description": "把美观、节省、适合自己、收纳列作兼容目标；说明白色方案、父亲木工经验及承重墙、走廊、阳台等条件。",
+      "recurrence_group": "依自身条件取舍"
+    },
+    {
+      "move_id": "m03",
+      "block_ids": [
+        "b016",
+        "b017",
+        "b018",
+        "b019",
+        "b020",
+        "b021",
+        "b022",
+        "b023",
+        "b024",
+        "b025",
+        "b026",
+        "b027",
+        "b028",
+        "b029",
+        "b030",
+        "b031",
+        "b032"
+      ],
+      "operation": [
+        "展示装修前状态",
+        "报告施工",
+        "从经历提出建议"
+      ],
+      "description": "沿空间交代旧貌和拆除、水电、窗户与阳台改造；以拆除费工费时和六楼垃圾搬运负担支持有条件的新房建议。",
+      "recurrence_group": "局部约束与施工选择"
+    },
+    {
+      "move_id": "m04",
+      "block_ids": [
+        "b033",
+        "b034",
+        "b035",
+        "b036",
+        "b037",
+        "b038",
+        "b039",
+        "b040",
+        "b041",
+        "b042",
+        "b043",
+        "b044",
+        "b045"
+      ],
+      "operation": [
+        "解释尺寸与管线限制",
+        "比较购买及手工方案",
+        "提供使用提醒"
+      ],
+      "description": "说明包管、柜体、台盆和抽屉的安排，并将浴缸习惯与清洁、卫生及儿童风险并列。工人施工条件下的叮嘱是建议分支。",
+      "recurrence_group": "局部约束与施工选择"
+    },
+    {
+      "move_id": "m05",
+      "block_ids": [
+        "b046",
+        "b047",
+        "b048",
+        "b049",
+        "b050",
+        "b051",
+        "b052",
+        "b053",
+        "b054",
+        "b055",
+        "b056",
+        "b057",
+        "b058",
+        "b059",
+        "b060",
+        "b061",
+        "b062",
+        "b063",
+        "b064",
+        "b065",
+        "b066",
+        "b067",
+        "b068"
+      ],
+      "operation": [
+        "报告购买和使用体验",
+        "解释空间安排",
+        "重排弊端的重要性"
+      ],
+      "description": "厨房部分保留购买记忆的不确定性，解释洗衣机放厨房的原因，将高度问题置于油烟问题之前，再补充收纳和消毒柜作拉篮的花费。",
+      "recurrence_group": "局部约束与施工选择"
+    },
+    {
+      "move_id": "m06",
+      "block_ids": [
+        "b069",
+        "b070",
+        "b071",
+        "b072",
+        "b073",
+        "b074",
+        "b075",
+        "b076",
+        "b077",
+        "b078",
+        "b079",
+        "b080",
+        "b081",
+        "b082",
+        "b083",
+        "b084",
+        "b085",
+        "b086",
+        "b087",
+        "b088",
+        "b089"
+      ],
+      "operation": [
+        "转述参考文章建议",
+        "解释实际取舍",
+        "估算投影尺寸",
+        "比较条件方案"
+      ],
+      "description": "区分参考文章的双 HDMI 和多插座建议、父亲的可换线说法与作者的成本选择；用距离、屏幕和墙宽说明隔墙，交代一百寸的过道代价及柜体尺寸。",
+      "recurrence_group": "局部约束与施工选择"
+    },
+    {
+      "move_id": "m07",
+      "block_ids": [
+        "b090",
+        "b091",
+        "b092",
+        "b093",
+        "b094",
+        "b095",
+        "b096",
+        "b097",
+        "b098",
+        "b099",
+        "b100",
+        "b101",
+        "b102",
+        "b103",
+        "b104",
+        "b105",
+        "b106",
+        "b107",
+        "b108",
+        "b109",
+        "b110"
+      ],
+      "operation": [
+        "指出未完成事项",
+        "解释配置限制",
+        "表达审美偏好"
+      ],
+      "description": "从餐厅尺寸匹配和挂画犹豫转到书房的书柜愿望、家庭协商、柜门不满及工作台耐磨取舍，配有多处指图文字。",
+      "recurrence_group": "局部约束与施工选择"
+    },
+    {
+      "move_id": "m08",
+      "block_ids": [
+        "b111",
+        "b112",
+        "b113",
+        "b114",
+        "b115",
+        "b116",
+        "b117",
+        "b118",
+        "b119",
+        "b120",
+        "b121",
+        "b122",
+        "b123",
+        "b124",
+        "b125",
+        "b126",
+        "b127",
+        "b128",
+        "b129",
+        "b130",
+        "b131",
+        "b132",
+        "b133",
+        "b134",
+        "b135",
+        "b136",
+        "b137",
+        "b138"
+      ],
+      "operation": [
+        "展示结构与制作细节",
+        "解释收纳用途",
+        "提出有条件的替代方案"
+      ],
+      "description": "逐项介绍鞋柜、床垫槽、床下收纳、封边及斜角衣柜；按资金、木工能力、外观和儿童安全提出定制及材料建议。",
+      "recurrence_group": "局部约束与施工选择"
+    },
+    {
+      "move_id": "m09",
+      "block_ids": [
+        "b139",
+        "b140",
+        "b141",
+        "b142",
+        "b143",
+        "b144",
+        "b145"
+      ],
+      "operation": [
+        "限定展示条件",
+        "回顾完成程度",
+        "归纳网购经验"
+      ],
+      "description": "说明照片时间不同，区分装修基本结束与装饰收纳仍待完善，列举网购物品并建议看不到实物时多参考图片。",
+      "recurrence_group": "回顾并汇集建议"
+    },
+    {
+      "move_id": "m10",
+      "block_ids": [
+        "b146",
+        "b147",
+        "b148",
+        "b149",
+        "b150",
+        "b151",
+        "b152",
+        "b153",
+        "b154",
+        "b155",
+        "b156",
+        "b157",
+        "b158"
+      ],
+      "operation": [
+        "列举遗憾",
+        "自我反思",
+        "增加情感评价维度"
+      ],
+      "description": "先汇总采购、工人和设计遗憾，再借母亲对话及父子施工经历重估父亲留下的装修痕迹；末尾仍保留对流行审美的不满。",
+      "recurrence_group": null
+    },
+    {
+      "move_id": "m11",
+      "block_ids": [
+        "b159",
+        "b160",
+        "b161",
+        "b162",
+        "b163",
+        "b164",
+        "b165",
+        "b166",
+        "b167",
+        "b168"
+      ],
+      "operation": [
+        "汇集行动建议",
+        "给出条件和例外",
+        "重申适用性"
+      ],
+      "description": "汇集宜家大件、木工与定制、烤漆周期、电器尺寸和风格等建议，重申事先整体考虑与适合自己，并限定不要贪便宜的对象。",
+      "recurrence_group": "回顾并汇集建议"
+    },
+    {
+      "move_id": "m12",
+      "block_ids": [
+        "b169",
+        "b170",
+        "b171",
+        "b172",
+        "b173",
+        "b174",
+        "b175"
+      ],
+      "operation": [
+        "结束并预告补充",
+        "发出联系邀请",
+        "预设读者需求",
+        "自嘲"
+      ],
+      "description": "以待评论补充和出门说明收束，提出无锡装修联系邀请，再以预期读者会要照片引出附图及单身自嘲。预期需求不是已观察的读者反馈。",
+      "recurrence_group": "写作安排与读者互动"
+    }
+  ],
+  "records": [
+    {
+      "move_id": "m01",
+      "focal_spans": [
+        {
+          "block_id": "b001",
+          "quote": "有些朋友对装修的细节有兴趣，这让某人很欣慰，临时赶工一篇装修细节篇出来（没东西可晒了），算是抛砖引玉。"
+        },
+        {
+          "block_id": "b002",
+          "quote": "第一次装修有很多遗憾，这里欢迎大家丢砖咯"
+        }
+      ],
+      "operation": [
+        "回应读者兴趣",
+        "说明选题变更",
+        "邀请批评"
+      ],
+      "question_under_discussion": {
+        "text": "为什么在产品晒单系列中增加装修细节篇，并以什么姿态分享？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "作者称部分朋友对装修细节感兴趣，因此临时增加细节篇，原本打算用投影晒单结束系列。",
+          "source_spans": [
+            {
+              "block_id": "b001",
+              "quote": "原本下面一篇准备用晒投影做完结，有些朋友对装修的细节有兴趣，这让某人很欣慰，临时赶工一篇装修细节篇出来"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者报告写作计划及他人兴趣",
+            "epistemic_status": "作者自述；兴趣反馈没有独立记录"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "作者以第一次装修且有遗憾为分享范围，邀请读者批评。",
+          "source_spans": [
+            {
+              "block_id": "b002",
+              "quote": "第一次装修有很多遗憾，这里欢迎大家丢砖咯"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者直接表述",
+            "epistemic_status": "经验范围声明和邀请"
+          }
+        }
+      ],
+      "relation": {
+        "type": "需求与选题响应",
+        "text": "读者兴趣是新增篇目的明说缘由；承认遗憾限定经验分享的姿态，没有设置需纠正的读者错误。",
+        "comparands": []
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b001",
+              "quote": "有些朋友对装修的细节有兴趣，这让某人很欣慰，临时赶工一篇装修细节篇出来"
+            }
+          ],
+          "stated_link": "作者直接将朋友兴趣与新增细节篇衔接。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "朋友的具体人数、原话和反馈场景未给出。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b002",
+              "quote": "第一次装修有很多遗憾，这里欢迎大家丢砖咯"
+            }
+          ],
+          "stated_link": "第一次装修与承认遗憾共同构成欢迎批评的背景。",
+          "unstated_assumption": null,
+          "unknowns": []
+        }
+      ],
+      "information_update": "说明此篇在系列中的位置、选择细节内容的缘由和分享边界，使后续逐部位介绍有明确用途。",
+      "stance_and_presentation": "“抛砖引玉”“欢迎大家丢砖”及括号自嘲形成对话姿态；结尾再次与读者互动，但 b172 的“知道会有同学要”属于作者预期，证据层级不同。",
+      "reader_belief_evidence": [
+        {
+          "proposition": "有些朋友对装修细节感兴趣。",
+          "holder": "作者所称“有些朋友”",
+          "source_span": {
+            "block_id": "b001",
+            "quote": "有些朋友对装修的细节有兴趣"
+          },
+          "reporting_layer": "本文作者转述，未提供朋友原话或独立观察"
+        }
+      ],
+      "preserved_usefulness": [
+        "保留写作缘由、经验范围和反馈邀请；不要把读者兴趣改写成对具体装修方案的赞同。"
+      ],
+      "possible_reader_cost": [],
+      "uncertainties": [
+        "未提供本篇读者评价；兴趣报告不支持推断广泛需求或质量认可。"
+      ]
+    },
+    {
+      "move_id": "m05",
+      "focal_spans": [
+        {
+          "block_id": "b060",
+          "quote": "超薄的洗衣机可以放厨房，弊端也不少，油烟问题还不是，最主要的是洗衣机是85的高度，加上大理石的厚度，柜体的厚度，橱柜的高度差不多要90+，国内大家一般的橱柜高度是80-85"
+        },
+        {
+          "block_id": "b061",
+          "quote": "我自己用高度正好，老妈说你以后自己做菜，媳妇够不到···"
+        }
+      ],
+      "operation": [
+        "解释安装后的高度限制",
+        "调整弊端的讨论优先级",
+        "区分使用者适配"
+      ],
+      "question_under_discussion": {
+        "text": "厨房放洗衣机后，作者着重提醒什么限制，谁使用时可能受影响？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "proposition": "将油烟问题作为厨房放洗衣机时首先讨论的弊端。",
+        "role": "reframed_priority",
+        "source_spans": [
+          {
+            "block_id": "b060",
+            "quote": "油烟问题还不是，最主要的是洗衣机是85的高度"
+          }
+        ],
+        "prior_holder": null
+      },
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "作者估算高度为85的洗衣机加上大理石和柜体厚度后，橱柜差不多要90+，并称国内一般橱柜高度为80-85；这些数字原句未写单位。",
+          "source_spans": [
+            {
+              "block_id": "b060",
+              "quote": "洗衣机是85的高度，加上大理石的厚度，柜体的厚度，橱柜的高度差不多要90+，国内大家一般的橱柜高度是80-85"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者直接估算及概括",
+            "epistemic_status": "约数和一般化比较；未独立核验"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "作者认为这套高度对自己正好。",
+          "source_spans": [
+            {
+              "block_id": "b061",
+              "quote": "我自己用高度正好"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者自述使用体验",
+            "epistemic_status": "个人适用性判断"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "母亲预言作者以后需要自己做菜，因为其媳妇会够不到。",
+          "source_spans": [
+            {
+              "block_id": "b061",
+              "quote": "老妈说你以后自己做菜，媳妇够不到···"
+            }
+          ],
+          "attribution": {
+            "proposer": "作者的母亲",
+            "reporting_layer": "本文作者转述母亲的话",
+            "epistemic_status": "家人对未来使用情景的判断；不是已观察结果"
+          }
+        }
+      ],
+      "relation": {
+        "type": "讨论优先级与使用情景比较",
+        "text": "作者把注意力转到台面高度，不宜扩成油烟绝无影响；对自己合适和对另一使用者可能过高可以同时成立。",
+        "comparands": [
+          {
+            "text": "文中所称国内一般橱柜高度80-85。",
+            "role": "comparison_baseline",
+            "source_spans": [
+              {
+                "block_id": "b060",
+                "quote": "国内大家一般的橱柜高度是80-85"
+              }
+            ]
+          },
+          {
+            "text": "作者本人使用与母亲预想的媳妇使用。",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b061",
+                "quote": "我自己用高度正好，老妈说你以后自己做菜，媳妇够不到···"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b060",
+              "quote": "加上大理石的厚度，柜体的厚度，橱柜的高度差不多要90+"
+            }
+          ],
+          "stated_link": "叠加台面和柜体厚度会抬高橱柜。",
+          "unstated_assumption": "按本文采用的安装方式计算高度。",
+          "unknowns": [
+            "具体厚度、测量记录和一般高度概括的来源未给出；图片未读取。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b061",
+              "quote": "我自己用高度正好"
+            }
+          ],
+          "stated_link": null,
+          "unstated_assumption": null,
+          "unknowns": [
+            "未提供身高与操作姿势。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b061",
+              "quote": "老妈说你以后自己做菜，媳妇够不到···"
+            }
+          ],
+          "stated_link": "母亲以够不到解释未来做菜分工的说法。",
+          "unstated_assumption": "母亲预想另一使用者的适用高度与作者不同。",
+          "unknowns": [
+            "预想使用者及其身高未说明，语气可能含打趣。"
+          ]
+        }
+      ],
+      "information_update": "把厨房安放方案具体化为高度与使用者适配问题，补充单看能否放下所遗漏的使用条件。",
+      "stance_and_presentation": "“最主要”明确安排问题次序，随后的数字与母亲话语让提醒落到具体场景；这是本篇反复出现的局部约束解释，不证明读者原先误判。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留高度约数、个人使用差异及母亲话语的转述层；上下文的浴缸和阳台排水约束仍有解释价值。"
+      ],
+      "possible_reader_cost": [
+        "若把一般橱柜高度和未来媳妇的适配判断读成通用结论，适用范围可能不清，需要读者效果检验。"
+      ],
+      "uncertainties": [
+        "没有实际读者持有油烟优先判断的证据；母亲不因被引用就自动成为本篇读者。"
+      ]
+    },
+    {
+      "move_id": "m06",
+      "focal_spans": [
+        {
+          "block_id": "b072",
+          "quote": "作者建议大家预留两条HDMI线，这样坏了一条还有另外一条备用，"
+        },
+        {
+          "block_id": "b073",
+          "quote": "我只布了一条，老爸说线坏了是可以换的起来的"
+        },
+        {
+          "block_id": "b080",
+          "quote": "根据换算公式，可以投84寸左右，和上文作者的尺寸一样，"
+        },
+        {
+          "block_id": "b082",
+          "quote": "如果投一百寸，那把过道封的只剩一点点了"
+        }
+      ],
+      "operation": [
+        "转述他人建议",
+        "解释自身方案",
+        "进行尺寸估算",
+        "指出条件方案代价"
+      ],
+      "question_under_discussion": {
+        "text": "参考文章的布线建议如何被采用，现有空间允许怎样的投影安排？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": null,
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "所参考文章的作者建议预留两条HDMI线，以便一条损坏后有另一条备用。",
+          "source_spans": [
+            {
+              "block_id": "b072",
+              "quote": "作者建议大家预留两条HDMI线，这样坏了一条还有另外一条备用，"
+            }
+          ],
+          "attribution": {
+            "proposer": "文中所参考文章的作者（姓名未说明）",
+            "reporting_layer": "本文作者转述另一篇文章",
+            "epistemic_status": "转述的建议；上游全文未读取"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "本文作者只布了一条线，并将实际原因归于线贵。",
+          "source_spans": [
+            {
+              "block_id": "b073",
+              "quote": "我只布了一条"
+            },
+            {
+              "block_id": "b074",
+              "quote": "实际是因为线好贵，还买的开博尔便宜点的，圆粗，好硬"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者报告选择及原因",
+            "epistemic_status": "个人经历自述"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "父亲认为线坏了以后可以更换。",
+          "source_spans": [
+            {
+              "block_id": "b073",
+              "quote": "老爸说线坏了是可以换的起来的"
+            }
+          ],
+          "attribution": {
+            "proposer": "作者的父亲",
+            "reporting_layer": "本文作者转述父亲的话",
+            "epistemic_status": "可更换性判断；未核验"
+          }
+        },
+        {
+          "claim_id": "c4",
+          "text": "本文作者据换算公式估算可投84寸左右；其距离描述为3米多点，记忆中84寸屏幕带壳为2.1米多点，原墙宽1.8米，因而选择隔墙且不考虑短距投影仪。",
+          "source_spans": [
+            {
+              "block_id": "b079",
+              "quote": "沙发这边的墙壁和背景墙的距离差不多是3米多点，"
+            },
+            {
+              "block_id": "b080",
+              "quote": "根据换算公式，可以投84寸左右，和上文作者的尺寸一样，"
+            },
+            {
+              "block_id": "b081",
+              "quote": "84寸的屏幕记得是加外壳是2.1米多点，原来墙壁1.8宽，选择隔墙，不考虑短距投影仪"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者自行估算、回忆尺寸并报告选择",
+            "epistemic_status": "公式未展开；含约数和记忆限定，未独立核验"
+          }
+        },
+        {
+          "claim_id": "c5",
+          "text": "作者判断若投一百寸，过道会被封得只剩一点点。",
+          "source_spans": [
+            {
+              "block_id": "b082",
+              "quote": "如果投一百寸，那把过道封的只剩一点点了"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者比较假设方案",
+            "epistemic_status": "条件性空间判断"
+          }
+        }
+      ],
+      "relation": {
+        "type": "方案取舍与普通条件比较",
+        "text": "备用线与可更换线是不同处理方式；一百寸是备选尺寸的条件后果，均没有证据表明它们是需要纠正的读者误解。",
+        "comparands": [
+          {
+            "text": "预留两条线，损坏一条时用备用线。",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b072",
+                "quote": "预留两条HDMI线，这样坏了一条还有另外一条备用，"
+              }
+            ]
+          },
+          {
+            "text": "只布一条，父亲称坏后可更换。",
+            "role": "comparison_scenario",
+            "source_spans": [
+              {
+                "block_id": "b073",
+                "quote": "我只布了一条，老爸说线坏了是可以换的起来的"
+              }
+            ]
+          },
+          {
+            "text": "作者所选的84寸左右方案。",
+            "role": "comparison_baseline",
+            "source_spans": [
+              {
+                "block_id": "b080",
+                "quote": "可以投84寸左右"
+              }
+            ]
+          },
+          {
+            "text": "若投一百寸，过道剩余空间很小。",
+            "role": "conditional_scenario",
+            "source_spans": [
+              {
+                "block_id": "b082",
+                "quote": "如果投一百寸，那把过道封的只剩一点点了"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b072",
+              "quote": "这样坏了一条还有另外一条备用，"
+            }
+          ],
+          "stated_link": "以保留备用线路解释双线建议。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "参考文章的完整论证未读取。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b074",
+              "quote": "实际是因为线好贵"
+            }
+          ],
+          "stated_link": "作者直接给出成本理由。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "具体线材价格未给出。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b073",
+              "quote": "老爸说线坏了是可以换的起来的"
+            }
+          ],
+          "stated_link": null,
+          "unstated_assumption": null,
+          "unknowns": [
+            "此处未说明换线操作条件，图片未读取。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c4",
+            "c5"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b079",
+              "quote": "原来的背景墙只有1.8米宽，沙发这边的墙壁和背景墙的距离差不多是3米多点，"
+            },
+            {
+              "block_id": "b081",
+              "quote": "84寸的屏幕记得是加外壳是2.1米多点，原来墙壁1.8宽，选择隔墙，不考虑短距投影仪"
+            },
+            {
+              "block_id": "b082",
+              "quote": "如果投一百寸，那把过道封的只剩一点点了"
+            }
+          ],
+          "stated_link": "以投影距离、屏幕宽度和原墙宽衔接隔墙选择及大尺寸对过道的代价。",
+          "unstated_assumption": "在作者采用的投影和墙面布局方案下比较。",
+          "unknowns": [
+            "换算公式、完整户型尺寸及一百寸时的过道剩余宽度未展开；未看图。"
+          ]
+        }
+      ],
+      "information_update": "保留建议来源与实际选择之间的区别，用尺寸和成本解释没有完全照用参考方案的原因。",
+      "stance_and_presentation": "多次“作者建议”显式承接上游经验，再切回“我”和“老爸”；“根据换算公式”提示计算依据，但估算提出者仍是本文作者。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留两条与一条线的区别、84寸左右和一百寸的条件比较，以及“记得”“左右”“多点”等限定。"
+      ],
+      "possible_reader_cost": [
+        "缺少展开的换算式和剩余通道尺寸，读者直接复用计算时可能需另行补足。"
+      ],
+      "uncertainties": [
+        "不能把父亲的可换线判断当成已验证施工能力；参考文章作者的建议不是本篇读者信念。"
+      ]
+    },
+    {
+      "move_id": "m10",
+      "focal_spans": [
+        {
+          "block_id": "b155",
+          "quote": "有些的老爸自己自顾着做的，他觉得现在流行的，比如书房前面的棱形凹槽装筒灯"
+        },
+        {
+          "block_id": "b156",
+          "quote": "这个做完之后我下班看到，觉得超难看说了几句"
+        },
+        {
+          "block_id": "b156",
+          "quote": "家里这些装修不管是遗憾的地方还是满意的地方，都是值得怀恋的。"
+        },
+        {
+          "block_id": "b158",
+          "quote": "不过还是要吐槽，现在一般装修工人所谓流行的东西，真的让人不忍直视···"
+        }
+      ],
+      "operation": [
+        "回顾自身不满",
+        "转述家人解释",
+        "反省相处方式",
+        "增加情感价值维度"
+      ],
+      "question_under_discussion": {
+        "text": "作者如何重新评价父亲制作但自己不满意的装修细节？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "proposition": "作者先前聚焦于筒灯凹槽外观难看，对父亲表达了不满。",
+        "role": "reframed_priority",
+        "source_spans": [
+          {
+            "block_id": "b156",
+            "quote": "这个做完之后我下班看到，觉得超难看说了几句"
+          }
+        ],
+        "prior_holder": "作者自述的先前评价"
+      },
+      "asserted_or_promised_content": [
+        {
+          "claim_id": "c1",
+          "text": "作者自述看到父亲所做凹槽后觉得难看并说了几句。",
+          "source_spans": [
+            {
+              "block_id": "b155",
+              "quote": "比如书房前面的棱形凹槽装筒灯"
+            },
+            {
+              "block_id": "b156",
+              "quote": "这个做完之后我下班看到，觉得超难看说了几句"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者回顾自己的反应",
+            "epistemic_status": "个人经历与评价自述"
+          }
+        },
+        {
+          "claim_id": "c2",
+          "text": "母亲向作者解释父亲费时制作是因为觉得好看，受到批评会难过。",
+          "source_spans": [
+            {
+              "block_id": "b156",
+              "quote": "后来我妈私下和我说你爸多费时间做的，因为他觉得好看，你说他他会难过的"
+            }
+          ],
+          "attribution": {
+            "proposer": "作者的母亲",
+            "reporting_layer": "本文作者转述母亲对父亲感受的解释",
+            "epistemic_status": "转述的家人心理解释；不是独立核验的父亲表态"
+          }
+        },
+        {
+          "claim_id": "c3",
+          "text": "作者想到未来相处时间可能有限，认为装修中满意和遗憾之处都留下父母痕迹，值得怀念。",
+          "source_spans": [
+            {
+              "block_id": "b156",
+              "quote": "现在觉得这些都有他们的痕迹，因为分隔两地，老了以后他们也是回老家，以后相处的时间恐怕也不会多，家里这些装修不管是遗憾的地方还是满意的地方，都是值得怀恋的。"
+            }
+          ],
+          "attribution": {
+            "proposer": "本文作者",
+            "reporting_layer": "本文作者陈述当下感受及未来预期",
+            "epistemic_status": "情感评价；相处时间少带“恐怕”限定"
+          }
+        }
+      ],
+      "relation": {
+        "type": "兼容评价维度下的重估",
+        "text": "从不满意的外观转向共同经历与父母痕迹的价值，并未证明原审美判断错误；b158 仍然吐槽流行审美，两种评价可以并存。",
+        "comparands": [
+          {
+            "text": "对装修外观的审美评价。",
+            "role": "evaluation_dimension",
+            "source_spans": [
+              {
+                "block_id": "b156",
+                "quote": "觉得超难看说了几句"
+              }
+            ]
+          },
+          {
+            "text": "对父母痕迹及相处经历的情感评价。",
+            "role": "evaluation_dimension",
+            "source_spans": [
+              {
+                "block_id": "b156",
+                "quote": "现在觉得这些都有他们的痕迹"
+              },
+              {
+                "block_id": "b157",
+                "quote": "但是也多了很多父子两独处的机会"
+              }
+            ]
+          }
+        ]
+      },
+      "grounds_and_warrant": [
+        {
+          "claim_ids": [
+            "c1"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b155",
+              "quote": "比如书房前面的棱形凹槽装筒灯"
+            },
+            {
+              "block_id": "b156",
+              "quote": "这个做完之后我下班看到，觉得超难看说了几句"
+            }
+          ],
+          "stated_link": "以一个具体装修部位承接先前列举的遗憾。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "图片未读取，不能独立评价该部位外观。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c2"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b156",
+              "quote": "后来我妈私下和我说你爸多费时间做的，因为他觉得好看，你说他他会难过的"
+            }
+          ],
+          "stated_link": "母亲用投入时间和喜欢成品解释父亲可能受伤的感受。",
+          "unstated_assumption": null,
+          "unknowns": [
+            "此段父亲的心理主要由母亲解释。"
+          ]
+        },
+        {
+          "claim_ids": [
+            "c3"
+          ],
+          "evidence_spans": [
+            {
+              "block_id": "b156",
+              "quote": "因为分隔两地，老了以后他们也是回老家，以后相处的时间恐怕也不会多"
+            },
+            {
+              "block_id": "b157",
+              "quote": "但是也多了很多父子两独处的机会，比如装一晚投影仪结果没信号，装个马桶搞到十二点等等（附送的水管楼漏水）。"
+            }
+          ],
+          "stated_link": "可能有限的相处时间及实际共同施工经历支持作者的怀念。",
+          "unstated_assumption": "共同制作的物件能够承载作者珍视的家庭记忆。",
+          "unknowns": []
+        }
+      ],
+      "information_update": "把遗憾清单扩展为作者对相处方式和成品情感意义的反思，不要求否认装修中的实际不足。",
+      "stance_and_presentation": "“那时候”“后来想想”“现在觉得”标明作者自身评价变化，母亲对话和夜间安装实例提供铺垫；不是将认知转变归给未经记录的读者。",
+      "reader_belief_evidence": [],
+      "preserved_usefulness": [
+        "保留具体遗憾、对父母投入的体会、相处时间的不确定性，以及审美不满仍然存在这一并存关系。"
+      ],
+      "possible_reader_cost": [
+        "从装修技术转入较长亲情回忆会暂时改变信息重心；是否造成阅读负担需由实际读者检验。"
+      ],
+      "uncertainties": [
+        "未核验家庭对话；本文自述足以分析评价动作，不足以独立确认所有人物心理。"
+      ]
+    }
+  ],
+  "omitted_opportunities": [
+    "m02 的“不需要遵循‘别人都是这样做的’”、m11 的“价格并不便宜”及“不要太听信工人”未逐项详细记录。它们分别涉及适用性优先和价格、来源建议的限定，不能仅因存在否定就推定实际读者误解；四项额度内优先保留不同归属层和情感维度的机会。",
+    "m04 的找工人包管、m08 的资金允许时找大店定制、m11 的没有靠谱木工时定制，均为额外普通条件与建议机会，已在位置图记录，但未完成逐项依据分析。",
+    "m05 的烟灶不到2500的记忆估价、2049购买价与消毒柜价格，m06 转述的150个插座及作者五十几个插座，m11 的一周与一个月制作周期未详标；不能把这些未覆盖数字的归属和有效性算作检查通过。",
+    "m07 对理想书柜的反问、m08 对细心读者会发现插座颜色的设想、m12 预期读者想要照片，与 m01 已报告的朋友兴趣证据不同，未纳入详细读者态度记录。",
+    "全文各部位持续采用条件、尺寸、费用和个人偏好的解释，末尾部分建议回扣前文；位置图只概括这种可见复现，没有逐一判断每次回顾是否冗余或是否改善阅读。",
+    "读取的是 packet 全部文字 blocks。首次完整输出在中段被工具截断，随后仅从同一 packet 补读 b055–b120，补齐可见缺口。94项媒体引用对应的图片像素、图中信息、页面视觉及上游文章未读取；大量指图短句因此仍有支持范围限制，不能统称为缺少依据。"
+  ]
+}

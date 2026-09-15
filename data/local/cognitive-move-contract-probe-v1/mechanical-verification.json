@@ -1,0 +1,247 @@
+{
+  "frozen_inputs": "passed",
+  "integrity_errors": [],
+  "expected_responses": 8,
+  "received_responses": 8,
+  "mechanically_valid_responses": 8,
+  "completed_assignments": [
+    "a1a3e28c92dbe",
+    "a2a85b3824864",
+    "a2d320ff57bf6",
+    "a317b4b4f22ef",
+    "aa3f3a42dd34f",
+    "ac837554aa281",
+    "ad6ae677b7701",
+    "af0681a48b8bc"
+  ],
+  "missing_assignments": [],
+  "unexpected_response_files": [],
+  "records": 32,
+  "valid_quote_occurrences": 393,
+  "responses": {
+    "a1a3e28c92dbe": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 11,
+      "valid_quote_occurrences": 52,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_05",
+        "model": "Codex（GPT-6；精确模型与 backend unknown；注入项目指南称当前 Agent 为 Astra）",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/a1a3e28c92dbe.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p41f827571b4a.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了完整项目 AGENTS.md，包括研究目标、先分析篇章动作而不只匹配连接词、保留语义与正常中文省略等指导；不是双盲。",
+          "自动注入的项目指南包含旧锚点评价：Microduck 文章被评为“极其臭”“恶臭”，百度文章为“一般臭”，Cowork 预览的目标信号被认为较弱；这些属于既有项目背景，本篇未提供人工质量或强度标签。",
+          "收到 Root 的单篇受控任务说明，限制只读三个指定文件，并要求独占保存第一次完整回答；未收到其他文章标注结果。",
+          "已见运行环境及通用工具、协作和安全规则。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    },
+    "a2a85b3824864": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 12,
+      "valid_quote_occurrences": 57,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_08",
+        "model": "Codex（开发者说明基于 GPT-6；精确模型与 backend unknown）",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/a2a85b3824864.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p44d2bba58f24.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了项目 AGENTS.md、项目使命、研究约束、路线历史和运行环境；其中包含其他文章的旧锚点评价，如 Microduck 被评价为“极其臭”“恶臭”，百度文章被评价为“一般臭”。这些不是本篇人工质量标签，本任务不能称为双盲。",
+          "自动注入的项目指南称当前 Agent 为 Astra；本次没有读取额外资料或调用服务核验精确模型身份。",
+          "收到父任务限定的三个可读文件、单篇标注、独占创建首份回答及不得校验后修补的指令。没有读取 HANDOVER/HANDOFF，也没有接管其他研究工作。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    },
+    "a2d320ff57bf6": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 11,
+      "valid_quote_occurrences": 53,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_04",
+        "model": "Codex（GPT-6 系列；精确 backend unknown；自动注入的项目指南将当前 Agent 描述为 Astra）",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/a2d320ff57bf6.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p41f827571b4a.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了项目 AGENTS.md 指南，包含研究目标、既有路线和修辞机制关注点。",
+          "自动注入的指南包含另一篇 Microduck 文章的“极其臭”“恶臭”旧评价，以及百度文章的“一般臭”旧评价；这些不是本篇的人工标签。本任务不能称为双盲。",
+          "父任务提供了仅允许读取说明、assignment 和指定 packet 的受控边界，并要求独占创建唯一回答；未收到本篇人工质量标签。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    },
+    "a317b4b4f22ef": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 6,
+      "valid_quote_occurrences": 35,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_03",
+        "model": "GPT-6（开发者说明）；精确 backend unknown",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/a317b4b4f22ef.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p82b58f312728.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了用户提供的项目 AGENTS.md，包括项目目标、研究约束、历史状态、文档语言规则和执行环境说明；未自行读取该文件或 HANDOVER/HANDOFF。",
+          "自动注入的项目指南包含维护者对什么值得买 Microduck 文章的“极其臭”“恶臭”评价、百度文章的“一般臭”评价，以及 Cowork 预览目标风格信号较弱的评价。本 packet 未提供与这些旧评价的对应关系，也未提供本篇人工质量标签；本任务不是双盲。",
+          "已收到 Root 的单篇受控标注任务、三文件阅读边界及独占保存要求；未读取其他任务输出。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    },
+    "aa3f3a42dd34f": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 12,
+      "valid_quote_occurrences": 55,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_02",
+        "model": "Codex（GPT-6 系列；精确 backend unknown）",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/aa3f3a42dd34f.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p44d2bba58f24.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了项目 AGENTS.md，包含研究目标、修辞机制背景、语料与原意保留约束，以及历史路线状态；本任务不是双盲。",
+          "自动注入的旧锚点评价包括：Microduck 文章被维护者评为“极其臭”“恶臭”，百度文章为“一般臭”，Cowork 预览目标信号较弱；指南还包含 Qwen3.5-4B 已暴露最终测试未达标的历史状态。未读取这些文章或测试材料，未将评价转移给本篇。",
+          "父任务提供了只读冻结说明、assignment 和单一 packet、禁止网络/API/额外 Agent、独占创建首份回答的边界。本篇未提供人工质量或强度标签。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    },
+    "ac837554aa281": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 9,
+      "valid_quote_occurrences": 53,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_07",
+        "model": "Codex（开发者说明标识为 GPT-6）；精确 backend unknown；Astra 身份仅见于自动注入的项目指南，未独立核实",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/ac837554aa281.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/pe9cb045b4398.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了项目 AGENTS.md 全文，包含研究目标、时间分组、翻译分层、篇章动作假设、当前路线及执行环境等背景；这些背景并非本篇的独立证据。",
+          "自动注入的旧评价包括 Microduck 文章被维护者评为“极其臭”“恶臭”、百度文章被评为“一般臭”，以及 Cowork 预览目标信号较弱的说明；未主动读取这些文章或其标注。",
+          "自动注入了系统及开发者关于工具、安全、语言、协作和工作区的说明，以及父任务限定三个读取文件和首次独占保存的要求。本任务不是双盲，未获得本篇人工质量或强度标签。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    },
+    "ad6ae677b7701": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 6,
+      "valid_quote_occurrences": 38,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_01",
+        "model": "GPT-6（开发者身份说明；精确 backend unknown；自动注入项目指南另称当前 Agent 为 Astra）",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/ad6ae677b7701.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/p82b58f312728.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了全局语言、后台监控规定及 Codex 系统与开发者操作规则。",
+          "自动注入了本项目 AGENTS.md 内容，包括研究目标、时间分组、翻译分层、特征与读者效果的区分、来源完整性和原意保留等约束；没有另行读取 AGENTS.md、HANDOVER.md 或 HANDOFF 文件。",
+          "自动注入的旧锚点评价包含：Microduck 文章 https://post.smzdm.com/p/a70dm4ll/ 被称为“极其臭”“恶臭”，某百度文章被称为“一般臭”；还包含对 Cowork 预览代表性及否定—替换句式的讨论。这些背景构成暴露，本任务不能声称双盲；没有将本 packet 匹配到旧评价，也没有获得本篇人工强度标签。",
+          "Root 分配消息规定仅可读取冻结说明、assignment 和指定单篇 packet，独占创建首次完整回答，不运行校验器、不修改首次回答、不访问网络/API、不启动其他 Agent。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    },
+    "af0681a48b8bc": {
+      "errors": [],
+      "records": 4,
+      "mapped_moves": 9,
+      "valid_quote_occurrences": 50,
+      "identity_self_report": {
+        "agent_task": "/root/contract_article_06",
+        "model": "GPT-6（系统说明）；自动注入的项目指南称当前 Agent 为 Astra；精确 backend unknown",
+        "full_article_read": true,
+        "other_outputs_seen": false,
+        "read_paths": [
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/annotation-instructions.md",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/assignments/af0681a48b8bc.json",
+          "D:/MyProjects/cn-corpus-processing/data/local/cognitive-move-contract-probe-v1/frozen/packets/pe9cb045b4398.json"
+        ],
+        "inherited_guidance": [
+          "自动注入了本仓库 AGENTS.md 内容，包括项目使命、语言规则、研究约束、历史路线和执行环境；未另行读取该文件。",
+          "自动注入的旧锚点评价包括：Microduck 文章被维护者评为‘极其臭’、‘恶臭’，百度文章为‘一般臭’，Cowork 预览被认为目标风格信号较弱。这些评价不属于本篇，不能据此赋予本篇质量标签。",
+          "收到 Root 的受控任务说明：仅可读取冻结说明、assignment 及其单一 packet；独占创建首份完整回答，不校验后修补。",
+          "本篇没有提供人工强度标签；由于项目背景和旧评价自动暴露，本任务不是双盲。"
+        ],
+        "procedure_violations": []
+      },
+      "mechanical_validity": "passed",
+      "semantic_validity": "requires_source_review",
+      "exposure_validity": "requires_root_audit"
+    }
+  },
+  "response_hashes": {
+    "responses/a1a3e28c92dbe.json": "c8380384fb318bd8b031cc12a1c25fb9b13829cfb4490f1f09902066a2fbd963",
+    "responses/a2a85b3824864.json": "faa8b5037d1f0cd5b41d1189ce7407490e79948ae229995f68c4535a36f24480",
+    "responses/a2d320ff57bf6.json": "0c337f2f016d2b43ca6197c2f52fec1508ef6b9aafee2c94788f7454c14b002c",
+    "responses/a317b4b4f22ef.json": "505b5abe3b5cde803c8cd1db1452cf3a646f4f873c938577d17737a776fe6efa",
+    "responses/aa3f3a42dd34f.json": "0696f0e95ad6538d5b2247a33a8a9bd1ff699d683a7d67dc71bc133a0e317879",
+    "responses/ac837554aa281.json": "77e8837ca76b44ebea77834f7d2df521592688e48b9a7a7a57ecd311f87aac63",
+    "responses/ad6ae677b7701.json": "3bb3b09ec3ae08b21f2eed01fae255f0a9aaf7763c1348f9f2a0300a009bc180",
+    "responses/af0681a48b8bc.json": "f4db7e8ab0ffc63ac87fb76f55bdaecdb709fcc0a2489363d0886baa7eeb44f3"
+  },
+  "semantic_validity": "requires_source_review",
+  "exposure_validity": "requires_root_audit",
+  "complete": true
+}
