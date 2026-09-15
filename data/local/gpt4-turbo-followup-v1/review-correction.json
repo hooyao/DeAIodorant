@@ -1,0 +1,28 @@
+{
+  "version": "local-review-correction-1.0",
+  "input_path": "data/local/gpt4-turbo-followup-v1/partial-restoration.md",
+  "input_sha256": "3b1c2273cc6e888a9365bc1e313531e4719577c1007c6b58fe4d0a7328ecddf4",
+  "output_path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+  "output_sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28",
+  "triggering_review_path": "data/local/gpt4-turbo-followup-v1/local-preservation-review.json",
+  "edits": [
+    {
+      "old": "队友使用维修包后掉线",
+      "new": "队友在背包里使用维修包修理物品后掉线",
+      "reason": "按独立复核补回原文明确的操作位置和动作。"
+    },
+    {
+      "old": "还有玩家给突击方向加点后",
+      "new": "技能树异常仍未解决。有玩家给突击方向加点后",
+      "reason": "按独立复核保留原文时点仍遗留的状态，不追加联机或特定版本条件。"
+    }
+  ],
+  "characters": 1519,
+  "source_basis": [
+    "在背包里用维修包修理物品",
+    "但技能树锁死仍是遗留问题"
+  ],
+  "human_feedback_for_output": null,
+  "overall_content_preservation": "未通过；其他已声明的缺漏和改变仍在。",
+  "external_model_calls": 0
+}

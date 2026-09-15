@@ -1,0 +1,67 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "8794bdf5b9f995aca0610d5ea7e1f12435ab4088",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "GPT-4 Turbo原稿的正向读者反馈、三处局部补充及纠正与独立复核；旧模型响应和旧反馈保持原样。",
+  "files": [
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/changes.diff",
+      "bytes": 2403,
+      "sha256": "c818e73df46f18955e3a3ecd06a62aa898250407fb14c02e98e569598860eb62"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/correction.diff",
+      "bytes": 1298,
+      "sha256": "2e10ea636029b3a686c98fa0c690b7b8d218fa5a8e630cfd99ecc4a2dfbdb1bf"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/edit-plan.json",
+      "bytes": 5309,
+      "sha256": "670e8bc6effabb5cae2cd42d453e7cc6178d8a7f6b566dc4858b4ba0f41f2a84"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/edit-record.json",
+      "bytes": 5498,
+      "sha256": "faeb1af698ee9d6ba7bc0099cf0d49bf1b02093738ca73d7cf38af2d7b94d532"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/local-preservation-review-v2.json",
+      "bytes": 5081,
+      "sha256": "d28f4e8971d491057e5af9beedba63027b2e76bdf9c0ce5e030e80cbfe9d60da"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/local-preservation-review.json",
+      "bytes": 6799,
+      "sha256": "d145ec8df6d830c0ee269f3dfd22426a467e2c28f54eb3a7f3e0b143bf233ac5"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+      "bytes": 3933,
+      "sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/partial-restoration.md",
+      "bytes": 3882,
+      "sha256": "3b1c2273cc6e888a9365bc1e313531e4719577c1007c6b58fe4d0a7328ecddf4"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/prepare.py",
+      "bytes": 3173,
+      "sha256": "96f647667c1e87179d12abca9cd6f951671b4eea3d0a056ba0079df59e076d72"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/reader-feedback.json",
+      "bytes": 1843,
+      "sha256": "d483398072ece80d177481b1ab73cba2147441eb59078cf1f464650d9ee2f7f0"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/review-correction.json",
+      "bytes": 1249,
+      "sha256": "c335eb4186dc46237a9789503d8fe1d80324015a7c701a17bba6bd1858cb8baa"
+    }
+  ]
+}

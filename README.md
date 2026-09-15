@@ -2,7 +2,7 @@
 
 **让读者看得舒服。** DeAIodorant 改写公众号、媒体解读、科普和技术说明等公众信息文章，让问题讲得更清楚，减少惹人反感的表达，改善措辞、句子和行文顺序，同时保留原意与有效信息。中文译文也在范围内；艺术文体不属于本项目。
 
-本机最新进展：维护者已否定《亡灵遗产》第一版改写，开头仍明显影响继续阅读意愿。随后按指定执行了一次 [GPT-4 Turbo 全文试写](docs/routes/compact-refiner/reports/gpt4-turbo-article-v1.md)，费用 0.07395 美元；输出大量缩减内容，保真复核不通过。两份稿件及反馈都保留，不作训练目标。检查点见 [HANDOFF.md](HANDOFF.md)。
+本机最新进展：维护者认为 GPT-4 Turbo 稿“读起来就好多了”，虽有一点翻译味，语感更自然。其内容保留仍未达要求；正向阅读反馈与保真问题分别记录。现已准备[只补三处关键信息的局部稿](docs/routes/compact-refiner/reports/gpt4-turbo-reader-followup-v1.md)，保留获认可的原样稿，不增加 API 调用或进入训练。检查点见 [HANDOFF.md](HANDOFF.md)。
 
 最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
 

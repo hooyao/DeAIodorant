@@ -1,0 +1,94 @@
+{
+  "review_version": "2.0",
+  "review_date": "2026-09-15",
+  "reviewer": "Astra 原生独立子任务",
+  "scope": "只复查前次局部保真复核指出的两处问题，并确认版本、存档、bug三项局部结果；不扩大成全文通过声明。",
+  "independence": "复核者没有编写局部试稿，已知原文、基稿、前次复核及维护者对GPT-4基稿的反馈；不是盲评，编辑者与复核者属于同一Astra家族。",
+  "inputs": [
+    {
+      "path": "data/local/style-intervention-v1/original-article.md",
+      "raw_bytes_sha256": "57e6161f10978bbca1c737e6660abf9b9332be60631c2d0c1a3069d48ebb51f4"
+    },
+    {
+      "path": "data/local/gpt4-turbo-article-v1/rewritten-article.md",
+      "raw_bytes_sha256": "3335b62a67debc232859f5065aeb4d7d707fce9f9054557d70f9e2135c03253a"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/edit-plan.json",
+      "raw_bytes_sha256": "670e8bc6effabb5cae2cd42d453e7cc6178d8a7f6b566dc4858b4ba0f41f2a84"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/partial-restoration.md",
+      "raw_bytes_sha256": "3b1c2273cc6e888a9365bc1e313531e4719577c1007c6b58fe4d0a7328ecddf4"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/local-preservation-review.json",
+      "raw_bytes_sha256": "d145ec8df6d830c0ee269f3dfd22426a467e2c28f54eb3a7f3e0b143bf233ac5"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/review-correction.json",
+      "raw_bytes_sha256": "c335eb4186dc46237a9789503d8fe1d80324015a7c701a17bba6bd1858cb8baa"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/correction.diff",
+      "raw_bytes_sha256": "2e10ea636029b3a686c98fa0c690b7b8d218fa5a8e630cfd99ecc4a2dfbdb1bf"
+    },
+    {
+      "path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+      "raw_bytes_sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28"
+    }
+  ],
+  "mechanical_checks": {
+    "two_corrections_byte_replay_matches_v2": true,
+    "outside_two_corrections_unchanged_from_v1": true,
+    "original_plan_and_prior_candidate_hashes_unchanged": true,
+    "prior_review_hash_unchanged": true,
+    "candidate_utf8_decoded_characters": 1519
+  },
+  "correction_results": [
+    {
+      "issue": "condition_omission",
+      "resolved": true,
+      "source_quote": "在背包里用维修包修理物品",
+      "candidate_quote": "队友在背包里使用维修包修理物品后掉线",
+      "assessment": "背包内操作位置和修理物品的动作已恢复。前文仍把该事件限定为2.7.15联机玩家反馈，后续仍是掉线后重新上线发现物品丢失；未增加普遍发生概率或修理必然掉线的保证。"
+    },
+    {
+      "issue": "status_omission",
+      "resolved": true,
+      "source_quote": "但技能树锁死仍是遗留问题",
+      "candidate_quote": "技能树异常仍未解决。有玩家给突击方向加点后，再次打开技能界面时，发现五个方向都被锁定，无法继续加点。",
+      "assessment": "仍未解决的状态已恢复，紧接着明确描述五个技能方向全部锁定的故障。未自行绑定2.7.15或联机条件；该状态沿用原文时间范围，不是核实今天仍未修复。"
+    }
+  ],
+  "local_results": [
+    {
+      "edit_id": "restore-version",
+      "result": "pass",
+      "basis": "该段与前次复核完全相同；本体与UL版本对象、8月27日、V3.2.0 Stable、v2.6 b14、关闭EAC及回退条件的前次局部结论保持。"
+    },
+    {
+      "edit_id": "restore-saves",
+      "result": "pass",
+      "basis": "该段与前次复核完全相同；官网归属、具体旧档和升级版本、必须重开、个别玩家变通、作物副作用及完整备份建议保持。仍未擅自解释补丁是否保档。"
+    },
+    {
+      "edit_id": "restore-bugs",
+      "result": "pass",
+      "basis": "前次两处问题均解决；其余文字未变。玩家反馈与普遍概率、已修复太阳能故障与仅在日志出现的问题，仍有清楚区分。"
+    }
+  ],
+  "local_result": "pass",
+  "overall_article_complete": false,
+  "overall_article_preservation_passed": false,
+  "human_feedback_for_v2": null,
+  "training_eligible": false,
+  "boundaries": [
+    "pass仅指三项局部补充及这两处修正，没有恢复或复核全部原文信息。其余段落的已声明遗漏、日期归属、人气判断和内存要求等问题继续存在。",
+    "原始GPT-4稿获得维护者正向阅读反馈；v2尚无新的人工阅读反馈，不能继承基稿的评价，也不能宣称本次补写保住了原有阅读体验。",
+    "本次没有检查真实网站、安装包或日志，内容保留结论不认证来源事实及原文推断。",
+    "补丁保档能力及各日志条目是否已修复仍属原文未讲清的内容，当前试稿没有补造结论。",
+    "旧试稿、旧计划和前次needs_revision复核原样保留；前次结论仍准确描述对应旧稿。",
+    "只新增本复核文件，没有外部调用、模型API请求、训练导出或其他文件编辑。"
+  ]
+}

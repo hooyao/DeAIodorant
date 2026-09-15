@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-15",
+  "new_artifact_files": 11,
+  "new_artifact_bytes": 40468,
+  "feedback_linkage": "passed",
+  "three_edit_replay": "passed",
+  "two_correction_replay": "passed",
+  "source_spans_and_review_input_hashes": "passed",
+  "local_preservation_v2": "pass",
+  "overall_preservation_passed": false,
+  "human_feedback_on_base": "正向：读起来好多了；有一点翻译味，但更像人写的。",
+  "human_feedback_on_new_draft": null,
+  "new_openrouter_calls": 0,
+  "new_openrouter_cost_usd": "0",
+  "py_compile": "passed",
+  "previous_gpt4_trial_inventory": "19项原始文件hash通过，未修改",
+  "full_pytest": {
+    "run_this_turn": false,
+    "reason": "本轮只新增研究反馈、编辑产物、文档和局部回放脚本，执行对应回放与编译检查；未改产品源码。",
+    "previous_run": "8794bdf提交时201项离线测试通过"
+  },
+  "main_unchanged": "af751e236c084c0de3cc45a5979749bad0778378",
+  "credential_scan": {
+    "staged_files": 21,
+    "actual_dotenv_and_patterns_checked": true,
+    "findings": 0
+  },
+  "git_index_artifact_hashes": "passed"
+}

@@ -1,0 +1,100 @@
+{
+  "review_version": "1.0",
+  "review_date": "2026-09-15",
+  "reviewer": "Astra 原生独立子任务",
+  "scope": "只复核 edit-plan.json 中版本、存档和 bug 三项局部补充的内容保留及事实边界，不给全文保真结论，不修改试稿。",
+  "independence": "复核者未编写本次局部试稿，已读原文和 GPT-4 Turbo 基稿，知晓维护者对基稿的正向阅读反馈；不是盲评，复核者与编辑者属于同一 Astra 家族。",
+  "inputs": {
+    "original": {
+      "path": "data/local/style-intervention-v1/original-article.md",
+      "raw_bytes_sha256": "57e6161f10978bbca1c737e6660abf9b9332be60631c2d0c1a3069d48ebb51f4"
+    },
+    "base": {
+      "path": "data/local/gpt4-turbo-article-v1/rewritten-article.md",
+      "raw_bytes_sha256": "3335b62a67debc232859f5065aeb4d7d707fce9f9054557d70f9e2135c03253a"
+    },
+    "plan": {
+      "path": "data/local/gpt4-turbo-followup-v1/edit-plan.json",
+      "raw_bytes_sha256": "670e8bc6effabb5cae2cd42d453e7cc6178d8a7f6b566dc4858b4ba0f41f2a84"
+    },
+    "candidate": {
+      "path": "data/local/gpt4-turbo-followup-v1/partial-restoration.md",
+      "raw_bytes_sha256": "3b1c2273cc6e888a9365bc1e313531e4719577c1007c6b58fe4d0a7328ecddf4"
+    },
+    "record": {
+      "path": "data/local/gpt4-turbo-followup-v1/edit-record.json",
+      "raw_bytes_sha256": "faeb1af698ee9d6ba7bc0099cf0d49bf1b02093738ca73d7cf38af2d7b94d532"
+    }
+  },
+  "mechanical_checks": {
+    "all_source_spans_match_original": true,
+    "all_record_source_offsets_match": true,
+    "three_edit_byte_replay_matches_candidate": true,
+    "outside_three_edits_unchanged": true
+  },
+  "local_result": "needs_revision",
+  "summary": "版本和存档两项通过本次限定范围的复核；bug 项正确保留玩家报告归属并区分日志提及与明确修复，但仍遗漏维修发生在背包内的条件，以及技能树故障仍遗留的状态。建议只补这两处，再复核新版本。",
+  "results": [
+    {
+      "edit_id": "restore-version",
+      "result": "pass",
+      "preserved": [
+        "本体在8月27日更新至V3.2.0 Stable，UL 2.7.19对应本体v2.6 b14，两种版本对象清楚。",
+        "安装必须关闭EAC；已更新到3.2且要安装UL的玩家需要回退。",
+        "去掉基稿的仅支持到，恢复特定版本对应，没有推定所有更早版本都兼容。"
+      ],
+      "boundary": "日期和兼容信息沿用原文报道时点；未访问官网核验当前版本。适配原因及第三方说明不在此次补回范围。"
+    },
+    {
+      "edit_id": "restore-saves",
+      "result": "pass",
+      "preserved": [
+        "官网提醒的归属、2.7.15或更早存档、升级到2.7.19时必须重开，均明确保留。",
+        "官方提供2.7.15到2.7.19升级补丁与个别玩家使用变通方法继续使用旧档分别叙述；有玩家没有被写成普遍可行或无损保证。",
+        "农田作物异常需要手动处理，更新前备份整个存档文件夹，版本稳定前避免在单档投入几百小时，均有原文对应。"
+      ],
+      "boundary": "原文没有解释安装补丁与存档重开的关系。试稿明确保留这一信息缺口，既未宣称补丁兼容旧档，也未宣称补丁必定不能保档。有关原文缺口的句子属于编辑说明，不能归为原作者已作的声明。"
+    },
+    {
+      "edit_id": "restore-bugs",
+      "result": "needs_revision",
+      "preserved": [
+        "使用维修包后的掉线、重新上线才发现武器和维修包丢失、损失3把武器，保留为2.7.15联机玩家反馈，没有改成普遍发生概率。",
+        "多个四人小队的类似反馈保留；技能加点案例没有被擅自限定为联机专属。",
+        "太阳能板双倍发电明确为已修复；其余三个问题仅说出现在2.7.14到2.7.19的日志，没有把日志提及当成已修复。",
+        "补丁升级后的汉化消失与偶尔换弹丢子弹保留，未推定二者存在相同成因。"
+      ],
+      "issues": [
+        {
+          "type": "condition_omission",
+          "source_quote": "在背包里用维修包修理物品，大概率报错掉线、东西消失",
+          "candidate_quote": "在2.7.15版中联机时，队友使用维修包后掉线",
+          "assessment": "补回版本、联机条件和动作先后关系，但把基稿已有的背包内操作条件删掉了。读者无法判断故障报告所指的是哪一种修理操作。无需恢复原文缺少统计依据的大概率判断。",
+          "minimal_revision": {
+            "old": "在2.7.15版中联机时，队友使用维修包后掉线",
+            "new": "在2.7.15版中联机时，队友在背包里用维修包修理物品后掉线"
+          }
+        },
+        {
+          "type": "status_omission",
+          "source_quote": "但技能树锁死仍是遗留问题",
+          "candidate_quote": "还有玩家给突击方向加点后，再次打开技能界面时，发现五个方向都被锁定，无法继续加点",
+          "assessment": "案例动作已恢复，但没有恢复原文把该问题列作仍未解决问题的状态；仅记录曾经发生，不足以保留仍遗留这一信息。该状态应限定在原文时间范围，不能声称已核实今天仍然如此。",
+          "minimal_revision": {
+            "insert_before": "还有玩家给突击方向加点后",
+            "insert_text": "技能树锁死的问题仍未解决。"
+          }
+        }
+      ],
+      "boundary": "建议修正尚未写入。技能树具体版本和单机／联机归属不明，不应借补写状态自行绑定到2.7.15联机案例。维修报告中的玩家反馈不证明所有玩家都会遇到该故障。"
+    }
+  ],
+  "content_boundaries": [
+    "本次是局部恢复，不要求原文所有细节都在这三段重新出现；但已恢复的操作和故障陈述需保留其相关条件及状态。",
+    "其余段落保留基稿已有的人气排名、首次发布日期、独立维护和内存基本要求等问题，以及未恢复的来源引文和细节。本次局部结果不使这些问题获得通过。",
+    "未独立核实原文技术事实、玩家评价、官网状态、日志内容或补丁功能；忠实转述不等于外部真实性认证。",
+    "维护者说虽然省略了很多东西但是读起来就好多了，评价对象是GPT-4 Turbo基稿。该正向反馈继续有效，但不能转移给这个尚未获得反馈的局部补充稿。",
+    "本复核没有评估读者偏好改善原因、作者身份、模型家族优劣或训练可用性。局部试稿不具有整体保真通过或训练资格。",
+    "只创建本复核文件；未联网、未调用模型API、未修改输入、计划或试稿。"
+  ]
+}

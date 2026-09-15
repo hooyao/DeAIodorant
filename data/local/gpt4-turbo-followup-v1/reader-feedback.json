@@ -1,0 +1,29 @@
+{
+  "version": "gpt4-turbo-reader-feedback-1.0",
+  "date": "2026-09-15",
+  "evaluated_text": {
+    "path": "data/local/gpt4-turbo-article-v1/rewritten-article.md",
+    "sha256": "3335b62a67debc232859f5065aeb4d7d707fce9f9054557d70f9e2135c03253a",
+    "producer": "openai/gpt-4-turbo",
+    "root_post_edited": false
+  },
+  "verbatim_messages_in_order": [
+    "虽然省略了很多东西，但是读起来就好多了",
+    "虽然有一点翻译味，但是更像是人写的"
+  ],
+  "interpretation_by_root": {
+    "reading_experience": "维护者明确报告这份稿件读起来改善很多。",
+    "perceived_naturalness": "维护者觉得更像人写的，保留为表达自然度的主观感受。",
+    "remaining_translation_flavor": "维护者仍感到有一点翻译味。",
+    "content_omissions_acknowledged": "维护者同时指出省略了很多东西；未明确同意删除任何一项具体信息。",
+    "comparison_context": "在原文和第一版遭否定后对 GPT-4 Turbo 稿给出的直接反馈；没有单独指定比较稿或设置随机 A/B。",
+    "separate_content_result": "既有内容保留复核 fail 继续有效；它不否定此处的正向阅读反馈。",
+    "causal_limit": "篇幅、内容量、词句和结构同时变化，尚不能分离各自贡献，也不能将每个保留的句子视为获赞。",
+    "authorship_limit": "不转成人类／AI 身份标签，不证明具体模型系列普遍更自然。",
+    "reader_preference_score": null,
+    "continued_reading_willingness": null,
+    "blind_evaluation": false,
+    "training_eligible": false
+  },
+  "next_step": "保留 GPT-4 Turbo 原稿作为有正向读者反馈的阅读参考，用原文补充关键操作条件和故障关系到另一个局部试稿；不再调用付费模型，不把补充稿自动继承为读者认可。"
+}
