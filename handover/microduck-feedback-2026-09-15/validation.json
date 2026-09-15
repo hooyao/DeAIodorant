@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-15",
+  "artifact_files": 5,
+  "artifact_bytes": 35955,
+  "reader_feedback_linkage": "passed",
+  "method_source_reference_result_hashes": "passed",
+  "selection_reviewed_files_verified": 13,
+  "historical_context_snapshots": 1,
+  "selected_translated_articles": 0,
+  "full_articles_read_for_selection": 0,
+  "new_openrouter_calls": 0,
+  "new_openrouter_cost_usd": "0",
+  "candidate_text_modified": false,
+  "prior_13_artifact_inventory": "passed",
+  "full_pytest": {
+    "run_this_turn": false,
+    "reason": "仅反馈、过程说明、元数据选材和入口文档变化；执行JSON、来源hash及旧产物完整性检查。",
+    "previous_result": "201 passed，8794bdf检查点"
+  },
+  "main": "af751e236c084c0de3cc45a5979749bad0778378",
+  "credential_scan": {
+    "staged_files": 15,
+    "actual_dotenv_and_patterns_checked": true,
+    "findings": 0
+  },
+  "git_index_artifact_hashes": "passed"
+}

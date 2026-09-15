@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "record_type": "bounded_offline_translated_case_selection",
+  "created_at_utc": "2026-09-15T07:29:28.350129+00:00",
+  "executor": "native Astra subagent /root/translated_case_scout",
+  "protocol_id": "translated-readable-selection-v1/offline-scope-1",
+  "status": "no_eligible_translated_case_in_scoped_metadata",
+  "selected_count": 0,
+  "selected_candidates": [],
+  "summary": "限定的两个 discovery/development 目录共检查10篇元数据，没有找到明确跨语言翻译证据的合适译文。d01的多来源汇编声称不等于翻译证据；本次不凑样本。",
+  "scope": {
+    "allowed_document_roots": [
+      "data/local/independent-media-discovery-v1/documents",
+      "data/local/cognitive-move-contract-probe-v1/documents"
+    ],
+    "maximum_full_articles": 5,
+    "actual_full_articles_read": 0,
+    "metadata_records_read": 10,
+    "network_requests": 0,
+    "model_api_calls": 0,
+    "rewrites_produced": 0,
+    "human_label_requests": 0,
+    "cowork_excluded_url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl",
+    "holdout_final_test_validation_reserve_or_old_87_candidates_opened": false
+  },
+  "reviewed_files": [
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d01/metadata.json",
+      "sha256": "6e0023c2196642b6e360f1e55262d67c77811ddd1eb1058636b030cb85d928f3",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d02/metadata.json",
+      "sha256": "1e590aaefc8a920b9f94794b16dbd535b97c029be451e7dcb4a91011e20bbf4b",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d03/metadata.json",
+      "sha256": "230888875b13d845096179adeeedb50b81ada3c2df1cd1c3fc8c65ee9b9961b3",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d04/metadata.json",
+      "sha256": "f7ac84b7d568093faa70e73dee5a30d78af44f7bd4307290b5d7294095fca6b7",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d05/metadata.json",
+      "sha256": "1e925d746ef3ed82367452da953402028bb2d3bfcdd4d1a2ad3deb70c08c6e05",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d06/metadata.json",
+      "sha256": "728e649fa853ef34afdf057009cb166fc16deb2ca7fcd2d1d327e4222a5ecbbd",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n01/metadata.json",
+      "sha256": "d7994b76ce43e40a57f39818d9f9c8eee6a3613be43b96f1f4dba9d4f033e56d",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/metadata.json",
+      "sha256": "c3a7c02e611b0bfdf28333b1d1c7272973ff6e5f593eeb4ee2d6411f6791d977",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n03/metadata.json",
+      "sha256": "6e08c2c6000d113f44ed84dd33cfb80c0206af11ac9735118cdf3ddd2d8237b0",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/documents/n04/metadata.json",
+      "sha256": "31ad24a3b4927f4d917dd73bf07b810e41c20654ca858e5f3bfbc5436ad865ee",
+      "access": "metadata_full_read"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "6ca04d864ac08a385316fe7c2d25d8a70328e8a7a47d4ceb571f9d0c79c5ffdc",
+      "access": "report_or_source_metadata_read"
+    },
+    {
+      "path": "docs/routes/compact-refiner/reports/independent-media-discovery-v1.md",
+      "sha256": "2a9720456cb46e9e2f73b74069b4752a377c8272b42f85ad3922c1ccfc0e7f0a",
+      "access": "report_or_source_metadata_read"
+    },
+    {
+      "path": "data/local/independent-media-discovery-v1/source-provenance.json",
+      "sha256": "f368cf9b53c01d221019ae918e05fbc2ac2a868cb036b3b6b9111fb8a4abb6ae",
+      "access": "report_or_source_metadata_read"
+    }
+  ],
+  "document_decisions": [
+    {
+      "doc_id": "d01",
+      "metadata_path": "data/local/independent-media-discovery-v1/documents/d01/metadata.json",
+      "url": "https://post.smzdm.com/p/apw3m470/",
+      "title": "追觅 vs 云鲸高端扫地机？58位用户实测，结论在这",
+      "existing_corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+      "existing_translation_status": "unresolved",
+      "existing_source_type": "mixed_or_adapted_publisher_claim",
+      "existing_source_evidence": "页面披露源自155位全网作者，content_json 引用多平台用户；混合／汇编是发布者声称的来源关系，未独立核验。",
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "发布方明确声称多来源汇编，但没有跨语言翻译或编译证据；本任务要选中文译文，不能把汇编声称替代翻译来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "d02",
+      "metadata_path": "data/local/independent-media-discovery-v1/documents/d02/metadata.json",
+      "url": "https://post.smzdm.com/p/arz3ng6g/",
+      "title": "2026 年家用扫地机器人选购指南：含石头等各大品牌爆款单品推荐",
+      "existing_corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+      "existing_translation_status": "unresolved",
+      "existing_source_type": "unknown",
+      "existing_source_evidence": "中文页面与署名不单独证明中文原创；所读正文未发现明确译者／翻译来源标记。",
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "限定元数据中的来源类型未明，没有明确翻译或跨语言编译证据；不据中文行文、外国名称或发布时间推断来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "d03",
+      "metadata_path": "data/local/independent-media-discovery-v1/documents/d03/metadata.json",
+      "url": "https://post.smzdm.com/p/a0p4d08/",
+      "title": "《到站秀》第17弹：Sphero 星球大战7 “呆萌”BB-8 遥控智能机器人",
+      "existing_corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+      "existing_translation_status": "unresolved",
+      "existing_source_type": "unknown",
+      "existing_source_evidence": "中文页面与署名不单独证明中文原创；所读正文未发现明确译者／翻译来源标记。",
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "限定元数据中的来源类型未明，没有明确翻译或跨语言编译证据；不据中文行文、外国名称或发布时间推断来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "d04",
+      "metadata_path": "data/local/independent-media-discovery-v1/documents/d04/metadata.json",
+      "url": "https://zhongce.sina.com.cn/article/view/129894",
+      "title": "3600字长文，22年哪款新品扫拖机器人值得买？",
+      "existing_corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+      "existing_translation_status": "unresolved",
+      "existing_source_type": "chinese_original_publisher_claim",
+      "existing_source_evidence": "网站栏目为原创，页面署名 Mr_Q蝈蝈颀；这是发布者标记，未核实生产过程。",
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "页面有中文原创栏目标记但未认证生产过程，没有明确翻译或跨语言编译证据。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "d05",
+      "metadata_path": "data/local/independent-media-discovery-v1/documents/d05/metadata.json",
+      "url": "https://www.bilibili.com/read/cv2282422/",
+      "title": null,
+      "existing_corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+      "existing_translation_status": "unresolved",
+      "existing_source_type": "unknown",
+      "existing_source_evidence": null,
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "没有取得正文，且翻译来源未明；不得用搜索摘要代替全文或确定翻译类型。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "d06",
+      "metadata_path": "data/local/independent-media-discovery-v1/documents/d06/metadata.json",
+      "url": "https://post.smzdm.com/p/awd9d03g/",
+      "title": "TOP4扫地机器人参数对决：毫米波雷达VS仿生眼，谁是真王者？",
+      "existing_corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+      "existing_translation_status": "unresolved",
+      "existing_source_type": "unknown",
+      "existing_source_evidence": "中文页面与署名不单独证明中文原创；所读正文未发现明确译者／翻译来源标记。",
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "限定元数据中的来源类型未明，没有明确翻译或跨语言编译证据；不据中文行文、外国名称或发布时间推断来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "n01",
+      "metadata_path": "data/local/cognitive-move-contract-probe-v1/documents/n01/metadata.json",
+      "url": "https://post.smzdm.com/p/a6zdv5o0/",
+      "title": "《亡灵遗产》回来了：13天15个版本，但想玩这个《七日杀》传奇MOD，先把版本锁在v2.6",
+      "existing_corpus_role": "article_isolated_contract_development",
+      "existing_translation_status": "not_recorded",
+      "existing_source_type": "unresolved",
+      "existing_source_evidence": null,
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "限定元数据中的来源类型未明，没有明确翻译或跨语言编译证据；不据中文行文、外国名称或发布时间推断来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "n02",
+      "metadata_path": "data/local/cognitive-move-contract-probe-v1/documents/n02/metadata.json",
+      "url": "https://post.smzdm.com/p/agopr2mm/",
+      "title": "字节跳动即梦AI平台2026年2月7日上线Seedance 2.0视频生成模型，定位“电影级全流程生成引擎”",
+      "existing_corpus_role": "article_isolated_contract_development",
+      "existing_translation_status": "not_recorded",
+      "existing_source_type": "unresolved",
+      "existing_source_evidence": null,
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "限定元数据中的来源类型未明，没有明确翻译或跨语言编译证据；不据中文行文、外国名称或发布时间推断来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "n03",
+      "metadata_path": "data/local/cognitive-move-contract-probe-v1/documents/n03/metadata.json",
+      "url": "https://post.smzdm.com/p/519270/",
+      "title": "DIY礼物比购买礼物更珍贵？聊聊你和DIY礼物的故事",
+      "existing_corpus_role": "article_isolated_contract_development",
+      "existing_translation_status": "not_recorded",
+      "existing_source_type": "unresolved",
+      "existing_source_evidence": null,
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "限定元数据中的来源类型未明，没有明确翻译或跨语言编译证据；不据中文行文、外国名称或发布时间推断来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    },
+    {
+      "doc_id": "n04",
+      "metadata_path": "data/local/cognitive-move-contract-probe-v1/documents/n04/metadata.json",
+      "url": "https://post.smzdm.com/p/199676/",
+      "title": "装修前后的对比和自己DIY的一些细节",
+      "existing_corpus_role": "article_isolated_contract_development",
+      "existing_translation_status": "not_recorded",
+      "existing_source_type": "unresolved",
+      "existing_source_evidence": null,
+      "full_text_read_this_task": false,
+      "decision": "not_selected_for_translated_case",
+      "reason": "限定元数据中的来源类型未明，没有明确翻译或跨语言编译证据；不据中文行文、外国名称或发布时间推断来源。",
+      "retention": "历史材料原样保留；仅未选入本次译文案例，不作全局排除。"
+    }
+  ],
+  "interpretation_limits": [
+    "这项0结果仅说明限定元数据没有支持可选的译文案例，不说明整个语料库没有译文。",
+    "未阅读全文，未判断这10篇正文的当前阅读效果或臭味强度。",
+    "没有使用日期、作者身份猜测、发布方AI披露或字面连接词次数作为选择依据。",
+    "来源类型未知继续保留未知；译文在产品范围内，这次不是恢复排除译文的旧策略。"
+  ],
+  "next_scope_note": "若继续准备译文案例，需要另行划定已有明确翻译证据且已暴露的 development 材料；本任务未自行扩大查阅边界。"
+}

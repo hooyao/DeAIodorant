@@ -1,6 +1,16 @@
 # 续研 handoff：2026-09-15
 
-## 最新：局部补充稿也得到“至少我愿意读”的反馈
+## 最新：Microduck 得到正向评价，生成过程已说明
+
+维护者评价 Microduck 第二版“有一些翻译腔，但是总体来说还不错，至少没什么2025年后的AI的臭味”。原话和 `candidate-v2.md` 的 hash 在 `data/local/microduck-readable-feedback-v1/reader-feedback.json`。这是第二篇具体文章的正向反馈，不再等待同一整体评价；轻微翻译腔仍保留为待改善感受，不推断作者身份或2025年前后的普遍差异。
+
+该稿由原生 Astra 编辑子任务参考获认可的《亡灵遗产》稿，用中文完成全文重排和自审，再由另一原生子任务复核、经五处局部修订后交付。没有 Microduck 的 GPT-4 调用、中英互译或训练。详细[方法与反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)及 `method-provenance.json` 保留实际记录和未保存中间措辞的限制，原候选不改。
+
+另完成一项有界离线选材：10篇既有 discovery/development 元数据未见明确跨语言翻译证据，选择0篇，未阅读全文或提交弱样例。见 `data/local/translated-readable-selection-v1/selection.json`。后续需要转向已明确标注译文来源的开发材料，不能将当前0候选说成整个语料无译文。新清单：`handover/microduck-feedback-2026-09-15/artifacts.json`；没有新增外部API费用或GPU工作。
+
+以下是本次反馈前的检查点。
+
+## 前一检查点：局部补充稿也得到“至少我愿意读”的反馈
 
 维护者说：“这个局部补充稿挺好的，至少我愿意读”。对应文件为 `data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md`，SHA256 为 `62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28`。原话见 `data/local/readable-reference-v1/reader-feedback.json`。这是对该稿的明确阅读意愿反馈，不再等待同一评价；原稿继续保留，剩余内容问题仍需修正，不能当作完整训练目标。
 

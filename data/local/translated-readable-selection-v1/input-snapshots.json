@@ -1,0 +1,11 @@
+{
+  "reason": "读取的入口文档此后更新，按原始hash保存当时输入；选材记录不变。",
+  "files": [
+    {
+      "original_path": "HANDOFF.md",
+      "sha256": "6ca04d864ac08a385316fe7c2d25d8a70328e8a7a47d4ceb571f9d0c79c5ffdc",
+      "snapshot_path": "data/local/translated-readable-selection-v1/input-snapshots/HANDOFF.md",
+      "recovery": "只撤回本轮对工作树入口文档的新插入和标题修改，匹配Agent记录的原始SHA256；Git规范化blob的换行与当时混合换行不同。"
+    }
+  ]
+}

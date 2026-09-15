@@ -1,0 +1,37 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "47a710d2210eb25f693f3025acd0b6da9bf7dbb0",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "Microduck新读者反馈、生成过程说明、一次有界译文选材和必要的原始输入快照；旧稿与旧实验不改。",
+  "files": [
+    {
+      "path": "data/local/microduck-readable-feedback-v1/method-provenance.json",
+      "bytes": 3071,
+      "sha256": "bfb25d585e8c08691db049022919491e72bb2e244c6de88172fb5cc447524f1c"
+    },
+    {
+      "path": "data/local/microduck-readable-feedback-v1/reader-feedback.json",
+      "bytes": 1570,
+      "sha256": "503c9a099a982d27214f28ff1fe30f289920b6253f0f150ff44e86e0da7fc1ca"
+    },
+    {
+      "path": "data/local/translated-readable-selection-v1/input-snapshots/HANDOFF.md",
+      "bytes": 16915,
+      "sha256": "6ca04d864ac08a385316fe7c2d25d8a70328e8a7a47d4ceb571f9d0c79c5ffdc"
+    },
+    {
+      "path": "data/local/translated-readable-selection-v1/input-snapshots.json",
+      "bytes": 538,
+      "sha256": "c724a90e95d4419908850f247f89d9b8ec36cdc94d7d2126f4db144ab387b5fd"
+    },
+    {
+      "path": "data/local/translated-readable-selection-v1/selection.json",
+      "bytes": 13861,
+      "sha256": "7735e10f2af8ea7bb513bbce14ae491ef7a460396d3220a72dfdff2fdca7e0d3"
+    }
+  ]
+}

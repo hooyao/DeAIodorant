@@ -1,9 +1,9 @@
 # 校准后的研究目标与证据计划
 
-版本：`deaiodorant-target-discovery-1.10`。
+版本：`deaiodorant-target-discovery-1.11`。
 依据：维护者在 2026-09-14 对项目目标和证据作出的澄清。这是当前研究优先级的记录；已完成实验的输入和结果保留原始版本。
 
-最新执行检查点见 [HANDOFF.md](../HANDOFF.md)：维护者进一步对局部补充稿说“这个局部补充稿挺好的，至少我愿意读”。1.10 记录该稿的明确阅读意愿反馈，保留已认可版本，将剩余修正和其他强文章上的迁移列为[下一阶段工作](routes/compact-refiner/readable-reference-next-stage-v1.md)。未补全的信息仍需检查，当前不进入训练；不重问已有反馈、不将自然度转为作者身份判断。既有[契约1.1检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)与[首轮36条记录](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)保留为辅助。
+最新执行检查点见 [HANDOFF.md](../HANDOFF.md)：《亡灵遗产》局部稿得到明确阅读意愿反馈后，Microduck第二版也得到“总体来说还不错，至少没什么2025年后的AI的臭味”的评价，仍有一些翻译腔。1.11 将该反馈与[实际编辑流程](routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)关联；两篇均为已暴露开发案例，不据此作时间分组归因或模型系列结论。后续复试适当译文，再考虑学生模型，当前不训练。既有[契约1.1检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)与[首轮36条记录](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)保留为辅助。
 
 ## 要解决的问题
 

@@ -1,0 +1,24 @@
+{
+  "version": "microduck-readable-feedback-1.0",
+  "date": "2026-09-15",
+  "verbatim_message": "microduck改写稿是怎么改出来的，这篇有一些翻译腔，但是总体来说还不错，至少没什么2025年后的AI的臭味",
+  "evaluated_artifact": {
+    "path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+    "sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88",
+    "producer": "原生 Astra 编辑子任务，经过自审与另一原生子任务的内容复核后局部修正"
+  },
+  "interpretation_by_root": {
+    "overall_reading_assessment": "正向：总体来说还不错。",
+    "remaining_issue": "维护者仍感到一些翻译腔。",
+    "perceived_target_smell": "维护者说至少没什么2025年后的AI的臭味。",
+    "scope_of_temporal_wording": "保留维护者对该稿的风格感受，不据此证明2025年前后的总体语言差异或作者身份。",
+    "willingness_to_read": null,
+    "preference_score": null,
+    "blind_evaluation": false,
+    "paragraph_specific_labels": false,
+    "content_result": "既有有限全文对照未发现剩余关键内容问题；该反馈不额外认证上游事实或每个命题。",
+    "causal_limit": "参考稿、任务指令、自审、篇章重排和独立复核共同存在，不能把改善单独归因于某一个环节。",
+    "training_eligible": false
+  },
+  "decision": "保留第二份文章的正向阅读反馈及轻微翻译腔问题，候选稿原样冻结；后续方法复试不重复询问同一篇的整体评价。"
+}

@@ -24,5 +24,8 @@ handover/information-refinement-2026-09-15/** -text
 handover/gpt4-turbo-2026-09-15/** -text
 handover/gpt4-reader-followup-2026-09-15/** -text
 handover/readable-reference-2026-09-15/** -text
+handover/microduck-feedback-2026-09-15/** -text
+# 该输入快照保留混合换行；将原始行尾 CR 视为换行组成部分。
+data/local/translated-readable-selection-v1/input-snapshots/HANDOFF.md whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # unified diff 的空白上下文行带单个格式前缀，保留其原始格式。
 data/local/gpt4-turbo-followup-v1/*.diff -whitespace

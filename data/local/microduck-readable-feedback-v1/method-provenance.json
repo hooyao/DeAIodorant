@@ -1,0 +1,51 @@
+{
+  "version": "microduck-method-provenance-1.0",
+  "date": "2026-09-15",
+  "record_type": "根据既有任务和冻结编辑记录整理的过程说明，不冒充完整运行时 prompt 导出。",
+  "source": {
+    "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+    "sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "url": "https://post.smzdm.com/p/a70dm4ll/"
+  },
+  "reading_reference": {
+    "path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+    "sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28",
+    "role": "提供维护者已认可的表达参考；其中的事实缺漏和错误不作为范例要求。"
+  },
+  "result": {
+    "path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+    "sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88"
+  },
+  "actors": {
+    "editor": "/root/microduck_readable_transfer",
+    "reviewer": "/root/microduck_transfer_review",
+    "root_role": "分配任务，阅读全文和第二版，核对文件及审查依据，记录结果并交付。",
+    "model_family": "gpt-6-astra",
+    "exact_backend_revision": "unknown",
+    "seed": null,
+    "temperature": null,
+    "context": "任务继承会话与仓库指南，知晓目标样例和维护者反馈；不是只含一篇示例的隔离 prompt 试验。"
+  },
+  "steps": [
+    "编辑子任务先阅读获认可的1519字符参考稿，再阅读Microduck完整正文、metadata和原有引文记录。",
+    "任务要求用自然中文完整改写，可重排段落、去重复预告和夸张评级，保留事实、数字、归属、建议条件和不确定性，禁止用摘要规避保真。",
+    "编辑者按硬件与软件、购买与交付、DIY、国产方案、选择建议组织全文，把Runtime故障、续航等散落信息移到对应话题旁。",
+    "编辑子任务自行检查并修正五处表达后保存candidate-v1.md。中间最初措辞没有单独保存，因此v1不是未经自审的首次token原始输出。",
+    "另一原生Astra子任务独立对照全文，记录五处来源、范围或强度问题；编辑者仅按这些记录生成candidate-v2.md，原稿和首轮审查保留。",
+    "复核者再次核查五处修订及字节回放，Root阅读原文与v2并核对输入身份后交付。"
+  ],
+  "records": [
+    "data/local/microduck-readable-transfer-v1/editor-notes-v1.json",
+    "data/local/microduck-readable-transfer-v1/preservation-review-v1.json",
+    "data/local/microduck-readable-transfer-v1/revision-notes-v2.json",
+    "data/local/microduck-readable-transfer-v1/preservation-review-v2.json"
+  ],
+  "excluded_steps": {
+    "english_translation_pivot": false,
+    "openrouter_requests": 0,
+    "gpt4_requests_for_microduck": 0,
+    "training": false,
+    "automatic_keyword_replacement": false
+  },
+  "limit": "过程可审查，不保证相同模型名称或相同任务文字能逐字重复生成；原生运行的完整后端状态、参数及所有未保存措辞未知。"
+}

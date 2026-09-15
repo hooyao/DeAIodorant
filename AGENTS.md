@@ -4,6 +4,8 @@
 
 ## 项目使命
 
+Microduck第二版现已获维护者评价：“有一些翻译腔，但是总体来说还不错，至少没什么2025年后的AI的臭味”。它由原生Astra参考获认可稿、直接中文重写、自审及独立内容复核产生，没有调用GPT-4或中英互译。保留这条正向阅读反馈与残留翻译腔，不再写成等待首次评价，不转为身份或时间分组标签。见[过程与反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)。译文案例尚待从明确译文证据的开发材料中选择；首次检查10篇元数据选出0篇，不扩成整个语料没有译文。
+
 维护者已进一步明确认可 1519 字符局部补充稿：“这个局部补充稿挺好的，至少我愿意读”。这是绑定到该稿的正向阅读意愿反馈，不能再写成无人类评价，也不自动扩成事实确认、全文已补全或跨文章有效。原话见 `data/local/readable-reference-v1/reader-feedback.json`。按[下一阶段安排](docs/routes/compact-refiner/readable-reference-next-stage-v1.md)，保留参考稿，另存剩余内容修订，把方法迁移到 Microduck 等强样例，再考虑便宜小模型复现；当前不需要 GPU，不进入训练。
 
 此前维护者明确评价 GPT-4 Turbo 原稿：“虽然省略了很多东西，但是读起来就好多了”“虽然有一点翻译味，但是更像是人写的”。必须把正向阅读反馈与内容保留未通过分别记录；原稿是有价值的阅读参考，不能用保真 fail 抹掉该成果。自然度是主观诊断，不作作者身份标签。三处操作／故障信息的局部稿已另存，后续反馈以上方最新记录为准。见[当时报告](docs/routes/compact-refiner/reports/gpt4-turbo-reader-followup-v1.md)。不再重复询问维护者对原稿的感受。

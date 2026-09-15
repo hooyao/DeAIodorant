@@ -2,7 +2,7 @@
 
 **让读者看得舒服。** DeAIodorant 改写公众号、媒体解读、科普和技术说明等公众信息文章，让问题讲得更清楚，减少惹人反感的表达，改善措辞、句子和行文顺序，同时保留原意与有效信息。中文译文也在范围内；艺术文体不属于本项目。
 
-本机最新进展：维护者认可补回关键信息后的局部稿：“挺好的，至少我愿意读”。该稿保持原样，剩余修正另存；Microduck 的[全文迁移候选与内容复核](docs/routes/compact-refiner/reports/readable-transfer-progress-v1.md)也已完成，尚待新文章的实际阅读判断。后续再选适当译文、测试便宜小模型复现，暂不训练。检查点见 [HANDOFF.md](HANDOFF.md)。
+本机最新进展：《亡灵遗产》局部稿获得“至少我愿意读”的反馈，Microduck第二版也被评价为总体不错、目标臭味不明显，仍有一些翻译腔。[生成过程和新反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)已记录；当前保留两篇具体阅读参考，后续复试合适的中文译文，再考虑便宜小模型，暂不训练。检查点见 [HANDOFF.md](HANDOFF.md)。
 
 最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
 
