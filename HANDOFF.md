@@ -1,5 +1,13 @@
 # 续研 handoff：2026-09-15
 
+## 新增可用资源：Azure GPT-4.1
+
+维护者提供已有Azure `gpt-4.1`部署和约50美元额度，已将三项Azure配置安全存入Git忽略的 `.env`，OpenRouter配置不变。新增 `src/deaiodorant/refine/azure.py`，使用OpenAI SDK的Responses API；可选依赖为 `.[azure]`。唯一连接检查已成功返回“连接成功”，输入13／输出3 tokens。按保守计划价估算0.00022美元，实际账单未知；连接成功不代表改写质量得到验证。
+
+使用 `configs/azure-gpt41-research-v1.json`：45美元本地预算上限，中央账本 `.azure-responses-budget/`，缓存 `data/local/azure-gpt41-live-v1/`，都保持忽略。需要继续调用时沿用同一.env和账本，禁止为每批新开账本重置总额。计划价10／30美元每百万token不是实际Azure费率，门户余额和其他客户端消费不在本地记录中；失败保留预留且无自动重试。遇到限流按服务端要求停止并安排后续调用，不即时循环。
+
+冻结的脱敏连接记录在 `data/local/azure-gpt41-connection-v1/`；已有 `run.py` 拒绝重复调用。API key、真实资源URL、live账本和缓存不入库，发布扫描同时覆盖Azure与OpenRouter key。248项离线测试与编译检查通过。[接入说明](docs/routes/compact-refiner/azure-gpt41-access-v1.md)包含调用方法、预算边界与实际结果；恢复清单在 `handover/azure-gpt41-2026-09-15/artifacts.json`。当前没有新的文章实验、训练或GPU操作。
+
 ## 当前综述与下一批研究
 
 维护者要求汇总进度和后续研究；完整综述见[研究检查点](docs/research-checkpoint-2026-09-15.md)。当前核心成果是《亡灵遗产》局部稿与Microduck全文稿各自获得正向阅读反馈；不同来源、明确译文、保守编辑对照和学生模型仍未验证。下一步先做约四篇的新开发小批次，再比较必要编辑环节和便宜小模型能力，最后才决定训练。新批次和模型试验都是计划，尚未执行；既有结果、原文和失败实验全部保留。

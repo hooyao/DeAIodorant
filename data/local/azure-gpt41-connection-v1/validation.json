@@ -1,0 +1,19 @@
+{
+  "version": "azure-gpt41-connection-validation-1.0",
+  "client_path": "src/deaiodorant/refine/azure.py",
+  "client_sha256": "4410a12e67ad089445fe3984280808645b875ea228a39ecc15347bb477552967",
+  "sdk_version": "2.28.0",
+  "response_matches_live_cache": true,
+  "live_ledger_transactions": 1,
+  "measured_input_tokens": 13,
+  "measured_output_tokens": 3,
+  "local_planned_cost_usd": "0.00022",
+  "actual_billed_usd": null,
+  "tests": {
+    "targeted": "47 passed",
+    "full_offline": "248 passed in 44.47s",
+    "compileall": "passed"
+  },
+  "real_key_and_endpoint_in_artifacts": false,
+  "historical_corpus_modified": false
+}

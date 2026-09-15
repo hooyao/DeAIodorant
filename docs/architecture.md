@@ -1,5 +1,11 @@
 # 系统架构
 
+## 已实现的Azure研究接入
+
+`deaiodorant.refine.azure.AzureResponsesClient` 通过OpenAI SDK调用维护者已有的Azure Responses API。Azure三项配置从被忽略的.env白名单读取，与OpenRouter key分离。调用前在.env同目录的 `.azure-responses-budget/` 中加锁并持久预留，返回有效token用量后按配置计划价记账；超时或未知用量保留预留。缓存目录变化不会重置同一.env下的中央账本。
+
+仅文本调用，设置 `store=False`，无工具、自动重试、model fallback或重定向。私有缓存保存最终文字和安全metadata，原文由研究运行器在授权范围内另行冻结。导出产物与可持续写入的live账本、缓存分开，实际账单金额与估算不混同。配置身份、模型返回名、用量和异常原因可审查；不同Azure或其他客户端的实际总费用不受本地账本保证。详见[接入说明](routes/compact-refiner/azure-gpt41-access-v1.md)。此客户端不是新的改写算法，未改变现有读者证据状态。
+
 ## 系统用途
 
 DeAIodorant 在发布前改写生成的中文文本。在保留文档原意和有效信息的同时，减少重复结构、空泛说明、公式化过渡，以及其他削弱阅读意愿的模式。

@@ -47,6 +47,10 @@ DeAIodorant 位于内容生成与发布之间，是一个中文文本改写层�
 
 ## 当前状态
 
+维护者于2026-09-15另行授权使用既有Azure `gpt-4.1`部署及约50美元额度。接入和唯一连接检查已完成，输入13／输出3 tokens，返回“连接成功”；项目离线测试248项通过。该授权独立于OpenRouter只用便宜小模型的约定，不能把GPT-4.1与此前GPT-4 Turbo视为同一模型。具体配置见 `configs/azure-gpt41-research-v1.json` 和[接入说明](docs/routes/compact-refiner/azure-gpt41-access-v1.md)。
+
+Azure的 `AZURE_OPENAI_API_KEY`、`AZURE_OPENAI_BASE_URL`、`AZURE_OPENAI_DEPLOYMENT` 均在被忽略的 `.env`；`OPENAI_API_KEY`仍属于OpenRouter。中央账本位于同目录 `.azure-responses-budget/`，缓存位于 `data/local/azure-gpt41-live-v1/`，保持忽略，不能直接发布或以换目录重置预算。45美元是本地运行上限，10／30美元每百万token只是保守计划价，实际Azure费率和剩余余额未知。每批运行前后读取同一账本，错误后停止批次；无自动重试，服务限流等待由编排显式处理。发布前扫描.env中的Azure和OpenRouter实际key，真实资源地址也不写入公开产物。强模型工作继续可用当前Astra和原生子任务；本授权不启动训练或申请GPU。
+
 仓库已有语料采集、翻译与研究价值分流、人工复核工具、不依赖 LLM 的确定性语料分析 CLI，以及探索性的篇章结构和修饰结构实验。已完成五项开发阶段编辑干预；尚无任何臭味特征通过独立干预验证。通用改写引擎、产品评估包和产品 API 仍处于规划阶段，尚未实现。`experiments/` 中已有实验性编辑和读者评估脚本。
 
 最新证据以 `docs/research-progress.md` 和带日期的实验报告为准，并区分拟议的下一步与冻结协议。2026-09-14 的重新评估关注传统 NLP 测量及统计验证，不以模型判断替代读者结果。

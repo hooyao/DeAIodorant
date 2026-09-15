@@ -1,0 +1,15 @@
+{
+  "version": "azure-gpt41-connection-1.0",
+  "created_at_utc": "2026-09-15T08:00:10.527659+00:00",
+  "model_deployment": "gpt-4.1",
+  "input": "请只回复：连接成功",
+  "max_output_tokens": 16,
+  "temperature": 0,
+  "store": false,
+  "max_retries": 0,
+  "purpose": "connection_check",
+  "settings_path": "configs/azure-gpt41-research-v1.json",
+  "settings_sha256": "18a9f32256eceedd826eb407cbdbe565f1582319dc8bc2112ef076575445cdf7",
+  "generator_sha256": "1e25d41306a7c5e26c0706bcb6acabca727887bc1e691c989e4bec75db0ca4c9",
+  "evidence_scope": "仅验证部署可连接并返回文字；不验证改写质量。"
+}

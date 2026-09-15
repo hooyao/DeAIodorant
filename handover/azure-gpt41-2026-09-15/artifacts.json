@@ -1,0 +1,62 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "897ef0c49c9ac3b12d8990880ff22d6e08456a23",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "Azure GPT-4.1一次连接检查及脱敏授权、请求响应、token与预算记录、中央账本快照；不包含key或真实资源URL，不提交live账本缓存。",
+  "files": [
+    {
+      "path": "data/local/azure-gpt41-connection-v1/authorization.json",
+      "bytes": 821,
+      "sha256": "806d14b852550b43fbb18ccca2ad86b0ab1f36c5fc52bb72991e82a6511f8319"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/budget-after.json",
+      "bytes": 247,
+      "sha256": "b456400238ec55141a39c40a8677e0a3c4f7241178467da8d10b6b8b43ec7061"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/budget-before.json",
+      "bytes": 235,
+      "sha256": "07229ecbef13dfb4bea6a57ed9d06eb53cef033c3f5f161d37fe016ffd529b4a"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/connection-check.json",
+      "bytes": 1580,
+      "sha256": "b5674cf91be21225e4053c6c29c6af7e96dea982848213d13a467b1be9ed49b0"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/live-initialized-snapshot.json",
+      "bytes": 57,
+      "sha256": "5a3fbed0d1f1de666ca2aba574d2c62146e024c582e4abfa72c19a86cf242b98"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/live-ledger-snapshot.json",
+      "bytes": 1117,
+      "sha256": "59c854dd74cb91332bc85c45bf4ca6d5603e2fd461918787b5632d54230df09d"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/request.json",
+      "bytes": 623,
+      "sha256": "4220fdcc35882f1358e45eb2845cb63066c5fd09f1d9a11902028a0bcbc861dc"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/response.json",
+      "bytes": 1360,
+      "sha256": "af242aa273593e15223cd6bee7f5e597898e7c4c1867e2ca8b24892f3f94e8a3"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/run.py",
+      "bytes": 3241,
+      "sha256": "1e25d41306a7c5e26c0706bcb6acabca727887bc1e691c989e4bec75db0ca4c9"
+    },
+    {
+      "path": "data/local/azure-gpt41-connection-v1/validation.json",
+      "bytes": 629,
+      "sha256": "38f9d2eacd2e6463dff8d215c0270f13fb51fd8dc614cf6ecca16343cb87408a"
+    }
+  ]
+}

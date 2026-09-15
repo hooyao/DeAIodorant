@@ -16,6 +16,7 @@ OPEN_ME_credentials.txt
 cookies.txt
 cookies.json
 .codex-log/
+.azure-responses-budget/
 models/
 feature_runs/
 data/local/

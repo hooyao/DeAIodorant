@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-15",
+  "pytest": {
+    "command": "python -m pytest",
+    "result": "248 passed in 44.47s"
+  },
+  "azure_targeted_tests": {
+    "result": "47 passed in 31.88s"
+  },
+  "compileall": "passed",
+  "single_live_request": {
+    "connection": "success",
+    "requested_deployment": "gpt-4.1",
+    "returned_model": "gpt-4.1",
+    "input_tokens": 13,
+    "output_tokens": 3,
+    "attempts": 1,
+    "local_plan_cost_usd": "0.00022",
+    "actual_billed_usd": null
+  },
+  "artifact_files": 10,
+  "artifact_bytes": 9910,
+  "artifact_and_client_index_hashes": "passed",
+  "private_material_scan": {
+    "files_scanned_before_this_record": 22,
+    "azure_key": true,
+    "openrouter_key": true,
+    "actual_resource_url_and_host": true,
+    "findings": 0
+  },
+  "live_ledger_cache_and_dotenv_tracked": false,
+  "main_unchanged": "af751e236c084c0de3cc45a5979749bad0778378"
+}

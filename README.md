@@ -6,6 +6,8 @@
 
 进度与后续实验的集中说明：[2026-09-15研究综述](docs/research-checkpoint-2026-09-15.md)。
 
+已接入维护者授权的 [Azure GPT-4.1 Responses API](docs/routes/compact-refiner/azure-gpt41-access-v1.md)，一次小请求验证可用。凭据独立保存在被忽略的 `.env`；约50美元额度采用45美元本地预算上限与持久账本。Azure SDK通过 `pip install -e ".[azure]"` 按需安装，不影响原有OpenRouter配置。
+
 最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
 
 换机继续研究请先读 [HANDOVER.md](HANDOVER.md)，并检出 `init` 分支。交接包含本地产物与 corpus，以及不依赖 API 或 GPU 的恢复检查。

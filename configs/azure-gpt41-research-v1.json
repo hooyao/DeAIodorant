@@ -1,0 +1,25 @@
+{
+  "version": "azure-gpt41-research-1.0",
+  "deployment": "gpt-4.1",
+  "env_path": ".env",
+  "env_keys": [
+    "AZURE_OPENAI_API_KEY",
+    "AZURE_OPENAI_BASE_URL",
+    "AZURE_OPENAI_DEPLOYMENT"
+  ],
+  "shared_cache_dir": "data/local/azure-gpt41-live-v1",
+  "shared_ledger_dir": ".azure-responses-budget",
+  "user_reported_available_usd_approx": "50",
+  "client_budget_usd": "45",
+  "input_usd_per_million_for_budget": "10",
+  "output_usd_per_million_for_budget": "30",
+  "pricing_status": "未核验此资源实际计费SKU和合同价格；10/30为保守预算计划价，不是Azure账单费率。",
+  "budget_scope": "本客户端在这一个共享账本中的请求；不读取Azure账户余额，也不追踪其他客户端的花费。",
+  "budget_behavior": "每次先预留，成功取得用量后按计划价计入估算；失败或用量未知保留预留。45美元是本地预算约束，不能宣称Azure真实余额保证。",
+  "max_output_tokens_default": 4096,
+  "max_retries": 0,
+  "store": false,
+  "purpose": "维护者授权的Azure GPT-4.1，可用于研究改写与跨模型内容复核；当前Astra及原生子任务继续承担强模型工作。",
+  "cache_policy": "共享账本位于.env同目录的.azure-responses-budget，live缓存位于shared_cache_dir，两者保持忽略；更换实验cache_dir不会重置该.env下的总账本。需要发布时导出冻结研究快照。",
+  "credential_policy": "真实key与资源URL仅在.env；受版本控制的产物不包含凭据或实际资源地址。"
+}

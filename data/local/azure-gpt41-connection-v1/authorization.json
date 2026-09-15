@@ -1,0 +1,15 @@
+{
+  "version": "azure-gpt41-authorization-1.0",
+  "date": "2026-09-15",
+  "user_authorization_excerpt": "我在azure上开了个gpt4.1；quota大概是50美元，你可以用这个",
+  "excerpt_note": "摘录授权意图；不包含用户给出的key或实际资源URL，也不作为完整原话记录。",
+  "deployment": "gpt-4.1",
+  "credentials_location": "Git忽略的.env中的三个AZURE_OPENAI_*配置项",
+  "existing_openrouter_credential_preserved": true,
+  "user_reported_quota_usd_approx": "50",
+  "chosen_local_budget_usd": "45",
+  "planned_test": "一次至多16个输出token的连接检查，之后可在既有研究约束下使用此Azure部署。",
+  "azure_tariff_and_actual_remaining_credit_verified": false,
+  "training_or_cloud_gpu_authorized_by_this_record": false,
+  "resource_creation": false
+}

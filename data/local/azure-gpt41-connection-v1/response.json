@@ -1,0 +1,38 @@
+{
+  "text": "连接成功",
+  "metadata": {
+    "schema_version": "compact-refiner-azure-responses-1.0",
+    "configuration_sha256": "0e9dfeb1c18c0d1e6670d2f8717246cc3aef9612438de6e03ea6c494b772dc7c",
+    "endpoint_sha256": "ef98816a29282ff3e3f6226032b59588aa1ae28e056ba063462dddef72c8b9ff",
+    "requested_deployment": "gpt-4.1",
+    "transaction_id": "08b7df37c3d3492c9c43a9a5ebdf58eb",
+    "request_sha256": "67250b81f510865d915aea396eb121bb89e8eb20eaa35fe5527b75fb1ed2e190",
+    "purpose": "connection_check",
+    "created_at_utc": "2026-09-15T08:00:13.153468+00:00",
+    "finished_at_utc": "2026-09-15T08:00:16.814738+00:00",
+    "response_id": "resp_04f82c303a21e0c0016aa8fb118d4481968778e94dd71269b7",
+    "returned_model": "gpt-4.1",
+    "response_status": "completed",
+    "usage": {
+      "input_tokens": 13,
+      "output_tokens": 3,
+      "total_tokens": 16
+    },
+    "failure_reason": null,
+    "max_output_tokens": 16,
+    "temperature": 0,
+    "budget_estimate": {
+      "accounted_usd": "0.00022",
+      "initial_reservation_usd": "0.0451",
+      "input_token_reserve": 4462,
+      "input_usd_per_million": "10",
+      "output_usd_per_million": "30",
+      "basis": "usage_at_plan_prices",
+      "rates_are_verified_billing": false
+    },
+    "actual_billed_usd": null,
+    "attempt_count": 1,
+    "store": false,
+    "cache_hit": false
+  }
+}
