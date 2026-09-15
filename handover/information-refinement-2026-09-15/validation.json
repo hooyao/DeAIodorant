@@ -1,0 +1,58 @@
+{
+  "schema_version": "information-refinement-publication-validation-1.0",
+  "date": "2026-09-15",
+  "base_commit": "ab39a6e385cbca0b36e26c03987c223f71391d26",
+  "branch": "init",
+  "goal_version": "deaiodorant-target-discovery-1.7",
+  "goal": "让公众信息文章把问题讲清楚，让读者看得舒服。",
+  "artistic_genres_in_scope": false,
+  "authorship_detection": false,
+  "tests": {
+    "passed": 201,
+    "failed": 0
+  },
+  "compileall": "passed",
+  "source_and_document_diff_check": "passed",
+  "reader_calibration": {
+    "article_id": "n01",
+    "label_verbatim": "很臭",
+    "localized_spans_checked": 4,
+    "numeric_score": null,
+    "edit_preference": null
+  },
+  "refinement": {
+    "style_operations": 6,
+    "grouping_operations": 4,
+    "source_characters": 3255,
+    "combined_characters": 3249,
+    "independent_preservation_review": "10 passed within licensed scope",
+    "source_facts_externally_verified": false,
+    "reader_effect_established": false
+  },
+  "presentation": {
+    "markdown_text_files_created": true,
+    "static_html_text_check": "passed",
+    "browser_visual_check": false,
+    "browser_interaction_check": false,
+    "reason": "Browser Use URL policy rejected local HTML navigation; no workaround attempted.",
+    "safer_delivery": "Markdown files"
+  },
+  "clean_index_checkout": {
+    "status": "passed",
+    "inventory": {
+      "status": "passed",
+      "files_verified": 27,
+      "bytes_verified": 275743
+    },
+    "historical_source_linkage": "passed",
+    "preservation_inputs_unchanged": true
+  },
+  "artifact_manifest_sha256": "e939aabe2a3c50f94e2e38fef7a501c7effea944a8850bff57ec907ca3e0cfd7",
+  "credential_scan": {
+    "new_or_changed_files": 42,
+    "actual_dotenv_values_checked": true,
+    "known_patterns_checked": true,
+    "findings": 0
+  },
+  "main_unchanged": "af751e236c084c0de3cc45a5979749bad0778378"
+}

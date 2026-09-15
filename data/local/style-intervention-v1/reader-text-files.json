@@ -1,0 +1,21 @@
+{
+  "version": "information-refinement-readable-text-1.0",
+  "files": {
+    "refined-article.md": {
+      "sha256": "8314ec0b185a665ce1e8399d3b50a764d4445faddd203ad361b041ee398debac",
+      "body_source": "draft-v1/combined.txt",
+      "body_source_sha256": "ff708f73de811831bbf8872cad0deac7e8c2f4adac0ee97c45e220051aa79657",
+      "content_changes_beyond_selected_edits": false,
+      "formatting": "原标题与正文保留；依据原始block标签将小标题表示为Markdown标题。"
+    },
+    "original-article.md": {
+      "sha256": "57e6161f10978bbca1c737e6660abf9b9332be60631c2d0c1a3069d48ebb51f4",
+      "body_source": "draft-v1/original.txt",
+      "body_source_sha256": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+      "content_changes_beyond_selected_edits": false,
+      "formatting": "原标题与正文保留；依据原始block标签将小标题表示为Markdown标题。"
+    }
+  },
+  "browser_required": false,
+  "reader_preference": null
+}

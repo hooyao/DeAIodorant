@@ -1,6 +1,8 @@
 # DeAIodorant
 
-本机最新结果：[契约1.1的四篇文章检验](docs/routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)。八份回答及393处引用已核验，字段角色仍有歧义，尚未升级为自动特征；新的原文强度校准正在等待维护者反馈。当前检查点见 [HANDOFF.md](HANDOFF.md)。
+**让读者看得舒服。** DeAIodorant 改写公众号、媒体解读、科普和技术说明等公众信息文章，让问题讲得更清楚，减少惹人反感的表达，改善措辞、句子和行文顺序，同时保留原意与有效信息。中文译文也在范围内；艺术文体不属于本项目。
+
+本机最新进展：[契约1.1的四篇文章检验](docs/routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)保留了诊断和保真检查成果；维护者已确认新的《亡灵遗产》原文“很臭”并定位具体表达。当前转入该信息文章的有限改写试做，不再等待同一强度判断。检查点见 [HANDOFF.md](HANDOFF.md)。
 
 最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
 

@@ -1,12 +1,24 @@
 # 续研 handoff：2026-09-15
 
+## 当前产品目标与改写稿
+
+维护者最新将目标明确为：**让读者看得舒服。** 范围限于公众号、媒体解读、科普、技术说明等向公众传播信息、以把问题讲清楚为目的的文章，包括相关译文。排除艺术文体；改善惹人反感的表达、难读的措辞和语句排列，保留原意与有效信息。作者身份判断、特征数值或标注 schema 不是交付目标。
+
+维护者已回答 n01 校准：“不胜枚举，很臭”，并定位四处讲解预告、层级揭示和读者低预期。原话见 `data/local/cognitive-move-contract-probe-v1/reader-calibration-response-v1.json`；不要再询问同一强度。后续目标澄清原话见 `data/local/project-goal-confirmation-2026-09-15.json`。
+
+已完成一篇信息文章的[有限改写试做](docs/routes/compact-refiner/information-refinement-pilot-v1.md)。阅读稿为 `data/local/style-intervention-v1/refined-article.md`，原文对照为同目录 `original-article.md`。六项呈现调整与四项长段分组已通过独立含义复核，原文、提案、计划、四种回放版本及变更日志均保留。没有读者偏好结果、训练导出或 reward 验证；配置分档、旧存档要求与补丁关系等原文内容边界仍未核实。
+
+下一步围绕这类实际改写是否更清楚、更舒服收集反馈，再在另一篇已确认强例上检验；不继续将全部工作投入通用字段或各种文体。HTML 原型只通过静态文字检查，本地预览被浏览器 URL 安全策略拦截，未绕过；交付以 Markdown 稿为准。新增文件清单见 `handover/information-refinement-2026-09-15/artifacts.json`。
+
+以下保留此前字段开发的历史检查点。
+
 ## 本机续研检查点：契约 1.1 的四篇新文章检验
 
 已完成[本轮报告](docs/routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)：四篇新文章、八个单篇任务、32 项详细记录，393 处引用机械核验通过。新工具及默认离线测试为 201 passed。原 2,198 项归档及旧 36 条记录恢复检查通过，未改写。
 
 明确来源链、普通条件和若干读者态度能被保留，但 proposer 的当前发言者／更早出处、暗示预期及“仅支持”的否定角色仍有编码歧义。一处省略说明把时间疑问扩大为等待意向。两份回答先遇到输出目录缺失，其中一份重建载荷时有措辞漂移，已保留偏差和排除它后的敏感性说明。不得把八份都称为无偏差首次生成，也不得转成自动特征、reward 或训练输出。
 
-当前不继续扩张 schema 或回改回答。新 n01 原文的主观臭味强度校准已单独向维护者提出，`data/local/cognitive-move-contract-probe-v1/reader-calibration-request.json` 记录该请求；目前等待反馈。维护者回答前，不将该文升级为人工强正例，不自动启动下一批改写。新结果、原文及判定在 `data/local/cognitive-move-contract-probe-v1/`，对应增量清单见 `handover/contract-probe-2026-09-15/artifacts.json`。
+当时不继续扩张 schema 或回改回答，`data/local/cognitive-move-contract-probe-v1/reader-calibration-request.json` 保存了原始校准请求。此后维护者已明确回复“很臭”，当前进入上方信息文章改写试做；请求文件保留当时的 pending 状态，不用它覆盖后续反馈。旧字段结果、原文及判定在 `data/local/cognitive-move-contract-probe-v1/`，对应原增量清单见 `handover/contract-probe-2026-09-15/artifacts.json`。
 
 ```powershell
 python experiments/cognitive_move_contract_probe.py verify --run data/local/cognitive-move-contract-probe-v1

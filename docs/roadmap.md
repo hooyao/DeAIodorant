@@ -1,6 +1,6 @@
 # 项目路线图
 
-2026-09-15 最新进展：[四篇新文章的契约1.1检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)已完成；通用归属、暗示性否定和自由文字中的读者证据仍不能自动计数。下一步等待新原文的主观强度校准，保留窄回归例及已定位的结构，不立即扩大 schema、重标旧回答或进入训练。
+2026-09-15 最新进展：维护者确认新原文“很臭”，并明确项目只让公众信息文章的读者看得舒服，不考虑艺术文体。[有限改写试做](routes/compact-refiner/information-refinement-pilot-v1.md)已有一份经含义复核的完整文字稿。下一步检查真实阅读体验；既有[契约检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)保留作辅助，不扩大 schema、重标旧回答或进入训练。后文关于跨体裁的旧规划不代表跨艺术文体目标。
 
 ## 当前优先事项，2026-09-14
 

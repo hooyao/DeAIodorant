@@ -1,0 +1,60 @@
+{
+  "version": "contract-probe-reader-calibration-response-1.0",
+  "recorded_at_utc": "2026-09-15T04:12:29.003197+00:00",
+  "reviewer_kind": "maintainer_human",
+  "request_path": "data/local/cognitive-move-contract-probe-v1/reader-calibration-request.json",
+  "status": "received",
+  "article_id": "n01",
+  "source_url": "https://post.smzdm.com/p/a6zdv5o0/",
+  "source_body_sha256": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+  "feedback_verbatim": "先说看得见的部分：  看不见的部分更大  这事明显的AI臭味，还有 “入坑之前，先把这几个坑看一遍” “**内存，门槛比你想的高**  ” 不胜枚举，很臭",
+  "article_severity_verbatim": "很臭",
+  "reader_recurrence_verbatim": "不胜枚举",
+  "interpretation": {
+    "strong_positive_for_this_reader": true,
+    "authorship_label": null,
+    "numeric_score": null,
+    "relative_severity_to_microduck": null,
+    "edit_preference": null,
+    "causal_mechanism_validated": false,
+    "evidence_phase": "human discovery calibration after model annotation; not held-out validation"
+  },
+  "localized_evidence": [
+    {
+      "block_id": "b006",
+      "quote": "先说看得见的部分：",
+      "start_char": 583,
+      "end_char": 592,
+      "reader_group": "visible_hidden_pair",
+      "localized_numeric_severity": null
+    },
+    {
+      "block_id": "b007",
+      "quote": "看不见的部分更大",
+      "start_char": 631,
+      "end_char": 639,
+      "reader_group": "visible_hidden_pair",
+      "localized_numeric_severity": null
+    },
+    {
+      "block_id": "b008",
+      "quote": "入坑之前，先把这几个坑看一遍",
+      "start_char": 832,
+      "end_char": 846,
+      "reader_group": "reading_agenda",
+      "localized_numeric_severity": null
+    },
+    {
+      "block_id": "b011",
+      "quote": "内存，门槛比你想的高",
+      "start_char": 1347,
+      "end_char": 1357,
+      "reader_group": "reader_expectation",
+      "localized_numeric_severity": null
+    }
+  ],
+  "linkage_check": {
+    "matched_spans": 4,
+    "source_unchanged": true
+  }
+}

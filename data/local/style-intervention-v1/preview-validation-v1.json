@@ -1,0 +1,15 @@
+{
+  "version": "information-refinement-preview-check-1.0",
+  "recorded_at_utc": "2026-09-15T04:36:45.723264+00:00",
+  "artifact_hashes": "passed",
+  "html_text_coverage": "passed",
+  "tab_targets_present": true,
+  "change_cards": 10,
+  "browser_visual_validation": false,
+  "browser_interaction_validation": false,
+  "browser_block_reason": "Browser Use URL security policy rejected local file navigation; no workaround attempted.",
+  "reader_delivery": "Markdown candidate and original files",
+  "semantic_review_path": "data/local/style-intervention-v1/preservation-review-v1.json",
+  "semantic_review_sha256": "ba1dcfbb3f9ad116d1803f5b64129e2f911fae89f77a6a8a597b084c3e00e431",
+  "reader_preference": null
+}

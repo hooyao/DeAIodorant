@@ -1,0 +1,260 @@
+{
+  "version": "information-refinement-preservation-review-1.0",
+  "created_at_utc": "2026-09-15T04:35:20.044170+00:00",
+  "reviewer": "independent_astra_subagent",
+  "source_id": "n01",
+  "source_url": "https://post.smzdm.com/p/a6zdv5o0/",
+  "reviewed_draft_version": "information-refinement-draft-1.0",
+  "scope": "只对提供的完整文字视图、六项呈现调整和四项空行分组作含义保留复核。先阅读全文，再逐项对照计划及三个候选版本。判断依据包括命题、条件、来源和篇章联系，不把数字或引文一致当作充分条件。",
+  "independence": {
+    "did_not_author_reviewed_edits": true,
+    "read_other_annotations_or_prior_adjudications": false,
+    "network_or_external_api_used": false,
+    "spawned_agents": false,
+    "modified_existing_files": false,
+    "source_images_checked": false,
+    "source_page_visuals_checked": false,
+    "upstream_sources_checked": false,
+    "not_checked_note": "未检查图片像素、上游网页、下载页、更新日志、视频或评论区。metadata 中的完整性仅覆盖保存的文字视图；本复核不扩大该范围。"
+  },
+  "judgment_definition": {
+    "通过": "在本轮明确允许的人际姿态变化和空行分组范围内，未发现影响事实内容、数量版本、来源、否定限定、建议或实际操作条件的实质增删或替换。并不表示所有语用效果不变、事实已核实或读者效果成立。",
+    "需修改": "发现超出本轮许可的实质变化，给出最小撤回或修正建议。",
+    "不确定": "无法仅凭提供材料确定某项编辑是否越过含义保留边界，应先处理该不确定性再作保留通过声明。"
+  },
+  "mechanical_checks": {
+    "source_matches_all_26_blocks": true,
+    "source_sha256_matches_metadata_and_manifest": true,
+    "reviewed_plan_matches_edit_log": true,
+    "style_edit_count": 6,
+    "grouping_edit_count": 4,
+    "all_10_old_spans_match_once_in_their_source_block": true,
+    "style_grouping_combined_exactly_replay_from_plan": true,
+    "three_variant_hashes_match_manifest": true,
+    "numeric_sequence_unchanged_in_all_three_variants": true,
+    "quoted_text_sequence_unchanged_in_all_three_variants": true,
+    "grouping_edits_only_add_blank_lines": true,
+    "combined_and_style_have_identical_non_whitespace_characters": true,
+    "b017_video_player_condition_unchanged_in_all_variants": true,
+    "opening_question_preserved_in_all_variants": true,
+    "limitation": "这些检查只排除意外漏字、错位和未申报编辑；以下逐项判断另外检查语义关系及范围。"
+  },
+  "edit_reviews": [
+    {
+      "edit_id": "ul-e01",
+      "block_id": "b006",
+      "judgment": "通过",
+      "basis": [
+        "“界面”覆盖整套UI重做；“物品管理”在本段可覆盖背包采用负重制，以及物品属性的展示、整理和搜索。后续逐项内容未删，未把属性本身改动偷换为仅展示改动。",
+        "负重制也涉及游戏规则，类别存在交叉；此处使用“方面”并紧接具体列举，可理解为本段内容提示，没有明说只有这两类改动或它们与下一段机制互斥。",
+        "“改动范围是底层级别的”及“都和原版完全不同”的原文评价和强度保留。"
+      ],
+      "substantive_change": "未发现必须保留的游戏内容被增删；新增的是由紧接内容支持的局部概括词。",
+      "licensed_stance_change": "删除“先说”的讲解安排和“看得见”的可见性框架。不能称为全部修辞含义严格相同。",
+      "prominence_change": "将读者的关注对象从可见性转为界面与物品管理，具体列举的顺序和数量不变。",
+      "unverified_source_claims": "底层改动、整套UI重做及与原版完全不同均是保留下来的原文描述，未做游戏实测。",
+      "minimal_recommendation": "保留当前改动；不要在说明中把两个段落提升为严格互斥或穷尽的机制分类。"
+    },
+    {
+      "edit_id": "ul-e02",
+      "block_id": "b007",
+      "judgment": "通过",
+      "basis": [
+        "研究台、制造链、载具和开锁都可在这里归为游戏机制；后面的开锁对象范围、搜刮／修复／上路和独立负重计算仍逐项存在。",
+        "结合前段“改动范围”和两段紧邻关系，“游戏机制的改动更大”仍将此段所列改动与上一段比较，保留原来的规模高低判断，没有改成仅仅另有改动或更重要。",
+        "前段负重制也属于广义游戏机制，因此新词不是精确的分类学边界。这里的冒号和具体列举提供局部范围，未出现所有机制都比所有界面改动更大的全称主张。",
+        "社区评价仍明确归属玩家社区；“10个dlc”仍是原引文，未变成编辑者验证的数量。"
+      ],
+      "substantive_change": "原文“看不见的部分”被解释为本段列出的机制内容；在现有上下文内可接受，未发现比较方向或具体玩法主张改变。",
+      "licensed_stance_change": "取消由可见层走向隐藏层的揭示姿态。",
+      "prominence_change": "比较对象更直接地指向机制；“更大”的程度和量纲仍未交代。",
+      "unverified_source_claims": "机制改动比前段更大、社区评价流传度高，以及具体功能范围未独立核实；该比较没有因此获得测量依据。",
+      "minimal_recommendation": "保留当前改动及与b006的邻接关系；不要把“更大”解释成已验证的工作量、代码量或重要性。"
+    },
+    {
+      "edit_id": "ul-e03",
+      "block_id": "b008",
+      "judgment": "通过",
+      "basis": [
+        "标题仍限定在入坑前，仍组织版本、存档、内存、下载渠道和bug五类事项；下文的安装、回退、备份等实际指令未删。",
+        "删去“先把这几个坑看一遍”改变的是阅读指令和风险包装，没有删掉“先回退版本”等实际操作先后。"
+      ],
+      "substantive_change": "未发现必须保留的实际注意事项或游玩前时间范围变化。",
+      "licensed_stance_change": "删除带看指令及“入坑／坑”的修辞回环。",
+      "prominence_change": "标题缩短，并由“坑”的强风险措辞转为一般事项标题；正文中的具体风险及其强弱保持原样。",
+      "unverified_source_claims": "标题不核验后文技术建议。",
+      "minimal_recommendation": "无需修改；后续不能把偏好变化单独归因于某个词，因为长度和展示密度同时改变。"
+    },
+    {
+      "edit_id": "ul-e04",
+      "block_id": "b011",
+      "judgment": "通过",
+      "basis": [
+        "“比你想的高”若孤立看只比较未知读者的预期，并不逻辑蕴含绝对需求高；本段随后明确说“UL吃内存从A20时代就出了名，这次也一样”，所以“需求较高”有本段独立的原文依据。",
+        "64G卡顿是被引玩家的自述，96G卡顿是同一玩家对UP主的转述；编辑没有把两者合并为独立硬件测试。",
+        "16G基本可以放弃、32G算入门、想流畅运行或者开多人联机时64G更稳仍保留作者参考线身份、析取条件及相对语气，没有改成64G一定流畅。",
+        "“内存不够的玩家”限定、评论区普遍给出加虚拟内存的归属，以及能缓解但别指望质变的限度均保留。"
+      ],
+      "substantive_change": "未新增配置结论；从对读者预期的比较改为本段已有定性判断，不能称为逐句严格同义。",
+      "licensed_stance_change": "按明确许可删除未经观察的读者低估预设。",
+      "prominence_change": "高内存需求变成直接主题句，读者原先是否低估不再作为主张。",
+      "unverified_source_claims": "配置分档是否可靠、卡顿是否由内存不足造成、虚拟内存的实际收益均未核实。",
+      "minimal_recommendation": "保留当前改动；继续保留后文条件、归属和“更稳”的限度，不将本审查用作硬件建议认证。"
+    },
+    {
+      "edit_id": "ul-e05",
+      "block_id": "b002",
+      "judgment": "通过",
+      "basis": [
+        "开篇“现在是不是入坑的时机”的问题原样保留；本周核对四个来源的主体仍是作者本人。",
+        "来源核对声称与结论之间由逗号及预告改为句号，仍在同一段连续陈述；没有把作者核对改为编辑者已经验证。",
+        "复活为真、现在入坑先做功课、其中最重要的是锁定v2.6的判断、转折和优先级均未删。"
+      ],
+      "substantive_change": "未发现问题范围、来源归属、建议内容或优先级变化。",
+      "licensed_stance_change": "只删除“结论先说”的元话语，保留问题本身。",
+      "prominence_change": "句号使来源核对声称与判断各自成句；没有新增证据。",
+      "unverified_source_claims": "作者是否真的在“这周”核对四个来源仍只是原文自述。",
+      "minimal_recommendation": "无需修改；对外描述时仍称作者的核对声称。"
+    },
+    {
+      "edit_id": "ul-e06",
+      "block_id": "b004",
+      "judgment": "通过",
+      "basis": [
+        "删除的“没听说过它的朋友”是带看指令的受话者定位，并不是只有没听说过UL的人安装后才会出现界面变化的技术条件。",
+        "“装上UL之后”的真实条件仍在，整个屏幕界面、快捷栏、状态显示重做及外观与原版不同的强评价保持。",
+        "没有连带删去b017中视频玩家的前置范围；该段在所有候选版本均原样保留。"
+      ],
+      "substantive_change": "未发现安装条件、界面描述或比较对象变化；新读者招呼被删除属于已申报范围。",
+      "licensed_stance_change": "取消面向没听说过UL者的称呼及“先看看”的带看指令。",
+      "prominence_change": "段落直接以安装效果开始，不再专门招呼新读者。",
+      "unverified_source_claims": "没有查看配图及截图，不能确认删去带看预告后图文联结的视觉功能是否保持。",
+      "minimal_recommendation": "文字视图中无需修改；若将该稿连同原图发布，需另作图文联结检查。"
+    },
+    {
+      "edit_id": "ul-c01",
+      "block_id": "b009",
+      "judgment": "通过",
+      "basis": [
+        "分段点都在完整句末：版本／安装／存档要求仍为一个完整句组，兼容原因及第三方工具作者证据自成一段，最后保留“所以”引出的操作建议。",
+        "官网下载页最新版2.7.19对应本体v2.6 b14、安装必须关闭EAC，以及来自2.7.15或更早存档升级2.7.19必须重开的条件没有拆散，来源范围未扩大。",
+        "6月3.0更换方块架构及第三方工具作者说明仍与“为什么不直接适配3.x”相连，没有新增UL官方解释的归属。",
+        "已自动更新至3.2的条件仍约束先回退版本；“别急着开新档等UL追赶”的否定和顺序未变。"
+      ],
+      "substantive_change": "未发现条件、来源、因果解释或操作顺序变化。",
+      "licensed_stance_change": "无；仅增加两处空行。",
+      "prominence_change": "官网要求和最后操作建议分别突出；不能声称这使官网要求与下一段补丁之间的关系得到解释。",
+      "unverified_source_claims": "页面要求是否准确，2.7.15旧档必须重开与下一段2.7.15至2.7.19补丁怎样兼容，提供材料未解决。",
+      "minimal_recommendation": "保留分段；不得把b010补丁说明写成已核实的重开豁免，也不要把b009要求扩成所有存档无条件重开。"
+    },
+    {
+      "edit_id": "ul-c02",
+      "block_id": "b010",
+      "judgment": "通过",
+      "basis": [
+        "“几乎不可避免”“大版本更新”“几乎是常态”与玩家抱怨仍同段，未把频繁重开改成所有更新必然使旧档失效。",
+        "官方提供升级补丁、玩家使用作者变通方法、农田作物异常需要手动处理仍为一个原句，未把变通方法认证为普遍适用的官方流程。",
+        "“版本稳定之前”仍约束不在单档投入几百小时的建议，“每次更新前”仍约束备份整个存档文件夹。分段未改弱建议或改变操作对象。",
+        "补丁说明独立成段并不自动证明它是b009官网强制重开要求的合法例外；原文没有讲明补丁的适用细节。"
+      ],
+      "substantive_change": "未发现例外范围、建议强度或备份条件变化；原文的未解释关系仍未解释。",
+      "licensed_stance_change": "无；仅增加两处空行。",
+      "prominence_change": "补丁及变通方法与备份建议各自突出，可能更容易引起对升级路径的关注，但没有新增可行性保证。",
+      "unverified_source_claims": "补丁适用条件、成功率及作物异常波及哪一种升级路径未核实；“但”在原句中的具体覆盖范围没有通过改写消歧。",
+      "minimal_recommendation": "保留分段；审阅材料将其描述为原文记载的升级路径，避免直接称为已确认的官网要求例外。"
+    },
+    {
+      "edit_id": "ul-c03",
+      "block_id": "b015",
+      "judgment": "通过",
+      "basis": [
+        "第一组仍描述联机维修包问题，保留“大概率”与2.7.15玩家报告的区别、掉线后武器和维修包丢失及多个四人小队的报道。",
+        "第二组只有太阳能板双倍发电被明确断言“已经被修掉”；作物、遗忘药水和技能窗口只被断言出现在更新日志中。分段没有把这三个谓词改成修复，也没有新增“已修复问题”标题。",
+        "原文早已将上述日志句夹在“修复速度不慢”和“但技能树锁死仍是遗留问题”之间，因此可能推断日志项代表修复的风险不是本轮新造。空行将该组更突出，不能据此认定这种推断已被消除或一定不受影响。",
+        "技能树仍锁死的状态、玩家引文、不要急着怪存档的建议，以及另有小问题的报告／偶有出现／都不致命等评价未删改。"
+      ],
+      "substantive_change": "没有新增日志所列问题全部修复的明示主张；本轮通过仅覆盖原文状态谓词及其关系保留，不认证读者一定会区分日志出现与修复完成。",
+      "licensed_stance_change": "无；仅增加三处空行。",
+      "prominence_change": "把修复评价与日志句组成一个独立段、再以“但”开下一段，可能强化原来就有的修复／遗留对照。这是需要保留在审阅记录中的推断风险，不能称为状态已经澄清。",
+      "unverified_source_claims": "更新日志具体写了什么、相关问题当时或目前是否修复、掉线发生概率及“都不致命”均未核实。",
+      "minimal_recommendation": "作为文字保留候选可保留当前分段，但不要把该段标作“已修复问题”，也不要宣称已经消除状态歧义。若读者审阅显示分段诱发“这些日志项都已修复”的理解，最小回退是另存新版撤回本项空行分组；没有上游依据时不得补写修复状态。"
+    },
+    {
+      "edit_id": "ul-c04",
+      "block_id": "b025",
+      "judgment": "通过",
+      "basis": [
+        "三个信号及第一、第二、第三的顺序完整保留，各自判断和证据随对应条目分段，没有错配。",
+        "第一项保留官方下载页对应版本栏变为3.x才值得开大档的条件和强度。",
+        "第二项仍是“什么时候来”的时间疑问和玩家“不知道今年过年能不能玩到”的问句；没有把该玩家写成“准备等待稳定版”或确定会等到过年。",
+        "第三项只有v4.0研发并行明确标作官方确认；未来小更新更频繁及兼容性博弈仍是紧接的作者判断，没有增加官方归属。",
+        "真正的等待建议仍位于第三项，以“想玩长期存档”为条件、以“不妨”为语气，未扩展成全部读者都必须等待。"
+      ],
+      "substantive_change": "未发现时间疑问转成意向、官方来源范围扩大或等待建议强度变化。",
+      "licensed_stance_change": "无；仅增加三处空行。",
+      "prominence_change": "三个条目更独立、并列性更突出，但分别是观察条件、时间疑问、发展声明及预测，确定性并不相同。",
+      "unverified_source_claims": "官方v4.0研发声明及关于更新频率和兼容性的预测未核验；分段不是证据加强。",
+      "minimal_recommendation": "无需修改；后续摘要保留第二项问句性质和第三项长期存档条件，不改写为统一等待意向。"
+    }
+  ],
+  "cross_document_findings": [
+    {
+      "id": "preservation-scope",
+      "finding": "六项呈现调整和四项分组恰好对应计划，未发现计划外改动。全文结尾的三类人建议、锁版本／存档／内存条件、下载渠道告诫及b017视频玩家前置范围仍保留。",
+      "classification": "含义保留结论"
+    },
+    {
+      "id": "b009-b010-requirement-and-patch",
+      "finding": "官网旧存档重开要求和官方升级补丁并存，是原文未说明的技术关系。分段未改变它，也未解决它。读者可审阅这篇候选稿的表达，但不能据本报告断言补丁免除重开或所有旧档都必然不能升级。",
+      "classification": "关键原文内容风险，未核实，非本轮引入"
+    },
+    {
+      "id": "b015-log-status",
+      "finding": "日志中出现不等于完成修复。组合稿没有明确写成全部已修复，但以修复评价带起的独立段仍可能支持该推断；本报告不把它描述为已消歧。",
+      "classification": "原有状态歧义及分段突出程度风险"
+    },
+    {
+      "id": "memory-guidance",
+      "finding": "高内存需求判断在原段有直接文字依据，因此可中和读者低预期；个案卡顿与通用16G／32G／64G建议间的论证缺口未被填补。",
+      "classification": "允许姿态变化与原文论据边界"
+    },
+    {
+      "id": "stale-style-count",
+      "finding": "计划及edit-log四项grouping_edits的licensed_stance_change仍写“既有七项style-only编辑”，但实际选用六项、排除ul-e07。正文与协议一致，属于说明字段的旧计数，未造成第十一项正文编辑。",
+      "classification": "非阻断的产物说明问题",
+      "minimal_recommendation": "后续维护记录时将说明与六项实际选择对齐，保留版本来历；本次复核没有改动冻结计划或日志。"
+    }
+  ],
+  "overall": {
+    "judgment": "通过",
+    "passed_edits": 10,
+    "edits_requiring_revision": 0,
+    "uncertain_edits": 0,
+    "mandatory_content_revisions_before_reader_review": [],
+    "can_submit_combined_to_reader_review": true,
+    "reader_review_scope": "可将完整combined文字稿作为该已暴露开发样例的候选版本交给读者审阅。这里的通过只说明本轮未发现超出明确许可的实质含义变化，允许的人际姿态变化已经逐项申报。",
+    "conclusion_boundaries": [
+      "不宣称全部语用意义或注意力分配完全不变；删去新读者招呼、低预期和讲解控制就是本轮允许的变化。",
+      "不宣称事实、配置、版本兼容、官网要求、故障状态或作者核对行为已经独立核验。",
+      "b009／b010要求与补丁关系、b015日志与修复关系及内存论据缺口仍需作为原文内容边界保留。",
+      "未审阅图片像素、网页布局或上游网页；结论只适用于提供的完整文字视图。",
+      "不给阅读舒适度、易懂程度、继续阅读意愿或减少反感的效果结论，也不预测读者偏好。",
+      "即使随后这个组合稿获得读者偏好，也不能将结果单独归因于某项操作、当作独立验证或推广为通用规则。"
+    ],
+    "reader_preference": null,
+    "authorship_detection": false,
+    "artistic_genres_in_scope": false
+  },
+  "input_sha256": {
+    "data/local/cognitive-move-contract-probe-v1/documents/n01/body.txt": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+    "data/local/cognitive-move-contract-probe-v1/documents/n01/blocks.json": "85296b70c14ecf99f80620209f735e3e8eb65e847d07ba0cc105362b66d1ea2f",
+    "data/local/cognitive-move-contract-probe-v1/documents/n01/metadata.json": "d7994b76ce43e40a57f39818d9f9c8eee6a3613be43b96f1f4dba9d4f033e56d",
+    "data/local/style-intervention-v1/reviewed-edit-plan.json": "4be264e4bcfcfef16aaf2035e7d1380b5d667c168696e0e8588555178197ee54",
+    "data/local/style-intervention-v1/draft-v1/style.txt": "d39d85934d3895523cb48e9ace51907ccdcf7fb22851f16b2a83fa2108b90ad2",
+    "data/local/style-intervention-v1/draft-v1/grouping.txt": "139b766d13a591f8f7bc45885951bdf9a9f0920df6494cd94185bc5f4dccc057",
+    "data/local/style-intervention-v1/draft-v1/combined.txt": "ff708f73de811831bbf8872cad0deac7e8c2f4adac0ee97c45e220051aa79657",
+    "data/local/style-intervention-v1/draft-v1/edit-log.json": "60108894e8ae3bfbe86f0be9cdf1f7f1d8e5026cdf49dfa208e1e490fcf86629",
+    "data/local/style-intervention-v1/draft-v1/manifest.json": "40464f30aa84eafdd755b88b21fc96caaf92b6c3fa6305103321d76ea67eec0b",
+    "docs/routes/compact-refiner/information-refinement-pilot-v1.md": "da6e1e6ca157333b4fd0f97eb8378c99e4369aa7f627f3aca36dd50d58da475f"
+  }
+}

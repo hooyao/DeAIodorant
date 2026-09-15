@@ -1,0 +1,153 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "ab39a6e385cbca0b36e26c03987c223f71391d26",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "新增维护者反馈、公众信息文章目标确认、受限改写提案与文字稿；旧语料和标注不变。",
+  "files": [
+    {
+      "path": "data/local/cognitive-move-contract-probe-v1/reader-calibration-response-v1.json",
+      "bytes": 2168,
+      "sha256": "f4372f3ca57dc8f0536f3fe404cd53a2d269a64b195f68356b3f71d3d133a9cb"
+    },
+    {
+      "path": "data/local/project-goal-confirmation-2026-09-15.json",
+      "bytes": 1363,
+      "sha256": "fe66cf05c0a2cf5b7a6971e2da26ca9ee0f20321706551147f41df9f81bad810"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/combined.blocks.json",
+      "bytes": 12672,
+      "sha256": "4ef8bb7c4b8d26e427ff7ce5def18991f90b4c62b6bfaf59dcbbb9d96a0b3a23"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/combined.md",
+      "bytes": 9132,
+      "sha256": "12a2ade6b484a7f2db0d013c8a89c933f488c591878d2c599fb9c8a50101258b"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/combined.txt",
+      "bytes": 8969,
+      "sha256": "ff708f73de811831bbf8872cad0deac7e8c2f4adac0ee97c45e220051aa79657"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/edit-log.json",
+      "bytes": 19346,
+      "sha256": "60108894e8ae3bfbe86f0be9cdf1f7f1d8e5026cdf49dfa208e1e490fcf86629"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/grouping.blocks.json",
+      "bytes": 12754,
+      "sha256": "f2358a593ec0d0fe4b4fc88bb9e719e5813a6ebacaddc64e0df9127aeae580a3"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/grouping.md",
+      "bytes": 9214,
+      "sha256": "d120ca900594cb4554bd93a20cad37c174a7171a4cc284aa25536b53fc53d51f"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/grouping.txt",
+      "bytes": 9051,
+      "sha256": "139b766d13a591f8f7bc45885951bdf9a9f0920df6494cd94185bc5f4dccc057"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/manifest.json",
+      "bytes": 3051,
+      "sha256": "40464f30aa84eafdd755b88b21fc96caaf92b6c3fa6305103321d76ea67eec0b"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/original.blocks.json",
+      "bytes": 12714,
+      "sha256": "85296b70c14ecf99f80620209f735e3e8eb65e847d07ba0cc105362b66d1ea2f"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/original.md",
+      "bytes": 9174,
+      "sha256": "6850de4ebc5624f461fffff2b03875faa7a7aecaff3757210fc735241f0897f2"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/original.txt",
+      "bytes": 9031,
+      "sha256": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/review.html",
+      "bytes": 31592,
+      "sha256": "630725338f72db46bb10088a6d67a2d54df4c3e6b5191a24e7580fa6eebf09fc"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/style.blocks.json",
+      "bytes": 12632,
+      "sha256": "a5152a5db7efe1c23b91b660f78bb3955a6960e598c77aca8c5ca14e32d3aa3b"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/style.md",
+      "bytes": 9092,
+      "sha256": "d0815bc8d7dfb481a3331df2a841c75d888d7e6f850fb9204f2a7c4cf8574ea4"
+    },
+    {
+      "path": "data/local/style-intervention-v1/draft-v1/style.txt",
+      "bytes": 8949,
+      "sha256": "d39d85934d3895523cb48e9ace51907ccdcf7fb22851f16b2a83fa2108b90ad2"
+    },
+    {
+      "path": "data/local/style-intervention-v1/original-article.md",
+      "bytes": 9186,
+      "sha256": "57e6161f10978bbca1c737e6660abf9b9332be60631c2d0c1a3069d48ebb51f4"
+    },
+    {
+      "path": "data/local/style-intervention-v1/plan-clarification-v1.json",
+      "bytes": 625,
+      "sha256": "91da22b6a713c6dee7f00db055fc69217628ace1b1af8b7a477ac01f0eae0397"
+    },
+    {
+      "path": "data/local/style-intervention-v1/prepare.py",
+      "bytes": 7599,
+      "sha256": "066740e4d2ae0a3bf5235295f41c45d4b95a26d0508c629836824278fe0995bf"
+    },
+    {
+      "path": "data/local/style-intervention-v1/preservation-review-v1.json",
+      "bytes": 21683,
+      "sha256": "ba1dcfbb3f9ad116d1803f5b64129e2f911fae89f77a6a8a597b084c3e00e431"
+    },
+    {
+      "path": "data/local/style-intervention-v1/preview-validation-v1.json",
+      "bytes": 726,
+      "sha256": "88e8f6232e9b79c221abedeb1505c8abfdb3f0a9d954a2fcd5f5582ffa06d2c2"
+    },
+    {
+      "path": "data/local/style-intervention-v1/reader-text-files.json",
+      "bytes": 1009,
+      "sha256": "ea98768452fa733b424454729a8ae4fab771989c6ac4fb0441bc52103411b20e"
+    },
+    {
+      "path": "data/local/style-intervention-v1/refined-article.md",
+      "bytes": 9124,
+      "sha256": "8314ec0b185a665ce1e8399d3b50a764d4445faddd203ad361b041ee398debac"
+    },
+    {
+      "path": "data/local/style-intervention-v1/reviewed-edit-plan.json",
+      "bytes": 20630,
+      "sha256": "4be264e4bcfcfef16aaf2035e7d1380b5d667c168696e0e8588555178197ee54"
+    },
+    {
+      "path": "data/local/style-intervention-v1/ul-clarity-proposal.json",
+      "bytes": 13754,
+      "sha256": "afb6d17a9187f514bdf9f1d3ebc1dd1192c2c6be3be900b1adbf4bf8f2e96b0f"
+    },
+    {
+      "path": "data/local/style-intervention-v1/ul-editor-proposal.json",
+      "bytes": 10503,
+      "sha256": "987446a5a27bd35ada8986e08f9cc6a333a398139df9b57d3562e44da61e1e1f"
+    }
+  ],
+  "counts": {
+    "files": 27,
+    "bytes": 275743
+  },
+  "credential_findings": 0,
+  "reader_effect": "not_yet_evaluated"
+}

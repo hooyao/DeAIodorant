@@ -17,3 +17,7 @@ docs/routes/compact-refiner/cognitive-move-contract-probe-v1.1.md -text
 docs/routes/compact-refiner/cognitive-move-record-contract-v1.1.md -text
 experiments/cognitive_move_contract_probe.py -text
 handover/contract-probe-2026-09-15/** -text
+
+# 信息文章改写试做的复核输入与交接清单。
+docs/routes/compact-refiner/information-refinement-pilot-v1.md -text
+handover/information-refinement-2026-09-15/** -text

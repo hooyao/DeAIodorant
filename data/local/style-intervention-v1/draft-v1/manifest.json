@@ -1,0 +1,58 @@
+{
+  "version": "information-refinement-draft-1.0",
+  "created_at_utc": "2026-09-15T04:30:58.322961+00:00",
+  "source_body_sha256": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+  "plan_sha256": "4be264e4bcfcfef16aaf2035e7d1380b5d667c168696e0e8588555178197ee54",
+  "generator_sha256": "066740e4d2ae0a3bf5235295f41c45d4b95a26d0508c629836824278fe0995bf",
+  "checks": {
+    "original": {
+      "characters": 3255,
+      "numbers_in_order_unchanged": true,
+      "quoted_text_in_order_unchanged": true,
+      "body_sha256": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+      "semantic_preservation": "requires_independent_review",
+      "reader_preference": null
+    },
+    "style": {
+      "characters": 3229,
+      "numbers_in_order_unchanged": true,
+      "quoted_text_in_order_unchanged": true,
+      "body_sha256": "d39d85934d3895523cb48e9ace51907ccdcf7fb22851f16b2a83fa2108b90ad2",
+      "semantic_preservation": "requires_independent_review",
+      "reader_preference": null
+    },
+    "grouping": {
+      "characters": 3275,
+      "numbers_in_order_unchanged": true,
+      "quoted_text_in_order_unchanged": true,
+      "body_sha256": "139b766d13a591f8f7bc45885951bdf9a9f0920df6494cd94185bc5f4dccc057",
+      "semantic_preservation": "requires_independent_review",
+      "reader_preference": null
+    },
+    "combined": {
+      "characters": 3249,
+      "numbers_in_order_unchanged": true,
+      "quoted_text_in_order_unchanged": true,
+      "body_sha256": "ff708f73de811831bbf8872cad0deac7e8c2f4adac0ee97c45e220051aa79657",
+      "semantic_preservation": "requires_independent_review",
+      "reader_preference": null
+    }
+  },
+  "files": {
+    "combined.blocks.json": "4ef8bb7c4b8d26e427ff7ce5def18991f90b4c62b6bfaf59dcbbb9d96a0b3a23",
+    "combined.md": "12a2ade6b484a7f2db0d013c8a89c933f488c591878d2c599fb9c8a50101258b",
+    "combined.txt": "ff708f73de811831bbf8872cad0deac7e8c2f4adac0ee97c45e220051aa79657",
+    "edit-log.json": "60108894e8ae3bfbe86f0be9cdf1f7f1d8e5026cdf49dfa208e1e490fcf86629",
+    "grouping.blocks.json": "f2358a593ec0d0fe4b4fc88bb9e719e5813a6ebacaddc64e0df9127aeae580a3",
+    "grouping.md": "d120ca900594cb4554bd93a20cad37c174a7171a4cc284aa25536b53fc53d51f",
+    "grouping.txt": "139b766d13a591f8f7bc45885951bdf9a9f0920df6494cd94185bc5f4dccc057",
+    "original.blocks.json": "85296b70c14ecf99f80620209f735e3e8eb65e847d07ba0cc105362b66d1ea2f",
+    "original.md": "6850de4ebc5624f461fffff2b03875faa7a7aecaff3757210fc735241f0897f2",
+    "original.txt": "66f11f326aa07d078f26e71bed41b394af147ecb8da69ffed1d9290369479ee8",
+    "review.html": "630725338f72db46bb10088a6d67a2d54df4c3e6b5191a24e7580fa6eebf09fc",
+    "style.blocks.json": "a5152a5db7efe1c23b91b660f78bb3955a6960e598c77aca8c5ca14e32d3aa3b",
+    "style.md": "d0815bc8d7dfb481a3331df2a841c75d888d7e6f850fb9204f2a7c4cf8574ea4",
+    "style.txt": "d39d85934d3895523cb48e9ace51907ccdcf7fb22851f16b2a83fa2108b90ad2"
+  },
+  "scope": "公众信息文章的有限改写；无艺术文体、作者分类或读者效果结论。"
+}
