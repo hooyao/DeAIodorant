@@ -4,6 +4,8 @@
 
 本机最新进展：《亡灵遗产》局部稿获得“至少我愿意读”的反馈，Microduck第二版也被评价为总体不错、目标臭味不明显，仍有一些翻译腔。[生成过程和新反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)已记录；当前保留两篇具体阅读参考，后续复试合适的中文译文，再考虑便宜小模型，暂不训练。检查点见 [HANDOFF.md](HANDOFF.md)。
 
+进度与后续实验的集中说明：[2026-09-15研究综述](docs/research-checkpoint-2026-09-15.md)。
+
 最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
 
 换机继续研究请先读 [HANDOVER.md](HANDOVER.md)，并检出 `init` 分支。交接包含本地产物与 corpus，以及不依赖 API 或 GPU 的恢复检查。

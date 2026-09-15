@@ -1,5 +1,7 @@
 # 项目路线图
 
+当前阶段的集中综述与实验顺序见[2026-09-15研究检查点](research-checkpoint-2026-09-15.md)：先补少量不同来源及明确译文的开发文章，再检查流程重复性和学生模型能力，最后才决定训练。该后续批次尚未执行。
+
 最新推进安排：[从“愿意读”的参考稿进入下一阶段](routes/compact-refiner/readable-reference-next-stage-v1.md)。1519字符《亡灵遗产》稿与Microduck第二版均已获具体正向阅读反馈；Microduck仍有轻微翻译腔，[过程与证据范围](routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)另存。当前向合适的中文译文复试推进，首次限定元数据检查未找到明确译文，不提交弱候选。两篇暴露开发稿的反馈不等于普遍泛化或训练验收，便宜学生模型试验仍在后续阶段。
 
 2026-09-15 最新进展：第一版有限改写被否定后，GPT-4 Turbo 稿得到维护者“读起来就好多了”“虽然有一点翻译味，但是更像是人写的”的[正向阅读反馈](routes/compact-refiner/reports/gpt4-turbo-reader-followup-v1.md)。信息保留检查仍未通过，不能用它覆盖阅读成果。现已另做版本、存档和故障三处局部补充；原样 GPT-4 稿保持不变，补充稿尚无人类反馈，整体也未补全。继续检查有用信息能否清楚地恢复，不增加付费重试、通用 schema 或训练。项目限于公众信息文章，后文旧规划不代表艺术文体目标。
