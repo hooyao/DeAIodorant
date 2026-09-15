@@ -1,0 +1,49 @@
+{
+  "version": "readable-reference-next-work-1.0",
+  "scope": "后续执行安排；不是已完成实验，也不是 final-test 的预注册结果。",
+  "reading_reference": {
+    "path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+    "sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28",
+    "feedback_path": "data/local/readable-reference-v1/reader-feedback.json"
+  },
+  "items": [
+    {
+      "id": "finish-ul-content",
+      "status": "planned",
+      "task": "另存当前稿剩余内容问题的修订，优先处理内存建议的证据强弱、下载渠道与安装包信息、时间和维护者归属，继而核对有效玩法及后续版本信息。",
+      "input_review": "data/local/gpt4-turbo-article-v1/preservation-review.json",
+      "constraint": "不修改已认可的 1519 字符稿，不恢复原文的口号来填篇幅；不把弱证据写成硬性事实。",
+      "exit": "新稿的实质内容改动可追溯，遗留问题逐项说明；独立检查不发现新增事实、关键条件丢失或强弱偷换。不是要求维护者重读同一旧稿。"
+    },
+    {
+      "id": "microduck-transfer",
+      "status": "planned",
+      "task": "把先写顺、再核对并补回有用信息的方法用于 Microduck 全文，保留购买、DIY 与等待建议的各自条件和依据。",
+      "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+      "source_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "source_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+      "source_title_metadata": "data/local/reader-style-anchors-v1/smzdm/metadata.json",
+      "evidence_status": "已被维护者明确评价为恶臭的暴露开发文章，不是未见 holdout。",
+      "exit": "产出一份可直接阅读且经过内容检查的新文章；需要读者判断时仅提交已完成的稿，不再问已有强度问题。"
+    },
+    {
+      "id": "translated-information-case",
+      "status": "planned_after_microduck",
+      "task": "从已保留语料中选一篇持续存在目标阅读问题的公众信息类中文译文，用中文输入完成同样的改写及内容复核。",
+      "source_selection": "尚未选定，先检查实际可用材料；Cowork 不再提交，来源类型本身不充当质量标签。",
+      "exit": "有另一来源类型的具体改写结果，记录效果与失败；不以翻译身份全局排除材料。"
+    },
+    {
+      "id": "cheap-student-probe",
+      "status": "gated",
+      "entry": "有多篇具体、经内容检查的开发改写，并获得足以描述目标的阅读反馈；仅一篇有用参考不证明泛化。",
+      "task": "查询当时可用的便宜小模型和价格，只做小批量 prompt 试验，检查自然表达、信息保留与回补能力分别在哪里失败。",
+      "constraint": "原生 Astra 承担强模型编辑与独立复核。OpenRouter 仍限便宜小模型，不继续调用外部 GPT-4 或 Astra，不读已暴露 final-test 调参。",
+      "exit": "得到学生模型的具体能力缺口、少量高质量成对材料和费用记录，再决定是否值得进入训练准备。"
+    }
+  ],
+  "gpu_needed_now": false,
+  "training_started": false,
+  "user_decision_needed_now": false,
+  "doc_path": "docs/routes/compact-refiner/readable-reference-next-stage-v1.md"
+}

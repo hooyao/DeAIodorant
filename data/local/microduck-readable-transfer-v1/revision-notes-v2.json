@@ -1,0 +1,114 @@
+{
+  "version": "microduck-readable-transfer-revision-2.0",
+  "created_local_date": "2026-09-15",
+  "source": {
+    "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+    "raw_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "raw_bytes": 7988,
+    "characters_after_universal_newline_read": 3231
+  },
+  "previous_candidate": {
+    "path": "data/local/microduck-readable-transfer-v1/candidate-v1.md",
+    "raw_sha256": "2881c4781209a607dd849c2577caea1148ca7ea2e427046848ba21d2b8451735",
+    "raw_bytes": 8374,
+    "characters_after_universal_newline_read": 3397
+  },
+  "trigger_review": {
+    "path": "data/local/microduck-readable-transfer-v1/preservation-review-v1.json",
+    "raw_sha256": "ae24e376cbe0fcd0d80a4037379fbc7cbacff8f7024d997917d057d94aac8689",
+    "raw_bytes": 12883,
+    "characters_after_universal_newline_read": 7432
+  },
+  "candidate": {
+    "path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+    "raw_sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88",
+    "raw_bytes": 8496,
+    "characters_after_universal_newline_read": 3443
+  },
+  "editor": "native_astra_subagent",
+  "model_family": "gpt-6-astra",
+  "exact_backend_revision": "unknown",
+  "scope": "按独立复核提出的五处内容问题作最小修改；阅读全文后核对相关原句。未再作全面风格改写。",
+  "edits": [
+    {
+      "finding_id": "md-p01",
+      "before": "原文引用的介绍称，它被设计成“为了动而生、随时准备摔倒”。",
+      "after": "原文将它形容为“为了动而生、随时准备摔倒”的开发平台。",
+      "source_quote": "它是\"为了动而生、随时准备摔倒\"的开发平台，不是一台开箱即萌的电子宠物",
+      "reason": "只保留所给中文正文中的作者形容，不增补一份介绍或设计者意图。"
+    },
+    {
+      "finding_id": "md-p02",
+      "before": "想买399元替代品的人，也可以关注这些独立方案；目前没有现成的同价承诺。",
+      "after": "想买399元替代品的人，也可以关注这些独立方案；原文没有给出399元的售价或相应承诺。",
+      "source_quote": "等 399 元平替的：别等硬件复刻了，盯刘厂长这类软硬件全开源的国产方案更现实。",
+      "reason": "将资料缺口明确限于这篇文章，不对项目方或市场现状作经核验的否定断言。"
+    },
+    {
+      "finding_id": "md-p03",
+      "before": "部分早期订单正在被加价转让；购买转让单前，需要确认售后、保修由谁承担，以及对方是否有依据承诺圣诞节发货。",
+      "after": "部分早期订单正在被加价转让。原文提醒，转让买家不能默认售后、保修以及“最快圣诞发货”的承诺会随订单转让，需要向相关方核实。",
+      "source_quote": "售后、保修和\"最快圣诞发货\"的承诺都不在你头上，转账前想清楚。",
+      "reason": "恢复原文关于权益和发货承诺缺乏当然保障的提醒，并保持为源作者风险提示，不补成已核实的法律或官方条款。"
+    },
+    {
+      "finding_id": "md-p04",
+      "before": "HF 联合创始人 Thomas Wolf 在 X 上公布，首日每4秒就售出一台，24小时订单金额超过260万美元，按单价折算约6500台。",
+      "after": "原文转述 HF 联合创始人 Thomas Wolf 在 X 上公布的数据，称“首日 4 秒卖出一台”，24小时订单金额超过260万美元，按单价折算约6500台。文中没有说明“4 秒卖出一台”的统计口径。",
+      "source_quote": "首日 4 秒卖出一台，24 小时订单金额破 260 万美元，按单价折算约 6500 台。",
+      "reason": "恢复含混销售节奏的原文口径和转述关系，不解释成全天持续速率、首台用时、峰值或全天平均。"
+    },
+    {
+      "finding_id": "md-p05",
+      "before": "它有现成教程，42厘米的机身也被原文作者视为便于改装的条件。",
+      "after": "它有现成教程，原文作者还认为42厘米的较大机身更“耐折腾”。",
+      "source_quote": "42 厘米的大身子更耐折腾",
+      "reason": "保留宽泛且主观的耐折腾评价，不将其收窄或升级为已经证明的改装便利或硬件结构优势。"
+    }
+  ],
+  "validation": {
+    "source_quotes_exact_match": true,
+    "five_before_spans_unique": true,
+    "reverse_replay_recovers_v1_exact_text": true,
+    "protected_input_hashes_unchanged": true,
+    "protected_input_snapshots": [
+      {
+        "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+        "raw_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+        "raw_bytes": 7988,
+        "characters_after_universal_newline_read": 3231
+      },
+      {
+        "path": "data/local/microduck-readable-transfer-v1/candidate-v1.md",
+        "raw_sha256": "2881c4781209a607dd849c2577caea1148ca7ea2e427046848ba21d2b8451735",
+        "raw_bytes": 8374,
+        "characters_after_universal_newline_read": 3397
+      },
+      {
+        "path": "data/local/microduck-readable-transfer-v1/editor-notes-v1.json",
+        "raw_sha256": "c6a2129bb400fd731dd0972793af80ecb6de58a28e61a770bc683f0b57d3d3a1",
+        "raw_bytes": 9935,
+        "characters_after_universal_newline_read": 6383
+      },
+      {
+        "path": "data/local/microduck-readable-transfer-v1/preservation-review-v1.json",
+        "raw_sha256": "ae24e376cbe0fcd0d80a4037379fbc7cbacff8f7024d997917d057d94aac8689",
+        "raw_bytes": 12883,
+        "characters_after_universal_newline_read": 7432
+      }
+    ],
+    "independent_review_of_v2": "pending",
+    "reader_feedback_on_v2": null,
+    "no_full_preservation_claim": true
+  },
+  "limitations": [
+    "没有核验销售、硬件、采购、交付或上游引文事实。",
+    "保留原稿已有的审查范围；本次只解决列出的五处发现，不自动代表全文内容保留通过。",
+    "来源和候选均为已经暴露的 development 材料。没有继承参考稿的人工阅读认可，也没有训练资格。"
+  ],
+  "network_requests": 0,
+  "openrouter_requests": 0,
+  "additional_api_cost_usd": 0,
+  "training": false,
+  "git_mutations": false
+}

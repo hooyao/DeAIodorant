@@ -1,0 +1,77 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "e6c23e8d673d4146c691375d181c07b9823cfc06",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "局部稿愿意读的反馈、下一阶段安排、四处内容修订及Microduck全文候选和审查；全部旧产物不变。",
+  "files": [
+    {
+      "path": "data/local/microduck-readable-transfer-v1/candidate-v1.md",
+      "bytes": 8374,
+      "sha256": "2881c4781209a607dd849c2577caea1148ca7ea2e427046848ba21d2b8451735"
+    },
+    {
+      "path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+      "bytes": 8496,
+      "sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88"
+    },
+    {
+      "path": "data/local/microduck-readable-transfer-v1/editor-notes-v1.json",
+      "bytes": 9935,
+      "sha256": "c6a2129bb400fd731dd0972793af80ecb6de58a28e61a770bc683f0b57d3d3a1"
+    },
+    {
+      "path": "data/local/microduck-readable-transfer-v1/preservation-review-v1.json",
+      "bytes": 12883,
+      "sha256": "ae24e376cbe0fcd0d80a4037379fbc7cbacff8f7024d997917d057d94aac8689"
+    },
+    {
+      "path": "data/local/microduck-readable-transfer-v1/preservation-review-v2.json",
+      "bytes": 7387,
+      "sha256": "328ae4771bbc0e445ea2d5f7fe39769b28d916ecfafbdb438300c995f858562c"
+    },
+    {
+      "path": "data/local/microduck-readable-transfer-v1/revision-notes-v2.json",
+      "bytes": 6291,
+      "sha256": "6627d14d21edb03e44f549138862b1a23cff6eafa89129ea95128d44321ebf37"
+    },
+    {
+      "path": "data/local/readable-reference-v1/execution-progress.json",
+      "bytes": 1394,
+      "sha256": "c8bcf896d904b6518f3bf28e99a8faf3f29e429931985f74c4925ebda87f3d7b"
+    },
+    {
+      "path": "data/local/readable-reference-v1/next-work-items.json",
+      "bytes": 3395,
+      "sha256": "486506d0b2c3c39fa0c3a9da4838c1292c9eb062a49a440293c21861ac861d3e"
+    },
+    {
+      "path": "data/local/readable-reference-v1/reader-feedback.json",
+      "bytes": 1582,
+      "sha256": "604f9aa4c1bbc501b11d76e624b6374b48043145883f483e7820ff88986f70d0"
+    },
+    {
+      "path": "data/local/ul-content-revision-v1/candidate-v1.md",
+      "bytes": 5448,
+      "sha256": "4380802253bde44393fe106d1333f31d4671b1ba8380d69934da0e9d15de7329"
+    },
+    {
+      "path": "data/local/ul-content-revision-v1/edit-record-v1.json",
+      "bytes": 8660,
+      "sha256": "bdcc673d8996275dbbe7012f154d966224af98146bfe7442c3761924f3b09ab4"
+    },
+    {
+      "path": "data/local/ul-content-revision-v1/prepare.py",
+      "bytes": 8745,
+      "sha256": "c814fb189f4b0d63618980c24f4b0e08451583297877a4e423ce6ad7dc43147b"
+    },
+    {
+      "path": "data/local/ul-content-revision-v1/preservation-review-v1.json",
+      "bytes": 7590,
+      "sha256": "bbffdf5386426d5378dcaaba17e18fef3262333266c90f2167169d8ea12748a8"
+    }
+  ]
+}

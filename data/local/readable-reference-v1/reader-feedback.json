@@ -1,0 +1,25 @@
+{
+  "version": "readable-reference-feedback-1.0",
+  "date": "2026-09-15",
+  "verbatim_message": "这个局部补充稿挺好的，至少我愿意读",
+  "evaluated_artifact": {
+    "path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+    "sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28",
+    "characters": 1519,
+    "producer": "GPT-4 Turbo 原稿，加当前 Astra Root 的三处局部补充及两处复核纠正"
+  },
+  "interpretation_by_root": {
+    "willingness_to_read": "明确正向，维护者说至少愿意读。",
+    "reading_quality": "维护者说局部补充稿挺好。",
+    "comparison_to_base": "没有明确声称比 1201 字符 GPT-4 原稿更好，也没有给出数值差异。",
+    "scope_of_acceptance": "对当前整份局部补充稿的直接开发反馈；不是逐项事实确认、全文已读完的声明或许可任意删减。",
+    "content_preservation": "三处局部补充已通过独立含义检查，其余已声明的内容问题和遗漏仍在。",
+    "evaluation_design": "单一维护者、已知文章和改写过程、非盲态反馈。",
+    "causal_limit": "当前支持补回这几处信息后依然愿意读；不能据此量化补充的因果效果或推断所有文章都适用。",
+    "preference_score": null,
+    "full_article_preservation_passed": false,
+    "training_eligible": false
+  },
+  "decision": "冻结此稿为有明确阅读意愿反馈的开发参考；剩余修正另存版本，同时把改写方法迁移到另一篇强样例。",
+  "new_openrouter_calls": 0
+}

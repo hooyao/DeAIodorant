@@ -1,0 +1,36 @@
+{
+  "version": "readable-reference-execution-1.0",
+  "date": "2026-09-15",
+  "plan_path": "data/local/readable-reference-v1/next-work-items.json",
+  "plan_sha256": "486506d0b2c3c39fa0c3a9da4838c1292c9eb062a49a440293c21861ac861d3e",
+  "items": [
+    {
+      "id": "finish-ul-content",
+      "status": "partially_completed",
+      "candidate_path": "data/local/ul-content-revision-v1/candidate-v1.md",
+      "result": "四处内容修订完成且局部复核通过；其余明列的遗漏仍在，不声称全文完成。",
+      "human_feedback": null,
+      "candidate_sha256": "4380802253bde44393fe106d1333f31d4671b1ba8380d69934da0e9d15de7329"
+    },
+    {
+      "id": "microduck-transfer",
+      "status": "candidate_ready_for_reader_review",
+      "candidate_path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+      "result": "全文重写，两轮内容复核后未发现新的关键内容问题；不是外部事实核验，尚无人类阅读反馈。",
+      "human_feedback": null,
+      "candidate_sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88"
+    },
+    {
+      "id": "translated-information-case",
+      "status": "not_started"
+    },
+    {
+      "id": "cheap-student-probe",
+      "status": "not_started_gated"
+    }
+  ],
+  "new_openrouter_calls": 0,
+  "new_openrouter_cost_usd": "0",
+  "gpu_used": false,
+  "training_started": false
+}

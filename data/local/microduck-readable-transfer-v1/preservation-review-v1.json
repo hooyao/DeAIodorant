@@ -1,0 +1,173 @@
+{
+  "version": "microduck-preservation-review-1.0",
+  "reviewed_local_date": "2026-09-15",
+  "reviewer": {
+    "method": "native_astra_subagent_full_text_review",
+    "model_family": "gpt-6-astra",
+    "exact_backend_revision": "unknown",
+    "relationship_to_editor": "independent_task_same_model_family",
+    "blind": false,
+    "corpus_role": "exposed_development_strong_anchor",
+    "network_requests": 0,
+    "openrouter_requests": 0
+  },
+  "inputs": {
+    "source": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "raw_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+      "raw_bytes": 7988
+    },
+    "source_metadata": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/metadata.json",
+      "raw_sha256": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393",
+      "raw_bytes": 1499
+    },
+    "candidate": {
+      "path": "data/local/microduck-readable-transfer-v1/candidate-v1.md",
+      "raw_sha256": "2881c4781209a607dd849c2577caea1148ca7ea2e427046848ba21d2b8451735",
+      "raw_bytes": 8374
+    },
+    "editor_notes": {
+      "path": "data/local/microduck-readable-transfer-v1/editor-notes-v1.json",
+      "raw_sha256": "c6a2129bb400fd731dd0972793af80ecb6de58a28e61a770bc683f0b57d3d3a1",
+      "raw_bytes": 9935
+    }
+  },
+  "scope": "阅读全文后逐项复核内容及表达边界。仅读取所列四个输入，不访问来源页面、链接、图片或其他研究文件；不核验现实事实，不判断阅读偏好、作者身份或训练资格。篇幅和数字出现不作为充分保真证据。",
+  "overall_result": "needs_local_revision",
+  "overall_explanation": "硬件规格、版本故障、购买交期、DIY 成本和主要建议大体保留，几个高风险判断也正确归到原文作者。仍有两处明确超出所给文本的归属或断言，以及销售节奏、转让订单警告两处需要收紧的改述，因此当前不作全文保真通过。这个结论只针对本候选，不能推翻《亡灵遗产》参考稿已有的正向阅读反馈，也不代表本候选的阅读体验差。",
+  "findings": [
+    {
+      "id": "md-p01",
+      "severity": "medium",
+      "status": "revision_required",
+      "category": "unsupported_attribution_and_design_intent",
+      "source_quote": "它是\"为了动而生、随时准备摔倒\"的开发平台，不是一台开箱即萌的电子宠物",
+      "candidate_quote": "原文引用的介绍称，它被设计成“为了动而生、随时准备摔倒”。",
+      "problem": "源文只有作者陈述和带引号的描述，没有指出某份介绍是该句来源，也没有提供设计者的目的陈述。新稿补出了“引用的介绍”和“被设计成”两层信息。",
+      "minimal_revision_direction": "如保留这句话，只说明这是原文的形容，不指定介绍来源或设计意图；也可与已有开发平台说明合并。"
+    },
+    {
+      "id": "md-p02",
+      "severity": "medium",
+      "status": "revision_required",
+      "category": "absence_of_evidence_scope_expansion",
+      "source_quote": "等 399 元平替的：别等硬件复刻了，盯刘厂长这类软硬件全开源的国产方案更现实。",
+      "candidate_quote": "想买399元替代品的人，也可以关注这些独立方案；目前没有现成的同价承诺。",
+      "problem": "源文未提供399元报价或承诺，只能据此描述所给文章的信息缺口。“目前没有现成的同价承诺”可能被读成对项目或市场现状的已核验否定，超出了本次中文输入。",
+      "minimal_revision_direction": "把信息范围限定为“原文没有给出399元的售价或相应承诺”，避免替代项目方作否定。"
+    },
+    {
+      "id": "md-p03",
+      "severity": "medium",
+      "status": "clarification_required",
+      "category": "warning_strength_and_negation",
+      "source_quote": "售后、保修和\"最快圣诞发货\"的承诺都不在你头上，转账前想清楚。",
+      "candidate_quote": "购买转让单前，需要确认售后、保修由谁承担，以及对方是否有依据承诺圣诞节发货。",
+      "problem": "新稿保留了核对对象，但原文提醒转让买家不能当然取得原订单权益的风险被弱化为一般购买核对。另一方面，源文措辞含混且没有条款依据，审查不能将其补成已核实的法律或官方政策结论。",
+      "minimal_revision_direction": "明确说这是源文提出的订单转让风险：不能默认售后、保修及原发货承诺会随订单转让，需向相关方核实；不新增确定的转让政策。"
+    },
+    {
+      "id": "md-p04",
+      "severity": "medium",
+      "status": "clarification_required",
+      "category": "ambiguous_sales_rate_quantification",
+      "source_quote": "首日 4 秒卖出一台，24 小时订单金额破 260 万美元，按单价折算约 6500 台。",
+      "candidate_quote": "首日每4秒就售出一台，24小时订单金额超过260万美元，按单价折算约6500台。",
+      "problem": "源文的“首日4秒卖出一台”本身没有说明持续区间或统计口径；增加“每”更容易被理解为整个首日的持续速率。若按全天持续速率理解，也不能与约6500台直接对齐。这不是审查认定源文必然指开售最初4秒，而是原文歧义不应被改写固化。",
+      "minimal_revision_direction": "将含混的销售节奏按原话归属于 Thomas Wolf 的转述，或明确本文未说明节奏口径；不得自行补成首台用时、峰值或全天平均。"
+    },
+    {
+      "id": "md-p05",
+      "severity": "low",
+      "status": "editor_judgment",
+      "category": "narrowed_interpretation",
+      "source_quote": "42 厘米的大身子更耐折腾",
+      "candidate_quote": "42厘米的机身也被原文作者视为便于改装的条件。",
+      "problem": "“耐折腾”可包括装配、调试、实验和承受折腾；“便于改装”选中了其中较具体的一种解释。作者归属保留了，但没有实测或结构资料证明大机身带来改装便利。",
+      "minimal_revision_direction": "若追求严格保真，改成作者认为这种较大机身适合自行实验、调试的概括，或仅保留机身尺寸与教程事实，明确处理掉了原作者的主观形容。不要升级为硬件结构优势。"
+    }
+  ],
+  "reviewed_content_groups": [
+    {
+      "topic": "金额、销量及销售归属",
+      "result": "locally_needs_clarification",
+      "assessment": "399美元与约2680元、260万美元与折算约6500台、Thomas Wolf 和陈大叔的来源关系得到保留，未把销量当第三方验证。销售速率的“每”见 md-p04。129亿美元收购仍以消息描述，不将收购认定为已完成事实。"
+    },
+    {
+      "topic": "硬件与配件",
+      "result": "pass_with_source_only_scope",
+      "assessment": "25厘米、780克、15电机、摄像头、8×8 ToF、双 IMU、两根 NFC、鸭喙夹取、NP-F550、约1小时、四种配色、终身声线、手柄与一块电池，以及付费配件信息保留。RK3566、Firefly型号、四核A55、1GB与32GB及未用Jetson均未换配置。没有外部核验其真实规格。"
+    },
+    {
+      "topic": "训练、控制与版本故障",
+      "result": "pass_with_source_only_scope",
+      "assessment": "英伟达GPU、mjlab、MuJoCo Warp、PPO、1～2小时、ONNX、50Hz、20ms、15022个tick漏3个，以及Runtime 1.20.1与要求1.23.x以上均在正确事件中。部署数据限定到开发者测试。没有凭空补出“三件套”的成员；将同文故障用于兼容性提醒有文本依据，不是新实验结果。"
+    },
+    {
+      "topic": "开源边界",
+      "result": "pass_with_source_only_scope",
+      "assessment": "软件仓库及7种行为保留，硬件未开放、官方BOM和结构件资料不可取得没有被漏掉。自行制作的对象仍是前身Open Duck Mini，未暗示能按官方图纸复刻Microduck。"
+    },
+    {
+      "topic": "购买与时间条件",
+      "result": "locally_needs_clarification",
+      "assessment": "2026年圣诞前原计划、新订单不承诺、4～6个月、先订先得、社区反馈不邮寄大陆及港澳台、8月30日代订引语、代购转运额外费用均保留。转让单风险改述见 md-p03。文中的“当前／目前”仍需按源文2026-08-31的时点理解，不能当成2026-09-15重查结果。"
+    },
+    {
+      "topic": "首款与4000元内无替代",
+      "result": "pass_as_attributed_judgment",
+      "assessment": "源文关于399美元价位首款整合训练到真机与SDK的成品、4000元内无同等方便替代品的判断都留存，并归到原文作者。关于未提供详细竞品资料的说明是针对本次所读文章的证据边界，未声称市场上实际不存在竞争产品。"
+    },
+    {
+      "topic": "DIY生态与两种成本口径",
+      "result": "pass_with_minor_interpretive_note",
+      "assessment": "Antoine Pirrone、前身关系、V2的60秒视频和42厘米、官方不到400美元，与网友不低于4000元分别归属；未混成实测成本。各树莓派版本、Gemma 4、EmoLo与IEEE Spectrum归属保留。总线舵机、渠道价、板卡涨价和不为省钱DIY的建议保留。大机身改装便利见 md-p05。"
+    },
+    {
+      "topic": "逆向成本判断",
+      "result": "pass_as_attributed_judgment",
+      "assessment": "原文作者关于完全复刻需逆向且更贵的判断被保留并明确归属；没有将图纸未开放推出必然成本定律。原文未给逆向成本清单的说明只反映所给文本，不是已检查一切上游资料。"
+    },
+    {
+      "topic": "国产方案、未来承诺与服务愿景",
+      "result": "locally_needs_revision",
+      "assessment": "桌面具身刘厂长、树莓派与飞特舵机、独立架构、未来软硬件开源承诺均保留。国产发货、本地售后和低价显化为待达成条件，避免将原作者的方案愿景误写成已交付服务，这种范围校准可接受。“没有现成同价承诺”则越过文章范围，见 md-p02。"
+    },
+    {
+      "topic": "对象、建议与后续关注",
+      "result": "locally_needs_revision",
+      "assessment": "学习或教学、已有3D打印机和树莓派的DIY、桌宠用户、期待399元方案人群及等待/预算条件都有对应。直邮代理、国产仓库、量产压力下硬件开放、交期、技能库后续问题保留。开发平台引语的来源和设计意图见 md-p01。"
+    }
+  ],
+  "explicitations_assessed": [
+    {
+      "change": "将首款、4000元内无同等方便替代品、DIY价格优势与逆向更贵标为源文作者判断。",
+      "assessment": "可接受的归属显化；不等于查明判断正确。"
+    },
+    {
+      "change": "说明部分竞品、采购明细、逆向成本和国产方案资料未在文中列出。",
+      "assessment": "只能限定到已提供文本。来源标记已从分析正文移除，未读取链接或图片，不可推广为上游没有资料。"
+    },
+    {
+      "change": "把国产发货、本地售后和低价写成条件，将未交付愿景与账号未来开源承诺分开。",
+      "assessment": "避免把愿景认证成现实，属于可接受的证据边界显化。它会降低原文的断言感，不能称每一处语用力度完全不变。"
+    },
+    {
+      "change": "由同文Runtime故障补接部署兼容性提醒，并提示DIY安排装配调试时间。",
+      "assessment": "有源文操作事实支持的实用衔接；未补出故障修复结果、测试结果或新的时间估计。"
+    },
+    {
+      "change": "引入一份未出现的“介绍”、设计意图以及不限于文章的价格承诺否定。",
+      "assessment": "不是顺句所必需的显化，需局部修订，见 md-p01、md-p02。"
+    }
+  ],
+  "limits": [
+    "这是同一家族模型的独立任务审查，输入已暴露，既不是盲评，也不是独立人类验证。",
+    "没有用户对Microduck候选的阅读意愿反馈，不继承参考稿的“至少我愿意读”。",
+    "正文重排、删除修辞和证据归属显化已经改变表达姿态；审查仅评估可追踪内容和明确限制，不主张所有语用意义不变。",
+    "源文自身的规格、销量、收购消息、成本与交付内容均未事实核验；保留不等于认证。",
+    "候选不是训练目标，来源权利未核实，也不能从一次开发稿推论跨文章有效。"
+  ],
+  "recommended_next_action": "由主任务处理 md-p01 至 md-p04，并对 md-p05作有记录的编辑取舍；另存新候选版本及对应检查，不覆盖本报告或当前候选。只需复核实际变动及关联上下文，不以反复全套检查代替继续推进。"
+}

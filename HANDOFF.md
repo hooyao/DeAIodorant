@@ -1,6 +1,16 @@
 # 续研 handoff：2026-09-15
 
-## 最新：GPT-4 Turbo 稿获得明确正向阅读反馈
+## 最新：局部补充稿也得到“至少我愿意读”的反馈
+
+维护者说：“这个局部补充稿挺好的，至少我愿意读”。对应文件为 `data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md`，SHA256 为 `62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28`。原话见 `data/local/readable-reference-v1/reader-feedback.json`。这是对该稿的明确阅读意愿反馈，不再等待同一评价；原稿继续保留，剩余内容问题仍需修正，不能当作完整训练目标。
+
+已按[下一阶段安排](docs/routes/compact-refiner/readable-reference-next-stage-v1.md)开始执行，见[进展记录](docs/routes/compact-refiner/reports/readable-transfer-progress-v1.md)：《亡灵遗产》另存四处内容修订（2068 字符，仍未补全），Microduck 已完成完整第二版候选及两轮内容复核。新文章为 `data/local/microduck-readable-transfer-v1/candidate-v2.md`；有限全文审查未发现新的关键内容问题，尚需实际阅读判断。初始计划及源文身份在 `data/local/readable-reference-v1/next-work-items.json`，实际状态另存 `execution-progress.json`。不反复打磨同一篇或再问已有强度；当前不需要额外模型预算或 GPU。
+
+本轮保存新反馈、执行安排及两篇原生 Astra 开发稿和审查；没有改已认可稿件，没有新增外部 API 调用。增量恢复清单见 `handover/readable-reference-2026-09-15/artifacts.json`。以下“局部补充稿无人类反馈”仅是反馈到来前的历史记录。
+
+以下保留此前检查点。
+
+## 前一检查点：GPT-4 Turbo 稿获得明确正向阅读反馈
 
 维护者随后说：“虽然省略了很多东西，但是读起来就好多了”“虽然有一点翻译味，但是更像是人写的”。原话和原稿 hash 在 `data/local/gpt4-turbo-followup-v1/reader-feedback.json`。**当前结果是阅读体验明显改善、信息保留未达要求。** 原稿应保留为有价值的阅读参考，旧保真 fail 不覆盖人类阅读反馈；轻微翻译味和自然度的感受分别保留。下方“没有新的阅读评价”是这条反馈到来前的历史状态，不再作为当前结论。
 

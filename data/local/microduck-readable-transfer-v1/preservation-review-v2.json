@@ -1,0 +1,141 @@
+{
+  "version": "microduck-preservation-review-2.0",
+  "reviewed_local_date": "2026-09-15",
+  "reviewer": {
+    "method": "native_astra_subagent_revision_review",
+    "model_family": "gpt-6-astra",
+    "exact_backend_revision": "unknown",
+    "relationship_to_editor": "independent_task_same_model_family",
+    "blind": false,
+    "corpus_role": "exposed_development_strong_anchor",
+    "network_requests": 0,
+    "openrouter_requests": 0
+  },
+  "inputs": {
+    "source": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "raw_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+      "raw_bytes": 7988
+    },
+    "source_metadata": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/metadata.json",
+      "raw_sha256": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393",
+      "raw_bytes": 1499
+    },
+    "previous_candidate": {
+      "path": "data/local/microduck-readable-transfer-v1/candidate-v1.md",
+      "raw_sha256": "2881c4781209a607dd849c2577caea1148ca7ea2e427046848ba21d2b8451735",
+      "raw_bytes": 8374
+    },
+    "previous_editor_notes": {
+      "path": "data/local/microduck-readable-transfer-v1/editor-notes-v1.json",
+      "raw_sha256": "c6a2129bb400fd731dd0972793af80ecb6de58a28e61a770bc683f0b57d3d3a1",
+      "raw_bytes": 9935
+    },
+    "previous_review": {
+      "path": "data/local/microduck-readable-transfer-v1/preservation-review-v1.json",
+      "raw_sha256": "ae24e376cbe0fcd0d80a4037379fbc7cbacff8f7024d997917d057d94aac8689",
+      "raw_bytes": 12883
+    },
+    "candidate": {
+      "path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+      "raw_sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88",
+      "raw_bytes": 8496
+    },
+    "revision_notes": {
+      "path": "data/local/microduck-readable-transfer-v1/revision-notes-v2.json",
+      "raw_sha256": "6627d14d21edb03e44f549138862b1a23cff6eafa89129ea95128d44321ebf37",
+      "raw_bytes": 6291
+    }
+  },
+  "scope": "基于第一轮对源文与候选全文的内容复核，通读v2全文，逐一复核五处修订及关联上下文，并独立用原始字节重放编辑记录确认未变部分身份。没有访问网络、图片、上游引文或API。",
+  "overall_result": "no_remaining_blocking_content_issue_detected_within_review_scope",
+  "overall_explanation": "五处发现均已处理。在本次完整文本对照和局部复核范围内，未发现新的关键内容问题；除这五处替换之外，v2与已审阅v1逐字节一致。可以作为下一步研究候选，但这个有限审查结论不证明每个命题和语用力度都完美保留，不等于事实核验或读者效果通过。",
+  "finding_resolutions": [
+    {
+      "finding_id": "md-p01",
+      "result": "resolved",
+      "assessment": "只归为原文作者的形容，已删除未见于输入的介绍来源和设计目的。上下文开发平台定位仍保留。"
+    },
+    {
+      "finding_id": "md-p02",
+      "result": "resolved",
+      "assessment": "399元售价或承诺的信息缺口已明确限定到原文，没有对市场或项目方作未经核验的否定。"
+    },
+    {
+      "finding_id": "md-p03",
+      "result": "resolved",
+      "assessment": "恢复了不能默认权益和发货承诺随订单转让的警告，同时明确属于原文提醒和待核实事项，没有新增法律或官方政策结论。"
+    },
+    {
+      "finding_id": "md-p04",
+      "result": "resolved",
+      "assessment": "销售节奏恢复原话并限定为原文对Thomas Wolf的转述，明确统计口径未在文中说明；未猜测首台用时、峰值或全天平均。销售额和折算台数未变。"
+    },
+    {
+      "finding_id": "md-p05",
+      "result": "resolved",
+      "assessment": "保留42厘米与作者的宽泛“耐折腾”评价，不再具体解释成已经证明的改装便利。是否喜欢该形容属于阅读反馈问题，本次不作判断。"
+    }
+  ],
+  "blocking_findings_remaining": [],
+  "new_blocking_findings": [],
+  "identity_validation": {
+    "protected_source_metadata_and_v1_inputs_match_previous_review": true,
+    "revision_notes_input_hashes_match_actual_files": true,
+    "declared_replacements": 5,
+    "each_before_span_unique": true,
+    "source_quotes_exact_raw_match": true,
+    "forward_replay_matches_v2_raw_bytes": true,
+    "reverse_replay_matches_v1_raw_bytes": true,
+    "unlisted_changes_detected": false,
+    "operation_checks": [
+      {
+        "finding_id": "md-p01",
+        "before_raw_occurrences_in_v1": 1,
+        "after_raw_occurrences_in_v2": 1,
+        "source_quote_exact_raw_match": true
+      },
+      {
+        "finding_id": "md-p02",
+        "before_raw_occurrences_in_v1": 1,
+        "after_raw_occurrences_in_v2": 1,
+        "source_quote_exact_raw_match": true
+      },
+      {
+        "finding_id": "md-p03",
+        "before_raw_occurrences_in_v1": 1,
+        "after_raw_occurrences_in_v2": 1,
+        "source_quote_exact_raw_match": true
+      },
+      {
+        "finding_id": "md-p04",
+        "before_raw_occurrences_in_v1": 1,
+        "after_raw_occurrences_in_v2": 1,
+        "source_quote_exact_raw_match": true
+      },
+      {
+        "finding_id": "md-p05",
+        "before_raw_occurrences_in_v1": 1,
+        "after_raw_occurrences_in_v2": 1,
+        "source_quote_exact_raw_match": true
+      }
+    ],
+    "what_this_proves": "新稿只发生五项有记录的字节替换，源文、v1及既有说明和审查输入未变；这项工程检查不单独证明语义保真。"
+  },
+  "retained_high_risk_content_assessment": [
+    "金额、配置、版本故障和交期仍保留各自事件与来源关系；销售速率的含混范围经过修正。",
+    "首款、4000元内没有同等方便替代品及逆向成本更高仍归到原文作者，没有升级为核实后的市场事实。",
+    "官方不到400美元和网友不低于4000元仍分属不同口径，没有合成为实测DIY成本。",
+    "国产方案未来开源承诺与国内发货、本地售后、低价愿景仍分开；399元缺少承诺的说法已限定到原文。",
+    "兼容性提醒有同文Runtime故障支持，没有补写实测修复结果或具体三件套成员。"
+  ],
+  "remaining_limits": [
+    "源文自身的销售、硬件、收购消息、采购成本、交付和引文事实均未经外部核验。当前和目前等时间表达对应2026-08-31源文语境，不代表2026-09-15重新调查的现状。",
+    "从所给正文看不到某些证明材料，不等于上游链接、图片或全部公开资料不存在；第一轮报告中对资料缺口的边界仍适用。",
+    "重排、删去修辞、限定归属和显化愿景条件会改变表达姿态及断言感，不主张每个语用效果不变。",
+    "没有本候选的人工阅读反馈。参考稿的“至少我愿意读”不能迁移成本候选的认可；也不能由本次内容审查推论其更舒服。",
+    "这是同模型家族、已暴露development上的审查，不是盲评或独立人类评价，也不赋予训练资格、来源权利或跨文章有效性。"
+  ],
+  "recommended_next_action": "保留v2及两轮审查，主任务可继续围绕实际改写效果推进；不需要为了已解决的五处重复展开全文审计，也不应把有限保留检查包装成已通过读者验证。"
+}

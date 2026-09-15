@@ -1,9 +1,9 @@
 # 校准后的研究目标与证据计划
 
-版本：`deaiodorant-target-discovery-1.9`。
+版本：`deaiodorant-target-discovery-1.10`。
 依据：维护者在 2026-09-14 对项目目标和证据作出的澄清。这是当前研究优先级的记录；已完成实验的输入和结果保留原始版本。
 
-最新执行检查点见 [HANDOFF.md](../HANDOFF.md)：维护者对 GPT-4 Turbo 稿给出“读起来就好多了”“虽然有一点翻译味，但是更像是人写的”的[正向反馈](routes/compact-refiner/reports/gpt4-turbo-reader-followup-v1.md)。1.9 将阅读改善与未通过内容保留检查分别记录，保留获认可原稿，尝试补回关键操作信息到独立局部版本。新稿无人类反馈，也未补全，不继承原稿评价；不要求维护者重评已有感受，不据自然度推断作者身份或模型系列优劣。既有[契约1.1检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)与[首轮36条记录](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)保留为辅助。
+最新执行检查点见 [HANDOFF.md](../HANDOFF.md)：维护者进一步对局部补充稿说“这个局部补充稿挺好的，至少我愿意读”。1.10 记录该稿的明确阅读意愿反馈，保留已认可版本，将剩余修正和其他强文章上的迁移列为[下一阶段工作](routes/compact-refiner/readable-reference-next-stage-v1.md)。未补全的信息仍需检查，当前不进入训练；不重问已有反馈、不将自然度转为作者身份判断。既有[契约1.1检验](routes/compact-refiner/reports/cognitive-move-contract-probe-v1.md)与[首轮36条记录](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)保留为辅助。
 
 ## 要解决的问题
 

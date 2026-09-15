@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-15",
+  "artifact_files": 13,
+  "artifact_bytes": 90180,
+  "feedback_linkage": "passed",
+  "review_input_hashes_verified": 15,
+  "ul_four_edit_replay": "passed",
+  "microduck_five_edit_replay": "独立复核记录为通过，输入hash由Root复核。",
+  "py_compile": "passed",
+  "full_pytest": {
+    "run_this_turn": false,
+    "reason": "研究文档和产物变化，执行来源、回放、hash与脚本编译检查；产品源码未改。",
+    "previous_result": "201 passed，8794bdf检查点"
+  },
+  "human_reading_result": "1519字符稿：挺好的，至少愿意读。",
+  "human_reading_result_for_new_candidates": null,
+  "new_openrouter_calls": 0,
+  "new_openrouter_cost_usd": "0",
+  "training_eligible": false,
+  "presentation": {
+    "microduck_markdown_open_in_codex": "queued",
+    "visible_rendering_verified": false,
+    "browser_attempted": false
+  },
+  "main": "af751e236c084c0de3cc45a5979749bad0778378",
+  "credential_scan": {
+    "staged_files": 24,
+    "actual_dotenv_and_patterns_checked": true,
+    "findings": 0
+  },
+  "git_index_artifact_hashes": "passed"
+}

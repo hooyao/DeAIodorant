@@ -23,5 +23,6 @@ docs/routes/compact-refiner/information-refinement-pilot-v1.md -text
 handover/information-refinement-2026-09-15/** -text
 handover/gpt4-turbo-2026-09-15/** -text
 handover/gpt4-reader-followup-2026-09-15/** -text
+handover/readable-reference-2026-09-15/** -text
 # unified diff 的空白上下文行带单个格式前缀，保留其原始格式。
 data/local/gpt4-turbo-followup-v1/*.diff -whitespace

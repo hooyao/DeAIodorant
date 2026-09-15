@@ -1,0 +1,101 @@
+{
+  "review_version": "1.0",
+  "review_date": "2026-09-15",
+  "reviewer": "Astra 原生独立子任务",
+  "scope": "仅复核历史与视频热度、项目与玩法、内存证据、下载细节四处修订的内容保留、归属和强弱变化；不检查全文是否已补完。",
+  "independence": "复核者未编写本轮修订，已读原文并参与先前局部保真检查，知晓维护者对1519字符基稿的正向反馈；不是盲评，编辑与复核均属同一Astra家族。",
+  "inputs": [
+    {
+      "role": "source",
+      "path": "data/local/style-intervention-v1/original-article.md",
+      "raw_bytes_sha256": "57e6161f10978bbca1c737e6660abf9b9332be60631c2d0c1a3069d48ebb51f4"
+    },
+    {
+      "role": "base",
+      "path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+      "raw_bytes_sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28"
+    },
+    {
+      "role": "record",
+      "path": "data/local/ul-content-revision-v1/edit-record-v1.json",
+      "raw_bytes_sha256": "bdcc673d8996275dbbe7012f154d966224af98146bfe7442c3761924f3b09ab4"
+    },
+    {
+      "role": "candidate",
+      "path": "data/local/ul-content-revision-v1/candidate-v1.md",
+      "raw_bytes_sha256": "4380802253bde44393fe106d1333f31d4671b1ba8380d69934da0e9d15de7329"
+    }
+  ],
+  "mechanical_checks": {
+    "all_record_source_spans_match": true,
+    "four_edit_byte_replay_matches_candidate": true,
+    "outside_four_edits_unchanged": true,
+    "previously_reviewed_version_saves_bugs_sections_unchanged": true,
+    "candidate_utf8_decoded_characters": 2068
+  },
+  "local_result": "pass",
+  "summary": "四处局部修订未发现需要再次修正的实质新增事实、条件偷换或归属错误。原先首个稳定版与首次发布日期、主要维护者与独立维护、经验内存建议与最低要求等混淆得到修正；视频和玩法细节、来源引文及具体下载提醒恢复。部分绝对化和概括性表述的强度下降，以下逐项记录，不把这次检查称为逐字等值。",
+  "results": [
+    {
+      "edit_id": "history-and-attention",
+      "result": "pass",
+      "preserved": [
+        "2022年11月25日的2.6.17、将近四年的沉寂、期间没有公告或预告，恢复原文叙述，未维持基稿鲜有更新所暗示的零星更新。",
+        "2026年8月17日开始2.7系列，到8月29日13天15个版本，时间、系列和数量未换对象。",
+        "林小天丿、实况合集名称、接近45万播放、1.9万点赞、超过9000收藏及两句评论均保留。"
+      ],
+      "strength_and_attribution": "删除基稿额外加入的人气排名。原文评论区明显分成两派被改成两个有明确引文的玩家反应，降低对整体评论分布的概括，保留兴奋与等待稳定版这两种意见；不是新的作者身份或群体占比判断。",
+      "boundary": "沉寂、公告缺失及互动数量沿用原文报道时点，没有核实当前网页或整个历史发布记录。",
+      "minimal_revision_suggestions": []
+    },
+    {
+      "edit_id": "project-and-mechanics",
+      "result": "pass",
+      "preserved": [
+        "Alpha 11时期起源、2017年11月4日首个稳定版、基本由Subquake一人维护，恢复日期类型及主要维护者限定。",
+        "界面、快捷栏、状态显示、负重背包、物品属性与整理搜索、研究台与制造链、开锁和载具玩法，均有原文对应。",
+        "几乎每扇锁门及奖励箱的开锁范围、废车搜刮修复驾驶、载具单独负重均保留，未扩大成每扇门都能开或所有车辆都能驾驶。",
+        "十个DLC和捆绑包的夸张评价逐字引作社区评价，未写成可核实的官方内容数量。"
+      ],
+      "strength_and_attribution": "完全不同变为不同，整体重建变为重新设计，表述程度有所降低；实际列举的机制和改动对象仍在。这与原任务允许朴素改写、削减夸张相符，不是无损保留所有修辞强度。",
+      "boundary": "不能由玩法列表或社区评价推出实际内容等于十个DLC、官方资料片身份或开发者从未有其他协作者。",
+      "minimal_revision_suggestions": []
+    },
+    {
+      "edit_id": "memory-evidence",
+      "result": "pass",
+      "preserved": [
+        "16G不建议、32G入门、64G在流畅运行或多人场景下更稳，明确归于原作者经验建议，未继续称32G为基本要求。",
+        "64G仍卡顿的个人体验与该玩家看到96G仍卡的二次转述保存在原话中，未将二者合并为测试结果。",
+        "内存不足时增加虚拟内存的评论区建议及其有限作用均恢复，没有承诺流畅运行。"
+      ],
+      "strength_and_attribution": "配置数字由硬性要求恢复为建议；原文没有统一测试的说明属于本轮编辑对输入文本证据范围的说明，不能冒充原作者自述或新的硬件测试结论。可以缓解、改善有限沿用原文的有限效果判断，不证明卡顿一定由内存容量导致。",
+      "boundary": "输入的文字正文没有统一条件下的内存测试；未检查网页图片或上游硬件测试。没有形成通用最低配置、充分配置或增加内存必定改善性能的结论。",
+      "minimal_revision_suggestions": []
+    },
+    {
+      "edit_id": "download-details",
+      "result": "pass",
+      "preserved": [
+        "原文时点没有Steam创意工坊、需游戏外安装、官网下载包有两部分且都需下载，操作要求明确。",
+        "详解视频评论区置顶、腾讯文档名称、社区维护和原文推荐归属保留；未认证第三方渠道绝对安全。",
+        "两篇相近教程、正文近同、导向云服务器部署及推广性质保留，独立评测的提醒仍对应这些具体文章。",
+        "口令或会员下载入口的投诉保留为有玩家反映；免费对象仍是MOD本体，没有扩大到全部部署、汉化或托管服务。"
+      ],
+      "strength_and_attribution": "收回基稿针对所有带广告或附加条件第三方平台的笼统排除，恢复原文具体渠道和投诉范围。安装困难确实存在是被转述的原作者判断，没有在本轮独立证实。投诉进行了概述，未逐字恢复平台名、流量不足和下载卡住等全部细节；这不改变本轮恢复的付费后仍无法下载这一核心报告。",
+      "boundary": "尚无创意工坊和免费下载沿用来源时间范围；无法从此证明今日渠道状态、所有第三方收费不当或投诉平台普遍不可用。",
+      "minimal_revision_suggestions": []
+    }
+  ],
+  "overall_article_complete": false,
+  "overall_article_preservation_passed": false,
+  "human_feedback_for_candidate_v1": null,
+  "training_eligible": false,
+  "boundaries": [
+    "四处以外按字节保持原样，先前已通过局部检查的版本、存档和bug三段没有变化。",
+    "edit-record-v1.json声明的兼容原因、部分体验例证、原版备选、后续版本观察及未恢复的引文仍未补齐；结尾较宽泛的技术准备要求仍存在。",
+    "维护者对1519字符基稿表示挺好的至少愿意读，正向反馈继续有效；2068字符候选尚未获得人工评价，不能自动继承该反馈。",
+    "本次没有使用读者结果推断改善原因、模型家族优劣或作者身份，也不将新增细节直接视为提高阅读体验的证据。",
+    "只创建本复核文件；没有网络、模型API、Git操作或其他文件编辑。"
+  ]
+}

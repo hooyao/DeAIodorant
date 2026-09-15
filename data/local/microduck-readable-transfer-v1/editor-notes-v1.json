@@ -1,0 +1,191 @@
+{
+  "version": "microduck-readable-transfer-1.0",
+  "created_local_date": "2026-09-15",
+  "source": {
+    "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+    "raw_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "raw_bytes": 7988,
+    "characters_after_universal_newline_read": 3231,
+    "non_whitespace_characters": 2990
+  },
+  "reference": {
+    "path": "data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md",
+    "raw_sha256": "62a0a16b1b2ec8a91a735ba48f7050d9b305f6d69dc9d3fdac3a7a11bf127f28",
+    "raw_bytes": 3933,
+    "characters_after_universal_newline_read": 1519,
+    "non_whitespace_characters": 1466
+  },
+  "candidate": {
+    "path": "data/local/microduck-readable-transfer-v1/candidate-v1.md",
+    "raw_sha256": "2881c4781209a607dd849c2577caea1148ca7ea2e427046848ba21d2b8451735",
+    "raw_bytes": 8374,
+    "characters_after_universal_newline_read": 3397,
+    "non_whitespace_characters": 3191
+  },
+  "source_metadata": {
+    "path": "data/local/reader-style-anchors-v1/smzdm/metadata.json",
+    "raw_sha256": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393",
+    "raw_bytes": 1499,
+    "characters_after_universal_newline_read": 1405,
+    "non_whitespace_characters": 1286
+  },
+  "source_citations": {
+    "path": "data/local/reader-style-anchors-v1/smzdm/citations.json",
+    "raw_sha256": "3b18c3dfb172767a3f55e7c5585621ae7db84f255c74c40038e609a004f048c0",
+    "raw_bytes": 18483,
+    "characters_after_universal_newline_read": 14417,
+    "non_whitespace_characters": 12486
+  },
+  "source_url": "https://post.smzdm.com/p/a70dm4ll/",
+  "source_publication_time": "2026-08-31T03:59:12+08:00",
+  "corpus_role": "exposed_development_strong_anchor",
+  "generation": {
+    "method": "native_astra_subagent",
+    "model_family": "gpt-6-astra",
+    "exact_backend_revision": "unknown",
+    "prompt_version": "parent_task_message_2026-09-15_microduck_readable_transfer_v1",
+    "network_requests": 0,
+    "openrouter_requests": 0,
+    "additional_api_cost_usd": 0,
+    "training": false,
+    "seed": null,
+    "temperature": null,
+    "description": "第一份原生 Astra 完整草稿。由本子任务根据源文和参考稿起草，写盘后作了五处自审调整；最终只保存 candidate-v1.md，不能当作未经修改的首 token 原始输出。没有另起模型采样、付费调用或模拟盲评。",
+    "self_review_changes": [
+      "将软件三件套的泛指改为核对相关组件与机载兼容性，避免补出原文没有明说的具体三件套。",
+      "将比较判断的归属写清，去掉可能将社区演示误当成价格比较依据的因果衔接。",
+      "简化板卡价格段落的审计性说明，保留原作者此前另有涨价文章的来源关系。",
+      "明确保留原文作者对逆向成本更高的判断，作为有来源但未给成本清单的判断。",
+      "将结尾硬件文档问题恢复为是否在量产压力下公布，去掉暗示已有硬件文档的“更多”。"
+    ]
+  },
+  "reader_evidence": {
+    "reference_feedback": "这个局部补充稿挺好的，至少我愿意读",
+    "reference_feedback_scope": "只绑定参考文件，不能继承到新候选。",
+    "source_feedback": "极其臭／恶臭",
+    "candidate_human_feedback": null,
+    "candidate_reader_benefit_established": false,
+    "candidate_preservation_independent_review": "pending_root_or_independent_review",
+    "training_eligible": false,
+    "authorship_label": null
+  },
+  "length_method": "Python UTF-8 read_text 后的 Unicode 字符数，采用 universal newline；同时给出原始字节数、SHA256 和去全部空白字符数。不是中文字数或 token 数。",
+  "editing_approach": "参考稿提供直接陈述、明确话题和较短段落的表达方向；保留 Microduck 全文的硬件、社区、费用、条件和建议，未沿用参考稿的大幅摘要化或未经支撑的人气描述。",
+  "major_changes": [
+    {
+      "source_blocks": [
+        "b001",
+        "b002",
+        "b003"
+      ],
+      "change": "标题直接写配置、购买与 DIY 成本；销售与传播数字分开陈述，保留 Thomas Wolf、陈大叔及收购消息的证据边界。"
+    },
+    {
+      "source_blocks": [
+        "b004",
+        "b005",
+        "b006",
+        "b007",
+        "b008",
+        "b020",
+        "b021"
+      ],
+      "change": "按硬件、训练部署、软件版本、软件与硬件开放范围组织。将散落到后文的 Runtime 失败与续航移到相应信息旁，保留具体型号、频率、运行数据及版本。"
+    },
+    {
+      "source_blocks": [
+        "b009",
+        "b010",
+        "b011",
+        "b022",
+        "b023"
+      ],
+      "change": "合并价格、配件、运输、交期及订单转让注意事项；把首款和4000元内替代品评价归为原文作者的比较判断。"
+    },
+    {
+      "source_blocks": [
+        "b012",
+        "b013",
+        "b014",
+        "b015",
+        "b026"
+      ],
+      "change": "保留 Open Duck Mini 的项目关系、体积、教程与社区演示，把官方成本和网友散件成本估计分开，保留作者不为省钱 DIY 的建议及已有器材条件。"
+    },
+    {
+      "source_blocks": [
+        "b016",
+        "b017",
+        "b018",
+        "b028"
+      ],
+      "change": "区分复刻 Microduck 与独立国产方案，保留逆向成本判断、刘厂长的未来开源承诺和399元替代品人群。国产交付、售后及低价按待实现条件表达。"
+    },
+    {
+      "source_blocks": [
+        "b019",
+        "b024",
+        "b025",
+        "b026",
+        "b027",
+        "b028",
+        "b029",
+        "b030"
+      ],
+      "change": "把已在前面说明的风险就地交代，最后集中说明学习者、DIY 用户和桌宠用户的适用建议，再列后续进展，去掉结尾催促式设问。"
+    }
+  ],
+  "removed_or_recast_rhetoric": [
+    "“收割全网”“热度不用质疑”“收购是资本的事，这只鸭子才是自己的事”等热度强化和替读者划分关心事项的说法。传播数字、收购消息与不应根据销量决策的建议保留。",
+    "“先把开源范围捋清”“账一／账二／账三”“上车前四个坑”等反复预告；改成内容标题和相邻说明。",
+    "“机载的不是 Jetson，是……”拆成直接介绍 RK3566，再保留未采用 Jetson 的信息，避免只替换连接词。",
+    "“训练靠算力，实机真不靠”改为特定训练与部署记录展示不同硬件要求，保留1～2小时、1GB内存、50Hz等数据，避免被理解为真机完全不需要计算。",
+    "“买的是管线，熬的是时间”“不是玩具，是一条管道”“DIY省钱是伪命题，省不了钱换的是折腾自由”改成用途、成本归属和适用条件。",
+    "“不是玄学，是版本管理”“别为销量冲锋”“窗户纸”“入场券”“剩下的问题只有一个”等夸张或议程性表达。具体版本、销量来源、售价和学习用途已在正文保留。",
+    "没有按词语名单检测是否成功，也没有用连接词减少量作为阅读收益。"
+  ],
+  "content_boundaries_and_unresolved_risks": [
+    {
+      "topic": "数据时间",
+      "risk": "源文发布于2026-08-31，所有目前、4～6个月等说法绑定当时资料，不代表改写日重新核验的现状。未访问网络。"
+    },
+    {
+      "topic": "销售与收购",
+      "risk": "260万美元和首日销售节奏来自报道转述的 Thomas Wolf 说法，未第三方核验；129亿美元收购仅作为当时传播的消息保留，未认证实际交易。"
+    },
+    {
+      "topic": "硬件及部署",
+      "risk": "硬件规格、夹取能力、训练耗时和15022个tick漏3个均沿用源文；部署数据只属于其中一位开发者，不能推广为所有机器性能。"
+    },
+    {
+      "topic": "产品独有性与价格比较",
+      "risk": "首款和4000元内没有同等方便替代品是源作者判断，本稿明确归属，没有新做市场比较。"
+    },
+    {
+      "topic": "成本口径",
+      "risk": "不到400美元为官方口径，不低于4000元为网友估计，原文无明细，二者不可合成一个实测成本。便宜于数千至上万元设备也是作者建议的比较判断。"
+    },
+    {
+      "topic": "硬件逆向",
+      "risk": "原作者认为精确复刻须逆向且更贵；本稿保留该判断并说明没有具体成本估算，不能把硬件未开放当作必然成本定理。"
+    },
+    {
+      "topic": "国内方案",
+      "risk": "树莓派与飞特舵机、未来开源是账号陈述，国产发货、本地售后和低价没有在源文中确认为已交付服务。本稿将其明确为条件，可能降低原文给读者的确定感；需由Root审查这种显化是否合适。"
+    },
+    {
+      "topic": "引用与来源",
+      "risk": "22条嵌入引文均为发布方已有归属，没有获取上游内容，不视为来源核验 gold。正文保留关键引文的发言者；语义改述未全部以脚注展现，研究核验请使用原 citations.json。"
+    },
+    {
+      "topic": "话语姿态调整",
+      "risk": "正文使用原文作者等归属来区分观点与事实，可能显得像资料转述；这种阅读效果还没有用户反馈。"
+    },
+    {
+      "topic": "内容完整性",
+      "risk": "已进行本子任务自审但尚无独立内容保留审查。不能以数字机械覆盖或略长篇幅证明完整保留，也不将本稿直接导出为训练目标。"
+    }
+  ],
+  "source_rights_status": "research_inspection_only_training_rights_unverified",
+  "validation_scope": "本任务只写两个新文件。JSON可解析、三个文本raw hash可重复计算；不声称语义通过或读者认可。没有修改历史输入、参考稿、全局文档或Git。"
+}
