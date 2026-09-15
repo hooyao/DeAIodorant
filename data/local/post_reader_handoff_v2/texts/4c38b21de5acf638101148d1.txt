@@ -1,0 +1,252 @@
+欢迎阅读
+「从零开始理解大模型」系列
+—— 十篇文章，从"下一个词预测"到完整的大模型心智模型。每篇配可运行代码。
+第一篇：
+一切从"猜下一个词"开始
+第二篇：
+Token——大模型眼中的"字"长什么样
+第三篇：向量与 Embedding——把文字变成数学
+（本文）
+第四篇：Attention——大模型的"阅读理解"机制
+第五篇：Transformer 全景——积木怎么搭成大厦
+第六篇：训练——70 亿个参数是怎么"学"出来的
+第七篇：推理——你按下回车后的这一秒发生了什么
+第八篇：上下文窗口——大模型的"工作记忆"
+第九篇：Scaling Law——为什么"大力出奇迹"有效
+第十篇：从大模型到 Agent——下一个词预测如何长出手脚
+* 本文实操配套代码附件，可在本公众号后台回复“大模型”获取。
+作者：十一
+上一篇结尾留了一个问题：
+"France" 和 "Paris" 编号差很远，模型却知道它们有关系？
+Token ID 只是索引——两个数字之间没有任何语义信息。模型不能直接用整数来计算，它需要一种表示方式，让
+语义相近的词在数学上也"接近"
+。
+这就是向量和 Embedding 的作用。
+▍
+一、先说结论
+一
+句
+话总结：
+Embedding 把 token 从"编号"变成"坐标"——在高维空间里，语义相近的词自然聚在一起。
+▍
+二、Embedding 是什么——给每个词发一张"特征身份证"
+2.1 为什么 token ID 不够用
+第二篇我们知道了，每个 token 有一个编号（ID）。但编号只是标签——"猫"是 9246 号，"狗"是 9703 号，"手机"是 11399 号。你问模型"9246 和 9703 像吗？"，模型无从判断——
+编号之间没有语义关系
+。
+这就像用身份证号判断两个人是不是亲戚——110101 和 110102 先后办证而已，不代表任何血缘关系。
+2.2 Embedding 做了什么：把词"画"进坐标系
+Embedding 不再用编号，而是给每个词分配一组"特征分数"。假设我们只用两个维度——"萌度"和"机械感"：
+猫： [0.9, 0.1] 很萌，不机械
+狗： [0.8, 0.2] 也很萌，不机械
+手机：[0.1, 0.9] 不萌，很机械
+把这些分数画在坐标纸上，"猫"和"狗"自然挨在一起，"手机"离它们很远。
+距离反映了语义关系——不需要人工标注"猫和狗相似"，坐标本身就说明了一切。
+真实的大模型做的是同样的事，只不过不是 2 个维度，而是 768 个（甚至 4096 个）。每个维度不再是人类能命名的"萌度""机械感"，而是模型自己学出来的抽象特征——但效果一样：语义相近的词，坐标接近。
+2.3 为什么叫"嵌入"
+"Embedding"翻译成"嵌入"，名字本身就很形象：
+把一个孤立的符号，塞进（嵌入）一个充满逻辑关系的空间里。
+像拼图——每个词是一块拼图，Embedding 找到它在整个世界（高维空间）里最合适的位置。 像找邻居——词一旦被"嵌入"，它自动就有了邻居。"国王"的邻居是"女王"，"苹果"的邻居是"梨"。
+一
+句
+话：Embedding = 把冷冰冰的符号编号，转化成有逻辑、有距离的数字坐标。
+▍
+三、Embedding 的具体实现：一张查找表
+理解了"为什么"，再看"怎么做"——操作极其简单，就是
+查表
+。
+模型内部有一张表，行数 = 词表大小，列数 = 向量维度。每一行就是一个 token 的向量。
+embedding_table = model.transformer.wte.weight
+print(embedding_table.shape) # torch.Size([50257, 768])
+50257 行（每个 token 一行），768 列（每个向量 768 维）。当模型看到 "France" 对应的 token ID，它做的事情就是去那一行取出 768 个数字：
+token_id = tokenizer.encode("France")[0] # 查出 token ID
+vector = embedding_table[token_id] # 去那一行取向量
+print(vector.shape) # torch.Size([768])
+print(vector[:8]) # 前 8 维: [-0.133, 0.098, 0.230, ...]
+用数学表示：
+E(token_id) = W_e[token_id] 其中 W_e ∈ ℝ^{V × d}
+V = 词表大小 (50257)
+d = 向量维度 (768)
+没有计算，只有查表。
+但这张表里编码了语义——训练过程会把语义相近的词推到空间中相近的位置。
+参数量感受
+GPT-2 的 Embedding 表：50257 × 768 ≈
+3860 万个参数
+，占模型总参数（1.24 亿）的 31%。
+更大的模型（LLaMA 7B）：32000 × 4096 ≈
+1.3 亿个参数
+——听起来很多，但只占总参数（70 亿）不到 2%。
+顺便澄清一个常见误解：人们说的"开源权重"（open weights）
+不是
+只开源了 Embedding 表。它指的是模型的
+全部参数
+——Embedding 只是其中一小部分，大头是后面几十层 Transformer 里的 Attention 权重（~49%）和 FFN 权重（~49%）。
+▍
+四、语义相似 = 向量接近
+Embedding 表最神奇的性质是：
+语义相近的词，向量之间的距离近。
+度量距离最常用的方式是
+余弦相似度
+：
+cos_sim(A, B) = (A · B) / (‖A‖ × ‖B‖)
+值域: [-1, 1]
+1 = 方向完全一致（极其相似）
+0 = 正交（不相关）
+-1 = 方向完全相反
+用代码验证：
+def cosine_similarity(v1, v2):
+return torch.dot(v1, v2) / (v1.norm() * v2.norm())
+france = embedding_table[tokenizer.encode("France")[0]]
+paris = embedding_table[tokenizer.encode("Paris")[0]]
+cat = embedding_table[tokenizer.encode("cat")[0]]
+cosine_similarity(france, paris) # ≈ 0.65 较高，有关系
+cosine_similarity(france, cat) # ≈ 0.24 低，不相关
+"France" 和 "Paris" 的余弦相似度远高于 "France" 和 "cat"——模型"知道"法国和巴黎有关系。但没有人告诉它这一点——这个关系是在训练过程中，从几万亿个 token 的统计共现规律中
+自动涌现
+的。
+完整的向量相似度实验代码见附件
+embedding.py
+[1]
+，可以测试任意词对的相似度。
+▍
+五、向量算术："国王 - 男人 + 女人 ≈ 女王"
+2013 年 Word2Vec 发现了一个惊人的现象——向量运算能反映语义关系：
+E("king") - E("man") + E("woman") ≈ E("queen")
+从"国王"的概念里减去"男性"成分，加上"女性"成分，得到的向量最接近"女王"。
+这意味着向量空间里存在有意义的
+方向
+。从 "man" 到 "woman" 的方向，和从 "king" 到 "queen" 的方向是平行的——这个方向编码了"性别"这一语义关系。
+类似的：
+E("Paris") - E("France") + E("Germany") ≈ E("Berlin") // 国家→首都
+E("walked") - E("walk") + E("run") ≈ E("ran") // 动词时态
+这些关系不是人工编码的——它们是"预测下一个词"的训练副产品。
+模型为了更准确地预测，自动发现了词与词之间的语义关系，并把它们编码为向量空间中的几何结构。
+不过要注意：GPT-2 的 Embedding 表只是初始向量，类比推理的准确率有限。真正强大的语义表示在 Transformer 的深层——这是第四篇（Attention）的主题。
+完整的向量算术实验代码见附件
+analogy.py
+[2]
+，支持命令行输入任意三个词做类比。
+▍
+六、维度的含义与降维可视化
+768 个维度，每一个代表什么？
+答案是：没有人类可理解的含义。
+和 GPS 的"经度=东西、纬度=南北"不同，Embedding 的每个维度都是抽象的、纠缠的——单独看一个维度没意义，只有所有维度组合起来才编码了语义。
+但我们可以用降维算法（如 PCA）把 768 维压缩到 2 维来可视化。用代码对几十个词做 PCA：
+# 收集"国家、城市、动物、颜色"四组词的 Embedding 向量
+# PCA 降到 2 维
+# 结果：同一组的词聚在一起！
+即使暴力压缩到 2 维，语义聚类依然清晰：国家挤在一起、动物挤在一起、颜色挤在一起。这说明 Embedding 空间的语义结构是
+高度有组织的
+。
+完整的降维可视化代码见附件
+visualize.py
+[3]
+，输出终端散点图和 JSON 数据文件。
+▍
+七、Embedding 的局限：一个词只有一个向量？
+到目前为止我们看到的都是 Embedding 表里的
+初始向量
+——每个 token 有一个固定的向量，不管上下文是什么。
+但同一个词 "bank" 在不同语境里意思完全不同：
+"I deposited money at the bank" → 银行
+"The river bank was covered" → 河岸
+问题来了：两句话里的 "bank" 查的是 Embedding 表的同一行，取出来的向量完全相同。
+一个固定的向量，怎么表达两个不同的意思？
+答案是：
+Embedding 只是起点，不是终点。
+模型拿到初始向量后，会经过一系列变换——下一篇要讲的 Attention 机制就是核心。你可以把这个过程想象成"读完整句话后修正对每个词的理解"：
+看到 "deposited money at the bank"，模型把 "bank" 的向量往"金融机构"方向推
+看到 "river bank was covered"，模型把 "bank" 的向量往"河岸地形"方向推
+起点相同，终点不同。
+同一个初始向量，经过不同上下文的"修正"后，变成了截然不同的向量。用代码实际测量（附件
+context_embedding.py
+[4]
+）可以看到：刚从 Embedding 表取出来时，两个 "bank" 的向量完全一样（相似度 1.0）；经过模型的全部变换后，相似度降到了约 0.6——它们已经被区分开了。
+这里有一个重要的分工，理解它是理解后续章节的关键：
+Embedding 表
+负责"你是谁"——token 的基本身份
+Transformer
+（第四、五篇）负责"你在这里是什么意思"——结合上下文的理解
+Embedding 给了一个粗略的初始猜测，Transformer 根据上下文把它精修为准确的语义表示。下一篇讲的 Attention，就是 Transformer 用来"读上下文"的核心机制。
+▍
+八、位置编码：顺序也得编进向量里
+还有一个问题：Embedding 表根据 token ID 查出向量，但它不知道 token 在句子里的
+位置
+。
+"狗 咬 人" 和 "人 咬 狗" 包含完全相同的三个 token，如果只看 Embedding，三个向量完全一样——模型无法区分这两句话。
+解决方法是
+位置编码（Positional Encoding）
+——给每个位置也分配一个向量，然后加到 token 向量上：
+最终输入向量 = Token_Embedding(token_id) + Position_Embedding(position)
+其中 position 就是 token 在句子中的位置序号（从 0 开始）
+以 "Thank you very" 为例：
+位置 0 的 "Thank": Token_Embedding(10449) + Position_Embedding(0)
+位置 1 的 "you": Token_Embedding(345) + Position_Embedding(1)
+位置 2 的 "very": Token_Embedding(845) + Position_Embedding(2)
+同样的词出现在不同位置，加上的位置向量不同，最终向量就不同——模型因此能区分 "狗咬人" 和 "人咬狗"。
+GPT-2 用的是可学习的位置编码——和 Token Embedding 一样，每个位置有一个 768 维向量，训练过程中自动调整：
+position_table = model.transformer.wpe.weight
+print(position_table.shape) # torch.Size([1024, 768])
+# 1024 个位置，每个位置 768 维 → GPT-2 最多处理 1024 个 token
+更新一代的模型（LLaMA、Qwen）用的是
+RoPE（旋转位置编码）
+，原理不同但目标一样——让模型知道 token 的先后顺序。RoPE 的细节在第八篇（上下文窗口）展开。
+▍
+九、完整链路：三篇拼起来
+三篇文章读完，输入端的完整流程你已经清楚了：
+"Thank you very"
+│
+▼ 分词（第二篇）
+[10449, 345, 845] ← 3 个 token ID
+│
+▼ Token Embedding 查表（本篇）
+[向量₁, 向量₂, 向量₃] ← 3 个 768 维向量
+│
+▼ + Position Embedding（本篇）
+[向量₁', 向量₂', 向量₃'] ← 加了位置信息
+│
+▼ 进入 Transformer（第四、五篇）
+│ ← 这里面发生了什么？
+▼
+[概率₁, 概率₂, ..., 概率₅₀₂₅₇] ← P("much") = 99.2%
+下一篇，我们打开中间那个最大的黑盒——Transformer。它的核心机制叫 Attention，解决的问题是：每个词怎么"看到"上下文中的其他词？
+▍
+十、结语
+Embedding 做的事情简单到极致——查表。但这张表里编码了人类语言的语义结构。训练后，五万多个 token 在 768 维空间里各就各位：国家和国家在一起，动物和动物在一起，"国王 - 男人 + 女人 ≈ 女王"。
+这个结构不是人工设计的，是从"预测下一个词"这个单一任务中涌现的。
+"You shall know a word by the company it keeps."
+— J.R. Firth, 1957
+"一个词的意思，由它的邻居决定。"这句 1957 年的语言学格言，恰好是 Embedding 的最好注脚——向量空间里的每一个位置，都是统计共现关系的结晶。
+本文配套代码：
+embedding.py
+[1]
+（向量相似度）、
+analogy.py
+[2]
+（向量算术）、
+visualize.py
+[3]
+（降维可视化）、
+context_embedding.py
+[4]
+（初始 vs 上下文向量）。需要 Python 3.8+、transformers、torch、numpy。
+扫码回复“
+大模型
+”
+获取
+本系列文章配套代码
+（持续更新）
+「从零开始理解大模型」是「从零开始理解 Agent」的姊妹系列。Agent 系列讲"四肢"，本系列讲"大脑"。建议对照阅读。
+相关链接
+[1]
+embedding.py:
+https://github.com/GitHubxsy/nanoAgent/blob/claude/organize-teaching-materials-4hnRP/llm-from-scratch/embedding.py
+[2]
+analogy.py:
+https://github.com/GitHubxsy/nanoAgent/blob/claude/organize-teaching-materials-4hnRP/llm-from-scratch/analogy.py
+[3]
+visualize.py:
+https://github.com/GitHubxsy/nanoAgent/blob/claude/organize-teaching-materials-4hnRP/llm-from-scratch/visualize.py
+[4]
+context_embedding.py:
+https://github.com/GitHubxsy/nanoAgent/blob/claude/organize-teaching-materials-4hnRP/llm-from-scratch/context_embedding.py

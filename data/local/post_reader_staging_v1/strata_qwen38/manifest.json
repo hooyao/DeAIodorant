@@ -1,0 +1,50 @@
+{
+  "protocol_version": "post-corpus-strata-1.0",
+  "generated_at": "2026-08-22T12:54:17.204437+00:00",
+  "status": "model_assisted_measurement_not_human_gold",
+  "model": "qwen3.8-27b",
+  "model_digest": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "endpoint": "http://192.168.1.200:8000/v1",
+  "concurrency": 16,
+  "temperature": 0,
+  "seed": 42,
+  "prompt_version": "post-corpus-format-topic-primary-v1",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\infoq_candidates.jsonl",
+      "sha256": "225b5d43514fd1d3b7211a1b754e771f53e33285967d10e81aca24807ae35563"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\meituan_tech_candidates.jsonl",
+      "sha256": "d816c7e03f5ff0bfe7f7390af0c47a590f125ba0b4bec34aac561aca28453eb5"
+    }
+  ],
+  "provenance_results": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\triage_qwen38\\triage_results.jsonl",
+    "sha256": "daac258785a88c1ecb6c4b875eed746f5dc08a1972b80ee8f423b09c02739ba0"
+  },
+  "value_results": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\triage_qwen38\\value\\value_results.jsonl",
+    "sha256": "26b005c53568585cdada72381d0d6c767f70ece5883a5a46444725a62e91c729"
+  },
+  "documents": 58,
+  "confidence_counts": {
+    "high": 57,
+    "low": 1
+  },
+  "format_counts": {
+    "technical_practice": 26,
+    "industry_reporting": 22,
+    "research_summary": 9,
+    "other": 1
+  },
+  "topic_counts": {
+    "software_engineering": 6,
+    "business_industry": 13,
+    "ai_models_agents": 33,
+    "data_infrastructure": 5,
+    "other": 1
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\strata_qwen38\\strata_results.jsonl",
+  "results_sha256": "707c918c8b13f57ddf7d8e88f3b303608653e9116865b5744008cc85d49de340"
+}

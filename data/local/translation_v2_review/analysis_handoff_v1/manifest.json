@@ -1,0 +1,48 @@
+{
+  "protocol_version": "analysis-corpus-handoff-1.0",
+  "generated_at": "2026-08-22T10:24:37.8526733+08:00",
+  "status": "exploratory_pool_not_final_corpus",
+  "documents": 119,
+  "period_counts": {
+    "pre": 23,
+    "transition": 96
+  },
+  "source_period_counts": {
+    "infoq, transition": 43,
+    "jiqizhixin, pre": 23,
+    "jiqizhixin, transition": 53
+  },
+  "provenance_counts": {
+    "human_reviewed_original": 4,
+    "model_assisted_original": 115
+  },
+  "value_counts": {
+    "human_kept": 9,
+    "model_assisted_substantive": 110
+  },
+  "analysis_pool": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\analysis_pool.jsonl",
+  "analysis_pool_sha256": "58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2",
+  "selection_policy": [
+    "Require provenance status human_reviewed_original or model_assisted_original.",
+    "Require research value status human_kept or model_assisted_substantive; human review overrides model triage.",
+    "Require an existing materialized UTF-8 body file.",
+    "Do not treat model-assisted provenance or value labels as human gold."
+  ],
+  "cohort_constraints": [
+    "The pool contains no documents published on or after 2025-07-01.",
+    "Transition documents (2023-01-01 through 2025-06-30) are for exploratory pattern discovery only and are excluded from the primary contrast.",
+    "Pre-period documents are candidate material only; match source, topic, format, length, and visibility before use.",
+    "Machine Heart visibility is not independently verified, so this pool does not satisfy final high-visibility corpus admission.",
+    "Keep discovery, development, validation, and final-test documents disjoint."
+  ],
+  "reader_observation": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\reader_style_observations.jsonl",
+  "reader_observation_role": "development_calibration_only_not_authorship_label",
+  "input_sha256": {
+    "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\infoq_candidates.jsonl": "75f16c11b5bb92efba06d4e627610c03f786477551dbb66646180713424d6b13",
+    "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\jiqizhixin_candidates.jsonl": "288e49ce8a990813c4af9002e0ec6f428dba5669efe9ea6db07565f26a51fd80",
+    "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\lctt_candidates.jsonl": "50f95126dfdeb00eff28d5a9f6ac1509f63f6e62e111f11bdff0889667ce6a1f",
+    "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\triage_results.jsonl": "58b992035d1d07e35a784d69380fe4538317f2afaf7a98b08d533e2691919229",
+    "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\value\\value_results.jsonl": "c555c5f459ddd0d7ab42ffb2abf3d8cc8328d03c35c34c0c82d5c0cf5952df4d",
+    "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\research_value_decisions.csv": "28d5f1db3195860b6b9155780935feb2746980c45007055db3083491488b7049"
+  }
+}

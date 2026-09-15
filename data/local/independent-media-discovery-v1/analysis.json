@@ -1,0 +1,827 @@
+{
+  "version": "independent-media-discovery-analysis-1.0",
+  "analyzed_at_utc": "2026-09-14T14:55:57.424667+00:00",
+  "analyst": "当前环境 Astra 独立 Agent；知晓 SMZDM 人工锚点，不是盲法",
+  "reader_labels_collected": 0,
+  "semantic_assessment_status": "可出错的助手解释与候选提名，未做编辑干预或效果验证",
+  "documents": [
+    {
+      "doc_id": "d01",
+      "assistant_nomination": "持续目标动作的后期候选；不等于人工确认的强臭味",
+      "full_read_blocks": "b001-b037",
+      "overall": "开篇、观点卡、两个支持阵营、结尾和投票均复用同一品牌二分。反复重命名和整齐判词持续存在；显式认知纠正较锚点少，不能把两篇说成同一种完整风格。",
+      "findings": [
+        {
+          "kind": "parallel_verdict_and_reader_guidance",
+          "analysis": "全能与省心不是互斥的同一性能维度。后文其实分别列出两者清洁和自清洁优势，结尾仍以品牌人格帮助普通家庭二选一；这种重点强调可以用于导航，也可能盖过具体机型条件。",
+          "quotes": [
+            {
+              "block_id": "b001",
+              "text": "是选性能全面的追觅，还是选省心省力的云鲸？",
+              "start_char": 130,
+              "end_char": 151,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b016",
+              "text": "全能旗舰",
+              "start_char": 579,
+              "end_char": 583,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b017",
+              "text": "痛点精准",
+              "start_char": 584,
+              "end_char": 588,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b034",
+              "text": "如果你的家是复杂的战场，选追觅；如果你的生活需要一个省心的管家，选云鲸。",
+              "start_char": 2136,
+              "end_char": 2172,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            }
+          ],
+          "context_block_ids": [
+            "b001",
+            "b004",
+            "b011",
+            "b013",
+            "b016",
+            "b017",
+            "b021",
+            "b029",
+            "b033",
+            "b034",
+            "b035"
+          ]
+        },
+        {
+          "kind": "mirrored_verdict_series",
+          "analysis": "两个阵营均按认为／看重／认可／赞赏／肯定排列五项。PK 卡与随后六个分节重复清洁、自清洁、智能等价值总结；后文也有新细节，因此不能把整段全判冗余。",
+          "quotes": [
+            {
+              "block_id": "b004",
+              "text": "认为追觅在清洁能力、自清洁能力和智能化设计上整体更优，尤其适合复杂地形和重油污家庭。",
+              "start_char": 195,
+              "end_char": 237,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b011",
+              "text": "认为云鲸在毛发处理上表现更出色，整机零缠绕设计让养宠或长发家庭彻底解放双手。",
+              "start_char": 389,
+              "end_char": 427,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            }
+          ],
+          "context_block_ids": [
+            "b004",
+            "b005",
+            "b006",
+            "b007",
+            "b008",
+            "b011",
+            "b012",
+            "b013",
+            "b014",
+            "b015",
+            "b021",
+            "b023",
+            "b025",
+            "b029",
+            "b031",
+            "b033"
+          ]
+        },
+        {
+          "kind": "grounds_to_superlative",
+          "analysis": "列举来源用户评价，不能在未说明抽样、型号、条件和对比指标时确立普通家庭的最优解。58位用户、155位来源作者与52%/48%并不逻辑矛盾，但本文没有给出对应的抽样/计数方法。",
+          "quotes": [
+            {
+              "block_id": "b001",
+              "text": "本文汇总了58位真实用户的深度体验，帮你找到最适合的答案。",
+              "start_char": 151,
+              "end_char": 180,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b003",
+              "text": "52%",
+              "start_char": 191,
+              "end_char": 194,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b010",
+              "text": "48%",
+              "start_char": 385,
+              "end_char": 388,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b034",
+              "text": "为追求省心省力的普通家庭提供了最优解",
+              "start_char": 2095,
+              "end_char": 2113,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            }
+          ],
+          "context_block_ids": [
+            "b001",
+            "b002",
+            "b003",
+            "b009",
+            "b010",
+            "b029",
+            "b031",
+            "b033",
+            "b034"
+          ]
+        },
+        {
+          "kind": "scope_and_model_mixing",
+          "analysis": "云鲸多型号共享论证：逍遥002、002MAX、J6的表现被收束成品牌哲学。油污重被结论侧重分配给追觅，但云鲸段也出现油污重选择云鲸的引述。80天和120天可能针对不同型号；不能认证数值矛盾。",
+          "quotes": [
+            {
+              "block_id": "b033",
+              "text": "家里油污重的还是选履带式拖布的云鲸逍遥002吧。",
+              "start_char": 1776,
+              "end_char": 1800,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b033",
+              "text": "3k价位顶配还得看活热水履带式拖布的云鲸J6，清洁最干净、用着最省心。",
+              "start_char": 1925,
+              "end_char": 1960,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b031",
+              "text": "基站支持80天免维护，真正实现全链路免手洗维护。",
+              "start_char": 1702,
+              "end_char": 1726,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            }
+          ],
+          "context_block_ids": [
+            "b029",
+            "b031",
+            "b033",
+            "b034"
+          ]
+        },
+        {
+          "kind": "useful_detail_and_counterexample",
+          "analysis": "具体使用条件和结构功能值得保留：不用把所有对比删掉。这里记录的是文章内部信息，不是外部核验后的硬件事实。",
+          "quotes": [
+            {
+              "block_id": "b029",
+              "text": "鉴于不在家做饭、不养宠物，只需要基础清扫和解放双手，性价比更高的云鲸逍遥002Max是更好的选择。",
+              "start_char": 1365,
+              "end_char": 1414,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            },
+            {
+              "block_id": "b025",
+              "text": "三重智能升降系统（滚筒、滚刷、边刷独立升降），根据干湿垃圾类型智能切换清洁模式",
+              "start_char": 1257,
+              "end_char": 1296,
+              "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3"
+            }
+          ],
+          "context_block_ids": [
+            "b021",
+            "b025",
+            "b029"
+          ]
+        }
+      ],
+      "limits": [
+        "页面明示内容由AI生成，只作为发布方披露，与候选强度分开；模型、翻译流程未知。",
+        "JSON 的内容覆盖已检查，页面实际视觉渲染、上游引用和样本比例未核验。"
+      ]
+    },
+    {
+      "doc_id": "d02",
+      "assistant_nomination": "持续目标动作与重复包装的后期候选；不等于人工确认的强臭味",
+      "full_read_blocks": "b001-b138",
+      "overall": "前半篇不断宣告本质、核心、进化、必选门槛，再用十个误区指导读者；后半篇多个产品重复适用人群和免维护承诺。比单个连接词明显，且包含大量有用解释。长度和商品推荐体裁是重要混杂。",
+      "findings": [
+        {
+          "kind": "recurrent_instructional_stance",
+          "analysis": "正文开头把读懂底层原理设为买对产品的前提，随后以必须／直接pass和永远的排序强化指导。认知纠正集中在b090-b100，不能仅凭这些措辞判断建议错误。",
+          "quotes": [
+            {
+              "block_id": "b002",
+              "text": "读懂底层原理，才能避开参数噱头，选到真正好用的产品。",
+              "start_char": 78,
+              "end_char": 104,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b018",
+              "text": "2026 年家庭用户选购，最低门槛必须是 LDS 激光导航，低于该标准的机型直接 pass；",
+              "start_char": 1583,
+              "end_char": 1629,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b094",
+              "text": "选购优先级永远是：导航避障＞清洁能力＞自动化基站功能。",
+              "start_char": 7383,
+              "end_char": 7410,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            }
+          ],
+          "context_block_ids": [
+            "b002",
+            "b015",
+            "b018",
+            "b027",
+            "b040",
+            "b048",
+            "b071",
+            "b090",
+            "b091",
+            "b092",
+            "b094",
+            "b098",
+            "b099"
+          ]
+        },
+        {
+          "kind": "scope_expansion",
+          "analysis": "自动化功能及月级清理周期，反复被包装为全链路零人工干预或全年零干预。文章也明示集尘袋周期和安装条件，支持的是限定操作频率；未提供全年无需任何维护的跟踪依据。",
+          "quotes": [
+            {
+              "block_id": "b011",
+              "text": "实现从「机身免打理」到「全链路零人工干预」的跨越。",
+              "start_char": 1173,
+              "end_char": 1198,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b057",
+              "text": "从「每次扫完都要打理」进化到「月级免维护，甚至全年零干预」",
+              "start_char": 4176,
+              "end_char": 4205,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b060",
+              "text": "可直接将人工倒尘的频率从「每天一次」降到「1-2 个月一次」。",
+              "start_char": 4331,
+              "end_char": 4362,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b108",
+              "text": "真正实现清洁全流程免手动干预",
+              "start_char": 9300,
+              "end_char": 9314,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            }
+          ],
+          "context_block_ids": [
+            "b011",
+            "b057",
+            "b060",
+            "b062",
+            "b063",
+            "b108",
+            "b115",
+            "b130",
+            "b137"
+          ]
+        },
+        {
+          "kind": "repeat_without_new_discrimination",
+          "analysis": "不同价位、多台产品共用140㎡以上适配、养宠优选、无死角、安静等判词，降低产品间的区分信息。同型号DDX67在3000-4000和2000-3000两档重复，后者标国补版；价格口径可能解释，但正文未明确说明，因此保留待核实。",
+          "quotes": [
+            {
+              "block_id": "b107",
+              "text": "可轻松适配 140㎡以上的居家清洁需求。",
+              "start_char": 8887,
+              "end_char": 8907,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b117",
+              "text": "成为小户型、养宠家庭家用清洁的优选，可完美适配 140㎡以上的居家清洁需求。",
+              "start_char": 11060,
+              "end_char": 11098,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b129",
+              "text": "成为多口之家、宠物家庭家用清洁的优选，可完美适配 140㎡以上的居家清洁需求。",
+              "start_char": 13995,
+              "end_char": 14034,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b116",
+              "text": "型号 DDX67",
+              "start_char": 10955,
+              "end_char": 10963,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b132",
+              "text": "国补版，型号 DDX67",
+              "start_char": 14630,
+              "end_char": 14642,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            }
+          ],
+          "context_block_ids": [
+            "b102",
+            "b107",
+            "b112",
+            "b116",
+            "b117",
+            "b120",
+            "b123",
+            "b126",
+            "b129",
+            "b131",
+            "b132",
+            "b133"
+          ]
+        },
+        {
+          "kind": "criterion_to_recommendation_gap",
+          "analysis": "选购标准要求清扫噪音≤58dB，产品段又以63或65dB宣告低噪和不扰人。测试档位、测距与场景可能不同；本文没有对齐口径，也没有解释推荐为何偏离自身门槛，不据此认证产品数据错误。",
+          "quotes": [
+            {
+              "block_id": "b076",
+              "text": "清扫噪音≤58dB，静音档≤52dB",
+              "start_char": 5653,
+              "end_char": 5671,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b108",
+              "text": "扫拖运行噪音低至 63dB",
+              "start_char": 9333,
+              "end_char": 9346,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b115",
+              "text": "扫拖运行噪音低至 65dB",
+              "start_char": 10842,
+              "end_char": 10855,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            }
+          ],
+          "context_block_ids": [
+            "b076",
+            "b105",
+            "b108",
+            "b111",
+            "b115",
+            "b127"
+          ]
+        },
+        {
+          "kind": "useful_correction_and_counterexample",
+          "analysis": "吸力并非唯一指标、安装条件与功能需求匹配都有实质信息。尤其b092约束不需要买所有新功能，缓和前文部分绝对门槛；应保留这种内在张力，不把整篇只归为命令姿态。",
+          "quotes": [
+            {
+              "block_id": "b027",
+              "text": "但不是唯一指标，风道密封性、滚刷贴合度对清洁效果的影响同等重要。",
+              "start_char": 2075,
+              "end_char": 2107,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b062",
+              "text": "安装前提是提前预留进水口、排水口、电源",
+              "start_char": 4574,
+              "end_char": 4593,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            },
+            {
+              "block_id": "b092",
+              "text": "无顽固污渍清洁需求，就不用为顽渍喷溶功能支付溢价；无嵌入式装修需求，超薄嵌入功能也非必选。",
+              "start_char": 7187,
+              "end_char": 7232,
+              "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11"
+            }
+          ],
+          "context_block_ids": [
+            "b008",
+            "b009",
+            "b027",
+            "b052",
+            "b062",
+            "b069",
+            "b092",
+            "b093"
+          ]
+        }
+      ],
+      "limits": [
+        "全文提到多张对比表，数据呈现在图片中；本次只确认HTML文字完整，不能对图内支持作缺失判定。",
+        "网页时间2026-03-19与搜索结果2026年01月01日不一致；使用页面明确日期，保留两者。",
+        "来源类型未明，署名不是原创或生成方式证明。"
+      ]
+    },
+    {
+      "doc_id": "d03",
+      "assistant_nomination": "主体较少持续认知包装的早期同站对照；不是干净阴性",
+      "full_read_blocks": "b001-b027",
+      "overall": "主体按开箱、连接、控制、模式逐项推进，纠正大多对应具体限制；但结尾栏目说明有三组平行自我定位，读者指引和熟人姿态也存在。此例有助于区分局部体裁公式与全篇持续动作。",
+      "findings": [
+        {
+          "kind": "concrete_correction",
+          "analysis": "App所称全息消息与机身投影的区别有明确对象，接着说明只能用手机屏幕查看；这项纠正增加可操作理解。",
+          "quotes": [
+            {
+              "block_id": "b021",
+              "text": "App介绍上说是会有记录和查看全息模式，但BB-8机身内并没有投影功能，所以只能透过手机屏幕来查看录好的图像",
+              "start_char": 1416,
+              "end_char": 1470,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            }
+          ],
+          "context_block_ids": [
+            "b016",
+            "b017",
+            "b020",
+            "b021"
+          ]
+        },
+        {
+          "kind": "bounded_reader_guidance",
+          "analysis": "指令分别服务于充电、蓝牙、方向校准，较少在每段后重命名价值。不能将面向读者或祈使语气直接算缺陷。",
+          "quotes": [
+            {
+              "block_id": "b016",
+              "text": "当然前提是别忘了打开手机的蓝牙。",
+              "start_char": 1034,
+              "end_char": 1050,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            },
+            {
+              "block_id": "b018",
+              "text": "需要通过控制将闪烁的蓝色灯光移动至自己这一面，完成此方向校准之后，便可尽情玩耍了。",
+              "start_char": 1261,
+              "end_char": 1302,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            }
+          ],
+          "context_block_ids": [
+            "b014",
+            "b016",
+            "b018"
+          ]
+        },
+        {
+          "kind": "counterexample_to_time_or_phrase_rule",
+          "analysis": "旧文结尾也有三连平行判词，声称没有个人观点、客观展示，正文却使用鸡肋等评价。栏目声明可能是在区分栏目定位，不可简单认定故意虚假；此段不能用来推断生成身份。",
+          "quotes": [
+            {
+              "block_id": "b027",
+              "text": "和晒物比，这里没有个人观点，只是最速的介绍；和评测比，这里没有细节测试，只是客观的展示；和广告比，这里没有华丽辞藻，只是简洁的叙述。",
+              "start_char": 1906,
+              "end_char": 1972,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            },
+            {
+              "block_id": "b021",
+              "text": "感觉有点鸡肋",
+              "start_char": 1471,
+              "end_char": 1477,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            }
+          ],
+          "context_block_ids": [
+            "b004",
+            "b012",
+            "b021",
+            "b026",
+            "b027"
+          ]
+        },
+        {
+          "kind": "useful_limits_and_source_bias",
+          "analysis": "页面提供实体购买条件、随件缺少USB充电头及英文语音限制；主角由天猫提供是商业关联证据，不能视为独立无利益评测。",
+          "quotes": [
+            {
+              "block_id": "b004",
+              "text": "这次我们收到的主角就由天猫提供",
+              "start_char": 304,
+              "end_char": 319,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            },
+            {
+              "block_id": "b011",
+              "text": "与国际版类似依旧没有USB充电头。",
+              "start_char": 718,
+              "end_char": 735,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            },
+            {
+              "block_id": "b023",
+              "text": "仅支持英文语音，而且识别的不多",
+              "start_char": 1593,
+              "end_char": 1608,
+              "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304"
+            }
+          ],
+          "context_block_ids": [
+            "b004",
+            "b009",
+            "b011",
+            "b023"
+          ]
+        }
+      ],
+      "limits": [
+        "大量图片／动态图承担展示，本次未读取像素；体裁更偏开箱体验，不能充当严格DIY成本对照。",
+        "旧文章的当前累计点赞收藏不可与新文直接比较传播强度。"
+      ]
+    },
+    {
+      "doc_id": "d04",
+      "assistant_nomination": "较少反复认知纠正的早期同体裁对照；宣传式承诺仍明显",
+      "full_read_blocks": "b001-b045",
+      "overall": "六个型号分别介绍参数，重复包装的主要来源是促销式赞语，而非持续告诉读者必须如何重新理解。旧文也有不二之选、彻底等强判断，不能把它标为风格完美。",
+      "findings": [
+        {
+          "kind": "agenda_and_comparison",
+          "analysis": "开头提供四个选购维度，后文按型号展开，标题和结论主要组织信息；不是每个型号后都重置读者认知。",
+          "quotes": [
+            {
+              "block_id": "b003",
+              "text": "我认为可以从清洁能力、避障能力、智能程度、维护成本四方面入手。",
+              "start_char": 178,
+              "end_char": 209,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            },
+            {
+              "block_id": "b044",
+              "text": "以上6款是我认为可以提升生活品质的2022年新品扫拖一体机器人",
+              "start_char": 3614,
+              "end_char": 3645,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            }
+          ],
+          "context_block_ids": [
+            "b003",
+            "b005",
+            "b012",
+            "b018",
+            "b026",
+            "b033",
+            "b039",
+            "b044"
+          ]
+        },
+        {
+          "kind": "grounds_to_strong_promise",
+          "analysis": "旧文也从结构参数直接跨到全面清洁或无细菌滋生可能。应作为竞争性解释：促销体裁本身就会产生这些承诺；不把早期日期视为免检凭证。",
+          "quotes": [
+            {
+              "block_id": "b011",
+              "text": "绝对是提升幸福感的懒人福音。",
+              "start_char": 972,
+              "end_char": 986,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            },
+            {
+              "block_id": "b023",
+              "text": "复杂环境都能游刃有余地做出合理选择。",
+              "start_char": 1918,
+              "end_char": 1936,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            },
+            {
+              "block_id": "b025",
+              "text": "无需动手，解决了拖布发臭、细菌滋生的可能。",
+              "start_char": 2068,
+              "end_char": 2089,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            }
+          ],
+          "context_block_ids": [
+            "b009",
+            "b011",
+            "b013",
+            "b015",
+            "b023",
+            "b025",
+            "b036",
+            "b041"
+          ]
+        },
+        {
+          "kind": "useful_difference_and_counterexample",
+          "analysis": "对缺少集尘功能、扫拖模块需手动切换的限制明确，保留条件性区别。否定并非扫拖一体在这里直接回答产品能否自动切换，属于实质信息。",
+          "quotes": [
+            {
+              "block_id": "b017",
+              "text": "比较可惜的是，基站不具备自动集尘功能。",
+              "start_char": 1519,
+              "end_char": 1538,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            },
+            {
+              "block_id": "b035",
+              "text": "云鲸J2并非扫拖一体机器人，其扫地、拖地模块需手动更换",
+              "start_char": 2927,
+              "end_char": 2954,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            },
+            {
+              "block_id": "b038",
+              "text": "可以在不用手机APP的情况下，也能实现快速建图、调整拖扫模式选择和一些设置操作",
+              "start_char": 3142,
+              "end_char": 3181,
+              "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+            }
+          ],
+          "context_block_ids": [
+            "b017",
+            "b034",
+            "b035",
+            "b038"
+          ]
+        }
+      ],
+      "limits": [
+        "新浪“原创”是发布方栏目标记，生产历史未独立认证。",
+        "发布时间为2022-05-03 13:00，页面未注明时区；搜索的2022年01月01日不是正文日期。",
+        "来源不同；仍为商品参数综述，可能有商业宣传混杂。图片与技术参数未外部核验。"
+      ]
+    },
+    {
+      "doc_id": "d06",
+      "assistant_nomination": "目标现象明显的过渡期诊断候选；不进入主时间对照",
+      "full_read_blocks": "b001-b039",
+      "overall": "从开头纯干货承诺到真相／致命伤／王者／智商税，再到土豪闭眼入，连续使用纠正与判词。读者指导很强，但呈现近似夸张社区段子；可以是体裁姿态，不能由风格推断身份。",
+      "findings": [
+        {
+          "kind": "recurrent_correction_and_verdict",
+          "analysis": "标题、分节和列项反复宣布谁是真正王者或谁在骗人，结尾再按人群给断语。不是字面而是触发的候选。",
+          "quotes": [
+            {
+              "block_id": "b001",
+              "text": "没废话，纯干货版，告诉你怎么选扫地机。",
+              "start_char": 44,
+              "end_char": 63,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b010",
+              "text": "• 真相：砍掉激光雷达，靠双5000万像素摄像头+AI算法",
+              "start_char": 367,
+              "end_char": 396,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b018",
+              "text": "谁在收“智商税”？",
+              "start_char": 732,
+              "end_char": 741,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b027",
+              "text": "土豪闭眼入：石头G20S",
+              "start_char": 955,
+              "end_char": 967,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b029",
+              "text": "性价比之王：追觅X40",
+              "start_char": 1027,
+              "end_char": 1038,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            }
+          ],
+          "context_block_ids": [
+            "b001",
+            "b002",
+            "b005",
+            "b009",
+            "b010",
+            "b011",
+            "b012",
+            "b014",
+            "b016",
+            "b018",
+            "b023",
+            "b024",
+            "b027",
+            "b028",
+            "b029"
+          ]
+        },
+        {
+          "kind": "authority_without_traceable_mapping",
+          "analysis": "多个高度精确的实测数值后给出国家实验室认证，但所读文字只列报告名与机构，没有具体页码、编号、方法或对应数据。引用图片未读，不能声称所有可能支持均不存在；当前证据不足以认证这些参数。",
+          "quotes": [
+            {
+              "block_id": "b004",
+              "text": "仿生复眼识别0.1mm发丝，复杂户型建图速度2分18秒（行业平均5分钟）。",
+              "start_char": 149,
+              "end_char": 186,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b005",
+              "text": "强光下复眼镜头眩光率37%",
+              "start_char": 193,
+              "end_char": 206,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b034",
+              "text": "本文引用数据经国家级实验室认证，抄袭者必究！",
+              "start_char": 1186,
+              "end_char": 1208,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            }
+          ],
+          "context_block_ids": [
+            "b004",
+            "b005",
+            "b007",
+            "b008",
+            "b010",
+            "b013",
+            "b015",
+            "b017",
+            "b034",
+            "b036",
+            "b037",
+            "b038",
+            "b039"
+          ]
+        },
+        {
+          "kind": "local_value_and_uncertain_scope",
+          "analysis": "文章确实提醒维护、噪音、安装占地和价格口径，不应因为姿态强就抹掉这些考虑。4799元与千元机用法有张力，但未证明同口径成交价格矛盾。",
+          "quotes": [
+            {
+              "block_id": "b009",
+              "text": "售价4799元",
+              "start_char": 358,
+              "end_char": 365,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b025",
+              "text": "得做好每周手洗拖布准备。",
+              "start_char": 924,
+              "end_char": 936,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b029",
+              "text": "千元机干翻旗舰",
+              "start_char": 1039,
+              "end_char": 1046,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            },
+            {
+              "block_id": "b030",
+              "text": "具体以商家最终答复为准",
+              "start_char": 1071,
+              "end_char": 1082,
+              "body_sha256": "65dae28338cd9db64494b71e23c17bcbe6de51cc4c914c171c28bc7d3893554b"
+            }
+          ],
+          "context_block_ids": [
+            "b009",
+            "b013",
+            "b019",
+            "b020",
+            "b021",
+            "b024",
+            "b025",
+            "b029",
+            "b030"
+          ]
+        }
+      ],
+      "limits": [
+        "2025-03-07属于预先定义的过渡期；无论助手认为多明显，都不搬入2025-07后组。",
+        "产品真伪、实验数值、优惠与传闻未核实，不能向用户当作购买建议。",
+        "b019-b021为来源段落中的压缩参数行；列名不完整，不能自行补全或把提取视图当完整表格语义。"
+      ]
+    }
+  ],
+  "unread_document": {
+    "doc_id": "d05",
+    "reason": "客户端空壳，未提取正文，不作强度或来源判断。"
+  }
+}

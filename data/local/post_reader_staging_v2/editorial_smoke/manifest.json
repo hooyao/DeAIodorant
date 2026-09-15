@@ -1,0 +1,119 @@
+{
+  "protocol_version": "post-editorial-acquisition-staging-1.0",
+  "generated_at": "2026-08-29T15:36:32.939211+00:00",
+  "status": "acquisition_staging_not_admitted",
+  "post_start": "2025-07-01",
+  "configuration": {
+    "qbitai_target": 2,
+    "leiphone_target": 2,
+    "leiphone_pages": 1,
+    "delay_seconds": 0.5,
+    "http_timeout_seconds": 45.0,
+    "translation_model": null
+  },
+  "documents": 4,
+  "source_counts": {
+    "qbitai": 2,
+    "leiphone": 2
+  },
+  "outputs": [
+    {
+      "source": "qbitai",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\editorial_smoke\\qbitai_post_candidates.jsonl",
+      "documents": 2,
+      "sha256": "da8efdd7f8e5e2306fd29ef80d0f5307bb1302a3a29947b774a187136ef3d2c5"
+    },
+    {
+      "source": "leiphone",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\editorial_smoke\\leiphone_post_candidates.jsonl",
+      "documents": 2,
+      "sha256": "68323638601970f4b513f5625bbf5487f7d49fe2167ca415ab1cf6ced28ae5fd"
+    }
+  ],
+  "source_stats": {
+    "qbitai": {
+      "source": "qbitai",
+      "target": 2,
+      "documents": 2,
+      "feed": {
+        "url": "https://www.qbitai.com/feed",
+        "sha256": "e137dd2bb83fe33fefb8a081f82bf6a8a7689af51f8e08f000eaa54709018840"
+      },
+      "api_pages": [
+        {
+          "page": 1,
+          "url": "https://www.qbitai.com/wp-json/wp/v2/posts?after=2025-07-01T00%3A00%3A00&before=2026-08-30T00%3A00%3A00&per_page=100&page=1&orderby=date&order=desc&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Ccontent",
+          "sha256": "a0a14340a4182c341125f2bc7402c80b8f2ea1a8f7d0f618e7a50a2dfe1a9605",
+          "documents": 100
+        }
+      ],
+      "deterministic_translation_flags": {
+        "False": 2
+      }
+    },
+    "leiphone": {
+      "source": "leiphone",
+      "target": 2,
+      "documents": 2,
+      "categories": [
+        "ai",
+        "yanxishe",
+        "academic",
+        "digitalindustry",
+        "industrynews"
+      ],
+      "max_pages_per_category": 1,
+      "category_pages": [
+        {
+          "category": "ai",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/ai",
+          "sha256": "89691098318b5b8a932b8c38faf6ac93e4610b51cc7c737ababfae96d79a70f9",
+          "discovered_article_links": 36
+        },
+        {
+          "category": "yanxishe",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/yanxishe",
+          "sha256": "aac27bf8892c72cac6873bb035315be27726844ce11cbdda6912dc5a39a705cf",
+          "discovered_article_links": 26
+        },
+        {
+          "category": "academic",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/academic",
+          "sha256": "090cf0af1727b7e94d5dad34def62516184d43848488e2a1e644e76eba8d2566",
+          "discovered_article_links": 23
+        },
+        {
+          "category": "digitalindustry",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/digitalindustry",
+          "sha256": "2890b138e68ef464bbe7af5b493b9bcbcf31424ee68cbc43147e4f7cfe1d3d7e",
+          "discovered_article_links": 23
+        },
+        {
+          "category": "industrynews",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/industrynews",
+          "sha256": "c6093683b338b8f7b88a85af429c15c5b21ccf964acba7ff2e4178704913f54e",
+          "discovered_article_links": 36
+        }
+      ],
+      "sitemap": {
+        "url": "https://www.leiphone.com/sitemap.xml",
+        "sha256": "b0caaf5c35526c39d6837b0aec8a5e758a7b1fb6dbe121b84f7cf0990a7855bd"
+      },
+      "failures": [],
+      "deterministic_translation_flags": {
+        "False": 2
+      }
+    }
+  },
+  "limitations": [
+    "This output is acquisition staging and cannot be used for reader tasks.",
+    "Official feeds, APIs, categories, and sitemaps establish editorial distribution, not article-level readership.",
+    "Model provenance, research value, visibility admission, strata classification, and cross-corpus deduplication remain required.",
+    "Editorial outlets may contain translated, compiled, promoted, or low-value articles; uncertainty must fail closed during admission."
+  ]
+}

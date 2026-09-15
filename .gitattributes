@@ -4,3 +4,10 @@ feature_runs/** -text
 benchmark_results/** -text
 experiments/fixtures/** -text
 docs/routes/compact-refiner/prompts/** -text
+
+# 本轮冻结协议与生成器也按字节复现，避免跨系统检出改变核验身份。
+docs/routes/compact-refiner/cognitive-move-pilot-v1.md -text
+experiments/cognitive_move_pilot.py -text
+docs/routes/compact-refiner/reports/independent-media-discovery-v1.md -text
+handover/session-2026-09-14-continuation/** -text
+handover/release-2026-09-15/** -text

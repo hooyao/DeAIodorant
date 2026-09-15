@@ -1,0 +1,6161 @@
+{
+  "api": "crossref",
+  "query": "query.title=Chinese+compound+parsing",
+  "provenance": {
+    "urls": [
+      "https://api.crossref.org/works?query.title=Chinese+compound+parsing&rows=25&cursor=%2A"
+    ],
+    "delay_seconds": 0.3
+  },
+  "reconciliation": {
+    "expected_total": 599293,
+    "retrieved_total": 25,
+    "pages_fetched": 1,
+    "complete": false,
+    "stopped_at_limit": true,
+    "shortfall": 599268,
+    "shortfall_reason": "bounded by --max-records/--max-calls; raise the bound to continue",
+    "notes": [
+      "Crossref cursors expire after 5 minutes; a long walk must keep moving",
+      "stopped at the --max-calls limit of 1; the walk is INCOMPLETE"
+    ]
+  },
+  "records": [
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            19
+          ]
+        ],
+        "date-time": "2024-09-19T14:49:41Z",
+        "timestamp": 1726757381261
+      },
+      "reference-count": 22,
+      "publisher": "Elsevier BV",
+      "issue": "5",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2000,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2000-09-01T00:00:00Z",
+            "timestamp": 967766400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Geriatric Nursing"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            9
+          ]
+        ]
+      },
+      "DOI": "10.1067/mgn.2000.110835",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T00:17:08Z",
+        "timestamp": 1027556228000
+      },
+      "page": "254-259",
+      "source": "Crossref",
+      "is-referenced-by-count": 5,
+      "title": [
+        "The Forgotten Faces: The Lonely Journey of Powerlessness Experienced by Elderly Single Chinese Men with Heart Disease in Taiwan"
+      ],
+      "prefix": "10.1067",
+      "volume": "21",
+      "author": [
+        {
+          "given": "Shaw-Nin",
+          "family": "Shih",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Fu-Jin",
+          "family": "Shih",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ching-Huey",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Chi-Hui",
+          "family": "Kao Lo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1067/mgn.2000.110835_bib1",
+          "series-title": "Coping with chronic illness: overcoming powerlessness",
+          "author": "Miller",
+          "year": "1983"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib2",
+          "doi-asserted-by": "crossref",
+          "first-page": "146",
+          "DOI": "10.1097/01376517-199206000-00005",
+          "article-title": "Powerlessness in acute spinal cord injury patients: a descriptive study",
+          "volume": "24",
+          "author": "Richmond",
+          "year": "1992",
+          "journal-title": "J Neuroscience Nurs"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib3",
+          "first-page": "11",
+          "article-title": "Role theory and the concept of powerlessness",
+          "volume": "19",
+          "author": "Lambert",
+          "year": "1981",
+          "journal-title": "J Psychosocial Nurs Mental Health Service"
+        },
+        {
+          "issue": "1",
+          "key": "10.1067/mgn.2000.110835_bib4",
+          "doi-asserted-by": "crossref",
+          "first-page": "59",
+          "DOI": "10.1177/096973309900600107",
+          "article-title": "Health needs of elderly Chinese men living alone with heart disease during their hospitalization transition",
+          "volume": "6",
+          "author": "Shih",
+          "year": "1999",
+          "journal-title": "Nurs Ethics"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib5",
+          "series-title": "Powerlessness in individuals with chronic real failure [master thesis]",
+          "author": "Stapleton",
+          "year": "1978"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib6",
+          "doi-asserted-by": "crossref",
+          "first-page": "258",
+          "DOI": "10.1097/00006199-198109000-00002",
+          "article-title": "The measurement of uncertainty in illness",
+          "volume": "30",
+          "author": "Mishel",
+          "year": "1981",
+          "journal-title": "Nurs Res"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib7",
+          "doi-asserted-by": "crossref",
+          "first-page": "163",
+          "DOI": "10.1002/nur.4770070304",
+          "article-title": "Perceived uncertainty and stress in illness",
+          "volume": "7",
+          "author": "Mishel",
+          "year": "1984",
+          "journal-title": "Res Nurs Health"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib8",
+          "doi-asserted-by": "crossref",
+          "first-page": "225",
+          "DOI": "10.1111/j.1547-5069.1988.tb00082.x",
+          "article-title": "Uncertainty in illness. Image",
+          "volume": "20",
+          "author": "Mishel",
+          "year": "1988",
+          "journal-title": "J Nurs Scholar"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib9",
+          "doi-asserted-by": "crossref",
+          "first-page": "239",
+          "DOI": "10.1016/0020-7489(93)90034-R",
+          "article-title": "Uncertainty in hospitalized patients with chronic obstructive pulmonary disease",
+          "volume": "30",
+          "author": "Small",
+          "year": "1993",
+          "journal-title": "Intl J Nurs Stud"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib10",
+          "doi-asserted-by": "crossref",
+          "first-page": "489",
+          "DOI": "10.1016/0021-9681(84)90032-8",
+          "article-title": "Coping with chronic illness: strategy preferences, changes in preferences and associated emotional reactions",
+          "volume": "37",
+          "author": "Viney",
+          "year": "1984",
+          "journal-title": "J Chronic Dis"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib11",
+          "first-page": "41",
+          "article-title": "Linking data: the articulation of qualitative and quantitative methods in social research",
+          "author": "Fielding",
+          "year": "1986",
+          "journal-title": "Beverly Hills: Sage"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib12",
+          "doi-asserted-by": "crossref",
+          "first-page": "189",
+          "DOI": "10.17730/humo.47.3.8tm323u28p760863",
+          "article-title": "On the use of members’ respondents to researchers’ accounts",
+          "volume": "47",
+          "author": "Emerson",
+          "year": "1983",
+          "journal-title": "Human Organization"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib13",
+          "series-title": "Nursing research, theory and practice",
+          "author": "Woods",
+          "year": "1988"
+        },
+        {
+          "issue": "3",
+          "key": "10.1067/mgn.2000.110835_bib14",
+          "doi-asserted-by": "crossref",
+          "first-page": "27",
+          "DOI": "10.1097/00012272-198604000-00005",
+          "article-title": "The problem of rigor in qualitative research",
+          "volume": "8",
+          "author": "Sandelowaski",
+          "year": "1986",
+          "journal-title": "Adv Nurs Sci"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib15",
+          "doi-asserted-by": "crossref",
+          "first-page": "308",
+          "DOI": "10.1177/096973309900600406",
+          "article-title": "Elderly Japanese people living in small towns reflect on end-of life issues",
+          "volume": "6",
+          "author": "Okuno",
+          "year": "1999",
+          "journal-title": "Nurs Ethics"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib16",
+          "series-title": "The experiences of Chinese patients during recovery transition from cardiac surgery [dissertation]",
+          "author": "Shih",
+          "year": "1995"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib17",
+          "series-title": "Taiwan",
+          "author": "Li Yuan",
+          "year": "1997"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib18",
+          "doi-asserted-by": "crossref",
+          "first-page": "208",
+          "DOI": "10.1016/S0965-2302(96)90086-7",
+          "article-title": "Concepts related to Chinese patients’ perceptions of health, illness, and person: issues of conceptual clarity",
+          "volume": "4",
+          "author": "Shih",
+          "year": "1996",
+          "journal-title": "Acci Emer Nurs"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib19",
+          "first-page": "44",
+          "article-title": "Marriage and families",
+          "author": "Lin Lan",
+          "year": "1996"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib20",
+          "first-page": "172",
+          "article-title": "The relationship between family function, social support and caregiver burden for dependent elderly",
+          "volume": "7",
+          "author": "Kao",
+          "year": "1999",
+          "journal-title": "NAROC Nurs Res"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib21",
+          "first-page": "114",
+          "article-title": "Diseases of the heart and blood vessels. Nomenclature and criteria for diagnosis",
+          "author": "New York Heart Association Criteria Committee",
+          "year": "1964"
+        },
+        {
+          "key": "10.1067/mgn.2000.110835_bib22",
+          "first-page": "452",
+          "article-title": "Clinical aspects of heart failure: high-output heart failure: pulmonary edema",
+          "author": "Braunwald",
+          "year": "1997"
+        }
+      ],
+      "container-title": [
+        "Geriatric Nursing"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0197457200725511?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0197457200725511?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            9
+          ]
+        ],
+        "date-time": "2019-05-09T09:57:06Z",
+        "timestamp": 1557395826000
+      },
+      "score": 4.685836,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0197457200725511"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            9
+          ]
+        ]
+      },
+      "references-count": 22,
+      "journal-issue": {
+        "issue": "5",
+        "published-print": {
+          "date-parts": [
+            [
+              2000,
+              9
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "S0197457200725511"
+      ],
+      "URL": "https://doi.org/10.1067/mgn.2000.110835",
+      "ISSN": [
+        "0197-4572"
+      ],
+      "issn-type": [
+        {
+          "value": "0197-4572",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            21
+          ]
+        ],
+        "date-time": "2026-02-21T10:49:28Z",
+        "timestamp": 1771670968241,
+        "version": "3.50.1"
+      },
+      "reference-count": 14,
+      "publisher": "Elsevier BV",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2000,
+                10,
+                1
+              ]
+            ],
+            "date-time": "2000-10-01T00:00:00Z",
+            "timestamp": 970358400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "The Journal of Pediatrics"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1067/mpd.2000.108208",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T00:17:08Z",
+        "timestamp": 1027556228000
+      },
+      "page": "581-584",
+      "source": "Crossref",
+      "is-referenced-by-count": 23,
+      "title": [
+        "Scleral melanocytosis and oculodermal melanocytosis (nevus of Ota) in Chinese children"
+      ],
+      "prefix": "10.1067",
+      "volume": "137",
+      "author": [
+        {
+          "given": "Alexander K.C.",
+          "family": "Leung",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "C.Pion",
+          "family": "Kao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Helen Y.H.",
+          "family": "Cho",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "May P.M.",
+          "family": "Siu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Matthew C.K.",
+          "family": "Choi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Reginald S.",
+          "family": "Sauve",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1067/mpd.2000.108208_bib1",
+          "first-page": "87",
+          "article-title": "External ocular pigmentation",
+          "volume": "11",
+          "author": "Henkind",
+          "year": "1971",
+          "journal-title": "Int Ophthalmol Clin"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib2",
+          "first-page": "163",
+          "article-title": "Scleral melanocytosis",
+          "volume": "59",
+          "author": "Leung",
+          "year": "1999",
+          "journal-title": "Am Fam Physician"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib3",
+          "doi-asserted-by": "crossref",
+          "first-page": "950",
+          "DOI": "10.1016/S0161-6420(82)34695-3",
+          "article-title": "Ocular melanocytosis: a study to determine the prevalence rate of ocular melanocytosis",
+          "volume": "89",
+          "author": "Gonder",
+          "year": "1982",
+          "journal-title": "Ophthalmology"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib4",
+          "doi-asserted-by": "crossref",
+          "first-page": "483",
+          "DOI": "10.1001/archopht.1961.01840020485004",
+          "article-title": "The nevus of Ota or oculodermal melanocytosis: the ocular changes",
+          "volume": "65",
+          "author": "Cowan",
+          "year": "1961",
+          "journal-title": "Arch Ophthalmol"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib5",
+          "doi-asserted-by": "crossref",
+          "first-page": "133",
+          "DOI": "10.1038/jid.1961.22",
+          "article-title": "Nevus of Ota and nevus of Ito in American Negroes",
+          "volume": "36",
+          "author": "Mishima",
+          "year": "1961",
+          "journal-title": "J Invest Dermatol"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib6",
+          "first-page": "1243",
+          "article-title": "Nevus fusco-caeruleus ophthalmomaxillaris",
+          "volume": "63",
+          "author": "Ota",
+          "year": "1939",
+          "journal-title": "Tokyo Med J"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib7",
+          "doi-asserted-by": "crossref",
+          "first-page": "830",
+          "DOI": "10.1001/archopht.1956.00930040838004",
+          "article-title": "Ocular and dermal melanocytosis",
+          "volume": "56",
+          "author": "Fitzpatrick",
+          "year": "1956",
+          "journal-title": "Arch Ophthalmol"
+        },
+        {
+          "issue": "Suppl 1",
+          "key": "10.1067/mpd.2000.108208_bib8",
+          "first-page": "34",
+          "article-title": "Nevus fusco-caeruleus ophthalmo-maxillaris Ota",
+          "volume": "55",
+          "author": "Yoshida",
+          "year": "1952",
+          "journal-title": "Tohoku J Exp Med"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib9",
+          "first-page": "51",
+          "article-title": "Über eine in Japan haüfig vorkommende nävusform: “Naevus fusco-caeruleus ophthalmo-maxillaris Ota”",
+          "volume": "47",
+          "author": "Tanino",
+          "year": "1940",
+          "journal-title": "Jpn J Dermatol Urol"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib10",
+          "doi-asserted-by": "crossref",
+          "first-page": "364",
+          "DOI": "10.1136/bjo.49.7.364",
+          "article-title": "Naevus of Ota",
+          "volume": "49",
+          "author": "Gupta",
+          "year": "1965",
+          "journal-title": "Br J Ophthalmol"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib11",
+          "doi-asserted-by": "crossref",
+          "first-page": "497",
+          "DOI": "10.1016/S0161-6420(84)34261-0",
+          "article-title": "Orbital malignant melanoma and oculodermal melanocytosis: report of two cases and review of the literature",
+          "volume": "91",
+          "author": "Dutton",
+          "year": "1984",
+          "journal-title": "Ophthalmology"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib12",
+          "doi-asserted-by": "crossref",
+          "first-page": "187",
+          "DOI": "10.1001/archderm.1967.01600320043006",
+          "article-title": "Natural history of nevus of Ota",
+          "volume": "95",
+          "author": "Hidano",
+          "year": "1967",
+          "journal-title": "Arch Dermatol"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib13",
+          "doi-asserted-by": "crossref",
+          "first-page": "186",
+          "DOI": "10.1111/j.1524-4725.1979.tb00640.x",
+          "article-title": "Nevus of Ota",
+          "volume": "5",
+          "author": "Arif",
+          "year": "1979",
+          "journal-title": "J Dermatol Surg Oncol"
+        },
+        {
+          "key": "10.1067/mpd.2000.108208_bib14",
+          "doi-asserted-by": "crossref",
+          "first-page": "195",
+          "DOI": "10.1001/archderm.1962.01590020035005",
+          "article-title": "Nevus of Ota",
+          "volume": "85",
+          "author": "Kopf",
+          "year": "1962",
+          "journal-title": "Arch Dermatol"
+        }
+      ],
+      "container-title": [
+        "The Journal of Pediatrics"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0022347600858692?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0022347600858692?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            9
+          ]
+        ],
+        "date-time": "2019-05-09T09:55:59Z",
+        "timestamp": 1557395759000
+      },
+      "score": 6.054876,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0022347600858692"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            10
+          ]
+        ]
+      },
+      "references-count": 14,
+      "journal-issue": {
+        "issue": "4",
+        "published-print": {
+          "date-parts": [
+            [
+              2000,
+              10
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "S0022347600858692"
+      ],
+      "URL": "https://doi.org/10.1067/mpd.2000.108208",
+      "ISSN": [
+        "0022-3476"
+      ],
+      "issn-type": [
+        {
+          "value": "0022-3476",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2023,
+            10,
+            26
+          ]
+        ],
+        "date-time": "2023-10-26T07:17:57Z",
+        "timestamp": 1698304677553
+      },
+      "reference-count": 0,
+      "publisher": "Elsevier BV",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1987,
+                4,
+                1
+              ]
+            ],
+            "date-time": "1987-04-01T00:00:00Z",
+            "timestamp": 544233600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            1987,
+            4
+          ]
+        ]
+      },
+      "DOI": "10.1067/mva.1987.avs0050572",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T00:20:13Z",
+        "timestamp": 1027556413000
+      },
+      "page": "572-583",
+      "source": "Crossref",
+      "is-referenced-by-count": 7,
+      "title": [
+        "Compound polyglactin 910/polypropylene small vessel prostheses"
+      ],
+      "prefix": "10.1067",
+      "volume": "5",
+      "author": [
+        {
+          "given": "Howard P.",
+          "family": "Greisler",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Dae Un",
+          "family": "Kim",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "James W.",
+          "family": "Dennis",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "John J.",
+          "family": "Klosak",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Katherine A.",
+          "family": "Widerborg",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Eric D.",
+          "family": "Endean",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Richard M.",
+          "family": "Raymond",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Joan",
+          "family": "Ellinger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "container-title": [
+        "Journal of Vascular Surgery"
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            9
+          ]
+        ],
+        "date-time": "2019-05-09T08:23:39Z",
+        "timestamp": 1557390219000
+      },
+      "score": 8.493044,
+      "resource": {
+        "primary": {
+          "URL": "http://www1.mosby.com/scripts/om.dll/serve?action=searchDB&searchDBfor=art&artType=abs&id=avs0050572"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1987,
+            4
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "4"
+      },
+      "alternative-id": [
+        "10.1067/mva.1987.avs0050572"
+      ],
+      "URL": "https://doi.org/10.1067/mva.1987.avs0050572",
+      "ISSN": [
+        "0741-5214"
+      ],
+      "issn-type": [
+        {
+          "value": "0741-5214",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1987,
+            4
+          ]
+        ]
+      },
+      "article-number": "avs0050572"
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T01:56:55Z",
+        "timestamp": 1648778215591
+      },
+      "reference-count": 0,
+      "publisher": "Elsevier BV",
+      "issue": "3",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2001,
+                5,
+                1
+              ]
+            ],
+            "date-time": "2001-05-01T00:00:00Z",
+            "timestamp": 988675200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "The Case Manager"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2001,
+            5
+          ]
+        ]
+      },
+      "DOI": "10.1067/mcm.2001.115951",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T00:21:43Z",
+        "timestamp": 1027556503000
+      },
+      "page": "70-75",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Chinese perspectives for case managers in the year of the snake"
+      ],
+      "prefix": "10.1067",
+      "volume": "12",
+      "author": [
+        {
+          "given": "Cecilia Pui Shuen Wong",
+          "family": "Mukai",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "container-title": [
+        "The Case Manager"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1061925901158054?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1061925901158054?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            9
+          ]
+        ],
+        "date-time": "2019-05-09T07:51:31Z",
+        "timestamp": 1557388291000
+      },
+      "score": 6.0716095,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1061925901158054"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2001,
+            5
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              2001,
+              5
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "S1061925901158054"
+      ],
+      "URL": "https://doi.org/10.1067/mcm.2001.115951",
+      "ISSN": [
+        "1061-9259"
+      ],
+      "issn-type": [
+        {
+          "value": "1061-9259",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2001,
+            5
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            21
+          ]
+        ],
+        "date-time": "2026-04-21T09:34:30Z",
+        "timestamp": 1776764070447,
+        "version": "3.51.2"
+      },
+      "reference-count": 0,
+      "publisher": "Elsevier BV",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1995,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1995-01-01T00:00:00Z",
+            "timestamp": 788918400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2013,
+                7,
+                18
+              ]
+            ],
+            "date-time": "2013-07-18T00:00:00Z",
+            "timestamp": 1374105600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 6773,
+          "URL": "https://www.elsevier.com/open-access/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Finite Fields and Their Applications"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1995,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1006/ffta.1995.1007",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T01:26:50Z",
+        "timestamp": 1027560410000
+      },
+      "page": "102-114",
+      "source": "Crossref",
+      "is-referenced-by-count": 9,
+      "title": [
+        "A Unified Approach to the Analysis of Compound Pseudorandom Numbers"
+      ],
+      "prefix": "10.1006",
+      "volume": "1",
+      "author": [
+        {
+          "given": "J.",
+          "family": "Eichenauer-Herrmann",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "container-title": [
+        "Finite Fields and Their Applications"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1071579785710076?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1071579785710076?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            7
+          ]
+        ],
+        "date-time": "2019-05-07T15:30:31Z",
+        "timestamp": 1557243031000
+      },
+      "score": 7.522197,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1071579785710076"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1995,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              1995,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "S1071579785710076"
+      ],
+      "URL": "https://doi.org/10.1006/ffta.1995.1007",
+      "ISSN": [
+        "1071-5797"
+      ],
+      "issn-type": [
+        {
+          "value": "1071-5797",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1995,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            6,
+            3
+          ]
+        ],
+        "date-time": "2026-06-03T12:57:59Z",
+        "timestamp": 1780491479258,
+        "version": "3.54.1"
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "3",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1996,
+                9,
+                1
+              ]
+            ],
+            "date-time": "1996-09-01T00:00:00Z",
+            "timestamp": 841536000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996,
+            9,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s001289900208",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:08:57Z",
+        "timestamp": 1027562937000
+      },
+      "page": "426-433",
+      "source": "Crossref",
+      "is-referenced-by-count": 91,
+      "title": [
+        "Irgarol 1051, an Antifouling Compound in Freshwater, Sediment, and Biota of Lake Geneva"
+      ],
+      "prefix": "10.1007",
+      "volume": "57",
+      "author": [
+        {
+          "given": "S.",
+          "family": "Tóth",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "K. Becker-van",
+          "family": "Slooten",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "L.",
+          "family": "Spack",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "L. F. de",
+          "family": "Alencastro",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Tarradellas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289900208.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s001289900208/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289900208",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            23
+          ]
+        ],
+        "date-time": "2019-05-23T08:20:26Z",
+        "timestamp": 1558599626000
+      },
+      "score": 6.77265,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s001289900208"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            9,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              1996,
+              9,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "ERB88493M2073004"
+      ],
+      "URL": "https://doi.org/10.1007/s001289900208",
+      "ISSN": [
+        "0007-4861",
+        "1432-0800"
+      ],
+      "issn-type": [
+        {
+          "value": "0007-4861",
+          "type": "print"
+        },
+        {
+          "value": "1432-0800",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1996,
+            9,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            5,
+            27
+          ]
+        ],
+        "date-time": "2026-05-27T15:02:59Z",
+        "timestamp": 1779894179534,
+        "version": "3.53.1"
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1996,
+                10,
+                1
+              ]
+            ],
+            "date-time": "1996-10-01T00:00:00Z",
+            "timestamp": 844128000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Calcified Tissue International"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996,
+            10,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002239900118",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:15:55Z",
+        "timestamp": 1027563355000
+      },
+      "page": "249-253",
+      "source": "Crossref",
+      "is-referenced-by-count": 70,
+      "title": [
+        "Prevalence of Vertebral Fractures in Chinese Men and Women in Urban Taiwanese Communities"
+      ],
+      "prefix": "10.1007",
+      "volume": "59",
+      "author": [
+        {
+          "given": "K.-S.",
+          "family": "Tsai",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "S.-J.",
+          "family": "Twu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "P.-U.",
+          "family": "Chieng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "R.-S.",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "T.-K.",
+          "family": "Lee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "the Geriatric Study Group,",
+          "family": "ROC",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Calcified Tissue International"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900118.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s002239900118/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900118",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2019-05-24T07:41:20Z",
+        "timestamp": 1558683680000
+      },
+      "score": 5.6453714,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002239900118"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            10,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "4",
+        "published-print": {
+          "date-parts": [
+            [
+              1996,
+              10,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "9V4WDBN4H32DEEWQ"
+      ],
+      "URL": "https://doi.org/10.1007/s002239900118",
+      "ISSN": [
+        "0171-967X",
+        "1432-0827"
+      ],
+      "issn-type": [
+        {
+          "value": "0171-967X",
+          "type": "print"
+        },
+        {
+          "value": "1432-0827",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1996,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            1
+          ]
+        ],
+        "date-time": "2022-04-01T00:59:45Z",
+        "timestamp": 1648774785565
+      },
+      "reference-count": 19,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "7",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1996,
+                7,
+                1
+              ]
+            ],
+            "date-time": "1996-07-01T00:00:00Z",
+            "timestamp": 836179200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Mammalian Genome"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996,
+            7
+          ]
+        ]
+      },
+      "DOI": "10.1007/s003359900148",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:29:41Z",
+        "timestamp": 1027564181000
+      },
+      "page": "486-489",
+      "source": "Crossref",
+      "is-referenced-by-count": 1,
+      "title": [
+        "The use of compound heterozygotes and Hprt selection to analyze X-linked mottled alleles associated with prenatal lethality"
+      ],
+      "prefix": "10.1007",
+      "volume": "7",
+      "author": [
+        {
+          "given": "W.",
+          "family": "Masson",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "S.",
+          "family": "Holt",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "V.",
+          "family": "Reed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Y.",
+          "family": "Boyd",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "reference": [
+        {
+          "key": "70700486_CR1",
+          "first-page": "127",
+          "volume": "92",
+          "author": "H.J. Blair",
+          "year": "1994",
+          "unstructured": "Blair, H.J., Boyd, Y. (1994). Positioning of 14 simple sequence repeat loci relative to markers on the gene-based map of the mouse X chromosome. Mouse Genome 92, 127–129.",
+          "journal-title": "Mouse Genome"
+        },
+        {
+          "key": "70700486_CR2",
+          "first-page": "132",
+          "volume": "1",
+          "author": "J. Chelly",
+          "year": "1993",
+          "unstructured": "Chelly, J., Turner, Z., Tonnesen, T., Petterson, A., Ishikawa-Brush, Y., Tommerup, N., Horn, N., Monaco, A.P. (1993). Isolation of a candidate gene for Menke’; disease that encodes a heavy metal binding protein. Nature Genet. 1, 132–136.",
+          "journal-title": "Nature Genet."
+        },
+        {
+          "key": "70700486_CR3",
+          "first-page": "73",
+          "volume": "1",
+          "author": "D.M. Danks",
+          "year": "1977",
+          "unstructured": "Danks, D.M. (1977). Copper transport and utilisation in Menke’; syndrome and in mottled mice. Inorg. Perspect. Biol. Med. 1, 73–100.",
+          "journal-title": "Inorg. Perspect. Biol. Med."
+        },
+        {
+          "key": "70700486_CR4",
+          "first-page": "570",
+          "volume": "56",
+          "author": "S. Das",
+          "year": "1995",
+          "unstructured": "Das, S., Levinson, B., Vulpe, C, Whitney, S., Gitschier, J., Packman, S. (1995). Similar splicing mutations of the Menkes/mottled copper-transporting ATPase gene in occipital horn syndrome and the blotchy mouse. Am. J. Hum. Genet. 56, 570–576.",
+          "journal-title": "Am. J. Hum. Genet."
+        },
+        {
+          "key": "70700486_CR5",
+          "doi-asserted-by": "crossref",
+          "first-page": "462",
+          "DOI": "10.1006/geno.1995.1175",
+          "volume": "28",
+          "author": "H.A. Dierick",
+          "year": "1995",
+          "unstructured": "Dierick, H.A., Ambrosini, L., Spencer, J., Glover, T.W., Mercer, J.F. (1995). Molecular structure of the Menke’; disease gene (ATP7A). Genomics 28, 462–469.",
+          "journal-title": "Genomics"
+        },
+        {
+          "key": "70700486_CR6",
+          "doi-asserted-by": "crossref",
+          "first-page": "4393",
+          "DOI": "10.1093/nar/15.11.4393",
+          "volume": "15",
+          "author": "CM. Disteche",
+          "year": "1987",
+          "unstructured": "Disteche, CM., Gandy, S.L., Adler, D.A. (1987). Translocation and amplification of an X-chromosome repeat in inbred strains of mice. Nucleic Acids Res. 15, 4393–4401.",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "70700486_CR7",
+          "doi-asserted-by": "crossref",
+          "first-page": "27",
+          "DOI": "10.1006/geno.1994.1341",
+          "volume": "22",
+          "author": "A.M. George",
+          "year": "1994",
+          "unstructured": "George, A.M., Reed, V., Glenister, P., Chelly, J., Turner, Z., Horn, N., Monaco, A.P., Boyd, Y. (1994). Analysis of Mnk, the murine homologue of Menke’; disease, in normal and mottled mice. Genomics 22, 27–35.",
+          "journal-title": "Genomics"
+        },
+        {
+          "key": "70700486_CR8",
+          "first-page": "12",
+          "volume-title": "Genetic Strains and Variants of the Laboratory Mouse",
+          "author": "M.C. Green",
+          "year": "1989",
+          "unstructured": "Green, M.C. (1989). Catalog of mutant genes and polymorphic loci. In Genetic Strains and Variants of the Laboratory Mouse, M.F. Lyon, A.G. Searle, eds. (Oxford: Oxford University Press), pp. 12–403."
+        },
+        {
+          "key": "70700486_CR9",
+          "doi-asserted-by": "crossref",
+          "first-page": "292",
+          "DOI": "10.1038/326292a0",
+          "volume": "326",
+          "author": "M. Hooper",
+          "year": "1987",
+          "unstructured": "Hooper, M., Hardy, K., Handyside, A., Humter, S., Monk, M. (1987). HPRT-deficient (Lesch-Nyhan) mouse embryos derived from germline colonization by cultured cells. Nature 326, 292–295.",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "70700486_CR10",
+          "doi-asserted-by": "crossref",
+          "first-page": "351",
+          "DOI": "10.1111/j.1750-3639.1992.tb00711.x",
+          "volume": "2",
+          "author": "N. Horn",
+          "year": "1992",
+          "unstructured": "Horn, N., Tonnesen, T., Turner, Z. (1992). Menke’; disease: an X-linked neurological disorder of copper metabolism. Brain Pathol. 2, 351–362.",
+          "journal-title": "Brain Pathol."
+        },
+        {
+          "key": "70700486_CR11",
+          "doi-asserted-by": "crossref",
+          "first-page": "195",
+          "DOI": "10.1038/ng1094-195",
+          "volume": "8",
+          "author": "S.G. Kaler",
+          "year": "1994",
+          "unstructured": "Kaler, S.G., Gallo, L.K., Proud, V.K., Percy, A.K., Mark, Y., Segal, N.A., Goldstein, D.S., Holmes, C.S., Gahl, W.A. (1994). Occipital horn syndrome and a mild Menke’; phenotype associated with splice site mutations at the MNK locus. Nature Genet. 8, 195–202.",
+          "journal-title": "Nature Genet."
+        },
+        {
+          "key": "70700486_CR12",
+          "doi-asserted-by": "crossref",
+          "first-page": "369",
+          "DOI": "10.1038/ng0494-369",
+          "volume": "6",
+          "author": "B. Levinson",
+          "year": "1994",
+          "unstructured": "Levinson, B., Vulpe, C, Elder, B., Martin, C, Verley, F., Packman, S., Gitschier, J. (1994). The mottled gene is the mouse homologue of the Menkes disease gene. Nature Genet. 6, 369–373.",
+          "journal-title": "Nature Genet."
+        },
+        {
+          "key": "70700486_CR13",
+          "doi-asserted-by": "crossref",
+          "first-page": "20",
+          "DOI": "10.1038/ng0193-20",
+          "volume": "3",
+          "author": "J.F.B. Mercer",
+          "year": "1993",
+          "unstructured": "Mercer, J.F.B., Livingston, J., Hall, B., Paynter, J.A., Begy, C, Chandrasekharappa, S., Lockhart, P., Grimes, A., Bhave, M., Siemieniak, D., Glover, T.W. (1993). Isolation of a partial candidate gene for Menke’; disease by positional cloning. Nature Genet. 3, 20–25.",
+          "journal-title": "Nature Genet."
+        },
+        {
+          "key": "70700486_CR14",
+          "doi-asserted-by": "crossref",
+          "first-page": "374",
+          "DOI": "10.1038/ng0494-374",
+          "volume": "6",
+          "author": "J.F.B. Mercer",
+          "year": "1994",
+          "unstructured": "Mercer, J.F.B., Grimes, A., Ambrosini, L., Lockhart, P., Paynter, J.A., Dierick, H., Glover, T.W. (1994). Mutations in the murine homologue of the Menkes gene in dappled and blotchy mice. Nature Genet. 6, 374–378.",
+          "journal-title": "Nature Genet."
+        },
+        {
+          "key": "70700486_CR15",
+          "doi-asserted-by": "crossref",
+          "first-page": "290",
+          "DOI": "10.1017/S0016672300000768",
+          "volume": "2",
+          "author": "R.J.S. Phillips",
+          "year": "1961",
+          "unstructured": "Phillips, R.J.S. (1961). ‘Dappled’, a new allele at the mottled locus in the house mouse. Genet. Res. 2, 290–295.",
+          "journal-title": "Genet. Res."
+        },
+        {
+          "key": "70700486_CR16",
+          "first-page": "851",
+          "volume": "91",
+          "author": "C Rasberry",
+          "year": "1993",
+          "unstructured": "Rasberry, C, Cattanach, B.M. (1993). Three new mottled mutations (Research News). Mouse Genome 91, 851–853.",
+          "journal-title": "Mouse Genome"
+        },
+        {
+          "key": "70700486_CR17",
+          "doi-asserted-by": "crossref",
+          "first-page": "11",
+          "DOI": "10.1038/ng0994-11",
+          "volume": "8",
+          "author": "V. Reed",
+          "year": "1994",
+          "unstructured": "Reed, V., Boyd, Y. (1994). Mutations in mottled dappled are RFLVs. Nature Genet. 8, 11–12.",
+          "journal-title": "Nature Genet."
+        },
+        {
+          "key": "70700486_CR18",
+          "doi-asserted-by": "crossref",
+          "first-page": "437",
+          "DOI": "10.1016/0888-7543(95)80160-N",
+          "volume": "26",
+          "author": "Z. Turner",
+          "year": "1995",
+          "unstructured": "Turner, Z., Vural, B., Tonnesen, T., Chelly, J., Monaco, A.P., Horn, N. (1995). Characterization of the exon structure of the Menke’; disease gene using vectorette PCR. Genomics 26, 437–442.",
+          "journal-title": "Genomics"
+        },
+        {
+          "key": "70700486_CR19",
+          "doi-asserted-by": "crossref",
+          "first-page": "7",
+          "DOI": "10.1038/ng0193-7",
+          "volume": "3",
+          "author": "C Vulpe",
+          "year": "1993",
+          "unstructured": "Vulpe, C, Levinson, B., Whitney, S., Packman, S., Gitschier, J. (1993). Isolation of a candidate gene for Menke’; disease and evidence that it encodes a copper-transporting ATPase. Nature Genet. 3, 7–13.",
+          "journal-title": "Nature Genet."
+        }
+      ],
+      "container-title": [
+        "Mammalian Genome"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s003359900148.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s003359900148/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s003359900148",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            28
+          ]
+        ],
+        "date-time": "2019-05-28T08:21:37Z",
+        "timestamp": 1559031697000
+      },
+      "score": 5.830061,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s003359900148"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            7
+          ]
+        ]
+      },
+      "references-count": 19,
+      "journal-issue": {
+        "issue": "7",
+        "published-print": {
+          "date-parts": [
+            [
+              1996,
+              7
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "70700486"
+      ],
+      "URL": "https://doi.org/10.1007/s003359900148",
+      "ISSN": [
+        "0938-8990",
+        "1432-1777"
+      ],
+      "issn-type": [
+        {
+          "value": "0938-8990",
+          "type": "print"
+        },
+        {
+          "value": "1432-1777",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1996,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            16
+          ]
+        ],
+        "date-time": "2025-10-16T19:50:49Z",
+        "timestamp": 1760644249086
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            7,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s001280000102",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:52:29Z",
+        "timestamp": 1027565549000
+      },
+      "page": "112-119",
+      "source": "Crossref",
+      "is-referenced-by-count": 43,
+      "title": [
+        "Screening Methods for Drugs and Heavy Metals in Chinese Patent Medicines"
+      ],
+      "prefix": "10.1007",
+      "volume": "65",
+      "author": [
+        {
+          "given": "A. M.",
+          "family": "Au",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "R.",
+          "family": "Ko",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "F. O.",
+          "family": "Boo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "R.",
+          "family": "Hsu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "G.",
+          "family": "Perez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Z.",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            4
+          ]
+        ],
+        "date-time": "2019-11-04T12:45:29Z",
+        "timestamp": 1572871529000
+      },
+      "score": 6.0565157,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s001280000102"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            7,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2000,
+              7,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "UGVJGNCHNBX0CB8N"
+      ],
+      "URL": "https://doi.org/10.1007/s001280000102",
+      "ISSN": [
+        "0007-4861",
+        "1432-0800"
+      ],
+      "issn-type": [
+        {
+          "value": "0007-4861",
+          "type": "print"
+        },
+        {
+          "value": "1432-0800",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            7,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            25
+          ]
+        ],
+        "date-time": "2023-12-25T01:14:57Z",
+        "timestamp": 1703466897303
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2000,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2000-01-01T00:00:00Z",
+            "timestamp": 946684800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            1,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s001289910011",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:52:29Z",
+        "timestamp": 1027565549000
+      },
+      "page": "66-73",
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": [
+        "Micronucleus Test of Herbicide Terbutol and Its Metabolites in Cultured Chinese Hamster Lung Cells and Male CD-1 Mice"
+      ],
+      "prefix": "10.1007",
+      "volume": "64",
+      "author": [
+        {
+          "given": "T.",
+          "family": "Suzuki",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Y.",
+          "family": "Nakagawa",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "S.",
+          "family": "Tayama",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "K.",
+          "family": "Yaguchi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "S.",
+          "family": "Suzuki",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "T.",
+          "family": "Suga",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289910011.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s001289910011/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289910011",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            23
+          ]
+        ],
+        "date-time": "2019-05-23T08:22:39Z",
+        "timestamp": 1558599759000
+      },
+      "score": 4.701851,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s001289910011"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            1,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2000,
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "592B9QNV8E898K0R"
+      ],
+      "URL": "https://doi.org/10.1007/s001289910011",
+      "ISSN": [
+        "0007-4861",
+        "1432-0800"
+      ],
+      "issn-type": [
+        {
+          "value": "0007-4861",
+          "type": "print"
+        },
+        {
+          "value": "1432-0800",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            15
+          ]
+        ],
+        "date-time": "2025-12-15T19:23:54Z",
+        "timestamp": 1765826634268
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "3",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1996,
+                9,
+                1
+              ]
+            ],
+            "date-time": "1996-09-01T00:00:00Z",
+            "timestamp": 841536000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996,
+            9,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s001289900199",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:57:52Z",
+        "timestamp": 1027565872000
+      },
+      "page": "361-366",
+      "source": "Crossref",
+      "is-referenced-by-count": 9,
+      "title": [
+        "Gaseous Aliphatic Aldehydes in Smoke from Burning Raw Materials of Chinese Joss Sticks"
+      ],
+      "prefix": "10.1007",
+      "volume": "57",
+      "author": [
+        {
+          "given": "R. S.",
+          "family": "Lee",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "J. M.",
+          "family": "Lin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289900199.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s001289900199/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289900199",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            23
+          ]
+        ],
+        "date-time": "2019-05-23T08:20:26Z",
+        "timestamp": 1558599626000
+      },
+      "score": 5.6612067,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s001289900199"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            9,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              1996,
+              9,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "CG8FLBMTKU0KNGQ8"
+      ],
+      "URL": "https://doi.org/10.1007/s001289900199",
+      "ISSN": [
+        "0007-4861",
+        "1432-0800"
+      ],
+      "issn-type": [
+        {
+          "value": "0007-4861",
+          "type": "print"
+        },
+        {
+          "value": "1432-0800",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1996,
+            9,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            29
+          ]
+        ],
+        "date-time": "2026-04-29T23:49:38Z",
+        "timestamp": 1777506578328,
+        "version": "3.51.4"
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1997,
+                10,
+                1
+              ]
+            ],
+            "date-time": "1997-10-01T00:00:00Z",
+            "timestamp": 875664000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1997,
+            10,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s001289900529",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:57:52Z",
+        "timestamp": 1027565872000
+      },
+      "page": "653-656",
+      "source": "Crossref",
+      "is-referenced-by-count": 37,
+      "title": [
+        "Polychlorinated Dibenzo -p- Dioxins and Dibenzofurans in Lake Sediments from Chinese Schistosomiasis Areas"
+      ],
+      "prefix": "10.1007",
+      "volume": "59",
+      "author": [
+        {
+          "given": "M.-H.",
+          "family": "Zheng",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Z.-C.",
+          "family": "Bao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "K.-O.",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "H.",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "X.-B.",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289900529.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s001289900529/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001289900529",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            23
+          ]
+        ],
+        "date-time": "2019-05-23T08:20:31Z",
+        "timestamp": 1558599631000
+      },
+      "score": 5.66061,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s001289900529"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            10,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "4",
+        "published-print": {
+          "date-parts": [
+            [
+              1997,
+              10,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "YEE6AW5XT5PAMN0F"
+      ],
+      "URL": "https://doi.org/10.1007/s001289900529",
+      "ISSN": [
+        "0007-4861",
+        "1432-0800"
+      ],
+      "issn-type": [
+        {
+          "value": "0007-4861",
+          "type": "print"
+        },
+        {
+          "value": "1432-0800",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1997,
+            10,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            3,
+            1
+          ]
+        ],
+        "date-time": "2024-03-01T03:20:00Z",
+        "timestamp": 1709263200881
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "6",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Calcified Tissue International"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1996,
+            6,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002239900062",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:57:52Z",
+        "timestamp": 1027565872000
+      },
+      "page": "385-389",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Bone Mineral Density in Chinese Elderly Women with Hip Fracture"
+      ],
+      "prefix": "10.1007",
+      "volume": "58",
+      "author": [
+        {
+          "given": "R.-S.",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "T.-K.",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "F. J.",
+          "family": "Dorey",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "P.-U.",
+          "family": "Chieng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Calcified Tissue International"
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            11,
+            4
+          ]
+        ],
+        "date-time": "2019-11-04T12:57:37Z",
+        "timestamp": 1572872257000
+      },
+      "score": 6.2909446,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002239900062"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1996,
+            6,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "6",
+        "published-print": {
+          "date-parts": [
+            [
+              1996,
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "56H7JUCEWWH9B6QA"
+      ],
+      "URL": "https://doi.org/10.1007/s002239900062",
+      "ISSN": [
+        "0171-967X",
+        "1432-0827"
+      ],
+      "issn-type": [
+        {
+          "value": "0171-967X",
+          "type": "print"
+        },
+        {
+          "value": "1432-0827",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1996,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            10
+          ]
+        ],
+        "date-time": "2025-12-10T08:25:29Z",
+        "timestamp": 1765355129909
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "2",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1997,
+                8,
+                1
+              ]
+            ],
+            "date-time": "1997-08-01T00:00:00Z",
+            "timestamp": 870393600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Calcified Tissue International"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1997,
+            8,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002239900306",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:57:52Z",
+        "timestamp": 1027565872000
+      },
+      "page": "114-116",
+      "source": "Crossref",
+      "is-referenced-by-count": 9,
+      "title": [
+        "Normal Data for Lumbar Spine Bone Mineral Content in Healthy Chinese Men"
+      ],
+      "prefix": "10.1007",
+      "volume": "61",
+      "author": [
+        {
+          "given": "S.-C.",
+          "family": "Tsai",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "C.-H.",
+          "family": "Kao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "S.-J.",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "S.-P.",
+          "family": "ChangLai",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "R.-F.",
+          "family": "Yen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "P.-U.",
+          "family": "Chieng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Calcified Tissue International"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900306.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s002239900306/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900306",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2019-05-24T07:51:21Z",
+        "timestamp": 1558684281000
+      },
+      "score": 5.8649216,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002239900306"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            8,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "2",
+        "published-print": {
+          "date-parts": [
+            [
+              1997,
+              8,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "1NLPFTV3PUK8KKXM"
+      ],
+      "URL": "https://doi.org/10.1007/s002239900306",
+      "ISSN": [
+        "0171-967X",
+        "1432-0827"
+      ],
+      "issn-type": [
+        {
+          "value": "0171-967X",
+          "type": "print"
+        },
+        {
+          "value": "1432-0827",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1997,
+            8,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            12
+          ]
+        ],
+        "date-time": "2025-09-12T18:59:35Z",
+        "timestamp": 1757703575492
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "6",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1998,
+                6,
+                1
+              ]
+            ],
+            "date-time": "1998-06-01T00:00:00Z",
+            "timestamp": 896659200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Calcified Tissue International"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1998,
+            6,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002239900472",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:57:52Z",
+        "timestamp": 1027565872000
+      },
+      "page": "519-526",
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": [
+        "Modulation of Bone Mass, Strength, and Turnover by a New Benzamide Compound, DU-6712, in Adjuvant-Induced Arthritic Rats"
+      ],
+      "prefix": "10.1007",
+      "volume": "62",
+      "author": [
+        {
+          "given": "Y.",
+          "family": "Uchiyama",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "H.",
+          "family": "Takamori",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "K.",
+          "family": "Miyama",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "E.",
+          "family": "Takano",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "H.",
+          "family": "Nakajima",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "T.",
+          "family": "Sato",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "T.",
+          "family": "Nakamura",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Calcified Tissue International"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900472.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s002239900472/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900472",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2019-05-24T07:51:24Z",
+        "timestamp": 1558684284000
+      },
+      "score": 5.6204243,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002239900472"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1998,
+            6,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "6",
+        "published-print": {
+          "date-parts": [
+            [
+              1998,
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "FB4GJVYY4HFUM40G"
+      ],
+      "URL": "https://doi.org/10.1007/s002239900472",
+      "ISSN": [
+        "0171-967X",
+        "1432-0827"
+      ],
+      "issn-type": [
+        {
+          "value": "0171-967X",
+          "type": "print"
+        },
+        {
+          "value": "1432-0827",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1998,
+            6,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            23
+          ]
+        ],
+        "date-time": "2023-04-23T05:04:02Z",
+        "timestamp": 1682226242435
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "3",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2000,
+                3,
+                1
+              ]
+            ],
+            "date-time": "2000-03-01T00:00:00Z",
+            "timestamp": 951868800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            3,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1007/s001280000009",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:58:15Z",
+        "timestamp": 1027565895000
+      },
+      "page": "368-371",
+      "source": "Crossref",
+      "is-referenced-by-count": 9,
+      "title": [
+        "PCDDs and PCDFs in the Wastewater from Chinese Pulp and Paper Industry"
+      ],
+      "prefix": "10.1007",
+      "volume": "64",
+      "author": [
+        {
+          "given": "Q. H.",
+          "family": "Zhang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Y.",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "W. Z.",
+          "family": "Wu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "R. M.",
+          "family": "Xiao",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "L.",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "K.-W.",
+          "family": "Schramm",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "A.",
+          "family": "Kettrup",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "container-title": [
+        "Bulletin of Environmental Contamination and Toxicology"
+      ],
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001280000009.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s001280000009/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s001280000009",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            23
+          ]
+        ],
+        "date-time": "2019-05-23T08:22:19Z",
+        "timestamp": 1558599739000
+      },
+      "score": 5.844814,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s001280000009"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            3,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              2000,
+              3,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "HQER96GPDAQK7R3C"
+      ],
+      "URL": "https://doi.org/10.1007/s001280000009",
+      "ISSN": [
+        "0007-4861",
+        "1432-0800"
+      ],
+      "issn-type": [
+        {
+          "value": "0007-4861",
+          "type": "print"
+        },
+        {
+          "value": "1432-0800",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            3,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            12,
+            21
+          ]
+        ],
+        "date-time": "2025-12-21T20:05:35Z",
+        "timestamp": 1766347535441
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "3",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2000,
+                9,
+                1
+              ]
+            ],
+            "date-time": "2000-09-01T00:00:00Z",
+            "timestamp": 967766400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Calcif Tissue Int"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            9
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002230001139",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:58:15Z",
+        "timestamp": 1027565895000
+      },
+      "page": "195-198",
+      "source": "Crossref",
+      "is-referenced-by-count": 34,
+      "title": [
+        "Bone Mineral Density Differences at the Femoral Neck and Ward's Triangle: A Comparison Study on the Reference Data Between Chinese and Caucasian Women"
+      ],
+      "prefix": "10.1007",
+      "volume": "67",
+      "author": [
+        {
+          "given": "D.",
+          "family": "Xiaoge",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "L.",
+          "family": "Eryuan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "W.",
+          "family": "Xianping",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Z.",
+          "family": "Zhiguang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "H.",
+          "family": "Gan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Zaijing",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "P.",
+          "family": "Xiaoli",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "T.",
+          "family": "Hongzhuan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "W.",
+          "family": "Hanwen",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            3,
+            13
+          ]
+        ]
+      },
+      "container-title": [
+        "Calcified Tissue International"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002230001139.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s002230001139/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002230001139",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2019-05-24T07:41:17Z",
+        "timestamp": 1558683677000
+      },
+      "score": 4.2366686,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002230001139"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            9
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "3",
+        "published-print": {
+          "date-parts": [
+            [
+              2000,
+              9
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "670300195"
+      ],
+      "URL": "https://doi.org/10.1007/s002230001139",
+      "ISSN": [
+        "0171-967X",
+        "1432-0827"
+      ],
+      "issn-type": [
+        {
+          "value": "0171-967X",
+          "type": "print"
+        },
+        {
+          "value": "1432-0827",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            9
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            11
+          ]
+        ],
+        "date-time": "2026-03-11T23:01:23Z",
+        "timestamp": 1773270083501,
+        "version": "3.50.1"
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "6",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2000,
+                6,
+                1
+              ]
+            ],
+            "date-time": "2000-06-01T00:00:00Z",
+            "timestamp": 959817600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Calcif Tissue Int"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            6
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002230010082",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:58:15Z",
+        "timestamp": 1027565895000
+      },
+      "page": "405-408",
+      "source": "Crossref",
+      "is-referenced-by-count": 35,
+      "title": [
+        "PvuII Polymorphisms of the Estrogen Receptor α and Bone Mineral Density in Healthy Southern Chinese Women"
+      ],
+      "prefix": "10.1007",
+      "volume": "66",
+      "author": [
+        {
+          "given": "A. Y. Y.",
+          "family": "Ho",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "S. S. C.",
+          "family": "Yeung",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "A. W. C.",
+          "family": "Kung",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            3,
+            22
+          ]
+        ]
+      },
+      "container-title": [
+        "Calcified Tissue International"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002230010082.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s002230010082/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002230010082",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2019-05-24T07:41:18Z",
+        "timestamp": 1558683678000
+      },
+      "score": 5.12785,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002230010082"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            6
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "6",
+        "published-print": {
+          "date-parts": [
+            [
+              2000,
+              6
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "82"
+      ],
+      "URL": "https://doi.org/10.1007/s002230010082",
+      "ISSN": [
+        "0171-967X",
+        "1432-0827"
+      ],
+      "issn-type": [
+        {
+          "value": "0171-967X",
+          "type": "print"
+        },
+        {
+          "value": "1432-0827",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            1,
+            23
+          ]
+        ],
+        "date-time": "2026-01-23T23:41:52Z",
+        "timestamp": 1769211712029,
+        "version": "3.49.0"
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "6",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1999,
+                12,
+                1
+              ]
+            ],
+            "date-time": "1999-12-01T00:00:00Z",
+            "timestamp": 944006400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Calcif Tissue Int"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            12
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002239900727",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T02:58:15Z",
+        "timestamp": 1027565895000
+      },
+      "page": "422-426",
+      "source": "Crossref",
+      "is-referenced-by-count": 11,
+      "title": [
+        "Factor of Risk for Hip Fracture in Normal Chinese Men and Women in Taiwan"
+      ],
+      "prefix": "10.1007",
+      "volume": "65",
+      "author": [
+        {
+          "given": "R. S.",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "T. K.",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Y. S.",
+          "family": "Hang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "P. U.",
+          "family": "Chieng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "K. S.",
+          "family": "Tsai",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            1,
+            31
+          ]
+        ]
+      },
+      "container-title": [
+        "Calcified Tissue International"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900727.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s002239900727/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002239900727",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2019-05-24T07:51:28Z",
+        "timestamp": 1558684288000
+      },
+      "score": 5.47575,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002239900727"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1999,
+            12
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "6",
+        "published-print": {
+          "date-parts": [
+            [
+              1999,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "727"
+      ],
+      "URL": "https://doi.org/10.1007/s002239900727",
+      "ISSN": [
+        "0171-967X",
+        "1432-0827"
+      ],
+      "issn-type": [
+        {
+          "value": "0171-967X",
+          "type": "print"
+        },
+        {
+          "value": "1432-0827",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1999,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            7,
+            9
+          ]
+        ],
+        "date-time": "2026-07-09T05:28:49Z",
+        "timestamp": 1783574929986,
+        "version": "3.55.0"
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1997,
+                7,
+                1
+              ]
+            ],
+            "date-time": "1997-07-01T00:00:00Z",
+            "timestamp": 867715200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Aesth. Plast. Surg."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1997,
+            7
+          ]
+        ]
+      },
+      "DOI": "10.1007/s002669900123",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T03:04:07Z",
+        "timestamp": 1027566247000
+      },
+      "page": "265-269",
+      "source": "Crossref",
+      "is-referenced-by-count": 84,
+      "title": [
+        "Differences in Horizontal, Neoclassical Facial Canons in Chinese (Han) and North American Caucasian Populations"
+      ],
+      "prefix": "10.1007",
+      "volume": "21",
+      "author": [
+        {
+          "given": "Wang",
+          "family": "Dawei",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Qian",
+          "family": "Guozheng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhang",
+          "family": "Mingli",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Leslie G.",
+          "family": "Farkas",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2014,
+            3,
+            3
+          ]
+        ]
+      },
+      "container-title": [
+        "Aesthetic Plastic Surgery"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002669900123.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/article/10.1007/s002669900123/fulltext.html",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/s002669900123",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2019-05-24T13:07:58Z",
+        "timestamp": 1558703278000
+      },
+      "score": 5.471935,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/s002669900123"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1997,
+            7
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "4",
+        "published-print": {
+          "date-parts": [
+            [
+              1997,
+              7
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "123"
+      ],
+      "URL": "https://doi.org/10.1007/s002669900123",
+      "ISSN": [
+        "0364-216X",
+        "1432-5241"
+      ],
+      "issn-type": [
+        {
+          "value": "0364-216X",
+          "type": "print"
+        },
+        {
+          "value": "1432-5241",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1997,
+            7
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            25
+          ]
+        ],
+        "date-time": "2025-10-25T11:46:05Z",
+        "timestamp": 1761392765541
+      },
+      "reference-count": 26,
+      "publisher": "Elsevier BV",
+      "issue": "2",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1986,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1986-01-01T00:00:00Z",
+            "timestamp": 504921600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Journal of Organometallic Chemistry"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1016/0022-328x(86)82008-3",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T03:11:41Z",
+        "timestamp": 1027566701000
+      },
+      "page": "137-142",
+      "source": "Crossref",
+      "is-referenced-by-count": 30,
+      "title": [
+        "Crystal structure of bis(diphenylphosphino)-methyllithium (N,N,N′,N′-tetramethylethylenediamine): An organolithium compound without lithium—carbon bonding"
+      ],
+      "prefix": "10.1016",
+      "volume": "299",
+      "author": [
+        {
+          "given": "David",
+          "family": "J. Brauer",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sibbele",
+          "family": "Hietkamp",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Othmar",
+          "family": "Stelzer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB1_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "258",
+          "DOI": "10.1021/ic00170a029",
+          "volume": "23",
+          "author": "Hietkamp",
+          "year": "1984",
+          "journal-title": "Inorg. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB1_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "89",
+          "DOI": "10.1002/zaac.19723880109",
+          "volume": "388",
+          "author": "Issleib",
+          "year": "1972",
+          "journal-title": "Z. Anorg. Allg. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB1_3",
+          "doi-asserted-by": "crossref",
+          "first-page": "456",
+          "DOI": "10.1002/prac.19703120309",
+          "volume": "312",
+          "author": "Issleib",
+          "year": "1970",
+          "journal-title": "J. Prakt. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB1_4",
+          "doi-asserted-by": "crossref",
+          "first-page": "679",
+          "DOI": "10.1002/ange.19770890928",
+          "volume": "89",
+          "author": "Schmidbaur",
+          "year": "1977",
+          "journal-title": "Angew. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB1_5",
+          "doi-asserted-by": "crossref",
+          "first-page": "1145",
+          "DOI": "10.1002/cber.19801130335",
+          "volume": "113",
+          "author": "Bassett",
+          "year": "1980",
+          "journal-title": "Chem. Ber."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB1_6",
+          "doi-asserted-by": "crossref",
+          "first-page": "433",
+          "DOI": "10.1002/cber.19811140204",
+          "volume": "114",
+          "author": "Schmidbaur",
+          "year": "1981",
+          "journal-title": "Chem. Ber."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB2",
+          "doi-asserted-by": "crossref",
+          "first-page": "C39",
+          "DOI": "10.1016/S0022-328X(00)85427-3",
+          "volume": "60",
+          "author": "Camus",
+          "year": "1973",
+          "journal-title": "J. Organomet. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB3",
+          "first-page": "220",
+          "author": "Colquhoun",
+          "year": "1982",
+          "journal-title": "J. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB4",
+          "first-page": "569",
+          "author": "Karsch",
+          "year": "1984",
+          "journal-title": "J. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB5_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "56",
+          "DOI": "10.1021/ba-1974-0130.ch003",
+          "volume": "130",
+          "author": "Stucky",
+          "year": "1974",
+          "journal-title": "Adv. Chem. Ser. Am. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB5_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "151",
+          "DOI": "10.1351/pac198456010151",
+          "volume": "56",
+          "author": "Schleyer",
+          "year": "1984",
+          "journal-title": "Pure and Appl. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB6",
+          "first-page": "1415",
+          "author": "Karsch",
+          "year": "1984",
+          "journal-title": "J. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB7",
+          "first-page": "220",
+          "author": "Engelhardt",
+          "year": "1984",
+          "journal-title": "J. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB8",
+          "doi-asserted-by": "crossref",
+          "first-page": "796",
+          "DOI": "10.1002/ange.19840961016",
+          "volume": "96",
+          "author": "Hönle",
+          "year": "1984",
+          "journal-title": "Angew. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB9",
+          "first-page": "1669",
+          "author": "Hitchcock",
+          "year": "1984",
+          "journal-title": "J. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB10",
+          "doi-asserted-by": "crossref",
+          "first-page": "7459",
+          "DOI": "10.1021/ja00363a051",
+          "volume": "105",
+          "author": "Jones",
+          "year": "1983",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB11",
+          "first-page": "181",
+          "author": "Levy",
+          "year": "1980"
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB12_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "221",
+          "DOI": "10.1107/S0567740875002397",
+          "volume": "31",
+          "author": "Domenicano",
+          "year": "1975",
+          "journal-title": "Acta Crystal. B"
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB12_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "1630",
+          "DOI": "10.1107/S0567740875005821",
+          "volume": "31",
+          "author": "Domenicano",
+          "year": "1975",
+          "journal-title": "Acta Crystal. B"
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB13",
+          "doi-asserted-by": "crossref",
+          "first-page": "3799",
+          "DOI": "10.1039/jr9640003799",
+          "author": "Daly",
+          "year": "1964",
+          "journal-title": "J. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB14",
+          "first-page": "682",
+          "volume": "88",
+          "author": "Jonas",
+          "year": "1976",
+          "journal-title": "Angew. Chem."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB15",
+          "doi-asserted-by": "crossref",
+          "first-page": "366",
+          "DOI": "10.1002/cber.19841170127",
+          "volume": "117",
+          "author": "Schubert",
+          "year": "1984",
+          "journal-title": "Chem. Ber."
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB16",
+          "author": "Pauling",
+          "year": "1960"
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB17",
+          "volume": "IV",
+          "year": "1974"
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB18",
+          "author": "Sheldrick",
+          "year": "1976"
+        },
+        {
+          "key": "10.1016/0022-328X(86)82008-3_BIB20",
+          "author": "Johnson",
+          "year": "1976"
+        }
+      ],
+      "container-title": [
+        "Journal of Organometallic Chemistry"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:0022328X86820083?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:0022328X86820083?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            6
+          ]
+        ],
+        "date-time": "2019-05-06T14:53:11Z",
+        "timestamp": 1557154391000
+      },
+      "score": 5.7826014,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/0022328X86820083"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            1
+          ]
+        ]
+      },
+      "references-count": 26,
+      "journal-issue": {
+        "issue": "2",
+        "published-print": {
+          "date-parts": [
+            [
+              1986,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "0022328X86820083"
+      ],
+      "URL": "https://doi.org/10.1016/0022-328x(86)82008-3",
+      "ISSN": [
+        "0022-328X"
+      ],
+      "issn-type": [
+        {
+          "value": "0022-328X",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2026-03-09T03:05:15Z",
+        "timestamp": 1773025515803,
+        "version": "3.50.1"
+      },
+      "reference-count": 0,
+      "publisher": "Elsevier BV",
+      "issue": "2",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2000,
+                5,
+                29
+              ]
+            ],
+            "date-time": "2000-05-29T00:00:00Z",
+            "timestamp": 959558400000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            5,
+            29
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0022-328x(00)00161-3",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T03:11:41Z",
+        "timestamp": 1027566701000
+      },
+      "page": "185-188",
+      "source": "Crossref",
+      "is-referenced-by-count": 73,
+      "title": [
+        "The first structurally characterised oligosilylmagnesium compound"
+      ],
+      "prefix": "10.1016",
+      "volume": "603",
+      "author": [
+        {
+          "given": "J",
+          "family": "Farwell",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "container-title": [
+        "Journal of Organometallic Chemistry"
+      ],
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0022-328X(00)00161-3?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0022-328X(00)00161-3?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            6
+          ]
+        ],
+        "date-time": "2019-05-06T14:58:37Z",
+        "timestamp": 1557154717000
+      },
+      "score": 8.917425,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0022328X00001613"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2000,
+            5,
+            29
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "2"
+      },
+      "alternative-id": [
+        "S0022-328X(00)00161-3"
+      ],
+      "URL": "https://doi.org/10.1016/s0022-328x(00)00161-3",
+      "ISSN": [
+        "0022-328X"
+      ],
+      "issn-type": [
+        {
+          "value": "0022-328X",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2000,
+            5,
+            29
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2025-10-13T19:25:59Z",
+        "timestamp": 1760383559375,
+        "version": "3.44.0"
+      },
+      "reference-count": 7,
+      "publisher": "Elsevier BV",
+      "issue": "2",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1986,
+                5,
+                1
+              ]
+            ],
+            "date-time": "1986-05-01T00:00:00Z",
+            "timestamp": 515289600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                1986,
+                5,
+                1
+              ]
+            ],
+            "date-time": "1986-05-01T00:00:00Z",
+            "timestamp": 515289600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Journal of Organometallic Chemistry"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1986,
+            5
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0022-328x(00)99719-5",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T03:11:41Z",
+        "timestamp": 1027566701000
+      },
+      "page": "C49-C52",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 22,
+      "title": [
+        "Synthesis and X-ray characterization of the novel anion [Co6N(CO)13]−: The first example of an octahedral nitrido-carbonyl cluster compound in the cobalt subgroup"
+      ],
+      "prefix": "10.1016",
+      "volume": "306",
+      "author": [
+        {
+          "given": "Gianfranco",
+          "family": "Ciani",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Secondo",
+          "family": "Martinengo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/S0022-328X(00)99719-5_BIB1",
+          "doi-asserted-by": "crossref",
+          "first-page": "7095",
+          "DOI": "10.1021/ja00517a067",
+          "volume": "101",
+          "author": "Martinengo",
+          "year": "1979",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "10.1016/S0022-328X(00)99719-5_BIB2",
+          "doi-asserted-by": "crossref",
+          "first-page": "253",
+          "DOI": "10.1039/DT9830000253",
+          "author": "Bonfichi",
+          "year": "1983",
+          "journal-title": "J. Chem. Soc. Dalton Trans."
+        },
+        {
+          "key": "10.1016/S0022-328X(00)99719-5_BIB3",
+          "doi-asserted-by": "crossref",
+          "first-page": "328",
+          "DOI": "10.1021/ja00365a077",
+          "volume": "104",
+          "author": "Martinengo",
+          "year": "1982",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "10.1016/S0022-328X(00)99719-5_BIB4",
+          "doi-asserted-by": "crossref",
+          "first-page": "1577",
+          "DOI": "10.1039/C39840001577",
+          "author": "Martinengo",
+          "year": "1984",
+          "journal-title": "J. Chem. Soc. Chem. Commun."
+        },
+        {
+          "key": "10.1016/S0022-328X(00)99719-5_BIB5",
+          "doi-asserted-by": "crossref",
+          "first-page": "1004",
+          "DOI": "10.1021/ic00148a037",
+          "volume": "22",
+          "author": "Blohm",
+          "year": "1983",
+          "journal-title": "Inorg. Chem."
+        },
+        {
+          "key": "10.1016/S0022-328X(00)99719-5_BIB6",
+          "doi-asserted-by": "crossref",
+          "first-page": "717",
+          "DOI": "10.1039/DT9810000717",
+          "author": "Albano",
+          "year": "1981",
+          "journal-title": "J. Chem. Soc. Dalton Trans."
+        },
+        {
+          "key": "10.1016/S0022-328X(00)99719-5_BIB7",
+          "unstructured": "V.G. Albano, D. Braga and S. Martinengo, J. Chem. Soc. Dalton Trans., in press."
+        }
+      ],
+      "container-title": [
+        "Journal of Organometallic Chemistry"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0022328X00997195?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0022328X00997195?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            20
+          ]
+        ],
+        "date-time": "2025-09-20T06:15:36Z",
+        "timestamp": 1758348936000
+      },
+      "score": 4.720833,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0022328X00997195"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1986,
+            5
+          ]
+        ]
+      },
+      "references-count": 7,
+      "journal-issue": {
+        "issue": "2",
+        "published-print": {
+          "date-parts": [
+            [
+              1986,
+              5
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "S0022328X00997195"
+      ],
+      "URL": "https://doi.org/10.1016/s0022-328x(00)99719-5",
+      "ISSN": [
+        "0022-328X"
+      ],
+      "issn-type": [
+        {
+          "type": "print",
+          "value": "0022-328X"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1986,
+            5
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Synthesis and X-ray characterization of the novel anion [Co6N(CO)13]−: The first example of an octahedral nitrido-carbonyl cluster compound in the cobalt subgroup",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Journal of Organometallic Chemistry",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/S0022-328X(00)99719-5",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "converted-article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Copyright © 1986 Published by Elsevier B.V.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ]
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            2
+          ]
+        ],
+        "date-time": "2025-11-02T09:28:33Z",
+        "timestamp": 1762075713442
+      },
+      "reference-count": 12,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1962,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1962-01-01T00:00:00Z",
+            "timestamp": -252460800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Analytica Chimica Acta"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1962
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0003-2670(00)88365-8",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T03:15:58Z",
+        "timestamp": 1027566958000
+      },
+      "page": "172-179",
+      "source": "Crossref",
+      "is-referenced-by-count": 18,
+      "special_numbering": "C",
+      "title": [
+        "A new method for the study of intermetallic compound formation in mixed amalgams"
+      ],
+      "prefix": "10.1016",
+      "volume": "26",
+      "author": [
+        {
+          "given": "Harnold K.",
+          "family": "Ficker",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Louis",
+          "family": "Meites",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB1",
+          "doi-asserted-by": "crossref",
+          "first-page": "456",
+          "DOI": "10.1016/0003-2670(59)80097-0",
+          "volume": "20",
+          "author": "Meites",
+          "year": "1959",
+          "journal-title": "Anal. Chim. Acta"
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB2",
+          "doi-asserted-by": "crossref",
+          "first-page": "397",
+          "DOI": "10.1016/0003-2670(59)80087-8",
+          "volume": "20",
+          "author": "Baumgarten",
+          "year": "1959",
+          "journal-title": "Anal. Chim. Acta"
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB3",
+          "doi-asserted-by": "crossref",
+          "first-page": "841",
+          "DOI": "10.1039/JR9320000841",
+          "author": "Russel",
+          "year": "1932",
+          "journal-title": "J. Chem. Soc."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB4",
+          "doi-asserted-by": "crossref",
+          "first-page": "1228",
+          "DOI": "10.1038/1821228a0",
+          "volume": "182",
+          "author": "Kemula",
+          "year": "1958",
+          "journal-title": "Nature"
+        },
+        {
+          "issue": "5",
+          "key": "10.1016/S0003-2670(00)88365-8_BIB5",
+          "first-page": "14",
+          "volume": "120",
+          "author": "Kozlovskh",
+          "year": "1953",
+          "journal-title": "Izvest. Akad. Nauk Kazakh. S.S.R., Ser. Khim."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB6",
+          "first-page": "1553",
+          "volume": "30",
+          "author": "Zebreva",
+          "year": "1956",
+          "journal-title": "Zhur. Fiz. Khim."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB7",
+          "first-page": "129",
+          "author": "Baukin",
+          "year": "1958",
+          "journal-title": "Izvest. Vyssltikh Ucheb. Zavdnii, Khim, i Khim. Teknol."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB8",
+          "doi-asserted-by": "crossref",
+          "first-page": "1116",
+          "DOI": "10.1021/ac60103a021",
+          "volume": "27",
+          "author": "Meites",
+          "year": "1955",
+          "journal-title": "Anal. Chem."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB9",
+          "doi-asserted-by": "crossref",
+          "first-page": "404",
+          "DOI": "10.1021/ac60111a034",
+          "volume": "28",
+          "author": "Meites",
+          "year": "1956",
+          "journal-title": "Anal. Chem."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB10",
+          "doi-asserted-by": "crossref",
+          "first-page": "986",
+          "DOI": "10.1021/ac60066a019",
+          "volume": "24",
+          "author": "Macnevin",
+          "year": "1952",
+          "journal-title": "Anal. Chem."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB11",
+          "doi-asserted-by": "crossref",
+          "first-page": "23",
+          "DOI": "10.1021/ac60145a005",
+          "volume": "31",
+          "author": "Meites",
+          "year": "1959",
+          "journal-title": "Anal. Chem."
+        },
+        {
+          "key": "10.1016/S0003-2670(00)88365-8_BIB12",
+          "first-page": "222",
+          "author": "Lingane",
+          "year": "1958"
+        }
+      ],
+      "container-title": [
+        "Analytica Chimica Acta"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0003267000883658?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0003267000883658?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            6
+          ]
+        ],
+        "date-time": "2019-05-06T12:51:27Z",
+        "timestamp": 1557147087000
+      },
+      "score": 6.813262,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0003267000883658"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1962
+          ]
+        ]
+      },
+      "references-count": 12,
+      "alternative-id": [
+        "S0003267000883658"
+      ],
+      "URL": "https://doi.org/10.1016/s0003-2670(00)88365-8",
+      "ISSN": [
+        "0003-2670"
+      ],
+      "issn-type": [
+        {
+          "value": "0003-2670",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1962
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            7,
+            3
+          ]
+        ],
+        "date-time": "2024-07-03T08:03:37Z",
+        "timestamp": 1719993817197
+      },
+      "reference-count": 0,
+      "publisher": "Elsevier BV",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1964,
+                1,
+                1
+              ]
+            ],
+            "date-time": "1964-01-01T00:00:00Z",
+            "timestamp": -189388800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Analytica Chimica Acta"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1964,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1016/s0003-2670(00)88883-2",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T03:15:58Z",
+        "timestamp": 1027566958000
+      },
+      "page": "602",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "special_numbering": "C",
+      "title": [
+        "Compound semiconductors"
+      ],
+      "prefix": "10.1016",
+      "volume": "31",
+      "author": [
+        {
+          "given": "W.T.",
+          "family": "Elwell",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "container-title": [
+        "Analytica Chimica Acta"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0003267000888832?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0003267000888832?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2019,
+            5,
+            6
+          ]
+        ],
+        "date-time": "2019-05-06T12:59:02Z",
+        "timestamp": 1557147542000
+      },
+      "score": 10.765623,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0003267000888832"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1964,
+            1
+          ]
+        ]
+      },
+      "references-count": 0,
+      "alternative-id": [
+        "S0003267000888832"
+      ],
+      "URL": "https://doi.org/10.1016/s0003-2670(00)88883-2",
+      "ISSN": [
+        "0003-2670"
+      ],
+      "issn-type": [
+        {
+          "value": "0003-2670",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1964,
+            1
+          ]
+        ]
+      }
+    }
+  ]
+}

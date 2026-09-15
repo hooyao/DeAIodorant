@@ -1,0 +1,76 @@
+{
+  "protocol_version": "post-review-candidate-preparation-1.0",
+  "generated_at": "2026-08-30T02:37:12.732089+00:00",
+  "status": "pending_model_review",
+  "post_start": "2025-07-01",
+  "input_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\editorial_acquisition\\qbitai_post_candidates.jsonl",
+      "sha256": "63c8e573331699fb6907b1e6701d2c328180dc1e2d63808cca2b5a61a76acaa5"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\editorial_acquisition\\leiphone_post_candidates.jsonl",
+      "sha256": "7a454703f94d51334ae62e1e392882f67b02aa1f7399be972b8c4332fb163d39"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\huawei_acquisition\\huawei_cloud_community_post_candidates.jsonl",
+      "sha256": "0ae6a9e6c0f7d767786f4591ae164740acef18f99b2c16a6fbf1da1c7782a2c3"
+    }
+  ],
+  "exclusion_indexes": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1\\documents.jsonl",
+      "sha256": "a16f73542edab7f38fb3b24b2dc19fde798b5d14dcc035adfd560bc028c6dc6d"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v2\\documents.jsonl",
+      "sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\analysis_pool.jsonl",
+      "sha256": "58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2"
+    }
+  ],
+  "tracked_pilot_exclusion_documents": 30,
+  "input_documents": 720,
+  "prepared_documents": 561,
+  "prepared_by_source": {
+    "huawei_cloud_community": 232,
+    "leiphone": 194,
+    "qbitai": 135
+  },
+  "exclusion_counts": {
+    "deterministic_translation_evidence": 92,
+    "duplicate_doc_id": 59,
+    "duplicate_near_duplicate": 8
+  },
+  "candidate_files": [
+    {
+      "source": "huawei_cloud_community",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\review_candidates\\huawei_cloud_community_candidates.jsonl",
+      "sha256": "7cb4e2db52432f9536ba31cbb447bd82f442ce6c3c0a3b6e5b56a599cca6bc3e",
+      "documents": 232
+    },
+    {
+      "source": "leiphone",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\review_candidates\\leiphone_candidates.jsonl",
+      "sha256": "5c475a565cb3d4c7c596ab3d60aa56eb0afc104ddd89771dde311055796cf1ce",
+      "documents": 194
+    },
+    {
+      "source": "qbitai",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\review_candidates\\qbitai_candidates.jsonl",
+      "sha256": "828e94fe4646b03dc32400af0862235bcde1b1f15d3786d2c6704e1580e7fd0a",
+      "documents": 135
+    }
+  ],
+  "exclusions_file": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\review_candidates\\exclusions.jsonl",
+    "sha256": "83551355e8440ca86fd3c2e7ecc35abf6f5eecb14341f6dc81ecee8cf1e99541"
+  },
+  "empty_human_decisions": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\review_candidates\\no_human_decisions.csv",
+    "sha256": "f65c5bcd4a2ee4ee758a433fcd052f7a706b03ea31af166ef71268cca7c72da8"
+  },
+  "restriction": "Prepared records remain acquisition staging. Model review is a measurement and only high-confidence original routing may continue."
+}

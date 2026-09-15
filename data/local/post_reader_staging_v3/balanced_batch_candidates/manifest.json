@@ -1,0 +1,39 @@
+{
+  "protocol_version": "post-reader-v3-balanced-model-batch-1.0",
+  "generated_at": "2026-08-30T02:45:10.9257308Z",
+  "status": "frozen_before_model_outcomes",
+  "selection_basis": "deterministic_stable_hash_after_cross-corpus_dedup",
+  "selection_seed": "post-reader-handoff-v3-balanced-batch-20260830",
+  "per_source_cap": 120,
+  "huawei_visibility_basis": "source-quarter percentile over all 240 newly acquired recommended records",
+  "huawei_minimum_percentile": 0.4,
+  "model_results_used": false,
+  "files": [
+    {
+      "source": "qbitai",
+      "sha256": "73eaf3485132f4645bae16e6387361b8655bac56beeab58e0e5ff8fbe3a3751b",
+      "input_documents": 135,
+      "visibility_eligible": 135,
+      "selected_documents": 120,
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\balanced_batch_candidates\\qbitai_candidates.jsonl"
+    },
+    {
+      "source": "leiphone",
+      "sha256": "80def079a118aa317b21e23350b9fbc9382b5dc2a46c2f39b6a11fbe5107a21e",
+      "input_documents": 194,
+      "visibility_eligible": 194,
+      "selected_documents": 120,
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\balanced_batch_candidates\\leiphone_candidates.jsonl"
+    },
+    {
+      "source": "huawei_cloud_community",
+      "sha256": "f2d7c3ee4e597c916aaaff160c63111b14cadae6520b3d1c79a9780a682532e6",
+      "input_documents": 232,
+      "visibility_eligible": 135,
+      "selected_documents": 120,
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\balanced_batch_candidates\\huawei_cloud_community_candidates.jsonl"
+    }
+  ],
+  "documents": 360.0,
+  "restriction": "This remains acquisition staging and is not admitted for reader use."
+}

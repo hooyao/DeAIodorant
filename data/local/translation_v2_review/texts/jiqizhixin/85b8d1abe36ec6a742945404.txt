@@ -1,0 +1,94 @@
+编辑/凯霞
+目录：
+集成的
+机器学习
+算法，高精度预测患者对抗癌药物的反应
+使用 AI 检测结直肠癌，或优于病理学
+AI 制药+疾病模型，晶泰科技与希格生科再续癌症靶向药新管线合作
+Lantern Pharma 选择 Code Ocean 推动以肿瘤学为重点的
+药物发现
+和开发的计算研究
+集成的
+机器学习
+算法，高精度预测患者对抗癌药物的反应
+精准癌症医学的目标是通过为个体患者定制治疗方法来优化临床疗效。源自患者肿瘤基因组谱的疗法就是这样一种方法。
+机器学习
+算法已成为实现这一目标的有用工具，但单模型方法的预测性能仍然不足。
+近日，来自美国卵巢癌研究所（Ovarian Cancer Institute）和佐治亚理工学院的研究人员使用基于集成的
+机器学习
+算法（ELAFT），以高精度预测患者对抗癌药物的反应。
+该研究以「ELAFT: An Ensemble-based Machine-learning Algorithm that Predicts Anti-cancer Drug Responses with High Accuracy」为题，发表在《肿瘤学研究杂志》（Journal of Oncology Research）上。
+研究人员使用来自国家癌症研究所提供的 499 个独立细胞系的数据，为 15 种不同的癌症类型开发了基于
+机器学习
+的预测模型。然后针对包含 7 种化疗药物的临床数据集对这些模型进行了验证，这些药物可以单独或联合给药，用于 23 名卵巢癌患者。研究人员发现整体预测
+准确率
+为 91%，精度为 89%，召回率为 100%。
+该团队使用的算法有
+支持向量机
+(SVM)、
+随机森林
+分类器 (RF)、
+K-最近邻
+分类器 (KNN) 和
+逻辑
+回归分类器 (LR)。
+「它们都是相当技术性的，它们都是不同的计算数学方法，它们都在寻找相关性，」 通讯作者 McDonald JF 说。「这只是使用哪个模型的问题，对于不同的数据集，我们发现一种模型可能比另一种更有效。」
+ELAFT 算法概述及其如何实现个性化癌症医学。
+论文链接：https://escires.com/articles/JOR-4-111.pdf
+相关报道：https://medicalxpress.com/news/2021-10-multi-algorithm-approach-personalized-medicine-cancer.html
+使用 AI 检测结直肠癌，或优于病理学家
+病理学家定期评估和标记数以千计的组织病理学图像，以判断某人是否患有癌症。但他们的平均工作量显着增加，有时会因疲劳而导致意外误诊。
+近日，中南大学的研究团队发现， AI 可以通过组织扫描准确地检测和诊断结直肠癌，甚至优于病理学家。
+该研究以「Accurate recognition of colorectal cancer with semi-supervised deep learning on pathological images」为题，于 11 月 2 日发表在《Nature Communications》上。
+为了进行这项研究，研究团队收集了来自中国、德国和美国的 8,803 名受试者和 13 个独立癌症中心的 13,000 多张结直肠癌图像。使用技术人员随机选择的图像，他们构建了一个机器辅助病理识别程序，该程序允许计算机识别显示结肠直肠癌的图像。
+在将计算机的结果与经验丰富的病理学家手动解释数据的工作进行比较后，该研究发现，病理学家在手动准确识别结直肠癌方面的平均得分为 0.969。机器辅助 AI 计算机程序的平均分数为 0.98，即使不是更准确，也是可比的。
+使用
+人工智能
+识别癌症是一项新兴技术，尚未被广泛接受。这项研究将促使更多病理学家在未来使用预筛选技术做出更快的诊断。
+论文链接：https://www.nature.com/articles/s41467-021-26643-8
+相关报道：https://medicalxpress.com/news/2021-11-artificial-intelligence-colorectal-cancer.html
+AI 制药+疾病模型，晶泰科技与希格生科再续癌症靶向药新管线合作
+近日，AI 赋能的药物科技公司晶泰科技 (XtalPi) 与基于疾病模型的癌症创新靶向药研发公司希格生科(Signet Therapeutics) 签订新的管线研发合作，将「AI
+药物发现
++疾病模型平台」的药物研发模式用于一个全新靶点的
+药物发现
+，助力希格生科拓展其癌症靶向药管线。
+2020 年双方首次开展深度战略合作，并在半年多的时间内发现弥漫性胃癌新靶点的首创新药临床前候选化合物（PCC）。本次合作将基于两家公司已有的成功合作经验，继续关注尚无有效治疗的癌症领域，以获得 PCC 为目标，对又一创新靶点进行首创新药的开发。
+晶泰科技创始人温书豪表示，「很荣幸与希格生科加深合作，期待两家公司的强强联合可以进一步拓展晶泰科技 AI 平台的应用范围，解决影响药物研发风险的关键问题，并填补更多癌症治疗领域的药物空缺。未来，晶泰科技希望成为更多像希格生科这样具有核心研究成果的生物公司创新道路上的强大伙伴，加速赋能更多新靶点向临床管线的快速转化。」
+关于晶泰科技
+晶泰科技是一家量子物理与
+人工智能
+赋能的药物研发公司，通过提高药物研发的速度、规模、创新性和成功率，致力于实现药物研发的行业革新。
+晶泰科技的智能药物研发平台将基于云端超算数字化研发工具与先进的实验能力进行整合，形成高精度预测与针对性实验相互印证、相互指导的研发系统。作为全球先锋
+人工智能
+药物研发公司之一，晶泰科技已建立起一整套量子物理干实验室与先进湿实验室紧密结合的研发迭代流程，挑战传统研发的效率瓶颈，赋能新药研发实现创新速度与规模的突破。
+关于希格生科
+希格生科（Signet Therapeutics）是一家基于疾病模型的癌症创新靶向药研发公司。希格生科成立于2020 年底，其最初创立于哈佛大学校园，核心团队由来自哈佛大学、麻省理工学院和中国科学院等学术界以及医药产业界的优秀人才组成。
+相关报道：https://www.biospace.com/article/releases/xtalpi-and-signet-expand-ai-drug-discovery-collaboration-to-novel-cancer-target/?keywords=AI
+https://mp.weixin.qq.com/s/pHH9kWZ5tNCL7K_J4FSwwA
+XtalPi 官网：https://www.jingtaikeji.com/zh-hans/
+Lantern Pharma 选择 Code Ocean 推动以肿瘤学为重点的
+药物发现
+和开发的计算研究
+Lantern Pharma——一家临床阶段的生物制药公司，该公司使用其专有的 RADR
+人工智能
+平台来改变肿瘤
+药物发现
+和开发的成本、速度和时间表。
+近日，宣布了一项合作，该合作将为
+人工智能
+提供动力—— 通过 Code Ocean 推动以肿瘤学为重点的
+药物发现
+和开发的计算研究。
+Code Ocean 是共享科学发现的领先计算研究环境。通过利用 Code Ocean 的 Compute Capsule 技术，该战略方法有望进一步支持 Lantern Pharma 的 RADR 平台，以便从数十亿 RADR 数据点以及来自 Lantern 合作者网络的数据和洞察中更快、更具协作性地发现。
+由于太多不同的工具、缺乏专业的编码经验以及组织和安全共享研究所需的具有挑战性和繁琐的 DevOps 流程，当今的计算研究人员面临着分析大数据的挑战。
+通过此次合作，Lantern Pharma 有望从开发时间和成本的显着效率以及 Code Ocean 平台的可重复性提高中受益。Code Ocean 平台将通过集成开发环境、安全存储库和便携式 Compute Capsule 技术提供易于使用的协作研究体验，以保证可重复性。
+关于 Code Ocean
+Code Ocean 是在一个地方创建、组织和共享伟大的计算研究的地方。Code Ocean 平台为研究团队提供了标准化研究工作流程、跟踪和重现所有计算和发现的最佳方式。通过让研究人员更轻松、更高效地进行协作，Code Ocean 提高了可重复性，优化了 IT 投资回报，并通过自动化重复功能来节省时间。
+Code Ocean 官网：https://www.codeocean.com/
+关于 Lantern Pharma
+Lantern Pharma (LTRN) 是一家专注于临床阶段肿瘤学的生物制药公司，利用其专有的 RADR A.I. 平台和
+机器学习
+来发现生物标志物特征，这些特征可以识别最有可能对其基因组靶向治疗管道产生反应的患者。Lantern 目前正在开发四个候选药物和一个 ADC 项目，涉及八个公开的肿瘤靶点，包括两个第二阶段项目。通过将药物靶向基因组特征识别为最有可能从药物中受益的患者，Lantern 的方法代表了提供一流结果的潜力。
+Lantern Pharma 官网：https://www.lanternpharma.com/
+相关报道：https://www.prnewswire.com/news-releases/code-ocean-selected-by-lantern-pharma-to-power-ai-and-computational-biology-research--data-driven-oncology-drug-development-collaborations-301409807.html

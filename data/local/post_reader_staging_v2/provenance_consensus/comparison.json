@@ -1,0 +1,50 @@
+{
+  "schema_version": "deaiodorant-provenance-model-comparison-1.0",
+  "decision_policy": "Only documents that both current models classify as high-confidence original continue. Every disagreement and uncertainty fails closed.",
+  "left_model": "qwen3.8-27b",
+  "right_model": "deepseek/deepseek-v4-flash-0731",
+  "documents": 171,
+  "exact_status_agreement": 135,
+  "exact_status_agreement_rate": 0.7894736842105263,
+  "consensus_original": 131,
+  "disagreements": 36,
+  "status_matrix": {
+    "model_assisted_original|model_assisted_original": 131,
+    "model_assisted_original|model_assisted_exclusion": 19,
+    "model_assisted_original|uncertain": 14,
+    "model_assisted_exclusion|model_assisted_exclusion": 4,
+    "model_assisted_exclusion|uncertain": 1,
+    "uncertain|model_assisted_original": 2
+  },
+  "source_status_matrices": {
+    "leiphone": {
+      "model_assisted_original|model_assisted_original": 91,
+      "model_assisted_original|model_assisted_exclusion": 14,
+      "model_assisted_original|uncertain": 10,
+      "model_assisted_exclusion|model_assisted_exclusion": 1,
+      "model_assisted_exclusion|uncertain": 1,
+      "uncertain|model_assisted_original": 1
+    },
+    "qbitai": {
+      "model_assisted_original|model_assisted_original": 40,
+      "model_assisted_original|model_assisted_exclusion": 5,
+      "model_assisted_original|uncertain": 4,
+      "model_assisted_exclusion|model_assisted_exclusion": 3,
+      "uncertain|model_assisted_original": 1
+    }
+  },
+  "identity": {
+    "left_results_sha256": "a5ee45851a85fb3d509669a7168dd7455205f4cf87c6e764ec050e054a9e4530",
+    "left_manifest_sha256": "cc9eb0fe3e270725b06dbb44f94692c21878b299a3454f6fccdbf56ba00c854f",
+    "right_results_sha256": "49a4fb81768853220d4e4afffc66ab41f15d7fbbd0004896607c65fb0475ccb1",
+    "right_manifest_sha256": "6a3e430d322c0cb7cdb0a08a1b9562a0ea470b6f355ed4af54e302ac3334f956",
+    "ranking_snapshot_sha256": "abbdc3216fe27f82cc5354843f7f198db743d63b45d7e7702cee06bcd0090c5a"
+  },
+  "artifacts": {
+    "consensus_provenance": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\provenance_consensus\\consensus_provenance.jsonl",
+    "consensus_provenance_sha256": "69c83360d121c46e6ab093e2d05d10a86f512f2b482c175682ed11a81ed342a0",
+    "disagreements": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\provenance_consensus\\disagreements.jsonl",
+    "disagreements_sha256": "d9d40fc3918bf935a9b5d199318fbc31beb700b12e592a3a691b242e09cb2ffc"
+  },
+  "restriction": "Both inputs are model-assisted measurements, not human gold. Agreement supports conservative routing only and does not establish accuracy."
+}

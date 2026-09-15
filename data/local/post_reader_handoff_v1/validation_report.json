@@ -1,0 +1,71 @@
+{
+  "schema_version": "post-reader-corpus-validation-1.1",
+  "checked_at": "2026-08-22T12:57:18.219770+00:00",
+  "handoff_root": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1",
+  "repository_root": "C:\\Users\\HuYao\\.codex\\worktrees\\9b66\\DeAIodorant",
+  "valid": true,
+  "reader_development_ready": true,
+  "errors": [],
+  "warnings": [
+    {
+      "location": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1\\documents.jsonl",
+      "message": "Development can start, but an independent validation reserve is not yet available"
+    }
+  ],
+  "counts": {
+    "indexed_documents": 50,
+    "structurally_readable_documents": 50,
+    "sources": {
+      "infoq": 25,
+      "meituan_tech": 25
+    },
+    "topics": {
+      "ai_models_agents": 30,
+      "business_industry": 10,
+      "data_infrastructure": 4,
+      "software_engineering": 6
+    },
+    "formats": {
+      "industry_reporting": 18,
+      "research_summary": 8,
+      "technical_practice": 24
+    }
+  },
+  "coverage": {
+    "eligible_topics": [
+      "ai_models_agents",
+      "business_industry",
+      "software_engineering"
+    ],
+    "eligible_sources": [
+      "infoq",
+      "meituan_tech"
+    ],
+    "source_format_counts": {
+      "infoq": {
+        "technical_practice": 7,
+        "research_summary": 0,
+        "industry_reporting": 18
+      },
+      "meituan_tech": {
+        "technical_practice": 17,
+        "research_summary": 8,
+        "industry_reporting": 0
+      }
+    }
+  },
+  "limits": {
+    "post_start": "2025-07-01",
+    "minimum_documents": 36,
+    "minimum_sources": 2,
+    "minimum_documents_per_source": 12,
+    "minimum_topics": 3,
+    "minimum_documents_per_topic": 6,
+    "required_formats": [
+      "technical_practice",
+      "research_summary",
+      "industry_reporting"
+    ],
+    "minimum_documents_per_format": 6
+  }
+}

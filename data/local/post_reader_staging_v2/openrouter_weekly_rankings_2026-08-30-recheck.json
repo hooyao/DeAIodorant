@@ -1,0 +1,60 @@
+{
+  "schema_version": "deaiodorant-openrouter-ranking-snapshot-1.0",
+  "fetched_at": "2026-08-30T02:29:08.516027+00:00",
+  "url": "https://openrouter.ai/rankings",
+  "ranking_name": "Top LLMs by weekly token usage on OpenRouter",
+  "page_sha256": "e8030ad6705e9089d16e7dcfd6b60b20367207618182a2bbbf5e3cd6704bbee9",
+  "entries": [
+    {
+      "position": 1,
+      "name": "Ox Alpha",
+      "url": "https://openrouter.ai/stealth/ox-alpha"
+    },
+    {
+      "position": 2,
+      "name": "DeepSeek V4 Flash 0731",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-flash-0731"
+    },
+    {
+      "position": 3,
+      "name": "MiMo-V2.5",
+      "url": "https://openrouter.ai/xiaomi/mimo-v2.5"
+    },
+    {
+      "position": 4,
+      "name": "GPT-5.6 Luna",
+      "url": "https://openrouter.ai/openai/gpt-5.6-luna"
+    },
+    {
+      "position": 5,
+      "name": "Hy3",
+      "url": "https://openrouter.ai/tencent/hy3"
+    },
+    {
+      "position": 6,
+      "name": "Nemotron 3 Ultra (free)",
+      "url": "https://openrouter.ai/nvidia/nemotron-3-ultra-550b-a55b:free"
+    },
+    {
+      "position": 7,
+      "name": "DeepSeek V4 Flash 0423",
+      "url": "https://openrouter.ai/deepseek/deepseek-v4-flash"
+    },
+    {
+      "position": 8,
+      "name": "GLM 5.3 Flash",
+      "url": "https://openrouter.ai/z-ai/glm-5.3-flash"
+    },
+    {
+      "position": 9,
+      "name": "Gemini 3.7 Flash",
+      "url": "https://openrouter.ai/google/gemini-3.7-flash"
+    },
+    {
+      "position": 10,
+      "name": "GLM 5.2",
+      "url": "https://openrouter.ai/z-ai/glm-5.2"
+    }
+  ],
+  "interpretation": "This is a weekly token-usage ranking, not a quality or task-fitness benchmark. Model use still requires a task-specific interface smoke test."
+}

@@ -1,0 +1,452 @@
+{
+  "version": "cognitive-move-pilot-assessment-1.0",
+  "assessed_at_utc": "2026-09-14T15:19:14.300304+00:00",
+  "assessor": "/root",
+  "design_and_historical_labels_seen": true,
+  "human_gold": false,
+  "freeze_sha256": "bfe9b28eb2b17fd2c9f43796794681dc6d19328052af3c1b7416829d2f509f57",
+  "response_hashes": {
+    "responses/a1.json": "33aa662e0c18f3df751a524bc4572e2287860718c355529121a36ac770dd77a6",
+    "responses/a2.json": "da0029bf05b4c685a6788c924f1e0b8b2fe134ad1be4b1dca1ac1a4d718b2031",
+    "responses/a3.json": "e69528947dbcc6eca575ff395bef3e0669ed51c5e01754c5245733ac746ca26b",
+    "responses/b1.json": "203531766cb86349d2984acad0fd97f726103e2cb9299c7035eebe4840e344a0",
+    "responses/b2.json": "19ca5a92f2de24ee3d24897c2aa7eb2b91ea5d63f152842c916036500fe5698d",
+    "responses/b3.json": "0a7a005a572b738c5c4c465b7d9b8b4cfee949ecc87518d6a0adde781ebf7054"
+  },
+  "cases": [
+    {
+      "case_id": "M01",
+      "core_equivalence": "supported",
+      "target_change_coverage": "supported",
+      "probe_kind": "semantic_change_with_documented_confound",
+      "field_role_or_coverage_repeatability": "mixed",
+      "observation": "两次均保留购买一路的议程收窄，并承认正文额外覆盖不自动构成承诺违背。",
+      "limits": "同一等义packet中a2为null、b2记录标题否定对象，核心解释兼容。",
+      "record_references": [
+        {
+          "session": "a1",
+          "packet_id": "pe9cf9029",
+          "pointer": "/records/2",
+          "condition": "original"
+        },
+        {
+          "session": "a2",
+          "packet_id": "pe17dfb4c",
+          "pointer": "/records/2",
+          "condition": "equivalent"
+        },
+        {
+          "session": "a3",
+          "packet_id": "p59b0761a",
+          "pointer": "/records/5",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "b1",
+          "packet_id": "pe9cf9029",
+          "pointer": "/records/4",
+          "condition": "original"
+        },
+        {
+          "session": "b2",
+          "packet_id": "pe17dfb4c",
+          "pointer": "/records/2",
+          "condition": "equivalent"
+        },
+        {
+          "session": "b3",
+          "packet_id": "p59b0761a",
+          "pointer": "/records/1",
+          "condition": "meaning_changed"
+        }
+      ]
+    },
+    {
+      "case_id": "M02",
+      "core_equivalence": "supported",
+      "target_change_coverage": "supported",
+      "probe_kind": "semantic_change_with_documented_confound",
+      "field_role_or_coverage_repeatability": "supported",
+      "observation": "两次均将Jetson从明确排除改为是否另带未知，保留RK3566已知及全部关键训练部署数量。",
+      "limits": "主要平台与附加设备范围同时变化；零计算的字面读法在记录中作为受限替代解释，未直接认证原文事实错误。",
+      "record_references": [
+        {
+          "session": "a1",
+          "packet_id": "pcd414344",
+          "pointer": "/records/4",
+          "condition": "equivalent"
+        },
+        {
+          "session": "a2",
+          "packet_id": "pcf0cdf4a",
+          "pointer": "/records/4",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "a3",
+          "packet_id": "pb1aa2a9b",
+          "pointer": "/records/2",
+          "condition": "original"
+        },
+        {
+          "session": "b1",
+          "packet_id": "pcd414344",
+          "pointer": "/records/0",
+          "condition": "equivalent"
+        },
+        {
+          "session": "b2",
+          "packet_id": "pcf0cdf4a",
+          "pointer": "/records/5",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "b3",
+          "packet_id": "pb1aa2a9b",
+          "pointer": "/records/5",
+          "condition": "original"
+        }
+      ]
+    },
+    {
+      "case_id": "M03",
+      "core_equivalence": "supported",
+      "target_change_coverage": "supported",
+      "probe_kind": "semantic_change_with_documented_confound",
+      "field_role_or_coverage_repeatability": "supported",
+      "observation": "两次均保留玩具与管道同属核心及学习用途条件，不回填玩具被排除。",
+      "limits": "原文价值优先不等于两种功能不相容；变体也不证明价值等权。",
+      "record_references": [
+        {
+          "session": "a1",
+          "packet_id": "p1063bb62",
+          "pointer": "/records/3",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "a2",
+          "packet_id": "p69973a93",
+          "pointer": "/records/3",
+          "condition": "original"
+        },
+        {
+          "session": "a3",
+          "packet_id": "pcdfec7ce",
+          "pointer": "/records/3",
+          "condition": "equivalent"
+        },
+        {
+          "session": "b1",
+          "packet_id": "p1063bb62",
+          "pointer": "/records/2",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "b2",
+          "packet_id": "p69973a93",
+          "pointer": "/records/3",
+          "condition": "original"
+        },
+        {
+          "session": "b3",
+          "packet_id": "pcdfec7ce",
+          "pointer": "/records/0",
+          "condition": "equivalent"
+        }
+      ]
+    },
+    {
+      "case_id": "M04",
+      "core_equivalence": "supported",
+      "target_change_coverage": "mixed",
+      "probe_kind": "semantic_change_with_documented_confound",
+      "field_role_or_coverage_repeatability": "mixed",
+      "observation": "b3清楚写本人估算并引用本文作者给的参照；a3保留金额、非实测及推断，却未清楚绑定估算提出者。",
+      "limits": "a3是目标归属覆盖不足，不是已证实错误归属。评论证据4/6非空，全部文字限制其不证明低价精确复刻信念。",
+      "record_references": [
+        {
+          "session": "a1",
+          "packet_id": "pe4ca91d7",
+          "pointer": "/records/0",
+          "condition": "original"
+        },
+        {
+          "session": "a2",
+          "packet_id": "pcecccfc8",
+          "pointer": "/records/1",
+          "condition": "equivalent"
+        },
+        {
+          "session": "a3",
+          "packet_id": "pa2529f2f",
+          "pointer": "/records/1",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "b1",
+          "packet_id": "pe4ca91d7",
+          "pointer": "/records/5",
+          "condition": "original"
+        },
+        {
+          "session": "b2",
+          "packet_id": "pcecccfc8",
+          "pointer": "/records/0",
+          "condition": "equivalent"
+        },
+        {
+          "session": "b3",
+          "packet_id": "pa2529f2f",
+          "pointer": "/records/2",
+          "condition": "meaning_changed"
+        }
+      ]
+    },
+    {
+      "case_id": "M05",
+      "core_equivalence": "supported",
+      "target_change_coverage": "supported",
+      "probe_kind": "quantity_field_coverage_only",
+      "field_role_or_coverage_repeatability": "mixed",
+      "observation": "两次数量变体均准确描述60至90次；只有字段覆盖证据，核心缓存机制未改。",
+      "limits": "prior_or_foil.text 4/6非空、2/6为空；同条件原文和数量变体各有空值分歧，但普通解释判读兼容。",
+      "record_references": [
+        {
+          "session": "a1",
+          "packet_id": "pbac45350",
+          "pointer": "/records/5",
+          "condition": "equivalent"
+        },
+        {
+          "session": "a2",
+          "packet_id": "p87fb2c0a",
+          "pointer": "/records/0",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "a3",
+          "packet_id": "p683e4eea",
+          "pointer": "/records/4",
+          "condition": "original"
+        },
+        {
+          "session": "b1",
+          "packet_id": "pbac45350",
+          "pointer": "/records/1",
+          "condition": "equivalent"
+        },
+        {
+          "session": "b2",
+          "packet_id": "p87fb2c0a",
+          "pointer": "/records/4",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "b3",
+          "packet_id": "p683e4eea",
+          "pointer": "/records/4",
+          "condition": "original"
+        }
+      ]
+    },
+    {
+      "case_id": "M06",
+      "core_equivalence": "supported",
+      "target_change_coverage": "supported",
+      "probe_kind": "semantic_change_with_documented_confound",
+      "field_role_or_coverage_repeatability": "supported",
+      "observation": "两次均保留最低价格原因被否定，供给体系原因变为可能，首建仍是作者断言。",
+      "limits": "句界和回指变化是构造混杂；结果数据仍不能认证因果优先或类比迁移。",
+      "record_references": [
+        {
+          "session": "a1",
+          "packet_id": "p7967d9e8",
+          "pointer": "/records/1",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "a2",
+          "packet_id": "paf29f78f",
+          "pointer": "/records/5",
+          "condition": "original"
+        },
+        {
+          "session": "a3",
+          "packet_id": "pccd7fb5e",
+          "pointer": "/records/0",
+          "condition": "equivalent"
+        },
+        {
+          "session": "b1",
+          "packet_id": "p7967d9e8",
+          "pointer": "/records/3",
+          "condition": "meaning_changed"
+        },
+        {
+          "session": "b2",
+          "packet_id": "paf29f78f",
+          "pointer": "/records/1",
+          "condition": "original"
+        },
+        {
+          "session": "b3",
+          "packet_id": "pccd7fb5e",
+          "pointer": "/records/3",
+          "condition": "equivalent"
+        }
+      ]
+    }
+  ],
+  "field_presence_audits": {
+    "M01_text": {
+      "nonempty": 1,
+      "records": 6,
+      "entries": [
+        {
+          "session": "a1",
+          "packet_id": "pe9cf9029",
+          "condition": "original",
+          "pointer": "/records/2/prior_or_foil/text",
+          "nonempty": false
+        },
+        {
+          "session": "a2",
+          "packet_id": "pe17dfb4c",
+          "condition": "equivalent",
+          "pointer": "/records/2/prior_or_foil/text",
+          "nonempty": false
+        },
+        {
+          "session": "a3",
+          "packet_id": "p59b0761a",
+          "condition": "meaning_changed",
+          "pointer": "/records/5/prior_or_foil/text",
+          "nonempty": false
+        },
+        {
+          "session": "b1",
+          "packet_id": "pe9cf9029",
+          "condition": "original",
+          "pointer": "/records/4/prior_or_foil/text",
+          "nonempty": false
+        },
+        {
+          "session": "b2",
+          "packet_id": "pe17dfb4c",
+          "condition": "equivalent",
+          "pointer": "/records/2/prior_or_foil/text",
+          "nonempty": true
+        },
+        {
+          "session": "b3",
+          "packet_id": "p59b0761a",
+          "condition": "meaning_changed",
+          "pointer": "/records/1/prior_or_foil/text",
+          "nonempty": false
+        }
+      ],
+      "interpretation": "字段编码审计，不是纠正频率、读者信念或语义错误计数。"
+    },
+    "M05_text": {
+      "nonempty": 4,
+      "records": 6,
+      "entries": [
+        {
+          "session": "a1",
+          "packet_id": "pbac45350",
+          "condition": "equivalent",
+          "pointer": "/records/5/prior_or_foil/text",
+          "nonempty": true
+        },
+        {
+          "session": "a2",
+          "packet_id": "p87fb2c0a",
+          "condition": "meaning_changed",
+          "pointer": "/records/0/prior_or_foil/text",
+          "nonempty": true
+        },
+        {
+          "session": "a3",
+          "packet_id": "p683e4eea",
+          "condition": "original",
+          "pointer": "/records/4/prior_or_foil/text",
+          "nonempty": false
+        },
+        {
+          "session": "b1",
+          "packet_id": "pbac45350",
+          "condition": "equivalent",
+          "pointer": "/records/1/prior_or_foil/text",
+          "nonempty": true
+        },
+        {
+          "session": "b2",
+          "packet_id": "p87fb2c0a",
+          "condition": "meaning_changed",
+          "pointer": "/records/4/prior_or_foil/text",
+          "nonempty": false
+        },
+        {
+          "session": "b3",
+          "packet_id": "p683e4eea",
+          "condition": "original",
+          "pointer": "/records/4/prior_or_foil/text",
+          "nonempty": true
+        }
+      ],
+      "interpretation": "字段编码审计，不是纠正频率、读者信念或语义错误计数。"
+    },
+    "M04_reader_belief_evidence": {
+      "nonempty": 4,
+      "records": 6,
+      "entries": [
+        {
+          "session": "a1",
+          "packet_id": "pe4ca91d7",
+          "condition": "original",
+          "pointer": "/records/0/prior_or_foil/reader_belief_evidence",
+          "nonempty": false
+        },
+        {
+          "session": "a2",
+          "packet_id": "pcecccfc8",
+          "condition": "equivalent",
+          "pointer": "/records/1/prior_or_foil/reader_belief_evidence",
+          "nonempty": true
+        },
+        {
+          "session": "a3",
+          "packet_id": "pa2529f2f",
+          "condition": "meaning_changed",
+          "pointer": "/records/1/prior_or_foil/reader_belief_evidence",
+          "nonempty": true
+        },
+        {
+          "session": "b1",
+          "packet_id": "pe4ca91d7",
+          "condition": "original",
+          "pointer": "/records/5/prior_or_foil/reader_belief_evidence",
+          "nonempty": true
+        },
+        {
+          "session": "b2",
+          "packet_id": "pcecccfc8",
+          "condition": "equivalent",
+          "pointer": "/records/0/prior_or_foil/reader_belief_evidence",
+          "nonempty": false
+        },
+        {
+          "session": "b3",
+          "packet_id": "pa2529f2f",
+          "condition": "meaning_changed",
+          "pointer": "/records/2/prior_or_foil/reader_belief_evidence",
+          "nonempty": true
+        }
+      ],
+      "interpretation": "字段编码审计，不是纠正频率、读者信念或语义错误计数。"
+    }
+  },
+  "overall_disposition": "收紧记录契约后，在新文章上检验；当前八字段输出不作为自动特征或reward，不进入本轮产品编辑或训练。",
+  "scope": "仅本轮小幅等义对照和已指定变化；2篇来源、6案例、18条件、36次同家族模型记录；没有总体准确率或独立人类验证。",
+  "schema_review_path": "data/local/cognitive-move-pilot-v1/schema-review.json"
+}

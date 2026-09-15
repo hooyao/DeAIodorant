@@ -1,0 +1,12 @@
+{
+  "version": "independent-media-discovery-1.0",
+  "selected_before_full_reads": true,
+  "articles": [
+    {"id":"d01","url":"https://post.smzdm.com/p/apw3m470/","search_id":"s08","result_position":5,"reason":"后期、同来源、扫地机器人购买比较；全文判断是否持续出现目标动作。"},
+    {"id":"d02","url":"https://post.smzdm.com/p/arz3ng6g/","search_id":"s08","result_position":4,"reason":"后期、同来源同类购买指南，避免只凭一个显著标题取样。"},
+    {"id":"d03","url":"https://post.smzdm.com/p/a0p4d08/","search_id":"s05","result_position":4,"reason":"早期同来源机器人体验文；与购买指南存在体裁差异，作为有限的来源／题材对照。"},
+    {"id":"d04","url":"https://zhongce.sina.com.cn/article/view/129894","search_id":"s04","result_position":1,"reason":"早期相近消费媒体、扫地机器人购买指南；用于同体裁对照，仍有来源差异。"},
+    {"id":"d05","url":"https://www.bilibili.com/read/cv2282422/","search_id":"s03","result_position":2,"reason":"早期机器人产品选择及DIY，主题接近锚点；来源是社区专栏，不能视作严格媒体匹配。"},
+    {"id":"d06","url":"https://post.smzdm.com/p/awd9d03g/","search_id":"s08","result_position":10,"reason":"搜索片段提示集中判词；明确为过渡期诊断材料，不能纳入主时间比较。"}
+  ]
+}

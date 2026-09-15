@@ -1,0 +1,251 @@
+{
+  "schema_version": "label-studio-research-archive-manifest-v1",
+  "source_database": {
+    "name": "label_studio.sqlite3",
+    "bytes": 8138752,
+    "sha256": "7a672efd29d591b2ce1f5a93ce5b5f13ebabba7604a6c1d5750639ef7f682ca7"
+  },
+  "table_column_whitelist": {
+    "project": [
+      "id",
+      "title",
+      "label_config",
+      "expert_instruction",
+      "show_instruction",
+      "model_version",
+      "data_types",
+      "is_published",
+      "created_at",
+      "updated_at",
+      "show_skip_button",
+      "show_collab_predictions",
+      "sampling",
+      "overlap_cohort_percentage",
+      "show_overlap_first",
+      "control_weights",
+      "result_count",
+      "is_draft",
+      "description",
+      "color",
+      "enable_empty_annotation",
+      "maximum_annotations",
+      "min_annotations_to_start_training",
+      "show_annotation_history",
+      "show_ground_truth_first",
+      "evaluate_predictions_automatically",
+      "reveal_preannotations_interactively",
+      "skip_queue",
+      "parsed_label_config",
+      "label_config_hash",
+      "annotator_evaluation_enabled"
+    ],
+    "task": [
+      "id",
+      "data",
+      "created_at",
+      "updated_at",
+      "is_labeled",
+      "project_id",
+      "meta",
+      "overlap",
+      "file_upload_id",
+      "updated_by_id",
+      "inner_id",
+      "total_annotations",
+      "cancelled_annotations",
+      "total_predictions",
+      "comment_count",
+      "last_comment_updated_at",
+      "unresolved_comment_count",
+      "precomputed_agreement",
+      "allow_skip"
+    ],
+    "task_completion": [
+      "id",
+      "result",
+      "was_cancelled",
+      "created_at",
+      "updated_at",
+      "task_id",
+      "prediction",
+      "lead_time",
+      "result_count",
+      "completed_by_id",
+      "ground_truth",
+      "parent_prediction_id",
+      "last_action",
+      "last_created_by_id",
+      "project_id",
+      "updated_by_id",
+      "unique_id",
+      "draft_created_at",
+      "import_id",
+      "bulk_created",
+      "parent_annotation_id"
+    ],
+    "prediction": [
+      "id",
+      "result",
+      "score",
+      "model_version",
+      "created_at",
+      "updated_at",
+      "task_id",
+      "cluster",
+      "mislabeling",
+      "neighbors",
+      "project_id",
+      "model_run_id",
+      "model_id"
+    ],
+    "tasks_annotationdraft": [
+      "id",
+      "result",
+      "created_at",
+      "updated_at",
+      "task_id",
+      "user_id",
+      "annotation_id",
+      "was_postponed",
+      "lead_time",
+      "import_id"
+    ],
+    "projects_projectsummary": [
+      "project_id",
+      "created_at",
+      "all_data_columns",
+      "common_data_columns",
+      "created_annotations",
+      "created_labels",
+      "created_labels_drafts"
+    ],
+    "data_manager_view": [
+      "id",
+      "data",
+      "project_id",
+      "ordering",
+      "filter_group_id",
+      "selected_items",
+      "user_id",
+      "order"
+    ],
+    "data_manager_filtergroup": [
+      "id",
+      "conjunction"
+    ],
+    "data_manager_filter": [
+      "id",
+      "column",
+      "type",
+      "operator",
+      "value",
+      "index",
+      "parent_id"
+    ],
+    "data_manager_filtergroup_filters": [
+      "id",
+      "filtergroup_id",
+      "filter_id"
+    ],
+    "projects_labelstreamhistory": [
+      "id",
+      "data",
+      "project_id",
+      "user_id"
+    ]
+  },
+  "project_counts": [
+    {
+      "project_id": 1,
+      "tasks": 220,
+      "annotations": 9,
+      "predictions": 0,
+      "drafts": 0
+    },
+    {
+      "project_id": 2,
+      "tasks": 83,
+      "annotations": 7,
+      "predictions": 0,
+      "drafts": 0
+    },
+    {
+      "project_id": 3,
+      "tasks": 25,
+      "annotations": 25,
+      "predictions": 0,
+      "drafts": 0
+    }
+  ],
+  "retained_numeric_account_references": "原始数字ID仅作为标注归属与研究追踪关系保留；没有账号记录或ID到身份的映射。",
+  "not_a_full_application_database": true,
+  "files": [
+    {
+      "path": "existing-export-coverage.json",
+      "name": "existing-export-coverage.json",
+      "bytes": 9168,
+      "sha256": "693afce26171f3037982804ea4e73cb3e38b64891a442e9efcb3693b998c7e3d"
+    },
+    {
+      "path": "export_research_archive.py",
+      "name": "export_research_archive.py",
+      "bytes": 21938,
+      "sha256": "3b8ef2153b5814a19d6c376a25d746ec4233e92cc7d52d63bbaa10f79273119c"
+    },
+    {
+      "path": "project-1-tasks.json",
+      "name": "project-1-tasks.json",
+      "bytes": 2480122,
+      "sha256": "2350505f8e9d1beaf31c8a664e79c2c9c55728076679d05aa7263a67ad63ebdb"
+    },
+    {
+      "path": "project-2-tasks.json",
+      "name": "project-2-tasks.json",
+      "bytes": 899183,
+      "sha256": "ada3af39ee24e5f0b253e90d2e423c5ebae565c8912671d449b9916c6b43327a"
+    },
+    {
+      "path": "project-3-tasks.json",
+      "name": "project-3-tasks.json",
+      "bytes": 386152,
+      "sha256": "b68113a18fba79e22a3cf36c1a42f25a7a0a27ca15a197c21ac758bf93e93846"
+    },
+    {
+      "path": "projects.json",
+      "name": "projects.json",
+      "bytes": 25018,
+      "sha256": "8b16b24b542023b49bb4d18ab12efcadb98046fcc8f6905173d421dbcaff15f9"
+    },
+    {
+      "path": "research-tables.json",
+      "name": "research-tables.json",
+      "bytes": 7731753,
+      "sha256": "62cfa779d331135e358d479f01c9cde35539477bfdf42ee4b98968263e4a0eb5"
+    },
+    {
+      "path": "sanitized-exports/project-1-at-2026-08-21-01-28-71d04aa1.json",
+      "name": "project-1-at-2026-08-21-01-28-71d04aa1.json",
+      "bytes": 2453141,
+      "sha256": "29fbaaf47169f5d474efbbf7224a0e101247d8a907e5a3f7e2d8ca99563839c4"
+    },
+    {
+      "path": "sanitized-exports-validation.json",
+      "name": "sanitized-exports-validation.json",
+      "bytes": 954,
+      "sha256": "8b0cebda893a54a9d17d76d8ad6c67efcb35d2b8f80859256f3acbde9e5d84bf"
+    },
+    {
+      "path": "schema-and-exclusions.json",
+      "name": "schema-and-exclusions.json",
+      "bytes": 92122,
+      "sha256": "eed54c8fe03812bf51da840ea279af39d586e2676593d8fec5a1d1e0b29decd1"
+    },
+    {
+      "path": "validation.json",
+      "name": "validation.json",
+      "bytes": 1966,
+      "sha256": "7df736261931d5c4a0bef7b8e2b69c3c89d5d49fa0b763b3190ef647795f5835"
+    }
+  ],
+  "说明": "此manifest不列自身；原始SQLite、.env、账号密码、token、session、组织与存储凭据不包含在归档中。"
+}

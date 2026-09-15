@@ -1,0 +1,351 @@
+{
+  "session_id": "a2",
+  "annotator": {
+    "agent_task": "/root/isolated_a2",
+    "runtime": "Codex subagent",
+    "model": "unknown",
+    "prior_labels_seen": false,
+    "other_annotations_seen": false,
+    "read_scope": "assignment, instructions, assigned packets only",
+    "human_annotation": false
+  },
+  "records": [
+    {
+      "packet_id": "p87fb2c0a",
+      "full_context_read": true,
+      "focal_spans": [
+        {
+          "block_id": "b012",
+          "quote": "在 Agent 时代，这个机制变成了系统性能的命脉"
+        },
+        {
+          "block_id": "b012",
+          "quote": "如果 KV Cache 命中，就不需要重新推理整个上下文，速度和成本都会大幅改善。反之，对于一个调用 60-90 次的 Agent 任务，就是巨大的算力浪费。"
+        }
+      ],
+      "operation": [
+        "机制解释",
+        "条件推断",
+        "评价性强调"
+      ],
+      "question_under_discussion": {
+        "text": "为什么 KV Cache 的命中情况会影响 Agent 多轮任务的性能和成本？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "text": "缓存未命中时仍需重复处理重叠上下文的情形。",
+        "status": "本段以“反之”提出的条件性对照，并非被归给他人的旧主张。",
+        "reader_belief_evidence": null
+      },
+      "asserted_or_promised_content": "原文称，大模型每处理一个 token 都需对整个上下文历史进行大量矩阵运算；KV Cache 保存中间结果以避免重复计算。Agent 多轮调用的上下文高度重叠，因此若缓存命中，便不必重新推理整个上下文，速度与成本都会大幅改善；反之，对调用 60-90 次的任务会造成巨大算力浪费。",
+      "relation": {
+        "type": "机制解释与条件性因果",
+        "text": "保存结果是避免重复计算的手段，上下文重叠是缓存收益的连接前提；命中与未命中构成局部条件对照。多轮调用放大浪费属本段推断，并未给出浪费量与调用次数的函数关系。"
+      },
+      "grounds_and_warrant": {
+        "evidence_spans": [
+          {
+            "block_id": "b012",
+            "quote": "KV Cache 把这些中间运算结果保存下来，避免每次都重新计算。"
+          },
+          {
+            "block_id": "b012",
+            "quote": "Agent 的多轮调用之间上下文高度重叠"
+          }
+        ],
+        "text": "缓存复用到减少重复计算的连接由原文明说。将其称为性能命脉则是对该机制重要性的评价；改善幅度、60-90 次任务的来源和具体缓存条件均未在本段量化验证，文内解释不构成独立实测。"
+      },
+      "information_update": "具体化前文的命中率提升议题，把技术指标连接到 Agent 的重复上下文与运行成本，为后续架构讨论提供理由。",
+      "stance_and_presentation": "先作确定性技术说明，再用条件句和“反之”引导比较；“命脉”“巨大”增强重要性与浪费程度的评价。",
+      "support_assessment": "本段提供可理解的机制链条，但未提供缓存命中前后的对照数据；其量级与普遍适用范围仍待证。",
+      "preserved_usefulness": "保留缓存复用、上下文重叠和多次调用之间的关系，以及命中条件与 60-90 次的任务范围。",
+      "uncertainties": [
+        "“不需要重新推理整个上下文”所指的复用范围未进一步拆分。",
+        "“命脉”可单列评价动作，也可视为机制解释中的强调。"
+      ]
+    },
+    {
+      "packet_id": "pcecccfc8",
+      "full_context_read": true,
+      "focal_spans": [
+        {
+          "block_id": "b015",
+          "quote": "这是估算而不是实测定价，但方向很清楚：散件零售价拼不过整机的规模化采购，DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。"
+        },
+        {
+          "block_id": "b016",
+          "quote": "账三：等国产，图纸抄不出来，但\"国产鸭\"真的在路上了"
+        },
+        {
+          "block_id": "b017",
+          "quote": "等来的不会是 399 美元的像素级复刻——只能靠逆向，成本反而更高（参考上一段）。"
+        }
+      ],
+      "operation": [
+        "纠正性推断",
+        "价值重点重构",
+        "议程设置"
+      ],
+      "question_under_discussion": {
+        "text": "自行组装能否省钱，等待国产方案可以期待什么？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "text": "DIY 可以省钱，以及等待国产便能得到 399 美元像素级复刻的预期。",
+        "status": "两项均由叙述者作为对照提出；所报高赞评论只表达等待华强北发力，并未明说价格或复刻精度。",
+        "reader_belief_evidence": [
+          {
+            "block_id": "b017",
+            "quote": "\"坐等华强北发力\"是高赞评论"
+          }
+        ]
+      },
+      "asserted_or_promised_content": "本段援引舵机散买贵、树莓派涨价及有华强北背景网友估算手搓一套不会低于 4000 元，明示这不是实测定价，却据此断定 DIY 不省钱而换来折腾自由。随后转入等国产路线，称硬件未开源使 399 美元精确复刻不可期待，只能逆向且成本更高，同时预告国产鸭正在开发。",
+      "relation": {
+        "type": "因果推断、价值维度转换与组织转场",
+        "text": "采购成本被用来否定省钱预期；省钱与折腾自由是可兼容维度。硬件文档缺失被连接到逆向及更高成本；标题将精确复刻与国产方案作范围区分。"
+      },
+      "grounds_and_warrant": {
+        "evidence_spans": [
+          {
+            "block_id": "b015",
+            "quote": "这是估算而不是实测定价"
+          },
+          {
+            "block_id": "b008",
+            "quote": "开的是软件管线，硬件图纸没开。"
+          },
+          {
+            "block_id": "b018",
+            "quote": "用的是树莓派 + 飞特舵机的完全不同架构"
+          }
+        ],
+        "text": "原文明说成本与文档前提，后文以不同架构项目支撑国产路线。散件估算并非逆向成本实测，也未覆盖全部渠道、已有零件或采购规模，故两项必然性结论强于所列支持。"
+      },
+      "information_update": "为 DIY 路线增添成本限制，并把第三条路线具体化为等待不同的国产设计。",
+      "stance_and_presentation": "先承认估算性质，再以“伪命题”“不会”“只能”强断言收束；连续账目标题组织选择。",
+      "support_assessment": "有来源归属和局部成本理由；全面否定省钱及逆向必然更贵仍缺同口径核算。国产项目报道也不等于交付验证。",
+      "preserved_usefulness": "保留估算性质、4000 元下限的网友归属、硬件未开源边界，以及 DIY 自由和不同国产架构的选择价值。",
+      "uncertainties": [
+        "不能把高赞等待评论扩展成读者普遍相信低价精确复刻。",
+        "“图纸抄不出来”可作为文档缺失的概括，也可单列纠正动作。"
+      ]
+    },
+    {
+      "packet_id": "pe17dfb4c",
+      "full_context_read": true,
+      "focal_spans": [
+        {
+          "block_id": "title",
+          "quote": "开源不含硬件、国内不直邮：上手机器鸭 Microduck 前，先把买、搓和等三条路算明白"
+        }
+      ],
+      "operation": [
+        "范围限定",
+        "议程设置",
+        "行动引导"
+      ],
+      "question_under_discussion": {
+        "text": "国内用户上手 Microduck 前，应如何理解开源与配送限制，并比较购买、自制和等待三条路线？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "text": null,
+        "status": "标题直接给出两项限制，没有指认声称硬件也开源或国内可直邮的先前说法；正文的软件全开源表述与硬件未开源可以同时成立。",
+        "reader_belief_evidence": null
+      },
+      "asserted_or_promised_content": "标题断言 Microduck 的开源范围不含硬件、国内不直邮，并要求在上手之前比较买、搓、等三条路线。结合正文，购买涉及官方订单及转运等待，自制指 Open Duck Mini 前身项目，等待主要指不同架构的国产方案；标题承诺提供选路依据，并未承诺三者都能立即取得相同成品。",
+      "relation": {
+        "type": "范围限定、理由铺垫与组织承诺",
+        "text": "软件与硬件属于不同开放范围；不直邮与不能获得产品并非同义。冒号把两项现实限制接到先比较路线的建议，正文分账展开这一结构。三条路线是决策备选，也可分阶段结合，不构成逻辑互斥。"
+      },
+      "grounds_and_warrant": {
+        "evidence_spans": [
+          {
+            "block_id": "b008",
+            "quote": "开的是软件管线，硬件图纸没开。"
+          },
+          {
+            "block_id": "b010",
+            "quote": "社区普遍反馈官方不向中国大陆（及港澳台）提供邮寄。"
+          },
+          {
+            "block_id": "b012",
+            "quote": "账二：自己搓，搓的是它开源的\"前身\""
+          }
+        ],
+        "text": "正文明确给出开放边界、配送报道及三组路线讨论，足以说明标题组织功能。国内不直邮在正文归于社区反馈，标题省略归属；本材料没有独立官方配送核验，所列成本也不都是实测。"
+      },
+      "information_update": "预先压缩文章的两项约束和三段结构，帮助定位后文比较；这是阅读导航与决策范围限定。",
+      "stance_and_presentation": "以两个否定短语开头，继以冒号和三项并列，用先后顺序引导审慎行动；口语化路线名称降低阅读门槛。",
+      "support_assessment": "组织承诺有正文结构支持；标题的事实性限制有文内报道对应，但仍须保留来源层次，不能视为独立事实核验。",
+      "preserved_usefulness": "保留软件与硬件开放的区别、官方直邮的地域范围，以及购买、自制前身、等待国产方案的实际差异。",
+      "uncertainties": [
+        "算明白可涵盖金钱、时间与适用人群，不必理解成承诺精确总价。",
+        "标题的国内范围由正文展开为中国大陆及港澳台；单读标题时地域细节较少。"
+      ]
+    },
+    {
+      "packet_id": "p69973a93",
+      "full_context_read": true,
+      "focal_spans": [
+        {
+          "block_id": "b011",
+          "quote": "这 399 美元 + 转运折腾费买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道。"
+        },
+        {
+          "block_id": "b011",
+          "quote": "如果你是拿它做教学、跑实验、学 RL 部署的，这条链路的\"开箱即用\"程度，目前 4000 元内没有平替。"
+        }
+      ],
+      "operation": [
+        "评价性重构",
+        "类比说明",
+        "条件性价值判断"
+      ],
+      "question_under_discussion": {
+        "text": "399 美元及转运费用主要买到什么，对教学、实验和 RL 部署有什么价值？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "text": "把购买的核心价值理解为一件玩具。",
+        "status": "由本段否定句设立的评价参照，没有指认持此说的来源，也未证明读者原本这样理解。",
+        "reader_belief_evidence": null
+      },
+      "asserted_or_promised_content": "原文把 399 美元加转运费用的核心价值放在现成的 sim-to-real 强化学习管道。它以 HF 的 Reachy Mini 为参照，列出 299 美元、累计约 1 万台及 200 多个社区 APP，再述 Microduck 两天内出现仿真跳舞和倒立策略视频；对教学、实验、学习 RL 部署者，断言此链路的开箱即用程度目前在 4000 元内无平替。",
+      "relation": {
+        "type": "价值优先级、类比与适用范围限定",
+        "text": "玩具体验与学习管道可兼容，否定结构重排购买重点。上一产品的社区规模和当前仿真玩法为链路价值提供参照；条件句把评价限定到特定用途，并非对所有买家或一切性能排他排序。"
+      },
+      "grounds_and_warrant": {
+        "evidence_spans": [
+          {
+            "block_id": "b011",
+            "quote": "Microduck 的社区玩法两天内已经出现仿真跳舞、仿真倒立的策略视频。"
+          },
+          {
+            "block_id": "b007",
+            "quote": "仿真环境、SDK 和训练代码"
+          }
+        ],
+        "text": "正文的软件内容与开发者部署手记支持管道用途。由社区活跃度到当前价位无平替的连接未充分展示：未给同预算竞品比较、统一易用性指标或转运总额，仿真视频也不是相应真机动作证据。"
+      },
+      "information_update": "把此前价格与配送负担转换成用途导向的价值依据，并以其他产品和当前玩法具体化社区潜力。",
+      "stance_and_presentation": "用否定后肯定的结构强调核心价值，以数字和产品参照增强具体感；先设用户条件，再给确定性的市场比较结论。",
+      "support_assessment": "管道用途有文内内容支持；4000 元内无平替属于尚未由比较材料充分证明的评价，不据此判为错误。",
+      "preserved_usefulness": "保留用途条件、价格与额外转运费用、仿真限定、约数和目前这一时间范围。",
+      "uncertainties": [
+        "开箱即用程度没有统一衡量标准；它可指链路配齐程度，并不必然承诺免配置或即刻到货。",
+        "上一产品生态能否迁移到 Microduck，文内没有验证。"
+      ]
+    },
+    {
+      "packet_id": "pcf0cdf4a",
+      "full_context_read": true,
+      "focal_spans": [
+        {
+          "block_id": "b006",
+          "quote": "机载是否还带 Jetson 尚不清楚，已知有一块国产瑞芯微 RK3566 核心板"
+        },
+        {
+          "block_id": "b006",
+          "quote": "也就是说，训练靠算力，实机真不靠。"
+        }
+      ],
+      "operation": [
+        "不确定性限定",
+        "流程解释",
+        "概括性推断"
+      ],
+      "question_under_discussion": {
+        "text": "Microduck 的机载计算配置有哪些已知和未知，训练与真机部署如何分工？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "text": null,
+        "status": "未引述读者或他人对 Jetson 配置、真机算力要求的旧主张；末句以训练和实机两个阶段构成对照。",
+        "reader_belief_evidence": null
+      },
+      "asserted_or_promised_content": "原文称机载是否还带 Jetson 尚不清楚，已知含瑞芯微 RK3566 核心板，即 Firefly ROC-RK3566-PC，四核 A55、1GB 内存与 32GB 存储。所述开发者手记称走路、起身动作在英伟达 GPU 上以 mjlab、MuJoCo Warp、PPO 训练 1~2 小时收敛，导出 ONNX 后部署到该板，以 50Hz、每 20ms 一次控制运行，实测 15022 个 tick 只漏 3 个；末句据此概括训练靠算力、实机不靠。",
+      "relation": {
+        "type": "已知范围限定、流程分工与推断",
+        "text": "已知 RK3566 存在与 Jetson 是否存在未知可以兼容，不能据前者排除后者。训练和部署是连续的不同阶段；末句将具体部署表现重述为算力需求差异，但字面不靠算力比过程描述更强。"
+      },
+      "grounds_and_warrant": {
+        "evidence_spans": [
+          {
+            "block_id": "b006",
+            "quote": "有开发者写了完整的部署手记"
+          },
+          {
+            "block_id": "b006",
+            "quote": "导出 ONNX 后塞进这颗巴掌大的板子，50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。"
+          }
+        ],
+        "text": "手记报道支持所述动作在该板运行及该次控制记录；把它理解成部署不需训练级算力有合理连接，但原文未明确这个范围。已载计算板也是实机仍有计算的文内反例，Jetson 未知则限制硬件排除结论；均未独立核验。"
+      },
+      "information_update": "细化硬件规格与训练到部署流程，给出一次控制表现，并把它外推为阶段性算力分工。",
+      "stance_and_presentation": "开头明确区分未知与已知，中段借手记及密集数字呈现支持，结尾用重述标记和短句对称作确定性总结。",
+      "support_assessment": "具体部署叙述有归属明确的文内支持；末句若指完全不需算力，支持不足且与机载计算板不合，若指无需训练级算力则更贴近所述流程。",
+      "preserved_usefulness": "保留 Jetson 未知、RK3566 已知、开发者归属、动作范围及所有运行和训练数值。",
+      "uncertainties": [
+        "算力在末句可能口语化地指高算力，但不能把这一善意解释当成原文明说。",
+        "手记的硬件全貌、测试条件及其他动作表现未知。"
+      ]
+    },
+    {
+      "packet_id": "paf29f78f",
+      "full_context_read": true,
+      "focal_spans": [
+        {
+          "block_id": "b058",
+          "quote": "这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系"
+        },
+        {
+          "block_id": "b058",
+          "quote": "开发者知道在哪里发布、如何变现；用户知道在哪里找应用、支付是否安全。"
+        }
+      ],
+      "operation": [
+        "历史回顾",
+        "因果解释",
+        "类比铺垫"
+      ],
+      "question_under_discussion": {
+        "text": "如何解释 App Store 的增长及开发者收益，这个历史案例怎样支持新供给体系的价值判断？",
+        "provenance": "analyst_reconstruction"
+      },
+      "prior_or_foil": {
+        "text": "苹果手机最便宜是这些增长和收益表现的原因。",
+        "status": "本段明确否定的因果参照，未归属于任何被引述者，也未给出读者持此解释的证据。",
+        "reader_belief_evidence": null
+      },
+      "asserted_or_promised_content": "原文回顾 iPhone 发布后 App Store 于 2008 年 7 月上线，首周末下载 1000 万次，两个月内应用从 500 款增至 3000 款、累计下载突破 1 亿次；到 2023 年苹果累计向开发者支付超过 3200 亿美元。叙述者将这些表现归因于苹果第一个建立让开发者明白发布、变现渠道，让用户明白找应用及支付安全的确定性供给体系，并否定手机最便宜这一解释。",
+      "relation": {
+        "type": "因果解释替换与跨领域类比",
+        "text": "句式把最低手机价格与供给体系列作竞争性解释，但二者并非逻辑上不能共存，也没有排除一切价格因素。案例承接新体系带来架构优势的概括，并由下一段明说类推到 Agent 时代。"
+      },
+      "grounds_and_warrant": {
+        "evidence_spans": [
+          {
+            "block_id": "b058",
+            "quote": "开发者知道在哪里发布、如何变现；用户知道在哪里找应用、支付是否安全。"
+          },
+          {
+            "block_id": "b059",
+            "quote": "AI Agent 时代，类似的逻辑正在展开。"
+          }
+        ],
+        "text": "数字展示正文所称的规模表现，双边参与者的确定性提供机制解释。降低参与障碍是合理但未明说的连接；这些数值本身未识别增长原因，也未验证苹果第一个或排除其他原因。跨时代条件是否足够相似仍未知，文内没有独立核验。"
+      },
+      "information_update": "把前段抽象的供给体系优势具体化为历史案例及双边渠道机制，再为 Agent 产业判断提供类比参照。",
+      "stance_and_presentation": "先按时间陈列大数值，再用否定后肯定的因果句集中解释，最后以开发者和用户的对称分句展开确定性。",
+      "support_assessment": "历史表现和机制叙述可支撑解释的可理解性，尚不能单独证成排他因果、首创地位或 Agent 时代同样结果。",
+      "preserved_usefulness": "保留下载量、应用数、开发者累计所得的不同口径，以及发布时间、截至年份、首次性主张和类比用途。",
+      "uncertainties": [
+        "这可以回指全部所列增长与收益，也可能重点指长期开发者生态规模。",
+        "确定性如何衡量、历史数据来源以及对 Agent 的适用边界未具体说明。"
+      ]
+    }
+  ]
+}

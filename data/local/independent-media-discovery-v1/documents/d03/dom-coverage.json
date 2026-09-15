@@ -1,0 +1,22 @@
+{
+  "nonwhitespace_text_coverage_equal": true,
+  "removed_metadata_or_footer_nodes": [
+    {
+      "selector": "h1.item-name",
+      "text": "《到站秀》第17弹：Sphero 星球大战7 “呆萌”BB-8 遥控智能机器人",
+      "dom_html": "<h1 class=\"item-name\">\n<span class=\"edit_interface\"></span>\r\n                                                                《到站秀》第17弹：Sphero 星球大战7 “呆萌”BB-8 遥控智能机器人                            </h1>"
+    },
+    {
+      "selector": ".recommend-tab",
+      "text": "2015-11-06 21:00:29 149点赞 124收藏 0评论 直达链接",
+      "dom_html": "<div class=\"recommend-tab z-clearfix item-preferential\">\n<span class=\"xilie\">\n<span>2015-11-06 21:00:29</span>\n<span>149点赞</span>\n<span>124收藏</span>\n<span>0评论</span>\n</span>\n<!-- 风险提示 -->\n<!-- 直达链接-->\n<a class=\"direct-link\" href=\"http://news.smzdm.com/p/19437\" onclick=\"\" target=\"_blank\">直达链接</a>\n</div>"
+    },
+    {
+      "selector": ".the-end",
+      "text": "",
+      "dom_html": "<div class=\"the-end\"><img alt=\"\" src=\"https://res.smzdm.com/pc/pc_shequ/dist/img/the-end.png\"/></div>"
+    }
+  ],
+  "article_selector": "article#articleId",
+  "coverage_scope": "正文容器内全部非空白文本；未把图片像素中的文字当作已读取。"
+}

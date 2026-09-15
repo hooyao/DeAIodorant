@@ -1,0 +1,50 @@
+{
+  "protocol_version": "research-value-triage-1.0",
+  "generated_at": "2026-08-29T16:21:25.595389+00:00",
+  "model": "qwen3.8-27b",
+  "model_digest": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "backend": "openai",
+  "endpoint": "http://127.0.0.1:8000/v1",
+  "concurrency": 16,
+  "prompt_versions": {
+    "primary": "research-value-primary-v3",
+    "verifier": "research-value-verifier-v3"
+  },
+  "temperature": 0,
+  "seed": 42,
+  "restriction": "Research-value triage is separate from translation provenance. Model results are measurements and do not replace human quality review.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "candidate_files": [
+    {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/review_candidates/leiphone_candidates.jsonl",
+      "sha256": "b7ec27015ceeecffa26317046f8e4361bc5fa6ccc3d28ab2eb9150bdbca11bdc"
+    },
+    {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/review_candidates/qbitai_candidates.jsonl",
+      "sha256": "1bcb5c5a97d756f49a156ff9cc0b67e275fb2b9d973b987aa610f354f56f6a12"
+    }
+  ],
+  "provenance_results": "/home/hooyao/deaiodorant-post-v2-data/triage_results.jsonl",
+  "documents": 131,
+  "status_counts": {
+    "model_assisted_substantive": 109,
+    "model_assisted_low_value": 11,
+    "value_uncertain": 11
+  },
+  "results": "/home/hooyao/deaiodorant-post-v2-data/value_qwen38/value_results.jsonl",
+  "results_sha256": "225374d369f2c8656f6a47b769817b55920b27bbea71fe4a446e6a307e58f155",
+  "artifacts": {
+    "model_assisted_substantive": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/value_qwen38/model_assisted_substantive.jsonl",
+      "sha256": "34e6c3b1d90f5a551d53c9211f0743b2ef9de2be5edb6ae2b2999df76c4e6a5d"
+    },
+    "model_assisted_low_value": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/value_qwen38/model_assisted_low_value.jsonl",
+      "sha256": "7236aa1cbf2598517e7a43bfa946a053dd4efbe3620800930fb8e267e2ce9052"
+    },
+    "value_uncertain": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/value_qwen38/value_uncertain.jsonl",
+      "sha256": "41585d6e99ac5eefe70a1a353c02836ddba9115eef2294de4bb14e27e4294692"
+    }
+  }
+}

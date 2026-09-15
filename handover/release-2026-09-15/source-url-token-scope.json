@@ -1,0 +1,15 @@
+{
+  "results": [
+    {
+      "json_pointer": "/line/0/text",
+      "matched_url_hosts": [
+        "ai.facebook.com"
+      ],
+      "expired": true,
+      "expires_at_utc": "2022-05-06T09:14:11+00:00",
+      "anonymous_user_identifier": false,
+      "audience_is_hostname": false
+    }
+  ],
+  "token_values_recorded": false
+}

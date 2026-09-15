@@ -1,0 +1,63 @@
+{
+  "schema_version": "label-studio-research-archive-validation-v1",
+  "source_database_local_path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\label_studio_data\\label_studio.sqlite3",
+  "snapshot_started_at_utc": "2026-09-15T02:22:54.873752+00:00",
+  "snapshot_finished_at_utc": "2026-09-15T02:22:55.795886+00:00",
+  "read_only_uri": true,
+  "query_only": true,
+  "single_read_transaction": true,
+  "journal_mode": "delete",
+  "source_components_before": [
+    {
+      "name": "label_studio.sqlite3",
+      "bytes": 8138752,
+      "sha256": "7a672efd29d591b2ce1f5a93ce5b5f13ebabba7604a6c1d5750639ef7f682ca7"
+    }
+  ],
+  "source_components_after": [
+    {
+      "name": "label_studio.sqlite3",
+      "bytes": 8138752,
+      "sha256": "7a672efd29d591b2ce1f5a93ce5b5f13ebabba7604a6c1d5750639ef7f682ca7"
+    }
+  ],
+  "source_component_bytes_unchanged": true,
+  "source_authentication_values_read": false,
+  "project_counts": [
+    {
+      "project_id": 1,
+      "tasks": 220,
+      "annotations": 9,
+      "predictions": 0,
+      "drafts": 0
+    },
+    {
+      "project_id": 2,
+      "tasks": 83,
+      "annotations": 7,
+      "predictions": 0,
+      "drafts": 0
+    },
+    {
+      "project_id": 3,
+      "tasks": 25,
+      "annotations": 25,
+      "predictions": 0,
+      "drafts": 0
+    }
+  ],
+  "total_tasks": 328,
+  "total_annotations": 41,
+  "total_predictions": 0,
+  "total_drafts": 0,
+  "unique_ids_pass": true,
+  "research_foreign_keys_pass": true,
+  "source_foreign_key_issue_count": 0,
+  "raw_sqlite_values_round_trip_equal": true,
+  "project_json_round_trip_equal": true,
+  "archive_scan_findings": [],
+  "historical_mirror_only_allowed_pointer_removed": true,
+  "old_exports_missing_current_annotation_count": 2,
+  "live_application_import_tested": false,
+  "说明": "仅做程序级归档、字段／数量／ID／逐值／hash核验；未向模型展示任务、标签或validation reserve正文，未作新的研究推断。"
+}

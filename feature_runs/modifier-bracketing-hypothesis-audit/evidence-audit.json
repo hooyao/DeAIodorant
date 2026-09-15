@@ -1,0 +1,46 @@
+{
+  "errors": [],
+  "linked_claim_ids": [
+    "H-BRACKET",
+    "H-PARSER",
+    "H-SEMANTIC",
+    "H-TERM",
+    "M-ASSOCIATION",
+    "M-PARAPHRASE",
+    "M-TREE",
+    "OBS-BRACKET",
+    "P-ANCHOR",
+    "P-BRACKET"
+  ],
+  "notice": "This local audit does not visit URLs, verify source existence or content, appraise evidence, establish novelty, or determine whether a source supports a claim. Verify every source and link manually.",
+  "novelty_status": "not_assessed",
+  "record_cross_check_performed": false,
+  "relation_counts": {
+    "challenging": 1,
+    "contextual": 3,
+    "method": 3
+  },
+  "schema_version": "2.0",
+  "search_boundary_id": "SEARCH-DEAIODORANT-BRACKETING-001",
+  "searched_on": "2026-08-31",
+  "source_count": 7,
+  "source_ids": [
+    "SRC-BRACKET-001",
+    "SRC-BRACKET-002",
+    "SRC-BRACKET-003",
+    "SRC-BRACKET-004",
+    "SRC-BRACKET-005",
+    "SRC-BRACKET-006",
+    "SRC-LOCAL-BOUNDARY-001"
+  ],
+  "source_type_counts": {
+    "dataset_or_registry": 1,
+    "other": 2,
+    "preprint": 1,
+    "primary_method": 2,
+    "primary_research": 1
+  },
+  "status": "VALID_FOR_HUMAN_SOURCE_REVIEW",
+  "valid": true,
+  "warnings": []
+}

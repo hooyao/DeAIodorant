@@ -1,0 +1,557 @@
+[
+  {
+    "id": 1,
+    "title": "DeAIodorant translation review v2",
+    "label_config": "<View>\n  <Style>\n    .htx-text { white-space: pre-wrap; font-size: 17px; line-height: 1.85; }\n    .lsf-main-view__annotation { max-width: 1500px; }\n  </Style>\n  <View style=\"padding: 8px 16px 18px; border-bottom: 1px solid #ddd;\">\n    <Header value=\"$title\" size=\"2\" />\n    <HyperText name=\"source_metadata\" value=\"$source_html\" inline=\"true\"\n      clickableLinks=\"true\" selectionEnabled=\"false\" />\n  </View>\n  <View style=\"display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 26px; align-items: start;\">\n    <View style=\"padding: 20px 30px; max-width: 900px;\">\n      <Text name=\"article\" value=\"$text\" selectionEnabled=\"false\" />\n    </View>\n    <View style=\"position: sticky; top: 12px; padding: 20px; border-left: 1px solid #ddd; background: #fafafa;\">\n      <Header value=\"Human decision\" size=\"3\" />\n      <Text name=\"decision_policy\"\n        value=\"Accept only independently authored Chinese reporting, interviews, first-party practice, or original synthesis with no specific translated foreign work.\" />\n      <Choices name=\"decision\" toName=\"article\" choice=\"single-radio\" required=\"true\"\n        requiredMessage=\"Select a review decision.\">\n        <Choice value=\"Reviewed original\" hotkey=\"1\" />\n        <Choice value=\"Exclude or uncertain\" hotkey=\"2\" />\n      </Choices>\n      <View visibleWhen=\"choice-selected\" whenTagName=\"decision\" whenChoiceValue=\"Reviewed original\">\n        <Header value=\"Evidence for original authorship\" size=\"4\" />\n        <Choices name=\"original_rationale\" toName=\"article\" choice=\"single-radio\"\n          required=\"true\" requiredMessage=\"Select the evidence supporting original authorship.\">\n          <Choice value=\"Original reporting or interview\" hotkey=\"3\" />\n          <Choice value=\"First-party practice or case study\" hotkey=\"4\" />\n          <Choice value=\"Independent synthesis\" hotkey=\"5\" />\n        </Choices>\n      </View>\n      <View visibleWhen=\"choice-selected\" whenTagName=\"decision\" whenChoiceValue=\"Exclude or uncertain\">\n        <Header value=\"Reason to exclude\" size=\"4\" />\n        <Choices name=\"exclusion_rationale\" toName=\"article\" choice=\"single-radio\"\n          required=\"true\" requiredMessage=\"Select an exclusion reason.\">\n          <Choice value=\"Translation or compilation marker\" hotkey=\"6\" />\n          <Choice value=\"Specific foreign source work\" hotkey=\"7\" />\n          <Choice value=\"Reproduced foreign transcript\" hotkey=\"8\" />\n          <Choice value=\"Insufficient or ambiguous evidence\" hotkey=\"9\" />\n          <Choice value=\"Low research value or promotional material\" hotkey=\"0\" />\n        </Choices>\n      </View>\n      <TextArea name=\"review_notes\" toName=\"article\" label=\"Additional notes\"\n        placeholder=\"Optional supporting details, quotations, or source clues\"\n        rows=\"4\" maxSubmissions=\"1\" showSubmitButton=\"false\" />\n    </View>\n  </View>\n</View>",
+    "expert_instruction": "Review the complete article and source page when needed. Accept only independently authored Chinese reporting, interviews, first-party practice, or original synthesis.",
+    "show_instruction": 1,
+    "model_version": "",
+    "data_types": {
+      "source_html": "HyperText",
+      "text": "Text"
+    },
+    "is_published": 0,
+    "created_at": "2026-08-20 17:26:05.904720",
+    "updated_at": "2026-08-21 15:33:09.965288",
+    "show_skip_button": 1,
+    "show_collab_predictions": 1,
+    "sampling": "Sequential sampling",
+    "overlap_cohort_percentage": 100,
+    "show_overlap_first": 0,
+    "control_weights": {
+      "decision": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Reviewed original": 1.0,
+          "Exclude or uncertain": 1.0
+        }
+      },
+      "original_rationale": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Original reporting or interview": 1.0,
+          "First-party practice or case study": 1.0,
+          "Independent synthesis": 1.0
+        }
+      },
+      "exclusion_rationale": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Translation or compilation marker": 1.0,
+          "Specific foreign source work": 1.0,
+          "Reproduced foreign transcript": 1.0,
+          "Insufficient or ambiguous evidence": 1.0,
+          "Low research value or promotional material": 1.0
+        }
+      },
+      "review_notes": {
+        "overall": 1.0,
+        "type": "TextArea",
+        "labels": {}
+      }
+    },
+    "result_count": 0,
+    "is_draft": 0,
+    "description": "Human review of Chinese translation provenance. Uncertainty is excluded under the fail-closed admission policy.",
+    "color": "#FFFFFF",
+    "enable_empty_annotation": 1,
+    "maximum_annotations": 1,
+    "min_annotations_to_start_training": 0,
+    "show_annotation_history": 0,
+    "show_ground_truth_first": 0,
+    "evaluate_predictions_automatically": 0,
+    "reveal_preannotations_interactively": 0,
+    "skip_queue": "REQUEUE_FOR_OTHERS",
+    "parsed_label_config": {
+      "decision": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Reviewed original",
+          "Exclude or uncertain"
+        ],
+        "labels_attrs": {
+          "Reviewed original": {
+            "value": "Reviewed original",
+            "hotkey": "1"
+          },
+          "Exclude or uncertain": {
+            "value": "Exclude or uncertain",
+            "hotkey": "2"
+          }
+        }
+      },
+      "original_rationale": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Original reporting or interview",
+          "First-party practice or case study",
+          "Independent synthesis"
+        ],
+        "labels_attrs": {
+          "Original reporting or interview": {
+            "value": "Original reporting or interview",
+            "hotkey": "3"
+          },
+          "First-party practice or case study": {
+            "value": "First-party practice or case study",
+            "hotkey": "4"
+          },
+          "Independent synthesis": {
+            "value": "Independent synthesis",
+            "hotkey": "5"
+          }
+        }
+      },
+      "exclusion_rationale": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Translation or compilation marker",
+          "Specific foreign source work",
+          "Reproduced foreign transcript",
+          "Insufficient or ambiguous evidence",
+          "Low research value or promotional material"
+        ],
+        "labels_attrs": {
+          "Translation or compilation marker": {
+            "value": "Translation or compilation marker",
+            "hotkey": "6"
+          },
+          "Specific foreign source work": {
+            "value": "Specific foreign source work",
+            "hotkey": "7"
+          },
+          "Reproduced foreign transcript": {
+            "value": "Reproduced foreign transcript",
+            "hotkey": "8"
+          },
+          "Insufficient or ambiguous evidence": {
+            "value": "Insufficient or ambiguous evidence",
+            "hotkey": "9"
+          },
+          "Low research value or promotional material": {
+            "value": "Low research value or promotional material",
+            "hotkey": "0"
+          }
+        }
+      },
+      "review_notes": {
+        "type": "TextArea",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [],
+        "labels_attrs": {}
+      }
+    },
+    "label_config_hash": -8179709433998277774,
+    "annotator_evaluation_enabled": 0
+  },
+  {
+    "id": 2,
+    "title": "DeAIodorant uncertain review v2",
+    "label_config": "<View>\n  <Style>\n    .htx-text { white-space: pre-wrap; font-size: 17px; line-height: 1.85; }\n    .lsf-main-view__annotation { max-width: 1500px; }\n  </Style>\n  <View style=\"padding: 8px 16px 18px; border-bottom: 1px solid #ddd;\">\n    <Header value=\"$title\" size=\"2\" />\n    <HyperText name=\"source_metadata\" value=\"$source_html\" inline=\"true\"\n      clickableLinks=\"true\" selectionEnabled=\"false\" />\n  </View>\n  <View style=\"display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 26px; align-items: start;\">\n    <View style=\"padding: 20px 30px; max-width: 900px;\">\n      <Text name=\"article\" value=\"$text\" selectionEnabled=\"false\" />\n    </View>\n    <View style=\"position: sticky; top: 12px; padding: 20px; border-left: 1px solid #ddd; background: #fafafa;\">\n      <Header value=\"Human decision\" size=\"3\" />\n      <Text name=\"decision_policy\"\n        value=\"Accept only independently authored Chinese reporting, interviews, first-party practice, or original synthesis with no specific translated foreign work.\" />\n      <Choices name=\"decision\" toName=\"article\" choice=\"single-radio\" required=\"true\"\n        requiredMessage=\"Select a review decision.\">\n        <Choice value=\"Reviewed original\" hotkey=\"1\" />\n        <Choice value=\"Exclude or uncertain\" hotkey=\"2\" />\n      </Choices>\n      <View visibleWhen=\"choice-selected\" whenTagName=\"decision\" whenChoiceValue=\"Reviewed original\">\n        <Header value=\"Evidence for original authorship\" size=\"4\" />\n        <Choices name=\"original_rationale\" toName=\"article\" choice=\"single-radio\"\n          required=\"true\" requiredMessage=\"Select the evidence supporting original authorship.\">\n          <Choice value=\"Original reporting or interview\" hotkey=\"3\" />\n          <Choice value=\"First-party practice or case study\" hotkey=\"4\" />\n          <Choice value=\"Independent synthesis\" hotkey=\"5\" />\n        </Choices>\n      </View>\n      <View visibleWhen=\"choice-selected\" whenTagName=\"decision\" whenChoiceValue=\"Exclude or uncertain\">\n        <Header value=\"Reason to exclude\" size=\"4\" />\n        <Choices name=\"exclusion_rationale\" toName=\"article\" choice=\"single-radio\"\n          required=\"true\" requiredMessage=\"Select an exclusion reason.\">\n          <Choice value=\"Translation or compilation marker\" hotkey=\"6\" />\n          <Choice value=\"Specific foreign source work\" hotkey=\"7\" />\n          <Choice value=\"Reproduced foreign transcript\" hotkey=\"8\" />\n          <Choice value=\"Insufficient or ambiguous evidence\" hotkey=\"9\" />\n          <Choice value=\"Low research value or promotional material\" hotkey=\"0\" />\n        </Choices>\n      </View>\n      <TextArea name=\"review_notes\" toName=\"article\" label=\"Additional notes\"\n        placeholder=\"Optional supporting details, quotations, or source clues\"\n        rows=\"4\" maxSubmissions=\"1\" showSubmitButton=\"false\" />\n    </View>\n  </View>\n</View>",
+    "expert_instruction": "These candidates remained uncertain after conservative local model-assisted triage. Review the full article and source page.",
+    "show_instruction": 1,
+    "model_version": "",
+    "data_types": {
+      "source_html": "HyperText",
+      "text": "Text"
+    },
+    "is_published": 0,
+    "created_at": "2026-08-21 15:08:11.987652",
+    "updated_at": "2026-08-21 15:33:22.802423",
+    "show_skip_button": 1,
+    "show_collab_predictions": 1,
+    "sampling": "Sequential sampling",
+    "overlap_cohort_percentage": 100,
+    "show_overlap_first": 0,
+    "control_weights": {
+      "decision": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Reviewed original": 1.0,
+          "Exclude or uncertain": 1.0
+        }
+      },
+      "original_rationale": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Original reporting or interview": 1.0,
+          "First-party practice or case study": 1.0,
+          "Independent synthesis": 1.0
+        }
+      },
+      "exclusion_rationale": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Translation or compilation marker": 1.0,
+          "Specific foreign source work": 1.0,
+          "Reproduced foreign transcript": 1.0,
+          "Insufficient or ambiguous evidence": 1.0,
+          "Low research value or promotional material": 1.0
+        }
+      },
+      "review_notes": {
+        "overall": 1.0,
+        "type": "TextArea",
+        "labels": {}
+      }
+    },
+    "result_count": 0,
+    "is_draft": 0,
+    "description": "Human review subset containing only candidates that remained uncertain after conservative, three-profile local model triage.",
+    "color": "#FFFFFF",
+    "enable_empty_annotation": 1,
+    "maximum_annotations": 1,
+    "min_annotations_to_start_training": 0,
+    "show_annotation_history": 0,
+    "show_ground_truth_first": 0,
+    "evaluate_predictions_automatically": 0,
+    "reveal_preannotations_interactively": 0,
+    "skip_queue": "REQUEUE_FOR_OTHERS",
+    "parsed_label_config": {
+      "decision": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Reviewed original",
+          "Exclude or uncertain"
+        ],
+        "labels_attrs": {
+          "Reviewed original": {
+            "value": "Reviewed original",
+            "hotkey": "1"
+          },
+          "Exclude or uncertain": {
+            "value": "Exclude or uncertain",
+            "hotkey": "2"
+          }
+        }
+      },
+      "original_rationale": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Original reporting or interview",
+          "First-party practice or case study",
+          "Independent synthesis"
+        ],
+        "labels_attrs": {
+          "Original reporting or interview": {
+            "value": "Original reporting or interview",
+            "hotkey": "3"
+          },
+          "First-party practice or case study": {
+            "value": "First-party practice or case study",
+            "hotkey": "4"
+          },
+          "Independent synthesis": {
+            "value": "Independent synthesis",
+            "hotkey": "5"
+          }
+        }
+      },
+      "exclusion_rationale": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Translation or compilation marker",
+          "Specific foreign source work",
+          "Reproduced foreign transcript",
+          "Insufficient or ambiguous evidence",
+          "Low research value or promotional material"
+        ],
+        "labels_attrs": {
+          "Translation or compilation marker": {
+            "value": "Translation or compilation marker",
+            "hotkey": "6"
+          },
+          "Specific foreign source work": {
+            "value": "Specific foreign source work",
+            "hotkey": "7"
+          },
+          "Reproduced foreign transcript": {
+            "value": "Reproduced foreign transcript",
+            "hotkey": "8"
+          },
+          "Insufficient or ambiguous evidence": {
+            "value": "Insufficient or ambiguous evidence",
+            "hotkey": "9"
+          },
+          "Low research value or promotional material": {
+            "value": "Low research value or promotional material",
+            "hotkey": "0"
+          }
+        }
+      },
+      "review_notes": {
+        "type": "TextArea",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [],
+        "labels_attrs": {}
+      }
+    },
+    "label_config_hash": -8179709433998277774,
+    "annotator_evaluation_enabled": 0
+  },
+  {
+    "id": 3,
+    "title": "DeAIodorant research value review v1",
+    "label_config": "<View>\n  <Style>\n    .htx-text { white-space: pre-wrap; font-size: 17px; line-height: 1.85; }\n    .lsf-main-view__annotation { max-width: 1500px; }\n  </Style>\n  <View style=\"padding: 8px 16px 18px; border-bottom: 1px solid #ddd;\">\n    <Header value=\"$title\" size=\"2\" />\n    <HyperText name=\"source_metadata\" value=\"$source_html\" inline=\"true\"\n      clickableLinks=\"true\" selectionEnabled=\"false\" />\n  </View>\n  <View style=\"display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 26px; align-items: start;\">\n    <View style=\"padding: 20px 30px; max-width: 900px;\">\n      <Text name=\"article\" value=\"$text\" selectionEnabled=\"false\" />\n    </View>\n    <View style=\"position: sticky; top: 12px; padding: 20px; border-left: 1px solid #ddd; background: #fafafa;\">\n      <Header value=\"Research-value decision\" size=\"3\" />\n      <Text name=\"value_policy\"\n        value=\"Keep documents with concrete facts, technical details, implementation experience, evidence-rich interviews, or independent analysis. Exclude promotion and information-thin material.\" />\n      <Choices name=\"value_decision\" toName=\"article\" choice=\"single-radio\"\n        required=\"true\" requiredMessage=\"Select a research-value decision.\">\n        <Choice value=\"Keep substantive\" hotkey=\"1\" />\n        <Choice value=\"Exclude low value\" hotkey=\"2\" />\n      </Choices>\n      <View visibleWhen=\"choice-selected\" whenTagName=\"value_decision\" whenChoiceValue=\"Keep substantive\">\n        <Header value=\"Evidence of value\" size=\"4\" />\n        <Choices name=\"substantive_rationale\" toName=\"article\" choice=\"single-radio\"\n          required=\"true\" requiredMessage=\"Select the substantive-content evidence.\">\n          <Choice value=\"In-depth reporting or interview\" hotkey=\"3\" />\n          <Choice value=\"Technical or methodological detail\" hotkey=\"4\" />\n          <Choice value=\"First-party practice or concrete data\" hotkey=\"5\" />\n        </Choices>\n      </View>\n      <View visibleWhen=\"choice-selected\" whenTagName=\"value_decision\" whenChoiceValue=\"Exclude low value\">\n        <Header value=\"Reason to exclude\" size=\"4\" />\n        <Choices name=\"low_value_rationale\" toName=\"article\" choice=\"single-radio\"\n          required=\"true\" requiredMessage=\"Select a low-value reason.\">\n          <Choice value=\"Promotional or event announcement\" hotkey=\"6\" />\n          <Choice value=\"Thin news aggregation\" hotkey=\"7\" />\n          <Choice value=\"Marketing claims without useful detail\" hotkey=\"8\" />\n          <Choice value=\"Insufficient usable content\" hotkey=\"9\" />\n        </Choices>\n      </View>\n      <TextArea name=\"value_notes\" toName=\"article\" label=\"Additional notes\"\n        placeholder=\"Optional details supporting the value decision\"\n        rows=\"4\" maxSubmissions=\"1\" showSubmitButton=\"false\" />\n    </View>\n  </View>\n</View>",
+    "expert_instruction": "Judge research value separately from translation provenance. Keep concrete facts, technical detail, implementation experience, evidence-rich interviews, or independent analysis. Exclude promotional and information-thin material.",
+    "show_instruction": 1,
+    "model_version": "",
+    "data_types": {
+      "source_html": "HyperText",
+      "text": "Text"
+    },
+    "is_published": 0,
+    "created_at": "2026-08-21 16:53:32.972935",
+    "updated_at": "2026-08-21 16:53:32.972952",
+    "show_skip_button": 1,
+    "show_collab_predictions": 1,
+    "sampling": "Sequential sampling",
+    "overlap_cohort_percentage": 100,
+    "show_overlap_first": 0,
+    "control_weights": {
+      "value_decision": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Keep substantive": 1.0,
+          "Exclude low value": 1.0
+        }
+      },
+      "substantive_rationale": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "In-depth reporting or interview": 1.0,
+          "Technical or methodological detail": 1.0,
+          "First-party practice or concrete data": 1.0
+        }
+      },
+      "low_value_rationale": {
+        "overall": 1.0,
+        "type": "Choices",
+        "labels": {
+          "Promotional or event announcement": 1.0,
+          "Thin news aggregation": 1.0,
+          "Marketing claims without useful detail": 1.0,
+          "Insufficient usable content": 1.0
+        }
+      },
+      "value_notes": {
+        "overall": 1.0,
+        "type": "TextArea",
+        "labels": {}
+      }
+    },
+    "result_count": 0,
+    "is_draft": 0,
+    "description": "Human quality review for documents whose research value remained uncertain after two-profile Qwen3.8-27B BF16 triage.",
+    "color": "#FFFFFF",
+    "enable_empty_annotation": 1,
+    "maximum_annotations": 1,
+    "min_annotations_to_start_training": 0,
+    "show_annotation_history": 0,
+    "show_ground_truth_first": 0,
+    "evaluate_predictions_automatically": 0,
+    "reveal_preannotations_interactively": 0,
+    "skip_queue": "REQUEUE_FOR_OTHERS",
+    "parsed_label_config": {
+      "value_decision": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Keep substantive",
+          "Exclude low value"
+        ],
+        "labels_attrs": {
+          "Keep substantive": {
+            "value": "Keep substantive",
+            "hotkey": "1"
+          },
+          "Exclude low value": {
+            "value": "Exclude low value",
+            "hotkey": "2"
+          }
+        }
+      },
+      "substantive_rationale": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "In-depth reporting or interview",
+          "Technical or methodological detail",
+          "First-party practice or concrete data"
+        ],
+        "labels_attrs": {
+          "In-depth reporting or interview": {
+            "value": "In-depth reporting or interview",
+            "hotkey": "3"
+          },
+          "Technical or methodological detail": {
+            "value": "Technical or methodological detail",
+            "hotkey": "4"
+          },
+          "First-party practice or concrete data": {
+            "value": "First-party practice or concrete data",
+            "hotkey": "5"
+          }
+        }
+      },
+      "low_value_rationale": {
+        "type": "Choices",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [
+          "Promotional or event announcement",
+          "Thin news aggregation",
+          "Marketing claims without useful detail",
+          "Insufficient usable content"
+        ],
+        "labels_attrs": {
+          "Promotional or event announcement": {
+            "value": "Promotional or event announcement",
+            "hotkey": "6"
+          },
+          "Thin news aggregation": {
+            "value": "Thin news aggregation",
+            "hotkey": "7"
+          },
+          "Marketing claims without useful detail": {
+            "value": "Marketing claims without useful detail",
+            "hotkey": "8"
+          },
+          "Insufficient usable content": {
+            "value": "Insufficient usable content",
+            "hotkey": "9"
+          }
+        }
+      },
+      "value_notes": {
+        "type": "TextArea",
+        "to_name": [
+          "article"
+        ],
+        "inputs": [
+          {
+            "type": "Text",
+            "valueType": null,
+            "value": "text"
+          }
+        ],
+        "labels": [],
+        "labels_attrs": {}
+      }
+    },
+    "label_config_hash": -5832317230154021811,
+    "annotator_evaluation_enabled": 0
+  }
+]

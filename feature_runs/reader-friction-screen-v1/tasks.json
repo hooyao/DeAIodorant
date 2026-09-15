@@ -1,0 +1,386 @@
+[
+  {
+    "data": {
+      "task_number": 1,
+      "passage": "三是列示和披露要求。要求企业应当根据重要性原则并结合实际情况增设报表子项目，通过表格方式细化披露，并规定企业可根据实际情况自愿披露数据资源（含未作为无形资产或存货确认的数据资源）的应用场景或业务模式、原始数据类型来源、加工维护和安全保护情况、涉及的重大交易事项、相关权利失效和受限等相关信息，引导企业主动加强数据资源相关信息披露。"
+    },
+    "meta": {
+      "doc_id": "cf88120b3afa80da3fc4c302",
+      "source": "infoq",
+      "published_at": "2023-12-20",
+      "line_number": 20,
+      "length_band": "short",
+      "cjk_chars": 154,
+      "passage_sha256": "70a9d5bc4870976de4155d7a5344ebac3c1bd545d57d36a06f24507695421566",
+      "followup_priority": 21
+    }
+  },
+  {
+    "data": {
+      "task_number": 2,
+      "passage": "另一个问题是，基础软件在中国的私有云销售模式是否成立，关键在于你的投资回报率。许多客户在部署私有云时，会有许多驻场、运维或定制需求。这些需求会严重消耗公司的研发资源和人力资源，使你无法集中精力提升产品的竞争力。本来可以将优势资源投入到产品竞争力上，却因为这些项目而无法实现。这会导致软件厂商的产品竞争力下降，难以吸引优秀的工程师。因此，我认为应该在公共云上投入更多，进行规模化经营，才有机会在这一领域取得成功。否则，虽然短期内营收可能很高，但到了一定阶段，公司很难获得更高利润，也难以吸引优秀人才，从而无法产生产品竞争力。最终只能在国内做私有化定制的私有软件，很难在海外公共云上获得全球客户。"
+    },
+    "meta": {
+      "doc_id": "3d2cea36287cf278258bee81",
+      "source": "infoq",
+      "published_at": "2025-01-16",
+      "line_number": 50,
+      "length_band": "long",
+      "cjk_chars": 272,
+      "passage_sha256": "31bff7e52a22ab1acc14b2bad90ffd29b8d9d602d44fdf503af7ab2659067abe",
+      "followup_priority": 6
+    }
+  },
+  {
+    "data": {
+      "task_number": 3,
+      "passage": "另外，从脑的机制层面，我觉得有很多有意思的可以讨论。刚才说到大模型在 2021 年结束后，不能进行连续学习的问题。但我们的人脑显然是有连续学习能力的，我们不会在某一个时间点以后不学了。但有意思的是我们脑内存在一些脑组织和区域控制着这个能力。一个例子是海马区 H.M 案例，医生把癫痫病人的海马体摘除后，他的长期记忆停在了做手术的时刻，之后他学不会新事实。这个例子和我们现在讨论的问题有点像，大模型的连续学习能力也许还没从生物脑中借鉴过来，所以我觉得这是一个机遇。神经科学应该和各位多交流，看怎么样把生物脑具有连续学习能力的机理抽离出来帮助设计新的人工智能神经网络。我想这是共同演化的过程，这个过程也会帮助我们去理解生物脑是怎么实现连续学习的。我们以前并没把这个问题看得很重要，但我现在觉得它是让我们持续地面对新挑战的重要事情。"
+    },
+    "meta": {
+      "doc_id": "9f1d90b6ac15dd29465af213",
+      "source": "jiqizhixin",
+      "published_at": "2023-03-27",
+      "line_number": 26,
+      "length_band": "long",
+      "cjk_chars": 331,
+      "passage_sha256": "3d0be735dc087ed34c775f6125da789a1cadd38a4ac778a6fe5a2e9465394b6d",
+      "followup_priority": 16
+    }
+  },
+  {
+    "data": {
+      "task_number": 4,
+      "passage": "针对这个问题，我个人认为开源和闭源模型的能力差异，重点不在于它开源或闭源，而是它的研发团队的能力差异。至于做出来的模型要开源还是闭源，是进一步从该公司的整体商业模式去考虑的点。之前 Llama 推出的时候，我非常兴奋，觉得终于有人运用开源来突围闭源的大模型了，因为训练模型成本实在太高，要开源本来就不容易；虽说至今二者仍有些差距，但如果不开源就没机会给开发者和产业界有另一种选择了。"
+    },
+    "meta": {
+      "doc_id": "ca20838db88af51d53f9d94f",
+      "source": "infoq",
+      "published_at": "2024-04-29",
+      "line_number": 30,
+      "length_band": "medium",
+      "cjk_chars": 171,
+      "passage_sha256": "575166c3b2889f7f26a2fa5d7edcd02465d5f318d0d27f4cb688b3b57468a864",
+      "followup_priority": 13
+    }
+  },
+  {
+    "data": {
+      "task_number": 5,
+      "passage": "为评估 MaterialSeg3D 的有效性，本文进行了与近期相似工作的定量与定性实验分析，重点关注单图像到 3D 资产的生成方法、纹理生成以及公共 3D 资产三个方面。对于单图像到 3D 资产的生成方法，与 Wonder3D、TripoSR 和 OpenLRM 进行了比较，这些方法将资产的某一参照视图作为输入，直接生成具有纹理特征的 3D 对象。通过可视化图片观察到，MaterialSeg3D 处理后的资产在渲染的真实性方面相较之前的工作有显著改善。论文还比较了现有的纹理生成方法，如 Fantasia3D、Text2Tex 以及 Meshy 网站提供的在线功能，这些方法可以根据文本提示信息生成纹理结果。"
+    },
+    "meta": {
+      "doc_id": "e9d24bfa7ebff01c6a08c4fb",
+      "source": "jiqizhixin",
+      "published_at": "2024-05-30",
+      "line_number": 60,
+      "length_band": "medium",
+      "cjk_chars": 193,
+      "passage_sha256": "53d9d483d8d1c0c7fef3efc8be2ec2c88eaf18ebaa8526b4c74625b2cd04e578",
+      "followup_priority": 2
+    }
+  },
+  {
+    "data": {
+      "task_number": 6,
+      "passage": "一旦它发现异常，就会主动发出提醒。具体可能是有人在反复尝试密码，也可能是来自安全部门已知暗网或恶意 IP 地址的一次登录操作。哪怕只发生一次，它也能牢记在心。这就是我们利用生成式 AI 服务帮助客户的三个简单案例。我们还投入大量资金，希望帮助客户们取得更大的成功，而这方面成果就是 Bedrock。在 Bedrock 之下，我们还推出了 PartyRock 等服务。如果大家还没试过，我强烈建议您马上体验。它非常简单也非常有趣，总的来说这就是一大堆不同大语言模型的集合。我们坚信至少就目前来看，还没有哪种单一模型能够证实世界，必须要借助多种不同的方法和模型，发挥它们各自擅长的专业知识。"
+    },
+    "meta": {
+      "doc_id": "32820b09ec8dd3edac07c47f",
+      "source": "infoq",
+      "published_at": "2023-12-07",
+      "line_number": 19,
+      "length_band": "long",
+      "cjk_chars": 237,
+      "passage_sha256": "a3d601c183179fa57facc876f87e6fa2148f4022be2246da4135e9882b1e57df",
+      "followup_priority": 14
+    }
+  },
+  {
+    "data": {
+      "task_number": 7,
+      "passage": "互联网行业中有很多新颖的名词，抓手、赋能、闭环等，经常被人吐槽晦涩难懂，中台也曾在这个行列。主要原因就是这些名称都只是概念，没有具象的例子给人直观的感受，容易让人望文生义，理解错误；更何况有些概念“望文”都难以“生义”。上学的时候我们就知道，所有概念的教学配以几个生动的例子，能够更容易被理解和记住。而互联网概念的传播过程往往是概念多，例子少。需要经过多层人的理解，包装，解读后才传递到我们手中。这个过程中难免会产生理解的偏差，过度的解读，或配上了不太准确的例子。这时在传到我们的手里，加上自己的理解后，就很难还原这些概念最初的含义了。所以学习新的概念或技术的时候，要尽可能的获取“一手信息”，获得的信息产生的越早，那么它离最初设计者的想法就越近，也更容易理解。"
+    },
+    "meta": {
+      "doc_id": "8edbbf17c05ba07ef9db5e86",
+      "source": "infoq",
+      "published_at": "2023-02-25",
+      "line_number": 90,
+      "length_band": "long",
+      "cjk_chars": 295,
+      "passage_sha256": "1742a420d96395800698fb08dede711ac43c3af6cdc3d4502ac30ac78ac8ec89",
+      "followup_priority": 5
+    }
+  },
+  {
+    "data": {
+      "task_number": 8,
+      "passage": "就在前几天，彭博社发布了关于海外官司的最新报道。根据报道，海外司法审查可能要求 TikTok 提交核心产品的源代码。在 2 月 7 日美国法院发布的命令中，主审法官 Kendall J. Newman 表示，尽管美摄提供了数百万行源代码，声称其中包含其商业机密，但缺乏足够的信息，法院裁定该公司需向 TikTok 提供更详细的指控细节，以便案件继续进行。"
+    },
+    "meta": {
+      "doc_id": "3729e9b9209e427e19e16173",
+      "source": "infoq",
+      "published_at": "2025-02-13",
+      "line_number": 18,
+      "length_band": "short",
+      "cjk_chars": 125,
+      "passage_sha256": "685f2968f9c6c905ec67aa41ce2699f7c6522ca2492c58edc4ebe8d4fdaee8df",
+      "followup_priority": 9
+    }
+  },
+  {
+    "data": {
+      "task_number": 9,
+      "passage": "超级助理是一种能对自然语言做出反馈，并基于对用户或企业业务和数据的了解进行规划决策、来完成各种复杂任务的 AI 应用。钉钉超级助理底层使用了阿里通义千问，并基于钉钉 AI PaaS。钉钉超级助理有三个核心系统：感知系统、行动系统和思考系统。其中，感知系统基于钉钉各种丰富场景输入各种类型数据，行动系统中，低代码将会成为超级助理的手和脚；思考系统支撑长短期数据、互联网公开数据，同时具备行动规划能力。"
+    },
+    "meta": {
+      "doc_id": "78c8f407c8d04f43bd8907f5",
+      "source": "infoq",
+      "published_at": "2024-01-09",
+      "line_number": 3,
+      "length_band": "medium",
+      "cjk_chars": 172,
+      "passage_sha256": "1c7381fca37f66a5b3b6c3193e666556b793ba833306d6ad8860987b4e5cc5da",
+      "followup_priority": 4
+    }
+  },
+  {
+    "data": {
+      "task_number": 10,
+      "passage": "为了根据这两个设计标准评估和比较 ResGen 与现有最先进的模型，研究人员提出了以下评估方案。为了评估第一个设计标准，评估了为测试集中的目标和现实世界的治疗目标设计的生成分子的结合能和类药物特性。此外，计算了生成的分子与训练/测试集中的活性物质之间的相似性，或治疗靶点上的活性物质之间的分子相似性，以对药物相似性进行综合评估。"
+    },
+    "meta": {
+      "doc_id": "fad56cf7dd43cacc459a9b91",
+      "source": "jiqizhixin",
+      "published_at": "2023-09-18",
+      "line_number": 23,
+      "length_band": "short",
+      "cjk_chars": 147,
+      "passage_sha256": "f86b902ee2944cc2cbabe2e0fc18a8d5de494979f32810783d106215af024205",
+      "followup_priority": 23
+    }
+  },
+  {
+    "data": {
+      "task_number": 11,
+      "passage": "本文在基础上，将优化器状态的数值精度进一步降低至 4 比特，提出了针对不同优化器状态的量化方法，最终提出了 4 比特 AdamW 优化器。同时，本文探索了将 压缩和低秩分解方法结合的可能性，提出了 4 比特 Factor 优化器，这种混合式的优化器同时享有好的性能和更好的内存高效性。本文在众多经典的任务上对 4 比特优化器进行了评估，包括自然语言理解、图像分类、机器翻译和大模型的指令微调。"
+    },
+    "meta": {
+      "doc_id": "44f7193de55b94460aa94c83",
+      "source": "jiqizhixin",
+      "published_at": "2023-09-08",
+      "line_number": 19,
+      "length_band": "short",
+      "cjk_chars": 156,
+      "passage_sha256": "1a1f41069bc571718f3a4093b0e9163c32a19f3e8f80a192131f3d59388daead",
+      "followup_priority": 1
+    }
+  },
+  {
+    "data": {
+      "task_number": 12,
+      "passage": "间接统计。抽象度应该会随着每一步 CoD 的进行而增加，因为每增加一个实体，摘要就会被反复改写以腾出空间。作者用提取密度来衡量抽象性：提取片段的平均平方长度 (Grusky et al., 2018)。同样，随着实体被添加到固定长度的摘要中，概念融合度也应随之单调增加。作者用与每个摘要句子对齐的源句子的平均数量来表示融合度。在对齐上，作者使用相对 ROUGE 增益法 (Zhou et al., 2018),，该方法将源句与目标句对齐，直到额外句子的相对 ROUGE 增益不再为正。他们还预计内容分布（Content Distribution），也就是摘要内容所来源的文章中位置，会发生变化。"
+    },
+    "meta": {
+      "doc_id": "552a90a3f24cf3a0a56ae17b",
+      "source": "jiqizhixin",
+      "published_at": "2023-09-19",
+      "line_number": 30,
+      "length_band": "medium",
+      "cjk_chars": 196,
+      "passage_sha256": "2501aca13a5d4bba97f9bdf6c032ece1da6578e41ff8c717d8faed0bb0162500",
+      "followup_priority": 18
+    }
+  },
+  {
+    "data": {
+      "task_number": 13,
+      "passage": "我给大家展示的是一个云计算设计模式的图表，其中模式非常多，而商业模式的要素相对较少。云计算和软件架构相对稳定和简单，而商业环境则非常复杂且经常变化。作为架构师，你可能经常感觉自己像是项目经理，今天有人告诉你要做 A 功能，明天又改成其他功能，这不是你的决定，而是客户的决定。然而，当你创办自己的公司时，你必须以客户为中心，满足客户的需求。客户今天可能满意某个功能，明天却改变主意，要求进行修改。这时候你需要思考如何持续满足客户需求，包括在部署后无法更改的情况下。同时，利益相关方的需求也在持续变化。"
+    },
+    "meta": {
+      "doc_id": "ff33cd9163c1c6a848fa040f",
+      "source": "infoq",
+      "published_at": "2023-07-25",
+      "line_number": 50,
+      "length_band": "long",
+      "cjk_chars": 224,
+      "passage_sha256": "afa51faa83d96dbb4346e59bf680d16f9b3fa892a5596444d1d89b042bd8dd13",
+      "followup_priority": 10
+    }
+  },
+  {
+    "data": {
+      "task_number": 14,
+      "passage": "公开数据显示，截至2023年底，武汉智能网联汽车测试道路里程已突破3378.73公里（单向里程），覆盖武汉12个行政区，辐射面积约3000平方公里，触达人口超770万。上海则实现自动驾驶开放测试总面积达 912 平方公里，累计开放测试道路达1003条，总里程突破2000公里。在北京，高级别自动驾驶示范区3.0已完成160平方公里建设，累计开放自动驾驶测试道路1160余公里，正加快推进后续440平方公里扩区。自2018年以来，广州市也已开放505条城市测试道路、里程约957公里，覆盖6个行政区。在深圳，智能网联汽车道路测试开放总里程已经达到944公里。在重庆，永川全域开放了1385公里的道路作为自动驾驶开放测试和示范应用道路。"
+    },
+    "meta": {
+      "doc_id": "043edbbdbc99db8af9111e6c",
+      "source": "jiqizhixin",
+      "published_at": "2024-06-11",
+      "line_number": 21,
+      "length_band": "long",
+      "cjk_chars": 229,
+      "passage_sha256": "33c6aed71286d0aa15ed5222b28c3a7b7c3f03e061ca7ae252dec32e7fd24606",
+      "followup_priority": 3
+    }
+  },
+  {
+    "data": {
+      "task_number": 15,
+      "passage": "专业二次元质感：Animon 团队与日本顶尖动漫制作人深度合作，在开发过程中融入了正宗的日式动漫美学和叙事风格。无论是在角色设计、背景细节还是镜头语言上，都带有专业动画的质感，符合动漫爱好者和业内人士的审美期待。同时，通过与日本动画业界的合作，Animon 确保了文化上的原汁原味，使 AI 创作的动画片段也能传递出传统动漫的神韵。"
+    },
+    "meta": {
+      "doc_id": "c43904af3434cd97a9c1c348",
+      "source": "infoq",
+      "published_at": "2025-05-21",
+      "line_number": 7,
+      "length_band": "short",
+      "cjk_chars": 137,
+      "passage_sha256": "d31f627bfc289390d5141a0c4cf474f068755b4522609b16ad3b107e7221df71",
+      "followup_priority": 20
+    }
+  },
+  {
+    "data": {
+      "task_number": 16,
+      "passage": "这种基于神经网络的系统（这里称之为 SIDE）可以识别不太可能支持其主张的维基百科引文，然后从网络上推荐更好的引文。该团队在现有的维基百科参考资料上训练这个模型，因此从数千名维基百科编辑的贡献和综合智慧中学习。通过众包，研究人员观察到，对于最有可能被该系统标记为无法验证的前 10% 的引用，与最初引用的参考文献相比，人们在 70% 的情况下更喜欢该系统提供的替代方案。"
+    },
+    "meta": {
+      "doc_id": "6d28870921e2543cc882d1a0",
+      "source": "jiqizhixin",
+      "published_at": "2023-10-24",
+      "line_number": 4,
+      "length_band": "short",
+      "cjk_chars": 159,
+      "passage_sha256": "f56efacfa4e920ebf67b91ddeae0c2391ea4f2b6e19b9363785cd0f6e5a1318d",
+      "followup_priority": 19
+    }
+  },
+  {
+    "data": {
+      "task_number": 17,
+      "passage": "在 Web 页面的优化上，华为也带来了全新的技术方案。Web 页面在加载过程中，常因资源下载耗时导致页面卡顿、丢帧、白块问题，影响用户体验。传统的原生容器组件无法直接预渲染 Web 组件，因此开发者通常需要自行维护节点池，开发成本高昂。而华为提供的全局自定义组件复用三方库“nodepool”，则通过 BuilderNode 创建全局自定义组件复用池，实现跨页面的 Web 组件复用及自动化的入池、出池管理，极大地简化了 Web 页面的开发流程。"
+    },
+    "meta": {
+      "doc_id": "82ff13fc3eaf733f81673809",
+      "source": "infoq",
+      "published_at": "2025-03-06",
+      "line_number": 15,
+      "length_band": "medium",
+      "cjk_chars": 161,
+      "passage_sha256": "714579a5a738e583b13e23864a20050e9ae82bd3858f3992a550530730fdc555",
+      "followup_priority": 22
+    }
+  },
+  {
+    "data": {
+      "task_number": 18,
+      "passage": "王瀚宸说：「在这篇 14 页的文章中，我们主要关注AI如何助力科学发现，不论是牛顿的万有引力定律、爱因斯坦的相对论、哥白尼的日心说、弗莱明对青霉素的发现，还是运用计算机模拟蛋白质折叠，都代表着新的规则和现象的发现。因此，『AI for Science』的核心可以说就是『借助 AI 推动科学发现、科技进步』。无论是增强 AI 的预测能力，还是利用科学知识指导 AI 的发展，在科学领域最终都是为了实现『创造新的发现』这一终极目标。」"
+    },
+    "meta": {
+      "doc_id": "e7bdd871f45cc11e19b00f02",
+      "source": "jiqizhixin",
+      "published_at": "2023-08-04",
+      "line_number": 7,
+      "length_band": "medium",
+      "cjk_chars": 161,
+      "passage_sha256": "1c7d818b2101ed29058badf0f9d81c08c448342980c32e9a574897947741fd6b",
+      "followup_priority": 15
+    }
+  },
+  {
+    "data": {
+      "task_number": 19,
+      "passage": "在实时翻译领域，AIGC 能力将更加突出。以前的翻译准确度完全依赖于样本和初始数据集，而现在可以实现纯粹的实时翻译，并且达到人类或专家水平。在图像领域，例如文生图，已经有一些公司开始将一定比例的基础图案交由 AIGC 应用生成，而无需人工绘制，这大大提高了效率。在视频领域，虽然还处于早期阶段，但已经有一些公司在探索，如根据文字生成相应的视频，实时识别视频内容并进行字幕生成和翻译等应用场景。"
+    },
+    "meta": {
+      "doc_id": "f1f34167984d5e508d20f41c",
+      "source": "infoq",
+      "published_at": "2023-06-27",
+      "line_number": 31,
+      "length_band": "medium",
+      "cjk_chars": 170,
+      "passage_sha256": "871f70655b1722854e1772beddd00ce4bfe364f99fc8d928826db83f836ba41f",
+      "followup_priority": 24
+    }
+  },
+  {
+    "data": {
+      "task_number": 20,
+      "passage": "其中，由南方科技大学、香港大学和腾讯ARC Lab组成的团队为“美妆视频时域定位”赛道和“美妆视频密集描述生成”赛道提出了一种统一的解决框架，同时斩获了两个赛道的冠军。该团队认为视频时域定位任务和视频密集描述生成任务本质上都是在挖掘视频中事件和文本句子之间的对齐关系，但是两个任务有不同的侧重点和优势。具体来说，时域定位任务能够提升模型对于视频内容的时序敏感性，而描述生成任务能够聚焦到视频中更多的语义信息。使用一个统一的框架同时训练两个任务，能够结合两个任务的优势，学习到既有时序敏感性，又有语义丰富度的视频事件级别的特征。"
+    },
+    "meta": {
+      "doc_id": "6ef00b4fadbccbd00b6f011c",
+      "source": "jiqizhixin",
+      "published_at": "2023-06-25",
+      "line_number": 6,
+      "length_band": "long",
+      "cjk_chars": 239,
+      "passage_sha256": "e45d2ddcb326cdf517b151ecd3a44e8a73385d45f66e48f95d1349889e01e445",
+      "followup_priority": 12
+    }
+  },
+  {
+    "data": {
+      "task_number": 21,
+      "passage": "论文简介：该论文探讨了设计 bandit 和其他顺序决策策略这一非常普遍的问题。论文提出使用一种称为算法信息比的新量对任何策略的遗憾进行约束的方法，并推导出优化该约束的方法。该约束比早期类似的信息理论量更为严格，而且这些方法在随机性和对抗性的 bandit 设置中都表现出色，实现了全局最优。"
+    },
+    "meta": {
+      "doc_id": "b22137fdaff3ca8dc1d72095",
+      "source": "jiqizhixin",
+      "published_at": "2023-07-26",
+      "line_number": 86,
+      "length_band": "short",
+      "cjk_chars": 123,
+      "passage_sha256": "7f1f1b07d06f4840409b9938ec39709e3e48d04b301789a0a4a7ceaf2891eff9",
+      "followup_priority": 17
+    }
+  },
+  {
+    "data": {
+      "task_number": 22,
+      "passage": "清华大学黄隆波团队对这一问题给出了肯定的答案，并提出了一种强化学习专用的动态稀疏训练框架，“Rigged Reinforcement Learning Lottery”（RLx2），用于离策略强化学习（Off-policy RL）。这是第一个在深度强化学习领域以 90% 以上稀疏度进行全程稀疏训练，并且仅有微小性能损失的算法框架。RLx2 受到了在监督学习中基于梯度的拓扑演化的动态稀疏训练方法 RigL [Evci et al. 2020] 的启发。然而，直接应用 RigL 无法实现高稀疏度，因为稀疏的深度强化学习模型由于假设空间有限而导致价值估计不可靠，进而干扰了网络结构的拓扑演化。"
+    },
+    "meta": {
+      "doc_id": "f58aa7e373f216c50420cc5b",
+      "source": "jiqizhixin",
+      "published_at": "2023-06-09",
+      "line_number": 16,
+      "length_band": "medium",
+      "cjk_chars": 184,
+      "passage_sha256": "48703d0b0e736f595f1ae7b729b06a8770cbb96ee9f6b4f7c5cfe75fc6e041d3",
+      "followup_priority": 11
+    }
+  },
+  {
+    "data": {
+      "task_number": 23,
+      "passage": "Rust 结合了所有权和借用、底层系统控制以及过程宏等强大的可扩展性机制，使其成为编写库的绝佳语言。而且，多亏了 Cargo，在程序中使用一个库只需要几行代码。尽管如此，仍有许多事情是库作者不能做或不容易做到的。例如，他们无法控制用户看到的错误消息或部署需要特殊选择加入的“Unstable”功能。 Rust 2024 希望通过帮助管理功能生命周期或扩展库的功能来构建使库作者能够更好地为用户服务的功能。"
+    },
+    "meta": {
+      "doc_id": "48a9230fe1ff0bc5832f1e7c",
+      "source": "infoq",
+      "published_at": "2023-02-15",
+      "line_number": 48,
+      "length_band": "short",
+      "cjk_chars": 159,
+      "passage_sha256": "626fc77423fbd6739c44f559e04714fc04fec3d5bdc31da0dccc54759a236d2a",
+      "followup_priority": 7
+    }
+  },
+  {
+    "data": {
+      "task_number": 24,
+      "passage": "对于前一特征，研究团队希望确保瑕疵是由 GAN 引起的，而相应的 MSE-SR 结果对于测试数据是良好的参考结果，从而区分瑕疵。其原理在于，GAN 瑕疵的呈现通常是有着过多不需要的高频 “细节”。换句话说，研究团队引入 GAN 训练来生成精细的细节，但他们不希望 GAN 生成的内容与 MSE-SR 的结果相差太大。注意，即使对于没有见过的真实场景的测试数据，MSE-SR 结果也很容易获得，因为我们通常是基于 MSE-SR 模型进行微调以获得 GAN-SR 模型。对于后一特征，之所以优化考虑那些明显且占据较大区域的瑕疵，是因为这种类型的瑕疵对人的感知有很大影响。"
+    },
+    "meta": {
+      "doc_id": "e89331895381298c2efeba0b",
+      "source": "jiqizhixin",
+      "published_at": "2023-08-07",
+      "line_number": 22,
+      "length_band": "long",
+      "cjk_chars": 206,
+      "passage_sha256": "05f2d1d523acc1536c7f9b0e0c5762732f21e36eec5f0a40e8787e801d86a9d2",
+      "followup_priority": 8
+    }
+  }
+]

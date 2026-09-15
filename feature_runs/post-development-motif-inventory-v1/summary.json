@@ -1,0 +1,122 @@
+{
+  "artifact_type": "post-development-deterministic-motif-inventory",
+  "schema_version": "deaiodorant-post-development-motif-inventory-0.1",
+  "partition": "development",
+  "document_count": 67,
+  "source_counts": {
+    "huawei_cloud_community": 14,
+    "infoq": 10,
+    "leiphone": 27,
+    "meituan_tech": 11,
+    "qbitai": 5
+  },
+  "candidate_count": 146,
+  "frequency_gate": {
+    "minimum_independent_documents": 6,
+    "minimum_sources": 3,
+    "interpretation": "Passing is necessary but not sufficient for an intervention. Candidate coherence and a frozen meaning-preserving operator are still required."
+  },
+  "thresholds": {
+    "emphatic_payload_max_visible_chars": 28,
+    "emphatic_payload_min_abstract_shells": 2,
+    "abstract_cluster_min_shells": 3,
+    "abstract_cluster_max_visible_chars": 24,
+    "dense_min_cjk_chars": 55,
+    "dense_min_clause_separators": 4,
+    "dense_min_abstract_shells": 2,
+    "dense_min_connectives": 2
+  },
+  "inventory": [
+    {
+      "motif": "abstract_shell_cluster",
+      "instance_count": 14,
+      "document_count": 12,
+      "source_count": 4,
+      "source_document_counts": {
+        "huawei_cloud_community": 3,
+        "infoq": 1,
+        "leiphone": 6,
+        "meituan_tech": 2
+      },
+      "source_counts": {
+        "huawei_cloud_community": 4,
+        "infoq": 1,
+        "leiphone": 7,
+        "meituan_tech": 2
+      },
+      "frequency_gate_passed": true
+    },
+    {
+      "motif": "complete_contrast_frame",
+      "instance_count": 124,
+      "document_count": 37,
+      "source_count": 5,
+      "source_document_counts": {
+        "huawei_cloud_community": 9,
+        "infoq": 7,
+        "leiphone": 17,
+        "meituan_tech": 2,
+        "qbitai": 2
+      },
+      "source_counts": {
+        "huawei_cloud_community": 31,
+        "infoq": 18,
+        "leiphone": 64,
+        "meituan_tech": 6,
+        "qbitai": 5
+      },
+      "frequency_gate_passed": true
+    },
+    {
+      "motif": "delayed_head_low_anchor",
+      "instance_count": 0,
+      "document_count": 0,
+      "source_count": 0,
+      "source_document_counts": {},
+      "source_counts": {},
+      "frequency_gate_passed": false
+    },
+    {
+      "motif": "dense_clause_surface",
+      "instance_count": 4,
+      "document_count": 4,
+      "source_count": 3,
+      "source_document_counts": {
+        "huawei_cloud_community": 1,
+        "leiphone": 2,
+        "meituan_tech": 1
+      },
+      "source_counts": {
+        "huawei_cloud_community": 1,
+        "leiphone": 2,
+        "meituan_tech": 1
+      },
+      "frequency_gate_passed": false
+    },
+    {
+      "motif": "emphatic_abstract_payload",
+      "instance_count": 4,
+      "document_count": 3,
+      "source_count": 2,
+      "source_document_counts": {
+        "leiphone": 1,
+        "meituan_tech": 2
+      },
+      "source_counts": {
+        "leiphone": 1,
+        "meituan_tech": 3
+      },
+      "frequency_gate_passed": false
+    }
+  ],
+  "identity": {
+    "handoff_manifest_sha256": "ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01",
+    "handoff_documents_sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80"
+  },
+  "limits": [
+    "No validation-reserve body is opened by this script.",
+    "The rules localize surface candidates and do not judge authorship or reader dislike.",
+    "The dense-clause rule is a punctuation and lexicon proxy, not a proposition parser.",
+    "Frequency-gate passage does not authorize a reader intervention without manual coherence audit."
+  ]
+}

@@ -1,0 +1,142 @@
+OpenCode 这玩意儿最近挺火。GitHub 上 17 万星，月活 750 万，支持 75 种以上模型提供商。但很多人装完之后卡在第一步：模型怎么配？API Key 往哪放？
+这篇文章不扯概念，只说步骤。目标是让你在 15 分钟内，用 Ollama 跑起本地模型，让 OpenCode 真正干活。
+一、Ollama：先把本地模型跑起来
+Ollama 是目前最流行的本地大模型部署工具，能把模型打包成标准的 OpenAI 兼容接口。说白了就是让你在本地跑 Llama、Qwen、DeepSeek 这些开源模型，不用掏钱买 API。
+1.1 安装 Ollama
+各系统命令不一样：
+macOS
+brew install ollama
+Linux
+curl -fsSL https://ollama.com/install.sh | sh
+Windows
+：去官网下载安装包，或者用 WSL2 跑 Linux 那套。
+装完之后验证一下：
+ollama --version
+1.2 拉取模型
+Ollama 的模型仓库里东西不少。挑一个适合你硬件的：
+# 7B 参数级别，8GB 显存差不多够用
+ollama pull qwen3.5
+# 或者 Llama 系列
+ollama pull llama3.2
+# 代码专用
+ollama pull codellama:7b
+OpenCode 对上下文长度有硬性要求——
+至少 64k
+。拉模型的时候留意一下这个参数，太小的话 OpenCode 用不了。
+下载完成后确认一下：
+ollama list
+1.3 启动服务
+Ollama 安装后会默认在后台跑着，监听 http://localhost:11434。不放心的话手动启一下：
+ollama serve
+默认端口是 11434，后面配置 OpenCode 的时候要用到。
+二、OpenCode：安装与配置
+2.1 安装 OpenCode
+前提：Node.js 18 及以上。
+三种装法，挑一个：
+npm 全局安装（推荐）
+npm install -g opencode-ai
+一键脚本
+curl -fsSL https://opencode.ai/install | bash
+Homebrew（macOS/Linux）
+brew install sst/tap/opencode
+验证：
+opencode --version
+2.2 配置 Ollama 作为模型提供方
+OpenCode 的配置文件有两个位置：
+项目级：项目根目录下的 opencode.json
+全局级：~/.config/opencode/opencode.json
+推荐用全局配置，省得每个项目都配一遍。
+方式一：手动配置（推荐，更可控）
+编辑
+~/.config/opencode/opencode.json：
+{
+"$schema": "https://opencode.ai/config.json",
+"provider": {
+"ollama": {
+"npm": "@ai-sdk/openai-compatible",
+"name": "Ollama",
+"options": {
+"baseURL": "http://localhost:11434/v1"
+},
+"models": {
+"qwen3.5": {
+"name": "qwen3.5"
+},
+"llama3.2": {
+"name": "llama3.2"
+},
+"codellama": {
+"name": "codellama:7b"
+}
+}
+}
+}
+}
+baseURL 指向 Ollama 的 OpenAI 兼容端点。models 下面列出你想用的模型，名字要和 ollama list 里看到的一致。
+方式二：用官方插件（自动发现模型）
+不想手写模型列表？装个插件自动发现：
+npm install -g opencode-local-ollama
+然后在配置文件里加上：
+{
+"plugin": ["opencode-local-ollama"]
+}
+重启 OpenCode，敲 /models 就能看到所有 Ollama 里已下载的模型，自动注册为 ollama/<模型名>。
+插件默认连接 http://localhost:11434，也可以通过环境变量 OLLAMA_HOST 或插件选项修改。
+方式三：ollama launch一键启动（最省事）
+Ollama 0.15 以上版本支持一条命令搞定：
+ollama launch opencode
+会交互式地让你选模型，然后自动拉起 OpenCode。不需要手动配配置文件。
+2.3 验证配置
+启动 OpenCode：
+opencode
+进去之后输入 /models，应该能看到你配置的模型出现在列表里。选中一个，就可以开始用了。
+如果看不到模型，检查几件事：
+Ollama 服务是否在跑：curl http://localhost:11434/api/tags
+配置文件路径对不对
+baseURL 是不是 http://localhost:11434/v1（注意末尾的 /v1）
+三、进阶配置
+3.1 远程 Ollama 服务器
+如果模型跑在另一台机器上（比如一台带 GPU 的服务器），改一下 baseURL 就行：
+"options": {
+"baseURL": "http://192.168.1.100:11434/v1"
+}
+或者用环境变量：
+export OLLAMA_HOST=http://192.168.1.100:11434
+安全提醒
+：别把 Ollama 服务直接暴露到公网。用 SSH 隧道或者内网隔离。
+3.2 上下文长度调优
+OpenCode 要求 64k 以上的上下文。Ollama 的模型元数据里标的上下文窗口可能很大（比如 131072），但实际运行时 num_ctx 可能小得多。
+如果用的是 opencode-local-ollama 插件，可以显式指定上下文长度：
+{
+"plugin": [
+[
+"opencode-local-ollama",
+{
+"context": 65536,
+"output": 4096
+}
+]
+]
+}
+3.3 权限控制
+本地模型跑起来之后有个坑要注意：OpenCode 的工具能读文件、写文件、执行 Shell 命令。本地模型响应快，你可能迭代着迭代着就忘了自己给过什么权限。
+建议在配置里把高风险操作设成需要人工确认，别图省事全自动。
+四、常见问题
+Q：OpenCode 启动后看不到 Ollama 模型
+A：先确认 Ollama 在跑：curl
+http://localhost:11434/api/tags。能返回模型列表就说明服务正常。然后检查 baseURL 是否包含 /v1。
+Q：模型跑起来很慢
+A：本地模型吃硬件。7B 模型至少需要 8GB 显存，量化版本（如 Q4）可以降低门槛。另外检查一下上下文长度是不是设得太大了。
+Q：Windows 上各种报错
+A：官方推荐用 WSL2。Windows 原生终端对路径和权限的处理有些兼容性问题，WSL 里跑省心很多。
+Q：ollama launch opencode 和手动配置有什么区别
+A：ollama launch 是 Ollama 提供的快捷方式，用内联配置启动 OpenCode，不会覆盖你已有的 opencode.json。适合快速试玩，长期用还是建议手动配。
+五、总结
+整个流程捋下来就是三步：
+装 Ollama
+，拉模型，确保服务在 11434 端口跑着
+装 OpenCode
+，配 opencode.json，指向 Ollama 的 /v1 端点
+启动 OpenCode
+，/models 选模型，开干
+本地模型跑起来之后，OpenCode 就是一个完全离线的 AI 编码 Agent。代码、对话记录全在本地，不上传任何东西到云端。对于处理敏感代码或者网络受限的场景，这套组合拳比用云 API 踏实得多。

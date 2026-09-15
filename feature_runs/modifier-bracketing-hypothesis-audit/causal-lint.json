@@ -1,0 +1,52 @@
+{
+  "associational_trigger_line_count": 10,
+  "causal_trigger_line_count": 0,
+  "claim_type_counts": {},
+  "errors": [],
+  "notice": "This deterministic lexical lint does not determine whether language is scientifically causal, whether an estimand is well defined, or whether identification assumptions hold. Review every flagged and unflagged claim manually.",
+  "schema_version": "2.0",
+  "status": "VALID_LEXICAL_LINT",
+  "valid": true,
+  "warnings": [
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 6
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 22
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 55
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 87
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 116
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 137
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 146
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 217
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 229
+    },
+    {
+      "code": "UNMARKED_ASSOCIATIONAL_LANGUAGE",
+      "line": 289
+    }
+  ]
+}

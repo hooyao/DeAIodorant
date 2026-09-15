@@ -1,0 +1,40 @@
+{
+  "version": "independent-media-validation-1.0",
+  "validated_at_utc": "2026-09-14T15:09:12.040584+00:00",
+  "passed": true,
+  "network_in_validation": false,
+  "search_calls": 8,
+  "searches_with_results": 6,
+  "searches_without_data": 2,
+  "reported_credits": 18,
+  "unreported_error_cost": "unknown",
+  "returned_results": 48,
+  "unique_search_urls": 47,
+  "selected_documents": 6,
+  "article_get_requests": 6,
+  "robots_get_requests": 3,
+  "http_200_responses": 9,
+  "additional_web_reader_or_llm_calls": 0,
+  "complete_text_documents": 5,
+  "client_shell_failures": 1,
+  "cohorts_complete_text": {
+    "pre_2023": 2,
+    "post_2025_07": 2,
+    "transition": 1
+  },
+  "text_characters": 25504,
+  "text_blocks": 286,
+  "exact_quote_checks": 61,
+  "full_text_read_coverage": "b001至末块；动态页面只验证公开响应内8个组件的文字",
+  "nonwhitespace_dom_coverage_documents": 4,
+  "embedded_component_coverage_documents": 1,
+  "unique_document_pair_checks": 15,
+  "max_char_5gram_jaccard": 0.006537868214207008,
+  "human_labels_collected": 0,
+  "old_reserve_opened": false,
+  "limits": [
+    "未核验图片像素与网页视觉渲染。",
+    "近重复检查仅本轮五篇及固定锚点，不保证与未读取旧集合无重叠。",
+    "语义解释仍为单个助手测量，不是人工或干预验证。"
+  ]
+}

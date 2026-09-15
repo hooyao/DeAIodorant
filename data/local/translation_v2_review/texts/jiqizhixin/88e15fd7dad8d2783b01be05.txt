@@ -1,0 +1,116 @@
+人们一直在说 ChatGPT 有风险，OpenAI CEO 也这么说，现在终于有人出手了。
+在 GPT-4 诞生两周之际，一封公开信正在社交媒体发酵。
+这封公开信指出，最近几个月，
+人工智能
+实验室陷入了一场失控的竞赛，他们没有办法理解、预测或可靠地控制自己创造的大模型。人类社会对其可能造成的影响也没有做好准备。因此，公开信呼吁，所有 AI 实验室应立即暂停训练比 GPT-4 更强大的 AI 模型，为期至少 6 个月。
+公开信链接：https://futureoflife.org/open-letter/pause-giant-ai-experiments/
+截至目前，图灵奖得主 Yoshua Bengio、特斯拉 CEO（OpenAI 联合创始人）伊隆・马斯克、纽约大学名誉教授 Gary Marcus、UC 伯克利教授 Stuart Russell 等 1000 多人已经在这封公开信上签名。
+不过一直抨击ChatGPT的Yann LeCun公开表示不会签署这个公开信，不同意这封公开信的内容。
+以下为公开信内容：
+大量研究
+[1]
+表明：具有人类水平智能的 AI 系统可能对社会和人类带来极大的风险，这一点已经得到顶级 AI 实验室
+[2]
+的认同。正如广泛认可的 Asilomar AI 原则中所述，高级 AI 可能代表地球生命史上的深刻变化，应以相应的关怀和资源进行
+规划
+和管理。不幸的是，目前尚无这种级别的
+规划
+和管理。最近几个月
+人工智能
+实验室陷入了一场失控的竞赛，他们致力于开发和部署更强大的数字思维，但是没有人能理解、预测或可靠地控制这些大模型，甚至模型的创造者也不能。
+当代
+人工智能
+系统现在在一般任务
+[3]
+上表现与人类相当，我们必须扪心自问：
+我们是否应该让机器用宣传（尤指褊狭、误导的）和谎言充斥我们的信息渠道？
+我们应该自动化所有的工作，包括令人满意的工作吗？
+我们是否应该发展最终可能超越我们并取代我们的非人类思维？
+我们应该冒险失去对我们文明的控制吗？
+我们不应该将此类决定交给未经选举产生的技术领导者。只有当我们确信 AI 大模型的影响是积极的并且风险是可控的时，我们才能开发强大的
+人工智能
+系统。而且，这种判断必须有充分的理由，并随着系统潜在影响的大小而跟进。OpenAI 最近关于
+人工智能
+的声明指出：「在开始训练未来系统之前进行独立审查可能很重要，并且对于最先进的工作来说，人们应该在合适的时间点限制用于创建新系统的计算增长率。」我们认为，现在已经到了这个时间点。
+因此，我们呼吁所有 AI 实验室立即暂停训练比 GPT-4 更强大的 AI 系统，为期至少 6 个月。这种暂停应该是公开的和可验证的，并且所有关键参与者也应该暂停相关工作。如果不能迅速实施这种暂停计划，政府机构应介入并暂停。
+人工智能
+实验室和独立专家应该利用这次暂停，共同开发和实施一套用于高级
+人工智能
+设计和开发的共享安全协议，并由独立的外部专家进行严格审计和监督。这些协议应确保遵守它们的系统是安全的，无可置疑的
+[4]
+。这并不意味着总体上暂停 AI 开发，而是从具有新兴功能的、不可预测的大型黑盒模型的危险竞赛中后退一步。
+人工智能
+的研究和开发应该重新聚焦于使当今强大的、最先进的系统更加准确、安全、可解释、透明、稳健、一致、可信和可靠。
+同时，
+人工智能
+开发者必须与政策制定者合作，大幅加快强大的
+人工智能
+治理系统的开发。这些工作至少应该包括：
+专门针对
+人工智能
+的新的、有能力的监管机构；
+对高能力的
+人工智能
+系统和大型计算能力池的监督和跟踪；
+帮助区分真实和合成数据的溯源、水印系统，并跟踪模型泄露；
+强大的审计和认证生态系统；
+对
+人工智能
+造成的伤害的责任认定；
+对
+人工智能
+安全技术研究的强大公共资金；
+资源丰富的机构，以应对
+人工智能
+将造成的巨大经济和政治混乱。
+人类可以通过
+人工智能
+享受一个繁荣的未来。在成功创造出强大的
+人工智能
+系统之后，我们现在可以享受一个「
+人工智能
+之夏」。在这个夏天，我们收获了回报，为所有人的明确利益设计这些系统，并给社会一个适应的机会。社会已经暂停了对自身有潜在灾难性影响的其他技术[5]。我们在这个领域也可以这样做。让我们享受一个漫长的
+人工智能
+之夏，而不是在毫无准备的情况下冲进秋天（Let's enjoy a long AI summer, not rush unprepared into a fall）。
+签名者：
+Yoshua Bengio，蒙特利尔大学，因开发
+深度学习
+而获得图灵奖，蒙特利尔学习算法研究所负责人
+Stuart Russell，加州大学伯克利分校智能系统中心创始人兼计算机科学专业教授，标准教科书《
+人工智能
+：一种现代的方法》的合著者
+Elon Musk
+，SpaceX、Tesla 和 Twitter 的首席执行官
+Gary Marcus，纽约大学，AI 研究员，名誉教授
+Steve Wozniak，苹果公司联合创始人
+杨安泽，2020 年美国总统候选人，纽约时报畅销书作家
+Emad Mostaque，Stability AI 首席执行官
+Zachary Kenton，
+DeepMind
+，高级研究科学家
+……
+目前，这封仅仅出现数小时的公开信在持续发酵，在国外 AI 社区已经引起了了极大的关注与讨论。因为有大佬带头，支持者甚多。当然，在看到 ChatGPT 的成功之后，也有一大批人反对这个公开信。
+目前而言，谁是谁非难有定论。
+机器之心
+的读者们，你怎么看？
+公开信参考链接：
+[1] Bender, E. M., Gebru, T., McMillan-Major, A., & Shmitchell, S. (2021, March). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?🦜. In Proceedings of the 2021 ACM conference on fairness, accountability, and transparency (pp. 610-623).
+Bostrom, N. (2016). Superintelligence. Oxford University Press.
+Bucknall, B. S., & Dori-Hacohen, S. (2022, July). Current and near-term AI as a potential existential risk factor. In Proceedings of the 2022 AAAI/ACM Conference on AI, Ethics, and Society (pp. 119-129).
+Carlsmith, J. (2022). Is Power-Seeking AI an Existential Risk?. arXiv preprint arXiv:2206.13353.
+Christian, B. (2020). The Alignment Problem: Machine Learning and human values. Norton & Company.
+Cohen, M. et al. (2022). Advanced Artificial Agents Intervene in the Provision of Reward. AI Magazine, 43 (3) (pp. 282-293).
+Eloundou, T., et al. (2023). GPTs are GPTs: An Early Look at the Labor Market Impact Potential of Large Language Models.
+Hendrycks, D., & Mazeika, M. (2022). X-risk Analysis for AI Research. arXiv preprint arXiv:2206.05862.
+Ngo, R. (2022). The alignment problem from a deep learning perspective. arXiv preprint arXiv:2209.00626.
+Russell, S. (2019). Human Compatible: Artificial Intelligence and the Problem of Control. Viking.
+Tegmark, M. (2017). Life 3.0: Being Human in the Age of Artificial Intelligence. Knopf.
+Weidinger, L. et al (2021). Ethical and social risks of harm from language models. arXiv preprint arXiv:2112.04359.
+[2] Ordonez, V. et al. (2023, March 16). OpenAI CEO Sam Altman says AI will reshape society, acknowledges risks: 'A little bit scared of this’. ABC News.
+Perrigo, B. (2023, January 12).
+DeepMind
+CEO Demis Hassabis Urges Caution on AI. Time.
+[3] Bubeck, S. et al. (2023). Sparks of Artificial General Intelligence: Early experiments with GPT-4. arXiv:2303.12712.
+OpenAI (2023). GPT-4 Technical Report. arXiv:2303.08774.
+[4] Ample legal precedent exists – for example, the widely adopted OECD AI Principles require that AI systems "function appropriately and do not pose unreasonable safety risk".
+[5] Examples include human cloning, human germline modification, gain-of-function research, and eugenics.

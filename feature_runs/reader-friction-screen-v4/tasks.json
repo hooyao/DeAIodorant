@@ -1,0 +1,158 @@
+[
+  {
+    "data": {
+      "task_number": 1,
+      "passage_a": "而且从目前结果看，这个 diff 似乎没有引入回归问题，但他还在结合手动测试和浏览器自动化继续验证。\n不过，他也提到，Fable 5 做出的决定里，他大概认可 80%。另一些决定让代码变得更复杂。\n比如，Fable 5 引入了 React Context，隐藏了复杂性，但让程序更难推理。它还做了一些看起来聪明的处理，比如用展开语法减少总行数，但并没有真正减少或简化底层数据结构。",
+      "passage_b": "没有绝对通用的最好模型，只有最适配这台机器的模型。\nVLA 想用数据解决操作问题，但采集成百上千小时的高质量遥操作数据，本身就需要极高的操作门槛。\n“操作一定要在实践中学习，但实践的前提是你必须先能够实践起来。”\n这是姜峣对于机器人执行的第二个关键判断，它揭示了 VLA 在执行侧的死穴，同时也是橡木果“另起炉灶”的起点。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-7c1423-57b565",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "topic_stratum": "ai_models_agents"
+    }
+  },
+  {
+    "data": {
+      "task_number": 2,
+      "passage_a": "Space X 刚刚完成 IPO 后，此次收购 Cursor 更像是马斯克对 AI 编程战场的一次“补位”。\n过去一年，AI 编程工具几乎成了大模型商业化最先跑出来的场景。\nAnthropic 的 Claude Code、OpenAI 的 Codex，以及 Cursor、Windsurf 等产品，都在争夺开发者的入口。相比聊天机器人，代码工具离企业付费更近，也更容易证明 ROI：它能直接进入工程师工作流，影响开发效率、代码审查、调试和软件交付周期。",
+      "passage_b": "天空工场创投基金表示：\"具身智能的商业化落地需要的不是参数的堆砌，而是对真实场景的深刻理解和系统级的工程能力。星工聚将团队展现出的全栈自研能力、场景洞察力以及快速迭代能力，让我们看到了工业具身智能规模化落地的确定性。\"\n据悉，星工聚将本轮融资将主要用于核心技术的持续研发、产品量产能力建设，以及重点行业的商业化拓展。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-bdbcf0-464e15",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "topic_stratum": "business_industry"
+    }
+  },
+  {
+    "data": {
+      "task_number": 3,
+      "passage_a": "假如你出生在一片未知的森林，太阳即将下山，饥肠辘辘，前方一只蜘蛛正向你缓慢爬来。——这是来自《我的世界》最经典的开局。\n此时如果你按下暂停，把截图发给所有顶级的多模态大模型，它们都能完美回答你：“黄昏、有怪物，面临威胁。”\n我们发现，多模态大模型能看懂图像、解析视频、在复杂场景里推理，然而一旦它们被丢进一个实时变化、需要持续探索的开放世界又会发生什么？\n为了深入探索，美团 LongCat 团队构建了\nMineExplorer\n——\n首个在开放世界中做到分钟级长程任务的评测基准\n，系统性地评测多模态大模型在需要长程规划、并包含隐藏前置条件的任务中的真实能力。",
+      "passage_b": "我们提出了DuplexOmni，一种用于实时多模态全双工交互的方法。DuplexOmni将模型能力划分为交互层和思考层，并通过异步并行协作将它们连接起来。交互层由DuplexOmni模型实现，该模型接收流式音频和视频输入，并实时生成文本和语音响应。思考层作为可插拔的外部模块，提供复杂推理和工具使用功能。为了支持这种交互范式，我们进一步研发了一个Writer-Director数据管道，用于构建连续交互训练数据。实验表明，DuplexOmni在多个公开基准测试上表现出色，并展现出自然的双工交互能力。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-398d56-610ba7",
+      "source": "meituan_tech",
+      "format_stratum": "research_summary",
+      "topic_stratum": "ai_models_agents"
+    }
+  },
+  {
+    "data": {
+      "task_number": 4,
+      "passage_a": "ACL（Annual Meeting of the Association for Computational Linguistics）是计算语言学和自然语言处理（NLP）领域的国际顶级学术会议。自 1962 年创办以来，ACL 已成为 NLP 领域规模最大、影响力最高的学术盛会，汇聚了来自全球学术界和工业界的顶尖研究者。\n本文解读了被 ACL 顶会收录的其中 6 篇论文，技术方向覆盖\n大模型评测、复杂流程推理、竞赛级数学思维优化、强化学习优化、生成式推荐\n等领域，欢迎大家一起交流学习。",
+      "passage_b": "大模型在 AIME、IMO 等高难度竞赛中拿奖拿到手，仿佛已经进化出了“人类最强大脑”。但与此同时，如果你问大模型：“离洗车店只有 50 米，我是开车去还是走路去？”。这些号称满分推理的模型，依然会一本正经地为你规划导航路线。\n这种看似知识丰富，但没常识的现象，正是当前大模型评测的死穴：大模型虽然擅长记忆复杂的公式，却常常连一道简单的逻辑题都答不对。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-fdbd90-755833",
+      "source": "meituan_tech",
+      "format_stratum": "research_summary",
+      "topic_stratum": "ai_models_agents"
+    }
+  },
+  {
+    "data": {
+      "task_number": 5,
+      "passage_a": "北京时间 6 月 25 日，OpenAI 正式展示了该公司与博通联合打造的首款定制人工智能芯片： Jalapeño（墨西哥辣椒）。\n博通首席执行官 Hock Tan 在接受路透社采访时表示，该团队打造的这款芯片，性能可媲美英伟达的 Blackwell 芯片，或 Alphabet 旗下谷歌设计的 TPU。\nOpenAI 计划在今年年底前部署 Jalapeño，这也是 OpenAI 多代芯片开发计划的第一步。OpenAI 目前已在实验室运行该芯片样品，并在 GPT-5.3-Codex-Spark AI 模型上，芯片的功耗和性能均达到了目标水平。",
+      "passage_b": "在人工智能竞争持续升温的当下，围绕 DeepMind、OpenAI 与 Anthropic 的讨论，已经不再只是“谁的模型更强”的问题，而是逐渐演变为一个更深层的命题：顶级 AI 实验室究竟如何组织研究、选择技术路线，并在算力、资本与安全之间做出长期取舍。\n在近日 InfoQ 对《哈萨比斯：谷歌 AI 之脑》（TheInfinityMachine）作者、知名科技史学家、金融史学家塞巴斯蒂安·马拉比（Sebastian Mallaby）的采访中，我们尝试从一个更接近“内部观察者”的视角，重新理解 DeepMind 的成长逻辑，以及它与 OpenAI、Anthropic 之间真正的结构性差异。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-887321-7f42b9",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "topic_stratum": "business_industry"
+    }
+  },
+  {
+    "data": {
+      "task_number": 6,
+      "passage_a": "有趣的是，Yi Tay 还分享了一张他用 Nano Banana 生成的一张新加坡 Gemini 新团队“办公大楼”的趣味插画。图中汇集了新加坡的标志性建筑：滨海湾花园、鱼尾狮、滨海湾金沙酒店... 以及“Gemini Team”大楼。\n关于 Yi Tay 其人：他不仅是一位“高产”的学术研究者，在 Google Scholar 上的论文引用量达数万次，还在 Gemini 项目的诸多进展中发挥关键作用。\n至于这个新团队，据 Yi Tay 介绍，团队的规模不会很大，但人才密度极高，过去几个月正在招募全球最顶尖的人才。",
+      "passage_b": "DeepSeek 在论文中强调，自我验证的数学推理不仅适用于标准化竞赛任务，更重要的是，它为处理“无标准答案的开放问题”提供了路线图，使数学 AI 不再局限于“算对题”，而向“像数学家一样思考”迈进。尽管距离真正强大的数学推理系统仍有距离，但 Math-V2 的成果表明，自我验证机制是可行且具有重大潜力的研究方向。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-e6b904-6a7b16",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "topic_stratum": "ai_models_agents"
+    }
+  },
+  {
+    "data": {
+      "task_number": 7,
+      "passage_a": "OpenClaw\n在开发者社区迅速获得 23万+ Stars，因其作为开源、本地优先的个人 AI Agent，能够将大语言模型的推理能力转化为对计算机的实际操作，为构建个人 AI 助手提供了系统级权限与自动化基础。\n然而，近期部分平台开始收紧对非官方入口的访问。谷歌以“恶意使用”为由，大规模封禁通过 OpenClaw 路由 Gemini token 的用户账号，Anthropic 随后也更新使用条款，明确禁止通过第三方工具调用 Claude 的 OAuth token。这些事件表明，依赖第三方订阅进行非官方调用存在账号安全风险与服务不稳定性。",
+      "passage_b": "近日，美团 LongCat 团队正式对外发布并开源 LongCat-Flash-Thinking-2601。作为已发布的 LongCat-Flash-Thinking 模型的升级版，LongCat-Flash-Thinking-2601 在 Agentic Search（智能体搜索）、Agentic Tool Use（智能体工具调用）、TIR（工具交互推理）等核心评测基准上，均达到开源模型 SOTA 水平。\n该模型尤其在工具调用上表现出卓越的泛化能力，在依赖工具调用的随机复杂任务中性能超越了 Claude，可大幅度降低真实场景下新工具的适配训练成本；同时它是首个完整开源并支持在线免费体验「重思考模式」的模型，同时启动 8 个大脑飞速运转，确保思考周全、决策可靠。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-9e278c-ca4540",
+      "source": "meituan_tech",
+      "format_stratum": "technical_practice",
+      "topic_stratum": "ai_models_agents"
+    }
+  },
+  {
+    "data": {
+      "task_number": 8,
+      "passage_a": "从稳定训练到低延迟推理，LongCat-2.0 验证了我们已具备在国产算力集群上进行大规模模型训练的能力。它不只是“能训出”万亿参数模型，还让万亿参数模型能够在真实任务中稳定运行。\n02 让模型在真实 Agentic Coding 任务中更高效、更稳定地完成代码理解、生成与执行\nLongCat-2.0 的架构设计始终围绕一个核心目标：\n让模型在真实 Agentic Coding 任务中更高效、更稳定地完成代码理解、生成与执行\n。",
+      "passage_b": "通过 RFT，我们将大规模的合成经验内化为模型参数，显著提升了模型在常规路径的执行成功率。\n2.3.3 RL：强化学习\nRFT 夯实了模型在常规路径上的执行成功率，但面对长链路任务中的环境扰动（如弹窗、网络延迟、布局微变），模型依然脆弱。相比于成功轨迹中模型已有的知识，失败轨迹中蕴含着广阔的、非线性的树状结构信息，模型往往会在一些关键步骤出错，正是模型能力边界的直接体现。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-17f909-1c2865",
+      "source": "meituan_tech",
+      "format_stratum": "technical_practice",
+      "topic_stratum": "ai_models_agents"
+    }
+  },
+  {
+    "data": {
+      "task_number": 9,
+      "passage_a": "在大模型与推理需求持续增长的背景下，算力基础设施正在从云原生阶段向 AI 原生阶段演进。围绕这一趋势，如何将底层软硬件能力转化为可用、易用、高效的算力服务，成为当前基础设施设计中的关键问题。\n近日，商汤大装置首席架构师项铁尧在\n2026 中关村论坛上发表了《商汤大装置 AI 原生云基础设施探索与实践》主题演讲，系统阐述了商汤大装置对 AI 原生时代算力集群建设的前沿判断与实践路径——如何将软硬件能力真正转化为客户可用、易用、高效的算力服务。",
+      "passage_b": "总的来说，我觉得 AI Agent 时代会带来软件范式的变革，软件范式变革必然会让数据管理产生巨大的变化。总结起来就是我们希望有多模态的支持，有原生 API 的支持，有高性能的支持，我们希望扩缩容更加方便，从管理来讲会更加易用。最后结合工程实践，我们在性能方面也有一些新的思考。希望这次的分享能给大家带来启发，谢谢。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-24fb61-21129f",
+      "source": "infoq",
+      "format_stratum": "technical_practice",
+      "topic_stratum": "data_infrastructure"
+    }
+  },
+  {
+    "data": {
+      "task_number": 10,
+      "passage_a": "更尴尬的是，它长期依赖外部模型，用户喜欢它，恰恰也是因为它接入了最强的大脑；可一旦这些大脑自己做 IDE、做 CLI、做 Agent，Cursor 的护城河就开始变浅——上游模型厂往下吃，下游开发者往外绕，它被夹在中间。\n所以 Cursor 的自救方式也很明确：\n第一，补上最致命的短板，做自己的模型。\n第二，全面转向 Agent，把 IDE 从“文件中心”改成“任务中心”。上线云端多智能体协作，让多个 Agent 并行干活，而不是只做一个代码补全工具。",
+      "passage_b": "在线教育行业，习题问答、作业批改都已经是成熟场景，终端设备也从 ChatBot 过渡到学习机，甚至是智能教室这样的立体解决方案。\n金融行业仍然进展最快的行业之一，在部分场景下，其技术产品的储备速度，已经不亚于国际同行。比如在车险中，从前高度依赖人工的车辆定损和理赔，今天也正尝试交由 AI 来完成。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-a33352-da81d4",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "topic_stratum": "business_industry"
+    }
+  },
+  {
+    "data": {
+      "task_number": 11,
+      "passage_a": "03 开源开放\nLongCat-2.0 的开源，是一次技术路径的公开，也是一次生态邀约。\n本次开源同步提供 BF16、FP8 以及 INT8 等多精度版本，全面覆盖不同算力平台的部署需求。同时，我们深度拥抱开源社区，将针对国产算力极致优化的推理成果同步开源。这意味着，即使手上没有最新算力，也能基于现有硬件将 LongCat-2.0 稳定跑起来。\n我们希望通过这套开箱即用的推理栈，让更多的国产卡包括老卡，都能流畅部署万亿大模型推理服务，在真实生产力场景发挥更大价值。",
+      "passage_b": "3、\n针对下挂场景重训表征模型\n。三期复用的是商家精排的表征模型，训练数据以商户样本为主。下挂样本在 Query 分布（更多商品意图词）和正负样本构成上与商户有显著差异，专项针对下挂场景训练一版表征模型，预期能进一步提升 Embedding 质量和覆盖率。同时，前面提到的负例质量提升和 MRL 诊断，可以一并在这版重训中落地。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-b9db41-a174fe",
+      "source": "meituan_tech",
+      "format_stratum": "technical_practice",
+      "topic_stratum": "ai_models_agents"
+    }
+  },
+  {
+    "data": {
+      "task_number": 12,
+      "passage_a": "在特别复杂的任务上，模型有时会一根筋——沿着一条思路走到黑，即使那条路可能不对。这很像人类在遇到难题时，需要多想想不同的可能性。“重思考”模式的核心是 “宽度 + 深度” 双扩展：先让模型同时生成多条推理路径，探索不同的解决方案，再用专门的总结模型，对这些路径进行分析、筛选，提炼出最优思路。而且还会通过强化学习，让模型学会整合中间结果，不断完善推理过程。",
+      "passage_b": "引言\n现如今的大语言模型已经能流畅地写文章、写代码，甚至执行复杂的 Agent 工作流，然而，它们在面对严谨的数学定理证明时，却往往显得力不从心。\n在常规的数学解题中，模型只需要“答对最终数值”即可，但数学定理证明不同，它要求极度严苛的逻辑链条，任何一句自然语言的模棱两可，都可能导致整个证明的崩塌。那么，如何让 AI 从“猜答案”走向“严谨证明”，成为复杂推理具有挑战的课题。"
+    },
+    "meta": {
+      "pair_id": "cross-v4-4c4d11-4a0f97",
+      "source": "meituan_tech",
+      "format_stratum": "technical_practice",
+      "topic_stratum": "ai_models_agents"
+    }
+  }
+]

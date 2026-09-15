@@ -2,6 +2,12 @@
 
 换机检查点与续研顺序见 [HANDOVER.md](../HANDOVER.md)。本文保留各阶段记录；历史“当前”“下一步”和硬件描述以该阶段为准。
 
+## 篇章动作测量工程实验：2026-09-14 续研
+
+[本轮实验](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)已完成六个已暴露案例、18个条件的36条隔离模型记录，191处引文核验通过。核心内容在所设等义变化中保持，多项语义变化得到反映；M04一条记录未明确绑定估算提出者，M01/M05的先前说法槽位和M04评论证据出现角色或指向歧义。自由文字保留了限制，不能仅凭非空字段认定臆造读者信念。
+
+恢复工作树的993项历史产物已通过字节核验。[新发现批次](routes/compact-refiner/reports/independent-media-discovery-v1.md)保存五篇全文文字、两篇后期候选及早期/过渡期反例。下一步检验[记录契约1.1草案](routes/compact-refiner/cognitive-move-record-contract-v1.1.md)，按文章隔离，旧36条不回改。没有新人工偏好、编辑效果或训练导出，不提升臭味特征证据状态。
+
 ## 与证据关联的话语动作示例
 
 [分析示例](routes/compact-refiner/reports/cognitive-move-analysis-v1.md)

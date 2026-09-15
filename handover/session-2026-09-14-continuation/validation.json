@@ -1,0 +1,54 @@
+{
+  "schema_version": "research-continuation-validation-1.0",
+  "validated_at_utc": "2026-09-14T15:23:21.058120+00:00",
+  "workspace_base_commit": "47ba3bfacba5f0a808ab998a49f5a15bfa96e1c4",
+  "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "storage_status": "local_task_worktree_not_committed_or_pushed",
+  "tests": {
+    "command": "python -X utf8 -B -m pytest",
+    "source_import": "PYTHONPATH set to this workspace src",
+    "phase": "after generator code and tests completed, before annotation; subsequent changes documentation and research artifacts only",
+    "passed": 184,
+    "failed": 0
+  },
+  "compileall": {
+    "command": "python -X utf8 -m compileall -q src pilot_collect.py translation_eval.py translation_holdout.py translation_final_test.py experiments/cognitive_move_pilot.py",
+    "status": "passed"
+  },
+  "git_diff_check": "passed",
+  "new_document_relative_links_checked": 4,
+  "original_agents_restored_byte_identically": true,
+  "original_inventory": {
+    "status": "passed",
+    "files": 993,
+    "bytes": 91243715
+  },
+  "continuation_inventory": {
+    "status": "passed",
+    "files": 127,
+    "bytes": 2843267,
+    "manifest_sha256": "5fdc221417e38eac674c52cae51585e9c97429746ddfb43a8a892dea1df5d519"
+  },
+  "pilot": {
+    "frozen_inputs": "passed",
+    "annotations": 36,
+    "quote_occurrences": 191,
+    "formal_sessions": 6,
+    "excluded_exposed_launches": 2,
+    "independent_human_labels": 0,
+    "semantic_disposition": "target attribution coverage and field roles require revision; no overall accuracy claimed"
+  },
+  "new_discovery": {
+    "manifest_files_verified": 77,
+    "complete_text_articles": 5,
+    "characters": 25504,
+    "blocks": 286,
+    "exact_quotes": 61,
+    "search_calls": 8,
+    "article_gets": 6,
+    "robots_gets": 3,
+    "reported_search_credits": 18,
+    "money_cost": "unknown"
+  },
+  "next_contract": "docs/routes/compact-refiner/cognitive-move-record-contract-v1.1.md"
+}

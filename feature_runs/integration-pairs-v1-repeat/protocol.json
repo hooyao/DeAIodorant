@@ -1,0 +1,182 @@
+{
+  "schema_version": "deaiodorant-integration-pairs-1.0",
+  "protocol_version": "proposition-decompression-development-1.0",
+  "status": "frozen_before_outcomes",
+  "frozen_at": "2026-08-27",
+  "seed": 2026082705,
+  "role": "post_only_development_intervention_not_validation",
+  "handoff": {
+    "root": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1",
+    "manifest_sha256": "acde6900ae8b26b8da8821424be420ff48433752297c3f021e1a7e05ccfb2b14"
+  },
+  "selection_policy": {
+    "reader_outcomes_used": false,
+    "source_format_stratified": true,
+    "distinct_intervention_documents": true,
+    "selection_signal_count": 6,
+    "manual_exclusions": [
+      "question-and-answer fragments",
+      "speaker profiles",
+      "navigation and section-heading fragments",
+      "image-generation prompts"
+    ]
+  },
+  "operator_policy": [
+    "Split dense proposition chains at existing semantic boundaries.",
+    "Restore an explicit repeated referent only when coreference is already fixed.",
+    "Preserve propositions, entities, numbers, negation, modality, attribution, uncertainty, and technical terms.",
+    "Keep revised CJK length between 95% and 125% of the source.",
+    "Increase sentence count rather than optimize for compression.",
+    "Do not add anecdotes, evidence, mechanisms, or causal relations.",
+    "Do not target formulaic markers unless a split mechanically changes their scope."
+  ],
+  "position_diagnostics": {
+    "task_order_fixed_for_control_separation": true,
+    "identical_pair_count": 1,
+    "mirrored_pair_count": 1,
+    "mirrored_base_pair_id": "integration-v1-01",
+    "mirror_task_distance": 6,
+    "interpret_treatment_only_if_controls_pass": true
+  },
+  "decision_policy": {
+    "primary_outcome": "revised_version_preferred_for_continued_reading",
+    "no_difference_is_not_a_win": true,
+    "comments_used_for_selection": false,
+    "position_gate": "The identical pair must be rated no-difference and mirrored choices must agree by content rather than by side before aggregate treatment preference is interpreted."
+  },
+  "generation_diagnostics": {
+    "task_count": 8,
+    "unique_intervention_pair_count": 6,
+    "unique_document_count": 7,
+    "source_counts": {
+      "infoq": 3,
+      "meituan_tech": 3
+    },
+    "format_counts": {
+      "industry_reporting": 2,
+      "research_summary": 2,
+      "technical_practice": 2
+    },
+    "claim_check_count": 18,
+    "intervention_original_side_counts": {
+      "A": 3,
+      "B": 3
+    },
+    "all_preservation_gates_passed": true
+  },
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "integration-v1-04",
+      "base_pair_id": "integration-v1-04",
+      "doc_id": "610ba7a9b468d78a3d59def1",
+      "source": "meituan_tech",
+      "format_stratum": "research_summary",
+      "published_at": "2026-06-11",
+      "target_line": 18,
+      "original_side": "B",
+      "control_role": "intervention",
+      "claim_check_count": 3,
+      "cjk_expansion_ratio": 0.9537815126050421,
+      "sentence_count_change": 5
+    },
+    {
+      "task_number": 2,
+      "pair_id": "integration-v1-01",
+      "base_pair_id": "integration-v1-01",
+      "doc_id": "4e2108f7b04c3847a564bfd4",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "published_at": "2025-09-29",
+      "target_line": 1,
+      "original_side": "A",
+      "control_role": "intervention",
+      "claim_check_count": 3,
+      "cjk_expansion_ratio": 1.0776255707762556,
+      "sentence_count_change": 4
+    },
+    {
+      "task_number": 3,
+      "pair_id": "integration-v1-06",
+      "base_pair_id": "integration-v1-06",
+      "doc_id": "69566776f457ecf4c98ecbe0",
+      "source": "meituan_tech",
+      "format_stratum": "technical_practice",
+      "published_at": "2026-03-20",
+      "target_line": 34,
+      "original_side": "B",
+      "control_role": "intervention",
+      "claim_check_count": 3,
+      "cjk_expansion_ratio": 1.0802469135802468,
+      "sentence_count_change": 3
+    },
+    {
+      "task_number": 4,
+      "pair_id": "integration-v1-identical-control",
+      "doc_id": "66ba5cd023c8f199f1601f59",
+      "source": "infoq",
+      "format_stratum": "technical_practice",
+      "control_role": "identical"
+    },
+    {
+      "task_number": 5,
+      "pair_id": "integration-v1-02",
+      "base_pair_id": "integration-v1-02",
+      "doc_id": "8873215c1410ad3babd84bbb",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "published_at": "2026-04-10",
+      "target_line": 1,
+      "original_side": "B",
+      "control_role": "intervention",
+      "claim_check_count": 3,
+      "cjk_expansion_ratio": 1.006060606060606,
+      "sentence_count_change": 4
+    },
+    {
+      "task_number": 6,
+      "pair_id": "integration-v1-05",
+      "base_pair_id": "integration-v1-05",
+      "doc_id": "75583336dc40b896d68598d0",
+      "source": "meituan_tech",
+      "format_stratum": "research_summary",
+      "published_at": "2026-06-05",
+      "target_line": 11,
+      "original_side": "A",
+      "control_role": "intervention",
+      "claim_check_count": 3,
+      "cjk_expansion_ratio": 1.0449438202247192,
+      "sentence_count_change": 3
+    },
+    {
+      "task_number": 7,
+      "pair_id": "integration-v1-03",
+      "base_pair_id": "integration-v1-03",
+      "doc_id": "24fb6134577093ddcff37689",
+      "source": "infoq",
+      "format_stratum": "technical_practice",
+      "published_at": "2026-04-02",
+      "target_line": 8,
+      "original_side": "A",
+      "control_role": "intervention",
+      "claim_check_count": 3,
+      "cjk_expansion_ratio": 1.0802919708029197,
+      "sentence_count_change": 4
+    },
+    {
+      "task_number": 8,
+      "pair_id": "integration-v1-01-mirror",
+      "base_pair_id": "integration-v1-01",
+      "doc_id": "4e2108f7b04c3847a564bfd4",
+      "source": "infoq",
+      "format_stratum": "industry_reporting",
+      "published_at": "2025-09-29",
+      "target_line": 1,
+      "original_side": "B",
+      "control_role": "mirrored",
+      "claim_check_count": 3,
+      "cjk_expansion_ratio": 1.0776255707762556,
+      "sentence_count_change": 4
+    }
+  ]
+}

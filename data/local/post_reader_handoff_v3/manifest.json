@@ -1,0 +1,185 @@
+{
+  "protocol_version": "post-reader-corpus-handoff-1.1",
+  "selection_version": "post-reader-handoff-selection-3.0",
+  "generated_at": "2026-08-30T04:45:42.7876471Z",
+  "status": "candidate_pool_not_reader_exposed",
+  "post_start": "2025-07-01",
+  "documents_file": "documents.jsonl",
+  "documents": 93,
+  "documents_sha256": "dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d",
+  "texts_identity_sha256": "58bf3d51fddedb053c8f6fa8d99ea660e7616d95ff013d5d39bba8285039b095",
+  "sources": {
+    "huawei_cloud_community": 32,
+    "leiphone": 39,
+    "qbitai": 22
+  },
+  "months": {
+    "2025-07": 1,
+    "2025-08": 1,
+    "2025-11": 2,
+    "2025-12": 4,
+    "2026-01": 4,
+    "2026-03": 1,
+    "2026-04": 6,
+    "2026-05": 2,
+    "2026-06": 3,
+    "2026-07": 16,
+    "2026-08": 53
+  },
+  "formats": {
+    "industry_reporting": 40,
+    "research_summary": 19,
+    "technical_practice": 34
+  },
+  "topics": {
+    "ai_models_agents": 57,
+    "business_industry": 17,
+    "data_infrastructure": 13,
+    "software_engineering": 6
+  },
+  "roles": {
+    "discovery_reserve": 93,
+    "development": 0,
+    "validation": 0,
+    "final_test": 0
+  },
+  "admission_flow": {
+    "raw_acquisition": 720,
+    "after_deterministic_translation_and_cross_corpus_dedup": 561,
+    "after_deepseek_glm_provenance_intersection": 372,
+    "after_deepseek_glm_value_intersection": 130,
+    "after_qwen_provenance": 130,
+    "after_qwen_value": 103,
+    "after_huawei_visibility_threshold": 93,
+    "after_high_confidence_strata_gate": 93,
+    "final_documents": 93,
+    "deterministic_exclusions": {
+      "translation": 92,
+      "duplicate_doc_id": 59,
+      "near_duplicate": 8
+    },
+    "huawei_visibility_excluded": 10
+  },
+  "model_selection": {
+    "ranking_metric": "OpenRouter weekly token usage, not quality",
+    "ranking_snapshot": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\openrouter_weekly_rankings_2026-08-30.json",
+      "sha256": "59ca99c95588dade0f3292d0a7627f63bd4fd7648caf92bf8e067e8c68f3dc3b"
+    },
+    "model_catalog": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\openrouter_models_2026-08-30.json",
+      "sha256": "ffe2559fdc5960ab7131b6f3e6ca1388758a1fc7ba9d992a04934809ae6646da"
+    },
+    "stage1_models": [
+      "deepseek/deepseek-v4-flash-0731",
+      "z-ai/glm-5.3-flash"
+    ],
+    "stage2_model": "qwen/qwen3.8-max",
+    "decision": "three-model fail-closed intersection after a fixed 12-document interface panel",
+    "excluded_from_batch": [
+      "stealth/ox-alpha: opaque identity",
+      "tencent/hy4-preview: 23/24 panel request failures",
+      "xiaomi/mimo-v2.5 and tencent/hy3: interface-valid but not selected for the conservative batch",
+      "qwen/qwen3.8-2.4t-a95b: two panel measurements were not high-confidence"
+    ]
+  },
+  "run_anomaly": {
+    "affected_stage": "deepseek provenance safeguard cache",
+    "cause": "A failed c4 retry process remained alive while a c2 retry began, so both appended to the same cache before detection.",
+    "original_cache_lines_preserved": true,
+    "duplicate_cache_key_groups": 95,
+    "extra_duplicate_lines": 95,
+    "stopped_processes": [
+      {
+        "pid": 38128,
+        "reason": "orphaned c4 retry writer",
+        "observed_stopped_before": "2026-08-30T02:55:02Z"
+      },
+      {
+        "pid": 41776,
+        "reason": "c2 retry held stale in-memory cache after concurrent writes",
+        "stopped_at": "2026-08-30T02:55:13.6418979Z"
+      }
+    ],
+    "result_consistency": "triage_results contains exactly 561 unique doc_ids and is regenerated from cache-key-indexed results",
+    "value_cache_duplicates": 0
+  },
+  "input_artifacts": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\editorial_acquisition\\manifest.json",
+      "sha256": "224377d0c2273f3b56c779777aa4a97a863a9c2b68db0088348a73fb376ea79b"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\huawei_acquisition\\manifest.json",
+      "sha256": "21699138fe3ac5f7232acdb3854ef8cc32932d77ea935530215b33f7f806ec2e"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\review_candidates\\manifest.json",
+      "sha256": "00da9287ad561b91e04781c65248be788ed106c4b41e18535240a8cb02a4deb3"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\provenance_consensus_stage1\\comparison.json",
+      "sha256": "db0d36f1d3d752aeb3241d580b45ba4b44de7f3855cf76d15994ca1232421456"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\value_consensus_stage1\\comparison.json",
+      "sha256": "a20af9989d2546bb46515b0c6c2ea0172ab576f8f2876b07cb6a31a2ac0e4038"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\triage_qwen38_max\\triage_manifest.json",
+      "sha256": "abf2009ee0348e53c3813e6b7932e53b6a2f2307e36e2d6a632a6bf8a2c52b8f"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\value_qwen38_max\\value_manifest.json",
+      "sha256": "426bd58eb9e7993a33dfeb983b294aa8d17068a88c010091b64ba6b5c1451cdb"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\strata_qwen38_max\\manifest.json",
+      "sha256": "277d11a7a74c344b2999dec25999f3c16fe48d3b46aa68621987cbbe2ca59a85"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\openrouter_weekly_rankings_2026-08-30.json",
+      "sha256": "59ca99c95588dade0f3292d0a7627f63bd4fd7648caf92bf8e067e8c68f3dc3b"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\openrouter_models_2026-08-30.json",
+      "sha256": "ffe2559fdc5960ab7131b6f3e6ca1388758a1fc7ba9d992a04934809ae6646da"
+    }
+  ],
+  "output_artifacts": {
+    "documents": {
+      "path": "documents.jsonl",
+      "sha256": "dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d"
+    },
+    "texts_identity_sha256": "58bf3d51fddedb053c8f6fa8d99ea660e7616d95ff013d5d39bba8285039b095",
+    "admission_flow": {
+      "path": "admission_flow.json",
+      "sha256": "13a7d9df4701f8d96e57dd0ee51d8f6390225aa29107599ac6b1fbc58d37572c"
+    },
+    "validation_report": {
+      "path": "validation_report.json",
+      "sha256": "d180dda220274c0989588fdc9072e66b74216bb7b650f4b750ab817e2aa771c2"
+    },
+    "external_overlap_report": {
+      "path": "external_overlap_report.json",
+      "sha256": "d78e0d9d68b803363cb88fa654fe99e99eaf378fc09c605f145c266d93e8b5df"
+    }
+  },
+  "restrictions": [
+    "This handoff is a discovery reserve and is not a representative or final corpus.",
+    "No document has been shown in a reader task after admission.",
+    "Model-assisted labels are measurements, not human gold.",
+    "Editorial distribution is not an article-level visibility metric for QbitAI or Leiphone.",
+    "Huawei view percentiles are collection-time source-quarter measurements.",
+    "The reserve must remain disjoint from development, validation, and final-test documents until explicitly allocated under a frozen protocol."
+  ],
+  "validation": {
+    "structural_errors": 0,
+    "structural_warnings": 0,
+    "external_overlap_issues": 0,
+    "all_dates_at_or_after": "2025-07-01",
+    "all_bodies_strict_utf8": true,
+    "one_record_per_body": true,
+    "unique_doc_id_url_hash": true
+  }
+}

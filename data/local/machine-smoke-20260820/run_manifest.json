@@ -1,0 +1,129 @@
+{
+  "schema_version": "local-corpus-pipeline-1",
+  "corpus_stage": "diagnostic_pilot",
+  "status": "complete",
+  "started_at": "2026-08-20T12:40:06.035221+00:00",
+  "completed_at": "2026-08-20T12:41:48.238748+00:00",
+  "repository": {
+    "commit": "4d97ac0e81ab8dcf97c2365b72920657607bbd93",
+    "branch": "init",
+    "dirty": true
+  },
+  "environment": {
+    "python_executable": "F:\\MyProjects\\DeAIodorant\\.venv\\Scripts\\python.exe",
+    "python_version": "3.13.14",
+    "virtual_environment": "F:\\MyProjects\\DeAIodorant\\.venv",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "hardware": {
+      "nvidia_smi": "NVIDIA GeForce RTX 4080 SUPER, 16376, 610.88"
+    }
+  },
+  "configuration": {
+    "target_per_cell": 1,
+    "max_attempts": 80,
+    "delay_seconds": 0.35,
+    "http_timeout_seconds": 45.0,
+    "translation_timeout_seconds": 600.0,
+    "translation_model": "qwen3.5:9b",
+    "ollama_endpoint": "http://127.0.0.1:11434",
+    "translation_prompt_versions": {
+      "strict": "translation-strict-v3",
+      "verifier": "translation-original-verifier-v2"
+    },
+    "selection_seeds": [
+      "infoq-pre",
+      "infoq-post",
+      "jiqizhixin-url-sha256"
+    ],
+    "windows": {
+      "pre": [
+        "2021-07-01",
+        "2022-06-30"
+      ],
+      "post": [
+        "2025-07-01",
+        "2026-06-30"
+      ],
+      "transition_period_excluded": [
+        "2023-01-01",
+        "2025-06-30"
+      ]
+    }
+  },
+  "ollama_model": {
+    "name": "qwen3.5:9b",
+    "model": "qwen3.5:9b",
+    "modified_at": "2026-08-20T20:39:36.8483272+08:00",
+    "size": 6594474711,
+    "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen35",
+      "families": [
+        "qwen35"
+      ],
+      "parameter_size": "9.7B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 4096
+    }
+  },
+  "collector_command": [
+    "F:\\MyProjects\\DeAIodorant\\.venv\\Scripts\\python.exe",
+    "F:\\MyProjects\\DeAIodorant\\pilot_collect.py",
+    "--target-per-cell",
+    "1",
+    "--output-dir",
+    "F:\\MyProjects\\DeAIodorant\\data\\local\\machine-smoke-20260820",
+    "--delay",
+    "0.35",
+    "--max-attempts",
+    "80",
+    "--http-timeout",
+    "45.0",
+    "--translation-timeout",
+    "600.0",
+    "--translation-model",
+    "qwen3.5:9b",
+    "--ollama-endpoint",
+    "http://127.0.0.1:11434",
+    "--translation-cache",
+    "F:\\MyProjects\\DeAIodorant\\data\\local\\machine-smoke-20260820\\translation_model_cache.jsonl"
+  ],
+  "integrity_report": "integrity_report.json",
+  "limitations": [
+    "This run is diagnostic pilot material, not a clean or final corpus.",
+    "Manual quality and visibility review remains required.",
+    "Machine Heart historical documents lack article-level visibility evidence."
+  ],
+  "integrity": {
+    "valid": true,
+    "documents": 3,
+    "months": 3,
+    "unverified_visibility_documents": 1
+  },
+  "ollama_runtime": {
+    "models": [
+      {
+        "name": "qwen3.5:9b",
+        "model": "qwen3.5:9b",
+        "size": 5490081790,
+        "digest": "6488c96fa5faab64bb65cbd30d4289e20e6130ef535a93ef9a49f42eda893ea7",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "9.7B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-08-20T20:51:47.3456689+08:00",
+        "size_vram": 5490081790,
+        "context_length": 4096
+      }
+    ]
+  }
+}

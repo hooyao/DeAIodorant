@@ -1,0 +1,14 @@
+{
+  "url": "https://zhongce.sina.com.cn/robots.txt",
+  "requested_at_utc": "2026-09-14T14:48:59.032761+00:00",
+  "method": "GET",
+  "user_agent": "DeAIodorantResearch/1.0 (bounded public article inspection)",
+  "timeout_seconds": 20,
+  "redirects_allowed": false,
+  "status": 200,
+  "content_type": "text/plain",
+  "location": null,
+  "bytes": 23,
+  "sha256": "eaeaa8d3511d1622227d89707d995b8b1f0902f5b86fdbe58882d1cef260d4d7",
+  "completed_at_utc": "2026-09-14T14:48:59.380000+00:00"
+}

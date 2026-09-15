@@ -1,0 +1,15 @@
+<View>
+  <Header value="跨文章 post 语料阅读阻力比较"/>
+  <Text name="instruction" value="下面两段来自不同文章，但来源、题材、格式、长度和可见度已经匹配。哪一段让你更不愿意继续读？只按第一感受选择；没有明显差别时请直接选第三项，不需要分析语言特征。"/>
+  <Header value="A"/>
+  <Text name="passage_a" value="$passage_a"/>
+  <Header value="B"/>
+  <Text name="passage_b" value="$passage_b"/>
+  <Choices name="friction_choice" toName="passage_a" choice="single-radio" required="true" showInline="false">
+    <Choice value="A，让我更不愿意继续读"/>
+    <Choice value="B，让我更不愿意继续读"/>
+    <Choice value="没有明显差别（都还行或都不好）"/>
+  </Choices>
+  <Header value="可选评论"/>
+  <TextArea name="comment" toName="passage_a" placeholder="可以留空；若某一句特别影响阅读，也可以随手写一句。" rows="2"/>
+</View>

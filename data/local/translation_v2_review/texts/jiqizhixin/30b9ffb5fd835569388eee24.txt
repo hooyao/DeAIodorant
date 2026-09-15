@@ -1,0 +1,54 @@
+2023 年谷歌博士奖学金（Google PhD Fellowship）获奖名单公布了。该奖项旨在奖励在计算机科学等前瞻科研领域表现优异的年轻学者，奖学金用于直接支持攻读博士学位，并提供与谷歌研究导师合作的机会。
+根据 2023 年谷歌博士生奖学金项目名单显示，今年共有 67 人获奖，分为 13 个方向：算法及优化和市场 5 位、健康 6 位、机器学习 19 位、移动计算 2 位、隐私和安全 2 位、量子计算 4 位、系统与网络 4 位、计算神经与认知科学 2 位、人机交互 8 位、机器感知及语音技术以及计算机视觉 8 位、自然语言处理 4 位、编程技术与软件工程 2 位、结构化数据和数据库管理 1 位。
+以下为部分入选华人博士生介绍：
+算法及优化和市场
+Brice Huang，MIT
+Brice Huang 为 MIT 博士生，师从 Nike Sun、Guy Bresler 教授。在此之前，Brice Huang 本科毕业于 MIT，主修数学和 EECS。Brice Huang 研究兴趣包括高维概率和统计物理学，还曾获得过 NSF 研究生奖学金和 Siebel 奖学金。
+健康
+Li-Wen Chiu，阳明交大
+Li-Wen Chiu 现在为阳明交大博士生，本科毕业于成功大学。
+Tsai-Min Chen（陈在民），台湾大学
+陈在民现在为台湾大学博士生，他硕士毕业于京都大学。
+Wenhao Gao（高文昊），MIT
+高文昊现在是 MIT 博士生，师从 Connor W. Coley 教授。高文昊研究重点是通过利用人工智能和机器人技术的力量来加速分子发现过程。此前，他于北京大学获得学士学位。
+机器学习
+Yiding Jiang，CMU
+Yiding Jiang 现在为 CMU 博士生，师从 Zico Kolter 教授。此前，Yiding Jiang 在加州大学伯克利分校获得了电子工程和计算机科学学士学位，从事机器人和生成模型的工作，导师是 Ken Goldberg 教授。此外，Yiding Jiang 还曾在 Meta AI research 和 Cerebras Systems 做过研究实习生。
+移动计算
+Ke Sun，加州大学圣地亚哥分校
+Ke Sun 现在为加州大学圣地亚哥分校计算机科学与工程博士生，导师为 Xinyu Zhang 教授。Ke Sun 的研究兴趣主要包括物联网（IoT）、移动计算、人机交互和语音处理。他本科毕业于南京航空航天大学、硕士毕业于南京大学。
+隐私和安全
+Miranda Wei，华盛顿大学
+Miranda Wei 为华盛顿大学博士生，师从 Franzi Roesner 、Yoshi Kohno 教授，主要研究兴趣包括安全与隐私。在攻读博士学位之前，Miranda Wei 在芝加哥大学学习。
+Yihui Zeng，亚利桑那州立大学
+Yihui Zeng 现在为亚利桑那州立大学博士生，此前，他于香港中文大学获得理学学士学位。Yihui Zeng 的主要研究兴趣包括系统安全、软件安全以及符号执行。
+系统与网络
+Jiaxin Lin，得克萨斯大学奥斯汀分校
+Jiaxin Lin 于 2019 年在北京航空航天大学获得学士学位，她现在是德克萨斯大学网络系统（UTNS）实验室的一员，导师是 Aditya Akella。Jiaxin Lin 研究兴趣包括计算机网络和系统，特别对可编程硬件、数据中心网络、大数据系统和 SmartNIC 感兴趣。
+人机交互
+Georgianna Lin，多伦多大学
+Georgianna Lin 是多伦多大学计算机科学系的博士生，也是 Google Health 的学生研究员。她曾在乔治亚理工学院完成了计算机科学学士和硕士学位，获得谷歌博士奖学金，Wolfond 奖学金和弗吉尼亚大学杰出硕士学生奖。
+Emily Kuang，罗切斯特理工学院
+Emily Kuang 是罗彻斯特理工学院戈利萨诺计算机与信息科学学院的博士生。她的研究方向是人机交互（HCI）、人工智能（AI）和用户体验（UX）。她设计、评估和改进人机交互协作工具，以支持可用性和用户体验分析。
+苏子雄，东京大学
+苏子雄目前是东京大学博士二年级学生，导师是 Jun Rekimoto 教授，研究兴趣主要集中在语音用户交互、无声语音识别和多模态输入技术。苏子雄曾获得电科科技大学电气电子工程学士学位以及东京大学应用计算机科学硕士学位。
+机器感知、语音技术和计算机视觉
+Antoine Yang，法国国家信息与自动化研究所（Inria）
+Antoine Yang 是 Inria 的博士生，导师是 Antoine Miech、Josef Sivic、Ivan Laptev 和 Cordelia Schmid。Antoine Yang 目前的研究重点是用于视频理解的视觉语言模型。
+Ethan Tseng，普林斯顿大学
+Ethan Tseng 是普林斯顿大学计算机科学博士生，导师是 Felix Heide 教授。Ethan Tseng 的主要研究兴趣是计算机视觉和图形学，研究重点是计算成像。他的研究涉及光学、图像信号处理和机器学习，旨在探索用于智能手机、医疗实践、自动驾驶汽车和虚拟 / 增强现实的下一代相机和显示系统。
+Yanxi Li，悉尼大学
+Yanxi Li 是悉尼大学博士生，本科毕业于首都师范大学。Yanxi Li 的研究重点是神经架构搜索和神经网络的稳健性。他的研究论文《Neural Architecture Search for Wide Spectrum Adversarial Robustness》获得了 AAAI 2023 杰出论文奖。
+自然语言处理
+姜成翰，台湾大学
+姜成翰是台湾大学二年级博士生，导师是李宏毅教授。姜成翰的主要研究兴趣是自然语言处理，特别是自监督学习和预训练语言模型。他还对评估不同任务以及如何可靠地评估机器学习系统感兴趣。
+李刘年，加州大学洛杉矶分校
+李刘年是加州大学洛杉矶分校计算机科学系的四年级博士生，导师是 Kai-Wei Chang 教授。他的研究兴趣主要是计算机视觉，研究论文《Grounded Language-Image Pre-training》获得了 CVPR 2022 最佳论文提名。
+孙之清，卡内基梅隆大学
+孙之清是卡内基梅隆大学语言技术学院的博士生，导师是 Yiming Yang 教授。孙之清本科毕业于北京大学，师从邓志鸿教授。
+孙之清的研究兴趣包括神经符号推理、高效序列生成、模型压缩等。最近他主要研究大型语言模型（LLM）与大型多模态模型（LMM）的结合，特别是通过可扩展的监督来提高可靠性。
+结构化数据和数据库管理
+Zezhou Huang，哥伦比亚大学
+Zezhou Huang 是哥伦比亚大学的一名博士生，导师是 Eugene Wu 教授。他的研究兴趣是使用大型语言模型 (LLM) 解决数据问题，并通过 GPU 加速来加快查询处理速度。
+参考链接：
+https://research.google/outreach/phd-fellowship/recipients/?category=2023

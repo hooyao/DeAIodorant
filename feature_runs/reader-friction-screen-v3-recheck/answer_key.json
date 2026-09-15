@@ -1,0 +1,103 @@
+{
+  "schema_version": "deaiodorant-reader-friction-screen-3.0",
+  "protocol_version": "post-only-friction-discrimination-development-3.0",
+  "seed": 2026082204,
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "friction-v3-4121a1ef",
+      "doc_id": "4121a1ef99d626111ffe59c6",
+      "candidate_side": "A",
+      "candidate_line": 11,
+      "control_line": 14
+    },
+    {
+      "task_number": 2,
+      "pair_id": "friction-v3-fbed7012",
+      "doc_id": "fbed7012bab78d329a4a523f",
+      "candidate_side": "A",
+      "candidate_line": 91,
+      "control_line": 143
+    },
+    {
+      "task_number": 3,
+      "pair_id": "friction-v3-7f94b33a",
+      "doc_id": "7f94b33a5bd4833a79204e52",
+      "candidate_side": "A",
+      "candidate_line": 39,
+      "control_line": 33
+    },
+    {
+      "task_number": 4,
+      "pair_id": "friction-v3-b67f13df",
+      "doc_id": "b67f13dfff28e0d399f298b1",
+      "candidate_side": "B",
+      "candidate_line": 145,
+      "control_line": 5
+    },
+    {
+      "task_number": 5,
+      "pair_id": "friction-v3-886c72b9",
+      "doc_id": "886c72b909098cc5ec646704",
+      "candidate_side": "B",
+      "candidate_line": 13,
+      "control_line": 8
+    },
+    {
+      "task_number": 6,
+      "pair_id": "friction-v3-1b105962",
+      "doc_id": "1b1059627ccd253b4042aa60",
+      "candidate_side": "A",
+      "candidate_line": 72,
+      "control_line": 54
+    },
+    {
+      "task_number": 7,
+      "pair_id": "friction-v3-4e5a1086",
+      "doc_id": "4e5a10869cabea3263bb576e",
+      "candidate_side": "B",
+      "candidate_line": 104,
+      "control_line": 116
+    },
+    {
+      "task_number": 8,
+      "pair_id": "friction-v3-86acdf69",
+      "doc_id": "86acdf6932b6036ea979c084",
+      "candidate_side": "A",
+      "candidate_line": 105,
+      "control_line": 124
+    },
+    {
+      "task_number": 9,
+      "pair_id": "friction-v3-0a3e603a",
+      "doc_id": "0a3e603aa9a9ad420334a890",
+      "candidate_side": "B",
+      "candidate_line": 23,
+      "control_line": 66
+    },
+    {
+      "task_number": 10,
+      "pair_id": "friction-v3-f8ecc915",
+      "doc_id": "f8ecc915a65b4a79429f9fce",
+      "candidate_side": "A",
+      "candidate_line": 28,
+      "control_line": 1
+    },
+    {
+      "task_number": 11,
+      "pair_id": "friction-v3-0480ba19",
+      "doc_id": "0480ba19736016aeaa0c7d93",
+      "candidate_side": "B",
+      "candidate_line": 63,
+      "control_line": 65
+    },
+    {
+      "task_number": 12,
+      "pair_id": "friction-v3-061767be",
+      "doc_id": "061767be12418dbf53feaf1d",
+      "candidate_side": "B",
+      "candidate_line": 87,
+      "control_line": 17
+    }
+  ]
+}

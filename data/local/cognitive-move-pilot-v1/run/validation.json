@@ -1,0 +1,37 @@
+{
+  "frozen_inputs": "passed",
+  "completed_sessions": [
+    "a1",
+    "a2",
+    "a3",
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "annotations": 36,
+  "quote_occurrences": 191,
+  "response_hashes": {
+    "responses/a1.json": "33aa662e0c18f3df751a524bc4572e2287860718c355529121a36ac770dd77a6",
+    "responses/a2.json": "da0029bf05b4c685a6788c924f1e0b8b2fe134ad1be4b1dca1ac1a4d718b2031",
+    "responses/a3.json": "e69528947dbcc6eca575ff395bef3e0669ed51c5e01754c5245733ac746ca26b",
+    "responses/b1.json": "203531766cb86349d2984acad0fd97f726103e2cb9299c7035eebe4840e344a0",
+    "responses/b2.json": "19ca5a92f2de24ee3d24897c2aa7eb2b91ea5d63f152842c916036500fe5698d",
+    "responses/b3.json": "0a7a005a572b738c5c4c465b7d9b8b4cfee949ecc87518d6a0adde781ebf7054"
+  },
+  "semantic_validity": "requires_source_review",
+  "complete": true,
+  "partial_traces_identical_to_final": [
+    "a1",
+    "a2",
+    "b1",
+    "b2",
+    "b3"
+  ],
+  "sessions_without_partial_trace": [
+    "a3"
+  ],
+  "formal_prior_label_exposure_self_reports": 0,
+  "excluded_launch_attempts": 2,
+  "full_context_read_is_self_report": true,
+  "validated_at_utc": "2026-09-14T15:19:14.299635+00:00"
+}

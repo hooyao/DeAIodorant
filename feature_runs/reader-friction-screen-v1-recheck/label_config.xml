@@ -1,0 +1,13 @@
+<View>
+  <Header value="原文阅读体验筛选"/>
+  <Text name="instruction" value="请只按第一感受作答：读完这段原文后，你有多愿意继续往下读？不需要判断是不是 AI 写的，也不需要分析语言特征。"/>
+  <Text name="passage" value="$passage"/>
+  <Choices name="willingness" toName="passage" choice="single-radio" required="true" showInline="false">
+    <Choice value="很愿意继续读"/>
+    <Choice value="还算愿意继续读"/>
+    <Choice value="不太愿意继续读"/>
+    <Choice value="完全不愿意继续读"/>
+  </Choices>
+  <Header value="可选评论"/>
+  <TextArea name="comment" toName="passage" placeholder="可以留空；若有特别影响阅读的地方，也可以随手写一句。" rows="2"/>
+</View>

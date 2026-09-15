@@ -1,0 +1,29 @@
+{
+  "version": "research-publication-security-resolution-1.0",
+  "actual_local_credentials_found": 0,
+  "unresolved_findings": 0,
+  "historical_source_signatures": [
+    {
+      "path": "data/smoke/infoq_pre.jsonl",
+      "sha256": "378b86c8e64610a60c5d4d41d4f320c495f55ffa5de39111b4b0b9b54f876e44",
+      "unchanged_from_published_baseline": true,
+      "classification": "expired_third_party_source_url_signature",
+      "source_url_host": "ai.facebook.com",
+      "expired_at_utc": "2022-05-06T09:14:11+00:00",
+      "action": "preserve_frozen_public_source_evidence",
+      "not_a_local_account_or_api_credential": true
+    },
+    {
+      "path": "data/smoke/pilot_corpus.jsonl",
+      "sha256": "6e44850f3f66b8e2967ad61e4c6fff24f25b730450adec5cad8375db10e8cbb7",
+      "unchanged_from_published_baseline": true,
+      "classification": "expired_third_party_source_url_signature",
+      "source_url_host": "ai.facebook.com",
+      "expired_at_utc": "2022-05-06T09:14:11+00:00",
+      "action": "preserve_frozen_public_source_evidence",
+      "not_a_local_account_or_api_credential": true
+    }
+  ],
+  "basis": "JWT-like strings are within source article text, expired in 2022, and byte-identical to the already-published baseline; no use or verification against an external service was attempted.",
+  "raw_token_values_recorded": false
+}

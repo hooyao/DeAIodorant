@@ -1,0 +1,4643 @@
+[
+  {
+    "table": "auth_group",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "name",
+        "type": "varchar(150)"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "name"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "auth_group_permissions",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "group_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "permission_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "group_id",
+      "permission_id"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "auth_permission",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "content_type_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "codename",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "name",
+        "type": "varchar(255)"
+      }
+    ],
+    "row_count": 305,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "content_type_id",
+      "codename",
+      "name"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "authtoken_token",
+    "columns": [
+      {
+        "name": "key",
+        "type": "varchar(40)"
+      },
+      {
+        "name": "created",
+        "type": "datetime"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 1,
+    "exported_columns": [],
+    "omitted_columns": [
+      "key",
+      "created",
+      "user_id"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "core_asyncmigrationstatus",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "name",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 8,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "meta",
+      "name",
+      "status",
+      "created_at",
+      "updated_at",
+      "project_id"
+    ],
+    "omission_reason": "应用框架、迁移、运行维护或内部序列；仅记录表结构与计数。"
+  },
+  {
+    "table": "core_deletedrow",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "model",
+        "type": "varchar(1024)"
+      },
+      {
+        "name": "row_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "data",
+        "type": "TEXT"
+      },
+      {
+        "name": "reason",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "model",
+      "row_id",
+      "data",
+      "reason",
+      "created_at",
+      "updated_at",
+      "organization_id",
+      "project_id",
+      "user_id"
+    ],
+    "omission_reason": "应用框架、迁移、运行维护或内部序列；仅记录表结构与计数。"
+  },
+  {
+    "table": "data_export_convertedformat",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "file",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "export_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "finished_at",
+        "type": "datetime"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "export_type",
+        "type": "varchar(64)"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "file",
+      "status",
+      "export_id",
+      "created_at",
+      "created_by_id",
+      "finished_at",
+      "organization_id",
+      "project_id",
+      "updated_at",
+      "traceback",
+      "export_type"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "data_export_export",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "file",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "md5",
+        "type": "varchar(128)"
+      },
+      {
+        "name": "finished_at",
+        "type": "datetime"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "counters",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(2048)"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "created_at",
+      "file",
+      "md5",
+      "finished_at",
+      "status",
+      "counters",
+      "created_by_id",
+      "project_id",
+      "title"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "data_import_fileupload",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "file",
+        "type": "varchar(100)"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "project_id",
+      "user_id",
+      "file"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "data_manager_filter",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "column",
+        "type": "varchar(1024)"
+      },
+      {
+        "name": "type",
+        "type": "varchar(1024)"
+      },
+      {
+        "name": "operator",
+        "type": "varchar(1024)"
+      },
+      {
+        "name": "value",
+        "type": "TEXT"
+      },
+      {
+        "name": "index",
+        "type": "INTEGER"
+      },
+      {
+        "name": "parent_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [
+      "id",
+      "column",
+      "type",
+      "operator",
+      "value",
+      "index",
+      "parent_id"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "data_manager_filtergroup",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "conjunction",
+        "type": "varchar(1024)"
+      }
+    ],
+    "row_count": 3,
+    "exported_columns": [
+      "id",
+      "conjunction"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "data_manager_filtergroup_filters",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "filtergroup_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "filter_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [
+      "id",
+      "filtergroup_id",
+      "filter_id"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "data_manager_view",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "data",
+        "type": "TEXT"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ordering",
+        "type": "TEXT"
+      },
+      {
+        "name": "filter_group_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "selected_items",
+        "type": "TEXT"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "order",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 3,
+    "exported_columns": [
+      "id",
+      "data",
+      "project_id",
+      "ordering",
+      "filter_group_id",
+      "selected_items",
+      "user_id",
+      "order"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "django_admin_log",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "object_id",
+        "type": "TEXT"
+      },
+      {
+        "name": "object_repr",
+        "type": "varchar(200)"
+      },
+      {
+        "name": "action_flag",
+        "type": "smallint unsigned"
+      },
+      {
+        "name": "change_message",
+        "type": "TEXT"
+      },
+      {
+        "name": "content_type_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "action_time",
+        "type": "datetime"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "object_id",
+      "object_repr",
+      "action_flag",
+      "change_message",
+      "content_type_id",
+      "user_id",
+      "action_time"
+    ],
+    "omission_reason": "应用框架、迁移、运行维护或内部序列；仅记录表结构与计数。"
+  },
+  {
+    "table": "django_content_type",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "app_label",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "model",
+        "type": "varchar(100)"
+      }
+    ],
+    "row_count": 77,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "app_label",
+      "model"
+    ],
+    "omission_reason": "应用框架、迁移、运行维护或内部序列；仅记录表结构与计数。"
+  },
+  {
+    "table": "django_migrations",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "app",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "name",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "applied",
+        "type": "datetime"
+      }
+    ],
+    "row_count": 396,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "app",
+      "name",
+      "applied"
+    ],
+    "omission_reason": "应用框架、迁移、运行维护或内部序列；仅记录表结构与计数。"
+  },
+  {
+    "table": "django_session",
+    "columns": [
+      {
+        "name": "session_key",
+        "type": "varchar(40)"
+      },
+      {
+        "name": "session_data",
+        "type": "TEXT"
+      },
+      {
+        "name": "expire_date",
+        "type": "datetime"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "session_key",
+      "session_data",
+      "expire_date"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "fsm_annotationstate",
+    "columns": [
+      {
+        "name": "id",
+        "type": "char(32)"
+      },
+      {
+        "name": "organization_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "previous_state",
+        "type": "varchar(50)"
+      },
+      {
+        "name": "transition_name",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "context_data",
+        "type": "TEXT"
+      },
+      {
+        "name": "reason",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "state",
+        "type": "varchar(50)"
+      },
+      {
+        "name": "task_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "completed_by_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "annotation_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "triggered_by_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "organization_id",
+      "previous_state",
+      "transition_name",
+      "context_data",
+      "reason",
+      "created_at",
+      "state",
+      "task_id",
+      "project_id",
+      "completed_by_id",
+      "annotation_id",
+      "triggered_by_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "fsm_projectstate",
+    "columns": [
+      {
+        "name": "id",
+        "type": "char(32)"
+      },
+      {
+        "name": "organization_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "previous_state",
+        "type": "varchar(50)"
+      },
+      {
+        "name": "transition_name",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "context_data",
+        "type": "TEXT"
+      },
+      {
+        "name": "reason",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "state",
+        "type": "varchar(50)"
+      },
+      {
+        "name": "created_by_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "triggered_by_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "organization_id",
+      "previous_state",
+      "transition_name",
+      "context_data",
+      "reason",
+      "created_at",
+      "state",
+      "created_by_id",
+      "project_id",
+      "triggered_by_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "fsm_taskstate",
+    "columns": [
+      {
+        "name": "id",
+        "type": "char(32)"
+      },
+      {
+        "name": "organization_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "previous_state",
+        "type": "varchar(50)"
+      },
+      {
+        "name": "transition_name",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "context_data",
+        "type": "TEXT"
+      },
+      {
+        "name": "reason",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "state",
+        "type": "varchar(50)"
+      },
+      {
+        "name": "project_id",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "triggered_by_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "organization_id",
+      "previous_state",
+      "transition_name",
+      "context_data",
+      "reason",
+      "created_at",
+      "state",
+      "project_id",
+      "task_id",
+      "triggered_by_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "htx_user",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "password",
+        "type": "varchar(128)"
+      },
+      {
+        "name": "last_login",
+        "type": "datetime"
+      },
+      {
+        "name": "is_superuser",
+        "type": "bool"
+      },
+      {
+        "name": "username",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "email",
+        "type": "varchar(254)"
+      },
+      {
+        "name": "first_name",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "last_name",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "is_staff",
+        "type": "bool"
+      },
+      {
+        "name": "is_active",
+        "type": "bool"
+      },
+      {
+        "name": "date_joined",
+        "type": "datetime"
+      },
+      {
+        "name": "last_activity",
+        "type": "datetime"
+      },
+      {
+        "name": "activity_at",
+        "type": "datetime"
+      },
+      {
+        "name": "phone",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "avatar",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "active_organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "allow_newsletters",
+        "type": "bool"
+      },
+      {
+        "name": "custom_hotkeys",
+        "type": "TEXT"
+      }
+    ],
+    "row_count": 1,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "password",
+      "last_login",
+      "is_superuser",
+      "username",
+      "email",
+      "first_name",
+      "last_name",
+      "is_staff",
+      "is_active",
+      "date_joined",
+      "last_activity",
+      "activity_at",
+      "phone",
+      "avatar",
+      "active_organization_id",
+      "allow_newsletters",
+      "custom_hotkeys"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "htx_user_groups",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "group_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "user_id",
+      "group_id"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "htx_user_user_permissions",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "permission_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "user_id",
+      "permission_id"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "io_storages_azureblobexportstorage",
+    "columns": [
+      {
+        "name": "azureblobstoragemixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "can_delete_objects",
+        "type": "bool"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "azureblobstoragemixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "can_delete_objects",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_azureblobexportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "annotation_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "object_exists",
+      "created_at",
+      "storage_id",
+      "updated_at",
+      "annotation_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_azureblobimportstorage",
+    "columns": [
+      {
+        "name": "azureblobstoragemixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "presign",
+        "type": "bool"
+      },
+      {
+        "name": "presign_ttl",
+        "type": "smallint unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      },
+      {
+        "name": "recursive_scan",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "azureblobstoragemixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "presign",
+      "presign_ttl",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable",
+      "recursive_scan"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_azureblobimportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "key",
+        "type": "TEXT"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_group",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_index",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "key",
+      "object_exists",
+      "created_at",
+      "task_id",
+      "storage_id",
+      "row_group",
+      "row_index"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_azureblobstoragemixin",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "container",
+        "type": "TEXT"
+      },
+      {
+        "name": "prefix",
+        "type": "TEXT"
+      },
+      {
+        "name": "regex_filter",
+        "type": "TEXT"
+      },
+      {
+        "name": "use_blob_urls",
+        "type": "bool"
+      },
+      {
+        "name": "account_name",
+        "type": "TEXT"
+      },
+      {
+        "name": "account_key",
+        "type": "TEXT"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "container",
+      "prefix",
+      "regex_filter",
+      "use_blob_urls",
+      "account_name",
+      "account_key"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_gcsexportstorage",
+    "columns": [
+      {
+        "name": "gcsstoragemixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "can_delete_objects",
+        "type": "bool"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "gcsstoragemixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "can_delete_objects",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_gcsexportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "annotation_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "object_exists",
+      "created_at",
+      "storage_id",
+      "updated_at",
+      "annotation_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_gcsimportstorage",
+    "columns": [
+      {
+        "name": "gcsstoragemixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "presign",
+        "type": "bool"
+      },
+      {
+        "name": "presign_ttl",
+        "type": "smallint unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      },
+      {
+        "name": "recursive_scan",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "gcsstoragemixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "presign",
+      "presign_ttl",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable",
+      "recursive_scan"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_gcsimportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "key",
+        "type": "TEXT"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_group",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_index",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "key",
+      "object_exists",
+      "created_at",
+      "task_id",
+      "storage_id",
+      "row_group",
+      "row_index"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_gcsstoragemixin",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "bucket",
+        "type": "TEXT"
+      },
+      {
+        "name": "prefix",
+        "type": "TEXT"
+      },
+      {
+        "name": "regex_filter",
+        "type": "TEXT"
+      },
+      {
+        "name": "use_blob_urls",
+        "type": "bool"
+      },
+      {
+        "name": "google_application_credentials",
+        "type": "TEXT"
+      },
+      {
+        "name": "google_project_id",
+        "type": "TEXT"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "bucket",
+      "prefix",
+      "regex_filter",
+      "use_blob_urls",
+      "google_application_credentials",
+      "google_project_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_localfilesexportstorage",
+    "columns": [
+      {
+        "name": "localfilesmixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "can_delete_objects",
+        "type": "bool"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "localfilesmixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "last_sync",
+      "last_sync_count",
+      "project_id",
+      "can_delete_objects",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_localfilesexportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "annotation_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "object_exists",
+      "created_at",
+      "storage_id",
+      "updated_at",
+      "annotation_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_localfilesimportstorage",
+    "columns": [
+      {
+        "name": "localfilesmixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      },
+      {
+        "name": "recursive_scan",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "localfilesmixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "last_sync",
+      "last_sync_count",
+      "project_id",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable",
+      "recursive_scan"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_localfilesimportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "key",
+        "type": "TEXT"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_group",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_index",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "key",
+      "object_exists",
+      "created_at",
+      "task_id",
+      "storage_id",
+      "row_group",
+      "row_index"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_localfilesmixin",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "path",
+        "type": "TEXT"
+      },
+      {
+        "name": "regex_filter",
+        "type": "TEXT"
+      },
+      {
+        "name": "use_blob_urls",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "path",
+      "regex_filter",
+      "use_blob_urls"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_redisexportstorage",
+    "columns": [
+      {
+        "name": "redisstoragemixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "db",
+        "type": "smallint unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "can_delete_objects",
+        "type": "bool"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "redisstoragemixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "db",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "can_delete_objects",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_redisexportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "annotation_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "object_exists",
+      "created_at",
+      "storage_id",
+      "updated_at",
+      "annotation_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_redisimportstorage",
+    "columns": [
+      {
+        "name": "redisstoragemixin_ptr_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "db",
+        "type": "smallint unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "redisstoragemixin_ptr_id",
+      "title",
+      "description",
+      "created_at",
+      "db",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_redisimportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "key",
+        "type": "TEXT"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_group",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_index",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "key",
+      "object_exists",
+      "created_at",
+      "task_id",
+      "storage_id",
+      "row_group",
+      "row_index"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_redisstoragemixin",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "path",
+        "type": "TEXT"
+      },
+      {
+        "name": "host",
+        "type": "TEXT"
+      },
+      {
+        "name": "port",
+        "type": "TEXT"
+      },
+      {
+        "name": "password",
+        "type": "TEXT"
+      },
+      {
+        "name": "regex_filter",
+        "type": "TEXT"
+      },
+      {
+        "name": "use_blob_urls",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "path",
+      "host",
+      "port",
+      "password",
+      "regex_filter",
+      "use_blob_urls"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_s3exportstorage",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "bucket",
+        "type": "TEXT"
+      },
+      {
+        "name": "prefix",
+        "type": "TEXT"
+      },
+      {
+        "name": "regex_filter",
+        "type": "TEXT"
+      },
+      {
+        "name": "use_blob_urls",
+        "type": "bool"
+      },
+      {
+        "name": "aws_access_key_id",
+        "type": "TEXT"
+      },
+      {
+        "name": "aws_secret_access_key",
+        "type": "TEXT"
+      },
+      {
+        "name": "aws_session_token",
+        "type": "TEXT"
+      },
+      {
+        "name": "region_name",
+        "type": "TEXT"
+      },
+      {
+        "name": "s3_endpoint",
+        "type": "TEXT"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "can_delete_objects",
+        "type": "bool"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      },
+      {
+        "name": "aws_sse_kms_key_id",
+        "type": "TEXT"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "title",
+      "description",
+      "created_at",
+      "bucket",
+      "prefix",
+      "regex_filter",
+      "use_blob_urls",
+      "aws_access_key_id",
+      "aws_secret_access_key",
+      "aws_session_token",
+      "region_name",
+      "s3_endpoint",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "can_delete_objects",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable",
+      "aws_sse_kms_key_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_s3exportstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "annotation_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "object_exists",
+      "created_at",
+      "storage_id",
+      "updated_at",
+      "annotation_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_s3importstorage",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "bucket",
+        "type": "TEXT"
+      },
+      {
+        "name": "prefix",
+        "type": "TEXT"
+      },
+      {
+        "name": "regex_filter",
+        "type": "TEXT"
+      },
+      {
+        "name": "use_blob_urls",
+        "type": "bool"
+      },
+      {
+        "name": "aws_access_key_id",
+        "type": "TEXT"
+      },
+      {
+        "name": "aws_secret_access_key",
+        "type": "TEXT"
+      },
+      {
+        "name": "aws_session_token",
+        "type": "TEXT"
+      },
+      {
+        "name": "region_name",
+        "type": "TEXT"
+      },
+      {
+        "name": "s3_endpoint",
+        "type": "TEXT"
+      },
+      {
+        "name": "presign",
+        "type": "bool"
+      },
+      {
+        "name": "presign_ttl",
+        "type": "smallint unsigned"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_sync",
+        "type": "datetime"
+      },
+      {
+        "name": "last_sync_count",
+        "type": "integer unsigned"
+      },
+      {
+        "name": "recursive_scan",
+        "type": "bool"
+      },
+      {
+        "name": "last_sync_job",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "synchronizable",
+        "type": "bool"
+      },
+      {
+        "name": "aws_sse_kms_key_id",
+        "type": "TEXT"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "title",
+      "description",
+      "created_at",
+      "bucket",
+      "prefix",
+      "regex_filter",
+      "use_blob_urls",
+      "aws_access_key_id",
+      "aws_secret_access_key",
+      "aws_session_token",
+      "region_name",
+      "s3_endpoint",
+      "presign",
+      "presign_ttl",
+      "project_id",
+      "last_sync",
+      "last_sync_count",
+      "recursive_scan",
+      "last_sync_job",
+      "meta",
+      "status",
+      "traceback",
+      "synchronizable",
+      "aws_sse_kms_key_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "io_storages_s3importstoragelink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "key",
+        "type": "TEXT"
+      },
+      {
+        "name": "object_exists",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "storage_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_group",
+        "type": "INTEGER"
+      },
+      {
+        "name": "row_index",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "key",
+      "object_exists",
+      "created_at",
+      "storage_id",
+      "task_id",
+      "row_group",
+      "row_index"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "jwt_auth_jwtsettings",
+    "columns": [
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "api_tokens_enabled",
+        "type": "bool"
+      },
+      {
+        "name": "api_token_ttl_days",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "legacy_api_tokens_enabled",
+        "type": "bool"
+      }
+    ],
+    "row_count": 1,
+    "exported_columns": [],
+    "omitted_columns": [
+      "organization_id",
+      "api_tokens_enabled",
+      "api_token_ttl_days",
+      "created_at",
+      "updated_at",
+      "legacy_api_tokens_enabled"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "labels_manager_label",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "value",
+        "type": "TEXT"
+      },
+      {
+        "name": "title",
+        "type": "varchar(2048)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "approved",
+        "type": "bool"
+      },
+      {
+        "name": "approved_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "created_at",
+      "updated_at",
+      "value",
+      "title",
+      "description",
+      "approved",
+      "approved_by_id",
+      "created_by_id",
+      "organization_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "labels_manager_labellink",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "from_name",
+        "type": "varchar(2048)"
+      },
+      {
+        "name": "label_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "from_name",
+      "label_id",
+      "project_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "ml_mlbackend",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "state",
+        "type": "varchar(2)"
+      },
+      {
+        "name": "url",
+        "type": "TEXT"
+      },
+      {
+        "name": "error_message",
+        "type": "TEXT"
+      },
+      {
+        "name": "title",
+        "type": "TEXT"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "model_version",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "is_interactive",
+        "type": "bool"
+      },
+      {
+        "name": "timeout",
+        "type": "REAL"
+      },
+      {
+        "name": "auto_update",
+        "type": "bool"
+      },
+      {
+        "name": "auth_method",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "basic_auth_pass",
+        "type": "TEXT"
+      },
+      {
+        "name": "basic_auth_user",
+        "type": "TEXT"
+      },
+      {
+        "name": "extra_params",
+        "type": "TEXT"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "state",
+      "url",
+      "error_message",
+      "title",
+      "description",
+      "model_version",
+      "created_at",
+      "updated_at",
+      "project_id",
+      "is_interactive",
+      "timeout",
+      "auto_update",
+      "auth_method",
+      "basic_auth_pass",
+      "basic_auth_user",
+      "extra_params"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "ml_mlbackendpredictionjob",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "job_id",
+        "type": "varchar(128)"
+      },
+      {
+        "name": "model_version",
+        "type": "TEXT"
+      },
+      {
+        "name": "batch_size",
+        "type": "smallint unsigned"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "ml_backend_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "job_id",
+      "model_version",
+      "batch_size",
+      "created_at",
+      "updated_at",
+      "ml_backend_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "ml_mlbackendtrainjob",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "job_id",
+        "type": "varchar(128)"
+      },
+      {
+        "name": "model_version",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "ml_backend_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "job_id",
+      "model_version",
+      "created_at",
+      "updated_at",
+      "ml_backend_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "ml_model_providers_modelproviderconnection",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "provider",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "api_key",
+        "type": "TEXT"
+      },
+      {
+        "name": "scope",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "deployment_name",
+        "type": "varchar(512)"
+      },
+      {
+        "name": "endpoint",
+        "type": "varchar(512)"
+      },
+      {
+        "name": "cached_available_models",
+        "type": "varchar(4096)"
+      },
+      {
+        "name": "auth_token",
+        "type": "TEXT"
+      },
+      {
+        "name": "budget_alert_threshold",
+        "type": "REAL"
+      },
+      {
+        "name": "budget_last_reset_date",
+        "type": "datetime"
+      },
+      {
+        "name": "budget_limit",
+        "type": "REAL"
+      },
+      {
+        "name": "budget_reset_period",
+        "type": "varchar(20)"
+      },
+      {
+        "name": "budget_total_spent",
+        "type": "REAL"
+      },
+      {
+        "name": "is_internal",
+        "type": "bool"
+      },
+      {
+        "name": "google_application_credentials",
+        "type": "TEXT"
+      },
+      {
+        "name": "google_location",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "google_project_id",
+        "type": "varchar(255)"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "provider",
+      "api_key",
+      "scope",
+      "created_at",
+      "updated_at",
+      "created_by_id",
+      "organization_id",
+      "deployment_name",
+      "endpoint",
+      "cached_available_models",
+      "auth_token",
+      "budget_alert_threshold",
+      "budget_last_reset_date",
+      "budget_limit",
+      "budget_reset_period",
+      "budget_total_spent",
+      "is_internal",
+      "google_application_credentials",
+      "google_location",
+      "google_project_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "ml_models_modelinterface",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(500)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "input_fields",
+        "type": "TEXT"
+      },
+      {
+        "name": "output_classes",
+        "type": "TEXT"
+      },
+      {
+        "name": "skill_name",
+        "type": "varchar(255)"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "title",
+      "description",
+      "created_at",
+      "updated_at",
+      "created_by_id",
+      "organization_id",
+      "input_fields",
+      "output_classes",
+      "skill_name"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "ml_models_modelinterface_associated_projects",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "modelinterface_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "modelinterface_id",
+      "project_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "ml_models_modelrun",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_subset",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "status",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "triggered_at",
+        "type": "datetime"
+      },
+      {
+        "name": "completed_at",
+        "type": "datetime"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "model_version_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "job_id",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "predictions_updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "total_correct_predictions",
+        "type": "INTEGER"
+      },
+      {
+        "name": "total_predictions",
+        "type": "INTEGER"
+      },
+      {
+        "name": "total_tasks",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "project_subset",
+      "status",
+      "created_at",
+      "triggered_at",
+      "completed_at",
+      "created_by_id",
+      "model_version_id",
+      "organization_id",
+      "project_id",
+      "job_id",
+      "predictions_updated_at",
+      "total_correct_predictions",
+      "total_predictions",
+      "total_tasks"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "ml_models_thirdpartymodelversion",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(500)"
+      },
+      {
+        "name": "prompt",
+        "type": "TEXT"
+      },
+      {
+        "name": "provider",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "provider_model_id",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "parent_model_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "model_provider_connection_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "title",
+      "prompt",
+      "provider",
+      "provider_model_id",
+      "created_at",
+      "updated_at",
+      "created_by_id",
+      "organization_id",
+      "parent_model_id",
+      "model_provider_connection_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "organization",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(1000)"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "token",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "contact_info",
+        "type": "varchar(254)"
+      }
+    ],
+    "row_count": 1,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "title",
+      "created_at",
+      "updated_at",
+      "created_by_id",
+      "token",
+      "contact_info"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "organizations_organizationmember",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "deleted_at",
+        "type": "datetime"
+      }
+    ],
+    "row_count": 1,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "created_at",
+      "updated_at",
+      "organization_id",
+      "user_id",
+      "deleted_at"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "prediction",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "result",
+        "type": "TEXT"
+      },
+      {
+        "name": "score",
+        "type": "REAL"
+      },
+      {
+        "name": "model_version",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "cluster",
+        "type": "INTEGER"
+      },
+      {
+        "name": "mislabeling",
+        "type": "REAL"
+      },
+      {
+        "name": "neighbors",
+        "type": "TEXT"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "model_run_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "model_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [
+      "id",
+      "result",
+      "score",
+      "model_version",
+      "created_at",
+      "updated_at",
+      "task_id",
+      "cluster",
+      "mislabeling",
+      "neighbors",
+      "project_id",
+      "model_run_id",
+      "model_id"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "prediction_meta",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "inference_time",
+        "type": "REAL"
+      },
+      {
+        "name": "prompt_tokens_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "completion_tokens_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "total_tokens_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "prompt_cost",
+        "type": "REAL"
+      },
+      {
+        "name": "completion_cost",
+        "type": "REAL"
+      },
+      {
+        "name": "total_cost",
+        "type": "REAL"
+      },
+      {
+        "name": "extra",
+        "type": "TEXT"
+      },
+      {
+        "name": "failed_prediction_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "prediction_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "inference_time",
+      "prompt_tokens_count",
+      "completion_tokens_count",
+      "total_tokens_count",
+      "prompt_cost",
+      "completion_cost",
+      "total_cost",
+      "extra",
+      "failed_prediction_id",
+      "prediction_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "project",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "title",
+        "type": "varchar(50)"
+      },
+      {
+        "name": "label_config",
+        "type": "TEXT"
+      },
+      {
+        "name": "expert_instruction",
+        "type": "TEXT"
+      },
+      {
+        "name": "show_instruction",
+        "type": "bool"
+      },
+      {
+        "name": "model_version",
+        "type": "TEXT"
+      },
+      {
+        "name": "data_types",
+        "type": "TEXT"
+      },
+      {
+        "name": "is_published",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "show_skip_button",
+        "type": "bool"
+      },
+      {
+        "name": "show_collab_predictions",
+        "type": "bool"
+      },
+      {
+        "name": "sampling",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "task_data_login",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "task_data_password",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "overlap_cohort_percentage",
+        "type": "INTEGER"
+      },
+      {
+        "name": "show_overlap_first",
+        "type": "bool"
+      },
+      {
+        "name": "control_weights",
+        "type": "TEXT"
+      },
+      {
+        "name": "token",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "result_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "is_draft",
+        "type": "bool"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "color",
+        "type": "varchar(16)"
+      },
+      {
+        "name": "enable_empty_annotation",
+        "type": "bool"
+      },
+      {
+        "name": "maximum_annotations",
+        "type": "INTEGER"
+      },
+      {
+        "name": "min_annotations_to_start_training",
+        "type": "INTEGER"
+      },
+      {
+        "name": "show_annotation_history",
+        "type": "bool"
+      },
+      {
+        "name": "show_ground_truth_first",
+        "type": "bool"
+      },
+      {
+        "name": "evaluate_predictions_automatically",
+        "type": "bool"
+      },
+      {
+        "name": "reveal_preannotations_interactively",
+        "type": "bool"
+      },
+      {
+        "name": "skip_queue",
+        "type": "varchar(100)"
+      },
+      {
+        "name": "parsed_label_config",
+        "type": "TEXT"
+      },
+      {
+        "name": "pinned_at",
+        "type": "datetime"
+      },
+      {
+        "name": "label_config_hash",
+        "type": "bigint"
+      },
+      {
+        "name": "custom_task_lock_ttl",
+        "type": "INTEGER"
+      },
+      {
+        "name": "search_vector",
+        "type": "TEXT"
+      },
+      {
+        "name": "deleted_at",
+        "type": "datetime"
+      },
+      {
+        "name": "deleted_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "purge_at",
+        "type": "datetime"
+      },
+      {
+        "name": "annotator_evaluation_enabled",
+        "type": "bool"
+      }
+    ],
+    "row_count": 3,
+    "exported_columns": [
+      "id",
+      "title",
+      "label_config",
+      "expert_instruction",
+      "show_instruction",
+      "model_version",
+      "data_types",
+      "is_published",
+      "created_at",
+      "updated_at",
+      "show_skip_button",
+      "show_collab_predictions",
+      "sampling",
+      "overlap_cohort_percentage",
+      "show_overlap_first",
+      "control_weights",
+      "result_count",
+      "is_draft",
+      "description",
+      "color",
+      "enable_empty_annotation",
+      "maximum_annotations",
+      "min_annotations_to_start_training",
+      "show_annotation_history",
+      "show_ground_truth_first",
+      "evaluate_predictions_automatically",
+      "reveal_preannotations_interactively",
+      "skip_queue",
+      "parsed_label_config",
+      "label_config_hash",
+      "annotator_evaluation_enabled"
+    ],
+    "omitted_columns": [
+      "created_by_id",
+      "task_data_login",
+      "task_data_password",
+      "token",
+      "organization_id",
+      "pinned_at",
+      "custom_task_lock_ttl",
+      "search_vector",
+      "deleted_at",
+      "deleted_by_id",
+      "purge_at"
+    ],
+    "omission_reason": "project中的认证、组织／账号关系、运行管理与派生搜索字段不导出。"
+  },
+  {
+    "table": "projects_labelstreamhistory",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "data",
+        "type": "TEXT"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 3,
+    "exported_columns": [
+      "id",
+      "data",
+      "project_id",
+      "user_id"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "projects_projectimport",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "preannotated_from_fields",
+        "type": "TEXT"
+      },
+      {
+        "name": "commit_to_project",
+        "type": "bool"
+      },
+      {
+        "name": "return_task_ids",
+        "type": "bool"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "url",
+        "type": "varchar(2048)"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "error",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "finished_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "annotation_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "prediction_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "duration",
+        "type": "INTEGER"
+      },
+      {
+        "name": "file_upload_ids",
+        "type": "TEXT"
+      },
+      {
+        "name": "could_be_tasks_list",
+        "type": "bool"
+      },
+      {
+        "name": "found_formats",
+        "type": "TEXT"
+      },
+      {
+        "name": "data_columns",
+        "type": "TEXT"
+      },
+      {
+        "name": "tasks",
+        "type": "TEXT"
+      },
+      {
+        "name": "task_ids",
+        "type": "TEXT"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "preannotated_from_fields",
+      "commit_to_project",
+      "return_task_ids",
+      "status",
+      "url",
+      "traceback",
+      "error",
+      "created_at",
+      "updated_at",
+      "finished_at",
+      "task_count",
+      "annotation_count",
+      "prediction_count",
+      "duration",
+      "file_upload_ids",
+      "could_be_tasks_list",
+      "found_formats",
+      "data_columns",
+      "tasks",
+      "task_ids",
+      "project_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "projects_projectmember",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "enabled",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "enabled",
+      "created_at",
+      "updated_at",
+      "project_id",
+      "user_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "projects_projectonboarding",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "finished",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "step_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "finished",
+      "created_at",
+      "updated_at",
+      "project_id",
+      "step_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "projects_projectonboardingsteps",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "code",
+        "type": "varchar(2)"
+      },
+      {
+        "name": "title",
+        "type": "varchar(1000)"
+      },
+      {
+        "name": "description",
+        "type": "TEXT"
+      },
+      {
+        "name": "order",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "code",
+      "title",
+      "description",
+      "order",
+      "created_at",
+      "updated_at"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "projects_projectreimport",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "varchar(64)"
+      },
+      {
+        "name": "error",
+        "type": "TEXT"
+      },
+      {
+        "name": "task_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "annotation_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "prediction_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "duration",
+        "type": "INTEGER"
+      },
+      {
+        "name": "file_upload_ids",
+        "type": "TEXT"
+      },
+      {
+        "name": "files_as_tasks_list",
+        "type": "bool"
+      },
+      {
+        "name": "found_formats",
+        "type": "TEXT"
+      },
+      {
+        "name": "data_columns",
+        "type": "TEXT"
+      },
+      {
+        "name": "traceback",
+        "type": "TEXT"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "status",
+      "error",
+      "task_count",
+      "annotation_count",
+      "prediction_count",
+      "duration",
+      "file_upload_ids",
+      "files_as_tasks_list",
+      "found_formats",
+      "data_columns",
+      "traceback",
+      "project_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "projects_projectsummary",
+    "columns": [
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "all_data_columns",
+        "type": "TEXT"
+      },
+      {
+        "name": "common_data_columns",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_annotations",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_labels",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_labels_drafts",
+        "type": "TEXT"
+      }
+    ],
+    "row_count": 3,
+    "exported_columns": [
+      "project_id",
+      "created_at",
+      "all_data_columns",
+      "common_data_columns",
+      "created_annotations",
+      "created_labels",
+      "created_labels_drafts"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "session_policy_sessiontimeoutpolicy",
+    "columns": [
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "max_session_age",
+        "type": "INTEGER"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "max_time_between_activity",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 1,
+    "exported_columns": [],
+    "omitted_columns": [
+      "organization_id",
+      "max_session_age",
+      "created_at",
+      "updated_at",
+      "max_time_between_activity"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "sqlite_sequence",
+    "columns": [
+      {
+        "name": "name",
+        "type": ""
+      },
+      {
+        "name": "seq",
+        "type": ""
+      }
+    ],
+    "row_count": 41,
+    "exported_columns": [],
+    "omitted_columns": [
+      "name",
+      "seq"
+    ],
+    "omission_reason": "应用框架、迁移、运行维护或内部序列；仅记录表结构与计数。"
+  },
+  {
+    "table": "task",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "data",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "is_labeled",
+        "type": "bool"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "meta",
+        "type": "TEXT"
+      },
+      {
+        "name": "overlap",
+        "type": "INTEGER"
+      },
+      {
+        "name": "file_upload_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "inner_id",
+        "type": "bigint"
+      },
+      {
+        "name": "total_annotations",
+        "type": "INTEGER"
+      },
+      {
+        "name": "cancelled_annotations",
+        "type": "INTEGER"
+      },
+      {
+        "name": "total_predictions",
+        "type": "INTEGER"
+      },
+      {
+        "name": "comment_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_comment_updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "unresolved_comment_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "precomputed_agreement",
+        "type": "REAL"
+      },
+      {
+        "name": "allow_skip",
+        "type": "bool"
+      }
+    ],
+    "row_count": 328,
+    "exported_columns": [
+      "id",
+      "data",
+      "created_at",
+      "updated_at",
+      "is_labeled",
+      "project_id",
+      "meta",
+      "overlap",
+      "file_upload_id",
+      "updated_by_id",
+      "inner_id",
+      "total_annotations",
+      "cancelled_annotations",
+      "total_predictions",
+      "comment_count",
+      "last_comment_updated_at",
+      "unresolved_comment_count",
+      "precomputed_agreement",
+      "allow_skip"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "task_comment_authors",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "task_id",
+      "user_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "task_completion",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "result",
+        "type": "TEXT"
+      },
+      {
+        "name": "was_cancelled",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "prediction",
+        "type": "TEXT"
+      },
+      {
+        "name": "lead_time",
+        "type": "REAL"
+      },
+      {
+        "name": "result_count",
+        "type": "INTEGER"
+      },
+      {
+        "name": "completed_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "ground_truth",
+        "type": "bool"
+      },
+      {
+        "name": "parent_prediction_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_action",
+        "type": "varchar(128)"
+      },
+      {
+        "name": "last_created_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "updated_by_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "unique_id",
+        "type": "char(32)"
+      },
+      {
+        "name": "draft_created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "import_id",
+        "type": "bigint"
+      },
+      {
+        "name": "bulk_created",
+        "type": "bool"
+      },
+      {
+        "name": "parent_annotation_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 41,
+    "exported_columns": [
+      "id",
+      "result",
+      "was_cancelled",
+      "created_at",
+      "updated_at",
+      "task_id",
+      "prediction",
+      "lead_time",
+      "result_count",
+      "completed_by_id",
+      "ground_truth",
+      "parent_prediction_id",
+      "last_action",
+      "last_created_by_id",
+      "project_id",
+      "updated_by_id",
+      "unique_id",
+      "draft_created_at",
+      "import_id",
+      "bulk_created",
+      "parent_annotation_id"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "tasks_annotationdraft",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "result",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "annotation_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "was_postponed",
+        "type": "bool"
+      },
+      {
+        "name": "lead_time",
+        "type": "REAL"
+      },
+      {
+        "name": "import_id",
+        "type": "bigint"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [
+      "id",
+      "result",
+      "created_at",
+      "updated_at",
+      "task_id",
+      "user_id",
+      "annotation_id",
+      "was_postponed",
+      "lead_time",
+      "import_id"
+    ],
+    "omitted_columns": [],
+    "omission_reason": "无列省略。"
+  },
+  {
+    "table": "tasks_failedprediction",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "message",
+        "type": "TEXT"
+      },
+      {
+        "name": "error_type",
+        "type": "varchar(512)"
+      },
+      {
+        "name": "model_version",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "ml_backend_model_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "model_run_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "message",
+      "error_type",
+      "model_version",
+      "created_at",
+      "ml_backend_model_id",
+      "model_run_id",
+      "project_id",
+      "task_id"
+    ],
+    "omission_reason": "不在本次研究状态白名单中；仅记录表结构与计数，未导出记录值。"
+  },
+  {
+    "table": "tasks_tasklock",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "expire_at",
+        "type": "datetime"
+      },
+      {
+        "name": "task_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "unique_id",
+        "type": "char(32)"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      }
+    ],
+    "row_count": 1,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "expire_at",
+      "task_id",
+      "user_id",
+      "unique_id",
+      "created_at"
+    ],
+    "omission_reason": "运行时任务锁，不代表持久标注结果。"
+  },
+  {
+    "table": "token_blacklist_blacklistedtoken",
+    "columns": [
+      {
+        "name": "blacklisted_at",
+        "type": "datetime"
+      },
+      {
+        "name": "token_id",
+        "type": "bigint"
+      },
+      {
+        "name": "id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "blacklisted_at",
+      "token_id",
+      "id"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "token_blacklist_outstandingtoken",
+    "columns": [
+      {
+        "name": "token",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "expires_at",
+        "type": "datetime"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "jti",
+        "type": "varchar(255)"
+      },
+      {
+        "name": "id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "token",
+      "created_at",
+      "expires_at",
+      "user_id",
+      "jti",
+      "id"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "users_userproducttour",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "name",
+        "type": "varchar(256)"
+      },
+      {
+        "name": "state",
+        "type": "varchar(32)"
+      },
+      {
+        "name": "interaction_data",
+        "type": "TEXT"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "user_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "name",
+      "state",
+      "interaction_data",
+      "created_at",
+      "updated_at",
+      "user_id"
+    ],
+    "omission_reason": "账号、身份、组织、权限或认证设置；未读取数据值。"
+  },
+  {
+    "table": "webhook",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "url",
+        "type": "varchar(2048)"
+      },
+      {
+        "name": "send_for_all_actions",
+        "type": "bool"
+      },
+      {
+        "name": "headers",
+        "type": "TEXT"
+      },
+      {
+        "name": "is_active",
+        "type": "bool"
+      },
+      {
+        "name": "created_at",
+        "type": "datetime"
+      },
+      {
+        "name": "updated_at",
+        "type": "datetime"
+      },
+      {
+        "name": "organization_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "project_id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "send_payload",
+        "type": "bool"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "url",
+      "send_for_all_actions",
+      "headers",
+      "is_active",
+      "created_at",
+      "updated_at",
+      "organization_id",
+      "project_id",
+      "send_payload"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  },
+  {
+    "table": "webhook_action",
+    "columns": [
+      {
+        "name": "id",
+        "type": "INTEGER"
+      },
+      {
+        "name": "action",
+        "type": "varchar(128)"
+      },
+      {
+        "name": "webhook_id",
+        "type": "INTEGER"
+      }
+    ],
+    "row_count": 0,
+    "exported_columns": [],
+    "omitted_columns": [
+      "id",
+      "action",
+      "webhook_id"
+    ],
+    "omission_reason": "外部服务或存储集成，可能包含访问凭据；未读取数据值。"
+  }
+]

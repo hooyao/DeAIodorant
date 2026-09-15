@@ -1,0 +1,125 @@
+OpenClaw
+在开发者社区迅速获得 23万+ Stars，因其作为开源、本地优先的个人 AI Agent，能够将大语言模型的推理能力转化为对计算机的实际操作，为构建个人 AI 助手提供了系统级权限与自动化基础。
+然而，近期部分平台开始收紧对非官方入口的访问。谷歌以“恶意使用”为由，大规模封禁通过 OpenClaw 路由 Gemini token 的用户账号，Anthropic 随后也更新使用条款，明确禁止通过第三方工具调用 Claude 的 OAuth token。这些事件表明，依赖第三方订阅进行非官方调用存在账号安全风险与服务不稳定性。
+为规避此类问题，LongCat 团队提供稳定合规的官方免费 API，开发者可通过官方渠道直接接入，在确保账号安全的前提下构建自动化工作流
+。
+LongCat API 开放平台：
+https://longcat.chat/platform/usage
+下文将通过实测数据与典型案例，展示 LongCat-Flash-Thinking-2601 在 OpenClaw 上的性能表现，并附完整部署流程，帮助开发者快速构建个人自动化助理。
+01 核心优势
+在执行效率方面，LongCat-Flash-Thinking-2601 展现出显著优势。在 21 个可比的非定时任务中，其平均单任务耗时仅为 2.35 分钟，相比对比模型快约 30%。这种高效率在不同复杂度的任务中均有体现：
+高频简单任务：如模糊文件搜索与即时发送，可在 30 秒 内完成。
+中等常规任务：如文件整理与格式转换，仅需约 2 分钟。
+复杂综合任务：如文档生成与网页开发，也能在 3 分钟 内交付可用结果。
+在任务完成质量方面，
+LongCat-Flash-Thinking-2601 在涉及联网信息检索和 GUI 界面生成的场景中，能够准确获取信息并快速生成符合要求的输出，展现出较好的执行效率和稳定的任务完成能力
+。与此同时，我们也在持续优化模型在系统路径识别、脚本生成一致性等方面的表现，致力于为用户带来更全面、更可靠的自动化体验。
+02 技术能力拆解
+我们通过一系列开发者日常会遇到的真实场景，进一步来评测 LongCat-Flash-Thinking-2601 在驱动本地 Agent 时的技术表现。
+速度是贯穿始终的核心优势
+——无论是秒级的文件检索，还是分钟级的复杂任务编排，它都能快速响应，让开发者真正从重复劳动中解放出来。
+场景一：自动化配置Python开发环境（2分钟完成）
+复杂任务分解与顺序工具调用，这是 Agent 实现真正自动化的基石。
+指令要求：
+“在 Downloads 目录下创建一个名为 Projects 的文件夹，初始化一个 Python 3.10 的虚拟环境，安装 flask 和 requests 库，然后用 VS Code 打开这个文件夹…”
+技术表现分析：
+我们给出的指令包含了一系列连续的、有依赖关系的操作。LongCat-Flash-Thinking-2601接收指令后，精准地对任务进行了拆解：mkdir -> python -m venv -> pip install -> code 。它准确地规划了每一步操作，并依次调用 OpenClaw 提供的 shell 工具来执行。
+整个过程在2 分钟内自动完成，没有步骤遗漏或顺序错乱。
+场景二：远程图片重绘与跨应用协作（3分钟完成）
+一个高效的 Agent 必须能无缝地连接不同的服务。
+指令要求：
+“把这张图用 Google 的 Nano Banana 重绘成赛博朋克风格，生成好之后通过 iMessage 发给我。”
+技术表现分析：
+我们通过 iMessage 发送一张图片，这个工作流涉及三个关键点：
+通道感知
+： 理解指令来自 iMessage。
+工具选择
+： 准确识别出需要调用名为 nano-banana 的外部技能 (Skill)。
+低延迟执行
+： 快速完成 API 调用和文件回传。
+LongCat-Flash-Thinking-2601 在这个过程中表现出色，成功调度了外部 AI 工具。
+按照要求生成并发送了赛博朋克风格的图片，实现了无缝的跨应用协作。
+场景三：TGA年度游戏信息网页生成（3分钟完成）
+从非结构化信息中提取价值并生成结构化产出，是开发中的高频需求。
+指令要求：
+“整理2015-2024这十年的TGA年度游戏信息，包括游戏发布时间、游戏简介、IGN评分、其他获奖记录等，并且每部游戏需给出高度概括的一句话评价。按获奖年份顺序进行排序，制作成一个主色调为深蓝+金色的精美网页。”
+技术表现分析：
+LongCat-Flash-Thinking-2601 在此展示了端到端的能力：
+信息合成
+：调用知识库或搜索工具，获取并整理 TGA 的相关数据。
+代码生成
+：将整理好的数据，结合“深蓝+金色”的设计要求，直接生成包含 HTML 和 CSS 的完整代码文件。
+游戏信息介绍按照指令要求展示。
+场景四：定制化GitHub每日热榜推送（5分钟自动触发）
+最强大的 Agent 是那些无需提醒、能主动为你服务的。指令要求：
+“每天下午17:40查询 github 的今日热榜并将其做成一个中文简报（需附带项目链接），完成后通过 imessage 发送给我。”
+技术表现分析：
+设定一个长期、自动执行的任务，LongCat-Flash-Thinking-2601 成功地设置并执行了 cron 类型的定时任务。它能够在无人干预的情况下，周期性地执行信息获取、处理和推送，成为一个真正的自动化情报助理。
+成功定位全部文件，并通过 iMessage 完成发送。
+场景五：模糊文件搜索与即时发送（32秒完成）
+精准的本地文件检索与跨平台交互，是远程办公场景下的高频需求。
+指令要求：
+“帮我找一下电脑上《东鞑纪行》有关的文件，格式为 word 或者 pdf，可能在 Downloads 或文档目录下。找到后直接通过 imessage 发送给我。”
+技术表现分析：模型需要理解模糊的文件名（“东鞑纪行”可能并非精确文件名）、推测可能的存放位置，然后遍历目录、筛选匹配文件，最后通过 iMessage 完成发送。
+LongCat-Flash-Thinking-2601 成功定位到全部 3 个相关文件，并通过 iMessage 发送，文件完整无损。整个过程仅耗时 32 秒，充分体现了其在本地文件系统操作与消息通道集成上的高效率。
+03 OpenClaw 部署教程
+3.1 环境准备
+按照要求生成并发送了赛博朋克风格的图片，实现了无缝的跨应用协作。
+在使用OpenClaw前，您需要准备好以下内容：
+1.OpenClaw安装包
+MacOS 环境下安装命令如下：
+# 使用npm安装
+npm install -g openclaw@latest
+# 或使用pnpm安装
+pnpm add -g openclaw@latest
+# 或使用curl安装
+curl -fsSL https://openclaw.ai/install.sh |bash
+Windows PowerShell 环境下安装命令如下：
+iwr -useb https://openclaw.ai/install.ps1 | iex
+2.LongCat核心配置
+确认您的API Keys（在https://longcat.chat/platform/api_keys获取）
+确认您账户内的Token额度充足（在用量信息页面确认）
+支持的模型：
+3.2 快速启动
+向导启动命令
+openclaw onboard --install-daemon
+向导配置选项说明
+3.3 启动后的配置
+向导启动完成后，OpenClaw会自动启动Gateway服务并打开Web控制页面。
+默认访问地址：http://127.0.0.1:18789
+如果页面没有自动打开，可以手动在浏览器中访问上述地址。
+配置文件位置：OpenClaw的配置文件位于：~/.openclaw/openclaw.json
+3.4 LongCat模型配置
+启动后我们可以通过修改自定义配置来接入LongCat模型。
+配置方案一：修改配置文件
+增加自定义模型供应商在openclaw.json中添加models字段：
+修改默认模型设置
+修改agents字段，设置默认模型：
+修改保存后立即生效。
+配置方案二：GUI界面配置
+1.在Web控制页面中，进入 Config → Models → Providers
+2.添加如下配置：
+完整配置示例地址：
+https://longcat.chat/platform/docs/zh/OpenClaw.html
+3.5 开始使用
+配置生效后，即可使用 OpenClaw。
+打开TUI，并查看Gateway状态
+openclaw tui
+/status
+打开Web UI，在Chat页面进行交互
+openclaw dashboard
+然后输入测试消息，如："你好，请介绍一下自己"。
+如果配置正确，您将收到来自LongCat模型的回复。
+04 更多资源
+欢迎通过以下资源开始实践：
+OpenClaw GitHub
+：
+https://github.com/openclaw/openclaw
+LongCat API 申请
+：
+https://longcat.chat/platform/api_keys
+OpenClaw 配置文档
+：
+https://longcat.chat/platform/docs/zh/OpenClaw.html
+期待你的反馈与更多场景的探索。
+对于追求极致效率的开发者来说，一个强大的本地 Agent 框架和一个为行动而优化的 AI 模型是天作之合。这套技术栈的核心优势在于，它将自然语言的灵活性与机器执行的精确性高效地结合起来，能够切实地自动化开发者日常工作流中的高频、重复性任务。

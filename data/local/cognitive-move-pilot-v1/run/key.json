@@ -1,0 +1,182 @@
+{
+  "pe9cf9029": {
+    "case_id": "M01",
+    "condition": "original",
+    "document": "smzdm",
+    "edits": []
+  },
+  "pe17dfb4c": {
+    "case_id": "M01",
+    "condition": "equivalent",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "title",
+        "old": "先把买、搓、等三条路算明白",
+        "new": "先把买、搓和等三条路算明白"
+      }
+    ]
+  },
+  "p59b0761a": {
+    "case_id": "M01",
+    "condition": "meaning_changed",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "title",
+        "old": "先把买、搓、等三条路算明白",
+        "new": "先把买这条路算明白"
+      }
+    ]
+  },
+  "pb1aa2a9b": {
+    "case_id": "M02",
+    "condition": "original",
+    "document": "smzdm",
+    "edits": []
+  },
+  "pcd414344": {
+    "case_id": "M02",
+    "condition": "equivalent",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "b006",
+        "old": "机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板",
+        "new": "机载的不是 Jetson，而是一块国产瑞芯微 RK3566 核心板"
+      }
+    ]
+  },
+  "pcf0cdf4a": {
+    "case_id": "M02",
+    "condition": "meaning_changed",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "b006",
+        "old": "机载的不是 Jetson，是一块国产瑞芯微 RK3566 核心板",
+        "new": "机载是否还带 Jetson 尚不清楚，已知有一块国产瑞芯微 RK3566 核心板"
+      }
+    ]
+  },
+  "p69973a93": {
+    "case_id": "M03",
+    "condition": "original",
+    "document": "smzdm",
+    "edits": []
+  },
+  "pcdfec7ce": {
+    "case_id": "M03",
+    "condition": "equivalent",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "b011",
+        "old": "买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道",
+        "new": "买到的核心不是玩具，而是一条现成的 sim-to-real 强化学习管道"
+      }
+    ]
+  },
+  "p1063bb62": {
+    "case_id": "M03",
+    "condition": "meaning_changed",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "b011",
+        "old": "买到的核心不是玩具，是一条现成的 sim-to-real 强化学习管道",
+        "new": "买到的核心既是玩具，也是一条现成的 sim-to-real 强化学习管道"
+      }
+    ]
+  },
+  "pe4ca91d7": {
+    "case_id": "M04",
+    "condition": "original",
+    "document": "smzdm",
+    "edits": []
+  },
+  "pcecccfc8": {
+    "case_id": "M04",
+    "condition": "equivalent",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "b015",
+        "old": "这是估算不是实测定价",
+        "new": "这是估算而不是实测定价"
+      }
+    ]
+  },
+  "pa2529f2f": {
+    "case_id": "M04",
+    "condition": "meaning_changed",
+    "document": "smzdm",
+    "edits": [
+      {
+        "block_id": "b015",
+        "old": "有华强北背景的网友给的参照是",
+        "new": "本文作者给的参照是"
+      }
+    ]
+  },
+  "p683e4eea": {
+    "case_id": "M05",
+    "condition": "original",
+    "document": "baidu",
+    "edits": []
+  },
+  "pbac45350": {
+    "case_id": "M05",
+    "condition": "equivalent",
+    "document": "baidu",
+    "edits": [
+      {
+        "block_id": "b012",
+        "old": "如果 KV Cache 命中，就不需要重新推理整个上下文",
+        "new": "若 KV Cache 命中，就不需要重新推理整个上下文"
+      }
+    ]
+  },
+  "p87fb2c0a": {
+    "case_id": "M05",
+    "condition": "meaning_changed",
+    "document": "baidu",
+    "edits": [
+      {
+        "block_id": "b012",
+        "old": "对于一个调用 30-60 次的 Agent 任务",
+        "new": "对于一个调用 60-90 次的 Agent 任务"
+      }
+    ]
+  },
+  "paf29f78f": {
+    "case_id": "M06",
+    "condition": "original",
+    "document": "baidu",
+    "edits": []
+  },
+  "pccd7fb5e": {
+    "case_id": "M06",
+    "condition": "equivalent",
+    "document": "baidu",
+    "edits": [
+      {
+        "block_id": "b058",
+        "old": "这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系",
+        "new": "这不是因为苹果的手机最便宜，是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系"
+      }
+    ]
+  },
+  "p7967d9e8": {
+    "case_id": "M06",
+    "condition": "meaning_changed",
+    "document": "baidu",
+    "edits": [
+      {
+        "block_id": "b058",
+        "old": "这不是因为苹果的手机最便宜，而是因为苹果第一个建立了一套对开发者和用户都有确定性的供给体系",
+        "new": "这不是因为苹果的手机最便宜。苹果第一个建立了一套对开发者和用户都有确定性的供给体系，这可能是前述结果的原因"
+      }
+    ]
+  }
+}

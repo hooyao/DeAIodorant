@@ -1,0 +1,314 @@
+[
+  {
+    "block_id": "b001",
+    "tag": "p",
+    "source_path": "article/3",
+    "text": "2025年的扫地机器人江湖，科沃斯、石头、追觅杀红眼，云鲸、米家暗中偷塔！扫地机怎么选？没废话，纯干货版，告诉你怎么选扫地机。",
+    "start_char": 0,
+    "end_char": 63
+  },
+  {
+    "block_id": "b002",
+    "tag": "p",
+    "source_path": "article/4",
+    "text": "一、导航系统PK：谁才是“真·空间透视眼”？",
+    "start_char": 64,
+    "end_char": 86
+  },
+  {
+    "block_id": "b003",
+    "tag": "p",
+    "source_path": "article/5",
+    "text": "1. 科沃斯X10 Pro Ultra：毫米波雷达+仿生复眼（国补后售价3910元）",
+    "start_char": 87,
+    "end_char": 129
+  },
+  {
+    "block_id": "b004",
+    "tag": "p",
+    "source_path": "article/6",
+    "text": "• 黑科技：军用级毫米波探测墙体结构，仿生复眼识别0.1mm发丝，复杂户型建图速度2分18秒（行业平均5分钟）。",
+    "start_char": 130,
+    "end_char": 186
+  },
+  {
+    "block_id": "b005",
+    "tag": "p",
+    "source_path": "article/7",
+    "text": "• 致命伤：强光下复眼镜头眩光率37%，落地窗家庭慎入！",
+    "start_char": 187,
+    "end_char": 215
+  },
+  {
+    "block_id": "b006",
+    "tag": "p",
+    "source_path": "article/9",
+    "text": "2. 石头G20S：dToF 4.0+热成像夜视（国补后售价4539元）",
+    "start_char": 216,
+    "end_char": 252
+  },
+  {
+    "block_id": "b007",
+    "tag": "p",
+    "source_path": "article/10",
+    "text": "• 狠活实测：深夜无光环境精准识别宠物排泄物，自动标记为“生化污染区”并触发3倍清洁。",
+    "start_char": 253,
+    "end_char": 296
+  },
+  {
+    "block_id": "b008",
+    "tag": "p",
+    "source_path": "article/11",
+    "text": "• 翻车现场：热成像误判人类体温，追着用户脚后跟清扫，京东差评区已变段子合集。",
+    "start_char": 297,
+    "end_char": 336
+  },
+  {
+    "block_id": "b009",
+    "tag": "p",
+    "source_path": "article/13",
+    "text": "3. 追觅X40：纯视觉导航“丐版战神”（售价4799元）",
+    "start_char": 337,
+    "end_char": 366
+  },
+  {
+    "block_id": "b010",
+    "tag": "p",
+    "source_path": "article/14",
+    "text": "• 真相：砍掉激光雷达，靠双5000万像素摄像头+AI算法，实测80㎡小户型避障成功率98.5%，性价比屠夫！",
+    "start_char": 367,
+    "end_char": 422
+  },
+  {
+    "block_id": "b011",
+    "tag": "p",
+    "source_path": "article/16",
+    "text": "二、吸拖性能生死局：谁是“地毯克星”，谁在“刮地抛光”？",
+    "start_char": 423,
+    "end_char": 451
+  },
+  {
+    "block_id": "b012",
+    "tag": "p",
+    "source_path": "article/17",
+    "text": "【吸力天花板】石头G20S：25000Pa飓风吸+螺旋绞盘",
+    "start_char": 452,
+    "end_char": 481
+  },
+  {
+    "block_id": "b013",
+    "tag": "p",
+    "source_path": "article/18",
+    "text": "• 实验室数据：单次吸入1kg混合垃圾（黄豆+螺丝钉+猫砂），电机零卡顿，但噪音达78分贝（相当于油烟机）！",
+    "start_char": 482,
+    "end_char": 536
+  },
+  {
+    "block_id": "b014",
+    "tag": "p",
+    "source_path": "article/20",
+    "text": "【拖地王者】云鲸J5X：仿人手加压拖地（12N下压力）",
+    "start_char": 537,
+    "end_char": 564
+  },
+  {
+    "block_id": "b015",
+    "tag": "p",
+    "source_path": "article/21",
+    "text": "• 独创“螺旋增压拖布”，顽固咖啡渍清洁率99.3%，但拖布烘干需2小时，网友吐槽：“等它烘完，我都手动擦三遍了！”",
+    "start_char": 565,
+    "end_char": 623
+  },
+  {
+    "block_id": "b016",
+    "tag": "p",
+    "source_path": "article/23",
+    "text": "【反向升级】科沃斯X5 Pro Ultra：超声波碎渍翻大车",
+    "start_char": 624,
+    "end_char": 654
+  },
+  {
+    "block_id": "b017",
+    "tag": "p",
+    "source_path": "article/24",
+    "text": "• 宣传的“超声波震碎口香糖”实际成功率仅23%，京东退货理由TOP1：“机器粘着口香糖满屋跑，擦了我三天！”",
+    "start_char": 655,
+    "end_char": 710
+  },
+  {
+    "block_id": "b018",
+    "tag": "p",
+    "source_path": "article/26",
+    "text": "三、基站功能内卷战：自动集尘VS自动换水，谁在收“智商税”？",
+    "start_char": 711,
+    "end_char": 741
+  },
+  {
+    "block_id": "b019",
+    "tag": "p",
+    "source_path": "article/27",
+    "text": "科沃斯X5 Pro Ultra 800mL 厌氧菌分解 45cm³ 换水需拆装6颗螺丝",
+    "start_char": 742,
+    "end_char": 785
+  },
+  {
+    "block_id": "b020",
+    "tag": "p",
+    "source_path": "article/28",
+    "text": "石头G20S 600mL 银离子+UV杀菌 68cm³ 集尘噪音堪比吸尘器",
+    "start_char": 786,
+    "end_char": 823
+  },
+  {
+    "block_id": "b021",
+    "tag": "p",
+    "source_path": "article/29",
+    "text": "追觅X40 300mL 普通滤网 28cm³ 多天不清理易发霉",
+    "start_char": 824,
+    "end_char": 855
+  },
+  {
+    "block_id": "b022",
+    "tag": "p",
+    "source_path": "article/30",
+    "text": "点评：",
+    "start_char": 856,
+    "end_char": 859
+  },
+  {
+    "block_id": "b023",
+    "tag": "p",
+    "source_path": "article/31",
+    "text": "• 科沃斯“厌氧菌分解”概念大于实用，换水操作反人类；",
+    "start_char": 860,
+    "end_char": 887
+  },
+  {
+    "block_id": "b024",
+    "tag": "p",
+    "source_path": "article/32",
+    "text": "• 石头基站占半个阳台，小户型直接劝退；",
+    "start_char": 888,
+    "end_char": 908
+  },
+  {
+    "block_id": "b025",
+    "tag": "p",
+    "source_path": "article/33",
+    "text": "• 追觅X40适合独居懒人，但得做好每周手洗拖布准备。",
+    "start_char": 909,
+    "end_char": 936
+  },
+  {
+    "block_id": "b026",
+    "tag": "p",
+    "source_path": "article/34",
+    "text": "四、2025年扫地机选购指南",
+    "start_char": 937,
+    "end_char": 951
+  },
+  {
+    "block_id": "b027",
+    "tag": "p",
+    "source_path": "article/35",
+    "text": "1. 土豪闭眼入：石头G20S（别管噪音和体积，参数就是社交货币）",
+    "start_char": 952,
+    "end_char": 985
+  },
+  {
+    "block_id": "b028",
+    "tag": "p",
+    "source_path": "article/36",
+    "text": "2. 养宠家庭首选：云鲸J5（热成像避让宠物呕吐物，但准备好忍受语音吐槽）",
+    "start_char": 986,
+    "end_char": 1023
+  },
+  {
+    "block_id": "b029",
+    "tag": "p",
+    "source_path": "article/37",
+    "text": "3. 性价比之王：追觅X40（千元机干翻旗舰，但别信“半年免维护”鬼话）",
+    "start_char": 1024,
+    "end_char": 1060
+  },
+  {
+    "block_id": "b030",
+    "tag": "p",
+    "source_path": "article/38",
+    "text": "五、京东捡漏骚操作（具体以商家最终答复为准）",
+    "start_char": 1061,
+    "end_char": 1083
+  },
+  {
+    "block_id": "b031",
+    "tag": "p",
+    "source_path": "article/39",
+    "text": "• 暗号“我要拆机”：客服主动送延保，最高白嫖3年免费维修；",
+    "start_char": 1084,
+    "end_char": 1114
+  },
+  {
+    "block_id": "b032",
+    "tag": "p",
+    "source_path": "article/40",
+    "text": "• 学生专享BUG价：认证学生身份，追觅X40直降600元（仅限App隐藏入口）；",
+    "start_char": 1115,
+    "end_char": 1156
+  },
+  {
+    "block_id": "b033",
+    "tag": "p",
+    "source_path": "article/41",
+    "text": "• 慎用“价保”：部分机型先涨价再降价，反薅用户羊毛！",
+    "start_char": 1157,
+    "end_char": 1184
+  },
+  {
+    "block_id": "b034",
+    "tag": "p",
+    "source_path": "article/42",
+    "text": "（本文引用数据经国家级实验室认证，抄袭者必究！）",
+    "start_char": 1185,
+    "end_char": 1209
+  },
+  {
+    "block_id": "b035",
+    "tag": "p",
+    "source_path": "article/44",
+    "text": "​数据来源：​",
+    "start_char": 1210,
+    "end_char": 1217
+  },
+  {
+    "block_id": "b036",
+    "tag": "li",
+    "source_path": "article/45/0",
+    "text": "​品牌实验室报告科沃斯《2025家用机器人技术白皮书》、石头科技《智能清洁设备年度测评》等。",
+    "start_char": 1218,
+    "end_char": 1264
+  },
+  {
+    "block_id": "b037",
+    "tag": "li",
+    "source_path": "article/45/1",
+    "text": "​第三方检测机构中国家用电器研究院（CHEARI）清洁电器性能测试数据TÜV莱茵/中检集团（CCIC）认证报告",
+    "start_char": 1265,
+    "end_char": 1320
+  },
+  {
+    "block_id": "b038",
+    "tag": "li",
+    "source_path": "article/45/2",
+    "text": "​电商平台公开数据京东商品页「累计评价」中的关键词统计（如“缠绕头发”差评率）",
+    "start_char": 1321,
+    "end_char": 1360
+  },
+  {
+    "block_id": "b039",
+    "tag": "li",
+    "source_path": "article/45/3",
+    "text": "​消费者调研《艾媒咨询：2025中国清洁机器人用户行为洞察》",
+    "start_char": 1361,
+    "end_char": 1391
+  }
+]

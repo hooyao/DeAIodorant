@@ -1,0 +1,167 @@
+用脚本调用本地 Photoshop 的「矩形选框 + 内容识别填充」，一键清除 AI 图片水印。 完整代码已开源：
+https://gitcode.com/leleloveegg/useps
+一、背景：为什么要做这件事
+现在用AI 工具生成的图片，都会带上平台水印：
+左上角：透明文字
+右下角：标 + 文字角标
+这些水印虽然不大，但对设计师来说，交稿、出图时总想处理干净。市面上的去水印工具要么要钱、要么效果差，而每个设计师电脑上其实都装着一个「去水印神器」——
+Photoshop
+。
+Photoshop 的「内容识别填充」（Edit > Fill > Content-Aware）是去水印的经典方案：选中水印区域，PS 会自动分析周围的像素纹理，把水印"补"成背景。这个功能对缎带、渐变、城市剪影这类复杂背景效果尤其好，比普通 OpenCV 的 inpaint 算法自然得多。
+但每次手动操作太麻烦：打开图 → 放大 → 框选 → 填充 → 保存……几十张图能弄到怀疑人生。
+所以我把整个流程写成了一个 Python 脚本，自动控制 Photoshop 完成全部操作。
+二、这个 Skill 能干什么
+useps
+（Use Photoshop）是一个通过 COM 接口自动控制本地 Adobe Photoshop 的 Python 脚本，专门用来去水印：
+自动完成的全流程
+自动定位
+：用 OCR 识别图片里的水印文，自动算出水印位置
+智能扩展
+：识别到右下角文字后，自动把选区向左、向上扩展，覆盖文字左侧的图形图标（OCR 认不出图形，这是最容易漏的地方）
+模式转换
+：自动把图片从索引色模式转成 RGB（否则 PS 的填充命令会报错）
+内容识别填充
+：对每个水印区域执行矩形选框 + Content-Aware Fill
+保存验证
+：另存为新 PNG（不覆盖原图），再用 OCR 复查水印是否清除干净
+效果数据（实测）
+指标
+原图
+OpenCV 方案
+PS 内容识别方案
+右下角图标区白色像素
+27862
+3600
+552
+水印文字残留
+有
+无
+无
+PS 方案几乎是"看不见"的级别，剩下的一点像素是缎带自身的高光，不是水印。
+三、怎么用（三步上手）
+前提
+Windows 电脑 + 已安装 Photoshop
+装了 Python（3.8+）
+第 1 步：安装依赖
+在命令行里运行：
+pip install pywin32 rapidocr_onnxruntime opencv-python-headless numpy
+国内网络慢的话可以加清华镜像：
+-i https://pypi.tuna.tsinghua.edu.cn/simple
+第 2 步：下载脚本
+从仓库下载
+remove_watermark_ps.py
+，或者直接 clone：
+git
+clone
+https://gitcode.com/leleloveegg/useps.git
+第 3 步：运行
+python remove_watermark_ps.py
+"你要去水印的图片.png"
+跑完会在同目录生成
+原文件名-去水印-PS版.png
+。
+四、脚本核心原理（给想改代码的人）
+1. 定位 Photoshop
+脚本通过 Windows 注册表查找 Photoshop 安装位置（
+HKLM\SOFTWARE\Adobe\Photoshop\<版本号>
+下的 ApplicationPath），找不到再兜底扫描常见安装目录。
+2. 控制 Photoshop：COM + ExtendScript
+Python 通过
+win32com.client
+连接
+Photoshop.Application
+，然后用
+DoJavaScript()
+向 PS 发送 ExtendScript 脚本，实现选区、填充、保存。
+3. 内容识别填充的正确写法
+这是踩坑最多的地方，正确的核心代码：
+var
+desc =
+new
+ActionDescriptor
+();
+desc.
+putEnumerated
+(
+stringIDToTypeID
+(
+"using"
+),
+stringIDToTypeID
+(
+"fillContents"
+),
+stringIDToTypeID
+(
+"contentAware"
+));
+desc.
+putUnitDouble
+(
+stringIDToTypeID
+(
+"opacity"
+),
+stringIDToTypeID
+(
+"percentUnit"
+),
+100.0
+);
+desc.
+putEnumerated
+(
+stringIDToTypeID
+(
+"mode"
+),
+stringIDToTypeID
+(
+"blendMode"
+),
+stringIDToTypeID
+(
+"normal"
+));
+executeAction
+(
+stringIDToTypeID
+(
+"fill"
+), desc,
+DialogModes
+.
+NO
+);
+4. 水印定位
+文字水印：OCR（rapidocr_onnxruntime）识别文字框
+图形图标：OCR 不认图形，需要根据文字框位置扩展区域（右下角水印向左 220px、向上 110px、到图片边缘）
+五、踩坑记录（给同样被 PS 自动化坑过的人）
+这套流程里踩过的坑，全部记录在 SKILL.md 里，这里挑几个最经典的：
+坑 1：fill 命令报 8800「命令'填充'当前不可用」
+两个原因：
+文档是
+索引色模式
+（IndexedColor，枚举值 2）——PS 打开部分 PNG 会这样，必须转 RGB
+用了老教程里的
+putReference
+写法——官方写法不需要 reference，直接
+putEnumerated(using,...)
+坑 2：右下角选区必须延伸到图片底部
+即梦水印下方的缎带高光会一直延伸到图片下边缘。如果选区只框到文字底部，高光会残留一大片（实测白色像素 ~11000）。
+选区要取到
+(x0-220, y0-110, 图片宽, 图片高)
+。
+坑 3：cv2.imwrite 不支持中文路径
+保存对比图时用
+cv2.imwrite
+会
+静默失败
+（不报错但文件没写出来）。必须用 PIL 的
+Image.save()
+。
+六、后续计划
+支持批量处理整个文件夹的图片
+支持自定义水印区
+补充 Mac 版方案（PS 在 Mac 上要用 AppleScript 控制）
+免责声明：为了工作更方便而请AI梳理的一个SKILL，输出了使用规则，如有问题，请联系删除。

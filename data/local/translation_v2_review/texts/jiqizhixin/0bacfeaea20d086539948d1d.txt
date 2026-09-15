@@ -1,0 +1,182 @@
+引言
+近些年来，随着GPU等计算设备算力的飞速提升，对算力要求较高的深度学习模型逐步开始在网购、医疗、音视频领域有了越来越广泛的应用。如何结合深度学习框架，用好高算力的GPU设备，是我们在AI基础建设中遇到的一个至关重要的问题。英伟达公司从硬件厂商的角度出发推出了Trition推理服务器，阿里云PAI平台从云原生服务角度出发，推出了PAI-EAS云原生弹性推理服务平台，目的都是为了更好地帮助用户更好更方便地部署深度学习，提供优质的在线预测服务。
+首先我们来了解一下Triton和EAS具体是什么，以及我们为什么要将两者进行有机的结合。
+什么是Triton？
+Triton
+推理服务器（
+NVIDIA Triton Inference Server
+) 是英伟达公司推出的开源推理框架，为用户提供在云和边缘推理上部署的解决方案。下图为Triton的架构图：
+Triton Inference Server
+具有以下的特性：
+·
+支持多种开源框架的部署，包括TensorFlow/PyTorch/ONNX Runtime/TensorRT等，同时也支持用户提供自定义的服务后端(backend)；
+·
+支持多个模型同时运行在GPU上，以提高GPU设备的利用率；
+·
+支持
+HTTP/gRPC
+通信协议，提供二进制格式扩展来压缩发送请求大小；
+·
+支持Dynamic Batching功能，提升服务的吞吐；
+·
+支持兼容KFServing的API标准。
+什么是PAI-EAS？
+阿里云机器学习平台PAI，旨在为阿里云的用户提供轻量化、高性价比的云原生机器学习。为了帮助用户打通模型训练到模型部署的通路，针对在线推理场景提供了新一代AI推理平台：PAI-EAS（Elastic Algorithm Service），
+目前已经稳定支持阿里巴巴集团多个BU的深度学习模型预测服务以及大量公有云客户的在线预测服务。
+下图为PAI-EAS总体架构：
+从图中可以看出PAI-EAS支持以下特性：
+·
+支持基于异构硬件（CPU和GPU）的模型部署；
+·
+支持通用机器学习/深度学习框架模型一键部署成在线服务，也提供兼容开源Serving的服务部署方式；
+·
+与云原生产品深度整合，支持模型服务管理，服务监控，日志采集查询，网络链路优化等功能；
+·
+自研的高性能服务引擎，对下层异构推理引擎透明支持模型预热，自动Batch，流量镜像等能力；
+·
+分层架构设计，可提供简单易用的微服务开发接口，用户可用多种语言开发自定义的推理业务逻辑。
+为什么将Triton部署在EAS上
+将Triton Inference Server部署在EAS上，一方面可以使EAS的用户能够方便的使用Triton在NVIDIA GPU设备上多框架多模型部署的能力。另一方面可以充分利用EAS在云原生产品上的深度整合，借助基于云原生的负载均衡，服务管理，网络链路优化，资源弹性伸缩等能力。两方面相结合，获得了1+1>2的效果，使得用户可以方便地获取稳定且性能优异的预测服务，支持多种多样的使用场景，未来还可以使用我们集成到EAS中的针对不同框架模型的通用优化能力，例如
+Blade
+等。
+如何使用Triton on EAS
+使用准备工作
+1.
+使用Triton github repo中提供的
+脚本
+，下载Inception模型，同时准备好以下的配置文件来声明部署模型的输入输出等信息，并将模型文件、配置文件以及模型对应的
+label
+文件
+都放置在一个目录中；
+name: "inception_graphdef"
+platform: "tensorflow_graphdef"
+max_batch_size: 128
+input [
+{
+name: "input"
+data_type: TYPE_FP32
+format: FORMAT_NHWC
+dims: [ 299, 299, 3 ]
+}
+]
+output [
+{
+name: "InceptionV3/Predictions/Softmax"
+data_type: TYPE_FP32
+dims: [ 1001 ]
+label_filename: "inception_labels.txt"
+}
+]
+2.
+开通阿里云对象存储服务对象存储服务
+OSS
+，完成配置后，使用
+ossutil
+将准备好的模型文件夹整个上传到特定的OSS路径中；
+./ossutil cp inception_graphdef/ oss://triton-model-repo/models
+3.
+开通EAS的
+专属资源组
+，目前只有专属资源组支持部署Triton服务。
+在做完前置的准备工作之后，先要在EAS上部署Triton服务，然后再去请求已经部署好的服务，获取推理预测的结果。
+如何在EAS上部署Triton服务
+Triton
+部署于EAS采用了内置
+processor
+的部署形式，processor是EAS服务的必要元素，一般意义下是包含了服务对请求的完整处理逻辑。相比于一般的EAS内置processor部署方式，除了指定processor类型为"triton"以外，只需要新增一个processor_params字段将Triton启动时支持的参数传入即可。
+下面为我们创建一个Triton服务时使用的配置文件的示例：
+{
+"name": "triton_test",
+"processor": "triton",
+"processor_params": [
+"--model-repository=oss://triton-model-repo/models",
+"--allow-http=true",
+],
+"metadata": {
+"instance": 1,
+"cpu": 4,
+"gpu": 1,
+"memory": 10000,
+"resource":"<your resource id>"
+}
+}
+注意：
+1.
+model-repository
+参数需要直接传入OSS路径，但是目前不支持直接从用户bucket根目录直接加载模型，推荐将模型上传到bucket下的某个目录中。
+2.
+当前仅支持使用
+EASCMD
+创建Triton服务
+下面是使用EASCMD创建服务时，我们可以命令行中看到的输出，最后可以看到服务的URL以及token，以及服务创建过程中的状态变化
+./eascmd create triton.config
+[RequestId]: AECDB6A4-CB69-4688-AA35-BA1E020C39E6
++-------------------+------------------------------------------------------------------------------------------------+
+| Internet Endpoint | http://****************.cn-shanghai.pai-eas.aliyuncs.com/api/predict/test_triton_processor |
+| Intranet Endpoint | http://****************.vpc.cn-shanghai.pai-eas.aliyuncs.com/api/predict/test_triton_processor |
+| Token | MmY3M2ExZG***********************WM1ZTBiOWQ3MGYxZGNkZQ== |
++-------------------+------------------------------------------------------------------------------------------------+
+[OK] Service is now deploying
+[OK] Successfully synchronized resources
+[OK] Waiting [Total: 1, Pending: 1, Running: 0]
+[OK] Waiting [Total: 1, Pending: 1, Running: 0]
+[OK] Running [Total: 1, Pending: 0, Running: 1]
+[OK] Service is running
+如何访问EAS上的Triton服务
+Triton on EAS
+完全兼容Triton社区提供的Python Client，下面我们以社区提供的Inception模型为例，说明如何来向部署在EAS上的Triton服务发起请求。首先我们按照Triton官方提供的方式，来安装Python Client。
+pip3 install nvidia-pyindex
+pip3 install tritonclient[all]
+完成Triton服务部署之后，如果没有保存EASCMD命令行中输出的URL以及token，还可以在PAI控制台--模型部署--EAS-模型在线服务页面可以看到类似以下的服务详情，其中也可以查到服务的URL以及访问服务需要使用的授权token。
+填充代码中的URL以及token，即可使用使用这个demo，对Triton的服务中的Inception模型发起请求。
+import numpy as np
+import time
+import tritonclient.http as httpclient
+from tritonclient.utils import InferenceServerException
+URL = "<servcice url>"
+HEADERS = {"Authorization": "<service token>"}
+input_img = httpclient.InferInput("input", [1, 299, 299, 3], "FP32")
+rand_img = np.random.rand(1, 299, 299, 3).astype(np.float32)
+input_img.set_data_from_numpy(rand_img, binary_data=True)
+output = httpclient.InferRequestedOutput(
+"InceptionV3/Predictions/Softmax", binary_data=True
+)
+triton_client = httpclient.InferenceServerClient(url=URL, verbose=False)
+start = time.time()
+for i in range(10):
+results = triton_client.infer(
+"inception_graphdef", inputs=[input_img], outputs=[output], headers=HEADERS
+)
+res_body = results.get_response()
+elapsed_ms = (time.time() - start) * 1000
+if i == 0:
+print("model name: ", res_body["model_name"])
+print("model version: ", res_body["model_version"])
+print("output name: ", res_body["outputs"][0]["name"])
+print("output shape: ", res_body["outputs"][0]["shape"])
+print("[{}] Avg rt(ms): {:.2f}".format(i, elapsed_ms))
+start = time.time()
+执行之后，我们可以获得以下的输出，在第一次运行时，还额外打印了模型以及输出的相应信息，确认了对模型的调用请求是如我们期望的。
+model name: inception_graphdef
+model version: 1
+output name: InceptionV3/Predictions/Softmax
+output shape: [1, 1001]
+[0] Avg rt(ms): 76.29
+[1] Avg rt(ms): 43.45
+[2] Avg rt(ms): 37.30
+[3] Avg rt(ms): 34.17
+[4] Avg rt(ms): 32.26
+[5] Avg rt(ms): 30.52
+[6] Avg rt(ms): 30.34
+[7] Avg rt(ms): 29.13
+[8] Avg rt(ms): 23.56
+[9] Avg rt(ms): 23.42
+结语
+目前Triton on EAS已经在上海区域开始公测，欢迎大家在阿里云官网搜索“机器学习平台PAI”来踊跃试用。我们也将基于Triton，提供更多的深度学习在线部署能力给用户。Triton on EAS将支持更多的功能，保证用户在EAS上使用Triton的体验：
+·
+支持gRPC协议，支持Java Client（Coming very soon！）
+·
+支持
+Blade
+优化
+接入Triton

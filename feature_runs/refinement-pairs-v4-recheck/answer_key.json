@@ -1,0 +1,651 @@
+{
+  "schema_version": "deaiodorant-refinement-pairs-4.0",
+  "protocol_version": "post-only-conservative-reframing-development-4.0",
+  "seed": 2026082702,
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "refinement-v4-10",
+      "doc_id": "4c4d1156bf248a78ba057cb3",
+      "target_line": 1,
+      "original_side": "B",
+      "operation": {
+        "operation_id": "refinement-v4-10-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "引言\n现如今的大语言模型已经能流畅地写文章、写代码，甚至执行复杂的 Agent 工作流，然而，它们在面对严谨的数学定理证明时，却往往显得力不从心。\n在常规的数学解题中，模型只需要“答对最终数值”即可，但数学定理证明不同，它要求极度严苛的逻辑链条，任何一句自然语言的模棱两可，都可能导致整个证明的崩塌。那么，如何让 AI 从“猜答案”走向“严谨证明”，成为复杂推理具有挑战的课题。",
+        "after": "大语言模型已经能流畅地写文章、写代码，甚至执行复杂的 Agent 工作流，但面对严谨的数学定理证明时，仍往往显得力不从心。\n常规数学解题只要求“答对最终数值”；数学定理证明则要求极其严谨的逻辑链条，任何一句自然语言的模棱两可都可能使整个证明崩塌。要让 AI 从“猜答案”走向“严谨证明”，仍需解决这一复杂推理难题。",
+        "reason": "Keep the mathematical-proof distinction and uncertainty while replacing a rhetorical question and stacked contrast with a direct problem statement."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Models handle writing, coding, and Agent workflows but struggle with proofs.",
+          "original_support": "面对严谨的数学定理证明时，却往往显得力不从心",
+          "revised_support": "面对严谨的数学定理证明时，仍往往显得力不从心"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Proof requires a stricter logical chain than final-value math problems.",
+          "original_support": "它要求极度严苛的逻辑链条",
+          "revised_support": "数学定理证明则要求极其严谨的逻辑链条"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Ambiguous natural language can collapse the proof.",
+          "original_support": "任何一句自然语言的模棱两可，都可能导致整个证明的崩塌",
+          "revised_support": "任何一句自然语言的模棱两可都可能使整个证明崩塌"
+        }
+      ],
+      "locked_literals": [
+        "Agent",
+        "数学定理证明",
+        "AI",
+        "猜答案",
+        "严谨证明"
+      ],
+      "voice_anchors": [
+        "力不从心"
+      ],
+      "audit": {
+        "original_sha256": "cc4ff304c2c1bd2ee7c152f0ae03a9692ce1e607661b130d3bf77a6e6bd88a42",
+        "revised_sha256": "3c6d1e2d84c254ad1b941347bb806402eaf08982f9df0271d412bd77f1ce0db6",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_marker_count": 1,
+        "revised_marker_count": 0,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,3 +1,2 @@",
+          "-引言",
+          "-现如今的大语言模型已经能流畅地写文章、写代码，甚至执行复杂的 Agent 工作流，然而，它们在面对严谨的数学定理证明时，却往往显得力不从心。",
+          "-在常规的数学解题中，模型只需要“答对最终数值”即可，但数学定理证明不同，它要求极度严苛的逻辑链条，任何一句自然语言的模棱两可，都可能导致整个证明的崩塌。那么，如何让 AI 从“猜答案”走向“严谨证明”，成为复杂推理具有挑战的课题。",
+          "+大语言模型已经能流畅地写文章、写代码，甚至执行复杂的 Agent 工作流，但面对严谨的数学定理证明时，仍往往显得力不从心。",
+          "+常规数学解题只要求“答对最终数值”；数学定理证明则要求极其严谨的逻辑链条，任何一句自然语言的模棱两可都可能使整个证明崩塌。要让 AI 从“猜答案”走向“严谨证明”，仍需解决这一复杂推理难题。"
+        ]
+      }
+    },
+    {
+      "task_number": 2,
+      "pair_id": "refinement-v4-05",
+      "doc_id": "7c1423cab64a9a1b24d75243",
+      "target_line": 41,
+      "original_side": "A",
+      "operation": {
+        "operation_id": "refinement-v4-05-op-01",
+        "operator": "merge_repeated_reframing",
+        "before": "这类案例也指向了“个人软件”的趋势：无论是做一个熟悉工具的轻量替代品，还是改造现有工作流，门槛都在快速降低。他认为，很难再说个人软件时代还没有到来，而且接下来只会变得更容易、更快、更好、更便宜。\n贵，也是真的贵\n如果说前面的案例证明了 Fable 5 的能力，那么另一边，早期用户最集中的抱怨也很明确：它确实更强，但也确实更贵、更容易烧穿额度。",
+        "after": "这类案例也显示了“个人软件”的趋势：无论是做一个熟悉工具的轻量替代品，还是改造现有工作流，门槛都在快速降低。他认为，个人软件时代已经到来，接下来只会变得更容易、更快、更好、更便宜。\n不过，Fable 5 的价格也确实很高。早期用户最集中的抱怨很明确：它更强，但也更贵、更容易烧穿额度。",
+        "reason": "Keep the personal-software trend and price criticism while replacing two staged pivots with a direct transition."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Lower barriers support the personal-software trend.",
+          "original_support": "门槛都在快速降低",
+          "revised_support": "门槛都在快速降低"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The future trend remains easier, faster, better, and cheaper.",
+          "original_support": "更容易、更快、更好、更便宜",
+          "revised_support": "更容易、更快、更好、更便宜"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Fable 5 remains stronger, expensive, and prone to exhausting quotas.",
+          "original_support": "更强，但也确实更贵、更容易烧穿额度",
+          "revised_support": "更强，但也更贵、更容易烧穿额度"
+        }
+      ],
+      "locked_literals": [
+        "个人软件",
+        "Fable 5",
+        "额度"
+      ],
+      "voice_anchors": [
+        "更容易、更快、更好、更便宜",
+        "确实很高"
+      ],
+      "audit": {
+        "original_sha256": "5647e6ae8ce324fc75f993af322fb7f23b69613dcdd9e4d1732b3aa06ad5feb1",
+        "revised_sha256": "8157afcd8ef58eb2569cf371a01d1d9220b0cae27e0596effb974b279dc2d3f9",
+        "original_numbers": [
+          "5"
+        ],
+        "revised_numbers": [
+          "5"
+        ],
+        "original_marker_count": 1,
+        "revised_marker_count": 1,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,3 +1,2 @@",
+          "-这类案例也指向了“个人软件”的趋势：无论是做一个熟悉工具的轻量替代品，还是改造现有工作流，门槛都在快速降低。他认为，很难再说个人软件时代还没有到来，而且接下来只会变得更容易、更快、更好、更便宜。",
+          "-贵，也是真的贵",
+          "-如果说前面的案例证明了 Fable 5 的能力，那么另一边，早期用户最集中的抱怨也很明确：它确实更强，但也确实更贵、更容易烧穿额度。",
+          "+这类案例也显示了“个人软件”的趋势：无论是做一个熟悉工具的轻量替代品，还是改造现有工作流，门槛都在快速降低。他认为，个人软件时代已经到来，接下来只会变得更容易、更快、更好、更便宜。",
+          "+不过，Fable 5 的价格也确实很高。早期用户最集中的抱怨很明确：它更强，但也更贵、更容易烧穿额度。"
+        ]
+      }
+    },
+    {
+      "task_number": 3,
+      "pair_id": "refinement-v4-03",
+      "doc_id": "da81d4c0f5b616b43f9e1472",
+      "target_line": 93,
+      "original_side": "B",
+      "operation": {
+        "operation_id": "refinement-v4-03-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "所以，“领头羊”阿里云想要做的是，让 AI 深入到各行各业，用 AI 提升生产效率。\n与此同时，当中国的 AI 原生企业在海外遍地开花，当中国的第一、第二及第三产业客户纷纷出海，使得阿里云加速剑指全球化。\n刘伟光表示， 2024–2025 ，中国企业的出海，不再只是把供应链优势搬出去，而是把\nAI 能力当作产品溢价的一部分\n：\n新能源车出海：没有智能化能力就很难维持差异化；\n家电、照明、厨具等传统硬件出海：正在被“自然语言对话 + 多模态理解”重新定义交互方式；\n机器人、安防、摄像头等品类出海：本质上都需要端云协同的模型能力。",
+        "after": "阿里云希望让 AI 深入各行各业，以提升生产效率。\n中国 AI 原生企业在海外遍地开花，中国第一、第二及第三产业客户也纷纷出海，这推动阿里云加快全球化。刘伟光表示，2024–2025 年，中国企业出海已不只是把供应链优势搬出去，也把 AI 能力作为产品溢价的一部分：\n新能源车出海：没有智能化能力就很难维持差异化；\n家电、照明、厨具等传统硬件出海：正在被“自然语言对话 + 多模态理解”重新定义交互方式；\n机器人、安防、摄像头等品类出海：都需要端云协同的模型能力。",
+        "reason": "State the industry and globalization claims directly while preserving the dated examples and source attribution."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Alibaba Cloud seeks productivity gains through industry AI adoption.",
+          "original_support": "让 AI 深入到各行各业，用 AI 提升生产效率",
+          "revised_support": "让 AI 深入各行各业，以提升生产效率"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Chinese company expansion motivates Alibaba Cloud globalization.",
+          "original_support": "使得阿里云加速剑指全球化",
+          "revised_support": "这推动阿里云加快全球化"
+        },
+        {
+          "claim_id": "c03",
+          "description": "All three sector examples and their AI requirements are retained.",
+          "original_support": "2024–2025",
+          "revised_support": "2024–2025"
+        }
+      ],
+      "locked_literals": [
+        "阿里云",
+        "刘伟光",
+        "2024–2025",
+        "端云协同"
+      ],
+      "voice_anchors": [
+        "遍地开花"
+      ],
+      "audit": {
+        "original_sha256": "47558b3fa9b009ec43a272cfe3842d5c84e44d6ef2e24d9e5272c92495887aef",
+        "revised_sha256": "5f0368eac13a08e546e7491bc19ff82e66bcc6a387f1aaeefcfc0809fd1dbb33",
+        "original_numbers": [
+          "2024",
+          "2025"
+        ],
+        "revised_numbers": [
+          "2024",
+          "2025"
+        ],
+        "original_marker_count": 2,
+        "revised_marker_count": 0,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,8 +1,5 @@",
+          "-所以，“领头羊”阿里云想要做的是，让 AI 深入到各行各业，用 AI 提升生产效率。",
+          "-与此同时，当中国的 AI 原生企业在海外遍地开花，当中国的第一、第二及第三产业客户纷纷出海，使得阿里云加速剑指全球化。",
+          "-刘伟光表示， 2024–2025 ，中国企业的出海，不再只是把供应链优势搬出去，而是把",
+          "-AI 能力当作产品溢价的一部分",
+          "-：",
+          "+阿里云希望让 AI 深入各行各业，以提升生产效率。",
+          "+中国 AI 原生企业在海外遍地开花，中国第一、第二及第三产业客户也纷纷出海，这推动阿里云加快全球化。刘伟光表示，2024–2025 年，中国企业出海已不只是把供应链优势搬出去，也把 AI 能力作为产品溢价的一部分：",
+          " 新能源车出海：没有智能化能力就很难维持差异化；",
+          " 家电、照明、厨具等传统硬件出海：正在被“自然语言对话 + 多模态理解”重新定义交互方式；",
+          "-机器人、安防、摄像头等品类出海：本质上都需要端云协同的模型能力。",
+          "+机器人、安防、摄像头等品类出海：都需要端云协同的模型能力。"
+        ]
+      }
+    },
+    {
+      "task_number": 4,
+      "pair_id": "refinement-v4-02",
+      "doc_id": "e6b904412ae6774c9ee56964",
+      "target_line": 16,
+      "original_side": "A",
+      "operation": {
+        "operation_id": "refinement-v4-02-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "论文指出，过去一年，随着强化学习技术将“最终答案正确率”作为奖励信号，大语言模型在数学推理任务上的表现快速提升，从较低水平跃升至接近占满 AIME、HMMT 等高中难度竞赛榜单。\n然而，这类方法的根本缺陷也逐渐暴露：正确答案并不等同于正确推理，而定理证明等数学核心任务依赖严谨的逐步逻辑推导，无法用“答案对错”简单衡量。对于没有标准答案的开放问题而言，更无法根据“最终答案”奖励模型。因此，要想推动数学推理能力真正突破，需要验证推理链条的完整性与严谨性，\n而“自验证机制”成为关键\n。",
+        "after": "论文指出，过去一年，强化学习以“最终答案正确率”为奖励信号，使大语言模型在数学推理任务上的表现快速提升，从较低水平跃升至接近占满 AIME、HMMT 等高中难度竞赛榜单。\n这类方法的根本缺陷也逐渐暴露：正确答案不等于正确推理。定理证明等数学核心任务依赖严谨的逐步逻辑推导，无法用“答案对错”简单衡量；没有标准答案的开放问题同样无法据此奖励模型。要推动数学推理能力实现突破，就需要验证推理链条的完整性与严谨性，自验证机制因此成为一个关键方向。",
+        "reason": "Keep the reward-signal critique and self-verification conclusion while removing stacked breakthrough and key-point emphasis."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Answer-accuracy rewards drove rapid gains on the named competitions.",
+          "original_support": "接近占满 AIME、HMMT 等高中难度竞赛榜单",
+          "revised_support": "接近占满 AIME、HMMT 等高中难度竞赛榜单"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Correct answers do not establish correct theorem-proof reasoning.",
+          "original_support": "正确答案并不等同于正确推理",
+          "revised_support": "正确答案不等于正确推理"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Open problems require chain verification and motivate self-verification.",
+          "original_support": "自验证机制”成为关键",
+          "revised_support": "自验证机制因此成为一个关键方向"
+        }
+      ],
+      "locked_literals": [
+        "AIME",
+        "HMMT",
+        "自验证机制",
+        "定理证明"
+      ],
+      "voice_anchors": [
+        "根本缺陷"
+      ],
+      "audit": {
+        "original_sha256": "55a5d70ce7bb55ba5a887384ae8d70e4750ca1e26d5e0754447f48dc405d4947",
+        "revised_sha256": "28a3cf3ddc06cfffd1db1e3ce7b29b0dcbd8e95c8d41ca822f227b02bb486d38",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_marker_count": 3,
+        "revised_marker_count": 1,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,4 +1,2 @@",
+          "-论文指出，过去一年，随着强化学习技术将“最终答案正确率”作为奖励信号，大语言模型在数学推理任务上的表现快速提升，从较低水平跃升至接近占满 AIME、HMMT 等高中难度竞赛榜单。",
+          "-然而，这类方法的根本缺陷也逐渐暴露：正确答案并不等同于正确推理，而定理证明等数学核心任务依赖严谨的逐步逻辑推导，无法用“答案对错”简单衡量。对于没有标准答案的开放问题而言，更无法根据“最终答案”奖励模型。因此，要想推动数学推理能力真正突破，需要验证推理链条的完整性与严谨性，",
+          "-而“自验证机制”成为关键",
+          "-。",
+          "+论文指出，过去一年，强化学习以“最终答案正确率”为奖励信号，使大语言模型在数学推理任务上的表现快速提升，从较低水平跃升至接近占满 AIME、HMMT 等高中难度竞赛榜单。",
+          "+这类方法的根本缺陷也逐渐暴露：正确答案不等于正确推理。定理证明等数学核心任务依赖严谨的逐步逻辑推导，无法用“答案对错”简单衡量；没有标准答案的开放问题同样无法据此奖励模型。要推动数学推理能力实现突破，就需要验证推理链条的完整性与严谨性，自验证机制因此成为一个关键方向。"
+        ]
+      }
+    },
+    {
+      "task_number": 5,
+      "pair_id": "refinement-v4-07",
+      "doc_id": "fdbd90f96ec1d4752373dcf1",
+      "target_line": 1,
+      "original_side": "A",
+      "operation": {
+        "operation_id": "refinement-v4-07-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "大模型在 AIME、IMO 等高难度竞赛中拿奖拿到手，仿佛已经进化出了“人类最强大脑”。但与此同时，如果你问大模型：“离洗车店只有 50 米，我是开车去还是走路去？”。这些号称满分推理的模型，依然会一本正经地为你规划导航路线。\n这种看似知识丰富，但没常识的现象，正是当前大模型评测的死穴：大模型虽然擅长记忆复杂的公式，却常常连一道简单的逻辑题都答不对。",
+        "after": "大模型在 AIME、IMO 等高难度竞赛中频频获奖，仿佛已经进化出了“人类最强大脑”。可是，如果你问大模型：“离洗车店只有 50 米，我是开车去还是走路去？”，这些号称满分推理的模型依然会一本正经地规划导航路线。\n这种知识丰富却缺乏常识的现象，暴露了当前大模型评测的死穴：模型擅长记忆复杂公式，却常常连一道简单的逻辑题都答不对。",
+        "reason": "Retain the competition and car-wash examples while stating the common-sense evaluation gap without dead-point and strongest-brain staging."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Models perform strongly on AIME and IMO competitions.",
+          "original_support": "AIME、IMO 等高难度竞赛中拿奖",
+          "revised_support": "AIME、IMO 等高难度竞赛中频频获奖"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The 50-meter car-wash example remains a common-sense failure.",
+          "original_support": "离洗车店只有 50 米",
+          "revised_support": "离洗车店只有 50 米"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Formula knowledge can coexist with failure on simple logic.",
+          "original_support": "擅长记忆复杂的公式，却常常连一道简单的逻辑题都答不对",
+          "revised_support": "擅长记忆复杂公式，却常常连一道简单的逻辑题都答不对"
+        }
+      ],
+      "locked_literals": [
+        "AIME",
+        "IMO",
+        "50 米",
+        "洗车店"
+      ],
+      "voice_anchors": [
+        "仿佛",
+        "人类最强大脑",
+        "一本正经",
+        "死穴"
+      ],
+      "audit": {
+        "original_sha256": "19829c19644214e6eec9e5a2f640570ae1482ef7d2fc6a4d6adad9949d3fad96",
+        "revised_sha256": "4c794daa320c4b35a486ebd7d6fa5d7420c6d4cc42609ac086e9efd30b06804e",
+        "original_numbers": [
+          "50"
+        ],
+        "revised_numbers": [
+          "50"
+        ],
+        "original_marker_count": 1,
+        "revised_marker_count": 0,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,2 +1,2 @@",
+          "-大模型在 AIME、IMO 等高难度竞赛中拿奖拿到手，仿佛已经进化出了“人类最强大脑”。但与此同时，如果你问大模型：“离洗车店只有 50 米，我是开车去还是走路去？”。这些号称满分推理的模型，依然会一本正经地为你规划导航路线。",
+          "-这种看似知识丰富，但没常识的现象，正是当前大模型评测的死穴：大模型虽然擅长记忆复杂的公式，却常常连一道简单的逻辑题都答不对。",
+          "+大模型在 AIME、IMO 等高难度竞赛中频频获奖，仿佛已经进化出了“人类最强大脑”。可是，如果你问大模型：“离洗车店只有 50 米，我是开车去还是走路去？”，这些号称满分推理的模型依然会一本正经地规划导航路线。",
+          "+这种知识丰富却缺乏常识的现象，暴露了当前大模型评测的死穴：模型擅长记忆复杂公式，却常常连一道简单的逻辑题都答不对。"
+        ]
+      }
+    },
+    {
+      "task_number": 6,
+      "pair_id": "refinement-v4-04",
+      "doc_id": "21129f35e0f1ae2b265bb287",
+      "target_line": 27,
+      "original_side": "A",
+      "operation": {
+        "operation_id": "refinement-v4-04-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "简单总结一下，互联网时代和 Agent 时代从数据角度来看的第一个区别就是前者的数据是由应用生成的，意味着数据是可控的。但在 AI 时代就不一样了，因为可能会有很多外部的数据进来，这个东西不是你完全可控的，而且规模也可能会很大。另外 AI 时代还会有大量非结构化数据，所以今天几乎所有的数据库都要发展向量的能力，因为搜索变得越来越重要。最后一点就是 Agent 是会互相交互，会跟外部交互的，交互时它是要把内容记录下来，所以数据量很快就会积累起来。",
+        "after": "从数据角度看，互联网时代与 Agent 时代的第一个区别是：前者的数据由应用生成，因而可控；AI 时代会引入大量外部数据，来源不完全可控，规模也可能很大。AI 时代还会产生大量非结构化数据，使搜索更加重要，几乎所有数据库都需要发展向量能力。Agent 还会相互交互并与外部交互，同时记录交互内容，数据量会迅速积累。",
+        "reason": "Replace a spoken sequence of summary announcements with an explicit data-control, unstructured-data, and interaction chain."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Application-generated Internet data is contrasted with external AI data.",
+          "original_support": "前者的数据是由应用生成的，意味着数据是可控的",
+          "revised_support": "前者的数据由应用生成，因而可控"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Unstructured data raises the importance of vector search.",
+          "original_support": "几乎所有的数据库都要发展向量的能力",
+          "revised_support": "几乎所有数据库都需要发展向量能力"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Agent interactions and recording rapidly accumulate data.",
+          "original_support": "所以数据量很快就会积累起来",
+          "revised_support": "数据量会迅速积累"
+        }
+      ],
+      "locked_literals": [
+        "Agent",
+        "AI",
+        "非结构化数据",
+        "向量"
+      ],
+      "voice_anchors": [
+        "从数据角度看"
+      ],
+      "audit": {
+        "original_sha256": "672c7b2793cd62156ec785d1fab4e210a263ed4cc90e92dfa7865293cf90ad1a",
+        "revised_sha256": "396a02168b04527af1e3db7c6d762dbc838e1e661d9823ec15e79d087ca3614c",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_marker_count": 2,
+        "revised_marker_count": 1,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1 +1 @@",
+          "-简单总结一下，互联网时代和 Agent 时代从数据角度来看的第一个区别就是前者的数据是由应用生成的，意味着数据是可控的。但在 AI 时代就不一样了，因为可能会有很多外部的数据进来，这个东西不是你完全可控的，而且规模也可能会很大。另外 AI 时代还会有大量非结构化数据，所以今天几乎所有的数据库都要发展向量的能力，因为搜索变得越来越重要。最后一点就是 Agent 是会互相交互，会跟外部交互的，交互时它是要把内容记录下来，所以数据量很快就会积累起来。",
+          "+从数据角度看，互联网时代与 Agent 时代的第一个区别是：前者的数据由应用生成，因而可控；AI 时代会引入大量外部数据，来源不完全可控，规模也可能很大。AI 时代还会产生大量非结构化数据，使搜索更加重要，几乎所有数据库都需要发展向量能力。Agent 还会相互交互并与外部交互，同时记录交互内容，数据量会迅速积累。"
+        ]
+      }
+    },
+    {
+      "task_number": 7,
+      "pair_id": "refinement-v4-09",
+      "doc_id": "a174fe26e705b96c18acb00e",
+      "target_line": 105,
+      "original_side": "B",
+      "operation": {
+        "operation_id": "refinement-v4-09-op-01",
+        "operator": "direct_contrast",
+        "before": "一期验证了 LLM 表征在精排中的可行性，但四个短板制约了进一步迭代：仅覆盖 Query-商家两端，缺失商品语义、全参数微调成本高、点击率分类目标对排序不够全面、三次 Forward Pass 效率低。二期的目标不是单点优化，而是系统性重构表征生产的全流程——从训练数据、基座模型、微调方式、表征提取、降维方式到损失函数，逐一对应一期的短板进行升级，同时将下挂商品（Deal）纳入建模，构建 Query-POI-Deal 三元语义表征体系。",
+        "after": "一期验证了 LLM 表征在精排中的可行性，但四个短板制约了后续迭代：只覆盖 Query-商家两端，缺失商品语义；全参数微调成本高；点击率分类目标对排序优化不够全面；三次 Forward Pass 效率低。\n二期系统性重构表征生产全流程，涵盖训练数据、基座模型、微调方式、表征提取、降维方式和损失函数，逐一对应一期短板，并将下挂商品（Deal）纳入建模，构建 Query-POI-Deal 三元语义表征体系。",
+        "reason": "Preserve the four first-phase limitations and the complete second-phase scope while replacing a staged not-X-but-Y contrast."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Phase one established feasibility but retained four named limitations.",
+          "original_support": "但四个短板制约了进一步迭代",
+          "revised_support": "但四个短板制约了后续迭代"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Phase two rebuilds all six named production stages.",
+          "original_support": "从训练数据、基座模型、微调方式、表征提取、降维方式到损失函数",
+          "revised_support": "涵盖训练数据、基座模型、微调方式、表征提取、降维方式和损失函数"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Deal is added to the Query-POI-Deal representation system.",
+          "original_support": "构建 Query-POI-Deal 三元语义表征体系",
+          "revised_support": "构建 Query-POI-Deal 三元语义表征体系"
+        }
+      ],
+      "locked_literals": [
+        "LLM",
+        "Query",
+        "Forward Pass",
+        "Deal",
+        "Query-POI-Deal"
+      ],
+      "voice_anchors": [
+        "一期",
+        "二期"
+      ],
+      "audit": {
+        "original_sha256": "297bad0cdc62ea06e574f7d612d3f667f03aa502e6a9e25ad7055c76f3995528",
+        "revised_sha256": "a07858982f16811ad8dd5dcd295006ff76e2b6eda2318595dce1889c62dd8a90",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_marker_count": 0,
+        "revised_marker_count": 0,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1 +1,2 @@",
+          "-一期验证了 LLM 表征在精排中的可行性，但四个短板制约了进一步迭代：仅覆盖 Query-商家两端，缺失商品语义、全参数微调成本高、点击率分类目标对排序不够全面、三次 Forward Pass 效率低。二期的目标不是单点优化，而是系统性重构表征生产的全流程——从训练数据、基座模型、微调方式、表征提取、降维方式到损失函数，逐一对应一期的短板进行升级，同时将下挂商品（Deal）纳入建模，构建 Query-POI-Deal 三元语义表征体系。",
+          "+一期验证了 LLM 表征在精排中的可行性，但四个短板制约了后续迭代：只覆盖 Query-商家两端，缺失商品语义；全参数微调成本高；点击率分类目标对排序优化不够全面；三次 Forward Pass 效率低。",
+          "+二期系统性重构表征生产全流程，涵盖训练数据、基座模型、微调方式、表征提取、降维方式和损失函数，逐一对应一期短板，并将下挂商品（Deal）纳入建模，构建 Query-POI-Deal 三元语义表征体系。"
+        ]
+      }
+    },
+    {
+      "task_number": 8,
+      "pair_id": "refinement-v4-06",
+      "doc_id": "398d56824414e91464ffc3d8",
+      "target_line": 78,
+      "original_side": "A",
+      "operation": {
+        "operation_id": "refinement-v4-06-op-01",
+        "operator": "direct_contrast",
+        "before": "我们不仅提供了评测，还开源了自动合成任务的方法和训练环境。MineExplorer交付的不是一套静态题库，它还带着一整套自动合成长程任务的流程，和一个能直接拿来训练的Minecraft环境。评测、造题、训练，用的是同一套基础设施。\n我们不是要给具身智能泼冷水。恰恰相反，把瓶颈定位清楚，比盲目乐观更有价值。MineExplorer提供的，正是这样一条诚实、可量化的能力基线。",
+        "after": "我们提供了评测，也开源了自动合成任务的方法和训练环境。MineExplorer 不是一套静态题库，还包含一整套自动合成长程任务的流程，以及可直接用于训练的 Minecraft 环境；评测、造题和训练使用同一套基础设施。\n这并不是给具身智能泼冷水。把瓶颈定位清楚，比盲目乐观更有价值；MineExplorer 提供了一条诚实、可量化的能力基线。",
+        "reason": "Preserve the real deliverables and evaluative stance while removing not-only, not-this-but-that, and exactly-this revelation framing."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Evaluation, task synthesis, and a training environment are all provided.",
+          "original_support": "还开源了自动合成任务的方法和训练环境",
+          "revised_support": "也开源了自动合成任务的方法和训练环境"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The benchmark is not a static question set and shares infrastructure.",
+          "original_support": "不是一套静态题库",
+          "revised_support": "不是一套静态题库"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Locating bottlenecks supports an honest quantitative capability baseline.",
+          "original_support": "诚实、可量化的能力基线",
+          "revised_support": "诚实、可量化的能力基线"
+        }
+      ],
+      "locked_literals": [
+        "MineExplorer",
+        "Minecraft",
+        "评测",
+        "训练环境"
+      ],
+      "voice_anchors": [
+        "给具身智能泼冷水",
+        "盲目乐观"
+      ],
+      "audit": {
+        "original_sha256": "60c30141b04490d504110274b8c6983c1ca74288f2b8e4edfab616ab7c44a149",
+        "revised_sha256": "e86d3be72a0bce962e340f1ea0a3ebf6bfb8a419862915d1d86ef576c846695d",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_marker_count": 2,
+        "revised_marker_count": 0,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,2 +1,2 @@",
+          "-我们不仅提供了评测，还开源了自动合成任务的方法和训练环境。MineExplorer交付的不是一套静态题库，它还带着一整套自动合成长程任务的流程，和一个能直接拿来训练的Minecraft环境。评测、造题、训练，用的是同一套基础设施。",
+          "-我们不是要给具身智能泼冷水。恰恰相反，把瓶颈定位清楚，比盲目乐观更有价值。MineExplorer提供的，正是这样一条诚实、可量化的能力基线。",
+          "+我们提供了评测，也开源了自动合成任务的方法和训练环境。MineExplorer 不是一套静态题库，还包含一整套自动合成长程任务的流程，以及可直接用于训练的 Minecraft 环境；评测、造题和训练使用同一套基础设施。",
+          "+这并不是给具身智能泼冷水。把瓶颈定位清楚，比盲目乐观更有价值；MineExplorer 提供了一条诚实、可量化的能力基线。"
+        ]
+      }
+    },
+    {
+      "task_number": 9,
+      "pair_id": "refinement-v4-08",
+      "doc_id": "ee642b95d3e1e32aea9e8ccf",
+      "target_line": 1,
+      "original_side": "B",
+      "operation": {
+        "operation_id": "refinement-v4-08-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "过去一年，我们见证了 Search Agent 能力的显著演进。在 BrowseComp 等评测上，顶尖模型准确率从最初的30%区间迅速攀升至90%以上。然而，当基准迅速饱和，其区分模型能力的价值也随之递减。\nBrowseComp 的题目由人工设计，局限在于只能基于标注者已知的实体和关系构思，无法站在全局知识网络视角判断：哪些条件真的难检索？哪些约束的候选空间足够大？正是这种局限，让我们开始思考另一种可能性：\n能不能让机器自己来出题？\n美团 LongCat 团队在最新论文中提出的 LoHoSearch 基准，就是把这种可能性变成了现实。",
+        "after": "过去一年，Search Agent 能力显著提升。在 BrowseComp 等评测上，顶尖模型准确率从最初的 30% 区间迅速升至 90% 以上；随着基准快速饱和，它区分模型能力的价值也随之下降。\nBrowseComp 的题目由人工设计，只能基于标注者已知的实体和关系构思，无法从全局知识网络判断哪些条件确实难以检索、哪些约束拥有足够大的候选空间。这一局限促使我们思考：能否让机器自己出题？美团 LongCat 团队在最新论文中提出 LoHoSearch 基准，把这一设想变成了现实。",
+        "reason": "Keep the benchmark saturation and annotation-limit argument while removing a staged possibility reveal."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "BrowseComp accuracy rose from the 30% range to above 90%.",
+          "original_support": "从最初的30%区间迅速攀升至90%以上",
+          "revised_support": "从最初的 30% 区间迅速升至 90% 以上"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Human-authored questions lack a global knowledge-network view.",
+          "original_support": "无法站在全局知识网络视角判断",
+          "revised_support": "无法从全局知识网络判断"
+        },
+        {
+          "claim_id": "c03",
+          "description": "LoHoSearch realizes machine-generated question construction.",
+          "original_support": "把这种可能性变成了现实",
+          "revised_support": "把这一设想变成了现实"
+        }
+      ],
+      "locked_literals": [
+        "Search Agent",
+        "BrowseComp",
+        "30%",
+        "90%",
+        "LoHoSearch"
+      ],
+      "voice_anchors": [
+        "能否让机器自己出题"
+      ],
+      "audit": {
+        "original_sha256": "f3157df92135fc4e3c6268500559f4ce9676b65b2d43b2777ac47ba4d89b6938",
+        "revised_sha256": "42a5c3332c68bd119c212024d9df1139da7f09919f07d03ae6529563455a7565",
+        "original_numbers": [
+          "30%",
+          "90%"
+        ],
+        "revised_numbers": [
+          "30%",
+          "90%"
+        ],
+        "original_marker_count": 2,
+        "revised_marker_count": 0,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,4 +1,2 @@",
+          "-过去一年，我们见证了 Search Agent 能力的显著演进。在 BrowseComp 等评测上，顶尖模型准确率从最初的30%区间迅速攀升至90%以上。然而，当基准迅速饱和，其区分模型能力的价值也随之递减。",
+          "-BrowseComp 的题目由人工设计，局限在于只能基于标注者已知的实体和关系构思，无法站在全局知识网络视角判断：哪些条件真的难检索？哪些约束的候选空间足够大？正是这种局限，让我们开始思考另一种可能性：",
+          "-能不能让机器自己来出题？",
+          "-美团 LongCat 团队在最新论文中提出的 LoHoSearch 基准，就是把这种可能性变成了现实。",
+          "+过去一年，Search Agent 能力显著提升。在 BrowseComp 等评测上，顶尖模型准确率从最初的 30% 区间迅速升至 90% 以上；随着基准快速饱和，它区分模型能力的价值也随之下降。",
+          "+BrowseComp 的题目由人工设计，只能基于标注者已知的实体和关系构思，无法从全局知识网络判断哪些条件确实难以检索、哪些约束拥有足够大的候选空间。这一局限促使我们思考：能否让机器自己出题？美团 LongCat 团队在最新论文中提出 LoHoSearch 基准，把这一设想变成了现实。"
+        ]
+      }
+    },
+    {
+      "task_number": 10,
+      "pair_id": "refinement-v4-01",
+      "doc_id": "ddb4214a54ff80efa0f5b210",
+      "target_line": 19,
+      "original_side": "B",
+      "operation": {
+        "operation_id": "refinement-v4-01-op-01",
+        "operator": "merge_repeated_reframing",
+        "before": "模型层决定了上限，它负责理解、推理和生成；\nTool 决定了模型是否真的“能做事”，而不只是“会说话”；\nIDE 交互层决定了人是否能高效地表达意图、修正方向；\n上下文层则把这一切粘合在一起，承载历史决策、工程约束与连续性，是长期可靠性的基础；\n因此，未来 AI 编程的真正分水岭，或许并不仅仅在于“谁的模型更强”，而还在于\n谁能够持续、准确地把工程世界中那些原本隐性的约束、记忆和共识，转化为模型可理解、可执行、并可被反复验证的上下文结构\n。AI 编程从来不是单一模型能力的比拼，而是工程体系与模型能力共同作用的结果。当然，开发者和 AI 的协作方式，也会决定了能否使用好它产出好的结果。",
+        "after": "模型层决定上限，负责理解、推理和生成；Tool 决定模型是否真的“能做事”，而不只“会说话”；IDE 交互层决定人能否高效表达意图、修正方向；上下文层承载历史决策、工程约束与连续性，把这些部分粘合起来，是长期可靠性的基础。\n未来 AI 编程的分水岭，或许不只在“谁的模型更强”，还在于谁能持续、准确地把工程世界中原本隐性的约束、记忆和共识，转化为模型可理解、可执行、可反复验证的上下文结构。AI 编程由工程体系与模型能力共同作用，开发者和 AI 的协作方式也决定能否用好它并产出好结果。",
+        "reason": "Retain the four-layer argument and uncertainty while removing repeated true-divide and not-only staging."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Model, tool, IDE, and context layers retain their distinct functions.",
+          "original_support": "模型层决定了上限",
+          "revised_support": "模型层决定上限"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The future divide depends on converting implicit engineering context.",
+          "original_support": "转化为模型可理解、可执行、并可被反复验证的上下文结构",
+          "revised_support": "转化为模型可理解、可执行、可反复验证的上下文结构"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Engineering, model ability, and collaboration jointly affect outcomes.",
+          "original_support": "工程体系与模型能力共同作用",
+          "revised_support": "工程体系与模型能力共同作用"
+        }
+      ],
+      "locked_literals": [
+        "Tool",
+        "IDE",
+        "AI 编程",
+        "上下文"
+      ],
+      "voice_anchors": [
+        "或许",
+        "谁的模型更强"
+      ],
+      "audit": {
+        "original_sha256": "4f77fb73dc394d93d8e6bac071cb085dba11cadae1752b89eb3cbc4e8b179b33",
+        "revised_sha256": "0c562bff0286c46aa467d2d4fe4d274dfbcacb10a336d1a593e2e0044adbf73d",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_marker_count": 2,
+        "revised_marker_count": 0,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,7 +1,2 @@",
+          "-模型层决定了上限，它负责理解、推理和生成；",
+          "-Tool 决定了模型是否真的“能做事”，而不只是“会说话”；",
+          "-IDE 交互层决定了人是否能高效地表达意图、修正方向；",
+          "-上下文层则把这一切粘合在一起，承载历史决策、工程约束与连续性，是长期可靠性的基础；",
+          "-因此，未来 AI 编程的真正分水岭，或许并不仅仅在于“谁的模型更强”，而还在于",
+          "-谁能够持续、准确地把工程世界中那些原本隐性的约束、记忆和共识，转化为模型可理解、可执行、并可被反复验证的上下文结构",
+          "-。AI 编程从来不是单一模型能力的比拼，而是工程体系与模型能力共同作用的结果。当然，开发者和 AI 的协作方式，也会决定了能否使用好它产出好的结果。",
+          "+模型层决定上限，负责理解、推理和生成；Tool 决定模型是否真的“能做事”，而不只“会说话”；IDE 交互层决定人能否高效表达意图、修正方向；上下文层承载历史决策、工程约束与连续性，把这些部分粘合起来，是长期可靠性的基础。",
+          "+未来 AI 编程的分水岭，或许不只在“谁的模型更强”，还在于谁能持续、准确地把工程世界中原本隐性的约束、记忆和共识，转化为模型可理解、可执行、可反复验证的上下文结构。AI 编程由工程体系与模型能力共同作用，开发者和 AI 的协作方式也决定能否用好它并产出好结果。"
+        ]
+      }
+    }
+  ]
+}

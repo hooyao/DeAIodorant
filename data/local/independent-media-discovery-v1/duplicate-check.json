@@ -1,0 +1,112 @@
+{
+  "scope": "本轮五篇正文加固定SMZDM锚点；未扫描旧87候选、validation reserve或全仓语料。",
+  "method": "去空白字符5-gram集合的Jaccard及较短集合包含率；没有根据结果设定自动去重阈值。",
+  "decision": "没有相同URL或相同全文；阅读全文未发现同篇转发。共同主题、模板和同平台聚合来源仍可能相关，不保证统计独立。",
+  "pairs": [
+    {
+      "a": "d01",
+      "b": "d02",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.006537868214207008,
+      "shorter_5gram_containment": 0.04606625258799172
+    },
+    {
+      "a": "d01",
+      "b": "d03",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0,
+      "shorter_5gram_containment": 0.0
+    },
+    {
+      "a": "d01",
+      "b": "d04",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0033507073715562173,
+      "shorter_5gram_containment": 0.009316770186335404
+    },
+    {
+      "a": "d01",
+      "b": "d06",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0012464942349641633,
+      "shorter_5gram_containment": 0.00312256049960968
+    },
+    {
+      "a": "d01",
+      "b": "known_smzdm_anchor",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0,
+      "shorter_5gram_containment": 0.0
+    },
+    {
+      "a": "d02",
+      "b": "d03",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0,
+      "shorter_5gram_containment": 0.0
+    },
+    {
+      "a": "d02",
+      "b": "d04",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0042205222896333425,
+      "shorter_5gram_containment": 0.01850780798149219
+    },
+    {
+      "a": "d02",
+      "b": "d06",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0013811094912913374,
+      "shorter_5gram_containment": 0.01405152224824356
+    },
+    {
+      "a": "d02",
+      "b": "known_smzdm_anchor",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0002044850385113489,
+      "shorter_5gram_containment": 0.0010330578512396695
+    },
+    {
+      "a": "d03",
+      "b": "d04",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0,
+      "shorter_5gram_containment": 0.0
+    },
+    {
+      "a": "d03",
+      "b": "d06",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0,
+      "shorter_5gram_containment": 0.0
+    },
+    {
+      "a": "d03",
+      "b": "known_smzdm_anchor",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.00021413276231263382,
+      "shorter_5gram_containment": 0.0005659309564233164
+    },
+    {
+      "a": "d04",
+      "b": "d06",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0014792899408284023,
+      "shorter_5gram_containment": 0.00546448087431694
+    },
+    {
+      "a": "d04",
+      "b": "known_smzdm_anchor",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.00015720798616569723,
+      "shorter_5gram_containment": 0.0003443526170798898
+    },
+    {
+      "a": "d06",
+      "b": "known_smzdm_anchor",
+      "exact_text_equal": false,
+      "char_5gram_jaccard": 0.0,
+      "shorter_5gram_containment": 0.0
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+前期准备
+1.
+一台昇腾服务器；
+操作系统以及
+NPU
+型号最好跟客户现场保持一致，
+CPU
+架构必须保持一致，否则制作的镜像不兼容（本案例以
+OpenEuler
+，
+aarch64
+架构，
+910B
+为例） 。 通常客户现场的昇腾服务器已经安装好
+NPU
+驱动和固件。 如果家里的测试环境需要自己安装，可以参考：
+安装
+NPU
+驱动和固件
+-
+软件安装
+-
+软件安装
+-CANN
+社区版
+8.1.RC1.alpha001
+开发文档
+-
+昇腾社区
+。
+2.
+安装好
+Docker
+环境；
+3.
+下载基础镜像（这里以
+hub.oepkgs.net/openeuler/openeuler:24.03-lts
+为例）
+docker pull hub.oepkgs.net/openeuler/openeuler:24.03-lts
+4.
+镜像制作阶段目录结构如下：
+注： 该方案仅用于功能打通验证测试，仅供参考，涉及的镜像版本、
+npu
+驱动和固件、
+cann
+软件等版本按需照实际情况适配。
+1.2
+在
+docker
+容器中安装昇腾相关依赖
+详细的安装流程可以参考昇腾官网文档：
+选择安装场景
+-
+软件安装
+-
+软件安装
+-CANN
+社区版
+8.1.RC1.alpha001
+开发文档
+-
+昇腾社区
+官网文档中会根据不同的安装场景展示相应的流程，可以按需选择，下面仅对关键步骤进行说明。
+step1
+启动容器
+启动命令：
+docker run -itd --name container_name \--device=/dev/davinci0:/dev/davinci0 \--device=/dev/davinci1:/dev/davinci1 \--device=/dev/davinci2:/dev/davinci2 \--device=/dev/davinci3:/dev/davinci3 \--device=/dev/davinci4:/dev/davinci4 \--device=/dev/davinci5:/dev/davinci5 \--device=/dev/davinci6:/dev/davinci6 \--device=/dev/davinci7:/dev/davinci7 \--device=/dev/davinci_manager:/dev/davinci_manager \--device=/dev/devmm_svm:/dev/devmm_svm \--device=/dev/hisi_hdc:/dev/hisi_hdc \-v /usr/local/dcmi:/usr/local/dcmi \-v /usr/local/bin/npu-smi:/usr/local/bin/npu-smi \-v /usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/common \ -v /usr/local/Ascend/driver/lib64/driver:/usr/local/Ascend/driver/lib64/driver \-v /etc/ascend_install.info:/etc/ascend_install.info \-v /etc/vnpu.cfg:/etc/vnpu.cfg \-v /usr/local/Ascend/driver/version.info:/usr/local/Ascend/driver/version.info \-v /home/cosy2:/home/cosy2 \hub.oepkgs.net/openeuler/openeuler:24.03-lts /bin/bash
+上述命令会将宿主机中的
+8
+张
+NPU
+卡都挂载进容器，此时可能会有一个问题，当使用相同的挂载命令再启动一个容器，执行
+npu-smi info
+命令会报错，提示
+npu
+设备被占用，如果是在测试环境中，可以通过添加
+—privileged
+参数规避。
+同时将宿主机的
+/home/cosy2
+目录挂载进容器，后续会在该路径下放置软件安装包，
+CosyVoice
+源码，权重文件等。
+进入容器，查看
+npu
+设备状态， 如果回显
+npu
+状态信息说明挂载成功：
+docker exec -it container_name /bin/bashls /dev/ | grep davinci*npu-smi info
+step2
+安装
+CANN
+包
+新建
+/home/cosy2/ascend-cann/
+路径（其中
+/home/cosy2/
+路径已经挂载到容器中），将
+cann-toolkit
+和
+cann-kernels
+安装包放在路径下，安装包下载参考
+准备软件包
+-
+软件安装
+-
+软件安装
+-CANN
+社区版
+8.1.RC1.alpha001
+开发文档
+-
+昇腾社区
+：
+注： 本案例中的
+CANN
+包为最新社区版本，可直接下载使用。 商用版本下载需要在官网填写审批电子流。
+根据宿主机的
+CPU
+架构和芯片型号选择安装包：
+在容器内创建
+HwHiAiUser
+用户（用户也可以创建其他非
+root
+用户），用于启动相关进程
+groupadd -g 1001 HwHiAiUser && useradd -g HwHiAiUser -d /home/HwHiAiUser -m HwHiAiUser && echo ok
+若返回“
+ok
+”，则说明创建成功。
+如果用户创建了其他非
+root
+用户，请确保该用户所属的属组必须和
+Driver
+运行用户所属属组相同；如果不同，请用户自行添加到
+Driver
+运行用户属组。设置如下环境变量，用于在容器中加载驱动
+so
+。
+export LD_LIBRARY_PATH=/usr/local/Ascend/driver/lib64/common:/usr/local/Ascend/driver/lib64/ driver:${LD_LIBRARY_PATH}
+其中“
+/usr/local/Ascend
+”为默认安装路径，请根据实际情况修改。通过
+export
+方式设置环境变量，只在当前窗口有效，设置完成后立即生效。
+正式安装
+CANN
+包之前，需要安装一些依赖，根据操作系统的不同，命令会有所区
+别，这里以
+openEuler
+为例，以
+root
+用户进行安装。 以下步骤中命令会安装最新版本或指定版本的依赖，关于版本要求请参考
+依赖列表
+。 以
+安装用户登录服务器，执行如下命令安装依赖软件。
+yum install -y gcc make net-tools python3 python3-devel python3-pip
+检查系统是否安装满足版本要求的
+Python
+开发环境。
+python3 --versionpip3 --version
+执行如下命令安装所需的
+Python
+第三方库。
+pip3 install attrs cython numpy==1.24.0 decorator sympy cffi pyyaml pathlib2 psutil protobuf==3.20 scipy requests absl-py
+安装
+Toolkit
+软件前请确保安装目录可用空间大于
+7G
+。如果目录空间有限，可以设置一个空间充裕的路径临时存放解压文件：
+export TMPDIR=/home/cosy2/ascend-cann/tmp
+执行以下命令，安装
+cann-toolkit
+：
+cd /home/cosy2/ascend-cann/chmod +x Ascend-cann-toolkit_<version>_linux-<arch>.run./Ascend-cann-toolkit_<version>_linux-<arch>.run –check./Ascend-cann-toolkit_<version>_linux-<arch>.run –install
+执行以上命令会打屏华为企业业务最终用户许可协议（
+EULA
+）的条款和条件，请输入
+Y
+或
+y
+同意协议，继续安装流程。 如果不指定安装路径，软件会安装到默认路径下：
+/usr/local/Ascend
+。 配置环境变量：
+source /usr/local/Ascend/ascend-toolkit/set_env.sh
+执行以下命令，安装
+cann-kernels
+：
+chmod +x Ascend-cann-kernels-<chip_type>_<version>_linux-<arch>.run./Ascend-cann-kernels-<chip_type>_<version>_linux-<arch>.run –check./Ascend-cann-kernels-<chip_type>_<version>_linux-<arch>.run --devel
+2.3
+在
+docker
+容器中安装
+CosyVoice2
+相关依赖
+step1
+准备源码
+获取
+CosyVoice
+源码，以及昇腾适配补丁：
+#
+获取昇腾适配补丁和代码
+cd /home/cosy2/codegit clone git@gitee.com:ascend/ModelZoo-PyTorch.git
+#
+获取
+CosyVoice
+源码
+git clone https://github.com/FunAudioLLM/CosyVoicecd CosyVoicegit reset --hard fd45708git submodule update --init --recursivegit apply ../ModelZoo-PyTorch/ACL_PyTorch/builtin/audio/CosyVoice/CosyVoice2/diff_CosyVoice.patch
+#
+获取
+Transformer
+源码
+git clone https://github.com/huggingface/transformers.gitcd transformersgit checkout v4.37.0cd ..
+#
+将
+modeling_qwen
+模型文件替换到
+transformers
+仓内
+mv ../ModelZoo-PyTorch/ACL_PyTorch/builtin/audio/CosyVoice/CosyVoice2/modeling_qwen2.py ./transformers/src/transformers/models/q wen2
+step2
+安装相关依赖
+执行以下命令安装
+CosyVoice
+依赖：
+pip3 install -r /home/cosy2/code/ModelZoo-PyTorch/ACL_PyTorch/built-in/audio/CosyVoice/CosyVoice2/requirements.txt
+apt-get install sox # centos版本 yum install sox
+注：如果遇到无法安装
+WeTextProcessing
+的场景，可以参考以下方法手动安装编译
+:
+#
+下载安装包并解压
+wget https://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.8.3.tar.gz
+#
+进入目录后编译安装
+./configure --enable-far --enable-mpdt --enable-pdtmake installpip3 install WeTextProcessing==1.0.4.1
+安装
+msit
+工具：
+pip install msitmsit install benchmark surgeon
+从
+CosyVoice
+语音生成大模型
+2.0-0.5B ·
+模型库
+获取权重文件，放置到
+/home/cosy2/weight
+路径下，也可以执行以下命令下载：
+cd /home/cosy2/weightpythonfrom modelscope import snapshot_downloadsnapshot_download('iic/CosyVoice2-0.5B', local_dir='CosyVoice2-0.5B')
+本用例采用
+sft
+预训练音色推理， 需要额外下载
+spk
+权重放到权重目录下：
+cd /home/cosy2/weight/CosyVoice2-0.5Bwget https://www.modelscope.cn/models/iic/CosyVoice-300M-SFT/resolve/master/spk2info.pt
+step3
+模型转换
+执行以下命令生成离线模型：
+cd /home/cosy2/weight/CosyVoice2-0.5B
+#
+修改
+onnx
+模型结构
+python3 /home/cosy2/code/ModelZoo-PyTorch/ACL_PyTorch/builtin/audio/CosyVoice/CosyVoice2/modify_onnx.py .
+# 执行ATC命令， 通过npu-smi info获取芯片型号填入${soc_version}中，生成离线模型
+source /usr/local/Ascend/ascend-toolkit/set_env.sh
+atc --framework=5 --soc_version=${soc_version} --model ./speech_token_md.onnx --output .
+/speech --input_shape="feats:1,128,-1;feats_length:1"
+atc --framework=5 --soc_version=${soc_version} --model ./flow.decoder.estimator.fp32.onnx -
+-output ./flow --input_shape="x:2,80,-1;mask:2,1,-1;mu:2,80,-1;t:2;spks:2,80;cond:2,80,-1"
+atc --framework=5 --soc_version=${soc_version} --model ./flow.decoder.estimator.fp32.onnx -
+-output ./flow_static --input_shape="x:2,80,-1;mask:2,1,-1;mu:2,80,-1;t:2;spks:2,80;cond:2,80,-
+1" --
+dynamic_dims="100,100,100,100;200,200,200,200;300,300,300,300;400,400,400,400;500,500,
+500,500;600,600,600,600;700,700,700,700" --input_format=ND
+2.4
+执行推理任务验证功能
+执行推理脚本：
+cp /home/cosy2/code/ModelZoo-PyTorch/ACL_PyTorch/builtin/audio/CosyVoice/CosyVoice2/infer.py /home/cosy2/code/CosyVoice/cd /home/cosy2/bash run.sh
+run.sh
+脚本内容如下：
+source /usr/local/Ascend/ascend-toolkit/set_env.sh
+#
+指定使用
+NPU ID
+，默认为
+0
+export ASCEND_RT_VISIBLE_DEVICES=0
+export PYTHONPATH=./code/CosyVoice/third_party/Matcha-TTS:$PYTHONPATH
+export PYTHONPATH=./code/CosyVoice/transformers/src:$PYTHONPATH
+#
+规避找不到
+ttsfrd
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+python3 ./code/CosyVoice/infer.py --model_path=./weight/CosyVoice2-0.5B –stream_out
+注：脚本运行过程中，如果报错缺少某些模块，可以用
+pip
+安装后（安装时建议使用
+constraint
+参数约束版本依赖） ，再次执行脚本。出现以下日志信息说明推理执行成功：
+推理任务执行结束后，会在
+run.sh
+同级目录下生成多个音频文件（因为是流式输出）：
+2.5
+生成新的镜像
+功能验证无误后， 导出新的镜像：
+docker commit container_name image_name:tagdocker save -o new_image_name.tar image_name:tag sha256sum new_image_name.tar #
+计算信息摘要
+cd /home/cosy2/tar -zcvf weight.tar.gzsha256sum weight.tar.gzcd /home/cosy/code/tar -zcvf CosyVoice.tar.gz CosyVoicesha256sum CosyVoice.tar.gz
+注：导出的镜像，下载好的权重，打包好的代码， 必须计算信息摘要，在客户现场部署之前，需要先验证文件传输过程中是否有损坏（因为文件较大，客户现场网络原因，很有可能导致文件在传输到内网过程中损坏导致最终部署失败或者功能异常）。
+实际部署时的目录结构：

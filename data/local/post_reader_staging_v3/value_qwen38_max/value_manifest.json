@@ -1,0 +1,56 @@
+{
+  "protocol_version": "research-value-triage-1.0",
+  "generated_at": "2026-08-30T04:31:33.095957+00:00",
+  "model": "qwen/qwen3.8-max",
+  "model_digest": null,
+  "backend": "openai",
+  "endpoint": "https://openrouter.ai/api/v1",
+  "concurrency": 4,
+  "reasoning_mode": "low",
+  "max_tokens": 4096,
+  "prompt_versions": {
+    "primary": "research-value-primary-v3",
+    "verifier": "research-value-verifier-v3"
+  },
+  "temperature": 0,
+  "seed": 42,
+  "restriction": "Research-value triage is separate from translation provenance. Model results are measurements and do not replace human quality review.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\qwen_review_candidates\\huawei_cloud_community_candidates.jsonl",
+      "sha256": "a1c563cfc2c6915d773776d0f362b57c9c662b32a3619b081c6d65184373e55c"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\qwen_review_candidates\\leiphone_candidates.jsonl",
+      "sha256": "d51f48d9da63ca97978d3f3ad36307fa411e579e9959f95854fe8302f3af7081"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\qwen_review_candidates\\qbitai_candidates.jsonl",
+      "sha256": "4096e9b18d09f0dcc50babfaae1c108d0f35b6cd3876351a984b278d4cb1ae18"
+    }
+  ],
+  "provenance_results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\triage_results.jsonl",
+  "documents": 130,
+  "status_counts": {
+    "model_assisted_substantive": 103,
+    "value_uncertain": 26,
+    "model_assisted_low_value": 1
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\value_qwen38_max\\value_results.jsonl",
+  "results_sha256": "565fd696362e842496cb516ad34ed661968365f09332bd228cf5eab739d3a6e9",
+  "artifacts": {
+    "model_assisted_substantive": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\value_qwen38_max\\model_assisted_substantive.jsonl",
+      "sha256": "86c5320c0823221d4dff71c509afb0c41c9f3824c87109d89ddac527eb7df424"
+    },
+    "model_assisted_low_value": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\value_qwen38_max\\model_assisted_low_value.jsonl",
+      "sha256": "b8c07cbdd3c2be5a23ae65c69934d59b7cf1af7694f5e1938067265d682fdd6d"
+    },
+    "value_uncertain": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\value_qwen38_max\\value_uncertain.jsonl",
+      "sha256": "8624b1c07471603b4faf692873831679ec80e93def9bdb17cc84c087a797997f"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "research-publication-security-1.0",
+  "scanned_at_utc": "2026-09-15T02:29:24.371955+00:00",
+  "scan_source": "actual Git index blobs, plus decompressed ZIP/Office members",
+  "indexed_files_checked": 2425,
+  "indexed_bytes_checked": 217062721,
+  "archive_members_checked": 16,
+  "actual_local_secret_values_checked": 8,
+  "secret_values_recorded": false,
+  "known_pattern_names": [
+    "openrouter_token",
+    "openai_token",
+    "github_token",
+    "private_key",
+    "jwt"
+  ],
+  "research_inventory_index_hashes_verified": 2198,
+  "findings": [
+    {
+      "path": "data/smoke/infoq_pre.jsonl",
+      "detector": "jwt"
+    },
+    {
+      "path": "data/smoke/pilot_corpus.jsonl",
+      "detector": "jwt"
+    }
+  ],
+  "scope": "Credential-oriented publication check; public source text and frozen research labels not semantically re-reviewed."
+}

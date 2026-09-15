@@ -1,0 +1,42 @@
+{
+  "schema_version": "post-reader-corpus-validation-1.0",
+  "checked_at": "2026-08-22T12:15:36.177921+00:00",
+  "handoff_root": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1",
+  "repository_root": "C:\\Users\\HuYao\\.codex\\worktrees\\9b66\\DeAIodorant",
+  "valid": false,
+  "reader_development_ready": false,
+  "errors": [
+    {
+      "location": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\manifest.json",
+      "message": "Unexpected protocol_version"
+    },
+    {
+      "location": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\manifest.json",
+      "message": "Unexpected handoff status"
+    },
+    {
+      "location": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\manifest.json",
+      "message": "post_start conflicts with protocol"
+    },
+    {
+      "location": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\manifest.json",
+      "message": "documents_file is missing or unsafe"
+    }
+  ],
+  "warnings": [],
+  "counts": {},
+  "coverage": {},
+  "limits": {
+    "post_start": "2025-07-01",
+    "minimum_documents": 36,
+    "minimum_sources": 2,
+    "minimum_topics": 3,
+    "minimum_documents_per_topic": 6,
+    "required_formats": [
+      "technical_practice",
+      "research_summary",
+      "industry_reporting"
+    ],
+    "minimum_documents_per_source_format_cell": 6
+  }
+}

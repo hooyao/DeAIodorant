@@ -1,0 +1,102 @@
+代码仓库的主人，正在从人变成 Agent。
+作者丨
+郑佳美
+编辑丨岑 峰
+8 月 17 日，GitHub 出现大范围服务异常。Web、API、Actions、Pull Requests、Git Operations、Webhooks 等核心链路陆续受到影响，部分时段 Web 与 API 请求错误率接近 20%。
+同一天前后，Cursor 开始向全部付费计划逐步开放 Origin early beta。repository、PR、checks、review、merge 和 Automations 开始被放进同一套体系里，Cursor 给出的定位也很明确：
+代码托管要开始为 “agent scale” 设计。
+好玩的是，这两件事都碰巧出现在同一个时间点，恰好把一个变化放大了出来：
+代码仓库正在接入越来越多持续运行的 Agent，而现有软件协作基础设施，长期适应的是人的工作节奏。
+人写几个小时代码，可能只产生几次 commit；Agent 可以在几分钟内连续修改、push、触发 checks，再根据结果继续下一轮。提交变快只是表面，更深的变化是整个软件生产系统的时间尺度正在被压缩。
+GitHub 面对的很多新问题，Origin 想解决的很多问题，或许都会从这里开始。
+01
+GitHub 没有突然变老
+GitHub 诞生时，软件协作有一个稳定的基本单位：人。
+工程师写几个小时代码，提交一次 commit；一项功能开发几天，形成一个 PR；评审可能半小时后出现，也可能第二天再进行；CI 跑几分钟通常可以接受，merge conflict 晚一点处理也不会让整个系统失去意义。
+围绕这种节奏，GitHub 建立了 Pull Request、Issue、Review、Actions、Webhook 和权限体系。即便放到 Linux Kernel 这种长期保持高提交量的工程里，这种节奏依然带着明显的人类时间尺度。雷峰网
+LWN 统计，Linux 7.0 整个开发周期共有 14251 个 non-merge commits，来自 2362 名开发者。这些提交发生在持续数周的开发周期里，中间还有邮件讨论、维护者审核、子系统整合和 release cycle。
+Cursor 在 6 月 Origin 发布演示中展示的则是另一种负载形态：单仓库 22.6 commit/s。
+这个数字属于现场 demo 数据，并非经过独立复现的生产 benchmark，不能证明 Origin 在真实业务里可以长期维持同等吞吐。但它足以说明 Origin 面向什么样的 workload：大量 Agent 持续对同一个代码状态进行写入。
+人类开发者天然存在限流。思考、写代码、开会和休息会在提交之间制造大量空白时间，因此围绕人设计的 forge 可以把不少系统压力交给时间吸收。
+Agent 没有这层限制。
+几十个 Agent 可以同时从同一个 base SHA 分叉，在相近时间修改关联文件，然后一起 push、开 PR、调用检查、读取 review、修改代码并再次 push。一次 commit 还可能继续触发索引更新、权限检查、Webhook、CI、代码扫描、review 状态刷新和 mergeability 计算。
+因此需要承受变化的并非 Git 对象模型本身，更关键的是 Git 上面的
+forge control plane
+：
+API、认证、后台任务、CI 调度、Webhook、branch protection、review state、merge queue，以及这些组件之间形成的级联负载。
+7 月发表的一项针对 GitHub 上 Agent PR 的研究已经看到这种并发形态。研究分析了 2807 个仓库中的 33596 个 Agent PR，40.2% 的仓库出现过时间上重叠的 Agent PR。
+在被抽样重放的并发修改中，跨 Agent PR 的文本 merge conflict 比例达到 41.7%，同一 Agent 产生的并发 PR 则是 19.8%。
+多 Agent 协作因此会带来新的并发控制问题。GitHub 这次故障无法证明 Agent traffic 已经击穿现有基础设施，但它恰好提供了一个观察窗口：当软件生产从低频人类事件变成高频机器事件，容量规划、队列设计、状态传播和一致性模型面对的是另一类 workload。
+Origin 的设计也从这里展开。
+02
+Origin 重写协作成本
+如果 Origin 只是增加一个 Git repository 托管入口，它很难撬动 GitHub 已经形成的开发者关系、开源生态、企业权限体系和工具链。
+它的机会来自 Agent 改变了协作成本。stacked PR 是一个典型例子。
+人类开发者通常倾向于把一项功能整理成相对完整的 PR。每拆出一个 PR，就增加一份上下文、一轮 review 和一组 branch 依赖。如果一次修改被拆成几十个 PR，人很容易把大量精力花在维护这些关系上。
+Agent 的成本结构不同。一个修改横跨几十个文件时，任何一步失败，Agent 可能需要重新理解大范围上下文。拆成较小的 change set 后，schema、service、UI 等修改可以形成明确依赖，每个节点分别验证，失败时只处理相关部分。
+小 PR 因此可以成为 Agent 的 checkpoint，让任务具备局部验证、局部重试和依赖追踪能力。
+Cursor 收购 Graphite 也可以放在这里理解。Origin 当前的 early beta 尚未完整承接 Graphite 的 stacked workflow，但 Graphite 长期投入的 stacked PR 和 stack-aware merge queue，正好对应 Agent 提高代码产生速度以后出现的后续瓶颈。
+PR 数量增加以后，merge queue 的职责也会变重。Agent A 和 Agent B 可以从同一个 base SHA 同时工作，两边分别通过测试。
+A 先进入 main 后，B 的测试结果只能证明代码在旧状态成立，无法证明进入新的 main 后依然安全。因此 queue 需要根据不断变化的 main 重建候选状态、重新执行 checks，并处理 PR 之间的依赖。雷峰网
+(公众号：雷峰网)
+冲突也可以从人工中断逐渐变成流水线中的可恢复 failure state。Cursor 已经提供
+/babysit
+一类能力，持续处理 PR 反馈、失败 checks 和冲突。候选 merge 出现问题后，相关上下文可以重新交给 Agent，在隔离环境中修正并再次验证。
+review 也会随之结构化。人类协作大量依赖自然语言和团队经验，Agent 长时间运行则需要明确读取哪个 check 失败、哪些 thread 尚未解决、哪条 policy 没满足、当前 head SHA 是什么。
+Origin 已经通过 API 暴露 repository、commit、checks、PR 等对象，并区分 formal review 与普通 discussion。
+这些结构化状态随后可以直接被 Automations 消费。push、PR opened 或 PR pushed 触发 cloud agent，执行结果写回 checks 和 PR，失败再进入处理流程。MCP、hooks 和 Agent API 则允许外部工具加入同一条事件链。
+“Detach from GitHub” 解决的是迁移路径。团队可以先 mirror GitHub repository，让 GitHub 保持 source of truth，同时把 Agent 工作流迁到 Origin；运行稳定后再切断同步，由 Origin 独立管理仓库。
+这让 Cursor 可以先承接 Agent、PR、review、checks 和 Automation，再逐渐把更多工程状态留在自己的系统里。
+Origin 的产品逻辑因此很明确：Git 继续承担版本控制，Origin 想重做的是 Git 上方那套围绕高频 Agent 协作运转的控制层。
+03
+老马在收拢一条 AI 生产链
+过去一年多，xAI、X、SpaceX 和 Cursor 之间的一系列动作逐渐形成了更完整的上下游关系。
+xAI 收购 X，随后进入 SpaceX 体系；Cursor 获得 Colossus 计算资源，之后也进入 SpaceX 体系。与此同时，Grok 4.6 发布，Origin 开始开放。
+这种路径与马斯克过去在 Tesla 上采用的垂直整合思路相似：当外部环节开始增加迭代摩擦，就继续向上下游延伸，把关键接口纳入同一体系。
+Agent 当前面临的正是这种问题。模型可以完成 reasoning，但一项软件任务还需要访问仓库、修改文件、运行测试、处理 CI、接收 review、解决冲突，并在失败后恢复执行。
+如果这些环节分散在多套系统里，每一轮任务需要反复同步权限、上下文和状态，接口成本会在持续运行的 Agent loop 中不断累积。
+Colossus、Grok、Cursor 和 Origin 可以分别对应这条链上的不同层级：Colossus 提供算力，Grok 提供模型能力，Cursor 提供代码 Agent 和执行环境，Origin 保存 repository、PR、checks 和 review 状态。
+代码生产由此形成一条连续链路：模型作出判断，Cursor 把判断转化为实际修改，Origin 保存工程状态并负责后续协作控制。
+这也改变了评价 Grok 4.6 的尺度。模型能力仍然重要，但 Agent 系统的产出还取决于执行环境和工程基础设施。一段代码即使生成质量不错，如果后续仍需要人工复制、执行、检查和重新提交，模型能力很难持续放大。
+当模型已经达到可用水平以后，代码能否快速进入执行、验证和合并流程，会越来越影响整套系统的产出。
+X 在这条链里的位置目前仍然较模糊。它拥有实时内容、用户关系、身份和分发网络，未来可能成为任务来源和分发入口；现阶段，Grok Bot 在产品形态上更接近持续任务执行这一层，而非大家想象中的只是一个“被动等待提问的纯粹聊天机器人”。
+Cursor 为什么需要 Origin，也可以由此解释：代码生成之后，需要一个系统长期保存工程状态、协调修改、验证结果，并连接后续执行。这个位置如果始终位于外部，Agent 软件生产链就存在一段关键依赖。
+而 Origin 补的正是这一层。
+04
+GitHub 和 Origin 的分歧
+GitHub 已经拥有 stacked PR、merge queue、REST API，也在持续把 Copilot coding agent 接入 Issue、Actions、PR 和 code review。单看功能列表，两边未来会出现越来越多重叠。
+差异主要来自设计前提。
+GitHub 建立在成熟的人类开发者网络之上，因此更自然的路径，是让 Agent 进入现有 Issue、PR、Actions 和 branch protection 体系。
+Cursor 可以从高密度 Agent 协作重新设计这些组件。如果一个 repository 里长期运行几十个 Agent，PR 数量增加、修改粒度缩小、状态变化加快，那么 review、checks、merge 和权限体系就需要围绕机器行为重新组织。
+PR 的角色也可能随之扩展。它可以从一份主要供人阅读的代码修改，逐渐变成包含 diff、依赖关系、测试证据、来源、风险级别和审批状态的工程事务单元。
+人的职责则会更多进入规则层：哪些目录允许自动修改，依赖升级允许跨越多大版本，数据库 migration 需要哪些验证，认证和支付相关代码需要经过哪些审批，出现什么情况时 Agent 必须停止。
+相应地，Agent-native forge 的指标也会改变。22.6 commit/s 很醒目，但 commit 数本身无法代表软件生产效率。更有意义的指标会是任务进入系统到 merge 的耗时、失败后的局部恢复能力、policy 内自动完成的修改比例、accepted change 的计算成本，以及高风险修改消耗的人工注意力。
+Origin 想控制的，正是 repository、checks、review、权限与 events 汇合之后形成的软件生产控制面。
+GitHub 和 Origin 的竞争因此会逐渐落到两种路径上：
+GitHub 从成熟的人类协作体系向 Agent 扩展，Cursor 则尝试按照 Agent 的工作负载重新设计 forge。
+05
+老马已在下一层
+话说回来，其实在Grok 4.6 发布以后，外界很容易继续围绕 benchmark 讨论代码能力、推理分数和价格。但把 Colossus、Grok、Cursor 和 Origin 放在一起看，其实这套布局已经延伸到模型之后的软件生产链。
+Colossus 提供算力，Grok 负责推理，Cursor 把模型能力变成代码修改，Origin 接住后续的仓库状态、PR、checks 和 review。模型能力提升以后，增益可以沿着执行链直接传递；即使单代模型没有明显拉开差距，后面的基础设施依然可以继续积累。
+所以，Grok 4.6 今天在某张榜单上排在什么位置，可能只是阶段性的结果。更长期的问题，是谁能够把模型、执行环境和软件工程状态组织成一套持续运行的生产系统。
+当大家还在争这一轮模型谁更聪明时，殊不知老马已经到了一下层。
+参考链接：
+https://cursor.com/cn/changelog/origin-code-hosting
+https://www.learncursor.dev/learn/cursor-origin/commits-per-second
+https://arxiv.org/pdf/2607.04697
+https://cursor.com/cn/blog/graphite
+上车，带你看遍全球 AI 顶会精华
+可独家畅览：
+专家演讲PPT
+大会报告全文
+热门论文解读
+学术新星访谈
+扫描上方二维码
+或点击
+「
+阅读原文
+」
+关注专区。
+雷峰网原创文章，未经授权禁止转载。详情见
+转载须知
+。

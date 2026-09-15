@@ -1,0 +1,60 @@
+{
+  "protocol_version": "post-review-candidate-preparation-1.0",
+  "generated_at": "2026-08-29T15:42:39.580757+00:00",
+  "status": "pending_model_review",
+  "post_start": "2025-07-01",
+  "input_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\editorial_acquisition\\qbitai_post_candidates.jsonl",
+      "sha256": "f796508bd01d4eb1784dd4cbb3bc3e24805418508a94e8e79b9820e52ada3424"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\editorial_acquisition\\leiphone_post_candidates.jsonl",
+      "sha256": "60b1870ecccbd885299b2c1a9b6c4e2a0aef174afaf1c955f0a69cabcda77cb4"
+    }
+  ],
+  "exclusion_indexes": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1\\documents.jsonl",
+      "sha256": "a16f73542edab7f38fb3b24b2dc19fde798b5d14dcc035adfd560bc028c6dc6d"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\analysis_pool.jsonl",
+      "sha256": "58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2"
+    }
+  ],
+  "tracked_pilot_exclusion_documents": 30,
+  "input_documents": 219,
+  "prepared_documents": 171,
+  "prepared_by_source": {
+    "leiphone": 118,
+    "qbitai": 53
+  },
+  "exclusion_counts": {
+    "deterministic_translation_evidence": 46,
+    "duplicate_near_duplicate": 2
+  },
+  "candidate_files": [
+    {
+      "source": "leiphone",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\leiphone_candidates.jsonl",
+      "sha256": "b7ec27015ceeecffa26317046f8e4361bc5fa6ccc3d28ab2eb9150bdbca11bdc",
+      "documents": 118
+    },
+    {
+      "source": "qbitai",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\qbitai_candidates.jsonl",
+      "sha256": "1bcb5c5a97d756f49a156ff9cc0b67e275fb2b9d973b987aa610f354f56f6a12",
+      "documents": 53
+    }
+  ],
+  "exclusions_file": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\exclusions.jsonl",
+    "sha256": "5198d5dc674125d82f54a1f5b9fa1340c145c07134949b33b7a490e84c4b614b"
+  },
+  "empty_human_decisions": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\no_human_decisions.csv",
+    "sha256": "f65c5bcd4a2ee4ee758a433fcd052f7a706b03ea31af166ef71268cca7c72da8"
+  },
+  "restriction": "Prepared records remain acquisition staging. Model review is a measurement and only high-confidence original routing may continue."
+}

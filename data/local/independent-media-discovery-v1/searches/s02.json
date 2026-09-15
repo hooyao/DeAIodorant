@@ -1,0 +1,21 @@
+{
+  "id": "s02",
+  "q": "site:post.smzdm.com/p/ 机器人 DIY 选购 2022",
+  "started_at": "2026-09-14T14:47:22.037Z",
+  "completed_at": "2026-09-14T14:47:24.202Z",
+  "request": {
+    "scope": "webpage",
+    "size": 6,
+    "includeRawContent": false,
+    "includeSummary": false
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "tool call error: tool call failed for `metaso/metaso_web_search`\n\nCaused by:\n    Mcp error: -32603: Tool execution failed: 未找到相关数据"
+      }
+    ],
+    "isError": true
+  }
+}

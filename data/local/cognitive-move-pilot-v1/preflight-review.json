@@ -1,0 +1,44 @@
+{
+  "version": "cognitive-move-preflight-review-1.0",
+  "reviewed_at_utc": "2026-09-14T14:56:32.178274+00:00",
+  "reviewer": "/root",
+  "model_family": "Astra per session context; exact backend version unavailable",
+  "full_sources_read": true,
+  "historical_labels_seen": true,
+  "candidate_sha256": "ca5c0cbdbb81c7a895d2af92b0bf0b6b661f243f16fa23a95933f7763bed3543",
+  "replay_checks": "12 unique replacements passed; 18 full-context packets built in memory",
+  "cases": [
+    {
+      "case_id": "M01",
+      "decision": "accepted_with_stated_limits",
+      "note": "三路变一路可检测；正文附加内容不自动构成承诺违背。等义是极小的并列形式变化。"
+    },
+    {
+      "case_id": "M02",
+      "decision": "accepted_with_stated_limits",
+      "note": "明确排除改为未知可检测；同时从主要平台转向附加设备，不能视作单独纯否定因果效应。保留RK3566确定性。"
+    },
+    {
+      "case_id": "M03",
+      "decision": "accepted_with_stated_limits",
+      "note": "核心集合增加玩具可检测；原文不等于物理互斥，新文不等于两项等权。"
+    },
+    {
+      "case_id": "M04",
+      "decision": "accepted_with_stated_limits",
+      "note": "引述来源改为作者可检测；来源背景撤去是关联变化，估算不得升格为实测。"
+    },
+    {
+      "case_id": "M05",
+      "decision": "accepted_with_stated_limits",
+      "note": "仅数量覆盖探针。输出若省略次数，判定为未覆盖；不能推断失败或成功。"
+    },
+    {
+      "case_id": "M06",
+      "decision": "accepted_with_stated_limits",
+      "note": "因果可能性增加，同时首建事实仍断言。句界和显式回指是构造限制；因果证据没有增加。"
+    }
+  ],
+  "human_gold": false,
+  "independent_semantic_certification": false
+}

@@ -1,0 +1,94 @@
+ICML 全称是 International Conference on Machine Learning，由国际
+机器学习
+学会（IMLS）举办，是计算机
+人工智能
+领域的顶级会议。今年的 ICML 大会已是第 40 届，于 2023 年 7 月 23 日至 29 日在美国夏威夷会议中心举行。
+今年，ICML 共收到 6538 份投稿，其中 1827 份被接收，接收率约为 27.9%。相较于 2022 年，本届的投稿、接收论文数量以及接收率都有所增加（投稿 5630 篇、接收短论文 1117 篇、长论文 118 篇、接收率 21.9%）。
+ICML 官方表示，每一份投稿都由领域主席和高级领域主席进行评审，以确保每一份投稿都得到适当的评估。
+今日，ICML 官方放出了杰出论文奖获奖论文。
+六篇杰出论文奖
+本届会议共评出了 6 篇杰出论文，研究覆盖了无
+学习率
+、为 LLM 加水印、未见过域泛化、不完全信息
+零和博弈
+的近优策略、MCMC 和频率顺序学习的贝叶斯设计原则等课题。
+论文 1：Learning-Rate-Free Learning by D-Adaptation
+机构：Meta AI、Inria Sierra
+作者：Aaron Defazio、Konstantin Mishchenko（现为三星
+人工智能
+中心研究科学家）
+论文地址：https://openreview.net/forum?id=GXZ6cT5cvY
+该研究旨在为非光滑随机
+凸优化
+获取无
+学习率
+的最优界限，所提方法克服了优化此类问题时传统
+学习率
+选择的限制，为优化领域做出了有价值且实际的贡献。
+该研究还提出了新方法的 SGD 和 Adam 变体，将用于大规模 CV 和 NLP 问题。
+论文 2：A Watermark for Large Language Models
+机构：马里兰大学
+作者：John Kirchenbauer、Jonas Geiping、Yuxin Wen、Jonathan Katz、Ian Miers、Tom Goldstein
+论文地址：https://openreview.net/forum?id=aX8ig9X2a7
+论文简介：该论文提出了一种对大型
+语言模型
+的输出添加水印的方法 —— 将信号嵌入到生成的文本中，这些信号对人类来说是不可见的，但可以通过算法检测到。无需重新训练
+语言模型
+即可生成水印，无需访问 API 或
+参数
+即可检测水印。
+为了检测水印，该论文还提出了一种具有可解释 p 值的统计测试方法，以及用于分析水印敏感度的
+信息论
+框架。该研究所提方法简单新颖，并提供了彻底的理论分析和扎实的实验。鉴于检测和大型
+语言模型
+（LLM）生成的文本正面临严峻的挑战，该研究可能会对
+机器学习
+社区产生重大影响。
+论文 3：Generalization on the Unseen, Logic Reasoning and Degree Curriculum
+机构：EPFL、苹果
+作者：Emmanuel Abbe、Samy Bengio、Aryo Lotfi、Kevin Rizk
+论文地址：https://openreview.net/forum?id=3dqwXb1te4
+论文简介：该论文在布尔函数的学习方面取得了重要进展，尤其是针对未见过域的泛化（Generalization on the Unseen, GOTU），这是一个具有挑战性的分布外泛化问题。该论文深入探究了这一课题，提出了一种结构良好的方法，并有充足的理论分析和大量实验支撑。此外该论文还概述了
+深度神经网络
+领域的一个关键研究方向。
+具体而言，研究者探究了具有 holdout 的函数学习问题，其中部分分布支持在训练中几乎或从来没有见过，并使用布尔
+目标函数
+来捕捉各种推理任务（如
+算术
+、决策树和
+逻辑
+电路）的离散和组合属性。
+最终，研究者对长度泛化问题给出了自己的解释，并提出了一种名为「Degree-Curriculum」的课程式学习算法，该算法通过增加支持更高效地学习单项式。算法如下所示：
+论文 4：Adapting to game trees in zero-sum imperfect information games
+机构：CREST、ENS Lyon、Omron Sinic X、Deepmind 等
+作者：Côme Fiegel、Pierre MENARD、Tadashi Kozuno、Remi Munos、Vianney Perchet、Michal Valko
+论文地址：https://openreview.net/forum?id=O1j4uFuSVW
+论文简介：该论文介绍了不完全信息
+零和博弈
+的近优策略。研究者建立了一个新颖的下界，并提出了两种算法 — 平衡 FTRL 和自适应 FTRL。这些贡献极大地推动了不完全信息博弈优化领域的发展。论文的多项实验证实了这些说法，为研究结果提供了充分的支持。
+论文 5：Self-Repellent Random Walks on General Graphs - Achieving Minimal Sampling Variance via Nonlinear Markov Chains
+机构：IQVIA Inc、北卡罗来纳州立大学
+作者：Vishwaraj Doshi、Jie Hu、Do Young Eun
+论文地址：https://openreview.net/forum?id=450iImFM4U
+论文简介：该论文解决了一组具有挑战性的开放问题，提出了具有自排斥随机游走的
+马尔可夫链
+蒙特卡洛（MCMC）。给定任何对应目标
+概率分布
+的
+马尔可夫链
+，这种自排斥随机游走（SRRW）不太可能过渡到过去高访问量的节点，而更有可能过渡到很少访问的节点。
+该方法超越了传统的无回溯方法，并为 MCMC 采样的新研究方向铺平了道路。研究者为 MCMC 研究做出了原创性和重大的贡献，更值得一提的是过程可以被严格地分析和证明。结果也非常全面，令人信服。
+这篇论文的作者之一 Jie Hu，现为北卡罗来纳州立大学博士生，他在武汉理工大学获得了本科学位，在美国西北大学获得了硕士学位。
+论文 6：Bayesian Design Principles for Frequentist Sequential Learning
+机构：哥伦比亚大学
+作者：Yunbei Xu、Assaf Zeevi
+论文地址：https://openreview.net/forum?id=tRhQsHnoFw
+论文简介：该论文探讨了设计 bandit 和其他顺序决策策略这一非常普遍的问题。论文提出使用一种称为算法信息比的新量对任何策略的遗憾进行约束的方法，并推导出优化该约束的方法。该约束比早期类似的信息理论量更为严格，而且这些方法在随机性和对抗性的 bandit 设置中都表现出色，实现了全局最优。
+特别有趣的是，除了众所周知的 Thompson Sampling 和针对 bandit 的 UCB 之外，这篇论文可能为全新的 exploration-exploitation 策略打开了大门。事实上，这一原理如果扩展到
+强化学习
+领域是非常有前途的。该论文得到了专家评审的一致大力支持。
+论文一作 Yunbei Xu 为哥伦比亚大学商学院博士，现为 MIT 博士后研究员，并将于 2024 年秋季开始任职 NUS 助理教授。他本科毕业于
+北京大学
+数学系。
+参考链接：https://icml.cc/Conferences/2023/Awards
+*封面图来源：https://twitter.com/icmlconf/status/1683917404689305600?s=20

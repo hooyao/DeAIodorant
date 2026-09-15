@@ -1,0 +1,7 @@
+{
+  "restored_at_utc": "2026-09-14T15:12:17.884661+00:00",
+  "original_agents_restored_exactly": true,
+  "all_six_clean_sessions_launched": true,
+  "frozen_packets_or_criteria_changed": false,
+  "mechanism": "Neutral repository guidance was installed only during task initialization; full original guidance now restored. Each task was restricted to assigned packets and instructions."
+}

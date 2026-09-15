@@ -1,0 +1,62 @@
+{
+  "protocol_version": "translation-review-triage-1.1",
+  "generated_at": "2026-08-29T16:48:51.508945+00:00",
+  "model": "qwen3.8-27b",
+  "model_digest": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "backend": "openai",
+  "endpoint": "http://127.0.0.1:8000/v1",
+  "concurrency": 16,
+  "prompt_versions": {
+    "primary": "translation-review-triage-primary-v2",
+    "verifier": "translation-review-triage-verifier-v2",
+    "safeguard": "translation-review-triage-foreign-source-safeguard-v2"
+  },
+  "executed_profiles": [
+    "safeguard"
+  ],
+  "temperature": 0,
+  "seed": 42,
+  "decision_policy": "Human decisions take precedence. Remaining records are operationally routed by a high-confidence foreign-source safeguard; weaker results remain uncertain. Primary and verifier outputs are retained as supporting measurements. Model-assisted results are not human gold.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "restriction": "Model-assisted results are measurements, not human gold, and must not be passed to benchmark finalization as human review decisions.",
+  "candidate_files": [
+    {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_review_candidates/huawei_cloud_community_candidates.jsonl",
+      "sha256": "484e04f9fb62c2cb96c2af9680509c150383162af0cc951685f60207976aa640"
+    }
+  ],
+  "human_decisions_file": {
+    "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_review_candidates/no_human_decisions.csv",
+    "sha256": "f65c5bcd4a2ee4ee758a433fcd052f7a706b03ea31af166ef71268cca7c72da8"
+  },
+  "results": "/home/hooyao/deaiodorant-post-v2-data/huawei_triage_qwen38/triage_results.jsonl",
+  "results_sha256": "ee143d7edeb6e468e3bd5c2b865e98976214be9bec0c1b47b36eda1ac4a7a636",
+  "documents": 100,
+  "status_counts": {
+    "model_assisted_original": 97,
+    "model_assisted_exclusion": 2,
+    "uncertain": 1
+  },
+  "artifacts": {
+    "model_assisted_original": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_triage_qwen38/model_assisted_original.jsonl",
+      "sha256": "b7248b1ff4963c19c5f556f546ce3fb2672bce989f5c0105dae6601285381cc2"
+    },
+    "model_assisted_exclusion": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_triage_qwen38/model_assisted_exclusion.jsonl",
+      "sha256": "d697adb361016c856a9b76a130d78064d9684ff510d57500479fc7f89369121d"
+    },
+    "uncertain": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_triage_qwen38/uncertain.jsonl",
+      "sha256": "9f98cc6542cf48703026d68295848184152a3bb026ac4538b025cf4c90022a2a"
+    },
+    "human_reviewed_original": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_triage_qwen38/human_reviewed_original.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "human_excluded": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_triage_qwen38/human_excluded.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

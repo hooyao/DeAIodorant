@@ -2,6 +2,8 @@
 
 ## 当前优先事项，2026-09-14
 
+交接后的[篇章动作测量工程实验](routes/compact-refiner/reports/cognitive-move-pilot-v1.md)已完成36条记录和191处引文检查。下一步用[记录契约1.1草案](routes/compact-refiner/cognitive-move-record-contract-v1.1.md)收紧归属覆盖、否定对象与条件对照、读者证据指向，并按文章隔离新任务。[独立文章发现](routes/compact-refiner/reports/independent-media-discovery-v1.md)保留新候选及反例；仍未进入训练。
+
 维护者提供了一个强烈的 SMZDM 样例，以及强度较低的百度参照。当前[锚点研究](routes/compact-refiner/reports/reader-anchor-feature-discovery-v1.md)定位了一小组候选特征。这确立了读者报告的正例，尚不能证明特征可泛化或已经可以训练。下一步发现工作需要独立样例及可比体裁的对照。
 
 [校准后的目标](target-feature-discovery.md)保留采集工作和时间分组，优先用反差充分的真实媒体样本发现可重复的目标特征。旧的弱信号实验继续暂停。[小模型改写路线](routes/compact-refiner/README.md)记录下游编辑、SFT、DPO 和 RL 选项；训练暂缓。下方历史里程碑不能覆盖这一优先级，也不能据此恢复失败的探针。

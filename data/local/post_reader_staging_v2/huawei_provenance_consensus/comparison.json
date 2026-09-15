@@ -1,0 +1,41 @@
+{
+  "schema_version": "deaiodorant-provenance-model-comparison-1.0",
+  "decision_policy": "Only documents that both current models classify as high-confidence original continue. Every disagreement and uncertainty fails closed.",
+  "left_model": "qwen3.8-27b",
+  "right_model": "deepseek/deepseek-v4-flash-0731",
+  "documents": 100,
+  "exact_status_agreement": 82,
+  "exact_status_agreement_rate": 0.82,
+  "consensus_original": 82,
+  "disagreements": 18,
+  "status_matrix": {
+    "model_assisted_original|model_assisted_original": 82,
+    "model_assisted_original|model_assisted_exclusion": 6,
+    "model_assisted_original|uncertain": 9,
+    "model_assisted_exclusion|uncertain": 2,
+    "uncertain|model_assisted_original": 1
+  },
+  "source_status_matrices": {
+    "huawei_cloud_community": {
+      "model_assisted_original|model_assisted_original": 82,
+      "model_assisted_original|model_assisted_exclusion": 6,
+      "model_assisted_original|uncertain": 9,
+      "model_assisted_exclusion|uncertain": 2,
+      "uncertain|model_assisted_original": 1
+    }
+  },
+  "identity": {
+    "left_results_sha256": "ee143d7edeb6e468e3bd5c2b865e98976214be9bec0c1b47b36eda1ac4a7a636",
+    "left_manifest_sha256": "46d25e4a0c4961b4c708340627b5dea714f652771923a650dfb7175f09caa0fa",
+    "right_results_sha256": "c94fd73ff2f2ca4e8dcba23201d12b04e3e6db7717d4a0356a43a06810a4bfb1",
+    "right_manifest_sha256": "59d9a74b5d5f69f48cd6267fa17a67238aff19d74b760962978fd041ec2e53b6",
+    "ranking_snapshot_sha256": "abbdc3216fe27f82cc5354843f7f198db743d63b45d7e7702cee06bcd0090c5a"
+  },
+  "artifacts": {
+    "consensus_provenance": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_provenance_consensus\\consensus_provenance.jsonl",
+    "consensus_provenance_sha256": "5e46535b27e90e7d41c900e464235d8b9ae1e89466ee7d4a5170cb7c5346d190",
+    "disagreements": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_provenance_consensus\\disagreements.jsonl",
+    "disagreements_sha256": "ec45c51ddab56e3cf39af06cce4d26881a3f97f324e05aeae2fa57cf61210ae4"
+  },
+  "restriction": "Both inputs are model-assisted measurements, not human gold. Agreement supports conservative routing only and does not establish accuracy."
+}

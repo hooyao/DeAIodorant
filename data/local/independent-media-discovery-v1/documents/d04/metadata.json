@@ -1,0 +1,39 @@
+{
+  "id": "d04",
+  "url": "https://zhongce.sina.com.cn/article/view/129894",
+  "search_id": "s04",
+  "result_position": 1,
+  "reason": "早期相近消费媒体、扫地机器人购买指南；用于同体裁对照，仍有来源差异。",
+  "source_html_sha256": "815eb224e9e9a304c720aa18f80e8fe2a045923c53e9e420d24e83bc37bb8586",
+  "collected_at_utc": "2026-09-14T14:48:59.382630+00:00",
+  "extractor_version": "independent-media-extract-1.0",
+  "corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+  "generation_model": "unknown",
+  "translation_status": "unresolved",
+  "reader_label": null,
+  "upstream_sources_fetched": false,
+  "media_inspected": false,
+  "rights_status": "再分发／训练许可未核实，仅供本次授权研究核验",
+  "title": "3600字长文，22年哪款新品扫拖机器人值得买？",
+  "published_at": "2022-05-03 13:00",
+  "publication_evidence": {
+    "selector": ".content-head .time",
+    "raw": "<span class=\"time\">2022-05-03 13:00</span>",
+    "timezone": "页面未注明；按本地日历日期分组"
+  },
+  "source_type": "chinese_original_publisher_claim",
+  "source_type_evidence": "网站栏目为原创，页面署名 Mr_Q蝈蝈颀；这是发布者标记，未核实生产过程。",
+  "author": "Mr_Q蝈蝈颀",
+  "publisher_rights_statement": "本文著作权归作者本人和新浪众测共同所有，未经许可不得转载。",
+  "full_text_status": "complete_html_text_images_not_inspected",
+  "limitations": [
+    "正文 HTML 非空白文字全部覆盖；图片／动态图／内嵌媒体未读取，图中表格数据或效果对比不能被当作已核实支持。",
+    "商品卡及媒体链接保留在原始 HTML／DOM，不逐个请求。来源声明和产品技术数值未外部核验。"
+  ],
+  "cohort": "pre_2023",
+  "body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2",
+  "characters": 3699,
+  "text_blocks": 45,
+  "literal_ershi": 0,
+  "literal_ershi_interpretation": "只作描述；不决定候选强度或质量。"
+}

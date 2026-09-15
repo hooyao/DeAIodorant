@@ -1,0 +1,105 @@
+{
+  "protocol_version": "post-huawei-recommended-acquisition-staging-1.0",
+  "generated_at": "2026-08-29T16:30:19.253105+00:00",
+  "status": "acquisition_staging_not_admitted",
+  "source": "huawei_cloud_community",
+  "post_start": "2025-07-01",
+  "configuration": {
+    "pages": 30,
+    "target": 100,
+    "delay_seconds": 0.5,
+    "http_timeout_seconds": 45.0,
+    "topic_filter": "(?:数据库|GaussDB|openGauss|MySQL|PostgreSQL|Redis|SQL|数据仓库|数据湖|大数据|云原生|Kubernetes|Docker|容器|DevOps|软件测试|单元测试|测试|代码|编程|开发|架构|微服务|运维|存储|网络|云计算|API|Linux|Java|Python)",
+    "translation_model": null
+  },
+  "discovered_relevant": 280,
+  "documents": 100,
+  "failures": [
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484288",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483634",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483795",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484224",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/476466",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/476858",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483493",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/475057",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/475969",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/472708",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/476123",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484271",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/481260",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484256",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/474814",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484302",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484250",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484240",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484201",
+      "error": "shape_or_quality_gate"
+    }
+  ],
+  "candidates_file": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_acquisition\\huawei_cloud_community_post_candidates.jsonl",
+  "candidates_sha256": "5876c5d323e3ade108b5da526a148e94deac1f1556f8b683b9ed9777cb965e5e",
+  "recommendation_snapshots": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_acquisition\\recommendation_pages.jsonl",
+  "recommendation_snapshots_sha256": "592445921579950ace4e5ef6b51947a281c0ed7956db588b786569dd52f81386",
+  "limitations": [
+    "This output is acquisition staging and cannot be used for reader tasks.",
+    "Recommendation membership and view counts are collection-time snapshots, not fixed-age visibility measures.",
+    "Community articles may be promotional, duplicated, translated, or low value; fail-closed review remains required.",
+    "The topic filter is an acquisition aid and does not assign the final topic stratum."
+  ]
+}

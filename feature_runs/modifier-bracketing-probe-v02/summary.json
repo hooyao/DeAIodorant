@@ -1,0 +1,422 @@
+{
+  "alignment_failure_count": 53,
+  "artifact_type": "deterministic-word-level-modifier-bracketing-probe",
+  "association_corpus": {
+    "covered_document_count": 133,
+    "handoffs": [
+      {
+        "documents": 67,
+        "documents_sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80",
+        "manifest_sha256": "ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01",
+        "role": "development",
+        "root": "/home/hooyao/deaiodorant-nominal-chain-v1/data/post_reader_handoff_v2"
+      },
+      {
+        "documents": 93,
+        "documents_sha256": "dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d",
+        "manifest_sha256": "5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac",
+        "role": "discovery_reserve",
+        "root": "/home/hooyao/deaiodorant-nominal-chain-v1/data/post_reader_handoff_v3"
+      }
+    ],
+    "ordered_pair_types": 160747,
+    "passage_count": 1393,
+    "sentence_count": 5670,
+    "vocabulary_size": 9100
+  },
+  "candidate_abstention_reasons": {
+    "noncontent_token_inside_target": 53
+  },
+  "candidate_count": 87,
+  "device": "cuda",
+  "fatal_alignment_failure_count": 0,
+  "high_candidate_count": 0,
+  "high_document_count": 0,
+  "high_gate_component_counts": {
+    "at_least_two_weak_attachments": {
+      "documents": 17,
+      "instances": 27,
+      "sources": [
+        "huawei_cloud_community",
+        "infoq",
+        "leiphone",
+        "meituan_tech"
+      ]
+    },
+    "entropy_and_margin": {
+      "documents": 5,
+      "instances": 5,
+      "sources": [
+        "huawei_cloud_community",
+        "infoq",
+        "leiphone"
+      ]
+    },
+    "entropy_at_or_above_p80": {
+      "documents": 6,
+      "instances": 7,
+      "sources": [
+        "huawei_cloud_community",
+        "infoq",
+        "leiphone"
+      ]
+    },
+    "entropy_margin_and_familiarity": {
+      "documents": 0,
+      "instances": 0,
+      "sources": []
+    },
+    "familiar_fraction_at_least_0.80": {
+      "documents": 13,
+      "instances": 17,
+      "sources": [
+        "infoq",
+        "leiphone",
+        "meituan_tech",
+        "qbitai"
+      ]
+    },
+    "margin_at_or_below_p20": {
+      "documents": 16,
+      "instances": 26,
+      "sources": [
+        "huawei_cloud_community",
+        "infoq",
+        "leiphone",
+        "meituan_tech"
+      ]
+    }
+  },
+  "input": {
+    "candidates_path": "/home/hooyao/deaiodorant-nominal-chain-v1/output-v2/candidates.jsonl",
+    "candidates_sha256": "abfb5a5e9181c5b0e87d5636f649766c1c82437326ac5a0740229eec89e674c2"
+  },
+  "limits": [
+    "The association corpus and candidate percentiles are development-exposed, not external validation.",
+    "English noun-compound methods motivate the measurement but do not validate transfer to Chinese.",
+    "Anchor variables and corpus familiarity remain rival explanations rather than manual exclusions.",
+    "No body from the 30-document validation reserve is requested by this run.",
+    "Passing this computational gate would not by itself authorize a reader project."
+  ],
+  "multi_source_gate_passed": false,
+  "parser": {
+    "language": "zh-hans",
+    "model_file_count": 8,
+    "model_fingerprint": "5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9",
+    "name": "stanza-universal-dependencies",
+    "package": "gsdsimp",
+    "processors": [
+      "t",
+      "o",
+      "k",
+      "e",
+      "n",
+      "i",
+      "z",
+      "e",
+      ",",
+      "p",
+      "o",
+      "s",
+      ",",
+      "l",
+      "e",
+      "m",
+      "m",
+      "a",
+      ",",
+      "d",
+      "e",
+      "p",
+      "p",
+      "a",
+      "r",
+      "s",
+      "e"
+    ]
+  },
+  "protocol_version": "modifier-bracketing-probe-0.2",
+  "reader_example": {
+    "abstention_reason": null,
+    "anchor_profile": {
+      "ascii": true,
+      "numeric": false,
+      "proper_name": false,
+      "quoted_title": false
+    },
+    "candidate": {
+      "boundary_count": 0,
+      "head": "需求",
+      "head_token_id": 12,
+      "left_boundary_token_id": 6,
+      "max_nominal_chain_depth": 2,
+      "nominal_relation_count": 6,
+      "numeric_anchors": [],
+      "phrase": "AI原生时代全新算力服务需求",
+      "prehead_cjk_chars": 10,
+      "prehead_lexical_tokens": 6,
+      "prehead_text": "AI原生时代全新算力服务",
+      "prehead_verb_count": 0,
+      "prehead_visible_chars": 12,
+      "proper_anchors": [],
+      "punctuation_count": 0,
+      "sentence": "这个AI算力池面向AI原生时代全新算力服务需求。"
+    },
+    "entropy_percentile": 0.7647058823529411,
+    "margin_percentile": 0.38235294117647056,
+    "measurement": {
+      "abstention_reason": null,
+      "best_attachments": [
+        {
+          "adjacent_pair_count": 0,
+          "conditional_probability": 0.00010090817356205853,
+          "coordinate_count": 0,
+          "document_frequency": 0,
+          "head": "时代",
+          "head_index": 2,
+          "log_conditional_probability": -9.201299627324033,
+          "modifier": "原生",
+          "modifier_index": 1,
+          "ordered_pair_count": 0,
+          "outgoing_pair_count": 81,
+          "posterior": 0.44154460512942306,
+          "source_frequency": 0,
+          "weak_cross_document_support": true
+        },
+        {
+          "adjacent_pair_count": 9,
+          "conditional_probability": 0.004456041750301083,
+          "coordinate_count": 0,
+          "document_frequency": 4,
+          "head": "时代",
+          "head_index": 2,
+          "log_conditional_probability": -5.413494406943892,
+          "modifier": "AI",
+          "modifier_index": 0,
+          "ordered_pair_count": 11,
+          "outgoing_pair_count": 1581,
+          "posterior": 0.20817188878512907,
+          "source_frequency": 4,
+          "weak_cross_document_support": false
+        },
+        {
+          "adjacent_pair_count": 1,
+          "conditional_probability": 0.0011178861788617887,
+          "coordinate_count": 0,
+          "document_frequency": 1,
+          "head": "全新",
+          "head_index": 3,
+          "log_conditional_probability": -6.7963157172479285,
+          "modifier": "时代",
+          "modifier_index": 2,
+          "ordered_pair_count": 1,
+          "outgoing_pair_count": 74,
+          "posterior": 0.9044411653931692,
+          "source_frequency": 1,
+          "weak_cross_document_support": true
+        },
+        {
+          "adjacent_pair_count": 0,
+          "conditional_probability": 0.00010493179433368311,
+          "coordinate_count": 0,
+          "document_frequency": 0,
+          "head": "算力",
+          "head_index": 4,
+          "log_conditional_probability": -9.162199996648248,
+          "modifier": "全新",
+          "modifier_index": 3,
+          "ordered_pair_count": 0,
+          "outgoing_pair_count": 43,
+          "posterior": 0.5676132347554228,
+          "source_frequency": 0,
+          "weak_cross_document_support": true
+        },
+        {
+          "adjacent_pair_count": 0,
+          "conditional_probability": 0.0009228187919463088,
+          "coordinate_count": 0,
+          "document_frequency": 1,
+          "head": "需求",
+          "head_index": 6,
+          "log_conditional_probability": -6.98807766782097,
+          "modifier": "服务",
+          "modifier_index": 5,
+          "ordered_pair_count": 1,
+          "outgoing_pair_count": 282,
+          "posterior": 1.0000000000000016,
+          "source_frequency": 1,
+          "weak_cross_document_support": true
+        },
+        {
+          "adjacent_pair_count": 3,
+          "conditional_probability": 0.00368705035971223,
+          "coordinate_count": 0,
+          "document_frequency": 4,
+          "head": "需求",
+          "head_index": 6,
+          "log_conditional_probability": -5.602928501100266,
+          "modifier": "算力",
+          "modifier_index": 4,
+          "ordered_pair_count": 4,
+          "outgoing_pair_count": 202,
+          "posterior": 0.678069682132668,
+          "source_frequency": 3,
+          "weak_cross_document_support": false
+        }
+      ],
+      "best_bracketing": "((((AI (原生 时代)) 全新) 算力) (服务 需求))",
+      "best_bracketing_probability": 0.0645705102077672,
+      "best_score": -43.16431591708533,
+      "best_second_margin_per_attachment": 0.0,
+      "bracketing_count": 132,
+      "exact_sequence_support": {
+        "count": 0,
+        "document_frequency": 0,
+        "source_frequency": 0
+      },
+      "familiar_token_fraction": 0.8571428571428571,
+      "normalized_tree_entropy": 0.8216251749575572,
+      "second_score": -43.16431591708534,
+      "target_token_count": 7,
+      "token_support": [
+        {
+          "count": 447,
+          "document_frequency": 67,
+          "lemma": "ai",
+          "source_frequency": 5,
+          "token": "AI"
+        },
+        {
+          "count": 25,
+          "document_frequency": 17,
+          "lemma": "原生",
+          "source_frequency": 4,
+          "token": "原生"
+        },
+        {
+          "count": 22,
+          "document_frequency": 12,
+          "lemma": "时代",
+          "source_frequency": 4,
+          "token": "时代"
+        },
+        {
+          "count": 12,
+          "document_frequency": 10,
+          "lemma": "全新",
+          "source_frequency": 1,
+          "token": "全新"
+        },
+        {
+          "count": 65,
+          "document_frequency": 24,
+          "lemma": "算力",
+          "source_frequency": 5,
+          "token": "算力"
+        },
+        {
+          "count": 95,
+          "document_frequency": 36,
+          "lemma": "服务",
+          "source_frequency": 5,
+          "token": "服务"
+        },
+        {
+          "count": 87,
+          "document_frequency": 36,
+          "lemma": "需求",
+          "source_frequency": 5,
+          "token": "需求"
+        }
+      ],
+      "tree_entropy": 4.011832983928123,
+      "weak_best_attachment_count": 4
+    },
+    "target_tokens": [
+      {
+        "form": "AI",
+        "lemma": "ai",
+        "token_id": 6,
+        "upos": "X"
+      },
+      {
+        "form": "原生",
+        "lemma": "原生",
+        "token_id": 7,
+        "upos": "NOUN"
+      },
+      {
+        "form": "时代",
+        "lemma": "时代",
+        "token_id": 8,
+        "upos": "NOUN"
+      },
+      {
+        "form": "全新",
+        "lemma": "全新",
+        "token_id": 9,
+        "upos": "ADJ"
+      },
+      {
+        "form": "算力",
+        "lemma": "算力",
+        "token_id": 10,
+        "upos": "NOUN"
+      },
+      {
+        "form": "服务",
+        "lemma": "服务",
+        "token_id": 11,
+        "upos": "NOUN"
+      },
+      {
+        "form": "需求",
+        "lemma": "需求",
+        "token_id": 12,
+        "upos": "NOUN"
+      }
+    ],
+    "text": "这个 AI 算力池面向 AI 原生时代全新算力服务需求。"
+  },
+  "reader_example_gate_passed": true,
+  "schema_version": "deaiodorant-modifier-bracketing-probe-0.2",
+  "scorable_candidate_count": 34,
+  "seed": 2026083102,
+  "selected_high_count": 0,
+  "selected_high_source_counts": {},
+  "selected_high_sources": [],
+  "selected_high_unanchored_count": 0,
+  "stage0_passed": false,
+  "thresholds": {
+    "association_window": 4,
+    "content_pos": [
+      "ADJ",
+      "NOUN",
+      "NUM",
+      "PROPN",
+      "X"
+    ],
+    "empirical_nearest_rank_cutoffs": {
+      "example_entropy_median": 0.6358045884601076,
+      "example_margin_median": 0.0,
+      "high_entropy_p80": 0.8497950034821481,
+      "high_margin_p20": 0.0
+    },
+    "example_entropy_percentile": 0.5,
+    "example_margin_percentile": 0.5,
+    "familiar_documents": 5,
+    "familiar_sources": 2,
+    "high_entropy_percentile": 0.8,
+    "high_familiar_fraction": 0.8,
+    "high_margin_percentile": 0.2,
+    "high_minimum_weak_attachments": 2,
+    "maximum_selected_per_source": 3,
+    "maximum_target_tokens": 10,
+    "minimum_target_tokens": 4,
+    "numerical_margin_tolerance": 1e-12,
+    "required_high_documents": 8,
+    "required_high_sources": 3,
+    "required_unanchored": 4,
+    "smoothing": 0.1
+  }
+}

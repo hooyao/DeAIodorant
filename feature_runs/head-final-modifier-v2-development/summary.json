@@ -1,0 +1,124 @@
+{
+  "artifact_type": "deterministic-head-final-modifier-development-probe",
+  "schema_version": "deaiodorant-head-final-modifier-probe-0.1",
+  "thresholds": {
+    "long_delay_cjk_chars": 8,
+    "long_delay_visible_chars": 12,
+    "low_anchor_generic_modifier_count": 2
+  },
+  "lexicons": {
+    "cue_terms": [
+      "服务于",
+      "适用于",
+      "面向",
+      "针对",
+      "围绕",
+      "满足",
+      "适应",
+      "支撑",
+      "支持",
+      "聚焦"
+    ],
+    "head_nouns": [
+      "需求",
+      "能力",
+      "体系",
+      "架构",
+      "机制",
+      "方案",
+      "目标",
+      "问题",
+      "场景",
+      "路径",
+      "逻辑",
+      "模式",
+      "流程",
+      "服务",
+      "平台"
+    ],
+    "generic_modifiers": [
+      "人工智能时代",
+      "大模型时代",
+      "智能时代",
+      "数字化时代",
+      "AI 原生时代",
+      "AI原生时代",
+      "Agent 时代",
+      "Agent时代",
+      "全新",
+      "新一代",
+      "核心",
+      "关键",
+      "深度",
+      "全面",
+      "系统性",
+      "一体化",
+      "智能化",
+      "高效",
+      "原生",
+      "时代"
+    ]
+  },
+  "corpus": {
+    "document_count": 67,
+    "recommended_role_filter": "development",
+    "instance_count": 45,
+    "long_head_delay_count": 23,
+    "long_head_delay_document_count": 14,
+    "low_anchor_abstract_stack_count": 0,
+    "low_anchor_abstract_stack_document_count": 0,
+    "cue_counts": {
+      "围绕": 4,
+      "支持": 3,
+      "支撑": 2,
+      "满足": 1,
+      "聚焦": 1,
+      "适应": 2,
+      "适用于": 2,
+      "针对": 1,
+      "面向": 7
+    },
+    "head_counts": {
+      "体系": 2,
+      "场景": 5,
+      "方案": 3,
+      "服务": 1,
+      "机制": 3,
+      "模式": 1,
+      "流程": 1,
+      "能力": 4,
+      "路径": 1,
+      "需求": 2
+    }
+  },
+  "integration_variants": {
+    "instance_count": 3,
+    "long_head_delay_count": 2,
+    "low_anchor_abstract_stack_count": 2
+  },
+  "discovery_pool": {
+    "document_count": 0,
+    "period_counts": {},
+    "instance_count": 0,
+    "long_head_delay_count": 0,
+    "long_head_delay_document_count": 0,
+    "low_anchor_abstract_stack_count": 0,
+    "low_anchor_abstract_stack_document_count": 0,
+    "strict_period_counts": {},
+    "strict_source_counts": {}
+  },
+  "identity": {
+    "handoff_manifest_sha256": "ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01",
+    "handoff_documents_sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80",
+    "integration_answer_key_sha256": "73edf62b5b5be63f2e3efa67bf974e62a6c80f02293b5bfa6a83439c7975eba8",
+    "integration_results_sha256": "3b9f956d32c21b3b734176dc684d150bccf2f3015850f5654dd73d78bfbf6133",
+    "discovery_pool_sha256": null
+  },
+  "limits": [
+    "The probe is a high-precision lexical candidate generator, not a parser or semantic judge.",
+    "A low-anchor abstract stack candidate is not automatically meaningless or undesirable.",
+    "Concrete-anchor detection is intentionally narrow and misses many domain-specific anchors.",
+    "Lexicon and thresholds were defined after the reader example and require independent intervention evidence.",
+    "The pre/transition discovery pool cannot estimate or validate a post-period effect."
+  ]
+}

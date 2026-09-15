@@ -1,0 +1,53 @@
+{
+  "protocol_version": "post-acquisition-staging-1.0",
+  "generated_at": "2026-08-22T12:33:18.264017+00:00",
+  "status": "acquisition_staging_not_admitted",
+  "source": "meituan_tech",
+  "post_start": "2025-07-01",
+  "configuration": {
+    "delay_seconds": 0.35,
+    "http_timeout_seconds": 45.0,
+    "history_url": "https://tech.meituan.com/history.html",
+    "feed_url": "https://tech.meituan.com/feed.json",
+    "translation_model": null
+  },
+  "input_sha256": {
+    "https://tech.meituan.com/history.html": "36e7617f74076aae2402df237931520af5d0fbeaccbedaf244b74a1a03e4e1d6",
+    "https://tech.meituan.com/feed.json": "6ebd1438cc7d58a62e957743bea4335cc7a037ee905a6cda11b51ede0db8bbc3"
+  },
+  "discovered_urls": 35,
+  "documents": 29,
+  "failures": [
+    {
+      "url": "https://tech.meituan.com/2025/12/29/2025-Annual-Review.html",
+      "error": "extraction_or_quality_gate"
+    },
+    {
+      "url": "https://tech.meituan.com/2026/01/12/AAAI-2026.html",
+      "error": "extraction_or_quality_gate"
+    },
+    {
+      "url": "https://tech.meituan.com/2026/06/18/2026-ASX.html",
+      "error": "extraction_or_quality_gate"
+    },
+    {
+      "url": "https://tech.meituan.com/2026/06/29/ICML-2026.html",
+      "error": "extraction_or_quality_gate"
+    },
+    {
+      "url": "https://tech.meituan.com/2026/07/11/2026-meituan-32-papers.html",
+      "error": "extraction_or_quality_gate"
+    },
+    {
+      "url": "https://tech.meituan.com/2026/08/13/KDD-2026-meituan-papers.html",
+      "error": "extraction_or_quality_gate"
+    }
+  ],
+  "candidates_file": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\meituan\\meituan_post_candidates.jsonl",
+  "candidates_sha256": "d2e603df4eb938fba56e43e53c54a42ac51ce07257f02b574f9850b880073bd2",
+  "limitations": [
+    "This output is acquisition staging and cannot be used for reader tasks.",
+    "The official history and feed establish source-level editorial distribution, not article view counts.",
+    "Model provenance, research value, format, topic, and duplicate review remain required."
+  ]
+}

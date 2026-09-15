@@ -1,0 +1,104 @@
+刚刚，
+Gemini 3
+的
+Deep Think 模式
+终于
+正式上线
+了。
+顾名思义，这是 Gemini 3 的深度思考模式，
+推理能力显著加强
+， 能处理复杂、多步骤，以及更多创新的问题，
+还可以搞定超难的科学问题和数学题！
+是 ARC-AGI、HLE 等多项权威测评中的第一名
+先来看看
+Gemini 3 Deep Think
+是怎么一回事。
+在公认的大模型最难测试之一、全球
+最接近“通用智能（AGI）核心能力”验证
+的基准测试
+ARC-AGI
+中，Gemini 3 Deep Think 在 2 个榜单中均
+拔得头筹
+。
+其中，
+ARC-AGI-1
+主要测
+模型的基础抽象推理
+。在这项测试中，Gemini 3 Deep Think 的答题正确率排第一，达到了 87.5%，打败了 GPT-5 系列、Claude Opus 4.5 等。
+ARC-AGI-2
+则将任务升级为多步骤、递归、隐藏规则等，是
+更接近“类人智慧”的高阶推理场景
+。
+其中，Gemini 3 Deep Think 正确率达
+45.1%
+，比非深度思考模式的 Gemini 3 Pro（正确率 31.1%）高出了 14%。而在这项测试中，GPT-5 Pro 的正确率仅有
+18.3%
+。
+此外，Gemini 3 Deep Think 在
+人类最后考试（Humanity’s Last Exam，HLE）
+和
+GPQA Diamond
+这两个高难度评测中也都取得了第一名。
+HLE 是谷歌 DeepMind 设计的一项综合性推理测试，用于检验模型在跨学科问题、复杂逻辑、多步骤推理等方面的真实智能水平，难度远高于传统选择题式的 benchmark。
+而 GPQA Diamond 则聚焦量子物理、统计力学等高阶科学问题，被视为检验模型是否具备“研究级科学理解力”的金标准。
+Deep Think 在这两项测试中都取得领先成绩，说明它不仅在抽象推理上显著提升，还具备更强的科学知识推断与深度理解能力。
+不过，目前 Gemini 3 的 Deep Think 模式只向 Google AI Ultra 订阅用户开放。
+在社交媒体上，Gemini 3 的这个新功能引起了网友的热议。
+有网友对其 Deep Think 模式的测试成果竖起大拇指：
+“HLI 和 ARC 的收益率都超过 40%，这很棒。”
+有网友表示，Deep Think 的调试与代码推理能力，已经超过现有大多数模型：
+“Gemini 3 Deep Think 成功解决了那个让我耗费好几天的 stack underflow bug。它给出的答案比 Opus 4.5 更明确，而后者是唯一一个也能解出这个问题的公开模型（甚至 Gemini 3 Pro 都失败了）。
+Deep Think 甚至能自信地指出 bug 的确切位置。不过，它运行确实很慢......”
+还有人大赞 Gemini 3 Deep Think““创意场景推理””能力：
+“这是我在这个提示（创意场景推理）上获得过的最佳输出之一，完全是前所未见的水准。”
+不过也有人提出，虽然 Gemini 3 的实际使用效果并没有那么好，希望能赶紧优化 AGI 的相关功能。
+DeepMind 将成立新的 Gemini 研究团队
+今天谷歌 DeepMind 宣布，将在新加坡
+成立全新的 Gemini 研究团队
+。
+带队人是 95 后华人科学家 Yi Tay
+，他分享称，这个新团队
+将专注于高级推理、LLM/RL 以及改进 Gemini、Gemini Deep Think 等前沿 SOTA 模型
+。
+这个团队，将向 Google Brain（现在 Google DeepMind 的前身之一）的创始成员之一 Quoc Le 汇报。
+他还提到，谷歌 DeepMind 在美国总部 Mountain View 的团队，近期已经凭借 Gemini Deep Think，
+在 IMO 和 ICPC 两项国际数学奥林匹克竞赛中斩获金牌
+，并在 Gemini 项目的其他诸多重要进展中发挥了关键作用。
+有趣的是，Yi Tay 还分享了一张他用 Nano Banana 生成的一张新加坡 Gemini 新团队“办公大楼”的趣味插画。图中汇集了新加坡的标志性建筑：滨海湾花园、鱼尾狮、滨海湾金沙酒店... 以及“Gemini Team”大楼。
+关于 Yi Tay 其人：他不仅是一位“高产”的学术研究者，在 Google Scholar 上的论文引用量达数万次，还在 Gemini 项目的诸多进展中发挥关键作用。
+至于这个新团队，据 Yi Tay 介绍，团队的规模不会很大，但人才密度极高，过去几个月正在招募全球最顶尖的人才。
+同时，他们还将与 AI 领域的不少传奇大佬合作，包括 Google Brain 传奇科学家 Quoc Le、“推理之王”Denny Zhou；以及深度架构大师 Mostafa Dehghani，就是 nano banana 背后的男人，还有 Transformers 发明人之一 Noam Shazeer 等等。
+此外，不少当代行业顶尖人才输送新鲜血液，如生成式检索共同奠基者 Victor Tran、IMO 金牌纪录保持者 Lê Minh Thang、自洽性与 CoT 提出者薛之、以及日本代表性 AI 学者 Shane Gu 等，可谓星光熠熠。
+虽然新团队的具体成员还未暴露，但回顾 Gemini 团队的诞生始末，也能略窥一二。
+Gemini 团队诞生于 2023 年谷歌的 AI 大重组——当时 Google 将负责大模型研究的
+Google Brain
+，与负责通用智能探索
+DeepMind
+，
+合并为新的 Google DeepMind
+。
+旨在把最强科研与最强工程整合，打造可与 GPT 系列正面竞争的下一代基础模型。
+合并后首个战略动作，就是成立 Gemini 团队：一个覆盖算法设计、超大规模训练、多模态系统构建，到产品化落地的 全链路超级团队。
+Gemini 团队一口气推出 Ultra、Pro、Flash 三大全系模型，将 Gemini 推向全球数十亿用户，正式成为谷歌 AI 的王牌引擎。
+One More Thing
+还有值得一提的，谷歌最近新动作频频，昨天还正式推出的
+Google Workspace Studio
+。
+以前，邮件看不过来、日程排不完、文档数据要手动整理...... 这些每天都在消耗上班族的注意力。但从现在开始，它们都可以被 AI 接管。
+Workspace Studio 深度整合了
+谷歌的办公全家桶
+（Gmail 邮件、Docs 文档、Sheets 表格、Drive 云端硬盘、Chat 聊天、Calendar 日历），
+不写代码、几分钟就能做出自己的 AI Agent
+——从简单提醒到跨系统流程自动化，全都可以交给 AI 跑。
+Workspace Studio 基于谷歌最强大的
+Gemini 3
+，具备推理、多模态理解和跨应用调用能力。你只需给它一个示例，它就能自动执行复杂办公任务：情感分析、内容生成、优先级排序、智能通知……统统自动化。
+网友们纷纷表示赞叹，确实解决了痛点问题，恨不得马上使用。
+传送门：
+https://x.com/YiTayML/status/1996640869584445882
+参考链接：
+https://blog.google/products/gemini/gemini-3-deep-think/
+https://arcprize.org/leaderboard
+https://www.reddit.com/r/singularity/comments/1pec4zg/gemini
+\_3\_deep\_think\_benchmarks\_released\_hits\_451/
+https://workspace.google.com/blog/product-announcements/introducing-google-workspace-studio-agents-for-everyday-work

@@ -1,0 +1,14 @@
+{
+  "url": "https://www.bilibili.com/read/cv2282422/",
+  "requested_at_utc": "2026-09-14T14:49:00.263611+00:00",
+  "method": "GET",
+  "user_agent": "DeAIodorantResearch/1.0 (bounded public article inspection)",
+  "timeout_seconds": 20,
+  "redirects_allowed": false,
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "location": null,
+  "bytes": 3326,
+  "sha256": "36aff595bb593c81711f4fcb9e332815c2abab07ab0547d761957f8a66c35ff5",
+  "completed_at_utc": "2026-09-14T14:49:00.682538+00:00"
+}

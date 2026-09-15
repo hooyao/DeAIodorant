@@ -1,0 +1,21 @@
+<View>
+  <Header value="只比较阅读体验，不判断哪一版是 AI" />
+  <View style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <View style="padding: 16px; border: 1px solid #d9d9d9; border-radius: 8px;">
+      <Header value="版本 A" />
+      <Text name="version_a" value="$version_a" style="white-space: pre-wrap;" />
+    </View>
+    <View style="padding: 16px; border: 1px solid #d9d9d9; border-radius: 8px;">
+      <Header value="版本 B" />
+      <Text name="version_b" value="$version_b" style="white-space: pre-wrap;" />
+    </View>
+  </View>
+  <Header value="哪个版本让你更愿意继续读？" />
+  <Choices name="preference" toName="version_a" choice="single" required="true" showInline="true">
+    <Choice value="A，更愿意继续读" />
+    <Choice value="B，更愿意继续读" />
+    <Choice value="差不多或都不想继续读" />
+  </Choices>
+  <Header value="可选评论" />
+  <TextArea name="optional_comment" toName="version_a" rows="3" placeholder="可以留空" />
+</View>

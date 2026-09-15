@@ -1,0 +1,26 @@
+{
+  "id": "d05",
+  "url": "https://www.bilibili.com/read/cv2282422/",
+  "search_id": "s03",
+  "result_position": 2,
+  "reason": "早期机器人产品选择及DIY，主题接近锚点；来源是社区专栏，不能视作严格媒体匹配。",
+  "source_html_sha256": "36aff595bb593c81711f4fcb9e332815c2abab07ab0547d761957f8a66c35ff5",
+  "collected_at_utc": "2026-09-14T14:49:00.263611+00:00",
+  "extractor_version": "independent-media-extract-1.0",
+  "corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+  "generation_model": "unknown",
+  "translation_status": "unresolved",
+  "reader_label": null,
+  "upstream_sources_fetched": false,
+  "media_inspected": false,
+  "rights_status": "再分发／训练许可未核实，仅供本次授权研究核验",
+  "title": null,
+  "published_at": null,
+  "publication_evidence": null,
+  "cohort": "unknown",
+  "source_type": "unknown",
+  "full_text_status": "failed_client_shell_only",
+  "limitations": [
+    "HTTP 200，但响应只有客户端应用壳，无标题、日期或正文；不以搜索摘要补全文，未追加 API、浏览器或 reader 请求。"
+  ]
+}

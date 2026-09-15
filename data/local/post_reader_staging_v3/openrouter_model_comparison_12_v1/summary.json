@@ -1,0 +1,160 @@
+{
+  "artifact_type": "current-openrouter-corpus-model-interface-comparison",
+  "schema_version": "deaiodorant-openrouter-corpus-model-comparison-0.1",
+  "panel": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\model_smoke_panel_12.jsonl",
+  "panel_sha256": "50a1275ea9cd235c4b135cff53542897d85f3011eefe150d2de6d81f21719d48",
+  "documents": 12,
+  "endpoint": "https://openrouter.ai/api/v1",
+  "concurrency": 4,
+  "prompt_versions": {
+    "provenance": "translation-review-triage-foreign-source-safeguard-v2",
+    "value": "research-value-primary-v3"
+  },
+  "models": [
+    {
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "reasoning_mode": "disabled",
+      "max_tokens": 1024,
+      "documents": 12,
+      "provenance_status_counts": {
+        "ok": 12
+      },
+      "provenance_label_counts": {
+        "original": 8,
+        "translated_or_compiled": 4
+      },
+      "value_status_counts": {
+        "ok": 12
+      },
+      "value_label_counts": {
+        "low_value": 5,
+        "substantive": 7
+      }
+    },
+    {
+      "model": "xiaomi/mimo-v2.5",
+      "reasoning_mode": "disabled",
+      "max_tokens": 1024,
+      "documents": 12,
+      "provenance_status_counts": {
+        "ok": 12
+      },
+      "provenance_label_counts": {
+        "original": 9,
+        "translated_or_compiled": 3
+      },
+      "value_status_counts": {
+        "ok": 12
+      },
+      "value_label_counts": {
+        "low_value": 3,
+        "substantive": 9
+      }
+    },
+    {
+      "model": "tencent/hy3",
+      "reasoning_mode": "disabled",
+      "max_tokens": 1024,
+      "documents": 12,
+      "provenance_status_counts": {
+        "ok": 12
+      },
+      "provenance_label_counts": {
+        "original": 10,
+        "translated_or_compiled": 2
+      },
+      "value_status_counts": {
+        "ok": 12
+      },
+      "value_label_counts": {
+        "low_value": 3,
+        "substantive": 8,
+        "uncertain": 1
+      }
+    },
+    {
+      "model": "tencent/hy4-preview",
+      "reasoning_mode": "low",
+      "max_tokens": 4096,
+      "documents": 12,
+      "provenance_status_counts": {
+        "request_error": 12
+      },
+      "provenance_label_counts": {
+        "request_error": 12
+      },
+      "value_status_counts": {
+        "ok": 1,
+        "request_error": 11
+      },
+      "value_label_counts": {
+        "request_error": 11,
+        "substantive": 1
+      }
+    },
+    {
+      "model": "z-ai/glm-5.3-flash",
+      "reasoning_mode": "low",
+      "max_tokens": 4096,
+      "documents": 12,
+      "provenance_status_counts": {
+        "ok": 12
+      },
+      "provenance_label_counts": {
+        "original": 10,
+        "translated_or_compiled": 2
+      },
+      "value_status_counts": {
+        "ok": 12
+      },
+      "value_label_counts": {
+        "low_value": 3,
+        "substantive": 9
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-max",
+      "reasoning_mode": "low",
+      "max_tokens": 4096,
+      "documents": 12,
+      "provenance_status_counts": {
+        "ok": 12
+      },
+      "provenance_label_counts": {
+        "original": 9,
+        "translated_or_compiled": 3
+      },
+      "value_status_counts": {
+        "ok": 12
+      },
+      "value_label_counts": {
+        "low_value": 3,
+        "substantive": 9
+      }
+    },
+    {
+      "model": "qwen/qwen3.8-2.4t-a95b",
+      "reasoning_mode": "low",
+      "max_tokens": 4096,
+      "documents": 12,
+      "provenance_status_counts": {
+        "ok": 12
+      },
+      "provenance_label_counts": {
+        "original": 9,
+        "translated_or_compiled": 3
+      },
+      "value_status_counts": {
+        "ok": 12
+      },
+      "value_label_counts": {
+        "low_value": 3,
+        "substantive": 8,
+        "uncertain": 1
+      }
+    }
+  ],
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\openrouter_model_comparison_12_v1\\results.jsonl",
+  "results_sha256": "8f67382f662c78f9b68148e37081ffce4e13bb99210be3220de99380b6f515d3",
+  "interpretation": "The panel tests interface reliability and cross-model measurement agreement. It contains no human gold and cannot rank model accuracy."
+}

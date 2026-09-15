@@ -1,0 +1,7 @@
+{
+  "components_total": 8,
+  "components_parsed": 8,
+  "ignored_fields": "组件技术名称、componentName、交互 ID；marker 完整保存为引用 sidecar，全部阅读性字符串按 JSON 路径保存。",
+  "render_verified": false,
+  "embedded_json_sha256": "e6aa3f0e312d8418961c96e0d498058a5fd3ba9d70662f1cc4e2476b4b03532c"
+}

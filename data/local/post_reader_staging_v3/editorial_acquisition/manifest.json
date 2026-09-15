@@ -1,0 +1,1798 @@
+{
+  "protocol_version": "post-editorial-acquisition-staging-1.0",
+  "generated_at": "2026-08-30T02:24:24.051189+00:00",
+  "status": "acquisition_staging_not_admitted",
+  "post_start": "2025-07-01",
+  "configuration": {
+    "qbitai_target": 240,
+    "leiphone_target": 240,
+    "leiphone_pages": 30,
+    "delay_seconds": 0.5,
+    "http_timeout_seconds": 45.0,
+    "translation_model": null
+  },
+  "documents": 480,
+  "source_counts": {
+    "qbitai": 240,
+    "leiphone": 240
+  },
+  "outputs": [
+    {
+      "source": "qbitai",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\editorial_acquisition\\qbitai_post_candidates.jsonl",
+      "documents": 240,
+      "sha256": "63c8e573331699fb6907b1e6701d2c328180dc1e2d63808cca2b5a61a76acaa5"
+    },
+    {
+      "source": "leiphone",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\editorial_acquisition\\leiphone_post_candidates.jsonl",
+      "documents": 240,
+      "sha256": "7a454703f94d51334ae62e1e392882f67b02aa1f7399be972b8c4332fb163d39"
+    }
+  ],
+  "source_stats": {
+    "qbitai": {
+      "source": "qbitai",
+      "target": 240,
+      "documents": 240,
+      "feed": {
+        "url": "https://www.qbitai.com/feed",
+        "sha256": "e137dd2bb83fe33fefb8a081f82bf6a8a7689af51f8e08f000eaa54709018840"
+      },
+      "api_pages": [
+        {
+          "page": 1,
+          "url": "https://www.qbitai.com/wp-json/wp/v2/posts?after=2025-07-01T00%3A00%3A00&before=2026-08-31T00%3A00%3A00&per_page=100&page=1&orderby=date&order=desc&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Ccontent",
+          "sha256": "a0a14340a4182c341125f2bc7402c80b8f2ea1a8f7d0f618e7a50a2dfe1a9605",
+          "documents": 100
+        },
+        {
+          "page": 2,
+          "url": "https://www.qbitai.com/wp-json/wp/v2/posts?after=2025-07-01T00%3A00%3A00&before=2026-08-31T00%3A00%3A00&per_page=100&page=2&orderby=date&order=desc&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Ccontent",
+          "sha256": "746260cffb10b6c5b54aaed7e10d4c88bbdd0792dfe1809b4d4ae41e250a86d6",
+          "documents": 100
+        },
+        {
+          "page": 3,
+          "url": "https://www.qbitai.com/wp-json/wp/v2/posts?after=2025-07-01T00%3A00%3A00&before=2026-08-31T00%3A00%3A00&per_page=100&page=3&orderby=date&order=desc&_fields=id%2Cdate%2Cmodified%2Clink%2Ctitle%2Ccontent",
+          "sha256": "aa26ad6f5658448901a61fa68494781000b4c595582142a57aa4df629118f345",
+          "documents": 100
+        }
+      ],
+      "deterministic_translation_flags": {
+        "False": 149,
+        "True": 91
+      }
+    },
+    "leiphone": {
+      "source": "leiphone",
+      "target": 240,
+      "documents": 240,
+      "categories": [
+        "ai",
+        "yanxishe",
+        "academic",
+        "digitalindustry",
+        "industrynews"
+      ],
+      "max_pages_per_category": 30,
+      "category_pages": [
+        {
+          "category": "ai",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/ai",
+          "sha256": "935f9b9d88903e1c0de526f3eb4633abe849a733622518bc2250e755e6a78bae",
+          "discovered_article_links": 36
+        },
+        {
+          "category": "ai",
+          "page": 2,
+          "url": "https://www.leiphone.com/category/ai/page/2",
+          "sha256": "57aef3e505771de4d598ee939d080ae2d7f38f4ccf55301a9052f9b7f460ad2f",
+          "discovered_article_links": 32
+        },
+        {
+          "category": "ai",
+          "page": 3,
+          "url": "https://www.leiphone.com/category/ai/page/3",
+          "sha256": "ecfc0534748cfba3d7cc76bae9c202aa8f8a49eafb72b0bc7ac949a7b44cdd5c",
+          "discovered_article_links": 33
+        },
+        {
+          "category": "ai",
+          "page": 4,
+          "url": "https://www.leiphone.com/category/ai/page/4",
+          "sha256": "c09e5f3382dea66a778380907dfe0cef431b3d06c9fc5977b153e006fe6c9ecd",
+          "discovered_article_links": 29
+        },
+        {
+          "category": "ai",
+          "page": 5,
+          "url": "https://www.leiphone.com/category/ai/page/5",
+          "sha256": "fe2150c91db3ae95b1d526372f44fe3c426738d94241b10c6aa072393221d012",
+          "discovered_article_links": 34
+        },
+        {
+          "category": "ai",
+          "page": 6,
+          "url": "https://www.leiphone.com/category/ai/page/6",
+          "sha256": "b4a4b7ac8f8cbf7c1315f9e9b868c6dbd76cea4ee827dd900256b7efc5099c5f",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 7,
+          "url": "https://www.leiphone.com/category/ai/page/7",
+          "sha256": "28ad02fb8f854181785f69fc998e05b73848564a9b61cb27dd7358f7eab7ba69",
+          "discovered_article_links": 34
+        },
+        {
+          "category": "ai",
+          "page": 8,
+          "url": "https://www.leiphone.com/category/ai/page/8",
+          "sha256": "0d377d445523ae9cd7704384898b01ef309f067cf3dfbd85831e544b842cf616",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 9,
+          "url": "https://www.leiphone.com/category/ai/page/9",
+          "sha256": "c0c6cc0cbe2c2dd8bed7b5aae1bca29a3a80200a67f0db2df6ae885aa977bee4",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 10,
+          "url": "https://www.leiphone.com/category/ai/page/10",
+          "sha256": "b32a0913f17ce2ba5143dad6351ae378f886bf1aa4a3d29ac008da318f0f0655",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 11,
+          "url": "https://www.leiphone.com/category/ai/page/11",
+          "sha256": "d2b583a4002ec1af3ed1e3c3bac4f2e14af9cc289a4b39903b0149aaad23c9bc",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 12,
+          "url": "https://www.leiphone.com/category/ai/page/12",
+          "sha256": "1ac2f94ba3b9b74340147aabbaf3f757891a0c9c38d396cd4ed7267412c5e875",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 13,
+          "url": "https://www.leiphone.com/category/ai/page/13",
+          "sha256": "d3926592ca7ace775197da2df918d5d5a6d9e0b840a61b6b55a0e8d6cef88015",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 14,
+          "url": "https://www.leiphone.com/category/ai/page/14",
+          "sha256": "30c6dd7d65a31088aa6510a6b4b38f40224e2584e4d1fa5fcedfb91e4b12452d",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 15,
+          "url": "https://www.leiphone.com/category/ai/page/15",
+          "sha256": "fab6112b0e2472f48dd865ae8cf7073478b2514c643cf0a9b5ede2464c9e0353",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 16,
+          "url": "https://www.leiphone.com/category/ai/page/16",
+          "sha256": "acbab264d3f073a9ad72c7f93739055cc5f5ee9fc580fd3c2b10b2e0f492c901",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 17,
+          "url": "https://www.leiphone.com/category/ai/page/17",
+          "sha256": "8889ad3444168939746f9f4642a59faad04000b424d1b454a6fff174134f5c61",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 18,
+          "url": "https://www.leiphone.com/category/ai/page/18",
+          "sha256": "77593370e163c60e5ffe8f52a2aa09c4d495f575f29ad9efff1c4ce444112edb",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 19,
+          "url": "https://www.leiphone.com/category/ai/page/19",
+          "sha256": "8281da83ae2863bebbd03f1aacc2fa67ef3358ce7a48cdf98a11c26c549fea6c",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 20,
+          "url": "https://www.leiphone.com/category/ai/page/20",
+          "sha256": "877eaba2eabdcc5df3cf248658912646e5be344e4a72dd4b48ff3ece7be0f07d",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 21,
+          "url": "https://www.leiphone.com/category/ai/page/21",
+          "sha256": "5dfbbd29789de98fcce382244596afb4fa8660aa79e83847caba7434b1ae9b4e",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 22,
+          "url": "https://www.leiphone.com/category/ai/page/22",
+          "sha256": "968a4ce0844cac79f6bdd7a9b35782356a608b711a6018e627ab7d69249ff183",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 23,
+          "url": "https://www.leiphone.com/category/ai/page/23",
+          "sha256": "3b52ab38e76b0cbade11efe34b6c995e48e418739014a6a804f6029e927852f6",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 24,
+          "url": "https://www.leiphone.com/category/ai/page/24",
+          "sha256": "40d6d9eabf35cdd01091bfe730004f99672f113a6755c4172bcf1773f346b005",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 25,
+          "url": "https://www.leiphone.com/category/ai/page/25",
+          "sha256": "d087c579fa5ba0562c2d324cac941bc1d0f56645fcbabc97d7097ae090d7c46b",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 26,
+          "url": "https://www.leiphone.com/category/ai/page/26",
+          "sha256": "63577bed1c3f8461ea79e0da6b6ffa97dd26082f7a2f8a54071f68f02ac5846c",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 27,
+          "url": "https://www.leiphone.com/category/ai/page/27",
+          "sha256": "5c7d3c2483a721672306a59fd1be52f9709fb0691f9cde5ce39a41262a300b33",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 28,
+          "url": "https://www.leiphone.com/category/ai/page/28",
+          "sha256": "1e986bb9bf64ecccbde38f1f3f203efa771b3c90b61c1b82424c42400da9be18",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 29,
+          "url": "https://www.leiphone.com/category/ai/page/29",
+          "sha256": "8f31f0e150f4c3867c4204906562cd1c43ef205658db2102b675f58bf305cd1f",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "ai",
+          "page": 30,
+          "url": "https://www.leiphone.com/category/ai/page/30",
+          "sha256": "51844ac48ea89266b73ec90d222bbc4312fc682ecdfa48ea4cae5956968a0ce9",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "yanxishe",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/yanxishe",
+          "sha256": "3713908141ee4f35a6916dd375c5bb17536a6e2dc12dcfada31307494446ec08",
+          "discovered_article_links": 26
+        },
+        {
+          "category": "yanxishe",
+          "page": 2,
+          "url": "https://www.leiphone.com/category/yanxishe/page/2",
+          "sha256": "decde8531e1e9a390dd6cb87000e5ba3064e5f70955f3540720be0290eea706c",
+          "discovered_article_links": 29
+        },
+        {
+          "category": "yanxishe",
+          "page": 3,
+          "url": "https://www.leiphone.com/category/yanxishe/page/3",
+          "sha256": "7f908c0d753a9ae7b1886c6dcd17f1bddf858c56de41e512a9d53cffa1caa589",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 4,
+          "url": "https://www.leiphone.com/category/yanxishe/page/4",
+          "sha256": "0b5d98f73c71a7c6d0a96a5bdd6fca10e0e4f11bc5fc3d00c5527431b06dce53",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 5,
+          "url": "https://www.leiphone.com/category/yanxishe/page/5",
+          "sha256": "060af7b5653ae340c35d2bc6fd4ae23003262eb24fd52e33e5cacc78fd64cd84",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 6,
+          "url": "https://www.leiphone.com/category/yanxishe/page/6",
+          "sha256": "b77769c1a68a2d44169c6a8b56a391bee323a322a7931a25046c79389a589ba9",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 7,
+          "url": "https://www.leiphone.com/category/yanxishe/page/7",
+          "sha256": "6c40c4ae26e08d84a6cf1db9e33b49dc1204460c6ca273c74656e8591af9f691",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 8,
+          "url": "https://www.leiphone.com/category/yanxishe/page/8",
+          "sha256": "ae07fdc2b50f535f2d240f1ed1419ff487455ee61c143bbb8f72f090c86634c9",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 9,
+          "url": "https://www.leiphone.com/category/yanxishe/page/9",
+          "sha256": "af11e01d05fa9b5aa2dab26e8ddc2b32f93010df540e1026e8adb66f8a3e52ef",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 10,
+          "url": "https://www.leiphone.com/category/yanxishe/page/10",
+          "sha256": "4b5a052d2edb2f7f888cec22b618545698255089e8a53955c0d81308cf9feefd",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 11,
+          "url": "https://www.leiphone.com/category/yanxishe/page/11",
+          "sha256": "8b86a33c26705d28715ea13dd2c228c3cad20a2a1431ba41146ed60e351f1b6d",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 12,
+          "url": "https://www.leiphone.com/category/yanxishe/page/12",
+          "sha256": "8c4a2ae35f0c537bf10513ea89582d1303f0b29dfb0eac2e39a77a990abf3a01",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 13,
+          "url": "https://www.leiphone.com/category/yanxishe/page/13",
+          "sha256": "fa0967c9a7b4e965c0f49336a54bd3d4ea29fb6dee772f316c040b90f43b528a",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 14,
+          "url": "https://www.leiphone.com/category/yanxishe/page/14",
+          "sha256": "12e1ce2342b83cba547d6ccffbbb0ff807459dd9c5f130f63ea36921d7a86439",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 15,
+          "url": "https://www.leiphone.com/category/yanxishe/page/15",
+          "sha256": "e4d8e05fd55354ddd58b856203165e1e40644551689d151bc5d22313a780fd8d",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 16,
+          "url": "https://www.leiphone.com/category/yanxishe/page/16",
+          "sha256": "0190a9dbab32be918ff33d22d9bdc146ffc43d7ed34633ca505f46c92f6afb95",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 17,
+          "url": "https://www.leiphone.com/category/yanxishe/page/17",
+          "sha256": "8e9df0c0c1c2aa36bda3641dc41314e1d0c105ba7a33d9db57770424d04b1422",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 18,
+          "url": "https://www.leiphone.com/category/yanxishe/page/18",
+          "sha256": "811e2f14521ef43583146b795df9ac118f8eff54841abd287647c289c8edb244",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 19,
+          "url": "https://www.leiphone.com/category/yanxishe/page/19",
+          "sha256": "15e522859783fa8a28bed8226701fee99d4a8c07a12b6970ba4ddb4be187aeef",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 20,
+          "url": "https://www.leiphone.com/category/yanxishe/page/20",
+          "sha256": "6d684dfdf4570360446045174c833378c89f96d5b823bfbee5aff04bf98892db",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 21,
+          "url": "https://www.leiphone.com/category/yanxishe/page/21",
+          "sha256": "8e1fc6c1c7ecde7a12f8d9c6b47fd4f9e7a9bdf946ad488b281904c137462084",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 22,
+          "url": "https://www.leiphone.com/category/yanxishe/page/22",
+          "sha256": "3c07e194cb0986578f139bcfaa20a8eeb5cfa4007599cf92c8ee26bdfb141d0a",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 23,
+          "url": "https://www.leiphone.com/category/yanxishe/page/23",
+          "sha256": "aa11570207a9a40b1e8f91356caa5a415318b2187b436bc4020ec7ac3505aa4c",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 24,
+          "url": "https://www.leiphone.com/category/yanxishe/page/24",
+          "sha256": "72d4fdf5f981d80770c1bf2a572740226a24cd1c8b64b8bacecc04405bc993ba",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 25,
+          "url": "https://www.leiphone.com/category/yanxishe/page/25",
+          "sha256": "17ed92cdf20194a0e757dda3ac5e24117c4bfdb776130d08e9b02f3bb577a198",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 26,
+          "url": "https://www.leiphone.com/category/yanxishe/page/26",
+          "sha256": "abb27305a9f1d2caf610e53ee1f25e60a4a24f481d7ad8bc2694c4ccc68e3795",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 27,
+          "url": "https://www.leiphone.com/category/yanxishe/page/27",
+          "sha256": "d14a57925f7536e4cccc16d53f9a10ae5330145a85ce7e09027c36ccbc1347c6",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 28,
+          "url": "https://www.leiphone.com/category/yanxishe/page/28",
+          "sha256": "d3bbdf9222e0feff4bdc9b74fc7a96847bdc8062a66d997c55eae2fc378a89a6",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 29,
+          "url": "https://www.leiphone.com/category/yanxishe/page/29",
+          "sha256": "7fce987b8791350866eb4e2e8d0a2bccb3207ac5313cdde4d630e31b92029292",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "yanxishe",
+          "page": 30,
+          "url": "https://www.leiphone.com/category/yanxishe/page/30",
+          "sha256": "d13f05877b18eafaa73ef8775dcea0abfad3d06b297107d4554d4e05d4fd6bc7",
+          "discovered_article_links": 31
+        },
+        {
+          "category": "academic",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/academic",
+          "sha256": "3f03ac65e5852362a48492d1f5d76a7d1f087c262720f500f0b72badc2ec0df5",
+          "discovered_article_links": 23
+        },
+        {
+          "category": "academic",
+          "page": 2,
+          "url": "https://www.leiphone.com/category/academic/page/2",
+          "sha256": "32488b1c6b7ba99e8f7303d7dc509a096a836ebdaad2a34ee141085b8e154196",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 3,
+          "url": "https://www.leiphone.com/category/academic/page/3",
+          "sha256": "c9768cdfeb155c9b5c055f547fa64d6f36f97f015fcbb339cc21f19fe502cce4",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 4,
+          "url": "https://www.leiphone.com/category/academic/page/4",
+          "sha256": "ee39f1d8edb45dc0d1f83325aba80c571a2ef2d9ff33ddcb60873cff9514c031",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 5,
+          "url": "https://www.leiphone.com/category/academic/page/5",
+          "sha256": "7b15329a40397d7e1ec4cfcf7ce1251a1e5f4873bb406204c2747a777acbbbd7",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 6,
+          "url": "https://www.leiphone.com/category/academic/page/6",
+          "sha256": "e7f4de294638da629953bcd348b85f1943c7221a33bf48867f0e648be2f12acd",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 7,
+          "url": "https://www.leiphone.com/category/academic/page/7",
+          "sha256": "36ecf27d739e6b76c3fb140798d4d9459610a5bf35931a162d49ac187894fc76",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 8,
+          "url": "https://www.leiphone.com/category/academic/page/8",
+          "sha256": "4d3a53a646290682dd2590dedce0ef049c293c1b8e351049d1a888e477b0faad",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 9,
+          "url": "https://www.leiphone.com/category/academic/page/9",
+          "sha256": "3cf794d8141cc424ae7adff559f78dee5b2db66843b82748efa7b68a568b4808",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 10,
+          "url": "https://www.leiphone.com/category/academic/page/10",
+          "sha256": "c14feb137ff8156a14955cdb01b8d1e37a028669f531b66f3bc367ac15301c82",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 11,
+          "url": "https://www.leiphone.com/category/academic/page/11",
+          "sha256": "76b6c59b8e5884542a3f592ffa70e81ec456db45ad5efedd4fee8fee3cadeb0d",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 12,
+          "url": "https://www.leiphone.com/category/academic/page/12",
+          "sha256": "1caf397aef068260a49a2f6d0e5807acebd2f9ebab73eba5091c788bf1ababe9",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 13,
+          "url": "https://www.leiphone.com/category/academic/page/13",
+          "sha256": "2934109399120a7494a999cefe68d2dad8c27ce443e2e4bbd58d706a358749a6",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 14,
+          "url": "https://www.leiphone.com/category/academic/page/14",
+          "sha256": "644ff627dce62a0f82cdbffe6738b4981fa6358a83186dd7c16f4de2b61f0537",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 15,
+          "url": "https://www.leiphone.com/category/academic/page/15",
+          "sha256": "f340860ec6ff6d0e5111c0f0ae4ae069cdaa267e053a973925af8f52677b6b0d",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 16,
+          "url": "https://www.leiphone.com/category/academic/page/16",
+          "sha256": "91c77781922a348c9c17100b649c8551e091ff7891b0dc83924924661b9dc57f",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 17,
+          "url": "https://www.leiphone.com/category/academic/page/17",
+          "sha256": "cf00e693f2ca19eecdb3feaea8d87434b3b327086180f03433ff3650dd575937",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 18,
+          "url": "https://www.leiphone.com/category/academic/page/18",
+          "sha256": "29ad01d75a2b8a9745ca53f3c455a76ff7aa29a3f5f768cdb4c6d3289035e1b5",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 19,
+          "url": "https://www.leiphone.com/category/academic/page/19",
+          "sha256": "0bb729b54e146f7cc838381e967cbe8757a12a862dad1b49e3c3bf6db4e94fc2",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 20,
+          "url": "https://www.leiphone.com/category/academic/page/20",
+          "sha256": "709aca0421b100a3c103fe351fd4263576f0fa2908546bbdb0fa729fbb176e2f",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 21,
+          "url": "https://www.leiphone.com/category/academic/page/21",
+          "sha256": "420b4aa3781747a0d8774f51c509474f2da9bd5f1f38552aa60cbbd140caa184",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 22,
+          "url": "https://www.leiphone.com/category/academic/page/22",
+          "sha256": "2aacfabeb1d8907fe0f0d9957282dbbae748b731e830c2d3f57201d25c79975c",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 23,
+          "url": "https://www.leiphone.com/category/academic/page/23",
+          "sha256": "1dabfab709983e9ae671dc2444ca342e02b3cead6f16d1a4b5ffaf01568d6b73",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 24,
+          "url": "https://www.leiphone.com/category/academic/page/24",
+          "sha256": "7962f87cf065aa814accca2912f2a31051b579952c34ddf6ac8560c2a89a39e0",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 25,
+          "url": "https://www.leiphone.com/category/academic/page/25",
+          "sha256": "dc9e1c98844f5b99b268b1c2e0cf343c442c27fb62e001ed480e43b7c5510b72",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 26,
+          "url": "https://www.leiphone.com/category/academic/page/26",
+          "sha256": "cb8107f0f9dfce6b042dac041055d220b1376d4b822c781e304e9a1eea86e40d",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 27,
+          "url": "https://www.leiphone.com/category/academic/page/27",
+          "sha256": "0ca7057a0c26c2c7cdbf25ac15aad38c3aca945c5ef0ba393dbb2478a5e66d58",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 28,
+          "url": "https://www.leiphone.com/category/academic/page/28",
+          "sha256": "1735dbebe53a87d29287c3ca955aa384232b8ed7b4a54bee06cc4cd51604ce68",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 29,
+          "url": "https://www.leiphone.com/category/academic/page/29",
+          "sha256": "dee44bc351b9bbfa34a8051dd51124a004b6a84d57e8f876acb198497c81457e",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "academic",
+          "page": 30,
+          "url": "https://www.leiphone.com/category/academic/page/30",
+          "sha256": "4e40ab5c13129d933a0686d3ed79deee11570f4d699b7c8ba97b5ad54d06db19",
+          "discovered_article_links": 28
+        },
+        {
+          "category": "digitalindustry",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/digitalindustry",
+          "sha256": "441ce81e8726e62fb3853c0f7873dc117f34edf12533cb2544735a8d12c4661a",
+          "discovered_article_links": 23
+        },
+        {
+          "category": "digitalindustry",
+          "page": 2,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/2",
+          "sha256": "970795d7c30a618a0dbee411c078cae464c7f61f1cee363413daa128553a80f6",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 3,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/3",
+          "sha256": "b5041438cb78d8f7b38b43bdcc6cfb6688430c9b375d0aa01333c7c1a228631b",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 4,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/4",
+          "sha256": "9a0072c1da8d90e08f48b5a1c04fce8a404c7cf6c34d2ec7a28532e53a83cb3e",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 5,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/5",
+          "sha256": "cc7330264f06f8d1ce082ee6a55c392cd8c0400a2675ffdf781f78249acfb181",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 6,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/6",
+          "sha256": "51f84a1c6dade58b026af61f51679df6dc196f22874ccbc00c3e5ffac7e395e7",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 7,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/7",
+          "sha256": "ce0368dde862310d056fb406642c88f3cf4445be0a62888bb98bdbd771f734ff",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 8,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/8",
+          "sha256": "55151dc898e5714d539c8b992c99eebcbefb9ca8add62b2206e875484f99959d",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 9,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/9",
+          "sha256": "9f6375f5f743d4326a78a0df159c834dcc2452c24920721205b9f2bf557f76ad",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 10,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/10",
+          "sha256": "79c7d04049240c96f75dcd6339b801221c30e7b4dce4dd0903d3701169418452",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 11,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/11",
+          "sha256": "ca15e53ae6964d8645c1a2b235bb1763ce093054d5672da6b1b6dcb1de017def",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 12,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/12",
+          "sha256": "c3d281e0150e93bc2c0d48a23dfc70426f866f8f5eff8c0eb3d5131b0fac556a",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 13,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/13",
+          "sha256": "4316dda57ff9988e447a027d4bf6fff55c3e7ff8288cd147e775f82d6fae3154",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 14,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/14",
+          "sha256": "70f90bec07f047a2ebf96add11cd9252f627562f980d8fe9cc8839dac84b120a",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 15,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/15",
+          "sha256": "aa1d37e0afa59bb2891577054c093110c1ea61418ec3a947e994258417fc5641",
+          "discovered_article_links": 22
+        },
+        {
+          "category": "digitalindustry",
+          "page": 16,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/16",
+          "sha256": "2539ca7f36a44d06a0e48e3f7d865da37a11f64e154ca9f92d92c1da51afbd65",
+          "discovered_article_links": 18
+        },
+        {
+          "category": "digitalindustry",
+          "page": 17,
+          "url": "https://www.leiphone.com/category/digitalindustry/page/17",
+          "sha256": "179af66104f82ba79cf2b08c7951e25a2e3a793c1194d1dd5ff2adef54bf1951",
+          "discovered_article_links": 7
+        },
+        {
+          "category": "industrynews",
+          "page": 1,
+          "url": "https://www.leiphone.com/category/industrynews",
+          "sha256": "1e7b93dfc5af949c55ff3916c46b9942771ae043c08639cd071deb9e2812c253",
+          "discovered_article_links": 36
+        },
+        {
+          "category": "industrynews",
+          "page": 2,
+          "url": "https://www.leiphone.com/category/industrynews/page/2",
+          "sha256": "d2a99ade853c8c073784460e43df46d2e2b8fcaa9c7609d6ce00e058f3a5215f",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 3,
+          "url": "https://www.leiphone.com/category/industrynews/page/3",
+          "sha256": "354ef9c4e301a5df1b22fbeadf48f0c367747bddaa3703dc3c8117c6e1170425",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 4,
+          "url": "https://www.leiphone.com/category/industrynews/page/4",
+          "sha256": "da5ad20041eaaf3592e2e51047aaab36538d423e7ff5faa9481ddcf659e7f783",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 5,
+          "url": "https://www.leiphone.com/category/industrynews/page/5",
+          "sha256": "43121bfa239f879c6ecdaf1c21375e33aa1ac306d25132ee59ca9640aa10060d",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 6,
+          "url": "https://www.leiphone.com/category/industrynews/page/6",
+          "sha256": "f7f6154fb47384dfa43075dcd102eedb62dd28c54c67ad025df1ca6a58accb43",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 7,
+          "url": "https://www.leiphone.com/category/industrynews/page/7",
+          "sha256": "19408e0ee52970fbffea40397c5f1df590fa63bd4190077b9e5ca94a9e1d8b67",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 8,
+          "url": "https://www.leiphone.com/category/industrynews/page/8",
+          "sha256": "77fc9845b4bf3e265c6f1a3efdf097baa762cb1617e47958fd49c76cb16d4abd",
+          "discovered_article_links": 34
+        },
+        {
+          "category": "industrynews",
+          "page": 9,
+          "url": "https://www.leiphone.com/category/industrynews/page/9",
+          "sha256": "4beb940b22371a8c26b78aa5f8afb52872d21162cdc6fd1436be22f046f3e2d5",
+          "discovered_article_links": 33
+        },
+        {
+          "category": "industrynews",
+          "page": 10,
+          "url": "https://www.leiphone.com/category/industrynews/page/10",
+          "sha256": "ff7dd509ef9084c6530abfad645c22ab17ac85b2f9899d9b20d7fbee3c8b31d2",
+          "discovered_article_links": 32
+        },
+        {
+          "category": "industrynews",
+          "page": 11,
+          "url": "https://www.leiphone.com/category/industrynews/page/11",
+          "sha256": "2909d043efc49f448153be5696707db030a9ed19a7885223b7c8ad5152d18b96",
+          "discovered_article_links": 33
+        },
+        {
+          "category": "industrynews",
+          "page": 12,
+          "url": "https://www.leiphone.com/category/industrynews/page/12",
+          "sha256": "a6ba8b4bfe13f56a66899294b74551bb7eef9b2a581e57a11eba6e771bbbbaa3",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 13,
+          "url": "https://www.leiphone.com/category/industrynews/page/13",
+          "sha256": "c91a33d5feaf25b6cb8c2e5ee9274dc8169dda311537b43b11cc247ac2f4e2eb",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 14,
+          "url": "https://www.leiphone.com/category/industrynews/page/14",
+          "sha256": "41322500b8f929edd66866578008a5b7716ca48f3bf65f950d8f789493a0d159",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 15,
+          "url": "https://www.leiphone.com/category/industrynews/page/15",
+          "sha256": "79e83c211e0b0de4be2af2c3995c5fe418a9feee11deaa28548915478d54ae0b",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 16,
+          "url": "https://www.leiphone.com/category/industrynews/page/16",
+          "sha256": "58bb01e1ef3ddacfe095a60476d2c12a01fd831eec3c907a704ced619b8aa0e9",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 17,
+          "url": "https://www.leiphone.com/category/industrynews/page/17",
+          "sha256": "c090b368976063305a8445c67f54ba47d0bcda9e6b1520ef2f194a4206fd1b9e",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 18,
+          "url": "https://www.leiphone.com/category/industrynews/page/18",
+          "sha256": "34287d1b4c95886cee4a2929b9901d0376653cbee0f9b7dda96c185901be680c",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 19,
+          "url": "https://www.leiphone.com/category/industrynews/page/19",
+          "sha256": "e47045d7723b33d7695ce607ddbe054656eed0c73fd743b083416522fcf05ffa",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 20,
+          "url": "https://www.leiphone.com/category/industrynews/page/20",
+          "sha256": "5c34e87edf6b1b45188a7bcd51f6a217db1a59ca4ae4765505429067923c7f98",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 21,
+          "url": "https://www.leiphone.com/category/industrynews/page/21",
+          "sha256": "017a91ebcf61f160c95eb1c7b93fa14e95d7611832b2b30f953e009442efd018",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 22,
+          "url": "https://www.leiphone.com/category/industrynews/page/22",
+          "sha256": "9e930750d42ba8fdfe194eb4d4384b58114a34f0c0fb007bb5aee3f6e47faf74",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 23,
+          "url": "https://www.leiphone.com/category/industrynews/page/23",
+          "sha256": "11be7860ababc25bef38408027bcaf6da47c2c1f8c56836741e1a5b7ff3ea580",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 24,
+          "url": "https://www.leiphone.com/category/industrynews/page/24",
+          "sha256": "27d2d1dac3b5556efb2b37bf0efd4b33f3d9bab8a7455d3079d546aa50f83e9d",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 25,
+          "url": "https://www.leiphone.com/category/industrynews/page/25",
+          "sha256": "74d42669f5eb4b0e4ec6de24e7951f1190b1f5d5bde3e4aadd9ea10d061b3fa3",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 26,
+          "url": "https://www.leiphone.com/category/industrynews/page/26",
+          "sha256": "80eb8c4ce903c01dbd308a3f130007655f348f9a8cb8d275025cf43fe84d7559",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 27,
+          "url": "https://www.leiphone.com/category/industrynews/page/27",
+          "sha256": "1706f39a19a209ff6f758fc7287871e9fb29e043b3a8ba2fc059b12d2dbeafc1",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 28,
+          "url": "https://www.leiphone.com/category/industrynews/page/28",
+          "sha256": "f81407164632379b51b52bb289ed811aa21b0ba4bcbeabe8f925ba943e3e556a",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 29,
+          "url": "https://www.leiphone.com/category/industrynews/page/29",
+          "sha256": "c31bb53632ce437e106028c2940020c4f1cb9b05a2147755efda5a968f1d15f3",
+          "discovered_article_links": 35
+        },
+        {
+          "category": "industrynews",
+          "page": 30,
+          "url": "https://www.leiphone.com/category/industrynews/page/30",
+          "sha256": "da14823f80a718d76d3d564a9a6f0a929b3d8d68107fcfd860ed9634c08bfb23",
+          "discovered_article_links": 35
+        }
+      ],
+      "sitemap": {
+        "url": "https://www.leiphone.com/sitemap.xml",
+        "sha256": "76c5e9b23ce7edede70652ef7766f929aeb2c0b408b0e04f3c25639616e4bcef"
+      },
+      "failures": [
+        {
+          "url": "https://www.leiphone.com/category/findigital/JQm9y2y25DgI1Ws2.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/yv9edSCEMLQtKUuE.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/8ZIKem4t58M7Nb2W.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/s3Tl3wSYjfRmLV1j.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/0RTJpHuLBtEbmyRa.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/EO3HUtyqMKUcgsR1.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/0yzNUCn0VWAhsdRg.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/MA18484wUPSZMlAb.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/RckDR1exSuUMN7p9.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/uQ2VLyEf5eYWMP27.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/c42jk1Tcheq4MYlm.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/O4ZiEtNSzhsFFP5l.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/ZOiMDY7KoL0MVcEu.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/EbOPqn2WA6n5tkiD.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/EYCeYXezDIKp3L9g.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/q9GfISIqTuJaYHev.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/JvBW78wfyvcfB4xW.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/Zt5mFmrAgQP43K9x.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/nLYcKBHdhAtFiJNK.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/8sB0WHz6D70J7NAy.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/nvJrXT35Z03NqJvB.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/eE3cOaHMpW6xyrHu.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/XMU1zmmDCHrrfDNZ.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/ruEALfoT58GDvLRY.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/xCQNJuswPxX3Aesu.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/zDNAdeMWIOCEVjZl.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/ZuAxCw6kHuoWOHiz.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/8NmiyxvpoU88O4Ft.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/XqsAglML39YmZIDy.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/RFI1oMhU8irMJ2kA.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/LdWurXQYxUHR7hPe.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/86yAcIjcqyNL9IHE.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/aiUMBoeUYbi8fX4x.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/evDqp1rjep4G2pTy.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/H7nvaFRpz10gy37E.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/ZdmyDdvy0xqW6OLU.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/kzoojDKUUVPscZmO.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/jO3S36y9Au6IJBTs.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/UnkJScrjffHLK7I0.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/qCoffll2qTKILQwl.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/d1CTX8rzdX3Wx4OI.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/V5zdMSVRKsOzunjj.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/mv7OQqIAoGNU8Da3.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/0Z6n8ySHqLD98RLe.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/QH4J4Lia9MRVJ9QR.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/Fz0dUPnwlL7htE1z.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/y5eOuO8Wa5UPSqpv.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/qjHPn9m6oVJsGiA6.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/6ax6aWiREg9XM2Cj.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/J4qYjQbxBWdArQRt.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/Rqty4sAwNZM1RMfL.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/BLw59oIzaEoOTEBb.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/nKVyizVr3doehw6m.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/EuIUKfSp07nAYG7r.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/ofxrKWlKGmoYUr4C.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/2MMLw1SKrD07noY3.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/FcvYoTi8MQzPrtjv.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/wD2G3gLE7lXAw69Q.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/BHsSTVLoch7Tbcjg.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/Rh5PRR2kYYvj58Zf.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/45xgcEF1iH4H5r5U.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/aL9PlmQulNJPfEFg.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/ojWVnqu5Fm60VRqG.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/tYqALxTucTBiKBhJ.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/ob4vBmwCceP6eylX.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/7uN0g7kkUUJA7O00.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/izj1xrjQ2g7o0ESe.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/vWkNNq8HewOcTQ8K.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/z7JTfkwoLtJavU2u.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/BuCCMCOIJ0AwSwA6.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/kYwfqXGPyagP9vQH.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/6mR50kUHcFgw5xST.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/qOPzP8oTNBwSZCnP.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/medigital/SIKGdExEx4lCQ7Pu.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/DoEk2gbL0zOj3OTJ.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/medigital/7kYjktpCwvBAB2Tk.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/Y9p96oGL5To13mkB.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/5Zz123KNDhDFb78z.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/xHeSZfuGAqz2peH7.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/uLchMz7u3a9hsdTs.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/LIDBB9a7RccQTex0.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/89Sq6YanwHIexQEr.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/bt28wbKQtZa1E2Ei.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/gl2hyLwekjw795aS.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/5iquAGqsZcuWy7PS.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/b9kRAmy93I2bMPNW.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/ZkO13SBNFKTwbxsC.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/W2DpFd6FtYrbQ41x.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/CEmQJXB2CrsR1yvM.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/jIPQvRuiKSQvNseS.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/XAOjt0ZWrjcDF5pU.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/j309T2BGxByySTS8.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/cZqjSFxbKXj5MSQz.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/bjkqQSDVzDao8akk.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/Fq99hnMwZ1mswvON.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/D0lT0JSTfUt9CWHK.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/qN0i3LTOwTP8XYPr.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/0QZcVeMq2vKVgldg.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/llbrWzIUVFePw3JO.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/3Fx8uMp44qGsXNNz.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/2n2ngZbSKFomGLgU.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/vFwKal1J8qkohbN0.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/pw9Ziphb2aMcDMyi.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/iMjWipcMEzGk9GyK.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/XkHByria5kG8YCyM.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/h4BdFmGngfDT8Qp4.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/I7T4U63fV129mqML.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/vBkVqpLGAeEDEsfE.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/CLcSpP1vwb8e2uC9.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/EPTBKWMmrk2REsbB.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/91AgXDmi86tTaT1o.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/99vI62LO8TQkVtDt.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/ufGLt5EVj3rKmyIl.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/uEVGtAeols8RfjV3.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/IUMFWutmGIIOZchD.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/CItIlvQHH1CJzly5.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/1PoRIxWnoH4ITTY0.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/jcpPwT4XQKWA8BDh.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/niMAZiNHJWr2jOh9.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/N8bCiXgSEvznhbgo.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/XpHG5Nz1EhD2iH3p.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/U5aa2QfHP6WenEv9.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/EIjSO6kagZ3ond9T.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/BjuFM1rcijW6i46Z.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/wixNVMYyjKMCeC5a.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/JNicHWGZIpolHy7S.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/6dhyixSE5TMeSBP4.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/fj1xnlqoyHuFa5Fk.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/EPxDNq14QvrX7ZyF.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/xQzTXWcOFlGFCmp9.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/Q0SAhXZRcTMmODHT.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/redigital/fke30Y5LCiZ6bAQC.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/xiV07ZoynBxjMTtO.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/ZKzgoIqZj1P3tibH.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/6LQUssYQGQXmMEVY.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/7rg2HA4XQToCJBE9.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/Jr4H6UT4KqbKRCt1.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/wtmAWvtGSlWBUZR2.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/hFaYrHpRKdNuEo6N.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/N5GTPruUMx1UnRtx.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/pNEincnxPUA9nUB7.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/Kz8LTsahhDihPseL.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/NUnI2tLusJdGxAar.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/v2YZAxfAruNy41cX.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/ODLv5LXL0rmYubWf.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/rsi75JQjIDhEWAWi.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/dhrBiQNwr7L1wluD.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/AD9WO7NHeil6ABxE.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/Y2esU6Uuldjr96fc.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/hy13067FrHi6nlEP.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/vXjWWtFNJX1jJjoq.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/TKT0CTI9d5gKxHFf.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/VyNJDlRlXfcKtfCh.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/4fj9MI4ipE19tWAh.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/Iz8gnSYgO5sK1IJy.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/C9G1KnZcGGdqKyEJ.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/F8RaEiR6qQZ9qpeW.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/2WhcMNCN6nF3cIfR.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/IPEow6ZrBU6ya6D0.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/ybYTY9aLiB5FX370.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/CwRPtVrbiO6X1rxa.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/mandigital/CGHyioSgxBRMCDPX.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/yI1hpcA5wcfWFOiE.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/Fa4MIsZZf2Y3MWhM.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/Z6TvlMkYgNk3Lzxu.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/zYXpj0PBm08MHEK3.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/UcMHp1O87gQ2V5zc.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/wM3bmMNb0mTyF9DG.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/K4NyslU7HojRft4q.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/jaydse80p0CiMhTN.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/Uf9eIWehMdBijIJh.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/QVWEaN5YOpn9XmJQ.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/f7x5PBbSUV0rlfYb.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/DQ0xLlpkCDhgDPjz.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/ai/YTCPIZ2kIbjtt6CX.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/stVNZp6DTGavBfKo.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/uOZQY5DwlTzHdn2F.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/findigital/lLH1qeBXhvD6rIgH.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/industrynews/yOzZ6pmXf7KOsYYc.html",
+          "error": "deterministic_quality_gate"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/NaA4p9cj3IQ458gD.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/fiebuIoikxxtUHp6.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/L0nce8tZEhF4oC9S.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/yanxishe/y5XSZMzNzwC4uR5W.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/academic/lLphrsXP2WtFU9Q1.html",
+          "error": "shape_or_period"
+        },
+        {
+          "url": "https://www.leiphone.com/category/digitalindustry/29yOchzaQeymK5ZR.html",
+          "error": "shape_or_period"
+        }
+      ],
+      "deterministic_translation_flags": {
+        "False": 239,
+        "True": 1
+      }
+    }
+  },
+  "limitations": [
+    "This output is acquisition staging and cannot be used for reader tasks.",
+    "Official feeds, APIs, categories, and sitemaps establish editorial distribution, not article-level readership.",
+    "Model provenance, research value, visibility admission, strata classification, and cross-corpus deduplication remain required.",
+    "Editorial outlets may contain translated, compiled, promoted, or low-value articles; uncertainty must fail closed during admission."
+  ]
+}

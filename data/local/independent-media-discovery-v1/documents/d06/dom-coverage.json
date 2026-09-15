@@ -1,0 +1,22 @@
+{
+  "nonwhitespace_text_coverage_equal": true,
+  "removed_metadata_or_footer_nodes": [
+    {
+      "selector": "h1.item-name",
+      "text": "TOP4扫地机器人参数对决：毫米波雷达VS仿生眼，谁是真王者？",
+      "dom_html": "<h1 class=\"item-name\">\n<span class=\"edit_interface\"></span>\r\n                                                                TOP4扫地机器人参数对决：毫米波雷达VS仿生眼，谁是真王者？                            </h1>"
+    },
+    {
+      "selector": ".recommend-tab",
+      "text": "2025-03-07 11:15:42 2点赞 2收藏 0评论",
+      "dom_html": "<div class=\"recommend-tab z-clearfix item-preferential\">\n<span class=\"xilie\">\n<span>2025-03-07 11:15:42</span>\n<span>2点赞</span>\n<span>2收藏</span>\n<span>0评论</span>\n</span>\n<!-- 风险提示 -->\n<!-- 直达链接-->\n</div>"
+    },
+    {
+      "selector": ".the-end",
+      "text": "",
+      "dom_html": "<div class=\"the-end\"><img alt=\"\" src=\"https://res.smzdm.com/pc/pc_shequ/dist/img/the-end.png\"/></div>"
+    }
+  ],
+  "article_selector": "article#articleId",
+  "coverage_scope": "正文容器内全部非空白文本；未把图片像素中的文字当作已读取。"
+}

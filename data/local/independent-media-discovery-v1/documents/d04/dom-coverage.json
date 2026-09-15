@@ -1,0 +1,6 @@
+{
+  "nonwhitespace_text_coverage_equal": true,
+  "removed_metadata_or_footer_nodes": [],
+  "article_selector": "#task_page .des",
+  "coverage_scope": "正文容器内全部非空白文本；未把图片像素中的文字当作已读取。"
+}

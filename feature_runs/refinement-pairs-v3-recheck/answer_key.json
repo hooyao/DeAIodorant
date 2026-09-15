@@ -1,0 +1,895 @@
+[
+  {
+    "pair_id": "contrast-v3-05",
+    "task_number": 1,
+    "doc_id": "10b4ff947e750938d62a417a",
+    "genre": "research_summary",
+    "target_lines": [
+      21,
+      21
+    ],
+    "original_side": "A",
+    "original": "研究证明了在不同编辑类型、编辑位置、内源性位点、实验室环境、tevopreQ1 条件、错配修复（MMR）抑制条件、体外细胞系和体内小鼠肝细胞中，OPED 预测 pegRNA 效率的通用性和准确性。值得注意的是，在上述情况下，与 OPED 得分较低的 pegRNA 相比，较高 OPED 编辑得分的 pegRNA 的编辑效率高得多（2.2-82.9 倍）。",
+    "revised": "研究证明了在不同编辑类型、编辑位置、内源性位点、实验室环境、tevopreQ1 条件、错配修复（MMR）抑制条件、体外细胞系和体内小鼠肝细胞中，OPED 预测 pegRNA 效率的通用性和准确性。在上述情况下，与 OPED 得分较低的 pegRNA 相比，较高 OPED 编辑得分的 pegRNA 编辑效率高出 2.2-82.9 倍。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-05-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "值得注意的是，在上述情况下，与 OPED 得分较低的 pegRNA 相比，较高 OPED 编辑得分的 pegRNA 的编辑效率高得多（2.2-82.9 倍）。",
+        "after": "在上述情况下，与 OPED 得分较低的 pegRNA 相比，较高 OPED 编辑得分的 pegRNA 编辑效率高出 2.2-82.9 倍。",
+        "reason": "State the measured comparison directly without an attention directive."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "OPED was tested across the full listed set of editing conditions.",
+        "original_support": "不同编辑类型、编辑位置、内源性位点、实验室环境、tevopreQ1 条件、错配修复（MMR）抑制条件、体外细胞系和体内小鼠肝细胞",
+        "revised_support": "不同编辑类型、编辑位置、内源性位点、实验室环境、tevopreQ1 条件、错配修复（MMR）抑制条件、体外细胞系和体内小鼠肝细胞"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Higher OPED scores correspond to a 2.2-82.9-fold efficiency increase.",
+        "original_support": "较高 OPED 编辑得分的 pegRNA 的编辑效率高得多（2.2-82.9 倍）",
+        "revised_support": "较高 OPED 编辑得分的 pegRNA 编辑效率高出 2.2-82.9 倍"
+      }
+    ],
+    "locked_literals": [
+      "OPED",
+      "pegRNA",
+      "tevopreQ1",
+      "MMR"
+    ],
+    "retained_contrasts": [
+      "High and low OPED scores remain the comparison groups."
+    ],
+    "voice_anchors": [
+      "研究证明"
+    ],
+    "validation": {
+      "claim_checks_passed": 2,
+      "locked_literals_passed": 4,
+      "numeric_literals": [
+        "2.2-82.9",
+        "tevopreQ1"
+      ],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 1,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.959302,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-04",
+    "task_number": 2,
+    "doc_id": "2e209708bce31c124797ce6c",
+    "genre": "technical_practice",
+    "target_lines": [
+      63,
+      65
+    ],
+    "original_side": "B",
+    "original": "我们重点测试了一下 1M, 64M, 512M, 1G 状态在使用 HDFS OSS 作为 FsStateBackend 的性能区别，发现对应的 checkpoint 时间差别不大，都在可接受范围。\n因此将 state 切换到对象存储，在作业帮内部是完全可行的。\n为了防止业务之间的相互影响，我们针对每个 EMR 集群，都设置了专属的存储桶，针对自身 EMR 可读写，针对其他 EMR 只可读。出于性能和成本的考虑，针对不是稳定性要求不是很高的业务，我们仍然将 state 存储在 HDFS 上。",
+    "revised": "我们重点测试了一下 1M, 64M, 512M, 1G 状态在使用 HDFS OSS 作为 FsStateBackend 的性能区别，发现对应的 checkpoint 时间差别不大，都在可接受范围。\n因此将 state 切换到对象存储，在作业帮内部是完全可行的。\n为了防止业务相互影响，我们为每个 EMR 集群设置了专属存储桶：自身 EMR 可读写，其他 EMR 只可读。对于稳定性要求不高的业务，考虑到性能和成本，我们仍将 state 存储在 HDFS 上。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-04-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "为了防止业务之间的相互影响，我们针对每个 EMR 集群，都设置了专属的存储桶，针对自身 EMR 可读写，针对其他 EMR 只可读。出于性能和成本的考虑，针对不是稳定性要求不是很高的业务，我们仍然将 state 存储在 HDFS 上。",
+        "after": "为了防止业务相互影响，我们为每个 EMR 集群设置了专属存储桶：自身 EMR 可读写，其他 EMR 只可读。对于稳定性要求不高的业务，考虑到性能和成本，我们仍将 state 存储在 HDFS 上。",
+        "reason": "Repair a duplicated negation and make the subject, access rules, and qualification explicit."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Checkpoint times for all four state sizes are similar and acceptable.",
+        "original_support": "1M, 64M, 512M, 1G 状态在使用 HDFS OSS 作为 FsStateBackend 的性能区别，发现对应的 checkpoint 时间差别不大，都在可接受范围。",
+        "revised_support": "1M, 64M, 512M, 1G 状态在使用 HDFS OSS 作为 FsStateBackend 的性能区别，发现对应的 checkpoint 时间差别不大，都在可接受范围。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Switching state to object storage is feasible inside Zuoyebang.",
+        "original_support": "因此将 state 切换到对象存储，在作业帮内部是完全可行的。",
+        "revised_support": "因此将 state 切换到对象存储，在作业帮内部是完全可行的。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Each EMR bucket has the stated own-cluster and other-cluster permissions.",
+        "original_support": "针对自身 EMR 可读写，针对其他 EMR 只可读",
+        "revised_support": "自身 EMR 可读写，其他 EMR 只可读"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Low-stability-requirement workloads may remain on HDFS for performance and cost reasons.",
+        "original_support": "出于性能和成本的考虑，针对不是稳定性要求不是很高的业务，我们仍然将 state 存储在 HDFS 上。",
+        "revised_support": "对于稳定性要求不高的业务，考虑到性能和成本，我们仍将 state 存储在 HDFS 上。"
+      }
+    ],
+    "locked_literals": [
+      "EMR",
+      "HDFS",
+      "OSS",
+      "FsStateBackend",
+      "checkpoint",
+      "state",
+      "作业帮"
+    ],
+    "retained_contrasts": [
+      "Read-write access and read-only access remain distinct."
+    ],
+    "voice_anchors": [
+      "完全可行"
+    ],
+    "validation": {
+      "claim_checks_passed": 4,
+      "locked_literals_passed": 7,
+      "numeric_literals": [
+        "1G",
+        "1M",
+        "512M",
+        "64M"
+      ],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 0,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.912134,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-07",
+    "task_number": 3,
+    "doc_id": "646b73aae2b0dc8f311a9f0c",
+    "genre": "research_summary",
+    "target_lines": [
+      18,
+      20
+    ],
+    "original_side": "A",
+    "original": "从实证角度看，相比于大家常用的在线 RLHF（由偏好建模和从模型采样组成），离线算法实现起来要简单得多，成本也低得多。因此，收集有关离线算法的充分性的证据可让 AI 对齐变得更加简单。另一方面，如果能明晰常用在线 RLHF 的优势，也能让我们理解在线交互的基本作用，洞见离线对齐方法的某些关键挑战。\n在线算法与离线算法的对比\n要公平地比较在线和离线算法并非易事，因为它们存在许多实现和算法方面的差异。举个例子，在线算法所需的计算量往往大于离线算法，因为它需要采样和训练另一个模型。因此，为了比较公平，需要在衡量性能时对不同算法所耗费的预算进行一定的校准。",
+    "revised": "从实证角度看，相比于大家常用的在线 RLHF（由偏好建模和从模型采样组成），离线算法实现起来要简单得多，成本也低得多。因此，收集有关离线算法的充分性的证据可让 AI 对齐变得更加简单。另一方面，如果能明晰常用在线 RLHF 的优势，也能让我们理解在线交互的基本作用，洞见离线对齐方法的某些关键挑战。\n在线算法与离线算法的对比\n在线和离线算法在实现与算法上存在多项差异，因此难以公平比较。在线算法需要采样和训练另一个模型，计算量往往大于离线算法。衡量性能时需要校准不同算法耗费的预算。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-07-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "要公平地比较在线和离线算法并非易事，因为它们存在许多实现和算法方面的差异。举个例子，在线算法所需的计算量往往大于离线算法，因为它需要采样和训练另一个模型。因此，为了比较公平，需要在衡量性能时对不同算法所耗费的预算进行一定的校准。",
+        "after": "在线和离线算法在实现与算法上存在多项差异，因此难以公平比较。在线算法需要采样和训练另一个模型，计算量往往大于离线算法。衡量性能时需要校准不同算法耗费的预算。",
+        "reason": "State the comparison difficulty, example mechanism, and calibration requirement directly."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Offline RLHF is simpler and cheaper, and evidence about both approaches has the stated value.",
+        "original_support": "离线算法实现起来要简单得多，成本也低得多。",
+        "revised_support": "离线算法实现起来要简单得多，成本也低得多。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Implementation and algorithm differences make fair comparison difficult.",
+        "original_support": "要公平地比较在线和离线算法并非易事，因为它们存在许多实现和算法方面的差异。",
+        "revised_support": "在线和离线算法在实现与算法上存在多项差异，因此难以公平比较。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Online algorithms require more compute because they sample and train another model.",
+        "original_support": "在线算法所需的计算量往往大于离线算法，因为它需要采样和训练另一个模型。",
+        "revised_support": "在线算法需要采样和训练另一个模型，计算量往往大于离线算法。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Performance comparisons require budget calibration.",
+        "original_support": "需要在衡量性能时对不同算法所耗费的预算进行一定的校准。",
+        "revised_support": "衡量性能时需要校准不同算法耗费的预算。"
+      }
+    ],
+    "locked_literals": [
+      "RLHF",
+      "在线算法",
+      "离线算法",
+      "预算"
+    ],
+    "retained_contrasts": [
+      "Online and offline cost and implementation differences remain explicit."
+    ],
+    "voice_anchors": [
+      "另一方面"
+    ],
+    "validation": {
+      "claim_checks_passed": 4,
+      "locked_literals_passed": 4,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 0,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.791506,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-11",
+    "task_number": 4,
+    "doc_id": "9f693cf901d640ffb7312bd9",
+    "genre": "industry_reporting",
+    "target_lines": [
+      52,
+      57
+    ],
+    "original_side": "A",
+    "original": "另外，投资人对 AI 厂商能真正将这项技术转化为盈利业务的能力保持怀疑，而商业化也是今年各家企业绕不过去的话题。\n现在，通过 API 按量计费，同时推出订阅制服务几乎是国内外大模型厂商的标配。为抢夺用户，各家纷纷打起了价格战，这让每百万 token 的价格从百元直降至几厘。\n为压缩成本，厂商们在技术上采用了多种优化推理方法包括 Prefix caching、PD 分离、Continuous Batching、量化压缩、投机解码等方式优化推理效率，虽然不同企业会有不同的侧重，但思路较为相似。\n大模型训练降本的典型是 DeepSeek-V3，其采用 FP8 混合精度训练框架，首次在超大规模模型上验证了 FP8 训练的可行性和效果，在保证模型计算精度的前提下大幅减少了内存使用和计算成本。DeepSeek 实施了数十项优化技术来降低其 DeepSeek-V3 的计算需求，并通过算法、框架和硬件的综合优化，实现计算与通信的高度重叠，此外还对 GPU 集群进行了优化。但是具体实践上，大家还不能清晰地了解细节。还有像极佳科技，透露其在过去一年训练一个视觉大模型的成本，从 500 万美金下降到了 100 万美金以下。\n应用实践中，在对模型能力要求不是那么高的场景，企业会选择使用大小模型协同的方式。在性能和成本之间做取舍是不可避免的。小模型成本低但效果会打些折扣，但大小模型混合使用就能得到可接受的性能，同时成本下降比较明显，像 Apple Intelligence 就是采用了大小模型相结合的方式。\n值得注意的是，业内整体模型的部署运维的效率并不高，像应用侧企业在前期在要效果和要效率之间，优先选择效果，虽然也未真正找到最佳的大模型应用范式。但在明年，部分企业将开始重点投入到运维效率上。",
+    "revised": "另外，投资人对 AI 厂商将这项技术转化为盈利业务的能力保持怀疑，而商业化也是今年各家企业绕不过去的话题。\n现在，通过 API 按量计费，同时推出订阅制服务几乎是国内外大模型厂商的标配。为抢夺用户，各家纷纷打起了价格战，这让每百万 token 的价格从百元直降至几厘。\n为压缩成本，厂商们在技术上采用了多种优化推理方法包括 Prefix caching、PD 分离、Continuous Batching、量化压缩、投机解码等方式优化推理效率，虽然不同企业会有不同的侧重，但思路较为相似。\n大模型训练降本的典型是 DeepSeek-V3，其采用 FP8 混合精度训练框架，首次在超大规模模型上验证了 FP8 训练的可行性和效果，在保证模型计算精度的前提下大幅减少了内存使用和计算成本。DeepSeek 实施了数十项优化技术来降低其 DeepSeek-V3 的计算需求，并通过算法、框架和硬件的综合优化，实现计算与通信的高度重叠，此外还对 GPU 集群进行了优化。但是具体实践上，大家还不能清晰地了解细节。还有像极佳科技，透露其在过去一年训练一个视觉大模型的成本，从 500 万美金下降到了 100 万美金以下。\n在对模型能力要求较低的应用场景，企业会采用大小模型协同，在性能和成本之间取舍。小模型成本低，效果会打折；大小模型混合使用能够获得可接受的性能，同时明显降低成本。Apple Intelligence 就采用了大小模型结合的方式。\n业内模型的部署运维效率整体不高。应用侧企业前期在效果和效率之间优先选择效果，尚未找到最佳的大模型应用范式；明年，部分企业将开始重点投入运维效率。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-11-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "投资人对 AI 厂商能真正将这项技术转化为盈利业务的能力保持怀疑",
+        "after": "投资人对 AI 厂商将这项技术转化为盈利业务的能力保持怀疑",
+        "reason": "Remove an unneeded actuality booster from the attributed market judgment."
+      },
+      {
+        "operation_id": "contrast-v3-11-op-02",
+        "operator": "clarify_argument_structure",
+        "before": "应用实践中，在对模型能力要求不是那么高的场景，企业会选择使用大小模型协同的方式。在性能和成本之间做取舍是不可避免的。小模型成本低但效果会打些折扣，但大小模型混合使用就能得到可接受的性能，同时成本下降比较明显，像 Apple Intelligence 就是采用了大小模型相结合的方式。",
+        "after": "在对模型能力要求较低的应用场景，企业会采用大小模型协同，在性能和成本之间取舍。小模型成本低，效果会打折；大小模型混合使用能够获得可接受的性能，同时明显降低成本。Apple Intelligence 就采用了大小模型结合的方式。",
+        "reason": "Repair stacked adversatives while preserving the cost-performance tradeoff and example."
+      },
+      {
+        "operation_id": "contrast-v3-11-op-03",
+        "operator": "remove_ornamental_emphasis",
+        "before": "值得注意的是，业内整体模型的部署运维的效率并不高，像应用侧企业在前期在要效果和要效率之间，优先选择效果，虽然也未真正找到最佳的大模型应用范式。但在明年，部分企业将开始重点投入到运维效率上。",
+        "after": "业内模型的部署运维效率整体不高。应用侧企业前期在效果和效率之间优先选择效果，尚未找到最佳的大模型应用范式；明年，部分企业将开始重点投入运维效率。",
+        "reason": "Remove attention and actuality framing while retaining the current limitation and future plan."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Investors remain skeptical about profitable commercialization.",
+        "original_support": "投资人对 AI 厂商能真正将这项技术转化为盈利业务的能力保持怀疑",
+        "revised_support": "投资人对 AI 厂商将这项技术转化为盈利业务的能力保持怀疑"
+      },
+      {
+        "claim_id": "c02",
+        "description": "The listed optimization methods and DeepSeek-V3 details remain unchanged.",
+        "original_support": "Prefix caching、PD 分离、Continuous Batching、量化压缩、投机解码",
+        "revised_support": "Prefix caching、PD 分离、Continuous Batching、量化压缩、投机解码"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Small and mixed models retain the stated cost-performance tradeoff and Apple example.",
+        "original_support": "Apple Intelligence 就是采用了大小模型相结合的方式",
+        "revised_support": "Apple Intelligence 就采用了大小模型结合的方式"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Deployment efficiency is low, the best pattern is not found, and investment is expected next year.",
+        "original_support": "部分企业将开始重点投入到运维效率上",
+        "revised_support": "部分企业将开始重点投入运维效率"
+      }
+    ],
+    "locked_literals": [
+      "AI",
+      "API",
+      "DeepSeek-V3",
+      "FP8",
+      "GPU",
+      "Apple Intelligence"
+    ],
+    "retained_contrasts": [
+      "The small-model quality and cost tradeoff remains explicit."
+    ],
+    "voice_anchors": [
+      "绕不过去的话题",
+      "价格战"
+    ],
+    "validation": {
+      "claim_checks_passed": 4,
+      "locked_literals_passed": 6,
+      "numeric_literals": [
+        "100",
+        "500",
+        "FP8",
+        "V3"
+      ],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 3,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.935282,
+      "voice_anchors_passed": 2
+    }
+  },
+  {
+    "pair_id": "contrast-v3-06",
+    "task_number": 5,
+    "doc_id": "7103a1b4c0cb80218a653a03",
+    "genre": "research_summary",
+    "target_lines": [
+      46,
+      48
+    ],
+    "original_side": "B",
+    "original": "如下图 16 所示，该研究选择使用一组周围环境图像并以正确的顺序将它们输入到模型中。结果表明，GPT-4V 能够熟练地识别场景中的各种元素，例如建筑物、车辆、障碍物和停车场，甚至可以从重叠的信息中推断出场景中有两辆汽车，其中一辆白色 SUV，一辆卡车。然而，GPT-4V 会错误地识别出人行横道。\n如下图 17 所示，在另一个实验中，GPT-4V 提供了对场景基本准确的描述，但也出现了一些识别错误，特别是在车辆的数量和形状方面。值得注意的是，GPT-4V 会产生一些令人困惑的错觉，例如认为图片上有左转标志。研究团队推测这些问题可能是由于 GPT-4V 的空间推理能力有限。\n此外，该研究还尝试给出正确的前视图，让 GPT-4V 识别并给乱序的周围图像进行排序。尽管模型进行了大量看似有意义的分析和推理，但最终仍然输出错误答案。显然，GPT-4V 在建立相邻图像之间的连接方面遇到了挑战。",
+    "revised": "如下图 16 所示，该研究选择使用一组周围环境图像并以正确的顺序将它们输入到模型中。结果表明，GPT-4V 能够熟练地识别场景中的各种元素，例如建筑物、车辆、障碍物和停车场，甚至可以从重叠的信息中推断出场景中有两辆汽车，其中一辆白色 SUV，一辆卡车。然而，GPT-4V 会错误地识别出人行横道。\n如下图 17 所示，在另一个实验中，GPT-4V 提供了对场景基本准确的描述，但也出现了一些识别错误，特别是在车辆的数量和形状方面。GPT-4V 还会产生一些令人困惑的错觉，例如认为图片上有左转标志。研究团队推测这些问题可能是由于 GPT-4V 的空间推理能力有限。\n此外，该研究还尝试给出正确的前视图，让 GPT-4V 识别并给乱序的周围图像进行排序。尽管模型进行了大量看似有意义的分析和推理，但最终仍然输出错误答案。GPT-4V 在建立相邻图像之间的连接方面遇到了挑战。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-06-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "值得注意的是，GPT-4V 会产生一些令人困惑的错觉，例如认为图片上有左转标志。",
+        "after": "GPT-4V 还会产生一些令人困惑的错觉，例如认为图片上有左转标志。",
+        "reason": "Remove an attention directive while retaining the observed error."
+      },
+      {
+        "operation_id": "contrast-v3-06-op-02",
+        "operator": "remove_ornamental_emphasis",
+        "before": "显然，GPT-4V 在建立相邻图像之间的连接方面遇到了挑战。",
+        "after": "GPT-4V 在建立相邻图像之间的连接方面遇到了挑战。",
+        "reason": "Remove an unnecessary certainty booster from the stated result."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "GPT-4V identifies several scene elements and two vehicle types but misses a crosswalk.",
+        "original_support": "其中一辆白色 SUV，一辆卡车。然而，GPT-4V 会错误地识别出人行横道。",
+        "revised_support": "其中一辆白色 SUV，一辆卡车。然而，GPT-4V 会错误地识别出人行横道。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "The model makes vehicle-count and shape errors and hallucinates a left-turn sign.",
+        "original_support": "GPT-4V 会产生一些令人困惑的错觉，例如认为图片上有左转标志。",
+        "revised_support": "GPT-4V 还会产生一些令人困惑的错觉，例如认为图片上有左转标志。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "The research team gives spatial reasoning as a possible cause.",
+        "original_support": "研究团队推测这些问题可能是由于 GPT-4V 的空间推理能力有限。",
+        "revised_support": "研究团队推测这些问题可能是由于 GPT-4V 的空间推理能力有限。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "The ordering experiment fails despite apparently meaningful reasoning.",
+        "original_support": "尽管模型进行了大量看似有意义的分析和推理，但最终仍然输出错误答案。",
+        "revised_support": "尽管模型进行了大量看似有意义的分析和推理，但最终仍然输出错误答案。"
+      }
+    ],
+    "locked_literals": [
+      "GPT-4V",
+      "SUV",
+      "左转标志",
+      "空间推理能力"
+    ],
+    "retained_contrasts": [
+      "Correct scene description and recognition errors remain contrasted."
+    ],
+    "voice_anchors": [
+      "令人困惑的错觉"
+    ],
+    "validation": {
+      "claim_checks_passed": 4,
+      "locked_literals_passed": 4,
+      "numeric_literals": [
+        "16",
+        "17",
+        "4V"
+      ],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 1,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.985915,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-08",
+    "task_number": 6,
+    "doc_id": "a76e84a2a44062b098288efc",
+    "genre": "research_summary",
+    "target_lines": [
+      29,
+      32
+    ],
+    "original_side": "A",
+    "original": "需要强调的是，研究者的目的不是断言\n语言模型\n是否优于其他模型，而是促进 LLM 视觉 tokenization 方法的探索。LLM 与其他模型（如扩散模型）的根本区别在于，LLM 使用离散的潜在格式，即从可视化 tokenizer 获得的 token。这项研究表明，这些离散的视觉 token 的价值不应该被忽视，因为它们存在以下优势：\n1、与 LLM 的兼容性。token 表示的主要优点是它与语言 token 共享相同的形式，从而可以直接利用社区多年来为开发 LLM 所做的优化，包括更快的训练和推理速度、模型基础设施的进步、扩展模型的方法以及 GPU/TPU 优化等创新。通过相同的 token 空间统一视觉和语言可以为真正的多模态 LLM 奠定基础，后者可以在我们的视觉环境中理解、生成和推理。",
+    "revised": "研究者并不试图断言语言模型是否优于其他模型；他们希望促进 LLM 视觉 tokenization 方法的探索。LLM 与其他模型（如扩散模型）的根本区别在于，LLM 使用离散的潜在格式，即从可视化 tokenizer 获得的 token。这项研究表明，这些离散的视觉 token 的价值不应该被忽视，因为它们存在以下优势：\n1、与 LLM 的兼容性。token 表示的主要优点是它与语言 token 共享相同的形式，从而可以直接利用社区多年来为开发 LLM 所做的优化，包括更快的训练和推理速度、模型基础设施的进步、扩展模型的方法以及 GPU/TPU 优化等创新。通过相同的 token 空间统一视觉和语言可以为真正的多模态 LLM 奠定基础，后者可以在我们的视觉环境中理解、生成和推理。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-08-op-01",
+        "operator": "direct_contrast",
+        "before": "需要强调的是，研究者的目的不是断言\n语言模型\n是否优于其他模型，而是促进 LLM 视觉 tokenization 方法的探索。",
+        "after": "研究者并不试图断言语言模型是否优于其他模型；他们希望促进 LLM 视觉 tokenization 方法的探索。",
+        "reason": "Preserve the explicit non-claim and research purpose without staging them as a reveal."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The researchers do not claim language models are superior.",
+        "original_support": "研究者的目的不是断言\n语言模型\n是否优于其他模型",
+        "revised_support": "研究者并不试图断言语言模型是否优于其他模型"
+      },
+      {
+        "claim_id": "c02",
+        "description": "The purpose is to promote LLM visual-tokenization research.",
+        "original_support": "而是促进 LLM 视觉 tokenization 方法的探索。",
+        "revised_support": "他们希望促进 LLM 视觉 tokenization 方法的探索。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Discrete visual tokens have the stated compatibility and infrastructure benefits.",
+        "original_support": "通过相同的 token 空间统一视觉和语言可以为真正的多模态 LLM 奠定基础",
+        "revised_support": "通过相同的 token 空间统一视觉和语言可以为真正的多模态 LLM 奠定基础"
+      }
+    ],
+    "locked_literals": [
+      "语言模型",
+      "LLM",
+      "tokenization",
+      "GPU/TPU"
+    ],
+    "retained_contrasts": [
+      "The non-superiority claim and the actual research purpose remain explicit."
+    ],
+    "voice_anchors": [
+      "真正的多模态 LLM"
+    ],
+    "validation": {
+      "claim_checks_passed": 3,
+      "locked_literals_passed": 4,
+      "numeric_literals": [
+        "1"
+      ],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 2,
+      "revised_marker_count": 1,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.965517,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-01",
+    "task_number": 7,
+    "doc_id": "44ff5a1d8bda9c7b50f6290f",
+    "genre": "technical_practice",
+    "target_lines": [
+      36,
+      36
+    ],
+    "original_side": "B",
+    "original": "大模型对于技术方面的词汇，如字段、行列、表等无法理解，相反对于业务方面的词汇，如公司收入情况、日活跃用户数量等能够提供有效翻译与转换。因此挑战之一是需要思考如何引导用户进入指标范围内提问，挑战之二是当用户存在对多种指标、多类指标查询时，需要考虑如何保持指标维度口径的统一、如何有效生成对应的指标计算公式。",
+    "revised": "大模型无法理解字段、行列、表等技术词汇，却能有效翻译和转换公司收入情况、日活跃用户数量等业务词汇。因此挑战之一是需要思考如何引导用户进入指标范围内提问，挑战之二是当用户存在对多种指标、多类指标查询时，需要考虑如何保持指标维度口径的统一、如何有效生成对应的指标计算公式。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-01-op-01",
+        "operator": "direct_contrast",
+        "before": "大模型对于技术方面的词汇，如字段、行列、表等无法理解，相反对于业务方面的词汇，如公司收入情况、日活跃用户数量等能够提供有效翻译与转换。",
+        "after": "大模型无法理解字段、行列、表等技术词汇，却能有效翻译和转换公司收入情况、日活跃用户数量等业务词汇。",
+        "reason": "Keep the real capability contrast but remove a staged sentence-level reversal."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The model fails on technical vocabulary but can translate named business vocabulary.",
+        "original_support": "大模型对于技术方面的词汇，如字段、行列、表等无法理解，相反对于业务方面的词汇，如公司收入情况、日活跃用户数量等能够提供有效翻译与转换。",
+        "revised_support": "大模型无法理解字段、行列、表等技术词汇，却能有效翻译和转换公司收入情况、日活跃用户数量等业务词汇。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "The two stated challenges concern query scope and metric-definition consistency.",
+        "original_support": "挑战之一是需要思考如何引导用户进入指标范围内提问，挑战之二是当用户存在对多种指标、多类指标查询时，需要考虑如何保持指标维度口径的统一、如何有效生成对应的指标计算公式。",
+        "revised_support": "挑战之一是需要思考如何引导用户进入指标范围内提问，挑战之二是当用户存在对多种指标、多类指标查询时，需要考虑如何保持指标维度口径的统一、如何有效生成对应的指标计算公式。"
+      }
+    ],
+    "locked_literals": [
+      "大模型",
+      "字段",
+      "行列",
+      "公司收入情况",
+      "日活跃用户数量"
+    ],
+    "retained_contrasts": [
+      "Technical vocabulary and business vocabulary remain explicitly contrasted."
+    ],
+    "voice_anchors": [
+      "挑战之一",
+      "挑战之二"
+    ],
+    "validation": {
+      "claim_checks_passed": 2,
+      "locked_literals_passed": 5,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 1,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.804196,
+      "voice_anchors_passed": 2
+    }
+  },
+  {
+    "pair_id": "contrast-v3-12",
+    "task_number": 8,
+    "doc_id": "51ad0427b938c45e289e9d1a",
+    "genre": "industry_reporting",
+    "target_lines": [
+      1,
+      8
+    ],
+    "original_side": "A",
+    "original": "4 月 26 日，讯飞星火大模型 V3.5（以下简称“讯飞星火”）春季上新。面向用户高效准确知识获取的痛点，科大讯飞发布业界首个长文本、长图文、长语音大模型，不仅能够把各种信息来源的海量文本、图文资料、会议录音等进行快速学习，还能够在各种行业场景给出专业、准确回答。\n科大讯飞进一步升级星火语音大模型，首发多情感超拟人合成，具备情绪表达能力，并推出一句话声音复刻功能，让科技更有温度。\n同时，面向企业应用场景，科大讯飞推出星火智能体平台，帮助企业解决大模型落地的最后一公里难题。\n持续用技术进步解决真实刚需，讯飞星火也在获得越来越多用户的认可。据七麦数据显示，讯飞星火 APP 在安卓端的下载量已经超过 9600 万次，在国内工具类通用大模型 APP 中排名第一。\n首发长文本、长图文、长语音大模型，助力知识高效获取\n为什么科大讯飞要做长文本、长图文、长语音的大模型？通过讯飞星火 APP 可以看到，用户使用的最高峰不是周末，而是工作日的上午 9:30 和下午 3:30。这意味着，大部分用户用讯飞星火来解决和工作相关的刚需问题。而高效的知识获取是用户和开发者都高度关注的问题。\n科大讯飞分析发现，在知识获取和学习的过程中，广大用户能拿到的资料往往不仅是现成的长文本，还有随手可见的报刊书籍内容、各种研讨会的 PPT 内容，老师黑板上的板书、同学的笔记，以及各种会议录音、访谈，各种网上的发布会、培训教育视频等，能不能把这些文本、图片、语音等都上传到讯飞星火中，快速地获取知识？\n为此，科大讯飞推出首个支持长文本、长图文、长语音的大模型，来解决用户真实场景中多源信息的获取需求。",
+    "revised": "4 月 26 日，讯飞星火大模型 V3.5（以下简称“讯飞星火”）春季上新。面向用户高效准确知识获取的痛点，科大讯飞发布业界首个长文本、长图文、长语音大模型，可以快速学习各种来源的海量文本、图文资料和会议录音，并在各类行业场景给出专业、准确的回答。\n科大讯飞进一步升级星火语音大模型，首发多情感超拟人合成，具备情绪表达能力，并推出一句话声音复刻功能，让科技更有温度。\n同时，面向企业应用场景，科大讯飞推出星火智能体平台，帮助企业解决大模型落地的最后一公里难题。\n持续用技术进步解决真实刚需，讯飞星火也在获得越来越多用户的认可。据七麦数据显示，讯飞星火 APP 在安卓端的下载量已经超过 9600 万次，在国内工具类通用大模型 APP 中排名第一。\n首发长文本、长图文、长语音大模型，助力知识高效获取\n为什么科大讯飞要做长文本、长图文、长语音的大模型？通过讯飞星火 APP 可以看到，用户使用高峰出现在工作日上午 9:30 和下午 3:30，而非周末。大部分用户用讯飞星火解决与工作相关的刚需问题。而高效的知识获取是用户和开发者都高度关注的问题。\n科大讯飞分析发现，在知识获取和学习的过程中，广大用户能拿到的资料往往包括现成的长文本、报刊书籍、研讨会 PPT、老师的板书、同学的笔记，以及会议录音、访谈、网上发布会和培训教育视频。这些文本、图片和语音能否上传到讯飞星火中，让用户快速获取知识？\n为此，科大讯飞推出首个支持长文本、长图文、长语音的大模型，来解决用户真实场景中多源信息的获取需求。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-12-op-01",
+        "operator": "direct_contrast",
+        "before": "科大讯飞发布业界首个长文本、长图文、长语音大模型，不仅能够把各种信息来源的海量文本、图文资料、会议录音等进行快速学习，还能够在各种行业场景给出专业、准确回答。",
+        "after": "科大讯飞发布业界首个长文本、长图文、长语音大模型，可以快速学习各种来源的海量文本、图文资料和会议录音，并在各类行业场景给出专业、准确的回答。",
+        "reason": "State the two capabilities directly without additive escalation."
+      },
+      {
+        "operation_id": "contrast-v3-12-op-02",
+        "operator": "direct_contrast",
+        "before": "用户使用的最高峰不是周末，而是工作日的上午 9:30 和下午 3:30。这意味着，大部分用户用讯飞星火来解决和工作相关的刚需问题。",
+        "after": "用户使用高峰出现在工作日上午 9:30 和下午 3:30，而非周末。大部分用户用讯飞星火解决与工作相关的刚需问题。",
+        "reason": "Preserve the weekday-versus-weekend evidence and its stated interpretation in direct sentences."
+      },
+      {
+        "operation_id": "contrast-v3-12-op-03",
+        "operator": "direct_contrast",
+        "before": "广大用户能拿到的资料往往不仅是现成的长文本，还有随手可见的报刊书籍内容、各种研讨会的 PPT 内容，老师黑板上的板书、同学的笔记，以及各种会议录音、访谈，各种网上的发布会、培训教育视频等，能不能把这些文本、图片、语音等都上传到讯飞星火中，快速地获取知识？",
+        "after": "广大用户能拿到的资料往往包括现成的长文本、报刊书籍、研讨会 PPT、老师的板书、同学的笔记，以及会议录音、访谈、网上发布会和培训教育视频。这些文本、图片和语音能否上传到讯飞星火中，让用户快速获取知识？",
+        "reason": "Replace a not-only list frame with an explicit inventory while preserving the rhetorical question."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The model supports long text, image-text, and speech learning plus industry answers.",
+        "original_support": "长文本、长图文、长语音大模型",
+        "revised_support": "长文本、长图文、长语音大模型"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Downloads exceed 96 million and rank first in the stated category.",
+        "original_support": "下载量已经超过 9600 万次，在国内工具类通用大模型 APP 中排名第一。",
+        "revised_support": "下载量已经超过 9600 万次，在国内工具类通用大模型 APP 中排名第一。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Usage peaks on weekdays at 9:30 and 3:30 rather than weekends.",
+        "original_support": "最高峰不是周末，而是工作日的上午 9:30 和下午 3:30",
+        "revised_support": "使用高峰出现在工作日上午 9:30 和下午 3:30，而非周末"
+      },
+      {
+        "claim_id": "c04",
+        "description": "The complete source inventory and upload question remain present.",
+        "original_support": "各种会议录音、访谈，各种网上的发布会、培训教育视频",
+        "revised_support": "会议录音、访谈、网上发布会和培训教育视频"
+      }
+    ],
+    "locked_literals": [
+      "科大讯飞",
+      "讯飞星火",
+      "APP",
+      "PPT",
+      "9600",
+      "9:30",
+      "3:30"
+    ],
+    "retained_contrasts": [
+      "Weekday and weekend usage remain explicitly contrasted."
+    ],
+    "voice_anchors": [
+      "能否上传到讯飞星火中"
+    ],
+    "validation": {
+      "claim_checks_passed": 4,
+      "locked_literals_passed": 7,
+      "numeric_literals": [
+        "26",
+        "3:30",
+        "4",
+        "9600",
+        "9:30",
+        "V3.5"
+      ],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 2,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.91904,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-10",
+    "task_number": 9,
+    "doc_id": "3c33241e2bb2fd68fb3c6147",
+    "genre": "industry_reporting",
+    "target_lines": [
+      1,
+      7
+    ],
+    "original_side": "A",
+    "original": "从 2022 年起，“AI 一天，人间一年”就成了行业内的普遍共识。\nAI 技术迭代速度之快，让从业者既兴奋又焦虑。一方面，大模型能力正不断进化，疯狂刷新人们的认知边界。从最初的文本生成到多模态交互，从对话式 AI 到具身智能，无一不令人兴奋。另一方面，回看这些年涌现的 AI 项目，一个个迅速地崛起、消亡，其中甚至不乏 AI 独角兽项目跌落神坛，真正能够屹立在山巅的佼佼者寥寥无几。\n也正因如此，蚂蚁开源最新发布的《2025 ⼤模型开源开发⽣态全景与趋势》报告才显得格外有意义。这份报告既涵盖了智能体应⽤层和模型基础设施层，⼀共 19 个技术领域的 135 个项⽬，又对大模型开发生态的七个趋势做了深度解读。\n与其说这是一份关乎大模型开发生态的报告，不如说是给所有 AI 从业者的生存指南——在竞争白热化的大模型开发“生死局”中，谁能提前洞察趋势，谁就能抢占先机。\n华东师范大学教授、木兰开源社区 TOC 王伟在看过报告后甚至感慨道：当我看到这份报告的时候，大为震撼。在 AI 大模型飞速演进的今天，个体与组织常因缺乏系统性视角陷入“落后陷阱”。蚂蚁开源技术增长团队以开发者社区数据为镜，精准捕捉生态动态：从新兴趋势到战略投资机会，将代码行为转化为可量化的技术罗盘。\n这种全景式数据报告不仅揭示了生态位的博弈逻辑，更为企业架构升级提供了清晰的路径。\n正如《合作的进化》所示：高频互动催生深度协作，而 AI 生态真正的赢家，是那些以协作定义规则、持续构建生态位的长期价值创造者。",
+    "revised": "从 2022 年起，“AI 一天，人间一年”就成了行业内的普遍共识。\nAI 技术迭代速度之快，让从业者既兴奋又焦虑。一方面，大模型能力正不断进化，疯狂刷新人们的认知边界。从最初的文本生成到多模态交互，从对话式 AI 到具身智能，无一不令人兴奋。另一方面，回看这些年涌现的 AI 项目，一个个迅速地崛起、消亡，其中甚至不乏 AI 独角兽项目跌落神坛，真正能够屹立在山巅的佼佼者寥寥无几。\n在这一背景下，蚂蚁开源最新发布的《2025 ⼤模型开源开发⽣态全景与趋势》报告显得格外有意义。这份报告既涵盖了智能体应⽤层和模型基础设施层，⼀共 19 个技术领域的 135 个项⽬，又对大模型开发生态的七个趋势做了深度解读。\n这份报告关乎大模型开发生态，但更像是给所有 AI 从业者的生存指南——在竞争白热化的大模型开发“生死局”中，谁能提前洞察趋势，谁就能抢占先机。\n华东师范大学教授、木兰开源社区 TOC 王伟在看过报告后甚至感慨道：当我看到这份报告的时候，大为震撼。在 AI 大模型飞速演进的今天，个体与组织常因缺乏系统性视角陷入“落后陷阱”。蚂蚁开源技术增长团队以开发者社区数据为镜，精准捕捉生态动态：从新兴趋势到战略投资机会，将代码行为转化为可量化的技术罗盘。\n这种全景式数据报告揭示了生态位的博弈逻辑，也为企业架构升级提供了清晰的路径。\n正如《合作的进化》所示：高频互动催生深度协作，而 AI 生态真正的赢家，是那些以协作定义规则、持续构建生态位的长期价值创造者。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-10-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "也正因如此，蚂蚁开源最新发布的《2025 ⼤模型开源开发⽣态全景与趋势》报告才显得格外有意义。",
+        "after": "在这一背景下，蚂蚁开源最新发布的《2025 ⼤模型开源开发⽣态全景与趋势》报告显得格外有意义。",
+        "reason": "Replace a staged causal reveal with an explicit context link."
+      },
+      {
+        "operation_id": "contrast-v3-10-op-02",
+        "operator": "direct_contrast",
+        "before": "与其说这是一份关乎大模型开发生态的报告，不如说是给所有 AI 从业者的生存指南——",
+        "after": "这份报告关乎大模型开发生态，但更像是给所有 AI 从业者的生存指南——",
+        "reason": "Preserve the stronger guide interpretation without the paired formula."
+      },
+      {
+        "operation_id": "contrast-v3-10-op-03",
+        "operator": "direct_contrast",
+        "before": "这种全景式数据报告不仅揭示了生态位的博弈逻辑，更为企业架构升级提供了清晰的路径。",
+        "after": "这种全景式数据报告揭示了生态位的博弈逻辑，也为企业架构升级提供了清晰的路径。",
+        "reason": "State two additive claims without escalating the second as a reveal."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The report covers 19 technical fields, 135 projects, and seven trends.",
+        "original_support": "⼀共 19 个技术领域的 135 个项⽬，又对大模型开发生态的七个趋势做了深度解读。",
+        "revised_support": "⼀共 19 个技术领域的 135 个项⽬，又对大模型开发生态的七个趋势做了深度解读。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "The report is characterized as more like a survival guide.",
+        "original_support": "不如说是给所有 AI 从业者的生存指南",
+        "revised_support": "更像是给所有 AI 从业者的生存指南"
+      },
+      {
+        "claim_id": "c03",
+        "description": "The report reveals ecosystem competition and offers an architecture-upgrade path.",
+        "original_support": "不仅揭示了生态位的博弈逻辑，更为企业架构升级提供了清晰的路径",
+        "revised_support": "揭示了生态位的博弈逻辑，也为企业架构升级提供了清晰的路径"
+      }
+    ],
+    "locked_literals": [
+      "蚂蚁开源",
+      "AI",
+      "19",
+      "135",
+      "《合作的进化》"
+    ],
+    "retained_contrasts": [
+      "The report-versus-guide prioritization remains explicit."
+    ],
+    "voice_anchors": [
+      "“AI 一天，人间一年”",
+      "生存指南",
+      "技术罗盘"
+    ],
+    "validation": {
+      "claim_checks_passed": 3,
+      "locked_literals_passed": 5,
+      "numeric_literals": [
+        "135",
+        "19",
+        "2022",
+        "2025"
+      ],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 4,
+      "revised_marker_count": 2,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.974803,
+      "voice_anchors_passed": 3
+    }
+  },
+  {
+    "pair_id": "contrast-v3-03",
+    "task_number": 10,
+    "doc_id": "ed4b0601b5481ee4065a337a",
+    "genre": "technical_practice",
+    "target_lines": [
+      26,
+      26
+    ],
+    "original_side": "B",
+    "original": "在项目早期，基础架构团队就计划用一套调度系统管理在离线业务，真正做到统一调度。由于离线业务的调度需求比较复杂，与在线业务差别比较大，吞吐要求也很高；加上 Kubernetes 原生调度器是基于 Pod 调度，对更上一级 “Job” 级别的调度语义支持能力有限；同时由于原生调度器是单体调度器，性能优化的天花板也较低，比较难满足部分批式计算任务的需求——我们决定基于 Kubernetes 系统自研分布式调度器：",
+    "revised": "项目早期，基础架构团队计划用一套调度系统管理在离线业务，实现统一调度。离线业务的调度需求复杂，与在线业务差别较大，吞吐要求也高；Kubernetes 原生调度器基于 Pod 调度，对更上一级“Job”调度语义的支持有限；原生调度器还是单体架构，性能优化空间较小，难以满足部分批式计算任务。基于这些约束，团队决定在 Kubernetes 上自研分布式调度器：",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-03-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "在项目早期，基础架构团队就计划用一套调度系统管理在离线业务，真正做到统一调度。由于离线业务的调度需求比较复杂，与在线业务差别比较大，吞吐要求也很高；加上 Kubernetes 原生调度器是基于 Pod 调度，对更上一级 “Job” 级别的调度语义支持能力有限；同时由于原生调度器是单体调度器，性能优化的天花板也较低，比较难满足部分批式计算任务的需求——我们决定基于 Kubernetes 系统自研分布式调度器：",
+        "after": "项目早期，基础架构团队计划用一套调度系统管理在离线业务，实现统一调度。离线业务的调度需求复杂，与在线业务差别较大，吞吐要求也高；Kubernetes 原生调度器基于 Pod 调度，对更上一级“Job”调度语义的支持有限；原生调度器还是单体架构，性能优化空间较小，难以满足部分批式计算任务。基于这些约束，团队决定在 Kubernetes 上自研分布式调度器：",
+        "reason": "Complete the causal chain in shorter clauses and remove repeated depth and importance framing."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The infrastructure team planned one system for unified online and offline scheduling.",
+        "original_support": "基础架构团队就计划用一套调度系统管理在离线业务，真正做到统一调度",
+        "revised_support": "基础架构团队计划用一套调度系统管理在离线业务，实现统一调度"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Offline complexity, throughput, Pod semantics, and monolithic architecture are all retained constraints.",
+        "original_support": "离线业务的调度需求比较复杂，与在线业务差别比较大，吞吐要求也很高",
+        "revised_support": "离线业务的调度需求复杂，与在线业务差别较大，吞吐要求也高"
+      },
+      {
+        "claim_id": "c03",
+        "description": "The constraints led the team to build a distributed scheduler on Kubernetes.",
+        "original_support": "我们决定基于 Kubernetes 系统自研分布式调度器",
+        "revised_support": "团队决定在 Kubernetes 上自研分布式调度器"
+      }
+    ],
+    "locked_literals": [
+      "基础架构团队",
+      "Kubernetes",
+      "Pod",
+      "Job",
+      "批式计算任务"
+    ],
+    "retained_contrasts": [
+      "Offline and online scheduling requirements remain contrasted."
+    ],
+    "voice_anchors": [
+      "性能优化"
+    ],
+    "validation": {
+      "claim_checks_passed": 3,
+      "locked_literals_passed": 5,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 1,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.814621,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-02",
+    "task_number": 11,
+    "doc_id": "c4f3d04d7db01e65460fb2dd",
+    "genre": "technical_practice",
+    "target_lines": [
+      14,
+      14
+    ],
+    "original_side": "B",
+    "original": "在知乎，我们不仅仅采取了诸如合理的分布式数据库选型、基于 FinOps 合理规划硬件资源、服务器机型替换、对象存储优化等传统措施。此外，我们还引入了天穹自动化运维平台，该平台能够实现业务数据库变更的自助管理，同时也让 DBA 对数据库的管理实现了自动化，从而大大提高了数据库管理的效率和稳定性。通过这些创新措施的结合应用，我们在实践中不断探索和推进数据库降本增效的路径，为知乎的数据管理提供了更加全面和可靠的解决方案。",
+    "revised": "在知乎，我们采取了合理的分布式数据库选型、基于 FinOps 规划硬件资源、服务器机型替换、对象存储优化等传统措施，也引入了天穹自动化运维平台。该平台支持业务数据库变更的自助管理，也让 DBA 的数据库管理实现自动化，从而提高管理效率和稳定性。通过这些创新措施的结合应用，我们在实践中不断探索和推进数据库降本增效的路径，为知乎的数据管理提供了更加全面和可靠的解决方案。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-02-op-01",
+        "operator": "merge_repeated_reframing",
+        "before": "在知乎，我们不仅仅采取了诸如合理的分布式数据库选型、基于 FinOps 合理规划硬件资源、服务器机型替换、对象存储优化等传统措施。此外，我们还引入了天穹自动化运维平台，该平台能够实现业务数据库变更的自助管理，同时也让 DBA 对数据库的管理实现了自动化，从而大大提高了数据库管理的效率和稳定性。",
+        "after": "在知乎，我们采取了合理的分布式数据库选型、基于 FinOps 规划硬件资源、服务器机型替换、对象存储优化等传统措施，也引入了天穹自动化运维平台。该平台支持业务数据库变更的自助管理，也让 DBA 的数据库管理实现自动化，从而提高管理效率和稳定性。",
+        "reason": "Convert stacked additive framing into two explicit sentences while preserving every measure and outcome."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Zhihu used the four named traditional cost-efficiency measures.",
+        "original_support": "合理的分布式数据库选型、基于 FinOps 合理规划硬件资源、服务器机型替换、对象存储优化等传统措施",
+        "revised_support": "合理的分布式数据库选型、基于 FinOps 规划硬件资源、服务器机型替换、对象存储优化等传统措施"
+      },
+      {
+        "claim_id": "c02",
+        "description": "The Tianqiong platform supports self-service changes and DBA automation.",
+        "original_support": "天穹自动化运维平台，该平台能够实现业务数据库变更的自助管理，同时也让 DBA 对数据库的管理实现了自动化",
+        "revised_support": "天穹自动化运维平台。该平台支持业务数据库变更的自助管理，也让 DBA 的数据库管理实现自动化"
+      },
+      {
+        "claim_id": "c03",
+        "description": "The combined measures improve efficiency, stability, and the broader management solution.",
+        "original_support": "通过这些创新措施的结合应用，我们在实践中不断探索和推进数据库降本增效的路径，为知乎的数据管理提供了更加全面和可靠的解决方案。",
+        "revised_support": "通过这些创新措施的结合应用，我们在实践中不断探索和推进数据库降本增效的路径，为知乎的数据管理提供了更加全面和可靠的解决方案。"
+      }
+    ],
+    "locked_literals": [
+      "知乎",
+      "FinOps",
+      "天穹自动化运维平台",
+      "DBA",
+      "对象存储"
+    ],
+    "retained_contrasts": [],
+    "voice_anchors": [
+      "在实践中不断探索和推进"
+    ],
+    "validation": {
+      "claim_checks_passed": 3,
+      "locked_literals_passed": 5,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 2,
+      "revised_marker_count": 0,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.910941,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v3-09",
+    "task_number": 12,
+    "doc_id": "d4407ed937d0f78f325c3fbd",
+    "genre": "industry_reporting",
+    "target_lines": [
+      5,
+      10
+    ],
+    "original_side": "B",
+    "original": "IBM 也强调，不必过度“神化”AI\n。“技术的本质要看它能不能解决企业真正的问题，尤其当它跟核心业务绑定起来，就要回归业务场景去看技术有没有真正产生价值。”IBM 大中华区技术销售总经理、首席技术官翟峰表示。\n换句话说，AI 解决不了所有问题，也并非所有问题都需要用 AI 解决，Agent 同理。\n“真假”智能体\n区别于传统的 AI 助手（如聊天机器人），AI Agent 不仅能理解指令和生成内容，更能基于实时数据自主规划任务路径、调用多系统资源，并在执行中动态优化策略。\n这些优秀特质让业界对 AI Agent 趋之若鹜，当然也使得市场上出现不少“新瓶装旧酒”的产品——虽然换上了 AI Agent 的包装，但内核仍然是传统的 AI 工具。",
+    "revised": "IBM 也强调，不必过度“神化”AI\n。“技术的本质要看它能不能解决企业真正的问题，尤其当它跟核心业务绑定起来，就要回归业务场景去看技术有没有真正产生价值。”IBM 大中华区技术销售总经理、首席技术官翟峰表示。\nAI 解决不了所有问题，也不是所有问题都需要用 AI 解决；Agent 同样如此。\n“真假”智能体\n区别于传统的 AI 助手（如聊天机器人），AI Agent 不仅能理解指令和生成内容，更能基于实时数据自主规划任务路径、调用多系统资源，并在执行中动态优化策略。\n这些优秀特质让业界对 AI Agent 趋之若鹜，当然也使得市场上出现不少“新瓶装旧酒”的产品——虽然换上了 AI Agent 的包装，但内核仍然是传统的 AI 工具。",
+    "operations": [
+      {
+        "operation_id": "contrast-v3-09-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "换句话说，AI 解决不了所有问题，也并非所有问题都需要用 AI 解决，Agent 同理。",
+        "after": "AI 解决不了所有问题，也不是所有问题都需要用 AI 解决；Agent 同样如此。",
+        "reason": "Remove a clarification announcement while preserving both negations."
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The attributed quotation about business value remains verbatim.",
+        "original_support": "“技术的本质要看它能不能解决企业真正的问题，尤其当它跟核心业务绑定起来，就要回归业务场景去看技术有没有真正产生价值。”",
+        "revised_support": "“技术的本质要看它能不能解决企业真正的问题，尤其当它跟核心业务绑定起来，就要回归业务场景去看技术有没有真正产生价值。”"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Neither AI nor Agent solves every problem or is needed for every problem.",
+        "original_support": "AI 解决不了所有问题，也并非所有问题都需要用 AI 解决，Agent 同理。",
+        "revised_support": "AI 解决不了所有问题，也不是所有问题都需要用 AI 解决；Agent 同样如此。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Agent capabilities and the old-tool counterexample remain unchanged.",
+        "original_support": "虽然换上了 AI Agent 的包装，但内核仍然是传统的 AI 工具。",
+        "revised_support": "虽然换上了 AI Agent 的包装，但内核仍然是传统的 AI 工具。"
+      }
+    ],
+    "locked_literals": [
+      "IBM",
+      "AI",
+      "Agent",
+      "翟峰"
+    ],
+    "retained_contrasts": [
+      "AI and Agent limitations remain explicit negated claims."
+    ],
+    "voice_anchors": [
+      "不必过度“神化”AI",
+      "“新瓶装旧酒”"
+    ],
+    "validation": {
+      "claim_checks_passed": 3,
+      "locked_literals_passed": 4,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_marker_count": 4,
+      "revised_marker_count": 3,
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.976744,
+      "voice_anchors_passed": 2
+    }
+  }
+]

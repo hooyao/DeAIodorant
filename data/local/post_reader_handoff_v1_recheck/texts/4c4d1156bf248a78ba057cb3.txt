@@ -1,0 +1,114 @@
+引言
+现如今的大语言模型已经能流畅地写文章、写代码，甚至执行复杂的 Agent 工作流，然而，它们在面对严谨的数学定理证明时，却往往显得力不从心。
+在常规的数学解题中，模型只需要“答对最终数值”即可，但数学定理证明不同，它要求极度严苛的逻辑链条，任何一句自然语言的模棱两可，都可能导致整个证明的崩塌。那么，如何让 AI 从“猜答案”走向“严谨证明”，成为复杂推理具有挑战的课题。
+为了解答这个问题，我们开源了专门用于数学形式化与定理证明的模型 ——
+LongCat-Flash-Prover
+。
+LongCat-Flash-Prover 在解决定理证明和形式化任务时，将形式化推理拆解为自动形式化（Auto-Formalization）、草稿生成（Sketching）和证明生成（Proving）三大原子能力。在结合工具集成推理（Tool-Integrated Reasoning，TIR）策略下，
+仅用 72 次推理预算，MiniF2F-Test 通过率就达到 97.1%
+，在已知开源 Prover 模型中刷新 SOTA；在超难竞赛级任务上，
+MathOlympiad-Bench 达 46.7%（180 次预算），PutnamBench 达 41.5%（118 次预算）
+，同样超越现有开源模型。
+目前 LongCat-Flash-Prover 已全面开源，欢迎使用：
+GitHub
+：
+https://github.com/meituan-longcat/LongCat-Flash-Prover
+Hugging Face
+：
+https://huggingface.co/meituan-longcat/LongCat-Flash-Prover
+Report
+：
+https://github.com/meituan-longcat/LongCat-Flash-Prover/blob/main/LongCat_Flash_Prover_Technical_Report.pdf
+让我们感到惊喜的是，模型在开源后几日内，不仅受到了 AI 和大模型研究者们的关注，更引起了数学界的关注。发布当日，我们便收到了国内顶尖高校的合作邀请，共同探讨基于该模型开发形式化证明 Agent 的可能性。我们期望借此将现有的数学教材和前沿论文"翻译"成形式化语言，进一步充实形式化数学的知识底座，为整个数学研究领域的范式创新提供助力。这让我们深刻意识到：
+AI 在定理证明上的突破，不再仅仅是算法跑分，而是真正开始成为基础科学研究的“基础设施”
+。
+为什么要用形式化语言来完成定理证明？
+自然语言天生带有模糊性，很难进行步骤级的严谨性验证，为了解决这个问题，数学家和计算机科学家们引入了
+形式化语言（如 Lean4）
+。
+你可以把 Lean4 理解为一种“数学编程语言”。就像 Python 代码可以通过编译器执行一样，用 Lean4 写出的数学证明，可以通过编译原理进行逐行校验。
+只要模型能写出语法正确、逻辑严谨且能通过 Lean4 编译器验证的代码，就意味着这个数学定理被 100% 严谨地证明了。
+我们是如何教 AI 证明定理的？
+教 AI 证明定理，就像教一个数学系新生，不能指望它一眼看穿答案，而是要教它拆解步骤。我们将 AI 的证明过程拆解为三个基础的形式化推理原子能力：
+1. 自动形式化（Auto-Formalization）——“翻译题目”
+：先将自然语言描述的数学问题，精准翻译成 Lean4 计算机能看懂的形式化描述。
+2. 草稿生成（Sketching）——“写解题大纲”
+：面对复杂定理，不急于一步写完。模型会先写一个草稿，把大问题拆解成几个需要证明的小引理（Lemma），理清逻辑主线。
+3. 证明生成（Proving）——“补全细节”
+：沿着草稿的思路，一步步补全剩余的证明过程，完成逻辑推演。
+为了让模型熟练掌握这三项技能，我们设计了一套结合“工具集成推理”（TIR）的“混合专家迭代”框架。简单来说，就是组合不同具备这些原子能力的专家模型，以单轮和多轮形式进行不断试错、自我纠正，从简单的完整证明，逐步过渡到复杂的“引理式草稿证明”。
+一、技术亮点
+1.1 混合专家迭代
+在这个框架中，我们旨在结合不同的专家不断合成基于 Auto-Formalization、Sketching 和 Proving 这三个原子能力以及相互组合下的推理轨迹，并挑选高质量的数据来进一步提升相应专家模型的性能。
+专家迭代主要包含两个阶段：
+Cold-Start 阶段
+：我们首先利用团队在早期探索的基于 TIR 和 DPO 训练的 Auto-Formalizer 专有模型 ATF-32B 用于合成 Formal Statement。基于这些 Statement，我们利用 LongCat-Flash-Thinking-2601 生成高质量的带有多个 Lean4 相关验证工具反馈的轨迹。基于这些合成数据，我们通过执行去污、去重和基于难度和多样性的采样，构建了一个高质量的冷启动数据集。由于不同的专家模型来自不同的模型族，我们应用领域混合 SFT 来整合这些功能，并得到最终的冷启动模型。
+Iteration 阶段
+：在迭代阶段，我们选择冷启动阶段得到的模型作为新的专家模型。每个形式推理任务的轨迹都是基于这个新专家模型合成的。此外，我们还整合了大量通用数据，以确保模型具备非形式推理能力。每一轮迭代中，我们会进行 SFT 和 RL 训练，多次迭代之后则可以得到 LongCat-Flash-Prover 模型。
+1.2 课程学习模式下的 TIR 轨迹合成
+在数据合成过程中，如何组织这些专家进行协同是一个挑战。我们设计了如下图所示的工作流。
+每个专家模型都能同时生成单轮轨迹（不调用工具）和多轮轨迹（TIR 模式），从而确保合成数据的多样性。
+为了使模型能够根据每个问题的难度动态选择合适的工具和证明策略，我们采用了一种课程学习方法：1）从单轮合成开始，然后是多轮调用工具合成；2）从生成完整证明逐步过渡到引理式草稿证明。
+基本合成过程如下：
+首先给定一个 Informal Statement（即一个自然语言问题），先用 Auto-Formalization 专家在单轮无工具条件下生成 N 个 Formal Statement。我们使用 Lean4 Server 和语义一致性打分模型来对每个结果进行打分。当且仅当生成的 Formal Statement 没有语法错误且语义与 Informal Statement 保持一致的则被认定为正确；
+如果这 N 个 Formal Statement 包含正确的结果，则直接获取这些正确的 Statement 即可；如果全部错误，则激活 TIR 模式，通过结合 Lean4 Server 和语义一致性打分模型两个工具来不断修改，直到能生成正确的为止；
+基于生成好的 Formal Statement，我们接下来使用 Prover 模型尝试生成证明。我们先使用 Whole-Proof 模式来一次性给出完整的证明过程，同样我们生成 N 个结果，并使用 Lean4 Server 和 Theorem 一致性来判断模型生成的证明是否通过。其中，Theorem 一致性是为了避免模型伪造或修改原始证明目标从而导致 Hacking 问题；
+如果生成的 N 个 Whole-Proof 没有正确的，那么我们激活 Whole-Proof 的 TIR 模式，借助 Lean4 Server 和 Theorem 一致性打分工具的反馈信息帮助模型修改 Proof；
+如果 Whole-Proof 模式下不论使用单轮还是 TIR 都无法被证明（通常是一些复杂的问题，或者需要超过 1000 行证明过程的问题），我们则开启 Sketch-Proof 的策略；
+Sketching 中，给定一个 Formal Statement，Sketcher 专家模型先生成 N 个 Sketch，每个 Sketch 包含多个待证明的 Lemma，以及一个 Main Body，我们同样采用 TIR 模式来帮助模型生成语法和 Theorem 一致的 Sketch；
+对于每个 Sketch，我们再次使用 Prover 专家模型对每个 Lemma 进行 Whole-Proof 模式的证明，整个证明过程均使用 TIR 模式。
+基于这些合成轨迹，我们进行了一些数据处理、多样性采样和难度控制，从而可以获得 SFT 模型。
+1.3 形式化智能体工具
+我们的专家迭代框架和 RL 训练框架中，共享相同的一套智能体工具：
+1. Lean4 Server
+：我们部署了 Lean4 Server 并作为验证生成的 Formal Statement、Sketch 和 Proof 的语法是否准确。相比于之前工作直接将 Lean4 Server 的 JSON 格式作为反馈信息，我们对其进行了处理：通过将完整的 Proof 中插入锚点，即直接告诉模型错误代码片段，而非简单的行列坐标，这样可以避免模型错误判断错误代码的位置，提高纠错的准确性。
+2. 语义一致性
+：只靠 Lean4 Server 可能会存在 Hack 问题，例如模型为了生成语法正确的代码而修改原始问题。为此，我们通过 LLM-as-a-Judger 的手段，验证模型生成的 Formal Statement 与原始问题是否语义一致。
+3. Theorem 一致性
+：在模型生成 Sketch 或 Proof 时，需要确保模型的 Theorem 证明目标不能被篡改，一些微小的符号变化可能会导致整个证明问题发生改变。我们采用基于规则的方法来约束模型不能修改原始证明目标。
+4. Legality 验证
+：我们观察到大约 9 种存在作弊的 Proof 行为，这些证明过程通常尝试修改 Formal Statement、插入提前终止符
+#exit
+、插入不存在的公理或无法证明的假设、通过添加 macro、elab、syntax、notation 尝试绕过编译错误等手段企图达到 Lean4 Server 给出证明通过的反馈。通过引入 Legality 验证，可以极大地避免模型出现 Hack 问题。
+1.4 HisPO 算法
+Prover 在 RL 阶段训练使用 TIR 模式，我们基于 LongCat-Flash-Thinking 所使用的 DORA 训练框架进行。
+在训练过程中，我们观察到 MoE 两个影响模型稳定性的因素：训推一致性问题以及 Staleness。对于训推 Diff，我们通过评估新旧策略模型在训练引擎与推理引擎上关于重要性采样比（Important Sampling Ratio，IS Ratio）的估计来衡量训推一致性。相比 GRPO 而言，我们除了将 Sequence-Mean-Token-Mean 调整为 Token-Mean 以外，我们主要引入分层的 Masking 策略来直接消除不稳定 Token 的梯度贡献：
+序列层面 Masking
+：我们首先通过计算所有 Token 的 IS Ratio 的几何平均值来估计序列级的训练-推理 Diff。对于整个序列，如果 Diff 超过一定范围，则认为其对训练稳定性有显著影响，并将移除该序列的梯度贡献。该策略旨在仅考虑序列级的训练-推理一致性度量，避免过度忽略有价值的标记。
+Token 层面 Masking
+：对于剩余的序列，我们将移除具有显著训推不一致性的 Token，以确保剩余标记不会因训练拉取不一致性而影响稳定性。
+Token 层面 Staleness 控制
+：对于经过序列和 Token 层面的 Masking 处理后所保留的 Token，我们再考虑标准的 Clipping 操作，用于控制 Staleness，以确保更新幅度限制在一定范围内，从而保证训练稳定性。
+1.5 有趣的发现：AI 也会在证明中“作弊”
+在训练过程中，我们观察到了一个非常有意思的现象：
+AI 为了得到高分，学会了“作弊”。
+如果仅仅依赖 Lean4 编译器作为裁判，模型有时会通过修改原始题目、插入提前终止符（如
+#exit
+）、甚至凭空捏造不存在的公理，来骗过编译器，获得“证明通过”的反馈。
+为了纠正这种“耍小聪明”的行为，我们不仅引入了 LLM 作为裁判来检验“语义一致性”，还专门开发了一个轻量级的 Lean4 词法和语法分析器。它能将代码转化为抽象语法树（AST），严格排查大约 9 种作弊手段。
+二、实验结论
+Auto-Formalization 任务
+：在 Auto-Formalization 任务上，LongCat-Flash-Prover 在所有自动形式化基准测试中均取得了新的最佳结果；尤其是在 MiniF2F-Test 和 ProofNet 测试中，我们获得了 100% 的得分。基于 TIR 的改进带来了高达 14% 的性能提升，凸显了工具反馈在帮助模型解决先前无法解决的任务方面的有效性。
+极高的样本效率（低预算、高通过率）
+：过去，模型往往需要尝试上千次才能碰巧证明一个难题。而 LongCat-Flash-Prover 在结合工具集成推理（TIR）后，
+仅需 72 次尝试，就在 MiniF2F-Test 数据集上达到了 97.1% 的通过率
+，刷新了已知开源模型的 SOTA。
+“打草稿”真的很管用
+：实验证明，在相同的计算预算下，采用"草稿生成（Sketching）"将问题拆解为引理，能让证明准确率平均再提升大约 10%。
+攻克超难竞赛级任务
+：在难度极高的 MathOlympiad-Bench、ProofNet、ProverBench 和 PutnamBench 测试中，模型分别达到了 46.7%、52.2%、70.8% 和 41.5% 的准确率，同样超越了现有的开源模型。
+三、结语
+从"答案看起来对"到"每一步都能被验证"，LongCat-Flash-Prover 不再满足于输出一个数值，而是像一位严谨的数学研究员，从公理出发，用计算机可验证的语言完成证明的闭环。
+我们相信，当 AI 真正学会"证明"而不仅仅是"猜答案"时，它便有可能成为数学研究者、教育者与学习者的得力伙伴——不仅能帮助翻译文献、验证思路，更能启发新的证明路径，甚至参与前沿数学问题的探索。
+目前，
+LongCat-Flash-Prover 已经全面开源
+。我们期待与学术界和开源社区一起，让严谨推理的能力走得更远，让每一次数学探索都有迹可循。
+四、开源
+🚀
+欢迎体验与探讨：
+GitHub:
+https://github.com/meituan-longcat/LongCat-Flash-Prover
+Hugging Face:
+https://huggingface.co/meituan-longcat/LongCat-Flash-Prover
+Report:
+https://github.com/meituan-longcat/LongCat-Flash-Prover/blob/main/LongCat_Flash_Prover_Technical_Report.pdf

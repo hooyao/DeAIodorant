@@ -1,0 +1,22 @@
+{
+  "nonwhitespace_text_coverage_equal": true,
+  "removed_metadata_or_footer_nodes": [
+    {
+      "selector": "h1.item-name",
+      "text": "2026 年家用扫地机器人选购指南：含石头等各大品牌爆款单品推荐",
+      "dom_html": "<h1 class=\"item-name\">\n<span class=\"edit_interface\"></span>\r\n                                                                2026 年家用扫地机器人选购指南：含石头等各大品牌爆款单品推荐                            </h1>"
+    },
+    {
+      "selector": ".recommend-tab",
+      "text": "2026-03-19 17:58:14 3点赞 5收藏 0评论",
+      "dom_html": "<div class=\"recommend-tab z-clearfix item-preferential\">\n<span class=\"xilie\">\n<span>2026-03-19 17:58:14</span>\n<span>3点赞</span>\n<span>5收藏</span>\n<span>0评论</span>\n</span>\n<!-- 风险提示 -->\n<!-- 直达链接-->\n</div>"
+    },
+    {
+      "selector": ".the-end",
+      "text": "",
+      "dom_html": "<div class=\"the-end\"><img alt=\"\" src=\"https://res.smzdm.com/pc/pc_shequ/dist/img/the-end.png\"/></div>"
+    }
+  ],
+  "article_selector": "article#articleId",
+  "coverage_scope": "正文容器内全部非空白文本；未把图片像素中的文字当作已读取。"
+}

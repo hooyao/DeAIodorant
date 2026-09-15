@@ -1,0 +1,50 @@
+{
+  "protocol_version": "research-value-triage-1.0",
+  "generated_at": "2026-08-22T12:50:33.717529+00:00",
+  "model": "qwen3.8-27b",
+  "model_digest": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "backend": "openai",
+  "endpoint": "http://192.168.1.200:8000/v1",
+  "concurrency": 16,
+  "prompt_versions": {
+    "primary": "research-value-primary-v3",
+    "verifier": "research-value-verifier-v3"
+  },
+  "temperature": 0,
+  "seed": 42,
+  "restriction": "Research-value triage is separate from translation provenance. Model results are measurements and do not replace human quality review.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\infoq_candidates.jsonl",
+      "sha256": "225b5d43514fd1d3b7211a1b754e771f53e33285967d10e81aca24807ae35563"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\meituan_tech_candidates.jsonl",
+      "sha256": "d816c7e03f5ff0bfe7f7390af0c47a590f125ba0b4bec34aac561aca28453eb5"
+    }
+  ],
+  "provenance_results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\triage_qwen38\\triage_results.jsonl",
+  "documents": 84,
+  "status_counts": {
+    "model_assisted_substantive": 58,
+    "model_assisted_low_value": 16,
+    "value_uncertain": 10
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\triage_qwen38\\value\\value_results.jsonl",
+  "results_sha256": "26b005c53568585cdada72381d0d6c767f70ece5883a5a46444725a62e91c729",
+  "artifacts": {
+    "model_assisted_substantive": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\triage_qwen38\\value\\model_assisted_substantive.jsonl",
+      "sha256": "daadd9aa3c86a423927b3c6705c8248a5f31c8516e2a2800379e4082ffbbe73f"
+    },
+    "model_assisted_low_value": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\triage_qwen38\\value\\model_assisted_low_value.jsonl",
+      "sha256": "8e8bcc7b49a11d0c6ff1a37f537021663f4a8c59e636ad27ffc3ce547e797010"
+    },
+    "value_uncertain": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\triage_qwen38\\value\\value_uncertain.jsonl",
+      "sha256": "e67a91b773395390298957b9f0ff16ae2e0231130a2cf87a64cae55e02c18ef9"
+    }
+  }
+}

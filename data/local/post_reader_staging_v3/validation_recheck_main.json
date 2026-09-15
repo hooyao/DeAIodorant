@@ -1,0 +1,74 @@
+{
+  "schema_version": "post-reader-corpus-validation-1.1",
+  "checked_at": "2026-08-30T04:49:36.521466+00:00",
+  "handoff_root": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v3",
+  "repository_root": "C:\\Users\\HuYao\\.codex\\worktrees\\9b66\\DeAIodorant",
+  "valid": true,
+  "reader_development_ready": true,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "indexed_documents": 93,
+    "structurally_readable_documents": 93,
+    "sources": {
+      "huawei_cloud_community": 32,
+      "leiphone": 39,
+      "qbitai": 22
+    },
+    "topics": {
+      "ai_models_agents": 57,
+      "business_industry": 17,
+      "data_infrastructure": 13,
+      "software_engineering": 6
+    },
+    "formats": {
+      "industry_reporting": 40,
+      "research_summary": 19,
+      "technical_practice": 34
+    }
+  },
+  "coverage": {
+    "eligible_topics": [
+      "ai_models_agents",
+      "business_industry",
+      "data_infrastructure",
+      "software_engineering"
+    ],
+    "eligible_sources": [
+      "huawei_cloud_community",
+      "leiphone",
+      "qbitai"
+    ],
+    "source_format_counts": {
+      "huawei_cloud_community": {
+        "technical_practice": 32,
+        "research_summary": 0,
+        "industry_reporting": 0
+      },
+      "leiphone": {
+        "technical_practice": 2,
+        "research_summary": 17,
+        "industry_reporting": 20
+      },
+      "qbitai": {
+        "technical_practice": 0,
+        "research_summary": 2,
+        "industry_reporting": 20
+      }
+    }
+  },
+  "limits": {
+    "post_start": "2025-07-01",
+    "minimum_documents": 36,
+    "minimum_sources": 2,
+    "minimum_documents_per_source": 12,
+    "minimum_topics": 3,
+    "minimum_documents_per_topic": 6,
+    "required_formats": [
+      "technical_practice",
+      "research_summary",
+      "industry_reporting"
+    ],
+    "minimum_documents_per_format": 6
+  }
+}

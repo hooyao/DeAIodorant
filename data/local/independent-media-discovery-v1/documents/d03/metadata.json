@@ -1,0 +1,38 @@
+{
+  "id": "d03",
+  "url": "https://post.smzdm.com/p/a0p4d08/",
+  "search_id": "s05",
+  "result_position": 4,
+  "reason": "早期同来源机器人体验文；与购买指南存在体裁差异，作为有限的来源／题材对照。",
+  "source_html_sha256": "b795729b7bbc4493094685897deb6f94994ad45850ddac4e7ac8dbf9bfc0bbf8",
+  "collected_at_utc": "2026-09-14T14:48:57.806521+00:00",
+  "extractor_version": "independent-media-extract-1.0",
+  "corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+  "generation_model": "unknown",
+  "translation_status": "unresolved",
+  "reader_label": null,
+  "upstream_sources_fetched": false,
+  "media_inspected": false,
+  "rights_status": "再分发／训练许可未核实，仅供本次授权研究核验",
+  "title": "《到站秀》第17弹：Sphero 星球大战7 “呆萌”BB-8 遥控智能机器人",
+  "published_at": "2015-11-06T21:00:29+08:00",
+  "publication_evidence": {
+    "selector": "meta[property=\"article:published_time\"]",
+    "raw": "<meta content=\"2015-11-06T21:00:29+08:00\" property=\"article:published_time\"/>"
+  },
+  "source_type": "unknown",
+  "source_type_evidence": "中文页面与署名不单独证明中文原创；所读正文未发现明确译者／翻译来源标记。",
+  "author": "资讯小小值",
+  "publisher_rights_statement": "本站内容未经书面许可,禁止一切形式的转载。",
+  "full_text_status": "complete_html_text_images_not_inspected",
+  "limitations": [
+    "正文 HTML 非空白文字全部覆盖；图片／动态图／内嵌媒体未读取，图中表格数据或效果对比不能被当作已核实支持。",
+    "商品卡及媒体链接保留在原始 HTML／DOM，不逐个请求。来源声明和产品技术数值未外部核验。"
+  ],
+  "cohort": "pre_2023",
+  "body_sha256": "0a296f846f0214763b00bfc64150a4fff9505715ebfdef8f477a4cded2085304",
+  "characters": 1972,
+  "text_blocks": 27,
+  "literal_ershi": 0,
+  "literal_ershi_interpretation": "只作描述；不决定候选强度或质量。"
+}

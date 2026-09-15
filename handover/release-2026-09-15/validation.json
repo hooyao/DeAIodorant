@@ -1,0 +1,51 @@
+{
+  "schema_version": "complete-research-publication-validation-1.0",
+  "validated_at_utc": "2026-09-15T02:34:24.001493+00:00",
+  "base_commit": "47ba3bfacba5f0a808ab998a49f5a15bfa96e1c4",
+  "target_branch": "init",
+  "main_preserved_at": "af751e236c084c0de3cc45a5979749bad0778378",
+  "tests": {
+    "environment": "clean Git index checkout with only checked-in files and existing Python dependencies",
+    "passed": 184,
+    "failed": 0,
+    "seconds": 4.66,
+    "command": "python -X utf8 -B -m pytest -p no:cacheprovider"
+  },
+  "compileall": "passed",
+  "source_and_active_document_whitespace_check": "passed",
+  "research_inventory": {
+    "files": 2198,
+    "bytes": 213143896,
+    "sha256": "bec329dd7788359d061d20fe929a7b261fe0bdbc835f922a905a47581b59f4ec",
+    "raw_index_and_clean_checkout_hashes": "passed"
+  },
+  "source_linkage": {
+    "cases": 6,
+    "historical_spans": 80,
+    "historical_unique_spans": 58,
+    "status": "passed"
+  },
+  "current_pilot": {
+    "formal_records": 36,
+    "quote_occurrences": 191,
+    "frozen_inputs": "passed"
+  },
+  "label_studio_archive": {
+    "projects": 3,
+    "tasks": 328,
+    "annotations": 41,
+    "current_drafts": 0,
+    "historical_drafts_preserved": 1,
+    "additional_annotations_not_in_old_exports": 2,
+    "manifest_files_verified": 11,
+    "source_database_unchanged": true,
+    "live_application_import_tested": false
+  },
+  "credential_review": {
+    "actual_local_credentials_found": 0,
+    "unresolved_findings": 0,
+    "historical_source_url_signatures": "two unchanged frozen-source occurrences, expired in 2022; retained as source evidence",
+    "credential_values_recorded": false
+  },
+  "scope": "All available research artifacts across the task, primary checkout and previous worktree; runtime environments, model runtime files and credential-bearing originals excluded with safe research exports where needed."
+}

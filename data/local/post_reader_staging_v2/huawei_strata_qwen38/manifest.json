@@ -1,0 +1,42 @@
+{
+  "protocol_version": "post-corpus-strata-1.0",
+  "generated_at": "2026-08-29T17:00:21.717670+00:00",
+  "status": "model_assisted_measurement_not_human_gold",
+  "model": "qwen3.8-27b",
+  "model_digest": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "endpoint": "http://127.0.0.1:8000/v1",
+  "concurrency": 16,
+  "temperature": 0,
+  "seed": 42,
+  "prompt_version": "post-corpus-format-topic-primary-v1",
+  "candidate_files": [
+    {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_review_candidates/huawei_cloud_community_candidates.jsonl",
+      "sha256": "484e04f9fb62c2cb96c2af9680509c150383162af0cc951685f60207976aa640"
+    }
+  ],
+  "provenance_results": {
+    "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_consensus_provenance.jsonl",
+    "sha256": "5e46535b27e90e7d41c900e464235d8b9ae1e89466ee7d4a5170cb7c5346d190"
+  },
+  "value_results": {
+    "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_consensus_value.jsonl",
+    "sha256": "2dd64e1349f8ae4dd42c61af65c628e3d1664333ddad3c8376488f7196eac107"
+  },
+  "documents": 36,
+  "confidence_counts": {
+    "high": 36
+  },
+  "format_counts": {
+    "technical_practice": 35,
+    "industry_reporting": 1
+  },
+  "topic_counts": {
+    "ai_models_agents": 18,
+    "software_engineering": 2,
+    "data_infrastructure": 15,
+    "business_industry": 1
+  },
+  "results": "/home/hooyao/deaiodorant-post-v2-data/huawei_strata_qwen38/strata_results.jsonl",
+  "results_sha256": "3c392d3c63f8e82e25ba419c776d79c622b3b59715f7aa01fe352e12ca499ce0"
+}

@@ -1,0 +1,46 @@
+{
+  "protocol_version": "research-value-triage-1.0",
+  "generated_at": "2026-08-29T16:54:37.537339+00:00",
+  "model": "deepseek/deepseek-v4-flash-0731",
+  "model_digest": null,
+  "backend": "openai",
+  "endpoint": "https://openrouter.ai/api/v1",
+  "concurrency": 8,
+  "prompt_versions": {
+    "primary": "research-value-primary-v3",
+    "verifier": "research-value-verifier-v3"
+  },
+  "temperature": 0,
+  "seed": 42,
+  "restriction": "Research-value triage is separate from translation provenance. Model results are measurements and do not replace human quality review.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_review_candidates\\huawei_cloud_community_candidates.jsonl",
+      "sha256": "484e04f9fb62c2cb96c2af9680509c150383162af0cc951685f60207976aa640"
+    }
+  ],
+  "provenance_results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\triage_results.jsonl",
+  "documents": 82,
+  "status_counts": {
+    "model_assisted_substantive": 39,
+    "value_uncertain": 34,
+    "model_assisted_low_value": 9
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_deepseek_v4_0731\\value_results.jsonl",
+  "results_sha256": "318ccd8800b373fcdb8790580ae99eb528bc723e8c82f7d50b9462adf83d269c",
+  "artifacts": {
+    "model_assisted_substantive": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_deepseek_v4_0731\\model_assisted_substantive.jsonl",
+      "sha256": "e32e503c93ee38fe47f97a5ec6718af7a8dc77ba9bf9cc81dead17518fcc952e"
+    },
+    "model_assisted_low_value": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_deepseek_v4_0731\\model_assisted_low_value.jsonl",
+      "sha256": "4f608fbe710fe3a4b54e386d18788698a1d4d192fa64bb8c7a68e7e16a85b064"
+    },
+    "value_uncertain": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_deepseek_v4_0731\\value_uncertain.jsonl",
+      "sha256": "f25377a503d5e1a6ed7acef48da8e0e1bdfbd31640bcae093b744755d2f89d15"
+    }
+  }
+}

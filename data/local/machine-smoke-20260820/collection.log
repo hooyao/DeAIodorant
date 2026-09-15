@@ -1,0 +1,121 @@
+[infoq/pre] eligible 1/2: 2022-01-05 views=2913 关于Apache Flink和实时计算的最新动态、未来方向，你想知道的都在这里
+[infoq/pre] eligible 2/2: 2021-10-30 views=5210 九章云极公布开源AutoML力作：DAT大幅提升AI建模效率，建模时间节约10倍
+[infoq/post] eligible 1/2: 2026-02-24 views=10113 当AI开始学做⼈：逐句解读OpenClaw的AgentS.md ——SOUL.md定义了灵魂，AgentS.md教会它怎么活
+[infoq/post] eligible 2/2: 2026-05-22 views=10751 阶跃星辰副总裁俞刚确认出席AICon上海站，分享多模态生成与理解的架构演进
+[jiqizhixin/pre] eligible 1/1: 2022-06-06 领克发布智能电混技术，全新设计语言概念车The Next Day亮相
+{
+  "schema_version": "corpus-pilot-report-1",
+  "corpus_stage": "diagnostic_pilot",
+  "generated_at": "2026-08-20T12:41:48.168836+00:00",
+  "windows": {
+    "pre": [
+      "2021-07-01",
+      "2022-06-30"
+    ],
+    "post": [
+      "2025-07-01",
+      "2026-06-30"
+    ]
+  },
+  "target_per_cell": 1,
+  "configuration": {
+    "delay_seconds": 0.35,
+    "http_timeout_seconds": 45.0,
+    "max_attempts": 80,
+    "translation_model": "qwen3.5:9b",
+    "ollama_endpoint": "http://127.0.0.1:11434",
+    "translation_timeout_seconds": 600.0,
+    "translation_prompt_versions": {
+      "strict": "translation-strict-v3",
+      "verifier": "translation-original-verifier-v2"
+    },
+    "selection_seeds": [
+      "infoq-pre",
+      "infoq-post",
+      "jiqizhixin-url-sha256"
+    ]
+  },
+  "cells": {
+    "infoq_pre": {
+      "documents": 1,
+      "median_cjk_chars": 3790,
+      "min_cjk_chars": 3790,
+      "max_cjk_chars": 3790,
+      "median_views": 5210,
+      "visibility_verified_documents": 1
+    },
+    "infoq_post": {
+      "documents": 1,
+      "median_cjk_chars": 746,
+      "min_cjk_chars": 746,
+      "max_cjk_chars": 746,
+      "median_views": 10751,
+      "visibility_verified_documents": 1
+    },
+    "jiqizhixin_pre": {
+      "documents": 1,
+      "median_cjk_chars": 1983,
+      "min_cjk_chars": 1983,
+      "max_cjk_chars": 1983,
+      "median_views": null,
+      "visibility_verified_documents": 0
+    },
+    "jiqizhixin_post": {
+      "documents": 0,
+      "median_cjk_chars": null,
+      "min_cjk_chars": null,
+      "max_cjk_chars": null,
+      "median_views": null,
+      "visibility_verified_documents": 0
+    }
+  },
+  "fetch_stats": {
+    "infoq_pre": {
+      "attempted": 12,
+      "fetched": 12,
+      "eligible": 2,
+      "wrong_period": 7,
+      "translated_filtered": 3,
+      "translation_uncertain_filtered": 0,
+      "low_quality": 0,
+      "failed": 0
+    },
+    "infoq_post": {
+      "attempted": 15,
+      "fetched": 15,
+      "eligible": 2,
+      "wrong_period": 10,
+      "translated_filtered": 2,
+      "translation_uncertain_filtered": 0,
+      "low_quality": 0,
+      "failed": 1
+    },
+    "jiqizhixin_pre": {
+      "attempted": 2,
+      "fetched": 2,
+      "eligible": 1,
+      "wrong_period": 0,
+      "translated_filtered": 1,
+      "translation_uncertain_filtered": 0,
+      "low_quality": 0,
+      "failed": 0
+    },
+    "jiqizhixin_post": {
+      "probe": {
+        "accessible": false,
+        "url": "https://www.jiqizhixin.com/articles/2025-07-01",
+        "http_status": 200,
+        "page_title": "机器之心·数据服务",
+        "visible_text_chars": 130,
+        "reason": "data_service_notice"
+      },
+      "documents": 0
+    }
+  },
+  "limitations": [
+    "InfoQ visibility values are current page-view snapshots, not fixed-age historical counts.",
+    "Machine Heart PRE documents lack article-level visibility evidence and are auxiliary only.",
+    "Machine Heart POST article pages currently return a data-service notice; no bypass was attempted.",
+    "The automated quality gate validates extraction and obvious repetition only; human review is still required."
+  ]
+}

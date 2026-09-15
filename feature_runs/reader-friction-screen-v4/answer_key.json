@@ -1,0 +1,91 @@
+{
+  "schema_version": "deaiodorant-reader-friction-screen-4.0",
+  "protocol_version": "cross-document-post-friction-development-4.0",
+  "seed": 2026082701,
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "cross-v4-7c1423-57b565",
+      "candidate_doc_id": "7c1423cab64a9a1b24d75243",
+      "control_doc_id": "57b5658b5233a18c40a301a6",
+      "candidate_side": "A"
+    },
+    {
+      "task_number": 2,
+      "pair_id": "cross-v4-bdbcf0-464e15",
+      "candidate_doc_id": "bdbcf02f79d5e349ff2a9f6e",
+      "control_doc_id": "464e152cf0aa4c7878b44ae2",
+      "candidate_side": "B"
+    },
+    {
+      "task_number": 3,
+      "pair_id": "cross-v4-398d56-610ba7",
+      "candidate_doc_id": "398d56824414e91464ffc3d8",
+      "control_doc_id": "610ba7a9b468d78a3d59def1",
+      "candidate_side": "A"
+    },
+    {
+      "task_number": 4,
+      "pair_id": "cross-v4-fdbd90-755833",
+      "candidate_doc_id": "fdbd90f96ec1d4752373dcf1",
+      "control_doc_id": "75583336dc40b896d68598d0",
+      "candidate_side": "B"
+    },
+    {
+      "task_number": 5,
+      "pair_id": "cross-v4-887321-7f42b9",
+      "candidate_doc_id": "8873215c1410ad3babd84bbb",
+      "control_doc_id": "7f42b95c6b4b88db46161b32",
+      "candidate_side": "B"
+    },
+    {
+      "task_number": 6,
+      "pair_id": "cross-v4-e6b904-6a7b16",
+      "candidate_doc_id": "e6b904412ae6774c9ee56964",
+      "control_doc_id": "6a7b166033f4f09900c1175e",
+      "candidate_side": "B"
+    },
+    {
+      "task_number": 7,
+      "pair_id": "cross-v4-9e278c-ca4540",
+      "candidate_doc_id": "9e278c8a2ee2f753f201bada",
+      "control_doc_id": "ca4540542d2351ddd2605ca2",
+      "candidate_side": "A"
+    },
+    {
+      "task_number": 8,
+      "pair_id": "cross-v4-17f909-1c2865",
+      "candidate_doc_id": "17f9090867ec2eab8d17d1f5",
+      "control_doc_id": "1c2865f45d009fed39e12946",
+      "candidate_side": "B"
+    },
+    {
+      "task_number": 9,
+      "pair_id": "cross-v4-24fb61-21129f",
+      "candidate_doc_id": "24fb6134577093ddcff37689",
+      "control_doc_id": "21129f35e0f1ae2b265bb287",
+      "candidate_side": "A"
+    },
+    {
+      "task_number": 10,
+      "pair_id": "cross-v4-a33352-da81d4",
+      "candidate_doc_id": "a33352292a8571b94446a29c",
+      "control_doc_id": "da81d4c0f5b616b43f9e1472",
+      "candidate_side": "A"
+    },
+    {
+      "task_number": 11,
+      "pair_id": "cross-v4-b9db41-a174fe",
+      "candidate_doc_id": "b9db417ba449a95b7e1c0e7b",
+      "control_doc_id": "a174fe26e705b96c18acb00e",
+      "candidate_side": "A"
+    },
+    {
+      "task_number": 12,
+      "pair_id": "cross-v4-4c4d11-4a0f97",
+      "candidate_doc_id": "4c4d1156bf248a78ba057cb3",
+      "control_doc_id": "4a0f975df81c40f1a7d4b50c",
+      "candidate_side": "B"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "version": "cognitive-move-pilot-freeze-1.0",
+  "frozen_at_utc": "2026-09-14T14:56:32.447907+00:00",
+  "seed": 20260914,
+  "source_files": {
+    "data/local/reader-style-anchors-v1/smzdm/metadata.json": "6df282e9706c37709e9b4522565c464581bf222b490f17d581943e05e8f28393",
+    "data/local/reader-style-anchors-v1/smzdm/blocks.json": "909bcf0db7d4a4c370e8b01128d96c3491ee424be718e0f41689eef49a9c4965",
+    "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+    "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/metadata.json": "dac1d87294c9226baf78e0910e258c3e616fba55bd8901195a728f76ded3de1b",
+    "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/blocks.json": "a777c63f84f86a8e565d1bdc89081c82199e964b705311cd23cc192474f06894",
+    "data/local/targeted-media-discovery-v1/baidu-supply/documents/92ade4253c08a43329164bf5/body.txt": "2977deaed4317dd195716a9bd051e69a81d45fc2ffba94db7086aa0418a126e2"
+  },
+  "protocol": {
+    "path": "docs/routes/compact-refiner/cognitive-move-pilot-v1.md",
+    "sha256": "7006822f87d646316bd42ee68ced1b67982d0fac270235369178b94247d92028"
+  },
+  "prompt": {
+    "path": "experiments/fixtures/cognitive_move_pilot_v1/annotation-instructions.md",
+    "sha256": "9defa66520a0e67ebca8753452d977754cef23844a8659106fe7a9d25cf08736"
+  },
+  "generator": {
+    "path": "experiments/cognitive_move_pilot.py",
+    "sha256": "1040ab888df813bad1c44cc2dcbdb14e146ba017fc4eb7a4fcb6986312090753"
+  },
+  "python_version": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "files": {
+    "assignments/a1.json": "dbc3dbb65ef469117f5b111a9e19f06828164dcc633471c4e34a7238a52e8398",
+    "assignments/a2.json": "264644164b468b2131ace366cc2b097791e24eeb8614cd44d675c188ed8e5d93",
+    "assignments/a3.json": "bc2c0b299def14ebdf36a00437105066f76e87881c368d7bed3a2640d46b87fa",
+    "assignments/b1.json": "ef48646e89e7d235b5f8025969692e86cd6b8a4271424136ca546a16b72780af",
+    "assignments/b2.json": "9685e0e82113b264c0e37b9321571141ba3560f34bbe797a328ebd9c7036352e",
+    "assignments/b3.json": "1ad5876302195b6ffb28e627f0aca1887a7d4109732f5923b4674d4c39e1adb4",
+    "design.json": "d5e9e5023ff208786006cfedd0d62c37e1b3441b6678e07cec3aeadcc30b16cd",
+    "key.json": "ea3323801ab7377d390d6a218c5118a1804f158c32272ac68eefd22ab8866e99",
+    "packets/p1063bb62.json": "4e23bb5cebbb3597ee9d4fc712fa5a157bc617c57c64ae92b8f3d02081ddfffb",
+    "packets/p59b0761a.json": "dff7198731df71c4f942f527188140e2da4cd5709801203e5006c499d40fff6b",
+    "packets/p683e4eea.json": "36f4e26a5b11072106fab8edb975c8a6022eef3b73ffa4cd8edfc8d8a3cd1819",
+    "packets/p69973a93.json": "d19fbd02141d871d3189d093fa5fd3f5fedfd676ff3c66c897aa1fe59f4ca22f",
+    "packets/p7967d9e8.json": "b189fdeeb646e72e0f4dd91a7735065d55fd0b7e8f3fb52f17e9316ce026d2da",
+    "packets/p87fb2c0a.json": "1951678582bfa5cdbf69ed58c821ff4224ed36aa2da2bd7283b0e7a4ad226d74",
+    "packets/pa2529f2f.json": "a0d8ed015bc24b2e9d138834cc0be6d2ce86666ac91806673f0a609b494709d4",
+    "packets/paf29f78f.json": "99bff64cb9af1f9db371b573a7e88ef02636953ad746c31b2e16ec01ab0eb640",
+    "packets/pb1aa2a9b.json": "9b78e604ad882cc12739efcd0e7601f663d2434c184e08a11641e599d3448120",
+    "packets/pbac45350.json": "82e5b50be9b347afa6bd83f9d451eb9189d056d26bd54cf8dc637113b242a4bd",
+    "packets/pccd7fb5e.json": "3eb076b1271fdab5b65ac0986281b97e2e9b1563067da2e9e6685117791defee",
+    "packets/pcd414344.json": "f7b1f74ebbd8948ee1ada4124f8c4b43fc5b303c9de56bc6540a6bf7bbc33b12",
+    "packets/pcdfec7ce.json": "f62ec8ed776a1145e1650ffdd0e3f8527eded44ba108380cadbd340b872a1676",
+    "packets/pcecccfc8.json": "0d7cac52bae8ad218758f771cef883e6d2437cd1a23e9cc191102cd1f8b0e486",
+    "packets/pcf0cdf4a.json": "6b88deccbf6d3bd72f4dc1918e1ce52f3f4a88ccf607a3bc6cec00cd3a623dbd",
+    "packets/pe17dfb4c.json": "74c3ff69edac7f6b2fe8ba6e46f0880f01d8dfc3303d13905b34fb8a76b12a75",
+    "packets/pe4ca91d7.json": "b30145962951adf71cc4ed102e85603f41b9ab1ca1acb832db23492abc122b10",
+    "packets/pe9cf9029.json": "f3372ab3e143367f3dd3ea0a8faf4ffd358548a4d7a4c0c09bb6726e1772550c"
+  },
+  "packets": 18,
+  "sessions": 6,
+  "expected_annotations": 36,
+  "unique_source_articles": 2,
+  "independent_human_labels": false,
+  "allocation": "two_replicates_of_cyclic_three_condition_assignment",
+  "blinding_limit": "One version per focal case per session; other focal cases share full source articles, allowing contextual carryover. Same-model tasks are not independent human raters."
+}

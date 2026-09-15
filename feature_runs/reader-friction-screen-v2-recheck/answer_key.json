@@ -1,0 +1,87 @@
+{
+  "schema_version": "deaiodorant-reader-friction-screen-2.0",
+  "protocol_version": "within-document-friction-enrichment-development-2.0",
+  "seed": 2026082203,
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "friction-v2-b0f066a3",
+      "doc_id": "b0f066a3a5abd771dc88d05d",
+      "candidate_side": "B",
+      "candidate_line": 48,
+      "control_line": 45
+    },
+    {
+      "task_number": 2,
+      "pair_id": "friction-v2-09c15d72",
+      "doc_id": "09c15d722428969f39d55a35",
+      "candidate_side": "B",
+      "candidate_line": 36,
+      "control_line": 42
+    },
+    {
+      "task_number": 3,
+      "pair_id": "friction-v2-9f1d90b6",
+      "doc_id": "9f1d90b6ac15dd29465af213",
+      "candidate_side": "B",
+      "candidate_line": 49,
+      "control_line": 70
+    },
+    {
+      "task_number": 4,
+      "pair_id": "friction-v2-f1f34167",
+      "doc_id": "f1f34167984d5e508d20f41c",
+      "candidate_side": "A",
+      "candidate_line": 98,
+      "control_line": 36
+    },
+    {
+      "task_number": 5,
+      "pair_id": "friction-v2-38edb35e",
+      "doc_id": "38edb35e93d5075f63c4a6cc",
+      "candidate_side": "B",
+      "candidate_line": 6,
+      "control_line": 9
+    },
+    {
+      "task_number": 6,
+      "pair_id": "friction-v2-48a9230f",
+      "doc_id": "48a9230fe1ff0bc5832f1e7c",
+      "candidate_side": "B",
+      "candidate_line": 62,
+      "control_line": 20
+    },
+    {
+      "task_number": 7,
+      "pair_id": "friction-v2-38790cda",
+      "doc_id": "38790cda56298be3819d3798",
+      "candidate_side": "A",
+      "candidate_line": 95,
+      "control_line": 67
+    },
+    {
+      "task_number": 8,
+      "pair_id": "friction-v2-3d2cea36",
+      "doc_id": "3d2cea36287cf278258bee81",
+      "candidate_side": "A",
+      "candidate_line": 112,
+      "control_line": 110
+    },
+    {
+      "task_number": 9,
+      "pair_id": "friction-v2-9894f671",
+      "doc_id": "9894f671b6015ea06feb6543",
+      "candidate_side": "A",
+      "candidate_line": 33,
+      "control_line": 14
+    },
+    {
+      "task_number": 10,
+      "pair_id": "friction-v2-b2e18d9f",
+      "doc_id": "b2e18d9fb55b6c290390b211",
+      "candidate_side": "A",
+      "candidate_line": 33,
+      "control_line": 6
+    }
+  ]
+}

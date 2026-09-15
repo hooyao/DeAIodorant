@@ -1,0 +1,21 @@
+{
+  "original": {
+    "name": "project-1-at-2026-08-21-01-28-71d04aa1.json",
+    "bytes": 2408964,
+    "sha256": "7a202aa8c2a8f7fe8a83920f131b2e8d4538108d82fe0819fb04476628c4797c"
+  },
+  "original_local_path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\label_studio_data\\export\\project-1-at-2026-08-21-01-28-71d04aa1.json",
+  "mirror": {
+    "path": "sanitized-exports/project-1-at-2026-08-21-01-28-71d04aa1.json",
+    "name": "project-1-at-2026-08-21-01-28-71d04aa1.json",
+    "bytes": 2453141,
+    "sha256": "29fbaaf47169f5d474efbbf7224a0e101247d8a907e5a3f7e2d8ca99563839c4"
+  },
+  "removed_json_pointers": [
+    "/0/drafts/0/created_username"
+  ],
+  "removed_field_count": 1,
+  "all_other_json_values_equal": true,
+  "remaining_scan_findings": [],
+  "说明": "仅移除草稿中的本地标注用户名。原文件不改动且不入库；数字ID、文章作者和所有任务／标注／草稿／预测研究值保留。"
+}

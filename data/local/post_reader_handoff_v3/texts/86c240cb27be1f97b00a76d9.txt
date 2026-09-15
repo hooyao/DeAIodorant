@@ -1,0 +1,78 @@
+​
+上一篇文章介绍了如何使用InMemoryStore实现用户偏好的精确记忆功能，但记忆只保留在内存中，一旦AI应用重启，就会丢失上次在内存中的记忆数据。
+为了让AI应用持久记忆业务数据，就得引入文件或者数据库等存储介质，比如Python自带的轻量级数据库SQLite。接下来就介绍如何结合LangGraph与SQLite实现业务数据的持久记忆功能。
+一、Python中的SQLite用法
+安装Python时已经自带了SQLite包，在代码开头添加下面导包语句，即可引入SQLite包：
+import sqlite3
+sqlite3的connect方法可创建SQLite的数据库连接，同时指定数据库的文件名称及其保存路径。若只填数据库文件名，则默认保存在当前程序目录下。
+connect方法返回的连接类型为Connection，它的常用方法说明如下：
+backup：备份数据库。
+close：关闭数据库连接。
+commit：提交数据变更。
+rollback：回滚数据变更。
+二、LangGraph中的SQLite组件
+LangGraph中的SQLite组件包括SqliteStore和SqliteSaver，其中SqliteStore位于langgraph包，而SqliteSaver位于langgraph-checkpoint-sqlite插件。
+在命令行窗口执行下面命令，即可安装LangChain及其用到的Ollama插件，以及数据库记忆功能需要的LangGraph及其SQLite插件：
+pip install langchain langchain-core langchain-ollama langgraph langgraph-checkpoint-sqlite
+由于之前使用的离线大模型Qwen2:1.5B不支持tool工具调用，因此得下载支持tool工具调用的离线大模型Qwen2.5:3B，也就是在命令行窗口执行下面命令，即可下载大模型qwen2.5:3b：
+ollama pull qwen2.5:3b
+等待大模型下载完毕，在命令行窗口执行下面命令，即可启动Ollama并加载大模型：
+ollama serve
+三、使用SQLite组件持久保存偏好数据
+与之前使用InMemoryStore保存记忆数据相比，引入SQLite插件之后的代码修改部分说明如下：
+1、先导入SQLite状态保存器SqliteSaver和SQLite数据保存器SqliteStore的所在包，接着创建SQLite数据库连接，再根据数据库连接分别创建状态保存器实例和数据保存器实例。示例代码如下：
+import sqlite3
+# 使用SqliteStore替换InMemoryStore
+from langgraph.store.sqlite import SqliteStore
+from langgraph.checkpoint.sqlite import SqliteSaver
+# 创建数据库连接
+check_conn= sqlite3.connect("agent.db", check_same_thread=False, isolation_level=None)
+# 状态保存器，保存对话线程运行状态，自动建 checkpoints / writes 表
+checkpointer = SqliteSaver(check_conn)
+# 创建数据库连接
+store_conn= sqlite3.connect("agent.db", check_same_thread=False, isolation_level=None)
+# 数据保存器，保存用户事实 / 工具记忆，自动建 store_namespaces / store_items 表
+store_db = SqliteStore(store_conn)
+2、在创建大模型实例时，既要将温度参数temperature设为0表示严格按照提示词执行，也要将工具选择参数tool_choice设为any表示强制模型必须调用工具。示例代码如下：
+llm = ChatOllama(
+model="qwen2.5:3b",
+temperature=0.0, # 0温度，消除随机胡思乱想，严格按prompt执行
+num_ctx=8192
+)
+# 关键：提前绑定工具+强制工具策略
+tools_list = [remember_user_preference, get_user_preference]
+# tool_choice="any" 等价required，强制模型必须输出工具调用
+llm_temp = llm.bind_tools(tools_list, tool_choice="any")
+3、在调用create_agent创建智能体实例时，把store参数改为上一步创建的数据保存器实例store_db，把checkpointer参数改为上一步创建的状态保存器实例checkpointer；还要编写提示词参数system_prompt，指定详细的工具调用规则。示例代码如下：
+# 用户提到喜欢什么东西时，会调用remember_user_preference工具；用户询问喜欢什么东西时，会调用get_user_preference工具。
+agent = create_agent(
+model=llm,
+context_schema=Context,
+tools=tools_list,
+store=store_db,
+checkpointer=checkpointer,
+system_prompt="""
+你是用户记忆助手，严格遵守以下规则：
+1. 只要用户主动说出自己的喜好、偏好（比如喜欢的颜色、食物、风格），**无论之前是否存储过同类偏好，就必须调用 remember_user_preference 工具更新覆盖**，不能跳过工具直接回答；
+2. 只要用户主动询问自己的偏好，就调用 get_user_preference 工具查询；
+3. 禁止省略存储工具：用户修改原有喜好，必须调用工具更新数据；
+4. 工具调用完成后，再向用户自然回复。
+"""
+)
+4、在调用智能体实例的invoke方法时，增加传入config参数，指定SQLite组件所需的线程编号。示例代码如下：
+# 调用离线大模型
+result = agent.invoke(
+{"messages": [HumanMessage(content=user_input)]},
+context=Context(user_id="user_123"),
+config={"configurable": {"thread_id": "session-001"}}
+)
+运行修改后的Python代码，根据提示输入问题内容“我喜欢蓝色”，输出日志结果如下：
+用户：我喜欢蓝色
+AI：我已经记住了，你现在喜欢的颜色是蓝色。如果你有其他颜色的偏好或者想要改变现有的偏好，请告诉我！
+停止当前AI应用进程，重新运行Python代码，根据提示输入问题内容“我喜欢什么颜色？”，输出日志结果如下：
+用户：我喜欢什么颜色？
+AI：您现在最喜欢的颜色是蓝色。如果有其他问题或需要进一步帮助，请随时告诉我！
+由日志信息发现，在应用程序重启前后，AI应用均能正确回答用户的颜色偏好，并且当前目录找到了数据库文件agent.db。可见在引入LangGraph的SQLite组件之后，LangChain成功实现了用户数据的持久记忆功能。
+本系列的AI应用开发文章目录为《
+15天学会AI应用开发全目录（零基础小白，零Token消耗）》。
+​

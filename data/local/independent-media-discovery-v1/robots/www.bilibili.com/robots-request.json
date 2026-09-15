@@ -1,0 +1,14 @@
+{
+  "url": "https://www.bilibili.com/robots.txt",
+  "requested_at_utc": "2026-09-14T14:48:59.980750+00:00",
+  "method": "GET",
+  "user_agent": "DeAIodorantResearch/1.0 (bounded public article inspection)",
+  "timeout_seconds": 20,
+  "redirects_allowed": false,
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "location": null,
+  "bytes": 65,
+  "sha256": "3c7225a7df79889d6fa7392f0798c1c001b0d0a83aea2dbf50214767e2610e3b",
+  "completed_at_utc": "2026-09-14T14:49:00.261094+00:00"
+}

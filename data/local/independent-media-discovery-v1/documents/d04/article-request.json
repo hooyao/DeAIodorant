@@ -1,0 +1,14 @@
+{
+  "url": "https://zhongce.sina.com.cn/article/view/129894",
+  "requested_at_utc": "2026-09-14T14:48:59.382630+00:00",
+  "method": "GET",
+  "user_agent": "DeAIodorantResearch/1.0 (bounded public article inspection)",
+  "timeout_seconds": 20,
+  "redirects_allowed": false,
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "location": null,
+  "bytes": 61715,
+  "sha256": "815eb224e9e9a304c720aa18f80e8fe2a045923c53e9e420d24e83bc37bb8586",
+  "completed_at_utc": "2026-09-14T14:48:59.978085+00:00"
+}

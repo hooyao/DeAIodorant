@@ -1,0 +1,62 @@
+{
+  "protocol_version": "translation-review-triage-1.1",
+  "generated_at": "2026-08-29T16:35:41.840899+00:00",
+  "model": "deepseek/deepseek-v4-flash-0731",
+  "model_digest": null,
+  "backend": "openai",
+  "endpoint": "https://openrouter.ai/api/v1",
+  "concurrency": 8,
+  "prompt_versions": {
+    "primary": "translation-review-triage-primary-v2",
+    "verifier": "translation-review-triage-verifier-v2",
+    "safeguard": "translation-review-triage-foreign-source-safeguard-v2"
+  },
+  "executed_profiles": [
+    "safeguard"
+  ],
+  "temperature": 0,
+  "seed": 42,
+  "decision_policy": "Human decisions take precedence. Remaining records are operationally routed by a high-confidence foreign-source safeguard; weaker results remain uncertain. Primary and verifier outputs are retained as supporting measurements. Model-assisted results are not human gold.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "restriction": "Model-assisted results are measurements, not human gold, and must not be passed to benchmark finalization as human review decisions.",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_review_candidates\\huawei_cloud_community_candidates.jsonl",
+      "sha256": "484e04f9fb62c2cb96c2af9680509c150383162af0cc951685f60207976aa640"
+    }
+  ],
+  "human_decisions_file": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_review_candidates\\no_human_decisions.csv",
+    "sha256": "f65c5bcd4a2ee4ee758a433fcd052f7a706b03ea31af166ef71268cca7c72da8"
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_triage_deepseek_v4_0731\\triage_results.jsonl",
+  "results_sha256": "c94fd73ff2f2ca4e8dcba23201d12b04e3e6db7717d4a0356a43a06810a4bfb1",
+  "documents": 100,
+  "status_counts": {
+    "model_assisted_original": 83,
+    "uncertain": 11,
+    "model_assisted_exclusion": 6
+  },
+  "artifacts": {
+    "model_assisted_original": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_triage_deepseek_v4_0731\\model_assisted_original.jsonl",
+      "sha256": "db115b799a15e4ddb54f33d831027f1e16cb0bee5c6d3383196cbb8e93234c56"
+    },
+    "model_assisted_exclusion": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_triage_deepseek_v4_0731\\model_assisted_exclusion.jsonl",
+      "sha256": "b59ac3520bc3df7637c0d79ba9f4c60ab83d748b0f747606f26c57e83d44d124"
+    },
+    "uncertain": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_triage_deepseek_v4_0731\\uncertain.jsonl",
+      "sha256": "8402847363936cea7dab76fbf3e49d53a637a6b447cc89954e2b7754feac0b3b"
+    },
+    "human_reviewed_original": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_triage_deepseek_v4_0731\\human_reviewed_original.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "human_excluded": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_triage_deepseek_v4_0731\\human_excluded.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

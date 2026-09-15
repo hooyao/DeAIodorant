@@ -1,0 +1,70 @@
+{
+  "schema_version": "deaiodorant-refinement-pairs-2.0",
+  "protocol_version": "conservative-contrast-reduction-2.0",
+  "status": "frozen_before_outcomes",
+  "frozen_at": "2026-08-21",
+  "seed": 20260821,
+  "primary_question": "Which version makes the reader more willing to continue?",
+  "outcomes_available_when_frozen": false,
+  "development_data_policy": "The ten reader-friction ratings and three first-round pairs were used only to set operator constraints. Every selected line range is disjoint from them.",
+  "selection_policy": {
+    "period": "published on or after 2025-07-01",
+    "pair_count": 10,
+    "distinct_document_count": 7,
+    "exclude_first_round_ranges": true,
+    "exclude_all_reader_friction_ranges": true,
+    "exclude_known_translation_evidence": true
+  },
+  "allowed_operators": [
+    {
+      "code": "remove_ornamental_emphasis",
+      "rule": "Remove attention, importance, or revelation framing only when its payload is stated directly in the same passage."
+    },
+    {
+      "code": "direct_contrast",
+      "rule": "Restate an ornamental contrast directly while retaining both sides, negation, direction of change, and modality."
+    },
+    {
+      "code": "merge_repeated_reframing",
+      "rule": "Combine adjacent frames that repeat one relation; retain every unique proposition and every necessary logical contrast."
+    },
+    {
+      "code": "clarify_argument_structure",
+      "rule": "Repair an interrupted or implicit grammatical argument using only an actor or object already explicit in the source passage."
+    }
+  ],
+  "forbidden_edits": [
+    "Delete or weaken a proposition, entity, number, negation, qualifier, uncertainty, or attribution.",
+    "Invent a fact, example, causal link, opinion, anecdote, or authority.",
+    "Remove a necessary logical contrast merely because it matches a surface pattern.",
+    "Maximize compression or normalize the passage into uniformly flat prose.",
+    "Drop explicit subjects, predicates, objects, or cross-sentence referents."
+  ],
+  "preservation_gates": [
+    "Exact source SHA-256",
+    "Exact set of numeric literals",
+    "Pair-specific entities and technical literals",
+    "Pair-specific proposition support spans",
+    "Pair-specific voice anchors",
+    "Disjointness from all development ranges"
+  ],
+  "generation_diagnostics": {
+    "pair_count": 10,
+    "distinct_document_count": 7,
+    "operation_count": 26,
+    "claim_check_count": 62,
+    "original_frame_diagnostics": {
+      "complete_contrast_frames": 9,
+      "emphasis_markers": 16
+    },
+    "revised_frame_diagnostics": {
+      "complete_contrast_frames": 0,
+      "emphasis_markers": 0
+    },
+    "original_side_counts": {
+      "B": 5,
+      "A": 5
+    },
+    "all_preservation_gates_passed": true
+  }
+}

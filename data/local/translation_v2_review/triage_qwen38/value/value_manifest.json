@@ -1,0 +1,70 @@
+{
+  "protocol_version": "research-value-triage-1.0",
+  "generated_at": "2026-08-22T00:52:15.577759+08:00",
+  "model": "qwen3.8-27b",
+  "model_digest": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "backend": "openai",
+  "endpoint": "http://192.168.1.200:8000/v1",
+  "concurrency": 16,
+  "prompt_versions": {
+    "primary": "research-value-primary-v3",
+    "verifier": "research-value-verifier-v3"
+  },
+  "temperature": 0,
+  "seed": 42,
+  "restriction": "Research-value triage is separate from translation provenance. Model results are measurements and do not replace human quality review.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\infoq_candidates.jsonl",
+      "sha256": "75f16c11b5bb92efba06d4e627610c03f786477551dbb66646180713424d6b13"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\jiqizhixin_candidates.jsonl",
+      "sha256": "288e49ce8a990813c4af9002e0ec6f428dba5669efe9ea6db07565f26a51fd80"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\lctt_candidates.jsonl",
+      "sha256": "50f95126dfdeb00eff28d5a9f6ac1509f63f6e62e111f11bdff0889667ce6a1f"
+    }
+  ],
+  "provenance_results": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\triage_results.jsonl",
+  "documents": 186,
+  "status_counts": {
+    "model_assisted_substantive": 110,
+    "model_assisted_low_value": 51,
+    "value_uncertain": 25
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\value\\value_results.jsonl",
+  "results_sha256": "c555c5f459ddd0d7ab42ffb2abf3d8cc8328d03c35c34c0c82d5c0cf5952df4d",
+  "artifacts": {
+    "model_assisted_substantive": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\value\\model_assisted_substantive.jsonl",
+      "sha256": "bf6a226eb7b15970136a610e9257b117b71b32c3933e76f4209ac4f147a529c8"
+    },
+    "model_assisted_low_value": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\value\\model_assisted_low_value.jsonl",
+      "sha256": "4bba52a0539b11f881925068a34e9c76b464c1eafae6c2fdca986e67e21d3381"
+    },
+    "value_uncertain": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\value\\value_uncertain.jsonl",
+      "sha256": "16a82ddbc2e438c5335dd3e50844c0640d689e758a50c5d66ca6c91ae07ea075"
+    }
+  },
+  "human_review_project": {
+    "project_id": 3,
+    "documents": 25,
+    "project_url": "http://127.0.0.1:8080/projects/3/data?labeling=1"
+  },
+  "human_review": {
+    "status": "complete",
+    "project_id": 3,
+    "documents": 25,
+    "kept": 9,
+    "excluded": 16,
+    "unreviewed": 0,
+    "reviewer": "huyao",
+    "decisions_path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\research_value_decisions.csv",
+    "decisions_sha256": "28d5f1db3195860b6b9155780935feb2746980c45007055db3083491488b7049"
+  }
+}

@@ -1,0 +1,382 @@
+{
+  "artifact_type": "deterministic-boundary-competition-stage0-probe",
+  "calibration": {
+    "beijing_sentence_corpus": {
+      "download": "https://osf.io/download/t4vbg/",
+      "license_metadata": "not specified by the OSF node or DataCite record",
+      "path": "feature_runs\\boundary-competition-resources-v1\\BSC.Word.Info.v2.xlsx",
+      "public_project": "https://osf.io/vr3k8/",
+      "sha256": "5c96e829a3de8203739893eef6b54e6ebddf055976919d9b29b2797053d81876"
+    },
+    "length_counts": {
+      "10": {
+        "raw_windows": 1792,
+        "scorable_entropy_windows": 1792,
+        "scorable_margin_windows": 1792
+      },
+      "11": {
+        "raw_windows": 1642,
+        "scorable_entropy_windows": 1642,
+        "scorable_margin_windows": 1642
+      },
+      "12": {
+        "raw_windows": 1492,
+        "scorable_entropy_windows": 1492,
+        "scorable_margin_windows": 1492
+      },
+      "13": {
+        "raw_windows": 1342,
+        "scorable_entropy_windows": 1342,
+        "scorable_margin_windows": 1342
+      },
+      "14": {
+        "raw_windows": 1192,
+        "scorable_entropy_windows": 1192,
+        "scorable_margin_windows": 1192
+      },
+      "15": {
+        "raw_windows": 1042,
+        "scorable_entropy_windows": 1042,
+        "scorable_margin_windows": 1042
+      },
+      "16": {
+        "raw_windows": 892,
+        "scorable_entropy_windows": 892,
+        "scorable_margin_windows": 892
+      },
+      "17": {
+        "raw_windows": 745,
+        "scorable_entropy_windows": 745,
+        "scorable_margin_windows": 745
+      },
+      "18": {
+        "raw_windows": 603,
+        "scorable_entropy_windows": 603,
+        "scorable_margin_windows": 603
+      },
+      "19": {
+        "raw_windows": 466,
+        "scorable_entropy_windows": 466,
+        "scorable_margin_windows": 466
+      },
+      "2": {
+        "raw_windows": 2992,
+        "scorable_entropy_windows": 2985,
+        "scorable_margin_windows": 2985
+      },
+      "3": {
+        "raw_windows": 2842,
+        "scorable_entropy_windows": 2835,
+        "scorable_margin_windows": 2835
+      },
+      "4": {
+        "raw_windows": 2692,
+        "scorable_entropy_windows": 2687,
+        "scorable_margin_windows": 2687
+      },
+      "5": {
+        "raw_windows": 2542,
+        "scorable_entropy_windows": 2541,
+        "scorable_margin_windows": 2541
+      },
+      "6": {
+        "raw_windows": 2392,
+        "scorable_entropy_windows": 2391,
+        "scorable_margin_windows": 2391
+      },
+      "7": {
+        "raw_windows": 2242,
+        "scorable_entropy_windows": 2241,
+        "scorable_margin_windows": 2241
+      },
+      "8": {
+        "raw_windows": 2092,
+        "scorable_entropy_windows": 2091,
+        "scorable_margin_windows": 2091
+      },
+      "9": {
+        "raw_windows": 1942,
+        "scorable_entropy_windows": 1941,
+        "scorable_margin_windows": 1941
+      }
+    },
+    "sentence_count": 150,
+    "subtlex_character_file": {
+      "license": "CC BY 4.0",
+      "path": "feature_runs\\boundary-competition-resources-v1\\subtlex_ch\\SUBTLEX-CH-CHR",
+      "sha256": "03ffacc65c4d14530338c1bffb72b2e98d06ee23bed14546dc8001ab4bcbb415",
+      "source": "https://ndownloader.figshare.com/files/421463"
+    },
+    "subtlex_word_file": {
+      "license": "CC BY 4.0",
+      "path": "feature_runs\\boundary-competition-resources-v1\\subtlex_ch\\SUBTLEX-CH-WF",
+      "sha256": "086536450b1f77d0c7ff3ac0fc8375897162ace807d3167bec48b4c493434077",
+      "source": "https://ndownloader.figshare.com/files/421463"
+    }
+  },
+  "candidate_count": 87,
+  "exposed_candidate_documents": 0,
+  "high_gate_component_counts": {
+    "at_least_two_ambiguous_gaps": {
+      "documents": 1,
+      "instances": 1
+    },
+    "entropy_and_margin": {
+      "documents": 7,
+      "instances": 7
+    },
+    "entropy_at_or_above_p90": {
+      "documents": 7,
+      "instances": 7
+    },
+    "margin_at_or_below_p10": {
+      "documents": 7,
+      "instances": 7
+    },
+    "unresolved_distance_at_least_six": {
+      "documents": 0,
+      "instances": 0
+    }
+  },
+  "high_gate_extrema": {
+    "maximum_ambiguous_gap_count": 3,
+    "maximum_entropy_percentile": 0.9954484605087015,
+    "maximum_unresolved_distance_to_head": 4,
+    "minimum_margin_percentile": 0.0004872700694359849
+  },
+  "inputs": {
+    "annotation_files": {
+      "integration-pairwise-v1.json": "3b9f956d32c21b3b734176dc684d150bccf2f3015850f5654dd73d78bfbf6133",
+      "reader-friction-screen-v1.json": "c6550e12b30401e8572a874e33fd47dfe86d210fcf1e7cadce03dd71cf9d851a",
+      "reader-friction-screen-v2.json": "1aa77a7ed1d07824e403e0c349348828562a7f8720ab7bbbeb5102a7520c8d14",
+      "reader-friction-screen-v3.json": "99c7ae54524cf12de66784f7f2a7045060c89a51e8eb0a95be2434fc50aa1601",
+      "reader-friction-v1.json": "4f0742aa38cadee7dfb872e773f2e08da5ee5eab29c12c4647bbbc1f7f96c687",
+      "refinement-pairwise-v1.json": "2ac960d94aeb608c53bd00b6053614cac18a458f899da4c355d65f30d6014e46",
+      "refinement-pairwise-v2.json": "96977e0e84850580e2b081b0c8eee97fe73973fdb689096cddc7e72a86928b44",
+      "refinement-pairwise-v3.json": "bd8411e6780dbe6dd4907789d991370e78a1cb9e387765f0a4d287171278fddc",
+      "refinement-pairwise-v4.json": "bad200bdb0abbec70de61efc8be8caf2f6ff3244e9533b33fc24e228091be54b"
+    },
+    "candidates_sha256": "abfb5a5e9181c5b0e87d5636f649766c1c82437326ac5a0740229eec89e674c2",
+    "handoffs": [
+      {
+        "declared_documents": 97,
+        "documents_sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80",
+        "manifest_sha256": "ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01",
+        "root": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v2"
+      },
+      {
+        "declared_documents": 93,
+        "documents_sha256": "dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d",
+        "manifest_sha256": "5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac",
+        "root": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v3"
+      }
+    ],
+    "nominal_summary_sha256": "2d48f84b5c954b6d6c909fb7fd394f868c34e47c01cc1bbb97ded3a8f0a0f0d4"
+  },
+  "limits": [
+    "The probe measures lexical segmentation competition, not authorship.",
+    "The Beijing Sentence Corpus has no explicit license in its OSF or DataCite metadata and is not redistributed.",
+    "Branching entropy, accessor variety, tokenizer disagreement, and anchors are diagnostics only in version 1.0.",
+    "The 30-document validation reserve is absent from the candidate input and no reserve body is opened.",
+    "Passing Stage 0 permits edit preparation but is not reader evidence."
+  ],
+  "matching": {
+    "eligible_match_edges": 0,
+    "format_counts": {},
+    "high_candidate_documents": 0,
+    "low_candidate_documents": 23,
+    "passed": false,
+    "selected_formats": [],
+    "selected_pairs": 0,
+    "selected_sources": [],
+    "source_counts": {}
+  },
+  "matching_distance": {
+    "exact_gates": [
+      "source",
+      "format_stratum",
+      "anchor_profile"
+    ],
+    "passage_cjk_log_ratio": 0.35,
+    "publication_month_difference_capped_at_24": 0.1,
+    "selection": "greedy_global_minimum_with_unique_documents_and_source_cap",
+    "sentence_cjk_log_ratio": 0.2,
+    "span_cjk_difference": 0.35,
+    "tie_break": "sha256(seed|high_candidate_id|low_candidate_id)"
+  },
+  "protocol_version": "boundary-competition-development-1.0",
+  "reader_example": {
+    "calibration_window_count": 8958,
+    "entropy_percentile": 0.6693458361241349,
+    "margin_percentile": 0.3462826523777629,
+    "measurement": {
+      "abstention_reason": null,
+      "ambiguous_gap_count": 0,
+      "ascii_anchor_count": 1,
+      "best_path": [
+        "原生",
+        "时代",
+        "全新",
+        "算",
+        "力",
+        "服务"
+      ],
+      "best_path_log_probability": -62.411869984458676,
+      "best_second_margin": 3.7377220981573487,
+      "gaps": [
+        {
+          "boundary_probability": 0.023254621903969173,
+          "left_accessor_variety": 13,
+          "left_branching_entropy": 2.362626196299268,
+          "left_character": "原",
+          "multi_character_start_probability": 0.8792835052616285,
+          "position": 1,
+          "right_accessor_variety": 0,
+          "right_branching_entropy": 0.0,
+          "right_character": "生",
+          "single_character_word_probability": 0.1207164947383715
+        },
+        {
+          "boundary_probability": 0.9999999999999921,
+          "left_accessor_variety": 9,
+          "left_branching_entropy": 2.1972245773362196,
+          "left_character": "生",
+          "multi_character_start_probability": 0.8018203617082356,
+          "position": 2,
+          "right_accessor_variety": 16,
+          "right_branching_entropy": 2.6895357734679943,
+          "right_character": "时",
+          "single_character_word_probability": 0.19817963829176446
+        },
+        {
+          "boundary_probability": 0.0005958416241100376,
+          "left_accessor_variety": 5,
+          "left_branching_entropy": 1.5498260458782016,
+          "left_character": "时",
+          "multi_character_start_probability": 0.8534194698151036,
+          "position": 3,
+          "right_accessor_variety": 9,
+          "right_branching_entropy": 2.1972245773362196,
+          "right_character": "代",
+          "single_character_word_probability": 0.14658053018489642
+        },
+        {
+          "boundary_probability": 0.9999999999999944,
+          "left_accessor_variety": 5,
+          "left_branching_entropy": 1.5607104090414063,
+          "left_character": "代",
+          "multi_character_start_probability": 0.6754008438818565,
+          "position": 4,
+          "right_accessor_variety": 6,
+          "right_branching_entropy": 1.7478680974667573,
+          "right_character": "全",
+          "single_character_word_probability": 0.32459915611814344
+        },
+        {
+          "boundary_probability": 0.004769948983648896,
+          "left_accessor_variety": 7,
+          "left_branching_entropy": 1.9459101490553132,
+          "left_character": "全",
+          "multi_character_start_probability": 0.37489606304905826,
+          "position": 5,
+          "right_accessor_variety": 5,
+          "right_branching_entropy": 1.5607104090414063,
+          "right_character": "新",
+          "single_character_word_probability": 0.6251039369509418
+        },
+        {
+          "boundary_probability": 1.0,
+          "left_accessor_variety": 0,
+          "left_branching_entropy": 0.0,
+          "left_character": "新",
+          "multi_character_start_probability": 0.2150088287227781,
+          "position": 6,
+          "right_accessor_variety": 9,
+          "right_branching_entropy": 2.1972245773362196,
+          "right_character": "算",
+          "single_character_word_probability": 0.7849911712772218
+        },
+        {
+          "boundary_probability": 1.0,
+          "left_accessor_variety": 8,
+          "left_branching_entropy": 1.9356005054539454,
+          "left_character": "算",
+          "multi_character_start_probability": 0.6559951676230746,
+          "position": 7,
+          "right_accessor_variety": 0,
+          "right_branching_entropy": 0.0,
+          "right_character": "力",
+          "single_character_word_probability": 0.3440048323769254
+        },
+        {
+          "boundary_probability": 0.9999999999999929,
+          "left_accessor_variety": 0,
+          "left_branching_entropy": 0.0,
+          "left_character": "力",
+          "multi_character_start_probability": 0.8657272002127094,
+          "position": 8,
+          "right_accessor_variety": 8,
+          "right_branching_entropy": 2.0431918705451206,
+          "right_character": "服",
+          "single_character_word_probability": 0.13427279978729062
+        },
+        {
+          "boundary_probability": 7.956957633484536e-07,
+          "left_accessor_variety": 3,
+          "left_branching_entropy": 0.9502705392332347,
+          "left_character": "服",
+          "multi_character_start_probability": 0.6926829268292682,
+          "position": 9,
+          "right_accessor_variety": 0,
+          "right_branching_entropy": 0.0,
+          "right_character": "务",
+          "single_character_word_probability": 0.3073170731707317
+        }
+      ],
+      "known_character_coverage": 1.0,
+      "multicharacter_coverage": 0.8,
+      "normalized_best_second_margin": 0.3737722098157349,
+      "normalized_path_entropy": 0.014573660270576027,
+      "path_count": 16,
+      "path_entropy": 0.14573660270576028,
+      "scored_characters": 10,
+      "second_path_log_probability": -66.14959208261602,
+      "sequence": "原生时代全新算力服务",
+      "unresolved_distance_to_head": 2
+    },
+    "text": "AI原生时代全新算力服务"
+  },
+  "schema_version": "deaiodorant-boundary-competition-probe-1.0",
+  "seed": 2026083101,
+  "stage0_passed": false,
+  "stratum_document_counts": {
+    "high": 0,
+    "low": 23,
+    "middle_or_unscored": 28
+  },
+  "stratum_instance_counts": {
+    "low": 36,
+    "middle_or_unscored": 51
+  },
+  "thresholds": {
+    "calibration_length_radius": 2,
+    "high_entropy_percentile": 0.9,
+    "high_margin_percentile": 0.1,
+    "high_minimum_ambiguous_gaps": 2,
+    "high_minimum_unresolved_distance": 6,
+    "low_entropy_percentile": 0.5,
+    "low_margin_percentile": 0.5,
+    "low_maximum_ambiguous_gaps": 1,
+    "low_maximum_unresolved_distance": 3,
+    "match_length_ratio": [
+      0.8,
+      1.25
+    ],
+    "match_maximum_per_source": 3,
+    "match_span_cjk_difference": 2,
+    "minimum_calibration_windows": 100,
+    "required_formats": 2,
+    "required_pairs": 8,
+    "required_sources": 3
+  }
+}

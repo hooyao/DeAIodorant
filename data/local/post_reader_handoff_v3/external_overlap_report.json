@@ -1,0 +1,26 @@
+{
+  "schema_version": "post-reader-v3-external-overlap-validation-1.0",
+  "checked_at": "2026-08-30T04:47:13.0843329Z",
+  "valid": true,
+  "documents": 93,
+  "issues": [],
+  "checks": {
+    "repository_exposed_doc_ids": 0,
+    "tracked_pilot_documents": 30,
+    "external_indexes": [
+      {
+        "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1\\documents.jsonl",
+        "sha256": "a16f73542edab7f38fb3b24b2dc19fde798b5d14dcc035adfd560bc028c6dc6d"
+      },
+      {
+        "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v2\\documents.jsonl",
+        "sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80"
+      },
+      {
+        "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\analysis_pool.jsonl",
+        "sha256": "58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2"
+      }
+    ],
+    "duplicate_doc_id_url_hash_or_near_duplicate_matches": 0
+  }
+}

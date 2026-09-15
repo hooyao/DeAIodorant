@@ -1,0 +1,54 @@
+{
+  "schema_version": "deaiodorant-value-model-comparison-1.0",
+  "decision_policy": "Only documents that both current models classify as substantive continue. Every disagreement and uncertainty fails closed.",
+  "left_model": "qwen3.8-27b",
+  "right_model": "deepseek/deepseek-v4-flash-0731",
+  "documents": 131,
+  "exact_status_agreement": 70,
+  "exact_status_agreement_rate": 0.5343511450381679,
+  "consensus_substantive": 54,
+  "disagreements": 61,
+  "status_matrix": {
+    "model_assisted_substantive|model_assisted_substantive": 54,
+    "model_assisted_substantive|model_assisted_low_value": 2,
+    "model_assisted_substantive|value_uncertain": 53,
+    "model_assisted_low_value|model_assisted_low_value": 9,
+    "model_assisted_low_value|value_uncertain": 2,
+    "value_uncertain|model_assisted_substantive": 1,
+    "value_uncertain|model_assisted_low_value": 3,
+    "value_uncertain|value_uncertain": 7
+  },
+  "source_status_matrices": {
+    "leiphone": {
+      "model_assisted_substantive|model_assisted_substantive": 41,
+      "model_assisted_substantive|model_assisted_low_value": 1,
+      "model_assisted_substantive|value_uncertain": 34,
+      "model_assisted_low_value|model_assisted_low_value": 6,
+      "model_assisted_low_value|value_uncertain": 2,
+      "value_uncertain|model_assisted_low_value": 3,
+      "value_uncertain|value_uncertain": 4
+    },
+    "qbitai": {
+      "model_assisted_substantive|model_assisted_substantive": 13,
+      "model_assisted_substantive|model_assisted_low_value": 1,
+      "model_assisted_substantive|value_uncertain": 19,
+      "model_assisted_low_value|model_assisted_low_value": 3,
+      "value_uncertain|model_assisted_substantive": 1,
+      "value_uncertain|value_uncertain": 3
+    }
+  },
+  "identity": {
+    "left_results_sha256": "225374d369f2c8656f6a47b769817b55920b27bbea71fe4a446e6a307e58f155",
+    "left_manifest_sha256": "a108341537b24eee1ee560b697de0b61ecac48f0b42cb7cc2637f307852dd6b4",
+    "right_results_sha256": "67f400d30c5f8f04e3fb857e0c37702154049d36e45a40c5a5f0260f870eb24c",
+    "right_manifest_sha256": "5bd0413be1cc33580a5afb7b62e1137a5fe8e4a7eef4c5f4be9e239e5e21a8c7",
+    "provenance_consensus_sha256": "69c83360d121c46e6ab093e2d05d10a86f512f2b482c175682ed11a81ed342a0"
+  },
+  "artifacts": {
+    "consensus_value": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\value_consensus\\consensus_value.jsonl",
+    "consensus_value_sha256": "1180a3ac0d842d02927662cb9d4a853fb011e1d35905b9162adda9f32ffec051",
+    "disagreements": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\value_consensus\\disagreements.jsonl",
+    "disagreements_sha256": "4be4ffecfff9827886b7975d6b877f919709422f86f7d1610c76a6bb0d848888"
+  },
+  "restriction": "Both inputs are model-assisted measurements, not human gold. Agreement supports conservative routing only and does not establish accuracy."
+}

@@ -1,0 +1,100 @@
+[
+  {
+    "authorship_claim": false,
+    "doc_id": "55a8c05716103aaced6ecf7f",
+    "observation_status": "diagnostic_not_authorship_label",
+    "role": "development_case_profile_only",
+    "top_feature_deviations": [
+      {
+        "feature": "title_digit_present",
+        "same_source_percentile": 1.0,
+        "same_source_robust_z": 1.83862429273674,
+        "value": 1.0
+      },
+      {
+        "feature": "surface_comma_density",
+        "same_source_percentile": 0.8301886792452831,
+        "same_source_robust_z": 1.6600125838653923,
+        "value": 0.046741106206180216
+      },
+      {
+        "feature": "surface_sentence_length_autocorrelation",
+        "same_source_percentile": 0.8490566037735849,
+        "same_source_robust_z": 1.17704980892858,
+        "value": 0.15133563679976036
+      },
+      {
+        "feature": "title_ascii_letter_ratio",
+        "same_source_percentile": 0.18867924528301888,
+        "same_source_robust_z": -1.0949525316178492,
+        "value": 0.0
+      },
+      {
+        "feature": "surface_exact_paragraph_repeat_ratio",
+        "same_source_percentile": 0.7735849056603774,
+        "same_source_robust_z": 1.0946653309538183,
+        "value": 0.16393442622950818
+      },
+      {
+        "feature": "discourse_enumeration_markers_per_10k_cjk",
+        "same_source_percentile": 0.7735849056603774,
+        "same_source_robust_z": 0.9717741415231922,
+        "value": 20.040080160320638
+      },
+      {
+        "feature": "surface_question_sentence_ratio",
+        "same_source_percentile": 0.6981132075471698,
+        "same_source_robust_z": 0.9708565700700938,
+        "value": 0.04
+      },
+      {
+        "feature": "surface_mean_sentence_cjk_chars",
+        "same_source_percentile": 0.7547169811320755,
+        "same_source_robust_z": 0.9581275029281752,
+        "value": 39.92
+      },
+      {
+        "feature": "discourse_framing_markers_per_10k_cjk",
+        "same_source_percentile": 0.8113207547169812,
+        "same_source_robust_z": 0.9437891747396951,
+        "value": 10.020040080160319
+      },
+      {
+        "feature": "surface_colon_density",
+        "same_source_percentile": 0.1509433962264151,
+        "same_source_robust_z": -0.9421353104710799,
+        "value": 0.0015580368735393405
+      },
+      {
+        "feature": "surface_repeated_char_ngram_ratio",
+        "same_source_percentile": 0.16981132075471697,
+        "same_source_robust_z": -0.8725486461821702,
+        "value": 0.03644266131728519
+      },
+      {
+        "feature": "surface_dash_density",
+        "same_source_percentile": 0.1320754716981132,
+        "same_source_robust_z": -0.8221962160038657,
+        "value": 0.0005193456245131135
+      },
+      {
+        "feature": "hypothesis_emphatic_frames_per_1k_cjk",
+        "same_source_percentile": 0.7924528301886793,
+        "same_source_robust_z": 0.7172941142863993,
+        "value": 0.6680026720106881
+      },
+      {
+        "feature": "surface_punctuation_density",
+        "same_source_percentile": 0.22641509433962265,
+        "same_source_robust_z": -0.6994010656089501,
+        "value": 0.07660347961568424
+      },
+      {
+        "feature": "surface_sentence_opening_repeat_ratio",
+        "same_source_percentile": 0.20754716981132076,
+        "same_source_robust_z": -0.6966052106069754,
+        "value": 0.0
+      }
+    ]
+  }
+]

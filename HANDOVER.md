@@ -1,5 +1,26 @@
 # 研究交接：2026-09-14 session
 
+2026-09-15完整归档与当前恢复入口见[HANDOFF.md](HANDOFF.md)，包含本次找到的历史研究文件及Label Studio最新研究状态。下方记录保留首轮续研的证据边界。
+
+## 后续检查点：篇章动作首轮测量已完成
+
+最新续研结果见[工程实验报告](docs/routes/compact-refiner/reports/cognitive-move-pilot-v1.md)和[真实文章发现](docs/routes/compact-refiner/reports/independent-media-discovery-v1.md)。以下原交接记录保留其当时状态，不应据其中旧“下一步”重复首轮实验。
+
+六个案例的18个条件已完成两组、共36条隔离模型标注，191处引文核验通过。核心解释在这些小幅等义变化中保持，多项语义变化得到反映；M04有一条估算提出者覆盖不足，M01/M05的先前说法字段和M04的评论证据存在角色或指向歧义。未发现足以把这些歧义统一判为捏造读者信念的证据。新[记录契约1.1草案](docs/routes/compact-refiner/cognitive-move-record-contract-v1.1.md)等待按文章隔离的新材料检验，旧36条不得回改成新版本结果。
+
+初始两次任务启动因自动注入历史标签而排除；正式六任务在中性指南下启动，原AGENTS已按字节恢复。记录位于 `data/local/cognitive-move-pilot-v1/`。发现批次保存五篇全文文字、25,504字符、286块和61处引文；两篇后期候选、两篇早期有限对照及一篇过渡期诊断文均保留，图片及上游来源未核实。已读的新文章属于discovery，不是未见验证集。
+
+本次新增清单见 [续研 artifacts.json](handover/session-2026-09-14-continuation/artifacts.json)，检查记录见 [续研 validation.json](handover/session-2026-09-14-continuation/validation.json)。原993项继续由原清单核验。维护者于2026-09-15授权将全部现有研究文件纳入`init`提交，完整发布范围见[最新handoff](HANDOFF.md)。旧清单中的本地未提交状态是生成时记录，保持原值；`data/local/`对未来新文件仍默认忽略。
+
+```powershell
+python experiments/cognitive_move_pilot.py verify --run data/local/cognitive-move-pilot-v1/run
+python experiments/verify_research_handover.py --inventory handover/session-2026-09-14-continuation/artifacts.json
+```
+
+下一步是以1.1草案检验命题归属和角色区分，并在读取前固定新的文章级分配。当前不将八字段输出直接用作自动特征或reward，未进入本轮产品编辑、读者偏好实验或训练；无需GPU。
+
+## 原交接记录
+
 这份交接用于换机后继续当前研究，覆盖本次 session 的目标校准、实验与失败、当前产物、工作约定和下一步。当前分支为 `init`；`main` 继续停留在初始化 commit。交接前的基线 commit 为 `306e5e0ec1802da2c6f7a741d2ea557d4db04be9`。
 
 ## 新机器从这里开始

@@ -1,0 +1,14 @@
+{
+  "url": "https://post.smzdm.com/p/arz3ng6g/",
+  "requested_at_utc": "2026-09-14T14:48:55.200577+00:00",
+  "method": "GET",
+  "user_agent": "DeAIodorantResearch/1.0 (bounded public article inspection)",
+  "timeout_seconds": 20,
+  "redirects_allowed": false,
+  "status": 200,
+  "content_type": "text/html; charset=UTF-8",
+  "location": null,
+  "bytes": 477852,
+  "sha256": "50968128c96e5dd932041d4dc9d34272348b5f3ffb3f6f9088f9a1949e387848",
+  "completed_at_utc": "2026-09-14T14:48:57.803927+00:00"
+}

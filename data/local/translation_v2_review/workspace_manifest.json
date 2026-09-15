@@ -1,0 +1,40 @@
+{
+  "protocol_version": "translation-gate-2.0-development",
+  "tool": "Label Studio Community Edition",
+  "tool_version": "1.23.0",
+  "tool_license": "Apache-2.0",
+  "runtime": "isolated local Python virtual environment",
+  "runtime_requirement": "label-studio==1.23.0",
+  "estimated_runtime_disk_mib": 700,
+  "review_scope": "original_pending_review",
+  "documents": 220,
+  "sources": {
+    "infoq": 100,
+    "jiqizhixin": 120
+  },
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\infoq_candidates.jsonl",
+      "sha256": "75f16c11b5bb92efba06d4e627610c03f786477551dbb66646180713424d6b13"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\jiqizhixin_candidates.jsonl",
+      "sha256": "288e49ce8a990813c4af9002e0ec6f428dba5669efe9ea6db07565f26a51fd80"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\translation_v2\\candidates\\lctt_candidates.jsonl",
+      "sha256": "50f95126dfdeb00eff28d5a9f6ac1509f63f6e62e111f11bdff0889667ce6a1f"
+    }
+  ],
+  "tasks_path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\label_studio_tasks.json",
+  "tasks_sha256": "dd9cc97b8b4772112241a6f729be0dc687e6f6019fa9c0c2af9de22b212341f2",
+  "default_reviewer": "huyao",
+  "label_studio_project_id": 1,
+  "service": {
+    "binding": "127.0.0.1",
+    "port": 8080,
+    "storage": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\label_studio_data",
+    "failure_behavior": "If the local service is unavailable, candidate JSONL and raw UTF-8 text remain intact; no document receives a decision automatically."
+  },
+  "project_url": "http://127.0.0.1:8080/projects/1/data"
+}

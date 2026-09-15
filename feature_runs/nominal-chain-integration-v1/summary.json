@@ -1,0 +1,107 @@
+{
+  "artifact_type": "deterministic-nominal-chain-integration-probe",
+  "schema_version": "deaiodorant-nominal-chain-integration-probe-0.2",
+  "seed": 2026083001,
+  "device": "cuda",
+  "document_count": 160,
+  "covered_document_count": 133,
+  "passage_count": 1393,
+  "candidate_count": 87,
+  "candidate_document_count": 41,
+  "candidate_source_count": 5,
+  "source_instance_counts": {
+    "huawei_cloud_community": 7,
+    "infoq": 6,
+    "leiphone": 49,
+    "meituan_tech": 5,
+    "qbitai": 20
+  },
+  "source_document_counts": {
+    "huawei_cloud_community": 6,
+    "infoq": 2,
+    "leiphone": 26,
+    "meituan_tech": 3,
+    "qbitai": 4
+  },
+  "frequency_gate": {
+    "minimum_independent_documents": 6,
+    "minimum_sources": 3,
+    "passed": true
+  },
+  "thresholds": {
+    "minimum_prehead_lexical_tokens": 5,
+    "minimum_prehead_visible_chars": 10,
+    "minimum_nominal_modifier_relations": 3,
+    "maximum_boundaries": 0,
+    "maximum_prehead_verbs": 0,
+    "maximum_internal_punctuation": 0,
+    "requires_sentence_predicate": true,
+    "requires_outside_phrase_context": true,
+    "minimum_passage_cjk_chars": 120,
+    "maximum_passage_cjk_chars": 360,
+    "maximum_passage_characters": 520,
+    "minimum_sentence_end_marks": 2
+  },
+  "reader_example": {
+    "text": "这个 AI 算力池面向 AI 原生时代全新算力服务需求。",
+    "localized": true,
+    "candidate_count": 1,
+    "candidates": [
+      {
+        "head": "需求",
+        "head_token_id": 12,
+        "left_boundary_token_id": 6,
+        "phrase": "AI原生时代全新算力服务需求",
+        "prehead_text": "AI原生时代全新算力服务",
+        "prehead_lexical_tokens": 6,
+        "prehead_visible_chars": 12,
+        "prehead_cjk_chars": 10,
+        "nominal_relation_count": 6,
+        "max_nominal_chain_depth": 2,
+        "boundary_count": 0,
+        "punctuation_count": 0,
+        "prehead_verb_count": 0,
+        "proper_anchors": [],
+        "numeric_anchors": [],
+        "sentence": "这个AI算力池面向AI原生时代全新算力服务需求。"
+      }
+    ]
+  },
+  "parser": {
+    "name": "stanza-universal-dependencies",
+    "language": "zh-hans",
+    "package": "gsdsimp",
+    "processors": [
+      "tokenize",
+      "pos",
+      "lemma",
+      "depparse"
+    ],
+    "model_fingerprint": "5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9",
+    "model_file_count": 8
+  },
+  "corpora": [
+    {
+      "root": "/home/hooyao/deaiodorant-nominal-chain-v1/data/post_reader_handoff_v2",
+      "role": "development",
+      "documents": 67,
+      "manifest_sha256": "ecab7336c2ca54f59d24b79bcb841f0d3f4085a9c80a117f5a3ea0e31fec5d01",
+      "documents_sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80"
+    },
+    {
+      "root": "/home/hooyao/deaiodorant-nominal-chain-v1/data/post_reader_handoff_v3",
+      "role": "discovery_reserve",
+      "documents": 93,
+      "manifest_sha256": "5462a30c6c9d8e598fd1f8f6af567bbb4d4efbcc7cc30e3bfd36d4965225ebac",
+      "documents_sha256": "dd2d3b3f99d17c2fe7179e8fcdeb7f31e5036a7d7b117ed819e12825eacd4a4d"
+    }
+  ],
+  "limits": [
+    "The rule measures parser-derived packaging and does not judge authorship or reader dislike.",
+    "Passing the frequency gate is necessary but not sufficient for an intervention.",
+    "Universal Dependencies parses contain model error and are not linguistic gold labels.",
+    "No body outside the requested roles is opened.",
+    "Thresholds and boundary forms are frozen before corpus outcomes are inspected.",
+    "Only non-overlapping complete prose passages pass to Stanza; code and long formatting noise are filtered before parsing."
+  ]
+}

@@ -1,0 +1,11 @@
+﻿doc_id,source,published_at,title,url,candidate_label,label_evidence,cjk_chars,review_include,review_gold_label,reviewer,reviewed_at,review_notes
+09c15d722428969f39d55a35,infoq,2023-10-09,腾讯云曹骏：选择适合自身战略的架构是应对核心系统挑战的关键,https://www.infoq.cn/article/TJg7MXJ5WM1ayMsW8xtc,original_pending_review,"[""local_interview_or_talk""]",5765,,,,,
+5fcec0451f82441b3ee2b459,infoq,2025-06-25,微软Azure通过OpenTelemetry对逻辑应用程序和函数的支持增强了可观测性,https://www.infoq.cn/article/fWMAUohjNxLecGN27FSq,translation,"[""explicit_translator_field"", ""刘雅梦""]",897,,,,,
+3885a2679c3c2853fa75cd3d,infoq,2023-02-03,空降CTO接手“烂摊子”：技术连续踩坑，创业公司没几个月就倒闭了,https://www.infoq.cn/article/UiSw83Z2FESVJwdY54v3,translation,"[""explicit_translator_field"", ""核子可乐""]",4145,,,,,
+acb8060469fc5f7ee7197d06,infoq,2025-03-23,如何用AI实现基础编码能力平权，与优秀工程师共生 | QCon北京,https://www.infoq.cn/article/jkHiRQXX95Y9tyVsj9dR,original_pending_review,"[""chinese_first_party_org_byline""]",858,,,,,
+55a8c05716103aaced6ecf7f,jiqizhixin,2023-07-06,安卓手机上跑15亿参数大模型，12秒不到就推理完了,https://www.jiqizhixin.com/articles/2023-07-06-7,original_pending_review,"[""article_type=原创""]",2994,,,,,
+eb6dd33615f28549e7c7eb4d,jiqizhixin,2024-05-08,前特斯拉Optimus科学家跳槽HF，直接开源了一个机器人代码库,https://www.jiqizhixin.com/articles/2024-05-08-3,original_pending_review,"[""article_type=原创""]",714,,,,,
+82c9ce78f551f395a3180fa0,jiqizhixin,2021-04-26,黑客的噩梦：芯片中的混沌可以解决设备安全问题,https://www.jiqizhixin.com/articles/2021-04-26-5,translation,"[""article_type=翻译""]",1265,,,,,
+b54e8208b5484520bba1d022,jiqizhixin,2022-10-13,人脑细胞长成鼠脑半球的1/3，能感受胡须触觉：大脑组织移植突破登上Nature,https://www.jiqizhixin.com/articles/2022-10-13-2,translation,"[""article_type=翻译""]",3379,,,,,
+2ba7415539e7278edf6711b2,lctt,2023-05-01,How to resolve Git merge conflicts,https://github.com/LCTT/TranslateProject/blob/4948360714403ebcefc3abff80dcc69ad706bf5d/published/202305/20230404.1 ⭐️ How to resolve Git merge conflicts.md,translation,"[""lctt_published_translation"", ""translator=ChatGPT"", ""original_url""]",560,,,,,
+ce938d14c259c0f20755ece6,lctt,2023-07-01,Best Open Source Email Servers,https://github.com/LCTT/TranslateProject/blob/4948360714403ebcefc3abff80dcc69ad706bf5d/published/202307/20230618.0 ⭐️⭐️ Best Open Source Email Servers.md,translation,"[""lctt_published_translation"", ""translator=ChatGPT"", ""original_url""]",1452,,,,,

@@ -1,0 +1,45 @@
+{
+  "schema_version": "deaiodorant-boundary-competition-design-1.0",
+  "protocol_version": "boundary-competition-development-1.0",
+  "seed": 2026083101,
+  "role": "single_reader_development_not_validation",
+  "intervention_units": 16,
+  "high_competition_units": 8,
+  "low_competition_units": 8,
+  "diagnostic_tasks": 2,
+  "session_blocks": 2,
+  "minimum_mirror_separation": 8,
+  "power_sensitivity": {
+    "test": "exact_two_sided_binomial_against_0.5",
+    "alpha": 0.05,
+    "target_power": 0.8,
+    "ties_excluded_from_decisive_count": true,
+    "rows": [
+      {
+        "true_revised_preference_probability": 0.65,
+        "minimum_decisive_pairs": 90,
+        "exact_power": 0.812288,
+        "tasks_if_tie_rate_0_20": 113
+      },
+      {
+        "true_revised_preference_probability": 0.7,
+        "minimum_decisive_pairs": 49,
+        "exact_power": 0.810002,
+        "tasks_if_tie_rate_0_20": 62
+      },
+      {
+        "true_revised_preference_probability": 0.75,
+        "minimum_decisive_pairs": 30,
+        "exact_power": 0.803407,
+        "tasks_if_tie_rate_0_20": 38
+      },
+      {
+        "true_revised_preference_probability": 0.8,
+        "minimum_decisive_pairs": 20,
+        "exact_power": 0.804208,
+        "tasks_if_tie_rate_0_20": 25
+      }
+    ],
+    "warning": "These calculations are an optimistic independent-comparison floor. They do not turn repeated responses from one reader into reader-level replication."
+  }
+}

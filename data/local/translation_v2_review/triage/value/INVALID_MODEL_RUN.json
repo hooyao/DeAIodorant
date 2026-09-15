@@ -1,0 +1,7 @@
+{
+  "status": "superseded_invalid_model",
+  "model": "qwen3.5:9b",
+  "completed_documents": 65,
+  "reason": "The maintainer required Qwen3.8-27B BF16 on DGX Spark.",
+  "replacement": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\triage_qwen38\\value\\value_manifest.json"
+}

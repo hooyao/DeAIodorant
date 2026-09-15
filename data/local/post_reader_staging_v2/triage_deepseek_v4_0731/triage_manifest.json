@@ -1,0 +1,66 @@
+{
+  "protocol_version": "translation-review-triage-1.1",
+  "generated_at": "2026-08-29T16:06:46.328324+00:00",
+  "model": "deepseek/deepseek-v4-flash-0731",
+  "model_digest": null,
+  "backend": "openai",
+  "endpoint": "https://openrouter.ai/api/v1",
+  "concurrency": 8,
+  "prompt_versions": {
+    "primary": "translation-review-triage-primary-v2",
+    "verifier": "translation-review-triage-verifier-v2",
+    "safeguard": "translation-review-triage-foreign-source-safeguard-v2"
+  },
+  "executed_profiles": [
+    "safeguard"
+  ],
+  "temperature": 0,
+  "seed": 42,
+  "decision_policy": "Human decisions take precedence. Remaining records are operationally routed by a high-confidence foreign-source safeguard; weaker results remain uncertain. Primary and verifier outputs are retained as supporting measurements. Model-assisted results are not human gold.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "restriction": "Model-assisted results are measurements, not human gold, and must not be passed to benchmark finalization as human review decisions.",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\leiphone_candidates.jsonl",
+      "sha256": "b7ec27015ceeecffa26317046f8e4361bc5fa6ccc3d28ab2eb9150bdbca11bdc"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\qbitai_candidates.jsonl",
+      "sha256": "1bcb5c5a97d756f49a156ff9cc0b67e275fb2b9d973b987aa610f354f56f6a12"
+    }
+  ],
+  "human_decisions_file": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\no_human_decisions.csv",
+    "sha256": "f65c5bcd4a2ee4ee758a433fcd052f7a706b03ea31af166ef71268cca7c72da8"
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\triage_deepseek_v4_0731\\triage_results.jsonl",
+  "results_sha256": "49a4fb81768853220d4e4afffc66ab41f15d7fbbd0004896607c65fb0475ccb1",
+  "documents": 171,
+  "status_counts": {
+    "model_assisted_exclusion": 23,
+    "model_assisted_original": 133,
+    "uncertain": 15
+  },
+  "artifacts": {
+    "model_assisted_original": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\triage_deepseek_v4_0731\\model_assisted_original.jsonl",
+      "sha256": "bfc10acbd94fbae595f9a5d6018bd2456bf2fb9b751829f7268d55394415d86e"
+    },
+    "model_assisted_exclusion": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\triage_deepseek_v4_0731\\model_assisted_exclusion.jsonl",
+      "sha256": "51c52eb771c9aa4a4c29682f16fa7cf042a13adb7b5edfbefde7d17d338a0861"
+    },
+    "uncertain": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\triage_deepseek_v4_0731\\uncertain.jsonl",
+      "sha256": "7fdfa43a11f12303b818fdd2aecd649c13aac564c2652d9bb64b3fc402870f47"
+    },
+    "human_reviewed_original": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\triage_deepseek_v4_0731\\human_reviewed_original.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "human_excluded": {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\triage_deepseek_v4_0731\\human_excluded.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

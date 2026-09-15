@@ -1,0 +1,46 @@
+{
+  "protocol_version": "research-value-triage-1.0",
+  "generated_at": "2026-08-29T16:57:55.876927+00:00",
+  "model": "qwen3.8-27b",
+  "model_digest": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab",
+  "backend": "openai",
+  "endpoint": "http://127.0.0.1:8000/v1",
+  "concurrency": 16,
+  "prompt_versions": {
+    "primary": "research-value-primary-v3",
+    "verifier": "research-value-verifier-v3"
+  },
+  "temperature": 0,
+  "seed": 42,
+  "restriction": "Research-value triage is separate from translation provenance. Model results are measurements and do not replace human quality review.",
+  "parse_failure_policy": "Malformed structured output is retried once with a larger token budget; a second failure becomes uncertain/low.",
+  "candidate_files": [
+    {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_review_candidates/huawei_cloud_community_candidates.jsonl",
+      "sha256": "484e04f9fb62c2cb96c2af9680509c150383162af0cc951685f60207976aa640"
+    }
+  ],
+  "provenance_results": "/home/hooyao/deaiodorant-post-v2-data/triage_results.jsonl",
+  "documents": 82,
+  "status_counts": {
+    "model_assisted_substantive": 55,
+    "value_uncertain": 9,
+    "model_assisted_low_value": 18
+  },
+  "results": "/home/hooyao/deaiodorant-post-v2-data/huawei_value_qwen38/value_results.jsonl",
+  "results_sha256": "a09290bc6cc2adfe9ed9d458bccc06da69f6ef055b8f963d6e239cefbad6d761",
+  "artifacts": {
+    "model_assisted_substantive": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_value_qwen38/model_assisted_substantive.jsonl",
+      "sha256": "f4544aba44d848dba7d1921a03bc9602681583e2ef96a78f33032eda31d0d0d6"
+    },
+    "model_assisted_low_value": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_value_qwen38/model_assisted_low_value.jsonl",
+      "sha256": "68604f3259cd5abd369f9ba566957893b8b640277b6202ca8cc21ed9002c3fb6"
+    },
+    "value_uncertain": {
+      "path": "/home/hooyao/deaiodorant-post-v2-data/huawei_value_qwen38/value_uncertain.jsonl",
+      "sha256": "40f559c3e19556f960fc2b380b3aeffb2f96119ce671c0de17687039fbd3253c"
+    }
+  }
+}

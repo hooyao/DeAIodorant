@@ -1,0 +1,16 @@
+{
+  "version": "cognitive-move-launch-audit-1.0",
+  "time_utc": "2026-09-14T14:59:12.966591+00:00",
+  "issue": "spawn_agent fork_turns=none still auto-injected repository AGENTS containing prior labels",
+  "attempts_excluded": [
+    "/root/blind_a1",
+    "/root/blind_a2"
+  ],
+  "a1_packet_reads": 0,
+  "a2_packet_reads": "awaiting_report",
+  "formal_response_files_at_interruption": [],
+  "mitigation": "Temporarily provide neutral scoped AGENTS at launch, preserve all applicable constraints; fresh task checks inherited context before any packet; restore original exact bytes after launches. Frozen packets, design, prompt and criterion hashes are unchanged.",
+  "original_agents_sha256": "2e8ce7594d1c3a194e887c85d01bd1d6cdf9f83bcd823886b24e46d3154093a5",
+  "neutral_agents_sha256": "f5188cd0ae0b9ac9d7d285c6eb2aaf8cb21c90a2337606ac7a5141f63d5c725f",
+  "backup_path": "data/local/cognitive-move-pilot-v1/launch-original-AGENTS.md"
+}

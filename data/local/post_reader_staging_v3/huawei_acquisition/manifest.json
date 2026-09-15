@@ -1,0 +1,349 @@
+{
+  "protocol_version": "post-huawei-recommended-acquisition-staging-1.0",
+  "generated_at": "2026-08-30T02:24:24.214818+00:00",
+  "status": "acquisition_staging_not_admitted",
+  "source": "huawei_cloud_community",
+  "post_start": "2025-07-01",
+  "configuration": {
+    "pages": 60,
+    "target": 240,
+    "delay_seconds": 0.5,
+    "http_timeout_seconds": 45.0,
+    "topic_filter": "(?:数据库|GaussDB|openGauss|MySQL|PostgreSQL|Redis|SQL|数据仓库|数据湖|大数据|云原生|Kubernetes|Docker|容器|DevOps|软件测试|单元测试|测试|代码|编程|开发|架构|微服务|运维|存储|网络|云计算|API|Linux|Java|Python)",
+    "translation_model": null
+  },
+  "discovered_relevant": 401,
+  "documents": 240,
+  "failures": [
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484288",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483634",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483795",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/481506",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483890",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/480497",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/477495",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/477154",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/476846",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483891",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/477501",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484054",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484032",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/481069",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/475456",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484022",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/468203",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/472717",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/471870",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483912",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484018",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483982",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484023",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483940",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/480597",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/472077",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/459274",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/463685",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/472072",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/471441",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/467664",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/459510",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/476000",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/479746",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/469984",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/457758",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483972",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/459907",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/481505",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/477601",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/475101",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/477072",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483779",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483816",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483892",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484010",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483775",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/476900",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/480086",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/473807",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/460451",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484030",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483696",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483662",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483679",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483620",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483614",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/484056",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483589",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483844",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483604",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483767",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483470",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483692",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483493",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483474",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483378",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483331",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483575",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483409",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483407",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483803",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483444",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483613",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483332",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483731",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483375",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483347",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483435",
+      "error": "shape_or_quality_gate"
+    },
+    {
+      "url": "https://bbs.huaweicloud.com/blogs/483417",
+      "error": "shape_or_quality_gate"
+    }
+  ],
+  "candidates_file": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\huawei_acquisition\\huawei_cloud_community_post_candidates.jsonl",
+  "candidates_sha256": "0ae6a9e6c0f7d767786f4591ae164740acef18f99b2c16a6fbf1da1c7782a2c3",
+  "recommendation_snapshots": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\huawei_acquisition\\recommendation_pages.jsonl",
+  "recommendation_snapshots_sha256": "d7fe2076c5bfbc21708e4b84b84065e5b1b680d4bc2d7a48d8bc98e96628c3f4",
+  "limitations": [
+    "This output is acquisition staging and cannot be used for reader tasks.",
+    "Recommendation membership and view counts are collection-time snapshots, not fixed-age visibility measures.",
+    "Community articles may be promotional, duplicated, translated, or low value; fail-closed review remains required.",
+    "The topic filter is an acquisition aid and does not assign the final topic stratum."
+  ]
+}

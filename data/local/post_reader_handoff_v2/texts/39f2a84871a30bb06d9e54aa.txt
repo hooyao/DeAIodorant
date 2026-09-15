@@ -1,0 +1,105 @@
+一条消息背后，是寻址、调度与权限隔离的完整链路。
+作者丨
+郑佳美
+编辑丨
+岑 峰
+这几天，Anthropic 给 Claude Code 加了一项新的实验性能力：
+Cross-session messaging，也就是跨 Session 消息通信。
+简单说，它允许你同时运行的多个 Claude Code Session
+直接互相发送消息
+。
+比如你开了 3 个 Claude Code Session：一个负责数据库，一个负责后端 API，一个负责测试。以前这 3 个 Session 虽然可以并行工作，但彼此不知道对方做到了哪里。数据库 Session 改完 Schema，通常还是要开发者自己切到另一个终端，把变化重新告诉后端 Session。
+Cross-session messaging 加进来之后，这一步可以直接由 Claude 完成。数据库 Session 可以通知后端 Session 哪些字段发生了变化，测试 Session 发现接口回归问题，也可以把结果发给正在修改相关代码的 Session。Claude 可以自行判断什么时候需要通知其他 Session，也可以按照开发者的要求联系指定 Session。
+要理解它具体做了什么，可以顺着一条消息的完整路径往下看：它传什么、怎么找到目标、消息什么时候进入 Claude，以及接收方为什么不能直接照做。
+01
+不是 Context，是一条消息
+Cross-session messaging 没有改变 Claude Code 原本的 Session 隔离。
+Session A 给 Session B 发消息时，不会把自己的 Conversation History、读过的文件或者整个 Context Window 一起发送过去。官方规定，跨 Session 传递的是文本。如果需要把完整对话和上下文迁移到另一个终端，应该 Resume 原来的 Session，而不是使用 Cross-session messaging。
+这决定了多个 Claude 之间的协作方式。
+假设数据库 Session 为了完成 Migration，读了几十个文件，也尝试过几套方案，最后确定某个字段需要修改。后端 Session 没必要知道前面的全部分析过程，只需要拿到最终变化，以及这些变化会怎样影响自己的 API。
+因此，Cross-session messaging 传递的是
+任务结果和依赖信息
+，而不是完整工作记忆。雷峰网
+这样做的好处是，不同任务产生的局部信息不会不断涌入其他 Session。数据库相关的细节可以留在数据库 Session，测试过程可以留在测试 Session，只有当某个变化开始影响其他任务时，相关信息才跨过 Session 边界。雷峰网
+(公众号：雷峰网)
+它和“所有 Agent 共享一个大 Context”属于两种不同思路。Cross-session messaging 选择让 Session 保持独立，再在任务产生依赖时显式同步必要状态。
+既然传递的是一条明确的消息，接下来的问题就是：
+Session
+A 怎么找到 Session B？
+02
+要先找到另一个 Session
+Claude Code 给支持 Cross-session messaging 的 Session 增加了自己的通信入口。
+每个本地 Session 会把相关信息注册到磁盘，同时绑定一个 Inbox Socket。Claude 可以通过
+ListAgents
+查找当前能够联系的 Session，再通过
+SendMessage
+把消息发给指定目标。
+用户不需要自己操作这些内部工具，只需要告诉 Claude 想联系哪个 Session，或者让它在任务产生依赖时主动通知对方。
+Session 的名字也因此开始参与寻址。Claude 可以根据名字寻找目标；如果名字重复，系统会增加短标识进行区分，同时显示 Working Directory，帮助判断每个 Session 正在处理哪个项目或目录。
+找到目标以后，本机消息直接通过对应 Session 的 Socket 传递，不需要经过 Anthropic Server。另一台机器或者 Claude Code Web 上的 Session，才会通过 Anthropic Server 和 Remote Control 相关连接通信。
+这套发现机制也决定了本地通信的边界。
+Claude Code 需要读取其他 Session 写到磁盘上的注册信息，因此两个 Claude 即使物理上运行在同一台电脑，只要文件系统彼此隔离，也可能互相发现不了。典型情况就是 Host 和独立 Container；如果两个 Session 都运行在同一个 Container 中，则可以正常通信。
+Inbox Socket 同时受到操作系统用户权限限制，共享服务器上的其他 OS User 无法直接访问你的 Session。
+所以这里所谓的“本地通信”，实际依赖的是注册信息是否可见、Socket 是否可达，以及操作系统是否允许访问。
+消息现在已经能够找到目标并送进 Inbox，接下来就轮到 Claude Code 的 Runtime 决定：
+什么时候把这条消息交给模型。
+03
+信息送达后
+假设后端 Session 正在修改文件，这时候测试 Session 发来消息，告诉它刚刚发现了一个接口回归问题。
+Claude Code 不会立刻中断正在运行的 Tool。
+如果目标 Session 处于 Idle 状态，消息可以触发一个新的 Turn；如果 Claude 已经处在 Active Turn 中，消息会先等待，在两个 Tool Call 之间被读取。
+这样处理的原因和 Coding Agent 的执行方式有关。Claude 可能正在写文件、运行测试、执行 Migration 或处理其他耗时任务。如果外部消息可以在任意时间强行改变当前动作，很容易出现工具只执行了一部分，Agent 却已经开始按照新信息重新规划的情况。
+所以消息影响的是 Claude 接下来的决策，而不会直接抢占正在进行中的操作。
+这也意味着 Cross-session messaging 已经接进了 Claude Code 的 Agentic Loop，成为一种异步输入来源。而且这个入口不只给其他 Claude Session 使用。
+Claude Code 会把当前 Session 的 Messaging Socket 暴露给 Hook 和 Bash 启动的 Child Process。一个长时间运行的后台任务结束以后，可以主动把结果发回当前 Session，而不需要 Claude 一直轮询它是否完成。
+这套通道本身并不是可靠消息队列。重复消息会受到限流，短时间内相同内容可能被丢弃；已经接受但 Claude 还没读取的消息，每个 Session 最多保留 50 条，进入 Hold 状态的消息则使用另一套缓冲区，最多保留 100 条。
+因此它更适合发送状态变化、任务结果和协作通知。必须长期保存的事实，仍然应该记录在 Git、文件、数据库或者其他持久化系统里。
+消息进入 Runtime 以后，还不能直接变成执行动作，因为接收方还要先判断：
+另一个 Claude 发来的内容，到底具有多大权限。
+04
+权限如何继承
+Claude Code 明确区分 User Message 和 Peer Session Message。
+另一个 Session 发来的内容不会被当成用户授权，因此不能替用户批准 Permission Prompt，也不能通过消息要求接收方修改 Permission Settings、
+CLAUDE.md
+或其他配置。消息里即使包含 Claude Code Command，也只会作为普通文本处理。
+假设 Session A 请求 Session B 删除一个文件，而这个操作在 Session B 中需要用户授权，那么原来的 Permission Prompt 仍然会出现。
+Claude Code 还限制了另一种权限绕过方式：如果某个操作已经在当前 Session 被 Permission System 拒绝，Claude 不应该转而请求另一个 Session 替自己执行。
+否则，只要几个 Session 的权限不同，低权限 Session 就可以不断把自己不能完成的操作转交给高权限 Session，原本的权限边界也就失效了。
+在执行权限之外，消息本身还有一层 Inbound Control。接收端可以把跨 Session 消息设置为
+accept
+、
+hold
+或
+refuse
+：直接交给 Claude、暂时保留等待进一步确认，或者直接丢弃。
+如果用户没有显式配置规则，Claude Code 还会参考发送方和接收方当前的 Permission Mode。一个能够绕过普通 Permission Prompt 的 Session，不会被视为和普通 Session 完全相同的消息来源；接收端自身权限较高时，外部消息同样可能先进入 Hold。
+这里实际上有两道判断：先决定消息能不能进入 Claude，再决定 Claude 根据这条消息准备执行的动作有没有权限。
+到这一步，一条 Cross-session message 的完整路径就已经走完了：从生成信息、发现目标、完成投递，到 Runtime 读取消息，再经过接收端自己的权限控制。
+05
+Session 之间的协调层
+把这条链路放回 Claude Code 现有能力里，Cross-session messaging 的位置就比较清楚了。
+Resume Session 用来继续原来的 Conversation 和 Context，Agent Teams 用来创建和管理一组协作 Agent，Worktree 负责隔离不同 Session 的代码修改，Remote Control 则解决从其他设备继续控制 Session 的问题。
+Cross-session messaging 处理的是另一种情况：
+几个本来就独立运行的 Session，在任务过程中产生依赖以后，怎么把必要信息传给对方。
+以前多开几个 Claude Code Session，主要解决的是并行问题，但开发者仍然要观察各个终端的进度，并在人和 Session 之间反复转述任务状态。现在，接口变化、测试结果、Migration 完成这类信息，可以直接送到受影响的 Session。
+Cross-session messaging 没有把多个 Claude 合成一个 Agent，而是在原有的 Context、工作目录和权限边界之外，补上了一层通信能力。
+放到更大的工程场景里看，这种设计提供了另一种多 Agent 思路：不同 Agent 不需要共享越来越大的 Context，也可以通过明确的通信接口完成协同。任务、状态和权限被拆开之后，系统反而更容易扩展。
+当 Agent 数量继续增加，问题也会从“单个 Agent 能做多少事”，逐渐变成“这些 Agent 之间能不能稳定地交换状态、处理依赖和完成交接”。
+Cross-session messaging 虽然解决的只是其中一环，但它已经让 Claude Code 的多 Session 工作方式开始具备更完整的工程结构。或许在将来，这种局域网内的跨 Session 机制，演变为跨机器、跨生态的 Agent-to-Agent通信协议时，今天这两段 Claude 之间的简短对话，正是高度自动化软件工厂成型的关键一步。
+参考链接：
+https://code.claude.com/docs/en/cross-session-messaging
+上车，带你看遍全球 AI 顶会精华
+可独家畅览：
+专家演讲PPT
+大会报告全文
+热门论文解读
+学术新星访谈
+扫描上方二维码
+或点击
+「
+阅读原文
+」
+关注专区。
+雷峰网原创文章，未经授权禁止转载。详情见
+转载须知
+。

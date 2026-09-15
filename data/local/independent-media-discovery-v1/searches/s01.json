@@ -1,0 +1,21 @@
+{
+  "id": "s01",
+  "q": "site:post.smzdm.com/p/ 机器人 购买 DIY 2026",
+  "started_at": "2026-09-14T14:47:22.036Z",
+  "completed_at": "2026-09-14T14:47:26.100Z",
+  "request": {
+    "scope": "webpage",
+    "size": 6,
+    "includeRawContent": false,
+    "includeSummary": false
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "tool call error: tool call failed for `metaso/metaso_web_search`\n\nCaused by:\n    Mcp error: -32603: Tool execution failed: 未找到相关数据"
+      }
+    ],
+    "isError": true
+  }
+}

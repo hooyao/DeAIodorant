@@ -1,0 +1,528 @@
+{
+  "schema_version": "deaiodorant-integration-pairs-1.0",
+  "protocol_version": "proposition-decompression-development-1.0",
+  "seed": 2026082705,
+  "pairs": [
+    {
+      "task_number": 1,
+      "pair_id": "integration-v1-04",
+      "base_pair_id": "integration-v1-04",
+      "doc_id": "610ba7a9b468d78a3d59def1",
+      "target_line": 18,
+      "original_side": "B",
+      "control_role": "intervention",
+      "mirror_of": null,
+      "operation": {
+        "operation_id": "integration-v1-04-op-01",
+        "operator": "decompress_proposition_chain",
+        "before": "为解决上述问题，本论文提出了一种名为 CoT-Flow 的全新理论框架，将离散的推理步骤重新概念化为连续的概率流 。受整流流（Rectified Flow）理论的启发，该框架将推理过程建模为将模型的信息状态从初始问题平滑传输到真实答案的连续过程 。在此视角下，每一个推理步骤都被视为一个推动推理过程逼近目标的“速度向量”，以严格量化每一步对生成最终正确答案的瞬时信息增益 。基于这样的量化指标，实现了一种基于对比解码的贪心解码策略，回答长度平均减少 10% ~ 15%，并且在 AIME24 上能够获得高达 15.9% 的准确率提升。同一框架下导出的 RL loss，和 GRPO, VeriFree 等 baseline 相比，在 AIME24, GPQA 等 benchmark 上取得接近或更高的准确率，同时实现 11% ~ 37% 的长度压缩，训练加速 32%。",
+        "after": "为解决上述问题，论文提出了全新的理论框架 CoT-Flow。它把离散的推理步骤重新概念化为连续的概率流。\nCoT-Flow 受整流流（Rectified Flow）理论启发。它把推理过程看作一次连续传输：模型的信息状态从初始问题出发，平滑地抵达真实答案。在这一视角下，每个推理步骤都是推动过程接近目标的“速度向量”。该框架据此严格量化每一步为最终正确答案带来的瞬时信息增益。\n基于这一指标，论文实现了采用对比解码的贪心策略。该策略使回答长度平均减少 10% ~ 15%，并在 AIME24 上将准确率最高提高 15.9%。\n论文还从同一框架导出 RL loss。与 GRPO、VeriFree 等 baseline 相比，它在 AIME24、GPQA 等 benchmark 上取得接近或更高的准确率，同时将长度压缩 11% ~ 37%，并使训练加速 32%。",
+        "reason": "Distribute preserved propositions across shorter integration units while retaining explicit actors, relations, and voice."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "CoT-Flow maps discrete reasoning steps to a continuous probability flow.",
+          "original_support": "将离散的推理步骤重新概念化为连续的概率流",
+          "revised_support": "把离散的推理步骤重新概念化为连续的概率流"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Velocity vectors quantify instantaneous information gain.",
+          "original_support": "瞬时信息增益",
+          "revised_support": "瞬时信息增益"
+        },
+        {
+          "claim_id": "c03",
+          "description": "All decoding and RL-loss outcome ranges are retained.",
+          "original_support": "回答长度平均减少 10% ~ 15%",
+          "revised_support": "回答长度平均减少 10% ~ 15%"
+        }
+      ],
+      "locked_literals": [
+        "CoT-Flow",
+        "Rectified Flow",
+        "AIME24",
+        "RL loss",
+        "GRPO",
+        "VeriFree",
+        "GPQA"
+      ],
+      "voice_anchors": [
+        "速度向量",
+        "真实答案"
+      ],
+      "audit": {
+        "original_sha256": "9ba357d1fde037a756b4767f84a97d333ed7d03b86aa779280d0f4b68312a3c4",
+        "revised_sha256": "0f9f6a0ab7388ecdabc2b063e9f8aceee48fd7ca8385c6dc102efa17c1f3a3cb",
+        "original_numbers": [
+          "10%",
+          "15%",
+          "24",
+          "15.9%",
+          "24",
+          "11%",
+          "37%",
+          "32%"
+        ],
+        "revised_numbers": [
+          "10%",
+          "15%",
+          "24",
+          "15.9%",
+          "24",
+          "11%",
+          "37%",
+          "32%"
+        ],
+        "original_cjk_chars": 238,
+        "revised_cjk_chars": 227,
+        "cjk_expansion_ratio": 0.9537815126050421,
+        "original_sentence_count": 5,
+        "revised_sentence_count": 10,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1 +1,4 @@",
+          "-为解决上述问题，本论文提出了一种名为 CoT-Flow 的全新理论框架，将离散的推理步骤重新概念化为连续的概率流 。受整流流（Rectified Flow）理论的启发，该框架将推理过程建模为将模型的信息状态从初始问题平滑传输到真实答案的连续过程 。在此视角下，每一个推理步骤都被视为一个推动推理过程逼近目标的“速度向量”，以严格量化每一步对生成最终正确答案的瞬时信息增益 。基于这样的量化指标，实现了一种基于对比解码的贪心解码策略，回答长度平均减少 10% ~ 15%，并且在 AIME24 上能够获得高达 15.9% 的准确率提升。同一框架下导出的 RL loss，和 GRPO, VeriFree 等 baseline 相比，在 AIME24, GPQA 等 benchmark 上取得接近或更高的准确率，同时实现 11% ~ 37% 的长度压缩，训练加速 32%。",
+          "+为解决上述问题，论文提出了全新的理论框架 CoT-Flow。它把离散的推理步骤重新概念化为连续的概率流。",
+          "+CoT-Flow 受整流流（Rectified Flow）理论启发。它把推理过程看作一次连续传输：模型的信息状态从初始问题出发，平滑地抵达真实答案。在这一视角下，每个推理步骤都是推动过程接近目标的“速度向量”。该框架据此严格量化每一步为最终正确答案带来的瞬时信息增益。",
+          "+基于这一指标，论文实现了采用对比解码的贪心策略。该策略使回答长度平均减少 10% ~ 15%，并在 AIME24 上将准确率最高提高 15.9%。",
+          "+论文还从同一框架导出 RL loss。与 GRPO、VeriFree 等 baseline 相比，它在 AIME24、GPQA 等 benchmark 上取得接近或更高的准确率，同时将长度压缩 11% ~ 37%，并使训练加速 32%。"
+        ]
+      }
+    },
+    {
+      "task_number": 2,
+      "pair_id": "integration-v1-01",
+      "base_pair_id": "integration-v1-01",
+      "doc_id": "4e2108f7b04c3847a564bfd4",
+      "target_line": 1,
+      "original_side": "A",
+      "control_role": "intervention",
+      "mirror_of": null,
+      "operation": {
+        "operation_id": "integration-v1-01-op-01",
+        "operator": "decompress_proposition_chain",
+        "before": "9 月 25 日，在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，奇富科技首席算法科学家费浩峻基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑——告别参数规模的盲目追逐，以“做小做强”的路径推动金融 AI 从“堆人力、堆模型”的传统范式，迈向“聚智能、见个体”的价值升级，为行业提供了金融大模型务实落地的清晰样本。\n费浩峻指出，在传统机器学习阶段，金融 AI 面临两大核心制约：一是高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据；二是模型泛化能力差，不同业务需定制不同模型，迭代成本高、响应慢。",
+        "after": "9 月 25 日，奇富科技首席算法科学家费浩峻在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑。他提出告别对参数规模的盲目追逐，转而采用“做小做强”的路径，推动金融 AI 从“堆人力、堆模型”的传统范式迈向“聚智能、见个体”的价值升级。这一实践为行业提供了金融大模型务实落地的清晰样本。\n费浩峻指出，传统机器学习阶段的金融 AI 面临两大核心制约。第一，它高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据。第二，模型的泛化能力较差，不同业务需要定制不同模型，导致迭代成本高、响应慢。",
+        "reason": "Distribute preserved propositions across shorter integration units while retaining explicit actors, relations, and voice."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "The dated conference talk and speaker attribution are retained.",
+          "original_support": "9 月 25 日，在云栖大会",
+          "revised_support": "9 月 25 日，奇富科技首席算法科学家费浩峻在云栖大会"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The small-and-strong path replaces parameter-scale pursuit.",
+          "original_support": "告别参数规模的盲目追逐",
+          "revised_support": "告别对参数规模的盲目追逐"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Both traditional-machine-learning constraints are retained.",
+          "original_support": "一是高度依赖人工特征工程",
+          "revised_support": "第一，它高度依赖人工特征工程"
+        }
+      ],
+      "locked_literals": [
+        "奇富科技",
+        "费浩峻",
+        "金融 AI",
+        "堆人力、堆模型",
+        "聚智能、见个体"
+      ],
+      "voice_anchors": [
+        "做小做强",
+        "清晰样本"
+      ],
+      "audit": {
+        "original_sha256": "c8bcebf57c39bea4e94e072c354682dfd9ae6eb5597e087fcd8bc367c7ed5ac5",
+        "revised_sha256": "783af2fb2d62cc2e19707c4d9c01936f2c52419a6b3a985ac974f3cf2aad3e1e",
+        "original_numbers": [
+          "9",
+          "25"
+        ],
+        "revised_numbers": [
+          "9",
+          "25"
+        ],
+        "original_cjk_chars": 219,
+        "revised_cjk_chars": 236,
+        "cjk_expansion_ratio": 1.0776255707762556,
+        "original_sentence_count": 2,
+        "revised_sentence_count": 6,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,2 +1,2 @@",
+          "-9 月 25 日，在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，奇富科技首席算法科学家费浩峻基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑——告别参数规模的盲目追逐，以“做小做强”的路径推动金融 AI 从“堆人力、堆模型”的传统范式，迈向“聚智能、见个体”的价值升级，为行业提供了金融大模型务实落地的清晰样本。",
+          "-费浩峻指出，在传统机器学习阶段，金融 AI 面临两大核心制约：一是高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据；二是模型泛化能力差，不同业务需定制不同模型，迭代成本高、响应慢。",
+          "+9 月 25 日，奇富科技首席算法科学家费浩峻在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑。他提出告别对参数规模的盲目追逐，转而采用“做小做强”的路径，推动金融 AI 从“堆人力、堆模型”的传统范式迈向“聚智能、见个体”的价值升级。这一实践为行业提供了金融大模型务实落地的清晰样本。",
+          "+费浩峻指出，传统机器学习阶段的金融 AI 面临两大核心制约。第一，它高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据。第二，模型的泛化能力较差，不同业务需要定制不同模型，导致迭代成本高、响应慢。"
+        ]
+      }
+    },
+    {
+      "task_number": 3,
+      "pair_id": "integration-v1-06",
+      "base_pair_id": "integration-v1-06",
+      "doc_id": "69566776f457ecf4c98ecbe0",
+      "target_line": 34,
+      "original_side": "B",
+      "control_role": "intervention",
+      "mirror_of": null,
+      "operation": {
+        "operation_id": "integration-v1-06-op-01",
+        "operator": "decompress_proposition_chain",
+        "before": "美团指标平台是美团内部自建的元数据及模型管理平台，面向数据研发、数据产品团队，提供业务全域下数仓规划、指标维度统一管理、标准建模及指标自动生产的产品能力与方法论。美团 BI 平台是公司级一站式数据分析平台，面向数据产运营、研发、分析师、管理者等多种角色，支持多种数据源便捷查询，灵活进行数据可视化分析，快速搭建数据报表和数据监控，提供安全、高效、敏捷的数据分析服务。",
+        "after": "美团指标平台是美团内部自建的元数据及模型管理平台，服务于数据研发和数据产品团队。它提供产品能力与方法论，覆盖业务全域下的数仓规划、指标维度统一管理、标准建模以及指标自动生产。\n美团 BI 平台是公司级一站式数据分析平台，面向数据产运营、研发、分析师和管理者等多种角色。用户可以便捷查询多种数据源，灵活开展数据可视化分析，并快速搭建数据报表和数据监控。该平台提供安全、高效、敏捷的数据分析服务。",
+        "reason": "Distribute preserved propositions across shorter integration units while retaining explicit actors, relations, and voice."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "The indicator platform retains its audience and four capabilities.",
+          "original_support": "面向数据研发、数据产品团队",
+          "revised_support": "服务于数据研发和数据产品团队"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The BI platform retains all named user roles and functions.",
+          "original_support": "面向数据产运营、研发、分析师、管理者等多种角色",
+          "revised_support": "面向数据产运营、研发、分析师和管理者等多种角色"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Safe, efficient, and agile analytics service remains.",
+          "original_support": "安全、高效、敏捷的数据分析服务",
+          "revised_support": "安全、高效、敏捷的数据分析服务"
+        }
+      ],
+      "locked_literals": [
+        "美团指标平台",
+        "美团 BI 平台",
+        "数据产运营"
+      ],
+      "voice_anchors": [
+        "安全、高效、敏捷"
+      ],
+      "audit": {
+        "original_sha256": "59998b2b72fedf084cb859f82ecf0f4b7a935f60b84abb99c9859e487f5cafd4",
+        "revised_sha256": "21a1e8f6d31e0ab1884506f02194b9a19802498d9f89c4a00ec91611469c83df",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_cjk_chars": 162,
+        "revised_cjk_chars": 175,
+        "cjk_expansion_ratio": 1.0802469135802468,
+        "original_sentence_count": 2,
+        "revised_sentence_count": 5,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1 +1,2 @@",
+          "-美团指标平台是美团内部自建的元数据及模型管理平台，面向数据研发、数据产品团队，提供业务全域下数仓规划、指标维度统一管理、标准建模及指标自动生产的产品能力与方法论。美团 BI 平台是公司级一站式数据分析平台，面向数据产运营、研发、分析师、管理者等多种角色，支持多种数据源便捷查询，灵活进行数据可视化分析，快速搭建数据报表和数据监控，提供安全、高效、敏捷的数据分析服务。",
+          "+美团指标平台是美团内部自建的元数据及模型管理平台，服务于数据研发和数据产品团队。它提供产品能力与方法论，覆盖业务全域下的数仓规划、指标维度统一管理、标准建模以及指标自动生产。",
+          "+美团 BI 平台是公司级一站式数据分析平台，面向数据产运营、研发、分析师和管理者等多种角色。用户可以便捷查询多种数据源，灵活开展数据可视化分析，并快速搭建数据报表和数据监控。该平台提供安全、高效、敏捷的数据分析服务。"
+        ]
+      }
+    },
+    {
+      "task_number": 4,
+      "pair_id": "integration-v1-identical-control",
+      "doc_id": "66ba5cd023c8f199f1601f59",
+      "target_line": 9,
+      "control_role": "identical",
+      "expected_outcome": "tie_or_neither",
+      "text_sha256": "b1b2fe8b62b5b21e5d5fffd6f32a3247a4389eb522d24f115fd53696582baae1"
+    },
+    {
+      "task_number": 5,
+      "pair_id": "integration-v1-02",
+      "base_pair_id": "integration-v1-02",
+      "doc_id": "8873215c1410ad3babd84bbb",
+      "target_line": 1,
+      "original_side": "B",
+      "control_role": "intervention",
+      "mirror_of": null,
+      "operation": {
+        "operation_id": "integration-v1-02-op-01",
+        "operator": "decompress_proposition_chain",
+        "before": "在人工智能竞争持续升温的当下，围绕 DeepMind、OpenAI 与 Anthropic 的讨论，已经不再只是“谁的模型更强”的问题，而是逐渐演变为一个更深层的命题：顶级 AI 实验室究竟如何组织研究、选择技术路线，并在算力、资本与安全之间做出长期取舍。\n在近日 InfoQ 对《哈萨比斯：谷歌 AI 之脑》（TheInfinityMachine）作者、知名科技史学家、金融史学家塞巴斯蒂安·马拉比（Sebastian Mallaby）的采访中，我们尝试从一个更接近“内部观察者”的视角，重新理解 DeepMind 的成长逻辑，以及它与 OpenAI、Anthropic 之间真正的结构性差异。",
+        "after": "人工智能竞争持续升温，围绕 DeepMind、OpenAI 与 Anthropic 的讨论也在变化。人们关注的不再只有“谁的模型更强”，还包括一个更深层的问题：顶级 AI 实验室如何组织研究？它们怎样选择技术路线，又如何在算力、资本与安全之间做出长期取舍？\n近日，InfoQ 采访了《哈萨比斯：谷歌 AI 之脑》（TheInfinityMachine）的作者塞巴斯蒂安·马拉比（Sebastian Mallaby）。他是知名科技史学家和金融史学家。我们尝试借助他更接近“内部观察者”的视角，重新理解 DeepMind 的成长逻辑，以及它与 OpenAI、Anthropic 之间真正的结构性差异。",
+        "reason": "Distribute preserved propositions across shorter integration units while retaining explicit actors, relations, and voice."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "Discussion expands beyond model strength to laboratory organization.",
+          "original_support": "已经不再只是“谁的模型更强”的问题",
+          "revised_support": "不再只有“谁的模型更强”"
+        },
+        {
+          "claim_id": "c02",
+          "description": "Research, technical-route, compute, capital, and safety choices remain.",
+          "original_support": "如何组织研究、选择技术路线",
+          "revised_support": "如何组织研究"
+        },
+        {
+          "claim_id": "c03",
+          "description": "The interview source and comparative objective remain attributed.",
+          "original_support": "塞巴斯蒂安·马拉比（Sebastian Mallaby）的采访",
+          "revised_support": "作者塞巴斯蒂安·马拉比（Sebastian Mallaby）"
+        }
+      ],
+      "locked_literals": [
+        "DeepMind",
+        "OpenAI",
+        "Anthropic",
+        "TheInfinityMachine",
+        "Sebastian Mallaby"
+      ],
+      "voice_anchors": [
+        "内部观察者",
+        "真正的结构性差异"
+      ],
+      "audit": {
+        "original_sha256": "13c48e285248c4b391efb361155a4b4899a9f8216f0be36f0ca8ed44eb5bd107",
+        "revised_sha256": "e131eb17865013912aa857a37b9f5ba03c0841143c50ca3609e2d5908f751a26",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_cjk_chars": 165,
+        "revised_cjk_chars": 166,
+        "cjk_expansion_ratio": 1.006060606060606,
+        "original_sentence_count": 2,
+        "revised_sentence_count": 6,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,2 +1,2 @@",
+          "-在人工智能竞争持续升温的当下，围绕 DeepMind、OpenAI 与 Anthropic 的讨论，已经不再只是“谁的模型更强”的问题，而是逐渐演变为一个更深层的命题：顶级 AI 实验室究竟如何组织研究、选择技术路线，并在算力、资本与安全之间做出长期取舍。",
+          "-在近日 InfoQ 对《哈萨比斯：谷歌 AI 之脑》（TheInfinityMachine）作者、知名科技史学家、金融史学家塞巴斯蒂安·马拉比（Sebastian Mallaby）的采访中，我们尝试从一个更接近“内部观察者”的视角，重新理解 DeepMind 的成长逻辑，以及它与 OpenAI、Anthropic 之间真正的结构性差异。",
+          "+人工智能竞争持续升温，围绕 DeepMind、OpenAI 与 Anthropic 的讨论也在变化。人们关注的不再只有“谁的模型更强”，还包括一个更深层的问题：顶级 AI 实验室如何组织研究？它们怎样选择技术路线，又如何在算力、资本与安全之间做出长期取舍？",
+          "+近日，InfoQ 采访了《哈萨比斯：谷歌 AI 之脑》（TheInfinityMachine）的作者塞巴斯蒂安·马拉比（Sebastian Mallaby）。他是知名科技史学家和金融史学家。我们尝试借助他更接近“内部观察者”的视角，重新理解 DeepMind 的成长逻辑，以及它与 OpenAI、Anthropic 之间真正的结构性差异。"
+        ]
+      }
+    },
+    {
+      "task_number": 6,
+      "pair_id": "integration-v1-05",
+      "base_pair_id": "integration-v1-05",
+      "doc_id": "75583336dc40b896d68598d0",
+      "target_line": 11,
+      "original_side": "A",
+      "control_role": "intervention",
+      "mirror_of": null,
+      "operation": {
+        "operation_id": "integration-v1-05-op-01",
+        "operator": "decompress_proposition_chain",
+        "before": "本论文提出了 CoreCodeBench，一种面向大语言模型编程能力的细粒度评测基准。该基准利用 COREPIPE 框架，从 12 个 Python 开源库自动生成 1,524 个结构化任务，涵盖开发、修复、测试驱动开发等多种软件工程场景，有效区分不同认知负载并动态调整任务复杂度。实验表明，其有效性达 78.55%，显著优于现有方法，揭示了模型在不同任务类型上的能力错配现象。CoreCodeBench 还支持多任务组合评测，模拟真实开发环境，具备高自动化、强鲁棒性和可复现性，为代码智能评测提供了更全面、精准的框架。",
+        "after": "论文提出了 CoreCodeBench，用于细粒度评测大语言模型的编程能力。该基准利用 COREPIPE 框架，从 12 个 Python 开源库中自动生成 1,524 个结构化任务。这些任务覆盖开发、修复、测试驱动开发等多种软件工程场景，可以区分不同的认知负载，并动态调整任务复杂度。\n实验显示，CoreCodeBench 的有效性达到 78.55%，显著优于现有方法。结果还揭示了模型在不同任务类型上的能力错配。\nCoreCodeBench 也支持组合多个任务进行评测，以模拟真实开发环境。它具备高自动化、强鲁棒性和可复现性，为代码智能评测提供了更全面、精准的框架。",
+        "reason": "Distribute preserved propositions across shorter integration units while retaining explicit actors, relations, and voice."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "The benchmark generates the same task count from the same libraries.",
+          "original_support": "从 12 个 Python 开源库自动生成 1,524 个结构化任务",
+          "revised_support": "从 12 个 Python 开源库中自动生成 1,524 个结构化任务"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The effectiveness result and ability mismatch remain.",
+          "original_support": "其有效性达 78.55%",
+          "revised_support": "有效性达到 78.55%"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Multi-task evaluation and all three framework properties remain.",
+          "original_support": "支持多任务组合评测",
+          "revised_support": "支持组合多个任务进行评测"
+        }
+      ],
+      "locked_literals": [
+        "CoreCodeBench",
+        "COREPIPE",
+        "Python",
+        "78.55%"
+      ],
+      "voice_anchors": [
+        "高自动化",
+        "强鲁棒性",
+        "可复现性"
+      ],
+      "audit": {
+        "original_sha256": "9a48caad6e53a5331608811e48050cbf9acf145a249bd6da264ced44dbd95bf9",
+        "revised_sha256": "547ba36b491110eb92cfb8ec7070cd888fb4855f7cf91f11e27f6fe275ad3421",
+        "original_numbers": [
+          "12",
+          "1,524",
+          "78.55%"
+        ],
+        "revised_numbers": [
+          "12",
+          "1,524",
+          "78.55%"
+        ],
+        "original_cjk_chars": 178,
+        "revised_cjk_chars": 186,
+        "cjk_expansion_ratio": 1.0449438202247192,
+        "original_sentence_count": 4,
+        "revised_sentence_count": 7,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1 +1,3 @@",
+          "-本论文提出了 CoreCodeBench，一种面向大语言模型编程能力的细粒度评测基准。该基准利用 COREPIPE 框架，从 12 个 Python 开源库自动生成 1,524 个结构化任务，涵盖开发、修复、测试驱动开发等多种软件工程场景，有效区分不同认知负载并动态调整任务复杂度。实验表明，其有效性达 78.55%，显著优于现有方法，揭示了模型在不同任务类型上的能力错配现象。CoreCodeBench 还支持多任务组合评测，模拟真实开发环境，具备高自动化、强鲁棒性和可复现性，为代码智能评测提供了更全面、精准的框架。",
+          "+论文提出了 CoreCodeBench，用于细粒度评测大语言模型的编程能力。该基准利用 COREPIPE 框架，从 12 个 Python 开源库中自动生成 1,524 个结构化任务。这些任务覆盖开发、修复、测试驱动开发等多种软件工程场景，可以区分不同的认知负载，并动态调整任务复杂度。",
+          "+实验显示，CoreCodeBench 的有效性达到 78.55%，显著优于现有方法。结果还揭示了模型在不同任务类型上的能力错配。",
+          "+CoreCodeBench 也支持组合多个任务进行评测，以模拟真实开发环境。它具备高自动化、强鲁棒性和可复现性，为代码智能评测提供了更全面、精准的框架。"
+        ]
+      }
+    },
+    {
+      "task_number": 7,
+      "pair_id": "integration-v1-03",
+      "base_pair_id": "integration-v1-03",
+      "doc_id": "24fb6134577093ddcff37689",
+      "target_line": 8,
+      "original_side": "A",
+      "control_role": "intervention",
+      "mirror_of": null,
+      "operation": {
+        "operation_id": "integration-v1-03-op-01",
+        "operator": "decompress_proposition_chain",
+        "before": "围绕上述转变过程，项铁尧重点介绍了商汤大装置前瞻打造的核心产品——AI 算力池。\n据了解，AI 算力池面向 AI 原生时代全新算力服务需求，采用\"三明治\"水平分层架构，从底层高度优化的计算网络存储基础设施，到中间层全新的虚拟集群技术，再到上层涵盖开发机、训练平台、部署平台及 Agentic Engine 的完整 PaaS 产品体系，全面杜绝不同产品之间的资源孤岛问题。",
+        "after": "围绕上述转变过程，项铁尧重点介绍了商汤大装置前瞻打造的核心产品——AI 算力池。\n据了解，AI 算力池采用“三明治”水平分层架构，以满足 AI 原生时代全新的算力服务需求。底层是经过高度优化的计算、网络和存储基础设施。中间层采用全新的虚拟集群技术。上层是一套完整的 PaaS 产品体系，涵盖开发机、训练平台、部署平台和 Agentic Engine。这套架构全面杜绝不同产品之间的资源孤岛问题。",
+        "reason": "Distribute preserved propositions across shorter integration units while retaining explicit actors, relations, and voice."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "The AI compute pool remains the named core product.",
+          "original_support": "核心产品——AI 算力池",
+          "revised_support": "核心产品——AI 算力池"
+        },
+        {
+          "claim_id": "c02",
+          "description": "All three architecture layers and their components remain.",
+          "original_support": "从底层高度优化的计算网络存储基础设施",
+          "revised_support": "底层是经过高度优化的计算、网络和存储基础设施"
+        },
+        {
+          "claim_id": "c03",
+          "description": "The architecture fully eliminates cross-product resource silos.",
+          "original_support": "全面杜绝不同产品之间的资源孤岛问题",
+          "revised_support": "全面杜绝不同产品之间的资源孤岛问题"
+        }
+      ],
+      "locked_literals": [
+        "项铁尧",
+        "商汤大装置",
+        "AI 算力池",
+        "PaaS",
+        "Agentic Engine"
+      ],
+      "voice_anchors": [
+        "三明治",
+        "资源孤岛"
+      ],
+      "audit": {
+        "original_sha256": "734fa3ee768083c4ab18d332a7b67ccbf94682b76a0baff3e72a32feec28681a",
+        "revised_sha256": "5dd65f6a730b853150a7bb40c59623131be3ec499bf0369c6e9643283fa72273",
+        "original_numbers": [],
+        "revised_numbers": [],
+        "original_cjk_chars": 137,
+        "revised_cjk_chars": 148,
+        "cjk_expansion_ratio": 1.0802919708029197,
+        "original_sentence_count": 2,
+        "revised_sentence_count": 6,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,2 +1,2 @@",
+          " 围绕上述转变过程，项铁尧重点介绍了商汤大装置前瞻打造的核心产品——AI 算力池。",
+          "-据了解，AI 算力池面向 AI 原生时代全新算力服务需求，采用\"三明治\"水平分层架构，从底层高度优化的计算网络存储基础设施，到中间层全新的虚拟集群技术，再到上层涵盖开发机、训练平台、部署平台及 Agentic Engine 的完整 PaaS 产品体系，全面杜绝不同产品之间的资源孤岛问题。",
+          "+据了解，AI 算力池采用“三明治”水平分层架构，以满足 AI 原生时代全新的算力服务需求。底层是经过高度优化的计算、网络和存储基础设施。中间层采用全新的虚拟集群技术。上层是一套完整的 PaaS 产品体系，涵盖开发机、训练平台、部署平台和 Agentic Engine。这套架构全面杜绝不同产品之间的资源孤岛问题。"
+        ]
+      }
+    },
+    {
+      "task_number": 8,
+      "pair_id": "integration-v1-01-mirror",
+      "base_pair_id": "integration-v1-01",
+      "doc_id": "4e2108f7b04c3847a564bfd4",
+      "target_line": 1,
+      "original_side": "B",
+      "control_role": "mirrored",
+      "mirror_of": "integration-v1-01",
+      "operation": {
+        "operation_id": "integration-v1-01-op-01",
+        "operator": "decompress_proposition_chain",
+        "before": "9 月 25 日，在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，奇富科技首席算法科学家费浩峻基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑——告别参数规模的盲目追逐，以“做小做强”的路径推动金融 AI 从“堆人力、堆模型”的传统范式，迈向“聚智能、见个体”的价值升级，为行业提供了金融大模型务实落地的清晰样本。\n费浩峻指出，在传统机器学习阶段，金融 AI 面临两大核心制约：一是高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据；二是模型泛化能力差，不同业务需定制不同模型，迭代成本高、响应慢。",
+        "after": "9 月 25 日，奇富科技首席算法科学家费浩峻在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑。他提出告别对参数规模的盲目追逐，转而采用“做小做强”的路径，推动金融 AI 从“堆人力、堆模型”的传统范式迈向“聚智能、见个体”的价值升级。这一实践为行业提供了金融大模型务实落地的清晰样本。\n费浩峻指出，传统机器学习阶段的金融 AI 面临两大核心制约。第一，它高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据。第二，模型的泛化能力较差，不同业务需要定制不同模型，导致迭代成本高、响应慢。",
+        "reason": "Distribute preserved propositions across shorter integration units while retaining explicit actors, relations, and voice."
+      },
+      "claims": [
+        {
+          "claim_id": "c01",
+          "description": "The dated conference talk and speaker attribution are retained.",
+          "original_support": "9 月 25 日，在云栖大会",
+          "revised_support": "9 月 25 日，奇富科技首席算法科学家费浩峻在云栖大会"
+        },
+        {
+          "claim_id": "c02",
+          "description": "The small-and-strong path replaces parameter-scale pursuit.",
+          "original_support": "告别参数规模的盲目追逐",
+          "revised_support": "告别对参数规模的盲目追逐"
+        },
+        {
+          "claim_id": "c03",
+          "description": "Both traditional-machine-learning constraints are retained.",
+          "original_support": "一是高度依赖人工特征工程",
+          "revised_support": "第一，它高度依赖人工特征工程"
+        }
+      ],
+      "locked_literals": [
+        "奇富科技",
+        "费浩峻",
+        "金融 AI",
+        "堆人力、堆模型",
+        "聚智能、见个体"
+      ],
+      "voice_anchors": [
+        "做小做强",
+        "清晰样本"
+      ],
+      "audit": {
+        "original_sha256": "c8bcebf57c39bea4e94e072c354682dfd9ae6eb5597e087fcd8bc367c7ed5ac5",
+        "revised_sha256": "783af2fb2d62cc2e19707c4d9c01936f2c52419a6b3a985ac974f3cf2aad3e1e",
+        "original_numbers": [
+          "9",
+          "25"
+        ],
+        "revised_numbers": [
+          "9",
+          "25"
+        ],
+        "original_cjk_chars": 219,
+        "revised_cjk_chars": 236,
+        "cjk_expansion_ratio": 1.0776255707762556,
+        "original_sentence_count": 2,
+        "revised_sentence_count": 6,
+        "unified_diff": [
+          "--- original",
+          "+++ revised",
+          "@@ -1,2 +1,2 @@",
+          "-9 月 25 日，在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，奇富科技首席算法科学家费浩峻基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑——告别参数规模的盲目追逐，以“做小做强”的路径推动金融 AI 从“堆人力、堆模型”的传统范式，迈向“聚智能、见个体”的价值升级，为行业提供了金融大模型务实落地的清晰样本。",
+          "-费浩峻指出，在传统机器学习阶段，金融 AI 面临两大核心制约：一是高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据；二是模型泛化能力差，不同业务需定制不同模型，迭代成本高、响应慢。",
+          "+9 月 25 日，奇富科技首席算法科学家费浩峻在云栖大会“新‘模’力 新点金：金融大模型技术峰会”上，基于公司丰富的落地实践经验，系统阐述了金融大模型的落地逻辑。他提出告别对参数规模的盲目追逐，转而采用“做小做强”的路径，推动金融 AI 从“堆人力、堆模型”的传统范式迈向“聚智能、见个体”的价值升级。这一实践为行业提供了金融大模型务实落地的清晰样本。",
+          "+费浩峻指出，传统机器学习阶段的金融 AI 面临两大核心制约。第一，它高度依赖人工特征工程，模型难以直接处理真实世界中复杂、非结构化的数据。第二，模型的泛化能力较差，不同业务需要定制不同模型，导致迭代成本高、响应慢。"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "files": [
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-01-28-71d04aa1-info.json",
+        "bytes": 514,
+        "sha256": "3b5f7d018e6d0419fb3412808306f2e84a1647f4c95c6e0ea7da4982f100280e"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-01-28-71d04aa1.json",
+        "bytes": 2408964,
+        "sha256": "7a202aa8c2a8f7fe8a83920f131b2e8d4538108d82fe0819fb04476628c4797c"
+      },
+      "scan_findings": [
+        {
+          "location": "$[].drafts[].created_username",
+          "reason": "sensitive_field_name",
+          "count": 1
+        }
+      ],
+      "kind": "task_export",
+      "project_ids": [
+        1
+      ],
+      "task_count": 220,
+      "annotation_count": 0,
+      "draft_count": 1,
+      "prediction_count": 0,
+      "matching_current_task_data": 220,
+      "matching_current_annotation_research_values": 0,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    },
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-22-39-3a57f6fa-info.json",
+        "bytes": 514,
+        "sha256": "72ecbdec1402643740f208e957d8b1522902a5e9dd97c8db754d2d56bb516a49"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-22-39-3a57f6fa.json",
+        "bytes": 2415661,
+        "sha256": "dcf4c37db29224c377057ec177282e1b8aa11da586818b80542a6c21822f0e83"
+      },
+      "scan_findings": [],
+      "kind": "task_export",
+      "project_ids": [
+        1
+      ],
+      "task_count": 220,
+      "annotation_count": 9,
+      "draft_count": 0,
+      "prediction_count": 0,
+      "matching_current_task_data": 220,
+      "matching_current_annotation_research_values": 9,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    },
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-23-10-3a57f6fa-info.json",
+        "bytes": 514,
+        "sha256": "b616bcb176925f7f37dea8a7136cb6ca9c30510c2c8cda7ef24b04d567d94d04"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-23-10-3a57f6fa.json",
+        "bytes": 2415661,
+        "sha256": "dcf4c37db29224c377057ec177282e1b8aa11da586818b80542a6c21822f0e83"
+      },
+      "scan_findings": [],
+      "kind": "task_export",
+      "project_ids": [
+        1
+      ],
+      "task_count": 220,
+      "annotation_count": 9,
+      "draft_count": 0,
+      "prediction_count": 0,
+      "matching_current_task_data": 220,
+      "matching_current_annotation_research_values": 9,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    },
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-23-28-3a57f6fa-info.json",
+        "bytes": 514,
+        "sha256": "7257e3307b1d987fc0457b666d7eba47fd65746eac9057a8b4d0741ecf87e807"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-1-at-2026-08-21-23-28-3a57f6fa.json",
+        "bytes": 2415661,
+        "sha256": "dcf4c37db29224c377057ec177282e1b8aa11da586818b80542a6c21822f0e83"
+      },
+      "scan_findings": [],
+      "kind": "task_export",
+      "project_ids": [
+        1
+      ],
+      "task_count": 220,
+      "annotation_count": 9,
+      "draft_count": 0,
+      "prediction_count": 0,
+      "matching_current_task_data": 220,
+      "matching_current_annotation_research_values": 9,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    },
+    {
+      "source": {
+        "name": "project-2-at-2026-08-21-23-10-42d96218-info.json",
+        "bytes": 511,
+        "sha256": "16c3735121e481935b69e45e8edf1eee804b423e76274f24cf04559ab6158afd"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-2-at-2026-08-21-23-10-42d96218.json",
+        "bytes": 867621,
+        "sha256": "94f46835a098221192f6abc832ee6325f1c78a2d7d2ccefa68fe13873e781355"
+      },
+      "scan_findings": [],
+      "kind": "task_export",
+      "project_ids": [
+        2
+      ],
+      "task_count": 83,
+      "annotation_count": 0,
+      "draft_count": 0,
+      "prediction_count": 0,
+      "matching_current_task_data": 83,
+      "matching_current_annotation_research_values": 0,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    },
+    {
+      "source": {
+        "name": "project-2-at-2026-08-21-23-28-b41578e9-info.json",
+        "bytes": 511,
+        "sha256": "269a71865b50233a5e7fd88dc91dea13ccba6f550775357a5d4915e3601f72df"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-2-at-2026-08-21-23-28-b41578e9.json",
+        "bytes": 871492,
+        "sha256": "fe1d35be976d36ab99bc885547dd28229b0480bc8ff9006533ffc7a34fed50e9"
+      },
+      "scan_findings": [],
+      "kind": "task_export",
+      "project_ids": [
+        2
+      ],
+      "task_count": 83,
+      "annotation_count": 5,
+      "draft_count": 0,
+      "prediction_count": 0,
+      "matching_current_task_data": 83,
+      "matching_current_annotation_research_values": 5,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [
+        15,
+        16
+      ],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    },
+    {
+      "source": {
+        "name": "project-3-at-2026-08-22-00-55-d9f36591-info.json",
+        "bytes": 516,
+        "sha256": "a90d047753e700e6d2ed960325ab94a8dfbeaada21f14a6ba9ba452fc36c0304"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-3-at-2026-08-22-00-55-d9f36591.json",
+        "bytes": 345822,
+        "sha256": "286aa9a77572902681b1b34903038e4d5b1bb16c8f5c5259d9aea68b5d453f37"
+      },
+      "scan_findings": [],
+      "kind": "task_export",
+      "project_ids": [
+        3
+      ],
+      "task_count": 25,
+      "annotation_count": 0,
+      "draft_count": 0,
+      "prediction_count": 0,
+      "matching_current_task_data": 25,
+      "matching_current_annotation_research_values": 0,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    },
+    {
+      "source": {
+        "name": "project-3-at-2026-08-22-10-15-c3331710-info.json",
+        "bytes": 517,
+        "sha256": "91cebcbdeef5dcb395cc4f059e80343e921f7edf0fc2d9c66dbce9a25b86ebff"
+      },
+      "scan_findings": [],
+      "kind": "export_metadata"
+    },
+    {
+      "source": {
+        "name": "project-3-at-2026-08-22-10-15-c3331710.json",
+        "bytes": 365290,
+        "sha256": "2bdb735fa66609ef1bbdffc664dc3fe8a6b03b5992e7082e64f9cb63f52d83e6"
+      },
+      "scan_findings": [],
+      "kind": "task_export",
+      "project_ids": [
+        3
+      ],
+      "task_count": 25,
+      "annotation_count": 25,
+      "draft_count": 0,
+      "prediction_count": 0,
+      "matching_current_task_data": 25,
+      "matching_current_annotation_research_values": 25,
+      "current_task_ids_missing_from_export": [],
+      "current_annotation_ids_missing_from_export": [],
+      "export_task_ids_absent_from_current_db": [],
+      "export_annotation_ids_absent_from_current_db": []
+    }
+  ],
+  "union_current_tasks_covered": 328,
+  "union_current_annotations_covered_by_id": 39,
+  "union_current_annotations_with_matching_research_values": 39,
+  "current_task_ids_missing_from_all_old_exports": [],
+  "current_annotation_ids_missing_from_all_old_exports": [
+    15,
+    16
+  ],
+  "说明": "只比较ID、任务data、标注result及任务归属、取消与ground_truth状态；不作标签语义分析，不输出标签正文。"
+}

@@ -1,0 +1,288 @@
+{
+  "protocol_version": "post-reader-corpus-handoff-1.1",
+  "selection_version": "expanded-post-reader-handoff-selection-2.0",
+  "generated_at": "2026-08-29T17:02:54.847627+00:00",
+  "status": "candidate_pool_not_reader_exposed",
+  "post_start": "2025-07-01",
+  "documents": 97,
+  "documents_file": "documents.jsonl",
+  "documents_sha256": "096a4e42a947c1cc7e60c17b0b91251fd83579e682bdf8ea7bb0e15aed3fbd80",
+  "texts_sha256": {
+    "01578a91ddc41b76e5e62dd6": "4bc7f7b58348e141680cc8242e4ad4d7256f3da1cf5d63c7887a5b3b4e9c7ad3",
+    "0372a4126fee8dc737efd4a9": "7d858cdf8916ea8a6450983042e58cc7169bbee14eda53a9df33e823666ce5bf",
+    "05d95a96b65e4c170c53e950": "93d6682214efbbe6e5e1eddac5aa14492ee2745609f198a7fce4d0b2a2c99c10",
+    "05fb817e3471385d3bbd2178": "7706258201ae996d0ec19ba2af64a391e0997b3a1ca0d814a3f091f420ad117c",
+    "07043b9acbd91c95a335e688": "3c744930d343f207c52f33a08922767cab84556bf7cc53247e294ef7fc8ca2da",
+    "0827887b02e4a0a7b7c40612": "1b3415615130a6bb80df72d3855431d75173bfc392f86d5da5862edf84886721",
+    "0f4deeb094a1374387f3868e": "1f8a03f5093a48fc045b9f1dca5cd182634758ab12af5e24740d277f5705fb3d",
+    "1313d4b7169c338fca713fd4": "d83ac25301f9507e389f40b4b0dee407b77fcb79882372e1594ec43d53d19d4b",
+    "1417204641db8053c635a760": "ecac8de8f2779ff1a07f097c7a60dd7ce51bccb16fa8fd1d0ee462a7b6daa625",
+    "17f9090867ec2eab8d17d1f5": "1c4f212d9e02cbc84134fe36a9249206b165c51e025311bf87c9efd06634ba50",
+    "1c2865f45d009fed39e12946": "3d6bde6c056871d7db090dfbb83a2d793d2b2e08bdde9b38b87760dfacc28c5d",
+    "1c444b43d4a13087071b5e04": "82b5da5cf714bb456a8acd915a2e1f7144163a20778d75e837fe0b01a75f0dc3",
+    "2017fd9aff4a19d435602bde": "c37ff0a34a6ef880b373ed14d5816bf8d38e920fb2604089592e10996a45e4fe",
+    "30b00073e2be9e3db10f795a": "f3411d3c74abab16d71a98a110cd1b1876dc082943f036bc2e6dbe29c58eea57",
+    "336aed29af2bbbf6a7dec02d": "742feb9307a8b9966049660d9f6c155aefc4800eb0dc31fc82ce553d1963c2e1",
+    "38033e8e7672d952497b6be6": "0f39baafd24bc61d13175b873e23d85a22689f9226cee2476a723ff605875e7e",
+    "39f2a84871a30bb06d9e54aa": "dc5ca823a4440d53bc8ce6192fd671c37b86774d6a4bcaa2508a9bda486b60f5",
+    "3cd0968efa2151d963200aa0": "16a155d6cbbf515ff4320aeda0f25c5a4428611f4a2952dca5ac90b4fd9d90fe",
+    "3d5f95580ea00bb7b085d00a": "9a766cc9f8ed51f0fffa8c2dda544f57907a2e6dd9ee9567bd90d002c3c57596",
+    "414b1956b96dd8de905893d2": "f6c59863a5413d664c5ba3d8d3599562c156157a13a6391cdcdeb04fef66cfe9",
+    "43c3a339f7d750f2331e5f62": "1c2f3a98910e4e7700997904071ef593d6308b8596a05491ff317e6b48e2da83",
+    "464e152cf0aa4c7878b44ae2": "e6e27e874b11df44304f67ee0cbb88876cd972378d8fe1571031e22b4bc19e08",
+    "46f6b21d7112cdad3d4ca598": "35aeba1db96b0a1d8511f2767ffba12910dfcb2271ffb04fbe776f2f27dee198",
+    "473d16fd8f242e982a41f144": "8ee5183e9aa1a4407e5ebd51fe1c98ce7247442f9a539ca36fdf9fb1fa20421e",
+    "4a0f975df81c40f1a7d4b50c": "b798f48e7a2a9e3a8ed8b43fe767d92cda8420ad842c39e767774b8421429316",
+    "4abfe527442f0564c7d9ad50": "fa242b450a7cc9a573e5ce3c544faea93cc245a43471140970c17079cf86e6f9",
+    "4bb02c14f9ac8b8a674cd6e2": "26a97fc06e5e4f8674bcf5d7e770454bb8324f1c10f121341b11ddb034e6a524",
+    "4c38b21de5acf638101148d1": "ba02581befd00b8d76833069df235407a59300da6ccf4d404949eda730ceff8f",
+    "56c7879802ae9a2718a0b96c": "eb477818ad6a6b2f3bf6a4f9d25662f9a4ac6d5354b5e5616df4acb5748f9d9a",
+    "57b5658b5233a18c40a301a6": "4d4b44de870b80679e51845b7df388e236ae026fca2f48c91d9995c54e1cad7b",
+    "588f1443af9f247d9292b18f": "d019c31c306f196acae002bcee8974be70ccdd19897bc967b703f9bf69bf0780",
+    "5a48d44062b6a52e0a3f5092": "bc939b5031f59a0c9d632e4a764953d57bfdd0fb3f4ed46f475b01710ae04bbb",
+    "5b5623cc7fa1a8535f103900": "bc9b56c555b59eb950626cf2d8ff1b74fb15efd6c1dd55f1c2cfdda4f4910113",
+    "5bfbafb7d6ccc46a2574242c": "2ed212e3f5105f09df9313736a70d04c3f8757a9537059c35dd92c5ab5284352",
+    "5c38d60809d31c4fe29840e6": "40ef14f39b735a7ae745843226b95af3ee9755a210776e0aa5449eb5f2e2179e",
+    "60acd2c85e279a38d3b4f056": "dfa282e4781da3769834821c53dacd19bea1945f5336d4d00c1d75f926f1413d",
+    "610070e7610c1439192aa935": "5da78a577645cd77924a343b686d79b4b87c5f3e340eb499b1d0f579f95387e1",
+    "62de5adcc023c6b1dcd591fc": "9380c36d6a09eda26518a7ba151f27a1e710d3c20c8fc58768c99d2161ceb874",
+    "6a7b166033f4f09900c1175e": "4ee23ca83f5647014527c3c80ee0214b8a1511ec91c27f6042130c3c8748ae5d",
+    "7000def5c5f546b60edbec93": "652be96ff60e1603d4a615f2da534dfbaeeed588e4083b541de52321afa45d6c",
+    "73393192dd7b193689037ed2": "69e915322b1b531b7210ede41e643efa15de13adac3b3f4bc2e72517a8383891",
+    "774438b9f8c8941c9837e635": "7562f27639175aff640ac70f233e581f10e6917c112ddc9b7052ef86bf18f530",
+    "789690ac0e33778da99352b9": "7514383a56add5bd3529df2dfd226483884f14862f25bbb4e5815c6fda7ad01a",
+    "796ade024cc420a591df5aa8": "efd927197b84d815e0c74b602de23ffe57a2f18cee84337d3942e1b05d383f39",
+    "7a29e551a2c67df140deb650": "d3a460be7d48d248ad9c457262070852f51e1b4cdf10e9d3f148c0e2902133e2",
+    "7baf01d32a658840d496c78d": "20a38ddf7ef18784e4369023d4334d4429b0595a98aef75806e1011dd41c7ea7",
+    "7d712fc4f927d91e06f22f98": "48e03aeabf702f0d6ac2a4836995b898b43916eb24f01910467efc86caebbfd2",
+    "7f42b95c6b4b88db46161b32": "f17be53ed1942134ec79ffda0b7ccb9f4e4b7afbff5bbdb922c3f51580ad87df",
+    "7ffb13ef1dc5b4d5f2cae725": "9b1414e93a6383af590c98711cb462f43b65bfd4550516e1b7a67fcbc32d9e66",
+    "89756fb9a727d630d230ff01": "e7850727538016938651b31fb1041613c7a5472f6a9b0c3cfd8e6f4e29a9abcb",
+    "8a603b447c4b650f01dd9722": "2c89235a928c5b7998b8f9fb386933aac430a306595320816c872df283cd92b9",
+    "8b28120729d705371e2c1699": "3762b6b770efec8ba8f7171edafb532d979dcd747619ad8f2efa25522e8d75ba",
+    "8c8cb6cd51c9768d0067e2f5": "750a80219ffd4af631b2b8ee04762de9d7cc973543d82d2092b59ec249de7b25",
+    "9014cf7d485d868292a4726c": "dcf54f62ce5cb989dd1ef5b2c4c47c6d7c2c3ea9cf45015edb333cfe6524e5a2",
+    "92b5b07010d14490b51340e5": "a4ea7b5fd94afe7a59f01ad94a5f08d494f03eb7f7e72d03546f603f82d6b3af",
+    "938b473f420a224f529a16dc": "c1237f904ee6ff117926e730ce46f7a644fc8ea2805050f23404883c0507e7c3",
+    "944ed46d7e8228c0aa759719": "c2e50a1eb00e329d2ec40f14d4f55776cdd380a96de19fe6675cd8d8501f3d56",
+    "99e460b11248a8cff4d7b058": "d1a678ec78b8ca0ea19e4f81e8398f62670a92744070b2d9792269d3374c3447",
+    "9b45f03f8b38cecd9a3c6df1": "152a634698f2a9dc0541804ec47a6991dac22a40e9269cd2c67da237c959aa96",
+    "9d814ad838be91620e09d709": "a12f8023eb257e74f165fa1fe14555e79c798a59ce3693db360afaadafe7ad0e",
+    "9e278c8a2ee2f753f201bada": "508f5e8d5b2a57a1c288348ecc79e9457936ca0b2791e06d6dedfc3e9bbe93ea",
+    "a0ae27c194b00425f8ce36aa": "9f5a7ad11691de7e6c60e281d9a96358bcea73f9475f39389a2b6fb4fb999153",
+    "a1f6f3138b47bb39b958e8ad": "4ed54a4249484b4fa93409e8d3d5b8091a38c3a6dc901f42b19ebe688c9b384f",
+    "a33352292a8571b94446a29c": "d850447528c0b188b3a6014ffe94dc43005b26b4e7eaabb2c33aa60e8eb07a51",
+    "a4cbe8844d5066d813be19f0": "82dc29f79ce6417c5bd0596fd5a5fa533d1aa100e183af7506190fb64098f45d",
+    "a6b5c90f04c35967a6cd8179": "c18dcf9bfdf1e5dd55ca45acf0fbe8f6ac02f7b1ea73212fbd20a5d50d93d13a",
+    "a6c329b3d5a66172d3048c35": "0f657a9cab66a9406444d695b93b49e3dea27a1ab93aa5de9a18bf5eb688d9f4",
+    "a94953704c963ae6206832af": "51d6f0f055770c697775b52397176a0a857e6610544f78b2592baa87698aefde",
+    "a9bf1cbdb3be27aa44d933cd": "e7e0509da0cea8802f08dd1ebef75cb6957afd27aec178bc2a753139df8f6e5b",
+    "b097b7b4bcd9011f0ecb1458": "36d13d0513b712f5b71749445313284c27ed967be66de9b67782c9fc6d75f525",
+    "b18c3ccbce455c0eaf16727f": "af2ff95dd064bf1885dae9d155d8daffa5e19b8a47104fc3d2f2732dd0c13579",
+    "b19fdd5a58f2cd0ae4a4433e": "a17dcd6f5c2bcdc6a4f943e590205066a3b847e5c1f763232dea144e860fa500",
+    "b4cba86fd018eb3ca2a069db": "f061444fc2b45873f977d0b65744ded1ddbaefe00fd8072a439766404e1166e1",
+    "b9a948f863659c8f3a29aa2e": "afaf90a507b97cd4f836e04d2b337f802473733660eac40cb941f4e35b040b10",
+    "b9db417ba449a95b7e1c0e7b": "b68a5b039b3258a5c47df7134aee56f325fe3ca576c21ae3c7068e0ff20aeb4b",
+    "ba5f30a6c612ef0051abbd38": "cdf4af18e3ec850203d9dbd9ab0778a5e28275aa28ea76604e87a57bd38f933f",
+    "bbb9839be8babd62281b6997": "bb05daf98d51f3bebee9e2202f741b5f67752229d3b90ad7dcc8a7c8430cc6e0",
+    "bdbcf02f79d5e349ff2a9f6e": "4dd939b74d127c38ab49cec5d500a4e85c6235c72aa105ea1f2de1df5e175495",
+    "c9459a6241d0e52791e413c4": "23c537e2f0b967acee6aa61bb196fd58aa09e4287a3a415748da901c9ebf8a19",
+    "c98ff40762ef97561dd8d4b6": "9364fabccba0f0413557038c89e74721c083581066f13af4bf3c55076233fe28",
+    "ca4540542d2351ddd2605ca2": "f45a60bedf786d4c334e4ec42426e17786f024b2cd64b76cf2f96ea401a48748",
+    "cbe810f8ca497b022fcdf67e": "ee8cf44576458c6dfa6fd7543cd8c16abe2adb2c86fa393a6cbcbb0fcfba4399",
+    "cc6ecad77c804ee47e9b75f5": "e65d01a078b6fa8d99f4e513220a4aaf666cda1b317bf9a213dada8905ded74a",
+    "cf439c2d64d0af69a10f7382": "82521c31815c6ba0ec89f0d33bc4bb89c76f31217f413baabf677f0ddb272130",
+    "d22d325d53516719fe9d9841": "cb03baccebff9b9d2bc2a5769cafe122f1e8950f67078562ca64a7b4e8cf0d8d",
+    "d31ba47de7ebd119d5321c15": "459f6f4c8a376cf90dfa912f1ba4ddd2b47597e0fcb61405e59987b5cc19e0c0",
+    "d40ffca658495e2942c61f1d": "d0d629a87ed60a0bbe1e75716e015b714e701a9d1eb9a033eeae7f133edc1490",
+    "d81b11f771ef03a3eebfa22b": "21aa2b566737e298b995c4e239d1975a106b1a1de2c0569b307b261f01c724c0",
+    "e072caa3829e12ff78153de8": "3a75033c202c49e0235773430fa4c28700853fb50208076fe706b19fc21ae63b",
+    "e5d2df2452e20af5521fcac1": "9b90189e50bd543a42c917736cf205b3a050c95a61f1e2b15a63b4153c5cb947",
+    "e88d658a119cceb0e3c693ba": "14d08dc4bcb6af8aca61a258ae85bedb4c8f9267c785dab83632d15a580ae2b3",
+    "e8b2e3f2a8936bda67a87bd9": "20092c6a34af3c8875f13d2d62688a2ec3a560d3ed2621789d7f1cbc37d4e5d2",
+    "f0e4c35c8e00dfb56b52acf1": "6ad54133d342d00ad0b2e33c6bd765784e7a42b90a3dc601f8f9d253bbafc24b",
+    "f5083c652cc0e68c4e62facb": "6c30f6317d43d41b0661cc324be17ab8ddcf668d70d9b76e3642f9fb58302e67",
+    "faa3e9d0982e8b5f33d6124b": "7427b6f4cd073803e4fc68d954fad0c811172b90b0caddb2bf0230d79cd21a68",
+    "fee6fe00c6a7b8de76b70ff4": "2760646e5f30f99925ac1e45bc7842f154da0e5cf88636f9c4023be34b80c24b",
+    "fef8193fd5abc845c05ff2ca": "cde42c0ee0614a403985745e2a673c09e28988b6f0cd822e6ee643a155c07245"
+  },
+  "period_counts": {
+    "post": 97
+  },
+  "source_counts": {
+    "huawei_cloud_community": 23,
+    "infoq": 10,
+    "leiphone": 40,
+    "meituan_tech": 11,
+    "qbitai": 13
+  },
+  "month_counts": {
+    "2025-08": 2,
+    "2025-10": 1,
+    "2025-12": 5,
+    "2026-01": 9,
+    "2026-02": 3,
+    "2026-03": 4,
+    "2026-04": 7,
+    "2026-05": 3,
+    "2026-06": 10,
+    "2026-07": 8,
+    "2026-08": 45
+  },
+  "format_counts": {
+    "industry_reporting": 43,
+    "research_summary": 18,
+    "technical_practice": 36
+  },
+  "topic_counts": {
+    "ai_models_agents": 59,
+    "business_industry": 22,
+    "data_infrastructure": 13,
+    "software_engineering": 3
+  },
+  "role_counts": {
+    "development": 67,
+    "validation_reserve": 30
+  },
+  "role_composition": {
+    "development": {
+      "sources": {
+        "huawei_cloud_community": 14,
+        "infoq": 10,
+        "leiphone": 27,
+        "meituan_tech": 11,
+        "qbitai": 5
+      },
+      "formats": {
+        "industry_reporting": 29,
+        "research_summary": 12,
+        "technical_practice": 26
+      },
+      "topics": {
+        "ai_models_agents": 43,
+        "business_industry": 15,
+        "data_infrastructure": 6,
+        "software_engineering": 3
+      }
+    },
+    "validation_reserve": {
+      "sources": {
+        "huawei_cloud_community": 9,
+        "leiphone": 13,
+        "qbitai": 8
+      },
+      "formats": {
+        "industry_reporting": 14,
+        "research_summary": 6,
+        "technical_practice": 10
+      },
+      "topics": {
+        "ai_models_agents": 16,
+        "business_industry": 7,
+        "data_infrastructure": 7
+      }
+    }
+  },
+  "allocation_status": "frozen_before_new_paragraph_analysis",
+  "selection_policy": {
+    "base_handoff_documents_retained_for_development": 21,
+    "new_editorial_documents": 53,
+    "new_huawei_documents_after_visibility": 23,
+    "huawei_visibility_basis": "source-quarter relative views",
+    "huawei_minimum_source_quarter_percentile": 0.4,
+    "reserve_seed": "post-reader-handoff-v2-reserve-20260830",
+    "reserve_topic_quotas": {
+      "ai_models_agents": 16,
+      "business_industry": 7,
+      "data_infrastructure": 7
+    },
+    "reserve_documents": 30,
+    "exposed_document_ids_excluded": 89
+  },
+  "model_measurements": {
+    "provenance_models": "qwen3.8-27b + deepseek/deepseek-v4-flash-0731",
+    "provenance_prompt": "translation-review-triage-foreign-source-safeguard-v2/two-model-intersection",
+    "value_models": "qwen3.8-27b + deepseek/deepseek-v4-flash-0731",
+    "value_prompt": "research-value-primary-v3+verifier-v3/two-model-intersection",
+    "strata_model": "qwen3.8-27b",
+    "strata_prompt": "post-corpus-format-topic-primary-v1",
+    "restriction": "Model-assisted labels are measurements, not human gold."
+  },
+  "input_sha256": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1\\manifest.json",
+      "sha256": "acde6900ae8b26b8da8821424be420ff48433752297c3f021e1a7e05ccfb2b14"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v1\\documents.jsonl",
+      "sha256": "a16f73542edab7f38fb3b24b2dc19fde798b5d14dcc035adfd560bc028c6dc6d"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\value_consensus\\consensus_value.jsonl",
+      "sha256": "1180a3ac0d842d02927662cb9d4a853fb011e1d35905b9162adda9f32ffec051"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\strata_qwen38\\strata_results.jsonl",
+      "sha256": "f671b073c07b89c2738678080ec497f144dc4236f5e62b232a887aef9dd30f28"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_consensus\\consensus_value.jsonl",
+      "sha256": "2dd64e1349f8ae4dd42c61af65c628e3d1664333ddad3c8376488f7196eac107"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_strata_qwen38\\strata_results.jsonl",
+      "sha256": "3c392d3c63f8e82e25ba419c776d79c622b3b59715f7aa01fe352e12ca499ce0"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\openrouter_weekly_rankings_2026-08-30.json",
+      "sha256": "abbdc3216fe27f82cc5354843f7f198db743d63b45d7e7702cee06bcd0090c5a"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\editorial_acquisition\\manifest.json",
+      "sha256": "600b70a73d3058fc3bc72c6ef0da779c99747c45ad19866d904c6465dd3c90c3"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\review_candidates\\manifest.json",
+      "sha256": "79706a06a4d6563e72fc8ff57a2b054b3261b0fffd3469b8bcfbb5fdfe6530fa"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\provenance_consensus\\comparison.json",
+      "sha256": "8c6618d89c0a419622a6c3b00a9fdb7f10dde86519983155f3c18e386a2909d9"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\value_consensus\\comparison.json",
+      "sha256": "117312a43884613456a0094347fe0ea9bbc2dd9b7050d3846ebcef9224f72278"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\strata_qwen38\\manifest.json",
+      "sha256": "dd4363cfc283d1a6ef15d2bd6632a3ba675930fa9ff7288c17968588c4ee4395"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_acquisition\\manifest.json",
+      "sha256": "bbfda9ee7afa2ca69b8bec2f4abca8a630d715f621c151571a5df21929dba538"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_review_candidates\\manifest.json",
+      "sha256": "7d31a46a958538c62926c92061b07c4e7f105d589a7aaaeb792e52941a5fd63c"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_provenance_consensus\\comparison.json",
+      "sha256": "91e020e9dd25d08661575a1edba0004d8960669ff4c0ac5f41208ea3ec0f61be"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_consensus\\comparison.json",
+      "sha256": "3a2270f21867d2b5359be6840002cc53f930f9c490f02ff37049dbaa55f0cfc8"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_strata_qwen38\\manifest.json",
+      "sha256": "9326ade33a845e6e366654b99d36fc5237175d0b3faa9f5329581fb42f5d5044"
+    }
+  ],
+  "limitations": [
+    "The development partition remains exploratory and is not representative of all Chinese technical prose.",
+    "The 30-document reserve is frozen but is not final validation without multiple independent readers.",
+    "QbitAI and Leiphone visibility is source-level editorial distribution rather than article-level readership.",
+    "Huawei visibility is a collection-time source-quarter percentile among acquired recommended articles.",
+    "Source, format, and topic remain imbalanced and require matching in any time comparison."
+  ]
+}

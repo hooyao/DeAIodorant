@@ -1,0 +1,49 @@
+<View>
+  <Style>
+    .htx-text { white-space: pre-wrap; font-size: 17px; line-height: 1.85; }
+    .lsf-main-view__annotation { max-width: 1500px; }
+  </Style>
+  <View style="padding: 8px 16px 18px; border-bottom: 1px solid #ddd;">
+    <Header value="$title" size="2" />
+    <HyperText name="source_metadata" value="$source_html" inline="true"
+      clickableLinks="true" selectionEnabled="false" />
+  </View>
+  <View style="display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 26px; align-items: start;">
+    <View style="padding: 20px 30px; max-width: 900px;">
+      <Text name="article" value="$text" selectionEnabled="false" />
+    </View>
+    <View style="position: sticky; top: 12px; padding: 20px; border-left: 1px solid #ddd; background: #fafafa;">
+      <Header value="Human decision" size="3" />
+      <Text name="decision_policy"
+        value="Accept only independently authored Chinese reporting, interviews, first-party practice, or original synthesis with no specific translated foreign work." />
+      <Choices name="decision" toName="article" choice="single-radio" required="true"
+        requiredMessage="Select a review decision.">
+        <Choice value="Reviewed original" hotkey="1" />
+        <Choice value="Exclude or uncertain" hotkey="2" />
+      </Choices>
+      <View visibleWhen="choice-selected" whenTagName="decision" whenChoiceValue="Reviewed original">
+        <Header value="Evidence for original authorship" size="4" />
+        <Choices name="original_rationale" toName="article" choice="single-radio"
+          required="true" requiredMessage="Select the evidence supporting original authorship.">
+          <Choice value="Original reporting or interview" hotkey="3" />
+          <Choice value="First-party practice or case study" hotkey="4" />
+          <Choice value="Independent synthesis" hotkey="5" />
+        </Choices>
+      </View>
+      <View visibleWhen="choice-selected" whenTagName="decision" whenChoiceValue="Exclude or uncertain">
+        <Header value="Reason to exclude" size="4" />
+        <Choices name="exclusion_rationale" toName="article" choice="single-radio"
+          required="true" requiredMessage="Select an exclusion reason.">
+          <Choice value="Translation or compilation marker" hotkey="6" />
+          <Choice value="Specific foreign source work" hotkey="7" />
+          <Choice value="Reproduced foreign transcript" hotkey="8" />
+          <Choice value="Insufficient or ambiguous evidence" hotkey="9" />
+          <Choice value="Low research value or promotional material" hotkey="0" />
+        </Choices>
+      </View>
+      <TextArea name="review_notes" toName="article" label="Additional notes"
+        placeholder="Optional supporting details, quotations, or source clues"
+        rows="4" maxSubmissions="1" showSubmitButton="false" />
+    </View>
+  </View>
+</View>

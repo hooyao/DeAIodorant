@@ -1,0 +1,1183 @@
+[
+  {
+    "pair_id": "contrast-v2-10",
+    "task_number": 1,
+    "doc_id": "b186cdd4f9004e0413395bf3",
+    "month": "2026-05",
+    "target_lines": [
+      169,
+      174
+    ],
+    "original_side": "B",
+    "original": "当你有一个像 OpenClaw 这样的 agent 在运行时，最好的监控方式不是让人类盯着，而是让另一个 LLM 来盯。\n我们构建了这样一套系统：它实际上会拦截一个 OpenClaw 实例发出的所有流量，然后通过一个 HTTP 代理，把这些流量路由到另一个 LLM，由后者对所有流量进行审查，并判断：这是不是一个招聘 agent 应该做的事？\n举个例子，一个招聘 agent 是否应该向候选人发送一条带有伤害性的信息？当然不应该。于是，这套系统就可以直接在网络层拦截并阻止这类请求，而 agent 本身甚至都不知道这件事正在发生。\n而这里真正很酷的一点在于，这种机制其实是可以大规模运行的。我们认为，未来唯一能够有效监控 agents 的技术，实际上就是 agents 自己。于是你就形成了一种“对抗式结构”：一个 agent 监督另一个 agent。目前来看，这种方式的效果出乎意料地好。\n当然，这并不意味着我们已经把 OpenClaw 的虚拟员工部署到公司最核心的工作流里，我们只是在部分场景中尝试。但真正有意思的地方在于，我们没有因为前沿模型的安全问题尚未完全解决，就选择暂缓部署。我们的态度是：与其因为安全问题停下来，不如直接把安全问题解决掉。因为这本质上并不是模型能力的问题，而是一个系统问题，更具体地说，是一个分布式系统层面的工程问题。\n一旦把这个问题处理好，LLM 本身的能力、以及当前最先进模型所展现出来的水平，其实已经强大得惊人。换句话说，真正阻碍部署的，更多是外围系统与安全机制，而不是模型本身。所以，对我们来说，这一点特别令人兴奋。",
+    "revised": "当你有一个像 OpenClaw 这样的 agent 在运行时，我们认为最好的监控方式是让另一个 LLM 监督，人类无需持续盯着。\n我们构建了这样一套系统：它实际上会拦截一个 OpenClaw 实例发出的所有流量，然后通过一个 HTTP 代理，把这些流量路由到另一个 LLM，由后者对所有流量进行审查，并判断：这是不是一个招聘 agent 应该做的事？\n举个例子，一个招聘 agent 是否应该向候选人发送一条带有伤害性的信息？当然不应该。于是，这套系统就可以直接在网络层拦截并阻止这类请求，而 agent 本身甚至都不知道这件事正在发生。\n更酷的是，这种机制可以大规模运行。我们认为，未来唯一能有效监控 agents 的技术就是 agents 自己，由此形成一种“对抗式结构”：一个 agent 监督另一个 agent。目前来看，这种方式的效果出乎意料地好。\n当然，我们尚未把 OpenClaw 的虚拟员工部署到公司最核心的工作流，只在部分场景中尝试。即使前沿模型的安全问题还没有完全解决，我们也没有暂缓部署；我们的态度是先解决安全问题，再在内部部署并探索技术边界。我们判断，瓶颈不在模型能力，而在系统；更具体地说，这是分布式系统层面的工程问题。\n一旦把这个问题处理好，LLM 本身的能力、以及当前最先进模型所展现出来的水平，其实已经强大得惊人。当前阻碍部署的主要是外围系统与安全机制，不是模型本身。这一点让我们特别兴奋。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-10-op-01",
+        "operator": "direct_contrast",
+        "before": "当你有一个像 OpenClaw 这样的 agent 在运行时，最好的监控方式不是让人类盯着，而是让另一个 LLM 来盯。",
+        "after": "当你有一个像 OpenClaw 这样的 agent 在运行时，我们认为最好的监控方式是让另一个 LLM 监督，人类无需持续盯着。",
+        "reason": "Preserve the monitoring choice and negation while avoiding a staged reversal.",
+        "preserved_claim_ids": [
+          "c01"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-10-op-02",
+        "operator": "remove_ornamental_emphasis",
+        "before": "而这里真正很酷的一点在于，这种机制其实是可以大规模运行的。我们认为，未来唯一能够有效监控 agents 的技术，实际上就是 agents 自己。于是你就形成了一种“对抗式结构”：一个 agent 监督另一个 agent。",
+        "after": "更酷的是，这种机制可以大规模运行。我们认为，未来唯一能有效监控 agents 的技术就是 agents 自己，由此形成一种“对抗式结构”：一个 agent 监督另一个 agent。",
+        "reason": "Reduce stacked importance markers while retaining first-person enthusiasm and the mechanism.",
+        "preserved_claim_ids": [
+          "c04"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-10-op-03",
+        "operator": "merge_repeated_reframing",
+        "before": "当然，这并不意味着我们已经把 OpenClaw 的虚拟员工部署到公司最核心的工作流里，我们只是在部分场景中尝试。但真正有意思的地方在于，我们没有因为前沿模型的安全问题尚未完全解决，就选择暂缓部署。我们的态度是：与其因为安全问题停下来，不如直接把安全问题解决掉。因为这本质上并不是模型能力的问题，而是一个系统问题，更具体地说，是一个分布式系统层面的工程问题。",
+        "after": "当然，我们尚未把 OpenClaw 的虚拟员工部署到公司最核心的工作流，只在部分场景中尝试。即使前沿模型的安全问题还没有完全解决，我们也没有暂缓部署；我们的态度是先解决安全问题，再在内部部署并探索技术边界。我们判断，瓶颈不在模型能力，而在系统；更具体地说，这是分布式系统层面的工程问题。",
+        "reason": "Keep the deployment limitation, safety stance, and system diagnosis while removing repeated reveals.",
+        "preserved_claim_ids": [
+          "c05",
+          "c06",
+          "c07"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-10-op-04",
+        "operator": "remove_ornamental_emphasis",
+        "before": "换句话说，真正阻碍部署的，更多是外围系统与安全机制，而不是模型本身。所以，对我们来说，这一点特别令人兴奋。",
+        "after": "当前阻碍部署的主要是外围系统与安全机制，不是模型本身。这一点让我们特别兴奋。",
+        "reason": "Remove restatement announcements while retaining the diagnosis and emotional stance.",
+        "preserved_claim_ids": [
+          "c08"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The speaker prefers another LLM over continuous human monitoring for OpenClaw agents.",
+        "original_support": "最好的监控方式不是让人类盯着，而是让另一个 LLM 来盯。",
+        "revised_support": "最好的监控方式是让另一个 LLM 监督，人类无需持续盯着。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "The system intercepts all traffic through an HTTP proxy for LLM review.",
+        "original_support": "会拦截一个 OpenClaw 实例发出的所有流量，然后通过一个 HTTP 代理，把这些流量路由到另一个 LLM",
+        "revised_support": "会拦截一个 OpenClaw 实例发出的所有流量，然后通过一个 HTTP 代理，把这些流量路由到另一个 LLM"
+      },
+      {
+        "claim_id": "c03",
+        "description": "The network layer can block harmful recruiter-agent requests without the agent knowing.",
+        "original_support": "这套系统就可以直接在网络层拦截并阻止这类请求，而 agent 本身甚至都不知道这件事正在发生。",
+        "revised_support": "这套系统就可以直接在网络层拦截并阻止这类请求，而 agent 本身甚至都不知道这件事正在发生。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "The mechanism scales and creates an adversarial agent-monitoring-agent structure.",
+        "original_support": "这种机制其实是可以大规模运行的",
+        "revised_support": "这种机制可以大规模运行"
+      },
+      {
+        "claim_id": "c05",
+        "description": "OpenClaw virtual employees have not reached the core workflow and are limited to some scenarios.",
+        "original_support": "我们已经把 OpenClaw 的虚拟员工部署到公司最核心的工作流里，我们只是在部分场景中尝试",
+        "revised_support": "我们尚未把 OpenClaw 的虚拟员工部署到公司最核心的工作流，只在部分场景中尝试"
+      },
+      {
+        "claim_id": "c06",
+        "description": "The team did not pause deployment despite unresolved frontier-model safety issues.",
+        "original_support": "我们没有因为前沿模型的安全问题尚未完全解决，就选择暂缓部署。",
+        "revised_support": "即使前沿模型的安全问题还没有完全解决，我们也没有暂缓部署"
+      },
+      {
+        "claim_id": "c07",
+        "description": "The speaker treats the bottleneck as a distributed-systems engineering problem rather than model capability.",
+        "original_support": "这本质上并不是模型能力的问题，而是一个系统问题，更具体地说，是一个分布式系统层面的工程问题。",
+        "revised_support": "瓶颈不在模型能力，而在系统；更具体地说，这是分布式系统层面的工程问题。"
+      },
+      {
+        "claim_id": "c08",
+        "description": "Advanced LLM capability is impressive; peripheral systems and safety mechanisms are the main deployment barrier and source of excitement.",
+        "original_support": "真正阻碍部署的，更多是外围系统与安全机制，而不是模型本身。所以，对我们来说，这一点特别令人兴奋。",
+        "revised_support": "当前阻碍部署的主要是外围系统与安全机制，不是模型本身。这一点让我们特别兴奋。"
+      }
+    ],
+    "locked_literals": [
+      "OpenClaw",
+      "agent",
+      "agents",
+      "LLM",
+      "HTTP",
+      "招聘 agent",
+      "分布式系统"
+    ],
+    "retained_contrasts": [
+      "The limited deployment, unresolved safety, and system-versus-model distinctions remain explicit."
+    ],
+    "voice_anchors": [
+      "更酷的是",
+      "强大得惊人",
+      "特别兴奋"
+    ],
+    "validation": {
+      "claim_checks_passed": 8,
+      "locked_literals_passed": 7,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 2,
+        "emphasis_markers": 4
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.84472,
+      "voice_anchors_passed": 3
+    }
+  },
+  {
+    "pair_id": "contrast-v2-01",
+    "task_number": 2,
+    "doc_id": "b77b09a419c1631227112f0c",
+    "month": "2026-03",
+    "target_lines": [
+      7,
+      10
+    ],
+    "original_side": "B",
+    "original": "随着 OpenClaw 等智能体框架的普及，企业 AI 应用正从单次模型调用走向多智能体协作。一个复杂任务的完成往往需要 10 到 50 次模型调用，并发场景下的 Token 消耗更是达到传统模式的数倍甚至数十倍。\n这一变化直接加剧了企业的算力压力。尤其对于金融、通信、能源、航天等关键领域企业来说，私有化部署的算力“就这么多”且极其宝贵——每一次额外的模型调用，都在消耗本就紧张的算力资源，推高延迟的同时挤占并发能力。当多智能体协作成为常态，如何控制算力成本成为企业面临的核心挑战之一。\n公有云“烧”Token 的模式无法满足企业数据安全需求，私有化部署千亿级、万亿级大模型成本高昂且容易导致算力空转浪费。如何将有限算力实现最优配置，让每一份算力都能落到最需要的研发场景中去，是行业亟待解决的核心问题。\n正是在这样的行业背景下，aiXcoder 推出更适合企业私有化部署的 aiX-apply-4B 轻量级模型，服务于代码变更应用场景。这一场景的核心挑战在于，需要将模型生成的不规整、碎片化的代码片段，精准、无损地应用到原始文件中，同时严格保持缩进、空白符、上下文的一致性，不牵动其他代码、避免引入新问题。",
+    "revised": "随着 OpenClaw 等智能体框架的普及，企业 AI 应用正从单次模型调用走向多智能体协作。一个复杂任务的完成往往需要 10 到 50 次模型调用，并发场景下的 Token 消耗更是达到传统模式的数倍甚至数十倍。\n这一变化直接加剧了企业的算力压力。尤其对于金融、通信、能源、航天等关键领域企业来说，私有化部署的算力“就这么多”且极其宝贵——每一次额外的模型调用，都在消耗本就紧张的算力资源，推高延迟的同时挤占并发能力。多智能体协作成为常态后，企业必须控制算力成本。\n公有云“烧”Token 的模式无法满足企业数据安全需求，私有化部署千亿级、万亿级大模型成本高昂且容易导致算力空转浪费。如何将有限算力实现最优配置，让每一份算力都能落到最需要的研发场景中去，是行业亟须解决的算力配置问题。\n为应对这一行业背景，aiXcoder 推出了更适合企业私有化部署的 aiX-apply-4B 轻量级模型，服务于代码变更应用场景。这个场景要求模型把生成的不规整、碎片化代码片段精准、无损地应用到原始文件中，同时严格保持缩进、空白符和上下文一致，不牵动其他代码，避免引入新问题。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-01-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "当多智能体协作成为常态，如何控制算力成本成为企业面临的核心挑战之一。",
+        "after": "多智能体协作成为常态后，企业必须控制算力成本。",
+        "reason": "State the operational constraint without importance framing.",
+        "preserved_claim_ids": [
+          "c02"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-01-op-02",
+        "operator": "remove_ornamental_emphasis",
+        "before": "是行业亟待解决的核心问题。",
+        "after": "是行业亟须解决的算力配置问题。",
+        "reason": "Replace generic importance language with the named problem.",
+        "preserved_claim_ids": [
+          "c04"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-01-op-03",
+        "operator": "clarify_argument_structure",
+        "before": "正是在这样的行业背景下，aiXcoder 推出更适合企业私有化部署的 aiX-apply-4B 轻量级模型，服务于代码变更应用场景。这一场景的核心挑战在于，需要将模型生成的不规整、碎片化的代码片段，精准、无损地应用到原始文件中，同时严格保持缩进、空白符、上下文的一致性，不牵动其他代码、避免引入新问题。",
+        "after": "为应对这一行业背景，aiXcoder 推出了更适合企业私有化部署的 aiX-apply-4B 轻量级模型，服务于代码变更应用场景。这个场景要求模型把生成的不规整、碎片化代码片段精准、无损地应用到原始文件中，同时严格保持缩进、空白符和上下文一致，不牵动其他代码，避免引入新问题。",
+        "reason": "Name the actor and requirement directly while retaining every constraint.",
+        "preserved_claim_ids": [
+          "c05",
+          "c06"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Multi-agent work raises model-call and token demand.",
+        "original_support": "一个复杂任务的完成往往需要 10 到 50 次模型调用，并发场景下的 Token 消耗更是达到传统模式的数倍甚至数十倍。",
+        "revised_support": "一个复杂任务的完成往往需要 10 到 50 次模型调用，并发场景下的 Token 消耗更是达到传统模式的数倍甚至数十倍。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Extra calls consume scarce private capacity, raise latency, and reduce concurrency.",
+        "original_support": "每一次额外的模型调用，都在消耗本就紧张的算力资源，推高延迟的同时挤占并发能力。",
+        "revised_support": "每一次额外的模型调用，都在消耗本就紧张的算力资源，推高延迟的同时挤占并发能力。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Public-cloud and very large private deployments have stated security and cost limits.",
+        "original_support": "公有云“烧”Token 的模式无法满足企业数据安全需求，私有化部署千亿级、万亿级大模型成本高昂且容易导致算力空转浪费。",
+        "revised_support": "公有云“烧”Token 的模式无法满足企业数据安全需求，私有化部署千亿级、万亿级大模型成本高昂且容易导致算力空转浪费。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "The industry needs to allocate finite compute to the highest-need development tasks.",
+        "original_support": "如何将有限算力实现最优配置，让每一份算力都能落到最需要的研发场景中去",
+        "revised_support": "如何将有限算力实现最优配置，让每一份算力都能落到最需要的研发场景中去"
+      },
+      {
+        "claim_id": "c05",
+        "description": "aiXcoder introduced aiX-apply-4B for private code-change application.",
+        "original_support": "aiXcoder 推出更适合企业私有化部署的 aiX-apply-4B 轻量级模型，服务于代码变更应用场景",
+        "revised_support": "aiXcoder 推出了更适合企业私有化部署的 aiX-apply-4B 轻量级模型，服务于代码变更应用场景"
+      },
+      {
+        "claim_id": "c06",
+        "description": "Applying fragments must preserve formatting and avoid collateral code changes.",
+        "original_support": "严格保持缩进、空白符、上下文的一致性，不牵动其他代码、避免引入新问题",
+        "revised_support": "严格保持缩进、空白符和上下文一致，不牵动其他代码，避免引入新问题"
+      }
+    ],
+    "locked_literals": [
+      "OpenClaw",
+      "Token",
+      "金融",
+      "通信",
+      "能源",
+      "航天",
+      "公有云",
+      "私有化部署",
+      "aiXcoder",
+      "aiX-apply-4B"
+    ],
+    "retained_contrasts": [
+      "The public-cloud security limitation and private-deployment cost limitation remain explicit."
+    ],
+    "voice_anchors": [
+      "算力“就这么多”"
+    ],
+    "validation": {
+      "claim_checks_passed": 6,
+      "locked_literals_passed": 10,
+      "numeric_literals": [
+        "10",
+        "4B",
+        "50"
+      ],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 3
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.93712,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v2-07",
+    "task_number": 3,
+    "doc_id": "44aa81958a6c585ee8c06847",
+    "month": "2026-01",
+    "target_lines": [
+      1,
+      6
+    ],
+    "original_side": "B",
+    "original": "企业级多智能体（Multi-Agent）系统最大的瓶颈，往往不是 Agent 不够强，而是负责分发任务的 Router（路由器）太“傻”。传统 Router 只会做简单的单选分类，面对复杂的企业级故障经常“瞎指挥”，在企业运维的十字路口，我们需要一个更聪明的“交警”。\n过去一年里，Multi-Agent 架构正在成为企业 AI 的新基建。我们忙着造更强的 SQLAgent、更快的检索 Agent，但却发现运维系统的十字路口却越来越拥堵了。\n和想象中的 Agent 们“游刃有余”的自动协同、分工协作不同，因为传统 Router 的上限太低、智能程度有限，很难跟上 Agent 们“匆匆忙忙”的脚步。在未来的企业 AI 系统中，Agent 越来越多，能力边界越来越模糊，系统必须具备“承认不确定性并协作解决”的能力。\n今天，腾讯云正式开源 TCAR（Tencent Cloud Andon Router）——\n一个只有 4B 参数，但学会了“先想清楚，再选择”的智能路由模型\n，它专为解决跨域、冲突和模糊问题而生，为企业 AI 应用提供 Reasoning-centric Routing+Multi-Agent Collaboration 的基础形态。",
+    "revised": "企业级多智能体（Multi-Agent）系统最大的瓶颈，往往不在 Agent 的能力，而在负责分发任务的 Router（路由器）。传统 Router 只会做简单的单选分类，面对复杂的企业级故障经常“瞎指挥”，企业运维因此需要更聪明的路由决策。\n过去一年里，Multi-Agent 架构正在成为企业 AI 的新基建。SQLAgent 和检索 Agent 越来越强，运维系统的“十字路口”却越来越拥堵。\n现实中的自动协同和分工协作并不像想象中那样“游刃有余”：传统 Router 的上限太低、智能程度有限，很难跟上 Agent 的变化。在未来的企业 AI 系统中，Agent 越来越多，能力边界越来越模糊，系统必须具备“承认不确定性并协作解决”的能力。\n今天，腾讯云正式开源 TCAR（Tencent Cloud Andon Router）。这个只有 4B 参数的智能路由模型学会了“先想清楚，再选择”，专门解决跨域、冲突和模糊问题，并为企业 AI 应用提供 Reasoning-centric Routing+Multi-Agent Collaboration 的基础形态。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-07-op-01",
+        "operator": "merge_repeated_reframing",
+        "before": "企业级多智能体（Multi-Agent）系统最大的瓶颈，往往不是 Agent 不够强，而是负责分发任务的 Router（路由器）太“傻”。传统 Router 只会做简单的单选分类，面对复杂的企业级故障经常“瞎指挥”，在企业运维的十字路口，我们需要一个更聪明的“交警”。",
+        "after": "企业级多智能体（Multi-Agent）系统最大的瓶颈，往往不在 Agent 的能力，而在负责分发任务的 Router（路由器）。传统 Router 只会做简单的单选分类，面对复杂的企业级故障经常“瞎指挥”，企业运维因此需要更聪明的路由决策。",
+        "reason": "Retain the real component contrast and one voice cue while removing stacked personification.",
+        "preserved_claim_ids": [
+          "c01"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-07-op-02",
+        "operator": "clarify_argument_structure",
+        "before": "过去一年里，Multi-Agent 架构正在成为企业 AI 的新基建。我们忙着造更强的 SQLAgent、更快的检索 Agent，但却发现运维系统的十字路口却越来越拥堵了。",
+        "after": "过去一年里，Multi-Agent 架构正在成为企业 AI 的新基建。SQLAgent 和检索 Agent 越来越强，运维系统的“十字路口”却越来越拥堵。",
+        "reason": "Remove duplicated adversative wording and keep the traffic metaphor for rhythm.",
+        "preserved_claim_ids": [
+          "c02"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-07-op-03",
+        "operator": "clarify_argument_structure",
+        "before": "和想象中的 Agent 们“游刃有余”的自动协同、分工协作不同，因为传统 Router 的上限太低、智能程度有限，很难跟上 Agent 们“匆匆忙忙”的脚步。",
+        "after": "现实中的自动协同和分工协作并不像想象中那样“游刃有余”：传统 Router 的上限太低、智能程度有限，很难跟上 Agent 的变化。",
+        "reason": "Restore an explicit main clause and preserve the contrast and limitation.",
+        "preserved_claim_ids": [
+          "c03"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-07-op-04",
+        "operator": "clarify_argument_structure",
+        "before": "今天，腾讯云正式开源 TCAR（Tencent Cloud Andon Router）——\n一个只有 4B 参数，但学会了“先想清楚，再选择”的智能路由模型\n，它专为解决跨域、冲突和模糊问题而生，为企业 AI 应用提供 Reasoning-centric Routing+Multi-Agent Collaboration 的基础形态。",
+        "after": "今天，腾讯云正式开源 TCAR（Tencent Cloud Andon Router）。这个只有 4B 参数的智能路由模型学会了“先想清楚，再选择”，专门解决跨域、冲突和模糊问题，并为企业 AI 应用提供 Reasoning-centric Routing+Multi-Agent Collaboration 的基础形态。",
+        "reason": "Repair interrupted subject-predicate structure without compressing the product claims.",
+        "preserved_claim_ids": [
+          "c05"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The claimed bottleneck lies in Router rather than Agent capability, and simple classification misroutes complex faults.",
+        "original_support": "往往不是 Agent 不够强，而是负责分发任务的 Router（路由器）太“傻”",
+        "revised_support": "往往不在 Agent 的能力，而在负责分发任务的 Router（路由器）"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Multi-Agent is becoming infrastructure while stronger specialized agents increase routing congestion.",
+        "original_support": "Multi-Agent 架构正在成为企业 AI 的新基建",
+        "revised_support": "Multi-Agent 架构正在成为企业 AI 的新基建"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Traditional Router limits automatic coordination and division of work.",
+        "original_support": "传统 Router 的上限太低、智能程度有限，很难跟上 Agent 们“匆匆忙忙”的脚步。",
+        "revised_support": "传统 Router 的上限太低、智能程度有限，很难跟上 Agent 的变化。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Future systems must acknowledge uncertainty and resolve it collaboratively.",
+        "original_support": "系统必须具备“承认不确定性并协作解决”的能力。",
+        "revised_support": "系统必须具备“承认不确定性并协作解决”的能力。"
+      },
+      {
+        "claim_id": "c05",
+        "description": "Tencent Cloud open-sourced the 4B TCAR model for cross-domain, conflict, and ambiguity problems.",
+        "original_support": "腾讯云正式开源 TCAR（Tencent Cloud Andon Router）",
+        "revised_support": "腾讯云正式开源 TCAR（Tencent Cloud Andon Router）"
+      }
+    ],
+    "locked_literals": [
+      "Multi-Agent",
+      "Agent",
+      "Router",
+      "SQLAgent",
+      "腾讯云",
+      "TCAR",
+      "Tencent Cloud Andon Router",
+      "Reasoning-centric Routing+Multi-Agent Collaboration"
+    ],
+    "retained_contrasts": [
+      "The Agent-capability versus Router-bottleneck distinction remains explicit."
+    ],
+    "voice_anchors": [
+      "“十字路口”",
+      "“先想清楚，再选择”"
+    ],
+    "validation": {
+      "claim_checks_passed": 5,
+      "locked_literals_passed": 8,
+      "numeric_literals": [
+        "4B"
+      ],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 1,
+        "emphasis_markers": 0
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.857988,
+      "voice_anchors_passed": 2
+    }
+  },
+  {
+    "pair_id": "contrast-v2-06",
+    "task_number": 4,
+    "doc_id": "3c60dc0a981b686870095450",
+    "month": "2026-06",
+    "target_lines": [
+      82,
+      90
+    ],
+    "original_side": "A",
+    "original": "四、真正的战场，是谁来定义 Agent 时代的云开放标准\n事实上，Skills 改变的不只是接口体系，还有“云能力”的流通方式。\n过去，云能力是“重”的。它们散落在 API 文档、SDK、脚本和工程师经验里。开发者要先读文档，再写代码；企业要自己补权限、审计和风控；平台每做一次集成，也要重复大量基础工作。\n到了 Agent 时代，这种“重”会被进一步放大。\n一方面，很多云 API 过去并没有被打磨成足够精简、稳定、可组合的接口。在人和程序操作云的时代，这些问题还能靠工程师经验消化；但 Agent 没有这样的经验，它只能依赖结构化、明确、稳定的能力描述。\n另一方面，真实的云操作也很少只是调用一个 API。它通常是一串动作：先做什么、再做什么，失败后怎么办，哪些步骤需要确认。这些都需要沉淀成 SOP。\nSkills 平台的价值就在这里。\n它不是简单把 API 包一层，而是把稳定的 API、场景化 SOP、权限边界和调用规则，打包成一个 Agent 能理解、能调用、能组合的能力单元。\n云 Skills 门户也不是传统产品目录，而是面向 Agent 的云能力入口。对外，阿里云通过 Skill Forge 计划邀请伙伴共建场景和标准；对内，企业已有的脚本、Workflow 和 Agent 能力，也可以被重新抽象成标准 Skill，变成可复用的资产。",
+    "revised": "四、真正的战场，是谁来定义 Agent 时代的云开放标准\nSkills 同时改变了接口体系和“云能力”的流通方式。\n过去，云能力是“重”的。它们散落在 API 文档、SDK、脚本和工程师经验里。开发者要先读文档，再写代码；企业要自己补权限、审计和风控；平台每做一次集成，也要重复大量基础工作。\n到了 Agent 时代，这种“重”会被进一步放大。\n一方面，很多云 API 过去并没有被打磨成足够精简、稳定、可组合的接口。在人和程序操作云的时代，这些问题还能靠工程师经验消化；但 Agent 没有这样的经验，它只能依赖结构化、明确、稳定的能力描述。\n另一方面，真实的云操作也很少只是调用一个 API。它通常是一串动作：先做什么、再做什么，失败后怎么办，哪些步骤需要确认。这些都需要沉淀成 SOP。\nSkills 平台并非只给 API 加一层包装；它把稳定的 API、场景化 SOP、权限边界和调用规则打包成一个 Agent 能理解、能调用、能组合的能力单元。\n云 Skills 门户面向 Agent 提供云能力入口，不沿用传统产品目录的定位。对外，阿里云通过 Skill Forge 计划邀请伙伴共建场景和标准；对内，企业已有的脚本、Workflow 和 Agent 能力，也可以被重新抽象成标准 Skill，变成可复用的资产。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-06-op-01",
+        "operator": "direct_contrast",
+        "before": "事实上，Skills 改变的不只是接口体系，还有“云能力”的流通方式。",
+        "after": "Skills 同时改变了接口体系和“云能力”的流通方式。",
+        "reason": "State the two effects as additive claims without a staged not-only frame.",
+        "preserved_claim_ids": [
+          "c01"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-06-op-02",
+        "operator": "merge_repeated_reframing",
+        "before": "Skills 平台的价值就在这里。\n它不是简单把 API 包一层，而是把稳定的 API、场景化 SOP、权限边界和调用规则，打包成一个 Agent 能理解、能调用、能组合的能力单元。\n云 Skills 门户也不是传统产品目录，而是面向 Agent 的云能力入口。",
+        "after": "Skills 平台并非只给 API 加一层包装；它把稳定的 API、场景化 SOP、权限边界和调用规则打包成一个 Agent 能理解、能调用、能组合的能力单元。\n云 Skills 门户面向 Agent 提供云能力入口，不沿用传统产品目录的定位。",
+        "reason": "Remove value and repeated reversal announcements while retaining both substantive distinctions.",
+        "preserved_claim_ids": [
+          "c05",
+          "c06"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Skills changes both the interface system and cloud-capability circulation.",
+        "original_support": "Skills 改变的不只是接口体系，还有“云能力”的流通方式。",
+        "revised_support": "Skills 同时改变了接口体系和“云能力”的流通方式。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Cloud capabilities were distributed across documents, tools, and experience, creating repeated work.",
+        "original_support": "它们散落在 API 文档、SDK、脚本和工程师经验里。开发者要先读文档，再写代码；企业要自己补权限、审计和风控；平台每做一次集成，也要重复大量基础工作。",
+        "revised_support": "它们散落在 API 文档、SDK、脚本和工程师经验里。开发者要先读文档，再写代码；企业要自己补权限、审计和风控；平台每做一次集成，也要重复大量基础工作。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Agent amplifies API quality problems because it lacks engineer experience.",
+        "original_support": "但 Agent 没有这样的经验，它只能依赖结构化、明确、稳定的能力描述。",
+        "revised_support": "但 Agent 没有这样的经验，它只能依赖结构化、明确、稳定的能力描述。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Real cloud operations are multi-step procedures that need SOPs.",
+        "original_support": "真实的云操作也很少只是调用一个 API。它通常是一串动作：先做什么、再做什么，失败后怎么办，哪些步骤需要确认。这些都需要沉淀成 SOP。",
+        "revised_support": "真实的云操作也很少只是调用一个 API。它通常是一串动作：先做什么、再做什么，失败后怎么办，哪些步骤需要确认。这些都需要沉淀成 SOP。"
+      },
+      {
+        "claim_id": "c05",
+        "description": "Skills packages APIs, SOPs, permissions, and invocation rules rather than merely wrapping APIs.",
+        "original_support": "它不是简单把 API 包一层，而是把稳定的 API、场景化 SOP、权限边界和调用规则，打包成一个 Agent 能理解、能调用、能组合的能力单元。",
+        "revised_support": "Skills 平台并非只给 API 加一层包装；它把稳定的 API、场景化 SOP、权限边界和调用规则打包成一个 Agent 能理解、能调用、能组合的能力单元。"
+      },
+      {
+        "claim_id": "c06",
+        "description": "The portal is an Agent-facing capability entry, with external co-development and internal reuse.",
+        "original_support": "云 Skills 门户也不是传统产品目录，而是面向 Agent 的云能力入口。",
+        "revised_support": "云 Skills 门户面向 Agent 提供云能力入口，不沿用传统产品目录的定位。"
+      }
+    ],
+    "locked_literals": [
+      "Skills",
+      "API",
+      "SDK",
+      "SOP",
+      "Agent",
+      "Skill Forge",
+      "Workflow"
+    ],
+    "retained_contrasts": [
+      "The API-wrapper and traditional-product-catalog exclusions remain explicit because both are substantive."
+    ],
+    "voice_anchors": [
+      "云能力是“重”的"
+    ],
+    "validation": {
+      "claim_checks_passed": 6,
+      "locked_literals_passed": 7,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 2,
+        "emphasis_markers": 1
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.936842,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v2-03",
+    "task_number": 5,
+    "doc_id": "3c60dc0a981b686870095450",
+    "month": "2026-06",
+    "target_lines": [
+      3,
+      7
+    ],
+    "original_side": "A",
+    "original": "调查显示，79% 的企业在内部采用或正规划采用 AI Agent，近 74% 的企业预计两年内会用上 Agentic AI。\n这意味着 Agent 不再只出现在客服、运营、研发等业务系统里，也正被嵌入云运维、架构设计与资源治理的工作流。\n值得注意的是，这些加速落地的 Agent，几乎都离不开云。大模型推理、向量检索、任务调度、复杂业务的编排与集成，背后都要依托云端的算力、存储、网络与安全。\n于是一个新问题出现：当云资源被越来越多的 Agent 调用，云平台本身需不需要改变？\nAgent 自主规划、高批量、长任务的特性，让这个问题不言而喻——不仅需要改变，甚至需要重构。而阿里云正围绕这一需求加快演进。",
+    "revised": "调查显示，79% 的企业在内部采用或正规划采用 AI Agent，近 74% 的企业预计两年内会用上 Agentic AI。\nAgent 的应用已不再局限于客服、运营、研发等业务系统，也进入了云运维、架构设计与资源治理的工作流。\n这些加速落地的 Agent 几乎都离不开云。大模型推理、向量检索、任务调度、复杂业务的编排与集成，背后都要依托云端的算力、存储、网络与安全。\n这也带来一个新问题：当云资源被越来越多的 Agent 调用，云平台本身需不需要改变？\nAgent 自主规划、高批量、长任务的特性给出了答案：云平台需要改变，甚至需要重构。阿里云正围绕这一需求加快演进。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-03-op-01",
+        "operator": "direct_contrast",
+        "before": "这意味着 Agent 不再只出现在客服、运营、研发等业务系统里，也正被嵌入云运维、架构设计与资源治理的工作流。",
+        "after": "Agent 的应用已不再局限于客服、运营、研发等业务系统，也进入了云运维、架构设计与资源治理的工作流。",
+        "reason": "Remove conclusion-announcement framing but preserve the expansion and negation.",
+        "preserved_claim_ids": [
+          "c02"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-03-op-02",
+        "operator": "remove_ornamental_emphasis",
+        "before": "值得注意的是，这些加速落地的 Agent，几乎都离不开云。",
+        "after": "这些加速落地的 Agent 几乎都离不开云。",
+        "reason": "Remove an attention directive while preserving the qualifier.",
+        "preserved_claim_ids": [
+          "c03"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-03-op-03",
+        "operator": "direct_contrast",
+        "before": "于是一个新问题出现：当云资源被越来越多的 Agent 调用，云平台本身需不需要改变？\nAgent 自主规划、高批量、长任务的特性，让这个问题不言而喻——不仅需要改变，甚至需要重构。而阿里云正围绕这一需求加快演进。",
+        "after": "这也带来一个新问题：当云资源被越来越多的 Agent 调用，云平台本身需不需要改变？\nAgent 自主规划、高批量、长任务的特性给出了答案：云平台需要改变，甚至需要重构。阿里云正围绕这一需求加快演进。",
+        "reason": "Keep the question and escalation while removing a staged not-only reveal.",
+        "preserved_claim_ids": [
+          "c04",
+          "c05"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The survey reports 79% current or planned Agent adoption and nearly 74% expected Agentic AI use within two years.",
+        "original_support": "79% 的企业在内部采用或正规划采用 AI Agent，近 74% 的企业预计两年内会用上 Agentic AI。",
+        "revised_support": "79% 的企业在内部采用或正规划采用 AI Agent，近 74% 的企业预计两年内会用上 Agentic AI。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Agent use is no longer limited to business systems and now includes cloud workflows.",
+        "original_support": "Agent 不再只出现在客服、运营、研发等业务系统里，也正被嵌入云运维、架构设计与资源治理的工作流。",
+        "revised_support": "Agent 的应用已不再局限于客服、运营、研发等业务系统，也进入了云运维、架构设计与资源治理的工作流。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Nearly all of the described Agent workloads depend on named cloud resources.",
+        "original_support": "这些加速落地的 Agent，几乎都离不开云。大模型推理、向量检索、任务调度、复杂业务的编排与集成，背后都要依托云端的算力、存储、网络与安全。",
+        "revised_support": "这些加速落地的 Agent 几乎都离不开云。大模型推理、向量检索、任务调度、复杂业务的编排与集成，背后都要依托云端的算力、存储、网络与安全。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Increasing Agent use raises the question of cloud-platform change.",
+        "original_support": "当云资源被越来越多的 Agent 调用，云平台本身需不需要改变？",
+        "revised_support": "当云资源被越来越多的 Agent 调用，云平台本身需不需要改变？"
+      },
+      {
+        "claim_id": "c05",
+        "description": "Agent autonomy, scale, and duration require change or reconstruction, and Alibaba Cloud is evolving accordingly.",
+        "original_support": "不仅需要改变，甚至需要重构。而阿里云正围绕这一需求加快演进。",
+        "revised_support": "云平台需要改变，甚至需要重构。阿里云正围绕这一需求加快演进。"
+      }
+    ],
+    "locked_literals": [
+      "AI Agent",
+      "Agentic AI",
+      "客服",
+      "运营",
+      "研发",
+      "云运维",
+      "架构设计",
+      "资源治理",
+      "阿里云"
+    ],
+    "retained_contrasts": [
+      "The text still states that Agent use is not limited to business systems."
+    ],
+    "voice_anchors": [
+      "云平台本身需不需要改变？"
+    ],
+    "validation": {
+      "claim_checks_passed": 5,
+      "locked_literals_passed": 9,
+      "numeric_literals": [
+        "74%",
+        "79%"
+      ],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 1
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.893039,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v2-09",
+    "task_number": 6,
+    "doc_id": "0431c592d5de8246cebcb8e2",
+    "month": "2025-10",
+    "target_lines": [
+      21,
+      23
+    ],
+    "original_side": "A",
+    "original": "这款上线仅数月的应用，与 Paired、Couple Joy 等产品一道，成为少数专注于 “让亲密关系更有趣” 的应用之一。这些产品正精准抓住当下的一种社会趋势：后疫情时代的工作模式、独自用餐的生活习惯，以及刷不完的社交信息流，逐渐削弱了人们日常的深度联结 —— 这也导致美国民众的孤独感达到了前所未有的水平。\n对于 Candle 而言，其核心判断是：下一代规模化社交产品的重点，将不再是 “向陌生人传播信息”，而是 “让人们更容易每天与身边少数亲密的人保持互动”。团队希望，凭借这一洞察，再加上由创始人主导、依托 TikTok 和 Instagram 搭建的传播体系，能够避免重蹈许多消费级社交应用的覆辙 —— 即短暂爆红后，仅数月便陷入增长停滞。\n不过，Candle 仍面临两大关键挑战：“用户留存的持久性” 与 “功能体验的深度”。一款主打每日照片分享和小游戏的应用，能否实现 12 个月、24 个月甚至 36 个月的长期用户留存？Candle 在拓展更多 “互动形式” 以丰富功能的同时，能否避免应用体积臃肿、体验下降？鲁伯与首席技术官（CTO）乔普拉表示，这正是他们未来的规划方向：增加更多获取 “火花”（Sparks，应用内的积分体系）的方式，覆盖更广泛的互动场景；同时推出更丰富的功能，进一步提升用户的长期互动频率。",
+    "revised": "这款上线仅数月的应用，与 Paired、Couple Joy 等产品一道，成为少数专注于 “让亲密关系更有趣” 的应用之一。这些产品正精准抓住当下的一种社会趋势：后疫情时代的工作模式、独自用餐的生活习惯，以及刷不完的社交信息流，逐渐削弱了人们日常的深度联结 —— 这也导致美国民众的孤独感达到了前所未有的水平。\nCandle 团队判断，下一代规模化社交产品将不再以“向陌生人传播信息”为重点，重心会转向“让人们更容易每天与身边少数亲密的人保持互动”。团队希望，凭借这一洞察，再加上由创始人主导、依托 TikTok 和 Instagram 搭建的传播体系，能够避免重蹈许多消费级社交应用的覆辙 —— 即短暂爆红后，仅数月便陷入增长停滞。\n不过，Candle 仍面临两大关键挑战：“用户留存的持久性” 与 “功能体验的深度”。一款主打每日照片分享和小游戏的应用，能否实现 12 个月、24 个月甚至 36 个月的长期用户留存？Candle 在拓展更多 “互动形式” 以丰富功能的同时，能否避免应用体积臃肿、体验下降？鲁伯与首席技术官（CTO）乔普拉表示，他们未来计划增加更多获取“火花”（Sparks，应用内的积分体系）的方式，覆盖更广泛的互动场景；同时推出更丰富的功能，进一步提升用户的长期互动频率。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-09-op-01",
+        "operator": "direct_contrast",
+        "before": "对于 Candle 而言，其核心判断是：下一代规模化社交产品的重点，将不再是 “向陌生人传播信息”，而是 “让人们更容易每天与身边少数亲密的人保持互动”。",
+        "after": "Candle 团队判断，下一代规模化社交产品将不再以“向陌生人传播信息”为重点，重心会转向“让人们更容易每天与身边少数亲密的人保持互动”。",
+        "reason": "Keep the negative and new focus while removing core-judgment reveal framing.",
+        "preserved_claim_ids": [
+          "c02"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-09-op-02",
+        "operator": "remove_ornamental_emphasis",
+        "before": "鲁伯与首席技术官（CTO）乔普拉表示，这正是他们未来的规划方向：增加更多获取 “火花”（Sparks，应用内的积分体系）的方式，覆盖更广泛的互动场景；同时推出更丰富的功能，进一步提升用户的长期互动频率。",
+        "after": "鲁伯与首席技术官（CTO）乔普拉表示，他们未来计划增加更多获取“火花”（Sparks，应用内的积分体系）的方式，覆盖更广泛的互动场景；同时推出更丰富的功能，进一步提升用户的长期互动频率。",
+        "reason": "Replace emphatic plan-announcement framing with an explicit subject and action.",
+        "preserved_claim_ids": [
+          "c05"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Candle and named peers target relationship enjoyment amid factors that weaken deep connection and increase loneliness.",
+        "original_support": "与 Paired、Couple Joy 等产品一道，成为少数专注于 “让亲密关系更有趣” 的应用之一。",
+        "revised_support": "与 Paired、Couple Joy 等产品一道，成为少数专注于 “让亲密关系更有趣” 的应用之一。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Candle predicts a shift away from broadcasting to strangers toward daily close-contact interaction.",
+        "original_support": "将不再是 “向陌生人传播信息”，而是 “让人们更容易每天与身边少数亲密的人保持互动”",
+        "revised_support": "将不再以“向陌生人传播信息”为重点，重心会转向“让人们更容易每天与身边少数亲密的人保持互动”"
+      },
+      {
+        "claim_id": "c03",
+        "description": "The team hopes its insight and founder-led TikTok and Instagram distribution prevent short-lived growth.",
+        "original_support": "依托 TikTok 和 Instagram 搭建的传播体系，能够避免重蹈许多消费级社交应用的覆辙",
+        "revised_support": "依托 TikTok 和 Instagram 搭建的传播体系，能够避免重蹈许多消费级社交应用的覆辙"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Candle faces retention and feature-depth challenges over 12, 24, and 36 months.",
+        "original_support": "Candle 仍面临两大关键挑战：“用户留存的持久性” 与 “功能体验的深度”。",
+        "revised_support": "Candle 仍面临两大关键挑战：“用户留存的持久性” 与 “功能体验的深度”。"
+      },
+      {
+        "claim_id": "c05",
+        "description": "Ruber and Chopra plan more Sparks acquisition paths and richer functionality.",
+        "original_support": "这正是他们未来的规划方向：增加更多获取 “火花”",
+        "revised_support": "他们未来计划增加更多获取“火花”"
+      }
+    ],
+    "locked_literals": [
+      "Candle",
+      "Paired",
+      "Couple Joy",
+      "TikTok",
+      "Instagram",
+      "鲁伯",
+      "首席技术官",
+      "CTO",
+      "乔普拉",
+      "Sparks"
+    ],
+    "retained_contrasts": [
+      "The future product focus explicitly remains not broadcasting to strangers."
+    ],
+    "voice_anchors": [
+      "能否实现 12 个月、24 个月甚至 36 个月的长期用户留存？"
+    ],
+    "validation": {
+      "claim_checks_passed": 5,
+      "locked_literals_passed": 10,
+      "numeric_literals": [
+        "12",
+        "24",
+        "36"
+      ],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 1,
+        "emphasis_markers": 2
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.962298,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v2-04",
+    "task_number": 7,
+    "doc_id": "3c60dc0a981b686870095450",
+    "month": "2026-06",
+    "target_lines": [
+      51,
+      58
+    ],
+    "original_side": "A",
+    "original": "第三层，是 Agentic Skills 与 Agent Toolkit，处理能力使用的不确定性。\nAgentic Skills 的作用，是把 300 多个云产品、2 万多个 API，重新组织成 Agent 能理解、能选择、能组合、能安全调用的 Skills。Agent Toolkit 则负责工程接入，让阿里云 CLI、SDK、Terraform、MCP Server 等工具以插件化方式协同。\n这里的关键在于，阿里云没有让 Agent 绕过既有工程体系，直接裸调 API。\n相反，它让 Agent 沿着成熟工具链进入云：CLI 负责命令执行，SDK 负责程序化接入，Terraform 承接 IaC 编排和状态管理，MCP Server 则把云能力以标准方式暴露给 Agent。\n这样一来，Agent 的能力不再悬浮在自然语言上，而是落进一条可校验、可审计、可回滚的工程链路里。\n把这三层合在一起，Agentic Cloud 的基本逻辑就清楚了：Gateway 管入口和行为，3A 管身份和权限，Skills 管能力表达，Toolkit 管工具消费，HITL 管高危介入，可观测体系管全程追踪。\n它真正解决的，不只是让 Agent 更容易调云，而是让企业敢把一部分云操作交给 Agent。\n先可管，再可信；先可信，再可用；最后才谈自动化。",
+    "revised": "第三层，是 Agentic Skills 与 Agent Toolkit，处理能力使用的不确定性。\nAgentic Skills 的作用，是把 300 多个云产品、2 万多个 API，重新组织成 Agent 能理解、能选择、能组合、能安全调用的 Skills。Agent Toolkit 则负责工程接入，让阿里云 CLI、SDK、Terraform、MCP Server 等工具以插件化方式协同。\n阿里云没有让 Agent 绕过既有工程体系、直接裸调 API，而是让它沿着成熟工具链进入云：CLI 负责命令执行，SDK 负责程序化接入，Terraform 承接 IaC 编排和状态管理，MCP Server 把云能力以标准方式暴露给 Agent。\n这样，Agent 的能力进入一条可校验、可审计、可回滚的工程链路，不再悬浮在自然语言上。\n把这三层合在一起，Agentic Cloud 的基本逻辑就清楚了：Gateway 管入口和行为，3A 管身份和权限，Skills 管能力表达，Toolkit 管工具消费，HITL 管高危介入，可观测体系管全程追踪。\n这套体系让 Agent 更容易调云，也让企业敢把一部分云操作交给 Agent。\n先可管，再可信；先可信，再可用；最后才谈自动化。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-04-op-01",
+        "operator": "merge_repeated_reframing",
+        "before": "这里的关键在于，阿里云没有让 Agent 绕过既有工程体系，直接裸调 API。\n相反，它让 Agent 沿着成熟工具链进入云：CLI 负责命令执行，SDK 负责程序化接入，Terraform 承接 IaC 编排和状态管理，MCP Server 则把云能力以标准方式暴露给 Agent。\n这样一来，Agent 的能力不再悬浮在自然语言上，而是落进一条可校验、可审计、可回滚的工程链路里。",
+        "after": "阿里云没有让 Agent 绕过既有工程体系、直接裸调 API，而是让它沿着成熟工具链进入云：CLI 负责命令执行，SDK 负责程序化接入，Terraform 承接 IaC 编排和状态管理，MCP Server 把云能力以标准方式暴露给 Agent。\n这样，Agent 的能力进入一条可校验、可审计、可回滚的工程链路，不再悬浮在自然语言上。",
+        "reason": "Combine three repeated frames while retaining the necessary bypass contrast and every tool role.",
+        "preserved_claim_ids": [
+          "c02",
+          "c03"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-04-op-02",
+        "operator": "direct_contrast",
+        "before": "它真正解决的，不只是让 Agent 更容易调云，而是让企业敢把一部分云操作交给 Agent。",
+        "after": "这套体系让 Agent 更容易调云，也让企业敢把一部分云操作交给 Agent。",
+        "reason": "State both additive outcomes without presenting the second as a revelation.",
+        "preserved_claim_ids": [
+          "c05"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Skills organize more than 300 products and 20,000 APIs, while Toolkit provides engineering access.",
+        "original_support": "Agentic Skills 的作用，是把 300 多个云产品、2 万多个 API，重新组织成 Agent 能理解、能选择、能组合、能安全调用的 Skills。Agent Toolkit 则负责工程接入",
+        "revised_support": "Agentic Skills 的作用，是把 300 多个云产品、2 万多个 API，重新组织成 Agent 能理解、能选择、能组合、能安全调用的 Skills。Agent Toolkit 则负责工程接入"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Alibaba Cloud does not let Agent bypass the engineering system and directly call raw APIs.",
+        "original_support": "阿里云没有让 Agent 绕过既有工程体系，直接裸调 API。",
+        "revised_support": "阿里云没有让 Agent 绕过既有工程体系、直接裸调 API"
+      },
+      {
+        "claim_id": "c03",
+        "description": "CLI, SDK, Terraform, and MCP Server retain their stated roles in a verifiable, auditable, reversible chain.",
+        "original_support": "CLI 负责命令执行，SDK 负责程序化接入，Terraform 承接 IaC 编排和状态管理，MCP Server 则把云能力以标准方式暴露给 Agent。",
+        "revised_support": "CLI 负责命令执行，SDK 负责程序化接入，Terraform 承接 IaC 编排和状态管理，MCP Server 把云能力以标准方式暴露给 Agent。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "The three layers assign entry, identity, capability, consumption, intervention, and observability responsibilities.",
+        "original_support": "Gateway 管入口和行为，3A 管身份和权限，Skills 管能力表达，Toolkit 管工具消费，HITL 管高危介入，可观测体系管全程追踪。",
+        "revised_support": "Gateway 管入口和行为，3A 管身份和权限，Skills 管能力表达，Toolkit 管工具消费，HITL 管高危介入，可观测体系管全程追踪。"
+      },
+      {
+        "claim_id": "c05",
+        "description": "The system makes cloud use easier and gives enterprises confidence to delegate some operations.",
+        "original_support": "不只是让 Agent 更容易调云，而是让企业敢把一部分云操作交给 Agent。",
+        "revised_support": "让 Agent 更容易调云，也让企业敢把一部分云操作交给 Agent。"
+      },
+      {
+        "claim_id": "c06",
+        "description": "Manageability precedes trust, usability, and automation.",
+        "original_support": "先可管，再可信；先可信，再可用；最后才谈自动化。",
+        "revised_support": "先可管，再可信；先可信，再可用；最后才谈自动化。"
+      }
+    ],
+    "locked_literals": [
+      "Agentic Skills",
+      "Agent Toolkit",
+      "API",
+      "CLI",
+      "SDK",
+      "Terraform",
+      "IaC",
+      "MCP Server",
+      "Gateway",
+      "3A",
+      "HITL"
+    ],
+    "retained_contrasts": [
+      "The no-bypass requirement remains an explicit negative contrast."
+    ],
+    "voice_anchors": [
+      "先可管，再可信；先可信，再可用；最后才谈自动化。"
+    ],
+    "validation": {
+      "claim_checks_passed": 6,
+      "locked_literals_passed": 11,
+      "numeric_literals": [
+        "2",
+        "300",
+        "3A"
+      ],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 1,
+        "emphasis_markers": 2
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.935252,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v2-05",
+    "task_number": 8,
+    "doc_id": "3c60dc0a981b686870095450",
+    "month": "2026-06",
+    "target_lines": [
+      59,
+      68
+    ],
+    "original_side": "B",
+    "original": "三、从意图到执行，Spec 是 Agent 调云的“稳定器”\n在 Agent 调云的链路里，最容易失控的一步，是从自然语言直接跳到执行。\n用户说一句“帮我搭一个网站”，Agent 如果立刻开 ECS、配网络、放端口，看似很智能，实则风险很高。因为自然语言是模糊的，云操作却是精确的。中间如果没有一个可确认、可校验的方案，模型的推理结果就会直接变成基础设施变更。\n企业很难接受这种路径。\n所以，阿里云在这里引入了 SDD，也就是 Spec-Driven Development，规格驱动开发。它的核心约束很简单：Agent 不能从自然语言直接进入执行，必须先从意图进入规格。\nSpec 是意图与执行之间的稳定器。\n还是以“帮我搭一个网站”为例。Agent 不应该立刻动手，而应该先生成一份可确认的方案：部署在哪类资源上？实例规格是什么？磁盘多大？网络如何隔离？安全组开放哪些端口？预计费用是多少？有没有更低成本的版本？是否符合最佳实践？\n这份 Spec，把一句模糊的需求，变成了一个可以讨论、可以修改、可以校验的工程对象。\n用户确认后，Agent 再把 Spec 转成 Terraform 等 IaC 配置。这里的关键在于：Agent 不是绕开现有工程体系，而是进入 IaC 路径。\n因为云上变更天然需要工程化承接。创建一台 ECS，和批量创建一万台 ECS，不是同一件事。前者可以是一次操作，后者必须是可声明、可复用、可审计、可回滚的基础设施管理。IaC 的价值正在这里：它让云资源的变化有记录、有版本、有边界，也有恢复路径。",
+    "revised": "三、从意图到执行，Spec 是 Agent 调云的“稳定器”\n在 Agent 调云的链路里，从自然语言直接跳到执行最容易失控。\n用户说一句“帮我搭一个网站”，Agent 如果立刻开 ECS、配网络、放端口，看似很智能，实则风险很高。因为自然语言是模糊的，云操作却是精确的。中间如果没有一个可确认、可校验的方案，模型的推理结果就会直接变成基础设施变更。\n企业很难接受这种路径。\n所以，阿里云在这里引入了 SDD，也就是 Spec-Driven Development，规格驱动开发。这套约束要求 Agent 不能从自然语言直接进入执行，必须先从意图进入规格。\nSpec 是意图与执行之间的稳定器。\n还是以“帮我搭一个网站”为例。Agent 不应该立刻动手，而应该先生成一份可确认的方案：部署在哪类资源上？实例规格是什么？磁盘多大？网络如何隔离？安全组开放哪些端口？预计费用是多少？有没有更低成本的版本？是否符合最佳实践？\n这份 Spec，把一句模糊的需求，变成了一个可以讨论、可以修改、可以校验的工程对象。\n用户确认后，Agent 再把 Spec 转成 Terraform 等 IaC 配置。Agent 由此沿现有工程体系进入 IaC 路径，而不会绕开它。\n因为云上变更天然需要工程化承接。创建一台 ECS，和批量创建一万台 ECS，不是同一件事。前者可以是一次操作，后者必须是可声明、可复用、可审计、可回滚的基础设施管理。IaC 因此让云资源的变化有记录、有版本、有边界，也有恢复路径。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-05-op-01",
+        "operator": "clarify_argument_structure",
+        "before": "在 Agent 调云的链路里，最容易失控的一步，是从自然语言直接跳到执行。",
+        "after": "在 Agent 调云的链路里，从自然语言直接跳到执行最容易失控。",
+        "reason": "Remove a cleft frame without changing the risk claim.",
+        "preserved_claim_ids": [
+          "c01"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-05-op-02",
+        "operator": "remove_ornamental_emphasis",
+        "before": "它的核心约束很简单：Agent 不能从自然语言直接进入执行，必须先从意图进入规格。",
+        "after": "这套约束要求 Agent 不能从自然语言直接进入执行，必须先从意图进入规格。",
+        "reason": "Keep both modal constraints and remove generic importance framing.",
+        "preserved_claim_ids": [
+          "c04"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-05-op-03",
+        "operator": "direct_contrast",
+        "before": "这里的关键在于：Agent 不是绕开现有工程体系，而是进入 IaC 路径。",
+        "after": "Agent 由此沿现有工程体系进入 IaC 路径，而不会绕开它。",
+        "reason": "Preserve the real engineering-path contrast in a direct causal sentence.",
+        "preserved_claim_ids": [
+          "c07"
+        ]
+      },
+      {
+        "operation_id": "contrast-v2-05-op-04",
+        "operator": "remove_ornamental_emphasis",
+        "before": "IaC 的价值正在这里：它让云资源的变化有记录、有版本、有边界，也有恢复路径。",
+        "after": "IaC 因此让云资源的变化有记录、有版本、有边界，也有恢复路径。",
+        "reason": "Replace value-announcement framing with the explicit consequence.",
+        "preserved_claim_ids": [
+          "c08"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "Directly moving from natural language to execution is the most failure-prone step.",
+        "original_support": "最容易失控的一步，是从自然语言直接跳到执行。",
+        "revised_support": "从自然语言直接跳到执行最容易失控。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Immediate website provisioning can be risky because language is vague and cloud operations are precise.",
+        "original_support": "自然语言是模糊的，云操作却是精确的。中间如果没有一个可确认、可校验的方案，模型的推理结果就会直接变成基础设施变更。",
+        "revised_support": "自然语言是模糊的，云操作却是精确的。中间如果没有一个可确认、可校验的方案，模型的推理结果就会直接变成基础设施变更。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "Enterprises have difficulty accepting that path.",
+        "original_support": "企业很难接受这种路径。",
+        "revised_support": "企业很难接受这种路径。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "SDD requires a specification between intent and execution.",
+        "original_support": "Agent 不能从自然语言直接进入执行，必须先从意图进入规格。",
+        "revised_support": "Agent 不能从自然语言直接进入执行，必须先从意图进入规格。"
+      },
+      {
+        "claim_id": "c05",
+        "description": "Spec stabilizes the transition from intent to execution.",
+        "original_support": "Spec 是意图与执行之间的稳定器。",
+        "revised_support": "Spec 是意图与执行之间的稳定器。"
+      },
+      {
+        "claim_id": "c06",
+        "description": "The website example lists resource, disk, network, port, cost, alternative, and best-practice questions.",
+        "original_support": "部署在哪类资源上？实例规格是什么？磁盘多大？网络如何隔离？安全组开放哪些端口？预计费用是多少？有没有更低成本的版本？是否符合最佳实践？",
+        "revised_support": "部署在哪类资源上？实例规格是什么？磁盘多大？网络如何隔离？安全组开放哪些端口？预计费用是多少？有没有更低成本的版本？是否符合最佳实践？"
+      },
+      {
+        "claim_id": "c07",
+        "description": "After confirmation, Agent converts Spec to Terraform or IaC without bypassing the engineering system.",
+        "original_support": "Agent 不是绕开现有工程体系，而是进入 IaC 路径。",
+        "revised_support": "Agent 由此沿现有工程体系进入 IaC 路径，而不会绕开它。"
+      },
+      {
+        "claim_id": "c08",
+        "description": "One ECS and ten thousand ECS instances require different handling, and IaC preserves operational controls.",
+        "original_support": "创建一台 ECS，和批量创建一万台 ECS，不是同一件事。前者可以是一次操作，后者必须是可声明、可复用、可审计、可回滚的基础设施管理。",
+        "revised_support": "创建一台 ECS，和批量创建一万台 ECS，不是同一件事。前者可以是一次操作，后者必须是可声明、可复用、可审计、可回滚的基础设施管理。"
+      }
+    ],
+    "locked_literals": [
+      "Agent",
+      "ECS",
+      "SDD",
+      "Spec-Driven Development",
+      "Spec",
+      "Terraform",
+      "IaC"
+    ],
+    "retained_contrasts": [
+      "The ban on direct execution and the one-versus-ten-thousand ECS distinction remain explicit."
+    ],
+    "voice_anchors": [
+      "帮我搭一个网站",
+      "稳定器"
+    ],
+    "validation": {
+      "claim_checks_passed": 8,
+      "locked_literals_passed": 7,
+      "numeric_literals": [],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 1,
+        "emphasis_markers": 2
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.950995,
+      "voice_anchors_passed": 2
+    }
+  },
+  {
+    "pair_id": "contrast-v2-08",
+    "task_number": 9,
+    "doc_id": "48bda219eb0776f623161899",
+    "month": "2026-01",
+    "target_lines": [
+      17,
+      21
+    ],
+    "original_side": "B",
+    "original": "在 7:00，新古典主义建筑和复原式古希腊建筑群是连接在一起的；但 7:31，从复原式古希腊建筑群望向新古典主义建筑时，新古典主义建筑消失了。8:30 回到新古典主义建筑时，它成为了一栋孤立的房子。\n尽管存在这些细节瑕疵，LingBot-World 的进步依然显著——单次生成接近 10 分钟的连贯视频，很可能刷新了当前视频/世界模型的长度纪录。\n作为对比，Veo 3 和 Sora 2 的单次生成上限分别为 8 秒和 25 秒，Runway Gen-3 Alpha 为 40 秒，Kling 最长支持 2 分钟。\n与其他交互世界模型相比，LingBot-World 在开源、提供 720p 分辨率的情况下，还保证了高动态程度和长生成跨度。\n在 VBench 测试中，LingBot-World 全面领先于 Yume-1.5 和 HY World-1.5 等先进开源模型，证明了自己不仅是一个视频生成器，更是一个强大的交互式模拟器。通过接收用户输入的动作指令，它能够生成高度动态且物理一致的视觉反馈，保持在高动态度下的整体一致性，使视频内容在长时间段内始终与最初的提示保持一致。",
+    "revised": "在 7:00，新古典主义建筑和复原式古希腊建筑群是连接在一起的；但 7:31，从复原式古希腊建筑群望向新古典主义建筑时，新古典主义建筑消失了。8:30 回到新古典主义建筑时，它成为了一栋孤立的房子。\n尽管存在这些细节瑕疵，LingBot-World 的进步依然显著——单次生成接近 10 分钟的连贯视频，很可能刷新了当前视频/世界模型的长度纪录。\n作为对比，Veo 3 和 Sora 2 的单次生成上限分别为 8 秒和 25 秒，Runway Gen-3 Alpha 为 40 秒，Kling 最长支持 2 分钟。\n与其他交互世界模型相比，LingBot-World 在开源、提供 720p 分辨率的情况下，还保证了高动态程度和长生成跨度。\n在 VBench 测试中，LingBot-World 全面领先于 Yume-1.5 和 HY World-1.5 等先进开源模型。这一结果证明，LingBot-World 既能生成视频，也是一个强大的交互式模拟器。通过接收用户输入的动作指令，它能够生成高度动态且物理一致的视觉反馈，保持在高动态度下的整体一致性，使视频内容在长时间段内始终与最初的提示保持一致。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-08-op-01",
+        "operator": "direct_contrast",
+        "before": "在 VBench 测试中，LingBot-World 全面领先于 Yume-1.5 和 HY World-1.5 等先进开源模型，证明了自己不仅是一个视频生成器，更是一个强大的交互式模拟器。",
+        "after": "在 VBench 测试中，LingBot-World 全面领先于 Yume-1.5 和 HY World-1.5 等先进开源模型。这一结果证明，LingBot-World 既能生成视频，也是一个强大的交互式模拟器。",
+        "reason": "Separate the benchmark result from the two capability claims without weakening certainty.",
+        "preserved_claim_ids": [
+          "c05"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The visual state changes inconsistently at 7:00, 7:31, and 8:30.",
+        "original_support": "在 7:00，新古典主义建筑和复原式古希腊建筑群是连接在一起的；但 7:31，从复原式古希腊建筑群望向新古典主义建筑时，新古典主义建筑消失了。8:30 回到新古典主义建筑时，它成为了一栋孤立的房子。",
+        "revised_support": "在 7:00，新古典主义建筑和复原式古希腊建筑群是连接在一起的；但 7:31，从复原式古希腊建筑群望向新古典主义建筑时，新古典主义建筑消失了。8:30 回到新古典主义建筑时，它成为了一栋孤立的房子。"
+      },
+      {
+        "claim_id": "c02",
+        "description": "Despite flaws, nearly ten minutes of coherent generation is likely a length record.",
+        "original_support": "单次生成接近 10 分钟的连贯视频，很可能刷新了当前视频/世界模型的长度纪录。",
+        "revised_support": "单次生成接近 10 分钟的连贯视频，很可能刷新了当前视频/世界模型的长度纪录。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "The named competing video systems have the stated generation limits.",
+        "original_support": "Veo 3 和 Sora 2 的单次生成上限分别为 8 秒和 25 秒，Runway Gen-3 Alpha 为 40 秒，Kling 最长支持 2 分钟。",
+        "revised_support": "Veo 3 和 Sora 2 的单次生成上限分别为 8 秒和 25 秒，Runway Gen-3 Alpha 为 40 秒，Kling 最长支持 2 分钟。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "LingBot-World combines open source, 720p, high motion, and long generation.",
+        "original_support": "LingBot-World 在开源、提供 720p 分辨率的情况下，还保证了高动态程度和长生成跨度。",
+        "revised_support": "LingBot-World 在开源、提供 720p 分辨率的情况下，还保证了高动态程度和长生成跨度。"
+      },
+      {
+        "claim_id": "c05",
+        "description": "VBench leadership supports both video-generation and interactive-simulation capabilities.",
+        "original_support": "证明了自己不仅是一个视频生成器，更是一个强大的交互式模拟器。",
+        "revised_support": "这一结果证明，LingBot-World 既能生成视频，也是一个强大的交互式模拟器。"
+      },
+      {
+        "claim_id": "c06",
+        "description": "Action input yields dynamic, physically consistent, prompt-consistent output.",
+        "original_support": "它能够生成高度动态且物理一致的视觉反馈，保持在高动态度下的整体一致性，使视频内容在长时间段内始终与最初的提示保持一致。",
+        "revised_support": "它能够生成高度动态且物理一致的视觉反馈，保持在高动态度下的整体一致性，使视频内容在长时间段内始终与最初的提示保持一致。"
+      }
+    ],
+    "locked_literals": [
+      "LingBot-World",
+      "Veo 3",
+      "Sora 2",
+      "Runway Gen-3 Alpha",
+      "Kling",
+      "VBench",
+      "Yume-1.5",
+      "HY World-1.5"
+    ],
+    "retained_contrasts": [
+      "The detail flaws versus overall progress qualification remains unchanged."
+    ],
+    "voice_anchors": [
+      "刷新了当前视频/世界模型的长度纪录"
+    ],
+    "validation": {
+      "claim_checks_passed": 6,
+      "locked_literals_passed": 8,
+      "numeric_literals": [
+        "1.5",
+        "10",
+        "2",
+        "25",
+        "3",
+        "40",
+        "720p",
+        "7:00",
+        "7:31",
+        "8",
+        "8:30"
+      ],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 1,
+        "emphasis_markers": 0
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.961616,
+      "voice_anchors_passed": 1
+    }
+  },
+  {
+    "pair_id": "contrast-v2-02",
+    "task_number": 10,
+    "doc_id": "a127f5baf364930a89fb4005",
+    "month": "2025-10",
+    "target_lines": [
+      8,
+      15
+    ],
+    "original_side": "A",
+    "original": "如下图所示，我们有一组包含 K 个唯一路径的 JSON 数据，每个路径对应一个字符串值。前 N 个路径作为“动态路径”被存储为子列。其余 K – N 个路径则被存储在一个共享的数据结构中，即一个 Map(String, String) 类型的列，包含路径和值的映射。\n例如，当我们查询路径 key1 的数据时，ClickHouse 首先会通过元数据判断 key1 是属于动态路径还是共享数据。在本例中，key1 属于动态路径，因此其值被存储在独立的数据文件中，能够被高效、直接地读取。\n但如果我们查询的是 key_n+1，元数据会显示该路径不在动态路径中，而是存储在共享数据中。此时，ClickHouse 需要读取整个 Map(String, String) 列并在内存中进行过滤处理，效率显著下降。\n默认情况下，动态路径的数量限制为 1024。当路径数量超过此限制时，尤其是在使用 S3 等远程存储时，贸然提高该限制并不可取，因为每个分区可能生成成千上万的文件，这会在数据合并过程中显著增加内存使用量，并加剧读取复杂度。\n因此，对于包含成千上万乃至数万个唯一 JSON 路径的工作负载，系统性能会明显下降。\n这正是我们希望解决的难题。\nv25.8 引入的新共享数据序列化格式\nClickHouse v25.8 推出了两种新的共享数据序列化格式，显著提升了读取特定路径时的效率。",
+    "revised": "如下图所示，我们有一组包含 K 个唯一路径的 JSON 数据，每个路径对应一个字符串值。前 N 个路径作为“动态路径”被存储为子列。其余 K – N 个路径则被存储在一个共享的数据结构中，即一个 Map(String, String) 类型的列，包含路径和值的映射。\n例如，当我们查询路径 key1 的数据时，ClickHouse 首先会通过元数据判断 key1 是属于动态路径还是共享数据。在本例中，key1 属于动态路径，因此其值被存储在独立的数据文件中，能够被高效、直接地读取。\n但如果我们查询的是 key_n+1，元数据会显示该路径不在动态路径中，而是存储在共享数据中。此时，ClickHouse 需要读取整个 Map(String, String) 列并在内存中进行过滤处理，效率显著下降。\n默认情况下，动态路径的数量限制为 1024。当路径数量超过此限制时，尤其是在使用 S3 等远程存储时，贸然提高该限制并不可取，因为每个分区可能生成成千上万的文件，这会在数据合并过程中显著增加内存使用量，并加剧读取复杂度。\n因此，对于包含成千上万乃至数万个唯一 JSON 路径的工作负载，系统性能会明显下降。\n我们希望解决这个性能问题。\nv25.8 引入的新共享数据序列化格式\nClickHouse v25.8 推出了两种新的共享数据序列化格式，显著提升了读取特定路径时的效率。",
+    "operations": [
+      {
+        "operation_id": "contrast-v2-02-op-01",
+        "operator": "remove_ornamental_emphasis",
+        "before": "这正是我们希望解决的难题。",
+        "after": "我们希望解决这个性能问题。",
+        "reason": "Replace an emphatic reveal with an explicit referent.",
+        "preserved_claim_ids": [
+          "c06"
+        ]
+      }
+    ],
+    "claim_checks": [
+      {
+        "claim_id": "c01",
+        "description": "The first N JSON paths are dynamic subcolumns and the remaining paths share a Map column.",
+        "original_support": "前 N 个路径作为“动态路径”被存储为子列。其余 K – N 个路径则被存储在一个共享的数据结构中",
+        "revised_support": "前 N 个路径作为“动态路径”被存储为子列。其余 K – N 个路径则被存储在一个共享的数据结构中"
+      },
+      {
+        "claim_id": "c02",
+        "description": "A dynamic key can be read directly and efficiently.",
+        "original_support": "key1 属于动态路径，因此其值被存储在独立的数据文件中，能够被高效、直接地读取。",
+        "revised_support": "key1 属于动态路径，因此其值被存储在独立的数据文件中，能够被高效、直接地读取。"
+      },
+      {
+        "claim_id": "c03",
+        "description": "A shared key requires reading and filtering the full Map column.",
+        "original_support": "ClickHouse 需要读取整个 Map(String, String) 列并在内存中进行过滤处理，效率显著下降。",
+        "revised_support": "ClickHouse 需要读取整个 Map(String, String) 列并在内存中进行过滤处理，效率显著下降。"
+      },
+      {
+        "claim_id": "c04",
+        "description": "Raising the 1024 path limit can increase file count, memory, and read complexity, especially on S3.",
+        "original_support": "贸然提高该限制并不可取，因为每个分区可能生成成千上万的文件，这会在数据合并过程中显著增加内存使用量，并加剧读取复杂度。",
+        "revised_support": "贸然提高该限制并不可取，因为每个分区可能生成成千上万的文件，这会在数据合并过程中显著增加内存使用量，并加剧读取复杂度。"
+      },
+      {
+        "claim_id": "c05",
+        "description": "Very high JSON path cardinality reduces performance.",
+        "original_support": "对于包含成千上万乃至数万个唯一 JSON 路径的工作负载，系统性能会明显下降。",
+        "revised_support": "对于包含成千上万乃至数万个唯一 JSON 路径的工作负载，系统性能会明显下降。"
+      },
+      {
+        "claim_id": "c06",
+        "description": "ClickHouse intends to solve the described performance problem.",
+        "original_support": "这正是我们希望解决的难题。",
+        "revised_support": "我们希望解决这个性能问题。"
+      },
+      {
+        "claim_id": "c07",
+        "description": "v25.8 introduced two shared-data serialization formats for more efficient path reads.",
+        "original_support": "ClickHouse v25.8 推出了两种新的共享数据序列化格式，显著提升了读取特定路径时的效率。",
+        "revised_support": "ClickHouse v25.8 推出了两种新的共享数据序列化格式，显著提升了读取特定路径时的效率。"
+      }
+    ],
+    "locked_literals": [
+      "ClickHouse",
+      "JSON",
+      "Map(String, String)",
+      "S3",
+      "key1",
+      "key_n+1",
+      "v25.8"
+    ],
+    "retained_contrasts": [
+      "The dynamic-path versus shared-data distinction remains unchanged."
+    ],
+    "voice_anchors": [
+      "我们希望解决"
+    ],
+    "validation": {
+      "claim_checks_passed": 7,
+      "locked_literals_passed": 7,
+      "numeric_literals": [
+        "1",
+        "1024",
+        "S3",
+        "key1",
+        "v25.8"
+      ],
+      "numeric_preservation_passed": true,
+      "original_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 1
+      },
+      "revised_frame_diagnostics": {
+        "complete_contrast_frames": 0,
+        "emphasis_markers": 0
+      },
+      "source_hash_passed": true,
+      "unchanged_character_ratio": 0.991511,
+      "voice_anchors_passed": 1
+    }
+  }
+]

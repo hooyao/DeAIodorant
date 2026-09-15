@@ -1,0 +1,17 @@
+{
+  "schema_version": "corpus-integrity-1",
+  "checked_at": "2026-08-20T12:43:21.818021+00:00",
+  "root": "F:\\MyProjects\\DeAIodorant\\data\\local\\machine-smoke-20260820\\monthly",
+  "valid": true,
+  "months": 3,
+  "documents": 3,
+  "required_translation_model": "qwen3.5:9b",
+  "model_gated_documents": 3,
+  "unverified_visibility_documents": 1,
+  "errors": [],
+  "warnings": [
+    {
+      "message": "1 document(s) lack article-level visibility verification; structural validity does not make this a final corpus"
+    }
+  ]
+}

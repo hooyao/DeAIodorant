@@ -1,0 +1,13 @@
+{
+  "session_id": "a3",
+  "packet_ids": [
+    "pccd7fb5e",
+    "pa2529f2f",
+    "pb1aa2a9b",
+    "pcdfec7ce",
+    "p683e4eea",
+    "p59b0761a"
+  ],
+  "prompt_path": "experiments/fixtures/cognitive_move_pilot_v1/annotation-instructions.md",
+  "packet_directory": "data/local/cognitive-move-pilot-v1/run/packets"
+}

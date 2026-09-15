@@ -1,0 +1,40 @@
+{
+  "schema_version": "deaiodorant-refinement-pairs-3.0",
+  "protocol_version": "conservative-reframing-development-3.0",
+  "status": "frozen_before_outcomes",
+  "frozen_at": "2026-08-22",
+  "seed": 20260822,
+  "role": "development_intervention_not_validation",
+  "reader_question": "Which version makes the reader more willing to continue?",
+  "source_policy": {
+    "period": "transition",
+    "discovery_exposed": true,
+    "reader_observed_case_excluded": true,
+    "prior_intervention_documents_excluded": true
+  },
+  "operator_policy": [
+    "Reduce ornamental contrast, clarification, and emphasis framing.",
+    "Retain necessary contrasts, negation, modality, attribution, and uncertainty.",
+    "Preserve explicit subjects, predicates, objects, and referents.",
+    "Preserve propositions, entities, numbers, technical terms, and authorial voice.",
+    "Do not maximize compression or turn the passage into uniformly flat prose."
+  ],
+  "generation_diagnostics": {
+    "pair_count": 12,
+    "distinct_document_count": 12,
+    "genre_counts": {
+      "industry_reporting": 4,
+      "research_summary": 4,
+      "technical_practice": 4
+    },
+    "operation_count": 19,
+    "claim_check_count": 39,
+    "original_side_counts": {
+      "A": 6,
+      "B": 6
+    },
+    "original_marker_count": 21,
+    "revised_marker_count": 6,
+    "all_preservation_gates_passed": true
+  }
+}

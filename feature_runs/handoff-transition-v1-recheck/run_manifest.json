@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "document_features.csv": "745f36b5676c8890c8dc4cc01c8a8c9e4f925e43edd9797de77d25b71e54df30",
+    "pre_document_typicality.csv": "15e18ab781cbb710017d6a5734c3b7aead0a43a6bf4b93d59f1aacb051310e32",
+    "pre_feature_distributions.csv": "d5d1e7672cb48f53763c0aee3d54d87f680b817b73456cb63dc7791fce69ab1a",
+    "pre_feature_weights.csv": "cca6e04dfb269f690cd406abadcd07213c5670caac6885bccb5883eba64a78c5",
+    "reader_case_profiles.json": "89f05460c41efe149659a794ef4785e7972784a31da6de6e30cfb12416e18957",
+    "results.json": "aef84029aa9f7652fdd13767948b9ee11c9e7d4c962b4193c2623324def6e81b",
+    "transition_trends.csv": "3d19980e75dd0c14ad045dbd7607cb47ef9f408d83a58bbc668f2cdbe7635285"
+  },
+  "input_fingerprints": {
+    "manifest": "00bbd66d54e7beabd03a86c87031ef0cd7cc7b49c6eb38bce1c5dc8f7e98a604",
+    "pool": "58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2",
+    "reader_observations": "d9666a3bf73e0ececac6cdd0d32c4fd68d8ed4f59c6994d4b8678e0a24a92d5b"
+  },
+  "protocol_version": "handoff-transition-exploration-1.0",
+  "seed": 20260822
+}

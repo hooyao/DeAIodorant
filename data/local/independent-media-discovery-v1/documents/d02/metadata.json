@@ -1,0 +1,38 @@
+{
+  "id": "d02",
+  "url": "https://post.smzdm.com/p/arz3ng6g/",
+  "search_id": "s08",
+  "result_position": 4,
+  "reason": "后期、同来源同类购买指南，避免只凭一个显著标题取样。",
+  "source_html_sha256": "50968128c96e5dd932041d4dc9d34272348b5f3ffb3f6f9088f9a1949e387848",
+  "collected_at_utc": "2026-09-14T14:48:55.200577+00:00",
+  "extractor_version": "independent-media-extract-1.0",
+  "corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+  "generation_model": "unknown",
+  "translation_status": "unresolved",
+  "reader_label": null,
+  "upstream_sources_fetched": false,
+  "media_inspected": false,
+  "rights_status": "再分发／训练许可未核实，仅供本次授权研究核验",
+  "title": "2026 年家用扫地机器人选购指南：含石头等各大品牌爆款单品推荐",
+  "published_at": "2026-03-19T17:58:14+08:00",
+  "publication_evidence": {
+    "selector": "meta[property=\"article:published_time\"]",
+    "raw": "<meta content=\"2026-03-19T17:58:14+08:00\" property=\"article:published_time\"/>"
+  },
+  "source_type": "unknown",
+  "source_type_evidence": "中文页面与署名不单独证明中文原创；所读正文未发现明确译者／翻译来源标记。",
+  "author": "魔力小子",
+  "publisher_rights_statement": "本站内容未经书面许可,禁止一切形式的转载。",
+  "full_text_status": "complete_html_text_images_not_inspected",
+  "limitations": [
+    "正文 HTML 非空白文字全部覆盖；图片／动态图／内嵌媒体未读取，图中表格数据或效果对比不能被当作已核实支持。",
+    "商品卡及媒体链接保留在原始 HTML／DOM，不逐个请求。来源声明和产品技术数值未外部核验。"
+  ],
+  "cohort": "post_2025_07",
+  "body_sha256": "047f9b7350ac9e4c0e45cf17f19924bc54073be627d43414c24074113746db11",
+  "characters": 16242,
+  "text_blocks": 138,
+  "literal_ershi": 0,
+  "literal_ershi_interpretation": "只作描述；不决定候选强度或质量。"
+}

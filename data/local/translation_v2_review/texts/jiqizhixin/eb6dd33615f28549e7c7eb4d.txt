@@ -1,0 +1,36 @@
+Hugging Face 开源 LeRobot，让 AI 机器人研发迎来重大利好。
+今年 3 月，以构建大型开源社区而闻名的 AI 初创公司 Hugging Face，挖角前特斯拉科学家 Remi Cadene 来领导一个新的开源机器人项目 ——LeRobot，引起了轰动。
+Remi Cadene 在今年三月宣布结束其三年的 Tesla 机器人研究生涯，并加入 Hugging Face。
+在此之前，Remi Cadene 是特斯拉 Autopilot 和 Optimus 机器人研究项目的团队成员。
+现在，Hugging Face 宣布正式推出并开源机器人工具包 LeRobot，基于有史以来最大规模的众包机器人数据集。
+LeRobot Github 链接：
+https://github.com/huggingface/lerobot
+LeRobot 代码库堪称机器人领域的「Transformers」。
+图源：https://twitter.com/RemiCadene/status/1787378793499496855
+Cadene 在 X 上表示：「
+人工智能
+发展的下一步是将其应用于我们的物理世界。因此，我们正在推动社区共同努力构建 AI 机器人，这对所有人开放！」
+LeRobot 工具包不仅仅是一个软件包，而且是一个全面的平台，包括用于共享、可视化数据和训练 SOTA 模型的多功能库。用户可以通过 LeRobot 访问大量预训练模型，以快速启动他们的项目。
+此外，LeRobot 与物理模拟器无缝集成，这允许没有物理机器人硬件的爱好者和开发者在虚拟环境中模拟和测试他们的 AI 模型。
+在硬件方面，LeRobot 旨在处理各种机器人硬件：「从教育和研究中使用的简单机械臂到先进 AI 研究设施中更复杂的
+类人机器人
+。」
+总的来说，LeRobot 项目的目标是提供一个能够适应和控制任何形态机器人的 AI 系统，使机器人在多功能性和可扩展性方面得到增强。
+Cadene 还展示了借助 LeRobot，机器人可以获取的一些能力，包括训练机器人抓取物体、在未绘制空间内导航等等。
+在 Mobile Aloha 数据上，完全端到端地学习导航和操作：
+在两个机械臂之间传递物体：
+得益于大型
+语言模型
+（LLM）及生成式 AI 的突破性进展，机器人领域的发展也获得了极大的推动。
+例如，最近特斯拉 Optimus 团队宣布了一项新进展：二代 Optimus 人形机器人已经「进厂打工」了：
+二代 Optimus 人形机器人
+波士顿动力纯电驱动的新版人形机器人 Atlas 问世：
+新一代 Atlas
+初创公司 Meetee Robotics 发布了首款双足人形机器人 MenteeBot，它能理解自然语言命令：
+MenteeBot
+面向
+机器人技术
+升级、形态多样化的现状，Cadene 表示 LeRobot 项目的发展愿景是「从多样化社区中构建软件和硬件，以在现实世界中开发下一代智能机器人」。
+通过降低入门门槛、促进知识和资源共享，Hugging Face 将构建一个可能重新定义 AI 机器人领域的社区。
+参考链接：
+https://venturebeat.com/automation/hugging-face-launches-lerobot-open-source-robotics-code-library/?continueFlag=c01b16f005d42a3bd6c9caa728d95926

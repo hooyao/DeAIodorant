@@ -1,0 +1,284 @@
+一、Elasticsearch 是什么：不只是"搜索引擎"
+Elasticsearch（简称 ES） 是一个开源的分布式搜索与分析引擎，基于 Apache Lucene 构建。它存数据，但真正擅长的是对海量文本做近实时的全文检索——你可以把它理解为"给数据库装上了百度搜索"。
+如果把 ES 和 MySQL 做一层概念映射，对应关系大致如下：
+MySQL Elasticsearch 说明
+Database Cluster 一个 ES 集群对应一个数据库实例
+Table Index（索引） 数据存储的逻辑单元
+Row Document（文档） 最小数据单位，JSON 格式
+Column Field（字段） 文档中的属性
+Schema Mapping（映射） 定义字段类型和索引方式
+ES 7.x 之后，Type 的概念被废弃，一个 Index 下默认只保留 _doc 类 型，架构比 6.x 清爽了不少。
+ES 有几个让我觉得"真香"的特性：分布式架构天生支持横向扩展、数据写入后近实时可搜（默认 1 秒 refresh）、RESTful API 让任何语言都能调用、插件化设计可以按需扩展。这几个特性叠加在一起，让 ES 成了全文搜索领域的事实标准。
+二、倒排索引：为什么 ES 搜得这么快
+讲 ES 绕不开倒排索引——它是全文搜索能力的根基，不理解它，后面的分词器和查询优化都只能死记硬背。
+2.1 什么是倒排索引
+传统的"正排索引"是文档 → 关键词的映射，就像翻到一本书的某页去看这页写了什么。而倒排索引（Inverted Index） 反其道而行之，是关键词 → 文档的映射——就像书末的索引页，查"分布式"三个字，直接告诉你出现在哪几页。
+举个例子，假设有 3 篇文档：
+文档 1：Elasticsearch 是分布式引擎
+文档 2：分布式系统的核心是搜索
+文档 3：搜索引擎的未来是智能化
+经过分词和归一化处理后，倒排索引长这样：
+关键词 文档 ID
+elasticsearch 1
+分布式 1, 2
+系统 2
+搜索 2, 3
+引擎 1, 3
+当用户搜索"引擎"时，ES 直接查表定位到文档 1 和 3，不需要扫描全部文档——时间复杂度从 O(n) 降到了 O(1)。
+2.2 倒排索引的构建过程
+第一步：分词（Tokenization）。把原始文本拆成独立的词条。比如"Elasticsearch支持全文检索"拆成 [elasticsearch, 支持, 全文, 检索]。
+第二步：归一化（Normalization）。对分词结果做标准化——转小写（Elasticsearch → elasticsearch）、去掉"的""是"这类停用词、做词干提取（running → run）。这一步直接决定了后续搜索的召回质量。
+第三步：创建倒排列表。为每个词项建立到文档 ID 的映射关系，持久化存储。最终结构类似 {“elasticsearch”: [1], “分布式”: [1, 2], …}。
+2.3 用户搜索时发生了什么
+当用户输入"分布式搜索"时，ES 的执行链路是这样的：查询词同样被分词（分布式 + 搜索）→ 分别查倒排索引（分布式 → [1,2]，搜索 → [2,3]）→ 按 AND/OR 逻辑合并结果 → 用 TF-IDF 或 BM25 算法算相关性评分并排序。整个链路在毫秒级完成，这就是倒排索引的威力。
+三、分词器：搜索质量的命门
+倒排索引的质量，很大程度上取决于分词器（Analyzer）。分词器决定了文本怎么拆、怎么存、怎么搜——它是在字符写入索引之前必须要经过的"安检通道"。
+ES 的 Analyzer 由三个组件串联而成：
+字符过滤器（Character Filters）：预处理，比如去掉 HTML 标签、替换特殊字符（如把 & 转成 and）
+分词器（Tokenizer）：将文本按规则切分成一个个词项，这是整个流程中唯一必须的组件
+词项过滤器（Token Filters）：对词项做后处理——转小写、去停用词、词干提取等
+ES 内置了多种分词器，我整理了一张场景对照表：
+分词器 分词方式 中文效果 适用场景
+standard 按词边界切分，转小写 逐字拆分（差） 英文通用场景
+simple 按非字母字符切分 逐字拆分 简单英文文本
+whitespace 仅按空格切分 不分词 大小写敏感场景
+keyword 不分词，整个输入作为单个词项 不分词 精确匹配（ID、状态码）
+stop standard + 过滤停用词 逐字拆分 英文长文搜索
+注意到没？ 上面所有内置分词器对中文的处理都是"逐字拆分"——standard 会把"秋季穿搭指南"切成"秋、季、穿、搭、指、南"六个单字。这意味着搜"秋季"时，term 查询可能颗粒无收（后面第六章会详细演示这个坑）。这就是为什么必须装 IK 分词器。
+四、Docker 部署 ES + Kibana：十分钟跑起本地环境
+开发环境用 Docker 跑 ES 最省心——一行命令启动，不想要了直接 docker rm -f 清掉。以下基于 ES 7.3.0（2026 年 7 月实测可用）。
+4.1 拉取镜像并单节点启动
+拉取镜像
+docker pull elasticsearch:7.3.0
+单节点启动
+docker run -d --name es7
+-p 9200:9200 -p 9300:9300
+-e “discovery.type=single-node”
+-e ES_JAVA_OPTS=“-Xms1024m -Xmx1024m”
+elasticsearch:7.3.0
+Lobster AI
+bash
+9200：REST API 端口，外部调用走这个
+9300：集群内部节点间通信端口，单节点用不到但建议暴露
+discovery.type=single-node：跳过主节点选举，单机开发必备
+ES_JAVA_OPTS：设 JVM 堆内存为 1GB，建议不超过宿主机物理内存的一半
+浏览器访问返回 JSON 格式的集群信息就说明跑起来了。
+4.2 挂载配置与数据，防止容器删除数据丢失
+容器一删数据就没了，必须把关键目录挂载出来：
+docker cp es7:/usr/share/elasticsearch/config E:\docker\elasticsearch
+docker cp es7:/usr/share/elasticsearch/data E:\docker\elasticsearch
+docker cp es7:/usr/share/elasticsearch/plugins E:\docker\elasticsearch
+Lobster AI
+bash
+编辑 config/elasticsearch.yml，加上跨域配置：
+: “my-es-cluster”
+network.host: 0.0.0.0
+http.cors.enabled: true
+http.cors.allow-origin: “*”
+http.cors.allow-headers: Authorization,X-Requested-With,Content-Length,Content-Type
+Lobster AI
+yaml
+删掉旧容器，重新用带 -v 挂载的参数启动：
+docker rm -f es7
+docker run -d --name es7
+-p 9200:9200 -p 9300:9300
+-e “discovery.type=single-node”
+-e ES_JAVA_OPTS=“-Xms1024m -Xmx1024m”
+-v E:\docker\elasticsearch\config:/usr/share/elasticsearch/config
+-v E:\docker\elasticsearch\data:/usr/share/elasticsearch/data
+-v E:\docker\elasticsearch\plugins:/usr/share/elasticsearch/plugins
+elasticsearch:7.3.0
+Lobster AI
+bash
+4.3 搭上 Kibana
+Kibana 是 ES 官方的可视化和分析工具，它自带的 Dev Tools 是最好的 ES 查询练习环境。版本号必须和 ES 保持一致，否则有兼容性问题：
+docker pull kibana:7.3.0
+docker run -d --name kibana -p 5601:5601 kibana:7.3.0
+Lobster AI
+bash
+1
+2
+同样把配置文件复制出来，编辑 kibana.yml：
+: kibana
+server.host: “0”
+elasticsearch.hosts: [“”] # 宿主机 IP，不是 localhost
+i18n.locale: “zh-CN”
+Lobster AI
+yaml
+注意：Kibana 在容器内访问 ES 时，localhost 指向的是容器自身，必须用宿主机的实际 IP。Windows 下通常为 172.17.0.1（用 docker inspect es7 可以确认）。
+docker rm -f kibana
+docker run -d --name kibana
+-p 5601:5601
+-v E:\docker\kibana\config:/usr/share/kibana/config
+kibana:7.3.0
+Lobster AI
+bash
+访问 localhost:5601，看到中文界面的 Kibana 控制台就成功了。左侧导航栏找到 Dev Tools 入口，后面所有查询都在这里写。
+五、IK 中文分词器：让 ES 真正认识中文
+最早用默认分词器建索引，上线后发现中文搜索效果很差——搜"美食"出来一堆不相关的结果。排查后才发现，"美食"被 standard 分词器拆成了"美"和"食"两个单字，匹配逻辑全乱了。
+IK 分词器（IK Analyzer） 是专为中文设计的 Lucene 分词插件，通过内置词典识别中文词组。你可以理解为"给 ES 装了一本现代汉语词典"——它知道"美食"是一个完整的词，而不是"美"+“食”。
+5.1 安装与持久化
+进入 ES 容器
+docker exec -it es7 /bin/sh
+安装 IK（版本号与 ES 一致）
+bin/elasticsearch-plugin install
+Lobster AI
+bash
+安装时提示确认，输入 y 回车。看到 -> Installed analysis-ik 就装好了。
+我踩过的坑：插件安装在容器内部，容器一删就没了。安装完一定要把插件文件复制到宿主机挂载目录：
+docker cp es7:/usr/share/elasticsearch/plugins/analysis-ik E:\docker\elasticsearch\plugins
+docker cp es7:/usr/share/elasticsearch/config/analysis-ik E:\docker\elasticsearch\config
+Lobster AI
+bash
+1
+2
+这样配合第四章的 -v 挂载，插件就能持久化保留了。重启后查日志确认：
+docker restart es7
+docker logs -f es7 2>&1 | grep analysis-ik
+Lobster AI
+bash
+看到 loaded plugin [analysis-ik] 就说明插件已生效。
+5.2 ik_smart vs ik_max_word
+IK 提供两种模式，选择困难症友好——记住一句话：建索引用 ik_max_word（细粒度），搜索时用 ik_smart（智能分词）。
+模式 策略 输入"深度学习框架使用指南"的产出 适用场景
+ik_smart 智能粗粒度 [深度学习, 框架, 使用指南] 搜索查询时使用
+ik_max_word 最细粒度穷举 [深度学习, 深度, 学习, 框架, 使用, 指南] 建索引时使用
+用 _analyze API 实际验证一下，左边 IK、右边 standard，差距一目了然：
+IK 智能分词
+POST /_analyze
+{
+“analyzer”: “ik_smart”,
+“text”: “这个技术博客写得怎么样？”
+}
+结果：这 / 个 / 技术 / 博客 / 写 / 得 / 怎么样
+默认 standard 分词
+POST /_analyze
+{
+“analyzer”: “standard”,
+“text”: “这个技术博客写得怎么样？”
+}
+结果：这 / 个 / 技 / 术 / 博 / 客 / 写 / 得 / 怎 / 么 / 样
+Lobster AI
+bash
+IK 能识别"技术""博客"等中文词组，而 standard 只会逐字拆分——这在生产环境中意味着完全不同的搜索体验。
+六、ES 基础查询语法：从增删改查到聚合搜索
+理论都讲完了，下面该写查询了。
+6.1 结构化建索引
+先建一个笔记索引，指定每个字段的分词器：
+PUT /note
+{
+“settings”: {
+“number_of_shards”: 1,
+“number_of_replicas”: 1
+},
+“mappings”: {
+“properties”: {
+“title”: { “type”: “text”, “analyzer”: “ik_max_word” },
+“content”: { “type”: “text”, “analyzer”: “ik_max_word” },
+“create_time”: {
+“type”: “date”,
+“format”: “yyyy-MM-dd HH:mm:ss”
+}
+}
+}
+}
+Lobster AI
+bash
+Mapping（映射） 相当于 MySQL 的建表语句——定义每个字段的类型和索引方式。这里 title 和 content 都用 ik_max_word，意味着写入时会按最细粒度分词，提高搜索召回率。
+插入几条测试数据：
+PUT /note/_doc/1
+{ “title”: “夏日旅游攻略”, “content”: “去海边玩耍的必备攻略，推荐三亚和青岛。”, “create_time”: “2024-08-16 16:49:35” }
+PUT /note/_doc/2
+{ “title”: “美食笔记”, “content”: “推荐几家成都的火锅店，真的很辣很过瘾！”, “create_time”: “2024-11-02 17:00:36” }
+PUT /note/_doc/3
+{ “title”: “秋季穿搭指南”, “content”: “分享适合秋天的服装搭配技巧，风衣必不可少。”, “create_time”: “2024-11-03 16:59:58” }
+Lobster AI
+bash
+6.2 增删改查速览
+几个常用操作，一张代码块看完：
+全量更新（文档存在则覆盖，不存在则插入）
+PUT /note/_doc/1
+{ “title”: “更新后的标题”, “content”: “新内容” }
+只更新指定字段（推荐）
+POST /note/_update/1
+{ “doc”: { “title”: “只更新标题” } }
+仅创建，已存在则报错
+PUT /note/_create/4
+{ “title”: “新文档”, “content”: “测试” }
+删除
+DELETE /note/_doc/1
+查看单条
+GET /note/_doc/2
+搜索全部
+GET /note/_search
+Lobster AI
+bash
+6.3 搜索：match vs term，一个常踩的坑
+全文搜索用 match——搜索词会先被分词再匹配：
+GET /note/_search
+{
+“query”: { “match”: { “title”: “穿搭” } }
+}
+"穿搭"分词后匹配 → 命中文档 3
+Lobster AI
+bash
+精确匹配用 term——搜索词不经过分词，直接去索引里比对：
+GET /note/_search
+{
+“query”: {
+“bool”: {
+“filter”: { “term”: { “title”: “秋季” } }
+}
+}
+}
+Lobster AI
+bash
+可能有人会问：用 term 搜"秋季"，文档 3 标题明明包含"秋季穿搭指南"，为什么一条结果都没有？
+在项目中真遇到过的问题。原因出在分词环节：文档入库时 title 用了 ik_max_word 分词，“秋季穿搭指南"被拆成了多个词项。但 term 查询不做分词，直接用"秋季"这个完整字符串去索引里找——索引里存的是被 IK 拆散后的词项，很可能不包含完整的"秋季”。
+换成 match 就能搜到，因为 match 会先把"秋季"分词后再分别匹配索引。一句话概括：match 分词后搜索（覆盖面广），term 原样匹配（精准但可能漏）。
+6.4 分页、排序、聚合
+分页：from = (page-1) * size
+GET /note/_search
+{
+“query”: { “match_all”: {} },
+“from”: 0, “size”: 2
+}
+按发布时间倒序
+GET /note/_search
+{
+“query”: { “match_all”: {} },
+“sort”: [{ “create_time”: { “order”: “desc” } }]
+}
+聚合：按发布时间分组统计文档数（类似 SQL 的 GROUP BY）
+GET /note/_search
+{
+“query”: { “match_all”: {} },
+“aggs”: {
+“group_by_create_time”: {
+“terms”: { “field”: “create_time” }
+}
+}
+}
+Lobster AI
+bash
+补充一点：上面 term 查询用 filter 而非 must，是因为 filter 不计算相关性评分 _score，性能更好——适合"状态等于已发布""价格在 100-200 之间"这类纯过滤场景。
+七、数据增量同步：怎么把 MySQL 的数据搬到 ES
+生产环境中，MySQL 通常作为主存储，ES 作为搜索的从库。如何把 MySQL 的变更实时同步到 ES？业内主要两条路。
+7.1 方案一：MQ 通知
+业务服务在写 MySQL 的事务内，同时发一条 MQ 消息。搜索服务作为消费者监听消息，收到后更新 ES 索引。
+这个方案的优势是灵活——消息体可以只携带变更字段，减少数据传输；MQ 自带持久化能力，搜索服务挂了消息不会丢。但代价是侵入性强——每个涉及搜索的业务点都要写 MQ 发送逻辑，团队大、服务多时维护成本不低。另外"数据库写成功但 MQ 发送失败"这种分布式事务问题也需要补偿机制兜底。
+7.2 方案二：Canal
+Canal 是阿里巴巴开源的一个 MySQL binlog 增量订阅中间件。它的原理很巧妙——把自己伪装成 MySQL 的从库，监听主库的 binlog，解析出 INSERT/UPDATE/DELETE 事件后推送给下游消费者。你可以理解为"给 MySQL 接了一个监听器，数据一变它就通知你"。
+Canal 最大的卖点是零侵入——业务代码一行不用改，直接订阅数据库日志就行。一致性也天然优于 MQ 方案，因为数据来源就是 binlog。但代价是运维成本高（Canal Server 需要独立部署和高可用），而且它只能感知到数据库层面的变更——如果你的同步逻辑涉及 Redis 缓存或外部 API 的数据加工，Canal 就无能为力了。
+7.3 选型对比
+对比维度 MQ 通知方式 Canal
+实时性 较高（受消费速率影响） 近乎实时
+数据一致性 需要事务消息或补偿机制 与数据库强一致
+业务侵入性 高，需在业务代码中埋点 零侵入
+开发成本 需开发生产 + 消费两端逻辑 需开发 binlog 解析与格式转换
+运维成本 中等（MQ 需高可用部署） 较高（Canal Server 需独立部署与维护）
+适用场景 多数据源、复杂业务逻辑 单一 MySQL 数据源、简单同步逻辑
+可能有人会问：两种方案到底怎么选？
+我的建议很简单：如果你只有一个 MySQL 数据源，同步逻辑就是"MySQL 多了/改了什么，ES 就跟着改"，直接上 Canal，省心。但如果数据源不止 MySQL（比如还有 MongoDB、外部 API），或者同步前需要做字段拼装、多表关联等业务加工，那就选 MQ 方案——灵活性更高。我个人两个方案都在项目里用过：早期团队小、业务简单时用 Canal 确实省了不少事；后来数据源多了、同步逻辑复杂了，才切到 MQ。所以这不是"谁更好"的问题，而是什么阶段适合什么方案。
+从倒排索引原理到 Docker 部署，从分词器到查询语法，再到数据同步方案，这篇 Elasticsearch 入门教程帮你把入门的坑都踩了一遍。这些内容在实际项目中够用了——剩下的高级功能（高亮搜索、Suggest 建议器、嵌套聚合等）建议在用到的场景下查官方文档，记忆效率更高。
+系列下一篇计划写 Spring Boot 如何集成 Elasticsearch，覆盖 RestHighLevelClient 和 Spring Data Elasticsearch 两种方式，感兴趣的可以关注。

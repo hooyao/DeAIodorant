@@ -1,0 +1,43 @@
+今天我们提到大型
+语言模型
+（LLM），第一个想到的就是 OpenAI 的 ChatGPT。一年来，ChatGPT 因其强大的性能，广泛的应用前景而爆火出圈。但谈到大型
+语言模型
+，ChatGPT 并不是第一个。
+一年前，也就是 OpenAI 发布 ChatGPT 的前两周，Meta 发布了一个名为 Galactica 的试用版模型。作为一个大型
+语言模型
+，Galactica 是在大量的论文、参考资料、
+知识库
+和许多其他来源的科学
+语料库
+上进行训练的，包括超过 4800 万篇论文、教科书和讲义、数百万种化合物和蛋白质知识、科学网站、百科全书等。
+彼时，Meta 声称 Galactica 能够总结学术文献、解决数学问题、生成 Wiki 文章、编写科学代码，甚至可以执行涉及化学公式和蛋白质序列的多模态任务。
+然而，上线不到三天，Galactica 就迅速下架了，原因是 Galactica 生成的文本不严谨，不负责任地胡编乱造。
+当时，「幻觉」这个词还没有成为
+机器学习
+领域的主流词汇，但 Galactica 可以说是因为严重的幻觉问题而被下架。
+图灵奖得主、Meta 首席科学家 Yann LeCun 为 Galactica 的下架感到非常遗憾，并发布推文：「再也不能用它来找乐子了。你们都开心了吗？」显然，LeCun 认为大家对 Galactica 的指责有些过分。
+有趣的是，就在同一周，关于 GPT-4 即将发布的传言不胫而走。11 月 30 日，当许多 AI 研究人员正在 NeurIPS 上讨论 OpenAI 可能要推出 GPT-4 时，ChatGPT 突然就发布了。
+当然， ChatGPT 很快也被发现有幻觉问题，这与 Galactica 和其他生成式 AI 一样。ChatGPT 会「滔滔不绝」，自信满满，但它的回答又是似是而非的。但值得注意的是，OpenAI 在发布 ChatGPT 的博客中明确指出了它这一弱点，并解释称：「解决这一问题极具挑战性。」
+接下来的事情大家都看到了，ChatGPT 迅速成为 LLM 「顶流」。在过去的一年里，它已经成为有史以来增长最快的服务之一。推出两个月后，月活用户就突破了 1 亿，现在每周用户也有约 1 亿。
+现在，Galactica 的故事又一次被提起。外媒 VentureBeat 资深撰稿人 Sharon Goldman 发布了一篇新文章，讲述了 Galactica 给 Meta 带来的经验教训。
+文章链接：https://venturebeat.com/ai/what-meta-learned-from-galactica-the-doomed-model-launched-two-weeks-before-chatgpt/
+关于 Galactica，Meta 公司 AI 研究副总裁 Joelle Pineau 在采访时向 VentureBeat 讲道：「我们学到了很多好的经验。这是一个很好的模型，我仍然收到很多人想要这个模型的请求。」
+「人们对产品会有一种期望，就像是你想要用它来撰写论文。但这并不是我们的初衷。」Pineau 强调说：「Galactica 从来就不是一个产品，而是一个研究项目。我们是抱着这样的目的发布的，我们做了一个低调的发布，把它放在 GitHub 上，研究人员在推特上发布了它，但是期望与研究之间的差距太大了。」
+当时的人们显然对模型幻觉十分惊讶，而幻觉这件事在一年后将变得稀松平常。其实，Galactica 的幻觉水平实际上低于其他模型，因为它是根据科学文献进行微调的。
+此外，在 VentureBeat 的文章中，作者 Sharon Goldman 也提到：令人庆幸的是，Galactica 的教训给 Llama 的发布上了一课。
+Meta 公司撤下了 Galactica 演示版，以确保人们不会被误导使用它。Pineau 表示：「如果让我今天来做这件事，我们会对发布进行管理。」当时，Meta 很可能错误地估计了人们对 Galactica 的期待，但 「我们已经将从中吸取的教训融入到下一代模型中了。」
+Meta 的下一代大型
+语言模型
+就是 LLaMA，它于 2023 年 2 月在 AI 研究领域掀起了一场风暴，随后在 7 月推出了商用的 LLaMA 2，8 月又推出了 Code LLaMA。随着 LLaMA 成为第一个主要的免费开源 LLM，开源 AI 开始崭露头角，并引发了一场热火朝天的讨论。
+LLaMA 于 2 月 24 日发布时，Meta 非常谨慎。Yann LeCun 在分享 LLaMA 论文时表示：「Meta 致力于开放研究，将在 GPL v3 许可证下向研究社区发布所有模型。」
+当被问及为什么研究人员必须填写表格才能访问 LLaMA 时，LeCun 回答道：「因为上次我们向所有人提供 LLM（ 旨在帮助科学家撰写科学论文的 Galactica）时，人们对我们嗤之以鼻，并告诉我们这将破坏社会结构。」
+看起来，LeCun 对 Galactica 的下架一直抱有「怨气」。
+如今，LeCun 也是马上就在推特上转发了 Sharon Goldman 这篇文章，说道：「舆论称我们现在所说的 LLM 幻觉会摧毁科学出版系统。结果，一个对科学家来说非常有用的工具被毁了。」最后他还表示：「以
+人工智能
+道德为幌子的误导性观点可能会适得其反。」这不得不让人联想到最近 LeCun 与另一位图灵奖得主 Geoffrey Hinton 关于「AI 监管」的辩论。
+Galactica 的第一作者 Ross Taylor 也在推特上发文表示：Galactica 在发布时因人手稀缺而没有对基础模型进行充分的检查，这导致了一些问题。他们原本希望通过公开演示来收集科学
+查询
+的数据，但这反而引起了误解和批评。但他们的研究仍然是有价值的，并且从这次经历中学到的教训已经用到了后续的 LLaMA 2 项目中。
+LeCun 更是用开源应「尽早发布，经常发布（release early, release often）」为 Galactica 再鸣不平。
+无论如何，掀起大模型浪潮的是 OpenAI 的 ChatGPT，在开源领域实现突破的是 LLaMA，Galactica 的故事已成过去。
+参考链接：https://venturebeat.com/ai/what-meta-learned-from-galactica-the-doomed-model-launched-two-weeks-before-chatgpt/

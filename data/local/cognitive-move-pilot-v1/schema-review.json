@@ -1,0 +1,190 @@
+{
+  "version": "cognitive-move-schema-review-1.0",
+  "date": "2026-09-14",
+  "reviewer": {
+    "agent_task": "/root/schema_review",
+    "runtime": "Codex subagent",
+    "model_family": "Astra",
+    "same_model_family_as_annotations": true,
+    "design_and_results_seen": true,
+    "blind_annotation": false,
+    "human_gold": false,
+    "counted_in_36_annotations": false,
+    "identity_note": "这是看过设计、映射和结果的同模型家族语义复核；判断仍可出错，不是独立人类验证。"
+  },
+  "read_scope": {
+    "instructions": [
+      "AGENTS.md（会话提供）",
+      "HANDOVER.md",
+      "docs/routes/compact-refiner/cognitive-move-pilot-v1.md",
+      "experiments/fixtures/cognitive_move_pilot_v1/annotation-instructions.md"
+    ],
+    "design": [
+      "data/local/cognitive-move-pilot-v1/run/design.json",
+      "data/local/cognitive-move-pilot-v1/run/key.json"
+    ],
+    "responses": [
+      "a1.json",
+      "a2.json",
+      "a3.json",
+      "b1.json",
+      "b2.json（仅 M01 的 pe17dfb4c 记录）"
+    ],
+    "complete_packet_documents": [
+      "pe4ca91d7",
+      "pcecccfc8",
+      "pa2529f2f",
+      "p683e4eea",
+      "pbac45350",
+      "p87fb2c0a",
+      "pe17dfb4c"
+    ],
+    "note": "响应与 packet 均位于本次 run 目录；b2 只看补充授权的已完成 M01 记录，未读取其余记录、b2/b3 partial、旧 reserve 或外部网站。"
+  },
+  "reviews": [
+    {
+      "id": "M04_estimate_attribution",
+      "locations": [
+        {
+          "file": "run/responses/a3.json",
+          "pointer": "/records/1/asserted_or_promised_content",
+          "packet_id": "pa2529f2f"
+        },
+        {
+          "file": "run/packets/pa2529f2f.json",
+          "block_id": "b015"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "packet:b015",
+          "quote": "本文作者给的参照是"
+        },
+        {
+          "source": "a3:/records/1/asserted_or_promised_content",
+          "quote": "所引自购手搓不低于 4000 元、贵过零售价只是估算。作者据此判 DIY 不省钱而换来自由"
+        }
+      ],
+      "judgment": "最保守判断为具体提出者覆盖不足。后句的“作者”明确承担后续判断，却不必回指估算提出者；整条记录及引文均未清楚绑定作者与四千元估算，不能记为归属敏感性成功。",
+      "alternative_interpretations": "“所引”可以指引号中的作者自述，冻结设计也承认保留引号会显得刻意。因此它不必意味着外部引述；记录未提网友或华强北背景，没有足够证据判成回填旧来源或归错主体。把它读成省略作者身份的压缩也成立。",
+      "preregistered_basis": "事先说明要求保留归属，本例专门改变估算提出者；只有 M05 次数被明确允许作为非核心覆盖探针。因此摘要压缩虽可理解，仍未满足本例目标信息的清楚呈现；不能把这一遗漏扩大为所有推断关系失败。",
+      "tighten_field": "需要。在新版本中把已纳入改述的估算命题绑定提出者，并区分提出者与引用后作判断者；未知时显式标记。",
+      "observable_limit": "仅依据输出，网友估算和作者估算都能容纳这段改述，说明具体来源没有被区分。这是输出的覆盖限制，不等于证明标注者心里误认了来源；对归属正确性的强结论应保持未定。"
+    },
+    {
+      "id": "M05_prior_or_foil_role",
+      "locations": [
+        {
+          "file": "run/responses/a1.json",
+          "pointer": "/records/5/prior_or_foil",
+          "packet_id": "pbac45350"
+        },
+        {
+          "file": "run/responses/a2.json",
+          "pointer": "/records/0/prior_or_foil",
+          "packet_id": "p87fb2c0a"
+        },
+        {
+          "file": "run/responses/a3.json",
+          "pointer": "/records/4/prior_or_foil",
+          "packet_id": "p683e4eea"
+        },
+        {
+          "file": "run/responses/b1.json",
+          "pointer": "/records/1/prior_or_foil",
+          "packet_id": "pbac45350"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pbac45350:b012",
+          "quote": "避免每次都重新计算"
+        },
+        {
+          "source": "a1:/records/5/prior_or_foil/status",
+          "quote": "这是解释机制时设置的计算基线与反面分支，不是归属于读者或他人的错误观点。"
+        },
+        {
+          "source": "a3:/records/4/prior_or_foil/status",
+          "quote": "没有必须纠正的前说"
+        }
+      ],
+      "judgment": "a1、a2、b1 的 text 非空，a3 为 null，但四条自由文字都解释缓存机制及条件对照，均未声称读者持有错误认识。词语或空值不同本身不构成核心关系分歧。",
+      "alternative_interpretations": "按“先前或被否定说法”的窄定义，运行情形不宜填入这个槽；按 foil 的宽义，计算基线可以是解释用的对照。现有字段名称与说明未把这两种角色彻底分开。",
+      "statistical_risk": "把非空 text 直接计作存在被反驳的 A，会把普通解释统计成纠正动作，且制造 a3 与其他记录的虚假语义冲突。当前证据支持字段角色歧义，不支持捏造先前观点。",
+      "tighten_field": "需要。新版本明确区分先前主张、被否定备选和机制中的条件对照；普通基线可放关系字段，统计须使用角色及文字语义。",
+      "preregistered_basis": "冻结说明允许没有 A，并要求不构造被反驳的 A。非空值实际描述的是原文明说的重算及反向条件；将其记为槽位角色不统一，比判为新增错误信念更稳妥。"
+    },
+    {
+      "id": "M04_reader_belief_evidence_referent",
+      "locations": [
+        {
+          "file": "run/responses/a1.json",
+          "pointer": "/records/0/prior_or_foil",
+          "packet_id": "pe4ca91d7"
+        },
+        {
+          "file": "run/responses/a2.json",
+          "pointer": "/records/1/prior_or_foil",
+          "packet_id": "pcecccfc8"
+        },
+        {
+          "file": "run/responses/a3.json",
+          "pointer": "/records/1/prior_or_foil",
+          "packet_id": "pa2529f2f"
+        },
+        {
+          "file": "run/responses/b1.json",
+          "pointer": "/records/5/prior_or_foil",
+          "packet_id": "pe4ca91d7"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pe4ca91d7:b017",
+          "quote": "\"坐等华强北发力\"是高赞评论"
+        },
+        {
+          "source": "b1:/records/5/prior_or_foil/status",
+          "quote": "评论只表明等待华强北，未证明其具体价格与复刻预期。"
+        }
+      ],
+      "judgment": "a2、a3、b1 保存这条评论，a1 留空。引文最多支持文章报道有人表达等待期待，不能支持复合 A 中的省钱或三百九十九美元精确复刻预期，也不证明读者普遍相信它。",
+      "alternative_interpretations": "非空字段可以是在保留局部态度线索。三条 status 明确限制评论含义，不是声称评论证明整个 A；这构成反对“已臆造读者信念”的实质反证。若严格要求它只支持 A 所述命题，填入则有绑定不清的问题。",
+      "statistical_risk": "嵌套位置容易让消费者把非空证据误连到整组 A。对象与数组的形状差异另需统一，但不能据此判语义错误。",
+      "tighten_field": "需要。新版本给每条证据绑定具体命题、持有者及报道层级，区分等待意向与价格信念；没有对应支持就标为空，不以高赞推算信念普及率。",
+      "evidence_limit": "所谓高赞仍是文章转报，未独立读取评论或核实点赞。它既不认证整组读者的信念，也不能把等待意向自动转成确定的技术或价格判断。"
+    },
+    {
+      "id": "M01_same_condition_role_check",
+      "locations": [
+        {
+          "file": "run/responses/a2.json",
+          "pointer": "/records/2/prior_or_foil",
+          "packet_id": "pe17dfb4c"
+        },
+        {
+          "file": "run/responses/b2.json",
+          "pointer": "/records/2/prior_or_foil",
+          "packet_id": "pe17dfb4c"
+        }
+      ],
+      "evidence": [
+        {
+          "source": "pe17dfb4c:title",
+          "quote": "开源不含硬件、国内不直邮"
+        },
+        {
+          "source": "b2:/records/2/prior_or_foil/status",
+          "quote": "这是标题可识别的否定对象"
+        }
+      ],
+      "judgment": "同一等义 packet 中，a2 留空因没有先前持有者；b2 填标题明确否定的两种可能，同时否认有读者信念证据。两者肯定内容、三路议程和非互斥关系兼容，未发现核心语义冲突。",
+      "alternative_interpretations": "b2 符合“被否定说法”的字面定义，a2 则把此槽较窄地理解为先前主张。不能因 b2 非空就推定它臆造误解，也不能仅因 a2 留空便判它遗漏了标题否定。",
+      "statistical_risk": "这提供了同条件下空值差异不等于语义冲突的直接实例。",
+      "tighten_field": "需要沿用角色区分：把否定对象是否可恢复与是否有先前持有者分别记录，避免一个空值承担两个问题。"
+    }
+  ],
+  "disposition": "仅保存本次复核；不改首次标注，不据这些局部问题计算总体准确率。建议只用于下一版字段设计和新材料检验。",
+  "path_base": "data/local/cognitive-move-pilot-v1"
+}

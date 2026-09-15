@@ -1,0 +1,788 @@
+{
+  "summary": {
+    "protocol": "translation-gate-1.0-frozen-validation",
+    "dataset": "data\\translation_holdout\\gold.jsonl",
+    "model": "qwen3.8-27b",
+    "backend": "nvidia-vllm-0.19.0-bf16",
+    "batch_size": 8,
+    "documents": 40,
+    "strict_performance": {
+      "calls": 40,
+      "valid_json": 40,
+      "wall_seconds": 125.514,
+      "prompt_tokens": 47790,
+      "completion_tokens": 2331,
+      "completion_tokens_per_second": 18.572,
+      "median_request_latency_seconds": 20.274,
+      "p95_request_latency_seconds": 25.334
+    },
+    "verifier_performance": {
+      "calls": 1,
+      "valid_json": 1,
+      "wall_seconds": 20.114,
+      "prompt_tokens": 1392,
+      "completion_tokens": 89,
+      "completion_tokens_per_second": 4.425,
+      "median_request_latency_seconds": 20.114,
+      "p95_request_latency_seconds": 20.114
+    },
+    "total_wall_seconds": 145.64,
+    "original_total": 20,
+    "original_admitted": 20,
+    "original_retention_rate": 1.0,
+    "translation_total": 20,
+    "translation_admitted": 1,
+    "translation_leak_rate": 0.05,
+    "target_passed": false
+  },
+  "records": [
+    {
+      "doc_id": "2e79d16e7b96fe51442f371d",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：张俊宝",
+          "四川省农村信用社联合社信息科技中心高级工程师桂俊鸿在采访中表示",
+          "无外文原作者或原始外文链接"
+        ]
+      },
+      "strict_latency_seconds": 17.345,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "3b75ef87a499f04df0b0e067",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：周正杭",
+          "作者介绍：梁军 微财数科 高级工程师...周正杭 微财数科 资深工程师",
+          "正文提及具体业务数据：目前图数据库中存放了近 20 亿条边和 1.8 亿个顶点...拦截发现欺诈团伙一千多次"
+        ]
+      },
+      "strict_latency_seconds": 25.334,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "458acad41347c74fa036146f",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "本文整理自腾讯操作系统研发高级工程师陶松桥在DIVE全球基础软件创新大会2022的演讲分享",
+          "演讲嘉宾：陶松桥，腾讯操作系统研发高级工程师",
+          "正文内容涉及腾讯内部产品TencentOS、OpenCloudOS及国内技术实践（如如意混部、悟能系统）"
+        ]
+      },
+      "strict_latency_seconds": 25.335,
+      "strong_original_evidence": [
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "47b5c430be2a1684a001e4d9",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：蚂蚁集团",
+          "三位标准负责人黄智聪、白晓媛、赵原均来自蚂蚁集团",
+          "标准负责人之一、蚂蚁摩斯算法专家赵原介绍...他表示：..."
+        ]
+      },
+      "strict_latency_seconds": 19.598,
+      "strong_original_evidence": [
+        "chinese_first_party_org_byline"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "5e8d387d4e35e5f065e42cd9",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：王峰（莫问）",
+          "本文整理自 Apache Flink 中文社区发起人、阿里巴巴开源大数据平台负责人王峰（莫问）在 Flink Forward Asia 2021 的分享",
+          "阿里巴巴实时计算团队去年开源了一个项目叫 AI flow"
+        ]
+      },
+      "strict_latency_seconds": 23.589,
+      "strong_original_evidence": [
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "6d3797a3e7f4dcc77236ba61",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：雷雨亭",
+          "2025 年 1 月 9 日...2025 年 InfoQ 极客传媒伙伴时刻 圆满结束",
+          "极客邦科技创始人兼 CEO 霍太稳 发表了开场致辞"
+        ]
+      },
+      "strict_latency_seconds": 22.488,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "716b0c8b5481b5059ae68f88",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：来炜、秦晓辉",
+          "正文开头明确提到“我们采访了快猫星云的来炜”",
+          "提及国内具体产品“夜莺监控”及公司“快猫星云”"
+        ]
+      },
+      "strict_latency_seconds": 20.043,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "7900fb228b65c0ff69fbfba0",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "本原创文章帖发布在华为开发者联盟社区",
+          "署名：HarmonyOS",
+          "正文列举了多位中文社区作者（如@七月、@MoonInk、@蓝瘦的蜕变、@钟子翔、@不羁的木木）的实战经验及对应的华为开发者联盟中文链接"
+        ]
+      },
+      "strict_latency_seconds": 24.465,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "7e78e1f44b2eef5de7691c10",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "主持人为 InfoQ 主编赵钰莹",
+          "以下为直播内容精编整理",
+          "华为云大咖说容器专场直播"
+        ]
+      },
+      "strict_latency_seconds": 16.129,
+      "strong_original_evidence": [
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "9c7ab033c81e663cab3b47ac",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "作者 | 蔡芳芳、华卫",
+          "AI 前线获悉",
+          "我们对李元庆进行了独家专访"
+        ]
+      },
+      "strict_latency_seconds": 15.673,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "be9bf6627bdbe0b171687c2c",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：凌敏",
+          "本期《超级连麦》，我们邀请到了...霍太稳（Kevin），InfoQ 极客传媒生态总监张昂",
+          "嘉宾介绍：赵充...霍太稳...（均为国内知名科技人物及公司）"
+        ]
+      },
+      "strict_latency_seconds": 21.818,
+      "strong_original_evidence": [
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "c06602a79bc033fe03155098",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "采访嘉宾 | 于佳（宗心）",
+          "编辑 | Tina",
+          "闲鱼技术团队客户端负责人...2012 年应届毕业加入阿里巴巴"
+        ]
+      },
+      "strict_latency_seconds": 17.91,
+      "strong_original_evidence": [
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "c1567529c23d7fb3b61a8ca9",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：网易有道技术团队",
+          "有道自主研发的「VF 原声翻译系统」",
+          "科技博主 @深度学习的 Alpha 狗在体验后表示"
+        ]
+      },
+      "strict_latency_seconds": 17.687,
+      "strong_original_evidence": [
+        "chinese_first_party_org_byline"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "c40c9c04915dc5ecfe3155f8",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：PingCAP技术团队",
+          "作者：杨可奥",
+          "原文：https://mp.weixin.qq.com/s/S92r86ulgIlXIEQFqJ3GZQ（中文微信公众号链接）"
+        ]
+      },
+      "strict_latency_seconds": 20.745,
+      "strong_original_evidence": [
+        "chinese_source_reprint",
+        "chinese_first_party_org_byline"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "cd341f16981b7dc3e83dff2a",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "作者：腾讯云大数据",
+          "原文：https://mp.weixin.qq.com/s/WUcuGRJwOnlfNW4XjS0JiA",
+          "腾讯云 EMR 产品针对这种场景都已经直接提供了开箱即用的能力"
+        ]
+      },
+      "strict_latency_seconds": 20.967,
+      "strong_original_evidence": [
+        "chinese_source_reprint",
+        "chinese_first_party_org_byline"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "d12545fabc3cd66649d937e0",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：肖杰韬、冯诗淳",
+          "阿里云本地产品分析（ACK AI助手、SysOM）",
+          "无外文来源标记或译自声明"
+        ]
+      },
+      "strict_latency_seconds": 17.687,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "d426c50b45bb6cb075ab1a58",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：信通院",
+          "中国信通院泰尔终端实验室王景尧博士到会致辞",
+          "中国信通院泰尔终端实验室专家曾晨曦对集成平台即服务系列标准的框架和内容进行了介绍和解读"
+        ]
+      },
+      "strict_latency_seconds": 20.506,
+      "strong_original_evidence": [
+        "chinese_first_party_org_byline"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "d88973bd031fd2dde6fd77a0",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：罗燕珊",
+          "OPPO 高管在接受媒体采访时坦言",
+          "一位体验过 OPPO Pad 并已预订的用户向 InfoQ 如此评价道"
+        ]
+      },
+      "strict_latency_seconds": 17.416,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "dcf0f856289fdd2b490eab0a",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：刘燕",
+          "据钛媒体 APP 报道称",
+          "根据 InfoQ 多方求证"
+        ]
+      },
+      "strict_latency_seconds": 14.51,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "edd5749762aa59efd2b8e791",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：张俊宝",
+          "字节跳动基础架构 / 服务框架团队负责人成国柱在 QCon 2021 的分享中表示",
+          "受访嘉宾：字节跳动 CloudWeGo 技术专家罗广明、杨芮、马子昂"
+        ]
+      },
+      "strict_latency_seconds": 22.003,
+      "strong_original_evidence": [
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "05ab17cb5ac1c2e51b81d454",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "声明：本文为 InfoQ 翻译，未经许可禁止转载。",
+          "原文链接：https://www.infoq.com/news/2025/05/apollo-graphql-mcp/",
+          "署名：Eran Stiller（外国人名）"
+        ]
+      },
+      "strict_latency_seconds": 20.722,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "0a19eda714b93a613f5ab22c",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：SOURAV RUDRA",
+          "原文链接：https://news.itsfoss.com/servo-rust-web-engine/",
+          "URL参数：?ref=news.itsfoss.com"
+        ]
+      },
+      "strict_latency_seconds": 19.186,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "22577d06aa423c7d807065a6",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：David Cassel",
+          "【声明：本文由 InfoQ 翻译，未经许可禁止转载。】",
+          "原文链接：https://thenewstack.io/mojos-chris-lattner-on-making-programming-languages-evolve/"
+        ]
+      },
+      "strict_latency_seconds": 20.506,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "31b5b61ebf10d5d5852cbd97",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "查看英文原文：",
+          "Anthropic Adds Sandboxing and Web Access to Claude Code for Safer AI-Powered Coding"
+        ]
+      },
+      "strict_latency_seconds": 15.632,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "505b28fe8eb798942198b933",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Aditya Kulkarni",
+          "——译者注",
+          "原文链接：Open Source Git Project Releases Version 2.40"
+        ]
+      },
+      "strict_latency_seconds": 16.222,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "573a665050cb23c1954ed27d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "在本文中，我将对元宇宙的概念进行描述",
+          "作者的一位研究同事曾将起步阶段便采用测试看作是软件项目的车头灯",
+          "非常感谢 Yashas Mavinakere、Jonathan Beltran、Dionny Santiago、Justin Phillips 和 Jason Stredwick 对本文所述工作的贡献。"
+        ]
+      },
+      "strict_latency_seconds": 23.248,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "584b830aefcf4b0f10b3197c",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "本文最初发布于 towards data science 网站，经原作者授权由 InfoQ 中文站翻译并分享",
+          "署名：Keith McNulty",
+          "原文链接：https://towardsdatascience.com/why-choose-between-r-and-python-b12bf409d0d0"
+        ]
+      },
+      "strict_latency_seconds": 22.814,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "5e0ffb111c9f4d84f8ab763c",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "Ines Montani 在 2024 年 4 月 伦敦 QCon 大会 上的演讲",
+          "原文链接 https://www.infoq.com/articles/ai-revolution-not-monopolized/"
+        ]
+      },
+      "strict_latency_seconds": 19.968,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "6b632cb0be638c8fc835b659",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "Increment 采访了 Datadog、Braze 和 BetterUp 的工程负责人",
+          "原文链接：https://increment.com/containers/containerization-at-scale/"
+        ]
+      },
+      "strict_latency_seconds": 16.872,
+      "strong_original_evidence": [
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名 Increment Staff 表明内容源自 Increment 媒体",
+          "正文包含对 Datadog、Braze 和 BetterUp 外国公司工程负责人的具体问答",
+          "文末明确提供原文链接 https://increment.com/containers/containerization-at-scale/，且正文结构与该英文访谈逐段对应"
+        ]
+      },
+      "verifier_latency_seconds": 20.114,
+      "admitted": false
+    },
+    {
+      "doc_id": "7d2f237a932242383955a32b",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Jordan Hawker",
+          "声明：本文为 InfoQ 翻译，未经许可禁止转载",
+          "原文链接：https://engineering.linkedin.com/blog/2022/accelerating-code-delivery-by-97--with-yarn-workspaces?accessToken"
+        ]
+      },
+      "strict_latency_seconds": 21.072,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "7f563d4e1c30b2a930ca5a0d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：KRISTIN O CONNELL",
+          "原文链接：https://www.linuxfoundation.org/en/press-release/new-mobile-native-foundation-to-foster-development-collaboration",
+          "译者简介：冬雨...非常乐意将国外新鲜的 IT 资讯和深度技术文章翻译分享给大家"
+        ]
+      },
+      "strict_latency_seconds": 22.814,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "9d9f371533e7f9a364f073a5",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "InfoQ 曾报道亚马逊...",
+          "InfoQ 还报道了谷歌...",
+          "Hacker News 上关于这篇论文的讨论中，多位用户分享了..."
+        ]
+      },
+      "strict_latency_seconds": 17.321,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "bf85f9108e5fa57c10854d30",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Leonardo Creed",
+          "本文最初发布于 Engineer’s Codex 博客",
+          "原文链接：https://engineercodex.substack.com/p/meta-xfaas-serverless-functions-explained"
+        ]
+      },
+      "strict_latency_seconds": 18.464,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "c6ef002483934a89375aec13",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "正文包含大量典型的翻译腔短语，如“据 Databricks 称”、“Databricks 认为”、“在其新闻通讯中评论道”，符合编译自英文科技新闻的特征",
+          "署名缺失，无法确认中文原创作者",
+          "提供的原文链接（https://www.infoq.com/news/2026/02/typescript-6-released-beta/）与文章标题及内容（Databricks Lakebase）严重不符，属于无效或错误链接，无法作为可靠的外文原作证据进行复核"
+        ]
+      },
+      "strict_latency_seconds": 33.075,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "c8a509ee43d514dcc862df48",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Chris The Data Guy",
+          "原文链接：https://towardsdatascience.com/artificial-intelligence-is-not-taking-your-coding-job-anytime-soon-5bf0df677ee8",
+          "作者介绍：Chris The Data Guy，全栈开发者，数据科学家。熟悉 Ruby、Python、React、AWS 等。"
+        ]
+      },
+      "strict_latency_seconds": 24.979,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "cb5bcbdff86b25adc6944efe",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Charlie Sorrel",
+          "原文链接：https://www.ifixit.com/News/90137/vision-pro-teardown-why-those-fake-eyes-look-so-weird",
+          "iFixit 表示... iFixit 还会出一篇文章"
+        ]
+      },
+      "strict_latency_seconds": 22.185,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "cd080d62276d8d0feefd1db7",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Michael Redlich",
+          "原文链接：Java News Roundup: Hibernate 6.0, JobRunr 5.0, JHipster 7.8.0, Spring CVEs, JReleaser 1.0-RC2"
+        ]
+      },
+      "strict_latency_seconds": 21.532,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "d6a38accae032ab7395281fd",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "查看英文原文：",
+          "Azure Front Door Outage: How a Single Control-Plane Defect Exposed Architectural Fragility"
+        ]
+      },
+      "strict_latency_seconds": 15.56,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "d8863cb00c6136e2fa230e48",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Steef-Jan Wiggers",
+          "（来源：微软社区博客文章）",
+          "原文链接：https://www.infoq.com/news/2025/05/azure-postgres-neon-ga/"
+        ]
+      },
+      "strict_latency_seconds": 19.563,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "ff07b00a6e4c547e0fa4d19f",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Sergio De Simone",
+          "原文链接：https://www.infoq.com/news/2026/01/gitlab-18-8-duo-agent-platform/"
+        ]
+      },
+      "strict_latency_seconds": 18.243,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    }
+  ]
+}

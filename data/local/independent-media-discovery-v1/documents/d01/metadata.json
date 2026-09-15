@@ -1,0 +1,41 @@
+{
+  "id": "d01",
+  "url": "https://post.smzdm.com/p/apw3m470/",
+  "search_id": "s08",
+  "result_position": 5,
+  "reason": "后期、同来源、扫地机器人购买比较；全文判断是否持续出现目标动作。",
+  "source_html_sha256": "ed70c32f7d1f6943257596b9319ddaec479982ffc242cec00aeda0fd10fc71d2",
+  "collected_at_utc": "2026-09-14T14:48:54.067125+00:00",
+  "extractor_version": "independent-media-extract-1.0",
+  "corpus_role": "discovery_assistant_nomination_not_validation_or_training",
+  "generation_model": "unknown",
+  "translation_status": "unresolved",
+  "reader_label": null,
+  "upstream_sources_fetched": false,
+  "media_inspected": false,
+  "rights_status": "再分发／训练许可未核实，仅供本次授权研究核验",
+  "title": "追觅 vs 云鲸高端扫地机？58位用户实测，结论在这",
+  "published_at": "2026-01-17T12:05:48+08:00",
+  "publication_evidence": {
+    "selector": "meta[property=\"article:published_time\"]",
+    "raw": "<meta content=\"2026-01-17T12:05:48+08:00\" property=\"article:published_time\"/>"
+  },
+  "source_type": "mixed_or_adapted_publisher_claim",
+  "source_type_evidence": "页面披露源自155位全网作者，content_json 引用多平台用户；混合／汇编是发布者声称的来源关系，未独立核验。",
+  "author": "",
+  "publisher_rights_statement": "本站内容未经书面许可,禁止一切形式的转载。",
+  "publisher_ai_disclosure": "内容由AI生成",
+  "publisher_attribution_claim": "源自155位全网作者",
+  "full_text_status": "complete_embedded_component_text_not_render_verified",
+  "limitations": [
+    "HTML 的可见正文容器为空；完整内容在同一公开响应 input#content_json 的 Base64 JSON 内。只离线解码，不追加请求。",
+    "8 个渲染组件全部解析；布局、交互、图片及上游引用未独立核实。",
+    "58位真实用户与52%/48%是发布方汇总声称，抽样方法和分母未核实。"
+  ],
+  "cohort": "post_2025_07",
+  "body_sha256": "2fe3e490e53ceebf69f03501285b9ec7dd934b6f11dbb6c6cfca6ce63a8299f3",
+  "characters": 2200,
+  "text_blocks": 37,
+  "literal_ershi": 0,
+  "literal_ershi_interpretation": "只作描述；不决定候选强度或质量。"
+}

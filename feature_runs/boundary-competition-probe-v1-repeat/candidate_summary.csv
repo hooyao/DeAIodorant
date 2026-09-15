@@ -1,0 +1,88 @@
+candidate_id,doc_id,source,format_stratum,published_at,line_number,head,prehead_text,span_cjk_chars,entropy_percentile,margin_percentile,ambiguous_gap_count,unresolved_distance_to_head,known_character_coverage,competition_stratum,reader_exposed_document
+bc-001,01578a91ddc41b76e5e62dd6,meituan_tech,technical_practice,2025-12-05,3,助手,国内外很多AI Coding,5,0.8435604568727846,0.21811736904293028,0,2,1.0,middle_or_unscored,False
+bc-002,01578a91ddc41b76e5e62dd6,meituan_tech,technical_practice,2025-12-05,15,修复,在集成测试环境可能需要较长定位,15,0.8509495492039133,0.13082677920583158,0,2,1.0,middle_or_unscored,False
+bc-003,07043b9acbd91c95a335e688,leiphone,industry_reporting,2026-07-17,8,任务,评估AI执行科学研究,8,0.13819816373374139,0.8251721499617445,0,2,1.0,low,False
+bc-004,17f9090867ec2eab8d17d1f5,meituan_tech,technical_practice,2026-01-26,79,需求,环境供给严格匹配训练,10,0.540745702165662,0.39930788122348737,0,2,1.0,middle_or_unscored,False
+bc-005,17f9090867ec2eab8d17d1f5,meituan_tech,technical_practice,2026-01-26,143,去噪,阶梯式动态算力分配+ 步级别,12,0.30281501340482575,0.6490616621983915,0,2,1.0,low,False
+bc-006,3d5f95580ea00bb7b085d00a,leiphone,research_summary,2026-01-14,43,计划,国家自然科学基金委原创探索,13,0.19746646795827125,0.747839046199702,0,2,1.0,low,False
+bc-007,414b1956b96dd8de905893d2,leiphone,industry_reporting,2026-08-06,249,项目,微软第一代人脸检测算法,11,0.9909855037154343,0.0004872700694359849,3,2,1.0,middle_or_unscored,False
+bc-008,4a0f975df81c40f1a7d4b50c,meituan_tech,technical_practice,2026-02-02,67,方案,设计系统化鲁棒性训练,10,0.8152489394954231,0.15550346059388256,0,2,1.0,middle_or_unscored,False
+bc-009,56c7879802ae9a2718a0b96c,huawei_cloud_community,technical_practice,2026-08-12,18,实例,华为云APIG专业版,6,0.048447828633587146,0.8713915153543637,0,1,1.0,low,False
+bc-010,5c38d60809d31c4fe29840e6,leiphone,research_summary,2026-01-14,39,组织,清华大学多个重要学术,10,0.7474882786336235,0.25474436258093325,0,2,1.0,middle_or_unscored,False
+bc-011,5c38d60809d31c4fe29840e6,leiphone,research_summary,2026-01-14,42,模型,新一代大规模预训练语言,11,0.7243269582165915,0.2355950785722987,0,2,1.0,middle_or_unscored,False
+bc-012,610070e7610c1439192aa935,huawei_cloud_community,technical_practice,2026-08-12,38,追平,Nine Data增量复制任务,6,0.3160404987030374,0.6186093213956991,0,2,1.0,low,False
+bc-013,62de5adcc023c6b1dcd591fc,leiphone,industry_reporting,2026-07-23,42,限额,单模型独立限额+ 代码工具单独,13,0.03248882265275708,0.968107302533532,0,2,1.0,low,False
+bc-014,62de5adcc023c6b1dcd591fc,leiphone,industry_reporting,2026-07-23,42,耗量,单模型独立限额Opus,7,0.15876840696117805,0.7971441320838911,0,2,1.0,low,False
+bc-015,7baf01d32a658840d496c78d,leiphone,industry_reporting,2026-08-28,20,分叉,同时从同一个base SHA,6,0.8468747385156054,0.18349928876244664,0,3,1.0,middle_or_unscored,False
+bc-016,7f42b95c6b4b88db46161b32,infoq,industry_reporting,2026-06-26,1,计划,Open AI多代芯片开发,6,0.724541879340641,0.2762948707221153,0,2,1.0,middle_or_unscored,False
+bc-017,7f42b95c6b4b88db46161b32,infoq,industry_reporting,2026-06-26,24,战略,Open AI长期全栈基础设施,8,0.22637719969395562,0.6908951798010712,0,2,1.0,low,False
+bc-018,7f42b95c6b4b88db46161b32,infoq,industry_reporting,2026-06-26,35,产品,OpenAI未来一系列芯片,7,0.9682284694332887,0.009370816599732263,1,2,1.0,middle_or_unscored,False
+bc-019,9b45f03f8b38cecd9a3c6df1,leiphone,research_summary,2026-01-16,7,现象,多模态大语言模型幻觉,10,0.05291359678499665,0.9191783880330431,0,2,1.0,low,False
+bc-020,9b45f03f8b38cecd9a3c6df1,leiphone,research_summary,2026-01-16,19,数据,LLa VA-RLHF人工标注,4,0.8875660391398169,0.15767542227844333,0,2,1.0,middle_or_unscored,False
+bc-021,9d814ad838be91620e09d709,leiphone,industry_reporting,2026-08-18,34,硬盘,6000元的15.36TB企业级NVMe,5,0.07191807798345805,0.8236313509255613,0,1,1.0,low,False
+bc-022,a1f6f3138b47bb39b958e8ad,leiphone,industry_reporting,2026-08-20,44,动力,人形机器人新势力逐际,10,0.773163652601027,0.2173476222371065,0,1,1.0,middle_or_unscored,False
+bc-023,b9a948f863659c8f3a29aa2e,infoq,industry_reporting,2025-12-15,4,文本,蚂蚁数科首期开源实时,10,0.2105380665327082,0.7051797276177718,0,2,1.0,low,False
+bc-024,b9a948f863659c8f3a29aa2e,infoq,industry_reporting,2025-12-15,7,规模,中国商业智能软件市场,10,0.49765572672471536,0.47979459700826077,0,2,1.0,middle_or_unscored,False
+bc-025,b9a948f863659c8f3a29aa2e,infoq,industry_reporting,2025-12-15,11,提问,专业数据分析人员口语化,11,0.6345474479230113,0.46643927396759655,0,1,1.0,middle_or_unscored,False
+bc-026,c98ff40762ef97561dd8d4b6,leiphone,industry_reporting,2026-08-17,109,升级,Work Buddy这次资料库,5,0.9160299330445058,0.08530917684127609,0,3,1.0,middle_or_unscored,False
+bc-027,d81b11f771ef03a3eebfa22b,leiphone,industry_reporting,2026-08-22,113,品牌,韩国KG集团旗下咖啡,8,0.1237566947207345,0.8090091813312931,0,2,1.0,low,False
+bc-028,e072caa3829e12ff78153de8,leiphone,research_summary,2026-08-25,14,博士,纽约大学阿布扎比分校,10,0.3132395624023219,0.7051797276177718,0,2,1.0,low,False
+bc-029,f5083c652cc0e68c4e62facb,leiphone,research_summary,2026-01-22,18,数据,人类第一视角手部操作,10,0.39026568430453223,0.6851417727171244,0,2,1.0,low,False
+bc-030,f5083c652cc0e68c4e62facb,leiphone,research_summary,2026-01-22,26,数据,人类第一视角手部操作,10,0.39026568430453223,0.6851417727171244,0,2,1.0,low,False
+bc-031,f5083c652cc0e68c4e62facb,leiphone,research_summary,2026-01-22,27,维度,不同机器人之间action,7,0.7878625613565372,0.2755912539045069,0,2,1.0,middle_or_unscored,False
+bc-032,f5083c652cc0e68c4e62facb,leiphone,research_summary,2026-01-22,42,项目,国家自然科学基金原创探索,12,0.22386058981233245,0.722117962466488,0,2,1.0,low,False
+bc-033,11412c28f4e9f57ba51394d4,leiphone,research_summary,2026-01-26,4,团队,上海交通大学Sci Master,6,0.8414358631076897,0.17898083842356288,0,2,1.0,middle_or_unscored,False
+bc-034,11412c28f4e9f57ba51394d4,leiphone,research_summary,2026-01-26,18,模型,Union Jack格子Bose–Hubbard,2,0.7904078993769836,0.4864229458093335,0,2,1.0,middle_or_unscored,False
+bc-035,26736a49931b903224cec3c1,leiphone,industry_reporting,2025-08-31,17,学部,宁波东方理工大学信息,10,0.5321500334896182,0.4768921634293369,0,2,1.0,middle_or_unscored,False
+bc-036,26736a49931b903224cec3c1,leiphone,industry_reporting,2025-08-31,127,能力,高质量传感器数据生成,10,0.690332663540969,0.27919178388033045,0,2,1.0,middle_or_unscored,False
+bc-037,31b9f34036f98ffdc181a730,qbitai,industry_reporting,2026-08-11,63,公司,深圳雷柯智能技术有限,10,0.5439830319267693,0.47979459700826077,0,2,0.9,middle_or_unscored,False
+bc-038,31b9f34036f98ffdc181a730,qbitai,industry_reporting,2026-08-11,63,公司,北京硅基公园科技有限,10,0.3247376646572896,0.6047108729627149,0,2,1.0,low,False
+bc-039,46c25b3c75a94fd88dc89436,leiphone,industry_reporting,2026-08-20,1,增速,阿里云外部商业化收入,10,0.7261665550346059,0.2755079258763117,0,2,1.0,middle_or_unscored,False
+bc-040,46c25b3c75a94fd88dc89436,leiphone,industry_reporting,2026-08-20,3,排名,智能体评测Artificial Analysis Agentic全球榜单中,10,0.4981022549676267,0.47979459700826077,0,1,1.0,middle_or_unscored,False
+bc-041,4ac38060ef9fda3dd54c5fa0,leiphone,research_summary,2026-03-18,5,任务,Multi Animate在多人物动画生成,8,0.8140780413159908,0.23986228003060445,0,2,1.0,middle_or_unscored,False
+bc-042,4ac38060ef9fda3dd54c5fa0,leiphone,research_summary,2026-03-18,39,学院,上海交通大学人工智能,10,0.7157847733869167,0.2586514847064077,0,4,1.0,middle_or_unscored,False
+bc-043,4c612ff79d4b3405cfb5d856,leiphone,research_summary,2026-08-25,68,科技,空间智能创业公司生境,10,0.45333779861576246,0.47979459700826077,0,1,1.0,middle_or_unscored,False
+bc-044,70a6f689c1baebab078c438b,qbitai,industry_reporting,2026-08-22,115,形态,当前采集终端而非最终产品,12,0.881769436997319,0.15147453083109919,0,2,1.0,middle_or_unscored,False
+bc-045,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,1,报告,全球大语言模型安全防范能力测评,15,0.18012660656052176,0.8171877997314406,0,2,1.0,low,False
+bc-046,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,2,公司,东壁科技数据有限责任,10,0.32719356999330207,0.6047108729627149,0,2,1.0,low,False
+bc-047,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,2,学院,上海财经大学数字经济,10,0.7161196695691002,0.2586514847064077,0,2,1.0,middle_or_unscored,False
+bc-048,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,2,报告,全球首份大语言模型科技安全专项测评,17,0.14674493062966915,0.8324439701173959,0,2,1.0,low,False
+bc-049,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,3,报告,全球大语言模型安全防范能力测评,15,0.18012660656052176,0.8171877997314406,0,2,1.0,low,False
+bc-050,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,6,院长,上海财经大学数字经济学院,12,0.7805630026809651,0.2898123324396783,0,2,1.0,middle_or_unscored,False
+bc-051,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,8,平台,东壁全球科技文献数据,10,0.23677160080375084,0.7145568207189105,0,2,1.0,low,False
+bc-052,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,8,参考,"34,452条科技类百科条目构建RAG检索",12,0.3022788203753351,0.6683646112600536,0,2,1.0,low,False
+bc-053,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,14,院长,上海财经大学数字经济学院,12,0.7805630026809651,0.2898123324396783,0,2,1.0,middle_or_unscored,False
+bc-054,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,16,排名,海内外主流大模型分层,10,0.6539406117436928,0.3526456798392498,0,2,1.0,middle_or_unscored,False
+bc-055,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,16,模型,Anthropic旗下三款Claude,4,0.07474514472803036,0.9212739043083563,0,1,1.0,low,False
+bc-056,7a49c258c6ec3fd29437ce0e,leiphone,research_summary,2026-07-02,19,模型,其中字节豆包轻量化开源,11,0.6697527104397613,0.32062370568887805,0,1,1.0,middle_or_unscored,False
+bc-057,886ff571128f4b9099adf813,huawei_cloud_community,technical_practice,2026-08-07,75,领域,95个数据库37个专业,7,0.10165104863900044,0.8240071396697902,0,2,1.0,low,False
+bc-058,9115509e9b152bc35d6db70b,leiphone,research_summary,2026-07-15,29,智能,中国科学技术大学人工,10,0.7346505916499219,0.29415048001786115,0,2,1.0,middle_or_unscored,False
+bc-059,9115509e9b152bc35d6db70b,leiphone,research_summary,2026-07-15,56,智能,中国科学技术大学人工,10,0.7346505916499219,0.29415048001786115,0,2,1.0,middle_or_unscored,False
+bc-060,96ad6f52db2b0a64cf69bae9,leiphone,research_summary,2025-12-22,41,分校,美国加州大学圣塔芭芭拉,11,0.41040321598245827,0.5640151053721525,0,3,1.0,low,False
+bc-061,994240bbf249a9c205789fdd,leiphone,industry_reporting,2025-12-23,5,主任,国家超级计算深圳中心副,11,0.24107686685345353,0.7139724692410768,0,1,0.9090909090909091,low,False
+bc-062,ab6e4654d53c0555ddc48fb4,leiphone,research_summary,2026-08-24,3,模型,定义通用世界模型世界,10,0.7218129046662202,0.23956240232194687,0,2,1.0,middle_or_unscored,False
+bc-063,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,21,周期,智能机器人模型研发项目建设,13,0.47690014903129657,0.5715350223546944,0,2,1.0,low,False
+bc-064,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,21,领域,全球高性能通用机器人,10,0.7764009823621344,0.23956240232194687,0,3,1.0,middle_or_unscored,False
+bc-065,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,179,晚会,2021年中央电视台春节联欢,10,0.3085510158517526,0.69803527573119,0,2,1.0,low,False
+bc-066,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,179,晚会,2025年中央电视台春节联欢,10,0.3085510158517526,0.69803527573119,0,2,1.0,low,False
+bc-067,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,179,晚会,2026年中央电视台春节联欢,10,0.3085510158517526,0.69803527573119,0,2,1.0,low,False
+bc-068,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,194,迭代,AI时代高性能通用机器人产品快速,14,0.6805369127516778,0.3018456375838926,0,2,1.0,middle_or_unscored,False
+bc-069,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,194,需求,高性能通用机器人性能,10,0.9778968519758875,0.055760214333556594,1,2,1.0,middle_or_unscored,False
+bc-070,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,197,起售价,公司Go2 Air四足机器人,7,0.5596608656849621,0.4071396697902722,0,3,1.0,middle_or_unscored,False
+bc-071,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,260,技术,高紧凑度机器人身体集成,11,0.8776952125715678,0.10707759775855769,0,2,1.0,middle_or_unscored,False
+bc-072,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,316,设施,具身智能模型训练基础,10,0.44351417727171244,0.47979459700826077,0,2,1.0,middle_or_unscored,False
+bc-073,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,336,模型,通用机器人多模态基础,10,0.7593212770707747,0.23972985041303863,0,2,1.0,middle_or_unscored,False
+bc-074,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,354,技术,相关具身本体智能模型,10,0.7290689886135298,0.3125697700379549,0,2,1.0,middle_or_unscored,False
+bc-075,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,356,进展,相关具身大模型技术研发,11,0.08003410890486051,0.888476062857839,0,2,1.0,low,False
+bc-076,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,365,产品,公司高性能通用机器人,10,0.7702612190221031,0.23956240232194687,0,3,1.0,middle_or_unscored,False
+bc-077,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,396,基础,以中低减速比行星齿轮传动为,13,0.6070044709388972,0.3561847988077496,0,1,1.0,middle_or_unscored,False
+bc-078,b4951d07196e37158e50c479,qbitai,industry_reporting,2026-08-11,396,控制,通过电机力矩高带宽闭环,11,0.8780606651236448,0.1586064076014131,0,2,1.0,middle_or_unscored,False
+bc-079,b619e8f574a6d547408c529b,huawei_cloud_community,technical_practice,2026-08-06,75,显存,单节点最大可用GPU,7,0.9954484605087015,0.016599732262382864,1,2,1.0,middle_or_unscored,False
+bc-080,c7dbdacbe83bdc3ede8aca7d,leiphone,industry_reporting,2026-06-25,17,账号,约2.4万个中国相关,7,0.2930834448906738,0.699776885319054,0,2,1.0,low,False
+bc-081,ca9d961bc6549d74c87b59be,leiphone,industry_reporting,2026-08-28,24,系统,全新品类M1/R1耗材回收,8,0.930087987758225,0.07593726090283091,0,2,1.0,middle_or_unscored,False
+bc-082,d051b45b600d45b1a7106a02,qbitai,industry_reporting,2026-08-10,263,公司,另一家清华系具身机器人初创,13,0.9396423248882265,0.09955290611028315,0,2,1.0,middle_or_unscored,False
+bc-083,d099a0bff3f2e1628f079d57,leiphone,industry_reporting,2025-12-31,40,平台,一些AI全自动科学实验,9,0.5965797877820129,0.4959307716081178,0,2,1.0,middle_or_unscored,False
+bc-084,d099a0bff3f2e1628f079d57,leiphone,industry_reporting,2025-12-31,44,教授,北京大学科学智能学院助理,12,0.4193029490616622,0.5457104557640751,0,2,1.0,low,False
+bc-085,f63b95ee6c9fb8009d785b1f,huawei_cloud_community,technical_practice,2026-08-07,177,诉求,同ID时间戳merge两个核心,8,0.8522379495026778,0.13092960979342005,0,2,1.0,middle_or_unscored,False
+bc-086,f63b95ee6c9fb8009d785b1f,huawei_cloud_community,technical_practice,2026-08-07,184,机制,WAL+文档存储列族双层,8,0.37806044376434583,0.5764154552410099,0,2,1.0,low,False
+bc-087,fe68f11b0d628ad9619edb7b,huawei_cloud_community,technical_practice,2026-08-07,1,团队,互联网公司质量基础设施,11,0.018759897673285418,0.96723108783043,0,2,1.0,low,False

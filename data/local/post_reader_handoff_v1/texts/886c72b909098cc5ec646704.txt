@@ -1,0 +1,21 @@
+VS Code、Cursor 打得火热，JetBrains 扛不住了？
+本周，JetBrains 宣布停止开发 Fleet 这款 IDE。该产品自 2021 年推出以来一直停留在公开预览阶段，从未真正“转正”。接下来，公司将把更多精力投入到一款面向智能体（agentic）开发的全新开发环境 Air 上。
+JetBrains 旗下有一整套 IDE 产品线，但大多都基于同一个 IntelliJ 核心平台，该平台运行在 JVM（Java 虚拟机）之上。旗舰产品 IntelliJ IDEA 最早发布于 2001 年，至今已经快 25 年。几年前，JetBrains 觉得有必要重新做一款从零设计的新产品：更轻量、更适合协作，对远程项目也要做到一流支持。与此同时，微软的 Visual Studio Code（VS Code）正是凭借这些特性迅速崛起，给 JetBrains 带来了不小压力。
+当时 JetBrains 的规划是：一方面继续演进基于 IntelliJ 的传统 IDE，另一方面推出一款全新架构的 Fleet。官方在首发博文中强调，Fleet 是“从零起步打造的新架构和新界面”。
+Fleet 确实赢得了一部分开发者的青睐，但大多数人依然难以从熟悉的 IntelliJ 系列上“挪窝”。IntelliJ 完整的插件生态，以及 Fleet 长期处于“永远公测”的状态，都是原因之一。今年 2 月，JetBrains 发布了一款基于 Fleet 的 Kotlin Multiplatform 跨平台开发 IDE，但很快就被砍掉，改为加强 IntelliJ 对该场景的支持。当时外界就已开始怀疑 Fleet 本身还能撑多久。
+事实证明，这些担忧不无道理。JetBrains 本周在公告中表示：“自 2025 年 12 月 22 日起，Fleet 将不再提供下载。我们正在打造一款聚焦智能体开发的新产品。”
+公司给出的解释是：维持两条 IDE 产品线既容易让用户困惑，也分散了内部精力。“我们既没能用 Fleet 取代 IntelliJ IDEA，也没能把它收窄到一个清晰、差异化的细分赛道。”IntelliJ IDEA 负责人 Aleksey Stukalov 和产品经理 Ekaterina Prigara 写道。
+并且，随着人工智能技术的成熟，他们曾探索过将 Fleet 打造成一款以人工智能为核心的编辑器，但“最终确认，再推出一款人工智能编辑器并不会脱颖而出，尤其是在充斥着大量以人工智能为核心的 VS Code 分支的市场中。”
+他们同时强调，Fleet 是一次有价值的尝试，其多个组件现已被整合进 JetBrains 其他 IDE 中。
+严格来说，Fleet 也并非彻底“死亡”。目前处于公测阶段的全新智能体开发产品 Air，就是基于 Fleet 平台演化而来，但针对的是一种全新的工作流。
+“我们越来越清楚地认识到，最佳方案是强化现有 IDE 中的人工智能工作流程。然而，人工智能的飞速发展揭示了 Fleet 更为契合的另一个细分市场。”这个细分市场看起来是这样的：
+当我们在编辑器中探索 AI 能力时，一种全新的开发工作流也开始逐渐成形。开发者开始将真正重要的任务交给智能体（agent）处理——更新测试、清理代码、重构模块、探索陌生代码路径，甚至构建全新的功能。这些任务会异步运行，并直接返回完整的补丁。开发者不再亲自写代码，而是负责指导智能体、并审阅其产出。这与经典 IDE 的工作流有着本质区别：传统模式基于即时反馈、同步控制，以及一个稳定的本地状态。
+智能体式（agentic）循环依赖于结构化的任务定义、上下文组装、多轮异步执行、隔离的运行环境，以及“审阅优先（review-first）”的工作方式。要在一个单一工具中把这些全部整合，会带来割裂的体验。因此，Fleet 团队选择不再继续与传统 IDE 和代码编辑器竞争，而是转向打造一款专注于智能体工作流的新产品：智能体开发环境（agentic development environment）。这一全新的环境以 Fleet 平台为基础，但将以全新产品、全新名称的方式发布。技术、团队和长期方向都会延续，但产品身份与目标市场将发生变化。
+Air 目前已开放公测，但使用需要绑定 Anthropic 订阅。规划中的功能包括：支持 Windows 和 Linux（目前仅完全支持 macOS）、在浏览器中运行、接入更多智能体（如 Codex、Gemini、Junie），以及云端执行模式，让 Air 在开发者离线后依然可以在云端继续运行。
+喜欢 Fleet 的开发者难免感到失落。“这是一个错误决定。Fleet 原本有机会把 JetBrains 优秀的工具链带进一个可以对标 VS Code（以及如今的 Zed）的新产品……”有用户如此吐槽。
+把时间线拉长看，这其实是一种重复出现的模式：Fleet 的定位是和 VS Code 竞争，而 Air 则是瞄准新一波 AI 编程工具，包括 AWS Kiro、Google Antigravity、Cursor 等。微软的 VS Code 自身也已经转向以 AI 为中心。JetBrains 再次选择了推出全新产品，以跟上软件开发的发展趋势。
+不过，一些开发者质疑是否有必要开发全新的工具。“我更希望 JetBrains 能发挥其强大的 IDE 的优势，并在现有功能的基础上添加这些智能功能，”一位开发者表示。
+如何说服开发者从现有工具迁移到 Air，上一次 JetBrains 没能说动他们改用 Fleet，这一次恐怕也不会轻松。
+参考链接：
+https://devclass.com/2025/12/09/jetbrains-abandons-fleet-ide-pins-hopes-on-forthcoming-air-agentic-development-tool/
+https://blog.jetbrains.com/fleet/2025/12/the-future-of-fleet/

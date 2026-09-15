@@ -1,0 +1,85 @@
+{
+  "schema_version": "post-reader-corpus-validation-1.1",
+  "checked_at": "2026-08-29T17:05:48.040885+00:00",
+  "handoff_root": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_handoff_v2",
+  "repository_root": "C:\\Users\\HuYao\\.codex\\worktrees\\9b66\\DeAIodorant",
+  "valid": true,
+  "reader_development_ready": true,
+  "errors": [],
+  "warnings": [],
+  "counts": {
+    "indexed_documents": 97,
+    "structurally_readable_documents": 97,
+    "sources": {
+      "huawei_cloud_community": 23,
+      "infoq": 10,
+      "leiphone": 40,
+      "meituan_tech": 11,
+      "qbitai": 13
+    },
+    "topics": {
+      "ai_models_agents": 59,
+      "business_industry": 22,
+      "data_infrastructure": 13,
+      "software_engineering": 3
+    },
+    "formats": {
+      "industry_reporting": 43,
+      "research_summary": 18,
+      "technical_practice": 36
+    }
+  },
+  "coverage": {
+    "eligible_topics": [
+      "ai_models_agents",
+      "business_industry",
+      "data_infrastructure"
+    ],
+    "eligible_sources": [
+      "huawei_cloud_community",
+      "leiphone",
+      "qbitai"
+    ],
+    "source_format_counts": {
+      "huawei_cloud_community": {
+        "technical_practice": 22,
+        "research_summary": 0,
+        "industry_reporting": 1
+      },
+      "infoq": {
+        "technical_practice": 2,
+        "research_summary": 0,
+        "industry_reporting": 8
+      },
+      "leiphone": {
+        "technical_practice": 2,
+        "research_summary": 16,
+        "industry_reporting": 22
+      },
+      "meituan_tech": {
+        "technical_practice": 10,
+        "research_summary": 1,
+        "industry_reporting": 0
+      },
+      "qbitai": {
+        "technical_practice": 0,
+        "research_summary": 1,
+        "industry_reporting": 12
+      }
+    }
+  },
+  "limits": {
+    "post_start": "2025-07-01",
+    "minimum_documents": 36,
+    "minimum_sources": 2,
+    "minimum_documents_per_source": 12,
+    "minimum_topics": 3,
+    "minimum_documents_per_topic": 6,
+    "required_formats": [
+      "technical_practice",
+      "research_summary",
+      "industry_reporting"
+    ],
+    "minimum_documents_per_format": 6
+  }
+}

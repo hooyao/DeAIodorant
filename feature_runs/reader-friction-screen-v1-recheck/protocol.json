@@ -1,0 +1,326 @@
+{
+  "schema_version": "deaiodorant-reader-friction-screen-1.0",
+  "protocol_version": "raw-passage-friction-screen-development-1.0",
+  "status": "frozen_before_outcomes",
+  "frozen_at": "2026-08-22",
+  "seed": 2026082202,
+  "role": "development_screen_not_validation",
+  "reader_question": "After reading this original passage, how willing are you to continue?",
+  "source_policy": {
+    "period": "transition",
+    "sources": [
+      "infoq",
+      "jiqizhixin"
+    ],
+    "prior_reader_exposed_documents_excluded": true,
+    "style_feature_scores_used_for_selection": false,
+    "one_passage_per_document": true
+  },
+  "sampling_policy": {
+    "per_source_and_length_stratum": 4,
+    "length_bands_cjk_chars": {
+      "short": [
+        120,
+        159
+      ],
+      "medium": [
+        160,
+        199
+      ],
+      "long": [
+        200,
+        360
+      ]
+    },
+    "passage_count": 24
+  },
+  "followup_gate": {
+    "eligible_ratings": [
+      "不太愿意继续读",
+      "完全不愿意继续读"
+    ],
+    "minimum_eligible_for_intervention": 4,
+    "maximum_intervention_passages": 8,
+    "if_fewer_than_minimum": "Run another fresh raw-passage screen; do not intensify edits on acceptable passages.",
+    "if_more_than_maximum": "Take the lowest rating first, then use the frozen follow-up priority; do not use comments for selection.",
+    "comments_used_for_selection": false
+  },
+  "candidate_diagnostics": {
+    "eligible_passage_count": 463,
+    "eligible_document_count": 55,
+    "eligible_by_stratum": {
+      "infoq/long": 69,
+      "infoq/medium": 89,
+      "infoq/short": 210,
+      "jiqizhixin/long": 18,
+      "jiqizhixin/medium": 16,
+      "jiqizhixin/short": 61
+    }
+  },
+  "passages": [
+    {
+      "task_number": 1,
+      "doc_id": "cf88120b3afa80da3fc4c302",
+      "source": "infoq",
+      "published_at": "2023-12-20",
+      "line_number": 20,
+      "length_band": "short",
+      "cjk_chars": 154,
+      "passage_sha256": "70a9d5bc4870976de4155d7a5344ebac3c1bd545d57d36a06f24507695421566",
+      "followup_priority": 21
+    },
+    {
+      "task_number": 2,
+      "doc_id": "3d2cea36287cf278258bee81",
+      "source": "infoq",
+      "published_at": "2025-01-16",
+      "line_number": 50,
+      "length_band": "long",
+      "cjk_chars": 272,
+      "passage_sha256": "31bff7e52a22ab1acc14b2bad90ffd29b8d9d602d44fdf503af7ab2659067abe",
+      "followup_priority": 6
+    },
+    {
+      "task_number": 3,
+      "doc_id": "9f1d90b6ac15dd29465af213",
+      "source": "jiqizhixin",
+      "published_at": "2023-03-27",
+      "line_number": 26,
+      "length_band": "long",
+      "cjk_chars": 331,
+      "passage_sha256": "3d0be735dc087ed34c775f6125da789a1cadd38a4ac778a6fe5a2e9465394b6d",
+      "followup_priority": 16
+    },
+    {
+      "task_number": 4,
+      "doc_id": "ca20838db88af51d53f9d94f",
+      "source": "infoq",
+      "published_at": "2024-04-29",
+      "line_number": 30,
+      "length_band": "medium",
+      "cjk_chars": 171,
+      "passage_sha256": "575166c3b2889f7f26a2fa5d7edcd02465d5f318d0d27f4cb688b3b57468a864",
+      "followup_priority": 13
+    },
+    {
+      "task_number": 5,
+      "doc_id": "e9d24bfa7ebff01c6a08c4fb",
+      "source": "jiqizhixin",
+      "published_at": "2024-05-30",
+      "line_number": 60,
+      "length_band": "medium",
+      "cjk_chars": 193,
+      "passage_sha256": "53d9d483d8d1c0c7fef3efc8be2ec2c88eaf18ebaa8526b4c74625b2cd04e578",
+      "followup_priority": 2
+    },
+    {
+      "task_number": 6,
+      "doc_id": "32820b09ec8dd3edac07c47f",
+      "source": "infoq",
+      "published_at": "2023-12-07",
+      "line_number": 19,
+      "length_band": "long",
+      "cjk_chars": 237,
+      "passage_sha256": "a3d601c183179fa57facc876f87e6fa2148f4022be2246da4135e9882b1e57df",
+      "followup_priority": 14
+    },
+    {
+      "task_number": 7,
+      "doc_id": "8edbbf17c05ba07ef9db5e86",
+      "source": "infoq",
+      "published_at": "2023-02-25",
+      "line_number": 90,
+      "length_band": "long",
+      "cjk_chars": 295,
+      "passage_sha256": "1742a420d96395800698fb08dede711ac43c3af6cdc3d4502ac30ac78ac8ec89",
+      "followup_priority": 5
+    },
+    {
+      "task_number": 8,
+      "doc_id": "3729e9b9209e427e19e16173",
+      "source": "infoq",
+      "published_at": "2025-02-13",
+      "line_number": 18,
+      "length_band": "short",
+      "cjk_chars": 125,
+      "passage_sha256": "685f2968f9c6c905ec67aa41ce2699f7c6522ca2492c58edc4ebe8d4fdaee8df",
+      "followup_priority": 9
+    },
+    {
+      "task_number": 9,
+      "doc_id": "78c8f407c8d04f43bd8907f5",
+      "source": "infoq",
+      "published_at": "2024-01-09",
+      "line_number": 3,
+      "length_band": "medium",
+      "cjk_chars": 172,
+      "passage_sha256": "1c7381fca37f66a5b3b6c3193e666556b793ba833306d6ad8860987b4e5cc5da",
+      "followup_priority": 4
+    },
+    {
+      "task_number": 10,
+      "doc_id": "fad56cf7dd43cacc459a9b91",
+      "source": "jiqizhixin",
+      "published_at": "2023-09-18",
+      "line_number": 23,
+      "length_band": "short",
+      "cjk_chars": 147,
+      "passage_sha256": "f86b902ee2944cc2cbabe2e0fc18a8d5de494979f32810783d106215af024205",
+      "followup_priority": 23
+    },
+    {
+      "task_number": 11,
+      "doc_id": "44f7193de55b94460aa94c83",
+      "source": "jiqizhixin",
+      "published_at": "2023-09-08",
+      "line_number": 19,
+      "length_band": "short",
+      "cjk_chars": 156,
+      "passage_sha256": "1a1f41069bc571718f3a4093b0e9163c32a19f3e8f80a192131f3d59388daead",
+      "followup_priority": 1
+    },
+    {
+      "task_number": 12,
+      "doc_id": "552a90a3f24cf3a0a56ae17b",
+      "source": "jiqizhixin",
+      "published_at": "2023-09-19",
+      "line_number": 30,
+      "length_band": "medium",
+      "cjk_chars": 196,
+      "passage_sha256": "2501aca13a5d4bba97f9bdf6c032ece1da6578e41ff8c717d8faed0bb0162500",
+      "followup_priority": 18
+    },
+    {
+      "task_number": 13,
+      "doc_id": "ff33cd9163c1c6a848fa040f",
+      "source": "infoq",
+      "published_at": "2023-07-25",
+      "line_number": 50,
+      "length_band": "long",
+      "cjk_chars": 224,
+      "passage_sha256": "afa51faa83d96dbb4346e59bf680d16f9b3fa892a5596444d1d89b042bd8dd13",
+      "followup_priority": 10
+    },
+    {
+      "task_number": 14,
+      "doc_id": "043edbbdbc99db8af9111e6c",
+      "source": "jiqizhixin",
+      "published_at": "2024-06-11",
+      "line_number": 21,
+      "length_band": "long",
+      "cjk_chars": 229,
+      "passage_sha256": "33c6aed71286d0aa15ed5222b28c3a7b7c3f03e061ca7ae252dec32e7fd24606",
+      "followup_priority": 3
+    },
+    {
+      "task_number": 15,
+      "doc_id": "c43904af3434cd97a9c1c348",
+      "source": "infoq",
+      "published_at": "2025-05-21",
+      "line_number": 7,
+      "length_band": "short",
+      "cjk_chars": 137,
+      "passage_sha256": "d31f627bfc289390d5141a0c4cf474f068755b4522609b16ad3b107e7221df71",
+      "followup_priority": 20
+    },
+    {
+      "task_number": 16,
+      "doc_id": "6d28870921e2543cc882d1a0",
+      "source": "jiqizhixin",
+      "published_at": "2023-10-24",
+      "line_number": 4,
+      "length_band": "short",
+      "cjk_chars": 159,
+      "passage_sha256": "f56efacfa4e920ebf67b91ddeae0c2391ea4f2b6e19b9363785cd0f6e5a1318d",
+      "followup_priority": 19
+    },
+    {
+      "task_number": 17,
+      "doc_id": "82ff13fc3eaf733f81673809",
+      "source": "infoq",
+      "published_at": "2025-03-06",
+      "line_number": 15,
+      "length_band": "medium",
+      "cjk_chars": 161,
+      "passage_sha256": "714579a5a738e583b13e23864a20050e9ae82bd3858f3992a550530730fdc555",
+      "followup_priority": 22
+    },
+    {
+      "task_number": 18,
+      "doc_id": "e7bdd871f45cc11e19b00f02",
+      "source": "jiqizhixin",
+      "published_at": "2023-08-04",
+      "line_number": 7,
+      "length_band": "medium",
+      "cjk_chars": 161,
+      "passage_sha256": "1c7d818b2101ed29058badf0f9d81c08c448342980c32e9a574897947741fd6b",
+      "followup_priority": 15
+    },
+    {
+      "task_number": 19,
+      "doc_id": "f1f34167984d5e508d20f41c",
+      "source": "infoq",
+      "published_at": "2023-06-27",
+      "line_number": 31,
+      "length_band": "medium",
+      "cjk_chars": 170,
+      "passage_sha256": "871f70655b1722854e1772beddd00ce4bfe364f99fc8d928826db83f836ba41f",
+      "followup_priority": 24
+    },
+    {
+      "task_number": 20,
+      "doc_id": "6ef00b4fadbccbd00b6f011c",
+      "source": "jiqizhixin",
+      "published_at": "2023-06-25",
+      "line_number": 6,
+      "length_band": "long",
+      "cjk_chars": 239,
+      "passage_sha256": "e45d2ddcb326cdf517b151ecd3a44e8a73385d45f66e48f95d1349889e01e445",
+      "followup_priority": 12
+    },
+    {
+      "task_number": 21,
+      "doc_id": "b22137fdaff3ca8dc1d72095",
+      "source": "jiqizhixin",
+      "published_at": "2023-07-26",
+      "line_number": 86,
+      "length_band": "short",
+      "cjk_chars": 123,
+      "passage_sha256": "7f1f1b07d06f4840409b9938ec39709e3e48d04b301789a0a4a7ceaf2891eff9",
+      "followup_priority": 17
+    },
+    {
+      "task_number": 22,
+      "doc_id": "f58aa7e373f216c50420cc5b",
+      "source": "jiqizhixin",
+      "published_at": "2023-06-09",
+      "line_number": 16,
+      "length_band": "medium",
+      "cjk_chars": 184,
+      "passage_sha256": "48703d0b0e736f595f1ae7b729b06a8770cbb96ee9f6b4f7c5cfe75fc6e041d3",
+      "followup_priority": 11
+    },
+    {
+      "task_number": 23,
+      "doc_id": "48a9230fe1ff0bc5832f1e7c",
+      "source": "infoq",
+      "published_at": "2023-02-15",
+      "line_number": 48,
+      "length_band": "short",
+      "cjk_chars": 159,
+      "passage_sha256": "626fc77423fbd6739c44f559e04714fc04fec3d5bdc31da0dccc54759a236d2a",
+      "followup_priority": 7
+    },
+    {
+      "task_number": 24,
+      "doc_id": "e89331895381298c2efeba0b",
+      "source": "jiqizhixin",
+      "published_at": "2023-08-07",
+      "line_number": 22,
+      "length_band": "long",
+      "cjk_chars": 206,
+      "passage_sha256": "05f2d1d523acc1536c7f9b0e0c5762732f21e36eec5f0a40e8787e801d86a9d2",
+      "followup_priority": 8
+    }
+  ]
+}

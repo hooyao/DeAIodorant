@@ -1,0 +1,30 @@
+HaptX 首席执行官：我们曾向 Meta 高管展示过这项技术，结果他们却全抄走了。
+Meta（Facebook）声称自己在 2015 年就研发出了第一台原型，但 HaptX 表示自己从 2012 年开始就已在研究核心技术了。
+这或许是键盘鼠标之后，
+人机交互
+的又一次飞跃，Meta 本周二揭幕的
+重要新产品
+为元宇宙带来了新维度：公司创始人马克 · 扎克伯格展示了使用力反馈手套在虚拟世界中搭积木的技术。
+扎克伯格展示了用手套在虚拟世界里掷骰子、下象棋、握手等动作。
+全新的交互方式让很多人看到了未来，也产生了大胆的想法，然而这项技术也面临着同行的竞争，甚至原创性争议。新产品发布不到 24 小时，一家名为 HaptX 的初创公司就声称 Meta 的手套实际上与自己的专利技术几乎相同，更重要的是，该技术此前曾多次向 Meta 高管展示过。
+在 Meta 发布手套之后，一份 HaptX 公司 CEO 的声明也被公之于众。
+HaptX 公司创始人 Jake Rubin 指出，Meta 触觉手套「基于硅胶的微流体触觉反馈层压板」以及「气动控制架构」似乎与 HaptX 的专利技术基本相同。
+「微流体触觉反馈」microfluidic tactile feedback 是 HaptX 对气动硅致动器的称呼，它能够通过气泡充气放气的方式制造精准压力，让人手感受到触摸现实世界物体的感觉。本周二 Meta 介绍其触觉手套时提出了「气体致动器」 pneumatic actuators 的概念，与 HaptX 的原理类似。
+Meta 的触觉反馈组件。
+「十年来，HaptX 开创了微流体触觉反馈领域。我们的技术受到肯定，并已被媒体广泛报道，我们一直致力于开发和推广微流体作为高保真触觉反馈方法的独特优势。我们还获得了行业领先的专利组合来保护技术和产品，」Rubin 在声明中说道。「在与 VR 行业其他公司的互动中，我们一直认为合作对于整个行业的发展至关重要。多年来，我们接待了许多来自 Meta 的工程师、研究人员和高管来展示我们开创性的触觉技术。」
+2019 年 9 月，HaptX 展示的力反馈手套，图片来自公司内部的记录。
+Meta 和 HaptX 提出的手套。
+Rubin 称 Meta 没有联系过 HaptX，他说：「我们期待与 Meta 合作，得到公平公正的结果，解决我们的担忧，并让 Meta 将我们的创新技术融入他们未来的消费产品中。」
+Meta 的手套尚未为消费者进行商业化设计，还处于研发阶段。或许这也是与其他机构合作和解决矛盾的好时机。
+初创公司 HaptX
+HaptX 成立于 2012 年，专注于构建用于 VR 的触觉反馈技术。2019 年，HaptX 与另外两家公司合作，创造了一对可以用手套远程控制的巨型机械手。亚马逊创始人杰夫 · 贝佐斯 2019 年 6 月曾在一次会议上尝试了这项技术，并表示感觉「很自然」。
+图源：https://www.businessinsider.com/jeff-bezos-played-with-giant-remote-controlled-robot-hands-2019-6
+今年 7 月，HaptX 获得了 1200 万美元的融资，用于继续开发其触觉手套产品 HaptX Gloves DK2，据称它可以通过物理方式精确地将触感传递至人们的手指和手掌皮肤上。迄今为止，HaptX 的累积融资已达到 3100 万美元。
+在 HaptX 的愿景中，企业客户可以使用这种手套培训员工，设计和测试新车，还可以远程控制机器人。成立近十年来，HaptX 与多家企业达成了合作关系。例如，HaptX 曾与全球领先制造商 Advanced Input Systems 建立战略合作伙伴关系。
+HaptX Gloves DK2 的演示，和 Meta 的有哪些不同？
+人们对此事向 Meta 询问，但目前仍然没有获得回应。
+HaptX 的公告：
+https://haptx.com/meta-glove-prototype-response/
+参考内容：
+https://www.businessinsider.com/haptx-claims-meta-haptic-vr-gloves-copy-its-own-2021-11
+https://www.geekwire.com/2021/seattle-startup-calls-metas-vr-glove-prototype-substantively-identical-to-its-own-patented-tech/

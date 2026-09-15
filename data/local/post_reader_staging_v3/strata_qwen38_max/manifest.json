@@ -1,0 +1,53 @@
+{
+  "protocol_version": "post-corpus-strata-1.0",
+  "generated_at": "2026-08-30T04:44:27.482905+00:00",
+  "status": "model_assisted_measurement_not_human_gold",
+  "model": "qwen/qwen3.8-max",
+  "model_digest": "openrouter-live-catalog-2026-08-30-sha256-ffe2559fdc5960ab7131b6f3e6ca1388758a1fc7ba9d992a04934809ae6646da",
+  "endpoint": "https://openrouter.ai/api/v1",
+  "concurrency": 2,
+  "reasoning_mode": "low",
+  "max_tokens": 4096,
+  "temperature": 0,
+  "seed": 42,
+  "prompt_version": "post-corpus-format-topic-primary-v1",
+  "candidate_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\final_stage_candidates\\huawei_cloud_community_candidates.jsonl",
+      "sha256": "b4567343575048e7adb0aff9d6b2b1e172f87d63ff48408b5ad73bf08602370b"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\final_stage_candidates\\leiphone_candidates.jsonl",
+      "sha256": "9edad17ddbb2bf91baa64421f9e512746706734ed71f1f2dc247e2fd1d4d3a1e"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\final_stage_candidates\\qbitai_candidates.jsonl",
+      "sha256": "90a343aad844552c558adc5dc5455e380eb803a93011c9ae73b501ad42953325"
+    }
+  ],
+  "provenance_results": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\final_stage_candidates\\filtered_provenance_results.jsonl",
+    "sha256": "9365253ebe71edaa75030ddc256a8aa47683818f0ef573d0e493b6162d9670c9"
+  },
+  "value_results": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\final_stage_candidates\\filtered_value_results.jsonl",
+    "sha256": "417ecf54ac88320f3facc6c67ae33e343ec23638488d4f8a87544b6ed45702e4"
+  },
+  "documents": 93,
+  "confidence_counts": {
+    "high": 93
+  },
+  "format_counts": {
+    "industry_reporting": 40,
+    "research_summary": 19,
+    "technical_practice": 34
+  },
+  "topic_counts": {
+    "ai_models_agents": 57,
+    "business_industry": 17,
+    "software_engineering": 6,
+    "data_infrastructure": 13
+  },
+  "results": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v3\\strata_qwen38_max\\strata_results.jsonl",
+  "results_sha256": "c937545564197879751649bafefe250249317716069c9cd6977dd62742a7ced9"
+}

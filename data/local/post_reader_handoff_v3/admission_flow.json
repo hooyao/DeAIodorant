@@ -1,0 +1,42 @@
+{
+  "schema_version": "post-reader-v3-admission-flow-1.0",
+  "generated_at": "2026-08-30T04:45:42.7764011Z",
+  "flow": {
+    "raw_acquisition": 720,
+    "after_deterministic_translation_and_cross_corpus_dedup": 561,
+    "after_deepseek_glm_provenance_intersection": 372,
+    "after_deepseek_glm_value_intersection": 130,
+    "after_qwen_provenance": 130,
+    "after_qwen_value": 103,
+    "after_huawei_visibility_threshold": 93,
+    "after_high_confidence_strata_gate": 93,
+    "final_documents": 93,
+    "deterministic_exclusions": {
+      "translation": 92,
+      "duplicate_doc_id": 59,
+      "near_duplicate": 8
+    },
+    "huawei_visibility_excluded": 10
+  },
+  "run_anomaly": {
+    "affected_stage": "deepseek provenance safeguard cache",
+    "cause": "A failed c4 retry process remained alive while a c2 retry began, so both appended to the same cache before detection.",
+    "original_cache_lines_preserved": true,
+    "duplicate_cache_key_groups": 95,
+    "extra_duplicate_lines": 95,
+    "stopped_processes": [
+      {
+        "pid": 38128,
+        "reason": "orphaned c4 retry writer",
+        "observed_stopped_before": "2026-08-30T02:55:02Z"
+      },
+      {
+        "pid": 41776,
+        "reason": "c2 retry held stale in-memory cache after concurrent writes",
+        "stopped_at": "2026-08-30T02:55:13.6418979Z"
+      }
+    ],
+    "result_consistency": "triage_results contains exactly 561 unique doc_ids and is regenerated from cache-key-indexed results",
+    "value_cache_duplicates": 0
+  }
+}

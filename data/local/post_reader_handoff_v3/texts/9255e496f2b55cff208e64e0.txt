@@ -1,0 +1,138 @@
+今年3月，腾讯发布了《2026年AI人才报告》，其中提到“AI辅助编程工具使通用型开发任务效率提升约50%”。这个数字在测试圈的讨论群里引发了一轮激烈争论。不是因为50%有多吓人，而是因为测试本身就是一道“执行质量”的防线——如果连执行者都在被加速，这道防线还能守多久？
+更具体的信号在最近两个月开始密集出现。
+4月份，JetBrains Rider 2026.2 EAP发布了一个新特性：AI agent skill for unit test，智能体可以根据dotCover的覆盖率数据来定位已有相关测试，并自动生成单元测试。同一时期，亚马逊推出了Kiro——一个完全由Claude驱动的IDE，号称能从“自动完成”进化到“合作伙伴式开发”。这些变化在圈外可能只是几条新闻，但在测试从业者的视角里，信号非常明确：AI正在进入工程流的核心地带，而且速度比大多数人预期的快。
+在这个背景下，Claude Code的Skills系统成了一个绕不开的话题。
+Skills是Anthropic在2025年10月推出的功能，本质上是包含指令、脚本和资源的文件夹，Claude模型在需要时加载这些资源来完成特定任务
+。它与传统提示词工程的区别在于：自动调用、渐进式加载、可执行代码支持
+。听起来抽象，但落到实际场景里，它的作用非常直接——把AI从一个“聊天的助手”变成一台“能干活的生产力工具”。
+这篇文章会分四步来讲
+:
+Claude Code里
+怎么装Skill、有什么用、怎么用、背后怎么运行的。
+目录
+安装:一条命令搞定
+16个官方Skill全景图
+最值得装的7个:逐一拆解
+工作机制:Skill到底怎么跑起来的
+实操:从Excel到PDF的全链路
+一个值得注意的细节
+安装:一条命令搞定
+先别管那么多,先把东西装上。Claude Code里装Skill很简单,两条命令够了。
+注册官方Skills仓库为插件源:
+/plugin marketplace add anthropics/skills
+安装文档处理包(含pdf/xlsx/docx/pptx):
+/plugin install document-skills@anthropic-agent-skills
+安装示例技能包(含frontend-design、skill-creator等):
+/plugin install example-skills@anthropic-agent-skills
+装完
+/reload-plugins
+刷新一下,输入
+/plugin list
+就能看到已安装的技能。如果想手动安装某个特定Skill,也可以用
+/plugin install <skill-name>@anthropic-agent-skills
+的方式单独装。
+Skill装在~/.claude/skills/目录下,每个Skill一个独立文件夹。你可以在项目级别(项目根目录下的.claude/skills/)或用户级别(~/.claude/skills/)安装,项目级别的优先级更高。
+16个官方Skill全景图
+Anthropic在GitHub上开源了16个官方Skill(anthropics/skills仓库),分为三类:文档处理、创意设计、开发技术。
+类别
+Skill名称
+是什么
+文档处理
+pdf
+PDF读写、表单填写、OCR识别
+文档处理
+xlsx
+Excel/CSV数据读写清洗、图表生成
+文档处理
+docx
+Word文档创建编辑、样式修改
+文档处理
+pptx
+PPT生成、模板应用、图表插入
+创意设计
+algorithmic-art
+p5.js生成艺术,粒子系统
+创意设计
+brand-guidelines
+应用Anthropic官方品牌色彩字体
+创意设计
+canvas-design
+输出PNG/PDF海报和视觉艺术作品
+创意设计
+frontend-design
+有设计感的前端界面
+创意设计
+theme-factory
+10个预设主题,用于幻灯片/文档
+创意设计
+slack-gif-creator
+生成Slack优化的动画GIF
+开发技术
+doc-coauthoring
+结构化文档协作工作流
+开发技术
+internal-comms
+内部通信模板和指南
+开发技术
+mcp-builder
+构建MCP服务器的指南
+开发技术
+skill-creator
+教你怎么创建自己的Skill
+开发技术
+web-artifacts-builder
+复杂Web组件和交互界面
+开发技术
+webapp-testing
+Playwright网页自动化测试
+这16个Skill的底层执行方式并不统一。有的依赖脚本(pdf/pptx/xlsx/docx/webapp-testing有scripts目录),有的是纯Prompt注入(frontend-design/brand-guidelines/algorithmic-art)。这一点值得注意——Skill本质上不是“调用某个函数”,而是教Claude怎么做某件事。后面会详细拆解。
+最值得装的7个:逐一拆解
+16个全装没必要。Skills是自动激活的——你提需求,Claude自己判断要不要调用Skill。装多了反而容易冲突,Claude在不同任务之间做判断时会不确定。以下是我筛选下来真正高频使用的7个。
+1. PDF
+PDF Skill集成了pypdf、pdfplumber、reportlab等库,能做的包括:文本表格提取、扫描件OCR、合并拆分、表单填写、加密解密、添加水印。
+实战场景里用得最多的是提取合同条款和数据报告。一份30页的PDF,直接扔给Claude,“把里面所有涉及金额的表格提取出来,按类别排序”,它能自动识别表格结构并输出结构化数据。
+这张图展示了PDF Skill的激活路径:你提需求 → Claude判断 → 加载指令 → 按需调用底层库。核心是"按需"——OCR只在遇到扫描件时才触发,而不是每次都跑全套流程。
+要注意的是,原生Claude能读PDF内容,但填写表单、合并拆分、处理加密文档这些操作,原生能力做不到。装上PDF Skill之后,Claude才能执行这些底层文件操作。
+2. xlsx
+xlsx Skill专攻Excel/CSV文件。官方文档里写的是“输出必须是电子表格文件”——这句话很关键。原生Claude遇到数据分析任务时,经常输出一个HTML表格或者Python脚本,让你自己跑。xlsx Skill上身后,Claude会直接输出真正的.xlsx文件。
+支持的操作:读取修改、添加列/公式、数据清洗、图表制作、格式转换。碰到财务报表清洗、用户行为数据汇总这类任务,一句话丢给Claude,“把这个CSV的日期格式统一,去重,按销售额降序排,存回xlsx”,一步到位。
+3. docx
+docx Skill用来处理Word文档。支持创建、读取、编辑、修改样式、格式保留。
+用得最多的是报告生成场景。写完技术文档,直接让Claude把它转成Word格式,加上页眉页脚和公司样式模板。和PDF Skill搭配,可以形成“Word → PDF”的交付流水线。
+4. pptx
+pptx Skill是救场专用。开会前发现PPT没准备,直接丢个Word文档或者Excel数据进去,“做成5页演示文稿,配上图表”,能按时交差。
+官方Skill里,pptx的实现方式是脚本执行+参考文档,有完整的scripts目录和SKILL.md指令。这也意味着它相比纯Prompt注入的Skill,处理复杂布局和图表插入时更精确。
+5. frontend-design
+这是官方Skill里下载量排第一的,超过5.2万次。它的硬性约束是:禁止Inter/Roboto/Arial等字体,禁止紫色渐变+白底配色,禁止没有上下文特征的卡片布局。
+核心机制是:在写代码之前,先确定一个美学方向——极简主义、复古未来风、野蛮主义、奢华精致都可以——然后所有排版、留白、字体选择、动效设计都围绕这个方向统一执行。装上之后,“帮我做一个SaaS定价页”出来的效果和没装的区别,肉眼可见。
+6. skill-creator
+Skill体系中最有价值的部分不是用现成的,是创建自己的。skill-creator是教你怎么创建Skill的“元Skill”,包含完整的设计原则和最佳实践。
+本质上讲,Skill就是一个文件夹+一个SKILL.md文件。SKILL.md采用YAML+Markdown格式,包含name和description元数据,以及详细的操作指令。Claude会根据元数据判断何时激活,然后按需加载完整指令。
+如果某个重复性的工作流程你做了三次以上,就应该考虑把它封装成Skill。这是区分“会用AI的人”和“能带团队用AI的人”的分界线。
+7. webapp-testing
+测试场景专用。基于Playwright执行网页自动化测试。实测中发现,单独用webapp-testing不够——需要结合CLAUDE.md文档一起用,让AI在生成测试脚本之前先理解项目结构:前端框架是什么、测试目录在哪里、Base URL是什么、有没有Page Object模式约束。把这些写进CLAUDE.md,生成的脚本质量和直接生成的区别非常明显。
+工作机制:Skill到底怎么跑起来的
+理解Skill的工作机制,才能知道什么时候该装、什么时候不该装。
+Claude的Skills系统遵循“渐进式披露”的设计哲学。三层结构:
+第一层:元数据。
+Skill的SKILL.md文件开头有YAML格式的name和description。Claude启动时只加载这些元数据到系统提示里,不包含具体实现细节。
+第二层:核心指令。
+当Claude判断任务与某个Skill相关,会进一步读取完整的SKILL.md内容,里面包含详细的操作步骤、注意事项、示例。
+第三层:脚本和资源。
+对于需要精确逻辑处理的任务,Skill文件夹里可以包含scripts/目录(Python/Shell脚本)和references/目录(参考文档)。Claude按需加载或执行这些附加内容。
+这种设计的好处是:无关任务时,Skill几乎不占用上下文窗口;遇到匹配任务时再按需加载细节。这也是为什么装太多Skill会互相冲突——多个Skill的元数据同时存在于系统提示中,Claude做匹配判断时的不确定性会增加。
+值得注意的是,官方16个Skill里,没有用“Tools声明”来注册function calling的。全部是通过SKILL.md的文本内容加skill_run沙箱命令来驱动执行。Anthropic的做法是:与其给AI注册新函数,不如教它怎么写代码。
+实操:从Excel到PDF的全链路
+用一个实际的数据处理场景串一下。
+假设我有一份电商销售数据的Excel文件,需要:①清洗数据(去重、统一日期格式) → ②生成分析报告 → ③转成Word格式交付 → ④最终输出PDF。
+在Claude Code里,我只需要按顺序说:
+“xlsx Skill:把这份CSV的日期列统一格式,去重,按销售额降序排。”
+“根据清洗后的数据,分析各品类销售趋势,生成文字报告。”
+“docx Skill:把上面的分析报告转成Word格式,加上页眉’2026年Q1销售报告’。”
+“pdf Skill:把这个Word转成PDF,添加公司水印。”
+Claude会自动按顺序调用对应的Skill。每个Skill在激活时只加载自己需要的指令和脚本,不会互相干扰。
+一个值得注意的细节
+Skill激活依赖模型对描述文本的语义匹配。官方文档里说Claude会“自动判断”,但从实际测试来看,激活率大概在70%-80%左右,不能保证每次都精准激活。如果你的请求比较模糊,Claude可能不会调用预期的Skill。
+有个小技巧:在请求里带上明确的信号词。处理PDF时,直接说“提取这个PDF里的表格”而不是“帮我看一下这个文档”。信号越明确,匹配越准。
+最后一个问题:
+你现在的工作流里,哪个环节重复了三次以上,值得先做成第一个Skill?

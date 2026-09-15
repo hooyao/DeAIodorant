@@ -1,0 +1,270 @@
+从 RAR 到微博头条：AI Agent 全自动图文发布的探索与踩坑实录
+本文完整记录用 Hermes Agent 将微信 RAR 压缩包内的 Markdown 文章 + 8 张截图自动发布到微博头条号的全部过程、技术方案演变、5 种失败尝试及最终结论。 适用人群：内容创作者、AI Agent 开发者、微博运营者。
+一、任务目标
+从微信收到的
+.rar
+压缩包中提取 Markdown 文章和图片，自动生成带图文的博客，发布到
+微博头条号
+。
+输入素材：
+case-article.rar
+（1.3MB）：内含一篇 297 行、6800 余字的 Markdown 技术文章 + 8 张 PNG 截图
+文章主题：用华为云码道 CLI/TUI 开发跑马灯抽奖网页应用
+微博账号：18813131163（持久化登录态已通过 Playwright 的
+launchPersistentContext
+保存）
+二、总体流程
+微信接收 RAR
+│
+├── 7z 解压 → Markdown + 8 张 PNG
+│
+├── Markdown → HTML 转换
+│ ├── 标题 (h1), 章节 (h2-h6)
+│ ├── 代码块 (pre>code), 表格 (table)
+│ ├── 列表, 引用, 加粗, 行内代码
+│ └── 图片引用标记
+│
+├── 图片处理
+│ ├── 读取 PNG → base64
+│ ├── 经 TipTap 编辑器粘贴触发自动上传
+│ └── 微博 CDN 返回可持久化 URL
+│
+└── 微博头条编辑器
+├── 填入标题 + 正文 ✅
+├── 8 张图片 CDN 上传 ✅
+├── 保存草稿 ✅
+└── 点击「下一步」→「发布」⛔ SPA 验证拦截
+三、技术环境
+组件版本/选型
+|------|-----------|
+AI AgentHermes Agent (Nous Research)浏览器自动化Playwright + Edge (msedge)登录持久化`chromium.launchPersistentContext`图片上传TipTap 编辑器 ClipboardEvent 自动上传 CDN发布尝试JavaScript click / CDP mouse / fetch API / 5 种方式均被拦截操作系统Windows 10 (git-bash)解压工具7z (通过 npm win-7zip)
+四、成功的步骤
+4.1 RAR 解压与素材读取
+微信收到的 RAR 文件含中文字符路径，通过
+rarfile
+Python 库 +
+win-7zip
+成功解压。
+7z x "D:\新建文件夹\WeChat Files\...\case-article.rar" -o./case-article/ -y
+4.2 Markdown → HTML 转换
+手写转换器处理了如下格式：
+标题: # ~ ###### → <h1> ~ <h6>
+代码块: ``` → <pre><code>
+表格: |---|---| → <table><tr><td>
+加粗: **text** → <strong>text</strong>
+行内代码: `code` → <code>code</code>
+引用: > text → <blockquote>
+列表: - item → <ul><li>
+4.3 微博登录态持久化
+使用 Playwright 的
+launchPersistentContext
+保存会话到
+.weibo-profile
+目录（约 4MB）。首次需手动扫码/验证码，后续自动复用。
+const ctx = await chromium.launchPersistentContext(
+'C:\\Users\\33808\\.weibo-profile',
+{ headless: false, channel: 'msedge' }
+);
+4.4 正文填入 TipTap 编辑器
+微博头条文章编辑器使用
+TipTap
+（基于 ProseMirror），通过
+execCommand('insertHTML')
+填入：
+const pm = document.querySelector('.ProseMirror');
+pm.focus();
+document.execCommand('insertHTML', false, fullHtml);
+4.5 图片上传到微博 CDN（关键突破！）
+这是一个
+关键的发现
+：
+execCommand('insertHTML')
+插入 base64 data URL 虽然在编辑器中可见，但
+保存草稿 API 会剥离 data URL
+，图片不会持久化到草稿中。
+解决方案
+：利用 TipTap 编辑器的剪辑板事件处理器，通过
+ClipboardEvent
+粘贴图片文件，编辑器自动上传到微博 CDN 并替换为 CDN URL：
+const bc = atob(b64);
+const ba = new Uint8Array(bc.length);
+for (let i = 0; i < bc.length; i++) ba[i] = bc.charCodeAt(i);
+const blob = new Blob([ba], { type: 'image/png' });
+const file = new File([blob], fileName, { type: 'image/png' });
+const dt = new DataTransfer();
+dt.items.add(file);
+pm.dispatchEvent(new ClipboardEvent('paste', {
+clipboardData: dt, bubbles: true, cancelable: true, composed: true
+}));
+上传成功后，编辑器自动将
+的
+src
+替换为微博 CDN 链接，格式如：
+https://wx3.sinaimg.cn/large/006zzmO3gy1iexwgl1h4sj30rs0fkgmt.jpg
+已验证
+：8 张图片（15KB~414KB）全部上传成功，总计约 1.4MB。
+4.6 草稿保存
+保存草稿 API 验证通过，包含 CDN URL 的 HTML 内容完整保存（14200 字符，40 个 CDN 引用）。
+POST https://card.weibo.com/article/v5/aj/editor/draft/save
+→ {"code":100000, "data":{"content_length":8675}}
+五、失败的尝试（5 种方法均未突破）
+尝试 1：JavaScript
+button.click()
+document.querySelectorAll('button').forEach(el => {
+if (el.textContent.trim() === '下一步') el.click();
+});
+结果
+：事件触发，SPA handler 不导航。
+尝试 2：完整事件链（Pointer + Mouse + Click）
+btn.dispatchEvent(new PointerEvent('pointerdown', { bubbles: true }));
+btn.dispatchEvent(new PointerEvent('pointerup', { bubbles: true }));
+btn.dispatchEvent(new MouseEvent('mousedown', { bubbles: true }));
+btn.dispatchEvent(new MouseEvent('mouseup', { bubbles: true }));
+btn.dispatchEvent(new MouseEvent('click', { bubbles: true }));
+结果
+：所有事件均被派发，SPA 仍不导航。
+尝试 3：CDP 真实鼠标事件
+通过 Chrome DevTools Protocol 模拟真实鼠标点击：
+send_cmd(ws, 'Input.dispatchMouseEvent', {
+'type': 'mousePressed', 'x': x, 'y': y, 'button': 'left'
+})
+send_cmd(ws, 'Input.dispatchMouseEvent', {
+'type': 'mouseReleased', 'x': x, 'y': y, 'button': 'left'
+})
+结果
+：按钮视觉反馈出现（hover 样式变化），但 SPA 仍不执行导航。URL 始终停留在
+#/draft/52798
+。
+尝试 4：直接调用 publish API
+POST https://card.weibo.com/article/v5/aj/editor/draft/publish?uid=6022397903&id=52798
+Body: id=52798&save=1&sync_to_feed=1
+结果
+：返回
+{"code":"500002","msg":"发布失败，请手动保存后重新提交"}
+。
+进一步分析发现，即使通过 save draft API 保存了完整内容（含 CDN URL），publish API 仍然拒绝。
+尝试 5：computer_use 后台桌面操作
+尝试使用 cua-driver 在后台驱动 Edge 浏览器窗口点击按钮。Playwright 管理的 Edge 窗口对 accessibility tree 不可见（返回 0x0 尺寸），无法通过 computer_use 交互。
+六、原因分析
+6.1 为什么「下一步」按钮无法脚本触发？
+微博头条编辑器使用
+React + TipTap
+SPA。「下一步」按钮绑定了复杂的内部验证逻辑：
+1.
+内容格式校验
+：编辑器内容必须经过 TipTap 的 schema 验证（非纯 HTML 字符串）
+2.
+封面图检查
+：可能需要设置封面图片
+3.
+React 合成事件
+：
+onClick
+绑定在 React 的合成事件层，直接 DOM
+click()
+不触发 React 的 dispatch
+4.
+状态验证
+：内部状态机检查编辑器
+isDirty
+、
+hasContent
+、
+hasTitle
+等标志
+对比
+华为云博客编辑器
+，其
+window.saveBlog()
+函数可以直接调用绕过 UI 层。而微博头条编辑器
+未暴露类似的全局函数
+。
+6.2 为什么 publish API 返回 500002？
+可能的根因：
+1.
+草稿状态校验
+：publish API 要求草稿在发布前处于特定状态（如已设置封面、已通过格式校验）
+2.
+内容长度限制
+：14200 字符的 HTML 内容可能超出了某些隐式限制
+3.
+图片引用校验
+：虽然 CDN URL 已保存，但发布流程可能检查图片是否经过编辑器完整处理（如裁剪、水印设置）
+七、踩坑全记录
+序号问题现象解决
+|------|------|------|------|
+1RAR 解压路径含中文7z 中文路径乱码用 Python `rarfile` + 7z2base64 data URL 被剥离保存后图片丢失改用 ClipboardEvent 触发 CDN 上传3TipTap 不接受 file input无 ``用 native ClipboardEvent4SPA「下一步」不导航所有 click 方式均失败已知限制，需手动操作5publish API 500002发布失败需手动保存后重新提交6computer_use 0x0 窗口Playwright Edge 不可见无 webview 注入方案7Edge 进程残留28 个进程需 taskkill 清理8CDP origin 403websocket 被拒加 `--remote-allow-origins=*`9Markdown 表格解析分隔行容易误判专门处理 `\---\---\` 模式10文章内容重复多次脚本运行积累大量重复每次先 `pm.innerHTML = ''` 清理
+八、与华为云博客发布的对比
+维度微博头条号华为云社区博客
+|------|-----------|---------------|
+编辑器TipTap (ProseMirror)TinyMCE图片上传ClipboardEvent 自动 CDNFileServer API + CSRF发布方式SPA 按钮 + publish API`window.saveBlog()` + blogging API发布 API返回 500002 拒绝脚本返回明确 JSON (HD.92300000)CSRF 保护基于 cookie (HttpOnly)基于 header + route 拦截脚本友好度⭐☆☆☆☆ (极不友好)⭐⭐⭐⭐ (友好)自动化上限可填入内容 + 上传图片，无法跳过发布按钮可全自动发布（含 API 直调）
+核心差异
+：华为云博客暴露了
+window.saveBlog()
+全局函数和 REST API，使得 UI 自动化可以 bypass 前端交互层。微博头条编辑器是纯 SPA，没有可供脚本调用的发布入口。
+九、工程实践总结
+技术选型建议
+1.
+能调 API 就别点按钮
+：前端 UI 自动化的可靠性上限取决于前端框架。React SPA 的合成事件层比传统 jQuery/MVC 更难脚本化。
+2.
+优先寻找全局函数
+：开发自动化脚本前，先在浏览器控制台搜索
+window.saveBlog
+、
+window.publish
+、
+window.submit
+等全局函数。这比模拟点击可靠 10 倍。
+3.
+持久化登录态
+：
+launchPersistentContext
+是 Playwright 最实用的功能之一。一次登录，多次复用。
+4.
+剪辑板粘贴是 TipTap 图片上传的入口
+：base64 data URL 在 TipTap 中不触发上传，必须通过真正的 ClipboardEvent 粘贴图片文件。
+本文的经验复用
+本项目的技术方案（RAR 解压 → Markdown 转换 → 图片 CDN 上传 → 草稿保存）已沉淀为 Hermes Agent Skill，可直接复用：
+# 查看 skill
+hermes skill view weibo-long-article-publish
+# 运行包含图片的草稿填入
+cd C:\Users\33808\IDEProjects\hermestest1
+node weibo-post.mjs
+未来改进方向
+1.
+图片 CDN 上传后插入正确位置
+：当前图片都粘贴到编辑器末尾，需实现光标定位 + 精准插入
+2.
+封面图设置自动化
+：发布设置页可能需要封面图
+3.
+发布 API 逆向
+：进一步分析 publish API 的参数要求，看能否满足验证条件
+4.
+Computer Use 方案
+：等待 cua-driver 对 Playwright 窗口的支持改善
+十、最终结论
+自动化的可靠上限取决于前端框架的开放程度。
+对于微博头条号，我们可以做到：
+✅ 自动登录持久的化
+✅ 自动填入标题 + 正文（TipTap execCommand）
+✅ 自动上传图片到 CDN（ClipboardEvent paste）
+✅ 自动保存草稿
+但
+无法跳过
+「下一步」→「发布」这两步——React SPA 的验证层将按钮交互与内部状态机深度绑定，目前所有脚本方案均被拦截。
+华为云社区的博客系统则友好得多
+——
+window.saveBlog()
++ blogging API 提供了完整的程序化发布能力。
+对于内容创作者：如果追求全自动化图文发布，优先选择
+暴露 API 或全局函数的平台
+，而非纯 SPA 的编辑器。
+*本文由 Hermes Agent 自动生成并发布到华为云社区。*
+*发布时间：2026年7月9日*
+参考链接
+微博头条文章编辑器操作手册（TipTap/ProseMirror）
+什么是码道CLI
+Hermes Agent 文档
+Hermes 驱动 CodeArts Agent 发布华为云博客完整流程

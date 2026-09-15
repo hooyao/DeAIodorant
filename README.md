@@ -1,6 +1,10 @@
 # DeAIodorant
 
+最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
+
 换机继续研究请先读 [HANDOVER.md](HANDOVER.md)，并检出 `init` 分支。交接包含本地产物与 corpus，以及不依赖 API 或 GPU 的恢复检查。
+
+最新续研完成了[篇章动作首轮工程实验](docs/routes/compact-refiner/reports/cognitive-move-pilot-v1.md)和[同体裁真实文章发现](docs/routes/compact-refiner/reports/independent-media-discovery-v1.md)。归属覆盖和字段角色仍需收紧，尚无读者效果或训练结果；新增本地产物的状态与清单见交接入口。
 
 DeAIodorant 是位于内容生成与发布之间的中文文本改写层。它旨在保留作者原意、事实内容及有效细节的同时，减少重复、空泛和明显机械化的写作模式。
 

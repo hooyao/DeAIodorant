@@ -1,0 +1,435 @@
+我用 Multica 指挥 4 个 AI Agent 开发了一套 TOEIC 模考系统
+从零搭建自托管多智能体平台，踩坑记录和实操指南
+背景
+最近在试用
+Multica
+这个多智能体协作平台。它有点像 AI 版的 JIRA——你创建任务（issue），分配给 squad（智能体小队），squad leader 自动分派给队员执行，队员之间还能互审、互评。
+我拿一个 TOEIC 模考系统当试验品，让 4 个 AI agent 协作开发，结果比预期好——也有不少坑。这篇记录完整流程，希望能帮到你。
+一、环境准备
+硬件和系统
+Windows 10，一台普通开发机
+Docker Desktop（跑 Multica 后端）
+Git Bash 作为终端
+部署 Multica（自托管）
+# 1. Clone 仓库
+git
+clone https://github.com/multica-ai/multica.git
+cd
+multica
+# 2. 配置 .env（关键！）
+# 必须设置 APP_ENV=development，否则本地验证码不生效
+echo
+"APP_ENV=development"
+>>
+.env
+echo
+"MULTICA_DEV_VERIFICATION_CODE=888888"
+>>
+.env
+# 3. 启动
+docker
+compose
+-f
+docker-compose.selfhost.yml up
+-d
+# 4. 安装 CLI
+# 从 GitHub Releases 下载 multica-cli-*.zip，解压到 ~/.multica/bin/
+multica login
+--token
+<
+your-pat
+>
+--server-url http://localhost:3000
+multica daemon start
+坑 #1
+: Docker Compose 的
+${VAR:-default}
+语法会把空值当"已设置"，导致
+APP_ENV=
+变成 production，本地验证码失效。必须显式写
+APP_ENV=development
+。
+配置 Agent CLI
+Multica daemon 会自动扫描 PATH 上的 CLI 工具。我的机器上有：
+CLI
+Agent 角色
+模型
+Claude Code
+Squad Leader（审查+分派）
+claude-sonnet-4
+OpenCode
+内容生成
+deepseek/deepseek-chat
+GitHub Copilot CLI
+前端开发
+composer-2.5 (BYOK→DeepSeek)
+Cursor CLI
+后端开发
+composer-2.5
+# 创建 agent
+multica agent create
+--name
+"Claude Leader"
+--runtime-id
+<
+id
+>
+--model
+claude-sonnet-4
+--visibility
+workspace
+multica agent create
+--name
+"OpenCode Content"
+--runtime-id
+<
+id
+>
+--model
+deepseek/deepseek-chat
+--visibility
+workspace
+multica agent create
+--name
+"Copilot Frontend"
+--runtime-id
+<
+id
+>
+--model
+claude-sonnet-4
+--visibility
+workspace
+multica agent create
+--name
+"Cursor Backend"
+--runtime-id
+<
+id
+>
+--model
+composer-2.5
+--visibility
+workspace
+坑 #2
+: OpenCode 的模型名必须带 provider 前缀
+deepseek/deepseek-chat
+，不能只写
+deepseek-chat
+。否则 agent 2 秒内失败，提示 “Model not found”。
+二、组建 Squad
+# 创建 squad，指定 leader
+multica squad create
+--name
+"TOEIC Team"
+--leader
+"Claude Leader"
+# 添加队员（需要完整 UUID，8 位前缀不行）
+multica squad member
+add
+<
+squad-id
+>
+--member-id
+<
+full-uuid
+>
+--type
+agent
+Squad 结构：
+TOEIC
+Team
+├── Claude
+Leader
+(
+leader
+)
+— 评估任务、分派、审查
+├── OpenCode
+Content
+(
+member
+)
+— 生成题目内容
+├── Copilot
+Frontend
+(
+member
+)
+— React 前端
+└── Cursor
+Backend
+(
+member
+)
+— Python 后端
+坑 #3
+:
+squad member add
+的
+--member-id
+需要完整 UUID。agent list 显示的 8 位前缀不够。
+三、创建任务
+我创建了 16 个 issue，覆盖 7 个 Part 的题目生成、前后端基础设施、UI 页面：
+multica issue create
+\
+--title
+"[INFRA] Backend - Database Schema + API"
+\
+--assignee
+"TOEIC Team"
+\
+--description
+"Build TOEIC backend with FastAPI + PostgreSQL..."
+multica issue create
+\
+--title
+"[TOEIC] Set 1 - Part 1 (Photographs) - 6 questions"
+\
+--assignee
+"TOEIC Team"
+# ... 更多 issue
+任务分 3 层：
+数据层
+: Part 1-7 共 7 套题目（200 题 + 听力脚本）
+后端
+: DB schema、REST API、JWT 认证、TOEIC 评分
+前端
+: 考试界面、答题卡、计时器、登录注册、成绩报告
+四、Agent 协作过程
+Leader 的工作流
+Claude Leader 接到任务后的标准动作：
+读 issue 描述
+评估复杂度，决定分派给谁
+在 issue 下发评论
+@agent
+，附带具体要求
+队员完成后，Leader 审查结果
+通过 → mark done；不通过 → 发修订意见，队员重做
+队员之间的互动
+有意思的是，队员之间也会互相审查。Copilot Frontend 做完前端后 Leader 审查发现 Part 3 题目数量不对（69 道应该是 39 道），Leader 把反馈发给 OpenCode Content 重做，Copilot 继续修前端其他问题。
+整个过程就像一个微型开发团队，只是所有成员都是 AI。
+五、踩过的坑
+坑 #4: Codex Agent 不工作
+Multica 自带的 Codex agent 连不上 DeepSeek API（我用的 codex_proxy 代理挂了）。我试了：
+替换成 CodeArts（华为云）
+→ CLI 参数不兼容。Multica 的 opencode backend 硬编码了
+--dangerously-skip-permissions
+和
+--dir
+flag，CodeArts CLI 不支持，直接 exit 1。
+最终换成 Cursor CLI
+→ 成功了，但有个小波折。
+坑 #5: Cursor CLI 版本检测
+daemon 用
+cursor-agent --version
+检测版本，但版本目录名
+2026.06.15-18-00-12-6f5a2cf
+不匹配脚本中的正则
+^\d{4}\.\d{1,2}\.\d{1,2}-[a-f0-9]+$
+（多了时间戳）。
+# 修复：重命名目录，去掉时间部分
+mv versions
+/
+2026.06
+.15
+-
+18
+-
+00
+-
+12
+-
+6f5a2cf versions
+/
+2026.06
+.15
+-
+6f5a2cf
+坑 #6: Clash DNS 劫持
+Cursor agent 启动后报
+connect ETIMEDOUT 198.18.0.9:443
+。这是 Clash 的 TUN 模式留下的 DNS 污染——Meta 虚拟适配器的 DNS 还是
+198.18.0.2
+。
+# 删掉
+TUN
+路由
+route
+delete
+0.0
+.0
+.0
+mask
+0.0
+.0
+.0
+198.18
+.0
+.2
+# 重置 Meta 适配器
+DNS
+netsh
+interface
+ip
+set
+dns
+"Meta"
+dhcp
+坑 #7: Copilot 不走订阅
+Copilot Frontend 配了
+claude-sonnet-4
+模型，但我没充 Copilot 会员，它居然能工作。后来发现是环境变量配了 BYOK（自带 Key）：
+COPILOT_PROVIDER_TYPE
+=
+anthropic
+COPILOT_PROVIDER_BASE_URL
+=
+https
+:
+/
+/
+api
+.
+deepseek
+.
+com
+/
+anthropic
+COPILOT_MODEL
+=
+deepseek
+-
+v4
+-
+pro
+GitHub Copilot CLI 检测到这些变量后就绕过 GitHub 的路由，直连 DeepSeek API。
+坑 #8: Squad 不会主动轮询
+Multica 的 squad 是事件驱动的——Leader 只在收到新评论或任务指派时才行动。如果你改了 agent 配置、修了 bug，Leader 不会自动感知。需要手动在 issue 下发一条
+@Leader
+评论来触发。
+六、最终成果
+14/16 个 issue 完成（1 个取消，1 个是测试验证）。
+multica
+-
+test
+-
+project
+/
+├── backend
+/
+│ ├── app
+/
+│ │ ├── main
+.
+py # FastAPI 入口
+│ │ ├── api
+/
+auth
+.
+py #
+JWT
+认证
+│ │ ├── api
+/
+exams
+.
+py # 考试
+API
+│ │ ├── api
+/
+questions
+.
+py # 题库
+API
+│ │ ├── core
+/
+database
+.
+py # SQLAlchemy
+│ │ ├── core
+/
+security
+.
+py # 安全
+│ │ └── services
+/
+scoring
+.
+py #
+TOEIC
+评分转换
+│ ├── tests
+/
+test_api
+.
+py
+│ └── toeic
+.
+db
+(
+262KB
+)
+├── frontend
+/
+# React
++
+TypeScript
++
+Vite
+│ ├── ExamPage
+,
+Timer
+,
+AnswerSheet
+│ ├── LoginPage
+,
+RegisterPage
+│ ├── ScoreReportPage
+│ └── ExamListPage
+└── data
+/
+├── set1
+/
+# Part
+1
+-
+7
+全部
+200
+题
+└── set2
+/
+part5
+.
+json # Part
+5
+补充
+30
+题
+总共耗时约 2 小时（含调试），人工干预主要是配置 agent 和修网络问题。实际编码工作全是 agent 完成的。
+七、快速上手 Checklist
+docker compose up -d
+启动 Multica
+确认
+.env
+里
+APP_ENV=development
+安装所需 CLI 工具（claude, opencode, copilot, cursor-agent）
+multica daemon start
+自动检测运行时
+创建 agent（注意模型名格式）
+组建 squad
+创建 issue 并分配给 squad
+坐等 Leader 分派，有问题时发
+@Leader
+触发
+关键技巧
+：
+配模型名时先跑
+xxx models
+确认完全一致
+Leader 空闲时手动在 issue 下发评论触发
+注意 Windows 上的 Clash/代理对 daemon 子进程的影响
+Multica 让多 agent 协作的门槛降到了「写 issue」这一步。2 小时搭出一套完整考试系统，放在以前至少要好几个人的工作日。虽然有些坑，但踩过一遍就能跑通了。
+试试看，把你的 side project 交给一个小型 AI 开发团队。

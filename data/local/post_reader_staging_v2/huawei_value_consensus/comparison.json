@@ -1,0 +1,47 @@
+{
+  "schema_version": "deaiodorant-value-model-comparison-1.0",
+  "decision_policy": "Only documents that both current models classify as substantive continue. Every disagreement and uncertainty fails closed.",
+  "left_model": "qwen3.8-27b",
+  "right_model": "deepseek/deepseek-v4-flash-0731",
+  "documents": 82,
+  "exact_status_agreement": 50,
+  "exact_status_agreement_rate": 0.6097560975609756,
+  "consensus_substantive": 36,
+  "disagreements": 32,
+  "status_matrix": {
+    "model_assisted_substantive|model_assisted_substantive": 36,
+    "model_assisted_substantive|value_uncertain": 19,
+    "model_assisted_low_value|model_assisted_substantive": 1,
+    "model_assisted_low_value|model_assisted_low_value": 8,
+    "model_assisted_low_value|value_uncertain": 9,
+    "value_uncertain|model_assisted_substantive": 2,
+    "value_uncertain|model_assisted_low_value": 1,
+    "value_uncertain|value_uncertain": 6
+  },
+  "source_status_matrices": {
+    "huawei_cloud_community": {
+      "model_assisted_substantive|model_assisted_substantive": 36,
+      "model_assisted_substantive|value_uncertain": 19,
+      "model_assisted_low_value|model_assisted_substantive": 1,
+      "model_assisted_low_value|model_assisted_low_value": 8,
+      "model_assisted_low_value|value_uncertain": 9,
+      "value_uncertain|model_assisted_substantive": 2,
+      "value_uncertain|model_assisted_low_value": 1,
+      "value_uncertain|value_uncertain": 6
+    }
+  },
+  "identity": {
+    "left_results_sha256": "a09290bc6cc2adfe9ed9d458bccc06da69f6ef055b8f963d6e239cefbad6d761",
+    "left_manifest_sha256": "7fdb6c5498a8f47b18558e7ad35a83206c0dde451bd22caf1081d4f3c5bcd506",
+    "right_results_sha256": "318ccd8800b373fcdb8790580ae99eb528bc723e8c82f7d50b9462adf83d269c",
+    "right_manifest_sha256": "ac708f8a49871d39b9bbc37876f07758f189faaf59662e13070df905e5eb918f",
+    "provenance_consensus_sha256": "5e46535b27e90e7d41c900e464235d8b9ae1e89466ee7d4a5170cb7c5346d190"
+  },
+  "artifacts": {
+    "consensus_value": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_consensus\\consensus_value.jsonl",
+    "consensus_value_sha256": "2dd64e1349f8ae4dd42c61af65c628e3d1664333ddad3c8376488f7196eac107",
+    "disagreements": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v2\\huawei_value_consensus\\disagreements.jsonl",
+    "disagreements_sha256": "ee91192c0992ebd4eba12fad44c3bd2ebb8cae07aea58c20c40aa1f1f46c4bd6"
+  },
+  "restriction": "Both inputs are model-assisted measurements, not human gold. Agreement supports conservative routing only and does not establish accuracy."
+}

@@ -1,0 +1,39 @@
+{
+  "protocol_version": "post-acquisition-staging-1.0",
+  "generated_at": "2026-08-22T12:33:42.957444+00:00",
+  "status": "acquisition_staging_not_admitted",
+  "source": "infoq",
+  "post_window": [
+    "2025-07-01",
+    "2026-06-30"
+  ],
+  "configuration": {
+    "target": 100,
+    "max_attempts": 400,
+    "delay_seconds": 0.35,
+    "http_timeout_seconds": 45.0,
+    "sitemap_indexes": [
+      1,
+      2
+    ],
+    "translation_model": null
+  },
+  "fetch_stats": {
+    "attempted": 400,
+    "fetched": 400,
+    "eligible": 79,
+    "wrong_period": 241,
+    "translated_filtered": 51,
+    "translation_uncertain_filtered": 0,
+    "low_quality": 16,
+    "failed": 13
+  },
+  "documents": 79,
+  "candidates_file": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\infoq\\infoq_post_candidates.jsonl",
+  "candidates_sha256": "edaa30c60b5d51aed55201151ac4fe89d57c091285df88f74f59a7d30356f8b7",
+  "limitations": [
+    "This output is acquisition staging and cannot be used for reader tasks.",
+    "Only deterministic translation evidence has been applied.",
+    "Model provenance, research value, visibility, and duplicate review remain required."
+  ]
+}

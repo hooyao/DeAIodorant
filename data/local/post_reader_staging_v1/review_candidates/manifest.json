@@ -1,0 +1,55 @@
+{
+  "protocol_version": "post-review-candidate-preparation-1.0",
+  "generated_at": "2026-08-22T12:35:03.712908+00:00",
+  "status": "pending_model_review",
+  "post_start": "2025-07-01",
+  "input_files": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\infoq\\infoq_post_candidates.jsonl",
+      "sha256": "edaa30c60b5d51aed55201151ac4fe89d57c091285df88f74f59a7d30356f8b7"
+    },
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\meituan\\meituan_post_candidates.jsonl",
+      "sha256": "d2e603df4eb938fba56e43e53c54a42ac51ce07257f02b574f9850b880073bd2"
+    }
+  ],
+  "exclusion_indexes": [
+    {
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\translation_v2_review\\analysis_handoff_v1\\analysis_pool.jsonl",
+      "sha256": "58697a9c490cb316d8af8d1bd07980b6d8a0de59fd34add3e47ba11ba8712da2"
+    }
+  ],
+  "tracked_pilot_exclusion_documents": 30,
+  "input_documents": 108,
+  "prepared_documents": 99,
+  "prepared_by_source": {
+    "infoq": 70,
+    "meituan_tech": 29
+  },
+  "exclusion_counts": {
+    "duplicate_doc_id": 9
+  },
+  "candidate_files": [
+    {
+      "source": "infoq",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\infoq_candidates.jsonl",
+      "sha256": "225b5d43514fd1d3b7211a1b754e771f53e33285967d10e81aca24807ae35563",
+      "documents": 70
+    },
+    {
+      "source": "meituan_tech",
+      "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\meituan_tech_candidates.jsonl",
+      "sha256": "d816c7e03f5ff0bfe7f7390af0c47a590f125ba0b4bec34aac561aca28453eb5",
+      "documents": 29
+    }
+  ],
+  "exclusions_file": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\exclusions.jsonl",
+    "sha256": "f131b1bd926bde9ab65e66fe084c893f0e8211e2e6e674ddb86216a3240bc667"
+  },
+  "empty_human_decisions": {
+    "path": "F:\\MyProjects\\DeAIodorant\\data\\local\\post_reader_staging_v1\\review_candidates\\no_human_decisions.csv",
+    "sha256": "f65c5bcd4a2ee4ee758a433fcd052f7a706b03ea31af166ef71268cca7c72da8"
+  },
+  "restriction": "Prepared records remain acquisition staging. Model review is a measurement and only high-confidence original routing may continue."
+}

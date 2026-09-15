@@ -1,0 +1,15 @@
+{
+  "schema_version": "corpus-integrity-1",
+  "checked_at": "2026-08-20T12:42:06.349138+00:00",
+  "root": "F:\\MyProjects\\DeAIodorant\\data\\pilot\\monthly",
+  "valid": true,
+  "months": 13,
+  "documents": 30,
+  "unverified_visibility_documents": 10,
+  "errors": [],
+  "warnings": [
+    {
+      "message": "10 document(s) lack article-level visibility verification; structural validity does not make this a final corpus"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+鱼羊 发自 凹非寺
+量子位 | 公众号 QbitAI
+OMG谷歌你吓到我了：
+刚刚，
+Jeff Dean
+宣布离职创业。
+不用揉眼睛，就是他，那个谷歌传奇、谷歌DeepMind和谷歌研究院首席科学家、Gemini负责人，以及谷歌唯二Senior Google Fellow（职级L11）的Jeff Dean。
+另一位L11是
+Sanjay Ghemawat
+，姐夫刚刚公布的创业伙伴之一……
+△C位为两位L11大佬
+照片里的另外两位也不是什么生面孔，
+Quoc Le
+和
+Oriol Vinyals
+，都属于是学术新人们可以挂起来膜拜的大佬了。
+这还不算完，与此同时公布的一则消息是，
+谷歌DeepMind CEO哈萨比斯已卸下原职，转任DeepMind董事长兼谷歌母公司Alphabet首席科学家
+，此后将专注于AGI长期战略和加速科学突破。
+哈萨比斯原本的工作职责将由其长期副手Koray Kavukcuoglu接手。后者升任谷歌DeepMind高级副总裁，直接向劈柴本人汇报。
+消息一出，谷歌股价应声下跌4%，瞬间蒸发1860亿美元，约合人民币1.34万亿。。
+谷歌传奇离职创业
+Jeff Dean的创业公司名叫
+Discovery Loop
+，定位
+公益性公司
+，使命是实现机器学习、科学和工程的自动化。
+创始成员均为谷歌AI元老：
+Jeff Dean
+：谷歌大脑联合创始人、谷歌首席科学家、Gemini负责人；
+Sanjay Ghemawat
+：美国国家工程院院士，Jeff Dean长期搭档，共同参与Google文件系统、MapReduce、Bigtable等基础设施；
+Quoc Le
+：谷歌大脑联合创始人，seq2seq、思维链等重要成果的共同作者。
+Oriol Vinyals
+：谷歌DeepMind研究副总裁兼深度学习负责人、Gemini联合负责人，参与过seq2seq、AlphaStar、AlphaCode、AlphaFold等项目。
+可以说，这几位几乎覆盖了谷歌过去20多年最重要的两条技术主线——大规模计算基础设施和现代AI。
+不过，如此重磅的4人组出走，倒也没跟谷歌撕破脸。相反，谷歌CEO劈柴哥第一时间送上祝福，透露谷歌已入股这家新公司，并将成为其云合作伙伴。
+只是这份体面中，未必没有苦涩——
+《连线》爆料，Jeff Dean等几人提出离职意向后，劈柴哥曾苦苦挽留，希望他们能保留谷歌工牌。但最后，四人组觉得，还是
+创办一家初创公司的乐趣和自由
+更重要。
+《连线》援引Vinyals本人的话说：
+在大公司里，要想做出任何根本性的改变，总是要克服很多惯性。
+我们想打造一些与众不同的东西。
+目前，Discovery Loop的融资额和估值尚未披露。不过这四位单拎出哪一位都足够震撼了，更何况是4个人一起……说是当下最豪华创业阵容也不为过。
+《连线》还透露，这家新公司还没开始组建团队，甚至还没有租用办公场所。
+而现在消息公布，一切浮出水面，恐怕还将有更多谷歌人才追随其后，离开正在大模型交付和人才争夺中苦苦挣扎的巨舰。
+BTW，至此，
+Gemini的三位主要领导者，Jeff Dean、Oriol Vinyals和Noam Shazeer，均已确认离开谷歌
+。
+谷歌AI权力架构重组
+另一头，哈萨比斯的新动向则意味着，谷歌内部也已开始着手重组AI权力架构。
+哈萨比斯不再负责谷歌DeepMind的日常运营，而是升任董事长和Alphabet首席科学家，主要关注AGI长期战略、社会影响、科学研究以及Isomorphic Labs——之前从DeepMind拆分出来的药物研发公司。
+谷歌还表示，哈萨比斯将直接与谷歌CEO劈柴讨论全球性、战略性的AGI问题。这看上去扩大了他的议题范围，却减少了他的直接执行责任。
+路透社得到的说法是，哈萨比斯转任之后，不会有太多直接下属。
+哈萨比斯原本的工作将交接给其副手Koray Kavukcuoglu，包括Gemini模型/应用研发和前沿AI研究等。并且Kavukcuoglu将直接劈柴汇报。
+这看上去意味着，从研究到产品的统一指挥权，将进一步向谷歌CEO本人收束。
+△Koray Kavukcuoglu
+事实上，随着谷歌Gemini新旗舰版本的迟迟未出，在基础模型竞争中，谷歌已经受到了来自OpenAI和Anthropic的巨大压力。
+核心AI人才的流失，就是表象之一。
+6月18日，Transformer核心作者Noam Shazeer二次跑路，转投OpenAI。
+6月19日，哈萨比斯老搭档、诺奖得主John Jumper转会Anthropic。
+6月24日，又有两位Gemini核心贡献者宣布加盟Anthropic，分别是AI编程方向的Jonas Adler，和预训练团队的Alexander Pritzel。
+……
+谷歌着急，才是情理之中。
+问题是，大模型竞争要求更集中、更迅速的组织执行，但下一代技术突破，往往又依赖少数顶尖研究者足够大的自主空间。
+在过去，谷歌不是没有掌握过先机：Codex负责人Tibo前几天刚刚爆料过，早在ChatGPT发布前一年，谷歌就掌握了相应技术。
+但，“谷歌太紧张了，不敢发布它，而DeepMind则被禁止推出可能冲击谷歌业务的产品。”
+真是太阳底下无新鲜事，只是没想到连谷歌都有如此“创新者窘境”的一天。
+现在，一代传奇Jeff Dean也走了，不是退休，不是功成身退，而是在一轮还没结束的动荡中出局出走。
+更大的血雨腥风，恐怕在更基层的地方才刚刚开始……
+参考链接：
+[1]
+https://x.com/JeffDean/status/2085034604172603724
+[2]
+https://x.com/demishassabis
+[3]
+https://www.wired.com/story/jeff-dean-google-discovery-loop-startup/
+[4]
+https://www.reuters.com/business/google-shakes-up-ai-leadership-deepmind-chief-shifts-role-2026-08-05/

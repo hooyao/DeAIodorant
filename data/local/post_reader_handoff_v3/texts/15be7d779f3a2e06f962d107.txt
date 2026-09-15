@@ -1,0 +1,933 @@
+鸿蒙分布式电商应用 · 大学生实操指导文档
+华为云码道（CodeArts）730 新特性最佳实践 · 完整实操手册。项目地址：
+https://gitcode.com/Lingxi-HandsOn/730harmony-ecommerce
+开通华为云码道：
+一键开通
+目录
+一、实操目标与概述
+二、环境准备
+三、使用码道 730 新特性创建项目
+四、Vibe Coding 多模态驱动开发
+五、分布式能力接入实操
+六、单元测试 Agent 实操
+七、CodeArts Check 与 Fix Agent 实操
+八、多端预览与分布式体验
+九、常见问题与排错
+[附录：项目文件清单]
+一、实操目标与概述
+1.1 实操目标
+通过本实操，你将：
+掌握华为云码道 730 新特性
+在鸿蒙开发中的实际应用
+完成一个鸿蒙分布式电商应用
+，包含首页、商品详情、购物车、订单 4 个核心页面
+实现跨设备数据同步
+，购物车数据在手机/平板/PC 间实时同步
+1.2 用到的 730 新特性一览
+新特性
+实操环节
+预计耗时
+鸿蒙专属 Agent
+项目创建与代码生成
+15 分钟
+Vibe Coding 语音输入
+页面需求描述与生成
+10 分钟
+Vibe Coding 图片理解
+竞品截图转代码
+10 分钟
+Vibe Coding 文档上传
+PRD 解析与任务拆解
+10 分钟
+单元测试 Agent
+测试用例自动生成
+10 分钟
+CodeArts Check (MCP)
+静态分析与 Bug 检测
+10 分钟
+Fix Agent
+问题一键修复
+10 分钟
+鸿蒙 PC 适配
+在鸿蒙 PC 上开发预览
+5 分钟
+1.3 最终交付物
+可运行的鸿蒙分布式电商 HAP 安装包
+36 个单元测试用例全部通过
+完整的项目源码（可上传 GitCode/GitHub）
+二、环境准备
+2.1 开发工具安装
+步骤 1：接入华为云码道
+访问
+华为云码道
+开通码道服务（体验版免费），使用
+730 Release 及以上
+版本
+步骤 2：安装 OHPM
+码道自带 ohpm 包管理器，确认版本：
+ohpm
+-v
+# 要求 1.2.0 及以上
+步骤 3：配置华为开发者账号
+注册
+华为开发者账号
+在DevEco Studio中登录：
+设置 → HarmonyOS SDK → Sign In
+步骤 4：配置分布式签名（体验分布式能力必做）
+⚠️ 重要：自动生成的
+debug 证书不具备分布式权限
+，模拟器（Simulator/Previewer）也不支持跨设备
+deviceManager
+与
+distributedKVStore
+。要体验本案例的「跨设备购物车同步 / 商品详情流转」，必须完成以下配置；若仅验证 4 个基础页面，可跳过本步骤直接用模拟器 + debug 证书运行。
+📌 现实约束：上述「配置分布式签名」需要你在华为开发者联盟拥有
+企业级开发者账号
+并提交 CSR 审核获取证书；个人免费调试账号通常不具备分布式权限。同时「跨设备同步 / 流转」必须准备
+两台登录同一华为账号的真机
+并在「设置 → 超级终端」组网。若机房仅提供模拟器 + 免费 debug 证书，建议跳过本节，仅验证 4 个基础页面与单元测试。
+在
+华为开发者联盟
+→
+管理中心 → 应用服务 → 应用
+中创建应用，Bundle Name 填
+com.example.harmonyecommerce
+生成并注册正式签名材料：
+在码道中执行
+Build → Generate Key And CSR
+生成
+.p12
+密钥库与 CSR 文件
+在开发者中心提交 CSR 申请证书，下载
+.cer
+公钥证书与
+.p7b
+Profile 文件
+在
+AppScope/app.json5
+的
+signingConfigs
+中配置上述材料：
+"signingConfigs"
+:
+[
+{
+"name"
+:
+"default"
+,
+"type"
+:
+"HarmonyOS"
+,
+"material"
+:
+{
+"certpath"
+:
+"D:/sign/default.cer"
+,
+"storePassword"
+:
+"******"
+,
+"keyAlias"
+:
+"default"
+,
+"keyPassword"
+:
+"******"
+,
+"profilePath"
+:
+"D:/sign/default.p7b"
+,
+"signAlg"
+:
+"SHA256withECDSA"
+,
+"storeFile"
+:
+"D:/sign/default.p12"
+}
+}
+]
+准备
+两台真机
+（手机 + 平板），登录同一华为账号，在「设置 → 超级终端」中组网为可信设备，并连接同一 Wi-Fi
+2.2 码道环境配置
+步骤 1：接入华为云码道
+访问
+华为云码道
+开通码道服务（体验版免费）
+步骤 2：配置鸿蒙开发 Agent
+2.3 真机/模拟器准备
+方式
+说明
+模拟器
+DevEco Studio → Tools → Device Manager → 创建本地模拟器
+真机
+开启开发者模式 + USB 调试，连接电脑
+分布式体验
+需两台设备登录同一华为账号并组网
+三、使用码道 730 新特性创建项目
+3.1 使用鸿蒙开发 Agent 创建
+步骤 1：在码道中发起创建请求
+在码道 鸿蒙开发agent 中输入：
+请创建一个鸿蒙分布式电商应用项目，要求：
+1.
+Stage 模型，
+API
+14
+2.
+包含首页、商品详情、购物车、订单列表
+4
+个页面
+3.
+使用分布式 KVStore 实现购物车跨设备同步
+4.
+支持手机、平板、2in1 设备
+5.
+商品数据使用 Mock，包含华为生态产品
+步骤 2：鸿蒙开发 Agent 自动生成项目骨架
+Agent 将自动生成：
+AppScope/app.json5
+— 应用配置
+entry/src/main/module.json5
+— 模块配置
+entry/src/main/ets/entryability/EntryAbility.ets
+— 入口 Ability
+4 个页面的基础结构
+main_pages.json
+— 路由配置
+步骤 3：验证项目结构
+在码道中打开生成的项目，确认目录结构与
+README.md
+中一致。
+四、Vibe Coding 多模态驱动开发
+4.1 文档上传解析：PRD 驱动开发
+步骤 1：上传 PRD 文档
+在码道 Vibe Coding 面板中：
+点击
+上传文档
+按钮
+上传以下 PRD 内容（保存为
+prd.md
+）：
+# 鸿蒙分布式电商
+PRD
+## 首页
+-
+顶部标题栏
++
+购物车图标（带角标）
+-
+搜索栏，支持关键词搜索
+-
+Banner 轮播（
+3
+张）
+-
+商品分类横向滚动（
+6
+个分类）
+-
+商品双列瀑布流展示
+## 商品详情页
+-
+商品大图
++
+标签
+-
+价格、原价、评分、销量、库存
+-
+商品描述
+-
+卖家信息
+-
+数量选择器
+-
+底部操作栏：收藏、购物车、加入购物车、立即购买
+## 购物车页
+-
+商品列表（图片、名称、价格、数量）
+-
+单选
+/
+全选
+-
+编辑模式（删除、改数量）
+-
+价格汇总与优惠
+-
+结算按钮
+## 订单列表页
+-
+状态筛选 Tab（全部
+/
+待付款
+/
+已付款
+/
+已发货
+/
+已送达）
+-
+订单卡片展示
+-
+待付款订单支持支付
+/
+取消
+步骤 2：Agent 自动解析并拆解任务
+码道将自动：
+解析 PRD 提取 4 个页面模块
+拆解为 20+ 个开发任务
+生成任务依赖关系图
+4.2 语音输入：语音驱动页面生成
+步骤 1：首页 Banner 语音生成
+在 Vibe Coding 面板点击
+语音输入
+按钮，说：
+“首页 Banner 需要三张轮播图，第一张是华为生态全系热销，第二张是鸿蒙智联智能家居，第三张是730新特性体验。Banner 高度 140，圆角 12，自动播放间隔 3 秒。”
+Agent 将生成
+Index.ets
+中的
+buildBanner
+Builder 和 Swiper 代码。
+步骤 2：购物车交互语音补充
+继续语音输入：
+“购物车页面，每个商品项左侧有勾选框，中间是商品图片和名称，右侧是价格和数量。管理模式下可以删除商品和修改数量。底部有全选和结算按钮。”
+Agent 将生成
+ShoppingCart.ets
+的完整交互逻辑。
+步骤 3：分布式流转按钮语音描述
+“商品详情页，如果检测到可信设备，显示一个分布式协同购物卡片，包含流转按钮，点击后调用 startDistributedUI 将页面流转到目标设备。”
+Agent 将生成
+ProductDetail.ets
+中的分布式流转区域代码。
+4.3 图片理解：竞品截图转代码
+步骤 1：上传竞品 App 截图
+截取某电商 App 的商品详情页截图
+在 Vibe Coding 面板点击
+上传图片
+选择截图文件上传
+步骤 2：描述生成需求
+输入提示词：
+请根据上传的截图，生成鸿蒙 ArkTS 版本的商品详情页布局代码。
+保持整体布局结构一致，适配鸿蒙设计规范。
+步骤 3：Agent 识别并生成代码
+码道图片理解增强将：
+识别截图中的 UI 元素布局
+映射到 ArkTS 组件（Image、Text、Row、Column 等）
+生成对应的
+.ets
+代码
+步骤 4：审查并调整
+检查生成的代码，根据需要微调样式参数（颜色、间距、字号等）。
+五、分布式能力接入实操
+5.1 分布式数据管理器实现
+步骤 1：理解分布式 KVStore
+鸿蒙分布式键值存储（distributedKVStore）允许应用数据在可信设备间自动同步。
+步骤 2：初始化 KVManager
+在
+DistributedDataManager.ets
+中：
+const
+kvManagerConfig
+:
+distributedKVStore
+.
+KVManagerConfig
+=
+{
+bundleName
+:
+BUNDLE_NAME
+,
+context
+:
+this
+.
+context
+}
+;
+this
+.
+kvManager
+=
+distributedKVStore
+.
+createKVManager
+(
+kvManagerConfig
+)
+;
+步骤 3：创建 KVStore
+const
+options
+:
+distributedKVStore
+.
+Options
+=
+{
+createIfMissing
+:
+true
+,
+encrypt
+:
+false
+,
+backup
+:
+false
+,
+autoSync
+:
+true
+,
+// 关键：开启自动同步
+kvStoreType
+:
+distributedKVStore
+.
+KVStoreType
+.
+SINGLE_VERSION
+,
+securityLevel
+:
+distributedKVStore
+.
+SecurityLevel
+.
+S1
+}
+;
+this
+.
+kvStore
+=
+await
+this
+.
+kvManager
+.
+getKVStore
+(
+KV_STORE_ID
+,
+options
+)
+;
+步骤 4：监听远端数据变更
+this
+.
+kvStore
+.
+on
+(
+'dataChange'
+,
+distributedKVStore
+.
+SubscribeType
+.
+SUBSCRIBE_TYPE_REMOTE
+,
+(
+data
+)
+=>
+{
+// 远端数据变更时触发
+this
+.
+notifyListeners
+(
+data
+.
+insertEntries
+,
+data
+.
+updateEntries
+,
+data
+.
+deleteEntries
+)
+;
+}
+)
+;
+步骤 5：同步购物车数据
+在
+ShoppingCart.ets
+中，每次购物车变更后调用：
+DistributedDataManager
+.
+getInstance
+(
+)
+.
+syncCartData
+(
+CartManager
+.
+getInstance
+(
+)
+.
+getItems
+(
+)
+)
+;
+5.2 分布式设备管理
+步骤 1：初始化 DeviceManager
+this
+.
+deviceMgr
+=
+await
+deviceManager
+.
+createDeviceManager
+(
+BUNDLE_NAME
+)
+;
+步骤 2：获取可信设备列表
+const
+devices
+=
+this
+.
+deviceMgr
+.
+getTrustedDeviceListSync
+(
+)
+;
+步骤 3：启动分布式 UI 流转
+const
+want
+=
+{
+deviceId
+:
+targetDeviceId
+,
+bundleName
+:
+BUNDLE_NAME
+,
+abilityName
+:
+'EntryAbility'
+}
+;
+this
+.
+context
+.
+startAbility
+(
+want
+)
+;
+5.3 实操验证
+在设备 A 添加商品到购物车
+打开设备 B 的应用
+确认购物车数据已自动同步
+在设备 A 商品详情页点击"流转"
+确认页面已流转至设备 B
+六、单元测试 Agent 实操
+6.1 使用单元测试 Agent 生成测试
+步骤 1：选择目标模块
+在码道中选择
+单元测试 Agent
+，指定要测试的模块：
+请为以下模块生成单元测试：
+1.
+utils
+/
+MockData
+.
+ets — 商品数据与搜索逻辑
+2.
+utils
+/
+CartManager
+.
+ets — 购物车管理逻辑
+3.
+model
+/
+OrderModel
+.
+ets — 订单模型
+4.
+distributed
+/
+DistributedDataManager
+.
+ets — 分布式数据管理
+步骤 2：Agent 自动分析并生成
+单元测试 Agent 将：
+分析每个模块的公开方法
+识别边界条件和异常场景
+生成
+@ohos/hypium
+格式的测试用例
+自动配置测试入口
+Index.test.ets
+步骤 3：查看生成的测试
+生成的测试文件位于
+entry/src/test/
+目录：
+文件
+用例数
+覆盖场景
+MockData.test.ets
+12
+数据获取、搜索、分类、边界值
+CartManager.test.ets
+18
+增删改查、选择、汇总、序列化
+OrderModel.test.ets
+3
+状态映射、金额计算
+DistributedData.test.ets
+3
+单例、设备列表、监听器
+6.2 运行单元测试
+步骤 1：在码道中运行
+对
+entry/src/ohosTest
+执行
+Run Tests
+在测试结果面板查看通过率
+步骤 2：命令行运行
+hvigorw.bat assembleHap
+--mode
+module
+-p
+product
+=
+default
+-p
+buildMode
+=
+debug
+Windows 环境需用
+hvigorw.bat
+，Linux/Mac 环境用
+hvigorw
+。
+步骤 3：确认全部通过
+预期结果：
+36 个测试用例全部通过
+七、CodeArts Check 与 Fix Agent 实操
+7.1 CodeArts Check 静态分析
+步骤 1：触发静态分析
+在码道中选择
+CodeArts Check
+，对项目执行静态分析：
+请对当前鸿蒙项目执行静态分析与 Bug 检测，检查项包括：
+-
+ArkTS 语法规范
+-
+内存泄漏风险
+-
+分布式
+API
+使用规范
+-
+空指针风险
+-
+硬编码问题
+步骤 2：查看分析报告
+CodeArts Check 将输出报告，可能包含：
+问题类型
+严重级别
+示例
+空指针风险
+Warning
+product
+可能为 null 未判断
+硬编码
+Info
+颜色值应使用资源引用
+API 版本兼容
+Warning
+某些 API 在低版本不可用
+7.2 Review Agent 自定义规则审查
+步骤 1：配置审查规则
+在 Review Agent 中导入企业规范：
+{
+"rules"
+:
+[
+{
+"id"
+:
+"HOS001"
+,
+"name"
+:
+"禁止硬编码颜色"
+,
+"pattern"
+:
+"#[0-9A-Fa-f]{6}"
+,
+"suggestion"
+:
+"使用 $r('app.color.xxx') 资源引用"
+}
+,
+{
+"id"
+:
+"HOS002"
+,
+"name"
+:
+"分布式数据需加密"
+,
+"check"
+:
+"distributedKVStore.SecurityLevel >= S1"
+}
+]
+}
+步骤 2：执行白盒化审查
+Review Agent 将逐文件检查，输出违规项与修复建议。
+7.3 Fix Agent 一键修复
+步骤 1：查看待修复问题
+在 CodeArts Check / Review Agent 报告中，标记需要修复的问题。
+步骤 2：触发 Fix Agent
+请修复 CodeArts Check 报告中的全部 Warning 级别问题
+步骤 3：Fix Agent 自动修复
+Fix Agent 将：
+逐个分析问题根因
+生成修复补丁
+应用补丁并验证
+输出修复报告
+步骤 4：批量修复
+请批量修复以下问题：
+-
+将所有硬编码颜色替换为资源引用
+-
+为所有可空对象添加空安全判断
+-
+统一日志输出格式
+步骤 5：验证修复结果
+重新运行 CodeArts Check，确认问题已全部解决。
+八、多端预览与分布式体验
+8.1 多端预览
+步骤 1：配置多端设备
+在码道 Device Manager 中创建：
+手机模拟器（phone）
+平板模拟器（tablet）
+2in1 设备模拟器
+步骤 2：分别运行预览
+选择手机模拟器 → Run → 查看手机端 UI
+选择平板模拟器 → Run → 查看平板自适应 UI
+选择 2in1 模拟器 → Run → 查看大屏适配
+8.2 鸿蒙 PC 适配体验
+此特性仅中国站支持
+步骤 1：在鸿蒙 PC 上安装码道
+在鸿蒙 PC 的应用市场搜索
+CodeArts
+安装码道客户端
+步骤 2：在鸿蒙 PC 上开发
+打开码道，导入项目
+使用码道 Agent 继续开发
+直接在 PC 上预览运行效果
+8.3 分布式协同完整体验
+准备工作
+设备 A：手机（登录华为账号）
+设备 B：平板（登录同一华为账号）
+两台设备连接同一 Wi-Fi
+在
+设置 → 超级终端
+中将两台设备组网
+体验流程
+步骤
+设备 A (手机)
+设备 B (平板)
+1
+打开应用，浏览首页
+—
+2
+点击商品进入详情页
+—
+3
+点击"加入购物车"
+—
+4
+—
+打开应用，购物车自动同步商品
+5
+在详情页点击"流转"
+接收流转，显示商品详情
+6
+继续添加商品
+购物车实时更新
+7
+进入购物车，结算下单
+订单数据同步
+九、常见问题与排错
+Q1: ohpm install 失败
+现象
+：
+ohpm install
+报网络错误
+解决
+：
+ohpm config
+set
+registry https://ohpm.openharmony.cn/ohpm/
+ohpm
+install
+Q2: 分布式数据同步不生效
+现象
+：设备 A 添加购物车，设备 B 未同步
+排查清单
+：
+✅ 两台设备登录同一华为账号
+✅ 设备已组网（设置 → 超级终端）
+✅ 连接同一 Wi-Fi
+✅
+autoSync: true
+已开启
+✅
+SecurityLevel
+设置正确
+✅ 应用签名配置正确（非 debug 签名）
+Q3: Agent 生成的代码编译报错
+现象
+：鸿蒙 Agent 生成的 ArkTS 代码有语法错误
+解决
+：
+使用
+Fix Agent
+自动修复语法错误
+或使用
+CodeArts Check
+检测后修复
+手动检查 API 版本兼容性
+Q4: 单元测试无法运行
+现象
+：
+Run Tests
+无响应
+解决
+：
+确认
+@ohos/hypium
+已安装：
+ohpm install
+确认
+ohosTest
+模块配置正确
+检查
+build-profile.json5
+中 targets 包含
+ohosTest
+Q5: 鸿蒙 PC 上码道无法使用
+现象
+：鸿蒙 PC 上码道功能受限
+说明
+：鸿蒙 PC 适配仅中国站支持，请确认使用中国站账号。
+附录：项目文件清单
+配置文件
+文件
+用途
+AppScope/app.json5
+应用全局配置
+build-profile.json5
+项目构建配置
+oh-package.json5
+项目依赖配置
+entry/build-profile.json5
+Entry 模块构建配置
+entry/src/main/module.json5
+Entry 模块配置
+entry/src/main/resources/base/profile/main_pages.json
+页面路由配置
+源码文件
+文件
+行数(约)
+说明
+entryability/EntryAbility.ets
+45
+应用入口
+pages/Index.ets
+250
+首页
+pages/ProductDetail.ets
+300
+商品详情页
+pages/ShoppingCart.ets
+280
+购物车页
+pages/OrderList.ets
+220
+订单列表页
+components/ProductCard.ets
+70
+商品卡片组件
+components/BottomNav.ets
+40
+底部导航组件
+components/SearchBar.ets
+50
+搜索栏组件
+model/ProductModel.ets
+25
+商品数据模型
+model/CartModel.ets
+20
+购物车数据模型
+model/OrderModel.ets
+30
+订单数据模型
+utils/MockData.ets
+130
+Mock 数据
+utils/CartManager.ets
+110
+购物车管理器
+utils/Logger.ets
+25
+日志工具
+distributed/DistributedDataManager.ets
+170
+分布式数据管理
+测试文件
+文件
+用例数
+说明
+test/MockData.test.ets
+12
+Mock 数据测试
+test/CartManager.test.ets
+18
+购物车测试
+test/OrderModel.test.ets
+3
+订单模型测试
+test/DistributedData.test.ets
+3
+分布式数据测试
+ohosTest/ets/pages/Index.test.ets
+-
+测试入口
+提示
+：本实操文档配合项目源码使用，建议先克隆仓库并成功运行后，再按文档步骤逐步体验码道 730 新特性。如在实操中遇到问题，可参考第九节常见问题排错，或在码道心愿墙提交反馈。

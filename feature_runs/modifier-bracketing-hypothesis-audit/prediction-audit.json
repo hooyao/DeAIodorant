@@ -1,0 +1,22 @@
+{
+  "errors": [],
+  "hypothesis_prediction_counts": {
+    "H-BRACKET": 1,
+    "H-GLOBAL": 1,
+    "H-SEMANTIC": 1,
+    "H-TERM": 1
+  },
+  "notice": "This report checks CSV structure, identifiers, declared contrasts, and optional cross-links. It cannot determine whether a prediction is scientifically discriminating, sufficiently precise, or likely, and it never ranks or selects a hypothesis.",
+  "prediction_count": 4,
+  "prediction_ids": [
+    "P-ANCHOR",
+    "P-BRACKET",
+    "P-GLOBAL",
+    "P-SEMANTIC"
+  ],
+  "record_cross_check_performed": false,
+  "schema_version": "2.0",
+  "status": "VALID_FOR_HUMAN_REVIEW",
+  "valid": true,
+  "warnings": []
+}

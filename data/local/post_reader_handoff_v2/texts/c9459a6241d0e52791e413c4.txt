@@ -1,0 +1,1501 @@
+引言
+在数字化办公和创意工作日益普及的今天，多屏协作已成为提升工作效率的重要技术手段。传统的双显示器 setup 虽然能提供扩展桌面功能，但存在成本高、空间占用大、线缆繁杂等问题。随着移动设备性能的不断提升，利用平板电脑作为PC的副屏成为极具吸引力的替代方案。
+鸿蒙操作系统凭借其独特的分布式技术架构，为多设备协同提供了原生支持。通过鸿蒙的分布式软总线、设备虚拟化、数据共享等核心技术，我们可以实现平板与PC之间的无缝连接，将平板转变为PC的逻辑扩展显示器，支持真正的扩展桌面模式而非简单的屏幕镜像。
+这种技术方案具有显著优势：平板设备通常具备高分辨率显示屏、优秀的色彩表现力和便携性；鸿蒙系统的分布式能力确保了低延迟的数据传输和实时的屏幕同步；用户可以在保持PC强大计算能力的同时，享受平板灵活显示位置的便利。无论是程序员需要多窗口编码、设计师需要参考素材同时进行创作，还是金融从业者需要同时监控多个数据源，这种方案都能显著提升工作效率。
+本文将深入探讨基于鸿蒙系统实现平板PC副屏功能的完整技术方案，从底层原理到实际应用，从环境搭建到代码实现，为开发者提供一套可落地的解决方案。
+技术背景
+鸿蒙分布式显示技术架构
+鸿蒙系统的分布式能力为跨设备显示提供了独特的技术优势：
+1. 分布式软总线（Distributed Soft Bus）
+超低延迟传输
+：优化的数据传输协议，确保屏幕内容的实时同步
+自适应带宽
+：根据网络状况动态调整传输质量和帧率
+多协议融合
+：统一抽象WiFi、蓝牙、USB等多种物理连接方式
+安全加密
+：端到端加密保护显示内容的安全性
+2. 设备虚拟化（Device Virtualization）
+显示设备虚拟化
+：将平板屏幕虚拟化为PC的逻辑显示器
+输入设备共享
+：支持平板触摸、手写笔作为输入设备控制PC
+GPU资源共享
+：利用分布式GPU能力进行渲染加速
+内存共享
+：高效的显存共享机制减少数据拷贝开销
+3. 分布式数据管理
+屏幕数据同步
+：实时同步PC屏幕区域到平板显示
+增量更新
+：只传输变化的屏幕区域，降低带宽消耗
+压缩优化
+：智能图像压缩算法平衡质量和性能
+缓存策略
+：多级缓存减少重复数据传输
+扩展桌面技术原理
+1. Windows扩展显示协议
+Windows操作系统原生支持多显示器扩展模式，通过以下机制实现：
+Display Driver Model (WDDM)
+：
+图形驱动模型支持多显示适配器
+每个显示器作为独立的显示管道
+支持不同的分辨率、刷新率和色彩深度
+Desktop Window Manager (DWM)
+：
+合成管理器处理多显示器窗口布局
+支持窗口跨显示器拖拽
+统一的视觉效果和动画
+Extended Display Identification Data (EDID)
+：
+显示器识别数据结构
+包含分辨率、时序、厂商信息等
+系统自动配置最优显示参数
+2. 网络显示协议标准
+Microsoft RDP (Remote Desktop Protocol)
+：
+支持多显示器配置
+网络级显示重定向
+压缩和缓存优化
+Virtual Network Computing (VNC)
+：
+跨平台显示协议
+像素级屏幕传输
+相对简单的实现架构
+PCoIP (PC-over-IP)
+：
+专业级远程显示协议
+高质量图像传输
+硬件加速支持
+SPICE (Simple Protocol for Independent Computing Environments)
+：
+开源显示协议
+支持多种显示配置
+QEMU/KVM生态集成
+3. 鸿蒙特有技术优势
+分布式渲染管线
+：
+渲染任务分发到最优设备执行
+GPU资源池化共享
+负载均衡和故障转移
+原子化服务
+：
+轻量化功能组件
+按需部署和更新
+跨设备能力无缝集成
+超级终端
+：
+可视化设备连接管理
+一键组网和配置
+智能设备推荐和匹配
+应用场景
+1. 编程开发场景
+场景描述
+：开发者使用PC编写代码，平板显示文档、API参考、调试信息
+需求特点
+：需要高分辨率、色彩准确的显示，低延迟滚动和切换
+技术要点
+：支持多窗口布局、文本渲染优化、代码高亮保持
+2. 数字艺术创作场景
+场景描述
+：设计师在PC上使用Photoshop/Illustrator，平板显示素材库、调色板、参考图片
+需求特点
+：需要精确的色彩还原、压感笔支持、图层预览
+技术要点
+：色彩管理、手写笔协议支持、图层数据同步
+3. 金融交易场景
+场景描述
+：交易员在PC上分析图表，平板实时监控市场数据、新闻推送
+需求特点
+：需要高刷新率、多数据源同步、告警提示
+技术要点
+：实时数据流、低延迟更新、个性化布局
+4. 教育培训场景
+场景描述
+：教师使用PC展示教学内容，平板显示学生反馈、答题统计
+需求特点
+：需要互动性强、多屏协作、录制分享
+技术要点
+：双向通信、实时标注、录制编码
+5. 会议演示场景
+场景描述
+：演讲者使用PC控制演示文稿，平板显示备注、观众提问
+需求特点
+：需要便携控制、隐私保护、无缝切换
+技术要点
+：演示控制、分屏显示、权限管理
+6. 数据分析场景
+场景描述
+：分析师在PC上处理数据，平板显示多维图表、实时监控
+需求特点
+：需要大数据量渲染、交互式探索、多维度视图
+技术要点
+：GPU加速、交互协议、数据可视化优化
+核心特性
+真扩展桌面
+：非镜像模式，支持独立分辨率和方向设置
+低延迟同步
+：优化的传输协议，延迟控制在16ms以内
+高清画质
+：支持4K分辨率，智能压缩保持视觉质量
+触摸交互
+：平板触摸、手写笔直接控制PC应用
+跨平台兼容
+：支持Windows/macOS/Linux多种PC系统
+智能布局
+：自动适配不同屏幕尺寸和比例
+安全传输
+：端到端加密，保护敏感显示内容
+资源优化
+：CPU/GPU/网络资源智能调度
+热插拔支持
+：设备连接状态变化时平滑处理
+个性化配置
+：用户可自定义显示区域和质量控制
+原理流程图与原理解释
+系统架构流程图
+graph TB
+subgraph "PC端 (主机)"
+A[应用程序渲染] --> B[DWM合成器]
+B --> C[显示驱动]
+C --> D[扩展显示器管理]
+D --> E[屏幕数据采集]
+E --> F[图像编码压缩]
+F --> G[分布式软总线]
+end
+subgraph "网络传输层"
+G --> H[协议封装]
+H --> I[网络适配]
+I --> J[带宽自适应]
+J --> K[安全加密]
+K --> L[传输优化]
+end
+subgraph "鸿蒙平板端 (副屏)"
+L --> M[分布式软总线]
+M --> N[数据解密]
+N --> O[图像解码]
+O --> P[显示合成]
+P --> Q[GPU渲染]
+Q --> R[屏幕显示]
+S[触摸采集] --> T[输入事件编码]
+T --> U[分布式软总线]
+U --> V[PC输入处理]
+V --> W[系统响应]
+end
+subgraph "控制管理"
+X[设备发现] --> Y[连接管理]
+Y --> Z[会话控制]
+Z --> AA[状态同步]
+AA --> AB[错误处理]
+end
+style A fill:#e3f2fd
+style R fill:#e8f5e8
+style G fill:#fff3e0
+style M fill:#fce4ec
+扩展桌面建立流程
+sequenceDiagram
+participant PC as PC主机
+participant Discovery as 设备发现服务
+participant Auth as 认证服务
+participant Connection as 连接管理
+participant ScreenCapture as 屏幕采集
+participant Encoder as 编码器
+participant Harmony as 鸿蒙平板
+participant Decoder as 解码器
+participant Display as 显示系统
+participant Touch as 触摸系统
+Note over PC,Harmony: 设备发现阶段
+PC->>Discovery: 广播副屏服务
+Discovery->>Harmony: 发现PC设备
+Harmony->>Discovery: 响应发现请求
+Discovery->>PC: 设备信息交换
+Note over PC,Harmony: 连接建立阶段
+Harmony->>Auth: 发起连接请求
+Auth->>PC: 验证设备权限
+PC->>Auth: 授权确认
+Auth->>Connection: 建立安全连接
+Connection->>PC: 连接成功通知
+Connection->>Harmony: 连接成功通知
+Note over PC,Harmony: 显示配置阶段
+Harmony->>PC: 请求显示配置
+PC->>ScreenCapture: 初始化屏幕采集
+ScreenCapture->>PC: 采集区域配置
+PC->>Harmony: 发送显示参数
+Harmony->>Display: 创建虚拟显示器
+Display->>Harmony: 显示器就绪
+Note over PC,Harmony: 数据传输阶段
+loop 实时屏幕同步
+ScreenCapture->>Encoder: 捕获屏幕区域
+Encoder->>Connection: 压缩传输数据
+Connection->>Decoder: 接收显示数据
+Decoder->>Display: 解码渲染帧
+Display->>Harmony: 更新屏幕显示
+end
+Note over Harmony,PC: 输入交互阶段
+loop 触摸输入处理
+Touch->>Encoder: 采集触摸事件
+Encoder->>Connection: 编码输入数据
+Connection->>PC: 传输输入事件
+PC->>WMP: 处理触摸输入
+WMP->>Application: 执行对应操作
+end
+原理解释
+1. 设备发现与配对机制
+服务广播
+：PC端通过mDNS/Bonjour协议广播副屏服务，包含设备能力、支持的分辨率、协议版本等信息
+能力协商
+：平板端发现服务后，双方交换支持的显示模式和传输协议，选择最优配置
+安全认证
+：基于设备证书和用户授权的双重认证机制，防止未授权访问
+会话建立
+：创建持久的加密会话，支持断线重连和会话恢复
+2. 屏幕数据采集与编码
+区域捕获
+：Windows Graphics Capture API或Mirror Driver捕获指定显示区域的像素数据
+增量检测
+：比较前后帧差异，只编码变化区域，显著降低带宽需求
+智能编码
+：根据内容类型选择H.264/H.265/AV1编码，平衡质量和性能
+质量控制
+：根据网络状况动态调整码率和分辨率，保证流畅体验
+3. 网络传输优化
+协议栈
+：基于UDP的可靠传输协议，自定义重传和拥塞控制机制
+数据分包
+：大帧分割为适合MTU的小包，支持乱序重组和丢包恢复
+流式传输
+：连续帧的流水线传输，隐藏网络延迟
+缓存策略
+：发送端和接收端多级缓存，应对网络抖动
+4. 显示渲染与同步
+虚拟显示器
+：在平板系统创建虚拟显示设备，集成到显示管理器
+双缓冲
+：使用前后缓冲区避免画面撕裂，垂直同步保证时序正确
+色彩管理
+：ICC配置文件同步，确保色彩在不同设备间准确还原
+时序补偿
+：网络延迟预测和补偿，保持音视频同步
+5. 输入事件处理
+事件捕获
+：平板触摸、手写笔、键盘、鼠标等输入事件的精确捕获
+坐标映射
+：将平板坐标系转换为PC虚拟显示器坐标系
+手势识别
+：支持捏合缩放、旋转、滑动等多点触控手势
+优先级处理
+：本地输入与远程控制的冲突解决和优先级管理
+环境准备
+开发环境配置
+1. DevEco Studio配置
+# 下载并安装DevEco Studio 3.1+
+# 配置HarmonyOS SDK路径
+export HARMONYOS_SDK_HOME=/path/to/harmonyos/sdk
+export PATH=$HARMONYOS_SDK_HOME:$PATH
+# 安装必要的SDK组件
+# - HarmonyOS SDK Platform Tools
+# - HarmonyOS Device Manager
+# - Previewer
+# - ArkUI-X (可选，用于跨平台)
+2. Windows端开发环境
+# 安装Visual Studio 2022 with C++ development tools
+# 安装Windows SDK
+# 安装.NET Framework 4.8+
+# NuGet packages needed:
+# Install-Package Microsoft.Windows.CsharpWin32
+# Install-Package SharpDX
+# Install-Package FFmpeg.AutoGen
+# Python dependencies (for scripting):
+pip install opencv-python numpy pillow pyautogui
+3. 项目配置（build-profile.json5）
+{
+"app": {
+"signingConfigs": [],
+"compileSdkVersion": 9,
+"compatibleSdkVersion": 9,
+"targetSdkVersion": 9,
+"bundleName": "com.example.extendeddisplay",
+"vendor": "example",
+"versionCode": 1000000,
+"versionName": "1.0.0",
+"icon": "$media:app_icon",
+"label": "$string:app_name",
+"distributedNotificationEnabled": true
+},
+"modules": [
+{
+"name": "entry",
+"srcPath": "./entry",
+"targets": [
+{
+"name": "default",
+"applyToProducts": ["default"]
+}
+]
+}
+],
+"deviceTypes": [
+"tablet",
+"phone" // 手机也可作为副屏
+]
+}
+4. 模块配置（module.json5）
+{
+"module": {
+"name": "entry",
+"type": "entry",
+"description": "$string:module_desc",
+"mainElement": "MainAbility",
+"deviceTypes": ["tablet", "phone"],
+"deliveryWithInstall": true,
+"installationFree": false,
+"pages": "$profile:main_pages",
+"abilities": [
+{
+"name": "MainAbility",
+"srcEntry": "./ets/mainability/MainAbility.ts",
+"description": "$string:MainAbility_desc",
+"icon": "$media:icon",
+"label": "$string:MainAbility_label",
+"startWindowIcon": "$media:icon",
+"startWindowBackground": "$color:start_window_background",
+"exported": true,
+"continuable": true,
+"supportWindowMode": ["fullscreen", "split"],
+"skills": [
+{
+"entities": ["entity.system.home"],
+"actions": ["action.system.home"]
+}
+]
+},
+{
+"name": "ExtendedDisplayService",
+"srcEntry": "./ets/service/ExtendedDisplayService.ts",
+"description": "扩展显示后台服务",
+"icon": "$media:icon",
+"label": "副屏服务",
+"type": "service",
+"exported": true,
+"backgroundModes": ["dataTransfer", "location"]
+},
+{
+"name": "ScreenCaptureService",
+"srcEntry": "./ets/capture/ScreenCaptureService.ts",
+"description": "屏幕采集服务",
+"type": "service",
+"exported": false
+}
+],
+"extensionAbilities": [
+{
+"name": "DeviceDiscoveryExtAbility",
+"srcEntry": "./ets/discovery/DeviceDiscoveryExtAbility.ts",
+"type": "driver",
+"exported": false
+}
+],
+"requestPermissions": [
+{
+"name": "ohos.permission.DISTRIBUTED_DATASYNC",
+"reason": "$string:distributed_sync_reason",
+"usedScene": {
+"abilities": ["MainAbility", "ExtendedDisplayService"],
+"when": "always"
+}
+},
+{
+"name": "ohos.permission.USE_BLUETOOTH",
+"reason": "$string:bluetooth_reason",
+"usedScene": {
+"abilities": ["MainAbility"],
+"when": "inuse"
+}
+},
+{
+"name": "ohos.permission.INTERNET",
+"reason": "$string:internet_reason",
+"usedScene": {
+"abilities": ["MainAbility", "ExtendedDisplayService"],
+"when": "inuse"
+}
+},
+{
+"name": "ohos.permission.ACCESS_NETWORK_STATE",
+"reason": "$string:network_state_reason",
+"usedScene": {
+"abilities": ["MainAbility", "ExtendedDisplayService"],
+"when": "always"
+}
+},
+{
+"name": "ohos.permission.MANAGE_EXTERNAL_STORAGE",
+"reason": "$string:storage_reason",
+"usedScene": {
+"abilities": ["ExtendedDisplayService"],
+"when": "inuse"
+}
+}
+]
+}
+}
+目录结构设计
+ExtendedDisplay/
+├── entry/
+│ ├── src/
+│ │ └── main/
+│ │ ├── ets/
+│ │ │ ├── mainability/
+│ │ │ │ ├── MainAbility.ts
+│ │ │ │ └── UIComponents.ts
+│ │ │ ├── service/
+│ │ │ │ ├── ExtendedDisplayService.ts
+│ │ │ │ ├── ConnectionManager.ts
+│ │ │ │ └── SessionManager.ts
+│ │ │ ├── capture/
+│ │ │ │ ├── ScreenCaptureService.ts
+│ │ │ │ ├── ImageEncoder.ts
+│ │ │ │ └── FrameProcessor.ts
+│ │ │ ├── render/
+│ │ │ │ ├── DisplayRenderer.ts
+│ │ │ │ ├── VideoDecoder.ts
+│ │ │ │ └── Compositor.ts
+│ │ │ ├── input/
+│ │ │ │ ├── InputHandler.ts
+│ │ │ │ ├── TouchMapper.ts
+│ │ │ │ └── GestureRecognizer.ts
+│ │ │ ├── network/
+│ │ │ │ ├── NetworkManager.ts
+│ │ │ │ ├── ProtocolHandler.ts
+│ │ │ │ └── BandwidthController.ts
+│ │ │ ├── discovery/
+│ │ │ │ ├── DeviceDiscoveryExtAbility.ts
+│ │ │ │ ├── ServiceAdvertiser.ts
+│ │ │ │ └── DeviceMatcher.ts
+│ │ │ ├── model/
+│ │ │ │ ├── DisplayConfig.ts
+│ │ │ │ ├── FrameData.ts
+│ │ │ │ ├── DeviceInfo.ts
+│ │ │ │ └── ConfigManager.ts
+│ │ │ ├── utils/
+│ │ │ │ ├── Logger.ts
+│ │ │ │ ├── PerformanceMonitor.ts
+│ │ │ │ ├── ColorSpaceConverter.ts
+│ │ │ │ └── GeometryUtils.ts
+│ │ │ └── pages/
+│ │ │ ├── Index.ets // 主界面
+│ │ │ ├── DeviceList.ets // 设备列表
+│ │ │ ├── DisplaySettings.ets // 显示设置
+│ │ │ ├── PerformanceMonitor.ets // 性能监控
+│ │ │ └── Calibration.ets // 校准界面
+│ │ ├── resources/
+│ │ │ ├── base/
+│ │ │ │ ├── element/
+│ │ │ │ │ ├── color.json
+│ │ │ │ │ ├── string.json
+│ │ │ │ │ └── style.json
+│ │ │ │ ├── media/
+│ │ │ │ │ ├── icon.png
+│ │ │ │ │ ├── loading.gif
+│ │ │ │ │ └── cursor_arrow.png
+│ │ │ │ └── profile/
+│ │ │ │ └── main_pages.json
+│ │ │ └── rawfile/
+│ │ │ ├── shaders/
+│ │ │ │ ├── vertex_shader.glsl
+│ │ │ │ └── fragment_shader.glsl
+│ │ │ ├── configs/
+│ │ │ │ ├── display_profiles.json
+│ │ │ │ └── codec_configs.json
+│ │ │ └── fonts/
+│ │ │ └── custom_font.ttf
+│ │ └── module.json5
+│ └── build-profile.json5
+├── windows-service/ # Windows端服务
+│ ├── ScreenCapture/
+│ │ ├── ScreenCapture.cs
+│ │ ├── ImageEncoder.cs
+│ │ └── NetworkTransmitter.cs
+│ ├── InputInjector/
+│ │ ├── InputInjector.cs
+│ │ ├── TouchMapper.cs
+│ │ └── GestureProcessor.cs
+│ ├── ConfigManager/
+│ │ ├── ConfigManager.cs
+│ │ └── ProfileManager.cs
+│ └── ExtendedDisplayService.cs
+└── shared/ # 共享协议定义
+├── Protocol/
+│ ├── MessageProtocol.cs
+│ └── DisplayProtocol.cs
+└── Common/
+├── Constants.cs
+└── Types.cs
+实际详细应用代码示例实现
+1. 基础类型定义和常量（model/DisplayConfig.ts）
+/**
+* 扩展桌面显示配置类型定义
+* 定义显示模式、设备信息、帧数据等核心数据结构
+*/
+// 显示模式枚举
+export enum DisplayMode {
+EXTEND = 'extend', // 扩展模式
+DUPLICATE = 'duplicate', // 复制模式
+SECONDARY_ONLY = 'secondary_only' // 仅副屏
+}
+// 设备类型枚举
+export enum DeviceType {
+WINDOWS_PC = 'windows_pc',
+MAC_OS = 'mac_os',
+LINUX_PC = 'linux_pc',
+HARMONY_TABLET = 'harmony_tablet',
+HARMONY_PHONE = 'harmony_phone'
+}
+// 连接状态枚举
+export enum ConnectionStatus {
+DISCONNECTED = 'disconnected',
+CONNECTING = 'connecting',
+CONNECTED = 'connected',
+ERROR = 'error',
+PAUSED = 'paused'
+}
+// 编码格式枚举
+export enum CodecType {
+H264 = 'h264',
+H265 = 'h265',
+AV1 = 'av1',
+VP9 = 'vp9',
+RAW = 'raw'
+}
+// 色彩空间枚举
+export enum ColorSpace {
+SRGB = 'srgb',
+ADOBE_RGB = 'adobe_rgb',
+DCI_P3 = 'dci_p3',
+REC_2020 = 'rec_2020'
+}
+// 刷新率预设
+export enum RefreshRate {
+RATE_30HZ = 30,
+RATE_60HZ = 60,
+RATE_90HZ = 90,
+RATE_120HZ = 120,
+RATE_144HZ = 144,
+ADAPTIVE = 0 // 自适应
+}
+// 显示方向枚举
+export enum DisplayOrientation {
+LANDSCAPE = 0,
+PORTRAIT = 90,
+LANDSCAPE_FLIPPED = 180,
+PORTRAIT_FLIPPED = 270
+}
+// 设备信息接口
+export interface DeviceInfo {
+deviceId: string; // 设备唯一标识
+name: string; // 设备名称
+type: DeviceType; // 设备类型
+platform: string; // 操作系统平台
+version: string; // 系统版本
+ipAddress: string; // IP地址
+port: number; // 服务端口
+macAddress?: string; // MAC地址
+screenResolution: Resolution; // 屏幕分辨率
+supportedResolutions: Resolution[]; // 支持的分辨率列表
+supportedRefreshRates: number[]; // 支持的刷新率
+supportedCodecs: CodecType[]; // 支持的编码格式
+capabilities: string[]; // 设备能力列表
+lastSeen: number; // 最后发现时间
+signalStrength?: number; // 信号强度(-dBm)
+batteryLevel?: number; // 电池电量(0-100)
+isCharging?: boolean; // 充电状态
+}
+// 分辨率接口
+export interface Resolution {
+width: number; // 宽度(像素)
+height: number; // 高度(像素)
+aspectRatio: number; // 宽高比
+refreshRate?: number; // 刷新率
+colorDepth?: number; // 色彩深度(bit)
+colorSpace?: ColorSpace; // 色彩空间
+}
+// 显示配置接口
+export interface DisplayConfig {
+mode: DisplayMode; // 显示模式
+primaryScreen: Resolution; // 主屏幕分辨率
+secondaryScreen: Resolution; // 副屏分辨率
+orientation: DisplayOrientation; // 屏幕方向
+position: ScreenPosition; // 副屏位置
+quality: QualitySettings; // 质量设置
+performance: PerformanceSettings; // 性能设置
+input: InputSettings; // 输入设置
+}
+// 屏幕位置接口
+export interface ScreenPosition {
+x: number; // X坐标偏移
+y: number; // Y坐标偏移
+offsetX: number; // 水平偏移
+offsetY: number; // 垂直偏移
+relativePosition: 'right' | 'left' | 'top' | 'bottom'; // 相对位置
+}
+// 质量设置接口
+export interface QualitySettings {
+codec: CodecType; // 编码格式
+bitrate: number; // 目标码率(kbps)
+minBitrate: number; // 最小码率
+maxBitrate: number; // 最大码率
+qualityLevel: number; // 质量等级(1-100)
+adaptiveQuality: boolean; // 自适应质量
+compressionRatio: number; // 压缩比率
+fps: number; // 目标帧率
+jpegQuality: number; // JPEG质量(0-100)
+enableHardwareAccel: boolean; // 硬件加速
+}
+// 性能设置接口
+export interface PerformanceSettings {
+maxCpuUsage: number; // CPU使用率上限(%)
+maxMemoryUsage: number; // 内存使用上限(MB)
+networkBufferSize: number; // 网络缓冲区大小(KB)
+frameDropThreshold: number; // 丢帧阈值(ms)
+latencyOptimization: boolean; // 延迟优化
+bandwidthLimit: number; // 带宽限制(Mbps)
+priorityLevel: 'high' | 'normal' | 'low'; // 优先级
+thermalThrottling: boolean; // 热节流
+}
+// 输入设置接口
+export interface InputSettings {
+touchEnabled: boolean; // 触摸输入
+penEnabled: boolean; // 手写笔输入
+gestureEnabled: boolean; // 手势识别
+mouseEmulation: boolean; // 鼠标仿真
+precisionMode: boolean; // 精确模式
+palmRejection: boolean; // 手掌拒绝
+pressureSensitivity: number; // 压感敏感度(0-1)
+coordinateMapping: CoordinateMapping; // 坐标映射
+}
+// 坐标映射接口
+export interface CoordinateMapping {
+sourceRect: Rectangle; // 源矩形
+targetRect: Rectangle; // 目标矩形
+scaleX: number; // X轴缩放
+scaleY: number; // Y轴缩放
+offsetX: number; // X轴偏移
+offsetY: number; // Y轴偏移
+rotation: number; // 旋转角度
+mirrorX: boolean; // X轴镜像
+mirrorY: boolean; // Y轴镜像
+}
+// 矩形区域接口
+export interface Rectangle {
+x: number; // 左上角X
+y: number; // 左上角Y
+width: number; // 宽度
+height: number; // 高度
+}
+// 帧数据接口
+export interface FrameData {
+frameId: number; // 帧编号
+timestamp: number; // 时间戳
+data: ArrayBuffer; // 图像数据
+width: number; // 帧宽度
+height: number; // 帧高度
+stride: number; // 行跨度
+format: PixelFormat; // 像素格式
+region: Rectangle; // 更新区域
+isKeyFrame: boolean; // 关键帧标记
+quality: number; // 帧质量(0-100)
+metadata?: FrameMetadata; // 元数据
+}
+// 像素格式枚举
+export enum PixelFormat {
+RGBA8888 = 'rgba8888',
+BGRA8888 = 'bgra8888',
+RGB565 = 'rgb565',
+NV12 = 'nv12',
+YUV420P = 'yuv420p',
+JPEG = 'jpeg'
+}
+// 帧元数据接口
+export interface FrameMetadata {
+captureTime: number; // 捕获时间
+encodeTime: number; // 编码时间
+transmitTime: number; // 传输时间
+totalLatency: number; // 总延迟
+originalRegion: Rectangle; // 原始区域
+changedRegions: Rectangle[]; // 变化区域
+motionVector?: MotionVector; // 运动向量
+}
+// 运动向量接口
+export interface MotionVector {
+dx: number; // X方向运动
+dy: number; // Y方向运动
+magnitude: number; // 运动幅度
+confidence: number; // 置信度
+}
+// 连接参数接口
+export interface ConnectionParams {
+deviceId: string;
+connectionType: 'wifi' | 'usb' | 'bluetooth';
+timeout: number;
+retryCount: number;
+securityToken?: string;
+compressionLevel: number;
+priority: 'realtime' | 'balanced' | 'quality';
+}
+// 统计信息接口
+export interface Statistics {
+fps: number; // 实际帧率
+bitrate: number; // 实际码率
+latency: number; // 平均延迟
+packetLoss: number; // 丢包率
+cpuUsage: number; // CPU使用率
+memoryUsage: number; // 内存使用
+networkUsage: number; // 网络使用
+frameDrops: number; // 丢帧数
+lastUpdate: number; // 更新时间
+}
+// 错误类型定义
+export enum ErrorType {
+DEVICE_NOT_FOUND = 'device_not_found',
+CONNECTION_FAILED = 'connection_failed',
+CAPTURE_ERROR = 'capture_error',
+ENCODE_ERROR = 'encode_error',
+DECODE_ERROR = 'decode_error',
+NETWORK_ERROR = 'network_error',
+PERMISSION_DENIED = 'permission_denied',
+INSUFFICIENT_RESOURCES = 'insufficient_resources'
+}
+export interface AppError {
+type: ErrorType;
+message: string;
+code: number;
+details?: any;
+timestamp: number;
+recoverable: boolean;
+}
+// 常量定义
+export const CONSTANTS = {
+// 默认显示配置
+DEFAULT_DISPLAY_CONFIG: {
+mode: DisplayMode.EXTEND,
+primaryScreen: { width: 1920, height: 1080, aspectRatio: 16/9 },
+secondaryScreen: { width: 1280, height: 800, aspectRatio: 16/10 },
+orientation: DisplayOrientation.LANDSCAPE,
+position: { x: 1920, y: 0, offsetX: 0, offsetY: 0, relativePosition: 'right' },
+quality: {
+codec: CodecType.H264,
+bitrate: 5000,
+minBitrate: 1000,
+maxBitrate: 20000,
+qualityLevel: 80,
+adaptiveQuality: true,
+compressionRatio: 0.7,
+fps: 60,
+jpegQuality: 85,
+enableHardwareAccel: true
+},
+performance: {
+maxCpuUsage: 70,
+maxMemoryUsage: 512,
+networkBufferSize: 1024,
+frameDropThreshold: 50,
+latencyOptimization: true,
+bandwidthLimit: 100,
+priorityLevel: 'high',
+thermalThrottling: true
+},
+input: {
+touchEnabled: true,
+penEnabled: true,
+gestureEnabled: true,
+mouseEmulation: true,
+precisionMode: true,
+palmRejection: true,
+pressureSensitivity: 0.8,
+coordinateMapping: {
+sourceRect: { x: 0, y: 0, width: 1280, height: 800 },
+targetRect: { x: 0, y: 0, width: 1280, height: 800 },
+scaleX: 1.0,
+scaleY: 1.0,
+offsetX: 0,
+offsetY: 0,
+rotation: 0,
+mirrorX: false,
+mirrorY: false
+}
+}
+} as DisplayConfig,
+// 网络相关常量
+NETWORK: {
+DEFAULT_PORT: 8888,
+DISCOVERY_PORT: 8889,
+HEARTBEAT_INTERVAL: 5000,
+CONNECTION_TIMEOUT: 10000,
+RECONNECT_DELAY: 3000,
+MAX_RETRY_COUNT: 5,
+BUFFER_SIZE: 65536,
+MTU_SIZE: 1400
+},
+// 编码相关常量
+ENCODING: {
+DEFAULT_CODEC: CodecType.H264,
+KEYFRAME_INTERVAL: 60,
+GOP_SIZE: 60,
+BITRATE_ADJUSTMENT_STEP: 500,
+QUALITY_ADJUSTMENT_STEP: 5,
+MIN_QUALITY: 10,
+MAX_QUALITY: 95
+},
+// 性能相关常量
+PERFORMANCE: {
+TARGET_LATENCY: 16, // 16ms = 60fps
+MAX_LATENCY: 50, // 最大延迟50ms
+FRAME_BUFFER_SIZE: 3, // 3帧缓冲区
+STATS_UPDATE_INTERVAL: 1000
+},
+// 显示相关常量
+DISPLAY: {
+MIN_RESOLUTION_WIDTH: 640,
+MIN_RESOLUTION_HEIGHT: 480,
+MAX_RESOLUTION_WIDTH: 7680,
+MAX_RESOLUTION_HEIGHT: 4320,
+ASPECT_RATIO_TOLERANCE: 0.1
+}
+} as const;
+2. 日志工具类（utils/Logger.ts）
+/**
+* 高性能日志工具类
+* 支持分级日志、性能监控、远程上报、日志轮转等功能
+*/
+import { LogLevel, CONSTANTS } from './TypeDefs';
+export class Logger {
+private static instance: Logger;
+private logLevel: LogLevel;
+private enableConsole: boolean;
+private enableFile: boolean;
+private enableRemote: boolean;
+private enablePerformanceLog: boolean;
+private logBuffer: LogEntry[];
+private maxBufferSize: number;
+private currentLogFile: string;
+private logFileSize: number;
+private maxLogFileSize: number;
+private stats: LogStats;
+private performanceMarkers: Map<string, number>;
+private constructor() {
+// 初始化配置
+this.logLevel = CONSTANTS.DEFAULT_CONFIG.enableLogging ?
+CONSTANTS.DEFAULT_CONFIG.logLevel : 'error';
+this.enableConsole = true;
+this.enableFile = false; // 需要文件系统权限
+this.enableRemote = false; // 需要网络权限
+this.enablePerformanceLog = true;
+this.logBuffer = [];
+this.maxBufferSize = 1000;
+this.currentLogFile = '';
+this.logFileSize = 0;
+this.maxLogFileSize = 10 * 1024 * 1024; // 10MB
+this.stats = {
+totalLogs: 0,
+logsByLevel: {} as Record<LogLevel, number>,
+errorCount: 0,
+warningCount: 0,
+lastResetTime: Date.now()
+};
+this.performanceMarkers = new Map();
+// 初始化日志系统
+this.initializeLogging();
+logger.info('Logger', '日志系统初始化完成');
+}
+/**
+* 获取Logger单例
+*/
+public static getInstance(): Logger {
+if (!Logger.instance) {
+Logger.instance = new Logger();
+}
+return Logger.instance;
+}
+/**
+* 初始化日志系统
+*/
+private initializeLogging(): void {
+// 初始化统计信息
+(Object.keys(CONSTANTS.DEFAULT_CONFIG.logLevel) as LogLevel[]).forEach(level => {
+this.stats.logsByLevel[level] = 0;
+});
+// 初始化文件日志（如果可用）
+this.initFileLogging();
+// 设置全局错误捕获
+this.setupGlobalErrorHandling();
+}
+/**
+* 初始化文件日志
+*/
+private initFileLogging(): void {
+try {
+// 在实际环境中，需要使用@ohos.file.fs API
+// 这里检查是否支持文件系统操作
+if (typeof fs !== 'undefined') {
+this.enableFile = true;
+this.createNewLogFile();
+} else {
+logger.debug('Logger', '文件系统不可用，文件日志已禁用');
+}
+} catch (error) {
+this.enableFile = false;
+logger.warn('Logger', '初始化文件日志失败，回退到控制台日志', error);
+}
+}
+/**
+* 创建新的日志文件
+*/
+private createNewLogFile(): void {
+if (!this.enableFile) return;
+const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+this.currentLogFile = `extended_display_${timestamp}.log`;
+this.logFileSize = 0;
+// 写入文件头
+const header = `=== Extended Display Log ===\n` +
+`Started at: ${new Date().toLocaleString()}\n` +
+`Platform: ${process.env.DEVICE_TYPE || 'unknown'}\n` +
+`Version: ${CONSTANTS.DEFAULT_CONFIG.version}\n\n`;
+this.writeToFile(header);
+logger.debug('Logger', `创建日志文件: ${this.currentLogFile}`);
+}
+/**
+* 设置全局错误处理
+*/
+private setupGlobalErrorHandling(): void {
+// 捕获未处理的Promise异常
+process.on('unhandledRejection', (reason, promise) => {
+this.error('UnhandledPromise', `未处理的Promise拒绝: ${reason}`, { promise });
+});
+// 捕获未处理的运行时异常
+process.on('uncaughtException', (error) => {
+this.fatal('UncaughtException', `未捕获的异常: ${error.message}`, error);
+// 严重错误可能需要重启应用
+this.handleCriticalError(error);
+});
+// 捕获内存溢出
+if (typeof process !== 'undefined') {
+process.on('memoryWarning', (info) => {
+this.warn('Memory', `内存警告: ${JSON.stringify(info)}`);
+});
+}
+}
+/**
+* 设置日志级别
+*/
+public setLogLevel(level: LogLevel): void {
+const oldLevel = this.logLevel;
+this.logLevel = level;
+this.info('Logger', `日志级别从 ${oldLevel} 变更为 ${level}`);
+// 输出当前统计信息
+this.logStats();
+}
+/**
+* 调试级别日志
+*/
+public debug(tag: string, message: string, data?: any, stackTrace?: string): void {
+this.log('DEBUG', tag, message, data, stackTrace);
+}
+/**
+* 信息级别日志
+*/
+public info(tag: string, message: string, data?: any, stackTrace?: string): void {
+this.log('INFO', tag, message, data, stackTrace);
+}
+/**
+* 警告级别日志
+*/
+public warn(tag: string, message: string, data?: any, stackTrace?: string): void {
+this.log('WARN', tag, message, data, stackTrace);
+}
+/**
+* 错误级别日志
+*/
+public error(tag: string, message: string, data?: any, stackTrace?: string): void {
+this.log('ERROR', tag, message, data, stackTrace);
+}
+/**
+* 关键级别日志
+*/
+public fatal(tag: string, message: string, data?: any, stackTrace?: string): void {
+this.log('FATAL', tag, message, data, stackTrace);
+// 关键错误立即输出到控制台
+if (!this.enableConsole) {
+console.error(`[FATAL] [${tag}] ${message}`, data);
+}
+}
+/**
+* 性能日志
+*/
+public performance(operation: string, duration: number, metadata?: any): void {
+if (!this.enablePerformanceLog) return;
+const perfData = {
+operation,
+duration,
+metadata,
+memoryUsage: this.getMemoryUsage(),
+timestamp: Date.now()
+};
+this.log('PERF', 'Performance', `${operation} 耗时: ${duration.toFixed(2)}ms`, perfData);
+// 记录性能指标
+this.recordMetric('operation_duration', duration, { operation });
+}
+/**
+* 用户行为日志
+*/
+public userAction(action: string, details?: any, userId?: string): void {
+const userLog = {
+action,
+details,
+userId: userId || 'anonymous',
+sessionId: this.getSessionId(),
+timestamp: Date.now(),
+deviceInfo: this.getDeviceInfo()
+};
+this.info('UserAction', `用户操作: ${action}`, userLog);
+// 如果启用远程日志，上报用户行为
+if (this.enableRemote) {
+this.sendRemoteLog('user_action', userLog);
+}
+}
+/**
+* 核心日志方法
+*/
+private log(level: LogLevel, tag: string, message: string, data?: any, stackTrace?: string): void {
+// 检查日志级别
+if (!this.shouldLog(level)) {
+return;
+}
+const timestamp = Date.now();
+const entry: LogEntry = {
+level,
+tag,
+message,
+data,
+stackTrace,
+timestamp,
+sessionId: this.getSessionId(),
+sequenceNumber: ++this.stats.totalLogs
+};
+// 更新统计信息
+this.updateStats(level);
+// 输出到控制台
+if (this.enableConsole) {
+this.outputToConsole(entry);
+}
+// 添加到缓冲区
+this.bufferLogEntry(entry);
+// 写入文件
+if (this.enableFile) {
+this.writeLogEntryToFile(entry);
+}
+// 远程上报
+if (this.enableRemote && this.shouldRemoteReport(level)) {
+this.sendRemoteLog('application_log', entry);
+}
+// 特殊处理
+this.handleSpecialCases(entry);
+}
+/**
+* 判断是否应该记录日志
+*/
+private shouldLog(level: LogLevel): boolean {
+const levels: Record<LogLevel, number> = {
+'debug': 0,
+'info': 1,
+'warn': 2,
+'error': 3,
+'fatal': 4,
+'perf': 1
+};
+return levels[level] >= levels[this.logLevel];
+}
+/**
+* 输出到控制台
+*/
+private outputToConsole(entry: LogEntry): void {
+const timestamp = new Date(entry.timestamp).toISOString();
+const prefix = `[${timestamp}] [${entry.level}] [${entry.tag}]`;
+let output = `${prefix} ${entry.message}`;
+// 添加数据
+if (entry.data !== undefined) {
+try {
+if (typeof entry.data === 'object') {
+output += ' ' + JSON.stringify(entry.data, null, 2);
+} else {
+output += ` ${entry.data}`;
+}
+} catch (error) {
+output += ' [无法序列化数据]';
+}
+}
+// 添加堆栈跟踪
+if (entry.stackTrace && entry.level === 'ERROR') {
+output += `\n${entry.stackTrace}`;
+}
+// 根据级别使用不同的console方法
+switch (entry.level) {
+case 'DEBUG':
+console.debug(output);
+break;
+case 'INFO':
+console.info(output);
+break;
+case 'WARN':
+console.warn(output);
+break;
+case 'ERROR':
+case 'FATAL':
+console.error(output);
+break;
+case 'PERF':
+console.log(`%c${output}`, 'color: #4CAF50; font-weight: bold');
+break;
+}
+}
+/**
+* 缓冲日志条目
+*/
+private bufferLogEntry(entry: LogEntry): void {
+this.logBuffer.push(entry);
+// 缓冲区满时处理
+if (this.logBuffer.length >= this.maxBufferSize) {
+this.processBuffer();
+}
+}
+/**
+* 写入日志文件
+*/
+private writeLogEntryToFile(entry: LogEntry): void {
+if (!this.enableFile) return;
+try {
+const logLine = this.formatLogLine(entry);
+this.writeToFile(logLine + '\n');
+// 检查文件大小
+this.logFileSize += Buffer.byteLength(logLine, 'utf8') + 1;
+if (this.logFileSize > this.maxLogFileSize) {
+this.rotateLogFile();
+}
+} catch (error) {
+console.error('写入日志文件失败:', error);
+this.enableFile = false; // 禁用文件日志
+}
+}
+/**
+* 格式化日志行
+*/
+private formatLogLine(entry: LogEntry): string {
+const timestamp = new Date(entry.timestamp).toISOString();
+let line = `${timestamp} [${entry.level}] [${entry.tag}] ${entry.message}`;
+if (entry.data !== undefined) {
+try {
+line += ` | Data: ${JSON.stringify(entry.data)}`;
+} catch (error) {
+line += ' | Data: [Unserializable]';
+}
+}
+if (entry.stackTrace) {
+line += `\nStackTrace: ${entry.stackTrace}`;
+}
+return line;
+}
+/**
+* 写入文件
+*/
+private writeToFile(content: string): void {
+if (!this.enableFile) return;
+try {
+// 在实际环境中使用@ohos.file.fs API
+// fs.appendFileSync(this.currentLogFile, content, { encoding: 'utf8' });
+// 模拟文件写入
+logger.debug('Logger', `写入文件: ${content.length} 字符`);
+} catch (error) {
+console.error('文件写入失败:', error);
+}
+}
+/**
+* 轮转日志文件
+*/
+private rotateLogFile(): void {
+if (!this.enableFile) return;
+logger.info('Logger', '日志文件轮转');
+this.flushBuffer();
+this.createNewLogFile();
+}
+/**
+* 处理缓冲区
+*/
+private processBuffer(): void {
+if (this.logBuffer.length === 0) return;
+// 批量写入文件
+const batchContent = this.logBuffer
+.map(entry => this.formatLogLine(entry))
+.join('\n') + '\n';
+this.writeToFile(batchContent);
+this.logBuffer = [];
+}
+/**
+* 刷新缓冲区
+*/
+public flushBuffer(): void {
+this.processBuffer();
+logger.debug('Logger', '日志缓冲区已刷新');
+}
+/**
+* 更新统计信息
+*/
+private updateStats(level: LogLevel): void {
+this.stats.totalLogs++;
+this.stats.logsByLevel[level] = (this.stats.logsByLevel[level] || 0) + 1;
+if (level === 'ERROR') {
+this.stats.errorCount++;
+} else if (level === 'WARN') {
+this.stats.warningCount++;
+}
+}
+/**
+* 判断是否需要远程上报
+*/
+private shouldRemoteReport(level: LogLevel): boolean {
+return level === 'ERROR' || level === 'FATAL' || level === 'WARN';
+}
+/**
+* 发送远程日志
+*/
+private sendRemoteLog(type: string, data: any): void {
+if (!this.enableRemote) return;
+// 异步发送，不阻塞主线程
+setTimeout(() => {
+try {
+// 使用@ohos.net.http发送日志到远程服务器
+const logPayload = {
+type,
+data,
+appVersion: CONSTANTS.DEFAULT_CONFIG.version,
+deviceInfo: this.getDeviceInfo(),
+timestamp: Date.now()
+};
+// 这里实现实际的网络请求
+logger.debug('Logger', '发送远程日志', { type, size: JSON.stringify(logPayload).length });
+} catch (error) {
+console.error('远程日志上报失败:', error);
+}
+}, 0);
+}
+/**
+* 处理特殊情况
+*/
+private handleSpecialCases(entry: LogEntry): void {
+// 错误日志特殊处理
+if (entry.level === 'ERROR' || entry.level === 'FATAL') {
+this.handleErrorLog(entry);
+}
+// 性能日志特殊处理
+if (entry.level === 'PERF') {
+this.handlePerformanceLog(entry);
+}
+}
+/**
+* 处理错误日志
+*/
+private handleErrorLog(entry: LogEntry): void {
+// 错误计数超过阈值时发出警告
+if (this.stats.errorCount > 10) {
+logger.warn('Logger', `短时间内错误数量过多: ${this.stats.errorCount}`);
+}
+// 关键错误可能需要用户通知
+if (entry.level === 'FATAL') {
+this.notifyUser('critical_error', entry.message);
+}
+}
+/**
+* 处理性能日志
+*/
+private handlePerformanceLog(entry: LogEntry): void {
+const perfData = entry.data as any;
+if (perfData.duration > 1000) { // 超过1秒的操作
+logger.warn('Performance', `慢操作检测: ${perfData.operation} 耗时 ${perfData.duration}ms`);
+}
+}
+/**
+* 处理关键错误
+*/
+private handleCriticalError(error: Error): void {
+logger.fatal('CriticalError', '遇到关键错误，应用可能无法正常运行');
+// 可以在这里实现错误恢复逻辑
+// 如：保存状态、重启服务等
+}
+/**
+* 性能计时开始
+*/
+public timeStart(marker: string): void {
+if (!this.enablePerformanceLog) return;
+this.performanceMarkers.set(marker, performance.now());
+logger.debug('Performance', `计时开始: ${marker}`);
+}
+/**
+* 性能计时结束
+*/
+public timeEnd(marker: string): number | null {
+if (!this.enablePerformanceLog) return null;
+const startTime = this.performanceMarkers.get(marker);
+if (startTime === undefined) {
+logger.warn('Performance', `未找到计时起点: ${marker}`);
+return null;
+}
+const endTime = performance.now();
+const duration = endTime - startTime;
+this.performance(marker, duration);
+this.performanceMarkers.delete(marker);
+return duration;
+}
+/**
+* 记录性能指标
+*/
+public recordMetric(name: string, value: number, tags?: Record<string, string>): void {
+const metric = {
+name,
+value,
+tags,
+timestamp: Date.now(),
+sessionId: this.getSessionId()
+};
+logger.debug('Metrics', `性能指标: ${name}=${value}`, metric);
+// 如果启用远程日志，上报指标
+if (this.enableRemote) {
+this.sendRemoteLog('metrics', metric);
+}
+}
+/**
+* 获取统计信息
+*/
+public getStats(): LogStats & { bufferSize: number; fileSize: number } {
+return {
+...this.stats,
+bufferSize: this.logBuffer.length,
+fileSize: this.logFileSize
+};
+}
+/**
+* 重置统计信息
+*/
+public resetStats(): void {
+this.stats = {
+totalLogs: 0,
+logsByLevel: {} as Record<LogLevel, number>,
+errorCount: 0,
+warningCount: 0,
+lastResetTime: Date.now()
+};
+// 重新初始化级别计数
+(Object.keys(CONSTANTS.DEFAULT_CONFIG.logLevel) as LogLevel[]).forEach(level => {
+this.stats.logsByLevel[level] = 0;
+});
+logger.info('Logger', '日志统计信息已重置');
+}
+/**
+* 输出统计信息
+*/
+public logStats(): void {
+const stats = this.getStats();
+const runtime = Date.now() - stats.lastResetTime;
+logger.info('Logger', '日志统计信息', {
+...stats,
+runtime: `${Math.round(runtime / 1000)}s`,
+avgLogsPerSecond: (stats.totalLogs / (runtime / 1000)).toFixed(2)
+});
+}
+/**
+* 获取内存使用情况
+*/
+private getMemoryUsage(): any {
+if (typeof process !== 'undefined' && process.memoryUsage) {
+return process.memoryUsage();
+}
+return null;
+}
+/**
+* 获取会话ID
+*/
+private getSessionId(): string {
+if (!(globalThis as any).sessionId) {
+(globalThis as any).sessionId = this.generateSessionId();
+}
+return (globalThis as any).sessionId;
+}
+/**
+* 生成会话ID
+*/
+private generateSessionId(): string {
+return `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+}
+/**
+* 获取设备信息
+*/
+private getDeviceInfo(): any {
+return {
+platform: typeof process !== 'undefined' ? process.platform : 'unknown',
+arch: typeof process !== 'undefined' ? process.arch : 'unknown',
+nodeVersion: typeof process !== 'undefined' ? process.version : 'unknown',
+userAgent: typeof navigator !== 'undefined' ? navigator.userAgent : 'unknown'
+};
+}
+/**
+* 通知用户
+*/
+private notifyUser(type: string, message: string): void {
+// 实现用户通知逻辑
+logger.info('Notification', `用户通知: ${type} - ${message}`);
+}
+/**
+* 销毁日志系统
+*/
+public destroy(): void {
+logger.info('Logger', '销毁日志系统');
+// 刷新缓冲区
+this.flushBuffer();
+// 清理资源
+this.logBuffer = [];
+this.performanceMarkers.clear();
+this.stats = {} as LogStats;
+}
+}
+// 类型定义
+interface LogEntry {
+level: LogLevel;
+tag: string;
+message: string;
+data?: any;
+stackTrace?: string;
+timestamp: number;
+sessionId: string;
+sequenceNumber: number;
+}
+interface LogStats {
+totalLogs: number;
+logsByLevel: Record<LogLevel, number>;
+errorCount: number;
+warningCount: number;
+lastResetTime: number;
+}
+// 导出便捷方法
+export const logger = Logger.getInstance();
+// 全局便捷方法
+export const LOG_DEBUG = (tag: string, message: string, data?: any) =>
+logger.debug(tag, message, data);
+export const LOG_INFO = (tag: string, message: string, data?: any) =>
+logger.info(tag, message, data);
+export const LOG_WARN = (tag: string, message: string, data?: any) =>
+logger.warn(tag, message, data);
+export const LOG_ERROR = (tag: string, message: string, data?: any) =>
+logger.error(tag, message, data);
+export const LOG_FATAL = (tag: string, message: string, data?: any) =>
+logger.fatal(tag, message, data);
+export const LOG_PERF = (operation: string, duration: number, metadata?: any) =>
+logger.performance(operation, duration, metadata);
+export const LOG_USER = (action: string, details?: any, userId?: string) =>
+logger.userAction(action, details, userId);

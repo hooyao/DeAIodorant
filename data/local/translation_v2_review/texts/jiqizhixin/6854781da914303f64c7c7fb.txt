@@ -1,0 +1,27 @@
+在圈内，苹果造车已经不是啥新鲜事了，但其频繁的人事变更仍能撩拨看客的好奇心。
+苹果自 2014 年左右启动了开发自动驾驶电动汽车的计划，其目标是直面特斯拉等公司的竞争。但一直到 2016 年，该项目一直在努力应付领导层混乱、缺乏远见规划以及
+自动驾驶技术
+方向等问题。随后，苹果大幅裁剪了研发团队，解雇了数百名工程师。
+到了近几年，人员流动更加频繁。2018 年，苹果挖来了特斯拉高级设计师 Andrew Kim。2020 年，苹果又挖来了电动汽车初创企业 Canoo 的联合创始人 Ulrich Kranz，他曾帮助建立了宝马的 i3 和 i8 项目。但今年苹果汽车业务高管 Doug Field 突然离职加入福特给了苹果一大打击，然后令智能手表和健康软件负责人 Kevin Lynch 接替菲尔德的工作。
+近日，苹果又从特斯拉挖来了一员大将——前 Autopilot 总监 CJ Moore，为其 Apple Car 项目——泰坦计划（Project Titan）开发自动驾驶软件。他将向 2020 年底加入苹果的另一位前特斯拉高管 Stuart Bowers 汇报工作，后者曾领导特斯拉 Autopilot 团队，并于 2019 年年中离职。
+随着 CJ Moore 的加入，苹果造车团队中的前特斯拉工程师和高管圈子」又扩大了。目前，除了 Stuart Bowers 和 CJ Moore 之外，苹果还已经将前特斯拉传动系统主管 Michael Schwekutsch 和内饰主管 Steve MacManus 收入麾下。
+神秘的苹果造车项目——Project Titan
+五年多来，苹果一直在默默地致力于其自动驾驶电动汽车项目——Project Titan。该项目的高层人员流动相当频繁，并且苹果也一直在改变它想要实现的目标。
+苹果自动驾驶软件堆栈的当前状态仍然非常模糊。苹果在加州运营着一个小型自动驾驶汽车原型测试车队。据悉，苹果的自动驾驶汽车系统依靠摄像机和 LiDAR 雷达来感知周围环境。
+在一段时间里，苹果只专注于研发自动驾驶软件。不过，在 2019 年左右，苹果再次将目光投向了造车，并从其他汽车制造商那里挖来了多位知名高管，包括今年 2 月挖来的保时捷卡宴及底盘开发负责人曼弗雷德 · 哈尔博士。然而，今年 9 月汽车业务总管 Doug Field 离职加入福特，使得泰坦计划遭遇重大挫折。
+苹果将与组装合作伙伴合作，根据设计需求实际制造车辆。此外，苹果还在今年早些时候寻找电池制造商。对于苹果造车，iPhone 主要组装商富士康表示有兴趣为其汽车代工，因此人们普遍猜测苹果和富士康也可能会在汽车上展开合作。
+但应看到，或许我们在泰坦计划启动十年后，也即 2025 年，才能看到真正的 Apple Car。
+曾质疑马斯克夸大 Autopilot 功能
+今年早些时候，这位前特斯拉工程师因对 Autopilot 功能发表评论而引起争议。
+具体来说，今年 3 月，加州机动车辆管理局官员就马斯克关于特斯拉今年将具备全自动驾驶能力的说法，车管局官员询问了 Autopilot 软件总监 CJ Moore。加州车管局自动驾驶汽车部负责人 Miguel Acosta 在备忘录中写道，根据 Moore 的介绍，马斯克之前在推特上宣称特斯拉能够在几年之内实现 L5 级自动驾驶的说法并不符合工程现实。
+据报道，Moore 当时还做了补充：「特斯拉目前还处于 L2 级。只有到驾驶员干预车辆的频率低至每 100 万到 200 万英里一次的级别，才能实现更高水平的自动化。」
+总结来说，CJ Moore 暗指特斯拉首席执行官马斯克夸大了 Autopilot 的能力。
+完整的会议记录地址：https://driveteslacanada.ca/wp-content/uploads/2021/05/20210506.cadmv_.pdf
+Moore 在特斯拉近 7 年的职业生涯一直在 Autopilot 团队工作。2014 年加入公司，之后一路晋升，2019 年底晋升为董事。
+不过，Moore 很可能是最近才离开特斯拉的，因为他在领英上的个人资料没有更新。
+参考链接：
+https://www.linkedin.com/in/cj-moore-56509b76/
+https://driveteslacanada.ca/news/director-of-autopilot-software-christopher-cj-moore-has-left-tesla/
+https://www.theverge.com/2021/11/6/22766733/apple-tesla-hiring-former-autopilot-software-director-musk
+https://appleinsider.com/articles/21/11/05/apple-hires-former-tesla-engineer-to-bolster-its-self-driving-car-project
+https://9to5mac.com/2021/11/05/apple-hires-former-tesla-autopilot-software-exec-to-bolster-self-driving-car-effort/

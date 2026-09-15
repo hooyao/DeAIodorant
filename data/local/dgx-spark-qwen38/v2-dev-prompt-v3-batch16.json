@@ -1,0 +1,3319 @@
+{
+  "summary": {
+    "protocol": "translation-gate-1.0-frozen-validation",
+    "dataset": "data\\translation_v2\\development_silver.jsonl",
+    "model": "qwen3.8-27b",
+    "backend": "nvidia-vllm-0.19.0-bf16",
+    "batch_size": 16,
+    "documents": 160,
+    "strict_performance": {
+      "calls": 160,
+      "valid_json": 160,
+      "wall_seconds": 392.355,
+      "prompt_tokens": 191784,
+      "completion_tokens": 9902,
+      "completion_tokens_per_second": 25.237,
+      "median_request_latency_seconds": 28.03,
+      "p95_request_latency_seconds": 39.182
+    },
+    "verifier_performance": {
+      "calls": 34,
+      "valid_json": 34,
+      "wall_seconds": 133.414,
+      "prompt_tokens": 50389,
+      "completion_tokens": 3087,
+      "completion_tokens_per_second": 23.139,
+      "median_request_latency_seconds": 38.192,
+      "p95_request_latency_seconds": 49.72
+    },
+    "total_wall_seconds": 525.828,
+    "original_total": 80,
+    "original_admitted": 72,
+    "original_retention_rate": 0.9,
+    "translation_total": 80,
+    "translation_admitted": 0,
+    "translation_leak_rate": 0.0,
+    "target_passed": true
+  },
+  "records": [
+    {
+      "doc_id": "045d4c5b6a5c14baa17f288e",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：ScienceAI",
+          "正文包含中国航天科技集团五院专家宫江雷的评论",
+          "正文提及百度成为「中国探月航天工程人工智能全球战略合作伙伴」的国内新闻背景"
+        ]
+      },
+      "strict_latency_seconds": 26.678,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "083b3404b149d8ac9b9673a0",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "机器之能报道",
+          "编辑：陈萍",
+          "中文作者署名及国内媒体编辑信息"
+        ]
+      },
+      "strict_latency_seconds": 21.332,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "089624981eae4b7dd6f3e566",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "商汤科技联合北京航空航天大学共同发布",
+          "大赛官网： aisafety.sensetime.com"
+        ]
+      },
+      "strict_latency_seconds": 22.802,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "09ce803c37986fb5c1124a67",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "参考内容：https://phys.org/news/2023-07-game-changing-superconductors-machine-tools.html",
+          "Tran说：「当科学界最终能够实现室温超导体时...」",
+          "ScienceAI 今天给大家分享的这篇...研究并不是近期火热的...而是在 AI 的助力下..."
+        ]
+      },
+      "strict_latency_seconds": 32.263,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名ScienceAIs及编辑紫罗，表明为中文媒体采编内容",
+          "正文包含中文编辑的引导语（如'最近，有关...消息'、'ScienceAI 今天给大家分享的...'）",
+          "文章结构为中文科普/解读风格，对研究背景、方法和意义进行了重新组织和阐述，而非逐句翻译外文新闻稿或论文摘要"
+        ]
+      },
+      "verifier_latency_seconds": 39.059,
+      "admitted": true
+    },
+    {
+      "doc_id": "0afb695ab0ca6e1464257611",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文提及国内具体事件：'8 月，小米雷军宣布全面拥抱大模型'、'高通公司中国区董事长孟樸发表了主题演讲'",
+          "正文提及国内活动：'在此次服贸会数字贸易发展趋势和前沿高峰论坛上'"
+        ]
+      },
+      "strict_latency_seconds": 30.898,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "0bacfeaea20d086539948d1d",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：阿里云大数据AI技术",
+          "正文提及“阿里云PAI平台”、“PAI-EAS云原生弹性推理服务平台”",
+          "包含具体的阿里云上海区域Endpoint链接（cn-shanghai.pai-eas.aliyuncs.com）及内部VPC地址"
+        ]
+      },
+      "strict_latency_seconds": 29.975,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "0e08edfb8ff4c40e84efffa1",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "正文包含深势科技与火山引擎的具体合作细节及中文引语（“深势科技相关负责人表示...”）",
+          "无外文原作者、译自标记或外文原文链接，GitHub链接仅作为技术成果佐证"
+        ]
+      },
+      "strict_latency_seconds": 28.568,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "10b4ff947e750938d62a417a",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名ScienceAI及编辑紫罗为中文媒体/机构标识，但无明确中文采写或原创声明",
+          "正文包含大量“（来源：论文）”标注及Nature论文链接，内容高度依赖外文文献复述，但缺乏“译自”、“编译自”或外文原作者直接对话等确凿翻译证据",
+          "仅凭中文编辑署名和国内机构提及不足以排除翻译可能，也无法确认为原创中文采写，符合uncertain定义"
+        ]
+      },
+      "strict_latency_seconds": 39.368,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名ScienceAI及编辑紫罗，表明为中文媒体/账号的采编内容",
+          "正文结构为典型的中文论文解读/报道风格（背景介绍、团队介绍、结果总结、未来展望），而非逐句翻译",
+          "文中明确标注图表来源为“（来源：论文）”，且对论文内容进行了概括和重组，符合“中文作者阅读外文论文后重新总结”的特征，属于original而非translation"
+        ]
+      },
+      "verifier_latency_seconds": 41.81,
+      "admitted": true
+    },
+    {
+      "doc_id": "164a0afa28505428dda23257",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://arstechnica.com/information-technology/2023/10/thanks-to-ai-the-future-of-programming-may-involve-yelling-in-all-caps/",
+          "Simon Willison",
+          "推特用户 David Garrido 和 AI 研究者 Javi Lopez"
+        ]
+      },
+      "strict_latency_seconds": 31.81,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "文末明确标注了具体的英文原文链接：https://arstechnica.com/information-technology/2023/10/thanks-to-ai-the-future-of-programming-may-involve-yelling-in-all-caps/",
+          "正文内容是对该英文报道中提到的具体案例（David Garrido, Javi Lopez）及专家观点（Simon Willison）的逐段转述和编译，而非中文作者的独立采写或综合评论"
+        ]
+      },
+      "verifier_latency_seconds": 46.747,
+      "admitted": false
+    },
+    {
+      "doc_id": "1a597c913329010e7612fd36",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "来源 | Endpoints News",
+          "近日，Hassabis 接受了 Endpoints News 的独家采访",
+          "Endpoints News：未来三到五年，Isomorphic 的成功是什么样的？"
+        ]
+      },
+      "strict_latency_seconds": 25.716,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "来源明确标注为 'Endpoints News'",
+          "正文包含 'Endpoints News：' 与 'Hassabis：' 的逐段问答对话格式，符合访谈实录翻译特征",
+          "提供了具体的英文原文链接 https://endpts.com/exclusive-deepmind-ceo-demis-hassabis-talks-secretive-new-ai-biotech-isomorphic-labs/，且正文内容与该链接对应的独家采访内容一致"
+        ]
+      },
+      "verifier_latency_seconds": 45.413,
+      "admitted": false
+    },
+    {
+      "doc_id": "1a6cb392d5f940f1c2bb2716",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "机器之能报道",
+          "编辑：Sia",
+          "中文作者署名及国内媒体标识"
+        ]
+      },
+      "strict_latency_seconds": 21.332,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "1d669586ccdb02f6bba9a3c4",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名：机器之心",
+          "论文链接：https://arxiv.org/abs/2311.09257",
+          "正文为对论文技术细节的中文解读，无‘译自’、‘编译自’或外文原作者访谈等明确翻译标记，也无中文记者现场采访或第一方实践证据"
+        ]
+      },
+      "strict_latency_seconds": 32.931,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文结构为典型的论文解读/报道风格（背景介绍、方法优势对比、实验结果、总结），而非逐句翻译",
+          "文中包含中文作者对技术优势的归纳和评论（如'老生常谈的问题'、'非常不友好'等口语化表达），符合中文再创作特征"
+        ]
+      },
+      "verifier_latency_seconds": 38.349,
+      "admitted": true
+    },
+    {
+      "doc_id": "216b160343a34ae069db8db2",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "在 6 月 23 日的年度发布会上",
+          "第四范式 联合创始人、首席研究科学家陈雨强说道"
+        ]
+      },
+      "strict_latency_seconds": 24.508,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "23865d911f8bfd307fbfb8ce",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：ScienceAIs",
+          "编辑 | 绿萝",
+          "参考内容：https://phys.org/news/2023-04-simulations-machine-phase-solid-hydrogen.html"
+        ]
+      },
+      "strict_latency_seconds": 26.434,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名ScienceAIs及编辑绿萝，表明为中文媒体采编内容",
+          "正文结构为新闻综述，包含背景介绍、研究意义、具体发现及专家评论，符合中文科技报道特征",
+          "虽然引用了英文论文标题和Phys.org链接，但正文是对研究内容的重新组织和解读，而非逐句翻译原文对话或全文转写"
+        ]
+      },
+      "verifier_latency_seconds": 38.589,
+      "admitted": true
+    },
+    {
+      "doc_id": "2a475daf899a6a7502020cfb",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：AutoByte",
+          "正文报道国内新车上市具体日期（8月25日）及国内售价（28.98万-32.98万元）",
+          "提及国内特定配置与场景（如VTOL移动电站、露营生活、国内预售订单）"
+        ]
+      },
+      "strict_latency_seconds": 31.132,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "2b76a47b992b851aa8addf05",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "正文包含大量英文术语及论文引用",
+          "仅提供了arXiv论文链接，未明确标注‘译自’或‘编译自’，且机器之心既有原创报道也有翻译报道，现有证据不足以排除原创综述的可能性，也不足以确认为直接翻译"
+        ]
+      },
+      "strict_latency_seconds": 31.36,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心",
+          "正文为中文综述/解读风格（如'难道...？'、'说起...'、'更多研究细节，可参考原论文'）",
+          "无逐句翻译痕迹或外文对话稿特征，属于对arXiv论文的中文报道/解读"
+        ]
+      },
+      "verifier_latency_seconds": 34.705,
+      "admitted": true
+    },
+    {
+      "doc_id": "30b9ffb5fd835569388eee24",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文为中文采写的获奖名单汇总与人物介绍",
+          "无外文原作者或译自标记"
+        ]
+      },
+      "strict_latency_seconds": 23.516,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "353f9fce38137e1e3f7778ba",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "李飞飞 TED 演讲链接：https://www.ted.com/talks/fei_fei_li_with_spatial_intelligence_ai_will_understand_the_real_world/transcript",
+          "正文内容包含大量第一人称叙述（如“我的实验室”、“我的学生”、“我 2024 年有关...的 TED 演讲”），且与提供的英文 TED 演讲链接内容高度对应，表明正文是基于该英文演讲的中文编译或翻译稿"
+        ]
+      },
+      "strict_latency_seconds": 39.89,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "正文内容逐句对应李飞飞在TED演讲的中文翻译稿（如'从看到变为洞察...所有这些带来智能'、'机械臂正在烹饪一份日本寿喜锅'等具体细节）",
+          "文中明确引用了TED演讲的英文原文链接（https://www.ted.com/talks/...）",
+          "文章结构为对特定外文演讲内容的完整转述，而非中文作者的独立评论或总结"
+        ]
+      },
+      "verifier_latency_seconds": 41.809,
+      "admitted": false
+    },
+    {
+      "doc_id": "372679bcd5411d327c2b6d93",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "正文开头提及“本次演讲，崔红保重点介绍...”，表明内容源自国内技术演讲的整理",
+          "全文围绕DCloud公司自研的UTS框架及云端一体实践进行技术复盘，无外文原作者、译自标记或外文原文链接"
+        ]
+      },
+      "strict_latency_seconds": 31.437,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "41fe29b60289adabb19e6719",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之能",
+          "撰文 | Sia",
+          "正文包含中国本土案例（腾讯掌纹支付、北京地铁大兴机场线试点）"
+        ]
+      },
+      "strict_latency_seconds": 24.732,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "442b36e3cb60c37ae03d7861",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "正文详细列举昆仑万维国内发布的具体日期（2023年8月23日等）及国内人物（颜水成）",
+          "无外文原作者、译自标记或外文原文链接"
+        ]
+      },
+      "strict_latency_seconds": 29.163,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "442dd407fc17b2f8581c482d",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "原报道链接：https://www.reuters.com/...",
+          "参考链接：https://arstechnica.com/..."
+        ]
+      },
+      "strict_latency_seconds": 25.455,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文包含中文评论性语句如“剪不断理还乱”、“宫斗”、“狂吐苦水”、“静待结果吧”，显示为再创作而非逐句翻译",
+          "文章综合了路透社、Ars Technica、The Verge 等多个英文来源的信息进行整合报道，而非单一外文的直接译制"
+        ]
+      },
+      "verifier_latency_seconds": 39.518,
+      "admitted": true
+    },
+    {
+      "doc_id": "461ffb84cec8ee859000aa50",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "正文内容聚焦国内公司昆仑万维及其产品天工AI",
+          "引用国内数据服务商QuestMobile数据及国内AI产品榜数据"
+        ]
+      },
+      "strict_latency_seconds": 25.689,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "48166be2de42470eebcd0ccd",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "我们第一时间拿到了腾讯元宝的体验资格",
+          "我们上传了一张潦草小狗的图片"
+        ]
+      },
+      "strict_latency_seconds": 22.778,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "48fbbeedf363a19eeb696de3",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文提及‘机器之心找到了一个旨在帮助困难地区学生参加数据竞赛的项目’",
+          "正文提及‘机器之心与腾讯公益合作，成立了‘99 公益日 机器之心 战队’’"
+        ]
+      },
+      "strict_latency_seconds": 28.932,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "49beb93225d8c3fa08fa47c5",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文为中文新闻叙事风格，包含‘近日’、‘他表示’等中文报道常用语",
+          "无‘译自’、‘编译自’或外文原文链接标记"
+        ]
+      },
+      "strict_latency_seconds": 27.551,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "49c1d036f36817d9b0240294",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：达观数据",
+          "正文为第一方视角的融资公告及创始人陈运文的第一人称/直接引语（如“陈运文介绍”、“陈博士的经验是”）",
+          "内容聚焦于国内具体事件（C轮融资、国内券商投资、国内高校合作、国内奖项），无外文原作者、译自标记或外文原文链接"
+        ]
+      },
+      "strict_latency_seconds": 34.561,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "4bfb3147a53f1d06966f9ef1",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原作者 / BENGT HALVORSON：Green Car Reports编辑",
+          "编译 / Angelina",
+          "原文链接：https://www.greencarreports.com/news/1134233_tesla-phone-key-outage-locks-some-out-of-their-cars-is-this-the-future"
+        ]
+      },
+      "strict_latency_seconds": 32.333,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "明确标注“编译 / Angelina”",
+          "明确标注“原作者 / BENGT HALVORSON”及其英文媒体背景",
+          "文末提供具体的英文原文链接 https://www.greencarreports.com/..."
+        ]
+      },
+      "verifier_latency_seconds": 35.454,
+      "admitted": false
+    },
+    {
+      "doc_id": "4d0fe82ce27496e3c0dd8cd1",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "达摩院资深算法专家杨红霞表示",
+          "M6 团队观察到，淘宝上有很多长尾词"
+        ]
+      },
+      "strict_latency_seconds": 24.731,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "4de588ec069b911b1b243de3",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "机器之能报道",
+          "编辑：sia",
+          "投稿或寻求报道：content@jiqizhixin.com"
+        ]
+      },
+      "strict_latency_seconds": 23.273,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "5005f81f048796570aa907a2",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "正文描述9月8日外滩大会现场活动",
+          "引用中国社会科学院李扬、中国计算机学会唐卫清等国内专家观点"
+        ]
+      },
+      "strict_latency_seconds": 25.689,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "50b828c84dbdac96da878ae5",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文开头：我直接看答案。",
+          "正文提及：近日，我们关注到朋友圈和知乎社区...引起了大家的讨论。"
+        ]
+      },
+      "strict_latency_seconds": 25.456,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "531294d76613f7f5fddf19b4",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名：新闻助手",
+          "参考链接：https://money.udn.com/money/story/5612/5873729?from=edn_search_tag_result",
+          "正文包含大量直接引语但未标注外文原文或翻译声明"
+        ]
+      },
+      "strict_latency_seconds": 30.749,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名‘新闻助手’表明为中文媒体或聚合平台生成的报道",
+          "正文包含对多家厂商（台积电、联电、美光等）提交情况的综合梳理和评论",
+          "引用了美国商务部发言、雷蒙多言论及韩国财政部回应等多方信源，属于综合报道而非单一外文文章的逐句翻译"
+        ]
+      },
+      "verifier_latency_seconds": 37.152,
+      "admitted": true
+    },
+    {
+      "doc_id": "5b0d59445c61a65c3c206287",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文提及机器之心承办/主办多个论坛及黑客松",
+          "包含具体国内地点（上海市浦东新区世博展览馆、上海张江人工智能岛）及中文报名/抽奖细节"
+        ]
+      },
+      "strict_latency_seconds": 27.663,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "5cd492e0e514f5e5cdbc6e5f",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "机器之心报道",
+          "机器之心编辑部",
+          "Sam Altman 在现场一一解析了 GPT-4 Turbo 的几大亮点"
+        ]
+      },
+      "strict_latency_seconds": 23.985,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "6854781da914303f64c7c7fb",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名：机器之心",
+          "正文包含中文叙述风格（如“在圈内”、“撩拨看客的好奇心”）",
+          "引用了多个英文新闻源链接（The Verge, AppleInsider等）作为参考，但未标注“译自”或“编译自”"
+        ]
+      },
+      "strict_latency_seconds": 31.901,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文包含中文评论性语句如“在圈内...不是啥新鲜事”、“撩拨看客的好奇心”",
+          "文章结构为综合多源新闻（The Verge, 9to5Mac等）后的报道与总结，而非逐句翻译单一外文原作"
+        ]
+      },
+      "verifier_latency_seconds": 36.907,
+      "admitted": true
+    },
+    {
+      "doc_id": "6b5ed2e0b08c0208fd8f7471",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "杭州第19届亚运会",
+          "中国电信杭州分公司智能亚运专班组长芮杰表示"
+        ]
+      },
+      "strict_latency_seconds": 23.246,
+      "strong_original_evidence": [
+        "platform_original_label",
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "6d28870921e2543cc882d1a0",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名ScienceAI及编辑白菜叶为中文媒体标识，但正文内容高度疑似对Nature论文摘要及内容的编译",
+          "仅包含论文链接https://www.nature.com/articles/s42256-023-00726-1，无明确‘译自’或‘编译自’字样",
+          "缺乏中文原创采访、现场报道或第一方技术实践证据，无法排除翻译来源"
+        ]
+      },
+      "strict_latency_seconds": 38.207,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名ScienceAI及编辑白菜叶，表明为中文媒体采编内容",
+          "正文结构为典型的论文解读/报道风格，包含背景介绍、方法总结、实验结果分析及实际意义讨论，而非逐句翻译",
+          "虽然包含Nature论文链接，但这是中文作者引用原始研究来源，属于original中的“论文解读”范畴，而非翻译整篇外文文章"
+        ]
+      },
+      "verifier_latency_seconds": 39.289,
+      "admitted": true
+    },
+    {
+      "doc_id": "6f4308cffd522efd9dffaf70",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心为中文媒体，但正文内容是对arXiv论文（2309.01029）的综述解读，且文中出现“中美多家研究机构...联合发布”、“论文链接”等典型编译/综述特征，缺乏明确的“译自”声明或中文原创采访证据，符合uncertain定义中“只有...论文链接...或者两类证据都不足”的情况"
+        ]
+      },
+      "strict_latency_seconds": 37.976,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文结构为中文综述解读，包含“近期...联合发布”、“论文链接”等典型中文报道格式",
+          "内容是对论文核心观点的中文总结与梳理，而非逐句翻译原文对话或全文转写"
+        ]
+      },
+      "verifier_latency_seconds": 34.212,
+      "admitted": true
+    },
+    {
+      "doc_id": "70294f6e4051db3347bfcba2",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "2021 年第十六届全国人机语音通讯学术会议（NCMMSC2021）在江苏徐州举行",
+          "百度语音团队对外重磅发布...SMLTA2"
+        ]
+      },
+      "strict_latency_seconds": 28.152,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "723d1f75f818d5aa63d1782f",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "中文作者李文朋（注：此处为负例中的作者，待判断文章署名为机器之心，属中文媒体）",
+          "正文为中文原创评论与分析，无外文原作者或译自标记"
+        ]
+      },
+      "strict_latency_seconds": 29.109,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "74ba3c30169835596d1d480d",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名ScienceAI及编辑白菜叶为中文媒体标识，但正文内容高度依赖对英文论文《A Perspective on Protein Structure Prediction Using Quantum Computers》及phys.org相关报道的复述",
+          "文中包含大量直接引用的英文人名（Raubenolt, Doga）及英文论文标题，且行文结构（背景-方法-验证-引用）符合科技新闻编译的典型特征，但缺乏明确的“译自”或“编译自”声明，也无中文原创采访或独立实验证据"
+        ]
+      },
+      "strict_latency_seconds": 41.754,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名 ScienceAI 及编辑“白菜叶”，表明为中文媒体采编内容",
+          "正文结构为典型的中文科技新闻综述，包含背景介绍、研究亮点、专家引语（Raubenolt 博士、Doga 博士）及总结",
+          "虽然引用了英文论文标题和链接，但正文是对研究内容的重新组织和解读，而非逐句翻译原文，符合“中文作者阅读外文论文后重新总结”的 original 定义"
+        ]
+      },
+      "verifier_latency_seconds": 46.964,
+      "admitted": true
+    },
+    {
+      "doc_id": "76d9af657b23dce814eeb942",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "据多家媒体报道，华为于 4 月 30 日下午内部发布人事调整文件",
+          "余承东出生于 1969 年，本科毕业于西北工业大学自动控制系，硕士毕业于清华大学，他从 1993 年加入华为，工作至今"
+        ]
+      },
+      "strict_latency_seconds": 32.81,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "774e84408a478c4cdef91612",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文包含中文语境下的具体价格描述（如“2699 元”）",
+          "引用国内媒体来源（cnbeta）及国内现象（“直播摆摊”、“中国...矿工”）作为核心新闻点，而非单纯翻译外文报道"
+        ]
+      },
+      "strict_latency_seconds": 31.676,
+      "strong_original_evidence": [
+        "platform_original_label",
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "7ede63a5095c48410962fbfd",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名：机器之心",
+          "论文地址：https://arxiv.org/pdf/2405.14734",
+          "代码 & 模型：https://github.com/princeton-nlp/SimPO"
+        ]
+      },
+      "strict_latency_seconds": 28.394,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文包含中文新闻导语（如'全面超越DPO...还炼出最强8B开源模型'）",
+          "正文结构为论文解读/报道，包含背景介绍、方法总结及对比分析，而非逐句翻译原文对话或全文转写"
+        ]
+      },
+      "verifier_latency_seconds": 35.937,
+      "admitted": true
+    },
+    {
+      "doc_id": "7fd087b890191d0ec1c7358d",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：新闻助手",
+          "正文包含国内企业壁仞科技的具体融资数据（截至2021年3月...超47亿元人民币）",
+          "引用国内高管焦国方关于‘贴近中国市场’、‘本土及新兴应用场景’的中文直接引语"
+        ]
+      },
+      "strict_latency_seconds": 31.212,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "82d8f53e6169d6c2dc4fdd07",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "编译 / 刘梦婷",
+          "外媒报道称",
+          "原文链接：https://insideevs.com/news/604411/tesla-wins-autopilot-fsd-misleading-marketing-case-germany/"
+        ]
+      },
+      "strict_latency_seconds": 29.109,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名处明确标注“编译 / 刘梦婷”，表明该文章是对外文内容的编译而非原创采写。",
+          "文章末尾提供了具体的外文原文链接（insideevs.com），且正文内容（如德国法院判决、竞争中心诉讼细节）与该链接对应的英文新闻内容高度一致，属于对特定外文原作的转述。"
+        ]
+      },
+      "verifier_latency_seconds": 41.701,
+      "admitted": false
+    },
+    {
+      "doc_id": "87656219a78e7724554e9eb4",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "正文包含中文新闻特有的表述如“当地时间本周五”、“卖身微软”",
+          "文末列出SEC和Bloomberg链接作为参考内容，但未明确标注“译自”或“编译自”"
+        ]
+      },
+      "strict_latency_seconds": 29.11,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文为中文新闻综述，综合了SEC文件、PitchBook数据及Bloomberg报道进行改写和评论",
+          "引用外文链接作为事实来源（Source/Reference），而非声明为翻译自某篇具体外文文章或提供逐段对照译文"
+        ]
+      },
+      "verifier_latency_seconds": 35.647,
+      "admitted": true
+    },
+    {
+      "doc_id": "88512b440af0face2e6a902e",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://spectrum.ieee.org/single-chip-processors-have-reached-their-limits",
+          "正文中引用了 Hyperion Research 分析师 Mark Nossokoff 和 Bassi 的观点，且行文风格符合 IEEE Spectrum 等英文科技媒体的编译特征",
+          "标题与正文内容对应英文原题 'Single-Chip Processors Have Reached Their Limits' 的中文译意"
+        ]
+      },
+      "strict_latency_seconds": 37.182,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "文章末尾明确标注了‘原文链接：https://spectrum.ieee.org/single-chip-processors-have-reached-their-limits’，指向 IEEE Spectrum 的英文文章",
+          "正文内容结构与该英文原文高度一致，包括对苹果 M1 Ultra 和英伟达 Grace Hopper 的对比、UCIe 标准的介绍以及引用分析师 Mark Nossokoff 和 Bassi 的观点，属于对特定外文原作的编译/翻译",
+          "署名‘机器之心’为中文科技媒体，常进行此类外文技术文章的编译报道"
+        ]
+      },
+      "verifier_latency_seconds": 51.721,
+      "admitted": false
+    },
+    {
+      "doc_id": "88e15fd7dad8d2783b01be05",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "公开信链接：https://futureoflife.org/open-letter/pause-giant-ai-experiments/",
+          "以下为公开信内容",
+          "Artificial Intelligence. Knopf."
+        ]
+      },
+      "strict_latency_seconds": 26.56,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "正文中明确标注‘以下为公开信内容’，随后逐段呈现了公开信的具体文本",
+          "结尾保留了大量英文参考文献（如 arXiv 链接、ABC News、Time 等），符合翻译/编译外文长文时保留原始引用格式的特征",
+          "文章结构为‘中文导语/背景介绍 + 外文原文逐段翻译’，属于典型的编译类文章，而非单纯的新闻综述或评论"
+        ]
+      },
+      "verifier_latency_seconds": 41.701,
+      "admitted": false
+    },
+    {
+      "doc_id": "8c673d723745b1bd3e37c6a2",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文描述由机器之心主办的国内活动「WAIC · AI 开发者日」",
+          "包含国内具体联系方式（潘敏敏、石东乐）及国内机构（上海市人工智能行业协会、天池等）"
+        ]
+      },
+      "strict_latency_seconds": 29.655,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "8d03602a0069443799951a8d",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文以中文新闻口吻报道CVPR官推通知",
+          "引用Yann LeCun推特观点及社区讨论作为中文语境下的评论素材，无外文原文逐段翻译标记或原文链接"
+        ]
+      },
+      "strict_latency_seconds": 29.179,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "8e0de31a5cfe5175de2e1f94",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "4月13日，在北京六道口，我们策划了一期技术论坛",
+          "期待 2024.04.13，在北京海淀区，和你相遇。"
+        ]
+      },
+      "strict_latency_seconds": 28.227,
+      "strong_original_evidence": [
+        "platform_original_label",
+        "local_interview_or_talk"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "92875b6e107147cc8e9acfec",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名‘新闻助手’暗示机器生成或自动抓取，但非明确翻译标记",
+          "正文包含大量Google内部术语（Googler, Project Relate, Google Flood Hub）及具体数据（1亿条警报），符合新闻综述特征，但缺乏‘译自’、‘编译自’或外文原文链接等直接翻译证据",
+          "文中出现英文视频链接，但这是技术文章常见引用，不足以证明全文为翻译稿"
+        ]
+      },
+      "strict_latency_seconds": 39.182,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名“新闻助手”表明为中文媒体或自动生成的新闻稿",
+          "正文结构为对Google“Inventors”活动的综合报道，涵盖多个独立板块（洪水、宠物、翻译、健康等），符合中文科技新闻综述特征",
+          "无“译自”、“编译”、“原文链接”等翻译标记，且内容是对活动内容的重新组织和总结，而非逐句转写外文原文"
+        ]
+      },
+      "verifier_latency_seconds": 40.793,
+      "admitted": true
+    },
+    {
+      "doc_id": "945a10a848487811646cf9b3",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "CNBC 报道称",
+          "官网信息显示"
+        ]
+      },
+      "strict_latency_seconds": 21.133,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "945a3a24dac5f42bd8f78a9b",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：AutoByte",
+          "据理想汽车联合创始人兼总裁沈亚楠称",
+          "根据理想用户群里的消息，南昌的一位消费者...发了律师函"
+        ]
+      },
+      "strict_latency_seconds": 25.582,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "9c3da0345e97764d38be7de1",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心为中文科技媒体，但正文内容是对ICCV 2021论文（arXiv:2108.02774）的技术解读，未提供外文原文链接或明确标注‘译自’/‘编译自’，仅包含论文和项目地址，无法排除翻译或编译来源"
+        ]
+      },
+      "strict_latency_seconds": 34.921,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心（中文科技媒体）",
+          "正文为中文论文解读/报道风格，包含背景介绍、问题引出、方法分析及应用探讨",
+          "引用了arXiv论文链接，但这是中文作者对英文论文的解读和总结，而非逐句翻译原文"
+        ]
+      },
+      "verifier_latency_seconds": 34.417,
+      "admitted": true
+    },
+    {
+      "doc_id": "a203869784b7bac441e9fd9a",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文开头：9 月 23 日晚，杭州亚运会开幕式点燃主火炬的环节...",
+          "正文结尾：中国信通院发布最新数字人标准符合性验证结果...蚂蚁集团灵境数字人平台..."
+        ]
+      },
+      "strict_latency_seconds": 30.805,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "a3a17330053c7b24c63b438f",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心为中文媒体，但正文大量引用HaptX CEO Jake Rubin的英文声明原文（如「微流体触觉反馈领域...」段落）及Business Insider/GeekWire等外媒链接，且行文结构（如「HaptX 成立于 2012 年...」背景介绍）高度符合编译自英文科技新闻的特征，但缺乏明确的「译自」或「编译自」标记，无法完全排除是中文记者基于英文素材的原创采写或深度编译，证据不足以判定为高置信度的translation或original"
+        ]
+      },
+      "strict_latency_seconds": 45.404,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文结构为新闻综述，包含背景介绍、争议焦点、公司历史及融资情况，非逐句翻译",
+          "引用了HaptX CEO的声明，但进行了中文语境下的整合与报道，而非直接翻译整篇外文文章或访谈稿"
+        ]
+      },
+      "verifier_latency_seconds": 36.138,
+      "admitted": true
+    },
+    {
+      "doc_id": "a76e84a2a44062b098288efc",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名：机器之心",
+          "论文链接：https://arxiv.org/pdf/2310.05737.pdf",
+          "正文内容是对特定学术论文（MAGVIT-v2/LFQ）的技术解读，但未提供外文原作者、原始外文链接或明确的‘译自/编译自’声明，符合uncertain中‘只有论文链接’的特征"
+        ]
+      },
+      "strict_latency_seconds": 36.281,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心（中文科技媒体）",
+          "正文结构为典型的中文论文解读/综述风格（背景引入、核心假设、方法细节、实验结果分节）",
+          "虽然包含论文链接，但正文是对论文内容的重新组织和总结，而非逐句翻译原文，且无‘译自’、‘编译’等明确翻译标记"
+        ]
+      },
+      "verifier_latency_seconds": 38.035,
+      "admitted": true
+    },
+    {
+      "doc_id": "a9875c5e4d08a46e2f735950",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名：机器之心",
+          "参考内容：https://www.reuters.com/...",
+          "参考内容：https://www.cnn.com/..."
+        ]
+      },
+      "strict_latency_seconds": 25.336,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文包含中文特有的口语化表达（如“老黄”）和综合评论（如“点燃了人们对于人工智能的乐观情绪”）",
+          "文末列出多个英文参考链接（Reuters, CNN, Fortune），表明这是基于多源新闻的综合报道/编译，而非对单一外文原作的逐句翻译"
+        ]
+      },
+      "verifier_latency_seconds": 38.497,
+      "admitted": true
+    },
+    {
+      "doc_id": "ab6793878c91d69109ca6eef",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "2021中关村智能网联汽车国际创新论坛",
+          "毫末智行CEO顾维灏",
+          "现场，美团、毫末智行、AutoX、驭势科技、小马智行、Apollo等企业核心负责人参与"
+        ]
+      },
+      "strict_latency_seconds": 29.654,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "ad57139b6345f186a9734bdf",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "编译 | 绿萝",
+          "参考内容：https://www.nytimes.com/2023/07/02/science/ai-mathematics-machine-learning.html"
+        ]
+      },
+      "strict_latency_seconds": 27.036,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "正文开头明确标注“编译 | 绿萝”，表明该文章是对外文内容的编译/翻译，而非原创采写。",
+          "文末提供了具体的英文原始链接：https://www.nytimes.com/2023/07/02/science/ai-mathematics-machine-learning.html，且正文内容（如引用 Jeremy Avigad, Akshay Venkatesh, Geordie Williamson 等人的具体言论和场景描述）与该纽约时报报道高度一致，属于逐段转写。"
+        ]
+      },
+      "verifier_latency_seconds": 49.72,
+      "admitted": false
+    },
+    {
+      "doc_id": "b01996e526ebe6092ad8282c",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "论文地址：https://openreview.net/pdf?id=eyykI3UIHa",
+          "项目网站：https://noir-corl.github.io/"
+        ]
+      },
+      "strict_latency_seconds": 26.8,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心（中文科技媒体）",
+          "正文为中文撰写的论文解读与报道，包含背景介绍、系统原理及实验结果分析",
+          "虽提供论文链接，但属于中文作者对研究成果的再创作和总结，非逐句翻译"
+        ]
+      },
+      "verifier_latency_seconds": 33.675,
+      "admitted": true
+    },
+    {
+      "doc_id": "b08247f666401a6c238537cd",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "由世界人工智能大会组委会办公室指导，蚂蚁集团、机器之心、CCF YOCSEF 上海学术委员会主办",
+          "将于上海世博展览馆 2 号会议室举办"
+        ]
+      },
+      "strict_latency_seconds": 27.962,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "b22137fdaff3ca8dc1d72095",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文包含中文作者对国内高校（北大、武理工）校友获奖情况的特定背景介绍",
+          "文章结构为中文媒体对ICML官方奖项的汇总报道，非外文访谈或逐段翻译稿"
+        ]
+      },
+      "strict_latency_seconds": 29.393,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "b2e18d9fb55b6c290390b211",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文提及“今年华为的 P60 系列发布会”及“HarmonyOS 3.1”等具体国内产品版本与时间节点",
+          "全文围绕华为国内发布会功能进行中文语境下的技术解读与生态分析，无外文原作者、译自标记或外文原文链接"
+        ]
+      },
+      "strict_latency_seconds": 32.866,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "b4a725e1bd568dcce7e751db",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：DataExa渊亭科技",
+          "正文介绍“渊亭科技推出的反洗钱智能监测分析平台”及“自主研发”的引擎",
+          "引用中国国内政策《国务院办公厅关于完善反洗钱、反恐怖融资、反逃税监管体制机制的意见》"
+        ]
+      },
+      "strict_latency_seconds": 30.562,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "c6f6d2f1c8342a836a1105b7",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "参考内容：https://venturebeat.com/games/epic-games-launches-metahuman-animator-to-capture-high-quality-human-faces/",
+          "「动画是使用 GPU 硬件在本地制作的，最终动画在几分钟内可用，」该公司的新闻稿中写道。",
+          "「是要一个演员给你更多，挖掘不同的情感，还是探索一个新的方向？」 Epic 在新闻稿中问道。"
+        ]
+      },
+      "strict_latency_seconds": 37.157,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文包含中文特有的回顾性叙述（如“还记得...吗？”）和评论性语言",
+          "引用了Epic新闻稿中的具体引语，但整体结构为中文报道而非逐句翻译全文，符合“阅读外文新闻后重新总结、报道”的特征"
+        ]
+      },
+      "verifier_latency_seconds": 36.858,
+      "admitted": true
+    },
+    {
+      "doc_id": "cbf364e6fe771c6b1f5d5147",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "high",
+        "evidence": [
+          "论文地址：https://arxiv.org/abs/2110.11334",
+          "项目主页：https://github.com/Jingkang50/OODSurvey",
+          "欢迎大家参考综述原文进行参考"
+        ]
+      },
+      "strict_latency_seconds": 28.912,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名为机器之心，属于中文科技媒体",
+          "正文包含大量中文原创解读、任务对比分析及背景介绍",
+          "文末包含具体的中文招聘启事（EIG研究中心/MMLab）及联系方式，这是典型的中文本地化内容，非翻译自外文招聘广告或论文摘要"
+        ]
+      },
+      "verifier_latency_seconds": 34.914,
+      "admitted": true
+    },
+    {
+      "doc_id": "cc12f921918c063e1b3d4fca",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "机器之能报道",
+          "编辑：Sia",
+          "「Llama 2 大模型算法与应用实践」-机器之心 AI 技术论坛将于 8 月 26 日在北京举办"
+        ]
+      },
+      "strict_latency_seconds": 27.962,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "cf487d67cd440c9b22a5e164",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "OPPO 开发者大会的现场展示",
+          "OPPO 软件工程事业部总裁吴恒刚表示"
+        ]
+      },
+      "strict_latency_seconds": 23.794,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "d1aeaecaf9e3ca40b6c00afa",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "引用VentureBeat文章及Sharon Goldman观点",
+          "引用LeCun和Ross Taylor的推特言论"
+        ]
+      },
+      "strict_latency_seconds": 24.294,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文结构为中文综述，包含背景介绍、事件回顾及多方观点整合",
+          "引用VentureBeat文章及推特言论作为信源，但进行了中文重新组织和评论（如‘意难平’、‘怨气’等主观评价），非逐句翻译"
+        ]
+      },
+      "verifier_latency_seconds": 36.858,
+      "admitted": true
+    },
+    {
+      "doc_id": "d7558bde0d27a294c91d03bf",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心为中文科技媒体，但正文未标注‘译自’或‘编译自’",
+          "引用了Nature论文链接及Quanta/Ars Technica等英文媒体链接，属于背景资料而非翻译来源标记",
+          "正文包含大量中文语境下的知乎网友评论及国内媒体（如《科学》杂志中文报道）的引用，符合中文原创采写或综合报道特征，但缺乏明确的‘非中文原文翻译’的直接证据（如‘据XX报道’或‘编译自XX’）"
+        ]
+      },
+      "strict_latency_seconds": 42.72,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文包含大量中文语境下的评论与互动，如‘网友怎么看？’、引用知乎网友观点及图片",
+          "文章结构为综合报道，混合了会议现场描述、论文背景、多方质疑及国内社区反应，并非对单一外文文章的逐句翻译"
+        ]
+      },
+      "verifier_latency_seconds": 36.615,
+      "admitted": true
+    },
+    {
+      "doc_id": "eb7467f671326d3eeabb4e37",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文包含中文特有的编辑互动语“如有遗漏，欢迎补充”",
+          "正文为对加拿大工程院官方新闻稿的中文编译与整理，而非外文访谈或播客的逐段对话稿，且无“译自”标记，符合中文媒体对国际新闻的采写/编译特征"
+        ]
+      },
+      "strict_latency_seconds": 34.012,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "edf2c41ac821cb342520746a",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心为中文媒体，但正文内容高度依赖对Zyvex Labs官方英文新闻稿及HPC Wire英文报道的编译",
+          "文中包含大量直接引语（如Michelle Simmons教授、Joe Lyding教授的话），且术语（如氢去钝化光刻、ZyvexLitho1）与英文原文对应紧密，符合编译特征",
+          "然而，文中未出现明确的‘译自’、‘编译自’标记，也未提供英文原文链接作为直接证据（仅列出参考内容链接，未明确标注为翻译源），且机器之心常有基于英文新闻的中文原创报道或深度编译，缺乏‘外文原作者及简介’等强翻译线索，故无法确认为纯翻译，归为uncertain"
+        ]
+      },
+      "strict_latency_seconds": 53.166,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "正文包含中文编辑的总结性评论（如“因此，尽管它可能适用于...并不是一个好的解决方案”），而非逐句翻译",
+          "引用了Michelle Simmons和Joe Lyding的言论，但整体结构为中文报道风格，综合了产品官网和新闻源信息，属于再创作/报道而非直接翻译原文"
+        ]
+      },
+      "verifier_latency_seconds": 39.195,
+      "admitted": true
+    },
+    {
+      "doc_id": "f58aa7e373f216c50420cc5b",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "论文主页：https://arxiv.org/abs/2205.15043",
+          "正文包含大量英文术语及参考文献列表，但无明确‘译自’、‘编译自’或外文原作者访谈标记，属于典型的中文科技媒体对英文论文的解读/报道"
+        ]
+      },
+      "strict_latency_seconds": 33.783,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名机器之心，属于中文科技媒体",
+          "标题包含中文团队介绍（清华黄隆波团队）及中文新闻点（节省95%训练开销）",
+          "正文结构为典型的中文论文解读/报道风格，包含背景介绍、方法总结、实验结果分析，而非逐句翻译原文的对话或纯文本转写"
+        ]
+      },
+      "verifier_latency_seconds": 20.71,
+      "admitted": true
+    },
+    {
+      "doc_id": "f9b9713e112f7f34e69127dc",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "据 theinformation 消息",
+          "参考链接 https://www.theinformation.com/articles/musks-xai-is-close-to-raising-6-billion-from-sequoia-others"
+        ]
+      },
+      "strict_latency_seconds": 26.498,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名显示为中文媒体‘机器之能’及编辑‘Sia’，表明是中文团队的采写或编译报道。",
+          "正文中明确引用了‘据 theinformation 消息’、‘此前《华尔街日报》和《金融时报》曾报道’，显示作者是在综合多个新闻源进行报道，而非逐句翻译单一外文原作。",
+          "文中包含‘编辑注’（如解释投后估值），这是中文媒体在编译或报道时常见的本地化处理手段，属于再创作/报道范畴，而非纯粹的机械翻译。"
+        ]
+      },
+      "verifier_latency_seconds": 34.707,
+      "admitted": true
+    },
+    {
+      "doc_id": "fa163cc45f188787c254bb01",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文提及国内游戏《完蛋！我被美女包围了》及《美女，请别影响我学习》",
+          "行文风格符合中文科技媒体对海外热点的编译/报道特征，无外文原作者署名或“译自”标记"
+        ]
+      },
+      "strict_latency_seconds": 31.025,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "fed800d69c7a49240165e168",
+      "gold_label": "original",
+      "strict_prediction": {
+        "label": "original",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文聚焦腾讯广告混元AI大模型及太极机器学习平台等国内具体技术实践",
+          "参考链接均为中文平台（头条、知乎、机器之心、腾讯云开发者社区）"
+        ]
+      },
+      "strict_latency_seconds": 27.962,
+      "strong_original_evidence": [
+        "platform_original_label"
+      ],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": true
+    },
+    {
+      "doc_id": "012402a2c571ea15260f2272",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://www.debugpoint.com/install-jupyter-ubuntu/",
+          "作者：Arindam",
+          "译者：geekpi"
+        ]
+      },
+      "strict_latency_seconds": 22.922,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "01c80105c82fca09e69dd4c0",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Liam Proven",
+          "El Reg：在你看来，年轻人在参与自由开源软件开发时面临的挑战有哪些？",
+          "原文链接：https://www.theregister.com/2025/02/14/youngsters_in_foss"
+        ]
+      },
+      "strict_latency_seconds": 32.513,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "08989fb0d6ff8f4c809f2b9d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "参考链接为NVIDIA官方博客",
+          "无明确译自标记或外文原作者信息"
+        ]
+      },
+      "strict_latency_seconds": 21.688,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "0a63ee8ade87e4a40f3a23df",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：Strategies and Tools for Performing Migrations on Platform",
+          "Spotify 的平台迁移经验",
+          "特别感谢 Marvin、Foundation、BoB，以及 Rubik"
+        ]
+      },
+      "strict_latency_seconds": 24.378,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "0a9f18b8f1ecd97fc9a80d2d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "论文地址：https://huggingface.co/papers/2307.15217",
+          "感兴趣的读者可以阅读论文原文，了解更多研究内容"
+        ]
+      },
+      "strict_latency_seconds": 24.856,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "0cec80f3d0fb2ab4b29acda4",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Sourav Rudra https://news.itsfoss.com/author/sourav/",
+          "via: https://news.itsfoss.com/broadcom-vmware-continues/",
+          "译者：geekpi 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 30.956,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "0f6c1defca2e3f60187f2ad8",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://itsfoss.com/shut-down-wsl-distros/",
+          "作者：Sreenath",
+          "译者：geekpi"
+        ]
+      },
+      "strict_latency_seconds": 23.405,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "131dc8cc9c39c6b347489099",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Bill Dyer https://itsfoss.com/author/bill/",
+          "via: https://itsfoss.com/compiz/",
+          "译者：geekpi 校对：wxy 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 29.398,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "1a53ab704be3e2e8b8897a10",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "开发者 Yuri Vishnevsky 就写了一篇博客控诉 Julia",
+          "以下是博客内容",
+          "参考链接：https://yuri.is/not-julia/"
+        ]
+      },
+      "strict_latency_seconds": 23.899,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "1e91359082930ab108927aa0",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Steef-Jan Wiggers",
+          "查看英文原文：",
+          "Azure AI Foundry Agent Service GA Introduces Multi-Agent Orchestration and Open Interoperability"
+        ]
+      },
+      "strict_latency_seconds": 24.377,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "2005c7c4f323e0360d764419",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "论文地址：https://madrona-engine.github.io/shacklett_siggraph23.pdf",
+          "作者之一、斯坦福大学计算机科学副教授 Kayvon Fatahalian 表示"
+        ]
+      },
+      "strict_latency_seconds": 26.471,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "249f00667ebe17f3d9e00c31",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://www.opensourceforu.com/2022/10/using-r-for-building-an-interactive-web-app/",
+          "作者：Dr Kumar Gaurav",
+          "译者：Charonxin"
+        ]
+      },
+      "strict_latency_seconds": 26.695,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "258685fc1a91d76b9c42f49b",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "声明：本文由 InfoQ 翻译，未经许可禁止转载。",
+          "查看英文原文 https://www.infoq.com/news/2025/05/pulumi-idp/"
+        ]
+      },
+      "strict_latency_seconds": 25.086,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "27317c5d050adc8e86d511b1",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Sergio De Simone",
+          "原文链接：https://www.infoq.com/news/2022/12/grafana-traceql/"
+        ]
+      },
+      "strict_latency_seconds": 24.377,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "2a36aaffc278ddb4c76a7f2c",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://spectrum.ieee.org/optical-interconnects",
+          "Avicena 和 Ayar Labs",
+          "Pezeshki 说:“如果你看硅光子学的目标值..."
+        ]
+      },
+      "strict_latency_seconds": 26.245,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "2c1074af7abe0ec161ca6233",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Aakash N S",
+          "原文链接：https://aakashns.com/delete",
+          "正文开头提及“Jovian 的创始人兼首席执行官...Aakash N S 日前发文表示”"
+        ]
+      },
+      "strict_latency_seconds": 26.017,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "2d8d10e8c8714e895ca3f92d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "DeepMind 研究科学家 Sebastian Ruder 近日帮我们对去年的机器学习社区进行了一番总结",
+          "Sebastian Ruder 列出的 2020 年十大机器学习研究进展是",
+          "参考内容：https://ruder.io/research-highlights-2020/"
+        ]
+      },
+      "strict_latency_seconds": 34.359,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "32e845fd988144c0c0b75501",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://crazystupidtech.com/archive/will-ai-eat-the-browser",
+          "正文提及具体外国人物及公司：Josh Miller, Arc, The Pipeline, Juan Soto, Dodger Stadium",
+          "行文风格为典型的外文科技博客第一人称叙述（如'我对苹果的 Vision Pro 上瘾了'），且提供了明确的外文原始链接"
+        ]
+      },
+      "strict_latency_seconds": 34.358,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "34a3ff43863b4276a47e1bd1",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "本文最初发布于 DEV CLASS",
+          "原文链接：https://devclass.com/2025/03/25/the-future-of-scala-pioneering-features-are-now-commonplace-so-what-comes-next/"
+        ]
+      },
+      "strict_latency_seconds": 28.483,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "3757b9c7b41a54124e871703",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "译者：geekpi",
+          "本文由 LCTT 原创编译",
+          "via: https://debugpointnews.com/kde-app-arinna/"
+        ]
+      },
+      "strict_latency_seconds": 24.191,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "3885a2679c3c2853fa75cd3d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Egor Romanov",
+          "原文链接：https://egor-romanov.medium.com/building-a-startup-from-scratch-my-mistakes-as-cto-b20b463e0058",
+          "以下为他的自述"
+        ]
+      },
+      "strict_latency_seconds": 29.173,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "397f7795bcee9054952c1ed4",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://fedoramagazine.org/fedora-linux-editions-part-4-alt-downloads/",
+          "作者：Arman Arisman",
+          "译者：ChatGPT"
+        ]
+      },
+      "strict_latency_seconds": 25.65,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "3fedb8bae0eb27bda54cc5ad",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "开发者讲师 Ryan O'Connor 在 AssemblyAI 博客撰写了一篇长文《How Imagen Actually Works》",
+          "原文链接：https://www.assemblyai.com/blog/how-imagen-actually-works/"
+        ]
+      },
+      "strict_latency_seconds": 27.077,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "43e7fbf4f35ec78872126a4f",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "引用Evan Miller博客链接",
+          "引用GitHub项目地址"
+        ]
+      },
+      "strict_latency_seconds": 21.0,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "443f9cb0479af67abd415c13",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://techxplore.com/news/2021-05-team-effort-ai-sensors.html",
+          "Rawashdeh在密歇根的技术合作者包括他在电气和计算机工程方面的博士生Nader Abu Alrub",
+          "Bos解释说"
+        ]
+      },
+      "strict_latency_seconds": 30.088,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "46266a26b59c490927218f6f",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "译者：toknow-gh",
+          "本文由 LCTT 原创编译",
+          "via: https://opensource.com/article/22/1/troubleshoot-hardware-sysadmin"
+        ]
+      },
+      "strict_latency_seconds": 25.65,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "51563ba626aa1e2f6869b9cb",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Michael Lynch",
+          "原文链接：https://mtlynch.io/solo-developer-year-5/"
+        ]
+      },
+      "strict_latency_seconds": 22.234,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "59b7a3f4be6c5b8876fcba22",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://www.linuxtechi.com/set-proxy-settings-for-apt-command/",
+          "作者：James Kiarie",
+          "译者：geekpi"
+        ]
+      },
+      "strict_latency_seconds": 24.684,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "5b69a1aacc1e5249cb708302",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "迪卡侬资深工程师 Raphaël Tahar",
+          "原文链接 https://www.infoq.com/news/2024/07/decathlon-architecture-process/",
+          "InfoQ: ... Tahar: 对话格式"
+        ]
+      },
+      "strict_latency_seconds": 28.017,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "62d98f15a79bad71b03b57de",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "InfoQ 采访了 Dimitar Panayotov",
+          "原文链接 https://www.infoq.com/news/2024/01/chatgpt-software-test-delivery/",
+          "Dimitar Panayotov 在 2023 年 QA Challenge Accepted 大会 上分享"
+        ]
+      },
+      "strict_latency_seconds": 31.219,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "641943c570d132e94ed634b6",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://spectrum.ieee.org/cars-that-think/energy/batteries-storage/ev-battery-swapping-how-is-this-a-good-idea",
+          "Better Place公司...以色列公司...赛·阿加西（Shai Agassi）",
+          "Ample首席执行官哈立德·哈苏纳（Khaled Hassounah）"
+        ]
+      },
+      "strict_latency_seconds": 33.465,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "67ee042bcfbd07c949938f79",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "本文最初发布于 Medium 工程博客",
+          "声明：本文为 InfoQ 翻译，未经许可禁止转载",
+          "原文链接：https://medium.engineering/kubernetes-infrastructure-at-medium-d9e2444932ef"
+        ]
+      },
+      "strict_latency_seconds": 27.316,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "694fcfa77cef931883e18de0",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://itsfoss.com/linux-rename-files-directories/",
+          "作者：Abhishek Prakash",
+          "译者：geekpi 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 28.042,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "6aacf1d13a87669813b9d984",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://www.2daygeek.com/changing-default-kernel-rhel-8-rhel-9/",
+          "作者：Rasool Cool",
+          "译者：onionstalgia 校对：wxy 选题：lujun9972 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 34.076,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "6c27c0b4563d9d92a78d09d4",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Sourav Rudra https://news.itsfoss.com/author/sourav/",
+          "标题为英文原文 'Zorin OS 17 is Redefining the Visual Experience in a Linux Distro'",
+          "正文内容对应 ItsFoss 网站关于 Zorin OS 17 的英文报道"
+        ]
+      },
+      "strict_latency_seconds": 33.846,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "70c91be5ae0b2940a9e2e4db",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "今日，外媒 The Information 撰文分析了苹果陷入困境的自动驾驶电动汽车项目",
+          "The Information 报道中还透露了一些有趣的新细节",
+          "The Information 报道中还提到了一些最令人担忧的问题"
+        ]
+      },
+      "strict_latency_seconds": 26.591,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "72f3214a26dca8cfeadadb5a",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://news.itsfoss.com/blendOS-v3-released/",
+          "作者：Sourav Rudra",
+          "译者：geekpi 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 28.745,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "73ff2ba896e15494516fb838",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "正文包含大量英文专有名词如Dan O'Dowd、Green Hills Software、The Dawn Project、@Whole Mars Catalog、Tad Park",
+          "结尾提供YouTube参考链接但无明确‘译自’或‘编译自’声明，且行文符合中文科技媒体对海外热点事件的报道习惯，无法排除是中文作者基于英文素材的原创编译或改写"
+        ]
+      },
+      "strict_latency_seconds": 36.55,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "74147ea3142b967848e6deb8",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "本文是基于作者在 2024 旧金山 QCon 大会上的演讲",
+          "Wealthsimple 是加拿大一家专注于金融普惠服务的平台"
+        ]
+      },
+      "strict_latency_seconds": 25.116,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "7cddb4ab3d27abf0f1f4fa23",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "在 Sebastian Ruder 的最新博客《ML and NLP Research Highlights of 2021》中",
+          "博客链接：https://ruder.io/ml-highlights-2021/"
+        ]
+      },
+      "strict_latency_seconds": 27.323,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "82c9ce78f551f395a3180fa0",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：ScienceAI",
+          "参考内容：https://spectrum.ieee.org/tech-talk/computing/hardware/chaos-programmable-chips-secure",
+          "参考内容：https://news.osu.edu/scientists-harness-chaos-to-protect-devices-from-hackers/"
+        ]
+      },
+      "strict_latency_seconds": 32.002,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "8618bc1feea90eebd0138d8f",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "参考内容：https://www.bloomberg.com/news/articles/2022-05-16/hacker-shows-off-a-way-to-unlock-tesla-models-start-the-engine",
+          "参考内容：https://newsroom.nccgroup.com/news/ncc-group-uncovers-bluetooth-low-energy-ble-vulnerability-that-puts-millions-of-cars-mobile-devices-and-locking-systems-at-risk-447952"
+        ]
+      },
+      "strict_latency_seconds": 39.228,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "8aba56725ec905b19f845a2a",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Sourav Rudra https://news.itsfoss.com/author/sourav/",
+          "他们联系我们来报道第一个公开测试版本，我们对此非常感兴趣。"
+        ]
+      },
+      "strict_latency_seconds": 26.349,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "8ef47d1000014560635c1f0a",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "参考链接：https://lightning.ai/pages/community/tutorial/pytorch-memory-vit-llm/",
+          "本文作者的另一篇文章：《使用混合精度技术加速大型语言模型》... 文章地址：https://lightning.ai/pages/community/tutorial/accelerating-large-language-models-with-mixed-precision-techniques/",
+          "本文作者的另一篇文章《使用梯度累积在单个 GPU 上微调 LLM》... 文章地址：https://lightning.ai/blog/gradient-accumulation/"
+        ]
+      },
+      "strict_latency_seconds": 40.999,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "99ab4ce678e2ca8cff816555",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：ScienceAI",
+          "参考内容：https://phys.org/news/2021-04-machine-algorithm-unravel-physics-underlying.amp",
+          "（来源：phys.org）"
+        ]
+      },
+      "strict_latency_seconds": 27.323,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "9abb2b03b9e7ef68f32797ec",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "以第一人称进行编译整理",
+          "原文链接：https://hasty.ai/content-hub/articles/cleaning-pascal-improving-map-by-13"
+        ]
+      },
+      "strict_latency_seconds": 28.745,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "9d9b212bf14044b6db39e64d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Keyur Paralkar https://opensource.com/users/keyur-paralkar",
+          "标题：Build a Raspberry Pi monitoring dashboard in under 30 minutes",
+          "引用 Seth Kenlon 的文章"
+        ]
+      },
+      "strict_latency_seconds": 27.083,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "9e71ed901319e5a814b53daa",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://www.semianalysis.com/p/nvidiaopenaitritonpytorch",
+          "署名：机器之心",
+          "正文内容涉及对 SemiAnalysis 文章观点的复述（如 PyTorch 2.0, Triton, CUDA 垄断等），且结尾直接给出了英文原文链接，符合编译/翻译自外文原作的特征"
+        ]
+      },
+      "strict_latency_seconds": 34.529,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "a14da4e5e2e767f920b89505",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://electrek.co/2021/05/24/tesla-found-guilty-throttling-charging-speed-asked-pay-16000-thousands-owners/",
+          "据挪威媒体Nettavisen报道",
+          "外媒就曾报道过"
+        ]
+      },
+      "strict_latency_seconds": 31.74,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "ab096b08ae57be61da96e440",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：ANDREW CUNNINGHAM",
+          "原文链接：https://arstechnica.com/gadgets/2023/12/2023-was-the-year-that-gpus-stood-still/"
+        ]
+      },
+      "strict_latency_seconds": 28.566,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "acfb66ebf3abdd352db85011",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "引用Keras创始人François Chollet的话",
+          "提供原文链接https://keras.io/keras_core/announcement/"
+        ]
+      },
+      "strict_latency_seconds": 24.239,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "b21aebbca6c6c8460eac1053",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://www.infoq.com/news/2023/09/state-serverless-report/",
+          "Datadog 发布了一年一度的“2023年Serverless状态报告”",
+          "Trilo CTO Marco Troisi 对此表示认同"
+        ]
+      },
+      "strict_latency_seconds": 30.164,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "b24cfed9498ec4a4cf96ce25",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名机器之心",
+          "正文包含斯坦福大学官方英文链接及《斯坦福日报》英文链接",
+          "正文未出现‘译自’、‘编译自’或明确的外文原作者署名及简介，仅通过引用英文原始资料报道新闻事件，无法排除是中文记者基于英文报道的编译或原创采写"
+        ]
+      },
+      "strict_latency_seconds": 32.635,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "b3d0ef95c98b110f78707812",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://news.itsfoss.com/qubes-os-4-2-release/",
+          "作者：Sourav Rudra",
+          "译者：geekpi 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 28.793,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "b54e8208b5484520bba1d022",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "high",
+        "evidence": [
+          "署名：机器之心",
+          "正文包含对斯坦福大学研究及Nature论文的中文报道与分析",
+          "文末列出Nature、NYT、Quanta Magazine等外文参考链接，但无明确‘译自’、‘编译自’或外文原作者署名标记"
+        ]
+      },
+      "strict_latency_seconds": 29.711,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "b628d33e1534522b9df25b9c",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Tim Anderson",
+          "原文链接：https://devclass.com/2024/10/22/should-javascript-be-split-into-two-languages-new-google-driven-proposal-divides-opinion/"
+        ]
+      },
+      "strict_latency_seconds": 28.105,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "b69b714edc608465d2f23e7e",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Ankush Das https://itsfoss.com/author/ankush/",
+          "标题：8 Immutable Linux Distributions for Those Looking to Embrace the Future"
+        ]
+      },
+      "strict_latency_seconds": 25.704,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "bb019356cb712f4be965ccc4",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Renato Athaydes",
+          "原文链接：https://renato.athaydes.com/posts/switching-from-heavyweight-ides-to-emacs.html"
+        ]
+      },
+      "strict_latency_seconds": 25.221,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "bc4b2dc1764494314bd5db6f",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "uncertain",
+        "confidence": "low",
+        "evidence": [
+          "署名：机器之心",
+          "论文地址：https://www.nature.com/articles/s41586-022-05188-w",
+          "参考链接：https://news.yale.edu/2022/10/12/morphing-limbs-robot-travels-land-and-water"
+        ]
+      },
+      "strict_latency_seconds": 33.526,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "bf91607093b7441a96a1b79e",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://opensource.com/article/21/3/rtos-embedded-development",
+          "作者：Alan Smithee",
+          "译者：cool-summer-021"
+        ]
+      },
+      "strict_latency_seconds": 25.952,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "c7b44452945b50903f98481e",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "译者：geekpi",
+          "本文由 LCTT 原创编译",
+          "via: https://itsfoss.com/create-bash-script/"
+        ]
+      },
+      "strict_latency_seconds": 23.993,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "c96f52aa5cb9871141d03504",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "Agnis Liukis 撰写了一篇文章",
+          "原文链接：https://towardsdatascience.com/5-typical-beginner-mistakes-in-machine-learning-3544bd4109b"
+        ]
+      },
+      "strict_latency_seconds": 28.104,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "cbc84b1c7ce70cd41082b8d1",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Georg Link https://opensource.com/users/georglink",
+          "标题：8 ideas for measuring your open source software usage",
+          "正文开头：衡量你的开源软件使用情况的 8 个方法"
+        ]
+      },
+      "strict_latency_seconds": 27.154,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "cda14758f6714053d2a0c1d5",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "参考链接：https://spectrum.ieee.org/kawasaki-robotics-bex",
+          "RHP 开发的负责人 Masayuki Soube 最近接受了媒体关于 Bex 计划的采访"
+        ]
+      },
+      "strict_latency_seconds": 26.669,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "d5067463e52dfdb191dacec2",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "via: https://itsfoss.com/terminator/",
+          "作者：Anuj Sharma",
+          "译者：ChatGPT 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 26.355,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "dad8eada2e69d2ce78aea37d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Pradeep Kumar https://www.linuxtechi.com/author/pradeep/",
+          "标题：How to Install PgAdmin4 on RHEL 9 Step by Step"
+        ]
+      },
+      "strict_latency_seconds": 26.117,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "e24b963d7e265097d0e252fa",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "译者：ChatGPT",
+          "本文由 LCTT 原创编译",
+          "via: https://news.itsfoss.com/linus-torvalds-woke-communists/"
+        ]
+      },
+      "strict_latency_seconds": 26.118,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "e6a29a07f96828fef2043306",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Daniel Stenberg",
+          "curl 首席开发者 Daniel Stenberg 的发布公告",
+          "原文链接：https://daniel.haxx.se/blog/2023/03/20/curl-8-0-0-is-here/"
+        ]
+      },
+      "strict_latency_seconds": 29.283,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "e8156292261a127bd402e803",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Brent",
+          "原文链接：https://stitcher.io/blog/php-reimagined-part-2",
+          "https://stitcher.io/blog/we-dont-need-runtime-type-checks"
+        ]
+      },
+      "strict_latency_seconds": 26.355,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "eb0141ddff9ef82a377d773d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "译者：Drwhooooo",
+          "本文由 LCTT 原创编译",
+          "via: https://jao.io/blog/an-even-better-video-wharf.html"
+        ]
+      },
+      "strict_latency_seconds": 24.677,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "ef6e7212bfeaef43d02dd356",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Yauhen Zaremba https://opensource.com/users/yauhen-zaremba",
+          "via: https://opensource.com/article/23/1/tips-effective-devops-culture",
+          "译者：lxbwolf 本文由 LCTT 原创编译，Linux中国 荣誉推出"
+        ]
+      },
+      "strict_latency_seconds": 31.286,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "f0f3a85f6c080ce3e935fe26",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://www.infoq.com/articles/scalable-resilient-event-systems/",
+          "Event-driven architectures，EDA",
+          "Serverless Land"
+        ]
+      },
+      "strict_latency_seconds": 24.176,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "f5e3c2dd262cfa1c6947740b",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Sergio De Simone",
+          "原文链接：https://www.infoq.com/news/2024/09/swift-vapor-5-roadmap/"
+        ]
+      },
+      "strict_latency_seconds": 25.397,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "f60d908b1768d71dc945b511",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://medium.com/@adi.fu7/ai-accelerators-part-v-final-thoughts-94eae9dbfafb"
+        ]
+      },
+      "strict_latency_seconds": 24.676,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "f63a7b2bd944a87278bb8c6d",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Michael Redlich",
+          "原文链接：https://www.infoq.com/news/2023/04/java-news-roundup-apr17-2023/"
+        ]
+      },
+      "strict_latency_seconds": 26.117,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "f88138aeb0fc421e9bff7e6b",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "本文最初发布于 hodlbod 的个人博客",
+          "声明：本文为 InfoQ 翻译",
+          "原文链接：https://hodlbod.npub.pro/post/1739830562159"
+        ]
+      },
+      "strict_latency_seconds": 27.486,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "fbc6e8025cca7397610f12dc",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "根据 Cloudflare 团队的说法",
+          "正如 InfoQ 此前报道的那样",
+          "原文链接：https://www.infoq.com/news/2025/02/cloudflare-documentation-astro/"
+        ]
+      },
+      "strict_latency_seconds": 26.577,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "fe4575bc2a3fa46e213c036b",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "原文链接：https://www.infoq.com/news/2025/06/perplexity-labs/",
+          "根据 Perplexity 的首席执行官和联合创始人 Aravind Srinivas 的说法",
+          "Sundararajan Anandan 分享道"
+        ]
+      },
+      "strict_latency_seconds": 29.51,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "ff157f4533b3348188477c0b",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "查看原文链接",
+          "https://www.infoq.com/news/2024/12/nexa-ai-unveils-omnivision/"
+        ]
+      },
+      "strict_latency_seconds": 24.677,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    },
+    {
+      "doc_id": "ff4dcd2cf1eb1dec8c2966a3",
+      "gold_label": "translation",
+      "strict_prediction": {
+        "label": "translation",
+        "confidence": "high",
+        "evidence": [
+          "署名：Arindam https://www.debugpoint.com/author/admin1/",
+          "标题：Best GUI Package Managers for Arch Linux",
+          "正文开头：Arch Linux 的最佳 GUI 包管理器"
+        ]
+      },
+      "strict_latency_seconds": 26.355,
+      "strong_original_evidence": [],
+      "verifier_prediction": null,
+      "verifier_latency_seconds": null,
+      "admitted": false
+    }
+  ]
+}

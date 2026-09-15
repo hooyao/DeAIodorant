@@ -1,0 +1,32 @@
+近年来，利用大规模真实世界数据进行的视觉预训练取得了显著进展，在基于像素观察的机器人学习中展现出巨大的潜力。但这些工作在预训练的数据、方法和模型方面有所不同。因此哪些类型的数据、预训练方法和模型可以更好地辅助机器人操控仍然是一个悬而未决的问题。
+基于此，ByteDance Research 团队的研究者从
+预训练数据集、模型架构和训练方法三个基本角度
+全面研究了视觉预训练策略对机器人操作任务的影响，提供了一些有利于机器人学习的重要实验结果。此外，他们提出了一种名为
+Vi-PRoM 的机器人操作视觉预训练方案，它结合了自监督学习和监督学习。
+其中前者采用对比学习从大规模未标记的数据中获取潜在模式，而后者旨在学习视觉语义和时序动态变化。在各种仿真环境和真实机器人中进行的大量机器人操作实验证明了该方案的优越性。
+论文地址：https://arxiv.org/pdf/2308.03620.pdf
+项目地址：https://explore-pretrain-robot.github.io/
+基准研究
+预训练数据
+EgoNet 比 ImageNet 更强大。使用对比学习方法在不同的数据集（即 ImageNet 和 EgoNet）上预训练视觉编码器，并观察它们在机器人操作任务中的表现。从下表 1 中可以看到，在 EgoNet 上预训练的模型在机器人操作任务上取得了更好的性能。显然，机器人在操作任务方面更倾向于视频中包含的交互知识和时序关系。此外，EgoNet 中以自我为中心的自然图像具有更多关于世界的全局背景，这意味着可以学习更丰富的视觉特征。
+模型结构
+ResNet-50 表现更好。从下表 2 中可以看出 ResNet-50 和 ResNet-101 在机器人操作任务上的表现优于 ResNet-34。此外，随着模型从 ResNet-50 增加到 ResNet-101，性能并没有提高。
+预训练方法
+预训练方法首选对比学习。如下表 3 所示，MoCo-v3 在 ImageNet 和 EgoNet 数据集上均优于 MAE，这证明了对比学习与掩模图像建模相比更有效。此外，通过对比学习获得的视觉语义对于机器人操作来说比通过掩模图像建模学习的结构信息更重要。
+算法介绍
+基于上述探索，该工作提出了针对机器人操作的视觉预训练方案 (Vi-PRoM)，该方案在 EgoNet 数据集上预训练 ResNet-50 来提取机器人操作的全面视觉表示。具体来说，他们首先采用对比学习以自我监督的方式从 EgoNet 数据集中获取人与物体的交互模式。然后提出了两个额外的学习目标，即视觉语义预测和时序动态预测，以进一步丰富编码器的表示。下图显示了提出的 Vi-PRoM 的基本流程。值得注意的是，该工作不需要手动标注标签来学习视觉语义和时序动态。
+实验结果
+该研究工作在两种仿真环境 (Franka Kitchen 和 MetaWorld) 上进行了广泛的实验。实验结果表明所提出的预训练方案在机器人操作上优于以前最先进的方法。消融实验结果如下表所示，可以证明视觉语义学习和时序动态学习对于机器人操作的重要性。此外，当两个学习目标都不存在时，Vi-PRoM 的成功率会大大下降，证明了视觉语义学习和时序动态学习之间协作的有效性。
+该工作还研究了 Vi-PRoM 的可扩展性。如下左图所示，在 Franka Kitchen 和 MetaWorld 模拟环境中，Vi-PRoM 的成功率随着演示数据规模的增加而稳步提高。在更大规模的专家演示数据集上进行训练后，Vi-PRoM 模型显示了其在机器人操作任务上的可扩展性。
+得益于 Vi-PRoM 强大的视觉表征能力，真实机器人可以成功打开抽屉和柜门。
+Franka Kitchen 上的实验结果可以看出，Vi-PRoM 在五个任务上都比 R3M 具有更高的成功率和更高的动作完成度。
+R3M：
+Vi-PRoM：
+在 MetaWorld 上，由于 Vi-PRoM 的视觉表示学习了良好的语义和动态特征，它可以更好地用于动作预测，因此相比 R3M，Vi-PRoM 需要更少的步骤来完成操作。
+R3M：
+Vi-PRoM：
+参考文献：
+[1] S. Nair, A. Rajeswaran, V. Kumar, C. Finn, and A. Gupta, “R3m: A universal visual representation for robot manipulation,” in 6th Annual Conference on Robot Learning, 2022.
+[2] I. Radosavovic, T. Xiao, S. James, P. Abbeel, J. Malik, and T. Dar- rell, “Real-world robot learning with masked visual pre-training,” in Conference on Robot Learning, 2022.
+[3] X. Chen, S. Xie, and K. He, “An empirical study of training self- supervised vision transformers,” in Proceedings of the IEEE Confer- ence on Computer Vision and Pattern Recognition, 2021.
+[4] K.Grauman,A.Westbury,E.Byrne,Z.Chavis,A.Furnari,R.Girdhar, J. Hamburger, H. Jiang, M. Liu, X. Liu et al., “Ego4d: Around the world in 3,000 hours of egocentric video,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2022.

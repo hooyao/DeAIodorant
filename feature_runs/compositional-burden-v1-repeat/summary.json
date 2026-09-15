@@ -1,0 +1,233 @@
+{
+  "artifact_type": "deterministic-compositional-burden-development-probe",
+  "schema_version": "deaiodorant-compositional-burden-probe-0.1",
+  "seed": 2026082703,
+  "scope": {
+    "pair_count": 10,
+    "decisive_pair_count": 9,
+    "result_role": "development_intervention_not_validation",
+    "all_decisive_choices_selected_side_b": true
+  },
+  "identity": {
+    "answer_key_sha256": "8152816cd789175f759588a95145dfdae78fcdafeaaa3da96eeb84a91b0bafab",
+    "results_sha256": "bad200bdb0abbec70de61efc8be8caf2f6ff3244e9533b33fc24e228091be54b",
+    "model_fingerprint": "5fa23dfff06b543c63ef547b32006bb0a9acdd6bc1a3a1df23d768a171352af9",
+    "model_file_count": 8
+  },
+  "thresholds": {
+    "long_dependency_arc_tokens": 5,
+    "long_nominal_modifier_tokens": 4
+  },
+  "metrics": [
+    {
+      "feature": "argument_anchored_clause_ratio",
+      "putative_burden_direction": "lower",
+      "original_median": 0.6162962962962963,
+      "revised_median": 0.7253846153846153,
+      "revision_minus_original_median": 0.08405934343434346,
+      "revision_increases_raw_value_count": 9,
+      "revision_decreases_raw_value_count": 1,
+      "preferred_side_has_lower_putative_burden": 5,
+      "preferred_side_has_higher_putative_burden": 4,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "cjk_chars_per_sentence",
+      "putative_burden_direction": "higher",
+      "original_median": 43.7,
+      "revised_median": 42.33333333333333,
+      "revision_minus_original_median": -4.766666666666666,
+      "revision_increases_raw_value_count": 3,
+      "revision_decreases_raw_value_count": 7,
+      "preferred_side_has_lower_putative_burden": 4,
+      "preferred_side_has_higher_putative_burden": 5,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "clause_heads_per_sentence",
+      "putative_burden_direction": "higher",
+      "original_median": 5.775,
+      "revised_median": 5.266666666666667,
+      "revision_minus_original_median": -0.5499999999999998,
+      "revision_increases_raw_value_count": 4,
+      "revision_decreases_raw_value_count": 6,
+      "preferred_side_has_lower_putative_burden": 5,
+      "preferred_side_has_higher_putative_burden": 4,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "content_tokens_per_clause_head",
+      "putative_burden_direction": "higher",
+      "original_median": 3.1611111111111114,
+      "revised_median": 3.28125,
+      "revision_minus_original_median": 0.11366827898268062,
+      "revision_increases_raw_value_count": 6,
+      "revision_decreases_raw_value_count": 4,
+      "preferred_side_has_lower_putative_burden": 2,
+      "preferred_side_has_higher_putative_burden": 7,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "content_tokens_per_sentence",
+      "putative_burden_direction": "higher",
+      "original_median": 16.875,
+      "revised_median": 17.5,
+      "revision_minus_original_median": -0.9500000000000002,
+      "revision_increases_raw_value_count": 4,
+      "revision_decreases_raw_value_count": 6,
+      "preferred_side_has_lower_putative_burden": 3,
+      "preferred_side_has_higher_putative_burden": 6,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "coordination_relations_per_sentence",
+      "putative_burden_direction": "higher",
+      "original_median": 0.9583333333333334,
+      "revised_median": 1.1,
+      "revision_minus_original_median": 0.09999999999999998,
+      "revision_increases_raw_value_count": 5,
+      "revision_decreases_raw_value_count": 2,
+      "preferred_side_has_lower_putative_burden": 4,
+      "preferred_side_has_higher_putative_burden": 2,
+      "preferred_side_equal": 3
+    },
+    {
+      "feature": "distinct_content_lemmas_per_sentence",
+      "putative_burden_direction": "higher",
+      "original_median": 16.125,
+      "revised_median": 16.033333333333335,
+      "revision_minus_original_median": -0.04166666666666696,
+      "revision_increases_raw_value_count": 5,
+      "revision_decreases_raw_value_count": 5,
+      "preferred_side_has_lower_putative_burden": 4,
+      "preferred_side_has_higher_putative_burden": 5,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "function_to_content_ratio",
+      "putative_burden_direction": "lower",
+      "original_median": 0.5269182389937107,
+      "revised_median": 0.4330769230769231,
+      "revision_minus_original_median": -0.07499321168676007,
+      "revision_increases_raw_value_count": 0,
+      "revision_decreases_raw_value_count": 10,
+      "preferred_side_has_lower_putative_burden": 4,
+      "preferred_side_has_higher_putative_burden": 5,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "long_dependency_arc_ratio",
+      "putative_burden_direction": "higher",
+      "original_median": 0.2373381877022654,
+      "revised_median": 0.1986842105263158,
+      "revision_minus_original_median": -0.027950336219241645,
+      "revision_increases_raw_value_count": 1,
+      "revision_decreases_raw_value_count": 9,
+      "preferred_side_has_lower_putative_burden": 4,
+      "preferred_side_has_higher_putative_burden": 5,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "long_nominal_modifier_ratio",
+      "putative_burden_direction": "higher",
+      "original_median": 0.15612648221343872,
+      "revised_median": 0.13505747126436782,
+      "revision_minus_original_median": -0.025362318840579712,
+      "revision_increases_raw_value_count": 3,
+      "revision_decreases_raw_value_count": 6,
+      "preferred_side_has_lower_putative_burden": 3,
+      "preferred_side_has_higher_putative_burden": 5,
+      "preferred_side_equal": 1
+    },
+    {
+      "feature": "max_clause_heads_in_sentence",
+      "putative_burden_direction": "higher",
+      "original_median": 8.0,
+      "revised_median": 7.5,
+      "revision_minus_original_median": -1.0,
+      "revision_increases_raw_value_count": 2,
+      "revision_decreases_raw_value_count": 7,
+      "preferred_side_has_lower_putative_burden": 3,
+      "preferred_side_has_higher_putative_burden": 5,
+      "preferred_side_equal": 1
+    },
+    {
+      "feature": "max_dependency_distance",
+      "putative_burden_direction": "higher",
+      "original_median": 26.5,
+      "revised_median": 27.0,
+      "revision_minus_original_median": -0.5,
+      "revision_increases_raw_value_count": 4,
+      "revision_decreases_raw_value_count": 5,
+      "preferred_side_has_lower_putative_burden": 3,
+      "preferred_side_has_higher_putative_burden": 5,
+      "preferred_side_equal": 1
+    },
+    {
+      "feature": "max_nominal_modifier_chain",
+      "putative_burden_direction": "higher",
+      "original_median": 2.0,
+      "revised_median": 2.0,
+      "revision_minus_original_median": 0.0,
+      "revision_increases_raw_value_count": 1,
+      "revision_decreases_raw_value_count": 2,
+      "preferred_side_has_lower_putative_burden": 0,
+      "preferred_side_has_higher_putative_burden": 3,
+      "preferred_side_equal": 6
+    },
+    {
+      "feature": "mean_dependency_distance",
+      "putative_burden_direction": "higher",
+      "original_median": 3.6791208791208794,
+      "revised_median": 3.500383239652529,
+      "revision_minus_original_median": -0.06313613570895127,
+      "revision_increases_raw_value_count": 4,
+      "revision_decreases_raw_value_count": 6,
+      "preferred_side_has_lower_putative_burden": 6,
+      "preferred_side_has_higher_putative_burden": 3,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "mean_nominal_modifier_span",
+      "putative_burden_direction": "higher",
+      "original_median": 2.1801242236024843,
+      "revised_median": 1.9705882352941178,
+      "revision_minus_original_median": -0.16155372405372403,
+      "revision_increases_raw_value_count": 4,
+      "revision_decreases_raw_value_count": 6,
+      "preferred_side_has_lower_putative_burden": 5,
+      "preferred_side_has_higher_putative_burden": 4,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "mean_tree_depth",
+      "putative_burden_direction": "higher",
+      "original_median": 2.6628975495307614,
+      "revised_median": 2.3385899073778345,
+      "revision_minus_original_median": -0.21040829348089973,
+      "revision_increases_raw_value_count": 2,
+      "revision_decreases_raw_value_count": 8,
+      "preferred_side_has_lower_putative_burden": 5,
+      "preferred_side_has_higher_putative_burden": 4,
+      "preferred_side_equal": 0
+    },
+    {
+      "feature": "subordinate_relations_per_sentence",
+      "putative_burden_direction": "higher",
+      "original_median": 3.9,
+      "revised_median": 3.0,
+      "revision_minus_original_median": -0.5333333333333332,
+      "revision_increases_raw_value_count": 3,
+      "revision_decreases_raw_value_count": 7,
+      "preferred_side_has_lower_putative_burden": 6,
+      "preferred_side_has_higher_putative_burden": 3,
+      "preferred_side_equal": 0
+    }
+  ],
+  "interpretation_limits": [
+    "The feature vector is exploratory and has no validated composite score.",
+    "All decisive responses selected side B, so treatment-preference associations are position-confounded.",
+    "Preference-alignment counts are descriptive diagnostics and must not tune thresholds or promote a smell.",
+    "Universal Dependencies parses are deterministic measurements with parser error, not linguistic gold labels."
+  ]
+}

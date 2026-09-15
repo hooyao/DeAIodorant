@@ -1,0 +1,20 @@
+{
+  "id": "s04",
+  "q": "什么值得买 2022 扫地机器人 选购指南",
+  "started_at": "2026-09-14T14:47:34.005Z",
+  "completed_at": "2026-09-14T14:47:37.671Z",
+  "request": {
+    "scope": "webpage",
+    "size": 7,
+    "includeRawContent": false,
+    "includeSummary": false
+  },
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"credits\":3,\"searchParameters\":{\"conciseSnippet\":false,\"format\":\"chat_completions\",\"includeSummary\":false,\"q\":\"什么值得买 2022 扫地机器人 选购指南\",\"scope\":\"webpage\",\"searchFile\":false,\"size\":7},\"total\":1,\"webpages\":[{\"authors\":[\"新浪众测\"],\"date\":\"2022年01月01日\",\"docId\":\"bd30b15f-7ee5-4888-b93a-5a925be43766\",\"link\":\"https://zhongce.sina.com.cn/article/view/129894\",\"position\":1,\"score\":\"high\",\"snippet\":\"!\\n[](https://zhongces3.sina.com.cn/products/202205/40e5097fc91ee79100c1a3f6755fd6b4.jpeg)\\n3600字长文，22年哪款新品扫拖机器人值得买？\\n随着科技的普及，越来越多家庭选择购买扫地机器人，放眼整个市场，品牌众多，如何选择是个问题。\\n进入2022年后越来越卷，智能化的扫拖一体机器人是高效地面清洁的不二之选，搭载各种黑科技的新品频出，避障能力升级、功能越来越多、自带可自动集尘、烘干的基站……选购是无脑追新？\\n还是挑选冷门的买？\\n选对扫地机器人可以做到正真解放双手，对于挑选2022年新款扫拖机器人，我认为可以从清洁能力、避障能力、智能程度、维护成本四方面入手。\\n今天有空，我就来介绍一下六款2022年新品扫拖机器人，首先上图！\",\"title\":\"3600字长文，22年哪款新品扫拖机器人值得买？\"}]}"
+      }
+    ]
+  }
+}
