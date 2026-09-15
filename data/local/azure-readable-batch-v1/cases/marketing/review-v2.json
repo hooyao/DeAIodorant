@@ -1,0 +1,348 @@
+{
+  "version": "azure-readable-batch-marketing-preservation-review-2.0",
+  "created_at": "2026-09-15T08:37:20.000405+00:00",
+  "reviewer": "native_astra_subagent",
+  "review_type": "independent_revision_content_preservation",
+  "scope": "对照完整v2和已审原文，逐项复查v1的12组问题，并检查本次13项修复是否带来新关键偏差；检查六型号规格/约束与APP归属/条件。",
+  "overall_status": "needs_minor_revision",
+  "training_eligible": false,
+  "reader_preference_assessed": false,
+  "authorship_assessed": false,
+  "input_files": {
+    "source_body": {
+      "path": "data/local/independent-media-discovery-v1/documents/d04/body.txt",
+      "sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+    },
+    "original": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/original.md",
+      "sha256": "a8e279d7e1f8293295083de3f4e560cff676ec0c3ee3420dcdc20a565423cba1"
+    },
+    "candidate_v1": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/candidate-v1.md",
+      "sha256": "611ce4e19c0347d4ea50c4fd92b41738f9b3df1c6dcea91d805c28e11bb9ba4f"
+    },
+    "candidate_v2": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/candidate-v2.md",
+      "sha256": "e9c69195dedd19719d1fae649c046efbd7e22994ec42b3235a09b42e65e0ca45"
+    },
+    "previous_review": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/review-v1.json",
+      "sha256": "260bf88ce970b7903b7902c3f3252a2fe436fbf9f403d43b588fa5bf7f80e37d"
+    },
+    "applied_edits": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/applied-edits-v2.json",
+      "sha256": "fe1516c9b6a39dde30409eee2e2f0f10c30310faaabd07dcc6bf06e7d5dc74d7"
+    },
+    "repair_response": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/repair-response.json",
+      "sha256": "ed24800cbed116589384ae73d2f049d0426070f6a62310555bcc8091bd0ee784"
+    }
+  },
+  "checks": {
+    "source_original_and_v1_match_previous_review_hashes": true,
+    "candidate_v2_characters_including_final_newline": 2720,
+    "applied_edit_count": 13,
+    "exact_replay_matches_candidate_v2": true,
+    "applied_edits_match_response_pairs_after_literal_newline_normalization": true,
+    "all_six_prices_preserved": true,
+    "exact_quotes_validated": true
+  },
+  "summary": "前次12组问题的主要内容均得到修复，未发现新的关键产品参数/功能/条件偏差。尚需删除结尾统称中的“一体”以避免重现源文与J2段落的矛盾；另保留一条非关键的编辑概括新增记录。不能据此声称人类阅读满意或产品性能已验证。",
+  "previous_findings": [
+    {
+      "previous_finding_id": "m01",
+      "status": "core_resolved_with_noted_addition",
+      "candidate_v2_evidence": [
+        {
+          "quote": "以上6款是我认为可以提升生活品质的2022年新品扫拖一体机器人，希望对各位选购能有所帮助。",
+          "start_char": 2629,
+          "end_char_exclusive": 2674,
+          "line_1based": 75
+        },
+        {
+          "quote": "选购时还可结合家庭面积、地面类型、是否有宠物、对自动化程度的需求以及预算等因素综合考虑。",
+          "start_char": 2676,
+          "end_char_exclusive": 2720,
+          "line_1based": 77
+        }
+      ],
+      "assessment": "已删除各产品横向优势、追求极致解放双手、喜欢手动切换、性价比/预算人群等新增结论；恢复作者总体意见。仍保留一条概括性选购建议，见editorial_additions；结尾复制原文统称矛盾，另列r01。"
+    },
+    {
+      "previous_finding_id": "m02",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "G10S搭载AI结构光避障系统，配合黑白图像传感器，能识别27种常见障碍物，在黑暗环境下可通过红外补光实现避障，避障精度可达毫米级。LDS激光雷达与最新RR Mason 9.0算法结合，实现动态避障和有序路径规划，支持记忆4张3D地图，在清扫复式楼房的不同楼层时可自动加载并完成清扫。",
+          "start_char": 400,
+          "end_char_exclusive": 542,
+          "line_1based": 13
+        }
+      ],
+      "assessment": "红外补光条件、毫米级精度、RR Mason 9.0和不同楼层自动加载地图均补回。"
+    },
+    {
+      "previous_finding_id": "m03",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "集尘盒采用一次性尘袋，容量2.5L，正常使用可容纳约两个月的垃圾。尘袋为E12级复合材质，过滤效率达99.5%，具备一定的抗菌效果，取下时自动封口，可减少取袋时接触垃圾。",
+          "start_char": 313,
+          "end_char_exclusive": 398,
+          "line_1based": 11
+        }
+      ],
+      "assessment": "保留一定抗菌效果并去掉原长期保证；自动封口改为减少取袋接触垃圾，未再添加广义污染保证。"
+    },
+    {
+      "previous_finding_id": "m04",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "拖地模组支持智能升降，配合超声波地毯识别，遇到地毯时拖布最高可升高5mm。此外，准备回洗的脏拖布也会被抬起，避免造成地面二次污染。清洁完成后，基站内的自清洁毛刷和刮片可自动清洗拖布，基站本身也支持自清洁，维护更省心。",
+          "start_char": 636,
+          "end_char_exclusive": 744,
+          "line_1based": 17
+        }
+      ],
+      "assessment": "最高5mm和回洗前抬起脏拖布已恢复；删除地毯必然不脏的新增效果。回洗抬起与地面污染的关系来自源文，不构成新的保证。"
+    },
+    {
+      "previous_finding_id": "m05",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "追觅W10 Pro配备“AI Action”智慧避障系统，前部左侧为负责构建三维地图的ToF传感器，右侧为用来拍摄障碍物图片的RGB摄像头，两者协作提升障碍物识别效果，并可根据障碍物选择相应的避障距离以防止缠绕卡困。可自动识别房间类型，并针对不同地面（如地砖、木地板）自动调整吸力、湿度和清洁次数。作为米家生态链企业，还能通过米家APP进行进一步个性化调节。支持三层地图，内置6400mAh大电池，适合大户型。",
+          "start_char": 780,
+          "end_char_exclusive": 985,
+          "line_1based": 23
+        }
+      ],
+      "assessment": "ToF/RGB分工、按障碍物选择距离、米家生态链背景和APP个性化控制恢复。企业句的主语沿用源文省略，内容能定位，中文主语表达仍可另作编辑改善。"
+    },
+    {
+      "previous_finding_id": "m06",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "清水箱内含银离子除菌模块，可以对拖布、地面进行除菌，并对污水箱起到抑菌除臭作用。清扫后自动回基站清洗并烘干，基站采用颗粒刮擦和喷水搓洗，结合离心甩干和40°风干，减少细菌和异味。基站不具备自动集尘功能。",
+          "start_char": 1100,
+          "end_char_exclusive": 1201,
+          "line_1based": 27
+        }
+      ],
+      "assessment": "拖布/地面除菌和污水箱抑菌除臭作用对象恢复；未删除无自动集尘限制。此为源文说法，未验证杀菌效果。"
+    },
+    {
+      "previous_finding_id": "m07",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "科沃斯T10 TURBO为2022年旗舰产品，顶部为可整体取下的设计，通过6颗大吸力磁铁固定，采用双边刷。复合式滚刷结合毛刷和硅胶刮片，吸力3000Pa，内置400ml尘盒。每分钟180转的对旋加压双拖布，适合日常家庭清洁。",
+          "start_char": 1240,
+          "end_char_exclusive": 1352,
+          "line_1based": 33
+        },
+        {
+          "quote": "前方配备AIVI 3.0摄像头（960P星光级CMOS），暗光下也能识别障碍物。AI智能处理能力提升，结合TrueMapping 2.0全局规划技术，导航更精准。机顶TOF激光雷达和三麦克风系统，配合YIKO语音助手，可精确定位主人位置，实现定向召唤清扫。",
+          "start_char": 1354,
+          "end_char_exclusive": 1482,
+          "line_1based": 35
+        }
+      ],
+      "assessment": "6颗磁铁固定顶盖及定位主人位置后召唤清扫的功能已恢复；“定向”未引入新硬件或精度数值。"
+    },
+    {
+      "previous_finding_id": "m08",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "米家全能扫拖机器人于3月底发布，基站集成集尘、洗拖布、换水、烘干功能，体积较小，适合小户型。基站内有2.5L清水箱和2.5L月抛式尘袋，合理使用的话最长可以一个月清理一次。",
+          "start_char": 1575,
+          "end_char_exclusive": 1661,
+          "line_1based": 43
+        }
+      ],
+      "assessment": "月抛式尘袋、合理使用条件及最长一个月均恢复，没有新增全机无维护承诺。具体保养对象在源文仍有含混，未替源文做外部事实修订。"
+    },
+    {
+      "previous_finding_id": "m09",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "在众多智能设备APP中，作者认为米家APP的集成度较高且好用。全能扫拖机器人的扫地、拖地及扫拖模式，吸力大小和拖布湿度都可以让用户根据实际情况自定义调节。如果家里米家的设备比较多，还能实现远程控制和智能联动。清扫结束后，基站17000Pa吸力自动集尘，拖布高速旋转清洗并甩干，2小时快烘减少异味和细菌。",
+          "start_char": 1840,
+          "end_char_exclusive": 1991,
+          "line_1based": 49
+        }
+      ],
+      "assessment": "APP评价恢复作者主观归属，模式/吸力/拖布湿度自定义及家中米家设备条件恢复；最高级降低为较高好用属许可的营销降调。"
+    },
+    {
+      "previous_finding_id": "m10",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "配备LDS激光雷达和具备毫米级精度的S-Cross AI™超感知立体识别避障系统，激光负责地图构建、识别房间、家具结构和大件物品，AI视觉识别地面小物件，双重系统协作，清扫路线更智能。",
+          "start_char": 1663,
+          "end_char_exclusive": 1755,
+          "line_1based": 45
+        }
+      ],
+      "assessment": "毫米级及识别房间/家具结构/大件物品功能恢复。"
+    },
+    {
+      "previous_finding_id": "m11",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "每使用一段时间，云鲸J2会回到基站清洗拖布，确保拖布清洁，无需手洗拖布，且基站带有烘干功能，保持拖布干爽且不容易滋生细菌。基站上盖设有LED显示屏和四个物理按钮，无需手机APP也能实现快速建图、调整拖扫模式选择和一些设置操作，适合不习惯智能手机的用户。",
+          "start_char": 2179,
+          "end_char_exclusive": 2305,
+          "line_1based": 59
+        }
+      ],
+      "assessment": "周期回洗、快速建图、拖扫模式和设置操作恢复；没有把四按钮扩成全部APP功能。"
+    },
+    {
+      "previous_finding_id": "m12",
+      "status": "resolved",
+      "candidate_v2_evidence": [
+        {
+          "quote": "主刷为TPU软胶材质，阿基米德螺旋设计，防缠绕效果好，适合养宠物或长发用户。4200Pa吸力，灰尘无处可藏。尘盒容量470ml，采用二合一设计，侧面配有350ml电控水箱，可精准控制出水量，还能通过APP中精准控制，一次加满可拖地300㎡。",
+          "start_char": 2415,
+          "end_char_exclusive": 2535,
+          "line_1based": 67
+        },
+        {
+          "quote": "清扫完成后，自动返回基站集尘，基站27000Pa吸力瞬间清空尘盒，尘袋容量2.5L，最长可收集60天垃圾，用户需根据家里的实际情况定期更换集尘袋。",
+          "start_char": 2537,
+          "end_char_exclusive": 2610,
+          "line_1based": 69
+        }
+      ],
+      "assessment": "二合一结构、APP控制出水及按家庭情况定期换袋恢复；350ml、加满300㎡、最长60天未改变。"
+    }
+  ],
+  "remaining_findings": [
+    {
+      "id": "r01",
+      "priority": "medium",
+      "category": "source_inherited_inconsistency_reintroduced",
+      "source_evidence": [
+        {
+          "quote": "云鲸J2机带有0.43L尘盒，吸尘口没有设置地刷，彻底杜绝了烦人的毛发缠绕问题，在2500Pa吸力下，能完成大部分地面吸尘工作。此外，云鲸J2并非扫拖一体机器人，其扫地、拖地模块需手动更换，好在通过磁力吸附，可以方便的根据需求随意切换。",
+          "start_char": 2922,
+          "end_char_exclusive": 3040,
+          "line_1based": 71
+        },
+        {
+          "quote": "以上6款是我认为可以提升生活品质的2022年新品扫拖一体机器人，希望对各位选购能有所帮助。",
+          "start_char": 3685,
+          "end_char_exclusive": 3730,
+          "line_1based": 89
+        }
+      ],
+      "candidate_v2_evidence": [
+        {
+          "quote": "云鲸J2的扫地和拖地模块需手动更换，采用磁力吸附，切换方便。拖地功能模拟人手清洁，10N下压力配合每分钟180转高速旋转，擦地能力强。",
+          "start_char": 2110,
+          "end_char_exclusive": 2177,
+          "line_1based": 57
+        },
+        {
+          "quote": "以上6款是我认为可以提升生活品质的2022年新品扫拖一体机器人，希望对各位选购能有所帮助。",
+          "start_char": 2629,
+          "end_char_exclusive": 2674,
+          "line_1based": 75
+        }
+      ],
+      "issue": "修订恢复结尾原句时，把六款统称为扫拖一体机器人；同文明确J2需手动更换扫地和拖地模块，源文也明确其并非扫拖一体。该矛盾来自源文，不是模型虚构，但v1已用扫拖机器人避开，v2修复又带回。",
+      "minimum_revision": {
+        "old": "2022年新品扫拖一体机器人",
+        "new": "2022年新品扫拖机器人"
+      },
+      "change_scope": "仅结尾统称，保留J2手动换模块的功能限制。"
+    }
+  ],
+  "editorial_additions": [
+    {
+      "id": "a01",
+      "severity": "minor",
+      "candidate_v2_evidence": {
+        "quote": "选购时还可结合家庭面积、地面类型、是否有宠物、对自动化程度的需求以及预算等因素综合考虑。",
+        "start_char": 2676,
+        "end_char_exclusive": 2720,
+        "line_1based": 77
+      },
+      "note": "此句是编辑概括新增，原文没有逐条提出这些选购维度；它没有新增某型号的性能事实或比较排序。各因素在原文产品介绍中有语境，但不应声称全文没有编辑新增。",
+      "minimum_revision": "严格内容保留版本可删除此句；若保留，在实验变更记录里注明为编辑概括，不据此视作原文作者的新观点。"
+    }
+  ],
+  "product_recheck": [
+    {
+      "product": "石头G10S",
+      "price": "4799元",
+      "price_preserved": true,
+      "previous_retained_specs_rechecked": true,
+      "previous_missing_items_rechecked": true,
+      "note": "按本产品全段复查既有主要规格和限制；本项不是自动确认性能真伪。"
+    },
+    {
+      "product": "追觅W10 Pro",
+      "price": "3799元",
+      "price_preserved": true,
+      "previous_retained_specs_rechecked": true,
+      "previous_missing_items_rechecked": true,
+      "note": "按本产品全段复查既有主要规格和限制；本项不是自动确认性能真伪。"
+    },
+    {
+      "product": "科沃斯T10 TURBO",
+      "price": "3799元",
+      "price_preserved": true,
+      "previous_retained_specs_rechecked": true,
+      "previous_missing_items_rechecked": true,
+      "note": "按本产品全段复查既有主要规格和限制；本项不是自动确认性能真伪。"
+    },
+    {
+      "product": "米家全能扫拖机器人",
+      "price": "3999元",
+      "price_preserved": true,
+      "previous_retained_specs_rechecked": true,
+      "previous_missing_items_rechecked": true,
+      "note": "按本产品全段复查既有主要规格和限制；本项不是自动确认性能真伪。"
+    },
+    {
+      "product": "云鲸J2",
+      "price": "3999元",
+      "price_preserved": true,
+      "previous_retained_specs_rechecked": true,
+      "previous_missing_items_rechecked": true,
+      "note": "按本产品全段复查既有主要规格和限制；本项不是自动确认性能真伪。"
+    },
+    {
+      "product": "石头T8",
+      "price": "2999元",
+      "price_preserved": true,
+      "previous_retained_specs_rechecked": true,
+      "previous_missing_items_rechecked": true,
+      "note": "按本产品全段复查既有主要规格和限制；本项不是自动确认性能真伪。"
+    }
+  ],
+  "nonblocking_notes": [
+    "降低E12尘袋长期抗菌保证、APP最高级及其他营销夸大属于已许可范围。",
+    "W10 Pro“作为米家生态链企业”一处仍以设备段落承接企业主语，T8“通过APP中精准控制”也沿用源文搭配；这里只记录表达现象，不作为人类阅读偏好结论。",
+    "原文及v1的“灰尘无处可藏”“无死角”等渲染没有全部消失。它们未变成新的技术主张，但不因此认定语言目标已经达成。"
+  ],
+  "limits": [
+    "未访问产品网站、核验图片、售价或真实性能；所有产品效果保持来源陈述边界。",
+    "这是Astra模型辅助复核，不能替代真实读者评价。",
+    "不因2022年发布日期推断人类作者或干净文风。"
+  ],
+  "execution": {
+    "network_requests": 0,
+    "api_calls": 0,
+    "candidate_modified": false,
+    "git_actions": false
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "created_at_utc": "2026-09-15T09:11:29.025790+00:00",
+  "jinja2_version": "3.1.6",
+  "checks": [
+    {
+      "model": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "metadata_sha256": "53859b4a152841f5ddd858cbebad6d61257d5f42f298ee0545119b4e2f71e071",
+      "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "prompt_is_exact_prefix_of_full": true,
+      "prompt_characters": 3442,
+      "full_characters": 6895,
+      "assistant_content_start_char": 3442,
+      "generation_markers_present": false,
+      "token_count": null,
+      "token_level_loss_mask_verified": false,
+      "reason_token_count_missing": "本机tokenizers wheel的官方下载发生TLS握手错误；未关闭证书验证或猜测token数。"
+    },
+    {
+      "model": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "metadata_sha256": "c832fddcbcb7c2b0f7a6cd4fd438ea7c8cff43f6f31cef8cf19cc9f63f5fe49e",
+      "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+      "prompt_is_exact_prefix_of_full": true,
+      "prompt_characters": 3442,
+      "full_characters": 6895,
+      "assistant_content_start_char": 3442,
+      "generation_markers_present": false,
+      "token_count": null,
+      "token_level_loss_mask_verified": false,
+      "reason_token_count_missing": "本机tokenizers wheel的官方下载发生TLS握手错误；未关闭证书验证或猜测token数。"
+    }
+  ],
+  "gpu_used": false,
+  "training_started": false,
+  "remaining": "在具备tokenizer运行库的训练环境中测token长度，处理可能跨越正文边界的token，确认prompt/padding均为-100；禁用静默截断。"
+}

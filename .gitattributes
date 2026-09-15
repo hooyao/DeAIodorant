@@ -28,6 +28,18 @@ handover/microduck-feedback-2026-09-15/** -text
 handover/azure-gpt41-2026-09-15/** -text
 configs/azure-gpt41-research-v1.json -text
 src/deaiodorant/refine/azure.py -text
+src/deaiodorant/refine/openrouter.py -text
+configs/model-roles-v2.json -text
+configs/model-roles-v3.json -text
+experiments/student_sft_preflight.py -text
+handover/student-transition-2026-09-15/** -text
+# 冻结来源、模型原始回答与实验快照保留原有Markdown空白及换行，另以SHA256核验。
+data/local/azure-readable-batch-v1/** -whitespace
+data/local/student-model-selection-v1/** -whitespace
+data/local/student-sft-preparation-v1/** -whitespace
+data/local/student-sft-preparation-v2/** -whitespace
+data/local/student-baseline-v1/** -whitespace
+data/local/student-baseline-bf16-v1/** -whitespace
 # 该输入快照保留混合换行；将原始行尾 CR 视为换行组成部分。
 data/local/translated-readable-selection-v1/input-snapshots/HANDOFF.md whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 # unified diff 的空白上下文行带单个格式前缀，保留其原始格式。

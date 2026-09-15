@@ -1,0 +1,174 @@
+{
+  "version": "azure-readable-batch-translation-preservation-review-2.0",
+  "case_id": "translation",
+  "reviewed_at_utc": "2026-09-15 08:36:25 UTC",
+  "reviewer": {
+    "model_family": "Astra",
+    "execution": "native_subagent",
+    "writer": "Azure GPT-4.1",
+    "blinded": false
+  },
+  "scope": "只核查 review-v1 的 T01—T10、修订输入中的 T11-root，以及11处修订可能引入的局部内容／表达问题；本次未重新扩展到其他文章或新的一般性审计。全文来源已在v1阅读，本次对照冻结原文中的相关段落、完整v2及编辑记录。",
+  "inputs": {
+    "original_view": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/original.md",
+      "raw_sha256": "693388cb7cbbbd91adc7d90d304faa915ff2d5ff022e06f5034b6194e69d1f99"
+    },
+    "candidate_v1": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v1.md",
+      "raw_sha256": "760ef621574d048bfb4e40041e6e0cba93c853aae75011dae68265c87a8ea630"
+    },
+    "candidate_v2": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v2.md",
+      "raw_sha256": "613faf1507e5f905358a9fa75cc349355cf3afc503572ef274a2a41f3ae5961a"
+    },
+    "prior_review": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/review-v1.json",
+      "raw_sha256": "5c997e5c4d55a22ae7ff5ff2ebc7d603a623d9899a90257a526bdf0035e49d8f"
+    },
+    "repair_input": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/repair-input.json",
+      "raw_sha256": "2838b61775ca68276741a4f5d9bb79ecb20e1d61d71826753ed0e5a29de7aa23"
+    },
+    "repair_response": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/repair-response.json",
+      "raw_sha256": "9a5d41eff52f296dd8049bf6b5c1c7ce0ec17b6de3511ed71ad27206c163704b"
+    },
+    "applied_edits": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/applied-edits-v2.json",
+      "raw_sha256": "b78191d3441cfc5d7287f1adf5e738540749e2f1b3dd5600092b82d90bb22ca5"
+    }
+  },
+  "verdict": "needs_limited_revision",
+  "conclusion": "11项既有问题中，9项的内容问题已解决；T04补回主要故障链后新增了过强的时间邻接描述，T10仍有两项较小遗漏。另有修订引入的句子主语和截图指代问题。修订已实质改善内容保留，不宜记作所有问题已关闭；需要的剩余操作可以限定为少数局部编辑，不需要重做全文或增加一般性审查。",
+  "issue_statuses": [
+    {
+      "id": "T01",
+      "status": "resolved",
+      "evidence": "补回作者曾在单体环境工作的经历；“已足够”改为“很有帮助”，保留微服务中不可或缺的判断。"
+    },
+    {
+      "id": "T02",
+      "status": "resolved",
+      "evidence": "明确“版本未固定，可能引发难以控制的连锁变化”，也补回云环境配置。"
+    },
+    {
+      "id": "T03",
+      "status": "resolved_content",
+      "evidence": "不再断定七个月前修改的是列类型；补回关键服务大量错误、“无效值”、查找近期变更耗时一天、整数／大整数和数值过大。新句式问题另记L01，不把内容恢复与语句质量混为一谈。"
+    },
+    {
+      "id": "T04",
+      "status": "partially_resolved",
+      "evidence": "Komodor案例、可用副本不足、部署在健康事件之前、两项可能原因均已补回；“几秒钟”重新限定在该案例。剩余时间邻接增强见R01；无截图的指代见L02。"
+    },
+    {
+      "id": "T05",
+      "status": "resolved",
+      "evidence": "候选末尾已恢复已存DOM中的 https://www.infoq.com/articles/beyond-monitoring-change-intelligence/；未再保留猜测的Komodor URL。"
+    },
+    {
+      "id": "T06",
+      "status": "resolved",
+      "evidence": "恢复未来可能不足的情态与时间范围，并删除“因排障缓慢”这个额外限定。"
+    },
+    {
+      "id": "T07",
+      "status": "resolved",
+      "evidence": "补回“作者观察到”和当前Komodor、曾在Rookout的背景，没有将具体数据库事件补定到某家公司。"
+    },
+    {
+      "id": "T08",
+      "status": "resolved",
+      "evidence": "补回先定位并隔离故障服务再追查发生了什么的过程，明确权限、知识与经验等先决条件并非总能满足。"
+    },
+    {
+      "id": "T09",
+      "status": "resolved",
+      "evidence": "历史／实时数据、云提供商、第三方工具、另一个服务本身出问题的排查方向均恢复；“只能依赖”改为需要翻阅日志与指标。2%和查询没有变化。"
+    },
+    {
+      "id": "T10",
+      "status": "partially_resolved",
+      "evidence": "并发操作和作者兴趣简介已补回；QA／预生产环境，以及日志→跟踪→指标→仪表板、不断增加工具处理信息的演进说明仍未恢复。见R02。"
+    },
+    {
+      "id": "T11-root",
+      "status": "resolved",
+      "evidence": "不再把遥测的集合表述为可观察性的定义；明确它是获得可观察性的前提，并保留联系业务需求和应用工作方式。"
+    }
+  ],
+  "remaining_content_issues": [
+    {
+      "id": "R01",
+      "related_issue": "T04",
+      "severity": "moderate",
+      "candidate_lines": [
+        65
+      ],
+      "source_quote": "在这之前，该应用的一个新版本部署完毕。",
+      "candidate_quote": "特定服务刚刚完成了一个新版本的部署，紧接着发生了健康状况变更事件",
+      "problem": "源文给出了先后次序，没有给出部署与健康事件的时间间隔。“刚刚”“紧接着”把顺序加强为时间上紧邻。缺少图片核验时不能补出这一关系。",
+      "suggestion": "删去“刚刚”“紧接着”，只陈述部署在健康事件之前、健康事件在警报之前；两种可能原因保持不变。"
+    },
+    {
+      "id": "R02",
+      "related_issue": "T10",
+      "severity": "minor",
+      "candidate_lines": [
+        3,
+        69
+      ],
+      "source_quote": "生产或其他开发环境（QA、开发、预生产）",
+      "candidate_quote": "生产或开发环境",
+      "additional_source_quote": "从前人们有日志，然后有了跟踪，之后是指标，这些都被汇集到仪表板中，为我们的运维健康提供可视化的指示。随着时间的推移，越来越多的工具被添加到这个链条中，以帮助推动和管理涌入的大量数据、警报和信息。",
+      "problem": "v1列出的两项低严重度独立信息依然缺失。没有其他新增发现，也不需要将所有重复比喻补回。",
+      "suggestion": "首段恢复QA、开发、预生产的环境范围；结尾在不恢复口号的情况下，用一句话保留工具演进及处理增长信息量的背景。"
+    }
+  ],
+  "local_expression_issues": [
+    {
+      "id": "L01",
+      "severity": "moderate",
+      "candidate_lines": [
+        45
+      ],
+      "source_quote": "数据库中的列类型是整数，而我们试图插入更大的数字，因此需要一个大整数数据/列类型。",
+      "candidate_quote": "数据库中的列类型是整数，而试图插入更大的数字，因此需要一个大整数数据/列类型。",
+      "problem": "修订从原句删去“我们”，使后半句的施事者不能自然承接前半句的“列类型”。上下文可推知含义，T03的关键事实已恢复，但这里新增了局部主语关系不顺。",
+      "suggestion": "例如改为“数据库的列使用整数类型，团队尝试写入的数值更大，需要改用大整数类型。”不补造实际迁移成功或变更实施情况。"
+    },
+    {
+      "id": "L02",
+      "severity": "minor",
+      "candidate_lines": [
+        65
+      ],
+      "candidate_quote": "上面的截图显示了",
+      "problem": "当前纯文字候选没有截图；修订复用了来源中的页面指代，读者找不到其指向。本次也没有核验图片。",
+      "suggestion": "使用“作者介绍的 Komodor 案例中”等清楚归属，随后叙述来源已有的事件次序；不声称本次检查过截图。"
+    }
+  ],
+  "checks": {
+    "known_issues_checked": 11,
+    "resolved_content_issues": 9,
+    "partially_resolved_content_issues": 2,
+    "protected_code_blocks": 1,
+    "protected_code_character_exact": true,
+    "code_executed": false,
+    "edit_count": 11,
+    "exact_replay_checked": true,
+    "source_media_or_upstream_verified": false,
+    "model_api_calls": 0,
+    "network_calls": 0,
+    "candidate_modified": false,
+    "git_operations": false,
+    "human_readability_result": null
+  },
+  "limitations": [
+    "仅针对已知内容问题及本次编辑；不能据此宣布完全事实正确、所有遗漏均不存在或读者偏好已改善。",
+    "v2多处直接恢复来源措辞；内容一致性提升不代表修复了翻译腔，也不推断用户愿意阅读。",
+    "未改变原文关于几秒钟定位、工具作用等主张的证据等级，未访问网站或截图。",
+    "原始v1及v2均保持原样；本复核只新增review-v2.json。"
+  ]
+}

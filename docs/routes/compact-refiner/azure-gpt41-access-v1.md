@@ -1,5 +1,7 @@
 # Azure GPT-4.1 研究接入
 
+**当前用途已收窄。** 维护者明确GPT-4.1只用于旧模型文风例子，不解题、不生成教师数据、不作产品方案。当前角色以 `configs/model-roles-v3.json` 为准，下文是接入与预算机制的历史记录，不能据此恢复批量调用。
+
 日期：2026-09-15。维护者提供了现成的 Azure `gpt-4.1` deployment、Responses API endpoint 和 key，并授权使用约50美元额度。此授权覆盖该Azure部署，与OpenRouter只用便宜小模型的约定分开。不能将GPT-4.1当作先前GPT-4 Turbo的同一模型或已验证的风格替代品。
 
 ## 配置与调用

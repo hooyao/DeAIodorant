@@ -1,5 +1,9 @@
 # 系统架构
 
+## 当前训练方向与模型角色
+
+最终运行层是官方Qwen3.5-27B原始BF16权重的自主部署与SFT版本。Astra负责教师数据与复核。GPT-4.1只作历史文风例子，廉价API摸底停止，角色以 `configs/model-roles-v3.json` 为准。正式SFT前后在锁定权重和同一推理配置上比较；云端预检默认不训练，单条原型不构成训练集。
+
 ## 已实现的Azure研究接入
 
 `deaiodorant.refine.azure.AzureResponsesClient` 通过OpenAI SDK调用维护者已有的Azure Responses API。Azure三项配置从被忽略的.env白名单读取，与OpenRouter key分离。调用前在.env同目录的 `.azure-responses-budget/` 中加锁并持久预留，返回有效token用量后按配置计划价记账；超时或未知用量保留预留。缓存目录变化不会重置同一.env下的中央账本。

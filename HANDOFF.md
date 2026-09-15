@@ -1,5 +1,21 @@
 # 续研 handoff：2026-09-15
 
+## 当前主线：官方Qwen3.5-27B BF16与SFT
+
+维护者明确GPT-4.1只用于旧模型文风例子，不能解题、生成教师数据或成为产品方案；随后要求“27b都算是小模型，不要浪费时间在便宜的api接口上”“使用正常的qwen模型”。当前以 `configs/model-roles-v3.json` 为准，停止Azure研究调用及廉价API摸底，采用官方Qwen3.5-27B原始BF16权重直接云GPU运行、微调。下方旧授权和4B/9B安排只保留历史，不能用于恢复这些路线。
+
+固定模型 `Qwen/Qwen3.5-27B`，revision `fc05daec18b0a78c049392ed2e771dde82bdf654`，官方声明Apache-2.0许可，权重本身约51.75GiB。资料在 `data/local/student-model-selection-v1/`。当前Astra负责教师稿和复核，Microduck已认可稿形成一条development序列化原型，不是完整训练集。
+
+`experiments/student_sft_preflight.py`默认只离线检查，已通过；Linux cloud模式才加载27B BF16，可先baseline-only再3步LoRA兼容检查。它校验实际messages与原文/教师文件一致，检查正文loss边界，不静默截断、不训练视觉模块、不向CPU/磁盘卸载，并记录EOS/长度停止。两个静态审查P2已修复；实际token mask、梯度、多卡和adapter重载仍待云端测量。
+
+当前没有权重下载或训练；本机tokenizers下载发生TLS握手失败，未关闭验证或猜token数。下一步需要云GPU：起步1张80GB A100/H100，主机RAM建议128GB、可用盘200GB。先做正常基座和小批次LoRA，若显存不足再用1张96GB或2张80GB。首次预留1—2小时，按实例单价计费；尚无云主机连接信息。详见[27B BF16计划](docs/routes/compact-refiner/student-sft-plan-v2.md)。
+
+此前旧模型四篇批次已经关闭：4次初稿、4次修订，Azure计划价估算0.77026美元，真实账单未知；原始输出、精确操作、复核和Root收尾保留，不作为SFT教师目标。Azure最新账本快照为 `data/local/azure-readable-batch-v1/azure-final-ledger.json` 与 `azure-final-initialized.json`，恢复时不能回滚到早先连接检查快照。纠正后没有新增Azure调用。
+
+已停止的4B/9B探索和两轮9B托管诊断也保留；OpenRouter报告费用共0.00214532美元。默认接口有多语污染，固定BF16服务的首篇仍有目标修辞与内容偏移，但接口结果不能当官方权重基线，也不继续研究服务商。客户端1.2路由限制改动保留，263项离线测试通过。新产物清单在 `handover/student-transition-2026-09-15/artifacts.json`，详见[阶段记录](docs/routes/compact-refiner/reports/student-transition-v1.md)。
+
+以下是旧检查点。
+
 ## 新增可用资源：Azure GPT-4.1
 
 维护者提供已有Azure `gpt-4.1`部署和约50美元额度，已将三项Azure配置安全存入Git忽略的 `.env`，OpenRouter配置不变。新增 `src/deaiodorant/refine/azure.py`，使用OpenAI SDK的Responses API；可选依赖为 `.[azure]`。唯一连接检查已成功返回“连接成功”，输入13／输出3 tokens。按保守计划价估算0.00022美元，实际账单未知；连接成功不代表改写质量得到验证。

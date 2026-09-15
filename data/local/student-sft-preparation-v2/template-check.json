@@ -1,0 +1,14 @@
+{
+  "model": "Qwen/Qwen3.5-27B",
+  "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "pair_sha256": "fa824b6be9165ecdbbe6a52739467101495a4e3106ec1a317526be4c027ec7bf",
+  "source_title": "开源不含硬件、国内不直邮：上手机器鸭 Microduck 前，先把买、搓、等三条路算明白",
+  "source_view_sha256": "4bbda267e96b1838eee70f99664f20f71d34318e9398a4014ecc2cc82b7b6be6",
+  "prefix_matches_full": true,
+  "assistant_start_char": 3490,
+  "full_characters": 6943,
+  "token_count": null,
+  "token_mask_verified": false,
+  "training_started": false
+}

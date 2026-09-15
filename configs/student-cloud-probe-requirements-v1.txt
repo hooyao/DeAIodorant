@@ -1,0 +1,5 @@
+# 当前公开包版本形成的待验证组合；不是已经在GPU上验收的环境。
+torch==2.14.0
+transformers==5.17.0
+peft==0.20.0
+accelerate==1.15.0

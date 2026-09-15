@@ -1,0 +1,17 @@
+{
+  "scope": "源文件随后更新，按已记录hash恢复对应历史输入；未覆盖原审查记录。",
+  "snapshots": [
+    {
+      "path": "data/local/student-model-selection-v1/review-input-snapshots/preflight-validated-before-source-title.py",
+      "sha256": "18b3ecab282c2b8c7c9883015a3b153d80e142c712f99a8f218f46b1c5b2ab44"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/review-input-snapshots/research-checkpoint-2026-09-15.md",
+      "sha256": "ed29dec475d68ae2c2e42ad53dc45511497c8836bf2608a7672572000ba9f8c0"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/review-input-snapshots/student-sft-plan-v2.md",
+      "sha256": "5622f27b424756cbbf71e65b3c2f6204aa0ef3482b1d594f2c1ee33231aae0b1"
+    }
+  ]
+}

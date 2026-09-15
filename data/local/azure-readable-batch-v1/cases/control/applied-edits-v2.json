@@ -1,0 +1,26 @@
+{
+  "candidate_v1_sha256": "fe81ca8895ef4c4d1229c53f90ecc1cd51bf449b6ebb02f95324a8b64ec0b9d8",
+  "response_sha256": "ec7edcd6b46e8e17e0794e1f9d75ac3b13e225a3360312e3e0e20f9a4d0e4a39",
+  "edits": [
+    {
+      "old": "该版本以 Vitest v4 为唯一依赖，取代了此前的 Vitest v3，带来了多项重要更新，包括测试环境初始化方式的调整、mock 机制的重构，以及依赖项的版本要求提升。",
+      "new": "该版本要求使用 Vitest v4，取代了此前对 Vitest v3 的要求，带来了多项重要更新，包括测试环境初始化方式的调整、mock 机制的重构，以及依赖项的版本要求提升。",
+      "start_char": 124,
+      "end_char": 211
+    },
+    {
+      "old": "确保 mock 行为在整个测试套件中一致且可预测，修复了长期存在的模块级 mock 被静默忽略的问题。",
+      "new": "确保 mock 行为在整个测试套件中一致且可预测，修复了用户长期反馈的两项模块级 mock 被静默忽略的问题。",
+      "start_char": 447,
+      "end_char": 498
+    },
+    {
+      "old": "```text\ndescribe('router test', () => {\n  let router: ReturnType<typeof useRouter>\n  beforeAll(() => {\n    router = useRouter()\n  })\n})\n```",
+      "new": "```text\ndescribe('router test', () => {\n let router: ReturnType<typeof useRouter>\n beforeAll(() => {\n router = useRouter()\n })\n})\n```",
+      "start_char": 664,
+      "end_char": 803
+    }
+  ],
+  "exact_replay": true,
+  "code_exact": true
+}

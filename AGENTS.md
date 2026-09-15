@@ -4,6 +4,12 @@
 
 ## 项目使命
 
+维护者最新要求“27b都算是小模型，不要浪费时间在便宜的api接口上”“使用正常的qwen模型”。当前以 `configs/model-roles-v3.json` 和[官方27B BF16方案](docs/routes/compact-refiner/student-sft-plan-v2.md)为准：`Qwen/Qwen3.5-27B`原始权重直接云GPU运行、微调，停止廉价API摸底。下方4B/9B安排和历史Azure授权已被取代，不能恢复这些实验。当前预检脚本默认27B且默认不训练；尚无云主机连接信息，先需要1张80GB级GPU测基座/LoRA，再按实测调整。
+
+GPT-4.1只保留旧模型文风例子，不作为解题、研究判断、教师数据或产品运行依赖。仅在维护者再次明确请求这类旧模型例子时使用已有接入。当前模型角色统一以 `configs/model-roles-v3.json` 为准；教师和内容复核由当前Astra或原生子任务承担。
+
+此前探索的4B/9B与托管路由诊断已停止，只保留在历史[阶段记录](docs/routes/compact-refiner/reports/student-transition-v1.md)中。当前预检入口默认官方27B BF16，默认不训练；旧4B脚本已另存，不得按旧显存预估启动。
+
 Microduck第二版现已获维护者评价：“有一些翻译腔，但是总体来说还不错，至少没什么2025年后的AI的臭味”。它由原生Astra参考获认可稿、直接中文重写、自审及独立内容复核产生，没有调用GPT-4或中英互译。保留这条正向阅读反馈与残留翻译腔，不再写成等待首次评价，不转为身份或时间分组标签。见[过程与反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)。译文案例尚待从明确译文证据的开发材料中选择；首次检查10篇元数据选出0篇，不扩成整个语料没有译文。
 
 维护者已进一步明确认可 1519 字符局部补充稿：“这个局部补充稿挺好的，至少我愿意读”。这是绑定到该稿的正向阅读意愿反馈，不能再写成无人类评价，也不自动扩成事实确认、全文已补全或跨文章有效。原话见 `data/local/readable-reference-v1/reader-feedback.json`。按[下一阶段安排](docs/routes/compact-refiner/readable-reference-next-stage-v1.md)，保留参考稿，另存剩余内容修订，把方法迁移到 Microduck 等强样例，再考虑便宜小模型复现；当前不需要 GPU，不进入训练。
@@ -47,7 +53,7 @@ DeAIodorant 位于内容生成与发布之间，是一个中文文本改写层�
 
 ## 当前状态
 
-维护者于2026-09-15另行授权使用既有Azure `gpt-4.1`部署及约50美元额度。接入和唯一连接检查已完成，输入13／输出3 tokens，返回“连接成功”；项目离线测试248项通过。该授权独立于OpenRouter只用便宜小模型的约定，不能把GPT-4.1与此前GPT-4 Turbo视为同一模型。具体配置见 `configs/azure-gpt41-research-v1.json` 和[接入说明](docs/routes/compact-refiner/azure-gpt41-access-v1.md)。
+历史上已接入Azure GPT-4.1并完成一次连接检查，工程工具与预算记录保留。后续维护者已收窄用途，当前仅限再次明确请求的旧模型文风例子，不继续研究改写、判断或教师调用。早期接入检查说明在[历史接入文档](docs/routes/compact-refiner/azure-gpt41-access-v1.md)。
 
 Azure的 `AZURE_OPENAI_API_KEY`、`AZURE_OPENAI_BASE_URL`、`AZURE_OPENAI_DEPLOYMENT` 均在被忽略的 `.env`；`OPENAI_API_KEY`仍属于OpenRouter。中央账本位于同目录 `.azure-responses-budget/`，缓存位于 `data/local/azure-gpt41-live-v1/`，保持忽略，不能直接发布或以换目录重置预算。45美元是本地运行上限，10／30美元每百万token只是保守计划价，实际Azure费率和剩余余额未知。每批运行前后读取同一账本，错误后停止批次；无自动重试，服务限流等待由编排显式处理。发布前扫描.env中的Azure和OpenRouter实际key，真实资源地址也不写入公开产物。强模型工作继续可用当前Astra和原生子任务；本授权不启动训练或申请GPU。
 

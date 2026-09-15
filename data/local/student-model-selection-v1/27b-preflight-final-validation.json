@@ -1,0 +1,18 @@
+{
+  "model": "Qwen/Qwen3.5-27B",
+  "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "script_sha256": "079769caea666195e528a13b1d4e9343d20e61a5d8a96057ec9a7048316f139d",
+  "pair_sha256": "fa824b6be9165ecdbbe6a52739467101495a4e3106ec1a317526be4c027ec7bf",
+  "checks": [
+    "source_binding_rejection",
+    "teacher_binding_rejection",
+    "windows_gpu_execution_rejected",
+    "offline_plan_valid",
+    "eos_vs_length_stop_distinguished",
+    "raw_title_and_body_view_binding_checked"
+  ],
+  "cloud_execution": false,
+  "training_started": false,
+  "token_level_loss_mask": "pending_cloud_tokenizer",
+  "gpu_compatibility": "pending_cloud_probe"
+}

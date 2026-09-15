@@ -1,0 +1,921 @@
+{
+  "version": "azure-readable-batch-translated-selection-1.0",
+  "created_at": "2026-09-15T08:16:23.583524+00:00",
+  "status": "development_selection_complete",
+  "selection_agent": "native_astra_subagent",
+  "task_scope": "仅本地media-contrast-staging-v1已暴露development，明确译文主例与保守编辑对照",
+  "root_followup": "初次选材后Root允许短而直接的明确译文作保守对照，无需强臭，不给用户弱样例评分。",
+  "counts": {
+    "metadata_documents_parsed": 24,
+    "structure_documents_parsed": 24,
+    "full_bodies_read": 3,
+    "selected": 2,
+    "primary_translated_readability": 1,
+    "conservative_editing_control": 1
+  },
+  "full_body_read_order": [
+    "0c1bc051de0fc98fbcd0524d",
+    "9d2686869fb90420de5a6d40",
+    "9656e09a0c8ef6938c517cef"
+  ],
+  "read_files": [
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/metadata.json",
+      "sha256": "26c0997201143f196e6cee5971bd801e4cf6aaaec56973e6e287cf7d4c885b9e",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/structure.json",
+      "sha256": "d10daa159e6c660af09581980a453d0940410db70dc72f4ab099d3c92ee6e9ff",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/metadata.json",
+      "sha256": "51ecc2438ac50b614ef379b441584712da1468e50a0d2be78469667c2ff2ab6c",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/structure.json",
+      "sha256": "e45340de730c6e25d0469ae03203946a8743db238490914de25bdaebf090c6f9",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/metadata.json",
+      "sha256": "cf0ddb1b155f1e27a74b78cf453a5d5f5b631890ccc21d51105990b7c9f9e699",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/structure.json",
+      "sha256": "7d1ff9d8a73fd43836ff77566fd8b78a38271fa1fb03510c072ca5343f948009",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/metadata.json",
+      "sha256": "fe546a9d041d1c5dcca42dc3b4d27d2e6fde042ee1ffe7e9fd2302bd1acfe979",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/structure.json",
+      "sha256": "fe4bef6fb1b9c629559dbc5d0ff6dfc68c2fdcb117812af52bf59f8ba329ab7d",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/metadata.json",
+      "sha256": "2a818f29e1fbedf1e4adadf71f18ec215798a7a314020a518554850a3ffd327d",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/structure.json",
+      "sha256": "ee60b5b7fd2f393ccb66e41508877d4f0a3a52e21b4c03c7ccdb379499b5bed5",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/metadata.json",
+      "sha256": "7cc1517e3f9af5e59590bf9d38f7f50aee53e0eff5356e2393c45cf5a7de8eb3",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/structure.json",
+      "sha256": "86a208bd2bf75e020817b1a7883fbdf0ff8cb1e1506246541891d6b1f6ccc4ce",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/metadata.json",
+      "sha256": "1f93bf9b946ce912f7f73f52932e2673131980df88ed2a407ff448aecdd9df03",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/structure.json",
+      "sha256": "1e410a78d9fd022ec859a7bd5489ca930106a36bcfd5c15cf1f785bc4617a7cf",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/metadata.json",
+      "sha256": "e7a89c17541128942b70888c568eb9900e86cc16e0cbc2f621480a20c44aaf3e",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/structure.json",
+      "sha256": "53e39ca383c43971eddd01eb37969b260f0c0ea0153c965f50e611be19475ca3",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/metadata.json",
+      "sha256": "5fa58c1133de667dad0f42b1885735cf0d3ce0db872a1270baa4390a1011f681",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/structure.json",
+      "sha256": "185116f3212811bb6e06e5febcc4972d323b663e6117e1a510db456383dcb5c0",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/metadata.json",
+      "sha256": "96fadc645a6a50f6d30727fb7d80e83fc7c6cb298ef6f3c87d27eceaf7e1a791",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/structure.json",
+      "sha256": "51befe39f3973897d4f2b92208e3b28f70ad87ca929fe4e6f806ebd86832e494",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/metadata.json",
+      "sha256": "cb6cb5239a44a75d31224a531661eac0db7d9654efcbd51341a8b53f36b65757",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/structure.json",
+      "sha256": "dca07379b011f6c87327e6ac8eea66a9b205f59479b84772d1e7f2bb0eb8f334",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/metadata.json",
+      "sha256": "e3b3137f1c830215249aec5f532578ca7539663f3d693882e6582dc61a7811e4",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/structure.json",
+      "sha256": "b5844fb8b98d52a15a79b55250e1e63ec6fdaa49c7dd0d720d30059d1b71a97e",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/769ecc5e088514e4261ae7e0/metadata.json",
+      "sha256": "5d12aa15fdf64b13992f6ad20ac1a8eae4e9bca35d2bb76a0592e04a8ea64b4e",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/769ecc5e088514e4261ae7e0/structure.json",
+      "sha256": "cbfd75a93972e2d1ed694e65e212b4256ee936ac8757f8fe9adf716629b8d2a2",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/83e3fb47524511fba7945931/metadata.json",
+      "sha256": "d0ceb75388336a46f80496a23e1506d362d181341f82c0de7e6af7d1049662c6",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/83e3fb47524511fba7945931/structure.json",
+      "sha256": "4515501a104108f785279265b35c5580bbf1fa674a144f47bf00ea1e631a180b",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8a835ce2a2584c3c9040fcc5/metadata.json",
+      "sha256": "c32ffb1dfb3a9820b661fe4dc8dbeef9c14f8b2c055f97d31d50dde279d4e31b",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8a835ce2a2584c3c9040fcc5/structure.json",
+      "sha256": "de2c2baaf56140630f4d0002dcc28a9e0df59b781db9d39d681c2866ac1c838d",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/metadata.json",
+      "sha256": "50ddee65bb7400affdd6658a543cb3d829f95764ba23e169b5002de8f6fbc584",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/structure.json",
+      "sha256": "f232ece493c46c3372d3846c458bb81d2362ab0bd6cceac7c4aded0174227def",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/metadata.json",
+      "sha256": "282ab53cdde9d7e18a608eade0e698a8b7fb1cd41d7d8540111318879c377065",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/structure.json",
+      "sha256": "8a764292d1937869962b91c59cfaa136f720d227a16a5ff33647a0236044aa51",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/94484784827b950a4ea5beea/metadata.json",
+      "sha256": "43fb76ca8b5c17fcde2e97b96bbba1ff9a6ccdcf2f3330fe9794a353a9a9ff06",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/94484784827b950a4ea5beea/structure.json",
+      "sha256": "c8bf901013b7caf0a57ec697e947d1d85186bfcfafa7f006d2d8bcb016ac621e",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/metadata.json",
+      "sha256": "94c6536b84ecd755d9f382bc53b795723927f7450dc0a2dbd36351a1f331afe8",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/structure.json",
+      "sha256": "461161d18206750420e930f9f5a3e8220b691266d35364fc42104e1f229dfc80",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9d2686869fb90420de5a6d40/metadata.json",
+      "sha256": "f96788caa96849d979bed7257145b63d0afc0d8b13515382d0c8e4a31abad636",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9d2686869fb90420de5a6d40/structure.json",
+      "sha256": "f52cef73ad87635d3dd344f5f4f8b11d4dc9d8f4405bdce2ce63366ba4aae2af",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/metadata.json",
+      "sha256": "ced7b77c7f06b1a18b43b44eafa91ae9c76189258153ab44a15a43fb454f00dc",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/structure.json",
+      "sha256": "e6567c8200ded363c42285c2a02985e8e038fe9fba8f878039f8c877e736cf7e",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/metadata.json",
+      "sha256": "f3a5a432731a11b6d4b91c9a3ec9a1616fa19bd6e649372645346b4d4e7806e6",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/structure.json",
+      "sha256": "23c985f880faf8fb88f614d691eaba9e34bbd4250ffdfff269061321e0fefd40",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c979e224eb220101fb785893/metadata.json",
+      "sha256": "a1ef974b65ddc3647296444b947ce171872aef808b8e913de1617d71b4bc0011",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c979e224eb220101fb785893/structure.json",
+      "sha256": "73aa989ccc21ee9b74556106fe7d3d490ef9d80e3d17ce7ad8ba3768e017f008",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/metadata.json",
+      "sha256": "5cf25f8dcd2f987fb19dd0831579ef1f8803ae7403dfac178de6908049a62ad9",
+      "read_scope": "完整JSON解析；展示选材字段"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/structure.json",
+      "sha256": "f179af7ed52cf7d86c9102bbbeb3d4c5524c13ca2b9e35797066be3d18af942f",
+      "read_scope": "完整JSON解析；展示链接和媒体计数，主译文另展示完整结构"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "6e894bd2d484b48abd491d884b21ba8b751b98136e78a785f1e97c43a619aea9",
+      "read_scope": "前90行恢复背景；hash为完整文件字节"
+    },
+    {
+      "path": "data/local/media-repair-development-v1/ready-selection.json",
+      "sha256": "f5fcfa355ee0f96412b31202a2c00cdfa515f758fb14c003d139776b984b628c",
+      "read_scope": "完整读取，仅利用3个source_sha256排除旧改写源文，不读正文"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/eligibility-audit.json",
+      "sha256": "6c6950ea73d90e665cfee9dc937fc61209799ff9f629b7097349cd96e43d8436",
+      "read_scope": "前100行；另完整JSON解析，仅展示主译文对应记录"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/selection-manifest.json",
+      "sha256": "8b594583e336cc675d9f237c0ae61a33af8fc1a86a02cfd30934f6816bdb1c5d",
+      "read_scope": "前55行原抽样/身份规则；hash为完整文件字节"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/body.txt",
+      "sha256": "08363c162d1d7cb2d6bcdbf6daddd4c71c13b664dfe820797f1a44c8c489ca7e",
+      "read_scope": "完整正文，按full_body_read_order顺序"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9d2686869fb90420de5a6d40/body.txt",
+      "sha256": "6b0ad8587528dade22d40d9c39cfad1dbacfe9783bc5bb1b103d4c88ccab0ff2",
+      "read_scope": "完整正文，按full_body_read_order顺序"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt",
+      "sha256": "f3dd1e6d13acf98ba6e9354fdd197c7016a7d1d4d958b8336729f5e4aec65a9c",
+      "read_scope": "完整正文，按full_body_read_order顺序"
+    }
+  ],
+  "read_inventory_note": "列出实际内容读取/解析文件及完整字节hash；路径清单不算正文读取。未读其他旧候选、reserve、final-test、media-provenance-extension-v1、raw HTML、.env或API缓存。",
+  "span_coordinates": "UTF-8原始字节解码后的Unicode字符串，保留原换行；offset为0-based，end exclusive，line按LF计数。",
+  "prior_repair_exclusion_source_hashes": [
+    "9168a023f239bb95e2df6a22a4d03b7e2f518d9bb23159ca34be9430524d3b04",
+    "dbe28d5c264b9bcaf4024a954d2eaa84cc4f0d6bb89de069a031ac65847b983c",
+    "98dc0d721227b590312685cc1fe3f4e486809fdd6da7c563a1258c9154473f7a"
+  ],
+  "selected": [
+    {
+      "doc_id": "0c1bc051de0fc98fbcd0524d",
+      "role": "translated_readability_development",
+      "title": "为什么变更感知对现代应用程序的排障工作非常重要",
+      "url": "https://www.infoq.cn/article/mZ8qWjhqZyhDj7UfgTl1",
+      "body_path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/body.txt",
+      "original_sha256": "08363c162d1d7cb2d6bcdbf6daddd4c71c13b664dfe820797f1a44c8c489ca7e",
+      "metadata_path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/metadata.json",
+      "structure_path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/structure.json",
+      "cjk_chars_from_metadata": 3612,
+      "text_chars_from_metadata": 4484,
+      "published_at": "2022-02-10",
+      "collected_at": "2026-09-14T06:35:11.851839+00:00",
+      "source_type": "translated",
+      "translation_evidence": [
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/metadata.json",
+          "json_pointer": "/metadata/translators",
+          "exact_value": [
+            "王强"
+          ]
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/metadata.json",
+          "json_pointer": "/metadata/translation_evidence",
+          "exact_value": [
+            "explicit_translator_field",
+            "original_link_marker",
+            "english_name_in_author_bio"
+          ]
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/body.txt",
+          "exact_span": {
+            "quote": "原文链接：",
+            "start_char": 4394,
+            "end_char_exclusive": 4399,
+            "line_1based": 56
+          }
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/body.txt",
+          "exact_span": {
+            "quote": "Why Change Intelligence is Necessary to Effectively Troubleshoot Modern Applications",
+            "start_char": 4400,
+            "end_char_exclusive": 4484,
+            "line_1based": 57
+          }
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/structure.json",
+          "json_pointer": "/links/0",
+          "exact_value": {
+            "text": "Why Change Intelligence is Necessary to Effectively Troubleshoot Modern Applications",
+            "href": "https://www.infoq.com/articles/beyond-monitoring-change-intelligence/"
+          }
+        }
+      ],
+      "old_translation_status_preserved": "excluded_deterministic_evidence",
+      "old_exclusions_preserved": [
+        "deterministic_translation_evidence"
+      ],
+      "human_smell_label": null,
+      "human_readability_feedback": null,
+      "authorship_label": null,
+      "training_eligible": false,
+      "media_reference_count": 3,
+      "source_fact_limits": [
+        "仅复核本地中文和既有metadata/structure；未重新访问原站、英文原文或上游资料。",
+        "技术事实及来源观点未独立验证；保留来源归属、条件、数字和不确定性，不替原作者补证。",
+        "既有near-duplicate及缺失历史交接检查仍待完成；本次延续已暴露development，不构成新的盲测。",
+        "training_rights为unverified，不能据此导出训练许可。",
+        "3幅截图仅存引用，未下载或视觉核验；保留配图引用/占位和原文截图陈述边界，不当作已验证事实。",
+        "含DataDog查询，须保留字符及阈值；2%错误、七个月、一整天、几秒内定位等原文说法不能改成新因果或普遍性能保证。",
+        "发布日期2022-02-10仅是样本背景，不赋人类作者身份，也不把该文难读归因于后期LLM。"
+      ],
+      "selection_reason": "明确译者及英文原文链接，长度符合主要全文范围。概念介绍、故障叙述、操作解释和结尾持续存在中文搭配与信息组织负担，适合检验只凭中文输入改善译文。该判断来自Astra离线通读，不冒充维护者强臭标签。",
+      "representative_difficulties": [
+        {
+          "id": "tr01-d01",
+          "kind": "开头搭配及概念关系",
+          "contexts": [
+            {
+              "quote": "微服务和高度分布式的系统是非常复杂的。系统中有许多移动部件，包括应用程序本身、基础设施、版本和配置。通常，这会导致运维人员难以跟踪生产或其他开发环境（QA、开发、预生产）中的实际情况，而当你需要对系统进行排障时这又成了一个问题。",
+              "start_char": 0,
+              "end_char_exclusive": 114,
+              "line_1based": 1
+            },
+            {
+              "quote": "在这篇文章中，我将围绕监控和可观察性的不同用例澄清一些内容，讲一下什么时候用到这两个概念，以及如何正确使用它们。然后我将专注于变更感知（Change Intelligence）这个主题，这种新方法能够遥测可操作的指标、日志和跟踪等信息，以便实时有效地对事件排障。到目前为止，可观察性一直专注于集合与你系统相关的数据，而监控则是标准化的检查，以验证基于这些数据的一切工作是否正常。变更感知构成了对现有遥测技术的增强，在所有东西都是分布式、公司有几十甚至几百个服务都在相互通信的当今世界里提供了更多上下文。这样运维人员就可以在最近的变更之间建立联系，并最终了解它们对整个系统的影响。",
+              "start_char": 115,
+              "end_char_exclusive": 404,
+              "line_1based": 2
+            }
+          ],
+          "analysis": "“移动部件”需要读者自行代入；“遥测可操作的指标”“集合与你系统相关的数据”使动作与宾语关系难读。开头同段先预告写法，再连写三概念及分布式背景。可以重整中文已给出的关系，不能擅自改技术定义。"
+        },
+        {
+          "id": "tr01-d02",
+          "kind": "指代跳变及例子位置",
+          "contexts": [
+            {
+              "quote": "谈到监控时，大多数人想到的是仪表板。它们可能非常漂亮，但大多数开发人员并不真的想花一整天的时间盯着它们。这些往往是静态警报，需要开发人员预先确定什么东西可能出错。",
+              "start_char": 555,
+              "end_char_exclusive": 636,
+              "line_1based": 6
+            },
+            {
+              "quote": "我看到的一个有趣的趋势是，运维人员实际上利用可观察性工具来找到问题的根因，然后将这种学习成果纳入监控工具，以监控在未来重复出现的问题。如果你有适当的文档和运行手册，监控和可观察性之间的结合可以为你的可靠性计划创造奇迹。",
+              "start_char": 637,
+              "end_char_exclusive": 746,
+              "line_1based": 7
+            },
+            {
+              "quote": "这些检查可以是各种形式，简单的例子是确保某个系统的延迟低于某个阈值，或更复杂的例子，检查一个完整的业务流程是否符合预期（将物品添加到购物车，并成功结账）。你可能认为你已经掌握了系统中发生的全部情况，因为你已经有了监控和可观察性，但是你仍然需要一块关键的拼图才能够看到完整的情况。",
+              "start_char": 747,
+              "end_char_exclusive": 886,
+              "line_1based": 8
+            }
+          ],
+          "analysis": "“它们”先指仪表板，“这些往往是静态警报”转到警报；隔着根因和文档段才回到“这些检查”，阈值/购物车例子与说明对象相隔。问题涉及指代与顺序，不靠换连接词解决。"
+        },
+        {
+          "id": "tr01-d03",
+          "kind": "长串信息及含混译法",
+          "contexts": [
+            {
+              "quote": "首先，如果你正确实现了变更感知，它应该包括与“哪个服务正在与哪个服务通信”有关的所有上下文（如服务映射）、在服务 A 中做出的变更如何影响其他服务（由于依赖关系，包括下游和上游）的信息、在应用程序层面做出的配置变更和在基础设施层或云环境中做出的配置变更、没有被钉住导致你无法控制的雪球效应的版本、云环境中断，以及任何可能影响业务连续性的东西。",
+              "start_char": 1282,
+              "end_char_exclusive": 1453,
+              "line_1based": 14
+            }
+          ],
+          "analysis": "服务通信、上下游影响、两层配置、版本、云中断等挤在一句；“没有被钉住导致你无法控制的雪球效应的版本”限定关系难辨。可分清信息种类，不能在无英文核验时替原文指定一种精确依赖机制。"
+        },
+        {
+          "id": "tr01-d04",
+          "kind": "故障叙述时序及重复",
+          "contexts": [
+            {
+              "quote": "作为一名 DevOps 工程师（今天在 Komodor，以前在 Rookout），我经常遇到这些类型的场景，所以这里有一个来自前线的简短故事。我记得有一次，我和我的团队开始收到来自我们系统中一个关键服务的大量错误[剧透：我们收到了数字值，当试图将它们插入我们的数据库时，列类型不匹配]。",
+              "start_char": 2089,
+              "end_char_exclusive": 2232,
+              "line_1based": 27
+            },
+            {
+              "quote": "我们唯一可以使用的错误信息是：无效值。然后我们不得不搜索我们的系统和最近的变更，试图了解我们正在处理的数据和错误——我们花了一整天的时间来研究这个错误，最终了解到这是七个月前实现的一个变更。数据库中的列类型是整数，而我们试图插入更大的数字，因此需要一个大整数数据/列类型。如果没有任何平台或系统来帮助我们将这些错误与相关的变更联系起来，对于七个多月前发生的配置来说，即使是像数字太大这样简单的事情，也会让整个有经验的团队花上一整天的时间，因为我们没有变更感知来帮助我们解决问题。",
+              "start_char": 2233,
+              "end_char_exclusive": 2472,
+              "line_1based": 28
+            }
+          ],
+          "analysis": "方括号先揭示类型不匹配，下一段又从“无效值”走一遍；“最终了解到这是七个月前实现的一个变更”的“这”指向不稳，数字越界、列类型、历史配置及一天代价同段堆叠。需区分发现顺序与事件时间；原文没有精确交代那次变更改了什么，不能补造。"
+        },
+        {
+          "id": "tr01-d05",
+          "kind": "后半部分持续抽象搭配",
+          "contexts": [
+            {
+              "quote": "接下来监控会进来摄取这些数据，然后提供对适当阈值的理解，以检查在它历史的上下文下这是否可以接受。",
+              "start_char": 2585,
+              "end_char_exclusive": 2633,
+              "line_1based": 33
+            },
+            {
+              "quote": "这种变更感知可以基于发布说明、审计日志、版本差异和属性（谁做出的变更）。然后，这一变更的相关映射被交叉引用到无数不同的连接服务中，以找到最可能的故障罪魁祸首，从而实现更快速的恢复。",
+              "start_char": 3447,
+              "end_char_exclusive": 3537,
+              "line_1based": 46
+            },
+            {
+              "quote": "变更感知将是增强未来堆栈能力的一个关键部分，并在现有的监测和观察工具之上提供一个额外的可操作的洞察力层。这种方法最终能够帮助我们快速恢复，维护今天的严格 SLA，并减少昂贵、痛苦和可能很漫长的停机时间。",
+              "start_char": 4153,
+              "end_char_exclusive": 4254,
+              "line_1based": 53
+            }
+          ],
+          "analysis": "“监控会进来摄取”“提供对适当阈值的理解”“相关映射被交叉引用到无数不同的连接服务”“额外的可操作的洞察力层”将操作写成抽象名词和拟人动作，读者要自行还原关系。术语及产品能力/SLA承诺不得随意重定义。"
+        }
+      ]
+    },
+    {
+      "doc_id": "9656e09a0c8ef6938c517cef",
+      "role": "conservative_editing_development_control",
+      "title": "Nuxt Test Utils v4：基于Vitest v4，重构mock机制并强化环境的初始化",
+      "url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ",
+      "body_path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt",
+      "original_sha256": "f3dd1e6d13acf98ba6e9354fdd197c7016a7d1d4d958b8336729f5e4aec65a9c",
+      "metadata_path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/metadata.json",
+      "structure_path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/structure.json",
+      "cjk_chars_from_metadata": 937,
+      "text_chars_from_metadata": 1957,
+      "published_at": "2026-04-08",
+      "collected_at": "2026-09-14T06:34:24.399431+00:00",
+      "source_type": "translated",
+      "translation_evidence": [
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/metadata.json",
+          "json_pointer": "/metadata/translators",
+          "exact_value": [
+            "张卫滨"
+          ]
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/metadata.json",
+          "json_pointer": "/metadata/translation_evidence",
+          "exact_value": [
+            "explicit_translator_field"
+          ]
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt",
+          "exact_span": {
+            "quote": "查看英文原文：",
+            "start_char": 1859,
+            "end_char_exclusive": 1866,
+            "line_1based": 84
+          }
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt",
+          "exact_span": {
+            "quote": "Nuxt Test Utils v4: Vitest v4 Requirement, Mocking Overhaul and Stricter Environment Setup",
+            "start_char": 1867,
+            "end_char_exclusive": 1957,
+            "line_1based": 85
+          }
+        },
+        {
+          "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/structure.json",
+          "json_pointer": "/links/9",
+          "exact_value": {
+            "text": " Nuxt Test Utils v4: Vitest v4 Requirement, Mocking Overhaul and Stricter Environment Setup",
+            "href": "https://www.infoq.com/news/2026/03/nuxt-test-utils-4/"
+          }
+        }
+      ],
+      "old_translation_status_preserved": "excluded_deterministic_evidence",
+      "old_exclusions_preserved": [
+        "deterministic_translation_evidence"
+      ],
+      "human_smell_label": null,
+      "human_readability_feedback": null,
+      "authorship_label": null,
+      "training_eligible": false,
+      "media_reference_count": 0,
+      "source_fact_limits": [
+        "仅复核本地中文和既有metadata/structure；未重新访问原站、英文原文或上游资料。",
+        "技术事实及来源观点未独立验证；保留来源归属、条件、数字和不确定性，不替原作者补证。",
+        "既有near-duplicate及缺失历史交接检查仍待完成；本次延续已暴露development，不构成新的盲测。",
+        "training_rights为unverified，不能据此导出训练许可。",
+        "含TypeScript代码及[nuxt] instance unavailable错误字面值，须保持代码、标识符和错误文本。",
+        "依赖版本、2026年2月7日、下载量及MIT许可为未独立核验的来源陈述；不当作现状或本项目训练权利。",
+        "无图片；多处断行来自inline元素/代码捕获，应与原文阅读难度分开。"
+      ],
+      "selection_reason": "按Root补充任务作短资讯保守编辑对照。多数段落直接交代改动、触发条件、修复和版本要求，允许少改或不改。不是干净负例，没有维护者无臭确认；长度低于主译文首选范围，研究角色不同。",
+      "limited_issues": [
+        {
+          "id": "tr02-d01",
+          "contexts": [
+            {
+              "quote": "Nuxt Test Utils 发布了 4.0.0 版本，该版本主要集成了 Vitest v4。本次更新将测试环境初始化逻辑迁移至 beforeAll，修复了模块级 mock 失效的问题；同时优化了 mockNuxtImport，实现更简洁的部分 mock 功能，并完善了注册接口的状态管理。该工具库依旧是 Nuxt 框架测试的核心库，衔接了单元测试与端到端测试。",
+              "start_char": 0,
+              "end_char_exclusive": 182,
+              "line_1based": 1
+            },
+            {
+              "quote": "发布了 4.0.0 版本，它是基于 Vue 的 Nuxt 框架的官方测试库，这是合并包生命周期中的第一个主版本发布。该版本于",
+              "start_char": 199,
+              "end_char_exclusive": 261,
+              "line_1based": 3
+            }
+          ],
+          "analysis": "开头摘要与下一段重复发布4.0.0和Vitest v4，可酌情合并复述；首段概括了后续具体变化，不应一删了之。"
+        },
+        {
+          "id": "tr02-d02",
+          "contexts": [
+            {
+              "quote": "发布了 4.0.0 版本，它是基于 Vue 的 Nuxt 框架的官方测试库，这是合并包生命周期中的第一个主版本发布。该版本于",
+              "start_char": 199,
+              "end_char_exclusive": 261,
+              "line_1based": 3
+            },
+            {
+              "quote": "，构建在单一的依赖要求之上，即 Vitest v4。相比之前要求的 Vitest v3 的版本，这次升级推动了很多重要的变化，包括测试环境初始化方式和 mock 应用方式的架构性转变。",
+              "start_char": 274,
+              "end_char_exclusive": 366,
+              "line_1based": 5
+            }
+          ],
+          "analysis": "“合并包生命周期中的第一个主版本发布”“构建在单一的依赖要求之上”仍有译法负担。原文未解释“合并包”边界，不能为了顺口编造包历史。"
+        },
+        {
+          "id": "tr02-d03",
+          "contexts": [
+            {
+              "quote": "错误，因为此时测试环境尚未初始化。解决方案是将相关调用移入",
+              "start_char": 742,
+              "end_char_exclusive": 771,
+              "line_1based": 25
+            }
+          ],
+          "analysis": "正文把链接、inline code及代码片段拆成多行，妨碍纯文本阅读；这是采集/呈现层问题，不等于原作者句法或风格缺陷。"
+        }
+      ],
+      "preserve_examples": [
+        {
+          "contexts": [
+            {
+              "quote": "，可以确保 mock 注册完成后 Nuxt 才启动，让 mock 行为在整个测试套件中保持一致且可预测。",
+              "start_char": 580,
+              "end_char_exclusive": 632,
+              "line_1based": 16
+            }
+          ],
+          "reason": "直接交代初始化与mock时序，不需强化因果。"
+        },
+        {
+          "contexts": [
+            {
+              "quote": "可正常匹配了，解决了使用参数化 API 路径测试的一类故障。",
+              "start_char": 1109,
+              "end_char_exclusive": 1139,
+              "line_1based": 52
+            }
+          ],
+          "reason": "保留查询参数端点匹配的具体修复。"
+        },
+        {
+          "contexts": [
+            {
+              "quote": "需要 20.0.11 及以上版本，",
+              "start_char": 1320,
+              "end_char_exclusive": 1337,
+              "line_1based": 60
+            },
+            {
+              "quote": "需要 27.4.0 及以上版本，",
+              "start_char": 1344,
+              "end_char_exclusive": 1360,
+              "line_1based": 62
+            },
+            {
+              "quote": "停止支持 30.0.0 以下版本，",
+              "start_char": 1375,
+              "end_char_exclusive": 1392,
+              "line_1based": 64
+            },
+            {
+              "quote": "需要 11 及以上版本。锁定了这些工具版本的团队，需要在升级 Vitest v4 的同时更新这些依赖。",
+              "start_char": 1412,
+              "end_char_exclusive": 1463,
+              "line_1based": 66
+            }
+          ],
+          "reason": "依赖名、数字及其下限关系完整保留。"
+        }
+      ]
+    }
+  ],
+  "not_selected": [
+    {
+      "doc_id": "0be079018045fbf1f2d47d7f",
+      "title": "Codex负责人打脸Cursor CEO“规范驱动开发论”！18天造Sora爆款，靠智能体24小时不停跑，曝OpenAI狂飙内幕",
+      "url": "https://www.infoq.cn/article/Gqltf7tslmJY8iK9GXLo",
+      "cjk_chars_from_metadata": 17540,
+      "body_read": false,
+      "reasons": [
+        "旧media-repair反复改写源文hash匹配，不读正文",
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "超出主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "195940f04347559f68fbfdcb",
+      "title": "关于卫星定位，你想知道的一切",
+      "url": "https://www.infoq.cn/article/UCkuyseRDMXYKpSpbHe2",
+      "cjk_chars_from_metadata": 5649,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    },
+    {
+      "doc_id": "21fb54b8f31d94d5f58b2b86",
+      "title": "元服务如何获取/设置屏幕亮度？",
+      "url": "https://www.infoq.cn/article/DsLsUs6SNlB6M4FFMIar",
+      "cjk_chars_from_metadata": 138,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "2762aba55519d5e3e9349b17",
+      "title": "解析 React 性能利器 — Fiber",
+      "url": "https://www.infoq.cn/article/PHir9fGyTSQtiAQ035gi",
+      "cjk_chars_from_metadata": 2493,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    },
+    {
+      "doc_id": "2e0d0c6274b0a0e6a333fbb9",
+      "title": "Linux Mint 宣布与 Mozilla 达成新交易",
+      "url": "https://www.infoq.cn/article/Ra4l1gamNjHqQ9ZNlaKQ",
+      "cjk_chars_from_metadata": 322,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "3fdc45a2c7759e78fc9013c9",
+      "title": "Snowflake 换了战场：守住数据之后，要管住AI",
+      "url": "https://www.infoq.cn/article/JCXUmEkVTBw3mjjtgwgY",
+      "cjk_chars_from_metadata": 2796,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    },
+    {
+      "doc_id": "550a11e0e8987efc94c654b7",
+      "title": "全面审查Twitter代码、当场炒掉CEO等众多高管：马斯克正式入主Twitter",
+      "url": "https://www.infoq.cn/article/1jdi4LDTycjblozS8QwV",
+      "cjk_chars_from_metadata": 2166,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    },
+    {
+      "doc_id": "577ba2d1fd46fae48e0ad5d2",
+      "title": "如何对应用进行冷启动优化？",
+      "url": "https://www.infoq.cn/article/jBHvjgz11gvzGRJf818T",
+      "cjk_chars_from_metadata": 226,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "5eccef97088993c9842a4e4c",
+      "title": "Cursor 2.0发布：自研代码模型 Composer 上线，8 个代理并行，速度提升 4 倍",
+      "url": "https://www.infoq.cn/article/QlBwolS6TLQ36PaYGYf5",
+      "cjk_chars_from_metadata": 626,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "6e1b7928a8a00ba027e8c8fa",
+      "title": "让机器人“看清”三维世界，蚂蚁灵波开源LingBot-Depth模型",
+      "url": "https://www.infoq.cn/article/WVlzEl33IYR1SH7mBssb",
+      "cjk_chars_from_metadata": 889,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "738c96bc2777301fdaf9f078",
+      "title": "云原生时代，CNStack 如何解决企业数字化转型难题？",
+      "url": "https://www.infoq.cn/article/4CFTC0TgkMout6hFBxG2",
+      "cjk_chars_from_metadata": 6985,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "超出主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "769ecc5e088514e4261ae7e0",
+      "title": "进击的Kubernetes调度系统（一）：Scheduling Framework",
+      "url": "https://www.infoq.cn/article/lYUw79lJH9bZv7HrgGH5",
+      "cjk_chars_from_metadata": 0,
+      "body_read": false,
+      "reasons": [
+        "抽取正文为空，本轮不修复采集",
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "83e3fb47524511fba7945931",
+      "title": "Kubescape 4.0为Kubernetes带来运行时安全和AI智能体扫描",
+      "url": "https://www.infoq.cn/article/FA7cwRtSJMI63GFiHFDX",
+      "cjk_chars_from_metadata": 1167,
+      "body_read": false,
+      "reasons": [
+        "低于主要译文首选中文长度",
+        "明确译者但仅1167中文字符；另两篇短译文已选得保守对照，停止继续读正文"
+      ]
+    },
+    {
+      "doc_id": "8a835ce2a2584c3c9040fcc5",
+      "title": "在 AWS 上运行 Apache Kafka 的最佳实践",
+      "url": "https://www.infoq.cn/article/8PBvbU3Dagb5Bsut663J",
+      "cjk_chars_from_metadata": 0,
+      "body_read": false,
+      "reasons": [
+        "抽取正文为空，本轮不修复采集",
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "8bdf575aae4fe9a3b509a492",
+      "title": "元宇宙相关岗位平均月薪1.85万元；台积电：砍单可以，降价免谈；特斯拉人形机器人“擎天柱”亮相 | AI一周资讯",
+      "url": "https://www.infoq.cn/article/VLIDZiKBqtCyrMm8mjc1",
+      "cjk_chars_from_metadata": 4452,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    },
+    {
+      "doc_id": "8bfb7b3e6b210126548b7f0c",
+      "title": "Apache Doris 在小米统一 OLAP 和湖仓一体的实践",
+      "url": "https://www.infoq.cn/article/yGwXLYsrhMDwUqoYgMsh",
+      "cjk_chars_from_metadata": 3176,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    },
+    {
+      "doc_id": "94484784827b950a4ea5beea",
+      "title": "如何快速完成软件迁移调优？解锁鲲鹏开发套件的正确使用姿势",
+      "url": "https://www.infoq.cn/article/7W4l7Riw6Z5ZFvHwqASy",
+      "cjk_chars_from_metadata": 0,
+      "body_read": false,
+      "reasons": [
+        "抽取正文为空，本轮不修复采集",
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "9d2686869fb90420de5a6d40",
+      "title": "Yelp 发布大规模管理 S3 服务器访问日志的方案",
+      "url": "https://www.infoq.cn/article/yYvYwDZJOIEVI2h1rKvq",
+      "cjk_chars_from_metadata": 1301,
+      "body_read": true,
+      "reasons": [
+        "低于主要译文首选中文长度",
+        "全文读过，首段和中段重复价值宣告，后半段用“高度相似”“本质上复现”概括不同方案关系，未作保守对照；已有更合适的主要译文，不增加第三篇。"
+      ]
+    },
+    {
+      "doc_id": "a4007204435ea4d0895d0d46",
+      "title": "培养 Data Superhero 的思维模式",
+      "url": "https://www.infoq.cn/article/zef6xMixQVDouh7lG5PA",
+      "cjk_chars_from_metadata": 1377,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "c526ed941b8de39a5388df3d",
+      "title": "Anthropic深夜放出王炸！白领饭碗要被AI砸了？网友：不支持Linux，差评",
+      "url": "https://www.infoq.cn/article/UN16P0pugHNutuMbgrNl",
+      "cjk_chars_from_metadata": 2669,
+      "body_read": false,
+      "reasons": [
+        "旧media-repair反复改写源文hash匹配，不读正文",
+        "维护者撤回Cowork，不读正文",
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    },
+    {
+      "doc_id": "c979e224eb220101fb785893",
+      "title": "隐私AI工程技术实践指南：整体介绍",
+      "url": "https://www.infoq.cn/article/iDHE7UyH91pALUZh9OaV",
+      "cjk_chars_from_metadata": 0,
+      "body_read": false,
+      "reasons": [
+        "抽取正文为空，本轮不修复采集",
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译",
+        "低于主要译文首选中文长度"
+      ]
+    },
+    {
+      "doc_id": "d679960cb6cb418eebb6b222",
+      "title": "动态性能分级策略在客户端上的实践",
+      "url": "https://www.infoq.cn/article/omyedsPw1aNVgoWz0G61",
+      "cjk_chars_from_metadata": 3507,
+      "body_read": false,
+      "reasons": [
+        "无明确译者；外文链接或original_link_marker单独不足以确证跨语言翻译"
+      ]
+    }
+  ],
+  "historical_status_note": "旧staging曾把deterministic_translation_evidence作为排除。本次依最新范围纳入译文开发，旧文件及状态不改，不宣称正式准入、事实已验证或训练许可。",
+  "limitations": [
+    "有界Astra全文判断，无新增人类阅读反馈。",
+    "不按“而是”次数筛选，不建立作者身份或难易分数。",
+    "两例均来自InfoQ，不能单靠本轮证明跨译文来源有效。"
+  ],
+  "generation_note": "首次生成脚本因一项精确行前缀不存在而在写文件前失败；改用唯一子串定位原始整行后重新构建并核验引用。没有旧输出被覆盖。",
+  "network_requests": 0,
+  "api_calls": 0,
+  "gpu_used": false,
+  "old_files_modified": false
+}

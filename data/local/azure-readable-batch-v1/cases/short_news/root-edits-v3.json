@@ -1,0 +1,17 @@
+{
+  "editor": "root_native_astra",
+  "base_sha256": "813065eeee0f8b3d39086c236db85e6eac87f6e4268dda8e577c7e6c940a1587",
+  "candidate_sha256": "714f2f17df962336c1835895fa3250590bab31464b87cb79dc999ad255bbac8c",
+  "edits": [
+    {
+      "old": "届时可将 Seedance 2.0 集成到自有工作流中，",
+      "new": "届时可将 Seedance 2.0 集成到自有工作流中。",
+      "reason": "只把删除后悬空的句末逗号改为句号。"
+    }
+  ],
+  "characters": 1272,
+  "scope": "按复核完成内容收尾；translation还整理回补后的复制原句和比喻，明确与Azure纯输出分开。",
+  "human_feedback": null,
+  "network_calls": 0,
+  "training_eligible": false
+}

@@ -1,0 +1,537 @@
+{
+  "version": "azure-readable-batch-marketing-preservation-review-1.0",
+  "created_at": "2026-09-15T08:29:37.604100+00:00",
+  "reviewer": "native_astra_subagent",
+  "review_type": "independent_source_candidate_content_preservation",
+  "scope": "完整阅读原文与候选，对照六产品的价格规格、配件/选配/缺少功能、使用条件及作者观点；允许降低营销渲染。",
+  "overall_status": "needs_revision",
+  "training_eligible": false,
+  "reader_preference_assessed": false,
+  "authorship_assessed": false,
+  "input_files": {
+    "source_body": {
+      "path": "data/local/independent-media-discovery-v1/documents/d04/body.txt",
+      "sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2"
+    },
+    "original": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/original.md",
+      "sha256": "a8e279d7e1f8293295083de3f4e560cff676ec0c3ee3420dcdc20a565423cba1"
+    },
+    "candidate": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/candidate-v1.md",
+      "sha256": "611ce4e19c0347d4ea50c4fd92b41738f9b3df1c6dcea91d805c28e11bb9ba4f"
+    },
+    "response": {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/response.json",
+      "sha256": "8655a2b2c1aa08424dacb9d96f68ea1bfc4e65376e0931e7b6d809436e3d5118"
+    }
+  },
+  "checks": {
+    "source_body_equals_original_after_title_and_blank_line_formatting": true,
+    "candidate_equals_model_response_text_ignoring_outer_whitespace": true,
+    "products": 6,
+    "all_six_prices_preserved": true,
+    "exact_evidence_spans_validated": true,
+    "every_source_product_section_reviewed": true
+  },
+  "summary": "六个型号、价格及大量主要数字保留，重要选配/无集尘/手动换模块限制也保留；但存在新增选购结论、使用条件和主观归属丢失，以及多项具体规格与控制功能遗漏。尚不符合全文内容保留要求。",
+  "findings": [
+    {
+      "id": "m01",
+      "priority": "high",
+      "category": "unsupported_addition",
+      "product": "全文结尾",
+      "source_evidence": [
+        {
+          "quote": "以上6款是我认为可以提升生活品质的2022年新品扫拖一体机器人，希望对各位选购能有所帮助。",
+          "start_char": 3685,
+          "end_char_exclusive": 3730,
+          "line_1based": 89
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "以上六款2022年新品扫拖机器人，均在清洁能力、避障智能和自动化维护方面有显著提升。石头G10S和米家全能扫拖机器人在自动化和智能化方面表现突出，适合追求极致解放双手的用户。追觅W10 Pro和科沃斯T10 TURBO在避障和多场景适应性上有优势。云鲸J2适合喜欢手动切换、注重拖地效果的用户。石头T8则以性价比和小巧设计适合预算有限或空间较小的家庭。",
+          "start_char": 2246,
+          "end_char_exclusive": 2422,
+          "line_1based": 75
+        }
+      ],
+      "issue": "结尾新增多项作者没有作出的比较判断和人群推荐：“均…有显著提升”、G10S/米家在自动化智能化方面突出、W10/T10有多场景优势、J2适合“喜欢手动切换”的人、T8性价比适合预算有限者。原文列参数并总体认可六款，没有这些横向排序，也没有把被迫手动换模块说成用户偏好。",
+      "minimum_revision": "删除整段新增横向比较和人群推断；恢复原作者认为六款有助提升生活品质的总体意见即可。若保留选购维度建议，明确为编辑新增内容，不能混作原文保留。"
+    },
+    {
+      "id": "m02",
+      "priority": "high",
+      "category": "condition_omission_and_specification_omission",
+      "product": "石头G10S",
+      "source_evidence": [
+        {
+          "quote": "石头G10S采用的AI结构光避障可以做到精准测距，其避障精度可以达到毫米级，搭配黑白图像传感器，可以显示27种常见障碍物，即便在黑暗环境下也可以在红外补光下工作。与 LDS 实时地图拟合，形成动态避障，实时保持最优路线。搭配最新RR Mason 9.0算法，可以做到路径规划有序，做到不丢图、不乱扫、不漏扫。可同时记忆4张3D地图，在清扫复式楼房的不同楼层时，自动加载并完成清扫。",
+          "start_char": 515,
+          "end_char_exclusive": 705,
+          "line_1based": 17
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "G10S搭载AI结构光避障系统，配合黑白图像传感器，能识别27种常见障碍物，即使在黑暗环境下也能精准避障。LDS激光雷达与AI算法结合，实现动态避障和有序路径规划，支持记忆4张3D地图，适合复式或多层住宅。",
+          "start_char": 386,
+          "end_char_exclusive": 489,
+          "line_1based": 13
+        }
+      ],
+      "issue": "原文暗环境可工作以红外补光为条件，候选变成暗环境也能精准避障；同时遗漏毫米级避障精度、RR Mason 9.0算法名称，以及在不同楼层自动加载地图并清扫的具体功能。只留4张地图和适合复式，信息不等价。",
+      "minimum_revision": "补回红外补光条件、毫米级精度、RR Mason 9.0及按楼层自动加载地图的功能；不必恢复“最优”“不乱扫”等绝对修辞。将“精准避障”保持在原文条件内。"
+    },
+    {
+      "id": "m03",
+      "priority": "medium",
+      "category": "function_omission_and_effect_substitution",
+      "product": "石头G10S",
+      "source_evidence": [
+        {
+          "quote": "集尘盒内装有一次性集尘袋，正常使用能容纳差不多两个月的垃圾。尘袋容量2.5L，使用E12级复合材质，过滤效率达到99.5%， 可以保证长期抗菌效果，取下尘袋时会自动封口，全程不脏手。",
+          "start_char": 422,
+          "end_char_exclusive": 513,
+          "line_1based": 15
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "集尘盒采用一次性尘袋，容量2.5L，正常使用可容纳约两个月的垃圾。尘袋为E12级复合材质，过滤效率达99.5%，取下时自动封口，避免二次污染。",
+          "start_char": 313,
+          "end_char_exclusive": 384,
+          "line_1based": 11
+        }
+      ],
+      "issue": "尘袋的长期抗菌功能陈述被完全删去；自动封口的效果从原文“不脏手”换成“避免二次污染”，后者范围更广，未在该段提供。E12、2.5L、99.5%、约两个月和正常使用条件则均保留。",
+      "minimum_revision": "保留原文声称尘袋具有抗菌效果这一功能，可降低“保证长期”式营销保证；封口效果写成减少取袋时接触垃圾，不增加广义二次污染保证。"
+    },
+    {
+      "id": "m04",
+      "priority": "medium",
+      "category": "function_omission_and_condition_scope",
+      "product": "石头G10S",
+      "source_evidence": [
+        {
+          "quote": "石头G10S还带头智能升降拖地模组，搭配超声波地毯识别传感器，准确识别地毯，对拖布进行升降控制，最高升起5mm，这样就能在家中连扫带拖自由穿梭了！而且准备回洗的脏拖布也会被抬起，不会造成地面二次污染。",
+          "start_char": 851,
+          "end_char_exclusive": 951,
+          "line_1based": 21
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "拖地模组支持智能升降，配合超声波地毯识别，遇到地毯时拖布可升高5mm，避免弄脏地毯。清洁完成后，基站内的自清洁毛刷和刮片可自动清洗拖布，基站本身也支持自清洁，维护更省心。",
+          "start_char": 583,
+          "end_char_exclusive": 668,
+          "line_1based": 17
+        }
+      ],
+      "issue": "候选省略准备回洗时脏拖布也会抬起这一运行场景；增加遇地毯抬高5mm就“避免弄脏地毯”的效果，原文只有升降及穿梭描述，没有承诺对所有地毯成立。原文5mm为最高抬升量。",
+      "minimum_revision": "写清最高抬升5mm，并补回回洗前抬起脏拖布的功能；去掉地毯必然不脏的效果保证。"
+    },
+    {
+      "id": "m05",
+      "priority": "medium",
+      "category": "function_omission",
+      "product": "追觅W10 Pro",
+      "source_evidence": [
+        {
+          "quote": "追觅W10 Pro拥有“AI Action”智慧避障功能，机器前部左侧是负责构建三维地图的ToF传感器，右侧是用来拍摄障碍物图片的RGB摄像头，在两者的相互配合下，能够提升对障碍物的识别效果，选择相应的避障距离防止缠绕卡困，做到更精准和高效，属于行业领先水平。",
+          "start_char": 1045,
+          "end_char_exclusive": 1175,
+          "line_1based": 27
+        },
+        {
+          "quote": "此外，W10 Pro还能自动匹配识别房间类型，可以自动对地砖、木地板等不同类型地面设定不同的吸力、抹布湿度和清洁次数。作为米家生态链企业，还能通过米家APP进行进一步个性化调节，支持三层地图，内建6400mAh大电池可以轻松应对大户型。",
+          "start_char": 1177,
+          "end_char_exclusive": 1295,
+          "line_1based": 29
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "追觅W10 Pro配备“AI Action”智慧避障系统，前部左侧为ToF传感器，右侧为RGB摄像头，协同提升障碍物识别和避障效果。可自动识别房间类型，并针对不同地面（如地砖、木地板）自动调整吸力、湿度和清洁次数。支持三层地图，内置6400mAh大电池，适合大户型。",
+          "start_char": 704,
+          "end_char_exclusive": 837,
+          "line_1based": 23
+        }
+      ],
+      "issue": "前段把ToF构建三维地图、RGB拍摄障碍物图片及按障碍物选择避障距离概括成协作；同时整项删除米家APP进一步个性化调节功能及原文米家生态链背景。自动地面调节不等于用户能通过APP自定义。",
+      "minimum_revision": "补回两个传感器的分工、根据障碍物选择避障距离，以及通过米家APP作个性化设置。生态链背景可用简短从句保留，不恢复行业领先口号。"
+    },
+    {
+      "id": "m06",
+      "priority": "medium",
+      "category": "function_scope_omission",
+      "product": "追觅W10 Pro",
+      "source_evidence": [
+        {
+          "quote": "W10 Pro的清水箱中也加具有银离子除菌模块，可以对拖布、地面除菌，并对污水箱抑菌除臭等。",
+          "start_char": 1449,
+          "end_char_exclusive": 1495,
+          "line_1based": 33
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "清水箱内含银离子除菌模块，拖布和地面均可抑菌。清扫后自动回基站清洗并烘干，基站采用颗粒刮擦和喷水搓洗，结合离心甩干和40°风干，减少细菌和异味。基站不具备自动集尘功能。",
+          "start_char": 952,
+          "end_char_exclusive": 1036,
+          "line_1based": 27
+        }
+      ],
+      "issue": "银离子模块对污水箱抑菌除臭的作用被删除；对拖布和地面“除菌”则改成“抑菌”，二者技术含义未被核验。40°风干及无自动集尘等重要限制保留。",
+      "minimum_revision": "补回污水箱的作用对象。保留原文关于拖布/地面的作用说法及其来源声称性质，不把未经验证的除菌效果升级为保证；如要把除菌改成抑菌，应单列事实校正而非默认为同义。"
+    },
+    {
+      "id": "m07",
+      "priority": "medium",
+      "category": "specification_and_function_omission",
+      "product": "科沃斯T10 TURBO",
+      "source_evidence": [
+        {
+          "quote": "与大多扫地机的上掀式顶盖不同的是，T10 TURBO的顶部作为一个整体部件，可以取下，6颗大吸力磁铁确保不会脱落。在硬件上与前两款石头、追觅的扫拖机器人最大不同是T10 TURBO用了双边刷设计。",
+          "start_char": 1655,
+          "end_char_exclusive": 1753,
+          "line_1based": 41
+        },
+        {
+          "quote": "再结合机顶上TOF激光雷达内嵌的三麦克风系统，T10 TURBO可以精确找到主人位置，在YIKO语音助手的帮助下，可以实现召唤清扫功能。",
+          "start_char": 1988,
+          "end_char_exclusive": 2056,
+          "line_1based": 49
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "科沃斯T10 TURBO为2022年旗舰产品，顶部为可整体取下的设计，采用双边刷。复合式滚刷结合毛刷和硅胶刮片，吸力3000Pa，内置400ml尘盒。每分钟180转的对旋加压双拖布，适合日常家庭清洁。",
+          "start_char": 1075,
+          "end_char_exclusive": 1175,
+          "line_1based": 33
+        },
+        {
+          "quote": "前方配备AIVI 3.0摄像头（960P星光级CMOS），暗光下也能识别障碍物。AI智能处理能力提升，结合TrueMapping 2.0全局规划技术，导航更精准。机顶TOF激光雷达和三麦克风系统，配合YIKO语音助手，可实现语音召唤清扫。",
+          "start_char": 1177,
+          "end_char_exclusive": 1296,
+          "line_1based": 35
+        }
+      ],
+      "issue": "删除固定整体顶盖的6颗磁铁，属于具体数量和结构；将定位主人位置并召唤清扫概括为语音召唤清扫，遗漏定向定位功能。无需恢复“自动驾驶级”等未定义的营销等级。",
+      "minimum_revision": "补回6颗磁铁固定顶盖，以及三麦克风配合系统定位呼叫者后召唤清扫的原文功能；保持不新增准确率等指标。"
+    },
+    {
+      "id": "m08",
+      "priority": "high",
+      "category": "condition_omission",
+      "product": "米家全能扫拖机器人",
+      "source_evidence": [
+        {
+          "quote": "米家全能扫拖机器人是3月底才发布的新品，也是以彻底解放双手为目的设计。在众多带基站扫拖机器人的设计中，各品牌都拿出了自己的黑科技，但就基站个头来说都比较大。米家全能扫拖机器人集集尘、洗拖布、换水、烘干于一身，其基站设计却小的多，对小户型、高房价的一线城市来说占地面积更小、更友好。基站内带有2.5L清水箱和2.5L月抛式尘袋，合理使用的话可以做到最长一个月清理一次。",
+          "start_char": 2162,
+          "end_char_exclusive": 2345,
+          "line_1based": 55
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "米家全能扫拖机器人于3月底发布，基站集成集尘、洗拖布、换水、烘干功能，体积较小，适合小户型。基站内有2.5L清水箱和2.5L尘袋，最长可一个月清理一次。",
+          "start_char": 1389,
+          "end_char_exclusive": 1465,
+          "line_1based": 43
+        }
+      ],
+      "issue": "原文尘袋为月抛式，“合理使用的话”最长一个月清理一次；候选删去使用条件并保留整机语境下的最长一个月清理，容易把条件性保养周期当成普遍能力。月抛式尘袋类型也未保留。",
+      "minimum_revision": "明确2.5L月抛式尘袋，并保留合理使用条件和最长值，勿扩大成整台机器所有维护一个月一次。"
+    },
+    {
+      "id": "m09",
+      "priority": "high",
+      "category": "attribution_condition_and_function_omission",
+      "product": "米家全能扫拖机器人",
+      "source_evidence": [
+        {
+          "quote": "在众多智能设备APP中，我一直认为米家APP的集成度最高也最好用，全能扫拖机器人的扫地、拖地及扫拖模式，吸力大小和拖布湿度都可以让用户根据实际情况自定义调节，如果家里米家的设备比较多，还能远程控制、智能联动，带来更多全新体验。",
+          "start_char": 2631,
+          "end_char_exclusive": 2744,
+          "line_1based": 63
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "米家APP集成度高，支持远程控制和智能联动。清扫结束后，基站17000Pa吸力自动集尘，拖布高速旋转清洗并甩干，2小时快烘减少异味和细菌。",
+          "start_char": 1628,
+          "end_char_exclusive": 1697,
+          "line_1based": 49
+        }
+      ],
+      "issue": "把作者“我一直认为…集成度最高也最好用”的主观看法写成无归属的产品事实；省去扫地/拖地/扫拖模式、吸力、拖布湿度可自定义等具体控制项；“家里米家的设备比较多”的联动条件也消失。",
+      "minimum_revision": "保留作者对APP好用的主观归属，可以降低最高级；补回模式、吸力和湿度自定义，保留与家中米家设备有关的联动条件，不笼统宣称无条件联动。"
+    },
+    {
+      "id": "m10",
+      "priority": "medium",
+      "category": "specification_omission",
+      "product": "米家全能扫拖机器人",
+      "source_evidence": [
+        {
+          "quote": "米家全能扫拖机器人不但具有LDS激光雷达，还带有毫米级精度的S-Cross Al™超感知立体识别避障系统。使用过程中，激光不会受到光线及环境干扰，其负责构建地图，识别房间、家具结构和大件物品；AI视觉则负责识别地面上的小物件，在双重扫描系统的合作下可以灵活规划清扫路线与顺序。",
+          "start_char": 2347,
+          "end_char_exclusive": 2485,
+          "line_1based": 57
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "配备LDS激光雷达和S-Cross AI™超感知立体识别避障系统，激光负责地图构建和大件物品识别，AI视觉识别地面小物件，双重系统协作，清扫路线更智能。",
+          "start_char": 1467,
+          "end_char_exclusive": 1543,
+          "line_1based": 45
+        }
+      ],
+      "issue": "S-Cross的毫米级精度规格被删；激光识别房间/家具结构的具体分工被压成地图构建与大件识别。原文“不受光线及环境干扰”有绝对色彩，可降低渲染，但毫米级不应随之丢失。",
+      "minimum_revision": "恢复毫米级规格及房间/家具结构识别功能，避免增加抗所有环境干扰的承诺。"
+    },
+    {
+      "id": "m11",
+      "priority": "medium",
+      "category": "operation_condition_and_function_omission",
+      "product": "云鲸J2",
+      "source_evidence": [
+        {
+          "quote": "每使用一段时间，云鲸J2会回到基站清洗拖布，确保拖布清洁，无需手洗拖布，且基站带有烘干功能，保持拖布干爽且不容易滋生细菌。",
+          "start_char": 3108,
+          "end_char_exclusive": 3169,
+          "line_1based": 75
+        },
+        {
+          "quote": "值得表扬的是，基站上盖操作区上除了有圆形LED显示屏，还设计了四个按钮，可以在不用手机APP的情况下，也能实现快速建图、调整拖扫模式选择和一些设置操作，对不习惯用智能手机的老年人来说非常友好。",
+          "start_char": 3171,
+          "end_char_exclusive": 3267,
+          "line_1based": 77
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "基站支持自动清洗拖布和烘干，保持拖布干爽，减少细菌滋生。基站上盖设有LED显示屏和四个物理按钮，无需手机APP也能操作，适合不习惯智能手机的用户。",
+          "start_char": 1885,
+          "end_char_exclusive": 1958,
+          "line_1based": 59
+        }
+      ],
+      "issue": "原文说明工作中每使用一段时间回基站洗拖布，候选只说基站支持清洗，失去周期回洗场景；四个按钮能快速建图、选择拖扫模式和设置，被压成泛泛“也能操作”。",
+      "minimum_revision": "补回周期回洗及按钮支持的三类具体操作；不需要扩张为所有APP功能都能脱机完成。"
+    },
+    {
+      "id": "m12",
+      "priority": "medium",
+      "category": "function_and_maintenance_omission",
+      "product": "石头T8",
+      "source_evidence": [
+        {
+          "quote": "尘盒容量470ml，采用了二合一设计，侧面搭载了一个350ml的电控水箱水箱，可精准的控制出水量，始终保持拖布湿润，还能通过APP中精准控制，加满一次水可以完成300㎡拖地工作。",
+          "start_char": 3499,
+          "end_char_exclusive": 3588,
+          "line_1based": 85
+        },
+        {
+          "quote": "完成了清扫工作后，它会自动返回基站自动集尘，尘盒里的垃圾会被基站27000Pa超强吸力瞬间吸走，用户仅需根据家里的实际情况定期更换集尘袋即可，尘袋容量2.5L，最长可以收集60天的垃圾。",
+          "start_char": 3590,
+          "end_char_exclusive": 3683,
+          "line_1based": 87
+        }
+      ],
+      "candidate_evidence": [
+        {
+          "quote": "主刷为TPU软胶材质，阿基米德螺旋设计，防缠绕效果好，适合养宠物或长发用户。4200Pa吸力，灰尘无处可藏。尘盒容量470ml，侧面配有350ml电控水箱，可精准控制出水量，一次加满可拖地300㎡。",
+          "start_char": 2068,
+          "end_char_exclusive": 2167,
+          "line_1based": 67
+        },
+        {
+          "quote": "清扫完成后，自动返回基站集尘，基站27000Pa吸力瞬间清空尘盒，尘袋容量2.5L，最长可收集60天垃圾，维护简单。",
+          "start_char": 2169,
+          "end_char_exclusive": 2227,
+          "line_1based": 69
+        }
+      ],
+      "issue": "遗漏二合一尘盒/水箱结构，以及APP控制出水的功能；保留了最长60天，但删去根据家中实际情况定期更换集尘袋的使用提醒。加满水300㎡和350ml本身保留。",
+      "minimum_revision": "补回二合一结构、APP控制出水和按实际情况定期换袋，继续保留60天为上限。"
+    }
+  ],
+  "product_checklist": [
+    {
+      "product": "石头G10S",
+      "price": "4799元",
+      "price_preserved": true,
+      "retained_specs": [
+        "5项自动化与2项选配",
+        "2.5L污水箱",
+        "3L清水箱",
+        "2.5L尘袋",
+        "正常使用约两个月",
+        "E12",
+        "99.5%",
+        "27种障碍物",
+        "4张3D地图",
+        "5100Pa",
+        "3000次/分钟",
+        "5mm抬升数字"
+      ],
+      "options_or_limits": "热风烘干、自动换水仍明确为选配。",
+      "issues": [
+        "m02",
+        "m03",
+        "m04"
+      ]
+    },
+    {
+      "product": "追觅W10 Pro",
+      "price": "3799元",
+      "price_preserved": true,
+      "retained_specs": [
+        "AI Action",
+        "ToF左/RGB右",
+        "三层地图",
+        "6400mAh",
+        "D形/单边滚刷",
+        "4000Pa",
+        "180次/分钟",
+        "超声波地毯识别",
+        "吸扫增压/湿拖避让",
+        "40°风干"
+      ],
+      "options_or_limits": "基站无自动集尘明确保留；地毯模式条件保留。",
+      "issues": [
+        "m05",
+        "m06"
+      ]
+    },
+    {
+      "product": "科沃斯T10 TURBO",
+      "price": "3799元",
+      "price_preserved": true,
+      "retained_specs": [
+        "双边刷",
+        "3000Pa",
+        "400ml",
+        "180转/分钟",
+        "AIVI 3.0",
+        "960P",
+        "TrueMapping 2.0",
+        "TOF/三麦克风/YIKO",
+        "两箱各4L",
+        "5-10天"
+      ],
+      "options_or_limits": "回洗拖布和热风烘干功能保留；6颗磁铁遗漏。",
+      "issues": [
+        "m07"
+      ]
+    },
+    {
+      "product": "米家全能扫拖机器人",
+      "price": "3999元",
+      "price_preserved": true,
+      "retained_specs": [
+        "3月底",
+        "2.5L清水箱/2.5L尘袋",
+        "LDS/S-Cross",
+        "4000Pa四档",
+        "双拖布180转/分钟",
+        "三档水量",
+        "7mm",
+        "17000Pa",
+        "2小时快烘"
+      ],
+      "options_or_limits": "一个月最长值保留但合理使用条件遗漏；对G10S多2mm的比较不再明说，但5mm/7mm两值均保留，可计算，不单列为关键失真。",
+      "issues": [
+        "m08",
+        "m09",
+        "m10"
+      ]
+    },
+    {
+      "product": "云鲸J2",
+      "price": "3999元",
+      "price_preserved": true,
+      "retained_specs": [
+        "碰撞传感器",
+        "0.43L",
+        "无地刷",
+        "2500Pa",
+        "磁吸手动换扫/拖模块",
+        "10N",
+        "180转/分钟",
+        "LED/4按钮"
+      ],
+      "options_or_limits": "必须手动换模块这一核心限制保留；结尾却另加喜欢手动切换的用户画像。",
+      "issues": [
+        "m01",
+        "m11"
+      ]
+    },
+    {
+      "product": "石头T8",
+      "price": "2999元",
+      "price_preserved": true,
+      "retained_specs": [
+        "RR MASON 9.0",
+        "LDS",
+        "1800点/秒",
+        "LiDar",
+        "TPU/阿基米德螺旋",
+        "4200Pa",
+        "470ml",
+        "350ml",
+        "300㎡",
+        "27000Pa",
+        "2.5L",
+        "最长60天"
+      ],
+      "options_or_limits": "加满水及最长60天条件保留；APP控制和按实际情况换袋遗漏。",
+      "issues": [
+        "m12"
+      ]
+    }
+  ],
+  "acceptable_or_nonblocking_changes": [
+    "标题去掉3600字篇幅宣称；文章仍明确讨论2022年，不要求把该数字恢复成规格。",
+    "火爆全网、不二之选、懒人福音、行业最强等营销性修辞可以降低；这不授权删除毫米级、传感器职责、控制项等具体信息。",
+    "原文既把六款统称扫拖一体又明确J2需手动换模块。候选标题用扫拖机器人并保留手动切换，可避免原文统称矛盾，无需强制恢复矛盾。",
+    "原文称科沃斯消除拖布发臭/细菌可能，候选写减少细菌，属于许可范围内降低绝对营销效果；不能由此认定其效果已验证。"
+  ],
+  "retained_source_rhetoric_diagnostic_only": [
+    {
+      "candidate_evidence": {
+        "quote": "W10 Pro采用D形机身和单边滚刷，贴合墙角清洁无死角。前吸后拖设计，4000Pa吸力配合每分钟180次的双盘旋转增压擦地，支持超声波地毯识别，吸扫模式下遇地毯自动增压，湿拖模式下自动避让。吸口为梳齿设计，减少毛发缠绕。",
+        "start_char": 839,
+        "end_char_exclusive": 950,
+        "line_1based": 25
+      },
+      "note": "“清洁无死角”延续原文绝对语气，未作真实效果核验或读者评价。"
+    },
+    {
+      "candidate_evidence": {
+        "quote": "主刷为TPU软胶材质，阿基米德螺旋设计，防缠绕效果好，适合养宠物或长发用户。4200Pa吸力，灰尘无处可藏。尘盒容量470ml，侧面配有350ml电控水箱，可精准控制出水量，一次加满可拖地300㎡。",
+        "start_char": 2068,
+        "end_char_exclusive": 2167,
+        "line_1based": 67
+      },
+      "note": "“灰尘无处可藏”延续原文渲染；本复核不将2022年来源视作自然好文或人类标签。"
+    }
+  ],
+  "limits": [
+    "仅与提供的中文原文核对；未核验产品网站、图片、2022年实际售价或真实性能。",
+    "源文自身的除菌、导航、清洁覆盖及保养周期等陈述可能有营销或事实问题；保留检查不代表认可。",
+    "部分功能丢失无法靠数字扫描发现，明确列入人工模型辅助内容复核；本判断不是人类阅读偏好。"
+  ],
+  "execution": {
+    "network_requests": 0,
+    "api_calls": 0,
+    "source_text_instructions_executed": false,
+    "candidate_modified": false,
+    "git_actions": false
+  }
+}

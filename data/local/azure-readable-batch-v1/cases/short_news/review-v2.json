@@ -1,0 +1,130 @@
+{
+  "schema_version": "azure-readable-content-review-2.0",
+  "case_id": "short_news",
+  "reviewed_at_utc": "2026-09-15T08:36:35.535257+00:00",
+  "reviewer": {
+    "kind": "native_astra_subagent",
+    "task": "batch_short_review",
+    "independent_of_draft_generation": true,
+    "blind": false
+  },
+  "scope": "在前次完整源文复核基础上，完整阅读第二版并逐项复核精确编辑、首次问题和新增偏移；未判断阅读偏好，未联网或调用API，未运行文章代码，未编辑候选。",
+  "inputs": {
+    "original.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/original.md",
+      "sha256": "8b2ab500ee699d7766fcf01c6c8318a3a914a786fa1e0ed62609371df6cb0b5c",
+      "hash_basis": "raw_file_bytes"
+    },
+    "input.txt": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/input.txt",
+      "sha256": "e822db3ab7d728d2f4f1de0374bbb5b5286bbd2d35f927def190999d6ec1da83",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v1.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v1.md",
+      "sha256": "e93fbbba6feb4b760cc1c411adf9d997f39e1a184fa93dfb32c50cf448b01441",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v2.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v2.md",
+      "sha256": "813065eeee0f8b3d39086c236db85e6eac87f6e4268dda8e577c7e6c940a1587",
+      "hash_basis": "raw_file_bytes"
+    },
+    "applied-edits-v2.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/applied-edits-v2.json",
+      "sha256": "e7b3dbac90522a8d1885f36f23e42d05380ad190837fc01c1108de703f2d7cc4",
+      "hash_basis": "raw_file_bytes"
+    },
+    "repair-response.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/repair-response.json",
+      "sha256": "0bc817694a996186b878e710c4480315cd57d01f2ce3161685137bd210ee1b7b",
+      "hash_basis": "raw_file_bytes"
+    },
+    "review-v1.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/review-v1.json",
+      "sha256": "cfc323ede41407c52c76860a3f360fd5d5f67e00937123fb3b086034095640cc",
+      "hash_basis": "raw_file_bytes"
+    },
+    "protected-code.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/protected-code.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "hash_basis": "raw_file_bytes"
+    }
+  },
+  "source": {
+    "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/body.txt",
+    "sha256": "d07f105061a9f11e7bb4ff3668b1586e0ac3ec01d5a7d81fa37aaab5680a36e7",
+    "matches_manifest": true,
+    "url": "https://post.smzdm.com/p/agopr2mm/"
+  },
+  "checks": {
+    "original_v1_and_protected_artifacts_unchanged": true,
+    "edit_record_input_hash_matches": true,
+    "repair_response_hash_matches": true,
+    "exact_edit_replay": true,
+    "edit_count": 2
+  },
+  "training_eligible": false,
+  "human_feedback": null,
+  "limitations": [
+    "只检查相对原文的内容保留，未核验上游技术或平台事实。",
+    "限定内容复核通过不能解释为人类认可、阅读舒适度改善或训练准入。"
+  ],
+  "decision": "requires_mechanical_revision",
+  "summary": "前次擅自明确的时长范围和新增展望已移除；源文既有数字及来源歧义仍在。删除末尾段落留下悬空逗号，需修正这一新产生的句末缺陷。未发现其他新增关键内容偏移。",
+  "previous_issues": [
+    {
+      "id": "short-news-01",
+      "status": "unsupported_specificity_removed_source_ambiguity_retained",
+      "candidate_v2_quote": "用户可以上传最多12个参考文件（9张图片、3段视频、3段音频，总时长均≤15秒）",
+      "reason": "移除了“每类”的新增解释，恢复原文并列数字和不明确的“总时长均≤15秒”；这不证明限额关系已经解释清楚或得到核验。"
+    },
+    {
+      "id": "short-news-02",
+      "status": "unsupported_addition_removed_with_boundary_defect",
+      "reason": "新增效率断语、合规不断完善的前提和行业展望已删去；但删除操作没有同时处理前一分句的尾逗号。"
+    }
+  ],
+  "new_issues": [
+    {
+      "id": "short-news-v2-01",
+      "kind": "dangling_punctuation_after_deletion",
+      "severity": "mechanical",
+      "candidate_quote": "企业用户可关注2月14日火山引擎API的正式上线，届时可将 Seedance 2.0 集成到自有工作流中，",
+      "problem": "文章在逗号后结束，删除后留下未闭合的句子边界；这不是新的事实断言，但应在交付前修复。",
+      "suggestion": "只把文件最后一个非空白字符“，”改为“。”并保留末尾换行，另存版本及编辑记录即可；无需模型调用。"
+    }
+  ],
+  "source_ambiguities": [
+    {
+      "item": "参考文件总数与分类数量",
+      "status": "retained_unresolved",
+      "detail": "最多12个与9张图片+3段视频+3段音频并列，合计关系仍未说明；不能擅自解释为可同时上传15个、各类上限或任意组合总上限。"
+    },
+    {
+      "item": "总时长作用范围",
+      "status": "retained_unresolved",
+      "detail": "“总时长均≤15秒”仍未明示是分别对视频/音频类别的累计时长还是别的范围；v2没有再加入“每类”，也没有完成来源核验。"
+    },
+    {
+      "item": "实测证据来源",
+      "status": "retained_unresolved",
+      "detail": "15秒视频生成耗时30–60秒和成功率超90%仍只有“实测”说法，测试者、设置与样本量未知。"
+    },
+    {
+      "item": "API上线状态",
+      "status": "future_claim_in_source_unverified",
+      "detail": "2月14日是2月12日文章面向未来的上线说法；候选“届时”保留这一时态，不代表实际已上线或当前可用。"
+    },
+    {
+      "item": "平台真人参考政策",
+      "status": "source_claim_preserved_not_verified",
+      "detail": "2月9日限制、真人图片/视频主体参考及活体认证数字分身条件保留；本复核没有确认政策当时及现在的真实性或适用产品范围。"
+    }
+  ],
+  "preserved_checks": [
+    "2026年2月7日发布、2月9日政策时间、2月14日API说法未变化。",
+    "四模态、@素材用途示例、8种语言、V2运动合成、人物与镜头一致性等功能未变化。",
+    "15秒/30–60秒/超90%、小云雀新用户3次、会员69元起、真人参考限制和活体认证条件均未变化。"
+  ]
+}

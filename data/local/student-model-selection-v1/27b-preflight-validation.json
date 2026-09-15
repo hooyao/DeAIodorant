@@ -1,0 +1,17 @@
+{
+  "script_sha256": "18b3ecab282c2b8c7c9883015a3b153d80e142c712f99a8f218f46b1c5b2ab44",
+  "model": "Qwen/Qwen3.5-27B",
+  "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "checks": [
+    "source_mismatch_rejected",
+    "teacher_mismatch_rejected",
+    "local_windows_execution_rejected",
+    "eos_vs_length_stop_distinguished",
+    "default_offline_plan_passed"
+  ],
+  "gpu_execution": false,
+  "weights_downloaded": false,
+  "training_started": false,
+  "fixes": "27b-preflight-review.json中的两个P2已修复；原审查输入另存preflight-before-review-v1.py",
+  "gpu_compatibility": "not_yet_tested"
+}

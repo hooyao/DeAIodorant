@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-09-15T08:21:15.614180+00:00",
+  "budget_before": {
+    "budget_usd": "45",
+    "accounted_usd": "0.00022",
+    "remaining_usd": "44.99978",
+    "actual_billed_usd": null,
+    "basis": "local_budget_estimate_not_verified_billing",
+    "unfinished_reservations": 0,
+    "retained_unknown_cost_reservations": 0
+  },
+  "settings_sha256": "18a9f32256eceedd826eb407cbdbe565f1582319dc8bc2112ef076575445cdf7",
+  "runner_sha256": "055b75ba9ef7a0a230ed233b4bef3e436862cc063f7a04c3773b2b21453bc002",
+  "timeout_seconds": 120,
+  "batch_plan_budget_usd": "3"
+}

@@ -18,6 +18,8 @@ Client 1.1 honors Retry-After on HTTP 429/503. Waits longer than 60 seconds
 return RetryDeferredError with a durable not-before deadline; callers must
 schedule a later invocation rather than starting an early retry. Existing
 successful caches and ledger accounting remain readable without migration.
+Client 1.2 adds optional provider and quantization filters before hashing and
+budget reservation. Omitting them preserves the prior request body.
 """
 
 from __future__ import annotations
@@ -43,12 +45,13 @@ import requests
 MODELS_URL = "https://openrouter.ai/api/v1/models"
 COMPLETIONS_URL = "https://openrouter.ai/api/v1/chat/completions"
 SCHEMA_VERSION = "compact-refiner-openrouter-1.0"
-CLIENT_VERSION = "compact-refiner-openrouter-1.1"
+CLIENT_VERSION = "compact-refiner-openrouter-1.2"
 RETRY_POLICY_VERSION = "openrouter-retry-after-1.0"
 MAX_RETRY_SLEEP_SECONDS = 60
 TRANSIENT_STATUS_CODES = frozenset({408, 429, 500, 502, 503, 504})
 _SECRET_PATTERN = re.compile(r"sk-or-v1-[A-Za-z0-9_-]+")
 _LABEL_PATTERN = re.compile(r"[A-Za-z0-9 ._:/()+@-]{1,200}\Z")
+_QUANTIZATIONS = frozenset({"int4", "int8", "fp4", "fp6", "fp8", "fp16", "bf16", "fp32"})
 
 
 class OpenRouterError(RuntimeError):
@@ -481,6 +484,8 @@ class OpenRouterClient:
         reasoning: dict[str, Any] | None = None,
         seed: int | None = 20260914,
         purpose: str | None = None,
+        provider_only: list[str] | None = None,
+        quantizations: list[str] | None = None,
     ) -> dict[str, Any]:
         """Return ``{text, metadata}``, or raise a safe typed failure.
 
@@ -489,6 +494,8 @@ class OpenRouterClient:
         token usage, and an explicit nonnegative ``usage.cost``. Reasoning fields
         in the response are never retained. ``purpose`` is a short audit label,
         not model input, and does not change cache identity.
+        ``provider_only`` and ``quantizations`` constrain provider routing and
+        participate in request identity. ``None`` preserves default routing.
         """
 
         prompt_price = _money(prompt_price_per_token)
@@ -503,6 +510,15 @@ class OpenRouterClient:
             raise OpenRouterError("invalid_seed")
         if purpose is not None and self._label(purpose) != purpose:
             raise OpenRouterError("invalid_purpose_label")
+        for field, values in (("provider_only", provider_only), ("quantizations", quantizations)):
+            if values is not None and (
+                not isinstance(values, list) or not values
+                or any(not isinstance(value, str) or not value.strip()
+                       or value != value.strip() or self._label(value) != value for value in values)
+            ):
+                raise OpenRouterError(f"invalid_{field}")
+        if quantizations is not None and any(value not in _QUANTIZATIONS for value in quantizations):
+            raise OpenRouterError("invalid_quantizations")
         if not isinstance(messages, list) or not messages:
             raise OpenRouterError("missing_messages")
         for message in messages:
@@ -537,6 +553,10 @@ class OpenRouterClient:
             body["seed"] = seed
         if reasoning is not None:
             body["reasoning"] = reasoning
+        if provider_only is not None:
+            body["provider"]["only"] = list(provider_only)
+        if quantizations is not None:
+            body["provider"]["quantizations"] = list(quantizations)
         if self._contains_secret(body):
             raise OpenRouterError("credential_in_request_content")
         identity = {"method": "POST", "url": COMPLETIONS_URL, "body": body}

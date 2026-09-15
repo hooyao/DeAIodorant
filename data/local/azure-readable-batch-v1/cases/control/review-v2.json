@@ -1,0 +1,106 @@
+{
+  "schema_version": "azure-readable-content-review-2.0",
+  "case_id": "control",
+  "reviewed_at_utc": "2026-09-15T08:36:35.524407+00:00",
+  "reviewer": {
+    "kind": "native_astra_subagent",
+    "task": "batch_short_review",
+    "independent_of_draft_generation": true,
+    "blind": false
+  },
+  "scope": "在前次完整源文复核基础上，完整阅读第二版并逐项复核精确编辑、首次问题和新增偏移；未判断阅读偏好，未联网或调用API，未运行文章代码，未编辑候选。",
+  "inputs": {
+    "original.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/original.md",
+      "sha256": "419495c8a4e57e8c165c45720738a36ae3a77eca5a44dfdd7db5a577b9e1da20",
+      "hash_basis": "raw_file_bytes"
+    },
+    "input.txt": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/input.txt",
+      "sha256": "e6d2ebb5755f009a53a58ce1baa4f176b1ba740497ff205d5d9b52c0237859d2",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v1.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/candidate-v1.md",
+      "sha256": "fe81ca8895ef4c4d1229c53f90ecc1cd51bf449b6ebb02f95324a8b64ec0b9d8",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v2.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/candidate-v2.md",
+      "sha256": "014f7c153bc5ed4cdba2bcb6993d3b05ad544d6c2c4e4bcb516ac472b1f93138",
+      "hash_basis": "raw_file_bytes"
+    },
+    "applied-edits-v2.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/applied-edits-v2.json",
+      "sha256": "ffa3050384daced877d26e61350a2fcdcbc0b10b0166f0f135740fa8f91bbdb3",
+      "hash_basis": "raw_file_bytes"
+    },
+    "repair-response.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/repair-response.json",
+      "sha256": "ec7edcd6b46e8e17e0794e1f9d75ac3b13e225a3360312e3e0e20f9a4d0e4a39",
+      "hash_basis": "raw_file_bytes"
+    },
+    "review-v1.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/review-v1.json",
+      "sha256": "2208121dbea4763b205f9106dbe54f2df57ed83ce2300b50c1774771b0e31836",
+      "hash_basis": "raw_file_bytes"
+    },
+    "protected-code.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/protected-code.json",
+      "sha256": "d6b69674efc49acfccecca040a1b93166f399a4adbf9875dae5109c1cbebaa99",
+      "hash_basis": "raw_file_bytes"
+    }
+  },
+  "source": {
+    "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt",
+    "sha256": "f3dd1e6d13acf98ba6e9354fdd197c7016a7d1d4d958b8336729f5e4aec65a9c",
+    "matches_manifest": true,
+    "url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ"
+  },
+  "checks": {
+    "original_v1_and_protected_artifacts_unchanged": true,
+    "edit_record_input_hash_matches": true,
+    "repair_response_hash_matches": true,
+    "exact_edit_replay": true,
+    "edit_count": 3,
+    "protected_code_exact": true
+  },
+  "training_eligible": false,
+  "human_feedback": null,
+  "limitations": [
+    "只检查相对原文的内容保留，未核验上游技术或平台事实。",
+    "限定内容复核通过不能解释为人类认可、阅读舒适度改善或训练准入。"
+  ],
+  "decision": "pass_within_source_preservation_scope",
+  "summary": "三项前次问题均已解决；三处精确编辑外没有其他文本改变，未发现新增关键内容偏移。",
+  "previous_issues": [
+    {
+      "id": "control-01",
+      "status": "resolved",
+      "candidate_v2_quote": "该版本要求使用 Vitest v4，取代了此前对 Vitest v3 的要求",
+      "reason": "恢复为Vitest版本要求，不再断言库只有一项依赖。"
+    },
+    {
+      "id": "control-02",
+      "status": "resolved",
+      "reason": "受保护代码正文与b005原始text逐字符相同，包括此前改变的第2—5行缩进；未执行代码。"
+    },
+    {
+      "id": "control-03",
+      "status": "resolved",
+      "candidate_v2_quote": "修复了用户长期反馈的两项模块级 mock 被静默忽略的问题。",
+      "reason": "两项问题及用户反馈来源已补回，mock启动时序说明保留。"
+    }
+  ],
+  "new_issues": [],
+  "preserved_checks": [
+    "Nuxt Test Utils 4.0.0、Vitest v4与此前v3、happy-dom>=20.0.11、jsdom>=27.4.0、@jest/globals不支持30.0.0以下、@cucumber/cucumber>=11七项版本约束未受修订影响。",
+    "2026年2月7日发布日期、setupFiles移至beforeAll、mock注册先于Nuxt启动、describe顶层组合式函数的错误及迁移方式保留。",
+    "registerEndpoint两项修复、mock导出由undefined改为报错及importOriginal建议、维护者/许可证/下载量均未改变。"
+  ],
+  "source_ambiguities": [],
+  "source_limitations": [
+    "“合并包生命周期”的具体范围原文未展开，候选沿用该说法；属于源文解释不足，没有在本轮编造解释。",
+    "原文中Vitest导出规则、importOriginal使用建议、依赖下限及下载量只按原文保留，本轮没有查上游文档确认。"
+  ]
+}

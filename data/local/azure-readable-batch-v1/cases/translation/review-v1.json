@@ -1,0 +1,241 @@
+{
+  "version": "azure-readable-batch-translation-preservation-review-1.0",
+  "case_id": "translation",
+  "reviewed_at_utc": "2026-09-15",
+  "reviewer": {
+    "model_family": "Astra",
+    "execution": "native_subagent",
+    "writer": "Azure GPT-4.1",
+    "blinded": false,
+    "context": "知道开发目的、编写模型及项目已有反馈；只复核本案例，未对用户阅读偏好作判断。"
+  },
+  "inputs": {
+    "original_view_path": "data/local/azure-readable-batch-v1/cases/translation/original.md",
+    "original_view_raw_sha256": "693388cb7cbbbd91adc7d90d304faa915ff2d5ff022e06f5034b6194e69d1f99",
+    "input_path": "data/local/azure-readable-batch-v1/cases/translation/input.txt",
+    "input_raw_sha256": "dc872ff499dba060867f681b1e27228a81ffbaa8b902968982d3f29efd20e71f",
+    "source_body_path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/body.txt",
+    "source_body_raw_sha256": "08363c162d1d7cb2d6bcdbf6daddd4c71c13b664dfe820797f1a44c8c489ca7e",
+    "candidate_path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v1.md",
+    "candidate_raw_sha256": "760ef621574d048bfb4e40041e6e0cba93c853aae75011dae68265c87a8ea630",
+    "source_dom_path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/article.dom.html",
+    "source_dom_raw_sha256": "bd32e51c3d49ca4eb5e3d7b8195b11d03265eba20ddadaa3ef9a65ffd34d59f6",
+    "line_number_basis": "以下行号均以 original.md 与 candidate-v1.md 的 UTF-8 解码行计数；源 DOM 只用于核实既存链接，没有网络请求。"
+  },
+  "verdict": "needs_content_revision",
+  "conclusion": "候选保留了监控、可观察性与变更感知的主线、三个服务的例子、2%阈值、查询代码、七个月与一整天等表面要素；但两项故障实例的关键机制、部分条件和来源归属遭到删减，另有确定性增强和新增错误链接。不能作为已通过全文保真检查的训练目标。篇幅缩短本身不构成本结论，也不否定其可能的阅读价值。",
+  "human_readability_result": null,
+  "issues": [
+    {
+      "id": "T01",
+      "severity": "major",
+      "kind": "unsupported_strengthening",
+      "original_lines": [
+        41
+      ],
+      "candidate_lines": [
+        37
+      ],
+      "source_quote": "在转向微服务之前，我曾在单体环境中工作，所以对这些类型的环境之间的巨大差异有第一手经验。在单体系统中，监控和可观察性是很好的元素，而在微服务中它们是完全必要的。",
+      "candidate_quote": "在单体系统中，监控和可观察性已足够支撑日常运维。",
+      "problem": "原文说作者有两种环境的经验，并认为这两类工具在单体环境有用、在微服务环境必要。候选新增“已足够”的充分性结论，原文没有排除单体环境还需要其他工具；作者的经验归属与微服务中的必要性也被删掉。",
+      "suggestion": "恢复作者经历归属，将单体部分写成“有帮助／发挥作用”，保留作者认为微服务环境离不开这些能力的原意，避免新增充分性断言。"
+    },
+    {
+      "id": "T02",
+      "severity": "major",
+      "kind": "lost_technical_condition",
+      "original_lines": [
+        29
+      ],
+      "candidate_lines": [
+        26
+      ],
+      "source_quote": "没有被钉住导致你无法控制的雪球效应的版本",
+      "candidate_quote": "版本变更及其引发的连锁反应",
+      "problem": "候选把未固定版本这一具体风险条件抽象成所有版本变更；“未固定”是例子解释连锁变化失控的有效信息，不属于需要删掉的翻译修辞。",
+      "suggestion": "用自然中文保留“版本未固定，可能引发难以控制的连锁变化”；应用／基础设施配置清单中同时保留云环境配置这一原文明确范围。"
+    },
+    {
+      "id": "T03",
+      "severity": "major",
+      "kind": "invented_cause_and_lost_failure_mechanism",
+      "original_lines": [
+        55,
+        57
+      ],
+      "candidate_lines": [
+        47
+      ],
+      "source_quote": "我们花了一整天的时间来研究这个错误，最终了解到这是七个月前实现的一个变更。数据库中的列类型是整数，而我们试图插入更大的数字，因此需要一个大整数数据/列类型。",
+      "candidate_quote": "团队花费一整天，才发现是七个月前的数据库列类型变更导致新数据无法插入。",
+      "problem": "原文没有明确说七个月前实施的变更就是“修改了数据库列类型”。候选擅自补出了具体变更种类，同时删除了整数列容纳不了更大数值、需要大整数类型这一故障机制。只保留“类型不匹配”不足以替代该实例的解释信息。",
+      "suggestion": "保留关键服务大量报错、只有“无效值”提示、搜索系统和近期变更耗时一整天、追溯到七个月前的变更、整数列需要容纳更大数字及需要大整数类型；对七个月前到底改了什么维持原文边界。"
+    },
+    {
+      "id": "T04",
+      "severity": "major",
+      "kind": "lost_evidence_chain_uncertainty_and_attribution",
+      "original_lines": [
+        87,
+        89
+      ],
+      "candidate_lines": [
+        67
+      ],
+      "source_quote": "就在 Datadog 警报被触发之前，我们可以看到有一个健康状况变更事件，表明这个应用程序没有足够的可用副本。在这之前，该应用的一个新版本部署完毕。可能是在部署过程中，可用性没有得到保证，或者是代码变更影响了这个应用，并引入了一个错误或重大变更。",
+      "candidate_quote": "以 Kubernetes（K8s）环境为例，变更感知工具可以显示 DataDog 警报触发前，某服务刚刚完成新版本部署，且健康状况发生变化。工程师只需放大该部署细节，即可在几秒钟内定位问题原因。",
+      "problem": "候选删除可用副本不足这个核心观测、部署在健康变化之前的严格次序，以及部署可用性不足／代码问题两项尚未确定的解释。它还把原文明确介绍的 Komodor 截图案例改成一般 K8s 工具示例；“几秒钟”虽出自原文，但失去案例范围后更像一般保证。",
+      "suggestion": "明确这是作者介绍的 Komodor 例子；按“新版本部署→可用副本不足的健康事件→DataDog告警”写清时间关系，保留两项可能原因和继续查看部署细节的动作。没有核验图片，只能归属为原文描述，不能补写实际确诊结果。"
+    },
+    {
+      "id": "T05",
+      "severity": "major",
+      "kind": "unsupported_source_url",
+      "original_lines": [
+        105
+      ],
+      "candidate_lines": [
+        81
+      ],
+      "source_quote": "Why Change Intelligence is Necessary to Effectively Troubleshoot Modern Applications",
+      "candidate_quote": "[原文链接：Why Change Intelligence is Necessary to Effectively Troubleshoot Modern Applications](https://komodor.com/blog/why-change-intelligence-is-necessary-to-effectively-troubleshoot-modern-applications/)",
+      "source_dom_href": "https://www.infoq.com/articles/beyond-monitoring-change-intelligence/",
+      "problem": "冻结正文只含英文标题，已存 DOM 的实际原文链接指向 InfoQ 英文文章。候选自行补出的 Komodor 地址与该来源不一致；本次没有访问它，不能断言其是否存在。",
+      "suggestion": "恢复已存 DOM 中的 InfoQ 原文链接，或只保留原输入的英文标题；不得猜测 URL。"
+    },
+    {
+      "id": "T06",
+      "severity": "moderate",
+      "kind": "time_and_modality_strengthening",
+      "original_lines": [
+        93
+      ],
+      "candidate_lines": [
+        71
+      ],
+      "source_quote": "让组织走到今天的工具，可能不足以为明天的系统和堆栈提供动力。",
+      "candidate_quote": "传统的日志、追踪和指标工具已难以满足全部需求。",
+      "problem": "候选把针对未来的可能性判断改为当前已发生的不足，改变了时间和确定性。原文没有在此证明传统工具当前普遍不满足需求。",
+      "suggestion": "保留随规模增大、现有工具将来可能不足的条件与情态。后文减少停机时间的目标也不必另加“因排障缓慢”这一原文未限定的唯一损失来源。"
+    },
+    {
+      "id": "T07",
+      "severity": "moderate",
+      "kind": "lost_personal_and_institutional_provenance",
+      "original_lines": [
+        15,
+        55
+      ],
+      "candidate_lines": [
+        11,
+        47,
+        79
+      ],
+      "source_quote": "作为一名 DevOps 工程师（今天在 Komodor，以前在 Rookout），我经常遇到这些类型的场景",
+      "candidate_quote": "实际案例中，作者曾遇到数据库插入错误，仅有“无效值”提示。",
+      "additional_source_quote": "我看到的一个有趣的趋势是，运维人员实际上利用可观察性工具来找到问题的根因",
+      "additional_candidate_quote": "在实际运维中，团队常用可观察性工具定位问题根因",
+      "problem": "作者当前 Komodor 身份在简介仍有保存，但以前任职 Rookout 的信息消失；第一人称观察被改为无来源的“团队常用”概括。改用第三人称本身可以接受，不能同时把观察归属抹掉或扩大成普遍现象。",
+      "suggestion": "保留“作者观察到”的范围及现任 Komodor、曾任 Rookout 的职业背景，可集中在简介或首次案例介绍中。原文没有明确数据库事件发生在哪家公司，不要进一步补定。"
+    },
+    {
+      "id": "T08",
+      "severity": "moderate",
+      "kind": "lost_practical_constraint",
+      "original_lines": [
+        47,
+        49,
+        51,
+        53
+      ],
+      "candidate_lines": [
+        39,
+        41,
+        43,
+        44,
+        45
+      ],
+      "source_quote": "你首先要弄清楚问题发生在你的数百个应用程序或服务器中的什么地方，然后一旦你隔离掉出故障的服务或应用程序，你就会想了解到底发生了什么。这假定了一些并不总是被满足的先决条件：",
+      "candidate_quote": "排障过程中，工程师通常需要：",
+      "problem": "候选列出了权限、知识和经验，却删去现实中这些先决条件并非总能满足这一实务障碍。定位故障服务后再追查发生了什么的过程，在候选中被缩成“仍需更多上下文”，解释的具体动作减少。",
+      "suggestion": "用一两句写清先定位服务再追查原因，并明确完整权限、技术栈知识和足够经验并非随时具备；不必恢复原文冗长铺垫。"
+    },
+    {
+      "id": "T09",
+      "severity": "moderate",
+      "kind": "lost_monitoring_context_and_distinct_hypotheses",
+      "original_lines": [
+        67,
+        69,
+        77
+      ],
+      "candidate_lines": [
+        53,
+        59
+      ],
+      "source_quote": "这是一个\"查询\"的结果，其定期检查历史和实时数据，以对任何超过 2%误差的活动发出提醒",
+      "candidate_quote": "监控系统会定期检查数据，并在错误率超过阈值（如2%）时发出警报。",
+      "additional_source_quote": "应用程序代码可能被修改、网络问题、云提供商或第三方工具问题，甚至问题可能与另一个服务有关，而该服务本身也有问题",
+      "additional_candidate_quote": "可能涉及代码变更、网络故障、第三方服务异常等",
+      "problem": "2%与代码保住了，但原文结合历史与实时数据理解阈值的说明消失。后续排障假设把云提供商问题、第三方工具问题以及另一个服务本身有问题压成“第三方服务异常等”，未保留几个独立排查方向；“只能依赖”也比原文“需要翻阅”更排他。",
+      "suggestion": "补回历史与实时数据的上下文说明，明确云厂商、第三方工具和关联服务也可能是排查方向；将“只能依赖”改为需要翻查多处日志和指标等源文有据的表述。不要根据代码自行发明动态阈值算法。"
+    },
+    {
+      "id": "T10",
+      "severity": "minor",
+      "kind": "additional_independent_omissions",
+      "original_lines": [
+        3,
+        43,
+        95,
+        101
+      ],
+      "candidate_lines": [
+        3,
+        37,
+        71,
+        79
+      ],
+      "source_quote": "Alliel 喜欢挑战自己，尝试新的技术和方法。",
+      "candidate_quote": "Mickael Alliel，自学成才的开发者，后转型为 DevOps 工程师，热衷于自动化和创新。",
+      "other_omissions": [
+        "生产之外明确列举 QA、开发、预生产环境；候选合并为“开发环境”。",
+        "小服务同时运行几个操作这一并发信息；候选只保留职责分散和频繁交互。",
+        "日志、跟踪、指标逐步进入仪表板，以及后来持续增加工具以处理数据和警报的演进叙述。",
+        "作者对创造性解决问题、尝试新技术和新方法的兴趣。"
+      ],
+      "problem": "这些独立信息不是关键故障机制，严重度低于上方问题；但在要求保留全文有效细节的任务中，应显式决定保留位置，不能将当前候选当作完整覆盖。这里不要求恢复重复排障预告、拼图或干草堆比喻。",
+      "suggestion": "优先修复关键错误，再用简短自然表达补回有用环境、并发及经历细节；历史与作者简介若需压缩，应在修订记录中说明范围，不能称完全等义。"
+    }
+  ],
+  "acceptable_changes": [
+    "将长段拆成清单、合并重复介绍、删除反复预告，并不自动构成保真问题。",
+    "把第一人称叙述改成明确归属于原作者的第三人称可以接受；不要求所有“我”原样出现。",
+    "原文“移动部件”等译法可以改成组件；“雪球效应”可改成连锁变化，但需保留未固定版本这一条件。",
+    "“响应时间的延迟”简化为响应时间属于可接受的表达整理。",
+    "法国美食鉴赏家改成法国美食爱好者属于作者简介语气简化，不据此单列关键事实错误。"
+  ],
+  "checks": {
+    "full_original_view_read": true,
+    "full_actual_source_body_read": true,
+    "full_candidate_read": true,
+    "source_hash_matches_manifest": true,
+    "candidate_hash_matches_completion": true,
+    "protected_code_blocks": 1,
+    "protected_code_character_exact": true,
+    "code_executed": false,
+    "code_numeric_threshold": "查询保留 > 0.02，正文保留错误率超过2%；未把大于改成大于等于。",
+    "source_media_or_upstream_verified": false,
+    "network_calls": 0,
+    "model_api_calls": 0,
+    "candidate_modified": false,
+    "independent_fact_check": false
+  },
+  "limits": [
+    "这是原生 Astra 的非盲内容对照；没有用户阅读评价或因果编辑实验。",
+    "检查只能判定与已存中文来源的一致性，不能保证原文技术论断和产品宣传本身真实。",
+    "原文部分译法和“几秒钟定位”等强断言有自身问题；本次不通过自行编造前提来消解。",
+    "JSON 保存源文和候选的原文引文，后续修订另存版本，不回写冻结输出。"
+  ]
+}

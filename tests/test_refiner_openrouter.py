@@ -147,6 +147,74 @@ def test_effective_request_changes_invalidate_cache(setup_client, monkeypatch, c
     assert len(calls) == 2
 
 
+def test_provider_and_quantization_constraints_reach_request_and_metadata(setup_client, monkeypatch):
+    factory, _ = setup_client
+    client = factory()
+    calls = install_responses(client, monkeypatch, [FakeResponse(payload=success())])
+    result = complete(client, provider_only=["DeepInfra"], quantizations=["bf16"])
+    provider = calls[0]["json"]["provider"]
+    assert provider == {
+        "allow_fallbacks": False,
+        "max_price": {"prompt": 0.1, "completion": 0.1},
+        "only": ["DeepInfra"],
+        "quantizations": ["bf16"],
+    }
+    assert result["metadata"]["request_config"]["provider"] == provider
+
+
+@pytest.mark.parametrize("change", [
+    {"provider_only": ["Darkbloom"]},
+    {"quantizations": ["fp4"]},
+])
+def test_provider_routing_changes_invalidate_cache(setup_client, monkeypatch, change):
+    factory, _ = setup_client
+    client = factory()
+    calls = install_responses(client, monkeypatch, [FakeResponse(payload=success()), FakeResponse(payload=success())])
+    arguments = {"provider_only": ["DeepInfra"], "quantizations": ["bf16"]}
+    first = complete(client, **arguments)
+    second = complete(client, **{**arguments, **change})
+    assert first["metadata"]["request_sha256"] != second["metadata"]["request_sha256"]
+    assert len(calls) == 2
+
+
+@pytest.mark.parametrize("change,reason", [
+    ({"provider_only": []}, "invalid_provider_only"),
+    ({"provider_only": "DeepInfra"}, "invalid_provider_only"),
+    ({"provider_only": [None]}, "invalid_provider_only"),
+    ({"provider_only": [" "]}, "invalid_provider_only"),
+    ({"provider_only": ["DeepInfra\n"]}, "invalid_provider_only"),
+    ({"provider_only": [SECRET]}, "invalid_provider_only"),
+    ({"quantizations": []}, "invalid_quantizations"),
+    ({"quantizations": "bf16"}, "invalid_quantizations"),
+    ({"quantizations": [None]}, "invalid_quantizations"),
+    ({"quantizations": ["unsupported"]}, "invalid_quantizations"),
+    ({"quantizations": [SECRET]}, "invalid_quantizations"),
+])
+def test_invalid_provider_constraints_fail_before_request(setup_client, monkeypatch, change, reason):
+    factory, _ = setup_client
+    client = factory()
+    calls = install_responses(client, monkeypatch, [])
+    with pytest.raises(OpenRouterError, match=reason) as failure:
+        complete(client, **change)
+    assert SECRET not in str(failure.value)
+    assert calls == []
+    assert client.budget_status()["accounted_usd"] == "0"
+
+
+def test_none_routing_constraints_preserve_default_body_and_cache(setup_client, monkeypatch):
+    factory, _ = setup_client
+    client = factory()
+    calls = install_responses(client, monkeypatch, [FakeResponse(payload=success())])
+    first = complete(client)
+    second = complete(client, provider_only=None, quantizations=None)
+    assert calls[0]["json"]["provider"] == {
+        "allow_fallbacks": False, "max_price": {"prompt": 0.1, "completion": 0.1},
+    }
+    assert first["metadata"]["request_sha256"] == second["metadata"]["request_sha256"]
+    assert second["metadata"]["cache_hit"] is True
+    assert len(calls) == 1
+
+
 def test_budget_and_cache_survive_restart(setup_client, monkeypatch):
     factory, _ = setup_client
     client = factory(budget="0.0008")

@@ -1,0 +1,167 @@
+{
+  "schema_version": "azure-readable-content-review-1.0",
+  "case_id": "control",
+  "reviewed_at_utc": "2026-09-15T08:25:40.783454+00:00",
+  "reviewer": {
+    "kind": "native_astra_subagent",
+    "task": "batch_short_review",
+    "independent_of_draft_generation": true,
+    "blind": false
+  },
+  "scope": "完整阅读本例原始正文、恢复段落后的原文、首次候选和响应记录；仅作源文相对内容复核，不判作者身份、AI臭味或读者偏好。未联网、未调用模型API、未运行文章代码。",
+  "inputs": {
+    "original.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/original.md",
+      "sha256": "419495c8a4e57e8c165c45720738a36ae3a77eca5a44dfdd7db5a577b9e1da20",
+      "hash_basis": "raw_file_bytes"
+    },
+    "input.txt": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/input.txt",
+      "sha256": "e6d2ebb5755f009a53a58ce1baa4f176b1ba740497ff205d5d9b52c0237859d2",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v1.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/candidate-v1.md",
+      "sha256": "fe81ca8895ef4c4d1229c53f90ecc1cd51bf449b6ebb02f95324a8b64ec0b9d8",
+      "hash_basis": "raw_file_bytes"
+    },
+    "response.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/response.json",
+      "sha256": "74e034bbe950d4aeaf6f4db71a58ad7c41fa0eb264e2681a174b7d97d90c90f1",
+      "hash_basis": "raw_file_bytes"
+    },
+    "protected-code.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/control/protected-code.json",
+      "sha256": "d6b69674efc49acfccecca040a1b93166f399a4adbf9875dae5109c1cbebaa99",
+      "hash_basis": "raw_file_bytes"
+    }
+  },
+  "source": {
+    "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt",
+    "sha256": "f3dd1e6d13acf98ba6e9354fdd197c7016a7d1d4d958b8336729f5e4aec65a9c",
+    "matches_manifest": true,
+    "url": "https://www.infoq.cn/article/lzR34rSWkua5awOg8LFJ"
+  },
+  "decision": "requires_revision",
+  "training_eligible": false,
+  "human_feedback": null,
+  "limitations": [
+    "源文中的技术说法、平台政策和数字未向上游独立核实；内容保留检查不等于事实核验。",
+    "本复核不评价改写是否好读，也不把字数、标题数量或词语次数作为效果分数。"
+  ],
+  "summary": "主要技术行为及七项版本约束保留；一处依赖范围扩大、一处精确代码保护违约及一处问题数量遗漏需要修正。",
+  "issues": [
+    {
+      "id": "control-01",
+      "kind": "scope_overstatement",
+      "severity": "material",
+      "source_quote": "构建在单一的依赖要求之上，即 Vitest v4。相比之前要求的 Vitest v3 的版本",
+      "candidate_quote": "该版本以 Vitest v4 为唯一依赖，取代了此前的 Vitest v3",
+      "problem": "“唯一依赖”把对 Vitest 的明确版本要求扩成整个库只有一项依赖；同一原文后面还列有四项对等依赖。",
+      "suggestion": "改为“该版本要求使用 Vitest v4，取代了此前对 Vitest v3 的要求”，保留后面的四项对等依赖。"
+    },
+    {
+      "id": "control-02",
+      "kind": "protected_code_exactness",
+      "severity": "contract",
+      "source_quote": " let router: ReturnType<typeof useRouter>\n beforeAll(() => {\n router = useRouter()\n })",
+      "candidate_quote": "  let router: ReturnType<typeof useRouter>\n  beforeAll(() => {\n    router = useRouter()\n  })",
+      "problem": "受保护代码第2—5行缩进改变。非空白字符完全一致，未观察到操作或调用顺序变化；不应把此项描述为已经发现运行语义损坏，但它违反原样保留约定。",
+      "suggestion": "用 protected-code.json 中 b005 的 text 原样替换整个代码块正文，不编辑任何代码字符。"
+    },
+    {
+      "id": "control-03",
+      "kind": "detail_omission",
+      "severity": "minor",
+      "source_quote": "此次修改修复了仓库中长期存在的两个问题，均为用户反馈模块级 mock 被静默忽略的缺陷。",
+      "candidate_quote": "修复了长期存在的模块级 mock 被静默忽略的问题。",
+      "problem": "删去了“两项问题”的数量和用户反馈这一来源限定。机制说明仍在，不属于机制写反。",
+      "suggestion": "在已有句尾保留“修复了用户长期反馈的两项模块级 mock 被静默忽略的问题”。"
+    }
+  ],
+  "version_constraints": [
+    {
+      "item": "Nuxt Test Utils",
+      "source_constraint": "4.0.0",
+      "candidate_status": "preserved"
+    },
+    {
+      "item": "Vitest current requirement",
+      "source_constraint": "v4",
+      "candidate_status": "version_preserved_scope_requires_revision"
+    },
+    {
+      "item": "Vitest previous requirement",
+      "source_constraint": "v3",
+      "candidate_status": "preserved"
+    },
+    {
+      "item": "happy-dom",
+      "source_constraint": ">=20.0.11",
+      "candidate_status": "preserved"
+    },
+    {
+      "item": "jsdom",
+      "source_constraint": ">=27.4.0",
+      "candidate_status": "preserved"
+    },
+    {
+      "item": "@jest/globals",
+      "source_constraint": "不支持30.0.0以下版本",
+      "candidate_status": "preserved"
+    },
+    {
+      "item": "@cucumber/cucumber",
+      "source_constraint": ">=11",
+      "candidate_status": "preserved"
+    }
+  ],
+  "content_checks": [
+    {
+      "item": "发布日期",
+      "result": "2026年2月7日保留；未与文章的2026年4月8日发布时间混写。"
+    },
+    {
+      "item": "beforeAll机制",
+      "result": "setupFiles移至beforeAll、mock注册先于Nuxt启动、旧版中间件或插件的组合式函数提前执行导致mock失效的说明均保留。"
+    },
+    {
+      "item": "describe顶层调用的迁移成本",
+      "result": "useRouter()、useNuxtApp()在环境尚未初始化时触发[nuxt] instance unavailable，以及移入beforeAll的建议均保留。"
+    },
+    {
+      "item": "mockNuxtImport工厂参数",
+      "result": "将原始实现传入工厂、包装或扩展真实实现的说明保留；没有改写为自动执行测试级重置。"
+    },
+    {
+      "item": "registerEndpoint",
+      "result": "测试间模块重置导致配置端点丢失、URL查询参数匹配两项修复均保留。"
+    },
+    {
+      "item": "Vitest导出规则",
+      "result": "未显式返回的导出从undefined改为抛错、展开importOriginal并覆盖所需部分的建议均按原文保留；未独立验证推荐代码机制。"
+    },
+    {
+      "item": "迁移与生态信息",
+      "result": "Vue生态、SSR、完整插件及组合式函数上下文、v3和nuxt-vitest两类迁移来源、核心团队与Daniel Roe、MIT、npm每周超过47万下载均保留。"
+    }
+  ],
+  "code_check": {
+    "protected_blocks": 1,
+    "exact_text_match": false,
+    "nonwhitespace_match": true,
+    "changed_lines": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "article_code_executed": false,
+    "judgment": "仅观察到缩进变化；按合同恢复原始代码，不运行或润色。"
+  },
+  "non_issue_notes": [
+    "把正文拆成更多标题和列表属于呈现改动，单凭这种改动不能判定更好读或更难读。",
+    "“最显著”沿袭原文“最具影响力”；“确保mock行为一致且可预测”亦已在原文出现，不作新事实新增。",
+    "首段概述合并进详细正文减少重复，不能仅以段落删除判内容损失。"
+  ]
+}

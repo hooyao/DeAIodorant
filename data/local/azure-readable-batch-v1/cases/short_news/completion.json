@@ -1,0 +1,28 @@
+{
+  "completed_at_utc": "2026-09-15T08:22:09.940509+00:00",
+  "checks": {
+    "source_view_sha256": "8b2ab500ee699d7766fcf01c6c8318a3a914a786fa1e0ed62609371df6cb0b5c",
+    "candidate_sha256": "e93fbbba6feb4b760cc1c411adf9d997f39e1a184fa93dfb32c50cf448b01441",
+    "response_text_matches_candidate": true,
+    "input_characters": 1049,
+    "output_characters": 1385,
+    "code_blocks_exactly_preserved": true,
+    "protected_code_blocks": 0,
+    "source_numeric_strings_absent_in_output": [
+      "01",
+      "02",
+      "03"
+    ],
+    "note": "代码和数字只是诊断，不代替含义或读者效果检查。",
+    "human_feedback": null
+  },
+  "budget_after": {
+    "budget_usd": "45",
+    "accounted_usd": "0.23597",
+    "remaining_usd": "44.76403",
+    "actual_billed_usd": null,
+    "basis": "local_budget_estimate_not_verified_billing",
+    "unfinished_reservations": 0,
+    "retained_unknown_cost_reservations": 0
+  }
+}

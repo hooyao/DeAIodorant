@@ -1,0 +1,797 @@
+{
+  "schema_version": "research-handover-artifacts-1.0",
+  "date": "2026-09-15",
+  "base_commit": "15348958830d3c519897d1ba5993f08a2a848154",
+  "roots": [
+    "data",
+    "feature_runs"
+  ],
+  "scope": "关闭的Azure批次、模型用途纠正、已停止的4B/9B及托管诊断、官方27B资料、Astra教师原型与云预检准备；不含凭据、live账本或模型权重。",
+  "files": [
+    {
+      "path": "data/local/azure-readable-batch-v1/azure-final-initialized.json",
+      "bytes": 57,
+      "sha256": "5a3fbed0d1f1de666ca2aba574d2c62146e024c582e4abfa72c19a86cf242b98"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/azure-final-ledger.json",
+      "bytes": 7348,
+      "sha256": "56927f9e990bccb6ab061a4b0e6b3803d83ba6281c7de29fc52f4bbac7737296"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/batch-completion.json",
+      "bytes": 463,
+      "sha256": "433354f44ed5554ff9715d3f584fa0e35504b1f9193ce3c4638bd302a9f06c20"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/batch-start.json",
+      "bytes": 576,
+      "sha256": "78c0524b573176ef6df2e0c9ee5bf3684e5fe9756c06b3cb65ceb6cf62875fc1"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/applied-edits-v2.json",
+      "bytes": 1507,
+      "sha256": "ffa3050384daced877d26e61350a2fcdcbc0b10b0166f0f135740fa8f91bbdb3"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/candidate-v1.md",
+      "bytes": 3840,
+      "sha256": "fe81ca8895ef4c4d1229c53f90ecc1cd51bf449b6ebb02f95324a8b64ec0b9d8"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/candidate-v2.md",
+      "bytes": 3849,
+      "sha256": "014f7c153bc5ed4cdba2bcb6993d3b05ad544d6c2c4e4bcb516ac472b1f93138"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/completion.json",
+      "bytes": 893,
+      "sha256": "3423b44561a82e4ad90ed939530367b8f10a4b5b83cacd35799f7e53f82c5a2f"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/input.txt",
+      "bytes": 12624,
+      "sha256": "e6d2ebb5755f009a53a58ce1baa4f176b1ba740497ff205d5d9b52c0237859d2"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/original.md",
+      "bytes": 4035,
+      "sha256": "419495c8a4e57e8c165c45720738a36ae3a77eca5a44dfdd7db5a577b9e1da20"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/protected-code.json",
+      "bytes": 177,
+      "sha256": "d6b69674efc49acfccecca040a1b93166f399a4adbf9875dae5109c1cbebaa99"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/repair-completion.json",
+      "bytes": 491,
+      "sha256": "d180d3d2edb5e643cac7480bc755090b8da3c8edd7cc3b2e84d86d09c8050f02"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/repair-input.json",
+      "bytes": 10177,
+      "sha256": "f13c1f5e714155e073213d0a6e14956cdb20ab31bcdc38c46e857076d8f7dbed"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/repair-request.json",
+      "bytes": 363,
+      "sha256": "aa1026944278c479c39138ebf96e0b6cc6ebdac0ee3fc1ae745520b1dfabe4f6"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/repair-response.json",
+      "bytes": 2462,
+      "sha256": "ec7edcd6b46e8e17e0794e1f9d75ac3b13e225a3360312e3e0e20f9a4d0e4a39"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/request.json",
+      "bytes": 776,
+      "sha256": "56818ca017dd56de5273e08a9a8dce788caff9e2b2d8d8cfb9ec000795f94b47"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/response.json",
+      "bytes": 5276,
+      "sha256": "74e034bbe950d4aeaf6f4db71a58ad7c41fa0eb264e2681a174b7d97d90c90f1"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/review-v1.json",
+      "bytes": 7530,
+      "sha256": "2208121dbea4763b205f9106dbe54f2df57ed83ce2300b50c1774771b0e31836"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/control/review-v2.json",
+      "bytes": 5071,
+      "sha256": "5d4161519bd5bb2cf0c0a152682a39c6fa8251a1c3663cb295f1d1af80c3d36f"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/applied-edits-v2.json",
+      "bytes": 10162,
+      "sha256": "fe1516c9b6a39dde30409eee2e2f0f10c30310faaabd07dcc6bf06e7d5dc74d7"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/candidate-v1.md",
+      "bytes": 6446,
+      "sha256": "611ce4e19c0347d4ea50c4fd92b41738f9b3df1c6dcea91d805c28e11bb9ba4f"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/candidate-v2.md",
+      "bytes": 7065,
+      "sha256": "e9c69195dedd19719d1fae649c046efbd7e22994ec42b3235a09b42e65e0ca45"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/candidate-v3.md",
+      "bytes": 6927,
+      "sha256": "b57f58f67e8791e14e8df21561b38739582526eea73e612111f79147da8ca9c4"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/completion.json",
+      "bytes": 922,
+      "sha256": "b5635bad439614f4ea9a9424215c9e6a520852da6217e299f54b3ad8738df0d1"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/input.txt",
+      "bytes": 18678,
+      "sha256": "e38959e5bbd51687f7e9204ec185b6ba8f283437ca16228a8e3fb6ba1f2d35a7"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/original.md",
+      "bytes": 10083,
+      "sha256": "a8e279d7e1f8293295083de3f4e560cff676ec0c3ee3420dcdc20a565423cba1"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/protected-code.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/repair-completion.json",
+      "bytes": 492,
+      "sha256": "b1b1f1e29735218171303e351594025d41cbb76faa754cd42126fc81e88c91c1"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/repair-input.json",
+      "bytes": 37136,
+      "sha256": "8c3f9238587a967978df8e49e7a32ebc734c04e43b40b6a526a2bc605fe74b3c"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/repair-request.json",
+      "bytes": 363,
+      "sha256": "f6dee27612d79bfd42588a42de94d7ac98a231f8a4fca272511742d6508de857"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/repair-response.json",
+      "bytes": 10451,
+      "sha256": "ed24800cbed116589384ae73d2f049d0426070f6a62310555bcc8091bd0ee784"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/request.json",
+      "bytes": 778,
+      "sha256": "583d54f2366bd05dd590be61f734df40f3c372bb97e48f98cc9b43bacb428920"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/response.json",
+      "bytes": 7902,
+      "sha256": "8655a2b2c1aa08424dacb9d96f68ea1bfc4e65376e0931e7b6d809436e3d5118"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/review-v1.json",
+      "bytes": 28575,
+      "sha256": "260bf88ce970b7903b7902c3f3252a2fe436fbf9f403d43b588fa5bf7f80e37d"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/review-v2.json",
+      "bytes": 18641,
+      "sha256": "b822abdb27c6d4021155cc2fdbc3ef0cf6bc1ed825d76652d088062a2db12ad4"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/marketing/root-edits-v3.json",
+      "bytes": 1133,
+      "sha256": "1b05526ac79cd641bee4448d75f2d2808a569b3d74576e8353ff10b6fa7eb7a7"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/applied-edits-v2.json",
+      "bytes": 1089,
+      "sha256": "e7b3dbac90522a8d1885f36f23e42d05380ad190837fc01c1108de703f2d7cc4"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v1.md",
+      "bytes": 3567,
+      "sha256": "e93fbbba6feb4b760cc1c411adf9d997f39e1a184fa93dfb32c50cf448b01441"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v2.md",
+      "bytes": 3276,
+      "sha256": "813065eeee0f8b3d39086c236db85e6eac87f6e4268dda8e577c7e6c940a1587"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v3.md",
+      "bytes": 3276,
+      "sha256": "714f2f17df962336c1835895fa3250590bab31464b87cb79dc999ad255bbac8c"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/completion.json",
+      "bytes": 932,
+      "sha256": "e42d44ada7022dc27a1d4dd66c81b5e3869a3477d782ac425769dc1aee9e6ff3"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/input.txt",
+      "bytes": 11395,
+      "sha256": "e822db3ab7d728d2f4f1de0374bbb5b5286bbd2d35f927def190999d6ec1da83"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/original.md",
+      "bytes": 2791,
+      "sha256": "8b2ab500ee699d7766fcf01c6c8318a3a914a786fa1e0ed62609371df6cb0b5c"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/protected-code.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/repair-completion.json",
+      "bytes": 491,
+      "sha256": "1250ac43ec56aa731456f482183222a81fef265aea7b39f6964bee85faaa86f4"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/repair-input.json",
+      "bytes": 8380,
+      "sha256": "ca90091a8c561dcfa4d062098cafa23a1b2bb7405c6362a4fd4faf3906d57e6f"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/repair-request.json",
+      "bytes": 363,
+      "sha256": "79d2aa63fb10e170dd9487f8e28dee870dcb70f171f8b0f84ede04943aae0243"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/repair-response.json",
+      "bytes": 2101,
+      "sha256": "0bc817694a996186b878e710c4480315cd57d01f2ce3161685137bd210ee1b7b"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/request.json",
+      "bytes": 779,
+      "sha256": "c4d38555bf5954f3d3db6ea6e72b3bc95eacffa8f549deb9b6f8eccca79317b9"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/response.json",
+      "bytes": 4973,
+      "sha256": "cf027a66e700d0f69faf79b09d0bbf3f1cd12d141e36117be1db82653e3ce977"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/review-v1.json",
+      "bytes": 7892,
+      "sha256": "cfc323ede41407c52c76860a3f360fd5d5f67e00937123fb3b086034095640cc"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/review-v2.json",
+      "bytes": 6568,
+      "sha256": "fc72f0dc8ad28cb2f8abee806f9e533829b4d8d2fb71d913b2b91451952f13c3"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/review-v3.json",
+      "bytes": 5454,
+      "sha256": "6526d1bbe10a5dcce0aa1cf0b1104fd8ea5d11f5077835a28ff1cfb92de618df"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/root-edits-v3.json",
+      "bytes": 690,
+      "sha256": "3115045d3552fd6eec80984101c91ffeae1cb4ae54451b98ad902214bf6c9cb2"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/applied-edits-v2.json",
+      "bytes": 10962,
+      "sha256": "b78191d3441cfc5d7287f1adf5e738540749e2f1b3dd5600092b82d90bb22ca5"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v1.md",
+      "bytes": 6245,
+      "sha256": "760ef621574d048bfb4e40041e6e0cba93c853aae75011dae68265c87a8ea630"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v2.md",
+      "bytes": 7859,
+      "sha256": "613faf1507e5f905358a9fa75cc349355cf3afc503572ef274a2a41f3ae5961a"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v3.md",
+      "bytes": 6973,
+      "sha256": "548200f0b8b78035fc12869a39dc9f6b2bb5b31f9466c462adbcbea404a02881"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/completion.json",
+      "bytes": 892,
+      "sha256": "fd6e90137281302161019ab639271be050a6667ff5eea88dce0ea100f0e55da8"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/input.txt",
+      "bytes": 21048,
+      "sha256": "dc872ff499dba060867f681b1e27228a81ffbaa8b902968982d3f29efd20e71f"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/original.md",
+      "bytes": 12459,
+      "sha256": "693388cb7cbbbd91adc7d90d304faa915ff2d5ff022e06f5034b6194e69d1f99"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/protected-code.json",
+      "bytes": 310,
+      "sha256": "1bb724b7cb7a4908039c20015ff6db79b02fbeea703467fa295ad3b419861c5b"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/repair-completion.json",
+      "bytes": 492,
+      "sha256": "da44e8ee3ca5c61670466346446d8b3b8857d6e549b6072f9007942a7c505025"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/repair-input.json",
+      "bytes": 31695,
+      "sha256": "2838b61775ca68276741a4f5d9bb79ecb20e1d61d71826753ed0e5a29de7aa23"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/repair-request.json",
+      "bytes": 363,
+      "sha256": "18ebdd70348c7d13937362797e62d9f8f2d7f1056e21f5ce12a8d31c40129685"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/repair-response.json",
+      "bytes": 11413,
+      "sha256": "9a5d41eff52f296dd8049bf6b5c1c7ce0ec17b6de3511ed71ad27206c163704b"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/request.json",
+      "bytes": 781,
+      "sha256": "1b4c9ea3dc84be40f4cc213ac89e6b033285dc08028d81933c7f0623cf3104f1"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/response.json",
+      "bytes": 7704,
+      "sha256": "5741cc4263dd09fe9ae504ef2ea81514cff52815dbeb582cbe95c81361d09152"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/review-v1.json",
+      "bytes": 15478,
+      "sha256": "5c997e5c4d55a22ae7ff5ff2ebc7d603a623d9899a90257a526bdf0035e49d8f"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/review-v2.json",
+      "bytes": 9138,
+      "sha256": "93e3e82d0c9c0bdb9cac25ef87e233c4a9a2871085d23486585ec5ba62a58c4c"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/review-v3.json",
+      "bytes": 8967,
+      "sha256": "5c89b097dce7ab20f44edf95b7e73cdddbac83b7c846e9c0bf56a53362df3760"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/root-edits-v3.json",
+      "bytes": 9902,
+      "sha256": "b488dd12657369b41988809021b9206dd639b6b96e90b85c82877cf8f94a771a"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/closure.json",
+      "bytes": 1771,
+      "sha256": "bc597f7b8ed881c42f14e69a7b03223e0dc842136ae58e35fb4ac90b5e2dd33d"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/finalize.py",
+      "bytes": 8351,
+      "sha256": "fc14776aa4f369171f01d009d9010586a2b360461c8cdde3c4011703b167b0d7"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/input-context/HANDOFF.md",
+      "bytes": 20434,
+      "sha256": "6e894bd2d484b48abd491d884b21ba8b751b98136e78a785f1e97c43a619aea9"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/input-context.json",
+      "bytes": 347,
+      "sha256": "375d8834fe98f1b7af4a6c215e91c4999b6395e301dc16a764d19138814c4ed4"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/instructions.txt",
+      "bytes": 1757,
+      "sha256": "a7dc5b8c362accf4d795b229bdf263ebb2f277805be566927bf562d8e360915f"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/manifest.json",
+      "bytes": 6227,
+      "sha256": "1c884d8c5617b957b54cbcd66125a3915b451b1e1e62ebc3c69d611cb1dcf9d8"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/prepare.py",
+      "bytes": 8925,
+      "sha256": "57df2e5e940b51812bc9a7eed5e720d2d0943157a982b7029346307fe0de02ba"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/reference.md",
+      "bytes": 8496,
+      "sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/repair-batch-completion.json",
+      "bytes": 404,
+      "sha256": "de39d445fba0849e8aef89d83e9180968406aac674d14eb5b013c7f9dfa32922"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/repair-plan.json",
+      "bytes": 1965,
+      "sha256": "3e8c0fcf7642b64f24ba77d324a14c945f299c45ca7c153d2bbbc00ff8ff8987"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/repair.py",
+      "bytes": 8877,
+      "sha256": "872077b05af1ca0e87e4d29e32452ce802e2e2763ed59a83802d45ec97ec74b3"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/root-review-addendum.json",
+      "bytes": 1236,
+      "sha256": "23d273cec440879d6f89c4280dbbdc910fd70a6ec2b3e110abffa464a27b16f2"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/root-selection.json",
+      "bytes": 3028,
+      "sha256": "b3e1614ace212ed744cb2676085ff492273e6a8009ef55f68e03b84f2d46976b"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/run.py",
+      "bytes": 7259,
+      "sha256": "055b75ba9ef7a0a230ed233b4bef3e436862cc063f7a04c3773b2b21453bc002"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/scope-correction.json",
+      "bytes": 1694,
+      "sha256": "65e9f0e38ba77d0b0363c84afbbe7dc1d3a65744fcbd03efc4e10462a39ede31"
+    },
+    {
+      "path": "data/local/azure-readable-batch-v1/translated-selection.json",
+      "bytes": 49728,
+      "sha256": "435f8f6de9ab113aebe69b1d4ff582e567c8579c988e80ef21d3868e0f4d73f1"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/api-cache/ledger.json",
+      "bytes": 3503,
+      "sha256": "092e3b651391afc88c7f6a3e1675e43b8dea97d186df7ed9da8f793b9e8deb39"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/api-cache/result-3ffea31a6f061a1840a3e18535e2f5a7316d7fbbd9a122638d9a363b2804ef39.json",
+      "bytes": 14025,
+      "sha256": "85c2fd90f5ffd3577e599b722e4629b0eff5cb2c0434f13989558f9cc6c7b285"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/api-cache/result-bec07b54aac4a2a3b95e2b049d3d8a374be96c0bc278e496d3629070e34e55ea.json",
+      "bytes": 11739,
+      "sha256": "07622b688ab1c75d3f2ea2423a1b397e7e66c3876d9b2a03dcb2d15d4fec1995"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/completion.json",
+      "bytes": 236,
+      "sha256": "a4821ce3ec6d70701255cdda928adefffdbb7898aba4168a079694148687f80b"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/endpoints.json",
+      "bytes": 9680,
+      "sha256": "8169cf92a7a438eab8c43a446072f11154c822187ee370b37340a3fb37dcd860"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/manifest.json",
+      "bytes": 871,
+      "sha256": "aeec28af022e0ad6cc4cfb1515f3576cb4593c04bbb2a34e0205bf701a954f20"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/microduck/candidate.md",
+      "bytes": 10078,
+      "sha256": "bcea21dfa340c49d5fee5c8dfa7eb9f58a14799988ee5aabc5573d5800ac429e"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/microduck/diagnostic-review.json",
+      "bytes": 19732,
+      "sha256": "a1d2919411aa4e0a110f29a1a3f3125191d55809f5549118b3970d9e2367bb4d"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/microduck/request.json",
+      "bytes": 8956,
+      "sha256": "b1169a9c857cca4a346df90e30a55a845e7c4de98ce71a2db4118220968306fd"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/microduck/response.json",
+      "bytes": 12220,
+      "sha256": "1e43c61caf41b77d42e9980811c5b06692d0ff9bc8113bebd52572c502e188ab"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/run.py",
+      "bytes": 3978,
+      "sha256": "df731191bff9b33bd9b59c1b80918af7590aa37d8278ed7127aa549b2269ac9c"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/translation/candidate.md",
+      "bytes": 12324,
+      "sha256": "ef62ae04dc742904522d2d7919d5e73e7923cca1a79263a277ce1aac6e856245"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/translation/request.json",
+      "bytes": 13471,
+      "sha256": "cca1455667e58b4b610875e2379cd12509285d2f0fca144ef22d479419fb883a"
+    },
+    {
+      "path": "data/local/student-baseline-bf16-v1/translation/response.json",
+      "bytes": 14506,
+      "sha256": "6bf6b4c45a727b140c08d138f42f421532126155698a70eb178d18487ee4ce2f"
+    },
+    {
+      "path": "data/local/student-baseline-v1/api-cache/catalog-e6b8fc39616da69ec915db1261a905d8da6486b11b7e7922d3d27558734553ae.json",
+      "bytes": 735851,
+      "sha256": "853e2e0fc9a49933ea72559b533c1a2e47ab916a55303bdff2a6c75986e62bca"
+    },
+    {
+      "path": "data/local/student-baseline-v1/api-cache/ledger.json",
+      "bytes": 3411,
+      "sha256": "8001ffc6ef3984b4c78f1ee70b8555931222abffb27f13f18f19c14812f5aa35"
+    },
+    {
+      "path": "data/local/student-baseline-v1/api-cache/result-665324a339f9ae4a611c4e8c0d825ca4806d742ac726bbeec207eb31e8e10e43.json",
+      "bytes": 14595,
+      "sha256": "c198e16867b6bfd13fc9854bfc1c03d4fc2d36e4ef7b88b53949e83f483f809b"
+    },
+    {
+      "path": "data/local/student-baseline-v1/api-cache/result-6a827f1e1b11ec5ee3cc37fe61b90aa97a8a8f70cc5f072732753834e77e3ee5.json",
+      "bytes": 11541,
+      "sha256": "524944b9ae7e6820247aaa591db75dcebba2016d83f0b19ea008650133efa47d"
+    },
+    {
+      "path": "data/local/student-baseline-v1/completion.json",
+      "bytes": 236,
+      "sha256": "293db610c9a2f834bf31f3c1fbfd3bc5db2d11cda11140851fa501359847fcb6"
+    },
+    {
+      "path": "data/local/student-baseline-v1/manifest.json",
+      "bytes": 2048,
+      "sha256": "c49f05577c6fe8d38f80e71312a1794255133e5753c9f036f24fc8fe5ac1340b"
+    },
+    {
+      "path": "data/local/student-baseline-v1/microduck/candidate.md",
+      "bytes": 9910,
+      "sha256": "b1af080e9d75e185b3ee65da749e4cbf3a37792c5607c4ef55d366a2bb775da0"
+    },
+    {
+      "path": "data/local/student-baseline-v1/microduck/completion.json",
+      "bytes": 339,
+      "sha256": "eb3984a1912e6566e35b8092202164f8fd6918a079ad35c33bc19da71375689d"
+    },
+    {
+      "path": "data/local/student-baseline-v1/microduck/request.json",
+      "bytes": 8877,
+      "sha256": "18aedd6242cf1557865470a29f33e628bd418c8651a9eb62b9ec77d85ca9fd4e"
+    },
+    {
+      "path": "data/local/student-baseline-v1/microduck/response.json",
+      "bytes": 11962,
+      "sha256": "ade58ac49ce070c2a4231deeaee35d3c82039338ac85a24124613b40bec29fdc"
+    },
+    {
+      "path": "data/local/student-baseline-v1/run.py",
+      "bytes": 5199,
+      "sha256": "8f70572f64160bf81d286a598d53be7022f0050ca30f596d7a5edef1917fc1ef"
+    },
+    {
+      "path": "data/local/student-baseline-v1/selected-model.json",
+      "bytes": 2184,
+      "sha256": "91784f040c1efd780a1971681848fba87ef80df3e5b4d69f6fc18f9384bd6d3c"
+    },
+    {
+      "path": "data/local/student-baseline-v1/translation/candidate.md",
+      "bytes": 12937,
+      "sha256": "b178b40227dd1dd2481887f4fcad842203ca7f687b4500f3ecd7f2a4437972a0"
+    },
+    {
+      "path": "data/local/student-baseline-v1/translation/completion.json",
+      "bytes": 339,
+      "sha256": "a1a76d7c4bb6c62fbdf9d2968ff2f9bff85c3acd776cf3b312d46daafe398d18"
+    },
+    {
+      "path": "data/local/student-baseline-v1/translation/request.json",
+      "bytes": 13392,
+      "sha256": "8d8e23914b922485764ccc0add5d9ac440e5fafc8fc8ba13d8b6f9d0e7280cfc"
+    },
+    {
+      "path": "data/local/student-baseline-v1/translation/response.json",
+      "bytes": 15016,
+      "sha256": "4e2653cc2dfa365e2ad054f5d38c1fe3625adcdadbce3e35c38842e03e056e1f"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/27b-preflight-final-validation.json",
+      "bytes": 673,
+      "sha256": "f5440021fa3a73c9a34edbaf783b811ef3e0d9469eb43c782dd58140ecd386e1"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/27b-preflight-review.json",
+      "bytes": 9840,
+      "sha256": "8efbf97cfd331854eb6fc765633e7def5e8f4cc528c1ff8afc6b01522498d976"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/27b-preflight-validation.json",
+      "bytes": 637,
+      "sha256": "a0f06df28c16913eb91d0fe5b4f86205dea9e7dac43bc81f0ab93565c0110267"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/final-input-validation.json",
+      "bytes": 11944,
+      "sha256": "7bdad6728f30224fda3300986505ee85cd83dd12cec0693ee2d6c6bee3d8a01d"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/input-context/HANDOFF-before-27b-summary.md",
+      "bytes": 22686,
+      "sha256": "55a006702b142313952c4ee19426e70a347b6088a9598f4411e403fac8e2e7a2"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/preflight-before-review-v1.py",
+      "bytes": 11623,
+      "sha256": "3163ca63806335aa5500421e48ee51268e0bd91b1c71ffcc637828b519ea8ba2"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/prepare-sft-prototype.py",
+      "bytes": 4657,
+      "sha256": "8d6023a21cbaae21e02d4fcbfd5673a86fa4e422d5db5a25ddcecd71861860c0"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/python-package-metadata.json",
+      "bytes": 1003,
+      "sha256": "aa223c5e975b7604db143bdfe6e532c402aac5e2440019a8f666da608be84912"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-27B-config.json",
+      "bytes": 4134,
+      "sha256": "f8d190c5b89c1521220f935d2567a587d6e291ed69066a45a106560b05a2174c"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-27B-metadata.json",
+      "bytes": 16942,
+      "sha256": "a2d80f1ba32e86585cc6142aca69dd4185299a60e746a6cc487dceada522a213"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-27B-README.md",
+      "bytes": 92417,
+      "sha256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-4B-config.json",
+      "bytes": 3161,
+      "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-4B-metadata.json",
+      "bytes": 16995,
+      "sha256": "53859b4a152841f5ddd858cbebad6d61257d5f42f298ee0545119b4e2f71e071"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-4B-README.md",
+      "bytes": 77661,
+      "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-9B-config.json",
+      "bytes": 3126,
+      "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-9B-metadata.json",
+      "bytes": 16995,
+      "sha256": "c832fddcbcb7c2b0f7a6cd4fd438ea7c8cff43f6f31cef8cf19cc9f63f5fe49e"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-9B-README.md",
+      "bytes": 77643,
+      "sha256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/retired-4b-preflight.py",
+      "bytes": 10252,
+      "sha256": "441d71f9397abe403971ba67a9e40a378176555d603b6fc6125ae0ddf0a060bf"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/review-input-snapshot-map.json",
+      "bytes": 772,
+      "sha256": "6258bd785fcc6de788dee35cd6eadbe4e2b18870b458979545fc49f6f55fb475"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/review-input-snapshots/preflight-validated-before-source-title.py",
+      "bytes": 12993,
+      "sha256": "18b3ecab282c2b8c7c9883015a3b153d80e142c712f99a8f218f46b1c5b2ab44"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/review-input-snapshots/research-checkpoint-2026-09-15.md",
+      "bytes": 7936,
+      "sha256": "ed29dec475d68ae2c2e42ad53dc45511497c8836bf2608a7672572000ba9f8c0"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/review-input-snapshots/student-sft-plan-v2.md",
+      "bytes": 3660,
+      "sha256": "5622f27b424756cbbf71e65b3c2f6204aa0ef3482b1d594f2c1ee33231aae0b1"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/sft-feasibility-note.json",
+      "bytes": 15195,
+      "sha256": "7a8be9b3363e56366a4ef35f4e47d618248d982894c6e0b012657cdb2e19eab9"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/tokenizer-preparation-plan.json",
+      "bytes": 1000,
+      "sha256": "d3136cab4b5dd412654f021c5ab9deac39a6e2dda9b64849f93e27bd729444d4"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/tokenizers-runtime-result.json",
+      "bytes": 667,
+      "sha256": "e6586e999ac12f20b49078ae78a888b28014df85db9d7a7eeee25ee974f59e96"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/27b-template-check.json",
+      "bytes": 468,
+      "sha256": "506975d06f38fd75083b5aee368bba9bbea92e67dd944ff4c796456612582950"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/development-pair-prototype.json",
+      "bytes": 17838,
+      "sha256": "872f92fc861969b445d5bf85426ab7971fa7029187a80373413e4f2cb9e39f23"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/Qwen3.5-27B-full.txt",
+      "bytes": 16929,
+      "sha256": "f8c3eb589f93b5f186b7b780b1d84f23c376f1a445e71348ae38cbe8876fd5da"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/Qwen3.5-27B-prompt.txt",
+      "bytes": 8423,
+      "sha256": "4f7b5d24aa58da9187c9a3ee13b23bb1c8fde32e710df4633789ef379f312518"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/Qwen3.5-4B-full.txt",
+      "bytes": 16929,
+      "sha256": "f8c3eb589f93b5f186b7b780b1d84f23c376f1a445e71348ae38cbe8876fd5da"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/Qwen3.5-4B-prompt.txt",
+      "bytes": 8423,
+      "sha256": "4f7b5d24aa58da9187c9a3ee13b23bb1c8fde32e710df4633789ef379f312518"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/Qwen3.5-9B-full.txt",
+      "bytes": 16929,
+      "sha256": "f8c3eb589f93b5f186b7b780b1d84f23c376f1a445e71348ae38cbe8876fd5da"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/Qwen3.5-9B-prompt.txt",
+      "bytes": 8423,
+      "sha256": "4f7b5d24aa58da9187c9a3ee13b23bb1c8fde32e710df4633789ef379f312518"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/template-check.json",
+      "bytes": 1746,
+      "sha256": "a40adff7ace10359a76c0923d065d899b5d86a18e73d76d93509c4d91579f822"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v2/development-pair.json",
+      "bytes": 18654,
+      "sha256": "fa824b6be9165ecdbbe6a52739467101495a4e3106ec1a317526be4c027ec7bf"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v2/full.txt",
+      "bytes": 17043,
+      "sha256": "69d6756f544a02944ab9aa622c844053e7c36b97e6327658ce1e44d84dd769c0"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v2/prompt.txt",
+      "bytes": 8537,
+      "sha256": "f6ffaa3f1a01157cb51f04984e75f436e30186af2903dbd0bdd7b548a9a7c330"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v2/source.md",
+      "bytes": 8102,
+      "sha256": "4bbda267e96b1838eee70f99664f20f71d34318e9398a4014ecc2cc82b7b6be6"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v2/template-check.json",
+      "bytes": 678,
+      "sha256": "3b4463ca1152fd6125d4a7a80614fe7c98b2c7261ea1a04e8382826ba4422441"
+    }
+  ]
+}

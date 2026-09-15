@@ -1,0 +1,20 @@
+{
+  "version": "azure-readable-root-addendum-1.0",
+  "case_id": "translation",
+  "stage": "after_initial_outputs_before_repair",
+  "issues": [
+    {
+      "id": "T11-root",
+      "source_quote": "你经常会听到有人说，可观察性是指标、日志和跟踪的总和，但事实上，这种遥测只是正确获得可观察性的前提。",
+      "candidate_quote": "可观察性通常指收集指标、日志和追踪等遥测数据，但仅有这些数据还不足以满足业务需求。",
+      "problem": "候选把原文要澄清的简化理解写成了通常定义，削弱了原文关于遥测只是前提、必须联系业务需求的区分。",
+      "suggestion": "直接说明遥测是获得可观察性的前提，数据还需联系业务需求和应用工作方式；无需再把被澄清的说法写成定义。"
+    }
+  ],
+  "other_cases": {
+    "control": "代码变化只涉及缩进，不是观察到的逻辑漏洞；仍按既定代码字符保留规则恢复。",
+    "short_news": "原文12与9+3+3的关系未明，不以常识替它推算各类上限。",
+    "marketing": "新写的横向推荐和偏好手动切换并非原文建议，不能因措辞顺畅就保留。"
+  },
+  "human_feedback": null
+}

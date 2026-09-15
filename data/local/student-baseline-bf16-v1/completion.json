@@ -1,0 +1,11 @@
+{
+  "cases_completed": 2,
+  "budget_after": {
+    "budget_usd": "0.10",
+    "accounted_usd": "0.00115815",
+    "remaining_usd": "0.09884185",
+    "unfinished_reservations": 0
+  },
+  "human_feedback": null,
+  "training_started": false
+}

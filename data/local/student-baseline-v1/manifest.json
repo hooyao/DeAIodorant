@@ -1,0 +1,47 @@
+{
+  "version": "student-hosted-baseline-1.0",
+  "started_at_utc": "2026-09-15T08:52:13.405499+00:00",
+  "model": "qwen/qwen3.5-9b",
+  "budget_usd": "0.10",
+  "max_calls": 2,
+  "pricing": {
+    "prompt": "0.0000001",
+    "completion": "0.00000015"
+  },
+  "cases": [
+    {
+      "id": "microduck",
+      "source_path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "source_sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+      "model": "qwen/qwen3.5-9b",
+      "temperature": 0.7,
+      "max_tokens": 8192,
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "seed": 20260915
+    },
+    {
+      "id": "translation",
+      "source_path": "data/local/azure-readable-batch-v1/cases/translation/original.md",
+      "source_sha256": "693388cb7cbbbd91adc7d90d304faa915ff2d5ff022e06f5034b6194e69d1f99",
+      "model": "qwen/qwen3.5-9b",
+      "temperature": 0.7,
+      "max_tokens": 8192,
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "seed": 20260915
+    }
+  ],
+  "runner_sha256": "8f70572f64160bf81d286a598d53be7022f0050ca30f596d7a5edef1917fc1ef",
+  "policy_sha256": "f09990611d18aa8155dc32b66355c5829e79a555f637d25f5f9da10c2a44d07c",
+  "task_prompt": "你是中文信息文章编辑。请将原文完整改写为自然、清楚、便于阅读的中文，减少重复铺垫和机械化表达。保留有用事实、数字、版本、例证、说话者、条件、否定和不确定性，不增加新事实，不缩成摘要。原文代码逐字保留。只输出改写后的完整文章。",
+  "teacher_or_reading_reference_in_input": false,
+  "scope": "已暴露开发样例的学生能力摸底；托管后端revision、量化和部分采样默认值未知，不是未来本地SFT基线。",
+  "generation_settings_note": "参考官方非思考通用任务的temperature=0.7；本客户端不传top_p/top_k等其余推荐设置，因此不是完整官方采样配方。",
+  "training_started": false,
+  "human_feedback": null
+}

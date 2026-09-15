@@ -1,0 +1,6 @@
+[
+  {
+    "block_id": "b035",
+    "text": "avg(last_5m):sum:trace.authorization.worker.handle.errors{env:production,service:authorization,resource_name:web} by {resource_name} / sum:trace.authorization.worker.handle.hits{env:production,service:authorization,resource_name:web} by {resource_name} > 0.02"
+  }
+]

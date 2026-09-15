@@ -1,0 +1,12 @@
+{
+  "characters": 4185,
+  "candidate_sha256": "b1af080e9d75e185b3ee65da749e4cbf3a37792c5607c4ef55d366a2bb775da0",
+  "budget_after": {
+    "budget_usd": "0.10",
+    "accounted_usd": "0.00048622",
+    "remaining_usd": "0.09951378",
+    "unfinished_reservations": 0
+  },
+  "meaning_and_readability": "pending",
+  "training_eligible": false
+}

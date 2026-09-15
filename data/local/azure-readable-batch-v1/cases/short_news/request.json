@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-09-15T08:21:56.642173+00:00",
+  "deployment": "gpt-4.1",
+  "input_sha256": "e822db3ab7d728d2f4f1de0374bbb5b5286bbd2d35f927def190999d6ec1da83",
+  "instructions_sha256": "a7dc5b8c362accf4d795b229bdf263ebb2f277805be566927bf562d8e360915f",
+  "max_output_tokens": 3000,
+  "temperature": 0,
+  "store": false,
+  "purpose": "azure_readable_batch_v1_short_news",
+  "budget_before": {
+    "budget_usd": "45",
+    "accounted_usd": "0.17290",
+    "remaining_usd": "44.82710",
+    "actual_billed_usd": null,
+    "basis": "local_budget_estimate_not_verified_billing",
+    "unfinished_reservations": 0,
+    "retained_unknown_cost_reservations": 0
+  },
+  "batch_planned_delta_before": "0.17268",
+  "planned_reservation_usd": "0.26969",
+  "max_automatic_retries": 0
+}

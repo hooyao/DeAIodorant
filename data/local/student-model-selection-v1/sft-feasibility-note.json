@@ -1,0 +1,177 @@
+{
+  "version": "student-sft-feasibility-v1",
+  "date": "2026-09-15",
+  "status": "conditional_feasibility_not_training_ready",
+  "scope": {
+    "product": "最终产物为可自行部署的中文改写小模型微调版本。托管开发基线用于比较能力，不能替代这一交付目标。",
+    "teacher": "当前原生 Astra 负责新增教师稿与内容复核；GPT-4.1 仅保留历史风格例子，不作为教师、解题模型或产品运行依赖。",
+    "execution": "本审查只读取已保存的官方模型资料、项目检查点与 Microduck 身份和长度元数据；按仓库要求先读 HANDOFF.md。未重新评价文章、未读取旧 final-test。",
+    "network_requests": 0,
+    "model_requests": 0,
+    "weights_downloaded": false,
+    "packages_installed": false,
+    "training_started": false,
+    "cloud_gpu_available": false,
+    "local_gtx1080_training_allowed": false,
+    "git_mutations": false
+  },
+  "decision": {
+    "first_student": "Qwen/Qwen3.5-4B",
+    "capacity_comparator": "Qwen/Qwen3.5-9B",
+    "conclusion": "二者可进入 SFT 准备。4B 的权重和部署成本较小，适合作为首个学生；9B 可检验较大容量是否改善完整性与中文表达。现有资料未证明任一个模型能达到本项目阅读目标，也未证明本项目训练栈已兼容。",
+    "comparison_limit": "二者属于同代同类混合注意力模型，但 4B 绑定输入 embedding 与 LM 输出权重，9B 不绑定。因此这是实用的容量对照，不是只改变参数量的严格消融。",
+    "historical_checkpoint_limit": "检查点中合格训练集和 SFT 尚未完成的状态仍成立；其中提示足够好就停在推理流程的旧安排，不覆盖本次明确的微调交付要求。"
+  },
+  "models": [
+    {
+      "model_id": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "role": "first_student",
+      "release_stage": "post-trained",
+      "license_declared_by_official_metadata": "apache-2.0",
+      "gated": false,
+      "architecture": "Qwen3_5ForConditionalGeneration",
+      "model_type": "qwen3_5",
+      "text_model_type": "qwen3_5_text",
+      "language_model_size_label": "4B",
+      "checkpoint_tensor_parameter_count": 4659865088,
+      "checkpoint_bf16_parameters": 4659861248,
+      "checkpoint_f32_parameters": 3840,
+      "weight_storage_gib_calculated": 8.68,
+      "hidden_size": 2560,
+      "intermediate_size": 9216,
+      "text_layers": 32,
+      "linear_attention_layers": 24,
+      "full_attention_layers": 8,
+      "vocab_size": 248320,
+      "tied_word_embeddings": true,
+      "native_max_position_embeddings": 262144,
+      "vision_encoder_present": true
+    },
+    {
+      "model_id": "Qwen/Qwen3.5-9B",
+      "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+      "role": "capacity_comparator",
+      "release_stage": "post-trained",
+      "license_declared_by_official_metadata": "apache-2.0",
+      "gated": false,
+      "architecture": "Qwen3_5ForConditionalGeneration",
+      "model_type": "qwen3_5",
+      "text_model_type": "qwen3_5_text",
+      "language_model_size_label": "9B",
+      "checkpoint_tensor_parameter_count": 9653104368,
+      "checkpoint_bf16_parameters": 9653100528,
+      "checkpoint_f32_parameters": 3840,
+      "weight_storage_gib_calculated": 17.98,
+      "hidden_size": 4096,
+      "intermediate_size": 12288,
+      "text_layers": 32,
+      "linear_attention_layers": 24,
+      "full_attention_layers": 8,
+      "vocab_size": 248320,
+      "tied_word_embeddings": false,
+      "native_max_position_embeddings": 262144,
+      "vision_encoder_present": true
+    }
+  ],
+  "model_evidence_limits": [
+    "参数总数来自官方 safetensors 元数据，包含发布包中的视觉等参数；模型名中的 4B／9B 是语言模型规模标签。权重存储按 BF16 两字节、F32 四字节计算，不是实测显存，也不包含激活、logits、梯度、优化器或运行时开销。",
+    "两份配置显示线性注意力与全注意力混合、普通 FFN，未出现专家路由配置；不能把模型卡面向整个系列的 MoE 宣传当成这两个模型的稀疏专家结构。",
+    "官方模型卡提供本地推理示例，包含 vLLM 的 --language-model-only；未提供本项目可直接使用的 SFT、LoRA 或 PEFT 兼容性证明。",
+    "Apache-2.0 为官方元数据声明。正式分发时仍需随固定 revision 保留适用许可证及 NOTICE；模型许可不等于第三方文章的训练或再分发许可。"
+  ],
+  "length_evidence": {
+    "source": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "sha256_from_metadata": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+      "characters_after_universal_newline_read": 3231
+    },
+    "accepted_candidate": {
+      "path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+      "sha256_from_metadata_and_feedback": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88",
+      "characters_after_universal_newline_read": 3443
+    },
+    "source_plus_target_characters": 6674,
+    "length_unit": "UTF-8 文本经 universal newline 读取后的 Unicode 字符数，不是中文字数或 token 数。",
+    "token_count": null,
+    "interpretation": "完整输入和改写目标在拼接前已合计 6674 字符，还要加入指令、模板和结束符；不能仅按 3231 个输入字符选 4K 训练长度。",
+    "evidence_boundary": "原文 3231、第二版 Markdown 3443 以冻结长度元数据为准。检查点中正文 3231 的简写不得理解为已经量得第二版正文 token 数。该稿属于已暴露开发锚点，正向反馈只绑定具体稿件，不自动形成合格训练集或独立验证集。"
+  },
+  "minimum_technical_gates": [
+    {
+      "id": "text_only_architecture_and_stack",
+      "evidence": "官方架构为带视觉编码器的 Qwen3_5ForConditionalGeneration；text_config 使用 24 个 Gated DeltaNet 层与 8 个全注意力层，mamba_ssm_dtype 为 float32。官方 README 要求新的 Transformers；config 中记录的 4.57.0.dev0 不是可直接照用的最低兼容版本承诺。",
+      "decision": "首轮只给中文文本，保留官方模型及 tokenizer 契约，冻结视觉模块。先用普通下一 token SFT；不启用 MTP 的附加训练目标或推理加速。",
+      "unknown": "固定版本的 Transformers、PyTorch/CUDA、PEFT 及所用训练器，对该架构前向、反向、checkpointing、BF16 与线性注意力内核的组合支持尚未实测。",
+      "resolve_before_training": "在云环境锁定可支持 qwen3_5 的具体包版本或 commit，保存环境清单；用纯文本微批次检查有限 loss、反向梯度、padding 和保存重载。确认不要求图像张量且视觉参数没有梯度。vLLM 的 text-only 推理开关不能替代训练端检查；如另行导出语言子模型，必须核对权重键、embedding 绑定关系和 token ID，并另验生成一致性。"
+    },
+    {
+      "id": "non_thinking_output_contract",
+      "evidence": "两个官方模板默认生成 <think> 内容；enable_thinking=false 在生成前缀中填入空 think 块。官方明确不支持用 /think 或 /nothink 作为 Qwen3 的软开关。",
+      "decision": "训练目标只含 Astra 已复核的最终改写稿；reasoning_content 留空。训练和自部署推理统一使用 enable_thinking=false，并使用同一锁定模板。",
+      "unknown": "尚未用实际 tokenizer 比对训练序列与推理前缀，也未验证微调后是否稳定只生成最终稿。",
+      "resolve_before_training": "渲染一个完整训练样本和对应推理 prompt，逐 token 验证前缀一致、只存在一个空 think 块、正文紧随其后。明确 <|im_end|> 结束行为。将意外 thinking、解释文字或未结束输出记录为格式失败；不伪造或导出教师隐藏推理。"
+    },
+    {
+      "id": "target_loss_mask",
+      "evidence": "已保存的两个 chat template 都未提供 generation 区块标记；不能只打开 assistant_only_loss 就认定掩码正确。",
+      "decision": "仅最终改写正文和其结束 token 参与 loss。system、user 原文、assistant 头、空 think 前缀及 padding 的 labels 设为 -100。",
+      "unknown": "训练器是否返回有效 assistant mask，以及模板边界处的实际分词行为，尚未验证。",
+      "resolve_before_training": "为固定模板明确计算目标边界，或使用经验证、渲染结果一致的 generation 标记方案。对联合分词结果核对掩码，不盲信分别 tokenize 后的长度相加。解码未掩码 labels，应恰好还原完整目标及一个结束符；检查首个正文 token 参与移位 loss、目标非空、原文与 padding 均不参与。首轮不启用跨文章 packing，避免把边界及跨样本注意力问题混入训练。"
+    },
+    {
+      "id": "sequence_length_and_truncation",
+      "evidence": "原生上下文上限为 262144，但可训练长度受显存和内核限制；Microduck 只有字符计数。",
+      "decision": "8K 为待验证的首轮资源估算长度，16K 为覆盖较长完整文章的候选。长度必须覆盖完整 source、target、指令、模板及结束符；保持原 RoPE 配置，不因模型上限大就分配 262K。",
+      "unknown": "按固定 tokenizer 渲染后的全数据长度分布、8K／16K 溢出数和单篇输出上限尚未测量。",
+      "resolve_before_training": "先固定 tokenizer 文件及 hash，统计完整训练序列的 max、分位数和溢出 ID，保留 source／target 分项 token 数。关闭自动截断，超限样本报错并改选足够长度；不得截掉尾段或把目标摘要化。若资源不足需要分块，应另行设计与验证全文上下文和目标对齐，不能直接切 token。服务端同时为完整输入与输出留足预算，长度停止不得记作成功。"
+    },
+    {
+      "id": "lora_and_deployment_roundtrip",
+      "evidence": "混合注意力同时含线性注意力和全注意力；配置文件没有给出可直接复用的 PEFT target_modules 清单。4B／9B 的输出权重绑定方式不同。",
+      "decision": "首轮采用文本模块 LoRA 的候选方案，先冻结基座、视觉模块、embedding 与 LM head；训练秩等超参数待训练配置冻结。BF16 基座优先减少量化兼容变量，4-bit QLoRA 留作显存不足时另验的选项。",
+      "unknown": "具体投影模块名、量化覆盖、LoRA 梯度路径、混合注意力反向内核以及服务端 adapter 加载支持尚未检查。",
+      "resolve_before_training": "在固定实现中列出实际 named_modules，选择语言模型内确实存在的投影，覆盖计划中的注意力与 FFN 路径并明确记录未覆盖层；不能照抄 q_proj/v_proj，也不能用全模型 all-linear 误纳入视觉层。报告命中模块、可训练参数量和梯度；短跑后保存 adapter，以同一基座 SHA 重载并比较固定输入输出。交付可使用基座加 adapter；若需要合并或量化，另验权重绑定、模板、结束符与正文完整性。"
+    }
+  ],
+  "resource_planning_estimate": {
+    "status": "unmeasured_budgeting_only",
+    "method": "单卡 BF16 基座加文本 LoRA、microbatch=1、gradient checkpointing、训练关闭 use_cache，优先验证 8192 token 的完整序列。",
+    "critical_assumption": "使用兼容混合注意力的反向路径及控制峰值 logits／cross-entropy 内存的实现。248320 词表使长序列 logits 本身占据显著空间，不能仅凭基座权重估显存。",
+    "first_student_4b": {
+      "minimum_exploratory_gpu_vram_gb": 24,
+      "recommended_gpu_vram_gb": 48,
+      "host_ram_gb_minimum_recommended": [32, 64],
+      "free_storage_gb_minimum_recommended": [50, 100]
+    },
+    "capacity_comparator_9b": {
+      "minimum_exploratory_gpu_vram_gb": 48,
+      "recommended_gpu_vram_gb": 80,
+      "host_ram_gb_minimum_recommended": [64, 128],
+      "free_storage_gb_minimum_recommended": [100, 150]
+    },
+    "interpretation": "以上是云资源筛选用暂估，minimum 表示拟先尝试的容量，不是已证实能训练的下限。16K、不同 LoRA 覆盖或未优化 loss 可能超出暂估。应选具有原生 BF16 和所需内核支持的现代 NVIDIA 云 GPU；本机 GTX 1080 不参与。",
+    "measured_peak_vram_gb": null,
+    "measured_tokens_per_second": null,
+    "estimated_training_hours": null,
+    "estimated_cost_usd": null,
+    "resolve_time_and_cost": "数据量与训练栈冻结后，在获提供的云 GPU 做有界预热和短跑，测峰值 allocated/reserved 显存、实际训练 tokens/s、检查点时间及评估时间。用总处理 tokens、epoch 和实测吞吐估时，再乘当时云报价并加存储与评估费用；正式批次前提交这一预算。当前无法给出有依据的小时数或费用。"
+  },
+  "minimum_data_gate": {
+    "ready": false,
+    "requirements": "新增完整中文原文—Astra 最终改写配对，保留教师身份、prompt／操作版本与内容复核；按文章分离训练、开发和独立评价。保留少改／不改对照与明确译文材料。Microduck 已暴露，可作开发锚点；旧 final-test 不用于调 prompt、规则或阈值。进入训练前另核验来源使用权限。",
+    "evaluation": "以继续阅读意愿、中文流畅度及原意和有效信息保留判断收益；与未微调的同一学生基座比较，9B 作容量对照。特征计数、作者身份或托管基线的单篇表现不代替微调评价。"
+  },
+  "evidence_files": [
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-4B-metadata.json", "sha256": "53859b4a152841f5ddd858cbebad6d61257d5f42f298ee0545119b4e2f71e071"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-4B-README.md", "sha256": "1406be1b6b8fd8a6545870da516912804756593628a1d0fb0a7965211e82a7bb"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-4B-config.json", "sha256": "ddc63e1c717afa86c865bb5e01313d89d72bb53b97ad4a8a03ba8510c0621670"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-9B-metadata.json", "sha256": "c832fddcbcb7c2b0f7a6cd4fd438ea7c8cff43f6f31cef8cf19cc9f63f5fe49e"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-9B-README.md", "sha256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-9B-config.json", "sha256": "d0883072e01861ed0b2d47be3c16c36a8e81c224c7ffaa310c6558fb3f932b05"},
+    {"path": "docs/research-checkpoint-2026-09-15.md", "sha256": "ed29dec475d68ae2c2e42ad53dc45511497c8836bf2608a7672572000ba9f8c0"},
+    {"path": "data/local/microduck-readable-transfer-v1/editor-notes-v1.json", "sha256": "c6a2129bb400fd731dd0972793af80ecb6de58a28e61a770bc683f0b57d3d3a1"},
+    {"path": "data/local/microduck-readable-transfer-v1/revision-notes-v2.json", "sha256": "6627d14d21edb03e44f549138862b1a23cff6eafa89129ea95128d44321ebf37"},
+    {"path": "data/local/microduck-readable-feedback-v1/reader-feedback.json", "sha256": "503c9a099a982d27214f28ff1fe30f289920b6253f0f150ff44e86e0da7fc1ca"}
+  ]
+}

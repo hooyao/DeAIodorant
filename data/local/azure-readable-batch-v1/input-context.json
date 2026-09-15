@@ -1,0 +1,10 @@
+{
+  "reason": "保留选材时入口文档，后续更新当前状态不改其读取身份。",
+  "snapshots": [
+    {
+      "original_path": "HANDOFF.md",
+      "snapshot_path": "data/local/azure-readable-batch-v1/input-context/HANDOFF.md",
+      "sha256": "6e894bd2d484b48abd491d884b21ba8b751b98136e78a785f1e97c43a619aea9"
+    }
+  ]
+}

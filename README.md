@@ -2,11 +2,13 @@
 
 **让读者看得舒服。** DeAIodorant 改写公众号、媒体解读、科普和技术说明等公众信息文章，让问题讲得更清楚，减少惹人反感的表达，改善措辞、句子和行文顺序，同时保留原意与有效信息。中文译文也在范围内；艺术文体不属于本项目。
 
-本机最新进展：《亡灵遗产》局部稿获得“至少我愿意读”的反馈，Microduck第二版也被评价为总体不错、目标臭味不明显，仍有一些翻译腔。[生成过程和新反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)已记录；当前保留两篇具体阅读参考，后续复试合适的中文译文，再考虑便宜小模型，暂不训练。检查点见 [HANDOFF.md](HANDOFF.md)。
+当前采用[官方Qwen3.5-27B原始BF16权重与SFT](docs/routes/compact-refiner/student-sft-plan-v2.md)，直接在云GPU运行。GPT-4.1只保留旧模型文风例子，停止改写、复核和教师调用；廉价API摸底也已停止。Astra负责教师数据。27B revision及云端预检脚本已准备，离线检查通过，尚未下载权重或训练；下一步需要80GB级GPU实例。
+
+已保留的阅读成果：《亡灵遗产》局部稿获得“至少我愿意读”的反馈，Microduck第二版也被评价为总体不错、目标臭味不明显，仍有一些翻译腔。[生成过程和反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)继续作为开发参考，后续按官方Qwen云端微调主线推进。检查点见 [HANDOFF.md](HANDOFF.md)。
 
 进度与后续实验的集中说明：[2026-09-15研究综述](docs/research-checkpoint-2026-09-15.md)。
 
-已接入维护者授权的 [Azure GPT-4.1 Responses API](docs/routes/compact-refiner/azure-gpt41-access-v1.md)，一次小请求验证可用。凭据独立保存在被忽略的 `.env`；约50美元额度采用45美元本地预算上限与持久账本。Azure SDK通过 `pip install -e ".[azure]"` 按需安装，不影响原有OpenRouter配置。
+历史Azure接入、凭据和预算记录保留，但仅用于维护者再次明确要求的旧模型文风例子。OpenRouter接口摸底已停止，托管API不作为最终产品依赖。
 
 最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
 

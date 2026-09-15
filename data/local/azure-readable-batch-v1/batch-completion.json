@@ -1,0 +1,16 @@
+{
+  "completed_at_utc": "2026-09-15T08:22:30.176300+00:00",
+  "cases_complete": 4,
+  "budget_after": {
+    "budget_usd": "45",
+    "accounted_usd": "0.35164",
+    "remaining_usd": "44.64836",
+    "actual_billed_usd": null,
+    "basis": "local_budget_estimate_not_verified_billing",
+    "unfinished_reservations": 0,
+    "retained_unknown_cost_reservations": 0
+  },
+  "batch_accounted_delta_usd": "0.35142",
+  "actual_billed_usd": null,
+  "human_feedback": null
+}

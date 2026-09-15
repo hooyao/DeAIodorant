@@ -1,0 +1,28 @@
+{
+  "version": "research-model-roles-2.0",
+  "date": "2026-09-15",
+  "final_product": "自主部署的新小模型，经SFT改善公众信息文章的中文表达与信息保留；不依赖退役云模型作为在线改写层。",
+  "teacher_and_research": {
+    "allowed": ["current_astra", "native_astra_subagents"],
+    "role": "研究判断、教师稿制作及独立内容复核。"
+  },
+  "azure_gpt41": {
+    "role": "historical_style_example_only",
+    "automatic_generation_allowed": false,
+    "teacher_generation_allowed": false,
+    "content_judgment_allowed": false,
+    "production_dependency_allowed": false,
+    "further_use": "仅在维护者再次明确要求旧模型文风例子时使用。已有凭据、适配器、调用与预算记录保留，不继续消耗额度。"
+  },
+  "openrouter": {
+    "allowed": "快速便宜的小模型，限学生能力摸底或开发基线；不调用外部Astra/强模型代替本环境。",
+    "production_dependency_allowed": false
+  },
+  "candidate_students": [
+    {"model": "Qwen/Qwen3.5-4B", "role": "首个紧凑SFT学生候选", "selection_status": "待本地基线与训练兼容检查"},
+    {"model": "Qwen/Qwen3.5-9B", "role": "容量对照；当前有廉价托管接口可先做开发摸底", "selection_status": "待本地基线与训练兼容检查"}
+  ],
+  "old_azure_batch": "保留为历史开发过程及反例，不把其原始稿或基于它修补的稿件自动导出为SFT教师目标。",
+  "evaluation": "用同一锁定checkpoint、本地推理配置与未用于训练的文章比较SFT前后。托管API摸底不冒充该对照。",
+  "gpu_now": "尚未启动训练；数据与序列长度确定后再给出具体云GPU需求。"
+}

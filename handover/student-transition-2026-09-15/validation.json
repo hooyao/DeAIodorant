@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-15",
+  "pytest": "263 passed in 50.87s",
+  "compileall": "passed",
+  "cloud_preflight": "离线计划、源码与教师message绑定、Windows执行阻止、EOS/长度停止检查通过；GPU未执行",
+  "current_model": "Qwen/Qwen3.5-27B",
+  "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "precision": "BF16",
+  "source_views_and_replays": "passed",
+  "historical_review_references": 73,
+  "artifact_files": 157,
+  "artifact_bytes": 2147362,
+  "index_hashes": "passed",
+  "credentials_and_real_resource_addresses_scanned": true,
+  "private_findings": 0,
+  "staged_files_scanned": 176,
+  "weights_downloaded": false,
+  "training_started": false,
+  "azure_batch_plan_delta_usd": "0.77026",
+  "azure_actual_billed_usd": null,
+  "retired_hosted_qwen_api_reported_cost_usd": "0.00214532",
+  "main_unchanged": "af751e236c084c0de3cc45a5979749bad0778378"
+}

@@ -1,0 +1,33 @@
+{
+  "purpose": "记录当前包元数据用于提出云端兼容检查环境；没有证明其组合兼容。",
+  "packages": [
+    {
+      "name": "transformers",
+      "version": "5.17.0",
+      "requires_python": ">=3.10.0",
+      "license": "Apache 2.0 License",
+      "source": "https://pypi.org/pypi/transformers/json"
+    },
+    {
+      "name": "peft",
+      "version": "0.20.0",
+      "requires_python": ">=3.10.0",
+      "license": "Apache",
+      "source": "https://pypi.org/pypi/peft/json"
+    },
+    {
+      "name": "accelerate",
+      "version": "1.15.0",
+      "requires_python": ">=3.10.0",
+      "license": "Apache",
+      "source": "https://pypi.org/pypi/accelerate/json"
+    },
+    {
+      "name": "torch",
+      "version": "2.14.0",
+      "requires_python": ">=3.10",
+      "license": "Apache-2.0 AND Apache-2.0 WITH LLVM-exception AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND MIT",
+      "source": "https://pypi.org/pypi/torch/json"
+    }
+  ]
+}

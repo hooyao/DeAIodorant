@@ -1,0 +1,20 @@
+{
+  "version": "research-model-roles-3.0",
+  "date": "2026-09-15",
+  "supersedes": "configs/model-roles-v2.json",
+  "user_constraints": ["27b都算是小模型，不要浪费时间在便宜的api接口上", "使用正常的qwen模型"],
+  "product": "官方Qwen权重直接在云GPU运行并微调，不以廉价托管API或退役模型作为方案。",
+  "student": {
+    "model": "Qwen/Qwen3.5-27B",
+    "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+    "weights": "官方原始权重",
+    "precision": "BF16",
+    "method": "先做相同权重基线与LoRA兼容短跑，再正式SFT；不默认4-bit量化。",
+    "selection_note": "Root依据当前可核验的官方型号落实正常Qwen和27B容量要求，未宣称它已通过任务验证。"
+  },
+  "teacher_and_research": ["current_astra", "native_astra_subagents"],
+  "gpt41": "仅保留历史风格例子；除维护者再次明确请求该类例子外，停止调用，不作解题、教师或产品依赖。",
+  "cheap_hosted_model_experiments": "停止；已有4B/9B候选资料与两轮9B接口结果只保留为历史开发记录。",
+  "weights_downloaded": false,
+  "training_started": false
+}

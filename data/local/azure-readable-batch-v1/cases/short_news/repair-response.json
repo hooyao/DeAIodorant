@@ -1,0 +1,38 @@
+{
+  "text": "{\"edits\":[{\"old\":\"用户可以最多上传12个参考文件，包括9张图片、3段视频和3段音频（每类总时长均不超过15秒），并结合文本提示词，实现对生成内容的高精度控制。\",\"new\":\"用户可以上传最多12个参考文件（9张图片、3段视频、3段音频，总时长均≤15秒），并结合文本提示词，实现对生成内容的高精度控制。\"},{\"old\":\"进一步提升内容生产效率。\\n\\n---\\n\\nSeedance 2.0 的发布，推动了AI视频生成工具向更高质量、更强可控性和更广泛应用场景发展。随着技术和合规政策的不断完善，AI驱动的视频创作有望在更多行业和场景中落地。\",\"new\":\"\"}]}",
+  "metadata": {
+    "schema_version": "compact-refiner-azure-responses-1.0",
+    "configuration_sha256": "0e9dfeb1c18c0d1e6670d2f8717246cc3aef9612438de6e03ea6c494b772dc7c",
+    "endpoint_sha256": "ef98816a29282ff3e3f6226032b59588aa1ae28e056ba063462dddef72c8b9ff",
+    "requested_deployment": "gpt-4.1",
+    "transaction_id": "ce70751efb63414f9715bcf51d8275fe",
+    "request_sha256": "08ee761bf0606050046ee3df22003e1071dbd8184600d07b858692401c693f63",
+    "purpose": "azure_readable_repair_v1_short_news",
+    "created_at_utc": "2026-09-15T08:33:33.264445+00:00",
+    "finished_at_utc": "2026-09-15T08:33:35.508416+00:00",
+    "response_id": "resp_0e88ae77bd58a4ae016aa902df41008196a41452728d75cd66",
+    "returned_model": "gpt-4.1",
+    "response_status": "completed",
+    "usage": {
+      "input_tokens": 2564,
+      "output_tokens": 185,
+      "total_tokens": 2749
+    },
+    "failure_reason": null,
+    "max_output_tokens": 8000,
+    "temperature": 0,
+    "budget_estimate": {
+      "accounted_usd": "0.03119",
+      "initial_reservation_usd": "0.38314",
+      "input_token_reserve": 14314,
+      "input_usd_per_million": "10",
+      "output_usd_per_million": "30",
+      "basis": "usage_at_plan_prices",
+      "rates_are_verified_billing": false
+    },
+    "actual_billed_usd": null,
+    "attempt_count": 1,
+    "store": false,
+    "cache_hit": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "budget_after": {
+    "budget_usd": "45",
+    "accounted_usd": "0.77048",
+    "remaining_usd": "44.22952",
+    "actual_billed_usd": null,
+    "basis": "local_budget_estimate_not_verified_billing",
+    "unfinished_reservations": 0,
+    "retained_unknown_cost_reservations": 0
+  },
+  "whole_batch_plan_delta_usd": "0.77026",
+  "actual_billed_usd": null,
+  "repair_calls": 4,
+  "human_feedback": null
+}

@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen3.5-27B",
+  "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+  "prompt_is_exact_prefix_of_full": true,
+  "assistant_start_char": 3442,
+  "full_characters": 6895,
+  "generation_markers_present": false,
+  "token_count": null,
+  "token_level_loss_mask_verified": false,
+  "training_started": false,
+  "weight_storage_gib_bf16_f32": 51.74695774912834
+}

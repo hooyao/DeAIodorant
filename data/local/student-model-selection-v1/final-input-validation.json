@@ -1,0 +1,309 @@
+{
+  "validated_references": [
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-4B-metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-4B-README.md",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-4B-config.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-9B-metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-9B-README.md",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-9B-config.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "docs/research-checkpoint-2026-09-15.md",
+      "status": "historical_snapshot_matches",
+      "snapshot": "data/local/student-model-selection-v1/review-input-snapshots/research-checkpoint-2026-09-15.md",
+      "sha256": "ed29dec475d68ae2c2e42ad53dc45511497c8836bf2608a7672572000ba9f8c0"
+    },
+    {
+      "path": "data/local/microduck-readable-transfer-v1/editor-notes-v1.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/microduck-readable-transfer-v1/revision-notes-v2.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/microduck-readable-feedback-v1/reader-feedback.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "experiments/student_sft_preflight.py",
+      "status": "historical_snapshot_matches",
+      "snapshot": "data/local/student-model-selection-v1/preflight-before-review-v1.py",
+      "sha256": "3163ca63806335aa5500421e48ee51268e0bd91b1c71ffcc637828b519ea8ba2"
+    },
+    {
+      "path": "configs/student-cloud-probe-requirements-v1.txt",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "configs/model-roles-v3.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "docs/routes/compact-refiner/student-sft-plan-v2.md",
+      "status": "historical_snapshot_matches",
+      "snapshot": "data/local/student-model-selection-v1/review-input-snapshots/student-sft-plan-v2.md",
+      "sha256": "5622f27b424756cbbf71e65b3c2f6204aa0ef3482b1d594f2c1ee33231aae0b1"
+    },
+    {
+      "path": "data/local/student-sft-preparation-v1/development-pair-prototype.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-27B-metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-27B-config.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/student-model-selection-v1/Qwen3.5-27B-README.md",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0be079018045fbf1f2d47d7f/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/195940f04347559f68fbfdcb/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/21fb54b8f31d94d5f58b2b86/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2762aba55519d5e3e9349b17/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/2e0d0c6274b0a0e6a333fbb9/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/3fdc45a2c7759e78fc9013c9/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/550a11e0e8987efc94c654b7/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/577ba2d1fd46fae48e0ad5d2/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/5eccef97088993c9842a4e4c/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/6e1b7928a8a00ba027e8c8fa/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/738c96bc2777301fdaf9f078/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/769ecc5e088514e4261ae7e0/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/769ecc5e088514e4261ae7e0/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/83e3fb47524511fba7945931/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/83e3fb47524511fba7945931/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8a835ce2a2584c3c9040fcc5/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8a835ce2a2584c3c9040fcc5/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bdf575aae4fe9a3b509a492/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/8bfb7b3e6b210126548b7f0c/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/94484784827b950a4ea5beea/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/94484784827b950a4ea5beea/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9d2686869fb90420de5a6d40/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9d2686869fb90420de5a6d40/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/a4007204435ea4d0895d0d46/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c526ed941b8de39a5388df3d/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c979e224eb220101fb785893/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/c979e224eb220101fb785893/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/metadata.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/d679960cb6cb418eebb6b222/structure.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "HANDOFF.md",
+      "status": "historical_snapshot_matches",
+      "snapshot": "data/local/azure-readable-batch-v1/input-context/HANDOFF.md",
+      "sha256": "6e894bd2d484b48abd491d884b21ba8b751b98136e78a785f1e97c43a619aea9"
+    },
+    {
+      "path": "data/local/media-repair-development-v1/ready-selection.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/eligibility-audit.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/selection-manifest.json",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/0c1bc051de0fc98fbcd0524d/body.txt",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9d2686869fb90420de5a6d40/body.txt",
+      "status": "current_hash_matches"
+    },
+    {
+      "path": "data/local/media-contrast-staging-v1/documents/9656e09a0c8ef6938c517cef/body.txt",
+      "status": "current_hash_matches"
+    }
+  ],
+  "azure_exact_replays": 7,
+  "student_responses_match": true,
+  "routing_check_messages_and_common_parameters_equal": true,
+  "current_policy": "configs/model-roles-v3.json",
+  "training_started": false
+}

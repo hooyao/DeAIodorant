@@ -1,0 +1,23 @@
+{
+  "version": "student-hosted-routing-check-1.0",
+  "model": "qwen/qwen3.5-9b",
+  "provider_only": [
+    "DeepInfra"
+  ],
+  "quantizations": [
+    "bf16"
+  ],
+  "pricing": {
+    "prompt": "0.0000001",
+    "completion": "0.00000015",
+    "discount": 0
+  },
+  "budget_usd": "0.10",
+  "max_calls": 2,
+  "source_requests_dir": "data/local/student-baseline-v1",
+  "changed": "只修改provider/precision路由约束；其余消息、temperature、reasoning、seed和max_tokens沿用前次。",
+  "limit": "服务商和精度同时变化；不能将差异单独归因于FP4。API目录的精度声明不是实测精度，也不替代未来锁定权重的本地基线。",
+  "client_sha256": "652ca07d7547bf0a66d5800be646dfa4e06b5703d1481b5521dd576f33b2593f",
+  "runner_sha256": "df731191bff9b33bd9b59c1b80918af7590aa37d8278ed7127aa549b2269ac9c",
+  "training_started": false
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": "azure-readable-content-review-1.0",
+  "case_id": "short_news",
+  "reviewed_at_utc": "2026-09-15T08:25:40.860741+00:00",
+  "reviewer": {
+    "kind": "native_astra_subagent",
+    "task": "batch_short_review",
+    "independent_of_draft_generation": true,
+    "blind": false
+  },
+  "scope": "完整阅读本例原始正文、恢复段落后的原文、首次候选和响应记录；仅作源文相对内容复核，不判作者身份、AI臭味或读者偏好。未联网、未调用模型API、未运行文章代码。",
+  "inputs": {
+    "original.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/original.md",
+      "sha256": "8b2ab500ee699d7766fcf01c6c8318a3a914a786fa1e0ed62609371df6cb0b5c",
+      "hash_basis": "raw_file_bytes"
+    },
+    "input.txt": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/input.txt",
+      "sha256": "e822db3ab7d728d2f4f1de0374bbb5b5286bbd2d35f927def190999d6ec1da83",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v1.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v1.md",
+      "sha256": "e93fbbba6feb4b760cc1c411adf9d997f39e1a184fa93dfb32c50cf448b01441",
+      "hash_basis": "raw_file_bytes"
+    },
+    "response.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/response.json",
+      "sha256": "cf027a66e700d0f69faf79b09d0bbf3f1cd12d141e36117be1db82653e3ce977",
+      "hash_basis": "raw_file_bytes"
+    },
+    "protected-code.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/protected-code.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "hash_basis": "raw_file_bytes"
+    }
+  },
+  "source": {
+    "path": "data/local/cognitive-move-contract-probe-v1/documents/n02/body.txt",
+    "sha256": "d07f105061a9f11e7bb4ff3668b1586e0ac3ec01d5a7d81fa37aaab5680a36e7",
+    "matches_manifest": true,
+    "url": "https://post.smzdm.com/p/agopr2mm/"
+  },
+  "decision": "requires_revision",
+  "training_eligible": false,
+  "human_feedback": null,
+  "limitations": [
+    "源文中的技术说法、平台政策和数字未向上游独立核实；内容保留检查不等于事实核验。",
+    "本复核不评价改写是否好读，也不把字数、标题数量或词语次数作为效果分数。"
+  ],
+  "summary": "核心日期、模态、功能和使用条件大体保留。时长约束的歧义被擅自明确，末尾另增未经源文支持的展望；不能把此稿当作完整内容保留通过。",
+  "issues": [
+    {
+      "id": "short-news-01",
+      "kind": "unsupported_ambiguity_resolution",
+      "severity": "material",
+      "source_quote": "最多12个参考文件（9张图片 + 3段视频 + 3段音频，总时长均≤15秒）",
+      "candidate_quote": "用户可以最多上传12个参考文件，包括9张图片、3段视频和3段音频（每类总时长均不超过15秒）",
+      "problem": "原文的12与9+3+3关系本来没有说明，候选没有解决这个矛盾；额外加入“每类”则把不明确的时长作用域固定下来，还可能读成图片一类也有时长限制。不能认为这些是已验证的共同可用限额。",
+      "suggestion": "保留各数字并明确它们是原文并列列出的说法，不补出合计规则、各类上限或时长适用类别。若需要清楚可用的限额说明，应另行核验上游；本轮不猜测“12”和“9+3+3”的关系。"
+    },
+    {
+      "id": "short-news-02",
+      "kind": "unsupported_editorial_addition",
+      "severity": "material",
+      "source_quote": "企业用户可留意2月14日火山引擎API正式上线，以便集成至自有工作流。",
+      "candidate_quote": "进一步提升内容生产效率。\n\n---\n\nSeedance 2.0 的发布，推动了AI视频生成工具向更高质量、更强可控性和更广泛应用场景发展。随着技术和合规政策的不断完善，AI驱动的视频创作有望在更多行业和场景中落地。",
+      "problem": "“提升内容生产效率”是新增的效果总结；末段新增行业推广预测，并以“技术和合规政策不断完善”为前提。它不是新增的实测结果，但仍属于源文没有给出的评价、预设和展望。",
+      "suggestion": "删去新增的效率断语和全文最后一段；保留原文对2月14日API与工作流集成的建议，不补充行业结论。"
+    }
+  ],
+  "source_ambiguities": [
+    {
+      "item": "参考文件数量及视频/音频时长",
+      "source_status": "原文同时说最多12个，并列9张图片、3段视频、3段音频；“总时长均≤15秒”的确切适用范围不清。",
+      "candidate_status": "数字关系仍不清，且新增“每类”解释。",
+      "external_verification": "not_performed"
+    },
+    {
+      "item": "实测来源",
+      "source_status": "只写“据实测”，未给出测试者、测试设置或样本数。",
+      "candidate_status": "写成“实测数据显示”，没有新增具名测试者；这一措辞变化本身不足以判定为虚构一次新的测试，但证据来源仍不完整。",
+      "suggestion": "若保留数字，继续把它们视为原文的实测说法；不能升级成编辑亲测、平台官方数据或普遍性能保证。"
+    },
+    {
+      "item": "2月14日API时间",
+      "source_status": "文章发布在2月12日，2月14日上线是当时面向未来的说法；本次未核验实际上线。",
+      "candidate_status": "“届时”仍为面向未来，未明确说已经上线；不得据此给出当前可用保证。"
+    }
+  ],
+  "content_checks": [
+    {
+      "item": "发布与访问",
+      "result": "字节跳动旗下即梦AI、2026年2月7日、Seedance 2.0、电影级全流程生成引擎定位、灰度测试和会员条件保留。"
+    },
+    {
+      "item": "模态与语法",
+      "result": "文本、图片、视频、音频四模态和@图1首帧/@视频1参考运镜保留。"
+    },
+    {
+      "item": "音画与架构",
+      "result": "双分支扩散变换器、毫秒级口型对齐、空间混响、8种语言的音素级同步及优于早期模型的相对说法保留。"
+    },
+    {
+      "item": "镜头与物理",
+      "result": "自动分镜与运镜、面部/服饰/光影一致、视频延长/局部编辑/接着拍、V2运动合成及重力/动量/流体/碰撞保留。"
+    },
+    {
+      "item": "测量数字",
+      "result": "15秒视频、30–60秒耗时、一次性成功率超过90%保留；来源不详的限制见source_ambiguities。"
+    },
+    {
+      "item": "产品与付费",
+      "result": "即梦、豆包、小云雀、小云雀新用户3次免费试用、会员69元起保留。"
+    },
+    {
+      "item": "真人参考政策",
+      "result": "平台为政策主体、因真人生成伦理风险、2月9日、真人图片/视频作为主体参考受限、仅允许活体认证后的数字分身保留。“紧急”被省略是处置语气/过程细节弱化，不表示核心政策条件被删除。"
+    },
+    {
+      "item": "使用建议",
+      "result": "营销/内容从业者、即梦官网和小云雀APP、品牌宣传/短剧分镜/产品演示、参考素材运镜、合规政策与受限素材提醒保留。"
+    }
+  ],
+  "non_issue_notes": [
+    "“大幅降低”与原文“显著降低”、“音画匹配效果优于”与原文“显著优于”主要是评价强度或明确作用范围的重述；本复核不把这些都计作新增事实。",
+    "候选沿用的“AI导演”“工业级工具”等评价本来就在原文；其是否令人反感属于另行阅读评价，不能伪装为源文保真错误。",
+    "候选补出“模型”作为原文标题式短语的主语，符合该段语境；未观察到将第三方政策或测试错归给模型架构的主语变更。"
+  ]
+}

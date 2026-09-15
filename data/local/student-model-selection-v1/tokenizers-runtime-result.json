@@ -1,0 +1,13 @@
+{
+  "version": "tokenizer-runtime-download-1.0",
+  "initial_attempts": [
+    "pip metadata TLS handshake failure",
+    "requests wheel TLS handshake failure; offline install then found no wheel"
+  ],
+  "final_transport": "Windows curl, TLS verification enabled",
+  "download_return_code": 35,
+  "url": "https://files.pythonhosted.org/packages/65/71/0670843133a43d43070abeb1949abfdef12a86d490bea9cd9e18e37c5ff7/tokenizers-0.22.2-cp39-abi3-win_amd64.whl",
+  "expected_sha256": "c9ea31edff2968b44a88f97d784c2f16dc0729b8b143ed004699ebca91f05c48",
+  "weights_downloaded": false,
+  "failure": "TLS/network failure; no insecure option or alternate host used"
+}

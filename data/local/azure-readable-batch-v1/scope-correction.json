@@ -1,0 +1,26 @@
+{
+  "version": "azure-role-correction-1.0",
+  "date": "2026-09-15",
+  "verbatim_user_messages_in_order": [
+    "gpt4.1是不可以用来作为去ai臭味的方案的，这个模型很快就要deprecate了，到时候想用都用不到了，还是得在新的小模型上做微调想办法",
+    "gpt4.1确实太老了，能力也比较差",
+    "你不能指望gpt4.1帮你解决问题，gpt4.1只是给你做个例子顺带证明我的statement, llm刚出来的时候是没有ai臭味的"
+  ],
+  "root_interpretation": {
+    "mistake": "Root将用于展示文风的旧模型扩展成了研究改写和定点修订工具，偏离维护者提供它的用途。",
+    "model_role": "GPT-4.1只保留历史风格例子，停止后续改写、研究判断和教师数据调用。",
+    "product_goal": "在可自行部署的新小模型上进行微调。",
+    "historical_observation": "保留维护者关于早期模型没有这种臭味的经验判断；现有例子说明目标写法不是模型生成文字不可避免的属性，不把它扩为全部早期模型或具体训练机制的证据。",
+    "deprecation": "按维护者指出的资源退役风险作为设计约束；本记录没有核验具体退役日期，也不把GPT-4.1当作最早一代LLM。"
+  },
+  "batch_state_at_stop": {
+    "azure_initial_calls": 4,
+    "azure_repair_calls": 4,
+    "budget_plan_delta_usd": "0.77026",
+    "actual_azure_billed_usd": null,
+    "further_azure_calls": 0,
+    "artifacts": "所有初稿、精确编辑、Astra复核与Root收尾均保留；不再向维护者提交为下一步解决方案。",
+    "training_eligible": false
+  },
+  "authoritative_policy": "configs/model-roles-v2.json"
+}

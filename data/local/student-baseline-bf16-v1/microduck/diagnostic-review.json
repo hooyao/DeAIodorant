@@ -1,0 +1,474 @@
+{
+  "schema_version": "student-hosted-baseline-diagnostic-1.0",
+  "created_at_utc": "2026-09-15T09:12:05.902081+00:00",
+  "reviewer": {
+    "kind": "native_astra_subagent",
+    "task": "batch_short_review",
+    "independent_of_candidate_generation": true,
+    "blind": false
+  },
+  "scope": "对同一篇已暴露Microduck原文的两次9B托管输出做最多六项诊断；阅读获认可Astra稿只为理解项目目标，不生成教师稿，也不将参考稿反馈转移到学生稿。",
+  "artifacts": {
+    "source": {
+      "path": "data/local/reader-style-anchors-v1/smzdm/analysis-body.txt",
+      "sha256": "6a07bf687b9a91ee7eedaad1d0a8d71b26defcdd9f246b8b8af78dad30180451",
+      "hash_basis": "raw_file_bytes"
+    },
+    "darkbloom": {
+      "path": "data/local/student-baseline-v1/microduck/candidate.md",
+      "sha256": "b1af080e9d75e185b3ee65da749e4cbf3a37792c5607c4ef55d366a2bb775da0",
+      "hash_basis": "raw_file_bytes"
+    },
+    "bf16": {
+      "path": "data/local/student-baseline-bf16-v1/microduck/candidate.md",
+      "sha256": "bcea21dfa340c49d5fee5c8dfa7eb9f58a14799988ee5aabc5573d5800ac429e",
+      "hash_basis": "raw_file_bytes"
+    },
+    "reference": {
+      "path": "data/local/microduck-readable-transfer-v1/candidate-v2.md",
+      "sha256": "615fe6900fc82aa97218f2090fe6daf15cac63dc716c2c51b28cb4d862269d88",
+      "hash_basis": "raw_file_bytes"
+    },
+    "darkbloom_request": {
+      "path": "data/local/student-baseline-v1/microduck/request.json",
+      "sha256": "18aedd6242cf1557865470a29f33e628bd418c8651a9eb62b9ec77d85ca9fd4e",
+      "hash_basis": "raw_file_bytes"
+    },
+    "bf16_request": {
+      "path": "data/local/student-baseline-bf16-v1/microduck/request.json",
+      "sha256": "b1169a9c857cca4a346df90e30a55a845e7c4de98ce71a2db4118220968306fd",
+      "hash_basis": "raw_file_bytes"
+    },
+    "darkbloom_response": {
+      "path": "data/local/student-baseline-v1/microduck/response.json",
+      "sha256": "ade58ac49ce070c2a4231deeaee35d3c82039338ac85a24124613b40bec29fdc",
+      "hash_basis": "raw_file_bytes"
+    },
+    "bf16_response": {
+      "path": "data/local/student-baseline-bf16-v1/microduck/response.json",
+      "sha256": "1e43c61caf41b77d42e9980811c5b06692d0ff9bc8113bebd52572c502e188ab",
+      "hash_basis": "raw_file_bytes"
+    }
+  },
+  "input_checks": {
+    "messages_equal": true,
+    "messages_sha256": "842c673e8c9fed813f7670c7fa6af4b1d517148458f79486efda477105cb1086",
+    "source_user_message_exact_after_outer_whitespace_trim": true,
+    "only_system_instruction_and_source_in_messages": true,
+    "reference_provided_to_student": false,
+    "common_generation_parameters_equal": true,
+    "parameters": {
+      "model": "qwen/qwen3.5-9b",
+      "temperature": 0.7,
+      "max_tokens": 8192,
+      "reasoning": {
+        "enabled": false,
+        "exclude": true
+      },
+      "seed": 20260915
+    }
+  },
+  "routes": {
+    "initial": {
+      "returned_provider": "Darkbloom",
+      "requested_provider": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "prompt": 0.1,
+          "completion": 0.15
+        }
+      },
+      "client_version": "compact-refiner-openrouter-1.1",
+      "checkpoint_revision": null,
+      "quantization_returned_by_response": null
+    },
+    "followup": {
+      "returned_provider": "DeepInfra",
+      "requested_provider": {
+        "allow_fallbacks": false,
+        "max_price": {
+          "prompt": 0.1,
+          "completion": 0.15
+        },
+        "only": [
+          "DeepInfra"
+        ],
+        "quantizations": [
+          "bf16"
+        ]
+      },
+      "client_version": "compact-refiner-openrouter-1.2",
+      "checkpoint_revision": null,
+      "quantization_returned_by_response": null,
+      "requested_quantization": "bf16"
+    }
+  },
+  "findings": [
+    {
+      "id": "D01",
+      "kind": "visible_output_contamination",
+      "result": "Darkbloom稿中插入的异常文字不来自原文；本次DeepInfra/bf16稿未见同类明显污染。",
+      "evidence": [
+        {
+          "artifact": "darkbloom",
+          "text": "الشمالية",
+          "start_char": 125,
+          "end_char": 133,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "ذهب",
+          "start_char": 766,
+          "end_char": 769,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "가이드",
+          "start_char": 977,
+          "end_char": 980,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "قرصة",
+          "start_char": 1144,
+          "end_char": 1148,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "でもいい",
+          "start_char": 1639,
+          "end_char": 1643,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "باشد",
+          "start_char": 2683,
+          "end_char": 2687,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "ксу",
+          "start_char": 2827,
+          "end_char": 2830,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "마트",
+          "start_char": 3124,
+          "end_char": 3126,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "небольшую",
+          "start_char": 3189,
+          "end_char": 3198,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "มัก",
+          "start_char": 3988,
+          "end_char": 3991,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "<TSource>",
+          "start_char": 1226,
+          "end_char": 1235,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "<Object>",
+          "start_char": 2705,
+          "end_char": 2713,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "completionHandler",
+          "start_char": 2614,
+          "end_char": 2631,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines",
+          "appears_in_source": false,
+          "appears_in_bf16": false
+        }
+      ],
+      "interpretation": "初稿含10个由指定非中文文字范围匹配出的片段，另有伪标签和程序标识混入正文；其中ToF、ONNX Runtime和配色引文也被破坏。第二稿这些片段未再出现，全文检查也未见相似的异常多语插入。这里不把正常英文术语、型号或链接当污染。",
+      "limits": "观察单位仅为这一篇文章的两次输出；不能说BF16已普遍消除污染，更不能从同时更换provider和请求精度标签的结果单独归因FP4。"
+    },
+    {
+      "id": "D02",
+      "kind": "target_rhetorical_actions_retained",
+      "result": "后一次稿仍大量沿用读者提名的讲解预告、口号式并列和否定替换框架，部分只是换词或加上“而是”。",
+      "evidence": [
+        {
+          "artifact": "source",
+          "text": "先把\"开源\"的范围捋清",
+          "start_char": 480,
+          "end_char": 491,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "先厘清“开源”的范畴",
+          "start_char": 610,
+          "end_char": 620,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "source",
+          "text": "账一：官方下单，买的是管线，熬的是时间",
+          "start_char": 1123,
+          "end_char": 1142,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "账一：官方下单，买的是管线，熬的是时间",
+          "start_char": 1563,
+          "end_char": 1582,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "source",
+          "text": "sim-to-real 的最后一公里不是玄学，是版本管理",
+          "start_char": 2498,
+          "end_char": 2526,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "sim-to-real 的最后一公里不是玄学，而是严格的版本管理。",
+          "start_char": 3178,
+          "end_char": 3211,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "reference",
+          "text": "## 购买条件与交付时间",
+          "start_char": 1324,
+          "end_char": 1336,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "reference",
+          "text": "修改训练流程时，要核对相关组件的版本，确认导出的策略与机载软件兼容。",
+          "start_char": 1063,
+          "end_char": 1097,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        }
+      ],
+      "interpretation": "“先厘清”仍在预告替读者解释，“买的是……熬的是……”的对偶原样保留，版本兼容说明仍用否定一个无来由对照来呈现。获认可参考直接交代购买条件和兼容性要求，展示的是待学习的编辑动作，不要求机械照抄参考句。",
+      "limits": "这些是与已有读者反馈关联的具体形式诊断，不是对本稿作人类阅读判断，也不建立禁词表或总体臭味分数。"
+    },
+    {
+      "id": "D03",
+      "kind": "measurement_and_mechanism_drift",
+      "result": "第二稿补回初稿漏掉的训练部署记录，但把控制tick漏执行写成丢包，并新增了原文没有支持的运行机制解释。",
+      "evidence": [
+        {
+          "artifact": "source",
+          "text": "50Hz、每 20ms 一个控制 tick，实测 15022 个 tick 只漏 3 个。",
+          "start_char": 861,
+          "end_char": 906,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "在累计运行 15022 个控制周期的测试中，仅有 3 个周期出现丢包。",
+          "start_char": 1221,
+          "end_char": 1256,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "source",
+          "text": "也就是说，训练靠算力，实机真不靠。",
+          "start_char": 906,
+          "end_char": 923,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "这表明训练高度依赖算力，而实机运行则主要依赖算法效率。",
+          "start_char": 1256,
+          "end_char": 1283,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "reference",
+          "text": "15022个 tick 中漏了3个。这份记录展示了训练与实际运行对硬件的不同要求，具体数据来自该开发者的测试。",
+          "start_char": 932,
+          "end_char": 987,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        }
+      ],
+      "additional_check": {
+        "darkbloom_contains_15022": false,
+        "darkbloom_contains_50hz": false,
+        "bf16_contains_both": true
+      },
+      "interpretation": "“漏tick”是控制时序记录，原文没有报告网络或数据包损失；“算法效率”也没有对应测量或前提。原文自身的“实机真不靠”是强概括，不能据此补出另一种看似技术性的因果说明。",
+      "limits": "未核验开发者上游记录；这里只认定输出相对给定原文的概念置换和无依据补充。"
+    },
+    {
+      "id": "D04",
+      "kind": "unsupported_product_qualifiers",
+      "result": "第二稿新增了硬件升级关系和包装内容的关机条件。",
+      "evidence": [
+        {
+          "artifact": "source",
+          "text": "商业版就是这个开源项目的成品形态。",
+          "start_char": 1645,
+          "end_char": 1662,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "商业版本质上就是该开源项目的硬件升级。",
+          "start_char": 2178,
+          "end_char": 2197,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "source",
+          "text": "默认整机只有手柄和一块电池。",
+          "start_char": 1338,
+          "end_char": 1352,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "默认整机关闭状态下仅含手柄和一块电池。",
+          "start_char": 1824,
+          "end_char": 1843,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        }
+      ],
+      "interpretation": "由开源项目形成商业成品，不等于已确认它是一次硬件升级；包装附件也不随开关机状态变化。后一句的“关闭状态下”没有原文依据，还使本来清楚的配件说明变得难理解。",
+      "limits": "两项均是源文未许可的限定；未据此推断学生具体生成机制。"
+    },
+    {
+      "id": "D05",
+      "kind": "source_ambiguity_overresolved",
+      "result": "两次输出都将原文未解释的“首日4秒卖出一台”固定解释为首台售出的耗时。",
+      "evidence": [
+        {
+          "artifact": "source",
+          "text": "首日 4 秒卖出一台",
+          "start_char": 96,
+          "end_char": 106,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "darkbloom",
+          "text": "首日开售后仅用  الشمالية 4 秒，便售出一台",
+          "start_char": 116,
+          "end_char": 143,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "该产品首日仅用时 4 秒便售出一台",
+          "start_char": 164,
+          "end_char": 181,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "reference",
+          "text": "文中没有说明“4 秒卖出一台”的统计口径。",
+          "start_char": 247,
+          "end_char": 268,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        }
+      ],
+      "interpretation": "原文可能在说销售节奏，也可能在说某台订单的用时，文本不足以消除歧义。两稿都加入“仅用时”的单次耗时读法；去掉异常字符没有同时修复这一统计口径问题。",
+      "limits": "这里只保留原文歧义，不认定正确口径是哪一种；也不以参考稿的补充说明替代上游核验。"
+    },
+    {
+      "id": "D06",
+      "kind": "quotation_and_cost_relation_drift",
+      "result": "第二稿在DIY成本段改写了引号内原话，随后又把原文“省不了钱”的关系写乱。",
+      "evidence": [
+        {
+          "artifact": "source",
+          "text": "“自己采购一套手搓，不会低于 4000 元，比人家零售价都贵”",
+          "start_char": 2077,
+          "end_char": 2108,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "“自己采购一套手搓，成本不会低于 4000 元，比官方零售价还贵”",
+          "start_char": 2715,
+          "end_char": 2748,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "source",
+          "text": "DIY 搓鸭省钱是伪命题，省不了钱换的是折腾自由。",
+          "start_char": 2144,
+          "end_char": 2169,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        },
+        {
+          "artifact": "bf16",
+          "text": "DIY 搓鸭“省钱”是伪命题，省下的钱换不来成本优势，换来的是折腾的自由度。",
+          "start_char": 2786,
+          "end_char": 2824,
+          "offset_basis": "decoded_utf8_text_with_universal_newlines"
+        }
+      ],
+      "interpretation": "“人家零售价”被缩定成“官方零售价”且仍放在引号内，违反引用原文保留；“省下的钱”还与前面的“不省钱”论点相冲突，说明句子扩写会损坏逻辑关系。",
+      "limits": "4000元仍被标为该网友估算，这一来源限定没有消失；不能把局部问题说成全部成本信息都丢失。"
+    }
+  ],
+  "summary": "本次固定DeepInfra并请求bf16后的输出没有初稿的明显多语污染，但仍沿用项目要改善的篇章姿态，且有概念置换、无依据补充、引用变动和逻辑损坏。它可用于识别学生能力缺口，不能作为合格教师答案。",
+  "role": "exposed_development_student_baseline",
+  "training_target_eligible": false,
+  "human_readability_score": null,
+  "human_feedback_on_these_candidates": null,
+  "network_calls_in_review": 0,
+  "teacher_output_generated": false,
+  "causal_and_generalization_limits": [
+    "只有一篇已暴露文章、每条路由一次输出；temperature为0.7，服务端seed是否有效未获确认。",
+    "provider与请求quantization同时改变，客户端记录版本也不同；共同生成参数相同仍不能隔离FP4或BF16的因果效应。",
+    "初稿响应未暴露实际quantization；后稿仅核对请求bf16及返回DeepInfra，不能将精度请求标签当作已独立证明底层精度。",
+    "两次返回的checkpoint_revision均为空；OpenRouter模型名不证明托管权重等同于锁定的Hugging Face checkpoint。",
+    "可见污染消失不代表风格任务完成，也不证明SFT必然解决本次所有问题。",
+    "诊断只依据给定中文原文和两份输出，没有验证Microduck上游事实或给出人类臭味判断。"
+  ]
+}

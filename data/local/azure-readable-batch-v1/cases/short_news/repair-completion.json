@@ -1,0 +1,17 @@
+{
+  "candidate_sha256": "813065eeee0f8b3d39086c236db85e6eac87f6e4268dda8e577c7e6c940a1587",
+  "characters": 1272,
+  "edits": 2,
+  "code_exact": true,
+  "semantic_review": "pending",
+  "human_feedback": null,
+  "budget_after": {
+    "budget_usd": "45",
+    "accounted_usd": "0.57786",
+    "remaining_usd": "44.42214",
+    "actual_billed_usd": null,
+    "basis": "local_budget_estimate_not_verified_billing",
+    "unfinished_reservations": 0,
+    "retained_unknown_cost_reservations": 0
+  }
+}

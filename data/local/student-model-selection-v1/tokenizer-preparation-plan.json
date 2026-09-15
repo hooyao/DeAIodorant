@@ -1,0 +1,13 @@
+{
+  "version": "student-tokenizer-preparation-1.0",
+  "purpose": "在CPU上测完整source+teacher target的实际token长度，检查非思考模板及正文loss边界，为SFT准备；不训练。",
+  "runtime": "tokenizers==0.22.2，Apache-2.0，使用PyPI公开wheel；安装到被忽略的models/student-tokenizers/runtime，不改系统包。",
+  "model_assets": "只下载锁定Qwen3.5-4B/9B revision的tokenizer.json，模板来自已保存官方metadata；权重和图片不下载。",
+  "cache_root": "models/student-tokenizers",
+  "per_tokenizer_max_download_bytes": 60000000,
+  "cost": "公开元数据与tokenizer无推理API费用；会使用少量本地存储和普通网络流量。",
+  "failure_behavior": "下载失败、超限、模板渲染或边界不匹配均保留失败，不猜token数，不静默截断。",
+  "dataset_role": "仅一条已暴露Microduck开发示例的序列化原型，不作训练集或未见评估。",
+  "gpu_used": false,
+  "training_started": false
+}

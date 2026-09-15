@@ -1,5 +1,7 @@
 # 项目路线图
 
+当前执行主线以[官方Qwen3.5-27B BF16计划](routes/compact-refiner/student-sft-plan-v2.md)为准：Astra制作与复核教师稿，官方权重直接云GPU运行并SFT；停止4B/9B及廉价接口摸底。先验证正文loss mask、基座与训练链路，再形成训练/评估数据并正式SFT。GPT-4.1只保留历史文风例子。
+
 当前阶段的集中综述与实验顺序见[2026-09-15研究检查点](research-checkpoint-2026-09-15.md)：先补少量不同来源及明确译文的开发文章，再检查流程重复性和学生模型能力，最后才决定训练。该后续批次尚未执行。
 
 最新推进安排：[从“愿意读”的参考稿进入下一阶段](routes/compact-refiner/readable-reference-next-stage-v1.md)。1519字符《亡灵遗产》稿与Microduck第二版均已获具体正向阅读反馈；Microduck仍有轻微翻译腔，[过程与证据范围](routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)另存。当前向合适的中文译文复试推进，首次限定元数据检查未找到明确译文，不提交弱候选。两篇暴露开发稿的反馈不等于普遍泛化或训练验收，便宜学生模型试验仍在后续阶段。

@@ -1,0 +1,57 @@
+{
+  "selected_nontranslated_or_unresolved": [
+    {
+      "id": "short_news",
+      "role": "短资讯的句法与内容边界压力例",
+      "selection_rationale": "标题式名词与谓语粘连、反复升级宣告，且12与9+3+3的关系未解释；不自行补成事实。",
+      "source_dir": "data/local/cognitive-move-contract-probe-v1/documents/n02",
+      "source_url": "https://post.smzdm.com/p/agopr2mm/",
+      "title": "字节跳动即梦AI平台2026年2月7日上线Seedance 2.0视频生成模型，定位“电影级全流程生成引擎”",
+      "source_body_sha256": "d07f105061a9f11e7bb4ff3668b1586e0ac3ec01d5a7d81fa37aaab5680a36e7",
+      "metadata_sha256": "c3a7c02e611b0bfdf28333b1d1c7272973ff6e5f593eeb4ee2d6411f6791d977",
+      "source_published_at": "2026-02-12T02:18:03+08:00",
+      "source_characters": 977,
+      "original_view_sha256": "8b2ab500ee699d7766fcf01c6c8318a3a914a786fa1e0ed62609371df6cb0b5c",
+      "input_sha256": "e822db3ab7d728d2f4f1de0374bbb5b5286bbd2d35f927def190999d6ec1da83",
+      "view_preparation": "仅按原文保存行增加段落空行，未改内容。",
+      "removed_copy_button_blocks": [],
+      "protected_code_blocks": 0,
+      "max_output_tokens": 3000,
+      "human_feedback": null,
+      "training_eligible": false
+    },
+    {
+      "id": "marketing",
+      "role": "不同平台的营销表达边界例",
+      "selection_rationale": "早期文章同样有营销夸张和数字密集段落；不因日期把它标成干净人类文本。",
+      "source_dir": "data/local/independent-media-discovery-v1/documents/d04",
+      "source_url": "https://zhongce.sina.com.cn/article/view/129894",
+      "title": "3600字长文，22年哪款新品扫拖机器人值得买？",
+      "source_body_sha256": "a9beca8dc43ab5b85d542e0f8c3a4d40a31376892895ea84dc4547a0f382e3c2",
+      "metadata_sha256": "f7ac84b7d568093faa70e73dee5a30d78af44f7bd4307290b5d7294095fca6b7",
+      "source_published_at": "2022-05-03 13:00",
+      "source_characters": 3699,
+      "original_view_sha256": "a8e279d7e1f8293295083de3f4e560cff676ec0c3ee3420dcdc20a565423cba1",
+      "input_sha256": "e38959e5bbd51687f7e9204ec185b6ba8f283437ca16228a8e3fb6ba1f2d35a7",
+      "view_preparation": "仅按原文保存行增加段落空行，未改内容。",
+      "removed_copy_button_blocks": [],
+      "protected_code_blocks": 0,
+      "max_output_tokens": 9500,
+      "human_feedback": null,
+      "training_eligible": false
+    }
+  ],
+  "other_views_inspected": [
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d02",
+      "status": "正文请求输出过长，只获得部分可见文本；不声称全文审阅",
+      "decision": "16242字符，超出本轮长度范围，保留未选。"
+    },
+    {
+      "path": "data/local/independent-media-discovery-v1/documents/d03",
+      "status": "阅读全文",
+      "decision": "图片说明占比高，不作本轮主要文字对照；不标为坏文章。"
+    }
+  ],
+  "control_not_a_clean_negative_label": true
+}

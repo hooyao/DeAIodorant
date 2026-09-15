@@ -1,0 +1,22 @@
+{
+  "created_at_utc": "2026-09-15T08:21:40.561272+00:00",
+  "deployment": "gpt-4.1",
+  "input_sha256": "e6d2ebb5755f009a53a58ce1baa4f176b1ba740497ff205d5d9b52c0237859d2",
+  "instructions_sha256": "a7dc5b8c362accf4d795b229bdf263ebb2f277805be566927bf562d8e360915f",
+  "max_output_tokens": 5000,
+  "temperature": 0,
+  "store": false,
+  "purpose": "azure_readable_batch_v1_control",
+  "budget_before": {
+    "budget_usd": "45",
+    "accounted_usd": "0.10374",
+    "remaining_usd": "44.89626",
+    "actual_billed_usd": null,
+    "basis": "local_budget_estimate_not_verified_billing",
+    "unfinished_reservations": 0,
+    "retained_unknown_cost_reservations": 0
+  },
+  "batch_planned_delta_before": "0.10352",
+  "planned_reservation_usd": "0.34203",
+  "max_automatic_retries": 0
+}

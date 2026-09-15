@@ -1,0 +1,45 @@
+{
+  "status": "archived_after_user_scope_correction",
+  "new_azure_calls_after_correction": 0,
+  "azure_initial_calls": 4,
+  "azure_repair_calls": 4,
+  "whole_batch_plan_delta_usd": "0.77026",
+  "actual_billed_usd": null,
+  "final_development_artifacts": [
+    {
+      "id": "translation",
+      "final_development_path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v3.md",
+      "sha256": "548200f0b8b78035fc12869a39dc9f6b2bb5b31f9466c462adbcbea404a02881",
+      "characters": 2769,
+      "human_feedback": null,
+      "training_eligible": false
+    },
+    {
+      "id": "control",
+      "final_development_path": "data/local/azure-readable-batch-v1/cases/control/candidate-v2.md",
+      "sha256": "014f7c153bc5ed4cdba2bcb6993d3b05ad544d6c2c4e4bcb516ac472b1f93138",
+      "characters": 2011,
+      "human_feedback": null,
+      "training_eligible": false
+    },
+    {
+      "id": "short_news",
+      "final_development_path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v3.md",
+      "sha256": "714f2f17df962336c1835895fa3250590bab31464b87cb79dc999ad255bbac8c",
+      "characters": 1272,
+      "human_feedback": null,
+      "training_eligible": false
+    },
+    {
+      "id": "marketing",
+      "final_development_path": "data/local/azure-readable-batch-v1/cases/marketing/candidate-v3.md",
+      "sha256": "b57f58f67e8791e14e8df21561b38739582526eea73e612111f79147da8ca9c4",
+      "characters": 2674,
+      "human_feedback": null,
+      "training_eligible": false
+    }
+  ],
+  "research_interpretation": "保留观察和失败，不作为GPT4.1在线方案或教师数据；当前角色以configs/model-roles-v2.json为准。",
+  "human_tasks_created": 0,
+  "training_started": false
+}

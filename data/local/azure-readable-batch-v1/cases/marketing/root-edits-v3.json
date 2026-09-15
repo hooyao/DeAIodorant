@@ -1,0 +1,22 @@
+{
+  "editor": "root_native_astra",
+  "base_sha256": "e9c69195dedd19719d1fae649c046efbd7e22994ec42b3235a09b42e65e0ca45",
+  "candidate_sha256": "b57f58f67e8791e14e8df21561b38739582526eea73e612111f79147da8ca9c4",
+  "edits": [
+    {
+      "old": "以上6款是我认为可以提升生活品质的2022年新品扫拖一体机器人，希望对各位选购能有所帮助。",
+      "new": "以上6款是我认为可以提升生活品质的2022年新品扫拖机器人，希望对各位选购能有所帮助。",
+      "reason": "去掉不适用于需手动更换模块的J2的统称，与正文明确限制一致。"
+    },
+    {
+      "old": "选购时还可结合家庭面积、地面类型、是否有宠物、对自动化程度的需求以及预算等因素综合考虑。",
+      "new": "",
+      "reason": "删除未在原文给出的新增概括建议，避免混入编辑者结论。"
+    }
+  ],
+  "characters": 2674,
+  "scope": "按复核完成内容收尾；translation还整理回补后的复制原句和比喻，明确与Azure纯输出分开。",
+  "human_feedback": null,
+  "network_calls": 0,
+  "training_eligible": false
+}

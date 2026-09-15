@@ -1,0 +1,109 @@
+{
+  "version": "qwen27b-preflight-review-v1",
+  "date": "2026-09-15",
+  "status": "two_validation_gaps_runtime_unverified",
+  "model": "Qwen/Qwen3.5-27B",
+  "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "current_policy": "以 configs/model-roles-v3.json 和 student-sft-plan-v2.md 为准，直接使用官方27B BF16；4B／9B仅为历史记录，不恢复廉价API或GPT-4.1教师路线。",
+  "scope": {
+    "method": "有界静态代码与配置复核，并用Python标准库解析AST、核对原型正文及hash、计算权重存储体积。未导入或执行预检脚本。",
+    "review_items": 6,
+    "network_requests": 0,
+    "model_runs": 0,
+    "packages_installed": false,
+    "weights_downloaded": false,
+    "training_started": false,
+    "env_files_read": false,
+    "git_operations": false,
+    "files_written": ["data/local/student-model-selection-v1/27b-preflight-review.json"]
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "priority": "P2",
+      "category": "input_integrity",
+      "title": "校验过的文件尚未绑定到实际训练正文",
+      "file": "experiments/student_sft_preflight.py",
+      "start_line": 32,
+      "end_line": 37,
+      "observation": "脚本核对source／teacher文件的hash，随后直接使用pair.messages；没有核对messages[1].content和messages[2].content与相应文件的UTF-8正文相等。因此--pair中的正文若与来源记录错配，hash检查仍通过，训练和基线实际使用的内容会偏离报告引用的文件。现有原型逐字一致，本轮没有发现已发生的数据错配。",
+      "invariant": "实际使用的原文与教师稿应与保存的来源身份、hash和复核对象一致。",
+      "minimal_fix": "在任何云端加载前，以当前universal newline读取方式比较两个messages正文与对应文件；不等即停止。将身份、split和角色检查改为显式异常，避免python -O关闭assert后丢失这些检查。",
+      "evidence_level": "代码路径可确认的验证缺口；当前原型内容核验通过。"
+    },
+    {
+      "id": "R2",
+      "priority": "P2",
+      "category": "baseline_completion",
+      "title": "非空输出不能证明完整基座文章已经生成",
+      "file": "experiments/student_sft_preflight.py",
+      "start_line": 104,
+      "end_line": 113,
+      "observation": "baseline-only分支只检查解码文字非空，随后记录official_bf16_baseline_generated。达到max_new_tokens而被截断的输出同样通过。文档中的4096只是上限，不能保证完整；默认128则明确只能用于短输出链路检查。",
+      "invariant": "官方基座的完整文章验证必须区分正常结束与长度停止，不能把截断输出当完整改写。",
+      "minimal_fix": "记录实际生成token数、是否遇到有效EOS及是否达到长度上限。长度停止标为不完整；需要完整基线的调用在该状态停止后另行调整上限，不将其记作完整文章成功。保留3步兼容检查允许短输出的语义。",
+      "evidence_level": "代码路径可确认的状态判定缺口；没有运行模型或观察到实际截断。"
+    }
+  ],
+  "bounded_checks": [
+    {
+      "id": "R3",
+      "topic": "默认入口与意外训练",
+      "status": "static_gate_present",
+      "evidence": "未传--execute-cloud-probe时，脚本在模型库导入、mkdir、下载和优化器创建前返回。cloud模式要求Linux与CUDA BF16；--baseline-only在LoRA创建、反向和optimizer.step之前返回。",
+      "conclusion": "未发现默认执行或baseline-only会意外训练的控制流。显式cloud模式不带baseline-only会按设计执行3步LoRA。原型training_eligible=false与development_only表示不能当正式训练集；本次单样例兼容短跑是已明确安排的独立用途。",
+      "limit": "没有执行cloud分支，不把静态入口检查写成训练兼容通过。"
+    },
+    {
+      "id": "R4",
+      "topic": "loss mask与完整序列",
+      "status": "no_obvious_prompt_leak_token_runtime_unverified",
+      "evidence": "代码检查完整模板以non-thinking生成前缀开头，拒绝超过max_length的完整序列；根据offset将位于前缀内或跨前缀起点的token设为-100。没有padding或packing。本轮确认原型source为3231字符、teacher为3443字符，且两份内嵌正文与冻结文件逐字一致。",
+      "conclusion": "没有从代码中发现明显的prompt loss泄漏或静默截断。当前prompt_tokens_masked检查只证明被选中前缀位置没有参与loss，不证明目标正文及结束符全部得到正确监督。",
+      "limit": "未加载tokenizer，尚不知实际offset、特殊token位置及是否有跨边界token。跨边界token当前被整体屏蔽，可能牺牲目标开头覆盖；不能在没有分词证据时断言本原型已发生该问题。官方完整模板在im_end后还有换行，不能仅凭最后一个ID的条件分支证明EOS标签保留。",
+      "minimal_next_check": "在云端tokenization阶段，报告并核对未屏蔽token对应的完整目标、边界覆盖与实际EOS位置；任何目标正文缺失或前缀泄漏都在加载权重前停止。无需扩展训练框架。"
+    },
+    {
+      "id": "R5",
+      "topic": "视觉冻结、设备映射及adapter重载",
+      "status": "static_safeguards_present_runtime_unverified",
+      "evidence": "LoRA目标限定为名称含.layers.的Linear，排除visual、vision、lm_head和mtp；PEFT注入后显式检查视觉参数requires_grad。enable_input_require_grads用于输入embedding输出的反向路径，本身不等于把embedding权重设为可训练。single把全部权重放在CUDA 0，与当前batch设备一致。balanced映射在加载后拒绝CPU／磁盘卸载。保存后卸下adapter、在同一内存基座上重载并逐参数比较LoRA值。",
+      "conclusion": "未发现明显将视觉模块纳入LoRA或必然导致single设备错误的逻辑。重载比较可以检查adapter序列化值；没有重新加载第二份27B基座，也不存在由该段代码必然产生的双份基座内存要求。",
+      "limit": "实际模块名称、PEFT包装、混合注意力反向与balanced跨GPU hooks尚未运行验证；输入固定CUDA 0在balanced下依赖dispatch正确搬运，不能声称已经通过多卡训练。当前保存检查不是独立进程加载测试，也没有比较保存前后的同输入生成。",
+      "minimal_next_check": "按报告中的实际hf_device_map、LoRA目标和可训练参数，先完成对应single或balanced的短跑。adapter重载通过只按其实际范围记为兼容证据；正式自行部署前再做一次独立进程加载与固定输入生成核对。"
+    },
+    {
+      "id": "R6",
+      "topic": "GPU建议与依赖组合",
+      "status": "no_weight_capacity_contradiction_not_a_fit_guarantee",
+      "official_checkpoint_parameters": 27781427952,
+      "bf16_parameters": 27781419504,
+      "f32_parameters": 8448,
+      "calculated_weight_storage_gib": 51.74695774912834,
+      "evidence": "官方配置是64层混合注意力、248320词表，并含视觉编码器；脚本使用BF16完整官方发布包，没有量化替换。包文件固定torch 2.14.0、transformers 5.17.0、peft 0.20.0、accelerate 1.15.0，并已明确标记为待验证组合。",
+      "conclusion": "51.75 GiB权重与1张80GB GPU起步、96GB或2张80GB留训练余量的建议没有直接算术矛盾。200GB磁盘与128GB RAM也是规划容量，没有承诺实测满足。",
+      "limit": "权重体积不是峰值显存。当前训练使用模型默认loss路径，长序列logits、激活、梯度和优化器均可能使8K单卡80GB不足；更大显存或双卡也仍需对应映射实测。实际CUDA构建、驱动、可选内核及这些包版本的联合兼容没有本轮证据；官方推理支持不能替代LoRA反向验证。1—2小时是初次准备的预留窗口，不是已测训练时长或完成保证。",
+      "minimal_next_check": "获取云GPU后保留实际安装版本、CUDA构建和全部GPU信息，按完整序列实测峰值显存及3步耗时，再决定正式SFT资源。不因预估不足改用廉价API、静默截断或未约定量化。"
+    }
+  ],
+  "offline_validation": {
+    "python_ast_parse": true,
+    "source_file_hash_matches_prototype": true,
+    "teacher_file_hash_matches_prototype": true,
+    "source_message_matches_file": true,
+    "teacher_message_matches_file": true,
+    "model_or_tokenizer_imported": false,
+    "preflight_script_executed": false,
+    "runtime_compatibility_established": false
+  },
+  "reviewed_files": [
+    {"path": "experiments/student_sft_preflight.py", "sha256": "3163ca63806335aa5500421e48ee51268e0bd91b1c71ffcc637828b519ea8ba2"},
+    {"path": "configs/student-cloud-probe-requirements-v1.txt", "sha256": "8384b378e8af9e229ca9c8a714fd9a5d3065f63e2b102933be2f6e2349c4e472"},
+    {"path": "configs/model-roles-v3.json", "sha256": "83d6a6c362db7eed5425a5617f0c597c4efb0a43b68d11688614ee80e0464a65"},
+    {"path": "docs/routes/compact-refiner/student-sft-plan-v2.md", "sha256": "5622f27b424756cbbf71e65b3c2f6204aa0ef3482b1d594f2c1ee33231aae0b1"},
+    {"path": "data/local/student-sft-preparation-v1/development-pair-prototype.json", "sha256": "872f92fc861969b445d5bf85426ab7971fa7029187a80373413e4f2cb9e39f23"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-27B-metadata.json", "sha256": "a2d80f1ba32e86585cc6142aca69dd4185299a60e746a6cc487dceada522a213"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-27B-config.json", "sha256": "f8d190c5b89c1521220f935d2567a587d6e291ed69066a45a106560b05a2174c"},
+    {"path": "data/local/student-model-selection-v1/Qwen3.5-27B-README.md", "sha256": "8c6303cd5e89dc378d11fb4b70a0ff9c3cccb55a031133c69d9cbde9481f1a8c"}
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  {
+    "block_id": "b005",
+    "text": "describe('router test', () => {\n let router: ReturnType<typeof useRouter>\n beforeAll(() => {\n router = useRouter()\n })\n})"
+  }
+]

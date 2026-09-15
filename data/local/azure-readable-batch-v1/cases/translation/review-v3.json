@@ -1,0 +1,228 @@
+{
+  "version": "azure-readable-batch-translation-preservation-review-3.0",
+  "case_id": "translation",
+  "reviewed_at_utc": "2026-09-15 08:43:07 UTC",
+  "reviewer": {
+    "model_family": "Astra",
+    "execution": "native_subagent",
+    "blinded": false,
+    "writer_history": "v1及v2由Azure GPT-4.1生成；v3由Root原生Astra作11处记录在案的编辑。"
+  },
+  "scope": "对照冻结原始全文、candidate-v2、candidate-v3和11项Root操作，检查T01—T11及v2遗留R01/R02/L01/L02的关闭情况，并核查这些操作是否引入新的关键内容问题；不评价人类阅读偏好，不扩展到其他案例或网络事实核查。",
+  "inputs": {
+    "original_view": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/original.md",
+      "raw_sha256": "693388cb7cbbbd91adc7d90d304faa915ff2d5ff022e06f5034b6194e69d1f99"
+    },
+    "candidate_v2": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v2.md",
+      "raw_sha256": "613faf1507e5f905358a9fa75cc349355cf3afc503572ef274a2a41f3ae5961a"
+    },
+    "candidate_v3": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/candidate-v3.md",
+      "raw_sha256": "548200f0b8b78035fc12869a39dc9f6b2bb5b31f9466c462adbcbea404a02881"
+    },
+    "root_edits": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/root-edits-v3.json",
+      "raw_sha256": "b488dd12657369b41988809021b9206dd639b6b96e90b85c82877cf8f94a771a"
+    },
+    "prior_review": {
+      "path": "data/local/azure-readable-batch-v1/cases/translation/review-v2.json",
+      "raw_sha256": "93e3e82d0c9c0bdb9cac25ef87e233c4a9a2871085d23486585ec5ba62a58c4c"
+    }
+  },
+  "verdict": "pass_within_review_scope",
+  "conclusion": "先前列出的关键内容问题和四项遗留问题已关闭；11处Root编辑可精确回放，代码原样。在本次范围内未发现新的关键事实、条件、归属或否定／不确定性问题。v3可以作为待实际阅读评价的开发候选，不自动成为训练目标。",
+  "blocking_issues": [],
+  "issue_statuses": [
+    {
+      "id": "T01",
+      "status": "resolved",
+      "candidate_lines": [
+        37
+      ],
+      "evidence": "保留作者曾在单体系统工作的个人经历及作者判断；单体环境“很有帮助”，微服务“必不可少”，没有重新加入“足够”。"
+    },
+    {
+      "id": "T02",
+      "status": "resolved",
+      "candidate_lines": [
+        25,
+        26,
+        27
+      ],
+      "evidence": "云环境配置、版本未固定的条件与难以控制的连锁变化均保持。"
+    },
+    {
+      "id": "T03",
+      "status": "resolved",
+      "candidate_lines": [
+        45
+      ],
+      "evidence": "关键服务大量错误、“无效值”、近期变更排查、一天与七个月、整数列／更大数字／需要大整数类型均保留；写入施事者明确为团队，没有补造已完成的模式迁移或七个月前具体修改种类。"
+    },
+    {
+      "id": "T04",
+      "status": "resolved",
+      "candidate_lines": [
+        65
+      ],
+      "evidence": "限定为原文的Komodor/K8s案例。先部署、后记录可用副本不足、再告警，只表达顺序；没有“刚刚／紧接着”或具体时间间隔。两项可能原因及进一步查看部署细节均在，几秒钟说法归属于作者。"
+    },
+    {
+      "id": "T05",
+      "status": "resolved",
+      "candidate_lines": [
+        80
+      ],
+      "evidence": "保持已存DOM中的InfoQ英文原文URL，没有回到猜测地址。"
+    },
+    {
+      "id": "T06",
+      "status": "resolved",
+      "candidate_lines": [
+        69,
+        71
+      ],
+      "evidence": "现有工具将来可能不足的情态保持；恢复速度、严格SLA和停机成本仍作为作者的前瞻判断。"
+    },
+    {
+      "id": "T07",
+      "status": "resolved",
+      "candidate_lines": [
+        11,
+        37,
+        45
+      ],
+      "evidence": "作者观察、个人工作经历、目前Komodor／以前Rookout的背景明确；没有为数据库事件补定发生公司。"
+    },
+    {
+      "id": "T08",
+      "status": "resolved",
+      "candidate_lines": [
+        39,
+        41,
+        42,
+        43
+      ],
+      "evidence": "先定位故障服务再追查原因，以及权限、技术栈知识、经验未必都具备的现实条件仍在。“定位”没有被写成必须停机或关闭服务。"
+    },
+    {
+      "id": "T09",
+      "status": "resolved",
+      "candidate_lines": [
+        51,
+        57
+      ],
+      "evidence": "保留历史与实时数据、错误率超过2%、代码／网络／云厂商／第三方工具／关联服务的不同假设；没有恢复排他的“只能依赖”。"
+    },
+    {
+      "id": "T10",
+      "status": "resolved",
+      "candidate_lines": [
+        3,
+        37,
+        69,
+        77
+      ],
+      "evidence": "QA、开发、预生产范围，服务并发操作，日志及后来的跟踪／指标进入仪表板和增加工具的演进背景，作者兴趣简介均已保留。"
+    },
+    {
+      "id": "T11-root",
+      "status": "resolved",
+      "candidate_lines": [
+        7
+      ],
+      "evidence": "直接说明遥测是获得可观察性的前提，仍需联系业务需求与应用工作方式，没有把简化说法写成定义。"
+    }
+  ],
+  "prior_residuals": [
+    {
+      "id": "R01",
+      "status": "resolved",
+      "candidate_lines": [
+        65
+      ],
+      "evidence": "“先有…之后…随后”描述先后关系，没有添加事件立即相继发生的断言。"
+    },
+    {
+      "id": "R02",
+      "status": "resolved",
+      "candidate_lines": [
+        3,
+        69
+      ],
+      "evidence": "QA／预生产和工具演进均恢复。"
+    },
+    {
+      "id": "L01",
+      "status": "resolved",
+      "candidate_lines": [
+        45
+      ],
+      "evidence": "“团队尝试写入的数字更大”恢复明确施事者，避免让列类型承接写入动作。"
+    },
+    {
+      "id": "L02",
+      "status": "resolved",
+      "candidate_lines": [
+        65
+      ],
+      "evidence": "“原文展示了…一个例子”替代当前稿件没有的“上面的截图”，不声称已核验图片。"
+    }
+  ],
+  "observations": [
+    {
+      "candidate_lines": [
+        45
+      ],
+      "candidate_quote": "原文没有进一步说明七个月前具体做了哪项修改。",
+      "assessment": "这是Root新增的来源范围说明，依据已读中文输入；它不是原作者的直接引文，也不意味着已检查英文原文。作为明确标注原文未说明之处的编辑解释，本次不判为补造业务事实。"
+    },
+    {
+      "candidate_lines": [
+        65
+      ],
+      "candidate_quote": "这些事件说明部署值得进一步检查，但还不能据此确定原因",
+      "assessment": "这段把原文两个可能原因和进一步查看细节的关系说明白，没有新增实际确诊结果；后续作者的几秒钟判断仍需按来源主张处理。"
+    },
+    {
+      "candidate_lines": [
+        69
+      ],
+      "candidate_quote": "过去，人们先使用日志，随后引入跟踪和指标，再把这些数据汇集到仪表板中。",
+      "assessment": "恢复了v2缺失的工具演进主干，没有把这段背景编造成精确历史时间表；不据此核证监控技术的真实历史。"
+    }
+  ],
+  "checks": {
+    "full_original_view_read": true,
+    "full_candidate_v3_read": true,
+    "root_edits_checked": 11,
+    "exact_replay": true,
+    "candidate_characters": 2769,
+    "protected_code_blocks": 1,
+    "protected_code_character_exact": true,
+    "numeric_threshold_unchanged": true,
+    "code_executed": false,
+    "input_hashes_checked": true,
+    "model_api_calls": 0,
+    "network_calls": 0,
+    "source_media_or_upstream_verified": false,
+    "candidate_modified": false,
+    "git_operations": false,
+    "human_readability_result": null
+  },
+  "research_status": {
+    "role": "exposed_development",
+    "training_eligible": false,
+    "student_finetuning_validated": false,
+    "teacher_role": "GPT-4.1仅用于临时教师试验；本稿还包含Root原生Astra编辑，不能标为纯GPT-4.1输出。",
+    "final_product_constraint": "最终方案须为可自行部署的新小模型微调；本批内容检查不认可将教师API调用包装成在线产品方案。"
+  },
+  "limits": [
+    "通过表示本次明确范围内未发现需要修订的关键内容问题，不是原文事实已独立认证或所有可能遗漏均不存在的保证。",
+    "没有用户阅读偏好、翻译腔改善或跨文章效果结论；获准交付阅读候选与获得训练资格是不同状态。",
+    "原文的产品宣传、故障案例及秒级定位说法仍只具备原始来源层级的证据；未查看图片或英文上游。",
+    "未修改原文、v1、v2、v3或冻结编辑记录，只新增本复核文件。"
+  ]
+}

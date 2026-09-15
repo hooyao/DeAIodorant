@@ -1,0 +1,113 @@
+{
+  "schema_version": "azure-readable-content-review-3.0",
+  "case_id": "short_news",
+  "reviewed_at_utc": "2026-09-15T08:42:56.198419+00:00",
+  "reviewer": {
+    "kind": "native_astra_subagent",
+    "task": "batch_short_review",
+    "independent_of_v3_edit": true,
+    "blind": false
+  },
+  "scope": "只核验Root对第二版句末标点的一项修订及旧问题状态，沿用已完成的前次内容复核；未扩大审计、修改稿件、联网、调用API或执行Git操作。",
+  "inputs": {
+    "original.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/original.md",
+      "sha256": "8b2ab500ee699d7766fcf01c6c8318a3a914a786fa1e0ed62609371df6cb0b5c",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v1.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v1.md",
+      "sha256": "e93fbbba6feb4b760cc1c411adf9d997f39e1a184fa93dfb32c50cf448b01441",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v2.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v2.md",
+      "sha256": "813065eeee0f8b3d39086c236db85e6eac87f6e4268dda8e577c7e6c940a1587",
+      "hash_basis": "raw_file_bytes"
+    },
+    "candidate-v3.md": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/candidate-v3.md",
+      "sha256": "714f2f17df962336c1835895fa3250590bab31464b87cb79dc999ad255bbac8c",
+      "hash_basis": "raw_file_bytes"
+    },
+    "applied-edits-v2.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/applied-edits-v2.json",
+      "sha256": "e7b3dbac90522a8d1885f36f23e42d05380ad190837fc01c1108de703f2d7cc4",
+      "hash_basis": "raw_file_bytes"
+    },
+    "root-edits-v3.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/root-edits-v3.json",
+      "sha256": "3115045d3552fd6eec80984101c91ffeae1cb4ae54451b98ad902214bf6c9cb2",
+      "hash_basis": "raw_file_bytes"
+    },
+    "review-v2.json": {
+      "path": "data/local/azure-readable-batch-v1/cases/short_news/review-v2.json",
+      "sha256": "fc72f0dc8ad28cb2f8abee806f9e533829b4d8d2fb71d913b2b91451952f13c3",
+      "hash_basis": "raw_file_bytes"
+    }
+  },
+  "decision": "pass_within_source_preservation_scope_with_source_ambiguities",
+  "summary": "第二版结尾悬空逗号已改为句号。仅有这一字符改变，句末换行及其余原始字节不变；此前由改写引入的问题没有重新出现。源文固有歧义仍未解决。",
+  "checks": {
+    "single_edit_record": true,
+    "base_and_candidate_hashes_match": true,
+    "exact_raw_byte_replay": true,
+    "unicode_character_changes": 1,
+    "terminal_comma_replaced_with_full_stop": true,
+    "original_v1_v2_and_prior_edit_log_unchanged": true,
+    "no_other_text_or_newline_change": true
+  },
+  "issue_status": [
+    {
+      "id": "short-news-01",
+      "status": "unsupported_specificity_removed_source_ambiguity_retained",
+      "detail": "前次已删除“每类”的解释，本次未触及参考文件及总时长段落；不能把保留原话当成限额已核验。"
+    },
+    {
+      "id": "short-news-02",
+      "status": "resolved_as_unsupported_addition",
+      "detail": "效率断语和新增行业展望仍被删除，没有恢复。"
+    },
+    {
+      "id": "short-news-v2-01",
+      "status": "resolved",
+      "detail": "文章最后一个非空白字符由逗号变为句号，未增删命题。"
+    }
+  ],
+  "new_issues": [],
+  "source_ambiguities": [
+    {
+      "item": "参考文件总数与分类数量",
+      "status": "retained_unresolved",
+      "detail": "最多12个与9张图片+3段视频+3段音频并列，合计关系仍未说明；不能擅自解释为可同时上传15个、各类上限或任意组合总上限。"
+    },
+    {
+      "item": "总时长作用范围",
+      "status": "retained_unresolved",
+      "detail": "“总时长均≤15秒”仍未明示是分别对视频/音频类别的累计时长还是别的范围；v2没有再加入“每类”，也没有完成来源核验。"
+    },
+    {
+      "item": "实测证据来源",
+      "status": "retained_unresolved",
+      "detail": "15秒视频生成耗时30–60秒和成功率超90%仍只有“实测”说法，测试者、设置与样本量未知。"
+    },
+    {
+      "item": "API上线状态",
+      "status": "future_claim_in_source_unverified",
+      "detail": "2月14日是2月12日文章面向未来的上线说法；候选“届时”保留这一时态，不代表实际已上线或当前可用。"
+    },
+    {
+      "item": "平台真人参考政策",
+      "status": "source_claim_preserved_not_verified",
+      "detail": "2月9日限制、真人图片/视频主体参考及活体认证数字分身条件保留；本复核没有确认政策当时及现在的真实性或适用产品范围。"
+    }
+  ],
+  "batch_role": "development_comparison_only",
+  "training_eligible": false,
+  "human_feedback": null,
+  "research_direction_note": "按维护者最新约束，本批GPT-4.1输出仅保留为开发对照，不作为方案或teacher主力，也不自动进入训练目标。后续由当前Astra承担teacher工作，再研究新小模型SFT；本次未启动任何训练。",
+  "limitations": [
+    "本结论只覆盖改写引入的内容偏移与此处标点修复，不代表源文数字、平台政策或上线状态已核验。",
+    "没有人类阅读评价；不据此宣称阅读舒适度提高或适合训练。"
+  ]
+}
