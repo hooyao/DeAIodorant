@@ -1,6 +1,49 @@
-# 续研 handoff：2026-09-15
+# 续研 handoff：2026-09-17
 
-## 当前主线：官方Qwen3.5-27B BF16与SFT
+## 换机交接：自有DGX Spark优先
+
+**最新资源安排：DGX Spark是维护者自有设备，只需电费，后续优先使用它。** 维护者准备换机续研；本轮任务为保存交接、提交并推送。当前未获得新机器的连接方式，没有连接旧`gx10`、下载权重或执行GPU工作。拥有设备与本session已能访问设备是两件事，不应依据历史命令直接启动旧主机上的任务。
+
+本节优先于下方按时间保留的旧检查点。模型角色仍以`configs/model-roles-v3.json`为准，硬件安排以上述自有Spark优先为准；不再把租用80GB云GPU或Linux x86_64当作继续研究的前置条件。
+
+### 本次新增判断
+
+- 目标继续是“让读者看得舒服”：改善公众号、媒体解读、科普、技术说明等完整中文信息文章，包括译文；保留事实、条件、归属、否定和不确定性。不是作者身份检测。
+- 使用官方`Qwen/Qwen3.5-27B`，原始BF16权重，revision为`fc05daec18b0a78c049392ed2e771dde82bdf654`。先做基座和LoRA兼容检查，再推进SFT；本次没有更换模型或精度。
+- 官方规格为128GB统一内存、273GB/s带宽、Arm CPU与GB10 GPU；checkpoint约51.75GiB。容量上值得尝试27B BF16加LoRA，但系统与CPU共享内存，完整文章的峰值、混合注意力反向传播与高效kernel仍未验证。
+- Spark应使用适配aarch64/GB10的PyTorch/CUDA环境。现有`configs/student-cloud-probe-requirements-v1.txt`只是待验证组合；不能机械照搬x86环境，也不能把官方Llama示例当作本项目Qwen3.5已兼容的证据。
+- 先前给出的Spark首次摸底4—8小时，以及假设100篇、每对6000 tokens、2 epochs的小训练另需12—36小时，只是粗略占机预算。没有训练实测，也没有现成100条教师数据；适配与实际吞吐可能改变时长。优先用自有设备测量，不需要为准备数据持续租卡。
+- 依据、时长算术和官方链接均记录在[27B BF16方案](docs/routes/compact-refiner/student-sft-plan-v2.md#dgx-spark与分阶段预算2026-09-17)。本次仅补充文档，无新增模型API费用、原始语料或训练产物。
+
+### 已有成果与不能丢失的边界
+
+- Microduck已认可全文：`data/local/microduck-readable-transfer-v1/candidate-v2.md`；维护者评价“有一些翻译腔，但是总体来说还不错，至少没什么2025年后的AI的臭味”。由当前Astra及原生子任务直接中文改写、复核产生。保留原稿和反馈，不再要求同一首次评价。
+- 《亡灵遗产》已认可局部补充稿：`data/local/gpt4-turbo-followup-v1/partial-restoration-v2.md`；维护者评价“这个局部补充稿挺好的，至少我愿意读”。仍有全文遗漏，不能直接当完整训练目标。后来的2068字符修订没有新的人类评价。
+- 当前开发原型为`data/local/student-sft-preparation-v2/development-pair.json`：原网页标题加正文作为输入，Microduck已认可第二版作为目标。只有一条，`training_eligible=false`，不是正式训练集或holdout。token数和token级loss mask尚待运行验证。
+- 教师稿和研究复核使用当前Astra或原生子任务；停止廉价托管模型实验。GPT-4.1仅保留历史文风例子，不作教师、研究判断或产品依赖。Azure批次及其修订不用于教师数据。
+- 原始语料、失败研究、来源分层和已认可反馈已在此前提交中保留。最新模型阶段清单为`handover/student-transition-2026-09-15/artifacts.json`，157项、2,147,362字节；更早完整研究清单为`handover/release-2026-09-15/artifacts.json`。不要重开旧final test、validation reserve、暂停的87候选池或撤回的Cowork读者任务。
+- 本机`.env`、真实密钥、Azure资源地址、live账本与私有缓存继续忽略，不随Git迁移。当前官方公开权重路线无需恢复旧API凭据才能继续；若以后确需使用凭据，单独安全配置，不从研究归档恢复认证信息。
+
+### 新机器从这里继续
+
+新建checkout可使用：
+
+```bash
+git clone --branch init https://github.com/hooyao/DeAIodorant.git
+cd DeAIodorant
+python experiments/verify_research_handover.py --inventory handover/student-transition-2026-09-15/artifacts.json
+python experiments/student_sft_preflight.py
+```
+
+已有checkout先检查并保留未提交改动，再切换`init`并执行`git pull --ff-only origin init`。本项目只提交到`init`，`main`保持`af751e236c084c0de3cc45a5979749bad0778378`。
+
+1. 先读本节及27B方案，完成上述离线检查；恢复结果和本次发布检查见`handover/spark-priority-2026-09-17/validation.json`。最近一次完整测试为2026-09-15的263项通过，本次文档交接不把它写成重新运行的结果。
+2. 在维护者提供的新设备上下文中核实Spark本机或连接方式。检查架构、可用统一内存、驱动、磁盘空间与支持GB10的容器；记录实际版本和镜像digest，安装问题与模型问题分别排查。
+3. 先用锁定tokenizer实测完整文章长度和loss mask，再运行官方BF16完整基座生成，检查EOS/长度停止与全文内容。`student_sft_preflight.py`的`--execute-cloud-probe`只是沿用的参数名；脚本限制Linux/CUDA/BF16，并未限制x86或要求设备必须是租赁云主机。
+4. 基座可用后再做已有3步LoRA兼容检查；验证梯度、峰值内存、adapter保存重载。后续用连续完整训练步测稳态吞吐。显存或kernel有问题先诊断，不静默截断文章或改成量化权重。
+5. 同时继续准备真实信息文章的Astra教师对，包含译文，按文章与来源去重并隔离开发和未见评估材料。数据和兼容检查完成后才开始正式SFT；单条原型过拟合不能当产品改进，DPO/RL仍在后面。
+
+## 2026-09-15检查点：官方Qwen3.5-27B BF16与SFT
 
 维护者明确GPT-4.1只用于旧模型文风例子，不能解题、生成教师数据或成为产品方案；随后要求“27b都算是小模型，不要浪费时间在便宜的api接口上”“使用正常的qwen模型”。当前以 `configs/model-roles-v3.json` 为准，停止Azure研究调用及廉价API摸底，采用官方Qwen3.5-27B原始BF16权重直接云GPU运行、微调。下方旧授权和4B/9B安排只保留历史，不能用于恢复这些路线。
 

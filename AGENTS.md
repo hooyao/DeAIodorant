@@ -1,10 +1,12 @@
 # DeAIodorant Agent 指南
 
-换机或新 session 先阅读 [HANDOFF.md](HANDOFF.md)。它记录截至 2026-09-15 的实际产物、恢复检查和下一步；下方及历史报告中的阶段性状态不能替代该检查点。
+换机或新 session 先阅读 [HANDOFF.md](HANDOFF.md)。它记录截至 2026-09-17 的实际产物、恢复检查和下一步；下方及历史报告中的阶段性状态不能替代该检查点。
 
 ## 项目使命
 
-维护者最新要求“27b都算是小模型，不要浪费时间在便宜的api接口上”“使用正常的qwen模型”。当前以 `configs/model-roles-v3.json` 和[官方27B BF16方案](docs/routes/compact-refiner/student-sft-plan-v2.md)为准：`Qwen/Qwen3.5-27B`原始权重直接云GPU运行、微调，停止廉价API摸底。下方4B/9B安排和历史Azure授权已被取代，不能恢复这些实验。当前预检脚本默认27B且默认不训练；尚无云主机连接信息，先需要1张80GB级GPU测基座/LoRA，再按实测调整。
+维护者最新要求“27b都算是小模型，不要浪费时间在便宜的api接口上”“使用正常的qwen模型”。当前以 `configs/model-roles-v3.json` 和[官方27B BF16方案](docs/routes/compact-refiner/student-sft-plan-v2.md)为准：直接使用`Qwen/Qwen3.5-27B`原始BF16权重运行、微调，停止廉价API摸底。下方4B/9B安排和历史Azure授权已被取代，不能恢复这些实验。
+
+2026-09-17最新资源安排：DGX Spark是维护者自有设备，只需电费，后续优先使用它。换机后先确认实际设备或连接方式，再验证ARM/GB10环境、完整文章基座生成和LoRA兼容性；不能依据旧`gx10`命令认定本session已能访问设备。80GB云GPU与x86_64不再是研究前置条件。当前预检脚本默认27B且默认不训练，尚无GPU实测；Spark时长只作粗预算，不是benchmark。下方关于没有Spark、必须等待云GPU的描述保留为此前环境记录，以本段和HANDOFF最新章节为准。
 
 GPT-4.1只保留旧模型文风例子，不作为解题、研究判断、教师数据或产品运行依赖。仅在维护者再次明确请求这类旧模型例子时使用已有接入。当前模型角色统一以 `configs/model-roles-v3.json` 为准；教师和内容复核由当前Astra或原生子任务承担。
 

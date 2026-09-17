@@ -1,0 +1,66 @@
+{
+  "schema_version": "spark-priority-handoff-validation-1.0",
+  "date": "2026-09-17",
+  "base_commit": "6510b33",
+  "branch": "init",
+  "resource_decision": "DGX Spark为维护者自有设备，只需电费，后续优先使用；当前session尚无新设备连接方式。",
+  "scope": "本轮仅交接文档与验证记录；已有语料和研究产物保持原样。",
+  "entrypoint": "HANDOFF.md",
+  "documents": [
+    "HANDOFF.md",
+    "AGENTS.md",
+    "docs/routes/compact-refiner/student-sft-plan-v2.md"
+  ],
+  "inventories": [
+    {
+      "path": "handover/student-transition-2026-09-15/artifacts.json",
+      "command": "python -X utf8 experiments/verify_research_handover.py --inventory handover/student-transition-2026-09-15/artifacts.json",
+      "status": "passed",
+      "files_verified": 157,
+      "bytes_verified": 2147362
+    },
+    {
+      "path": "handover/release-2026-09-15/artifacts.json",
+      "command": "python -X utf8 experiments/verify_research_handover.py --inventory handover/release-2026-09-15/artifacts.json",
+      "status": "passed",
+      "files_verified": 2198,
+      "bytes_verified": 213143896
+    }
+  ],
+  "inventory_scope_note": "两份历史清单分别通过字节及来源关联核验；数量不作为互斥文档或有效训练样本数。",
+  "reader_anchors_and_development_pair": {
+    "files_verified": 3,
+    "working_tree_and_git_index_hashes": "passed"
+  },
+  "offline_preflight": {
+    "command": "python -X utf8 experiments/student_sft_preflight.py",
+    "status": "offline_plan_valid",
+    "model": "Qwen/Qwen3.5-27B",
+    "revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+    "precision": "BF16",
+    "pair_sha256": "fa824b6be9165ecdbbe6a52739467101495a4e3106ec1a317526be4c027ec7bf"
+  },
+  "credential_scan_before_adding_this_validation_record": {
+    "scope": "entire_git_index",
+    "files_scanned": 2791,
+    "bytes_scanned": 225135525,
+    "actual_private_values_checked": 4,
+    "checked_categories": [
+      "本机OpenRouter实际密钥",
+      "本机Azure实际密钥",
+      "本机Azure实际资源地址",
+      "本机Azure实际资源主机名"
+    ],
+    "private_findings": 0,
+    "env_ignored": true,
+    "private_runtime_directories_excluded": true
+  },
+  "diff_check": "passed",
+  "pytest_this_turn": "未重跑；本轮没有源码或测试修改。",
+  "previous_pytest": "2026-09-15：263 passed，见上一阶段validation.json；不是本轮新结果。",
+  "main_unchanged": "af751e236c084c0de3cc45a5979749bad0778378",
+  "model_api_calls_this_turn": 0,
+  "weights_downloaded": false,
+  "training_started": false,
+  "spark_compatibility_and_throughput_measured": false
+}
