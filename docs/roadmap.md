@@ -1,6 +1,8 @@
 # 项目路线图
 
-当前执行主线以[官方Qwen3.5-27B BF16计划](routes/compact-refiner/student-sft-plan-v2.md)为准：Astra制作与复核教师稿，官方权重直接云GPU运行并SFT；停止4B/9B及廉价接口摸底。先验证正文loss mask、基座与训练链路，再形成训练/评估数据并正式SFT。GPT-4.1只保留历史文风例子。
+当前执行主线以[首轮SFT执行安排](routes/compact-refiner/student-sft-execution-v1.md)为准：Astra制作与复核教师稿，优先在自有DGX Spark上运行官方Qwen3.5-27B BF16 LoRA；停止4B/9B及廉价接口摸底。先完成8篇教师流程批，再形成64篇train、12篇dev、24篇新文章评估材料；验证正文loss mask、基座与训练链路，补齐正式trainer后跑最多2 epochs，用dev选择一个checkpoint，再评估新文章。GPT-4.1只保留历史文风例子。
+
+2026-09-17状态：仍只有一条开发原型、3步兼容脚本和离线检查结果，没有GPU实测或正式SFT数据集。上述规模是待执行计划；交付条件为内容保留与完整文章阅读效果，不能以loss或关键词统计代替。以下段落按原阶段保留，旧的模型与资源安排不覆盖本节。
 
 当前阶段的集中综述与实验顺序见[2026-09-15研究检查点](research-checkpoint-2026-09-15.md)：先补少量不同来源及明确译文的开发文章，再检查流程重复性和学生模型能力，最后才决定训练。该后续批次尚未执行。
 

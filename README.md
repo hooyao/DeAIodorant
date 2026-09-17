@@ -2,15 +2,17 @@
 
 **让读者看得舒服。** DeAIodorant 改写公众号、媒体解读、科普和技术说明等公众信息文章，让问题讲得更清楚，减少惹人反感的表达，改善措辞、句子和行文顺序，同时保留原意与有效信息。中文译文也在范围内；艺术文体不属于本项目。
 
-当前采用[官方Qwen3.5-27B原始BF16权重与SFT](docs/routes/compact-refiner/student-sft-plan-v2.md)，直接在云GPU运行。GPT-4.1只保留旧模型文风例子，停止改写、复核和教师调用；廉价API摸底也已停止。Astra负责教师数据。27B revision及云端预检脚本已准备，离线检查通过，尚未下载权重或训练；下一步需要80GB级GPU实例。
+当前采用[官方Qwen3.5-27B原始BF16权重与SFT](docs/routes/compact-refiner/student-sft-plan-v2.md)，优先使用维护者自有DGX Spark。GPT-4.1只保留旧模型文风例子，停止改写、复核和教师调用；廉价API摸底也已停止。Astra负责教师数据。已有单条开发原型和3步LoRA兼容脚本，离线检查通过，尚未下载权重或训练。
 
-已保留的阅读成果：《亡灵遗产》局部稿获得“至少我愿意读”的反馈，Microduck第二版也被评价为总体不错、目标臭味不明显，仍有一些翻译腔。[生成过程和反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)继续作为开发参考，后续按官方Qwen云端微调主线推进。检查点见 [HANDOFF.md](HANDOFF.md)。
+[首轮SFT执行安排](docs/routes/compact-refiner/student-sft-execution-v1.md)：先做8篇教师流程批，再完成64篇训练、12篇开发和24篇新文章评估材料，补正式trainer后进行两epoch LoRA试验。数量和配置是待执行计划；内容保留与完整文章的阅读结果共同决定后续，不以loss或特征词次数验收。
+
+已保留的阅读成果：《亡灵遗产》局部稿获得“至少我愿意读”的反馈，Microduck第二版也被评价为总体不错、目标臭味不明显，仍有一些翻译腔。[生成过程和反馈](docs/routes/compact-refiner/reports/microduck-method-and-reader-feedback-v1.md)继续作为开发参考，后续按官方Qwen微调主线推进。检查点见 [HANDOFF.md](HANDOFF.md)。
 
 进度与后续实验的集中说明：[2026-09-15研究综述](docs/research-checkpoint-2026-09-15.md)。
 
 历史Azure接入、凭据和预算记录保留，但仅用于维护者再次明确要求的旧模型文风例子。OpenRouter接口摸底已停止，托管API不作为最终产品依赖。
 
-最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-15）。包含篇章动作实验、找回的历史语料/实验文件和最新Label Studio研究状态。
+最新完整归档和续研入口：[HANDOFF.md](HANDOFF.md)（2026-09-17）。包含SFT执行步骤、篇章动作实验、找回的历史语料/实验文件和Label Studio研究状态。
 
 换机继续研究请先读 [HANDOVER.md](HANDOVER.md)，并检出 `init` 分支。交接包含本地产物与 corpus，以及不依赖 API 或 GPU 的恢复检查。
 

@@ -8,6 +8,8 @@
 
 2026-09-17最新资源安排：DGX Spark是维护者自有设备，只需电费，后续优先使用它。换机后先确认实际设备或连接方式，再验证ARM/GB10环境、完整文章基座生成和LoRA兼容性；不能依据旧`gx10`命令认定本session已能访问设备。80GB云GPU与x86_64不再是研究前置条件。当前预检脚本默认27B且默认不训练，尚无GPU实测；Spark时长只作粗预算，不是benchmark。下方关于没有Spark、必须等待云GPU的描述保留为此前环境记录，以本段和HANDOFF最新章节为准。
 
+SFT执行步骤以[首轮执行安排](docs/routes/compact-refiner/student-sft-execution-v1.md)和HANDOFF的“SFT接下来按什么顺序推进”为准：先8篇教师流程批，通过后计入64篇train；另设12篇dev和24篇新文章评估。覆盖译文和轻改对照，按原文章家族隔离；补齐正式trainer后进行最多2 epochs的27B BF16 LoRA试验，只用dev选checkpoint。当前只有一条开发原型和3步兼容脚本，这些数据数量与正式训练功能均未完成。新执行安排取代下方旧的段落训练、200条人工接受记录和暂停SFT的阶段指令，不改写历史产物。
+
 GPT-4.1只保留旧模型文风例子，不作为解题、研究判断、教师数据或产品运行依赖。仅在维护者再次明确请求这类旧模型例子时使用已有接入。当前模型角色统一以 `configs/model-roles-v3.json` 为准；教师和内容复核由当前Astra或原生子任务承担。
 
 此前探索的4B/9B与托管路由诊断已停止，只保留在历史[阶段记录](docs/routes/compact-refiner/reports/student-transition-v1.md)中。当前预检入口默认官方27B BF16，默认不训练；旧4B脚本已另存，不得按旧显存预估启动。
